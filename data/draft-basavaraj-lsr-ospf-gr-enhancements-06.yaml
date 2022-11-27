@@ -1,117 +1,33 @@
 ---
-id: draft-jilongwang-opsawg-cybersmap-06
+id: draft-basavaraj-lsr-ospf-gr-enhancements-06
 title:
-- content: Design of the native Cyberspace Map
+- content: OSPF Graceful Restart Enhancements
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-jilongwang-opsawg-cybersmap-06.txt
+- content: https://www.ietf.org/archive/id/draft-basavaraj-lsr-ospf-gr-enhancements-06.txt
   type: TXT
 type: standard
 docid:
-- id: draft-jilongwang-opsawg-cybersmap-06
+- id: draft-basavaraj-lsr-ospf-gr-enhancements-06
   type: Internet-Draft
   primary: true
-- id: I-D.jilongwang-opsawg-cybersmap
+- id: I-D.basavaraj-lsr-ospf-gr-enhancements
   type: IETF
   scope: anchor
-docnumber: I-D.jilongwang-opsawg-cybersmap
+docnumber: I-D.basavaraj-lsr-ospf-gr-enhancements
 date:
 - type: published
-  value: '2022-05-30'
+  value: '2022-11-27'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Jilong
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Wang
-        language:
-        - en
-      completename:
-        content: Jilong Wang
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Tsinghua University
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Miao
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Congcong
-        language:
-        - en
-      completename:
-        content: Miao Congcong
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Tsinghua University
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Changqing
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: An
-        language:
-        - en
-      completename:
-        content: Changqing An
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Tsinghua University
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Shuying
+        - content: Sami
           language:
           - en
         - language:
@@ -122,33 +38,114 @@ contributor:
           language:
           - en
       surname:
-        content: Zhuang
+        content: Boutros
         language:
         - en
       completename:
-        content: Shuying Zhuang
+        content: Sami Boutros
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
+        - content: VMware
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ankur
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Dubey
+        language:
+        - en
+      completename:
+        content: Ankur Dubey
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: VMware
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Vijayalaxmi
+          language:
+          - en
+        - language:
+          - en
+          initial: V
+        formatted_initials:
+          content: V.
+          language:
+          - en
+      surname:
+        content: Basavaraj
+        language:
+        - en
+      completename:
+        content: Vijayalaxmi Basavaraj
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: VMware
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Acee
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Lindem
+        language:
+        - en
+      completename:
+        content: Acee Lindem
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
   role:
   - type: author
 version:
 - draft: '06'
-revdate: '2022-05-30'
+revdate: '2022-11-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo discusses the design of the native cyberspace map which is
-    stable and flexible to describe cyberspace. Although we have accepted the cyberspace
-    as a parallel new world, we even have not defined its basic coordinate system,
-    which means cyberspace have no its basic space dimension till now. The objective
-    of this draft is to illustrate the basic design methodology of the native coordinate
-    system of cyberspace, and show how to design cyberspace map on this basis.</p>"
+- content: "<p>This document describes enhancements to the OSPF graceful restart procedures
+    to improve routing convergence in some OSPF network deployments. This document
+    updates RFC 3623 and RFC 5187.</p>"
   language:
   - en
   script:
@@ -157,23 +154,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-jilongwang-opsawg-cybersmap-05
+    id: draft-basavaraj-lsr-ospf-gr-enhancements-05
     docid:
-    - id: draft-jilongwang-opsawg-cybersmap-05
+    - id: draft-basavaraj-lsr-ospf-gr-enhancements-05
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-jilongwang-opsawg-cybersmap-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-jilongwang-opsawg-cybersmap-07
-    docid:
-    - id: draft-jilongwang-opsawg-cybersmap-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-jilongwang-opsawg-cybersmap-07
+      content: draft-basavaraj-lsr-ospf-gr-enhancements-05
       format: text/plain
 series:
 - type: main
@@ -184,5 +171,5 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-jilongwang-opsawg-cybersmap-06
+  number: draft-basavaraj-lsr-ospf-gr-enhancements-06
 doctype: internet-draft
