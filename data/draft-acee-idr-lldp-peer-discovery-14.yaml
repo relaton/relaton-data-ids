@@ -1,34 +1,90 @@
 ---
 schema-version: v1.2.1
-id: draft-irtf-nwcrg-bats-04
+id: draft-acee-idr-lldp-peer-discovery-14
 title:
-- content: BATS Coding Scheme for Multi-hop Data Transport
+- content: BGP Logical Link Discovery Protocol (LLDP) Peer Discovery
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-irtf-nwcrg-bats-04.txt
+- content: https://www.ietf.org/archive/id/draft-acee-idr-lldp-peer-discovery-14.txt
   type: TXT
 type: standard
 docid:
-- id: draft-irtf-nwcrg-bats-04
+- id: draft-acee-idr-lldp-peer-discovery-14
   type: Internet-Draft
   primary: true
-- id: I-D.irtf-nwcrg-bats
+- id: I-D.acee-idr-lldp-peer-discovery
   type: IETF
   scope: anchor
-docnumber: I-D.irtf-nwcrg-bats
+docnumber: I-D.acee-idr-lldp-peer-discovery
 date:
 - type: published
-  value: '2022-12-03'
+  value: '2022-12-06'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Shenghao
+        - content: Acee
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Lindem
+        language:
+        - en
+      completename:
+        content: Acee Lindem
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Keyur
+          language:
+          - en
+        - language:
+          - en
+          initial: K
+        formatted_initials:
+          content: K.
+          language:
+          - en
+      surname:
+        content: Patel
+        language:
+        - en
+      completename:
+        content: Keyur Patel
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Arrcus, Inc
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Shawn
           language:
           - en
         - language:
@@ -39,24 +95,52 @@ contributor:
           language:
           - en
       surname:
-        content: Yang
+        content: Zandi
         language:
         - en
       completename:
-        content: Shenghao Yang
+        content: Shawn Zandi
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CUHK(SZ)
+        - content: LinkedIn
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xuan
+        - content: Jeffrey
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Haas
+        language:
+        - en
+      completename:
+        content: Jeffrey Haas
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks, Inc
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Xiaohu
           language:
           - en
         - language:
@@ -67,93 +151,32 @@ contributor:
           language:
           - en
       surname:
-        content: Huang
+        content: Xu
         language:
         - en
       completename:
-        content: Xuan Huang
+        content: Xiaohu Xu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CUHK
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Raymond
-          language:
-          - en
-        - language:
-          - en
-          initial: R
-        - language:
-          - en
-          initial: W
-        formatted_initials:
-          content: R. W.
-          language:
-          - en
-      surname:
-        content: Yeung
-        language:
-        - en
-      completename:
-        content: Raymond W. Yeung
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: CUHK
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - language:
-          - en
-          initial: J
-        - language:
-          - en
-          initial: K
-        formatted_initials:
-          content: J. K.
-          language:
-          - en
-      surname:
-        content: Zao
-        language:
-        - en
-      completename:
-        content: Dr. John K. Zao
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: NCTU
+        - content: Capitalonline
   role:
   - type: author
 version:
-- draft: '04'
-revdate: '2022-12-03'
+- draft: '14'
+revdate: '2022-12-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BATS code is a class of efficient linear network coding scheme with
-    a matrix generalization of fountain codes as the outer code, and batch- based
-    linear network coding as the inner code. This document describes a baseline BATS
-    coding scheme for communication through multi-hop networks, and discusses the
-    related research issues towards a more sophisticated BATS coding scheme. This
-    document is a product of the Coding for Efficient Network Communications Research
-    Group (NWCRG).</p>"
+- content: "<p>Link Layer Discovery Protocol (LLDP) or IEEE Std 802.1AB is implemented
+    in networking equipment from many vendors. It is natural for IETF protocols to
+    avail this protocol for simple discovery tasks. This document describes how BGP
+    would use LLDP to discover directly connected and 2-hop peers when peering is
+    based on loopback addresses.</p>"
   language:
   - en
   script:
@@ -162,23 +185,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-irtf-nwcrg-bats-03
+    id: draft-acee-idr-lldp-peer-discovery-13
     docid:
-    - id: draft-irtf-nwcrg-bats-03
+    - id: draft-acee-idr-lldp-peer-discovery-13
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-irtf-nwcrg-bats-03
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-irtf-nwcrg-bats-05
-    docid:
-    - id: draft-irtf-nwcrg-bats-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-irtf-nwcrg-bats-05
+      content: draft-acee-idr-lldp-peer-discovery-13
       format: text/plain
 series:
 - type: main
@@ -189,7 +202,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-irtf-nwcrg-bats-04
+  number: draft-acee-idr-lldp-peer-discovery-14
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

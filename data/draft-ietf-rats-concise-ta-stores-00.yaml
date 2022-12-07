@@ -1,115 +1,34 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-cdni-https-delegation-subcerts-00
+id: draft-ietf-rats-concise-ta-stores-00
 title:
-- content: CDNI Metadata for Delegated Credentials
+- content: Concise TA Stores (CoTS)
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-cdni-https-delegation-subcerts-00.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-rats-concise-ta-stores-00.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-cdni-https-delegation-subcerts-00
+- id: draft-ietf-rats-concise-ta-stores-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-cdni-https-delegation-subcerts
+- id: I-D.ietf-rats-concise-ta-stores
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-cdni-https-delegation-subcerts
+docnumber: I-D.ietf-rats-concise-ta-stores
 date:
 - type: published
-  value: '2022-07-09'
+  value: '2022-12-06'
 contributor:
 - person:
     name:
       given:
         forename:
-        - language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
-      surname:
-        content: Fieau
-        language:
-        - en
-      completename:
-        content: Frédéric Fieau
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Orange
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Stephan
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Emile
-        language:
-        - en
-      completename:
-        content: Stephan Emile
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Orange
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Guillaume
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Bichot
-        language:
-        - en
-      completename:
-        content: Guillaume Bichot
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Broadpeak
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Christoph
+        - content: Carl
           language:
           - en
         - language:
@@ -120,47 +39,122 @@ contributor:
           language:
           - en
       surname:
-        content: Neumann
+        content: Wallace
         language:
         - en
       completename:
-        content: Christoph Neumann
+        content: Carl Wallace
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Broadpeak
+        - content: Red Hound Software
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Russ
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Housley
+        language:
+        - en
+      completename:
+        content: Russ Housley
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Vigil Security, LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Thomas
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Fossati
+        language:
+        - en
+      completename:
+        content: Thomas Fossati
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: arm
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Yogesh
+          language:
+          - en
+        - language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Deshpande
+        language:
+        - en
+      completename:
+        content: Yogesh Deshpande
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: arm
   role:
   - type: author
 version:
 - draft: '00'
-revdate: '2022-07-09'
+revdate: '2022-12-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The delivery of content over HTTPS involving multiple CDNs raises credential
-    management issues. This document defines metadata in CDNI Control and Metadata
-    interface to setup HTTPS delegation using Delegated Credentials from an Upstream
-    CDN (uCDN) to a Downstream CDN (dCDN).</p>"
+- content: "<p>Trust anchor (TA) stores may be used for several purposes in the Remote
+    Attestation Procedures (RATS) architecture including verifying endorsements, reference
+    values, digital letters of approval, attestations, or public key certificates.
+    This document describes a Concise Reference Integrity Manifest (CoRIM) extension
+    that may be used to convey optionally constrained trust anchor stores containing
+    optionally constrained trust anchors in support of these purposes.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-cdni-https-delegation-subcerts-01
-    docid:
-    - id: draft-ietf-cdni-https-delegation-subcerts-01
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-cdni-https-delegation-subcerts-01
-      format: text/plain
 series:
 - type: main
   title:
@@ -170,7 +164,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-cdni-https-delegation-subcerts-00
+  number: draft-ietf-rats-concise-ta-stores-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
