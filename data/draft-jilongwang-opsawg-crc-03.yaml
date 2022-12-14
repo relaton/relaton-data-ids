@@ -1,34 +1,34 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-bess-pbb-evpn-isid-cmacflush-05
+id: draft-jilongwang-opsawg-crc-03
 title:
-- content: PBB-EVPN ISID-based CMAC-Flush
+- content: Framework for Cyberspace Resources Categorization
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-bess-pbb-evpn-isid-cmacflush-05.txt
+- content: https://www.ietf.org/archive/id/draft-jilongwang-opsawg-crc-03.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-bess-pbb-evpn-isid-cmacflush-05
+- id: draft-jilongwang-opsawg-crc-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-pbb-evpn-isid-cmacflush
+- id: I-D.jilongwang-opsawg-crc
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-bess-pbb-evpn-isid-cmacflush
+docnumber: I-D.jilongwang-opsawg-crc
 date:
 - type: published
-  value: '2022-06-23'
+  value: '2022-12-13'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Jorge
+        - content: Jilong
           language:
           - en
         - language:
@@ -39,24 +39,52 @@ contributor:
           language:
           - en
       surname:
-        content: Rabadan
+        content: Wang
         language:
         - en
       completename:
-        content: Jorge Rabadan
+        content: Jilong Wang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Senthil
+        - content: Congcong
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Miao
+        language:
+        - en
+      completename:
+        content: Congcong Miao
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tsinghua University
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Shuying
           language:
           - en
         - language:
@@ -67,123 +95,90 @@ contributor:
           language:
           - en
       surname:
-        content: Sathappan
+        content: Zhuang
         language:
         - en
       completename:
-        content: Senthil Sathappan
+        content: Shuying Zhuang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Kiran
+        - content: Qianli
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: Q
         formatted_initials:
-          content: K.
+          content: Q.
           language:
           - en
       surname:
-        content: Nagaraj
+        content: Zhang
         language:
         - en
       completename:
-        content: Kiran Nagaraj
+        content: Qianli Zhang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Masahiro
+        - content: Jianfeng
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: J
         formatted_initials:
-          content: M.
+          content: J.
           language:
           - en
       surname:
-        content: Miyake
+        content: Chen
         language:
         - en
       completename:
-        content: Masahiro Miyake
+        content: Jianfeng Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Softbank
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Taku
-          language:
-          - en
-        - language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
-      surname:
-        content: Matsuda
-        language:
-        - en
-      completename:
-        content: Taku Matsuda
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Softbank
+        - content: CETC
   role:
   - type: author
 version:
-- draft: '05'
-revdate: '2022-06-23'
+- draft: '03'
+revdate: '2022-12-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Provider Backbone Bridging (PBB) can be combined with Ethernet VPN
-    (EVPN) to deploy Ethernet Local Area Network (ELAN) services in large Multi-Protocol
-    Label Switching (MPLS) networks (PBB-EVPN). Single- Active Multi-homing and per-I-SID
-    (per Service Instance Identifier) Load-Balancing can be provided to access devices
-    and aggregation networks. In order to speed up the network convergence in case
-    of failures on Single-Active Multi-Homed Ethernet Segments, PBB-EVPN defines a
-    flush mechanism for Customer MACs (CMAC-flush) that works for different Ethernet
-    Segment Backbone MAC (BMAC) address allocation models. This document complements
-    those CMAC-flush procedures for cases in which no PBB-EVPN Ethernet Segments are
-    defined (the attachment circuit is associated to a zero Ethernet Segment Identifier)
-    and a Service Instance Identifier based (I-SID-based) CMAC-flush granularity is
-    required.</p>"
+- content: "<p>This memo presents the definition of cyberspace resource, and then
+    discusses a classification framework for cyberspace resources. Cyberspace is widely
+    applied in people's daily life and it is regarded as a new space, paralleled to
+    the geographic space. There are various resources in cyberspace. However, they
+    have not been systematically defined and classified. The objective of this draft
+    is to present the deifinition of cyberspace resource and a standard classification
+    framework, thus, supporting the unified resource storage and shares.</p>"
   language:
   - en
   script:
@@ -192,23 +187,23 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-pbb-evpn-isid-cmacflush-04
+    id: draft-jilongwang-opsawg-crc-02
     docid:
-    - id: draft-ietf-bess-pbb-evpn-isid-cmacflush-04
+    - id: draft-jilongwang-opsawg-crc-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-bess-pbb-evpn-isid-cmacflush-04
+      content: draft-jilongwang-opsawg-crc-02
       format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-pbb-evpn-isid-cmacflush-06
+    id: draft-jilongwang-opsawg-crc-04
     docid:
-    - id: draft-ietf-bess-pbb-evpn-isid-cmacflush-06
+    - id: draft-jilongwang-opsawg-crc-04
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-bess-pbb-evpn-isid-cmacflush-06
+      content: draft-jilongwang-opsawg-crc-04
       format: text/plain
 series:
 - type: main
@@ -219,7 +214,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-bess-pbb-evpn-isid-cmacflush-05
+  number: draft-jilongwang-opsawg-crc-03
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
