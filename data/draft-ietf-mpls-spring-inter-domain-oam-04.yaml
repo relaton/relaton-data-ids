@@ -1,119 +1,90 @@
 ---
 schema-version: v1.2.1
-id: draft-wu-savnet-inter-domain-problem-statement-04
+id: draft-ietf-mpls-spring-inter-domain-oam-04
 title:
-- content: Source Address Validation in Inter-domain Networks (Inter-domain SAVNET)
-    Gap Analysis, Problem Statement, and Requirements
+- content: PMS/Head-end based MPLS Ping and Traceroute in Inter-domain SR Networks
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-wu-savnet-inter-domain-problem-statement-04.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-mpls-spring-inter-domain-oam-04.txt
   type: TXT
 type: standard
 docid:
-- id: draft-wu-savnet-inter-domain-problem-statement-04
+- id: draft-ietf-mpls-spring-inter-domain-oam-04
   type: Internet-Draft
   primary: true
-- id: I-D.wu-savnet-inter-domain-problem-statement
+- id: I-D.ietf-mpls-spring-inter-domain-oam
   type: IETF
   scope: anchor
-docnumber: I-D.wu-savnet-inter-domain-problem-statement
+docnumber: I-D.ietf-mpls-spring-inter-domain-oam
 date:
 - type: published
-  value: '2022-11-29'
+  value: '2022-12-14'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Jianping
+        - content: Shraddha
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: S
         formatted_initials:
-          content: J.
+          content: S.
           language:
           - en
       surname:
-        content: Wu
+        content: Hegde
         language:
         - en
       completename:
-        content: Jianping Wu
+        content: Shraddha Hegde
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
+        - content: Juniper Networks Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Dan
+        - content: Kapil
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: K
         formatted_initials:
-          content: D.
+          content: K.
           language:
           - en
       surname:
-        content: Li
+        content: Arora
         language:
         - en
       completename:
-        content: Dan Li
+        content: Kapil Arora
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
+        - content: Juniper Networks Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Lancheng
-          language:
-          - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Qin
-        language:
-        - en
-      completename:
-        content: Lancheng Qin
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Tsinghua University
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mingqing
+        - content: Mukul
           language:
           - en
         - language:
@@ -124,61 +95,95 @@ contributor:
           language:
           - en
       surname:
-        content: Huang
+        content: Srivastava
         language:
         - en
       completename:
-        content: Mingqing Huang
+        content: Mukul Srivastava
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: Juniper Networks Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Nan
+        - content: Samson
           language:
           - en
         - language:
           - en
-          initial: N
+          initial: S
         formatted_initials:
-          content: N.
+          content: S.
           language:
           - en
       surname:
-        content: Geng
+        content: Ninan
         language:
         - en
       completename:
-        content: Nan Geng
+        content: Samson Ninan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: Ciena
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Nagendra
+          language:
+          - en
+        - language:
+          - en
+          initial: N
+        - language:
+          - en
+          initial: K
+        formatted_initials:
+          content: N. K.
+          language:
+          - en
+      surname:
+        content: Nainar
+        language:
+        - en
+      completename:
+        content: Nagendra Kumar Nainar
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 version:
 - draft: '04'
-revdate: '2022-11-29'
+revdate: '2022-12-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Source Address Validation in Inter-domain Networks (Inter-domain SAVNET)
-    focuses on narrowing the technical gaps of existing source address validation
-    (SAV) mechanisms in inter-domain scenarios. This document provides a gap analysis
-    of existing inter-domain SAV mechanisms, describes the problem statement based
-    on the analysis results, and concludes the requirements for improving inter-domain
-    SAV.</p>"
+- content: "<p>Segment Routing (SR) architecture leverages source routing and tunneling
+    paradigms and can be directly applied to the use of a Multiprotocol Label Switching
+    (MPLS) data plane. A network may consist of multiple IGP domains or multiple ASes
+    under the control of same organization. It is useful to have the Label switched
+    Path (LSP) Ping and traceroute procedures when an SR end-to-end path spans across
+    multiple ASes or domains. This document describes mechanisms to facilitae LSP
+    ping and traceroute in inter-AS/inter-domain SR-MPLS networks in an efficient
+    manner with simple Operations, Administration, and Maintenance (OAM) protocol
+    extension which uses dataplane forwarding alone for sending echo reply.</p>"
   language:
   - en
   script:
@@ -187,23 +192,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-wu-savnet-inter-domain-problem-statement-03
+    id: draft-ietf-mpls-spring-inter-domain-oam-03
     docid:
-    - id: draft-wu-savnet-inter-domain-problem-statement-03
+    - id: draft-ietf-mpls-spring-inter-domain-oam-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-wu-savnet-inter-domain-problem-statement-03
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-wu-savnet-inter-domain-problem-statement-05
-    docid:
-    - id: draft-wu-savnet-inter-domain-problem-statement-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-wu-savnet-inter-domain-problem-statement-05
+      content: draft-ietf-mpls-spring-inter-domain-oam-03
       format: text/plain
 series:
 - type: main
@@ -214,7 +209,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-wu-savnet-inter-domain-problem-statement-04
+  number: draft-ietf-mpls-spring-inter-domain-oam-04
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
