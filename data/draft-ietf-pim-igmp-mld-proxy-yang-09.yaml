@@ -1,91 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-mcd-identifier-access-security-05
+id: draft-ietf-pim-igmp-mld-proxy-yang-09
 title:
-- content: Security Services for the Industrial Internet Identifier Data Access Protocol
-    (IIIDAP)
+- content: A YANG Data Model for IGMP/MLD Proxy
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-mcd-identifier-access-security-05.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-pim-igmp-mld-proxy-yang-09.txt
   type: TXT
 type: standard
 docid:
-- id: draft-mcd-identifier-access-security-05
+- id: draft-ietf-pim-igmp-mld-proxy-yang-09
   type: Internet-Draft
   primary: true
-- id: I-D.mcd-identifier-access-security
+- id: I-D.ietf-pim-igmp-mld-proxy-yang
   type: IETF
   scope: anchor
-docnumber: I-D.mcd-identifier-access-security
+docnumber: I-D.ietf-pim-igmp-mld-proxy-yang
 date:
 - type: published
-  value: '2022-06-19'
+  value: '2022-12-18'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Chendi
+        - content: Hongji
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: H
         formatted_initials:
-          content: C.
+          content: H.
           language:
           - en
       surname:
-        content: Ma
+        content: Zhao
         language:
         - en
       completename:
-        content: Chendi Ma
+        content: Hongji Zhao
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Ericsson
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jian
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Chen
-        language:
-        - en
-      completename:
-        content: Jian Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Academy of Information and Communications Technology
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Xiaotian
+        - content: Xufeng
           language:
           - en
         - language:
@@ -96,24 +67,52 @@ contributor:
           language:
           - en
       surname:
-        content: Fan
+        content: Liu
         language:
         - en
       completename:
-        content: Xiaotian Fan
+        content: Xufeng Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: IBM Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Meilan
+        - content: Yisong
+          language:
+          - en
+        - language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Yisong Liu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Mobile
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mani
           language:
           - en
         - language:
@@ -124,60 +123,59 @@ contributor:
           language:
           - en
       surname:
-        content: Chen
+        content: Panchanathan
         language:
         - en
       completename:
-        content: Meilan Chen
+        content: Mani Panchanathan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zhiping
+        - content: Mahesh
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: M
         formatted_initials:
-          content: Z.
+          content: M.
           language:
           - en
       surname:
-        content: Li
+        content: Sivakumar
         language:
         - en
       completename:
-        content: Zhiping Li
+        content: Mahesh Sivakumar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Juniper
   role:
   - type: author
 version:
-- draft: '05'
-revdate: '2022-06-19'
+- draft: '09'
+revdate: '2022-12-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Industrial Internet Identifier Data Access Protocol (IIIDAP) provides
-    "RESTful" web services to retrieve identifier metadata from Second-Level Node
-    (SLN). This document describes information security services, including access
-    control, authentication, authorization, availability, data confidentiality, and
-    data integrity for IIIDAP.</p>
+- content: "<p>This document defines a YANG data model that can be used to configure
+    and manage Internet Group Management Protocol (IGMP) or Multicast Listener Discovery
+    (MLD) proxy devices. The YANG module in this document conforms to Network Management
+    Datastore Architecture (NMDA).</p>"
   language:
   - en
   script:
@@ -186,23 +184,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-mcd-identifier-access-security-04
+    id: draft-ietf-pim-igmp-mld-proxy-yang-08
     docid:
-    - id: draft-mcd-identifier-access-security-04
+    - id: draft-ietf-pim-igmp-mld-proxy-yang-08
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-mcd-identifier-access-security-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-mcd-identifier-access-security-06
-    docid:
-    - id: draft-mcd-identifier-access-security-06
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-mcd-identifier-access-security-06
+      content: draft-ietf-pim-igmp-mld-proxy-yang-08
       format: text/plain
 series:
 - type: main
@@ -213,7 +201,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-mcd-identifier-access-security-05
+  number: draft-ietf-pim-igmp-mld-proxy-yang-09
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

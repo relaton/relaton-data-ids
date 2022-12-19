@@ -1,35 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-mcd-identifier-access-security-05
+id: draft-bashandy-rtgwg-segment-routing-uloop-14
 title:
-- content: Security Services for the Industrial Internet Identifier Data Access Protocol
-    (IIIDAP)
+- content: Loop avoidance using Segment Routing
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-mcd-identifier-access-security-05.txt
+- content: https://www.ietf.org/archive/id/draft-bashandy-rtgwg-segment-routing-uloop-14.txt
   type: TXT
 type: standard
 docid:
-- id: draft-mcd-identifier-access-security-05
+- id: draft-bashandy-rtgwg-segment-routing-uloop-14
   type: Internet-Draft
   primary: true
-- id: I-D.mcd-identifier-access-security
+- id: I-D.bashandy-rtgwg-segment-routing-uloop
   type: IETF
   scope: anchor
-docnumber: I-D.mcd-identifier-access-security
+docnumber: I-D.bashandy-rtgwg-segment-routing-uloop
 date:
 - type: published
-  value: '2022-06-19'
+  value: '2022-12-18'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Chendi
+        - content: Ahmed
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Bashandy
+        language:
+        - en
+      completename:
+        content: Ahmed Bashandy
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Individual
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Clarence
           language:
           - en
         - language:
@@ -40,144 +67,143 @@ contributor:
           language:
           - en
       surname:
-        content: Ma
+        content: Filsfils
         language:
         - en
       completename:
-        content: Chendi Ma
+        content: Clarence Filsfils
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jian
+        - content: Stephane
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: S
         formatted_initials:
-          content: J.
+          content: S.
           language:
           - en
       surname:
-        content: Chen
+        content: Litkowski
         language:
         - en
       completename:
-        content: Jian Chen
+        content: Stephane Litkowski
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xiaotian
+        - content: Bruno
           language:
           - en
         - language:
           - en
-          initial: X
+          initial: B
         formatted_initials:
-          content: X.
+          content: B.
           language:
           - en
       surname:
-        content: Fan
+        content: Decraene
         language:
         - en
       completename:
-        content: Xiaotian Fan
+        content: Bruno Decraene
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Orange
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Meilan
+        - content: Pierre
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: P
         formatted_initials:
-          content: M.
+          content: P.
           language:
           - en
       surname:
-        content: Chen
+        content: Francois
         language:
         - en
       completename:
-        content: Meilan Chen
+        content: Pierre Francois
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: INSA Lyon
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zhiping
+        - content: Peter
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: P
         formatted_initials:
-          content: Z.
+          content: P.
           language:
           - en
       surname:
-        content: Li
+        content: Psenak
         language:
         - en
       completename:
-        content: Zhiping Li
+        content: Peter Psenak
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Academy of Information and Communications Technology
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '05'
-revdate: '2022-06-19'
+- draft: '14'
+revdate: '2022-12-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Industrial Internet Identifier Data Access Protocol (IIIDAP) provides
-    "RESTful" web services to retrieve identifier metadata from Second-Level Node
-    (SLN). This document describes information security services, including access
-    control, authentication, authorization, availability, data confidentiality, and
-    data integrity for IIIDAP.</p>
+- content: "<p>This document presents a mechanism aimed at providing loop avoidance
+    in the case of IGP network convergence event. The solution relies on the temporary
+    use of SR policies ensuring loop-freeness over the post-convergence paths from
+    the converging node to the destination.</p>"
   language:
   - en
   script:
@@ -186,23 +212,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-mcd-identifier-access-security-04
+    id: draft-bashandy-rtgwg-segment-routing-uloop-13
     docid:
-    - id: draft-mcd-identifier-access-security-04
+    - id: draft-bashandy-rtgwg-segment-routing-uloop-13
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-mcd-identifier-access-security-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-mcd-identifier-access-security-06
-    docid:
-    - id: draft-mcd-identifier-access-security-06
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-mcd-identifier-access-security-06
+      content: draft-bashandy-rtgwg-segment-routing-uloop-13
       format: text/plain
 series:
 - type: main
@@ -213,7 +229,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-mcd-identifier-access-security-05
+  number: draft-bashandy-rtgwg-segment-routing-uloop-14
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
