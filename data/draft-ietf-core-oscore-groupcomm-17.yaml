@@ -1,213 +1,185 @@
 ---
 schema-version: v1.2.1
-id: draft-chen-lsvr-flood-reduction-03
+id: draft-ietf-core-oscore-groupcomm-17
 title:
-- content: BGP-SPF Flooding Reduction
+- content: Group OSCORE - Secure Group Communication for CoAP
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-chen-lsvr-flood-reduction-03.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-core-oscore-groupcomm-17.txt
   type: TXT
 type: standard
 docid:
-- id: draft-chen-lsvr-flood-reduction-03
+- id: draft-ietf-core-oscore-groupcomm-17
   type: Internet-Draft
   primary: true
-- id: I-D.chen-lsvr-flood-reduction
+- id: I-D.ietf-core-oscore-groupcomm
   type: IETF
   scope: anchor
-docnumber: I-D.chen-lsvr-flood-reduction
+docnumber: I-D.ietf-core-oscore-groupcomm
 date:
 - type: published
-  value: '2022-11-15'
+  value: '2022-12-20'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Huaimo
+        - content: Marco
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: M
         formatted_initials:
-          content: H.
+          content: M.
           language:
           - en
       surname:
-        content: Chen
+        content: Tiloca
         language:
         - en
       completename:
-        content: Huaimo Chen
+        content: Marco Tiloca
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
+        - content: RISE AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Gyan
-          language:
-          - en
         - language:
           - en
           initial: G
-        - language:
-          - en
-          initial: S
         formatted_initials:
-          content: G. S.
+          content: G.
           language:
           - en
       surname:
-        content: Mishra
+        content: Selander
         language:
         - en
       completename:
-        content: Gyan Mishra
+        content: Göran Selander
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
+        - content: Ericsson AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Aijun
+        - content: Francesca
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: F
         formatted_initials:
-          content: A.
+          content: F.
           language:
           - en
       surname:
-        content: Wang
+        content: Palombini
         language:
         - en
       completename:
-        content: Aijun Wang
+        content: Francesca Palombini
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
+        - content: Ericsson AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yisong
+        - content: John
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: J
+        - language:
+          - en
+          initial: P
         formatted_initials:
-          content: Y.
+          content: J. P.
           language:
           - en
       surname:
-        content: Liu
+        content: Mattsson
         language:
         - en
       completename:
-        content: Yisong Liu
+        content: John Preuß Mattsson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Ericsson AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Haibo
+        - content: Jiye
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: J
         formatted_initials:
-          content: H.
+          content: J.
           language:
           - en
       surname:
-        content: Wang
+        content: Park
         language:
         - en
       completename:
-        content: Haibo Wang
+        content: Jiye Park
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Yanhe
-          language:
-          - en
-        - language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
-      surname:
-        content: Fan
-        language:
-        - en
-      completename:
-        content: Yanhe Fan
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Casa Systems
+        - content: Universitaet Duisburg-Essen
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2022-11-15'
+- draft: '17'
+revdate: '2022-12-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes extensions to Border Gateway Protocol (BGP)
-    for flooding the link states on a topology that is a subgraph of the complete
-    topology of a BGP-SPF domain, so that the amount of flooding traffic in the domain
-    is greatly reduced. This would reduce convergence time with a more stable and
-    optimized routing environment.</p>"
+- content: "<p>This document defines Group Object Security for Constrained RESTful
+    Environments (Group OSCORE), providing end-to-end security of CoAP messages exchanged
+    between members of a group, e.g., sent over IP multicast. In particular, the described
+    approach defines how OSCORE is used in a group communication setting to provide
+    source authentication for CoAP group requests, sent by a client to multiple servers,
+    and for protection of the corresponding CoAP responses. Group OSCORE also defines
+    a pairwise mode where each member of the group can efficiently derive a symmetric
+    pairwise key with any other member of the group for pairwise OSCORE communication.</p>"
   language:
   - en
   script:
@@ -216,23 +188,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-lsvr-flood-reduction-02
+    id: draft-ietf-core-oscore-groupcomm-16
     docid:
-    - id: draft-chen-lsvr-flood-reduction-02
+    - id: draft-ietf-core-oscore-groupcomm-16
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-chen-lsvr-flood-reduction-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-chen-lsvr-flood-reduction-04
-    docid:
-    - id: draft-chen-lsvr-flood-reduction-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-lsvr-flood-reduction-04
+      content: draft-ietf-core-oscore-groupcomm-16
       format: text/plain
 series:
 - type: main
@@ -243,7 +205,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-lsvr-flood-reduction-03
+  number: draft-ietf-core-oscore-groupcomm-17
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

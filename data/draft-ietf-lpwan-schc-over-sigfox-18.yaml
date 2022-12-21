@@ -1,213 +1,243 @@
 ---
 schema-version: v1.2.1
-id: draft-chen-lsvr-flood-reduction-03
+id: draft-ietf-lpwan-schc-over-sigfox-18
 title:
-- content: BGP-SPF Flooding Reduction
+- content: SCHC over Sigfox LPWAN
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-chen-lsvr-flood-reduction-03.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-lpwan-schc-over-sigfox-18.txt
   type: TXT
 type: standard
 docid:
-- id: draft-chen-lsvr-flood-reduction-03
+- id: draft-ietf-lpwan-schc-over-sigfox-18
   type: Internet-Draft
   primary: true
-- id: I-D.chen-lsvr-flood-reduction
+- id: I-D.ietf-lpwan-schc-over-sigfox
   type: IETF
   scope: anchor
-docnumber: I-D.chen-lsvr-flood-reduction
+docnumber: I-D.ietf-lpwan-schc-over-sigfox
 date:
 - type: published
-  value: '2022-11-15'
+  value: '2022-12-20'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Huaimo
-          language:
-          - en
         - language:
           - en
-          initial: H
+          initial: J
+        - language:
+          - en
+          initial: C
         formatted_initials:
-          content: H.
+          content: J. C.
           language:
           - en
       surname:
-        content: Chen
+        content: Zúñiga
         language:
         - en
       completename:
-        content: Huaimo Chen
+        content: Juan-Carlos Zúñiga
         language:
         - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Gyan
+        - content: Carles
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Gomez
+        language:
+        - en
+      completename:
+        content: Carles Gomez
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Universitat Politecnica de Catalunya
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Sergio
+          language:
+          - en
         - language:
           - en
           initial: S
         formatted_initials:
-          content: G. S.
+          content: S.
           language:
           - en
       surname:
-        content: Mishra
+        content: Aguilar
         language:
         - en
       completename:
-        content: Gyan Mishra
+        content: Sergio Aguilar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
+        - content: Universitat Politecnica de Catalunya
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Aijun
+        - content: Laurent
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: L
         formatted_initials:
-          content: A.
+          content: L.
           language:
           - en
       surname:
-        content: Wang
+        content: Toutain
         language:
         - en
       completename:
-        content: Aijun Wang
+        content: Laurent Toutain
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
+        - content: IMT-Atlantique
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yisong
+        - content: Sandra
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: S
         formatted_initials:
-          content: Y.
+          content: S.
           language:
           - en
       surname:
-        content: Liu
+        content: Cespedes
         language:
         - en
       completename:
-        content: Yisong Liu
+        content: Sandra Cespedes
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Concordia University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Haibo
+        - content: Diego
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: D
+        - language:
+          - en
+          initial: S
+        - language:
+          - en
+          initial: W
+        - language:
+          - en
+          initial: L
         formatted_initials:
-          content: H.
+          content: D. S. W. L.
           language:
           - en
       surname:
-        content: Wang
+        content: Torre
         language:
         - en
       completename:
-        content: Haibo Wang
+        content: Diego S. Wistuba La Torre
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: NIC Labs, Universidad de Chile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yanhe
+        - content: Julien
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: J
         formatted_initials:
-          content: Y.
+          content: J.
           language:
           - en
       surname:
-        content: Fan
+        content: Boite
         language:
         - en
       completename:
-        content: Yanhe Fan
+        content: Julien Boite
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Casa Systems
+        - content: Unabiz - Sigfox is now a Unabiz technology
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2022-11-15'
+- draft: '18'
+revdate: '2022-12-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes extensions to Border Gateway Protocol (BGP)
-    for flooding the link states on a topology that is a subgraph of the complete
-    topology of a BGP-SPF domain, so that the amount of flooding traffic in the domain
-    is greatly reduced. This would reduce convergence time with a more stable and
-    optimized routing environment.</p>"
+- content: "<p>The Static Context Header Compression and fragmentation (SCHC) specification
+    (RFC8724) describes a generic framework for application header compression and
+    fragmentation modes designed for Low Power Wide Area Network (LPWAN) technologies.
+    The present document defines a profile of SCHC (RFC8724) over Sigfox LPWAN, and
+    provides optimal parameter values and modes of operation.</p>"
   language:
   - en
   script:
@@ -216,23 +246,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-lsvr-flood-reduction-02
+    id: draft-ietf-lpwan-schc-over-sigfox-17
     docid:
-    - id: draft-chen-lsvr-flood-reduction-02
+    - id: draft-ietf-lpwan-schc-over-sigfox-17
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-chen-lsvr-flood-reduction-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-chen-lsvr-flood-reduction-04
-    docid:
-    - id: draft-chen-lsvr-flood-reduction-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-lsvr-flood-reduction-04
+      content: draft-ietf-lpwan-schc-over-sigfox-17
       format: text/plain
 series:
 - type: main
@@ -243,7 +263,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-lsvr-flood-reduction-03
+  number: draft-ietf-lpwan-schc-over-sigfox-18
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
