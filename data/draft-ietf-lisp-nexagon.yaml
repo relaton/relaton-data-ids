@@ -13,16 +13,16 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document describes an interoperable system of Geolocation agents
-    that utilizes virtual layer 3 routing and geospatial addressing to form a mobility-edge
-    network. The network uses a hierarchical H3 grid to calculate the high-resolution
-    tile positions of detections made by vehicles equipped with vision AI cameras
-    using their GPS coordinates. When these vehicles detect elements of interest or
-    map road segments, the system uses the tile ID of the detection or road segment
-    as the basis for an IPv6 endpoint identifier (EID). These EIDs are the destination
-    queues and channel sources for network-addressable agents that consolidate detections
-    from all vehicles in a given area. The mobility network is constructed using the
-    Locator/ID Separation Protocol (LISP).</p>"
+- content: <p>The mobility network described in the document uses the Locator/ID Separation
+    Protocol (LISP) to scale the deployment of geolocation agents, which are responsible
+    for generating automatic road-mapping and dynamic detection notifications based
+    on data collected by vehicles equipped with vision AI sensors. These sensors use
+    their global positioning coordinates to determine their location on a H3 hierarchical
+    geospatial hexagonal grid index, which is used to calculate the high-resolution
+    tile positions of detections and driven road segments. The low-resolution tile
+    IDs are then used as the basis for IPv6 endpoint identifiers (EIDs), which serve
+    as destination queues and channel sources for the network addressable geolocation
+    agents, known as "nexagons."</p>
   language:
   - en
   script:
@@ -478,6 +478,26 @@ relation:
       primary: true
     formattedref:
       content: draft-ietf-lisp-nexagon-44
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-ietf-lisp-nexagon-45
+    docid:
+    - id: draft-ietf-lisp-nexagon-45
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-lisp-nexagon-45
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-ietf-lisp-nexagon-46
+    docid:
+    - id: draft-ietf-lisp-nexagon-46
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-lisp-nexagon-46
       format: text/plain
 ext:
   schema-version: v1.0.0
