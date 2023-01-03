@@ -1,36 +1,61 @@
 ---
 schema-version: v1.2.1
-id: draft-rajagopalan-pce-pcep-color-02
+id: draft-ietf-bier-prefix-redistribute-03
 title:
-- content: Path Computation Element Protocol(PCEP) Extension for Color
+- content: BIER Prefix Redistribute
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-rajagopalan-pce-pcep-color-02.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-bier-prefix-redistribute-03.txt
   type: TXT
 type: standard
 docid:
-- id: draft-rajagopalan-pce-pcep-color-02
+- id: draft-ietf-bier-prefix-redistribute-03
   type: Internet-Draft
   primary: true
-- id: I-D.rajagopalan-pce-pcep-color
+- id: I-D.ietf-bier-prefix-redistribute
   type: IETF
   scope: anchor
-docnumber: I-D.rajagopalan-pce-pcep-color
+docnumber: I-D.ietf-bier-prefix-redistribute
 date:
 - type: published
-  value: '2022-07-06'
+  value: '2023-01-03'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Balaji
+        - content: Zheng
           language:
           - en
+        - language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Zheng Zhang
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ZTE Corporation
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
         - language:
           - en
           initial: B
@@ -39,11 +64,42 @@ contributor:
           language:
           - en
       surname:
-        content: Rajagopalan
+        content: Wu
         language:
         - en
       completename:
-        content: Balaji Rajagopalan
+        content: Bo Wu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Individual
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zhaohui
+          language:
+          - en
+        - language:
+          - en
+          initial: Z
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: Z. J.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Zhaohui (Jeffrey) Zhang
         language:
         - en
     affiliation:
@@ -56,160 +112,98 @@ contributor:
     name:
       given:
         forename:
-        - content: Vishnu
+        - content: IJsbrand
           language:
           - en
         - language:
           - en
-          initial: V
-        - language:
-          - en
-          initial: P
+          initial: I
         formatted_initials:
-          content: V. P.
+          content: I.
           language:
           - en
       surname:
-        content: Beeram
+        content: Wijnands
         language:
         - en
       completename:
-        content: Vishnu Pavan Beeram
+        content: IJsbrand Wijnands
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
+        - content: Individual
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Shaofu
+        - content: Yisong
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: Y
         formatted_initials:
-          content: S.
+          content: Y.
           language:
           - en
       surname:
-        content: Peng
+        content: Liu
         language:
         - en
       completename:
-        content: Shaofu Peng
+        content: Yisong Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Quan
+        - content: Hooman
           language:
           - en
         - language:
           - en
-          initial: Q
+          initial: H
         formatted_initials:
-          content: Q.
+          content: H.
           language:
           - en
       surname:
-        content: Xiong
+        content: Bidgoli
         language:
         - en
       completename:
-        content: Quan Xiong
+        content: Hooman Bidgoli
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Koldychev
-        language:
-        - en
-      completename:
-        content: Mike Koldychev
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
-      surname:
-        content: Mishra
-        language:
-        - en
-      completename:
-        content: Gyan Mishra
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Verizon Communications Inc.
+        - content: Nokia
   role:
   - type: author
 version:
-- draft: '02'
-revdate: '2022-07-06'
+- draft: '03'
+revdate: '2023-01-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Color is a 32-bit numerical attribute that is used to associate a Traffic
-    Engineering (TE) tunnel or policy with an intent or objective (e.g. low latency).
-    This document specifies an extension to Path Computation Element Protocol (PCEP)
-    to carry the color attribute.</p>"
+- content: "<p>This document defines a BIER proxy function to support a single BIER
+    sub-domain over multiple underlay routing protocol regions (Autonomous Systems
+    or IGP areas). A new BIER proxy range sub-TLV is defined to redistribute BIER
+    BFR-id information across the routing regions.</p>"
   language:
   - en
   script:
@@ -218,23 +212,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-rajagopalan-pce-pcep-color-01
+    id: draft-ietf-bier-prefix-redistribute-02
     docid:
-    - id: draft-rajagopalan-pce-pcep-color-01
+    - id: draft-ietf-bier-prefix-redistribute-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-rajagopalan-pce-pcep-color-01
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-rajagopalan-pce-pcep-color-03
-    docid:
-    - id: draft-rajagopalan-pce-pcep-color-03
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-rajagopalan-pce-pcep-color-03
+      content: draft-ietf-bier-prefix-redistribute-02
       format: text/plain
 series:
 - type: main
@@ -245,7 +229,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-rajagopalan-pce-pcep-color-02
+  number: draft-ietf-bier-prefix-redistribute-03
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
