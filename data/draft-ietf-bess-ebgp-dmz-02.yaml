@@ -1,49 +1,41 @@
 ---
 schema-version: v1.2.1
-id: draft-koldychev-pce-operational-06
+id: draft-ietf-bess-ebgp-dmz-02
 title:
-- content: PCEP Operational Clarification
+- content: Cumulative DMZ Link Bandwidth and load-balancing
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-koldychev-pce-operational-06.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-bess-ebgp-dmz-02.txt
   type: TXT
 type: standard
 docid:
-- id: draft-koldychev-pce-operational-06
+- id: draft-ietf-bess-ebgp-dmz-02
   type: Internet-Draft
   primary: true
-- id: I-D.koldychev-pce-operational
+- id: I-D.ietf-bess-ebgp-dmz
   type: IETF
   scope: anchor
-docnumber: I-D.koldychev-pce-operational
+docnumber: I-D.ietf-bess-ebgp-dmz
 date:
 - type: published
-  value: '2022-07-04'
+  value: '2023-01-04'
 contributor:
 - person:
     name:
       given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - language:
-          - en
-          initial: M
         formatted_initials:
-          content: M.
           language:
           - en
       surname:
-        content: Koldychev
+        content: satyamoh@cisco.com
         language:
         - en
       completename:
-        content: Mike Koldychev
+        content: satyamoh@cisco.com
         language:
         - en
     affiliation:
@@ -56,125 +48,134 @@ contributor:
     name:
       given:
         forename:
-        - content: Siva
+        - content: Arie
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: A
         formatted_initials:
-          content: S.
+          content: A.
           language:
           - en
       surname:
-        content: Sivabalan
+        content: Vayner
         language:
         - en
       completename:
-        content: Siva Sivabalan
+        content: Arie Vayner
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ciena Corporation
+        - content: Google
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Shuping
+        - content: Akshay
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: A
         formatted_initials:
-          content: S.
+          content: A.
           language:
           - en
       surname:
-        content: Peng
+        content: Gattani
         language:
         - en
       completename:
-        content: Shuping Peng
+        content: Akshay Gattani
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Arista Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Diego
+        - content: Ajay
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: A
         formatted_initials:
-          content: D.
+          content: A.
           language:
           - en
       surname:
-        content: Achaval
+        content: Kini
         language:
         - en
       completename:
-        content: Diego Achaval
+        content: Ajay Kini
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: Arista Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Hari
+        - content: Jeff
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: J
         formatted_initials:
-          content: H.
+          content: J.
           language:
           - en
       surname:
-        content: Kotni
+        content: Tantsura
         language:
         - en
       completename:
-        content: Hari Kotni
+        content: Jeff Tantsura
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
+        - content: Microsoft
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2022-07-04'
+- draft: '02'
+revdate: '2023-01-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document updates, simplifies and clarifies certain aspects of
-    the PCEP protocol. The content of this document has been compiled based on several
-    interop exercises.</p>"
+- content: "<p>The DMZ Link Bandwidth draft provides a way to load-balance traffic
+    to a destination which is reachable via more than one path according to the weight
+    attahced. Typically, the link bandwidth (either configured on the link of the
+    EBGP egress interface or set via a policy) is encoded in an extended community
+    and then sent to the IBGP peer that employs multi-path. The link-bandwidth value
+    is then extracted from the extended community and is used as a weight in the RIB/FIB,
+    which does the load-balancing. This draft extends the usage of the DMZ link bandwidth
+    to another setting where the ingress BGP speaker requires knowledge of the cumulative
+    bandwidth while doing the load-balancing. The draft also proposes neighbor-level
+    knobs to enable the link bandwidth extended community to be regenerated and then
+    advertised to EBGP peers to override the default behavior of not advertising optional
+    non-transitive attributes to EBGP peers.</p>"
   language:
   - en
   script:
@@ -183,23 +184,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-koldychev-pce-operational-05
+    id: draft-ietf-bess-ebgp-dmz-01
     docid:
-    - id: draft-koldychev-pce-operational-05
+    - id: draft-ietf-bess-ebgp-dmz-01
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-koldychev-pce-operational-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-koldychev-pce-operational-07
-    docid:
-    - id: draft-koldychev-pce-operational-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-koldychev-pce-operational-07
+      content: draft-ietf-bess-ebgp-dmz-01
       format: text/plain
 series:
 - type: main
@@ -210,7 +201,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-koldychev-pce-operational-06
+  number: draft-ietf-bess-ebgp-dmz-02
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
