@@ -1,49 +1,133 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-rtgwg-vrrp-bfd-p2p-00
+id: draft-ietf-pim-igmp-mld-proxy-yang-10
 title:
-- content: Fast failure detection in VRRP with Point to Point BFD
+- content: A YANG Data Model for IGMP/MLD Proxy
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-rtgwg-vrrp-bfd-p2p-00.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-pim-igmp-mld-proxy-yang-10.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-rtgwg-vrrp-bfd-p2p-00
+- id: draft-ietf-pim-igmp-mld-proxy-yang-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-vrrp-bfd-p2p
+- id: I-D.ietf-pim-igmp-mld-proxy-yang
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-rtgwg-vrrp-bfd-p2p
+docnumber: I-D.ietf-pim-igmp-mld-proxy-yang
 date:
 - type: published
-  value: '2018-01-30'
+  value: '2023-01-05'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Nitish
+        - content: Hongji
           language:
           - en
         - language:
           - en
-          initial: N
+          initial: H
         formatted_initials:
-          content: N.
+          content: H.
           language:
           - en
       surname:
-        content: Gupta
+        content: Zhao
         language:
         - en
       completename:
-        content: Nitish Gupta
+        content: Hongji Zhao
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Xufeng
+          language:
+          - en
+        - language:
+          - en
+          initial: X
+        formatted_initials:
+          content: X.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Xufeng Liu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: IBM Corporation
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Yisong
+          language:
+          - en
+        - language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Yisong Liu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Mobile
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mani
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Panchanathan
+        language:
+        - en
+      completename:
+        content: Mani Panchanathan
         language:
         - en
     affiliation:
@@ -56,140 +140,57 @@ contributor:
     name:
       given:
         forename:
-        - content: Aditya
+        - content: Mahesh
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: M
         formatted_initials:
-          content: A.
+          content: M.
           language:
           - en
       surname:
-        content: Dogra
+        content: Sivakumar
         language:
         - en
       completename:
-        content: Aditya Dogra
+        content: Mahesh Sivakumar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Colin
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Docherty
-        language:
-        - en
-      completename:
-        content: Colin Docherty
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: AT&T
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Mirsky
-        language:
-        - en
-      completename:
-        content: Greg Mirsky
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Individual
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Tantsura
-        language:
-        - en
-      completename:
-        content: Jeff Tantsura
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Individual
+        - content: Juniper
   role:
   - type: author
 version:
-- draft: '00'
-revdate: '2018-01-30'
+- draft: '10'
+revdate: '2023-01-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how Point to Point Bidirectional Forwarding
-    Detection (BFD) can be used to support sub-second detection of a Master Router
-    failure in the Virtual Router Redundancy Protocol (VRRP).</p>"
+- content: "<p>This document defines a YANG data model that can be used to configure
+    and manage Internet Group Management Protocol (IGMP) or Multicast Listener Discovery
+    (MLD) proxy devices. The YANG module in this document conforms to Network Management
+    Datastore Architecture (NMDA).</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-ietf-rtgwg-vrrp-bfd-p2p-01
+    id: draft-ietf-pim-igmp-mld-proxy-yang-09
     docid:
-    - id: draft-ietf-rtgwg-vrrp-bfd-p2p-01
+    - id: draft-ietf-pim-igmp-mld-proxy-yang-09
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-rtgwg-vrrp-bfd-p2p-01
+      content: draft-ietf-pim-igmp-mld-proxy-yang-09
       format: text/plain
 series:
 - type: main
@@ -200,7 +201,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-rtgwg-vrrp-bfd-p2p-00
+  number: draft-ietf-pim-igmp-mld-proxy-yang-10
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
