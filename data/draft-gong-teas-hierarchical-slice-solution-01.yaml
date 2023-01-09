@@ -1,167 +1,161 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-ccamp-flexigrid-tunnel-yang-01
+id: draft-gong-teas-hierarchical-slice-solution-01
 title:
-- content: A YANG Data Model for Flexi-Grid Tunnels
+- content: Segment Routing based Solution for Hierarchical IETF Network Slices
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-ccamp-flexigrid-tunnel-yang-01.txt
+- content: https://www.ietf.org/archive/id/draft-gong-teas-hierarchical-slice-solution-01.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-ccamp-flexigrid-tunnel-yang-01
+- id: draft-gong-teas-hierarchical-slice-solution-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ccamp-flexigrid-tunnel-yang
+- id: I-D.gong-teas-hierarchical-slice-solution
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-ccamp-flexigrid-tunnel-yang
+docnumber: I-D.gong-teas-hierarchical-slice-solution
 date:
 - type: published
-  value: '2022-07-11'
+  value: '2023-01-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Universidad
+        - content: Liyan
           language:
           - en
         - language:
           - en
-          initial: U
-        - language:
-          - en
-          initial: A
+          initial: L
         formatted_initials:
-          content: U. A.
+          content: L.
           language:
           - en
       surname:
-        content: de Madrid
+        content: Gong
         language:
         - en
       completename:
-        content: Universidad Autonoma de Madrid
+        content: Liyan Gong
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Naudit HPCN
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Daniel
+        - content: Weiqiang
           language:
           - en
         - language:
           - en
-          initial: D
-        - language:
-          - en
-          initial: P
+          initial: W
         formatted_initials:
-          content: D. P.
+          content: W.
           language:
           - en
       surname:
-        content: Burrero
+        content: Cheng
         language:
         - en
       completename:
-        content: Daniel Perdices Burrero
+        content: Weiqiang Cheng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Universidad Autonoma de Madrid
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Daniel
+        - content: Changwang
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: C
         formatted_initials:
-          content: D.
+          content: C.
           language:
           - en
       surname:
-        content: King
+        content: Lin
         language:
         - en
       completename:
-        content: Daniel King
+        content: Changwang Lin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Old Dog Consulting
+        - content: New H3C Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Victor
+        - content: Mengxiao
           language:
           - en
         - language:
           - en
-          initial: V
+          initial: M
         formatted_initials:
-          content: V.
+          content: M.
           language:
           - en
       surname:
-        content: Lopez
+        content: Chen
         language:
         - en
       completename:
-        content: Victor Lopez
+        content: Mengxiao Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: New H3C Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Italo
+        - content: Jie
           language:
           - en
         - language:
           - en
-          initial: I
+          initial: J
         formatted_initials:
-          content: I.
+          content: J.
           language:
           - en
       surname:
-        content: Busi
+        content: Dong
         language:
         - en
       completename:
-        content: Italo Busi
+        content: Jie Dong
         language:
         - en
     affiliation:
@@ -174,70 +168,70 @@ contributor:
     name:
       given:
         forename:
-        - content: Sergio
+        - content: Ran
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: R
         formatted_initials:
-          content: S.
+          content: R.
           language:
           - en
       surname:
-        content: Belotti
+        content: Chen
         language:
         - en
       completename:
-        content: Sergio Belotti
+        content: Ran Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: ZTE Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Gabriele
+        - content: Yanrong
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: Y
         formatted_initials:
-          content: G.
+          content: Y.
           language:
           - en
       surname:
-        content: Galimberti
+        content: Liang
         language:
         - en
       completename:
-        content: Gabriele Galimberti
+        content: Yanrong Liang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
+        - content: Ruijie Networks Co., Ltd.
   role:
   - type: author
 version:
 - draft: '01'
-revdate: '2022-07-11'
+revdate: '2023-01-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG model for managing flexi-grid optical
-    tunnels (media-channels), complementing the information provided by the flexi-grid
-    topology model. The YANG data model defined in this document conforms to the Network
-    Management Datastore Architecture (NMDA).</p>"
+- content: "<p>This document describes a Segment Routing based solution for two- level
+    hierarchical IETF network slices. Level-1 network slice is realized by associating
+    Flex-Algo with dedicated sub-interfaces, and level-2 network slice is realized
+    by using SR Policy with additional NRP-ID on data plane.</p>"
   language:
   - en
   script:
@@ -246,23 +240,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ccamp-flexigrid-tunnel-yang-00
+    id: draft-gong-teas-hierarchical-slice-solution-00
     docid:
-    - id: draft-ietf-ccamp-flexigrid-tunnel-yang-00
+    - id: draft-gong-teas-hierarchical-slice-solution-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-ccamp-flexigrid-tunnel-yang-00
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-ccamp-flexigrid-tunnel-yang-02
-    docid:
-    - id: draft-ietf-ccamp-flexigrid-tunnel-yang-02
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-ccamp-flexigrid-tunnel-yang-02
+      content: draft-gong-teas-hierarchical-slice-solution-00
       format: text/plain
 series:
 - type: main
@@ -273,7 +257,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-ccamp-flexigrid-tunnel-yang-01
+  number: draft-gong-teas-hierarchical-slice-solution-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
