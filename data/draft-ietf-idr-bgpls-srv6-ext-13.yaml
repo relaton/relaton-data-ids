@@ -1,93 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-rtgwg-net2cloud-problem-statement-16
+id: draft-ietf-idr-bgpls-srv6-ext-13
 title:
-- content: Dynamic Networks to Hybrid Cloud DCs Problem Statement
+- content: BGP Link State Extensions for SRv6
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-rtgwg-net2cloud-problem-statement-16.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-idr-bgpls-srv6-ext-13.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-rtgwg-net2cloud-problem-statement-16
+- id: draft-ietf-idr-bgpls-srv6-ext-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-net2cloud-problem-statement
+- id: I-D.ietf-idr-bgpls-srv6-ext
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-rtgwg-net2cloud-problem-statement
+docnumber: I-D.ietf-idr-bgpls-srv6-ext
 date:
 - type: published
-  value: '2023-01-09'
+  value: '2023-01-14'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Linda
+        - content: Gaurav
           language:
           - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Dunbar
-        language:
-        - en
-      completename:
-        content: Linda Dunbar
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - language:
-          - en
-          initial: A
         - language:
           - en
           initial: G
         formatted_initials:
-          content: A. G.
+          content: G.
           language:
           - en
       surname:
-        content: Malis
+        content: Dawra
         language:
         - en
       completename:
-        content: Andrew G. Malis
+        content: Gaurav Dawra
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange
+        - content: LinkedIn
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Christian
+        - content: Clarence
           language:
           - en
         - language:
@@ -98,52 +67,24 @@ contributor:
           language:
           - en
       surname:
-        content: Jacquenet
+        content: Filsfils
         language:
         - en
       completename:
-        content: Christian Jacquenet
+        content: Clarence Filsfils
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mehmet
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Toy
-        language:
-        - en
-      completename:
-        content: Mehmet Toy
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Verizon
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Kausik
+        - content: Ketan
           language:
           - en
         - language:
@@ -154,36 +95,119 @@ contributor:
           language:
           - en
       surname:
-        content: Majumdar
+        content: Talaulikar
         language:
         - en
       completename:
-        content: Kausik Majumdar
+        content: Ketan Talaulikar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mach
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Chen
+        language:
+        - en
+      completename:
+        content: Mach Chen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Daniel
+          language:
+          - en
+        - language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Bernier
+        language:
+        - en
+      completename:
+        content: Daniel Bernier
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Bell Canada
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Bruno
+          language:
+          - en
+        - language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Decraene
+        language:
+        - en
+      completename:
+        content: Bruno Decraene
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Orange
   role:
   - type: author
 version:
-- draft: '16'
-revdate: '2023-01-09'
+- draft: '13'
+revdate: '2023-01-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the network-related problems enterprises face
-    today when interconnecting their branch offices with dynamic workloads in third-party
-    data centers (a.k.a. Cloud DCs) and some mitigation practices. There can be many
-    problems associated with connecting to or among Cloud DCs; the Net2Cloud problem
-    statements are mainly for enterprises that already have traditional MPLS services
-    and are interested in leveraging those networks (instead of altogether abandoning
-    them). Other problems are out of the scope of this document. This document also
-    describes the practices of getting around the problems when connecting workloads
-    in the Cloud DCs.</p>"
+- content: <p>Segment Routing over IPv6 (SRv6) allows for a flexible definition of
+    end-to-end paths within various topologies by encoding paths as sequences of topological
+    or functional sub-paths, called "segments". These segments are advertised by various
+    protocols such as BGP, IS-IS and OSPFv3. This document defines extensions to BGP
+    Link-state (BGP-LS) to advertise SRv6 segments along with their behaviors and
+    other attributes via BGP. The BGP-LS address-family solution for SRv6 described
+    in this document is similar to BGP-LS for SR for the MPLS data-plane defined in
+    a separate document.</p>
   language:
   - en
   script:
@@ -192,23 +216,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-net2cloud-problem-statement-15
+    id: draft-ietf-idr-bgpls-srv6-ext-12
     docid:
-    - id: draft-ietf-rtgwg-net2cloud-problem-statement-15
+    - id: draft-ietf-idr-bgpls-srv6-ext-12
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-rtgwg-net2cloud-problem-statement-15
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-rtgwg-net2cloud-problem-statement-17
-    docid:
-    - id: draft-ietf-rtgwg-net2cloud-problem-statement-17
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-net2cloud-problem-statement-17
+      content: draft-ietf-idr-bgpls-srv6-ext-12
       format: text/plain
 series:
 - type: main
@@ -219,7 +233,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-rtgwg-net2cloud-problem-statement-16
+  number: draft-ietf-idr-bgpls-srv6-ext-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
