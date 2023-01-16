@@ -1,90 +1,63 @@
 ---
 schema-version: v1.2.1
-id: draft-cheng-lsr-isis-srv6-sid-block-00
+id: draft-ietf-pce-pcep-pmtu-03
 title:
-- content: IS-IS Extension to Advertise SRv6 SIDs using SID Block
+- content: Support for Path MTU (PMTU) in the Path Computation Element (PCE) Communication
+    Protocol (PCEP)
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-cheng-lsr-isis-srv6-sid-block-00.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-pce-pcep-pmtu-03.txt
   type: TXT
 type: standard
 docid:
-- id: draft-cheng-lsr-isis-srv6-sid-block-00
+- id: draft-ietf-pce-pcep-pmtu-03
   type: Internet-Draft
   primary: true
-- id: I-D.cheng-lsr-isis-srv6-sid-block
+- id: I-D.ietf-pce-pcep-pmtu
   type: IETF
   scope: anchor
-docnumber: I-D.cheng-lsr-isis-srv6-sid-block
+docnumber: I-D.ietf-pce-pcep-pmtu
 date:
 - type: published
-  value: '2022-04-08'
+  value: '2023-01-15'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Weiqiang
+        - content: Shuping
           language:
           - en
         - language:
           - en
-          initial: W
+          initial: S
         formatted_initials:
-          content: W.
+          content: S.
           language:
           - en
       surname:
-        content: Cheng
+        content: Peng
         language:
         - en
       completename:
-        content: Weiqiang Cheng
+        content: Shuping Peng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jiang
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Wenying
-        language:
-        - en
-      completename:
-        content: Jiang Wenying
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Changwang
+        - content: Cheng
           language:
           - en
         - language:
@@ -95,52 +68,24 @@ contributor:
           language:
           - en
       surname:
-        content: Lin
+        content: Li
         language:
         - en
       completename:
-        content: Changwang Lin
+        content: Cheng Li
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: New H3C Technologies
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mengxiao
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Chen
-        language:
-        - en
-      completename:
-        content: Mengxiao Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: New H3C Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Liyan
+        - content: Liuyan
           language:
           - en
         - language:
@@ -151,11 +96,11 @@ contributor:
           language:
           - en
       surname:
-        content: Gong
+        content: Han
         language:
         - en
       completename:
-        content: Liyan Gong
+        content: Liuyan Han
         language:
         - en
     affiliation:
@@ -164,33 +109,66 @@ contributor:
         - content: China Mobile
   role:
   - type: author
+- person:
+    name:
+      given:
+        forename:
+        - language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Ndifor
+        language:
+        - en
+      completename:
+        content: Luc-Fabrice Ndifor
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: MTN Cameroon
+  role:
+  - type: author
 version:
-- draft: '00'
-revdate: '2022-04-08'
+- draft: '03'
+revdate: '2023-01-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a simplified method to advertise SRv6 SIDs in
-    IS-IS. The SRv6 SID Block is composed of a number of continuous SIDs within the
-    address range of a Locator. When a SID is assigned from the SID Block, it is described
-    by an index based on the SID Block, instead of the whole 128-bit IPv6 address.</p>"
+- content: "<p>The Path Computation Element (PCE) provides path computation functions
+    in support of traffic engineering in Multiprotocol Label Switching (MPLS) and
+    Generalized MPLS (GMPLS) networks. The Source Packet Routing in Networking (SPRING)
+    architecture describes how Segment Routing (SR) can be used to steer packets through
+    an IPv6 or MPLS network using the source routing paradigm. A Segment Routed Path
+    can be derived from a variety of mechanisms, including an IGP Shortest Path Tree
+    (SPT), explicit configuration, or a Path Computation Element (PCE). Since the
+    SR does not require signaling, the path maximum transmission unit (MTU) information
+    for SR path is not available at the headend. This document specify the extension
+    to PCE Communication Protocol (PCEP) to carry path MTU as a new metric type in
+    the PCEP messages for SR and other scenarios. This document also updates RFC 5440
+    to allow metric bounds to be minimum as needed in the case of path MTU.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-cheng-lsr-isis-srv6-sid-block-01
+    id: draft-ietf-pce-pcep-pmtu-02
     docid:
-    - id: draft-cheng-lsr-isis-srv6-sid-block-01
+    - id: draft-ietf-pce-pcep-pmtu-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-cheng-lsr-isis-srv6-sid-block-01
+      content: draft-ietf-pce-pcep-pmtu-02
       format: text/plain
 series:
 - type: main
@@ -201,7 +179,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-cheng-lsr-isis-srv6-sid-block-00
+  number: draft-ietf-pce-pcep-pmtu-03
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

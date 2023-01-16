@@ -1,146 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-cheng-lsr-isis-srv6-sid-block-00
+id: draft-li-dyncast-architecture-06
 title:
-- content: IS-IS Extension to Advertise SRv6 SIDs using SID Block
+- content: Dynamic-Anycast Architecture
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-cheng-lsr-isis-srv6-sid-block-00.txt
+- content: https://www.ietf.org/archive/id/draft-li-dyncast-architecture-06.txt
   type: TXT
 type: standard
 docid:
-- id: draft-cheng-lsr-isis-srv6-sid-block-00
+- id: draft-li-dyncast-architecture-06
   type: Internet-Draft
   primary: true
-- id: I-D.cheng-lsr-isis-srv6-sid-block
+- id: I-D.li-dyncast-architecture
   type: IETF
   scope: anchor
-docnumber: I-D.cheng-lsr-isis-srv6-sid-block
+docnumber: I-D.li-dyncast-architecture
 date:
 - type: published
-  value: '2022-04-08'
+  value: '2023-01-16'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Weiqiang
+        - content: Yizhou
           language:
           - en
         - language:
           - en
-          initial: W
+          initial: Y
         formatted_initials:
-          content: W.
+          content: Y.
           language:
           - en
       surname:
-        content: Cheng
+        content: Li
         language:
         - en
       completename:
-        content: Weiqiang Cheng
+        content: Yizhou Li
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jiang
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Wenying
-        language:
-        - en
-      completename:
-        content: Jiang Wenying
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Changwang
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Lin
-        language:
-        - en
-      completename:
-        content: Changwang Lin
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: New H3C Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mengxiao
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Chen
-        language:
-        - en
-      completename:
-        content: Mengxiao Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: New H3C Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Liyan
+        - content: Luigi
           language:
           - en
         - language:
@@ -151,11 +67,67 @@ contributor:
           language:
           - en
       surname:
-        content: Gong
+        content: Iannone
         language:
         - en
       completename:
-        content: Liyan Gong
+        content: Luigi Iannone
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Dirk
+          language:
+          - en
+        - language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Trossen
+        language:
+        - en
+      completename:
+        content: Dirk Trossen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peng
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Peng Liu
         language:
         - en
     affiliation:
@@ -164,33 +136,60 @@ contributor:
         - content: China Mobile
   role:
   - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Cheng
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Cheng Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
 version:
-- draft: '00'
-revdate: '2022-04-08'
+- draft: '06'
+revdate: '2023-01-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a simplified method to advertise SRv6 SIDs in
-    IS-IS. The SRv6 SID Block is composed of a number of continuous SIDs within the
-    address range of a Locator. When a SID is assigned from the SID Block, it is described
-    by an index based on the SID Block, instead of the whole 128-bit IPv6 address.</p>"
+- content: "<p>This document describes an architecture for the Dynamic-Anycast (Dyncast).
+    It includes an architecture overview, main components, and the workflow of control
+    plane and dataplane.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-cheng-lsr-isis-srv6-sid-block-01
+    id: draft-li-dyncast-architecture-05
     docid:
-    - id: draft-cheng-lsr-isis-srv6-sid-block-01
+    - id: draft-li-dyncast-architecture-05
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-cheng-lsr-isis-srv6-sid-block-01
+      content: draft-li-dyncast-architecture-05
       format: text/plain
 series:
 - type: main
@@ -201,7 +200,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-cheng-lsr-isis-srv6-sid-block-00
+  number: draft-li-dyncast-architecture-06
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
