@@ -2,7 +2,7 @@
 schema-version: v1.2.1
 id: draft-reitzenstein-kitten-opaque
 title:
-- content: A SASL and GSS-API Mechanism family using the asymmetric password-authenticated
+- content: A SASL and GSS-API Mechanism using the asymmetric password-authenticated
     key agreement OPAQUE
   language:
   - en
@@ -14,17 +14,16 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This specification describes a family of Simple Authentication and
-    Security Layer (SASL, RFC4422) authentication mechanisms based on the OPAQUE asymmetric
-    password-authenticated key agreement (PAKE) algorithm. They offer two distinct
-    advantages over the SCRAM family of mechanisms. The underlying OPAQUE algorithm
-    provides the ability for clients to register without the servers getting access
-    to the clear text password of an user, preventing password exfiltration at registration.
-    Secondly a successful authentication produces a long- term secret key only known
-    to the client that can be used to access encrypted server-side data without needing
-    to share keys between clients via a side-band mechanism. When used in combination
-    with TLS or an equivalent security layer these mechanisms allow for secure channel
-    binding.</p>"
+- content: "<p>This specification describes a Simple Authentication and Security Layer
+    (SASL, RFC4422) authentication mechanisms based on the OPAQUE asymmetric password-authenticated
+    key agreement (PAKE) protocol. The mechanism offers two distinct advantages over
+    the SCRAM family of mechanisms. The underlying OPAQUE protocol provides the ability
+    for clients to register without the server having to have access to the clear
+    text password of an user, preventing password exfiltration at registration. Secondly
+    a successful authentication produces a long- term secret key specific to the user
+    that can be used to access encrypted server-side data without needing to share
+    keys between clients via side-band mechanisms. When used in combination with TLS
+    or an equivalent security layer these mechanisms allow for secure channel binding.</p>"
   language:
   - en
   script:
@@ -50,6 +49,16 @@ relation:
       primary: true
     formattedref:
       content: draft-reitzenstein-kitten-opaque-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-reitzenstein-kitten-opaque-02
+    docid:
+    - id: draft-reitzenstein-kitten-opaque-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-reitzenstein-kitten-opaque-02
       format: text/plain
 ext:
   schema-version: v1.0.0
