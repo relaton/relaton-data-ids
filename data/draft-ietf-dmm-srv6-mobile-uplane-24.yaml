@@ -1,62 +1,90 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-anima-rfc8366bis-03
+id: draft-ietf-dmm-srv6-mobile-uplane-24
 title:
-- content: A Voucher Artifact for Bootstrapping Protocols
+- content: Segment Routing IPv6 for Mobile User Plane
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-anima-rfc8366bis-03.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-dmm-srv6-mobile-uplane-24.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-anima-rfc8366bis-03
+- id: draft-ietf-dmm-srv6-mobile-uplane-24
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-anima-rfc8366bis
+- id: I-D.ietf-dmm-srv6-mobile-uplane
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-anima-rfc8366bis
+docnumber: I-D.ietf-dmm-srv6-mobile-uplane
 date:
 - type: published
-  value: '2023-01-12'
+  value: '2023-01-17'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Kent
+        - content: Satoru
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: S
         formatted_initials:
-          content: K.
+          content: S.
           language:
           - en
       surname:
-        content: Watsen
+        content: Matsushima
         language:
         - en
       completename:
-        content: Kent Watsen
+        content: Satoru Matsushima
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Watsen Networks
+        - content: SoftBank
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Michael
+        - content: Clarence
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Filsfils
+        language:
+        - en
+      completename:
+        content: Clarence Filsfils
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Miya
           language:
           - en
         - language:
@@ -67,122 +95,92 @@ contributor:
           language:
           - en
       surname:
-        content: Richardson
+        content: Kohno
         language:
         - en
       completename:
-        content: Michael Richardson
+        content: Miya Kohno
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Sandelman Software
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Max
+        - content: Pablo
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: P
         formatted_initials:
-          content: M.
+          content: P.
           language:
           - en
       surname:
-        content: Pritikin
+        content: Camarillo
         language:
         - en
       completename:
-        content: Max Pritikin
+        content: Pablo Camarillo
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Toerless
+        - content: Daniel
           language:
           - en
         - language:
           - en
-          initial: T
-        - language:
-          - en
-          initial: T
+          initial: D
         formatted_initials:
-          content: T. T.
+          content: D.
           language:
           - en
       surname:
-        content: Eckert
+        content: Voyer
         language:
         - en
       completename:
-        content: Toerless Eckert
+        content: Daniel Voyer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Qiufang
-          language:
-          - en
-        - language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
-      surname:
-        content: Ma
-        language:
-        - en
-      completename:
-        content: Qiufang Ma
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei
+        - content: Bell Canada
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2023-01-12'
+- draft: '24'
+revdate: '2023-01-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines a strategy to securely assign a pledge to an owner
-    using an artifact signed, directly or indirectly, by the pledge's manufacturer.
-    This artifact is known as a "voucher". This document defines an artifact format
-    as a YANG-defined JSON document that has been signed using a Cryptographic Message
-    Syntax (CMS) structure. Other YANG-derived formats are possible. The voucher artifact
-    is normally generated by the pledge's manufacturer (i.e., the Manufacturer Authorized
-    Signing Authority (MASA)). This document only defines the voucher artifact, leaving
-    it to other documents to describe specialized protocols for accessing it.</p>
+- content: "<p>This document discusses the applicability of SRv6 (Segment Routing
+    IPv6) to the user-plane of mobile networks. The network programming nature of
+    SRv6 accomplishes mobile user-plane functions in a simple manner. The statelessness
+    of SRv6 and its ability to control both service layer path and underlying transport
+    can be beneficial to the mobile user-plane, providing flexibility, end-to-end
+    network slicing, and SLA control for various applications. This document discusses
+    how SRv6 (Segment Routing over IPv6) could be used as user-plane of mobile networks.
+    This document also specifies the SRv6 Segment Endpoint behaviors required for
+    mobility use-cases.</p>"
   language:
   - en
   script:
@@ -191,23 +189,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-anima-rfc8366bis-02
+    id: draft-ietf-dmm-srv6-mobile-uplane-23
     docid:
-    - id: draft-ietf-anima-rfc8366bis-02
+    - id: draft-ietf-dmm-srv6-mobile-uplane-23
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-anima-rfc8366bis-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-anima-rfc8366bis-04
-    docid:
-    - id: draft-ietf-anima-rfc8366bis-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-anima-rfc8366bis-04
+      content: draft-ietf-dmm-srv6-mobile-uplane-23
       format: text/plain
 series:
 - type: main
@@ -218,7 +206,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-anima-rfc8366bis-03
+  number: draft-ietf-dmm-srv6-mobile-uplane-24
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

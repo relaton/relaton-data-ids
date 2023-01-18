@@ -1,164 +1,183 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-anima-rfc8366bis-03
+id: draft-ietf-netmod-yang-semver-10
 title:
-- content: A Voucher Artifact for Bootstrapping Protocols
+- content: YANG Semantic Versioning
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-anima-rfc8366bis-03.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-netmod-yang-semver-10.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-anima-rfc8366bis-03
+- id: draft-ietf-netmod-yang-semver-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-anima-rfc8366bis
+- id: I-D.ietf-netmod-yang-semver
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-anima-rfc8366bis
+docnumber: I-D.ietf-netmod-yang-semver
 date:
 - type: published
-  value: '2023-01-12'
+  value: '2023-01-17'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Kent
+        - content: Joe
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: J
         formatted_initials:
-          content: K.
+          content: J.
           language:
           - en
       surname:
-        content: Watsen
+        content: Clarke
         language:
         - en
       completename:
-        content: Kent Watsen
+        content: Joe Clarke
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Watsen Networks
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Michael
+        - content: Robert
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: R
         formatted_initials:
-          content: M.
+          content: R.
           language:
           - en
       surname:
-        content: Richardson
+        content: Wilton
         language:
         - en
       completename:
-        content: Michael Richardson
+        content: Robert Wilton
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Sandelman Software
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Max
+        - content: Reshad
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: R
         formatted_initials:
-          content: M.
+          content: R.
           language:
           - en
       surname:
-        content: Pritikin
+        content: Rahman
         language:
         - en
       completename:
-        content: Max Pritikin
+        content: Reshad Rahman
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
+        - content: Graphiant
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Toerless
-          language:
-          - en
         - language:
           - en
-          initial: T
-        - language:
-          - en
-          initial: T
+          initial: B
         formatted_initials:
-          content: T. T.
+          content: B.
           language:
           - en
       surname:
-        content: Eckert
+        content: Lengyel
         language:
         - en
       completename:
-        content: Toerless Eckert
+        content: Balázs Lengyel
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies Inc.
+        - content: Ericsson
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Qiufang
+        - content: Jason
           language:
           - en
         - language:
           - en
-          initial: Q
+          initial: J
         formatted_initials:
-          content: Q.
+          content: J.
           language:
           - en
       surname:
-        content: Ma
+        content: Sterne
         language:
         - en
       completename:
-        content: Qiufang Ma
+        content: Jason Sterne
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Nokia
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Claise
+        language:
+        - en
+      completename:
+        content: Benoît Claise
         language:
         - en
     affiliation:
@@ -168,21 +187,17 @@ contributor:
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2023-01-12'
+- draft: '10'
+revdate: '2023-01-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines a strategy to securely assign a pledge to an owner
-    using an artifact signed, directly or indirectly, by the pledge's manufacturer.
-    This artifact is known as a "voucher". This document defines an artifact format
-    as a YANG-defined JSON document that has been signed using a Cryptographic Message
-    Syntax (CMS) structure. Other YANG-derived formats are possible. The voucher artifact
-    is normally generated by the pledge's manufacturer (i.e., the Manufacturer Authorized
-    Signing Authority (MASA)). This document only defines the voucher artifact, leaving
-    it to other documents to describe specialized protocols for accessing it.</p>
+- content: "<p>This document specifies a scheme and guidelines for applying an extended
+    set of semantic versioning rules to revisions of YANG artifacts (e.g., modules
+    and packages). Additionally, this document defines an RFCAAAA-compliant revision-label-scheme
+    for this YANG semantic versioning scheme.</p>"
   language:
   - en
   script:
@@ -191,23 +206,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-anima-rfc8366bis-02
+    id: draft-ietf-netmod-yang-semver-09
     docid:
-    - id: draft-ietf-anima-rfc8366bis-02
+    - id: draft-ietf-netmod-yang-semver-09
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-anima-rfc8366bis-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-anima-rfc8366bis-04
-    docid:
-    - id: draft-ietf-anima-rfc8366bis-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-anima-rfc8366bis-04
+      content: draft-ietf-netmod-yang-semver-09
       format: text/plain
 series:
 - type: main
@@ -218,7 +223,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-anima-rfc8366bis-03
+  number: draft-ietf-netmod-yang-semver-10
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

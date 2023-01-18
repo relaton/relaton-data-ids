@@ -1,62 +1,34 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-anima-rfc8366bis-03
+id: draft-palmero-opsawg-dmlmo-09
 title:
-- content: A Voucher Artifact for Bootstrapping Protocols
+- content: Data Model for Lifecycle Management and Operations
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-anima-rfc8366bis-03.txt
+- content: https://www.ietf.org/archive/id/draft-palmero-opsawg-dmlmo-09.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-anima-rfc8366bis-03
+- id: draft-palmero-opsawg-dmlmo-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-anima-rfc8366bis
+- id: I-D.palmero-opsawg-dmlmo
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-anima-rfc8366bis
+docnumber: I-D.palmero-opsawg-dmlmo
 date:
 - type: published
-  value: '2023-01-12'
+  value: '2023-01-17'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Kent
-          language:
-          - en
-        - language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Watsen
-        language:
-        - en
-      completename:
-        content: Kent Watsen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Watsen Networks
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Michael
+        - content: Marisol
           language:
           - en
         - language:
@@ -67,39 +39,11 @@ contributor:
           language:
           - en
       surname:
-        content: Richardson
+        content: Palmero
         language:
         - en
       completename:
-        content: Michael Richardson
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Sandelman Software
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Max
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Pritikin
-        language:
-        - en
-      completename:
-        content: Max Pritikin
+        content: Marisol Palmero
         language:
         - en
     affiliation:
@@ -112,77 +56,157 @@ contributor:
     name:
       given:
         forename:
-        - content: Toerless
+        - content: Frank
           language:
           - en
         - language:
           - en
-          initial: T
-        - language:
-          - en
-          initial: T
+          initial: F
         formatted_initials:
-          content: T. T.
+          content: F.
           language:
           - en
       surname:
-        content: Eckert
+        content: Brockners
         language:
         - en
       completename:
-        content: Toerless Eckert
+        content: Frank Brockners
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies Inc.
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Qiufang
+        - content: Sudhendu
           language:
           - en
         - language:
           - en
-          initial: Q
+          initial: S
         formatted_initials:
-          content: Q.
+          content: S.
           language:
           - en
       surname:
-        content: Ma
+        content: Kumar
         language:
         - en
       completename:
-        content: Qiufang Ma
+        content: Sudhendu Kumar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: NC State University
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Shwetha
+          language:
+          - en
+        - language:
+          - en
+          initial: S
+        formatted_initials:
+          content: S.
+          language:
+          - en
+      surname:
+        content: Bhandari
+        language:
+        - en
+      completename:
+        content: Shwetha Bhandari
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Thoughtspot
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Camilo
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Cardona
+        language:
+        - en
+      completename:
+        content: Camilo Cardona
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: NTT
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Diego
+          language:
+          - en
+        - language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Lopez
+        language:
+        - en
+      completename:
+        content: Diego Lopez
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Telefonica I+D
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2023-01-12'
+- draft: '09'
+revdate: '2023-01-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines a strategy to securely assign a pledge to an owner
-    using an artifact signed, directly or indirectly, by the pledge's manufacturer.
-    This artifact is known as a "voucher". This document defines an artifact format
-    as a YANG-defined JSON document that has been signed using a Cryptographic Message
-    Syntax (CMS) structure. Other YANG-derived formats are possible. The voucher artifact
-    is normally generated by the pledge's manufacturer (i.e., the Manufacturer Authorized
-    Signing Authority (MASA)). This document only defines the voucher artifact, leaving
-    it to other documents to describe specialized protocols for accessing it.</p>
+- content: "<p>This document motivates and specifies a data model for lifecycle management
+    and operations. It describes the motivation and requirements to collect asset-centric
+    metrics including but not limited to asset adoption and usability, licensing,
+    supported features and capabilities, enabled features and capabilities, etc.;
+    with the primary objective to measure and improve the overall user experience
+    along the lifecycle journey, from technical requirements and technology selection
+    through advocacy and renewal, including the end of life of an asset.</p>"
   language:
   - en
   script:
@@ -191,23 +215,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-anima-rfc8366bis-02
+    id: draft-palmero-opsawg-dmlmo-08
     docid:
-    - id: draft-ietf-anima-rfc8366bis-02
+    - id: draft-palmero-opsawg-dmlmo-08
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-anima-rfc8366bis-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-anima-rfc8366bis-04
-    docid:
-    - id: draft-ietf-anima-rfc8366bis-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-anima-rfc8366bis-04
+      content: draft-palmero-opsawg-dmlmo-08
       format: text/plain
 series:
 - type: main
@@ -218,7 +232,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-anima-rfc8366bis-03
+  number: draft-palmero-opsawg-dmlmo-09
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
