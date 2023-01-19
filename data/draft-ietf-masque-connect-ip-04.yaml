@@ -1,34 +1,118 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-opsawg-sap-14
+id: draft-ietf-masque-connect-ip-04
 title:
-- content: A YANG Network Model for Service Attachment Points (SAPs)
+- content: Proxying IP in HTTP
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-opsawg-sap-14.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-masque-connect-ip-04.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-opsawg-sap-14
+- id: draft-ietf-masque-connect-ip-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-sap
+- id: I-D.ietf-masque-connect-ip
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-opsawg-sap
+docnumber: I-D.ietf-masque-connect-ip
 date:
 - type: published
-  value: '2023-01-17'
+  value: '2023-01-18'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Mohamed
+        - content: Tommy
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Pauly
+        language:
+        - en
+      completename:
+        content: Tommy Pauly
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Apple Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: David
+          language:
+          - en
+        - language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Schinazi
+        language:
+        - en
+      completename:
+        content: David Schinazi
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Google LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Alex
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Chernyakhovsky
+        language:
+        - en
+      completename:
+        content: Alex Chernyakhovsky
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Google LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mirja
           language:
           - en
         - language:
@@ -39,152 +123,59 @@ contributor:
           language:
           - en
       surname:
-        content: Boucadair
+        content: Kühlewind
         language:
         - en
       completename:
-        content: Mohamed Boucadair
+        content: Mirja Kühlewind
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange
+        - content: Ericsson
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Oscar
+        - content: Magnus
           language:
           - en
         - language:
           - en
-          initial: O
-        - language:
-          - en
-          initial: G
+          initial: M
         formatted_initials:
-          content: O. G.
+          content: M.
           language:
           - en
       surname:
-        content: de Dios
+        content: Westerlund
         language:
         - en
       completename:
-        content: Oscar Gonzalez de Dios
+        content: Magnus Westerlund
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Samier
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Barguil
-        language:
-        - en
-      completename:
-        content: Samier Barguil
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
-      surname:
-        content: Wu
-        language:
-        - en
-      completename:
-        content: Qin Wu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
-      surname:
-        content: Lopez
-        language:
-        - en
-      completename:
-        content: Victor Lopez
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
+        - content: Ericsson
   role:
   - type: author
 version:
-- draft: '14'
-revdate: '2023-01-17'
+- draft: '04'
+revdate: '2023-01-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for representing an abstract
-    view of the provider network topology that contains the points from which its
-    services can be attached (e.g., basic connectivity, VPN, network slices). Also,
-    the model can be used to retrieve the points where the services are actually being
-    delivered to customers (including peer networks). This document augments the 'ietf-network'
-    data model by adding the concept of Service Attachment Points (SAPs). The SAPs
-    are the network reference points to which network services, such as Layer 3 Virtual
-    Private Network (L3VPN) or Layer 2 Virtual Private Network (L2VPN), can be attached.
-    One or multiple services can be bound to the same SAP. Both User-Network Interface
-    (UNI) and Network-to- Network Interface (NNI) are supported in the SAP data model.</p>"
+- content: "<p>This document describes how to proxy IP packets in HTTP. This protocol
+    is similar to UDP proxying in HTTP, but allows transmitting arbitrary IP packets.
+    More specifically, this document defines a protocol that allows an HTTP client
+    to create an IP tunnel through an HTTP server that acts as a proxy.</p>"
   language:
   - en
   script:
@@ -193,23 +184,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-sap-13
+    id: draft-ietf-masque-connect-ip-03
     docid:
-    - id: draft-ietf-opsawg-sap-13
+    - id: draft-ietf-masque-connect-ip-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-opsawg-sap-13
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-opsawg-sap-15
-    docid:
-    - id: draft-ietf-opsawg-sap-15
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-opsawg-sap-15
+      content: draft-ietf-masque-connect-ip-03
       format: text/plain
 series:
 - type: main
@@ -220,7 +201,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-opsawg-sap-14
+  number: draft-ietf-masque-connect-ip-04
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
