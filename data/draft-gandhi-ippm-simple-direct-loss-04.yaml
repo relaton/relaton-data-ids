@@ -1,90 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-v6ops-hbh-02
+id: draft-gandhi-ippm-simple-direct-loss-04
 title:
-- content: Operational Issues with Processing of the Hop-by-Hop Options Header
+- content: Simple Two-Way Direct Loss Measurement Procedure
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-ietf-v6ops-hbh-02.txt
+- content: https://www.ietf.org/archive/id/draft-gandhi-ippm-simple-direct-loss-04.txt
   type: TXT
 type: standard
 docid:
-- id: draft-ietf-v6ops-hbh-02
+- id: draft-gandhi-ippm-simple-direct-loss-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-v6ops-hbh
+- id: I-D.gandhi-ippm-simple-direct-loss
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-v6ops-hbh
+docnumber: I-D.gandhi-ippm-simple-direct-loss
 date:
 - type: published
-  value: '2022-10-21'
+  value: '2023-01-29'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Shuping
+        - content: Rakesh
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: R
         formatted_initials:
-          content: S.
+          content: R.
           language:
           - en
       surname:
-        content: Peng
+        content: Gandhi
         language:
         - en
       completename:
-        content: Shuping Peng
+        content: Rakesh Gandhi
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zhenbin
-          language:
-          - en
-        - language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
-      surname:
-        content: Li
-        language:
-        - en
-      completename:
-        content: Zhenbin Li
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Chongfeng
+        - content: Clarence
           language:
           - en
         - language:
@@ -95,97 +67,144 @@ contributor:
           language:
           - en
       surname:
-        content: Xie
+        content: Filsfils
         language:
         - en
       completename:
-        content: Chongfeng Xie
+        content: Clarence Filsfils
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zhuangzhuang
+        - content: Daniel
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: D
         formatted_initials:
-          content: Z.
+          content: D.
           language:
           - en
       surname:
-        content: Qin
+        content: Voyer
         language:
         - en
       completename:
-        content: Zhuangzhuang Qin
+        content: Daniel Voyer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
+        - content: Bell Canada
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Gyan
+        - content: Mach
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Chen
+        language:
+        - en
+      completename:
+        content: Mach Chen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Bart
+          language:
+          - en
+        - language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Janssens
+        language:
+        - en
+      completename:
+        content: Bart Janssens
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Colt
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Stefano
+          language:
+          - en
         - language:
           - en
           initial: S
         formatted_initials:
-          content: G. S.
+          content: S.
           language:
           - en
       surname:
-        content: Mishra
+        content: Salsano
         language:
         - en
       completename:
-        content: Gyan Mishra
+        content: Stefano Salsano
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
+        - content: Universita di Roma "Tor Vergata"
   role:
   - type: author
 version:
-- draft: '02'
-revdate: '2022-10-21'
+- draft: '04'
+revdate: '2023-01-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the processing of the Hop-by-Hop Options Header
-    (HBH) in today's routers in the aspects of standards specification, common implementations,
-    and default operations. This document outlines the reasons why the Hop-by-Hop
-    Options Header is rarely utilized in current networks. In addition, this document
-    describes how the HBH could be used as a powerful mechanism allowing deployment
-    and operations of new services requiring a more optimized way to leverage network
-    resources of an infrastructure. The Hop-by- Hop Options Header is taken into consideration
-    by several network operators as a valuable container for carrying the information
-    facilitating the introduction of new services. The purpose of this draft is to
-    document the reasons why the HBH is rarely used within networks and to define
-    a proper list of requirements aiming to allow a better leverage of the HBH capability.</p>"
+- content: "<p>This document defines Simple Two-Way Direct Loss Measurement (DLM)
+    procedure that can be used for Alternate-Marking Method for detecting accurate
+    data packet loss in a network. Specifically, DLM probe packets are defined for
+    both unauthenticated and authenticated modes and they are efficient for hardware-based
+    implementation.</p>"
   language:
   - en
   script:
@@ -194,23 +213,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-v6ops-hbh-01
+    id: draft-gandhi-ippm-simple-direct-loss-03
     docid:
-    - id: draft-ietf-v6ops-hbh-01
+    - id: draft-gandhi-ippm-simple-direct-loss-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-v6ops-hbh-01
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-v6ops-hbh-03
-    docid:
-    - id: draft-ietf-v6ops-hbh-03
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-v6ops-hbh-03
+      content: draft-gandhi-ippm-simple-direct-loss-03
       format: text/plain
 series:
 - type: main
@@ -221,7 +230,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-v6ops-hbh-02
+  number: draft-gandhi-ippm-simple-direct-loss-04
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
