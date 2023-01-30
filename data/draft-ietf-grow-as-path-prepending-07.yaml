@@ -1,146 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-filsfils-spring-srv6-stateless-slice-id-06
+id: draft-ietf-grow-as-path-prepending-07
 title:
-- content: Stateless and Scalable Network Slice Identification for SRv6
+- content: AS Path Prepending
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-filsfils-spring-srv6-stateless-slice-id-06.txt
+- content: https://www.ietf.org/archive/id/draft-ietf-grow-as-path-prepending-07.txt
   type: TXT
 type: standard
 docid:
-- id: draft-filsfils-spring-srv6-stateless-slice-id-06
+- id: draft-ietf-grow-as-path-prepending-07
   type: Internet-Draft
   primary: true
-- id: I-D.filsfils-spring-srv6-stateless-slice-id
+- id: I-D.ietf-grow-as-path-prepending
   type: IETF
   scope: anchor
-docnumber: I-D.filsfils-spring-srv6-stateless-slice-id
+docnumber: I-D.ietf-grow-as-path-prepending
 date:
 - type: published
-  value: '2022-07-29'
+  value: '2023-01-29'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Clarence
+        - content: Mike
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: M
         formatted_initials:
-          content: C.
+          content: M.
           language:
           - en
       surname:
-        content: Filsfils
+        content: McBride
         language:
         - en
       completename:
-        content: Clarence Filsfils
+        content: Mike McBride
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Francois
-          language:
-          - en
-        - language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
-      surname:
-        content: Clad
-        language:
-        - en
-      completename:
-        content: Francois Clad
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Pablo
-          language:
-          - en
-        - language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
-      surname:
-        content: Camarillo
-        language:
-        - en
-      completename:
-        content: Pablo Camarillo
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Syed
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Raza
-        language:
-        - en
-      completename:
-        content: Syed Raza
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Daniel
+        - content: Doug
           language:
           - en
         - language:
@@ -151,24 +67,52 @@ contributor:
           language:
           - en
       surname:
-        content: Voyer
+        content: Madory
         language:
         - en
       completename:
-        content: Daniel Voyer
+        content: Doug Madory
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
+        - content: Kentik
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Reza
+        - content: Jeff
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Tantsura
+        language:
+        - en
+      completename:
+        content: Jeff Tantsura
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Microsoft
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Robert
           language:
           - en
         - language:
@@ -179,29 +123,121 @@ contributor:
           language:
           - en
       surname:
-        content: Rokui
+        content: Raszuk
         language:
         - en
       completename:
-        content: Reza Rokui
+        content: Robert Raszuk
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
+        - content: NTT Network Innovations
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Hongwei
+          language:
+          - en
+        - language:
+          - en
+          initial: H
+        formatted_initials:
+          content: H.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Hongwei Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: HPE
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Jakob
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Heitz
+        language:
+        - en
+      completename:
+        content: Jakob Heitz
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Gyan
+          language:
+          - en
+        - language:
+          - en
+          initial: G
+        - language:
+          - en
+          initial: S
+        formatted_initials:
+          content: G. S.
+          language:
+          - en
+      surname:
+        content: Mishra
+        language:
+        - en
+      completename:
+        content: Gyan Mishra
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Verizon Inc.
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2022-07-29'
+- draft: '07'
+revdate: '2023-01-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a stateless and scalable solution to achieve
-    network slicing with SRv6.</p>"
+- content: "<p>AS Path Prepending provides a tool to manipulate the BGP AS_Path attribute
+    through prepending multiple entries of an AS. AS Path Prepending is used to deprioritize
+    a route or alternate path. By prepending the local ASN multiple times, ASs can
+    make advertised AS paths appear artificially longer. Excessive AS Path Prepending
+    has caused routing issues in the Internet. This document provides guidance with
+    the use of AS Path Prepending, including alternative solutions, in order to avoid
+    negatively affecting the Internet.</p>"
   language:
   - en
   script:
@@ -210,23 +246,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-filsfils-spring-srv6-stateless-slice-id-05
+    id: draft-ietf-grow-as-path-prepending-06
     docid:
-    - id: draft-filsfils-spring-srv6-stateless-slice-id-05
+    - id: draft-ietf-grow-as-path-prepending-06
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-filsfils-spring-srv6-stateless-slice-id-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-filsfils-spring-srv6-stateless-slice-id-07
-    docid:
-    - id: draft-filsfils-spring-srv6-stateless-slice-id-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-filsfils-spring-srv6-stateless-slice-id-07
+      content: draft-ietf-grow-as-path-prepending-06
       format: text/plain
 series:
 - type: main
@@ -237,7 +263,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-filsfils-spring-srv6-stateless-slice-id-06
+  number: draft-ietf-grow-as-path-prepending-07
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
