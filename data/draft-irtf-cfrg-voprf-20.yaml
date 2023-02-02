@@ -1,90 +1,87 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-rats-uccs-04
+id: draft-irtf-cfrg-voprf-20
 title:
-- content: A CBOR Tag for Unprotected CWT Claims Sets
+- content: Oblivious Pseudorandom Functions (OPRFs) using Prime-Order Groups
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-ietf-rats-uccs-04.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-ietf-rats-uccs-04
+- id: draft-irtf-cfrg-voprf-20
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rats-uccs
+- id: I-D.irtf-cfrg-voprf
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-rats-uccs
+docnumber: I-D.irtf-cfrg-voprf
 date:
 - type: published
-  value: '2023-01-11'
+  value: '2023-02-02'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Henk
+        - content: Alex
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: A
         formatted_initials:
-          content: H.
+          content: A.
           language:
           - en
       surname:
-        content: Birkholz
+        content: Davidson
         language:
         - en
       completename:
-        content: Henk Birkholz
+        content: Alex Davidson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
+        - content: Brave Software
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jeremy
+        - content: Armando
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: A
         formatted_initials:
-          content: J.
+          content: A.
           language:
           - en
       surname:
-        content: O'Donoghue
+        content: Faz-Hernandez
         language:
         - en
       completename:
-        content: Jeremy O'Donoghue
+        content: Armando Faz-Hernandez
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Qualcomm Technologies Inc.
+        - content: Cloudflare, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Nancy
+        - content: Nick
           language:
           - en
         - language:
@@ -95,59 +92,70 @@ contributor:
           language:
           - en
       surname:
-        content: Cam-Winget
+        content: Sullivan
         language:
         - en
       completename:
-        content: Nancy Cam-Winget
+        content: Nick Sullivan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
+        - content: Cloudflare, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Carsten
+        - content: Christopher
           language:
           - en
         - language:
           - en
           initial: C
+        - language:
+          - en
+          initial: A
         formatted_initials:
-          content: C.
+          content: C. A.
           language:
           - en
       surname:
-        content: Bormann
+        content: Wood
         language:
         - en
       completename:
-        content: Carsten Bormann
+        content: Christopher A. Wood
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
+        - content: Cloudflare, Inc.
   role:
   - type: author
 version:
-- draft: '04'
-revdate: '2023-01-11'
+- draft: '20'
+revdate: '2023-02-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>CBOR Web Token (CWT, RFC 8392) Claims Sets sometimes do not need the
-    protection afforded by wrapping them into COSE, as is required for a true CWT.
-    This specification defines a CBOR tag for such unprotected CWT Claims Sets (UCCS)
-    and discusses conditions for its proper use.</p>"
+- content: "<p>An Oblivious Pseudorandom Function (OPRF) is a two-party protocol between
+    client and server for computing the output of a Pseudorandom Function (PRF). The
+    server provides the PRF secret key, and the client provides the PRF input. At
+    the end of the protocol, the client learns the PRF output without learning anything
+    about the PRF secret key, and the server learns neither the PRF input nor output.
+    An OPRF can also satisfy a notion of 'verifiability', called a VOPRF. A VOPRF
+    ensures clients can verify that the server used a specific private key during
+    the execution of the protocol. A VOPRF can also be partially-oblivious, called
+    a POPRF. A POPRF allows clients and servers to provide public input to the PRF
+    computation. This document specifies an OPRF, VOPRF, and POPRF instantiated within
+    standard prime-order groups, including elliptic curves. This document is a product
+    of the Crypto Forum Research Group (CFRG) in the IRTF.</p>"
   language:
   - en
   script:
@@ -156,23 +164,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rats-uccs-03
+    id: draft-irtf-cfrg-voprf-19
     docid:
-    - id: draft-ietf-rats-uccs-03
+    - id: draft-irtf-cfrg-voprf-19
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-rats-uccs-03
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-rats-uccs-05
-    docid:
-    - id: draft-ietf-rats-uccs-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-rats-uccs-05
+      content: draft-irtf-cfrg-voprf-19
       format: text/plain
 series:
 - type: main
@@ -183,7 +181,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-rats-uccs-04
+  number: draft-irtf-cfrg-voprf-20
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
