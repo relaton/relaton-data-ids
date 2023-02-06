@@ -1,95 +1,92 @@
 ---
 schema-version: v1.2.1
-id: draft-farinacci-lisp-decent-10
+id: draft-ietf-dnsop-dnssec-automation-01
 title:
-- content: A Decent LISP Mapping System (LISP-Decent)
+- content: DNSSEC automation
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-farinacci-lisp-decent-10.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-farinacci-lisp-decent-10
+- id: draft-ietf-dnsop-dnssec-automation-01
   type: Internet-Draft
   primary: true
-- id: I-D.farinacci-lisp-decent
+- id: I-D.ietf-dnsop-dnssec-automation
   type: IETF
   scope: anchor
-docnumber: I-D.farinacci-lisp-decent
+docnumber: I-D.ietf-dnsop-dnssec-automation
 date:
 - type: published
-  value: '2022-08-15'
+  value: '2023-02-06'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Dino
+        - content: Ulrich
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: U
         formatted_initials:
-          content: D.
+          content: U.
           language:
           - en
       surname:
-        content: Farinacci
+        content: Wisser
         language:
         - en
       completename:
-        content: Dino Farinacci
+        content: Ulrich Wisser
         language:
         - en
-    affiliation:
-    - organization:
-        name:
-        - content: lispers.net
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Colin
+        - content: Shumon
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: S
         formatted_initials:
-          content: C.
+          content: S.
           language:
           - en
       surname:
-        content: Cantrell
+        content: Huque
         language:
         - en
       completename:
-        content: Colin Cantrell
+        content: Shumon Huque
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nexus
+        - content: Salesforce
   role:
   - type: author
 version:
-- draft: '10'
-revdate: '2022-08-15'
+- draft: '01'
+revdate: '2023-02-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft describes how the LISP mapping system designed to be distributed
-    for scale can also be decentralized for management and trust.</p>"
+- content: <p>This document describes an algorithm and a protocol to automate DNSSEC
+    Multi-Signer [RFC8901] "Multi-Signer DNSSEC Models" setup, operations and decomissioning.
+    Using Model 2 of the Multi-Signer specification, where each operator has their
+    own distinct KSK and ZSK sets (or CSK sets), [RFC8078] "Managing DS Records from
+    the Parent via CDS/CDNSKEY" and [RFC7477] "Child-to-Parent Synchronization in
+    DNS" to accomplish this.</p>
   language:
   - en
   script:
@@ -98,23 +95,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-farinacci-lisp-decent-09
+    id: draft-ietf-dnsop-dnssec-automation-00
     docid:
-    - id: draft-farinacci-lisp-decent-09
+    - id: draft-ietf-dnsop-dnssec-automation-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-farinacci-lisp-decent-09
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-farinacci-lisp-decent-11
-    docid:
-    - id: draft-farinacci-lisp-decent-11
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-farinacci-lisp-decent-11
+      content: draft-ietf-dnsop-dnssec-automation-00
       format: text/plain
 series:
 - type: main
@@ -125,7 +112,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-farinacci-lisp-decent-10
+  number: draft-ietf-dnsop-dnssec-automation-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
