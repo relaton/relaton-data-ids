@@ -1,8 +1,8 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-lsvr-bgp-spf-17
+id: draft-ietf-pim-null-register-packing-12
 title:
-- content: BGP Link-State Shortest Path First (SPF) Routing
+- content: PIM Null-Register packing
   language:
   - en
   script:
@@ -10,50 +10,112 @@ title:
   format: text/plain
 type: standard
 docid:
-- id: draft-ietf-lsvr-bgp-spf-17
+- id: draft-ietf-pim-null-register-packing-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsvr-bgp-spf
+- id: I-D.ietf-pim-null-register-packing
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-lsvr-bgp-spf
+docnumber: I-D.ietf-pim-null-register-packing
 date:
 - type: published
-  value: '2023-02-03'
+  value: '2023-02-06'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Keyur
+        - content: Vikas
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: V
+        - language:
+          - en
+          initial: R
         formatted_initials:
-          content: K.
+          content: V. R.
           language:
           - en
       surname:
-        content: Patel
+        content: Kamath
         language:
         - en
       completename:
-        content: Keyur Patel
+        content: Vikas Ramesh Kamath
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc.
+        - content: VMware
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Acee
+        - content: Ramakrishnan
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: R. C.
+          language:
+          - en
+      surname:
+        content: Sundaram
+        language:
+        - en
+      completename:
+        content: Ramakrishnan Cokkanathapuram Sundaram
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Raunak
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Banthia
+        language:
+        - en
+      completename:
+        content: Raunak Banthia
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Apstra
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ananya
           language:
           - en
         - language:
@@ -64,87 +126,36 @@ contributor:
           language:
           - en
       surname:
-        content: Lindem
+        content: Gopal
         language:
         - en
       completename:
-        content: Acee Lindem
-        language:
-        - en
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Shawn
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Zandi
-        language:
-        - en
-      completename:
-        content: Shawn Zandi
+        content: Ananya Gopal
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: LinkedIn
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Wim
-          language:
-          - en
-        - language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
-      surname:
-        content: Henderickx
-        language:
-        - en
-      completename:
-        content: Wim Henderickx
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 version:
-- draft: '17'
-revdate: '2023-02-03'
+- draft: '12'
+revdate: '2023-02-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Many Massively Scaled Data Centers (MSDCs) have converged on simplified
-    layer 3 routing. Furthermore, requirements for operational simplicity have led
-    many of these MSDCs to converge on BGP as their single routing protocol for both
-    their fabric routing and their Data Center Interconnect (DCI) routing. This document
-    describes extensions to BGP to use BGP Link-State distribution and the Shortest
-    Path First (SPF) algorithm used by Internal Gateway Protocols (IGPs) such as OSPF.
-    In doing this, it allows BGP to be efficiently used as both the underlay protocol
-    and the overlay protocol in MSDCs.</p>"
+- content: "<p>In PIM-SM networks PIM Null-Register messages are sent by the Designated
+    Router (DR) to the Rendezvous Point (RP) to signal the presence of Multicast sources
+    in the network. There are periodic PIM Null-Registers [RFC7761] sent from the
+    DR to the RP to keep the state alive at the RP as long as the source is active.
+    The PIM Null- Register message carries information about a single Multicast source
+    and group. This document defines a standard to send multiple Multicast source
+    and group information in a single PIM message. This document refers to the new
+    messages as the PIM Packed Null-Register message and PIM Packed Register-Stop
+    message.</p>"
   language:
   - en
   script:
@@ -153,23 +164,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lsvr-bgp-spf-16
+    id: draft-ietf-pim-null-register-packing-11
     docid:
-    - id: draft-ietf-lsvr-bgp-spf-16
+    - id: draft-ietf-pim-null-register-packing-11
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-lsvr-bgp-spf-16
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-lsvr-bgp-spf-18
-    docid:
-    - id: draft-ietf-lsvr-bgp-spf-18
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-lsvr-bgp-spf-18
+      content: draft-ietf-pim-null-register-packing-11
       format: text/plain
 series:
 - type: main
@@ -180,7 +181,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-lsvr-bgp-spf-17
+  number: draft-ietf-pim-null-register-packing-12
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
