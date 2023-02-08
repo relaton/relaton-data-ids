@@ -1,206 +1,190 @@
 ---
 schema-version: v1.2.1
-id: draft-wang-ippm-alt-mark-yang-01
+id: draft-zzhang-bier-anycast-00
 title:
-- content: A YANG Data Model for Alternate Marking Method
+- content: BIER with Anycast
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-wang-ippm-alt-mark-yang-01.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-wang-ippm-alt-mark-yang-01
+- id: draft-zzhang-bier-anycast-00
   type: Internet-Draft
   primary: true
-- id: I-D.wang-ippm-alt-mark-yang
+- id: I-D.zzhang-bier-anycast
   type: IETF
   scope: anchor
-docnumber: I-D.wang-ippm-alt-mark-yang
+docnumber: I-D.zzhang-bier-anycast
 date:
 - type: published
-  value: '2023-01-18'
+  value: '2023-02-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Minxue
+        - content: Zhaohui
+          language:
+          - en
+        - language:
+          - en
+          initial: Z
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: Z. J.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Zhaohui (Jeffrey) Zhang
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: IJsbrand
+          language:
+          - en
+        - language:
+          - en
+          initial: I
+        formatted_initials:
+          content: I.
+          language:
+          - en
+      surname:
+        content: Wijnands
+        language:
+        - en
+      completename:
+        content: IJsbrand Wijnands
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Arrcus
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zheng
+          language:
+          - en
+        - language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Zheng Zhang
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ZTE
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mankamana
           language:
           - en
         - language:
           - en
           initial: M
+        - language:
+          - en
+          initial: P
         formatted_initials:
-          content: M.
+          content: M. P.
           language:
           - en
       surname:
-        content: Wang
+        content: Mishra
         language:
         - en
       completename:
-        content: Minxue Wang
+        content: Mankamana Prasad Mishra
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Liuyan
+        - content: Huaimo
           language:
           - en
         - language:
           - en
-          initial: L
+          initial: H
         formatted_initials:
-          content: L.
+          content: H.
           language:
           - en
       surname:
-        content: Han
+        content: Chen
         language:
         - en
       completename:
-        content: Liuyan Han
+        content: Huaimo Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Xiao
-          language:
-          - en
-        - language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
-      surname:
-        content: Min
-        language:
-        - en
-      completename:
-        content: Xiao Min
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Guo
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Jun
-        language:
-        - en
-      completename:
-        content: Guo Jun
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Massimo
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Nilo
-        language:
-        - en
-      completename:
-        content: Massimo Nilo
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Telecom Italia
+        - content: Futurewei
   role:
   - type: author
 version:
-- draft: '01'
-revdate: '2023-01-18'
+- draft: '00'
+revdate: '2023-02-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Alternate-Marking Method (AMM) is a technique used to perform packet
-    loss, delay, and jitter measurements on live traffic. This document defines a
-    YANG data model for Alternate Marking Method.</p>"
+- content: "<p>BIER architecture currently does not support anycast, in that each
+    BIER Forwarding Router (BFR) has its own unique BFR-prefix and BFR- ID. BIER signaling
+    protocols also check if there are duplicate BFR- IDs advertised. This document
+    discusses and specifies anycast support with BIER. It updates RFC 8279, RFC 8401
+    and RFC 8444.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updates
-  bibitem:
-    id: draft-wang-ippm-alt-mark-yang-00
-    docid:
-    - id: draft-wang-ippm-alt-mark-yang-00
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-wang-ippm-alt-mark-yang-00
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-wang-ippm-alt-mark-yang-02
-    docid:
-    - id: draft-wang-ippm-alt-mark-yang-02
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-wang-ippm-alt-mark-yang-02
-      format: text/plain
 series:
 - type: main
   title:
@@ -210,7 +194,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-wang-ippm-alt-mark-yang-01
+  number: draft-zzhang-bier-anycast-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

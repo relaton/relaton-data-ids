@@ -1,34 +1,59 @@
 ---
 schema-version: v1.2.1
-id: draft-wang-ippm-alt-mark-yang-01
+id: draft-ietf-anima-rfc8366bis-07
 title:
-- content: A YANG Data Model for Alternate Marking Method
+- content: A Voucher Artifact for Bootstrapping Protocols
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-wang-ippm-alt-mark-yang-01.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-wang-ippm-alt-mark-yang-01
+- id: draft-ietf-anima-rfc8366bis-07
   type: Internet-Draft
   primary: true
-- id: I-D.wang-ippm-alt-mark-yang
+- id: I-D.ietf-anima-rfc8366bis
   type: IETF
   scope: anchor
-docnumber: I-D.wang-ippm-alt-mark-yang
+docnumber: I-D.ietf-anima-rfc8366bis
 date:
 - type: published
-  value: '2023-01-18'
+  value: '2023-02-07'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Minxue
+        - content: Kent
+          language:
+          - en
+        - language:
+          - en
+          initial: K
+        formatted_initials:
+          content: K.
+          language:
+          - en
+      surname:
+        content: Watsen
+        language:
+        - en
+      completename:
+        content: Kent Watsen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Watsen Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Michael
           language:
           - en
         - language:
@@ -39,108 +64,24 @@ contributor:
           language:
           - en
       surname:
-        content: Wang
+        content: Richardson
         language:
         - en
       completename:
-        content: Minxue Wang
+        content: Michael Richardson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Sandelman Software
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Liuyan
-          language:
-          - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Han
-        language:
-        - en
-      completename:
-        content: Liuyan Han
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Xiao
-          language:
-          - en
-        - language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
-      surname:
-        content: Min
-        language:
-        - en
-      completename:
-        content: Xiao Min
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Guo
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Jun
-        language:
-        - en
-      completename:
-        content: Guo Jun
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Massimo
+        - content: Max
           language:
           - en
         - language:
@@ -151,30 +92,94 @@ contributor:
           language:
           - en
       surname:
-        content: Nilo
+        content: Pritikin
         language:
         - en
       completename:
-        content: Massimo Nilo
+        content: Max Pritikin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Telecom Italia
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Toerless
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T. T.
+          language:
+          - en
+      surname:
+        content: Eckert
+        language:
+        - en
+      completename:
+        content: Toerless Eckert
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Futurewei Technologies Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Qiufang
+          language:
+          - en
+        - language:
+          - en
+          initial: Q
+        formatted_initials:
+          content: Q.
+          language:
+          - en
+      surname:
+        content: Ma
+        language:
+        - en
+      completename:
+        content: Qiufang Ma
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
   role:
   - type: author
 version:
-- draft: '01'
-revdate: '2023-01-18'
+- draft: '07'
+revdate: '2023-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Alternate-Marking Method (AMM) is a technique used to perform packet
-    loss, delay, and jitter measurements on live traffic. This document defines a
-    YANG data model for Alternate Marking Method.</p>"
+- content: <p>This document defines a strategy to securely assign a pledge to an owner
+    using an artifact signed, directly or indirectly, by the pledge's manufacturer.
+    This artifact is known as a "voucher". This document defines an artifact format
+    as a YANG-defined JSON or CBOR document that has been signed using a variety of
+    cryptographic systems. The voucher artifact is normally generated by the pledge's
+    manufacturer (i.e., the Manufacturer Authorized Signing Authority (MASA)). This
+    document updates RFC8366, merging a number of extensions into the YANG. The RFC8995
+    voucher request is also merged into this document.</p>
   language:
   - en
   script:
@@ -183,23 +188,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-wang-ippm-alt-mark-yang-00
+    id: draft-ietf-anima-rfc8366bis-06
     docid:
-    - id: draft-wang-ippm-alt-mark-yang-00
+    - id: draft-ietf-anima-rfc8366bis-06
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-wang-ippm-alt-mark-yang-00
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-wang-ippm-alt-mark-yang-02
-    docid:
-    - id: draft-wang-ippm-alt-mark-yang-02
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-wang-ippm-alt-mark-yang-02
+      content: draft-ietf-anima-rfc8366bis-06
       format: text/plain
 series:
 - type: main
@@ -210,7 +205,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-wang-ippm-alt-mark-yang-01
+  number: draft-ietf-anima-rfc8366bis-07
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

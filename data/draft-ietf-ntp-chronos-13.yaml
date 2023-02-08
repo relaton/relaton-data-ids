@@ -1,62 +1,63 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-acme-authority-token-tnauthlist-12
+id: draft-ietf-ntp-chronos-13
 title:
-- content: TNAuthList profile of ACME Authority Token
+- content: A Secure Selection and Filtering Mechanism for the Network Time Protocol
+    with Khronos
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-ietf-acme-authority-token-tnauthlist-12.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-ietf-acme-authority-token-tnauthlist-12
+- id: draft-ietf-ntp-chronos-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-acme-authority-token-tnauthlist
+- id: I-D.ietf-ntp-chronos
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-acme-authority-token-tnauthlist
+docnumber: I-D.ietf-ntp-chronos
 date:
 - type: published
-  value: '2022-12-05'
+  value: '2023-02-07'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Chris
+        - content: Neta
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: N
+        - language:
+          - en
+          initial: R
         formatted_initials:
-          content: C.
+          content: N. R.
           language:
           - en
       surname:
-        content: Wendt
+        content: Schiff
         language:
         - en
       completename:
-        content: Chris Wendt
+        content: Neta Rozen Schiff
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Somos Inc.
+        - content: Hebrew University of Jerusalem
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: David
+        - content: Danny
           language:
           - en
         - language:
@@ -67,24 +68,52 @@ contributor:
           language:
           - en
       surname:
-        content: Hancock
+        content: Dolev
         language:
         - en
       completename:
-        content: David Hancock
+        content: Danny Dolev
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Comcast
+        - content: Hebrew University of Jerusalem
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mary
+        - content: Tal
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Mizrahi
+        language:
+        - en
+      completename:
+        content: Tal Mizrahi
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Network.IO Innovation Lab
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Michael
           language:
           - en
         - language:
@@ -95,59 +124,34 @@ contributor:
           language:
           - en
       surname:
-        content: Barnes
+        content: Schapira
         language:
         - en
       completename:
-        content: Mary Barnes
+        content: Michael Schapira
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Neustar Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Jon
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Peterson
-        language:
-        - en
-      completename:
-        content: Jon Peterson
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Neustar Inc.
+        - content: Hebrew University of Jerusalem
   role:
   - type: author
 version:
-- draft: '12'
-revdate: '2022-12-05'
+- draft: '13'
+revdate: '2023-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a profile of the Automated Certificate Management
-    Environment (ACME) Authority Token for the automated and authorized creation of
-    certificates for VoIP Telephone Providers to support Secure Telephony Identity
-    (STI) using the TNAuthList defined by STI certificates.</p>"
+- content: <p>The Network Time Protocol version 4 (NTPv4), as defined in RFC 5905,
+    is the mechanism used by NTP clients to synchronize with NTP servers across the
+    Internet. This document specifies an extension to the NTPv4 client, named Khronos,
+    which is used as a "watchdog" alongside NTPv4, and provides improved security
+    against time shifting attacks. Khronos involves changes to the NTP client's system
+    process only. Since it does not affect the wire protocol, the Khronos mechanism
+    is applicable to any current or future time protocol.</p>
   language:
   - en
   script:
@@ -156,23 +160,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-acme-authority-token-tnauthlist-11
+    id: draft-ietf-ntp-chronos-12
     docid:
-    - id: draft-ietf-acme-authority-token-tnauthlist-11
+    - id: draft-ietf-ntp-chronos-12
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-acme-authority-token-tnauthlist-11
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-acme-authority-token-tnauthlist-13
-    docid:
-    - id: draft-ietf-acme-authority-token-tnauthlist-13
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-acme-authority-token-tnauthlist-13
+      content: draft-ietf-ntp-chronos-12
       format: text/plain
 series:
 - type: main
@@ -183,7 +177,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-acme-authority-token-tnauthlist-12
+  number: draft-ietf-ntp-chronos-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
