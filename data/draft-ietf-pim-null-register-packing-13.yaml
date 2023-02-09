@@ -1,158 +1,160 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-roll-aodv-rpl-15
+id: draft-ietf-pim-null-register-packing-13
 title:
-- content: 'Supporting Asymmetric Links in Low Power Networks: AODV-RPL'
+- content: PIM Null-Register packing
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-ietf-roll-aodv-rpl-15.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-ietf-roll-aodv-rpl-15
+- id: draft-ietf-pim-null-register-packing-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-roll-aodv-rpl
+- id: I-D.ietf-pim-null-register-packing
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-roll-aodv-rpl
+docnumber: I-D.ietf-pim-null-register-packing
 date:
 - type: published
-  value: '2022-09-30'
+  value: '2023-02-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Charles
+        - content: Vikas
           language:
           - en
         - language:
           - en
-          initial: C
-        - language:
-          - en
-          initial: E
-        formatted_initials:
-          content: C. E.
-          language:
-          - en
-      surname:
-        content: Perkins
-        language:
-        - en
-      completename:
-        content: Charles E. Perkins
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Lupin Lodge
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Anand
-        language:
-        - en
-      completename:
-        content: S.V.R Anand
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Indian Institute of Science
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Satish
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Anamalamudi
-        language:
-        - en
-      completename:
-        content: Satish Anamalamudi
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: SRM University-AP
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Bing
-          language:
-          - en
-        - language:
-          - en
-          initial: B
+          initial: V
         - language:
           - en
           initial: R
         formatted_initials:
-          content: B. R.
+          content: V. R.
           language:
           - en
       surname:
-        content: Liu
+        content: Kamath
         language:
         - en
       completename:
-        content: Bing (Remy) Liu
+        content: Vikas Ramesh Kamath
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: VMware
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ramakrishnan
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: R. C.
+          language:
+          - en
+      surname:
+        content: Sundaram
+        language:
+        - en
+      completename:
+        content: Ramakrishnan Cokkanathapuram Sundaram
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Raunak
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Banthia
+        language:
+        - en
+      completename:
+        content: Raunak Banthia
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Apstra
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ananya
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Gopal
+        language:
+        - en
+      completename:
+        content: Ananya Gopal
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 version:
-- draft: '15'
-revdate: '2022-09-30'
+- draft: '13'
+revdate: '2023-02-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Route discovery for symmetric and asymmetric Peer-to-Peer (P2P) traffic
-    flows is a desirable feature in Low power and Lossy Networks (LLNs). For that
-    purpose, this document specifies a reactive P2P route discovery mechanism for
-    both hop-by-hop routes and source routing: Ad Hoc On-demand Distance Vector Routing
-    (AODV) based RPL protocol (AODV-RPL). Paired Instances are used to construct directional
-    paths, for cases where there are asymmetric links between source and target nodes.</p>"
+- content: "<p>In PIM-SM networks PIM Null-Register messages are sent by the Designated
+    Router (DR) to the Rendezvous Point (RP) to signal the presence of Multicast sources
+    in the network. There are periodic PIM Null-Registers sent from the DR to the
+    RP to keep the state alive at the RP as long as the source is active. The PIM
+    Null-Register message carries information about a single Multicast source and
+    group. This document defines a standard to send multiple Multicast source and
+    group information in a single PIM message. This document refers to the new messages
+    as the PIM Packed Null-Register message and PIM Packed Register-Stop message.</p>"
   language:
   - en
   script:
@@ -161,23 +163,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-roll-aodv-rpl-14
+    id: draft-ietf-pim-null-register-packing-12
     docid:
-    - id: draft-ietf-roll-aodv-rpl-14
+    - id: draft-ietf-pim-null-register-packing-12
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-roll-aodv-rpl-14
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-roll-aodv-rpl-16
-    docid:
-    - id: draft-ietf-roll-aodv-rpl-16
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-roll-aodv-rpl-16
+      content: draft-ietf-pim-null-register-packing-12
       format: text/plain
 series:
 - type: main
@@ -188,7 +180,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-roll-aodv-rpl-15
+  number: draft-ietf-pim-null-register-packing-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

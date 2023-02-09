@@ -1,8 +1,8 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-sidrops-roa-considerations-06
+id: draft-chen-rtgwg-srv6-midpoint-protection-11
 title:
-- content: Avoidance for ROA Containing Multiple IP Prefixes
+- content: SRv6 Midpoint Protection
   language:
   - en
   script:
@@ -10,22 +10,50 @@ title:
   format: text/plain
 type: standard
 docid:
-- id: draft-ietf-sidrops-roa-considerations-06
+- id: draft-chen-rtgwg-srv6-midpoint-protection-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-sidrops-roa-considerations
+- id: I-D.chen-rtgwg-srv6-midpoint-protection
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-sidrops-roa-considerations
+docnumber: I-D.chen-rtgwg-srv6-midpoint-protection
 date:
 - type: published
-  value: '2023-01-26'
+  value: '2023-02-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Zhiwei
+        - content: Huanan
+          language:
+          - en
+        - language:
+          - en
+          initial: H
+        formatted_initials:
+          content: H.
+          language:
+          - en
+      surname:
+        content: Chen
+        language:
+        - en
+      completename:
+        content: Huanan Chen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Telecom
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zhibo
           language:
           - en
         - language:
@@ -36,59 +64,59 @@ contributor:
           language:
           - en
       surname:
-        content: Yan
+        content: Hu
         language:
         - en
       completename:
-        content: Zhiwei Yan
+        content: Zhibo Hu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CNNIC
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Randy
+        - content: Huaimo
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: H
         formatted_initials:
-          content: R.
+          content: H.
           language:
           - en
       surname:
-        content: Bush
+        content: Chen
         language:
         - en
       completename:
-        content: Randy Bush
+        content: Huaimo Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: IIJ Research Lab & Arrcus, Inc.
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Guanggang
+        - content: Xuesong
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: X
         formatted_initials:
-          content: G.
+          content: X.
           language:
           - en
       surname:
@@ -96,83 +124,90 @@ contributor:
         language:
         - en
       completename:
-        content: Guanggang Geng
+        content: Xuesong Geng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Jinan University
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Ties
+        - content: Yisong
           language:
           - en
         - language:
           - en
-          initial: T
+          initial: Y
         formatted_initials:
-          content: T.
+          content: Y.
           language:
           - en
       surname:
-        content: de Kock
+        content: Liu
         language:
         - en
       completename:
-        content: Ties de Kock
+        content: Yisong Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: RIPE NCC
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jiankang
+        - content: Gyan
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: G
+        - language:
+          - en
+          initial: S
         formatted_initials:
-          content: J.
+          content: G. S.
           language:
           - en
       surname:
-        content: Yao
+        content: Mishra
         language:
         - en
       completename:
-        content: Jiankang Yao
+        content: Gyan Mishra
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CNNIC
+        - content: Verizon Inc.
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2023-01-26'
+- draft: '11'
+revdate: '2023-02-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When using the RPKI, address space holders need to issue a ROA object(s)
-    to authorize one or more ASes to originate routes to IP prefix(es). This memo
-    discusses operational problems which may arise from ROAs containing multiple IP
-    prefixes, and recommends that each ROA only contain a single IP prefix.</p>"
+- content: "<p>The current local repair mechanism, e.g., TI-LFA, allows local repair
+    actions on the direct neighbors of the failed node or link to temporarily route
+    traffic to the destination. This mechanism does not work properly for SRv6 TE
+    path after the failure happens in the destination point and IGP converges on the
+    failure. This document defines midpoint protection for SRv6 TE path, which enables
+    other nodes on the network to perform endpoint behaviors for the faulty node,
+    update the IPv6 destination address to the next endpoint after the faulty node,
+    and choose the next hop based on the new destination address.</p>"
   language:
   - en
   script:
@@ -181,23 +216,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-sidrops-roa-considerations-05
+    id: draft-chen-rtgwg-srv6-midpoint-protection-10
     docid:
-    - id: draft-ietf-sidrops-roa-considerations-05
+    - id: draft-chen-rtgwg-srv6-midpoint-protection-10
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-sidrops-roa-considerations-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-sidrops-roa-considerations-07
-    docid:
-    - id: draft-ietf-sidrops-roa-considerations-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-sidrops-roa-considerations-07
+      content: draft-chen-rtgwg-srv6-midpoint-protection-10
       format: text/plain
 series:
 - type: main
@@ -208,7 +233,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-sidrops-roa-considerations-06
+  number: draft-chen-rtgwg-srv6-midpoint-protection-11
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
