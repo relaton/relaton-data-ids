@@ -1,181 +1,178 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-03
+id: draft-ietf-lisp-pubsub-11
 title:
-- content: SR Policies Extensions for Path Segment and Bidirectional Path in BGP-LS
+- content: Publish/Subscribe Functionality for the Locator/ID Separation Protocol
+    (LISP)
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-ietf-idr-bgp-ls-sr-policy-path-segment-03.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-03
+- id: draft-ietf-lisp-pubsub-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgp-ls-sr-policy-path-segment
+- id: I-D.ietf-lisp-pubsub
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-idr-bgp-ls-sr-policy-path-segment
+docnumber: I-D.ietf-lisp-pubsub
 date:
 - type: published
-  value: '2022-08-07'
+  value: '2023-02-10'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Cheng
+        - content: Alberto
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: A
         formatted_initials:
-          content: C.
+          content: A.
           language:
           - en
       surname:
-        content: Li
+        content: Rodriguez-Natal
         language:
         - en
       completename:
-        content: Cheng Li
+        content: Alberto Rodriguez-Natal
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Cisco
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zhenbin
+        - content: Vina
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: V
         formatted_initials:
-          content: Z.
+          content: V.
           language:
           - en
       surname:
-        content: Li
+        content: Ermagan
         language:
         - en
       completename:
-        content: Zhenbin Li
+        content: Vina Ermagan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Google
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yongqing
+        - content: Albert
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: A
         formatted_initials:
-          content: Y.
+          content: A.
           language:
           - en
       surname:
-        content: Zhu
+        content: Cabellos-Aparicio
         language:
         - en
       completename:
-        content: Yongqing Zhu
+        content: Albert Cabellos-Aparicio
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
+        - content: UPC/BarcelonaTech
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Weiqiang
+        - content: Sharon
           language:
           - en
         - language:
           - en
-          initial: W
+          initial: S
         formatted_initials:
-          content: W.
+          content: S.
           language:
           - en
       surname:
-        content: Cheng
+        content: Barkai
         language:
         - en
       completename:
-        content: Weiqiang Cheng
+        content: Sharon Barkai
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Nexar
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Ketan
+        - content: Mohamed
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: M
         formatted_initials:
-          content: K.
+          content: M.
           language:
           - en
       surname:
-        content: Talaulikar
+        content: Boucadair
         language:
         - en
       completename:
-        content: Ketan Talaulikar
+        content: Mohamed Boucadair
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
+        - content: Orange
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2022-08-07'
+- draft: '11'
+revdate: '2023-02-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies the way of collecting configuration and states
-    of SR policies carrying Path Segment and bidirectional path information by using
-    BPG-LS. Such information can be used by external conponents for many use cases
-    such as performance measurement, path re-optimization and end-to-end protection.</p>"
+- content: "<p>This document specifies an extension to the request/reply based Locator/ID
+    Separation Protocol (LISP) control plane to enable Publish/Subscribe (PubSub)
+    operation.</p>"
   language:
   - en
   script:
@@ -184,23 +181,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-02
+    id: draft-ietf-lisp-pubsub-10
     docid:
-    - id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-02
+    - id: draft-ietf-lisp-pubsub-10
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-idr-bgp-ls-sr-policy-path-segment-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-04
-    docid:
-    - id: draft-ietf-idr-bgp-ls-sr-policy-path-segment-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-ls-sr-policy-path-segment-04
+      content: draft-ietf-lisp-pubsub-10
       format: text/plain
 series:
 - type: main
@@ -211,7 +198,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-idr-bgp-ls-sr-policy-path-segment-03
+  number: draft-ietf-lisp-pubsub-11
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

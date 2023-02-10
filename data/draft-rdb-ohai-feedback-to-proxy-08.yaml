@@ -1,108 +1,80 @@
 ---
 schema-version: v1.2.1
-id: draft-wzwb-opsawg-network-inventory-management-00
+id: draft-rdb-ohai-feedback-to-proxy-08
 title:
-- content: An Inventory Management Model for Enterprise Networks
+- content: Oblivious Relay Feedback
   language:
   - en
   script:
   - Latn
   format: text/plain
-link:
-- content: https://www.ietf.org/archive/id/draft-wzwb-opsawg-network-inventory-management-00.txt
-  type: TXT
 type: standard
 docid:
-- id: draft-wzwb-opsawg-network-inventory-management-00
+- id: draft-rdb-ohai-feedback-to-proxy-08
   type: Internet-Draft
   primary: true
-- id: I-D.wzwb-opsawg-network-inventory-management
+- id: I-D.rdb-ohai-feedback-to-proxy
   type: IETF
   scope: anchor
-docnumber: I-D.wzwb-opsawg-network-inventory-management
+docnumber: I-D.rdb-ohai-feedback-to-proxy
 date:
 - type: published
-  value: '2022-10-24'
+  value: '2023-02-09'
 contributor:
 - person:
     name:
       given:
         forename:
+        - content: Tirumaleswar
+          language:
+          - en
         - language:
           - en
-          initial: B
+          initial: T
         formatted_initials:
-          content: B.
+          content: T.
           language:
           - en
       surname:
-        content: Wu
+        content: Reddy.K
         language:
         - en
       completename:
-        content: Bo Wu
+        content: Tirumaleswar Reddy.K
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: Nokia
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Cheng
+        - content: Dan
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: D
         formatted_initials:
-          content: C.
+          content: D.
           language:
           - en
       surname:
-        content: Zhou
+        content: Wing
         language:
         - en
       completename:
-        content: Cheng Zhou
+        content: Dan Wing
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
-      surname:
-        content: Wu
-        language:
-        - en
-      completename:
-        content: Qin Wu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei
+        - content: Citrix Systems, Inc.
   role:
   - type: author
 - person:
@@ -133,34 +105,66 @@ contributor:
         - content: Orange
   role:
   - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Roberto
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Polli
+        language:
+        - en
+      completename:
+        content: Roberto Polli
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Team Digitale, Italian Government
+  role:
+  - type: author
 version:
-- draft: '00'
-revdate: '2022-10-24'
+- draft: '08'
+revdate: '2023-02-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG model for network inventory management,
-    which provides consistent representation and reporting of network nodes (including
-    endpoints) inventory and enable a network orchestrator in the enterprise network
-    to maintain a centralized view of all the endpoint types across multiple domains
-    of the underlying network to implement a coherent control strategy.</p>"
+- content: "<p>Servers often rate-limit incoming requests, for example, rate-limit
+    based upon the source IP address to provide equitable service to clients. However,
+    oblivious HTTP removes the ability for the server to distinguish amongst clients
+    so the server can only rate-limit traffic from the oblivious relay. This harms
+    all clients behind that oblivious relay. This specification enables a server to
+    convey rate-limit information to an oblivious relay, which can use it to apply
+    rate-limit policies on clients. Cooperating oblivious relays can thus provide
+    more equitable service to their distinguishable clients without impacting on all
+    clients behind that oblivious relay.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-wzwb-opsawg-network-inventory-management-01
+    id: draft-rdb-ohai-feedback-to-proxy-07
     docid:
-    - id: draft-wzwb-opsawg-network-inventory-management-01
+    - id: draft-rdb-ohai-feedback-to-proxy-07
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-wzwb-opsawg-network-inventory-management-01
+      content: draft-rdb-ohai-feedback-to-proxy-07
       format: text/plain
 series:
 - type: main
@@ -171,7 +175,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-wzwb-opsawg-network-inventory-management-00
+  number: draft-rdb-ohai-feedback-to-proxy-08
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
