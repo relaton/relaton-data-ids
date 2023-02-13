@@ -1,8 +1,8 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-tsvwg-dscp-considerations-11
+id: draft-ietf-quic-qlog-quic-events-04
 title:
-- content: Considerations for Assigning a new Recommended DiffServ Codepoint (DSCP)
+- content: QUIC event definitions for qlog
   language:
   - en
   script:
@@ -10,78 +10,22 @@ title:
   format: text/plain
 type: standard
 docid:
-- id: draft-ietf-tsvwg-dscp-considerations-11
+- id: draft-ietf-quic-qlog-quic-events-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tsvwg-dscp-considerations
+- id: I-D.ietf-quic-qlog-quic-events
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-tsvwg-dscp-considerations
+docnumber: I-D.ietf-quic-qlog-quic-events
 date:
 - type: published
-  value: '2023-02-10'
+  value: '2023-02-13'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Ana
-          language:
-          - en
-        - language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Custura
-        language:
-        - en
-      completename:
-        content: Ana Custura
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: University of Aberdeen
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Gorry
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Fairhurst
-        language:
-        - en
-      completename:
-        content: Gorry Fairhurst
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: University of Aberdeen
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Raffaello
+        - content: Robin
           language:
           - en
         - language:
@@ -92,32 +36,114 @@ contributor:
           language:
           - en
       surname:
-        content: Secchi
+        content: Marx
         language:
         - en
       completename:
-        content: Raffaello Secchi
+        content: Robin Marx
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: University of Aberdeen
+        - content: Akamai
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Luca
+          language:
+          - en
+        - language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Niccolini
+        language:
+        - en
+      completename:
+        content: Luca Niccolini
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Meta
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Marten
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Seemann
+        language:
+        - en
+      completename:
+        content: Marten Seemann
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Protocol Labs
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Lucas
+          language:
+          - en
+        - language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Pardue
+        language:
+        - en
+      completename:
+        content: Lucas Pardue
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cloudflare
   role:
   - type: author
 version:
-- draft: '11'
-revdate: '2023-02-10'
+- draft: '04'
+revdate: '2023-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses considerations for assigning a new recommended
-    DiffServ Code Point (DSCP) for a new standard Per Hop Behavior (PHB). It considers
-    the common observed remarking behaviors that the DiffServ field might be subjected
-    to along an Internet path. It also notes some implications of using a specific
-    DSCP.</p>"
+- content: "<p>This document describes concrete qlog event definitions and their metadata
+    for QUIC events. These events can then be embedded in the higher level schema
+    defined in [QLOG-MAIN].</p>"
   language:
   - en
   script:
@@ -126,23 +152,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tsvwg-dscp-considerations-10
+    id: draft-ietf-quic-qlog-quic-events-03
     docid:
-    - id: draft-ietf-tsvwg-dscp-considerations-10
+    - id: draft-ietf-quic-qlog-quic-events-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-tsvwg-dscp-considerations-10
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-tsvwg-dscp-considerations-12
-    docid:
-    - id: draft-ietf-tsvwg-dscp-considerations-12
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-tsvwg-dscp-considerations-12
+      content: draft-ietf-quic-qlog-quic-events-03
       format: text/plain
 series:
 - type: main
@@ -153,7 +169,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-tsvwg-dscp-considerations-11
+  number: draft-ietf-quic-qlog-quic-events-04
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
