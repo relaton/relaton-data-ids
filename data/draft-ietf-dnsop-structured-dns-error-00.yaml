@@ -1,9 +1,8 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-lisp-pubsub-11
+id: draft-ietf-dnsop-structured-dns-error-00
 title:
-- content: Publish/Subscribe Functionality for the Locator/ID Separation Protocol
-    (LISP)
+- content: Structured Error Data for Filtered DNS
   language:
   - en
   script:
@@ -11,127 +10,99 @@ title:
   format: text/plain
 type: standard
 docid:
-- id: draft-ietf-lisp-pubsub-11
+- id: draft-ietf-dnsop-structured-dns-error-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lisp-pubsub
+- id: I-D.ietf-dnsop-structured-dns-error
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-lisp-pubsub
+docnumber: I-D.ietf-dnsop-structured-dns-error
 date:
 - type: published
-  value: '2023-02-10'
+  value: '2023-02-13'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Alberto
+        - content: Dan
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: D
         formatted_initials:
-          content: A.
+          content: D.
           language:
           - en
       surname:
-        content: Rodriguez-Natal
+        content: Wing
         language:
         - en
       completename:
-        content: Alberto Rodriguez-Natal
+        content: Dan Wing
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
+        - content: Citrix Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Vina
+        - content: Tirumaleswar
           language:
           - en
         - language:
           - en
-          initial: V
+          initial: T
         formatted_initials:
-          content: V.
+          content: T.
           language:
           - en
       surname:
-        content: Ermagan
+        content: Reddy.K
         language:
         - en
       completename:
-        content: Vina Ermagan
+        content: Tirumaleswar Reddy.K
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google
+        - content: Nokia
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Albert
+        - content: Neil
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: N
         formatted_initials:
-          content: A.
+          content: N.
           language:
           - en
       surname:
-        content: Cabellos-Aparicio
+        content: Cook
         language:
         - en
       completename:
-        content: Albert Cabellos-Aparicio
+        content: Neil Cook
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: UPC/BarcelonaTech
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Sharon
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Barkai
-        language:
-        - en
-      completename:
-        content: Sharon Barkai
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nexar
+        - content: Open-Xchange
   role:
   - type: author
 - person:
@@ -163,42 +134,26 @@ contributor:
   role:
   - type: author
 version:
-- draft: '11'
-revdate: '2023-02-10'
+- draft: '00'
+revdate: '2023-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies an extension to the request/reply based Locator/ID
-    Separation Protocol (LISP) control plane to enable Publish/Subscribe (PubSub)
-    operation.</p>"
+- content: "<p>DNS filtering is widely deployed for network security, but filtered
+    DNS responses lack information for the end user to understand the reason for the
+    filtering. Existing mechanisms to provide detail to end users cause harm especially
+    if the blocked DNS response is to an HTTPS website. This document updates RFC
+    8914 by structuring the EXTRA-TEXT field of the Extended DNS Error to provide
+    details on the DNS filtering. Such details can be parsed by the client and displayed,
+    logged, or used for other purposes. Other than that, this document does not change
+    any thing written in RFC 8914.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updates
-  bibitem:
-    id: draft-ietf-lisp-pubsub-10
-    docid:
-    - id: draft-ietf-lisp-pubsub-10
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-lisp-pubsub-10
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-lisp-pubsub-12
-    docid:
-    - id: draft-ietf-lisp-pubsub-12
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-lisp-pubsub-12
-      format: text/plain
 series:
 - type: main
   title:
@@ -208,7 +163,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-lisp-pubsub-11
+  number: draft-ietf-dnsop-structured-dns-error-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
