@@ -1,9 +1,9 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-lisp-pubsub-12
+id: draft-guo-detnet-vpfc-planning-01
 title:
-- content: Publish/Subscribe Functionality for the Locator/ID Separation Protocol
-    (LISP)
+- content: Deterministic Networking (DetNet) Controller Plane - VPFC Planning Scheme
+    Based on VPFP in Large-scale Deterministic Networks
   language:
   - en
   script:
@@ -11,168 +11,148 @@ title:
   format: text/plain
 type: standard
 docid:
-- id: draft-ietf-lisp-pubsub-12
+- id: draft-guo-detnet-vpfc-planning-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lisp-pubsub
+- id: I-D.guo-detnet-vpfc-planning
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-lisp-pubsub
+docnumber: I-D.guo-detnet-vpfc-planning
 date:
 - type: published
-  value: '2023-02-13'
+  value: '2023-02-15'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Alberto
+        - content: Daorong
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: D
         formatted_initials:
-          content: A.
+          content: D.
           language:
           - en
       surname:
-        content: Rodriguez-Natal
+        content: Guo
         language:
         - en
       completename:
-        content: Alberto Rodriguez-Natal
+        content: Daorong Guo
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
+        - content: New H3C Technologies Co., Ltd
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Vina
+        - content: Guangliang
           language:
           - en
         - language:
           - en
-          initial: V
+          initial: G
         formatted_initials:
-          content: V.
+          content: G.
           language:
           - en
       surname:
-        content: Ermagan
+        content: Wen
         language:
         - en
       completename:
-        content: Vina Ermagan
+        content: Guangliang Wen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google
+        - content: New H3C Technologies Co., Ltd
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Albert
+        - content: Kehan
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: K
         formatted_initials:
-          content: A.
+          content: K.
           language:
           - en
       surname:
-        content: Cabellos-Aparicio
+        content: Yao
         language:
         - en
       completename:
-        content: Albert Cabellos-Aparicio
+        content: Kehan Yao
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: UPC/BarcelonaTech
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Sharon
+        - content: Guoyu
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: G
         formatted_initials:
-          content: S.
+          content: G.
           language:
           - en
       surname:
-        content: Barkai
+        content: Peng
         language:
         - en
       completename:
-        content: Sharon Barkai
+        content: Guoyu Peng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nexar
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Boucadair
-        language:
-        - en
-      completename:
-        content: Mohamed Boucadair
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Orange
+        - content: |-
+            Beijing University of Posts and
+                  Telecommunications
   role:
   - type: author
 version:
-- draft: '12'
-revdate: '2023-02-13'
+- draft: '01'
+revdate: '2023-02-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies an extension to the request/reply based Locator/ID
-    Separation Protocol (LISP) control plane to enable Publish/Subscribe (PubSub)
-    operation.</p>"
+- content: "<p>The cycle-based queuing and forwarding is an effective method to ensure
+    that the transmission has a definite upper bound of jitter, as well as latency.
+    The prerequisite for this method is to ensure that queuing resources do not conflict.
+    In large-scale deterministic networks (LDNs), how to avoid the queuing resources
+    conflict of this method is an open problem. This document presents a scheme of
+    planning virtue periodic forwarding channel (VPFC) based on virtual periodic forwarding
+    path (VPFP) in LDNs. The scheme can solve the queuing resources conflict of cycle-specified
+    queuing and forwarding in nonlinear topology domain, thus ensuring the bounded
+    latency of DetNet flow in the same periodic forwarding domain.</p>"
   language:
   - en
   script:
@@ -181,23 +161,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lisp-pubsub-11
+    id: draft-guo-detnet-vpfc-planning-00
     docid:
-    - id: draft-ietf-lisp-pubsub-11
+    - id: draft-guo-detnet-vpfc-planning-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-lisp-pubsub-11
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-lisp-pubsub-13
-    docid:
-    - id: draft-ietf-lisp-pubsub-13
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-lisp-pubsub-13
+      content: draft-guo-detnet-vpfc-planning-00
       format: text/plain
 series:
 - type: main
@@ -208,7 +178,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-lisp-pubsub-12
+  number: draft-guo-detnet-vpfc-planning-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
