@@ -1,119 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-chen-pce-controller-bier-te-03
+id: draft-ietf-lsvr-applicability-09
 title:
-- content: PCEP Procedures and Protocol Extensions for Using PCE as a Central Controller
-    (PCECC) of BIER-TE
+- content: Usage and Applicability of Link State Vector Routing in Data Centers
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-chen-pce-controller-bier-te-03.txt
-  type: TXT
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsvr-applicability-09
+  type: src
 type: standard
 docid:
-- id: draft-chen-pce-controller-bier-te-03
+- id: draft-ietf-lsvr-applicability-09
   type: Internet-Draft
   primary: true
-- id: I-D.chen-pce-controller-bier-te
+- id: I-D.ietf-lsvr-applicability
   type: IETF
   scope: anchor
-docnumber: I-D.chen-pce-controller-bier-te
+docnumber: I-D.ietf-lsvr-applicability
 date:
 - type: published
-  value: '2022-03-07'
+  value: '2023-02-20'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Ran
+        - content: Keyur
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: K
         formatted_initials:
-          content: R.
+          content: K.
           language:
           - en
       surname:
-        content: Chen
+        content: Patel
         language:
         - en
       completename:
-        content: Ran Chen
+        content: Keyur Patel
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ch. Zhu
+        - content: Arrcus, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: BenChong
-          language:
-          - en
-        - language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Xu
-        language:
-        - en
-      completename:
-        content: BenChong Xu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ch. Zhu
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Huaimo
-          language:
-          - en
-        - language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
-      surname:
-        content: Chen
-        language:
-        - en
-      completename:
-        content: Huaimo Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Aijun
+        - content: Acee
           language:
           - en
         - language:
@@ -124,31 +67,83 @@ contributor:
           language:
           - en
       surname:
-        content: Wang
+        content: Lindem
         language:
         - en
       completename:
-        content: Aijun Wang
+        content: Acee Lindem
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Shawn
+          language:
+          - en
+        - language:
+          - en
+          initial: S
+        formatted_initials:
+          content: S.
+          language:
+          - en
+      surname:
+        content: Zandi
+        language:
+        - en
+      completename:
+        content: Shawn Zandi
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
+        - content: Linkedin
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Gaurav
+          language:
+          - en
+        - language:
+          - en
+          initial: G
+        formatted_initials:
+          content: G.
+          language:
+          - en
+      surname:
+        content: Dawra
+        language:
+        - en
+      completename:
+        content: Gaurav Dawra
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Linkedin
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2022-03-07'
+- draft: '09'
+revdate: '2023-02-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This draft specify extensions to PCEP protocol when a PCE-based controller
-    is responsible for allocates the BIER-TE information(BIER subdomain-id, adjacencies
-    BitPosition(s), and Adjacency Types etc), then PCC generate a "Bit Index Forwarding
-    Table"(BIFT).</p>
+- content: "<p>This document discusses the usage and applicability of Link State Vector
+    Routing (LSVR) extensions in data center networks utilizing CLOS or Fat-Tree topologies.
+    The document is intended to provide a simplified guide for the deployment of LSVR
+    extensions.</p>"
   language:
   - en
   script:
@@ -157,23 +152,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-pce-controller-bier-te-02
+    id: draft-ietf-lsvr-applicability-08
     docid:
-    - id: draft-chen-pce-controller-bier-te-02
+    - id: draft-ietf-lsvr-applicability-08
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-chen-pce-controller-bier-te-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-chen-pce-controller-bier-te-04
-    docid:
-    - id: draft-chen-pce-controller-bier-te-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-pce-controller-bier-te-04
+      content: draft-ietf-lsvr-applicability-08
       format: text/plain
 series:
 - type: main
@@ -184,7 +169,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-pce-controller-bier-te-03
+  number: draft-ietf-lsvr-applicability-09
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

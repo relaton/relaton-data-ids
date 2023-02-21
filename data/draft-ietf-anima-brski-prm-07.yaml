@@ -1,62 +1,34 @@
 ---
 schema-version: v1.2.1
-id: draft-chen-pce-sr-mpls-sid-verification-05
+id: draft-ietf-anima-brski-prm-07
 title:
-- content: PCEP Extensions for sid verification for SR-MPLS
+- content: BRSKI with Pledge in Responder Mode (BRSKI-PRM)
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://www.ietf.org/archive/id/draft-chen-pce-sr-mpls-sid-verification-05.txt
-  type: TXT
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-brski-prm-07
+  type: src
 type: standard
 docid:
-- id: draft-chen-pce-sr-mpls-sid-verification-05
+- id: draft-ietf-anima-brski-prm-07
   type: Internet-Draft
   primary: true
-- id: I-D.chen-pce-sr-mpls-sid-verification
+- id: I-D.ietf-anima-brski-prm
   type: IETF
   scope: anchor
-docnumber: I-D.chen-pce-sr-mpls-sid-verification
+docnumber: I-D.ietf-anima-brski-prm
 date:
 - type: published
-  value: '2022-07-27'
+  value: '2023-02-21'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Ran
-          language:
-          - en
-        - language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
-      surname:
-        content: Chen
-        language:
-        - en
-      completename:
-        content: Ran Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Samuel
+        - content: Steffen
           language:
           - en
         - language:
@@ -67,11 +39,67 @@ contributor:
           language:
           - en
       surname:
-        content: Sidor
+        content: Fries
         language:
         - en
       completename:
-        content: Samuel Sidor
+        content: Steffen Fries
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Siemens AG
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Thomas
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Werner
+        language:
+        - en
+      completename:
+        content: Thomas Werner
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Siemens AG
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Eliot
+          language:
+          - en
+        - language:
+          - en
+          initial: E
+        formatted_initials:
+          content: E.
+          language:
+          - en
+      surname:
+        content: Lear
+        language:
+        - en
+      completename:
+        content: Eliot Lear
         language:
         - en
     affiliation:
@@ -84,63 +112,7 @@ contributor:
     name:
       given:
         forename:
-        - content: Chun
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Zhu
-        language:
-        - en
-      completename:
-        content: Chun Zhu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: ZTE Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Alexej
-          language:
-          - en
-        - language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Tokar
-        language:
-        - en
-      completename:
-        content: Alexej Tokar
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mike
+        - content: Michael
           language:
           - en
         - language:
@@ -151,29 +123,39 @@ contributor:
           language:
           - en
       surname:
-        content: Koldychev
+        content: Richardson
         language:
         - en
       completename:
-        content: Mike Koldychev
+        content: Michael Richardson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
+        - content: Sandelman Software Works
   role:
   - type: author
 version:
-- draft: '05'
-revdate: '2022-07-27'
+- draft: '07'
+revdate: '2023-02-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a new flag for indicating the headend is explicitly
-    requested to verify SID(s) by the PCE.</p>"
+- content: "<p>This document defines enhancements to bootstrapping a remote secure
+    key infrastructure (BRSKI, RFC8995) to facilitate bootstrapping in domains featuring
+    no or only time limited connectivity between a pledge and the domain registrar.
+    It specifically targets situations in which the interaction model changes from
+    a pledge-initiated-mode, as used in BRSKI, to a pledge-responding-mode as described
+    in this document. To support the pledge-responding mode, BRSKI-PRM introduces
+    a new component, the registrar-agent, which facilitates the communication between
+    pledge and registrar during the bootstrapping phase. To establish the trust relation
+    between pledge and domain registrar, BRSKI-PRM relies on object security rather
+    than transport security. The approach defined here is agnostic with respect to
+    the underlying enrollment protocol which connects the pledge and the domain registrar
+    to the Domain CA.</p>"
   language:
   - en
   script:
@@ -182,23 +164,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-pce-sr-mpls-sid-verification-04
+    id: draft-ietf-anima-brski-prm-06
     docid:
-    - id: draft-chen-pce-sr-mpls-sid-verification-04
+    - id: draft-ietf-anima-brski-prm-06
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-chen-pce-sr-mpls-sid-verification-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-chen-pce-sr-mpls-sid-verification-06
-    docid:
-    - id: draft-chen-pce-sr-mpls-sid-verification-06
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-pce-sr-mpls-sid-verification-06
+      content: draft-ietf-anima-brski-prm-06
       format: text/plain
 series:
 - type: main
@@ -209,7 +181,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-pce-sr-mpls-sid-verification-05
+  number: draft-ietf-anima-brski-prm-07
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
