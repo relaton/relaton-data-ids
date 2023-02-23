@@ -1,118 +1,96 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-alto-oam-yang-03
+id: draft-ietf-pim-null-register-packing-14
 title:
-- content: A Yang Data Model for OAM and Management of ALTO Protocol
+- content: PIM Null-Register packing
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-oam-yang-03
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-null-register-packing-14
   type: src
 type: standard
 docid:
-- id: draft-ietf-alto-oam-yang-03
+- id: draft-ietf-pim-null-register-packing-14
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-alto-oam-yang
+- id: I-D.ietf-pim-null-register-packing
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-alto-oam-yang
+docnumber: I-D.ietf-pim-null-register-packing
 date:
 - type: published
-  value: '2023-02-10'
+  value: '2023-02-22'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Jingxuan
+        - content: Vikas
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: V
+        - language:
+          - en
+          initial: R
         formatted_initials:
-          content: J.
+          content: V. R.
           language:
           - en
       surname:
-        content: Zhang
+        content: Kamath
         language:
         - en
       completename:
-        content: Jingxuan Zhang
+        content: Vikas Ramesh Kamath
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Tongji University
+        - content: VMware
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Dhruv
+        - content: Ramakrishnan
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: R
+        - language:
+          - en
+          initial: C
         formatted_initials:
-          content: D.
+          content: R. C.
           language:
           - en
       surname:
-        content: Dhody
+        content: Sundaram
         language:
         - en
       completename:
-        content: Dhruv Dhody
+        content: Ramakrishnan Cokkanathapuram Sundaram
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Kai
-          language:
-          - en
-        - language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Gao
-        language:
-        - en
-      completename:
-        content: Kai Gao
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Sichuan University
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Roland
+        - content: Raunak
           language:
           - en
         - language:
@@ -123,32 +101,63 @@ contributor:
           language:
           - en
       surname:
-        content: Schott
+        content: Banthia
         language:
         - en
       completename:
-        content: Roland Schott
+        content: Raunak Banthia
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom
+        - content: Apstra
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ananya
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Gopal
+        language:
+        - en
+      completename:
+        content: Ananya Gopal
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems, Inc.
   role:
   - type: author
 version:
-- draft: '03'
-revdate: '2023-02-10'
+- draft: '14'
+revdate: '2023-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for Operations, Administration,
-    and Maintenance (OAM) &amp; Management of Application- Layer Traffic Optimization
-    (ALTO) Protocol. The operator can use the data model to create and update ALTO
-    information resources, manage the access control, configure server-to-server communication
-    and server discovery, and collect statistical data.</p>"
+- content: "<p>In PIM-SM networks PIM Null-Register messages are sent by the Designated
+    Router (DR) to the Rendezvous Point (RP) to signal the presence of Multicast sources
+    in the network. There are periodic PIM Null-Registers sent from the DR to the
+    RP to keep the state alive at the RP as long as the source is active. The PIM
+    Null-Register message carries information about a single Multicast source and
+    group. This document defines a standard to send multiple Multicast source and
+    group information in a single PIM message. This document refers to the new messages
+    as the PIM Packed Null-Register message and PIM Packed Register-Stop message.</p>"
   language:
   - en
   script:
@@ -157,23 +166,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-alto-oam-yang-02
+    id: draft-ietf-pim-null-register-packing-13
     docid:
-    - id: draft-ietf-alto-oam-yang-02
+    - id: draft-ietf-pim-null-register-packing-13
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-alto-oam-yang-02
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-alto-oam-yang-04
-    docid:
-    - id: draft-ietf-alto-oam-yang-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-alto-oam-yang-04
+      content: draft-ietf-pim-null-register-packing-13
       format: text/plain
 series:
 - type: main
@@ -184,7 +183,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-alto-oam-yang-03
+  number: draft-ietf-pim-null-register-packing-14
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
