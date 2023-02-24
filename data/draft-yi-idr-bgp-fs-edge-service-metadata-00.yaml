@@ -1,34 +1,54 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-masque-connect-ip-06
+id: draft-yi-idr-bgp-fs-edge-service-metadata-00
 title:
-- content: Proxying IP in HTTP
+- content: Distribution of Service Metadata in BGP FlowSpec
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-connect-ip-06
+- content: https://datatracker.ietf.org/doc/html/draft-yi-idr-bgp-fs-edge-service-metadata-00
   type: src
 type: standard
 docid:
-- id: draft-ietf-masque-connect-ip-06
+- id: draft-yi-idr-bgp-fs-edge-service-metadata-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-masque-connect-ip
+- id: I-D.yi-idr-bgp-fs-edge-service-metadata
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-masque-connect-ip
+docnumber: I-D.yi-idr-bgp-fs-edge-service-metadata
 date:
 - type: published
-  value: '2023-02-13'
+  value: '2023-02-23'
 contributor:
 - person:
     name:
       given:
+        formatted_initials:
+          language:
+          - en
+      surname:
+        content: yixinxin
+        language:
+        - en
+      completename:
+        content: yixinxin
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Unicom
+  role:
+  - type: author
+- person:
+    name:
+      given:
         forename:
-        - content: Tommy
+        - content: Tao
           language:
           - en
         - language:
@@ -39,170 +59,125 @@ contributor:
           language:
           - en
       surname:
-        content: Pauly
+        content: He
         language:
         - en
       completename:
-        content: Tommy Pauly
+        content: Tao He
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
+        - content: China Unicom
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: David
+        - content: Hang
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: H
         formatted_initials:
-          content: D.
+          content: H.
           language:
           - en
       surname:
-        content: Schinazi
+        content: Shi
         language:
         - en
       completename:
-        content: David Schinazi
+        content: Hang Shi
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Alex
+        - content: Xiangfeng
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: X
         formatted_initials:
-          content: A.
+          content: X.
           language:
           - en
       surname:
-        content: Chernyakhovsky
+        content: Ding
         language:
         - en
       completename:
-        content: Alex Chernyakhovsky
+        content: Xiangfeng Ding
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
+        - content: Huawei Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mirja
+        - content: Haibo
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: H
         formatted_initials:
-          content: M.
+          content: H.
           language:
           - en
       surname:
-        content: Kühlewind
+        content: Wang
         language:
         - en
       completename:
-        content: Mirja Kühlewind
+        content: Haibo Wang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Magnus
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Westerlund
-        language:
-        - en
-      completename:
-        content: Magnus Westerlund
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ericsson
+        - content: Huawei Technologies
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2023-02-13'
+- draft: '00'
+revdate: '2023-02-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how to proxy IP packets in HTTP. This protocol
-    is similar to UDP proxying in HTTP, but allows transmitting arbitrary IP packets.
-    More specifically, this document defines a protocol that allows an HTTP client
-    to create an IP tunnel through an HTTP server that acts as a proxy. This document
-    updates RFC 9298.</p>"
+- content: "<p>In edge computing, a service may be deployed on multiple instances
+    within one or more sites, called edge service. The edge service is associated
+    with an ANYCAST IP address, and the route of it along with service metadata can
+    be collected by a central controller. The controller may process the metadata
+    and distribute the result to ingress routers using BGP FlowSpec. The service metadata
+    can be used by ingress routers to make path selections not only based on the routing
+    cost but also the running environment of the edge services. This document describes
+    a mechanism to distribute the information of the service routes and related service
+    metadata using BGP FlowSpec.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updates
-  bibitem:
-    id: draft-ietf-masque-connect-ip-05
-    docid:
-    - id: draft-ietf-masque-connect-ip-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-masque-connect-ip-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-masque-connect-ip-07
-    docid:
-    - id: draft-ietf-masque-connect-ip-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-masque-connect-ip-07
-      format: text/plain
 series:
 - type: main
   title:
@@ -212,7 +187,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-masque-connect-ip-06
+  number: draft-yi-idr-bgp-fs-edge-service-metadata-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

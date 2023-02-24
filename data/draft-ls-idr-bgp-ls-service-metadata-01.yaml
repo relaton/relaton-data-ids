@@ -1,34 +1,90 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-masque-connect-ip-06
+id: draft-ls-idr-bgp-ls-service-metadata-01
 title:
-- content: Proxying IP in HTTP
+- content: Distribution of Service Metadata in BGP-LS
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-connect-ip-06
+- content: https://datatracker.ietf.org/doc/html/draft-ls-idr-bgp-ls-service-metadata-01
   type: src
 type: standard
 docid:
-- id: draft-ietf-masque-connect-ip-06
+- id: draft-ls-idr-bgp-ls-service-metadata-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-masque-connect-ip
+- id: I-D.ls-idr-bgp-ls-service-metadata
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-masque-connect-ip
+docnumber: I-D.ls-idr-bgp-ls-service-metadata
 date:
 - type: published
-  value: '2023-02-13'
+  value: '2023-02-24'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Tommy
+        - content: Cheng
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Cheng Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Hang
+          language:
+          - en
+        - language:
+          - en
+          initial: H
+        formatted_initials:
+          content: H.
+          language:
+          - en
+      surname:
+        content: Shi
+        language:
+        - en
+      completename:
+        content: Hang Shi
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tao
           language:
           - en
         - language:
@@ -39,144 +95,93 @@ contributor:
           language:
           - en
       surname:
-        content: Pauly
+        content: He
         language:
         - en
       completename:
-        content: Tommy Pauly
+        content: Tao He
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
+        - content: China Unicom
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: David
+        - content: Ran
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: R
         formatted_initials:
-          content: D.
+          content: R.
           language:
           - en
       surname:
-        content: Schinazi
+        content: Pang
         language:
         - en
       completename:
-        content: David Schinazi
+        content: Ran Pang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
+        - content: China Unicom
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Alex
+        - content: Guofeng
           language:
           - en
         - language:
           - en
-          initial: A
+          initial: G
         formatted_initials:
-          content: A.
+          content: G.
           language:
           - en
       surname:
-        content: Chernyakhovsky
+        content: Qian
         language:
         - en
       completename:
-        content: Alex Chernyakhovsky
+        content: Guofeng Qian
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mirja
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Kühlewind
-        language:
-        - en
-      completename:
-        content: Mirja Kühlewind
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ericsson
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Magnus
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Westerlund
-        language:
-        - en
-      completename:
-        content: Magnus Westerlund
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ericsson
+        - content: Huawei Technologies
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2023-02-13'
+- draft: '01'
+revdate: '2023-02-24'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how to proxy IP packets in HTTP. This protocol
-    is similar to UDP proxying in HTTP, but allows transmitting arbitrary IP packets.
-    More specifically, this document defines a protocol that allows an HTTP client
-    to create an IP tunnel through an HTTP server that acts as a proxy. This document
-    updates RFC 9298.</p>"
+- content: "<p>In edge computing, a service may be deployed on multiple instances
+    within one or more sites, called edge service. The edge service is associated
+    with an ANYCAST address in IP layer, and the route of it with potential service
+    metatdata will be distributed to the network. The Edge Service Metadata can be
+    used by ingress routers to make path selections not only based on the routing
+    cost but also the running environment of the edge services. The service route
+    with metadata can be collected by a PCE(Path Compute Element) or an analyzer for
+    calculating the best path to the best site/instance. This draft describes a mechanism
+    to collect the information of the service routes and related service metadata
+    in BGP-LS.</p>"
   language:
   - en
   script:
@@ -185,23 +190,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-masque-connect-ip-05
+    id: draft-ls-idr-bgp-ls-service-metadata-00
     docid:
-    - id: draft-ietf-masque-connect-ip-05
+    - id: draft-ls-idr-bgp-ls-service-metadata-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-masque-connect-ip-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-masque-connect-ip-07
-    docid:
-    - id: draft-ietf-masque-connect-ip-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-masque-connect-ip-07
+      content: draft-ls-idr-bgp-ls-service-metadata-00
       format: text/plain
 series:
 - type: main
@@ -212,7 +207,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-masque-connect-ip-06
+  number: draft-ls-idr-bgp-ls-service-metadata-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
