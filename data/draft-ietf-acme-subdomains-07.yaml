@@ -1,34 +1,118 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-idr-bgp-model-15
+id: draft-ietf-acme-subdomains-07
 title:
-- content: BGP YANG Model for Service Provider Networks
+- content: Automated Certificate Management Environment (ACME) for Subdomains
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-model-15
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-subdomains-07
   type: src
 type: standard
 docid:
-- id: draft-ietf-idr-bgp-model-15
+- id: draft-ietf-acme-subdomains-07
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgp-model
+- id: I-D.ietf-acme-subdomains
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-idr-bgp-model
+docnumber: I-D.ietf-acme-subdomains
 date:
 - type: published
-  value: '2022-10-13'
+  value: '2023-03-01'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Mahesh
+        - content: Owen
+          language:
+          - en
+        - language:
+          - en
+          initial: O
+        formatted_initials:
+          content: O.
+          language:
+          - en
+      surname:
+        content: Friel
+        language:
+        - en
+      completename:
+        content: Owen Friel
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Richard
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Barnes
+        language:
+        - en
+      completename:
+        content: Richard Barnes
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tim
+          language:
+          - en
+        - language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Hollebeek
+        language:
+        - en
+      completename:
+        content: Tim Hollebeek
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: DigiCert
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Michael
           language:
           - en
         - language:
@@ -39,114 +123,33 @@ contributor:
           language:
           - en
       surname:
-        content: Jethanandani
+        content: Richardson
         language:
         - en
       completename:
-        content: Mahesh Jethanandani
+        content: Michael Richardson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Kloud Services
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Patel
-        language:
-        - en
-      completename:
-        content: Keyur Patel
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Arrcus
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Susan
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Hares
-        language:
-        - en
-      completename:
-        content: Susan Hares
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Jeffrey
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Haas
-        language:
-        - en
-      completename:
-        content: Jeffrey Haas
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Juniper Networks
+        - content: Sandelman Software Works
   role:
   - type: author
 version:
-- draft: '15'
-revdate: '2022-10-13'
+- draft: '07'
+revdate: '2023-03-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for configuring and managing
-    BGP, including protocol, policy, and operational aspects, such as RIB, based on
-    data center, carrier, and content provider operational requirements.</p>"
+- content: "<p>This document specifies how Automated Certificate Management Environment
+    (ACME) can be used by a client to obtain a certificate for a subdomain identifier
+    from a certification authority. This document specifies how a client can fulfill
+    a challenge against an ancestor domain but may not need to fulfill a challenge
+    against the explicit subdomain if certification authority policy allows issuance
+    of the subdomain certificate without explicit subdomain ownership proof.</p>"
   language:
   - en
   script:
@@ -155,23 +158,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-bgp-model-14
+    id: draft-ietf-acme-subdomains-06
     docid:
-    - id: draft-ietf-idr-bgp-model-14
+    - id: draft-ietf-acme-subdomains-06
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-idr-bgp-model-14
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-idr-bgp-model-16
-    docid:
-    - id: draft-ietf-idr-bgp-model-16
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-model-16
+      content: draft-ietf-acme-subdomains-06
       format: text/plain
 series:
 - type: main
@@ -182,7 +175,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-idr-bgp-model-15
+  number: draft-ietf-acme-subdomains-07
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

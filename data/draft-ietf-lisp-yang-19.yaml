@@ -1,90 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-idr-wide-bgp-communities-08
+id: draft-ietf-lisp-yang-19
 title:
-- content: BGP Community Container Attribute
+- content: LISP YANG Model
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-wide-bgp-communities-08
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-yang-19
   type: src
 type: standard
 docid:
-- id: draft-ietf-idr-wide-bgp-communities-08
+- id: draft-ietf-lisp-yang-19
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-wide-bgp-communities
+- id: I-D.ietf-lisp-yang
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-idr-wide-bgp-communities
+docnumber: I-D.ietf-lisp-yang
 date:
 - type: published
-  value: '2022-07-11'
+  value: '2023-03-02'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Robert
+        - content: Vina
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: V
         formatted_initials:
-          content: R.
+          content: V.
           language:
           - en
       surname:
-        content: Raszuk
+        content: Ermagan
         language:
         - en
       completename:
-        content: Robert Raszuk
+        content: Vina Ermagan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Individual
+        - content: Google
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jeffrey
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Haas
-        language:
-        - en
-      completename:
-        content: Jeffrey Haas
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Juniper Networks
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Andrew
+        - content: Alberto
           language:
           - en
         - language:
@@ -95,121 +67,166 @@ contributor:
           language:
           - en
       surname:
-        content: Lange
+        content: Rodriguez-Natal
         language:
         - en
       completename:
-        content: Andrew Lange
+        content: Alberto Rodriguez-Natal
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Bruno
+        - content: Florin
           language:
           - en
         - language:
           - en
-          initial: B
+          initial: F
         formatted_initials:
-          content: B.
+          content: F.
           language:
           - en
       surname:
-        content: Decraene
+        content: Coras
         language:
         - en
       completename:
-        content: Bruno Decraene
+        content: Florin Coras
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Shane
+        - content: Carl
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: C
         formatted_initials:
-          content: S.
+          content: C.
           language:
           - en
       surname:
-        content: Amante
+        content: Moberg
         language:
         - en
       completename:
-        content: Shane Amante
+        content: Carl Moberg
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Apple, Inc.
+        - content: Avassa
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Paul
+        - content: Reshad
           language:
           - en
         - language:
           - en
-          initial: P
+          initial: R
         formatted_initials:
-          content: P.
+          content: R.
           language:
           - en
       surname:
-        content: Jakma
+        content: Rahman
         language:
         - en
       completename:
-        content: Paul Jakma
+        content: Reshad Rahman
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Albert
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Cabellos-Aparicio
+        language:
+        - en
+      completename:
+        content: Albert Cabellos-Aparicio
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Ireland Research Centre
+        - content: Technical University of Catalonia
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Fabio
+          language:
+          - en
+        - language:
+          - en
+          initial: F
+        formatted_initials:
+          content: F.
+          language:
+          - en
+      surname:
+        content: Maino
+        language:
+        - en
+      completename:
+        content: Fabio Maino
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '08'
-revdate: '2022-07-11'
+- draft: '19'
+revdate: '2023-03-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Route tagging plays an important role in external BGP relations, communicating
-    various routing policies between peers. It is also a very common best practice
-    for operators to propagate various additional route information between internal
-    peers. The most common tool used today to attach various information about routes
-    is through the use of BGP communities. This document defines a new encoding which
-    will enhance and simplify what can be accomplished today with the use of BGP communities.
-    The most important addition this specification makes over currently defined BGP
-    communities is the ability to specify and advertise an operator's parameters for
-    execution It also provides an extensible platform for any future community encoding
-    requirements.</p>"
+- content: "<p>This document describes a YANG data model to use with the Locator/ID
+    Separation Protocol (LISP). The YANG modules in this document conform to the Network
+    Management Datastore Architecture (NMDA).</p>"
   language:
   - en
   script:
@@ -218,23 +235,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-wide-bgp-communities-07
+    id: draft-ietf-lisp-yang-18
     docid:
-    - id: draft-ietf-idr-wide-bgp-communities-07
+    - id: draft-ietf-lisp-yang-18
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-idr-wide-bgp-communities-07
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-idr-wide-bgp-communities-09
-    docid:
-    - id: draft-ietf-idr-wide-bgp-communities-09
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-idr-wide-bgp-communities-09
+      content: draft-ietf-lisp-yang-18
       format: text/plain
 series:
 - type: main
@@ -245,7 +252,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-idr-wide-bgp-communities-08
+  number: draft-ietf-lisp-yang-19
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
