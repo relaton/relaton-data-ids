@@ -1,87 +1,62 @@
 ---
 schema-version: v1.2.1
-id: draft-ietf-opsec-probe-attribution-00
+id: draft-tgraf-netconf-notif-sequencing-00
 title:
-- content: Attribution of Internet Probes
+- content: Support of Hostname and Sequencing in YANG Notifications
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsec-probe-attribution-00
+- content: https://datatracker.ietf.org/doc/html/draft-tgraf-netconf-notif-sequencing-00
   type: src
 type: standard
 docid:
-- id: draft-ietf-opsec-probe-attribution-00
+- id: draft-tgraf-netconf-notif-sequencing-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsec-probe-attribution
+- id: I-D.tgraf-netconf-notif-sequencing
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-opsec-probe-attribution
+docnumber: I-D.tgraf-netconf-notif-sequencing
 date:
 - type: published
-  value: '2022-09-02'
+  value: '2023-03-04'
 contributor:
 - person:
     name:
       given:
         forename:
+        - content: Thomas
+          language:
+          - en
         - language:
           - en
-          initial: E
+          initial: T
         formatted_initials:
-          content: E.
+          content: T.
           language:
           - en
       surname:
-        content: Vyncke
+        content: Graf
         language:
         - en
       completename:
-        content: Éric Vyncke
+        content: Thomas Graf
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
+        - content: Swisscom
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Benoit
-          language:
-          - en
-        - language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Donnet
-        language:
-        - en
-      completename:
-        content: Benoit Donnet
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Université de Liège
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Justin
+        - content: Jean
           language:
           - en
         - language:
@@ -92,48 +67,68 @@ contributor:
           language:
           - en
       surname:
-        content: Iurman
+        content: Quilbeuf
         language:
         - en
       completename:
-        content: Justin Iurman
+        content: Jean Quilbeuf
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Université de Liège
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Alex
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        - language:
+          - en
+          initial: H
+        formatted_initials:
+          content: A. H.
+          language:
+          - en
+      surname:
+        content: Feng
+        language:
+        - en
+      completename:
+        content: Alex Huang Feng
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: INSA-Lyon
   role:
   - type: author
 version:
 - draft: '00'
-revdate: '2022-09-02'
+revdate: '2023-03-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Active measurements at Internet-scale can target either collaborating
-    parties or non-collaborating ones. This is similar scan and could be perceived
-    as aggressive. This document proposes a couple of simple techniques allowing any
-    party or organization to understand what this unsolicited packet is, what is its
-    purpose, and more importantly who to contact.</p>"
+- content: "<p>This document specifies a new YANG module that augment the NETCONF
+    Event Notification header to support hostname and sequence numbers to identify
+    from which network node and at which time the message was published. This allows
+    to recognize loss, delay and reordering between the publisher and the downstream
+    system storing the message.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-opsec-probe-attribution-01
-    docid:
-    - id: draft-ietf-opsec-probe-attribution-01
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-opsec-probe-attribution-01
-      format: text/plain
 series:
 - type: main
   title:
@@ -143,7 +138,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-opsec-probe-attribution-00
+  number: draft-tgraf-netconf-notif-sequencing-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
