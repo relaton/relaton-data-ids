@@ -1,113 +1,29 @@
 ---
 schema-version: v1.2.1
-id: draft-bonnell-rfc5019bis-01
+id: draft-ietf-lamps-kyber-certificates-01
 title:
-- content: Updates to Lightweight OCSP Profile for High Volume Environments
+- content: Internet X.509 Public Key Infrastructure - Algorithm Identifiers for Kyber
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-bonnell-rfc5019bis-01
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-kyber-certificates-01
   type: src
 type: standard
 docid:
-- id: draft-bonnell-rfc5019bis-01
+- id: draft-ietf-lamps-kyber-certificates-01
   type: Internet-Draft
   primary: true
-- id: I-D.bonnell-rfc5019bis
+- id: I-D.ietf-lamps-kyber-certificates
   type: IETF
   scope: anchor
-docnumber: I-D.bonnell-rfc5019bis
+docnumber: I-D.ietf-lamps-kyber-certificates
 date:
 - type: published
-  value: '2023-03-06'
+  value: '2023-03-28'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Corey
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Bonnell
-        language:
-        - en
-      completename:
-        content: Corey Bonnell
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: DigiCert, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Clint
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Wilson
-        language:
-        - en
-      completename:
-        content: Clint Wilson
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Apple, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Tadahiko
-          language:
-          - en
-        - language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
-      surname:
-        content: Ito
-        language:
-        - en
-      completename:
-        content: Tadahiko Ito
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: SECOM CO., LTD.
-  role:
-  - type: author
 - person:
     name:
       given:
@@ -136,17 +52,104 @@ contributor:
         - content: sn3rd
   role:
   - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Panos
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Kampanakis
+        language:
+        - en
+      completename:
+        content: Panos Kampanakis
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: AWS
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Jake
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Massimo
+        language:
+        - en
+      completename:
+        content: Jake Massimo
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: AWS
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Bas
+          language:
+          - en
+        - language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Westerbaan
+        language:
+        - en
+      completename:
+        content: Bas Westerbaan
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cloudflare
+  role:
+  - type: author
 version:
 - draft: '01'
-revdate: '2023-03-06'
+revdate: '2023-03-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document updates RFC5019 to allow OCSP clients to use SHA-256.
-    An RFC5019 compliant OCSP client is still able to use SHA-1, but the use of SHA-1
-    may become obsolete in the future.</p>"
+- content: "<p>Kyber is a key-encapsulation mechanism (KEM). This document specifies
+    algorithm identifiers and ASN.1 encoding format for Kyber in public key certificates.
+    The encoding for public and private keys are also provided. [EDNOTE: This document
+    is not expected to be finalized before the NIST PQC Project has standardized PQ
+    algorithms. This specification will use object identifiers for the new algorithms
+    that are assigned by NIST, and will use placeholders until these are released.]</p>"
   language:
   - en
   script:
@@ -155,23 +158,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-bonnell-rfc5019bis-00
+    id: draft-ietf-lamps-kyber-certificates-00
     docid:
-    - id: draft-bonnell-rfc5019bis-00
+    - id: draft-ietf-lamps-kyber-certificates-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-bonnell-rfc5019bis-00
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-bonnell-rfc5019bis-02
-    docid:
-    - id: draft-bonnell-rfc5019bis-02
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-bonnell-rfc5019bis-02
+      content: draft-ietf-lamps-kyber-certificates-00
       format: text/plain
 series:
 - type: main
@@ -182,7 +175,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-bonnell-rfc5019bis-01
+  number: draft-ietf-lamps-kyber-certificates-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
