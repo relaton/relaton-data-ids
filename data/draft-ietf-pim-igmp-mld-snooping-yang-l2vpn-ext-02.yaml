@@ -1,157 +1,182 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-tls-esni-15
+id: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-02
 title:
-- content: TLS Encrypted Client Hello
+- content: IGMP and MLD Snooping Yang Module Extension for L2VPN
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-esni-15
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-02
   type: src
 type: standard
 docid:
-- id: draft-ietf-tls-esni-15
+- id: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tls-esni
+- id: I-D.ietf-pim-igmp-mld-snooping-yang-l2vpn-ext
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-tls-esni
+docnumber: I-D.ietf-pim-igmp-mld-snooping-yang-l2vpn-ext
 date:
 - type: published
-  value: '2022-10-03'
+  value: '2023-04-05'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Eric
+        - content: Hongji
           language:
           - en
         - language:
           - en
-          initial: E
+          initial: H
         formatted_initials:
-          content: E.
+          content: H.
           language:
           - en
       surname:
-        content: Rescorla
+        content: Zhao
         language:
         - en
       completename:
-        content: Eric Rescorla
+        content: Hongji Zhao
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: RTFM, Inc.
+        - content: Ericsson
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Kazuho
+        - content: Xufeng
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: X
         formatted_initials:
-          content: K.
+          content: X.
           language:
           - en
       surname:
-        content: Oku
+        content: Liu
         language:
         - en
       completename:
-        content: Kazuho Oku
+        content: Xufeng Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Fastly
+        - content: IBM Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Nick
+        - content: Yisong
           language:
           - en
         - language:
           - en
-          initial: N
+          initial: Y
         formatted_initials:
-          content: N.
+          content: Y.
           language:
           - en
       surname:
-        content: Sullivan
+        content: Liu
         language:
         - en
       completename:
-        content: Nick Sullivan
+        content: Yisong Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Christopher
+        - content: Mahesh
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Sivakumar
+        language:
+        - en
+      completename:
+        content: Mahesh Sivakumar
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Anish
+          language:
+          - en
         - language:
           - en
           initial: A
         formatted_initials:
-          content: C. A.
+          content: A.
           language:
           - en
       surname:
-        content: Wood
+        content: Peter
         language:
         - en
       completename:
-        content: Christopher A. Wood
+        content: Anish Peter
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
+        - content: Individual
   role:
   - type: author
 version:
-- draft: '15'
-revdate: '2022-10-03'
+- draft: '02'
+revdate: '2023-04-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a mechanism in Transport Layer Security (TLS)
-    for encrypting a ClientHello message under a server public key. Discussion Venues
-    This note is to be removed before publishing as an RFC. Source for this draft
-    and an issue tracker can be found at https://github.com/tlswg/draft-ietf-tls-esni
-    (https://github.com/tlswg/draft-ietf-tls-esni).</p>"
+- content: "<p>Internet Group Management Protocol (IGMP) and Multicast Listener Discovery
+    (MLD) Snooping could be used in both bridge service and L2VPN service. The old
+    ietf-igmp-mld-snooping yang module just describes the bridge service. In this
+    document we extend the existing ietf-igmp-mld- snooping yang module and make it
+    could be used in L2VPN service.</p>"
   language:
   - en
   script:
@@ -160,23 +185,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tls-esni-14
+    id: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-01
     docid:
-    - id: draft-ietf-tls-esni-14
+    - id: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-01
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-tls-esni-14
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-tls-esni-16
-    docid:
-    - id: draft-ietf-tls-esni-16
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-tls-esni-16
+      content: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-01
       format: text/plain
 series:
 - type: main
@@ -187,7 +202,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-tls-esni-15
+  number: draft-ietf-pim-igmp-mld-snooping-yang-l2vpn-ext-02
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
