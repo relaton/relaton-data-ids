@@ -1,34 +1,90 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-teas-gmpls-controller-inter-work-10
+id: draft-ietf-idr-flowspec-srv6-03
 title:
-- content: Interworking of GMPLS Control and Centralized Controller Systems
+- content: BGP Flow Specification for SRv6
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-gmpls-controller-inter-work-10
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-flowspec-srv6-03
   type: src
 type: standard
 docid:
-- id: draft-ietf-teas-gmpls-controller-inter-work-10
+- id: draft-ietf-idr-flowspec-srv6-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-gmpls-controller-inter-work
+- id: I-D.ietf-idr-flowspec-srv6
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-teas-gmpls-controller-inter-work
+docnumber: I-D.ietf-idr-flowspec-srv6
 date:
 - type: published
-  value: '2023-03-12'
+  value: '2023-04-06'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Haomian
+        - content: Zhenbin
+          language:
+          - en
+        - language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Zhenbin Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Lei
+          language:
+          - en
+        - language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Lei Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Huaimo
           language:
           - en
         - language:
@@ -39,24 +95,167 @@ contributor:
           language:
           - en
       surname:
-        content: Zheng
+        content: Chen
         language:
         - en
       completename:
-        content: Haomian Zheng
+        content: Huaimo Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xianlong
+        - content: Christoph
+          language:
+          - en
+        - language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Loibl
+        language:
+        - en
+      completename:
+        content: Christoph Loibl
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Next Layer Communications
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Gyan
+          language:
+          - en
+        - language:
+          - en
+          initial: G
+        - language:
+          - en
+          initial: S
+        formatted_initials:
+          content: G. S.
+          language:
+          - en
+      surname:
+        content: Mishra
+        language:
+        - en
+      completename:
+        content: Gyan Mishra
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Verizon Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Yanhe
+          language:
+          - en
+        - language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Fan
+        language:
+        - en
+      completename:
+        content: Yanhe Fan
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Casa Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Yongqing
+          language:
+          - en
+        - language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Zhu
+        language:
+        - en
+      completename:
+        content: Yongqing Zhu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Telecom
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Lei
+          language:
+          - en
+        - language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Lei Liu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Fujitsu
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Xufeng
           language:
           - en
         - language:
@@ -67,175 +266,29 @@ contributor:
           language:
           - en
       surname:
-        content: Luo
+        content: Liu
         language:
         - en
       completename:
-        content: Xianlong Luo
+        content: Xufeng Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
-      surname:
-        content: Lin
-        language:
-        - en
-      completename:
-        content: Yi Lin
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Yang
-          language:
-          - en
-        - language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
-      surname:
-        content: Zhao
-        language:
-        - en
-      completename:
-        content: Yang Zhao
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Yunbin
-          language:
-          - en
-        - language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
-      surname:
-        content: Xu
-        language:
-        - en
-      completename:
-        content: Yunbin Xu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: CAICT
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Belotti
-        language:
-        - en
-      completename:
-        content: Sergio Belotti
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Dieter
-          language:
-          - en
-        - language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Beller
-        language:
-        - en
-      completename:
-        content: Dieter Beller
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
+        - content: Volta Networks
   role:
   - type: author
 version:
-- draft: '10'
-revdate: '2023-03-12'
+- draft: '03'
+revdate: '2023-04-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Generalized Multi-Protocol Label Switching (GMPLS) control allows each
-    network element (NE) to perform local resource discovery, routing and signaling
-    in a distributed manner. On the other hand, with the development of software-defined
-    transport networking technology, a set of NEs can be controlled via centralized
-    controller hierarchies to address the issues from multi- domain, multi-vendor,
-    and multi-technology. An example of such centralized architecture is Abstraction
-    and Control of Traffic Engineered Networks (ACTN) controller hierarchy described
-    in RFC 8453. Instead of competing with each other, both the distributed and the
-    centralized control plane have their own advantages, and should be complementary
-    in the system. This document describes how the GMPLS distributed control plane
-    can interwork with a centralized controller system in a transport network.</p>"
+- content: "<p>This document proposes extensions to BGP Flow Specification for SRv6
+    for filtering packets with a SRv6 SID that matches a sequence of conditions.</p>"
   language:
   - en
   script:
@@ -244,23 +297,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-gmpls-controller-inter-work-09
+    id: draft-ietf-idr-flowspec-srv6-02
     docid:
-    - id: draft-ietf-teas-gmpls-controller-inter-work-09
+    - id: draft-ietf-idr-flowspec-srv6-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-teas-gmpls-controller-inter-work-09
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-teas-gmpls-controller-inter-work-11
-    docid:
-    - id: draft-ietf-teas-gmpls-controller-inter-work-11
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-teas-gmpls-controller-inter-work-11
+      content: draft-ietf-idr-flowspec-srv6-02
       format: text/plain
 series:
 - type: main
@@ -271,7 +314,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-teas-gmpls-controller-inter-work-10
+  number: draft-ietf-idr-flowspec-srv6-03
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

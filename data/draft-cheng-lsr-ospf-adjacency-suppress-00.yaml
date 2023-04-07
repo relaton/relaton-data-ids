@@ -1,90 +1,62 @@
 ---
 schema-version: v1.2.3
-id: draft-chen-pce-ctr-availability-05
+id: draft-cheng-lsr-ospf-adjacency-suppress-00
 title:
-- content: PCE for Network High Availability
+- content: OSPF Adjacency Suppression
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-chen-pce-ctr-availability-05
+- content: https://datatracker.ietf.org/doc/html/draft-cheng-lsr-ospf-adjacency-suppress-00
   type: src
 type: standard
 docid:
-- id: draft-chen-pce-ctr-availability-05
+- id: draft-cheng-lsr-ospf-adjacency-suppress-00
   type: Internet-Draft
   primary: true
-- id: I-D.chen-pce-ctr-availability
+- id: I-D.cheng-lsr-ospf-adjacency-suppress
   type: IETF
   scope: anchor
-docnumber: I-D.chen-pce-ctr-availability
+docnumber: I-D.cheng-lsr-ospf-adjacency-suppress
 date:
 - type: published
-  value: '2022-09-22'
+  value: '2023-04-07'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Huaimo
+        - content: Weiqiang
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: W
         formatted_initials:
-          content: H.
+          content: W.
           language:
           - en
       surname:
-        content: Chen
+        content: Cheng
         language:
         - en
       completename:
-        content: Huaimo Chen
+        content: Weiqiang Cheng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Aijun
-          language:
-          - en
-        - language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Wang
-        language:
-        - en
-      completename:
-        content: Aijun Wang
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Telecom
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Lei
+        - content: Liyan
           language:
           - en
         - language:
@@ -95,84 +67,92 @@ contributor:
           language:
           - en
       surname:
-        content: Liu
+        content: Gong
         language:
         - en
       completename:
-        content: Lei Liu
+        content: Liyan Gong
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Fujitsu
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xufeng
+        - content: Changwang
           language:
           - en
         - language:
           - en
-          initial: X
+          initial: C
         formatted_initials:
-          content: X.
+          content: C.
           language:
           - en
       surname:
-        content: Liu
+        content: Lin
         language:
         - en
       completename:
-        content: Xufeng Liu
+        content: Changwang Lin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: IBM Corporation
+        - content: New H3C Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mengxiao
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Chen
+        language:
+        - en
+      completename:
+        content: Mengxiao Chen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: New H3C Technologies
   role:
   - type: author
 version:
-- draft: '05'
-revdate: '2022-09-22'
+- draft: '00'
+revdate: '2023-04-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes extensions to Path Computation Element (PCE)
-    communication Protocol (PCEP) for improving the reliability or availability of
-    a network controlled by a controller cluster.</p>"
+- content: "<p>This document describes a mechanism for a router to instructs its neighbors
+    to suppress advertising the adjacency to it until link- state database synchronization
+    and LSA reoriginating are complete. This minimizes transient routing disruption
+    when a router restarts from unplanned outages.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
-relation:
-- type: updates
-  bibitem:
-    id: draft-chen-pce-ctr-availability-04
-    docid:
-    - id: draft-chen-pce-ctr-availability-04
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-pce-ctr-availability-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-chen-pce-ctr-availability-06
-    docid:
-    - id: draft-chen-pce-ctr-availability-06
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-chen-pce-ctr-availability-06
-      format: text/plain
 series:
 - type: main
   title:
@@ -182,7 +162,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-pce-ctr-availability-05
+  number: draft-cheng-lsr-ospf-adjacency-suppress-00
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
