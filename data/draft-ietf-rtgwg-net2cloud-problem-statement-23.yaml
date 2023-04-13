@@ -1,186 +1,189 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-i2nsf-registration-interface-dm-23
+id: draft-ietf-rtgwg-net2cloud-problem-statement-23
 title:
-- content: I2NSF Registration Interface YANG Data Model for NSF Capability Registration
+- content: Status of this Memo
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-i2nsf-registration-interface-dm-23
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-net2cloud-problem-statement-23
   type: src
 type: standard
 docid:
-- id: draft-ietf-i2nsf-registration-interface-dm-23
+- id: draft-ietf-rtgwg-net2cloud-problem-statement-23
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-i2nsf-registration-interface-dm
+- id: I-D.ietf-rtgwg-net2cloud-problem-statement
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-i2nsf-registration-interface-dm
+docnumber: I-D.ietf-rtgwg-net2cloud-problem-statement
 date:
 - type: published
-  value: '2023-02-23'
+  value: '2023-04-12'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Sangwon
+        - content: Linda
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: L
         formatted_initials:
-          content: S.
+          content: L.
           language:
           - en
       surname:
-        content: Hyun
+        content: Dunbar
         language:
         - en
       completename:
-        content: Sangwon Hyun
+        content: Linda Dunbar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Department of Computer Engineering
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jaehoon
+        - content: Andrew
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: A
         - language:
           - en
-          initial: P
+          initial: G
         formatted_initials:
-          content: J. P.
+          content: A. G.
           language:
           - en
       surname:
-        content: Jeong
+        content: Malis
         language:
         - en
       completename:
-        content: Jaehoon Paul Jeong
+        content: Andrew G. Malis
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Department of Computer Science and Engineering
+        - content: Malis Consulting
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: TaeKyun
+        - content: Christian
           language:
           - en
         - language:
           - en
-          initial: T
+          initial: C
         formatted_initials:
-          content: T.
+          content: C.
           language:
           - en
       surname:
-        content: Roh
+        content: Jacquenet
         language:
         - en
       completename:
-        content: TaeKyun Roh
+        content: Christian Jacquenet
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Department of Electronic, Electrical and Computer Engineering
+        - content: Orange
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Sarang
+        - content: Mehmet
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: M
         formatted_initials:
-          content: S.
+          content: M.
           language:
           - en
       surname:
-        content: Wi
+        content: Toy
         language:
         - en
       completename:
-        content: Sarang Wi
+        content: Mehmet Toy
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Department of Electronic, Electrical and Computer Engineering
+        - content: Verizon
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Park
+        - content: Kausik
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: K
         formatted_initials:
-          content: J.
+          content: K.
           language:
           - en
       surname:
-        content: Jung-Soo
+        content: Majumdar
         language:
         - en
       completename:
-        content: Park Jung-Soo
+        content: Kausik Majumdar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Electronics and Telecommunications Research Institute
+        - content: Microsoft
   role:
   - type: author
 version:
 - draft: '23'
-revdate: '2023-02-23'
+revdate: '2023-04-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines an information model and a YANG data model for
-    the Registration Interface between Security Controller and Developer's Management
-    System (DMS) in the Interface to Network Security Functions (I2NSF) framework
-    to register Network Security Functions (NSF) of the DMS with the Security Controller.
-    The objective of these information and data models is to support NSF capability
-    registration and query via I2NSF Registration Interface.</p>"
+- content: "<p>This document describes the network-related problems enterprises face
+    at the moment of writing this specification when interconnecting their branch
+    offices with dynamic workloads in third-party data centers (a.k.a. Cloud DCs)
+    and some mitigation practices. There can be many problems associated with connecting
+    to or among Cloud DCs; the Net2Cloud problem statements are mainly for enterprises
+    that already have traditional VPN services and are interested in leveraging those
+    networks (instead of altogether abandoning them). Other problems are out of the
+    scope of this document. This document also describes the mitigation practices
+    for getting around the identified problems.</p>"
   language:
   - en
   script:
@@ -189,23 +192,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-i2nsf-registration-interface-dm-22
+    id: draft-ietf-rtgwg-net2cloud-problem-statement-22
     docid:
-    - id: draft-ietf-i2nsf-registration-interface-dm-22
+    - id: draft-ietf-rtgwg-net2cloud-problem-statement-22
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-i2nsf-registration-interface-dm-22
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-i2nsf-registration-interface-dm-24
-    docid:
-    - id: draft-ietf-i2nsf-registration-interface-dm-24
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-i2nsf-registration-interface-dm-24
+      content: draft-ietf-rtgwg-net2cloud-problem-statement-22
       format: text/plain
 series:
 - type: main
@@ -216,7 +209,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-i2nsf-registration-interface-dm-23
+  number: draft-ietf-rtgwg-net2cloud-problem-statement-23
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
