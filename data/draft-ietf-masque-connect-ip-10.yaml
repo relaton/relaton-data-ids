@@ -1,25 +1,25 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-oauth-dpop-15
+id: draft-ietf-masque-connect-ip-10
 title:
-- content: OAuth 2.0 Demonstrating Proof-of-Possession at the Application Layer (DPoP)
+- content: Proxying IP in HTTP
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-dpop-15
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-connect-ip-10
   type: src
 type: standard
 docid:
-- id: draft-ietf-oauth-dpop-15
+- id: draft-ietf-masque-connect-ip-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-oauth-dpop
+- id: I-D.ietf-masque-connect-ip
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-oauth-dpop
+docnumber: I-D.ietf-masque-connect-ip
 date:
 - type: published
   value: '2023-04-13'
@@ -28,91 +28,7 @@ contributor:
     name:
       given:
         forename:
-        - content: Daniel
-          language:
-          - en
-        - language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Fett
-        language:
-        - en
-      completename:
-        content: Daniel Fett
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Authlete
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Campbell
-        language:
-        - en
-      completename:
-        content: Brian Campbell
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ping Identity
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Bradley
-        language:
-        - en
-      completename:
-        content: John Bradley
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Yubico
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Torsten
+        - content: Tommy
           language:
           - en
         - language:
@@ -123,48 +39,17 @@ contributor:
           language:
           - en
       surname:
-        content: Lodderstedt
+        content: Pauly
         language:
         - en
       completename:
-        content: Torsten Lodderstedt
+        content: Tommy Pauly
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: yes.com
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        - language:
-          - en
-          initial: B
-        formatted_initials:
-          content: M. B.
-          language:
-          - en
-      surname:
-        content: Jones
-        language:
-        - en
-      completename:
-        content: Michael B. Jones
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: independent
+        - content: Apple Inc.
   role:
   - type: author
 - person:
@@ -182,30 +67,116 @@ contributor:
           language:
           - en
       surname:
-        content: Waite
+        content: Schinazi
         language:
         - en
       completename:
-        content: David Waite
+        content: David Schinazi
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ping Identity
+        - content: Google LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Alex
+          language:
+          - en
+        - language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Chernyakhovsky
+        language:
+        - en
+      completename:
+        content: Alex Chernyakhovsky
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Google LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mirja
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Kühlewind
+        language:
+        - en
+      completename:
+        content: Mirja Kühlewind
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Magnus
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Westerlund
+        language:
+        - en
+      completename:
+        content: Magnus Westerlund
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
   role:
   - type: author
 version:
-- draft: '15'
+- draft: '10'
 revdate: '2023-04-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a mechanism for sender-constraining OAuth 2.0
-    tokens via a proof-of-possession mechanism on the application level. This mechanism
-    allows for the detection of replay attacks with access and refresh tokens.</p>"
+- content: "<p>This document describes how to proxy IP packets in HTTP. This protocol
+    is similar to UDP proxying in HTTP, but allows transmitting arbitrary IP packets.
+    More specifically, this document defines a protocol that allows an HTTP client
+    to create an IP tunnel through an HTTP server that acts as an IP proxy. This document
+    updates RFC 9298.</p>"
   language:
   - en
   script:
@@ -214,23 +185,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-oauth-dpop-14
+    id: draft-ietf-masque-connect-ip-09
     docid:
-    - id: draft-ietf-oauth-dpop-14
+    - id: draft-ietf-masque-connect-ip-09
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-oauth-dpop-14
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-oauth-dpop-16
-    docid:
-    - id: draft-ietf-oauth-dpop-16
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-oauth-dpop-16
+      content: draft-ietf-masque-connect-ip-09
       format: text/plain
 series:
 - type: main
@@ -241,7 +202,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-oauth-dpop-15
+  number: draft-ietf-masque-connect-ip-10
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
