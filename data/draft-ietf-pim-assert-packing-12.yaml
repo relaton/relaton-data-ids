@@ -1,158 +1,161 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-bfd-unsolicited-13
+id: draft-ietf-pim-assert-packing-12
 title:
-- content: Unsolicited BFD for Sessionless Applications
+- content: PIM Assert Message Packing
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-unsolicited-13
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-assert-packing-12
   type: src
 type: standard
 docid:
-- id: draft-ietf-bfd-unsolicited-13
+- id: draft-ietf-pim-assert-packing-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bfd-unsolicited
+- id: I-D.ietf-pim-assert-packing
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-bfd-unsolicited
+docnumber: I-D.ietf-pim-assert-packing
 date:
 - type: published
-  value: '2023-03-26'
+  value: '2023-04-19'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Enke
+        - content: Yisong
           language:
           - en
         - language:
           - en
-          initial: E
+          initial: Y
         formatted_initials:
-          content: E.
+          content: Y.
           language:
           - en
       surname:
-        content: Chen
+        content: Liu
         language:
         - en
       completename:
-        content: Enke Chen
+        content: Yisong Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Palo Alto Networks
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Naiming
+        - content: Toerless
           language:
           - en
         - language:
           - en
-          initial: N
+          initial: T
+        - language:
+          - en
+          initial: T
         formatted_initials:
-          content: N.
+          content: T. T.
           language:
           - en
       surname:
-        content: Shen
+        content: Eckert
         language:
         - en
       completename:
-        content: Naiming Shen
+        content: Toerless Eckert
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Zededa
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Robert
+        - content: Mike
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: M
         formatted_initials:
-          content: R.
+          content: M.
           language:
           - en
       surname:
-        content: Raszuk
+        content: McBride
         language:
         - en
       completename:
-        content: Robert Raszuk
+        content: Mike McBride
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Reshad
+        - content: Zheng
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: Z
         formatted_initials:
-          content: R.
+          content: Z.
           language:
           - en
       surname:
-        content: Rahman
+        content: Zhang
         language:
         - en
       completename:
-        content: Reshad Rahman
+        content: Zheng Zhang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Graphiant
+        - content: ZTE Corporation
   role:
   - type: author
 version:
-- draft: '13'
-revdate: '2023-03-26'
+- draft: '12'
+revdate: '2023-04-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>For operational simplification of "sessionless" applications using Bidirectional
-    Forwarding Detection (BFD), in this document we present procedures for "unsolicited
-    BFD" that allow a BFD session to be initiated by only one side, and established
-    without explicit per- session configuration or registration by the other side
-    (subject to certain per-interface or global policies). We also introduce a new
-    YANG module to configure and manage "unsolicited BFD". The YANG module in this
-    document is based on YANG 1.1 as defined in RFC 7950 and conforms to the Network
-    Management Datastore Architecture (NMDA) as described in RFC 8342. This document
-    augments RFC 9314.</p>
+- content: "<p>In PIM-SM shared LAN networks, there is often more than one upstream
+    router. When PIM Sparse Mode (PIM-SM), including PIM Source Specific-Specific
+    Multicast (PIM-SSM), is used, this can lead to duplicate IP multicast packets
+    being forwarded by these PIM routers. PIM Assert messages are used to elect a
+    single forwarder for each IP multicast traffic flow between these routers. This
+    document defines a mechanism to send and receive information for multiple IP multicast
+    flows in a single PackedAssert message. This optimization reduces the total number
+    of PIM packets on the LAN and can therefore speed up the election of the single
+    forwarder, reducing the number of duplicate IP multicast packets incurred.</p>"
   language:
   - en
   script:
@@ -161,23 +164,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bfd-unsolicited-12
+    id: draft-ietf-pim-assert-packing-11
     docid:
-    - id: draft-ietf-bfd-unsolicited-12
+    - id: draft-ietf-pim-assert-packing-11
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-bfd-unsolicited-12
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-bfd-unsolicited-14
-    docid:
-    - id: draft-ietf-bfd-unsolicited-14
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-bfd-unsolicited-14
+      content: draft-ietf-pim-assert-packing-11
       format: text/plain
 series:
 - type: main
@@ -188,7 +181,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-bfd-unsolicited-13
+  number: draft-ietf-pim-assert-packing-12
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
