@@ -1,90 +1,143 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-masque-connect-ip-11
+id: draft-selander-lake-authz-01
 title:
-- content: Proxying IP in HTTP
+- content: Lightweight Authorization for EDHOC
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-connect-ip-11
+- content: https://datatracker.ietf.org/doc/html/draft-selander-lake-authz-01
   type: src
 type: standard
 docid:
-- id: draft-ietf-masque-connect-ip-11
+- id: draft-selander-lake-authz-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-masque-connect-ip
+- id: I-D.selander-lake-authz
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-masque-connect-ip
+docnumber: I-D.selander-lake-authz
 date:
 - type: published
-  value: '2023-04-17'
+  value: '2023-04-21'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Tommy
-          language:
-          - en
         - language:
           - en
-          initial: T
+          initial: G
         formatted_initials:
-          content: T.
+          content: G.
           language:
           - en
       surname:
-        content: Pauly
+        content: Selander
         language:
         - en
       completename:
-        content: Tommy Pauly
+        content: Göran Selander
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
+        - content: Ericsson AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: David
+        - content: John
           language:
           - en
         - language:
           - en
-          initial: D
+          initial: J
+        - language:
+          - en
+          initial: P
         formatted_initials:
-          content: D.
+          content: J. P.
           language:
           - en
       surname:
-        content: Schinazi
+        content: Mattsson
         language:
         - en
       completename:
-        content: David Schinazi
+        content: John Preuß Mattsson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
+        - content: Ericsson AB
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Alex
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Vučinić
+        language:
+        - en
+      completename:
+        content: Mališa Vučinić
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: INRIA
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Michael
+          language:
+          - en
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Richardson
+        language:
+        - en
+      completename:
+        content: Michael Richardson
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Sandelman Software Works
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Aurelio
           language:
           - en
         - language:
@@ -95,88 +148,30 @@ contributor:
           language:
           - en
       surname:
-        content: Chernyakhovsky
+        content: Schellenbaum
         language:
         - en
       completename:
-        content: Alex Chernyakhovsky
+        content: Aurelio Schellenbaum
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mirja
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Kühlewind
-        language:
-        - en
-      completename:
-        content: Mirja Kühlewind
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ericsson
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Magnus
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Westerlund
-        language:
-        - en
-      completename:
-        content: Magnus Westerlund
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ericsson
+        - content: Institute of Embedded Systems, ZHAW
   role:
   - type: author
 version:
-- draft: '11'
-revdate: '2023-04-17'
+- draft: '01'
+revdate: '2023-04-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how to proxy IP packets in HTTP. This protocol
-    is similar to UDP proxying in HTTP, but allows transmitting arbitrary IP packets.
-    More specifically, this document defines a protocol that allows an HTTP client
-    to create an IP tunnel through an HTTP server that acts as an IP proxy. This document
-    updates RFC 9298.</p>"
+- content: "<p>This document describes a procedure for augmenting the lightweight
+    authenticated Diffie-Hellman key exchange protocol EDHOC with third party assisted
+    authorization, targeting constrained IoT deployments (RFC 7228).</p>"
   language:
   - en
   script:
@@ -185,23 +180,23 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-masque-connect-ip-10
+    id: draft-selander-lake-authz-00
     docid:
-    - id: draft-ietf-masque-connect-ip-10
+    - id: draft-selander-lake-authz-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-masque-connect-ip-10
+      content: draft-selander-lake-authz-00
       format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-masque-connect-ip-12
+    id: draft-selander-lake-authz-02
     docid:
-    - id: draft-ietf-masque-connect-ip-12
+    - id: draft-selander-lake-authz-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-masque-connect-ip-12
+      content: draft-selander-lake-authz-02
       format: text/plain
 series:
 - type: main
@@ -212,7 +207,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-masque-connect-ip-11
+  number: draft-selander-lake-authz-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
