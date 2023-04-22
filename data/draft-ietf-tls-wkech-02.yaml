@@ -1,83 +1,55 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-shmoo-remote-fee-06
+id: draft-ietf-tls-wkech-02
 title:
-- content: Open Participation Principle regarding Remote Registration Fee
+- content: A well-known URI for publishing ECHConfigList values.
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-shmoo-remote-fee-06
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-wkech-02
   type: src
 type: standard
 docid:
-- id: draft-ietf-shmoo-remote-fee-06
+- id: draft-ietf-tls-wkech-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-shmoo-remote-fee
+- id: I-D.ietf-tls-wkech
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-shmoo-remote-fee
+docnumber: I-D.ietf-tls-wkech
 date:
 - type: published
-  value: '2023-03-06'
+  value: '2023-04-21'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Mirja
+        - content: Stephen
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: S
         formatted_initials:
-          content: M.
+          content: S.
           language:
           - en
       surname:
-        content: Kühlewind
+        content: Farrell
         language:
         - en
       completename:
-        content: Mirja Kühlewind
+        content: Stephen Farrell
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Jonathan
-          language:
-          - en
-        - language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
-      surname:
-        content: Reed
-        language:
-        - en
-      completename:
-        content: Jonathan Reed
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Akamai
+        - content: Trinity College Dublin
   role:
   - type: author
 - person:
@@ -105,21 +77,53 @@ contributor:
     affiliation:
     - organization:
         name:
-        - content: Akamai
+        - content: Akamai Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Benjamin
+          language:
+          - en
+        - language:
+          - en
+          initial: B
+        - language:
+          - en
+          initial: M
+        formatted_initials:
+          content: B. M.
+          language:
+          - en
+      surname:
+        content: Schwartz
+        language:
+        - en
+      completename:
+        content: Benjamin M. Schwartz
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Google LLC
   role:
   - type: author
 version:
-- draft: '06'
-revdate: '2023-03-06'
+- draft: '02'
+revdate: '2023-04-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document outlines a principle for open participation that extends
-    the open process principle defined in RFC3935 by stating that there must be a
-    free option for online participation to IETF meetings and, if possible, related
-    IETF-hosted events over the Internet.</p>"
+- content: <p>We propose use of a well-known URI at which an HTTP origin can inform
+    an authoritative DNS server, or other interested parties, about this origin's
+    Service Bindings, i.e. its "HTTPS" DNS records. These instructions can include
+    Encrypted ClientHello (ECH) configurations, allowing the origin to publish and
+    rotate its own ECH keys.</p>
   language:
   - en
   script:
@@ -128,23 +132,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-shmoo-remote-fee-05
+    id: draft-ietf-tls-wkech-01
     docid:
-    - id: draft-ietf-shmoo-remote-fee-05
+    - id: draft-ietf-tls-wkech-01
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-shmoo-remote-fee-05
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-shmoo-remote-fee-07
-    docid:
-    - id: draft-ietf-shmoo-remote-fee-07
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-shmoo-remote-fee-07
+      content: draft-ietf-tls-wkech-01
       format: text/plain
 series:
 - type: main
@@ -155,7 +149,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-shmoo-remote-fee-06
+  number: draft-ietf-tls-wkech-02
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

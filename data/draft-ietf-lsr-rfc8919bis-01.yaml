@@ -1,62 +1,90 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-pce-segment-routing-policy-cp-09
+id: draft-ietf-lsr-rfc8919bis-01
 title:
-- content: PCEP extension to support Segment Routing Policy Candidate Paths
+- content: IS-IS Application-Specific Link Attributes
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-segment-routing-policy-cp-09
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-rfc8919bis-01
   type: src
 type: standard
 docid:
-- id: draft-ietf-pce-segment-routing-policy-cp-09
+- id: draft-ietf-lsr-rfc8919bis-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pce-segment-routing-policy-cp
+- id: I-D.ietf-lsr-rfc8919bis
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-pce-segment-routing-policy-cp
+docnumber: I-D.ietf-lsr-rfc8919bis
 date:
 - type: published
-  value: '2023-03-07'
+  value: '2023-04-21'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Mike
+        - content: Les
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: L
         formatted_initials:
-          content: M.
+          content: L.
           language:
           - en
       surname:
-        content: Koldychev
+        content: Ginsberg
         language:
         - en
       completename:
-        content: Mike Koldychev
+        content: Les Ginsberg
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
+        - content: Cisco Systems
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Siva
+        - content: Peter
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Psenak
+        language:
+        - en
+      completename:
+        content: Peter Psenak
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Stefano
           language:
           - en
         - language:
@@ -67,67 +95,11 @@ contributor:
           language:
           - en
       surname:
-        content: Sivabalan
+        content: Previdi
         language:
         - en
       completename:
-        content: Siva Sivabalan
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Ciena Corporation
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Colby
-          language:
-          - en
-        - language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Barth
-        language:
-        - en
-      completename:
-        content: Colby Barth
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Juniper Networks, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Shuping
-          language:
-          - en
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Peng
-        language:
-        - en
-      completename:
-        content: Shuping Peng
+        content: Stefano Previdi
         language:
         - en
     affiliation:
@@ -140,22 +112,22 @@ contributor:
     name:
       given:
         forename:
-        - content: Hooman
+        - content: Wim
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: W
         formatted_initials:
-          content: H.
+          content: W.
           language:
           - en
       surname:
-        content: Bidgoli
+        content: Henderickx
         language:
         - en
       completename:
-        content: Hooman Bidgoli
+        content: Wim Henderickx
         language:
         - en
     affiliation:
@@ -164,21 +136,52 @@ contributor:
         - content: Nokia
   role:
   - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: John
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Drake
+        language:
+        - en
+      completename:
+        content: John Drake
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
 version:
-- draft: '09'
-revdate: '2023-03-07'
+- draft: '01'
+revdate: '2023-04-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A Segment Routing (SR) Policy ([RFC9256]) is a non-empty set of SR
-    Candidate Paths, that all share the same &lt;headend, color, endpoint&gt; tuple.
-    This document extends [RFC8664] to fully support the SR Policy construct. SR Policy
-    is modeled in PCEP as an Association of one or more SR Candidate Paths. PCEP extensions
-    are defined to signal additional attributes of an SR Policy, which are not covered
-    by [RFC8664]. The mechanism is applicable to all data planes of SR (MPLS, SRv6,
-    etc.).</p>"
+- content: "<p>Existing traffic-engineering-related link attribute advertisements
+    have been defined and are used in RSVP-TE deployments. Since the original RSVP-TE
+    use case was defined, additional applications (e.g., Segment Routing Policy and
+    Loop-Free Alternates) that also make use of the link attribute advertisements
+    have been defined. In cases where multiple applications wish to make use of these
+    link attributes, the current advertisements do not support application- specific
+    values for a given attribute, nor do they support indication of which applications
+    are using the advertised value for a given link. This document introduces new
+    link attribute advertisements that address both of these shortcomings. This document
+    obsoletes RFC 8919.</p>"
   language:
   - en
   script:
@@ -187,23 +190,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pce-segment-routing-policy-cp-08
+    id: draft-ietf-lsr-rfc8919bis-00
     docid:
-    - id: draft-ietf-pce-segment-routing-policy-cp-08
+    - id: draft-ietf-lsr-rfc8919bis-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-pce-segment-routing-policy-cp-08
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-pce-segment-routing-policy-cp-10
-    docid:
-    - id: draft-ietf-pce-segment-routing-policy-cp-10
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-pce-segment-routing-policy-cp-10
+      content: draft-ietf-lsr-rfc8919bis-00
       format: text/plain
 series:
 - type: main
@@ -214,7 +207,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-pce-segment-routing-policy-cp-09
+  number: draft-ietf-lsr-rfc8919bis-01
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
