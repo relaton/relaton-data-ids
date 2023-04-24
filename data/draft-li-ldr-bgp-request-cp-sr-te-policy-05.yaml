@@ -1,29 +1,85 @@
 ---
 schema-version: v1.2.3
-id: draft-chen-pim-be-mrh-simu-00
+id: draft-li-ldr-bgp-request-cp-sr-te-policy-05
 title:
-- content: Stateless Best Effort Multicast Simulations
+- content: BGP Request for Candidate Paths of SR TE Policies
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-chen-pim-be-mrh-simu-00
+- content: https://datatracker.ietf.org/doc/html/draft-li-ldr-bgp-request-cp-sr-te-policy-05
   type: src
 type: standard
 docid:
-- id: draft-chen-pim-be-mrh-simu-00
+- id: draft-li-ldr-bgp-request-cp-sr-te-policy-05
   type: Internet-Draft
   primary: true
-- id: I-D.chen-pim-be-mrh-simu
+- id: I-D.li-ldr-bgp-request-cp-sr-te-policy
   type: IETF
   scope: anchor
-docnumber: I-D.chen-pim-be-mrh-simu
+docnumber: I-D.li-ldr-bgp-request-cp-sr-te-policy
 date:
 - type: published
-  value: '2022-10-22'
+  value: '2023-04-23'
 contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Zhenbin
+          language:
+          - en
+        - language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Zhenbin Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Qiangzhou
+          language:
+          - en
+        - language:
+          - en
+          initial: Q
+        formatted_initials:
+          content: Q.
+          language:
+          - en
+      surname:
+        content: Gao
+        language:
+        - en
+      completename:
+        content: Qiangzhou Gao
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
 - person:
     name:
       given:
@@ -44,65 +100,6 @@ contributor:
         - en
       completename:
         content: Huaimo Chen
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - language:
-          - en
-          initial: D
-        - language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
-      surname:
-        content: Eastlake
-        language:
-        - en
-      completename:
-        content: Donald E. Eastlake 3rd
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: McBride
-        language:
-        - en
-      completename:
-        content: Mike McBride
         language:
         - en
     affiliation:
@@ -143,93 +140,6 @@ contributor:
     name:
       given:
         forename:
-        - content: Gyan
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        - language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
-      surname:
-        content: Mishra
-        language:
-        - en
-      completename:
-        content: Gyan Mishra
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Verizon
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Yisong
-          language:
-          - en
-        - language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
-      surname:
-        content: Liu
-        language:
-        - en
-      completename:
-        content: Yisong Liu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Mobile
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Aijun
-          language:
-          - en
-        - language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Wang
-        language:
-        - en
-      completename:
-        content: Aijun Wang
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Telecom
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
         - content: Xufeng
           language:
           - en
@@ -251,7 +161,7 @@ contributor:
     affiliation:
     - organization:
         name:
-        - content: IBM Corporation
+        - content: Volta Networks
   role:
   - type: author
 - person:
@@ -283,31 +193,33 @@ contributor:
   role:
   - type: author
 version:
-- draft: '00'
-revdate: '2022-10-22'
+- draft: '05'
+revdate: '2023-04-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes simulations of stateless best effort Multicasts
-    and lists a set of simulation results for different large network sizes and different
-    tree sizes.</p>"
+- content: "<p>An SR Policy is a set of candidate paths. The headend of an SR Policy
+    may learn multiple candidate paths for an SR Policy via a number of different
+    mechanisms, e.g., CLI, NetConf, PCEP, or BGP. This document defines extensions
+    to BGP for the headend to request BGP speaker (controller) for advertising the
+    candidate paths.</p>"
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-chen-pim-be-mrh-simu-01
+    id: draft-li-ldr-bgp-request-cp-sr-te-policy-04
     docid:
-    - id: draft-chen-pim-be-mrh-simu-01
+    - id: draft-li-ldr-bgp-request-cp-sr-te-policy-04
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-chen-pim-be-mrh-simu-01
+      content: draft-li-ldr-bgp-request-cp-sr-te-policy-04
       format: text/plain
 series:
 - type: main
@@ -318,7 +230,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-chen-pim-be-mrh-simu-00
+  number: draft-li-ldr-bgp-request-cp-sr-te-policy-05
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

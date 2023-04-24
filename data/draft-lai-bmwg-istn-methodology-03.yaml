@@ -1,34 +1,35 @@
 ---
 schema-version: v1.2.3
-id: draft-li-ldr-bgp-request-cp-sr-te-policy-04
+id: draft-lai-bmwg-istn-methodology-03
 title:
-- content: BGP Request for Candidate Paths of SR TE Policies
+- content: Problems and Requirements of Evaluation Methodology for Integrated Space
+    and Terrestrial Networks
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-ldr-bgp-request-cp-sr-te-policy-04
+- content: https://datatracker.ietf.org/doc/html/draft-lai-bmwg-istn-methodology-03
   type: src
 type: standard
 docid:
-- id: draft-li-ldr-bgp-request-cp-sr-te-policy-04
+- id: draft-lai-bmwg-istn-methodology-03
   type: Internet-Draft
   primary: true
-- id: I-D.li-ldr-bgp-request-cp-sr-te-policy
+- id: I-D.lai-bmwg-istn-methodology
   type: IETF
   scope: anchor
-docnumber: I-D.li-ldr-bgp-request-cp-sr-te-policy
+docnumber: I-D.lai-bmwg-istn-methodology
 date:
 - type: published
-  value: '2022-10-12'
+  value: '2023-04-24'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Zhenbin
+        - content: Zeqi
           language:
           - en
         - language:
@@ -39,52 +40,24 @@ contributor:
           language:
           - en
       surname:
-        content: Li
+        content: Lai
         language:
         - en
       completename:
-        content: Zhenbin Li
+        content: Zeqi Lai
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Qiangzhou
-          language:
-          - en
-        - language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
-      surname:
-        content: Gao
-        language:
-        - en
-      completename:
-        content: Qiangzhou Gao
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Huaimo
+        - content: Hewu
           language:
           - en
         - language:
@@ -95,24 +68,24 @@ contributor:
           language:
           - en
       surname:
-        content: Chen
+        content: Li
         language:
         - en
       completename:
-        content: Huaimo Chen
+        content: Hewu Li
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yanhe
+        - content: Yangtao
           language:
           - en
         - language:
@@ -123,31 +96,59 @@ contributor:
           language:
           - en
       surname:
-        content: Fan
+        content: Deng
         language:
         - en
       completename:
-        content: Yanhe Fan
+        content: Yangtao Deng
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Casa Systems
+        - content: Tsinghua University
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xufeng
+        - content: Qian
           language:
           - en
         - language:
           - en
-          initial: X
+          initial: Q
         formatted_initials:
-          content: X.
+          content: Q.
+          language:
+          - en
+      surname:
+        content: Wu
+        language:
+        - en
+      completename:
+        content: Qian Wu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tsinghua University
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Jun
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
           language:
           - en
       surname:
@@ -155,56 +156,37 @@ contributor:
         language:
         - en
       completename:
-        content: Xufeng Liu
+        content: Jun Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Volta Networks
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Lei
-          language:
-          - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Liu
-        language:
-        - en
-      completename:
-        content: Lei Liu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Fujitsu
+        - content: Tsinghua University
   role:
   - type: author
 version:
-- draft: '04'
-revdate: '2022-10-12'
+- draft: '03'
+revdate: '2023-04-24'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>An SR Policy is a set of candidate paths. The headend of an SR Policy
-    may learn multiple candidate paths for an SR Policy via a number of different
-    mechanisms, e.g., CLI, NetConf, PCEP, or BGP. This document defines extensions
-    to BGP for the headend to request BGP speaker (controller) for advertising the
-    candidate paths.</p>"
+- content: '<p>With the rapid evolution of the aerospace industry, many "NewSpace"
+    upstarts are actively deploying their mega-constellations in low earth orbits
+    (LEO) and building integrated space and terrestrial networks (ISTN), promising
+    to provide pervasive, low-latency, and high-throughput Internet service globally.
+    Due to the high manufacturing, launching, and updating cost of LEO mega- constellations,
+    it is expected that ISTNs can be well designed and evaluated before the launch
+    of satellites. However, the progress of designing, assessing, and understanding
+    new network functionalities and protocols for futuristic ISTNs faces a substantial
+    obstacle: lack of standardized evaluation methodology with acceptable realism
+    (e.g. can involve the unique dynamic behaviors of ISTNs), flexibility, and cost.
+    This memo first reviews the unique characteristics of LEO mega-constellations.
+    Further, it analyzes the limitation of existing evaluation and analysis methodologies
+    under ISTN environments. Finally, it outlines the key requirements of future evaluation
+    methodology tailored for ISTNs.</p>'
   language:
   - en
   script:
@@ -213,23 +195,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-li-ldr-bgp-request-cp-sr-te-policy-03
+    id: draft-lai-bmwg-istn-methodology-02
     docid:
-    - id: draft-li-ldr-bgp-request-cp-sr-te-policy-03
+    - id: draft-lai-bmwg-istn-methodology-02
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-li-ldr-bgp-request-cp-sr-te-policy-03
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-li-ldr-bgp-request-cp-sr-te-policy-05
-    docid:
-    - id: draft-li-ldr-bgp-request-cp-sr-te-policy-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-li-ldr-bgp-request-cp-sr-te-policy-05
+      content: draft-lai-bmwg-istn-methodology-02
       format: text/plain
 series:
 - type: main
@@ -240,7 +212,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-li-ldr-bgp-request-cp-sr-te-policy-04
+  number: draft-lai-bmwg-istn-methodology-03
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
