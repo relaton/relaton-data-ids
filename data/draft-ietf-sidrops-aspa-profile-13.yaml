@@ -1,189 +1,212 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-rtgwg-net2cloud-problem-statement-25
+id: draft-ietf-sidrops-aspa-profile-13
 title:
-- content: Status of this Memo
+- content: A Profile for Autonomous System Provider Authorization
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-net2cloud-problem-statement-25
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-aspa-profile-13
   type: src
 type: standard
 docid:
-- id: draft-ietf-rtgwg-net2cloud-problem-statement-25
+- id: draft-ietf-sidrops-aspa-profile-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-net2cloud-problem-statement
+- id: I-D.ietf-sidrops-aspa-profile
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-rtgwg-net2cloud-problem-statement
+docnumber: I-D.ietf-sidrops-aspa-profile
 date:
 - type: published
-  value: '2023-04-19'
+  value: '2023-04-25'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Linda
-          language:
-          - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Dunbar
-        language:
-        - en
-      completename:
-        content: Linda Dunbar
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Andrew
+        - content: Alexander
           language:
           - en
         - language:
           - en
           initial: A
-        - language:
-          - en
-          initial: G
         formatted_initials:
-          content: A. G.
+          content: A.
           language:
           - en
       surname:
-        content: Malis
+        content: Azimov
         language:
         - en
       completename:
-        content: Andrew G. Malis
+        content: Alexander Azimov
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Malis Consulting
+        - content: Yandex
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Christian
+        - content: Eugene
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: E
         formatted_initials:
-          content: C.
+          content: E.
           language:
           - en
       surname:
-        content: Jacquenet
+        content: Uskov
         language:
         - en
       completename:
-        content: Christian Jacquenet
+        content: Eugene Uskov
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange
+        - content: JetLend
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mehmet
+        - content: Randy
           language:
           - en
         - language:
           - en
-          initial: M
+          initial: R
         formatted_initials:
-          content: M.
+          content: R.
           language:
           - en
       surname:
-        content: Toy
+        content: Bush
         language:
         - en
       completename:
-        content: Mehmet Toy
+        content: Randy Bush
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
+        - content: Internet Initiative Japan
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Kausik
+        - content: Job
           language:
           - en
         - language:
           - en
-          initial: K
+          initial: J
         formatted_initials:
-          content: K.
+          content: J.
           language:
           - en
       surname:
-        content: Majumdar
+        content: Snijders
         language:
         - en
       completename:
-        content: Kausik Majumdar
+        content: Job Snijders
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
+        - content: Fastly
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Russ
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Housley
+        language:
+        - en
+      completename:
+        content: Russ Housley
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Vigil Security, LLC
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ben
+          language:
+          - en
+        - language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Maddison
+        language:
+        - en
+      completename:
+        content: Ben Maddison
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Workonline
   role:
   - type: author
 version:
-- draft: '25'
-revdate: '2023-04-19'
+- draft: '13'
+revdate: '2023-04-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the network-related problems enterprises face
-    at the moment of writing this specification when interconnecting their branch
-    offices with dynamic workloads in third-party data centers (a.k.a. Cloud DCs)
-    and some mitigation practices. There can be many problems associated with connecting
-    to or among Cloud DCs; the Net2Cloud problem statements are mainly for enterprises
-    that already have traditional VPN services and are interested in leveraging those
-    networks (instead of altogether abandoning them). Other problems are out of the
-    scope of this document. This document also describes the mitigation practices
-    for getting around the identified problems.</p>"
+- content: "<p>This document defines a Cryptographic Message Syntax (CMS) protected
+    content type for Autonomous System Provider Authorization (ASPA) objects for use
+    with the Resource Public Key Infrastructure (RPKI). An ASPA is a digitally signed
+    object through which the issuer (the holder of an Autonomous System identifier),
+    can authorize one or more other Autonomous Systems (ASes) as its upstream providers.
+    When validated, an ASPA's eContent can be used for detection and mitigation of
+    route leaks.</p>"
   language:
   - en
   script:
@@ -192,23 +215,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-net2cloud-problem-statement-24
+    id: draft-ietf-sidrops-aspa-profile-12
     docid:
-    - id: draft-ietf-rtgwg-net2cloud-problem-statement-24
+    - id: draft-ietf-sidrops-aspa-profile-12
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-rtgwg-net2cloud-problem-statement-24
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-rtgwg-net2cloud-problem-statement-26
-    docid:
-    - id: draft-ietf-rtgwg-net2cloud-problem-statement-26
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-net2cloud-problem-statement-26
+      content: draft-ietf-sidrops-aspa-profile-12
       format: text/plain
 series:
 - type: main
@@ -219,7 +232,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-rtgwg-net2cloud-problem-statement-25
+  number: draft-ietf-sidrops-aspa-profile-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
