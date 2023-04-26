@@ -1,118 +1,118 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-sidrops-roa-considerations-07
+id: draft-ietf-idr-sr-policy-ifit-06
 title:
-- content: Avoidance for ROA Containing Multiple IP Prefixes
+- content: BGP SR Policy Extensions to Enable IFIT
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-roa-considerations-07
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-ifit-06
   type: src
 type: standard
 docid:
-- id: draft-ietf-sidrops-roa-considerations-07
+- id: draft-ietf-idr-sr-policy-ifit-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-sidrops-roa-considerations
+- id: I-D.ietf-idr-sr-policy-ifit
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-sidrops-roa-considerations
+docnumber: I-D.ietf-idr-sr-policy-ifit
 date:
 - type: published
-  value: '2023-02-09'
+  value: '2023-04-26'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Zhiwei
+        - content: Fengwei
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: F
         formatted_initials:
-          content: Z.
+          content: F.
           language:
           - en
       surname:
-        content: Yan
+        content: Qin
         language:
         - en
       completename:
-        content: Zhiwei Yan
+        content: Fengwei Qin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CNNIC
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Randy
+        - content: Hang
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: H
         formatted_initials:
-          content: R.
+          content: H.
           language:
           - en
       surname:
-        content: Bush
+        content: Yuan
         language:
         - en
       completename:
-        content: Randy Bush
+        content: Hang Yuan
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: IIJ Research Lab & Arrcus, Inc.
+        - content: UnionPay
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Guanggang
+        - content: Shunxing
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: S
         formatted_initials:
-          content: G.
+          content: S.
           language:
           - en
       surname:
-        content: Geng
+        content: Yang
         language:
         - en
       completename:
-        content: Guanggang Geng
+        content: Shunxing Yang
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Jinan University
+        - content: China Telecom
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Ties
+        - content: Tianran
           language:
           - en
         - language:
@@ -123,59 +123,63 @@ contributor:
           language:
           - en
       surname:
-        content: de Kock
+        content: Zhou
         language:
         - en
       completename:
-        content: Ties de Kock
+        content: Tianran Zhou
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: RIPE NCC
+        - content: Huawei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jiankang
+        - content: Giuseppe
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: G
         formatted_initials:
-          content: J.
+          content: G.
           language:
           - en
       surname:
-        content: Yao
+        content: Fioccola
         language:
         - en
       completename:
-        content: Jiankang Yao
+        content: Giuseppe Fioccola
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: CNNIC
+        - content: Huawei
   role:
   - type: author
 version:
-- draft: '07'
-revdate: '2023-02-09'
+- draft: '06'
+revdate: '2023-04-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When using the RPKI, address space holders need to issue ROA object(s)
-    to authorize one or more ASes to originate routes to IP prefix(es). This memo
-    discusses operational problems which may arise from ROAs containing multiple IP
-    prefixes and recommends that each ROA contain a single IP prefix.</p>"
+- content: "<p>Segment Routing (SR) policy is a set of candidate SR paths consisting
+    of one or more segment lists and necessary path attributes. It enables instantiation
+    of an ordered list of segments with a specific intent for traffic steering. In-situ
+    Flow Information Telemetry (IFIT) refers to network OAM data plane on-path telemetry
+    techniques, in particular the most popular are In-situ OAM (IOAM) and Alternate
+    Marking. This document defines extensions to BGP to distribute SR policies carrying
+    IFIT information. So that IFIT methods can be enabled automatically when the SR
+    policy is applied.</p>"
   language:
   - en
   script:
@@ -184,23 +188,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-sidrops-roa-considerations-06
+    id: draft-ietf-idr-sr-policy-ifit-05
     docid:
-    - id: draft-ietf-sidrops-roa-considerations-06
+    - id: draft-ietf-idr-sr-policy-ifit-05
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-sidrops-roa-considerations-06
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-sidrops-roa-considerations-08
-    docid:
-    - id: draft-ietf-sidrops-roa-considerations-08
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-sidrops-roa-considerations-08
+      content: draft-ietf-idr-sr-policy-ifit-05
       format: text/plain
 series:
 - type: main
@@ -211,7 +205,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-sidrops-roa-considerations-07
+  number: draft-ietf-idr-sr-policy-ifit-06
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
