@@ -1,239 +1,209 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-bier-te-isis-04
+id: draft-ietf-lsr-ip-flexalgo-09
 title:
-- content: IS-IS Extensions for BIER-TE
+- content: IGP Flexible Algorithms (Flex-Algorithm) In IP Networks
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-isis-04
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ip-flexalgo-09
   type: src
 type: standard
 docid:
-- id: draft-ietf-bier-te-isis-04
+- id: draft-ietf-lsr-ip-flexalgo-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bier-te-isis
+- id: I-D.ietf-lsr-ip-flexalgo
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-bier-te-isis
+docnumber: I-D.ietf-lsr-ip-flexalgo
 date:
 - type: published
-  value: '2023-03-07'
+  value: '2023-04-28'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Huaimo
+        - content: William
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: W
         formatted_initials:
-          content: H.
+          content: W.
           language:
           - en
       surname:
-        content: Chen
+        content: Britto
         language:
         - en
       completename:
-        content: Huaimo Chen
+        content: William Britto
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mike
+        - content: Shraddha
           language:
           - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: McBride
-        language:
-        - en
-      completename:
-        content: Mike McBride
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Futurewei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Aijun
-          language:
-          - en
-        - language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Wang
-        language:
-        - en
-      completename:
-        content: Aijun Wang
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: China Telecom
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - language:
-          - en
-          initial: G
         - language:
           - en
           initial: S
         formatted_initials:
-          content: G. S.
+          content: S.
           language:
           - en
       surname:
-        content: Mishra
+        content: Hegde
         language:
         - en
       completename:
-        content: Gyan Mishra
+        content: Shraddha Hegde
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Yanhe
+        - content: Parag
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: P
         formatted_initials:
-          content: Y.
+          content: P.
           language:
           - en
       surname:
-        content: Fan
+        content: Kaneriya
         language:
         - en
       completename:
-        content: Yanhe Fan
+        content: Parag Kaneriya
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Casa Systems
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Lei
+        - content: Rejesh
           language:
           - en
         - language:
           - en
-          initial: L
+          initial: R
         formatted_initials:
-          content: L.
+          content: R.
           language:
           - en
       surname:
-        content: Liu
+        content: Shetty
         language:
         - en
       completename:
-        content: Lei Liu
+        content: Rejesh Shetty
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Fujitsu
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Xufeng
+        - content: Ron
           language:
           - en
         - language:
           - en
-          initial: X
+          initial: R
         formatted_initials:
-          content: X.
+          content: R.
           language:
           - en
       surname:
-        content: Liu
+        content: Bonica
         language:
         - en
       completename:
-        content: Xufeng Liu
+        content: Ron Bonica
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: IBM Corporation
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peter
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Psenak
+        language:
+        - en
+      completename:
+        content: Peter Psenak
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '04'
-revdate: '2023-03-07'
+- draft: '09'
+revdate: '2023-04-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes IS-IS extensions for distributing BitPositions
-    configured on the links in "Bit Index Explicit Replication Traffic Engineering"
-    (BIER-TE) domain.</p>
+- content: "<p>An IGP Flexible Algorithm (Flex-Algorithm) allows IGPs to compute constraint-based
+    paths. The base IGP Flex-Algorithm specification describes how it is used with
+    Segment Routing (SR) data planes - SR MPLS and SRv6. This document extends IGP
+    Flex-Algorithm, so that it can be used with regular IPv4 and IPv6 forwarding.</p>"
   language:
   - en
   script:
@@ -242,23 +212,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bier-te-isis-03
+    id: draft-ietf-lsr-ip-flexalgo-08
     docid:
-    - id: draft-ietf-bier-te-isis-03
+    - id: draft-ietf-lsr-ip-flexalgo-08
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-bier-te-isis-03
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-bier-te-isis-05
-    docid:
-    - id: draft-ietf-bier-te-isis-05
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-bier-te-isis-05
+      content: draft-ietf-lsr-ip-flexalgo-08
       format: text/plain
 series:
 - type: main
@@ -269,7 +229,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-bier-te-isis-04
+  number: draft-ietf-lsr-ip-flexalgo-09
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
