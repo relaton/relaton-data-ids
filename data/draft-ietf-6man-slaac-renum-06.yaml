@@ -1,62 +1,91 @@
 ---
 schema-version: v1.2.3
-id: draft-bichot-msync-11
+id: draft-ietf-6man-slaac-renum-06
 title:
-- content: MSYNC
+- content: Improving the Robustness of Stateless Address Autoconfiguration (SLAAC)
+    to Flash Renumbering Events
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-bichot-msync-11
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-slaac-renum-06
   type: src
 type: standard
 docid:
-- id: draft-bichot-msync-11
+- id: draft-ietf-6man-slaac-renum-06
   type: Internet-Draft
   primary: true
-- id: I-D.bichot-msync
+- id: I-D.ietf-6man-slaac-renum
   type: IETF
   scope: anchor
-docnumber: I-D.bichot-msync
+docnumber: I-D.ietf-6man-slaac-renum
 date:
 - type: published
-  value: '2023-04-17'
+  value: '2023-04-27'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Sophie
+        - content: Fernando
           language:
           - en
         - language:
           - en
-          initial: S
+          initial: F
         formatted_initials:
-          content: S.
+          content: F.
           language:
           - en
       surname:
-        content: Bale
+        content: Gont
         language:
         - en
       completename:
-        content: Sophie Bale
+        content: Fernando Gont
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Broadpeak
+        - content: SI6 Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Remy
+        - content: Jan
+          language:
+          - en
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Zorz
+        language:
+        - en
+      completename:
+        content: Jan Zorz
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: 6connect
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Richard
           language:
           - en
         - language:
@@ -67,61 +96,31 @@ contributor:
           language:
           - en
       surname:
-        content: Brebion
+        content: Patterson
         language:
         - en
       completename:
-        content: Remy Brebion
+        content: Richard Patterson
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Broadpeak
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Guillaume
-          language:
-          - en
-        - language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
-      surname:
-        content: Bichot
-        language:
-        - en
-      completename:
-        content: Guillaume Bichot
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Broadpeak
+        - content: Sky UK
   role:
   - type: author
 version:
-- draft: '11'
-revdate: '2023-04-17'
+- draft: '06'
+revdate: '2023-04-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the Multicast Synchronization (MSYNC) Protocol
-    that aims at transferring video media objects over IP multicast. Although generic,
-    MSYNC has been primarily designed for transporting HTTP adaptive streaming (HAS)
-    objects including manifest/playlists and media segments (e.g., CMAF) according
-    to an HAS protocol such as Apple HLS or MPEG DASH between a multicast sender and
-    a multicast receiver.</p>"
+- content: "<p>In renumbering scenarios where an IPv6 prefix suddenly becomes invalid,
+    hosts on the local network will continue using stale prefixes for an unacceptably
+    long period of time, thus resulting in connectivity problems. This document improves
+    the reaction of IPv6 Stateless Address Autoconfiguration to such renumbering scenarios.</p>"
   language:
   - en
   script:
@@ -130,23 +129,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-bichot-msync-10
+    id: draft-ietf-6man-slaac-renum-05
     docid:
-    - id: draft-bichot-msync-10
+    - id: draft-ietf-6man-slaac-renum-05
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-bichot-msync-10
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-bichot-msync-12
-    docid:
-    - id: draft-bichot-msync-12
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-bichot-msync-12
+      content: draft-ietf-6man-slaac-renum-05
       format: text/plain
 series:
 - type: main
@@ -157,7 +146,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-bichot-msync-11
+  number: draft-ietf-6man-slaac-renum-06
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
