@@ -1,118 +1,90 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-rift-applicability-07
+id: draft-ietf-lsr-ip-flexalgo-11
 title:
-- content: RIFT Applicability
+- content: IGP Flexible Algorithms (Flex-Algorithm) In IP Networks
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rift-applicability-07
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ip-flexalgo-11
   type: src
 type: standard
 docid:
-- id: draft-ietf-rift-applicability-07
+- id: draft-ietf-lsr-ip-flexalgo-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rift-applicability
+- id: I-D.ietf-lsr-ip-flexalgo
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-rift-applicability
+docnumber: I-D.ietf-lsr-ip-flexalgo
 date:
 - type: published
-  value: '2021-09-17'
+  value: '2023-05-04'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Yuehua
+        - content: William
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: W
         formatted_initials:
-          content: Y.
+          content: W.
           language:
           - en
       surname:
-        content: Wei
+        content: Britto
         language:
         - en
       completename:
-        content: Yuehua Wei
+        content: William Britto
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Zheng
+        - content: Shraddha
           language:
           - en
         - language:
           - en
-          initial: Z
+          initial: S
         formatted_initials:
-          content: Z.
+          content: S.
           language:
           - en
       surname:
-        content: Zhang
+        content: Hegde
         language:
         - en
       completename:
-        content: Zheng Zhang
+        content: Shraddha Hegde
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Dmitry
-          language:
-          - en
-        - language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Afanasiev
-        language:
-        - en
-      completename:
-        content: Dmitry Afanasiev
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Yandex
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Pascal
+        - content: Parag
           language:
           - en
         - language:
@@ -123,59 +95,115 @@ contributor:
           language:
           - en
       surname:
-        content: Thubert
+        content: Kaneriya
         language:
         - en
       completename:
-        content: Pascal Thubert
+        content: Parag Kaneriya
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Jaroslaw
+        - content: Rejesh
           language:
           - en
         - language:
           - en
-          initial: J
+          initial: R
         formatted_initials:
-          content: J.
+          content: R.
           language:
           - en
       surname:
-        content: Kowalczyk
+        content: Shetty
         language:
         - en
       completename:
-        content: Jaroslaw Kowalczyk
+        content: Rejesh Shetty
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Orange Polska
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ron
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Bonica
+        language:
+        - en
+      completename:
+        content: Ron Bonica
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peter
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Psenak
+        language:
+        - en
+      completename:
+        content: Peter Psenak
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '07'
-revdate: '2021-09-17'
+- draft: '11'
+revdate: '2023-05-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses the properties, applicability and operational
-    considerations of RIFT in different network scenarios. It intends to provide a
-    rough guide how RIFT can be deployed to simplify routing operations in Clos topologies
-    and their variations.</p>"
+- content: "<p>An IGP Flexible Algorithm (Flex-Algorithm) allows IGPs to compute constraint-based
+    paths. The base IGP Flex-Algorithm specification describes how it is used with
+    Segment Routing (SR) data planes - SR MPLS and SRv6. This document extends IGP
+    Flex-Algorithm, so that it can be used with regular IPv4 and IPv6 forwarding.</p>"
   language:
   - en
   script:
@@ -184,23 +212,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rift-applicability-04
+    id: draft-ietf-lsr-ip-flexalgo-07
     docid:
-    - id: draft-ietf-rift-applicability-04
+    - id: draft-ietf-lsr-ip-flexalgo-07
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-rift-applicability-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-rift-applicability-11
-    docid:
-    - id: draft-ietf-rift-applicability-11
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-rift-applicability-11
+      content: draft-ietf-lsr-ip-flexalgo-07
       format: text/plain
 series:
 - type: main
@@ -211,7 +229,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-rift-applicability-07
+  number: draft-ietf-lsr-ip-flexalgo-11
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
