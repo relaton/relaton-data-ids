@@ -1,49 +1,77 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-ippm-stamp-srpm-10
+id: draft-ietf-lsr-dynamic-flooding-13
 title:
-- content: Simple TWAMP (STAMP) Extensions for Segment Routing Networks
+- content: Dynamic Flooding on Dense Graphs
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-stamp-srpm-10
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-dynamic-flooding-13
   type: src
 type: standard
 docid:
-- id: draft-ietf-ippm-stamp-srpm-10
+- id: draft-ietf-lsr-dynamic-flooding-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ippm-stamp-srpm
+- id: I-D.ietf-lsr-dynamic-flooding
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-ippm-stamp-srpm
+docnumber: I-D.ietf-lsr-dynamic-flooding
 date:
 - type: published
-  value: '2023-05-02'
+  value: '2023-05-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Rakesh
+        - content: Tony
           language:
           - en
         - language:
           - en
-          initial: R
+          initial: T
         formatted_initials:
-          content: R.
+          content: T.
           language:
           - en
       surname:
-        content: Gandhi
+        content: Li
         language:
         - en
       completename:
-        content: Rakesh Gandhi
+        content: Tony Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peter
+          language:
+          - en
+        - language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Psenak
+        language:
+        - en
+      completename:
+        content: Peter Psenak
         language:
         - en
     affiliation:
@@ -56,70 +84,14 @@ contributor:
     name:
       given:
         forename:
-        - content: Clarence
+        - content: Huaimo
           language:
           - en
         - language:
           - en
-          initial: C
+          initial: H
         formatted_initials:
-          content: C.
-          language:
-          - en
-      surname:
-        content: Filsfils
-        language:
-        - en
-      completename:
-        content: Clarence Filsfils
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Voyer
-        language:
-        - en
-      completename:
-        content: Daniel Voyer
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Bell Canada
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Mach
-          language:
-          - en
-        - language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
+          content: H.
           language:
           - en
       surname:
@@ -127,87 +99,85 @@ contributor:
         language:
         - en
       completename:
-        content: Mach Chen
+        content: Huaimo Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Bart
+        - content: Luay
           language:
           - en
         - language:
           - en
-          initial: B
+          initial: L
         formatted_initials:
-          content: B.
+          content: L.
           language:
           - en
       surname:
-        content: Janssens
+        content: Jalil
         language:
         - en
       completename:
-        content: Bart Janssens
+        content: Luay Jalil
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Colt
+        - content: Verizon
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Richard
+        - content: Srinath
           language:
           - en
         - language:
           - en
-          initial: R
-        - language:
-          - en
-          initial: F
+          initial: S
         formatted_initials:
-          content: R. F.
+          content: S.
           language:
           - en
       surname:
-        content: Foote
+        content: Dontula
         language:
         - en
       completename:
-        content: Richard "Footer" Foote
+        content: Srinath Dontula
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
+        - content: ATT
   role:
   - type: author
 version:
-- draft: '10'
-revdate: '2023-05-02'
+- draft: '13'
+revdate: '2023-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Segment Routing (SR) leverages the source routing paradigm. SR is applicable
-    to both Multiprotocol Label Switching (SR-MPLS) and IPv6 (SRv6) forwarding planes.
-    This document specifies RFC 8762 (Simple Two-Way Active Measurement Protocol (STAMP))
-    extensions for SR networks, for both SR-MPLS and SRv6 forwarding planes by augmenting
-    the optional extensions defined in RFC 8972.</p>"
+- content: "<p>Routing with link state protocols in dense network topologies can result
+    in sub-optimal convergence times due to the overhead associated with flooding.
+    This can be addressed by decreasing the flooding topology so that it is less dense.
+    This document discusses the problem in some depth and an architectural solution.
+    Specific protocol changes for IS-IS, OSPFv2, and OSPFv3 are described in this
+    document.</p>"
   language:
   - en
   script:
@@ -216,23 +186,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ippm-stamp-srpm-06
+    id: draft-ietf-lsr-dynamic-flooding-09
     docid:
-    - id: draft-ietf-ippm-stamp-srpm-06
+    - id: draft-ietf-lsr-dynamic-flooding-09
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-ippm-stamp-srpm-06
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-ippm-stamp-srpm-11
-    docid:
-    - id: draft-ietf-ippm-stamp-srpm-11
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-ippm-stamp-srpm-11
+      content: draft-ietf-lsr-dynamic-flooding-09
       format: text/plain
 series:
 - type: main
@@ -243,7 +203,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-ippm-stamp-srpm-10
+  number: draft-ietf-lsr-dynamic-flooding-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

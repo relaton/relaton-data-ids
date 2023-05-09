@@ -1,62 +1,62 @@
 ---
 schema-version: v1.2.3
-id: draft-liu-sidrops-rtr-yang-01
+id: draft-irtf-cfrg-frost-13
 title:
-- content: YANG Data Model for RPKI to Router Protocol and BGP Origin AS Validation
+- content: Two-Round Threshold Schnorr Signatures with FROST
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-liu-sidrops-rtr-yang-01
+- content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-frost-13
   type: src
 type: standard
 docid:
-- id: draft-liu-sidrops-rtr-yang-01
+- id: draft-irtf-cfrg-frost-13
   type: Internet-Draft
   primary: true
-- id: I-D.liu-sidrops-rtr-yang
+- id: I-D.irtf-cfrg-frost
   type: IETF
   scope: anchor
-docnumber: I-D.liu-sidrops-rtr-yang
+docnumber: I-D.irtf-cfrg-frost
 date:
 - type: published
-  value: '2022-11-05'
+  value: '2023-05-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Yisong
+        - content: Deirdre
           language:
           - en
         - language:
           - en
-          initial: Y
+          initial: D
         formatted_initials:
-          content: Y.
+          content: D.
           language:
           - en
       surname:
-        content: Liu
+        content: Connolly
         language:
         - en
       completename:
-        content: Yisong Liu
+        content: Deirdre Connolly
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
+        - content: Zcash Foundation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Changwang
+        - content: Chelsea
           language:
           - en
         - language:
@@ -67,86 +67,97 @@ contributor:
           language:
           - en
       surname:
-        content: Lin
+        content: Komlo
         language:
         - en
       completename:
-        content: Changwang Lin
+        content: Chelsea Komlo
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: New H3C
+        - content: University of Waterloo, Zcash Foundation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Haibo
+        - content: Ian
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: I
         formatted_initials:
-          content: H.
+          content: I.
           language:
           - en
       surname:
-        content: Wang
+        content: Goldberg
         language:
         - en
       completename:
-        content: Haibo Wang
+        content: Ian Goldberg
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
+        - content: University of Waterloo
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Hongwei
+        - content: Christopher
           language:
           - en
         - language:
           - en
-          initial: H
+          initial: C
+        - language:
+          - en
+          initial: A
         formatted_initials:
-          content: H.
+          content: C. A.
           language:
           - en
       surname:
-        content: Liu
+        content: Wood
         language:
         - en
       completename:
-        content: Hongwei Liu
+        content: Christopher A. Wood
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: ZTE
+        - content: Cloudflare
   role:
   - type: author
 version:
-- draft: '01'
-revdate: '2022-11-05'
+- draft: '13'
+revdate: '2023-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines YANG data models for configuring and managing
-    Resource Public Key Infrastructure (RPKI) to Router Protocol and BGP Origin AS
-    Validation.</p>"
+- content: "<p>This document specifies the Flexible Round-Optimized Schnorr Threshold
+    (FROST) signing protocol. FROST signatures can be issued after a threshold number
+    of entities cooperate to compute a signature, allowing for improved distribution
+    of trust and redundancy with respect to a secret key. FROST depends only on a
+    prime-order group and cryptographic hash function. This document specifies a number
+    of ciphersuites to instantiate FROST using different prime- order groups and hash
+    functions. One such ciphersuite can be used to produce signatures that can be
+    verified with an Edwards-Curve Digital Signature Algorithm (EdDSA, as defined
+    in RFC8032) compliant verifier. However, unlike EdDSA, the signatures produced
+    by FROST are not deterministic. This document is a product of the Crypto Forum
+    Research Group (CFRG) in the IRTF.</p>"
   language:
   - en
   script:
@@ -155,23 +166,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-liu-sidrops-rtr-yang-00
+    id: draft-irtf-cfrg-frost-09
     docid:
-    - id: draft-liu-sidrops-rtr-yang-00
+    - id: draft-irtf-cfrg-frost-09
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-liu-sidrops-rtr-yang-00
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-liu-sidrops-rtr-yang-02
-    docid:
-    - id: draft-liu-sidrops-rtr-yang-02
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-liu-sidrops-rtr-yang-02
+      content: draft-irtf-cfrg-frost-09
       format: text/plain
 series:
 - type: main
@@ -182,7 +183,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-liu-sidrops-rtr-yang-01
+  number: draft-irtf-cfrg-frost-13
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

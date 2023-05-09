@@ -1,52 +1,49 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-bier-ping-02
+id: draft-ietf-ippm-stamp-srpm-11
 title:
-- content: BIER Ping and Trace
+- content: Simple TWAMP (STAMP) Extensions for Segment Routing Networks
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-ping-02
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-stamp-srpm-11
   type: src
 type: standard
 docid:
-- id: draft-ietf-bier-ping-02
+- id: draft-ietf-ippm-stamp-srpm-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bier-ping
+- id: I-D.ietf-ippm-stamp-srpm
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-bier-ping
+docnumber: I-D.ietf-ippm-stamp-srpm
 date:
 - type: published
-  value: '2017-07-21'
+  value: '2023-05-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Nagendra
+        - content: Rakesh
           language:
           - en
         - language:
           - en
-          initial: N
-        - language:
-          - en
-          initial: K
+          initial: R
         formatted_initials:
-          content: N. K.
+          content: R.
           language:
           - en
       surname:
-        content: Nainar
+        content: Gandhi
         language:
         - en
       completename:
-        content: Nagendra Kumar Nainar
+        content: Rakesh Gandhi
         language:
         - en
     affiliation:
@@ -59,7 +56,7 @@ contributor:
     name:
       given:
         forename:
-        - content: Carlos
+        - content: Clarence
           language:
           - en
         - language:
@@ -70,11 +67,11 @@ contributor:
           language:
           - en
       surname:
-        content: Pignataro
+        content: Filsfils
         language:
         - en
       completename:
-        content: Carlos Pignataro
+        content: Clarence Filsfils
         language:
         - en
     affiliation:
@@ -87,56 +84,28 @@ contributor:
     name:
       given:
         forename:
-        - content: Nobo
+        - content: Daniel
           language:
           - en
         - language:
           - en
-          initial: N
+          initial: D
         formatted_initials:
-          content: N.
+          content: D.
           language:
           - en
       surname:
-        content: Akiya
+        content: Voyer
         language:
         - en
       completename:
-        content: Nobo Akiya
+        content: Daniel Voyer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Big Switch Networks
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Lianshu
-          language:
-          - en
-        - language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
-      surname:
-        content: Zheng
-        language:
-        - en
-      completename:
-        content: Lianshu Zheng
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
+        - content: Bell Canada
   role:
   - type: author
 - person:
@@ -164,57 +133,81 @@ contributor:
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
+        - content: Huawei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Greg
+        - content: Bart
           language:
           - en
         - language:
           - en
-          initial: G
+          initial: B
         formatted_initials:
-          content: G.
+          content: B.
           language:
           - en
       surname:
-        content: Mirsky
+        content: Janssens
         language:
         - en
       completename:
-        content: Greg Mirsky
+        content: Bart Janssens
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
+        - content: Colt
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Richard
+          language:
+          - en
+        - language:
+          - en
+          initial: R
+        - language:
+          - en
+          initial: F
+        formatted_initials:
+          content: R. F.
+          language:
+          - en
+      surname:
+        content: Foote
+        language:
+        - en
+      completename:
+        content: Richard "Footer" Foote
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Nokia
   role:
   - type: author
 version:
-- draft: '02'
-revdate: '2017-07-21'
+- draft: '11'
+revdate: '2023-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Bit Index Explicit Replication (BIER) is an architecture that provides
-    optimal multicast forwarding through a "BIER domain" without requiring intermediate
-    routers to maintain any multicast related per- flow state. BIER also does not
-    require any explicit tree-building protocol for its operation. A multicast data
-    packet enters a BIER domain at a "Bit-Forwarding Ingress Router" (BFIR), and leaves
-    the BIER domain at one or more "Bit-Forwarding Egress Routers" (BFERs). The BFIR
-    router adds a BIER header to the packet. The BIER header contains a bit-string
-    in which each bit represents exactly one BFER to forward the packet to. The set
-    of BFERs to which the multicast packet needs to be forwarded is expressed by setting
-    the bits that correspond to those routers in the BIER header. This document describes
-    the mechanism and basic BIER OAM packet format that can be used to perform failure
-    detection and isolation on BIER data plane.</p>
+- content: "<p>Segment Routing (SR) leverages the source routing paradigm. SR is applicable
+    to both Multiprotocol Label Switching (SR-MPLS) and IPv6 (SRv6) forwarding planes.
+    This document specifies RFC 8762 (Simple Two-Way Active Measurement Protocol (STAMP))
+    extensions for SR networks, for both SR-MPLS and SRv6 forwarding planes by augmenting
+    the optional extensions defined in RFC 8972.</p>"
   language:
   - en
   script:
@@ -223,23 +216,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bier-ping-01
+    id: draft-ietf-ippm-stamp-srpm-06
     docid:
-    - id: draft-ietf-bier-ping-01
+    - id: draft-ietf-ippm-stamp-srpm-06
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-bier-ping-01
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-bier-ping-09
-    docid:
-    - id: draft-ietf-bier-ping-09
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-bier-ping-09
+      content: draft-ietf-ippm-stamp-srpm-06
       format: text/plain
 series:
 - type: main
@@ -250,7 +233,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-bier-ping-02
+  number: draft-ietf-ippm-stamp-srpm-11
 doctype: internet-draft
 ext:
   schema-version: v1.0.0

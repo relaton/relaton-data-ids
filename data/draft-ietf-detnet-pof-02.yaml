@@ -1,62 +1,87 @@
 ---
 schema-version: v1.2.3
-id: draft-ietf-privacypass-auth-scheme-09
+id: draft-ietf-detnet-pof-02
 title:
-- content: The Privacy Pass HTTP Authentication Scheme
+- content: 'Deterministic Networking (DetNet): Packet Ordering Function'
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-privacypass-auth-scheme-09
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-detnet-pof-02
   type: src
 type: standard
 docid:
-- id: draft-ietf-privacypass-auth-scheme-09
+- id: draft-ietf-detnet-pof-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-privacypass-auth-scheme
+- id: I-D.ietf-detnet-pof
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-privacypass-auth-scheme
+docnumber: I-D.ietf-detnet-pof
 date:
 - type: published
-  value: '2023-03-06'
+  value: '2023-05-08'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Tommy
+        - content: Balazs
           language:
           - en
         - language:
           - en
-          initial: T
+          initial: B
         formatted_initials:
-          content: T.
+          content: B.
           language:
           - en
       surname:
-        content: Pauly
+        content: Varga
         language:
         - en
       completename:
-        content: Tommy Pauly
+        content: Balazs Varga
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
+        - content: Ericsson
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Steven
+        - language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Farkas
+        language:
+        - en
+      completename:
+        content: János Farkas
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Stephan
           language:
           - en
         - language:
@@ -67,61 +92,60 @@ contributor:
           language:
           - en
       surname:
-        content: Valdez
+        content: Kehrer
         language:
         - en
       completename:
-        content: Steven Valdez
+        content: Stephan Kehrer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
+        - content: Hirschmann Automation and Control GmbH
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Christopher
+        - content: Tobias
           language:
           - en
         - language:
           - en
-          initial: C
-        - language:
-          - en
-          initial: A
+          initial: T
         formatted_initials:
-          content: C. A.
+          content: T.
           language:
           - en
       surname:
-        content: Wood
+        content: Heer
         language:
         - en
       completename:
-        content: Christopher A. Wood
+        content: Tobias Heer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
+        - content: Hirschmann Automation and Control GmbH
   role:
   - type: author
 version:
-- draft: '09'
-revdate: '2023-03-06'
+- draft: '02'
+revdate: '2023-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines an HTTP authentication scheme that can be used
-    by clients to redeem Privacy Pass tokens with an origin. It can also be used by
-    origins to challenge clients to present an acceptable Privacy Pass token.</p>"
+- content: "<p>Replication and Elimination functions of DetNet Architecture may result
+    in out-of-order packets, which may not be acceptable for some time-sensitive applications.
+    The Packet Ordering Function (POF) algorithm described herein enables to restore
+    the correct packet order when replication and elimination functions are used in
+    DetNet networks.</p>"
   language:
   - en
   script:
@@ -130,23 +154,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-privacypass-auth-scheme-04
+    id: draft-ietf-detnet-pof-00
     docid:
-    - id: draft-ietf-privacypass-auth-scheme-04
+    - id: draft-ietf-detnet-pof-00
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-privacypass-auth-scheme-04
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-privacypass-auth-scheme-10
-    docid:
-    - id: draft-ietf-privacypass-auth-scheme-10
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-privacypass-auth-scheme-10
+      content: draft-ietf-detnet-pof-00
       format: text/plain
 series:
 - type: main
@@ -157,7 +171,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-privacypass-auth-scheme-09
+  number: draft-ietf-detnet-pof-02
 doctype: internet-draft
 ext:
   schema-version: v1.0.0
