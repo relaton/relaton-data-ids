@@ -2,4 +2,4 @@
 
 source 'https://rubygems.org'
 
-gem 'relaton-ietf'
+gem 'relaton-ietf', github: 'relaton/relaton-ietf', branch: 'main'
