@@ -1,30 +1,59 @@
 ---
 schema-version: v1.2.8
-id: draft-ietf-spring-stamp-srpm-10
+id: draft-ietf-teas-yang-te-36
 title:
-- content: Performance Measurement Using Simple TWAMP (STAMP) for Segment Routing
-    Networks
+- content: A YANG Data Model for Traffic Engineering Tunnels, Label Switched Paths
+    and Interfaces
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-stamp-srpm-10
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-te-36
   type: src
 type: standard
 docid:
-- id: draft-ietf-spring-stamp-srpm-10
+- id: draft-ietf-teas-yang-te-36
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-spring-stamp-srpm
+- id: I-D.ietf-teas-yang-te
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-spring-stamp-srpm
+docnumber: I-D.ietf-teas-yang-te
 date:
 - type: published
-  value: '2023-09-11'
+  value: '2024-02-02'
 contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Tarek
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Saad
+        language:
+        - en
+      completename:
+        content: Tarek Saad
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems Inc
+  role:
+  - type: author
 - person:
     name:
       given:
@@ -51,146 +80,114 @@ contributor:
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
+        - content: Cisco Systems Inc
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Clarence
+        - content: Xufeng
           language:
           - en
         - content: 
           language:
           - en
-          initial: C
+          initial: X
         formatted_initials:
-          content: C.
+          content: X.
           language:
           - en
       surname:
-        content: Filsfils
+        content: Liu
         language:
         - en
       completename:
-        content: Clarence Filsfils
+        content: Xufeng Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
+        - content: Alef Edge
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Daniel
+        - content: Vishnu
           language:
           - en
         - content: 
           language:
           - en
-          initial: D
+          initial: V
+        - content: 
+          language:
+          - en
+          initial: P
         formatted_initials:
-          content: D.
+          content: V. P.
           language:
           - en
       surname:
-        content: Voyer
+        content: Beeram
         language:
         - en
       completename:
-        content: Daniel Voyer
+        content: Vishnu Pavan Beeram
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
+        - content: Juniper Networks
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Mach
+        - content: Igor
           language:
           - en
         - content: 
           language:
           - en
-          initial: M
+          initial: I
         formatted_initials:
-          content: M.
+          content: I.
           language:
           - en
       surname:
-        content: Chen
+        content: Bryskin
         language:
         - en
       completename:
-        content: Mach Chen
+        content: Igor Bryskin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content: 
-          language:
-          - en
-          initial: R
-        - content: 
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: R. F.
-          language:
-          - en
-      surname:
-        content: Foote
-        language:
-        - en
-      completename:
-        content: Richard "Footer" Foote
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
+        - content: Individual
   role:
   - type: author
 version:
-- draft: '10'
-revdate: '2023-09-11'
+- draft: '36'
+revdate: '2024-02-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Segment Routing (SR) leverages the source routing paradigm. SR is applicable
-    to both Multiprotocol Label Switching (SR-MPLS) and IPv6 (SRv6) data planes. This
-    document describes procedures for Performance Measurement in SR networks using
-    the mechanisms defined in RFC 8762 (Simple Two-Way Active Measurement Protocol
-    (STAMP)) and its optional extensions defined in RFC 8972 and further augmented
-    in draft-ietf-ippm-stamp-srpm. The procedure described is used for links, end-to-end
-    SR paths (including SR Policies and SR Flexible Algorithm IGP paths) as well as
-    Layer-3 and Layer-2 services in SR networks, and is applicable to both SR-MPLS
-    and SRv6 data planes.</p>"
+- content: "<p>This document defines a YANG data model for the provisioning and management
+    of Traffic Engineering (TE) tunnels, Label Switched Paths (LSPs), and interfaces.
+    The model covers data that is independent of any technology or dataplane encapsulation
+    and is divided into two YANG modules that cover device-specific, and device independent
+    data. This model covers data for configuration, operational state, remote procedural
+    calls, and event notifications.</p>"
   language:
   - en
   script:
@@ -199,23 +196,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-spring-stamp-srpm-09
+    id: draft-ietf-teas-yang-te-35
     docid:
-    - id: draft-ietf-spring-stamp-srpm-09
+    - id: draft-ietf-teas-yang-te-35
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-spring-stamp-srpm-09
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-spring-stamp-srpm-11
-    docid:
-    - id: draft-ietf-spring-stamp-srpm-11
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-spring-stamp-srpm-11
+      content: draft-ietf-teas-yang-te-35
       format: text/plain
 series:
 - type: main
@@ -226,7 +213,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-spring-stamp-srpm-10
+  number: draft-ietf-teas-yang-te-36
 doctype:
   type: internet-draft
 ext:
