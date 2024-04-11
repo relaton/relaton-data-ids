@@ -1,0 +1,88 @@
+---
+schema-version: v1.2.8
+id: draft-mellia-tsvwg-tcp-smartframing-00
+title:
+- content: TCP Smart-Framing
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-mellia-tsvwg-tcp-smartframing-00
+  type: src
+type: standard
+docid:
+- id: draft-mellia-tsvwg-tcp-smartframing-00
+  type: Internet-Draft
+  primary: true
+- id: I-D.mellia-tsvwg-tcp-smartframing
+  type: IETF
+  scope: anchor
+docnumber: I-D.mellia-tsvwg-tcp-smartframing
+date:
+- type: published
+  value: '2001-10-26'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Marco
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Mellia
+        language:
+        - en
+      completename:
+        content: Marco Mellia
+        language:
+        - en
+  role:
+  - type: author
+version:
+- draft: '00'
+revdate: '2001-10-26'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>In this document we present an enhancement to the TCP protocol, called
+    TCP Smart Framing, or TCP-SF for short, that enables the Fast Retransmit/Recovery
+    algorithm even when the congestion window is small, i.e., for short-lived flows,
+    as most of the current Internet traffic is. Without modifying the TCP congestion
+    control based on the additive-increase/multiplicative-decrease paradigm, TCP-SF
+    adopts a novel segmentation algorithm: while Classic TCP starts sending IW segments,
+    a TCP-SF source is allowed to always send an initial window of 4 smaller segments,
+    whose aggregate payload is equal to the connection's SMSS. This key idea can be
+    implemented on top of any TCP flavor, from Tahoe to SACK, and requires modifications
+    to the server behavior only.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-mellia-tsvwg-tcp-smartframing-00
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

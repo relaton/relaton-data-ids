@@ -1,0 +1,128 @@
+---
+schema-version: v1.2.8
+id: draft-ietf-dnsop-delegation-only-00
+title:
+- content: The DELEGATION_ONLY DNSKEY flag
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-delegation-only-00
+  type: src
+type: standard
+docid:
+- id: draft-ietf-dnsop-delegation-only-00
+  type: Internet-Draft
+  primary: true
+- id: I-D.ietf-dnsop-delegation-only
+  type: IETF
+  scope: anchor
+docnumber: I-D.ietf-dnsop-delegation-only
+date:
+- type: published
+  value: '2020-05-06'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Paul
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Wouters
+        language:
+        - en
+      completename:
+        content: Paul Wouters
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Red Hat
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Wes
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: W
+        formatted_initials:
+          content: W.
+          language:
+          - en
+      surname:
+        content: Hardaker
+        language:
+        - en
+      completename:
+        content: Wes Hardaker
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: USC/ISI
+  role:
+  - type: author
+version:
+- draft: '00'
+revdate: '2020-05-06'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>This document introduces a new DNSKEY flag called DELEGATION_ONLY that
+    indicates that the particular zone will never sign zone data across a label. That
+    is, every label (dot) underneath is considered a zone cut and must have its own
+    (signed) delegation. Additionally, it indicates the zone is expecting its parent
+    to never bypass or override the zone. DNSSEC Validating Resolvers can use this
+    flag to mark any data that violates the DELEGATION_ONLY policy as BOGUS.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updatedBy
+  bibitem:
+    id: draft-ietf-dnsop-delegation-only-01
+    docid:
+    - id: draft-ietf-dnsop-delegation-only-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-dnsop-delegation-only-01
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-ietf-dnsop-delegation-only-00
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

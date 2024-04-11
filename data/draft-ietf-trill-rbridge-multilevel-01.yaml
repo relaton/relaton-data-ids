@@ -1,0 +1,221 @@
+---
+schema-version: v1.2.8
+id: draft-ietf-trill-rbridge-multilevel-01
+title:
+- content: Alternatives for Multilevel TRILL (Transparent Interconnection of Lots
+    of Links)
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-rbridge-multilevel-01
+  type: src
+type: standard
+docid:
+- id: draft-ietf-trill-rbridge-multilevel-01
+  type: Internet-Draft
+  primary: true
+- id: I-D.ietf-trill-rbridge-multilevel
+  type: IETF
+  scope: anchor
+docnumber: I-D.ietf-trill-rbridge-multilevel
+date:
+- type: published
+  value: '2016-02-12'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Radia
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Perlman
+        language:
+        - en
+      completename:
+        content: Radia Perlman
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Donald
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: D
+        - content: 
+          language:
+          - en
+          initial: E
+        formatted_initials:
+          content: D. E.
+          language:
+          - en
+      surname:
+        content: Eastlake
+        language:
+        - en
+      completename:
+        content: Donald E. Eastlake 3rd
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Mingui
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Mingui Zhang
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Anoop
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Ghanwani
+        language:
+        - en
+      completename:
+        content: Anoop Ghanwani
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Hongjun
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: H
+        formatted_initials:
+          content: H.
+          language:
+          - en
+      surname:
+        content: Zhai
+        language:
+        - en
+      completename:
+        content: Hongjun Zhai
+        language:
+        - en
+  role:
+  - type: author
+version:
+- draft: '01'
+revdate: '2016-02-12'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: <p>Extending TRILL to multiple levels has challenges that are not addressed
+    by the already-existing capability of IS-IS to have multiple levels. One issue
+    is with the handling of multi-destination packet distribution trees. Another issue
+    is with TRILL switch nicknames. There have been two proposed approaches. One approach,
+    which we refer to as the "unique nickname" approach, gives unique nicknames to
+    all the TRILL switches in the multilevel campus, either by having the level-1/level-2
+    border TRILL switches advertise which nicknames are not available for assignment
+    in the area, or by partitioning the 16-bit nickname into an "area" field and a
+    "nickname inside the area" field. The other approach, which we refer to as the
+    "aggregated nickname" approach, involves hiding the nicknames within areas, allowing
+    nicknames to be reused in different areas, by having the border TRILL switches
+    rewrite the nickname fields when entering or leaving an area. Each of those approaches
+    has advantages and disadvantages. This informational document suggests allowing
+    a choice of approach in each area. This allows the simplicity of the unique nickname
+    approach in installations in which there is no danger of running out of nicknames
+    and allows the complexity of hiding the nicknames in an area to be phased into
+    larger installations on a per- area basis.</p>
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-ietf-trill-rbridge-multilevel-00
+    docid:
+    - id: draft-ietf-trill-rbridge-multilevel-00
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-trill-rbridge-multilevel-00
+      format: text/plain
+- type: updatedBy
+  bibitem:
+    id: draft-ietf-trill-rbridge-multilevel-02
+    docid:
+    - id: draft-ietf-trill-rbridge-multilevel-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-trill-rbridge-multilevel-02
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-ietf-trill-rbridge-multilevel-01
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

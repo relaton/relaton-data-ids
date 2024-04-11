@@ -1,0 +1,190 @@
+---
+schema-version: v1.2.8
+id: draft-kuehlewind-masque-connect-ip-01
+title:
+- content: The CONNECT-IP HTTP method for proxying IP traffic
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-masque-connect-ip-01
+  type: src
+type: standard
+docid:
+- id: draft-kuehlewind-masque-connect-ip-01
+  type: Internet-Draft
+  primary: true
+- id: I-D.kuehlewind-masque-connect-ip
+  type: IETF
+  scope: anchor
+docnumber: I-D.kuehlewind-masque-connect-ip
+date:
+- type: published
+  value: '2021-07-12'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Mirja
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Kühlewind
+        language:
+        - en
+      completename:
+        content: Mirja Kühlewind
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Magnus
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Westerlund
+        language:
+        - en
+      completename:
+        content: Magnus Westerlund
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Marcus
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Ihlar
+        language:
+        - en
+      completename:
+        content: Marcus Ihlar
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zaheduzzaman
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Sarker
+        language:
+        - en
+      completename:
+        content: Zaheduzzaman Sarker
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+version:
+- draft: '01'
+revdate: '2021-07-12'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>This draft specifies a new HTTP method CONNECT-IP to proxy IP traffic.
+    CONNECT-IP uses HTTP/3 Datagrams to use QUIC Datagrams for efficient transport
+    of proxied IP packets, with the possibility to fallback to HTTP/3 over reliable
+    QUIC streams, or even HTTP 1.x and 2. CONNECT-IP supports two modes: a tunneling
+    mode where IP packets are forwarded without modifications and flow forwarding
+    mode which supports optimization for individual IP flows forwarded to the targeted
+    peer. To request tunneling or flow forwarding, a client connects to a proxy server
+    by initiating a HTTP/3 connection and sends a CONNECT-IP request which either
+    indicates the address of the proxy or the target peer. The proxy then forwards
+    payload received on that stream or in an HTTP datagram with a certain stream ID.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-kuehlewind-masque-connect-ip-00
+    docid:
+    - id: draft-kuehlewind-masque-connect-ip-00
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-kuehlewind-masque-connect-ip-00
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-kuehlewind-masque-connect-ip-01
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

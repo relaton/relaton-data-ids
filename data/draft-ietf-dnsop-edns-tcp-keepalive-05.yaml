@@ -1,0 +1,184 @@
+---
+schema-version: v1.2.8
+id: draft-ietf-dnsop-edns-tcp-keepalive-05
+title:
+- content: The edns-tcp-keepalive EDNS0 Option
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-edns-tcp-keepalive-05
+  type: src
+type: standard
+docid:
+- id: draft-ietf-dnsop-edns-tcp-keepalive-05
+  type: Internet-Draft
+  primary: true
+- id: I-D.ietf-dnsop-edns-tcp-keepalive
+  type: IETF
+  scope: anchor
+docnumber: I-D.ietf-dnsop-edns-tcp-keepalive
+date:
+- type: published
+  value: '2016-01-06'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Paul
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Wouters
+        language:
+        - en
+      completename:
+        content: Paul Wouters
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Joe
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Abley
+        language:
+        - en
+      completename:
+        content: Joe Abley
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Sara
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: S
+        formatted_initials:
+          content: S.
+          language:
+          - en
+      surname:
+        content: Dickinson
+        language:
+        - en
+      completename:
+        content: Sara Dickinson
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ray
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Bellis
+        language:
+        - en
+      completename:
+        content: Ray Bellis
+        language:
+        - en
+  role:
+  - type: author
+version:
+- draft: '05'
+revdate: '2016-01-06'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: <p>DNS messages between clients and servers may be received over either
+    UDP or TCP. UDP transport involves keeping less state on a busy server, but can
+    cause truncation and retries over TCP. Additionally, UDP can be exploited for
+    reflection attacks. Using TCP would reduce retransmits and amplification. However,
+    clients commonly use TCP only for retries and servers typically use idle timeouts
+    on the order of seconds. This document defines an EDNS0 option ("edns-tcp-keepalive")
+    that allows DNS servers to signal a variable idle timeout. This signalling encourages
+    the use of long-lived TCP connections by allowing the state associated with TCP
+    transport to be managed effectively with minimal impact on the DNS transaction
+    time.</p>
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-ietf-dnsop-edns-tcp-keepalive-04
+    docid:
+    - id: draft-ietf-dnsop-edns-tcp-keepalive-04
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-dnsop-edns-tcp-keepalive-04
+      format: text/plain
+- type: updatedBy
+  bibitem:
+    id: draft-ietf-dnsop-edns-tcp-keepalive-06
+    docid:
+    - id: draft-ietf-dnsop-edns-tcp-keepalive-06
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-dnsop-edns-tcp-keepalive-06
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-ietf-dnsop-edns-tcp-keepalive-05
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

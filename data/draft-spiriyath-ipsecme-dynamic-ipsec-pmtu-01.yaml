@@ -1,0 +1,193 @@
+---
+schema-version: v1.2.8
+id: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-01
+title:
+- content: Packetization Layer Path Maximum Transmission Unit Discovery (PLPMTUD)
+    For IPsec Tunnels
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-01
+  type: src
+type: standard
+docid:
+- id: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-01
+  type: Internet-Draft
+  primary: true
+- id: I-D.spiriyath-ipsecme-dynamic-ipsec-pmtu
+  type: IETF
+  scope: anchor
+docnumber: I-D.spiriyath-ipsecme-dynamic-ipsec-pmtu
+date:
+- type: published
+  value: '2018-03-01'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Shibu
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: S
+        formatted_initials:
+          content: S.
+          language:
+          - en
+      surname:
+        content: Piriyath
+        language:
+        - en
+      completename:
+        content: Shibu Piriyath
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Umesh
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: U
+        formatted_initials:
+          content: U.
+          language:
+          - en
+      surname:
+        content: Mangla
+        language:
+        - en
+      completename:
+        content: Umesh Mangla
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Nagavenkata
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: N
+        formatted_initials:
+          content: N.
+          language:
+          - en
+      surname:
+        content: Melam
+        language:
+        - en
+      completename:
+        content: Nagavenkata Melam
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ron
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: Bonica
+        language:
+        - en
+      completename:
+        content: Ron Bonica
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Juniper Networks
+  role:
+  - type: author
+version:
+- draft: '01'
+revdate: '2018-03-01'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>This document describes Packetization Layer PMTU Discovery (PLPMTUD)
+    procedures for IPSec tunnels. In these procedures, the encrypting node discovers
+    and maintains a running estimate of the tunnel MTU. In order to do this, the encrypting
+    nodes sends Probe Packets of various size through the IPSec tunnel. If the size
+    of Probe Packet exceeds the tunnel MTU, a downstream node discards the packet
+    and sends an ICMP PTB message to the encrypting node. The encrypting node ignores
+    the ICMP PTB message. If the size of the Probe Packet does not exceed the tunnel
+    MTU and the decrypting node receives the Probe Packet, the decrypting node sends
+    an Acknowledgement Packet to encrypting node through the IPSec tunnel. The Acknowledgement
+    Packet indicates the size of the Probe Packet. The procedures described in this
+    document are applicable to IPSec tunnels that are signaled by IKEv2 and provide
+    authentication services.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-00
+    docid:
+    - id: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-00
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-00
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-spiriyath-ipsecme-dynamic-ipsec-pmtu-01
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

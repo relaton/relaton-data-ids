@@ -1,0 +1,158 @@
+---
+schema-version: v1.2.8
+id: draft-zhang-l3vpn-label-sharing-01
+title:
+- content: Label Sharing for Fast PE Protection
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-zhang-l3vpn-label-sharing-01
+  type: src
+type: standard
+docid:
+- id: draft-zhang-l3vpn-label-sharing-01
+  type: Internet-Draft
+  primary: true
+- id: I-D.zhang-l3vpn-label-sharing
+  type: IETF
+  scope: anchor
+docnumber: I-D.zhang-l3vpn-label-sharing
+date:
+- type: published
+  value: '2013-10-21'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Mingui
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: M.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Mingui Zhang
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peng
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Zhou
+        language:
+        - en
+      completename:
+        content: Peng Zhou
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Russ
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: R
+        formatted_initials:
+          content: R.
+          language:
+          - en
+      surname:
+        content: White
+        language:
+        - en
+      completename:
+        content: Russ White
+        language:
+        - en
+  role:
+  - type: author
+version:
+- draft: '01'
+revdate: '2013-10-21'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: <p>This document describes a method to be used by Service Providers to
+    provide fast protection of VPN connections for a CE. Egress PEs in a redundant
+    group always assign the same label for VPN routes from a VRF. These egress PEs
+    create a BGP virtual Next Hop (vNH) in the domain of the IP/MPLS backbone network
+    as an agent of the CE router. Primary and backup tunnels terminated at the vNH
+    are set up by the BGP/MPLS IP VPN based on IGP FRR. If the primary egress PE fails,
+    the backup egress PEs can recognize the "shared" VPN route label, so that the
+    failure affected traffic can be smoothly switched to the backup PE for delivery
+    without changing its VPN route label.</p>
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-zhang-l3vpn-label-sharing-00
+    docid:
+    - id: draft-zhang-l3vpn-label-sharing-00
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-zhang-l3vpn-label-sharing-00
+      format: text/plain
+- type: updatedBy
+  bibitem:
+    id: draft-zhang-l3vpn-label-sharing-02
+    docid:
+    - id: draft-zhang-l3vpn-label-sharing-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-zhang-l3vpn-label-sharing-02
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-zhang-l3vpn-label-sharing-01
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

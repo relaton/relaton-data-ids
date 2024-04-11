@@ -1,0 +1,232 @@
+---
+schema-version: v1.2.8
+id: draft-ietf-tcpm-dctcp-07
+title:
+- content: 'Datacenter TCP (DCTCP): TCP Congestion Control for Datacenters'
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-dctcp-07
+  type: src
+type: standard
+docid:
+- id: draft-ietf-tcpm-dctcp-07
+  type: Internet-Draft
+  primary: true
+- id: I-D.ietf-tcpm-dctcp
+  type: IETF
+  scope: anchor
+docnumber: I-D.ietf-tcpm-dctcp
+date:
+- type: published
+  value: '2017-06-01'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Stephen
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: S
+        formatted_initials:
+          content: S.
+          language:
+          - en
+      surname:
+        content: Bensley
+        language:
+        - en
+      completename:
+        content: Stephen Bensley
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Microsoft
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Dave
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Thaler
+        language:
+        - en
+      completename:
+        content: Dave Thaler
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Microsoft
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Praveen
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Balasubramanian
+        language:
+        - en
+      completename:
+        content: Praveen Balasubramanian
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Microsoft
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Lars
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Eggert
+        language:
+        - en
+      completename:
+        content: Lars Eggert
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: NetApp
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Glenn
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: G
+        formatted_initials:
+          content: G.
+          language:
+          - en
+      surname:
+        content: Judd
+        language:
+        - en
+      completename:
+        content: Glenn Judd
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Morgan Stanley
+  role:
+  - type: author
+version:
+- draft: '07'
+revdate: '2017-06-01'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>This informational memo describes Datacenter TCP (DCTCP), a TCP congestion
+    control scheme for datacenter traffic. DCTCP extends the Explicit Congestion Notification
+    (ECN) processing to estimate the fraction of bytes that encounter congestion,
+    rather than simply detecting that some congestion has occurred. DCTCP then scales
+    the TCP congestion window based on this estimate. This method achieves high burst
+    tolerance, low latency, and high throughput with shallow- buffered switches. This
+    memo also discusses deployment issues related to the coexistence of DCTCP and
+    conventional TCP, the lack of a negotiating mechanism between sender and receiver,
+    and presents some possible mitigations. This memo documents existing DCTCP implementations
+    ([WINDOWS], [LINUX], [FREEBSD]) and deployment experience ([MORGANSTANLEY]). DCTCP
+    as described in this draft is applicable to deployments in controlled environments
+    like datacenters but it must not be deployed over the public Internet without
+    additional measures, as detailed in Section 5.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-ietf-tcpm-dctcp-06
+    docid:
+    - id: draft-ietf-tcpm-dctcp-06
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-tcpm-dctcp-06
+      format: text/plain
+- type: updatedBy
+  bibitem:
+    id: draft-ietf-tcpm-dctcp-08
+    docid:
+    - id: draft-ietf-tcpm-dctcp-08
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-tcpm-dctcp-08
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-ietf-tcpm-dctcp-07
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

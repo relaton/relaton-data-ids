@@ -1,0 +1,189 @@
+---
+schema-version: v1.2.8
+id: draft-versteeg-avt-rapid-synchronization-for-rtp-03
+title:
+- content: Unicast-Based Rapid Acquisition of Multicast RTP Sessions
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-versteeg-avt-rapid-synchronization-for-rtp-03
+  type: src
+type: standard
+docid:
+- id: draft-versteeg-avt-rapid-synchronization-for-rtp-03
+  type: Internet-Draft
+  primary: true
+- id: I-D.versteeg-avt-rapid-synchronization-for-rtp
+  type: IETF
+  scope: anchor
+docnumber: I-D.versteeg-avt-rapid-synchronization-for-rtp
+date:
+- type: published
+  value: '2009-04-16'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Bill
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: B
+        - content: 
+          language:
+          - en
+          initial: V
+        formatted_initials:
+          content: B. V.
+          language:
+          - en
+      surname:
+        content: Steeg
+        language:
+        - en
+      completename:
+        content: Bill Ver Steeg
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ali
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: A
+        - content: 
+          language:
+          - en
+          initial: C
+        formatted_initials:
+          content: A. C.
+          language:
+          - en
+      surname:
+        content: Begen
+        language:
+        - en
+      completename:
+        content: Ali C. Begen
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tom
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Van Caenegem
+        language:
+        - en
+      completename:
+        content: Tom Van Caenegem
+        language:
+        - en
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zeev
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Vax
+        language:
+        - en
+      completename:
+        content: Zeev Vax
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Microsoft Corporation
+  role:
+  - type: author
+version:
+- draft: '03'
+revdate: '2009-04-16'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>When an RTP receiver joins a primary multicast session, it may need
+    to acquire and parse certain Reference Information before it can process any data
+    sent in the multicast session. Depending on the join time, length of the Reference
+    Information repetition interval, size of the Reference Information as well as
+    the application and transport properties, the time lag before an RTP receiver
+    can usefully consume the multicast data, which we refer to as the Acquisition
+    Delay, varies and may be large. This is an undesirable phenomenon for receivers
+    that frequently switch among different multicast sessions, such as video broadcasts.
+    In this document, we describe a method using the existing RTP and RTCP protocol
+    machinery that reduces the acquisition delay. In this method, an auxiliary unicast
+    RTP session carrying the Reference Information to the receiver precedes/accompanies
+    the primary multicast stream. This unicast RTP flow may be transmitted at a faster
+    than natural rate to further accelerate the acquisition. The motivating use case
+    for this capability is multicast applications that carry real-time compressed
+    audio and video. However, the proposed method can also be used in other types
+    of multicast applications where the acquisition delay is long enough to be a problem.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-versteeg-avt-rapid-synchronization-for-rtp-03
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1

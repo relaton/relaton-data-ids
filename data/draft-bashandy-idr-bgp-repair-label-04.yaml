@@ -1,0 +1,158 @@
+---
+schema-version: v1.2.8
+id: draft-bashandy-idr-bgp-repair-label-04
+title:
+- content: Scalable, Loop-Free BGP FRR using Repair Label
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-bashandy-idr-bgp-repair-label-04
+  type: src
+type: standard
+docid:
+- id: draft-bashandy-idr-bgp-repair-label-04
+  type: Internet-Draft
+  primary: true
+- id: I-D.bashandy-idr-bgp-repair-label
+  type: IETF
+  scope: anchor
+docnumber: I-D.bashandy-idr-bgp-repair-label
+date:
+- type: published
+  value: '2012-05-01'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Ahmed
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: A
+        formatted_initials:
+          content: A.
+          language:
+          - en
+      surname:
+        content: Bashandy
+        language:
+        - en
+      completename:
+        content: Ahmed Bashandy
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: 
+          language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Burjiz
+        language:
+        - en
+      completename:
+        content: Burjiz
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Jakob
+          language:
+          - en
+        - content: 
+          language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Heitz
+        language:
+        - en
+      completename:
+        content: Jakob Heitz
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Ericsson
+  role:
+  - type: author
+version:
+- draft: '04'
+revdate: '2012-05-01'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: <p>Consider a BGP free core scenario. Suppose the provider edge BGP speakers
+    PE1, PE2,..., PEn know about a prefix P/m via the external routers CE1, CE2,...,
+    CEm. If the PE router PEi loses connectivity to the primary path, it is desirable
+    to immediately restore traffic by rerouting packets arriving from the core to
+    PEi and destined to the prefix P/m to one of the other PE routers that advertised
+    P/m, say PEj, until BGP re-converges. However if the loss of connectivity of PEi
+    to the primary path also resulted in the loss of connectivity between PEj and
+    CEj, rerouting a packet before the control plane converges may result in a loop.
+    In this document, we propose using a repair label for traffic restoration while
+    avoiding loops. We propose advertising the "repair" label through BGP.</p>
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-bashandy-idr-bgp-repair-label-03
+    docid:
+    - id: draft-bashandy-idr-bgp-repair-label-03
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-bashandy-idr-bgp-repair-label-03
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-bashandy-idr-bgp-repair-label-04
+doctype:
+  type: internet-draft
+ext:
+  schema-version: v1.0.1
