@@ -1,0 +1,219 @@
+---
+schema-version: v1.2.9
+id: draft-joung-detnet-stateless-fair-queuing-04
+title:
+- content: Latency Guarantee with Stateless Fair Queuing
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-04
+  type: src
+type: standard
+docid:
+- id: draft-joung-detnet-stateless-fair-queuing-04
+  type: Internet-Draft
+  primary: true
+- id: I-D.joung-detnet-stateless-fair-queuing
+  type: IETF
+  scope: anchor
+docnumber: I-D.joung-detnet-stateless-fair-queuing
+date:
+- type: published
+  value: '2024-12-25'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Jinoo
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Joung
+        language:
+        - en
+      completename:
+        content: Jinoo Joung
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Sangmyung University
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content:
+          language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Ryoo
+        language:
+        - en
+      completename:
+        content: Jeong-dong Ryoo
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ETRI
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Taesik
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Cheung
+        language:
+        - en
+      completename:
+        content: Taesik Cheung
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ETRI
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Yizhou
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: Y
+        formatted_initials:
+          content: Y.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Yizhou Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Peng
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Liu
+        language:
+        - en
+      completename:
+        content: Peng Liu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China Mobile
+  role:
+  - type: author
+version:
+- draft: '04'
+revdate: '2024-12-25'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>This document specifies the framework and the operational procedure
+    for deterministic networking with a set of rate based work conserving packet schedulers.
+    The framework guarantees end-to-end (E2E) latency bounds to flows. The schedulers
+    in core nodes do not need to maintain flow states. Instead, the entrance node
+    of a flow marks an ideal service completion time according to a fluid model, called
+    Finish Time (FT), of a packet in the packet header. The subsequent core nodes
+    update FT by adding delay factors, which are functions of the flow and the nodes.
+    The packets in the queue of the scheduler are served in the ascending order of
+    FT. This mechanism is called the stateless fair queuing. The result is that flows
+    are isolated from each other almost perfectly. The latency bound of a flow depends
+    only on the flow's intrinsic parameters such as the maximum burst size and the
+    service rate, except the link capacities and the maximum packet length among other
+    flows sharing each output link with the flow.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-joung-detnet-stateless-fair-queuing-03
+    docid:
+    - id: draft-joung-detnet-stateless-fair-queuing-03
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-joung-detnet-stateless-fair-queuing-03
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-joung-detnet-stateless-fair-queuing-04
+ext:
+  schema-version: v1.0.1
+  doctype:
+    type: internet-draft
