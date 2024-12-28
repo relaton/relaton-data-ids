@@ -1,121 +1,63 @@
 ---
 schema-version: v1.2.9
-id: draft-pignataro-enviro-sustainability-architecture-00
+id: draft-ietf-dmm-tn-aware-mobility-15
 title:
-- content: Architectural Considerations for Environmental Sustainability
+- content: Mobility-aware Transport Network Slicing for 5G
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-pignataro-enviro-sustainability-architecture-00
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-dmm-tn-aware-mobility-15
   type: src
 type: standard
 docid:
-- id: draft-pignataro-enviro-sustainability-architecture-00
+- id: draft-ietf-dmm-tn-aware-mobility-15
   type: Internet-Draft
   primary: true
-- id: I-D.pignataro-enviro-sustainability-architecture
+- id: I-D.ietf-dmm-tn-aware-mobility
   type: IETF
   scope: anchor
-docnumber: I-D.pignataro-enviro-sustainability-architecture
+docnumber: I-D.ietf-dmm-tn-aware-mobility
 date:
 - type: published
-  value: '2024-06-08'
+  value: '2024-12-27'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Carlos
+        - content: Uma
           language:
           - en
         - content:
           language:
           - en
-          initial: C
+          initial: U
         formatted_initials:
-          content: C.
+          content: U.
           language:
           - en
       surname:
-        content: Pignataro
+        content: Chunduri
         language:
         - en
       completename:
-        content: Carlos Pignataro
+        content: Uma Chunduri
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: North Carolina State University
+        - content: Intel Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
-        content: Rezaki
-        language:
-        - en
-      completename:
-        content: Ali Rezaki
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Nokia
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Suresh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
-      surname:
-        content: Krishnan
-        language:
-        - en
-      completename:
-        content: Suresh Krishnan
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Jari
+        - content: John
           language:
           - en
         - content:
@@ -127,103 +69,147 @@ contributor:
           language:
           - en
       surname:
-        content: Arkko
+        content: Kaippallimalil
         language:
         - en
       completename:
-        content: Jari Arkko
+        content: John Kaippallimalil
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
+        - content: Futurewei
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Alexander
+        - content: Sridhar
           language:
           - en
         - content:
           language:
           - en
-          initial: A
+          initial: S
         formatted_initials:
-          content: A.
+          content: S.
           language:
           - en
       surname:
-        content: Clemm
+        content: Bhaskaran
         language:
         - en
       completename:
-        content: Alexander Clemm
+        content: Sridhar Bhaskaran
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Sympotech
+        - content: Rakuten Symphony
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Hesham
+        - content: Jeff
           language:
           - en
         - content:
           language:
           - en
-          initial: H
+          initial: J
         formatted_initials:
-          content: H.
+          content: J.
           language:
           - en
       surname:
-        content: ElBakoury
+        content: Tantsura
         language:
         - en
       completename:
-        content: Hesham ElBakoury
+        content: Jeff Tantsura
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Independent Consultant
+        - content: Nvidia
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Luis
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: L
+        - content:
+          language:
+          - en
+          initial: M
+        formatted_initials:
+          content: L. M.
+          language:
+          - en
+      surname:
+        content: Contreras
+        language:
+        - en
+      completename:
+        content: Luis M. Contreras
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Telefonica
   role:
   - type: author
 version:
-- draft: '00'
-revdate: '2024-06-08'
+- draft: '15'
+revdate: '2024-12-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes several of the design tradeoffs for trying
-    to optimize for sustainability along with the other common networking metrics
-    such as performance and availability.</p>"
+- content: <p>Network slicing in 5G enables logical networks for communication services
+    of multiple 5G customers to be multiplexed over the same infrastructure. While
+    5G slicing covers logical separation of various aspects of 5G infrastructure and
+    services, user's data plane packets over the Radio Access Network (RAN) and Core
+    Network (5GC) use IP in many segments of an end-to-end 5G slice. When end-to-end
+    slices in a 5G System use network resources, they are mapped to corresponding
+    IP transport network slice(s) which in turn provide the bandwidth, latency, isolation,
+    and other criteria required for the realization of a 5G slice. This document describes
+    mapping of 5G slices to transport network slices using UDP source port number
+    of the GTP-U bearer when the IP transport network (slice provider) is separated
+    by an "attachment circuit" from the networks in which the 5G network functions
+    are deployed, for example, 5G functions that are distributed across data centers.
+    The slice mapping defined here is supported transparently when a 5G user device
+    moves across 5G attachment points and session anchors.</p>
   language:
   - en
   script:
   - Latn
   format: text/html
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
-    id: draft-pignataro-enviro-sustainability-architecture-01
+    id: draft-ietf-dmm-tn-aware-mobility-14
     docid:
-    - id: draft-pignataro-enviro-sustainability-architecture-01
+    - id: draft-ietf-dmm-tn-aware-mobility-14
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-pignataro-enviro-sustainability-architecture-01
+      content: draft-ietf-dmm-tn-aware-mobility-14
       format: text/plain
 series:
 - type: main
@@ -234,7 +220,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-pignataro-enviro-sustainability-architecture-00
+  number: draft-ietf-dmm-tn-aware-mobility-15
 ext:
   schema-version: v1.0.1
   doctype:
