@@ -1,89 +1,34 @@
 ---
 schema-version: v1.2.9
-id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+id: draft-ietf-lsr-ospf-prefix-extended-flags-05
 title:
-- content: A YANG Data Model for the RFC 9543 Network Slice Service
+- content: Prefix Flag Extension for OSPFv2 and OSPFv3
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-05
   type: src
 type: standard
 docid:
-- id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- id: draft-ietf-lsr-ospf-prefix-extended-flags-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-ietf-network-slice-nbi-yang
+- id: I-D.ietf-lsr-ospf-prefix-extended-flags
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-teas-ietf-network-slice-nbi-yang
+docnumber: I-D.ietf-lsr-ospf-prefix-extended-flags
 date:
 - type: published
-  value: '2025-01-21'
+  value: '2025-01-25'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Wu
-        language:
-        - en
-      completename:
-        content: Bo Wu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Dhody
-        language:
-        - en
-      completename:
-        content: Dhruv Dhody
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Reza
+        - content: Ran
           language:
           - en
         - content:
@@ -95,88 +40,149 @@ contributor:
           language:
           - en
       surname:
-        content: Rokui
+        content: Chen
         language:
         - en
       completename:
-        content: Reza Rokui
+        content: Ran Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
+        - content: ZTE Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Tarek
+        - content: Detao
           language:
           - en
         - content:
           language:
           - en
-          initial: T
+          initial: D
         formatted_initials:
-          content: T.
+          content: D.
           language:
           - en
       surname:
-        content: Saad
+        content: Zhao
         language:
         - en
       completename:
-        content: Tarek Saad
+        content: Detao Zhao
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: ZTE Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: John
+        - content: Peter
           language:
           - en
         - content:
           language:
           - en
-          initial: J
+          initial: P
         formatted_initials:
-          content: J.
+          content: P.
           language:
           - en
       surname:
-        content: Mullooly
+        content: Psenak
         language:
         - en
       completename:
-        content: John Mullooly
+        content: Peter Psenak
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Ketan
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: K
+        formatted_initials:
+          content: K.
+          language:
+          - en
+      surname:
+        content: Talaulikar
+        language:
+        - en
+      completename:
+        content: Ketan Talaulikar
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Liyan
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Gong
+        language:
+        - en
+      completename:
+        content: Liyan Gong
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: China mobile
   role:
   - type: author
 version:
-- draft: '18'
-revdate: '2025-01-21'
+- draft: '05'
+revdate: '2025-01-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for RFC 9543 Network Slice
-    Service. The model can be used in the Network Slice Service interface between
-    a customer and a provider that offers RFC 9543 Network Slice Services.</p>"
+- content: "<p>Each OSPF prefix is advertised with an 8-bit options field, using the
+    Prefix Options (OSPFv3) and the flag field in the OSPFv2 Extended Prefix TLV (OSPFv2).
+    However for OSPFv3, all the Prefix Options bits have already been assigned, and
+    for OSPFv2, there are not many bits left unassigned in the OSPFv2 Extended Prefix
+    TLV. This document solves the problem of insufficient options bit by defining
+    variable-length Prefix Attribute Flags Sub-TLVs for OSPFv2 and OSPFv3.</p>"
   language:
   - en
   script:
@@ -185,23 +191,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    id: draft-ietf-lsr-ospf-prefix-extended-flags-04
     docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    - id: draft-ietf-lsr-ospf-prefix-extended-flags-04
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-17
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
-    docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-19
+      content: draft-ietf-lsr-ospf-prefix-extended-flags-04
       format: text/plain
 series:
 - type: main
@@ -212,7 +208,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+  number: draft-ietf-lsr-ospf-prefix-extended-flags-05
 ext:
   schema-version: v1.0.1
   doctype:

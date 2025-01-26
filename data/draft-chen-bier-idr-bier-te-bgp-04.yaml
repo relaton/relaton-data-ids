@@ -1,89 +1,34 @@
 ---
 schema-version: v1.2.9
-id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+id: draft-chen-bier-idr-bier-te-bgp-04
 title:
-- content: A YANG Data Model for the RFC 9543 Network Slice Service
+- content: BGP extensions for BIER-TE
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- content: https://datatracker.ietf.org/doc/html/draft-chen-bier-idr-bier-te-bgp-04
   type: src
 type: standard
 docid:
-- id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- id: draft-chen-bier-idr-bier-te-bgp-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-ietf-network-slice-nbi-yang
+- id: I-D.chen-bier-idr-bier-te-bgp
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-teas-ietf-network-slice-nbi-yang
+docnumber: I-D.chen-bier-idr-bier-te-bgp
 date:
 - type: published
-  value: '2025-01-21'
+  value: '2025-01-25'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Wu
-        language:
-        - en
-      completename:
-        content: Bo Wu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Dhody
-        language:
-        - en
-      completename:
-        content: Dhruv Dhody
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Reza
+        - content: Ran
           language:
           - en
         - content:
@@ -95,88 +40,119 @@ contributor:
           language:
           - en
       surname:
-        content: Rokui
+        content: Chen
         language:
         - en
       completename:
-        content: Reza Rokui
+        content: Ran Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
+        - content: ZTE Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Tarek
+        - content: Changwang
           language:
           - en
         - content:
           language:
           - en
-          initial: T
+          initial: C
         formatted_initials:
-          content: T.
+          content: C.
           language:
           - en
       surname:
-        content: Saad
+        content: Lin
         language:
         - en
       completename:
-        content: Tarek Saad
+        content: Changwang Lin
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: New H3C Technologies
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: John
+        - content: BenChong
           language:
           - en
         - content:
           language:
           - en
-          initial: J
+          initial: B
         formatted_initials:
-          content: J.
+          content: B.
           language:
           - en
       surname:
-        content: Mullooly
+        content: Xu
         language:
         - en
       completename:
-        content: John Mullooly
+        content: BenChong Xu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: ZTE Corporation
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zheng
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Zhang
+        language:
+        - en
+      completename:
+        content: Zheng Zhang
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ZTE Corporation
   role:
   - type: author
 version:
-- draft: '18'
-revdate: '2025-01-21'
+- draft: '04'
+revdate: '2025-01-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for RFC 9543 Network Slice
-    Service. The model can be used in the Network Slice Service interface between
-    a customer and a provider that offers RFC 9543 Network Slice Services.</p>"
+- content: <p>"Tree Engineering for Bit Index Explicit Replication" (BIER-TE) shares
+    architecture and packet formats with BIER. BIER-TE forwards and replicates packets
+    based on a BitString in the packet header, but every BitPosition of the BitString
+    of a BIER-TE packet indicates one or more adjacencies. This document describes
+    BGP extensions for advertising the BIER-TE specific information.</p>
   language:
   - en
   script:
@@ -185,23 +161,23 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    id: draft-chen-bier-idr-bier-te-bgp-03
     docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    - id: draft-chen-bier-idr-bier-te-bgp-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+      content: draft-chen-bier-idr-bier-te-bgp-03
       format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
+    id: draft-chen-bier-idr-bier-te-bgp-05
     docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
+    - id: draft-chen-bier-idr-bier-te-bgp-05
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-19
+      content: draft-chen-bier-idr-bier-te-bgp-05
       format: text/plain
 series:
 - type: main
@@ -212,7 +188,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+  number: draft-chen-bier-idr-bier-te-bgp-04
 ext:
   schema-version: v1.0.1
   doctype:

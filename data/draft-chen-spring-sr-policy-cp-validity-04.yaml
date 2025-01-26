@@ -1,89 +1,34 @@
 ---
 schema-version: v1.2.9
-id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+id: draft-chen-spring-sr-policy-cp-validity-04
 title:
-- content: A YANG Data Model for the RFC 9543 Network Slice Service
+- content: Validity of SR Policy Candidate Path
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- content: https://datatracker.ietf.org/doc/html/draft-chen-spring-sr-policy-cp-validity-04
   type: src
 type: standard
 docid:
-- id: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+- id: draft-chen-spring-sr-policy-cp-validity-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-ietf-network-slice-nbi-yang
+- id: I-D.chen-spring-sr-policy-cp-validity
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-teas-ietf-network-slice-nbi-yang
+docnumber: I-D.chen-spring-sr-policy-cp-validity
 date:
 - type: published
-  value: '2025-01-21'
+  value: '2025-01-25'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
-      surname:
-        content: Wu
-        language:
-        - en
-      completename:
-        content: Bo Wu
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
-      surname:
-        content: Dhody
-        language:
-        - en
-      completename:
-        content: Dhruv Dhody
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Huawei Technologies
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        forename:
-        - content: Reza
+        - content: Ran
           language:
           - en
         - content:
@@ -95,88 +40,150 @@ contributor:
           language:
           - en
       surname:
-        content: Rokui
+        content: Chen
         language:
         - en
       completename:
-        content: Reza Rokui
+        content: Ran Chen
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
+        - content: ZTE Corporation
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Tarek
+        - content: Yisong
           language:
           - en
         - content:
           language:
           - en
-          initial: T
+          initial: Y
         formatted_initials:
-          content: T.
+          content: Y.
           language:
           - en
       surname:
-        content: Saad
+        content: Liu
         language:
         - en
       completename:
-        content: Tarek Saad
+        content: Yisong Liu
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: China Mobile
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: John
+        - content: Ketan
           language:
           - en
         - content:
           language:
           - en
-          initial: J
+          initial: K
         formatted_initials:
-          content: J.
+          content: K.
           language:
           - en
       surname:
-        content: Mullooly
+        content: Talaulikar
         language:
         - en
       completename:
-        content: John Mullooly
+        content: Ketan Talaulikar
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc
+        - content: Cisco Systems
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Detao
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Zhao
+        language:
+        - en
+      completename:
+        content: Detao Zhao
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: ZTE Corporation
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Zafar
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: Z
+        formatted_initials:
+          content: Z.
+          language:
+          - en
+      surname:
+        content: Ali
+        language:
+        - en
+      completename:
+        content: Zafar Ali
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '18'
-revdate: '2025-01-21'
+- draft: '04'
+revdate: '2025-01-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model for RFC 9543 Network Slice
-    Service. The model can be used in the Network Slice Service interface between
-    a customer and a provider that offers RFC 9543 Network Slice Services.</p>"
+- content: "<p>An SR Policy comprises one or more candidate paths (CP) of which at
+    a given time one and only one may be active (i.e., installed in forwarding and
+    usable for steering of traffic). Each CP in turn may have one or more SID-List
+    of which one or more may be active; when multiple SID-List are active then traffic
+    is load balanced over them. However, a candidate path is valid when at least one
+    SID-List is active. This candidate path validity criterion cannot meet the needs
+    of some scenarios. This document defines the new candidate path validity criterion.</p>"
   language:
   - en
   script:
@@ -185,23 +192,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    id: draft-chen-spring-sr-policy-cp-validity-03
     docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-17
+    - id: draft-chen-spring-sr-policy-cp-validity-03
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-17
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
-    docid:
-    - id: draft-ietf-teas-ietf-network-slice-nbi-yang-19
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-teas-ietf-network-slice-nbi-yang-19
+      content: draft-chen-spring-sr-policy-cp-validity-03
       format: text/plain
 series:
 - type: main
@@ -212,7 +209,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-teas-ietf-network-slice-nbi-yang-18
+  number: draft-chen-spring-sr-policy-cp-validity-04
 ext:
   schema-version: v1.0.1
   doctype:
