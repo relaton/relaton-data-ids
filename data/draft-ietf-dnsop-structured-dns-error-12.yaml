@@ -1,35 +1,63 @@
 ---
 schema-version: v1.2.9
-id: draft-ietf-opsawg-tacacs-tls13-19
+id: draft-ietf-dnsop-structured-dns-error-12
 title:
-- content: Terminal Access Controller Access-Control System Plus (TACACS+) over TLS
-    1.3
+- content: Structured Error Data for Filtered DNS
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-tacacs-tls13-19
+- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-structured-dns-error-12
   type: src
 type: standard
 docid:
-- id: draft-ietf-opsawg-tacacs-tls13-19
+- id: draft-ietf-dnsop-structured-dns-error-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-tacacs-tls13
+- id: I-D.ietf-dnsop-structured-dns-error
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-opsawg-tacacs-tls13
+docnumber: I-D.ietf-dnsop-structured-dns-error
 date:
 - type: published
-  value: '2025-04-03'
+  value: '2025-04-13'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Thorsten
+        - content: Dan
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: D
+        formatted_initials:
+          content: D.
+          language:
+          - en
+      surname:
+        content: Wing
+        language:
+        - en
+      completename:
+        content: Dan Wing
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Citrix Systems, Inc.
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tirumaleswar
           language:
           - en
         - content:
@@ -41,107 +69,93 @@ contributor:
           language:
           - en
       surname:
-        content: Dahm
+        content: Reddy.K
         language:
         - en
       completename:
-        content: Thorsten Dahm
+        content: Tirumaleswar Reddy.K
         language:
         - en
+    affiliation:
+    - organization:
+        name:
+        - content: Nokia
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: John
+        - content: Neil
           language:
           - en
         - content:
           language:
           - en
-          initial: J
+          initial: N
         formatted_initials:
-          content: J.
+          content: N.
           language:
           - en
       surname:
-        content: Heasley
+        content: Cook
         language:
         - en
       completename:
-        content: John Heasley
+        content: Neil Cook
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
-      surname:
-        content: dcmgash@cisco.com
-        language:
-        - en
-      completename:
-        content: dcmgash@cisco.com
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
+        - content: Open-Xchange
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Andrej
+        - content: Mohamed
           language:
           - en
         - content:
           language:
           - en
-          initial: A
+          initial: M
         formatted_initials:
-          content: A.
+          content: M.
           language:
           - en
       surname:
-        content: Ota
+        content: Boucadair
         language:
         - en
       completename:
-        content: Andrej Ota
+        content: Mohamed Boucadair
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google Inc.
+        - content: Orange
   role:
   - type: author
 version:
-- draft: '19'
-revdate: '2025-04-03'
+- draft: '12'
+revdate: '2025-04-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Terminal Access Controller Access-Control System Plus (TACACS+)
-    Protocol provides device administration for routers, network access servers and
-    other networked computing devices via one or more centralized TACACS+ servers.
-    This document adds Transport Layer Security (TLS 1.3) support to TACACS+ and obsoletes
-    former inferior security mechanisms. This document updates RFC8907.</p>"
+- content: "<p>DNS filtering is widely deployed for various reasons, including network
+    security. However, filtered DNS responses lack structured information for end
+    users to understand the reason for the filtering. Existing mechanisms to provide
+    explanatory details to end users cause harm especially if the blocked DNS response
+    is for HTTPS resources. This document updates RFC 8914 by signaling client support
+    for structuring the EXTRA-TEXT field of the Extended DNS Error to provide details
+    on the DNS filtering. Such details can be parsed by the client and displayed,
+    logged, or used for other purposes.</p>"
   language:
   - en
   script:
@@ -150,23 +164,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-tacacs-tls13-18
+    id: draft-ietf-dnsop-structured-dns-error-11
     docid:
-    - id: draft-ietf-opsawg-tacacs-tls13-18
+    - id: draft-ietf-dnsop-structured-dns-error-11
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-opsawg-tacacs-tls13-18
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-opsawg-tacacs-tls13-20
-    docid:
-    - id: draft-ietf-opsawg-tacacs-tls13-20
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-opsawg-tacacs-tls13-20
+      content: draft-ietf-dnsop-structured-dns-error-11
       format: text/plain
 series:
 - type: main
@@ -177,7 +181,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-opsawg-tacacs-tls13-19
+  number: draft-ietf-dnsop-structured-dns-error-12
 ext:
   schema-version: v1.0.1
   doctype:

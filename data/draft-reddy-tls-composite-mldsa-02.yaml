@@ -1,35 +1,34 @@
 ---
 schema-version: v1.2.9
-id: draft-ietf-opsawg-tacacs-tls13-19
+id: draft-reddy-tls-composite-mldsa-02
 title:
-- content: Terminal Access Controller Access-Control System Plus (TACACS+) over TLS
-    1.3
+- content: Use of Composite ML-DSA in TLS 1.3
   language:
   - en
   script:
   - Latn
   format: text/plain
 link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-tacacs-tls13-19
+- content: https://datatracker.ietf.org/doc/html/draft-reddy-tls-composite-mldsa-02
   type: src
 type: standard
 docid:
-- id: draft-ietf-opsawg-tacacs-tls13-19
+- id: draft-reddy-tls-composite-mldsa-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-tacacs-tls13
+- id: I-D.reddy-tls-composite-mldsa
   type: IETF
   scope: anchor
-docnumber: I-D.ietf-opsawg-tacacs-tls13
+docnumber: I-D.reddy-tls-composite-mldsa
 date:
 - type: published
-  value: '2025-04-03'
+  value: '2025-04-12'
 contributor:
 - person:
     name:
       given:
         forename:
-        - content: Thorsten
+        - content: Tirumaleswar
           language:
           - en
         - content:
@@ -41,13 +40,46 @@ contributor:
           language:
           - en
       surname:
-        content: Dahm
+        content: Reddy.K
         language:
         - en
       completename:
-        content: Thorsten Dahm
+        content: Tirumaleswar Reddy.K
         language:
         - en
+    affiliation:
+    - organization:
+        name:
+        - content: Nokia
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tim
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Hollebeek
+        language:
+        - en
+      completename:
+        content: Tim Hollebeek
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: DigiCert
   role:
   - type: author
 - person:
@@ -66,82 +98,61 @@ contributor:
           language:
           - en
       surname:
-        content: Heasley
+        content: Gray
         language:
         - en
       completename:
-        content: John Heasley
+        content: John Gray
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
-  - type: author
-- person:
-    name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
-      surname:
-        content: dcmgash@cisco.com
-        language:
-        - en
-      completename:
-        content: dcmgash@cisco.com
-        language:
-        - en
-    affiliation:
-    - organization:
-        name:
-        - content: Cisco Systems, Inc.
+        - content: Entrust Limited
   role:
   - type: author
 - person:
     name:
       given:
         forename:
-        - content: Andrej
+        - content: Scott
           language:
           - en
         - content:
           language:
           - en
-          initial: A
+          initial: S
         formatted_initials:
-          content: A.
+          content: S.
           language:
           - en
       surname:
-        content: Ota
+        content: Fluhrer
         language:
         - en
       completename:
-        content: Andrej Ota
+        content: Scott Fluhrer
         language:
         - en
     affiliation:
     - organization:
         name:
-        - content: Google Inc.
+        - content: Cisco Systems
   role:
   - type: author
 version:
-- draft: '19'
-revdate: '2025-04-03'
+- draft: '02'
+revdate: '2025-04-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Terminal Access Controller Access-Control System Plus (TACACS+)
-    Protocol provides device administration for routers, network access servers and
-    other networked computing devices via one or more centralized TACACS+ servers.
-    This document adds Transport Layer Security (TLS 1.3) support to TACACS+ and obsoletes
-    former inferior security mechanisms. This document updates RFC8907.</p>"
+- content: "<p>This document specifies how the post-quantum signature scheme ML-DSA
+    [FIPS204], in combination with traditional algorithms RSA- PKCS#1v1.5,RSA-PSS,
+    ECDSA, Ed25519, and Ed448 can be used for authentication in TLS 1.3. The composite
+    ML-DSA approach is beneficial in deployments where operators seek additional protection
+    against potential breaks or catastrophic bugs in ML-DSA.</p>"
   language:
   - en
   script:
@@ -150,23 +161,13 @@ abstract:
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-tacacs-tls13-18
+    id: draft-reddy-tls-composite-mldsa-01
     docid:
-    - id: draft-ietf-opsawg-tacacs-tls13-18
+    - id: draft-reddy-tls-composite-mldsa-01
       type: Internet-Draft
       primary: true
     formattedref:
-      content: draft-ietf-opsawg-tacacs-tls13-18
-      format: text/plain
-- type: updatedBy
-  bibitem:
-    id: draft-ietf-opsawg-tacacs-tls13-20
-    docid:
-    - id: draft-ietf-opsawg-tacacs-tls13-20
-      type: Internet-Draft
-      primary: true
-    formattedref:
-      content: draft-ietf-opsawg-tacacs-tls13-20
+      content: draft-reddy-tls-composite-mldsa-01
       format: text/plain
 series:
 - type: main
@@ -177,7 +178,7 @@ series:
     script:
     - Latn
     format: text/plain
-  number: draft-ietf-opsawg-tacacs-tls13-19
+  number: draft-reddy-tls-composite-mldsa-02
 ext:
   schema-version: v1.0.1
   doctype:
