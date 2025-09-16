@@ -14,15 +14,17 @@ docid:
   primary: true
 abstract:
 - content: "<p>This document defines OODA-HTTP, a protocol extension and adaptive
-    security framework that applies the Observe-Orient-Decide-Act loop to HTTP/HTTPS
-    communications. OODA-HTTP introduces dynamic behavior at the application layer,
-    enabling real-time detection, decision, and mitigation based on evolving threat
-    contexts. Each HTTP request becomes not just a message, but an observation signal,
-    a decision vector, and a defensive act. This framework introduces headers such
-    as X-OODA-Action to carry contextual scores or actions across clients, servers,
-    and intermediaries. OODA-HTTP transforms passive transport into active self-defense,
-    offering resilience against classic and quantum threats. It is designed as a native
-    defender of the World Wide Web \\[Gupta23]\\[Martinez22]\\[Wang21]\\[Kim23].</p>"
+    security framework that applies the Observe-Orient-Decide-Act (OODA) loop to HTTP/HTTPS
+    communications. Each HTTP request is transformed into an observation signal, a
+    decision vector, and an opportunity for active defense. OODA-HTTP extends the
+    traditional 4-phase loop into 7 phases: Observe, Orient, Decide, Act, Memorize,
+    Adjust, and Cooperate - allowing systems to evolve and adapt during communication.
+    The protocol introduces a structured header, 'OODA-Action', that carries context-driven
+    actions between endpoints. OODA-HTTP offers compatibility with existing infrastructure
+    (e.g., TLS, HTTP/2/3), while enabling resilience against classical, behavioral,
+    and quantum threats. It supports inter-protocol cooperation with DOTS, STAMP,
+    SIEMs, and behavioral inference engines such as SVDD and PSLPSO. This document
+    defines protocol behavior, header format, core logic, and interoperability strategy.</p>"
   language:
   - en
   script:
@@ -48,4 +50,14 @@ relation:
       primary: true
     formattedref:
       content: draft-secroot-ooda-http-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-secroot-ooda-http-02
+    docid:
+    - id: draft-secroot-ooda-http-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-secroot-ooda-http-02
       format: text/plain
