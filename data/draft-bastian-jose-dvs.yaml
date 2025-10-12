@@ -2,7 +2,7 @@
 schema-version: v1.2.9
 id: draft-bastian-jose-dvs
 title:
-- content: Designated Verifier Signatures for JOSE
+- content: Public Key Derived HMAC for JOSE
   language:
   - en
   script:
@@ -13,9 +13,10 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This specification defines structures and algorithm descriptions for
-    the use of designated verifier signatures, based on a combination of Key Agreement
-    and Message Authentication Code, with JOSE.</p>"
+- content: "<p>This specification defines the use of a Diffie-Hellman key agreement
+    (DH-KA) protocol combined with a key derivation function (KDF) to derive a symmetric
+    Message Authentication Code (MAC) key from public information conveyed within
+    a JSON Web Signature (JWS).</p>"
   language:
   - en
   script:
@@ -41,4 +42,14 @@ relation:
       primary: true
     formattedref:
       content: draft-bastian-jose-dvs-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-bastian-jose-dvs-02
+    docid:
+    - id: draft-bastian-jose-dvs-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-bastian-jose-dvs-02
       format: text/plain
