@@ -1,0 +1,202 @@
+---
+schema-version: v1.2.9
+id: draft-wu-moq-recovery-for-video-streaming-00
+title:
+- content: Enhanced QUIC Recovery for Video Streaming
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-wu-moq-recovery-for-video-streaming-00
+  type: src
+type: standard
+docid:
+- id: draft-wu-moq-recovery-for-video-streaming-00
+  type: Internet-Draft
+  primary: true
+- id: I-D.wu-moq-recovery-for-video-streaming
+  type: IETF
+  scope: anchor
+docnumber: I-D.wu-moq-recovery-for-video-streaming
+date:
+- type: published
+  value: '2025-11-08'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content:
+          language:
+          - en
+          initial: B
+        formatted_initials:
+          content: B.
+          language:
+          - en
+      surname:
+        content: Wu
+        language:
+        - en
+      completename:
+        content: Bo Wu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tencent
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Tong
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: T
+        formatted_initials:
+          content: T.
+          language:
+          - en
+      surname:
+        content: Li
+        language:
+        - en
+      completename:
+        content: Tong Li
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Renmin University of China
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Cheng
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: Luo
+        language:
+        - en
+      completename:
+        content: Cheng Luo
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tencent
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Jibing
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: J
+        formatted_initials:
+          content: J.
+          language:
+          - en
+      surname:
+        content: Lou
+        language:
+        - en
+      completename:
+        content: Jibing Lou
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tencent
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content:
+          language:
+          - en
+          initial: K
+        formatted_initials:
+          content: K.
+          language:
+          - en
+      surname:
+        content: Xu
+        language:
+        - en
+      completename:
+        content: Ke Xu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Tsinghua University
+  role:
+  - type: author
+version:
+- draft: '00'
+revdate: '2025-11-08'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: "<p>The current loss recovery in QUIC provides reliable delivery but is
+    not optimized for latency, potentially hindering time-sensitive applications.
+    The document analyzes the issues caused by the current QUIC recovery scheme during
+    live video streaming and then proposes an enhanced QUIC recovery mechanism that
+    leverages additional loss retransmissions for optimizing client-side QoE. At a
+    high level, the QUIC sender performs additional recovery logic when transport
+    runs into application limited state, which is for the lost data that has been
+    retransmitted before but has not been acknowledged yet. This mechanism can act
+    as a supplement to the existing recovery scheme that performs immediate loss retransmissions
+    once a packet is detected lost.</p>"
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-wu-moq-recovery-for-video-streaming-00
+ext:
+  schema-version: v1.0.1
+  doctype:
+    type: internet-draft
