@@ -13,17 +13,28 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>The SW103k protocol addresses challenges in networks with limited bandwidth,
-    latency constraints, and data integrity concerns. It provides compression and
-    decompression to optimize bandwidth utilization in environments such as IoT, satellite,
-    and mobile communications. The protocol operates at the data link layer with a
-    custom frame format including SW103K and HAVI headers. Key features include: -
-    Batch processing of 103 packets with compression - Merkle tree- based integrity
-    verification (merklesw103k root hash) - QoS mechanisms with 8-bit priority field
-    - Security features including AES-256-GCM encryption - Physical layer synchronization
-    with +-1us accuracy Implementations include Linux kernel modules, FPGA encoders,
-    and userspace daemons. The protocol supports interoperability with industrial
-    standards like PROFINET and EtherCAT through custom mappings.</p>"
+- content: "<p>This specification defines a new protocol sw103k addresses challenges
+    in networks with limited bandwidth, latency constraints, and data integrity concerns.
+    It provides compression and decompression to optimize bandwidth utilization in
+    environments such as Data centers, internet exchange points, and mobile communications.
+    The protocol operates at the data link layer with a custom frame format including
+    SW103K and HAVI headers. Key features include: - Batch processing of 103 packets
+    with compression - Merkle tree- based integrity verification (merklesw103k root
+    hash) - QoS mechanisms with 8-bit priority field - Security features including
+    AES-256-GCM encryption - Physical layer synchronization with +-1us accuracy Jutifying
+    why sw103k is unique: The sw103k protocol is a Layer-2 mechanism that applies
+    stateful compression to complete payloads using shared context between communicating
+    entities. The protocol assumes that traffic in constrained networks is often structured
+    and repetitive and therefore allows endpoints to provision payload templates,
+    dictionaries, and delta-encoding state prior to data exchange. During operation,
+    payloads may be represented by compact identifiers together with fields that describe
+    deviations from previously established state. For traffic patterns that conform
+    to these assumptions, this approach can substantially reduce the number of transmitted
+    octets and may achieve compression ratios on the order of 103:1 for selected telemetry
+    and control messages. By operating independently of IP version, transport protocol,
+    and application encoding, sw103k is intended to reduce airtime usage, energy consumption,
+    and the need for fragmentation in environments where link capacity and device
+    resources are limited.</p>"
   language:
   - en
   script:
@@ -89,4 +100,14 @@ relation:
       primary: true
     formattedref:
       content: draft-rfcxml-rfc-swl-103k-05
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-rfcxml-rfc-swl-103k-06
+    docid:
+    - id: draft-rfcxml-rfc-swl-103k-06
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-rfcxml-rfc-swl-103k-06
       format: text/plain
