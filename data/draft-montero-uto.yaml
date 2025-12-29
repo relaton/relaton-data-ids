@@ -2,8 +2,8 @@
 schema-version: v1.2.9
 id: draft-montero-uto
 title:
-- content: 'Unified Transition Overlay (UTO): A Minimal Cross-Version Transport Mechanism
-    for IPv4/IPv6'
+- content: 'Unified Transition Overlay (UTO): A Gateway-Based IPv4/IPv6 Translation
+    Proxy'
   language:
   - en
   script:
@@ -14,14 +14,15 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document specifies Unified Transition Overlay (UTO), a minimal
-    encapsulation mechanism designed to enable bidirectional communication between
-    IPv4-only and IPv6-only hosts without requiring NAT64, DNS64, heavy protocol translation,
-    or global changes to Internet routing. UTO introduces a compact 12-byte header
-    that carries a Remote Native Address (RNA) and allows a packet to traverse a network
-    whose forwarding plane uses the opposite IP version. The underlying network remains
-    purely IPv4 or purely IPv6, ensuring compatibility with existing hardware and
-    reducing operational complexity.</p>"
+- content: "<p>This document specifies Unified Transition Overlay (UTO), a gateway-
+    based IPv4/IPv6 translation proxy that enables communication between IPv4-only
+    and IPv6-only hosts without packet encapsulation, new protocol headers, or changes
+    to end-host network stacks. UTO operates exclusively at transition gateways that
+    translate packets between IPv4 and IPv6 and update transport-layer checksums to
+    preserve TCP and UDP correctness. Incremental checksum update is supported to
+    reduce processing overhead. The underlying network remains purely IPv4 or purely
+    IPv6, allowing UTO to be incrementally deployed using existing routing and forwarding
+    infrastructure.</p>"
   language:
   - en
   script:
@@ -37,4 +38,14 @@ relation:
       primary: true
     formattedref:
       content: draft-montero-uto-00
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-montero-uto-01
+    docid:
+    - id: draft-montero-uto-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-montero-uto-01
       format: text/plain
