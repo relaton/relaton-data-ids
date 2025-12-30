@@ -14,33 +14,30 @@ docid:
   primary: true
 abstract:
 - content: "<p>This document is part of the set of documents intended to update the
-    description of NFSv4 Minor Version One as part of the rfc5661bis respecification
-    effort for NFSv4.1. It describes the structure and function of NFsv4 Access Control
-    Lists within all existing minor versions of NFSv4. It describes the structure
-    of NFSv4 ACLs and their role in the NFSv4 security architecture. While the focus
-    of this document is on the role of ACLs in providing a more flexible approach
+    description of NFSv4 Minor Version One as part of the rfc881bis respecification
+    effort for NFSv4.1. It describes the structure and function of NFSv4 Access Control
+    Lists within NFSv4.0 and NFSv4.1. These minor versions define ACLs using an ACL
+    model based on Windows ACLs. Support for other ACL models such as draft POSIX
+    ACLs remains an option that could be taken advantage of in later minor versions
+    such as NFSv4.2. This document describes the structure of these Windows-derived
+    NFSv4 ACLs and their role in the NFSv4 security architecture. While the focus
+    of this document is on the role of these ACLs in providing a more flexible approach
     to file access authorization than is made available by the POSIX-derived authorization-related
     attributes, the potential provision of other security-related functionality is
-    covered as well. [Consensus Needed (Item #117a)]: Because of the failure of previous
-    specifications to provide a satisfactory approach to either of the two ACL models
-    for which support was originally intended, this document clarifies the status
-    of draft-POSIX ACLs, with the expectation that support for these might be provided
-    via a later extension. In addition, this document will include some small protocol
-    extensions to correct protocol defects, as provided for in RFC8178. [Consensus
-    Needed (Item #117a)]: In this document, the relationship among the multiple ACL
-    models for which support was intended has changed. A core set of functionality,
-    shared in large part with that derived from a subset of the functionality provided
-    by the now- withdrawn draft-POSIX ACLs is presented as the conceptual base of
-    the feature set. Additional sets of features used to provide the functionality
-    within the NFSv4 ACL model and the full draft-POSIX ACL model are considered as
-    OPTIONAL extensions to that core, with the latter not yet present in NFsv4.1.
-    [RFC Editor: please remove this parapgraph and the following paragraph prior to
-    publishing this document as an RFC]. The current version of the document is intended,
-    in large part, to result in working group discussion regarding repairing problems
-    with previous specifications of ACL-related features and to enable work to provide
-    a greater degree of interoperability than has been available heretofore. The drafts
-    provide a framework for addressing these issues and obtaining working group consensus
-    regarding changes that will be necesasary before publication of RFCTBD10. When
+    covered as well. Because of the failure of previous specifications to provide
+    a satisfactory description of the authorization semantics of NFSv4 ACLs, this
+    document takes a different approach to many matters while maintaining compatibility
+    with implementations od previous specifications, which dealt with the need for
+    support for UNIX- oriented clients and server by leaving many important matters
+    unspecified. [Consensus Needed (Items #117a, #119a)]: In this document, the relationship
+    among the multiple ACL models for which potential support was mentioned has changed.
+    A core set of functionality, shared in large part with that derived from a subset
+    of the functionality provided by the now-withdrawn draft-POSIX ACLs is presented
+    as the conceptual base of the feature set. Additional sets of features used to
+    provide the functionality needed by clients expecting Windows semantics as part
+    of the NFSv4 ACL model are considered as OPTIONAL extensions to that core. In
+    addition it is made clear that support for the draft POSIX ACL model is not yet
+    present in NFSv4.1, but that a subset of that functionality is available. When
     the resulting document is eventually published as an RFC, it will supersede the
     descriptions of ACL structure and semantics appearing in existing minor version
     specification documents for NFSv4.0 and NFSv4.1, thereby updating RFC7530 and
@@ -60,4 +57,14 @@ relation:
       primary: true
     formattedref:
       content: draft-ietf-nfsv4-acls-update-00
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-ietf-nfsv4-acls-update-01
+    docid:
+    - id: draft-ietf-nfsv4-acls-update-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ietf-nfsv4-acls-update-01
       format: text/plain
