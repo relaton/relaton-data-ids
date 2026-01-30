@@ -2,7 +2,7 @@
 schema-version: v1.2.9
 id: draft-kamimura-scitt-refusal-events
 title:
-- content: Verifiable AI Refusal Events using SCITT Transparency Logs
+- content: Verifiable AI Refusal Events using SCITT
   language:
   - en
   script:
@@ -13,17 +13,16 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document describes a SCITT-based mechanism for creating verifiable
-    records of AI content refusal events. It defines how refusal decisions can be
-    encoded as SCITT Signed Statements, registered with Transparency Services, and
-    verified by third parties using Receipts. This specification provides auditability
-    of refusal decisions that are logged, not cryptographic proof that no unlogged
-    generation occurred. It does not define content moderation policies, classification
-    criteria, or what AI systems should refuse; it addresses only the audit trail
-    mechanism. This revision (-01) incorporates lessons from the January 2026 Grok
-    NCII incident, aligns with the CAP-SRP v1.0 specification, and addresses emerging
-    regulatory requirements including EU AI Act Article 12/50 and the Korea AI Basic
-    Act.</p>"
+- content: "<p>This document defines a claim set for recording AI content refusal
+    events. The claim set specifies the semantic content and correlation rules for
+    refusal audit trails, independent of any particular serialization format. The
+    claims are designed to be carried within SCITT Signed Statements and verified
+    using SCITT Receipts. This specification addresses claim semantics and verification
+    requirements; it does not mandate a specific encoding. A CDDL definition is provided
+    for CBOR-based implementations, and equivalent JSON representations are shown
+    in an appendix for illustration. This specification provides auditability of logged
+    refusal decisions. It does not define content moderation policies, classification
+    criteria, or what AI systems should refuse.</p>"
   language:
   - en
   script:
@@ -49,4 +48,14 @@ relation:
       primary: true
     formattedref:
       content: draft-kamimura-scitt-refusal-events-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-kamimura-scitt-refusal-events-02
+    docid:
+    - id: draft-kamimura-scitt-refusal-events-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-kamimura-scitt-refusal-events-02
       format: text/plain
