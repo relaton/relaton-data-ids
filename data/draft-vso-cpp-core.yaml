@@ -20,11 +20,12 @@ abstract:
     capture devices to produce tamper-evident provenance records that bind media content
     to external timestamps via trusted third parties. Unlike self-attestation models,
     CPP requires independent timestamp verification through RFC 3161 TSA services,
-    providing externally verifiable proof of when media was captured. This specification
-    focuses on the interoperable core of CPP: the data structures, cryptographic operations,
-    and verification algorithms necessary for independent third-party verification.
-    Application- specific features such as depth analysis are defined as optional
-    extensions.</p>"
+    providing externally verifiable proof of when media was captured. This revision
+    (-01) incorporates implementation experience from multi-platform deployments,
+    adding self-attested signer identity, hardware-backed key requirements, chain
+    context for partial submission detection, depth analysis extensions for screen
+    detection, and a Pre-Publish Verification Extension for social media sharing workflows.
+    It also defines interoperability mappings with the C2PA specification.</p>"
   language:
   - en
   script:
@@ -40,4 +41,24 @@ relation:
       primary: true
     formattedref:
       content: draft-vso-cpp-core-00
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-vso-cpp-core-01
+    docid:
+    - id: draft-vso-cpp-core-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-vso-cpp-core-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-vso-cpp-core-02
+    docid:
+    - id: draft-vso-cpp-core-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-vso-cpp-core-02
       format: text/plain
