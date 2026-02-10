@@ -18,15 +18,17 @@ abstract:
     presence through cryptographically signed, spatially quantized location attestations
     called "breadcrumbs." Breadcrumbs are chained into an append-only log, bundled
     into verifiable epochs, and distilled into a Trajectory Identity Token (TIT) that
-    serves as a persistent pseudonymous identifier. This revision introduces a formal
-    trust-scoring framework grounded in statistical physics. A Criticality Engine
-    evaluates the Power Spectral Density (PSD) of movement trajectories for the 1/f
-    signature characteristic of biological Self-Organized Criticality (SOC). A mobility
-    model based on truncated Levy flights and Markov anchor transition matrices enforces
-    known constraints of human movement. A six-component Hamiltonian energy function
-    detects anomalies in real time by combining spatial, temporal, kinetic, flock-alignment,
-    contextual, and structural analysis of each breadcrumb against the identity's
-    learned behavioral profile. TRIP is designed to be transport-agnostic and operates
+    serves as a persistent pseudonymous identifier. The protocol employs a Criticality
+    Engine grounded in statistical physics to distinguish biological movement from
+    synthetic trajectories. Power Spectral Density analysis detects the 1/f signature
+    of Self-Organized Criticality in human mobility. A six- component Hamiltonian
+    energy function scores each breadcrumb against the identity's learned behavioral
+    profile in real time. This revision formalizes the mapping to the RATS Architecture
+    (RFC 9334), clarifies the Verifier trust model including support for multiple
+    independent Verifiers, introduces an active challenge- response verification protocol
+    that binds Attestation Results to specific Relying Party requests with cryptographic
+    freshness, and corrects the privacy model to accurately describe the flow of Evidence
+    between Attester and Verifier. TRIP is designed to be transport-agnostic and operates
     independently of any particular naming system, blockchain, or application layer.</p>
   language:
   - en
@@ -53,4 +55,14 @@ relation:
       primary: true
     formattedref:
       content: draft-ayerbe-trip-protocol-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-ayerbe-trip-protocol-02
+    docid:
+    - id: draft-ayerbe-trip-protocol-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-ayerbe-trip-protocol-02
       format: text/plain
