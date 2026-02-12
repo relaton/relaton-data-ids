@@ -13,21 +13,18 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document specifies Proof of Process (PoP), an evidence framework
-    for digital authorship attestation. The framework produces tamper- evident, independently
-    verifiable process evidence describing how documents evolve over time, without
-    capturing document content or keystroke data. Proof of Process implements a specialized
-    profile of the Remote ATtestation procedureS (RATS) architecture, extending it
-    with behavioral entropy bindings, Verifiable Delay Function (VDF) temporal proofs,
-    and a taxonomy of absence claims with explicit trust requirements. The specification
-    defines two complementary CBOR- encoded formats: Evidence Packets (.pop) produced
-    by Attesters during document authorship, and Attestation Results (.war) produced
-    by Verifiers after appraising Evidence. The framework is designed around four
-    core principles: privacy by construction (no content storage), zero trust (locally
-    generated, independently verifiable), evidence over inference (observable facts,
-    not conclusions), and cost-asymmetric forgery (expensive to fake, not impossible).
-    This specification does not address AI detection, stylometric analysis, or intent
-    inference.</p>"
+- content: "<p>This document specifies the Proof of Process (PoP) Evidence Framework,
+    a specialized profile of Remote Attestation Procedures (RATS) designed to validate
+    the provenance of effort in digital authorship. Unlike traditional provenance,
+    which tracks file custody, PoP attests to the continuous, human-driven process
+    of creation. The framework defines a cryptographic mechanism for generating Evidence
+    Packets containing Verifiable Delay Functions (VDFs) to enforce temporal monotonicity
+    and Jitter Seals to bind behavioral entropy (motor-signal randomness) to the document
+    state. These mechanisms allow a Verifier to cryptographically distinguish between
+    human-generated keystrokes, algorithmic generation, and copy-paste operations.
+    Crucially, this verification relies on statistical process metrics and cryptographic
+    binding, enabling authorship attestation without disclosing the semantic content
+    of the document, thereby preserving privacy by design.</p>"
   language:
   - en
   script:
@@ -43,4 +40,14 @@ relation:
       primary: true
     formattedref:
       content: draft-condrey-rats-pop-00
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-condrey-rats-pop-01
+    docid:
+    - id: draft-condrey-rats-pop-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-condrey-rats-pop-01
       format: text/plain
