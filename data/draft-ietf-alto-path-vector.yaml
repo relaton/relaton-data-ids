@@ -1,292 +1,288 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-alto-path-vector
+id: draftietfaltopathvector
+schema_version: v1.4.1
+formattedref: draft-ietf-alto-path-vector
 title:
-- content: 'An Extension for Application-Layer Traffic Optimization (ALTO): Path Vector'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-ietf-alto-path-vector
+- language: en
+  script: Latn
+  content: 'An Extension for Application-Layer Traffic Optimization (ALTO): Path Vector'
+docidentifier:
+- content: draft-ietf-alto-path-vector
   type: Internet-Draft
   primary: true
 abstract:
-- content: <p>This document is an extension to the base Application-Layer Traffic
-    Optimization (ALTO) protocol. It extends the ALTO cost map and ALTO property map
-    services so that an application can decide to which endpoint(s) to connect based
-    not only on numerical/ordinal cost values but also on fine-grained abstract information
-    regarding the paths. This is useful for applications whose performance is impacted
+- language: en
+  script: Latn
+  content: "This document is an extension to the base Application-Layer Traffic Optimization
+    (ALTO) protocol.  It extends the ALTO cost map and ALTO property map services
+    so that an application can decide to which endpoint(s) to connect based not only
+    on numerical/ordinal cost values but also on fine-grained abstract information
+    regarding the paths.  This is useful for applications whose performance is impacted
     by specific components of a network on the end-to-end paths, e.g., they may infer
     that several paths share common links and prevent traffic bottlenecks by avoiding
-    such paths. This extension introduces a new abstraction called the "Abstract Network
-    Element" (ANE) to represent these components and encodes a network path as a vector
-    of ANEs. Thus, it provides a more complete but still abstract graph representation
-    of the underlying network(s) for informed traffic optimization among endpoints.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    such paths.  This extension introduces a new abstraction called the \"Abstract
+    Network Element\" (ANE) to represent these components and encodes a network path
+    as a vector of ANEs.  Thus, it provides a more complete but still abstract graph
+    representation of the underlying network(s) for informed traffic optimization
+    among endpoints.\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-00
-    docid:
-    - id: draft-ietf-alto-path-vector-00
+    formattedref: draft-ietf-alto-path-vector-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-00
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-00
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-01
-    docid:
-    - id: draft-ietf-alto-path-vector-01
+    formattedref: draft-ietf-alto-path-vector-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-01
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-01
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-02
-    docid:
-    - id: draft-ietf-alto-path-vector-02
+    formattedref: draft-ietf-alto-path-vector-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-02
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-02
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-03
-    docid:
-    - id: draft-ietf-alto-path-vector-03
+    formattedref: draft-ietf-alto-path-vector-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-03
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-03
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-04
-    docid:
-    - id: draft-ietf-alto-path-vector-04
+    formattedref: draft-ietf-alto-path-vector-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-04
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-04
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-05
-    docid:
-    - id: draft-ietf-alto-path-vector-05
+    formattedref: draft-ietf-alto-path-vector-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-05
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-05
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-06
-    docid:
-    - id: draft-ietf-alto-path-vector-06
+    formattedref: draft-ietf-alto-path-vector-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-06
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-06
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-07
-    docid:
-    - id: draft-ietf-alto-path-vector-07
+    formattedref: draft-ietf-alto-path-vector-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-07
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-07
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-08
-    docid:
-    - id: draft-ietf-alto-path-vector-08
+    formattedref: draft-ietf-alto-path-vector-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-08
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-08
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-09
-    docid:
-    - id: draft-ietf-alto-path-vector-09
+    formattedref: draft-ietf-alto-path-vector-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-09
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-09
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-10
-    docid:
-    - id: draft-ietf-alto-path-vector-10
+    formattedref: draft-ietf-alto-path-vector-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-10
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-10
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-11
-    docid:
-    - id: draft-ietf-alto-path-vector-11
+    formattedref: draft-ietf-alto-path-vector-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-11
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-11
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-12
-    docid:
-    - id: draft-ietf-alto-path-vector-12
+    formattedref: draft-ietf-alto-path-vector-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-12
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-12
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-13
-    docid:
-    - id: draft-ietf-alto-path-vector-13
+    formattedref: draft-ietf-alto-path-vector-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-13
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-13
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-14
-    docid:
-    - id: draft-ietf-alto-path-vector-14
+    formattedref: draft-ietf-alto-path-vector-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-14
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-14
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-15
-    docid:
-    - id: draft-ietf-alto-path-vector-15
+    formattedref: draft-ietf-alto-path-vector-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-15
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-15
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-16
-    docid:
-    - id: draft-ietf-alto-path-vector-16
+    formattedref: draft-ietf-alto-path-vector-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-16
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-16
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-16
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-17
-    docid:
-    - id: draft-ietf-alto-path-vector-17
+    formattedref: draft-ietf-alto-path-vector-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-17
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-17
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-18
-    docid:
-    - id: draft-ietf-alto-path-vector-18
+    formattedref: draft-ietf-alto-path-vector-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-18
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-18
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-18
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-19
-    docid:
-    - id: draft-ietf-alto-path-vector-19
+    formattedref: draft-ietf-alto-path-vector-19
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-19
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-19
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-19
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-20
-    docid:
-    - id: draft-ietf-alto-path-vector-20
+    formattedref: draft-ietf-alto-path-vector-20
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-20
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-20
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-20
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-21
-    docid:
-    - id: draft-ietf-alto-path-vector-21
+    formattedref: draft-ietf-alto-path-vector-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-21
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-21
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-22
-    docid:
-    - id: draft-ietf-alto-path-vector-22
+    formattedref: draft-ietf-alto-path-vector-22
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-22
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-22
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-22
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-23
-    docid:
-    - id: draft-ietf-alto-path-vector-23
+    formattedref: draft-ietf-alto-path-vector-23
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-23
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-23
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-23
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-24
-    docid:
-    - id: draft-ietf-alto-path-vector-24
+    formattedref: draft-ietf-alto-path-vector-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-24
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-24
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-alto-path-vector-25
-    docid:
-    - id: draft-ietf-alto-path-vector-25
+    formattedref: draft-ietf-alto-path-vector-25
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-25
+    docidentifier:
+    - content: draft-ietf-alto-path-vector-25
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-path-vector-25
-      format: text/plain

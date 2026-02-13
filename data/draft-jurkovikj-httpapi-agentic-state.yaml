@@ -1,45 +1,41 @@
 ---
-schema-version: v1.2.9
-id: draft-jurkovikj-httpapi-agentic-state
+id: draftjurkovikjhttpapiagenticstate
+schema_version: v1.4.1
+formattedref: draft-jurkovikj-httpapi-agentic-state
 title:
-- content: HTTP Profile for Synchronized Resource State (Agentic State Transfer)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-jurkovikj-httpapi-agentic-state
+- language: en
+  script: Latn
+  content: HTTP Profile for Synchronized Resource State (Agentic State Transfer)
+docidentifier:
+- content: draft-jurkovikj-httpapi-agentic-state
   type: Internet-Draft
   primary: true
 abstract:
-- content: <p>HTTP resources are frequently exposed in multiple representations (e.g.,
-    text/html for rendering and application/json for processing) via Content Negotiation.
-    However, standard HTTP concurrency controls (such as ETags) are typically scoped
-    to the byte sequence of a specific representation. This creates a synchronization
-    gap where a client modifying one representation cannot guarantee consistency with
-    the underlying state of another representation, leading to race conditions and
-    "lost updates" in multi-client environments. This document specifies _Agentic
-    State Transfer_ (AST), an HTTP profile for managing _Canonical Resource State_
-    (CRS) across multiple synchronized representations of the same resource. It defines
-    the use of _Semantic Validators_ (Content Identity) to track the logical state
-    of a resource independent of its serialization. It further mandates the use of
-    Optimistic Concurrency Control via If-Match headers for state-changing operations,
-    ensuring that mutations applied by automated agents are atomic and consistent
-    across all views.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   HTTP resources are frequently exposed in multiple representations\n
+    \  (e.g., text/html for rendering and application/json for processing)\n   via
+    Content Negotiation.  However, standard HTTP concurrency controls\n   (such as
+    ETags) are typically scoped to the byte sequence of a\n   specific representation.
+    \ This creates a synchronization gap where a\n   client modifying one representation
+    cannot guarantee consistency with\n   the underlying state of another representation,
+    leading to race\n   conditions and \"lost updates\" in multi-client environments.\n\n
+    \  This document specifies _Agentic State Transfer_ (AST), an HTTP\n   profile
+    for managing _Canonical Resource State_ (CRS) across multiple\n   synchronized
+    representations of the same resource.  It defines the\n   use of _Semantic Validators_
+    (Content Identity) to track the logical\n   state of a resource independent of
+    its serialization.  It further\n   mandates the use of Optimistic Concurrency
+    Control via If-Match\n   headers for state-changing operations, ensuring that
+    mutations\n   applied by automated agents are atomic and consistent across all\n
+    \  views.\n\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-jurkovikj-httpapi-agentic-state-00
-    docid:
-    - id: draft-jurkovikj-httpapi-agentic-state-00
+    formattedref: draft-jurkovikj-httpapi-agentic-state-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jurkovikj-httpapi-agentic-state-00
+    docidentifier:
+    - content: draft-jurkovikj-httpapi-agentic-state-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jurkovikj-httpapi-agentic-state-00
-      format: text/plain

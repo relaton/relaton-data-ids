@@ -1,43 +1,39 @@
 ---
-schema-version: v1.2.9
-id: draft-deng-mptcp-nrsack
+id: draftdengmptcpnrsack
+schema_version: v1.4.1
+formattedref: draft-deng-mptcp-nrsack
 title:
-- content: Non-Renegable Selective Acknowledgements (NR-SACKs) for MPTCP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-deng-mptcp-nrsack
+- language: en
+  script: Latn
+  content: Non-Renegable Selective Acknowledgements (NR-SACKs) for MPTCP
+docidentifier:
+- content: draft-deng-mptcp-nrsack
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>Multipath Transmission Control Protocol (MPTCP) [RFC6824] adopts Selective
-    Acknowledgements (SACKs) at the subflow level to allow an MPTCP receiver to acknowledge
-    the receipt of out-of-order data. In MPTCP, SACK information is expected (but
-    not mandated)--though SACKs notify a data sender the reception of specific out-of-order
-    data, the out-of-order data cannot be delivered to application layer until it
-    has been cumulatively acknowledged at the connection-level. The MPTCP data receiver
-    is permitted to later abandon the out-of-order data cached in the receive buffer.
-    The out-of-order data is called renegable. Since the delivery of a SACKed out-of-order
-    data is renegable, the sender has to maintain copies of SACKed data in the send
-    buffer until it is cumulatively acked. As a result, the send buffer is inevitably
-    wasted and the transmission rate is restricted even though the network is not
-    congested.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Multipath Transmission Control Protocol (MPTCP) [RFC6824] adopts\n       Selective
+    Acknowledgements (SACKs) at the subflow level to allow an\n       MPTCP receiver
+    to acknowledge the receipt of out-of-order data. In\n       MPTCP, SACK information
+    is expected (but not mandated)--though SACKs\n       notify a data sender the
+    reception of specific out-of-order data, the\n       out-of-order data cannot
+    be delivered to application layer until it\n       has been cumulatively acknowledged
+    at the connection-level. The MPTCP\n       data receiver is permitted to later
+    abandon the out-of-order data\n       cached in the receive buffer. The out-of-order
+    data is called\n       renegable. Since the delivery of a SACKed out-of-order
+    data is\n       renegable, the sender has to maintain copies of SACKed data in
+    the\n       send buffer until it is cumulatively acked. As a result, the send\n
+    \      buffer is inevitably wasted and the transmission rate is restricted\n       even
+    though the network is not congested.\n\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-deng-mptcp-nrsack-00
-    docid:
-    - id: draft-deng-mptcp-nrsack-00
+    formattedref: draft-deng-mptcp-nrsack-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-deng-mptcp-nrsack-00
+    docidentifier:
+    - content: draft-deng-mptcp-nrsack-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-deng-mptcp-nrsack-00
-      format: text/plain

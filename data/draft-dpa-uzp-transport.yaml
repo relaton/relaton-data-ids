@@ -1,43 +1,39 @@
 ---
-schema-version: v1.2.9
-id: draft-dpa-uzp-transport
+id: draftdpauzptransport
+schema_version: v1.4.1
+formattedref: draft-dpa-uzp-transport
 title:
-- content: 'UZP: Universal Zero-Port Transport Protocol'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-dpa-uzp-transport
+- language: en
+  script: Latn
+  content: 'UZP: Universal Zero-Port Transport Protocol'
+docidentifier:
+- content: draft-dpa-uzp-transport
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>The Universal Zero-Port Transport Protocol (UZP) defines an identity-
-    addressed, encrypted-by-default transport for the Universal Zero-Port Interconnect
-    Framework (UZPIF; [UZPIF]). Instead of exposing IP:port listeners, both endpoints
-    establish outbound, identity-bound sessions to one or more Rendezvous Nodes (RNs).
-    The RN performs flow stitching but never terminates end-to-end cryptography or
-    holds long- term secrets. All application data is carried over an authenticated
-    encryption (AEAD) channel keyed by a handshake based on modern and post-quantum-capable
-    primitives. Reliability is expressed at the block level, rather than at the TCP
-    segment or stream level, enabling selective retransmission and deterministic pacing.
-    This document specifies the UZP wire format, handshake, cryptographic negotiation,
-    exporter interface, 0-RTT rules, replay model, and RN behaviour, and its relationship
-    to UZPIF ([UZPIF]), QUIC ([RFC9000]), HIP ([RFC7401]), and TLS 1.3 ([RFC8446]).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Universal Zero-Port Transport Protocol (UZP) defines an identity-\n
+    \  addressed, encrypted-by-default transport for the Universal Zero-Port\n   Interconnect
+    Framework (UZPIF; [UZPIF]).  Instead of exposing IP:port\n   listeners, both endpoints
+    establish outbound, identity-bound sessions\n   to one or more Rendezvous Nodes
+    (RNs).  The RN performs flow\n   stitching but never terminates end-to-end cryptography
+    or holds long-\n   term secrets.  All application data is carried over an authenticated\n
+    \  encryption (AEAD) channel keyed by a handshake based on modern and\n   post-quantum-capable
+    primitives.  Reliability is expressed at the\n   block level, rather than at the
+    TCP segment or stream level, enabling\n   selective retransmission and deterministic
+    pacing.  This document\n   specifies the UZP wire format, handshake, cryptographic
+    negotiation,\n   exporter interface, 0-RTT rules, replay model, and RN behaviour,
+    and\n   its relationship to UZPIF ([UZPIF]), QUIC ([RFC9000]), HIP\n   ([RFC7401]),
+    and TLS 1.3 ([RFC8446]).\n\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-dpa-uzp-transport-00
-    docid:
-    - id: draft-dpa-uzp-transport-00
+    formattedref: draft-dpa-uzp-transport-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dpa-uzp-transport-00
+    docidentifier:
+    - content: draft-dpa-uzp-transport-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dpa-uzp-transport-00
-      format: text/plain
