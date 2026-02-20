@@ -1,183 +1,158 @@
 ---
-schema-version: v1.2.9
-id: draft-lindquist-sip-rtsp-02
-title:
-- content: Controlling Session Initiation Protocol (SIP)-Established Content Delivery
-    Channels Using the Real-Time Streaming Protocol (RTSP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lindquist-sip-rtsp-02
-  type: src
+id: draftlindquistsiprtsp02
 type: standard
-docid:
-- id: draft-lindquist-sip-rtsp-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Controlling Session Initiation Protocol (SIP)-Established Content Delivery
+    Channels Using the Real-Time Streaming Protocol (RTSP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lindquist-sip-rtsp-02
+docidentifier:
+- content: draft-lindquist-sip-rtsp
+  type: Internet-Draft
+- content: draft-lindquist-sip-rtsp-02
   type: Internet-Draft
   primary: true
-- id: I-D.lindquist-sip-rtsp
-  type: IETF
-  scope: anchor
 docnumber: I-D.lindquist-sip-rtsp
 date:
 - type: published
-  value: '2010-06-09'
+  at: '2010-06-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jouni
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jouni
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Maenpaa
-        language:
-        - en
       completename:
+        language: en
         content: Jouni Maenpaa
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Priya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Priya
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Rajagopal
-        language:
-        - en
       completename:
+        language: en
         content: Priya Rajagopal
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Motorola
-  role:
+        - language: en
+          content: Motorola
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Lindquist
-        language:
-        - en
       completename:
+        language: en
         content: Jan Lindquist
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xavier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xavier
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Marjou
-        language:
-        - en
       completename:
+        language: en
         content: Xavier Marjou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: France Telecom Orange
-  role:
-  - type: author
+        - language: en
+          content: France Telecom Orange
 version:
 - draft: '02'
-revdate: '2010-06-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Session Initiation Protocol (SIP) is widely used for establishing
-    multimedia sessions, whereas the Real Time Streaming Protocol (RTSP) is used in
-    streaming media systems. RTSP has a dual role: it establishes a media session
-    for the delivery of streaming media as well as controls the streaming session
-    once it has been set up. Since SIP is also used for session establishment, there
-    exists an overlap between the functionality provided by SIP and RTSP. In this
-    document, we describe a model adopted by ETSI TISPAN, 3GPP, and Open IPTV Forum
-    (OIPF) in which SIP and the SDP offer/answer model are used to set up a streaming
-    session with an RTSP control channel and one or more media delivery streams. Such
-    a model is beneficial since it allows the reuse of current architecture and functionality
-    (e.g., authentication, charging, and QoS) established around SIP for RTSP- based
-    streaming. The model benefits applications such as Internet Protocol Television
-    (IPTV). In addition to the model, the document specifies two new variants of RTSP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The Session Initiation Protocol (SIP) is widely used for establishing\nmultimedia
+    sessions, whereas the Real Time Streaming Protocol (RTSP)\nis used in streaming
+    media systems.  RTSP has a dual role: it\nestablishes a media session for the
+    delivery of streaming media as\nwell as controls the streaming session once it
+    has been set up.\nSince SIP is also used for session establishment, there exists
+    an\noverlap between the functionality provided by SIP and RTSP.  In this\ndocument,
+    we describe a model adopted by ETSI TISPAN, 3GPP, and Open\nIPTV Forum (OIPF)
+    in which SIP and the SDP offer/answer model are\nused to set up a streaming session
+    with an RTSP control channel and\none or more media delivery streams.  Such a
+    model is beneficial since\nit allows the reuse of current architecture and functionality
+    (e.g.,\nauthentication, charging, and QoS) established around SIP for RTSP-\nbased
+    streaming.  The model benefits applications such as Internet\nProtocol Television
+    (IPTV).  In addition to the model, the document\nspecifies two new variants of
+    RTSP.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lindquist-sip-rtsp-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

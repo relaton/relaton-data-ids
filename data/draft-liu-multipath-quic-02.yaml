@@ -1,223 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-liu-multipath-quic-02
-title:
-- content: Multipath Extension for QUIC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-liu-multipath-quic-02
-  type: src
+id: draftliumultipathquic02
 type: standard
-docid:
-- id: draft-liu-multipath-quic-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multipath Extension for QUIC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-liu-multipath-quic-02
+docidentifier:
+- content: draft-liu-multipath-quic
+  type: Internet-Draft
+- content: draft-liu-multipath-quic-02
   type: Internet-Draft
   primary: true
-- id: I-D.liu-multipath-quic
-  type: IETF
-  scope: anchor
 docnumber: I-D.liu-multipath-quic
 date:
 - type: published
-  value: '2020-12-15'
+  at: '2020-12-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yanmei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yanmei
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yanmei Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Inc.
-  role:
+        - language: en
+          content: Alibaba Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yunfei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yunfei
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Yunfei Ma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Inc.
-  role:
+        - language: en
+          content: Alibaba Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Huitema
-        language:
-        - en
       completename:
+        language: en
         content: Christian Huitema
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Private Octopus Inc.
-  role:
+        - language: en
+          content: Private Octopus Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qing
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: An
-        language:
-        - en
       completename:
+        language: en
         content: Qing An
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Inc.
-  role:
+        - language: en
+          content: Alibaba Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenyu
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenyu Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICT-CAS
-  role:
-  - type: author
+        - language: en
+          content: ICT-CAS
 version:
 - draft: '02'
-revdate: '2020-12-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies multipath extension for the QUIC protocol to
-    enable the simultaneous usage of multiple paths for a single connection. The extension
-    is compliant with the single-path QUIC design. The design principle is to support
-    multipath by adding limited extension to [QUIC-TRANSPORT].</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies multipath extension for the QUIC protocol to\n
+    \  enable the simultaneous usage of multiple paths for a single\n   connection.
+    \ The extension is compliant with the single-path QUIC\n   design.  The design
+    principle is to support multipath by adding\n   limited extension to [QUIC-TRANSPORT].\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-liu-multipath-quic-01
-    docid:
-    - id: draft-liu-multipath-quic-01
+    formattedref: draft-liu-multipath-quic-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-multipath-quic-01
+    docidentifier:
+    - content: draft-liu-multipath-quic-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-liu-multipath-quic-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-liu-multipath-quic-03
-    docid:
-    - id: draft-liu-multipath-quic-03
+    formattedref: draft-liu-multipath-quic-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-multipath-quic-03
+    docidentifier:
+    - content: draft-liu-multipath-quic-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-liu-multipath-quic-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-liu-multipath-quic-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

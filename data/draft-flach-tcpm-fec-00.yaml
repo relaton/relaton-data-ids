@@ -1,177 +1,151 @@
 ---
-schema-version: v1.2.9
-id: draft-flach-tcpm-fec-00
-title:
-- content: 'TCP Instant Recovery: Incorporating Forward Error Correction in TCP'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-flach-tcpm-fec-00
-  type: src
+id: draftflachtcpmfec00
 type: standard
-docid:
-- id: draft-flach-tcpm-fec-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'TCP Instant Recovery: Incorporating Forward Error Correction in TCP'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-flach-tcpm-fec-00
+docidentifier:
+- content: draft-flach-tcpm-fec
+  type: Internet-Draft
+- content: draft-flach-tcpm-fec-00
   type: Internet-Draft
   primary: true
-- id: I-D.flach-tcpm-fec
-  type: IETF
-  scope: anchor
 docnumber: I-D.flach-tcpm-fec
 date:
 - type: published
-  value: '2013-07-14'
+  at: '2013-07-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tobias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tobias
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Flach
-        language:
-        - en
       completename:
+        language: en
         content: Tobias Flach
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: USC
-  role:
+        - language: en
+          content: USC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nandita
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nandita
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Dukkipati
-        language:
-        - en
       completename:
+        language: en
         content: Nandita Dukkipati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yuchung
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuchung
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cheng
-        language:
-        - en
       completename:
+        language: en
         content: Yuchung Cheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Barath
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Barath
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Raghavan
-        language:
-        - en
       completename:
+        language: en
         content: Barath Raghavan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
-  - type: author
+        - language: en
+          content: Google
 version:
 - draft: '00'
-revdate: '2013-07-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Ordinary TCP loss recovery takes at least one round-trip time and as
-    such can increase application-perceived latency, especially for short flows such
-    as Web transactions. TCP Instant Recovery (TCP-IR) is an experimental algorithm
-    that allows a receiving end to recover lost packets without retransmissions, thus
-    potentially saving at least one full round-trip time compared to standard TCP.
-    TCP-IR achieves this by judiciously injecting encoded data segments within a TCP
-    stream. This document describes the TCP-IR algorithm at the sending and receiving
-    ends, along with the required protocol changes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Ordinary TCP loss recovery takes at least one round-trip time and as\n
+    \  such can increase application-perceived latency, especially for short\n   flows
+    such as Web transactions.  TCP Instant Recovery (TCP-IR) is an\n   experimental
+    algorithm that allows a receiving end to recover lost\n   packets without retransmissions,
+    thus potentially saving at least one\n   full round-trip time compared to standard
+    TCP.  TCP-IR achieves this\n   by judiciously injecting encoded data segments
+    within a TCP stream.\n   This document describes the TCP-IR algorithm at the sending
+    and\n   receiving ends, along with the required protocol changes.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-flach-tcpm-fec-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,137 +1,120 @@
 ---
-schema-version: v1.2.9
-id: draft-li-dnsop-response-preprocessing-00
-title:
-- content: 'DNS Response Pre-processing Security Guidelines: Awaiting Valid Responses'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-dnsop-response-preprocessing-00
-  type: src
+id: draftlidnsopresponsepreprocessing00
 type: standard
-docid:
-- id: draft-li-dnsop-response-preprocessing-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'DNS Response Pre-processing Security Guidelines: Awaiting Valid Responses'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-dnsop-response-preprocessing-00
+docidentifier:
+- content: draft-li-dnsop-response-preprocessing
+  type: Internet-Draft
+- content: draft-li-dnsop-response-preprocessing-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-dnsop-response-preprocessing
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-dnsop-response-preprocessing
 date:
 - type: published
-  value: '2025-07-19'
+  at: '2025-07-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiang
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Xiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
+        - language: en
+          content: Nankai University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yuqi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuqi
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qiu
-        language:
-        - en
       completename:
+        language: en
         content: Yuqi Qiu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
-  - type: author
+        - language: en
+          content: Nankai University
 version:
 - draft: '00'
-revdate: '2025-07-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The security and robustness of the Domain Name System (DNS) significantly
-    depend on how resolvers handle received responses. Current DNS specifications
-    lack exhaustive and consistent guidance on response pre-processing, particularly
-    for malformed or unexpected packets. This specification gap has led to implementation
-    divergences and has been shown to introduce security vulnerabilities such as DNS
-    cache poisoning, Denial of Service (DoS), and resource exhaustion, as detailed
-    in the TUDOOR attack research. This document aims to clarify and standardize the
-    behavior of DNS resolvers when receiving and initially processing responses from
-    upstream servers. The core proposal is the "Awaiting Valid Responses" mechanism,
-    which mandates that a resolver, after issuing a query, MUST maintain a defined
-    waiting period to receive a well- formed, relevant, and validated response. During
-    this period, non- compliant incoming packets should be discarded, and the resolver
-    should continue to wait until a valid response is received or the query times
-    out. This document provides guidance for DNS implementers to mitigate security
-    risks arising from flaws in response pre-processing logic.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The security and robustness of the Domain Name System (DNS)\n   significantly
+    depend on how resolvers handle received responses.\n   Current DNS specifications
+    lack exhaustive and consistent guidance on\n   response pre-processing, particularly
+    for malformed or unexpected\n   packets.  This specification gap has led to implementation\n
+    \  divergences and has been shown to introduce security vulnerabilities\n   such
+    as DNS cache poisoning, Denial of Service (DoS), and resource\n   exhaustion,
+    as detailed in the TUDOOR attack research.\n\n   This document aims to clarify
+    and standardize the behavior of DNS\n   resolvers when receiving and initially
+    processing responses from\n   upstream servers.  The core proposal is the \"Awaiting
+    Valid\n   Responses\" mechanism, which mandates that a resolver, after issuing
+    a\n   query, MUST maintain a defined waiting period to receive a well-\n   formed,
+    relevant, and validated response.  During this period, non-\n   compliant incoming
+    packets should be discarded, and the resolver\n   should continue to wait until
+    a valid response is received or the\n   query times out.  This document provides
+    guidance for DNS\n   implementers to mitigate security risks arising from flaws
+    in\n   response pre-processing logic.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-li-dnsop-response-preprocessing-01
-    docid:
-    - id: draft-li-dnsop-response-preprocessing-01
+    formattedref: draft-li-dnsop-response-preprocessing-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-dnsop-response-preprocessing-01
+    docidentifier:
+    - content: draft-li-dnsop-response-preprocessing-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-dnsop-response-preprocessing-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-dnsop-response-preprocessing-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

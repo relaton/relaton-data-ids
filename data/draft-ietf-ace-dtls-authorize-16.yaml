@@ -1,224 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ace-dtls-authorize-16
-title:
-- content: Datagram Transport Layer Security (DTLS) Profile for Authentication and
-    Authorization for Constrained Environments (ACE)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-16
-  type: src
+id: draftietfacedtlsauthorize16
 type: standard
-docid:
-- id: draft-ietf-ace-dtls-authorize-16
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Datagram Transport Layer Security (DTLS) Profile for Authentication and
+    Authorization for Constrained Environments (ACE)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-16
+docidentifier:
+- content: draft-ietf-ace-dtls-authorize
+  type: Internet-Draft
+- content: draft-ietf-ace-dtls-authorize-16
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ace-dtls-authorize
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ace-dtls-authorize
 date:
 - type: published
-  value: '2021-03-08'
+  at: '2021-03-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stefanie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefanie
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Gerdes
-        language:
-        - en
       completename:
+        language: en
         content: Stefanie Gerdes
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Olaf
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olaf
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Bergmann
-        language:
-        - en
       completename:
+        language: en
         content: Olaf Bergmann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Selander
-        language:
-        - en
       completename:
+        language: en
         content: Göran Selander
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ludwig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ludwig
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Seitz
-        language:
-        - en
       completename:
+        language: en
         content: Ludwig Seitz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Combitech
-  role:
-  - type: author
+        - language: en
+          content: Combitech
 version:
 - draft: '16'
-revdate: '2021-03-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification defines a profile of the ACE framework that allows
-    constrained servers to delegate client authentication and authorization. The protocol
-    relies on DTLS version 1.2 for communication security between entities in a constrained
-    network using either raw public keys or pre-shared keys. A resource- constrained
-    server can use this protocol to delegate management of authorization information
-    to a trusted host with less severe limitations regarding processing power and
-    memory.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification defines a profile of the ACE framework that allows\n
+    \  constrained servers to delegate client authentication and\n   authorization.
+    \ The protocol relies on DTLS version 1.2 for\n   communication security between
+    entities in a constrained network\n   using either raw public keys or pre-shared
+    keys.  A resource-\n   constrained server can use this protocol to delegate management
+    of\n   authorization information to a trusted host with less severe\n   limitations
+    regarding processing power and memory.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ace-dtls-authorize-15
-    docid:
-    - id: draft-ietf-ace-dtls-authorize-15
+    formattedref: draft-ietf-ace-dtls-authorize-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-15
+    docidentifier:
+    - content: draft-ietf-ace-dtls-authorize-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ace-dtls-authorize-15
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ace-dtls-authorize-17
-    docid:
-    - id: draft-ietf-ace-dtls-authorize-17
+    formattedref: draft-ietf-ace-dtls-authorize-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-17
+    docidentifier:
+    - content: draft-ietf-ace-dtls-authorize-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ace-dtls-authorize-17
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ace-dtls-authorize-16
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

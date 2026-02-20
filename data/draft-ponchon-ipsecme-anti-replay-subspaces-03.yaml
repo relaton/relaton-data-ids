@@ -1,217 +1,187 @@
 ---
-schema-version: v1.2.9
-id: draft-ponchon-ipsecme-anti-replay-subspaces-03
-title:
-- content: IPsec and IKE anti-replay sequence number subspaces for traffic-engineered
-    paths and multi-core processing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ponchon-ipsecme-anti-replay-subspaces-03
-  type: src
+id: draftponchonipsecmeantireplaysubspaces03
 type: standard
-docid:
-- id: draft-ponchon-ipsecme-anti-replay-subspaces-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPsec and IKE anti-replay sequence number subspaces for traffic-engineered
+    paths and multi-core processing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ponchon-ipsecme-anti-replay-subspaces-03
+docidentifier:
+- content: draft-ponchon-ipsecme-anti-replay-subspaces
+  type: Internet-Draft
+- content: draft-ponchon-ipsecme-anti-replay-subspaces-03
   type: Internet-Draft
   primary: true
-- id: I-D.ponchon-ipsecme-anti-replay-subspaces
-  type: IETF
-  scope: anchor
 docnumber: I-D.ponchon-ipsecme-anti-replay-subspaces
 date:
 - type: published
-  value: '2023-10-23'
+  at: '2023-10-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Ponchon
-        language:
-        - en
       completename:
+        language: en
         content: Paul Ponchon
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Meraki
-  role:
+        - language: en
+          content: Cisco Meraki
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohsin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohsin
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Shaikh
-        language:
-        - en
       completename:
+        language: en
         content: Mohsin Shaikh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Meraki
-  role:
+        - language: en
+          content: Cisco Meraki
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hadi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hadi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Dernaika
-        language:
-        - en
       completename:
+        language: en
         content: Hadi Dernaika
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Meraki
-  role:
+        - language: en
+          content: Cisco Meraki
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pierre
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pierre
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Pfister
-        language:
-        - en
       completename:
+        language: en
         content: Pierre Pfister
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Meraki
-  role:
+        - language: en
+          content: Cisco Meraki
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Guillaume
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Guillaume
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Solignac
-        language:
-        - en
       completename:
+        language: en
         content: Guillaume Solignac
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Meraki
-  role:
-  - type: author
+        - language: en
+          content: Cisco Meraki
 version:
 - draft: '03'
-revdate: '2023-10-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses the challenges of running IPsec with anti-
-    replay in multi-core environments where packets may be re-ordered (e.g., when
-    sent over multiple IP paths, traffic-engineered paths and/or using different QoS
-    classes). A new solution based on splitting the anti-replay sequence number space
-    into multiple different sequencing subspaces is proposed. Since this solution
-    requires support on both parties, an IKE extension is proposed in order to negotiate
-    the use of the anti-replay sequence number subspaces.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document discusses the challenges of running IPsec with anti-\n
+    \  replay in multi-core environments where packets may be re-ordered\n   (e.g.,
+    when sent over multiple IP paths, traffic-engineered paths\n   and/or using different
+    QoS classes).  A new solution based on\n   splitting the anti-replay sequence
+    number space into multiple\n   different sequencing subspaces is proposed.  Since
+    this solution\n   requires support on both parties, an IKE extension is proposed
+    in\n   order to negotiate the use of the anti-replay sequence number\n   subspaces.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ponchon-ipsecme-anti-replay-subspaces-02
-    docid:
-    - id: draft-ponchon-ipsecme-anti-replay-subspaces-02
+    formattedref: draft-ponchon-ipsecme-anti-replay-subspaces-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ponchon-ipsecme-anti-replay-subspaces-02
+    docidentifier:
+    - content: draft-ponchon-ipsecme-anti-replay-subspaces-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ponchon-ipsecme-anti-replay-subspaces-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ponchon-ipsecme-anti-replay-subspaces-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

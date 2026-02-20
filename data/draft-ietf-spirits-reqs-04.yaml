@@ -1,183 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-spirits-reqs-04
-title:
-- content: Service in the Public Switched Telephone Network/Intelligent Network (PSTN/IN)
-    Requesting InTernet Service (SPIRITS) Protocol Requirements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-spirits-reqs-04
-  type: src
+id: draftietfspiritsreqs04
 type: standard
-docid:
-- id: draft-ietf-spirits-reqs-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Service in the Public Switched Telephone Network/Intelligent Network (PSTN/IN)
+    Requesting InTernet Service (SPIRITS) Protocol Requirements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-spirits-reqs-04
+docidentifier:
+- content: draft-ietf-spirits-reqs
+  type: Internet-Draft
+- content: draft-ietf-spirits-reqs-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-spirits-reqs
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-spirits-reqs
 date:
 - type: published
-  value: '2002-02-08'
+  at: '2002-02-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Lu
-        language:
-        - en
       completename:
+        language: en
         content: Hui-Lan Lu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Lucent Technologies
-  role:
+        - language: en
+          content: Lucent Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Gato
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Gato
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vodaphone
-  role:
+        - language: en
+          content: Vodaphone
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Igor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Igor
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Faynberg
-        language:
-        - en
       completename:
+        language: en
         content: Igor Faynberg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Lucent Technologies
-  role:
+        - language: en
+          content: Lucent Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lev
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lev
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Slutsman
-        language:
-        - en
       completename:
+        language: en
         content: Lev Slutsman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T
-  role:
-  - type: author
+        - language: en
+          content: AT&T
 version:
 - draft: '04'
-revdate: '2002-02-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes the SPIRITS protocol requirements, based on
-    the architecture presented in RFC 3136. (SPIRITS stands for "Service in the PSTN/IN
-    Requesting InTernet Service".) The purpose of the protocol is to support services
+- language: en
+  script: Latn
+  content: "This document describes the SPIRITS protocol requirements, based on the
+    architecture presented in RFC 3136. (SPIRITS stands for \"Service in the PSTN/IN
+    Requesting InTernet Service\".) The purpose of the protocol is to support services
     that originate in the Public Switched Telephone Network (PSTN) and necessitate
-    the interactions between the PSTN and the Internet. Similarly, such services are
-    called SPIRITS services. (Internet Call Waiting, Internet Caller-ID Delivery,
+    the interactions between the PSTN and the Internet.  Similarly, such services
+    are called SPIRITS services. (Internet Call Waiting, Internet Caller-ID Delivery,
     and Internet Call Forwarding are examples of SPIRIT services, but the protocol
     is to define the building blocks from which many other services can be built.)
     On the PSTN side, the SPIRITS services are initiated from the Intelligent Network
     (IN) entities; the earlier IETF work on the PSTN/Internet Interworking (PINT)
     resulted in the protocol (RFC 2848) in support of the services initiated the other
-    way around--from the Internet to PSTN. To this end, this document lists general
+    way around--from the Internet to PSTN.  To this end, this document lists general
     requirements for the SPIRITS protocol as well as those pertinent to IN, Wireless
-    IN, and PINT building blocks. The document also presents the SPIRITS WG consensus
-    on the choice of the SPIRITS signaling protocol. This memo provides information
-    for the Internet community.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    IN, and PINT building blocks.  The document also presents the SPIRITS WG consensus
+    on the choice of the SPIRITS signaling protocol.  This memo provides information
+    for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-spirits-reqs-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

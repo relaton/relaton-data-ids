@@ -1,179 +1,149 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-mldp-in-band-signaling-05
-title:
-- content: Multipoint LDP in-band signaling for Point-to-Multipoint and Multipoint-
-    to-Multipoint Label Switched Paths
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-in-band-signaling-05
-  type: src
+id: draftietfmplsmldpinbandsignaling05
 type: standard
-docid:
-- id: draft-ietf-mpls-mldp-in-band-signaling-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multipoint LDP in-band signaling for Point-to-Multipoint and Multipoint-
+    to-Multipoint Label Switched Paths
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-in-band-signaling-05
+docidentifier:
+- content: draft-ietf-mpls-mldp-in-band-signaling
+  type: Internet-Draft
+- content: draft-ietf-mpls-mldp-in-band-signaling-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-mldp-in-band-signaling
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-mldp-in-band-signaling
 date:
 - type: published
-  value: '2011-12-01'
+  at: '2011-12-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Toerless
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T. T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Toerless
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T. T.
       surname:
+        language: en
         content: Eckert
-        language:
-        - en
       completename:
+        language: en
         content: Toerless Eckert
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nicolai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicolai
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Leymann
-        language:
-        - en
       completename:
+        language: en
         content: Nicolai Leymann
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Maria
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Maria
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Napierala
-        language:
-        - en
       completename:
+        language: en
         content: Maria Napierala
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '05'
-revdate: '2011-12-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Consider an IP multicast tree, constructed by Protocol Independent
-    Multicast (PIM), needs to pass through an MPLS domain in which Multipoint LDP
-    (mLDP) Point-to-Multipoint and/or Multipoint-to- Multipoint Labels Switched Paths
-    (LSPs) can be created. The part of the IP multicast tree that traverses the MPLS
-    domain can be instantiated as a multipoint LSP. When a PIM Join message is received
-    at the border of the MPLS domain, information from that message is encoded into
-    mLDP messages. When the mLDP messages reach the border of the next IP domain,
-    the encoded information is used to generate PIM messages that can be sent through
-    the IP domain. The result is an IP multicast tree consisting of a set of IP multicast
-    sub-trees that are spliced together with a multipoint LSP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Consider an IP multicast tree, constructed by Protocol Independent\n
+    \  Multicast (PIM), needs to pass through an MPLS domain in which\n   Multipoint
+    LDP (mLDP) Point-to-Multipoint and/or Multipoint-to-\n   Multipoint Labels Switched
+    Paths (LSPs) can be created.  The part of\n   the IP multicast tree that traverses
+    the MPLS domain can be\n   instantiated as a multipoint LSP.  When a PIM Join
+    message is\n   received at the border of the MPLS domain, information from that\n
+    \  message is encoded into mLDP messages.  When the mLDP messages reach\n   the
+    border of the next IP domain, the encoded information is used to\n   generate
+    PIM messages that can be sent through the IP domain.  The\n   result is an IP
+    multicast tree consisting of a set of IP multicast\n   sub-trees that are spliced
+    together with a multipoint LSP.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-mldp-in-band-signaling-06
-    docid:
-    - id: draft-ietf-mpls-mldp-in-band-signaling-06
+    formattedref: draft-ietf-mpls-mldp-in-band-signaling-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-in-band-signaling-06
+    docidentifier:
+    - content: draft-ietf-mpls-mldp-in-band-signaling-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-mldp-in-band-signaling-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-mldp-in-band-signaling-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,174 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-lamps-bonnell-keyusage-crl-validation-02
-title:
-- content: Clarification to processing Key Usage values during CRL validation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lamps-bonnell-keyusage-crl-validation-02
-  type: src
+id: draftlampsbonnellkeyusagecrlvalidation02
 type: standard
-docid:
-- id: draft-lamps-bonnell-keyusage-crl-validation-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Clarification to processing Key Usage values during CRL validation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lamps-bonnell-keyusage-crl-validation-02
+docidentifier:
+- content: draft-lamps-bonnell-keyusage-crl-validation
+  type: Internet-Draft
+- content: draft-lamps-bonnell-keyusage-crl-validation-02
   type: Internet-Draft
   primary: true
-- id: I-D.lamps-bonnell-keyusage-crl-validation
-  type: IETF
-  scope: anchor
 docnumber: I-D.lamps-bonnell-keyusage-crl-validation
 date:
 - type: published
-  value: '2024-10-14'
+  at: '2024-10-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Corey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Corey
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bonnell
-        language:
-        - en
       completename:
+        language: en
         content: Corey Bonnell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DigiCert, Inc.
-  role:
+        - language: en
+          content: DigiCert, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tadahiko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tadahiko
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Ito
-        language:
-        - en
       completename:
+        language: en
         content: Tadahiko Ito
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SECOM CO., LTD.
-  role:
+        - language: en
+          content: SECOM CO., LTD.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tomofumi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tomofumi
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Okubo
-        language:
-        - en
       completename:
+        language: en
         content: Tomofumi Okubo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DigiCert, Inc.
-  role:
-  - type: author
+        - language: en
+          content: DigiCert, Inc.
 version:
 - draft: '02'
-revdate: '2024-10-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC 5280 defines the profile of X.509 certificates and certificate
-    revocation lists (CRLs) for use in the Internet. This profile requires that certificates
-    which certify keys for signing CRLs contain the key usage extension with the cRLSign
-    bit asserted. Additionally, RFC 5280 defines steps for the validation of CRLs.
-    While there is a requirement for CRL validators to verify that the cRLSign bit
-    is asserted in the keyUsage extension of the CRL issuer's certificate, there is
-    no requirement for validators to verify the presence of the keyUsage extension
-    itself. The lack of this requirement will cause verifiers that implement the RFC
-    5280 CRL validation algorithm to accept a CRL which is signed by a certificate
-    with no keyUsage extension, and therefore does not explicitly have the cRLSign
-    bit asserted. This document specifies an enhancement to the CRL validation process
-    to explicitly require the presence of the keyUsage extension in CRL issuer certificates
-    to resolve this issue.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 5280 defines the profile of X.509 certificates and certificate\n
+    \  revocation lists (CRLs) for use in the Internet.  This profile\n   requires
+    that certificates which certify keys for signing CRLs\n   contain the key usage
+    extension with the cRLSign bit asserted.\n   Additionally, RFC 5280 defines steps
+    for the validation of CRLs.\n   While there is a requirement for CRL validators
+    to verify that the\n   cRLSign bit is asserted in the keyUsage extension of the
+    CRL issuer's\n   certificate, there is no requirement for validators to verify
+    the\n   presence of the keyUsage extension itself.  The lack of this\n   requirement
+    will cause verifiers that implement the RFC 5280 CRL\n   validation algorithm
+    to accept a CRL which is signed by a certificate\n   with no keyUsage extension,
+    and therefore does not explicitly have\n   the cRLSign bit asserted.\n\n   This
+    document specifies an enhancement to the CRL validation process\n   to explicitly
+    require the presence of the keyUsage extension in CRL\n   issuer certificates
+    to resolve this issue.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lamps-bonnell-keyusage-crl-validation-01
-    docid:
-    - id: draft-lamps-bonnell-keyusage-crl-validation-01
+    formattedref: draft-lamps-bonnell-keyusage-crl-validation-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lamps-bonnell-keyusage-crl-validation-01
+    docidentifier:
+    - content: draft-lamps-bonnell-keyusage-crl-validation-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lamps-bonnell-keyusage-crl-validation-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-lamps-bonnell-keyusage-crl-validation-03
-    docid:
-    - id: draft-lamps-bonnell-keyusage-crl-validation-03
+    formattedref: draft-lamps-bonnell-keyusage-crl-validation-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lamps-bonnell-keyusage-crl-validation-03
+    docidentifier:
+    - content: draft-lamps-bonnell-keyusage-crl-validation-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lamps-bonnell-keyusage-crl-validation-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lamps-bonnell-keyusage-crl-validation-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

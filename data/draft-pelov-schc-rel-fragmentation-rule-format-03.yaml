@@ -1,135 +1,118 @@
 ---
-schema-version: v1.2.9
-id: draft-pelov-schc-rel-fragmentation-rule-format-03
-title:
-- content: SCHC Reliability Fragmentation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pelov-schc-rel-fragmentation-rule-format-03
-  type: src
+id: draftpelovschcrelfragmentationruleformat03
 type: standard
-docid:
-- id: draft-pelov-schc-rel-fragmentation-rule-format-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SCHC Reliability Fragmentation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pelov-schc-rel-fragmentation-rule-format-03
+docidentifier:
+- content: draft-pelov-schc-rel-fragmentation-rule-format
+  type: Internet-Draft
+- content: draft-pelov-schc-rel-fragmentation-rule-format-03
   type: Internet-Draft
   primary: true
-- id: I-D.pelov-schc-rel-fragmentation-rule-format
-  type: IETF
-  scope: anchor
 docnumber: I-D.pelov-schc-rel-fragmentation-rule-format
 date:
 - type: published
-  value: '2025-03-31'
+  at: '2025-03-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Pelov
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Pelov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IMT Atlantique
-  role:
+        - language: en
+          content: IMT Atlantique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carles
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carles
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Gomez
-        language:
-        - en
       completename:
+        language: en
         content: Carles Gomez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitat Politecnica de Catalunya/Fundacio i2CAT
-  role:
-  - type: author
+        - language: en
+          content: Universitat Politecnica de Catalunya/Fundacio i2CAT
 version:
 - draft: '03'
-revdate: '2025-03-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies a fragmentation mode used for reliability within
-    the SCHC framework. Building on the fragmentation mechanisms defined in RFC8724,
-    this rule format is tailored to ensure the reliable delivery of small messages
-    that do not trigger conventional fragmentation. A key enhancement is the inclusion
-    of a size field, indicating the total byte-length of the message, and modifications
-    to the state machine to support a persistent session with wrap-around windows.
-    Two operational modes are defined: * RelNoAck: A mode derived from SCHC No-Ack
-    fragmentation, where fragments are transmitted without expecting per-fragment
-    acknowledgments. Losses are tolerated within a configured threshold. * RelAckOnErr:
-    A mode derived from SCHC Ack-On-Error fragmentation, where the receiver actively
-    monitors for missing fragments and initiates recovery through explicit negative
-    acknowledgments. These modes offer operators the flexibility to balance recovery
-    overhead against latency and reliability requirements in constrained network environments.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies a fragmentation mode used for reliability\n
+    \  within the SCHC framework.  Building on the fragmentation mechanisms\n   defined
+    in RFC8724, this rule format is tailored to ensure the\n   reliable delivery of
+    small messages that do not trigger conventional\n   fragmentation.  A key enhancement
+    is the inclusion of a size field,\n   indicating the total byte-length of the
+    message, and modifications to\n   the state machine to support a persistent session
+    with wrap-around\n   windows.  Two operational modes are defined:\n\n   *  RelNoAck:
+    A mode derived from SCHC No-Ack fragmentation, where\n      fragments are transmitted
+    without expecting per-fragment\n      acknowledgments.  Losses are tolerated within
+    a configured\n      threshold.\n\n   *  RelAckOnErr: A mode derived from SCHC
+    Ack-On-Error fragmentation,\n      where the receiver actively monitors for missing
+    fragments and\n      initiates recovery through explicit negative acknowledgments.\n\n
+    \  These modes offer operators the flexibility to balance recovery\n   overhead
+    against latency and reliability requirements in constrained\n   network environments.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-pelov-schc-rel-fragmentation-rule-format-02
-    docid:
-    - id: draft-pelov-schc-rel-fragmentation-rule-format-02
+    formattedref: draft-pelov-schc-rel-fragmentation-rule-format-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pelov-schc-rel-fragmentation-rule-format-02
+    docidentifier:
+    - content: draft-pelov-schc-rel-fragmentation-rule-format-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pelov-schc-rel-fragmentation-rule-format-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pelov-schc-rel-fragmentation-rule-format-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

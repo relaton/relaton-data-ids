@@ -1,210 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-avt-rtcp-feedback-11
-title:
-- content: Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based
-    Feedback (RTP/AVPF)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtcp-feedback-11
-  type: src
+id: draftietfavtrtcpfeedback11
 type: standard
-docid:
-- id: draft-ietf-avt-rtcp-feedback-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Extended RTP Profile for Real-time Transport Control Protocol (RTCP)-Based
+    Feedback (RTP/AVPF)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtcp-feedback-11
+docidentifier:
+- content: draft-ietf-avt-rtcp-feedback
+  type: Internet-Draft
+- content: draft-ietf-avt-rtcp-feedback-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-avt-rtcp-feedback
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-avt-rtcp-feedback
 date:
 - type: published
-  value: '2004-08-11'
+  at: '2004-08-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Burmeister
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Burmeister
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Matsushita
-  role:
+        - language: en
+          content: Matsushita
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jose
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jose
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rey
-        language:
-        - en
       completename:
+        language: en
         content: Jose Rey
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Matsushita
-  role:
+        - language: en
+          content: Matsushita
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Noriyuki
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Noriyuki
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Sato
-        language:
-        - en
       completename:
+        language: en
         content: Noriyuki Sato
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Oki
-  role:
+        - language: en
+          content: Oki
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joerg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joerg
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Ott
-        language:
-        - en
       completename:
+        language: en
         content: Joerg Ott
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Helsinki University of Technology
-  role:
+        - language: en
+          content: Helsinki University of Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Wenger
-        language:
-        - en
       completename:
+        language: en
         content: Stephan Wenger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '11'
-revdate: '2004-08-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Real-time media streams that use RTP are, to some degree, resilient
-    against packet losses. Receivers may use the base mechanisms of the Real-time
-    Transport Control Protocol (RTCP) to report packet reception statistics and thus
-    allow a sender to adapt its transmission behavior in the mid-term. This is the
-    sole means for feedback and feedback-based error repair (besides a few codec-specific
-    mechanisms). This document defines an extension to the Audio-visual Profile (AVP)
-    that enables receivers to provide, statistically, more immediate feedback to the
-    senders and thus allows for short-term adaptation and efficient feedback-based
-    repair mechanisms to be implemented. This early feedback profile (AVPF) maintains
-    the AVP bandwidth constraints for RTCP and preserves scalability to large groups.
-    [STANDARDS-TRACK]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Real-time media streams that use RTP are, to some degree, resilient against
+    packet losses.  Receivers may use the base mechanisms of the Real-time Transport
+    Control Protocol (RTCP) to report packet reception statistics and thus allow a
+    sender to adapt its transmission behavior in the mid-term.  This is the sole means
+    for feedback and feedback-based error repair (besides a few codec-specific mechanisms).
+    \ This document defines an extension to the Audio-visual Profile (AVP) that enables
+    receivers to provide, statistically, more immediate feedback to the senders and
+    thus allows for short-term adaptation and efficient feedback-based repair mechanisms
+    to be implemented.  This early feedback profile (AVPF) maintains the AVP bandwidth
+    constraints for RTCP and preserves scalability to large groups. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-avt-rtcp-feedback-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,176 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-kuehlewind-taps-crypto-sep-02
-title:
-- content: Separating Crypto Negotiation and Communication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-taps-crypto-sep-02
-  type: src
+id: draftkuehlewindtapscryptosep02
 type: standard
-docid:
-- id: draft-kuehlewind-taps-crypto-sep-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Separating Crypto Negotiation and Communication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-taps-crypto-sep-02
+docidentifier:
+- content: draft-kuehlewind-taps-crypto-sep
+  type: Internet-Draft
+- content: draft-kuehlewind-taps-crypto-sep-02
   type: Internet-Draft
   primary: true
-- id: I-D.kuehlewind-taps-crypto-sep
-  type: IETF
-  scope: anchor
 docnumber: I-D.kuehlewind-taps-crypto-sep
 date:
 - type: published
-  value: '2018-03-05'
+  at: '2018-03-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mirja
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mirja
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Kühlewind
-        language:
-        - en
       completename:
+        language: en
         content: Mirja Kühlewind
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETH Zurich
-  role:
+        - language: en
+          content: ETH Zurich
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tommy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tommy
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Pauly
-        language:
-        - en
       completename:
+        language: en
         content: Tommy Pauly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: C. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: C. A.
       surname:
+        language: en
         content: Wood
-        language:
-        - en
       completename:
+        language: en
         content: Christopher A. Wood
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple Inc.
 version:
 - draft: '02'
-revdate: '2018-03-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Secure transport protocols often consist of three logically distinct
-    components: transport, control (handshake), and record protection. Typically,
-    such a protocol contains a single module that is responsible for all three functions.
-    However, in many cases, this coupling is unnecessary. For example, while cryptographic
-    context and endpoint capabilities need to be known before encrypted application
-    data can be sent on a specific transport connection, there is otherwise no technical
-    constraint that a cryptographic handshake must be performed on said connection.
-    This document recommends a logical separation between transport, control, and
-    record components of secure transport protocols. We compare existing protocols
-    such as Transport Layer Security, QUIC, and IKEv2+ESP in the context of this logical
-    separation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Secure transport protocols often consist of three logically distinct\n
+    \  components: transport, control (handshake), and record protection.\n   Typically,
+    such a protocol contains a single module that is\n   responsible for all three
+    functions.  However, in many cases, this\n   coupling is unnecessary.  For example,
+    while cryptographic context\n   and endpoint capabilities need to be known before
+    encrypted\n   application data can be sent on a specific transport connection,\n
+    \  there is otherwise no technical constraint that a cryptographic\n   handshake
+    must be performed on said connection.  This document\n   recommends a logical
+    separation between transport, control, and\n   record components of secure transport
+    protocols.  We compare existing\n   protocols such as Transport Layer Security,
+    QUIC, and IKEv2+ESP in\n   the context of this logical separation.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kuehlewind-taps-crypto-sep-01
-    docid:
-    - id: draft-kuehlewind-taps-crypto-sep-01
+    formattedref: draft-kuehlewind-taps-crypto-sep-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-taps-crypto-sep-01
+    docidentifier:
+    - content: draft-kuehlewind-taps-crypto-sep-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kuehlewind-taps-crypto-sep-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kuehlewind-taps-crypto-sep-03
-    docid:
-    - id: draft-kuehlewind-taps-crypto-sep-03
+    formattedref: draft-kuehlewind-taps-crypto-sep-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-taps-crypto-sep-03
+    docidentifier:
+    - content: draft-kuehlewind-taps-crypto-sep-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kuehlewind-taps-crypto-sep-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kuehlewind-taps-crypto-sep-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,175 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-trossen-sfc-name-based-sff-01
-title:
-- content: Name-Based Service Function Forwarder (nSFF) component within SFC framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-01
-  type: src
+id: drafttrossensfcnamebasedsff01
 type: standard
-docid:
-- id: draft-trossen-sfc-name-based-sff-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Name-Based Service Function Forwarder (nSFF) component within SFC framework
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-01
+docidentifier:
+- content: draft-trossen-sfc-name-based-sff
+  type: Internet-Draft
+- content: draft-trossen-sfc-name-based-sff-01
   type: Internet-Draft
   primary: true
-- id: I-D.trossen-sfc-name-based-sff
-  type: IETF
-  scope: anchor
 docnumber: I-D.trossen-sfc-name-based-sff
 date:
 - type: published
-  value: '2018-10-17'
+  at: '2018-10-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dirk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dirk
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Trossen
-        language:
-        - en
       completename:
+        language: en
         content: Dirk Trossen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Debashish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Debashish
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Purkayastha
-        language:
-        - en
       completename:
+        language: en
         content: Debashish Purkayastha
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akbar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akbar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Rahman
-        language:
-        - en
       completename:
+        language: en
         content: Akbar Rahman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
-  - type: author
+        - language: en
+          content: InterDigital Communications, LLC
 version:
 - draft: '01'
-revdate: '2018-10-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Many stringent requirements are imposed on today's network, such as
-    low latency, high availability and reliability in order to support several use
-    cases such as IoT, Gaming, Content distribution, Robotics etc. Adoption of cloud
-    and fog technology at the edge of the network allows operator to deploy a single
-    "Service Function" to multiple "Execution locations". The decision to steer traffic
-    to a specific location may change frequently based on load, proximity etc. Under
-    the current SFC framework, steering traffic dynamically to the different execution
-    end points require a specific 're-chaining', i.e., a change in the service function
-    path reflecting the different IP endpoints to be used for the new execution points.
-    In order to address this, we discuss separating the logical Service Function Path
-    from the specific execution end points. This can be done by identifying the Service
-    Functions using a name rather than a routable IP endpoint (or Layer 2 address).
-    This draft describes the necessary extensions, additional functions and protocol
-    details in SFF to handle name based relationships.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many stringent requirements are imposed on today's network, such as\n
+    \  low latency, high availability and reliability in order to support\n   several
+    use cases such as IoT, Gaming, Content distribution, Robotics\n   etc.  Adoption
+    of cloud and fog technology at the edge of the network\n   allows operator to
+    deploy a single \"Service Function\" to multiple\n   \"Execution locations\".
+    \ The decision to steer traffic to a specific\n   location may change frequently
+    based on load, proximity etc.  Under\n   the current SFC framework, steering traffic
+    dynamically to the\n   different execution end points require a specific 're-chaining',\n
+    \  i.e., a change in the service function path reflecting the different\n   IP
+    endpoints to be used for the new execution points.  In order to\n   address this,
+    we discuss separating the logical Service Function Path\n   from the specific
+    execution end points.  This can be done by\n   identifying the Service Functions
+    using a name rather than a routable\n   IP endpoint (or Layer 2 address).  This
+    draft describes the necessary\n   extensions, additional functions and protocol
+    details in SFF to\n   handle name based relationships.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-trossen-sfc-name-based-sff-00
-    docid:
-    - id: draft-trossen-sfc-name-based-sff-00
+    formattedref: draft-trossen-sfc-name-based-sff-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-00
+    docidentifier:
+    - content: draft-trossen-sfc-name-based-sff-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-trossen-sfc-name-based-sff-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-trossen-sfc-name-based-sff-02
-    docid:
-    - id: draft-trossen-sfc-name-based-sff-02
+    formattedref: draft-trossen-sfc-name-based-sff-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-02
+    docidentifier:
+    - content: draft-trossen-sfc-name-based-sff-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-trossen-sfc-name-based-sff-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-trossen-sfc-name-based-sff-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,225 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-core-attacks-on-coap-04
-title:
-- content: Attacks on the Constrained Application Protocol (CoAP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-core-attacks-on-coap-04
-  type: src
+id: draftietfcoreattacksoncoap04
 type: standard
-docid:
-- id: draft-ietf-core-attacks-on-coap-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Attacks on the Constrained Application Protocol (CoAP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-core-attacks-on-coap-04
+docidentifier:
+- content: draft-ietf-core-attacks-on-coap
+  type: Internet-Draft
+- content: draft-ietf-core-attacks-on-coap-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-core-attacks-on-coap
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-core-attacks-on-coap
 date:
 - type: published
-  value: '2024-02-21'
+  at: '2024-02-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Mattsson
-        language:
-        - en
       completename:
+        language: en
         content: John Preuß Mattsson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Fornehed
-        language:
-        - en
       completename:
+        language: en
         content: John Fornehed
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Selander
-        language:
-        - en
       completename:
+        language: en
         content: Göran Selander
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Francesca
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Francesca
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Palombini
-        language:
-        - en
       completename:
+        language: en
         content: Francesca Palombini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Amsüss
-        language:
-        - en
       completename:
+        language: en
         content: Christian Amsüss
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2024-02-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Being able to securely retrieve information from sensors and control
-    actuators while providing guards against distributed denial-of- service (DDoS)
-    attacks are key requirements for CoAP deployments. To that aim, a security protocol
-    (e.g., DTLS, TLS, or OSCORE) can be enabled to ensure secure CoAP operation, including
-    protection against many attacks. This document identifies a set of known CoAP
-    attacks and shows that simply using CoAP with a security protocol is not always
-    enough for secure operation. Several of the identified attacks can be mitigated
-    with a security protocol providing confidentiality and integrity combined with
-    the solutions specified in RFC 9175.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Being able to securely retrieve information from sensors and control\n
+    \  actuators while providing guards against distributed denial-of-\n   service
+    (DDoS) attacks are key requirements for CoAP deployments.  To\n   that aim, a
+    security protocol (e.g., DTLS, TLS, or OSCORE) can be\n   enabled to ensure secure
+    CoAP operation, including protection against\n   many attacks.  This document
+    identifies a set of known CoAP attacks\n   and shows that simply using CoAP with
+    a security protocol is not\n   always enough for secure operation.  Several of
+    the identified\n   attacks can be mitigated with a security protocol providing\n
+    \  confidentiality and integrity combined with the solutions specified\n   in
+    RFC 9175.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-core-attacks-on-coap-03
-    docid:
-    - id: draft-ietf-core-attacks-on-coap-03
+    formattedref: draft-ietf-core-attacks-on-coap-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-attacks-on-coap-03
+    docidentifier:
+    - content: draft-ietf-core-attacks-on-coap-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-core-attacks-on-coap-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-core-attacks-on-coap-05
-    docid:
-    - id: draft-ietf-core-attacks-on-coap-05
+    formattedref: draft-ietf-core-attacks-on-coap-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-attacks-on-coap-05
+    docidentifier:
+    - content: draft-ietf-core-attacks-on-coap-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-core-attacks-on-coap-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-core-attacks-on-coap-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

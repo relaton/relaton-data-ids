@@ -1,183 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ancp-protocol-17
-title:
-- content: Protocol for Access Node Control Mechanism in Broadband Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ancp-protocol-17
-  type: src
+id: draftietfancpprotocol17
 type: standard
-docid:
-- id: draft-ietf-ancp-protocol-17
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Protocol for Access Node Control Mechanism in Broadband Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ancp-protocol-17
+docidentifier:
+- content: draft-ietf-ancp-protocol
+  type: Internet-Draft
+- content: draft-ietf-ancp-protocol-17
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ancp-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ancp-protocol
 date:
 - type: published
-  value: '2011-04-26'
+  at: '2011-04-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Taylor
-        language:
-        - en
       completename:
+        language: en
         content: Tom Taylor
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sanjay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sanjay
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Wadhwa
-        language:
-        - en
       completename:
+        language: en
         content: Sanjay Wadhwa
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent
-  role:
+        - language: en
+          content: Alcatel-Lucent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Norbert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Norbert
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Voigt
-        language:
-        - en
       completename:
+        language: en
         content: Norbert Voigt
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia Siemens Networks
-  role:
+        - language: en
+          content: Nokia Siemens Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Haag
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Haag
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom
-  role:
+        - language: en
+          content: Deutsche Telekom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jerome
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jerome
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Moisand
-        language:
-        - en
       completename:
+        language: en
         content: Jerome Moisand
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '17'
-revdate: '2011-04-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the Access Node Control Protocol (ANCP). ANCP
+- language: en
+  script: Latn
+  content: "This document describes the Access Node Control Protocol (ANCP). ANCP
     operates between a Network Access Server (NAS) and an Access Node (e.g., a Digital
     Subscriber Line Access Multiplexer (DSLAM)) in a multi-service reference architecture
     in order to perform operations related to Quality of Service, service, and subscribers.
@@ -185,27 +162,20 @@ abstract:
     ANCP protocol, this document specifies capabilities for Digital Subscriber Line
     (DSL) topology discovery, line configuration, and remote line connectivity testing.
     The design of ANCP allows for protocol extensions in other documents if they are
-    needed to support other use cases and other access technologies. ANCP is based
+    needed to support other use cases and other access technologies.\n\n ANCP is based
     on the General Switch Management Protocol version 3 (GSMPv3) described in RFC
     3292, but with many modifications and extensions, to the point that the two protocols
     are not interoperable. For this reason, ANCP was assigned a separate version number
-    to distinguish it. [STANDARDS-TRACK]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    to distinguish it. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ancp-protocol-17
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

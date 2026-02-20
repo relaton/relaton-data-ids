@@ -1,196 +1,169 @@
 ---
-schema-version: v1.2.9
-id: draft-birrane-dtn-ampmgr-sql-01
-title:
-- content: AMP Manager SQL Interface
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-birrane-dtn-ampmgr-sql-01
-  type: src
+id: draftbirranedtnampmgrsql01
 type: standard
-docid:
-- id: draft-birrane-dtn-ampmgr-sql-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: AMP Manager SQL Interface
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-birrane-dtn-ampmgr-sql-01
+docidentifier:
+- content: draft-birrane-dtn-ampmgr-sql
+  type: Internet-Draft
+- content: draft-birrane-dtn-ampmgr-sql-01
   type: Internet-Draft
   primary: true
-- id: I-D.birrane-dtn-ampmgr-sql
-  type: IETF
-  scope: anchor
 docnumber: I-D.birrane-dtn-ampmgr-sql
 date:
 - type: published
-  value: '2018-07-02'
+  at: '2018-07-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Edward
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: E. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Edward
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: E. J.
       surname:
+        language: en
         content: Birrane
-        language:
-        - en
       completename:
+        language: en
         content: Edward J. Birrane
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Johns Hopkins Applied Physics Laboratory
-  role:
+        - language: en
+          content: Johns Hopkins Applied Physics Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Evana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Evana
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: DiPietro
-        language:
-        - en
       completename:
+        language: en
         content: Evana DiPietro
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Johns Hopkins Applied Physics Laboratory
-  role:
+        - language: en
+          content: Johns Hopkins Applied Physics Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Linko
-        language:
-        - en
       completename:
+        language: en
         content: David Linko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Johns Hopkins Applied Physics Laboratory
-  role:
+        - language: en
+          content: Johns Hopkins Applied Physics Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mark
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: M. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mark
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: M. A.
       surname:
+        language: en
         content: Sinkiat
-        language:
-        - en
       completename:
+        language: en
         content: Mark A. Sinkiat
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ASRC Space And Defense, NASA GSFC
-  role:
-  - type: author
+        - language: en
+          content: ASRC Space And Defense, NASA GSFC
 version:
 - draft: '01'
-revdate: '2018-07-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a proposed public interface through which an
-    application, such as a network management console, interacts with an Asynchronous
-    Management Protocol (AMP) Manager via a database supporting the Structured Query
-    Language (SQL). The use of SQL as an interfacing layer provides a natural way
-    to describe interactions with an AMP Manager independent of a particular implementation
-    of either the Manager or the application. Specifically, this document presents
-    a database schema capturing how to send controls to a Manager and how to accept
-    reports received by a Manager from one or more AMP Agents.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a proposed public interface through which an\n
+    \  application, such as a network management console, interacts with an\n   Asynchronous
+    Management Protocol (AMP) Manager via a database\n   supporting the Structured
+    Query Language (SQL).  The use of SQL as an\n   interfacing layer provides a natural
+    way to describe interactions\n   with an AMP Manager independent of a particular
+    implementation of\n   either the Manager or the application.  Specifically, this
+    document\n   presents a database schema capturing how to send controls to a\n
+    \  Manager and how to accept reports received by a Manager from one or\n   more
+    AMP Agents.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-birrane-dtn-ampmgr-sql-00
-    docid:
-    - id: draft-birrane-dtn-ampmgr-sql-00
+    formattedref: draft-birrane-dtn-ampmgr-sql-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-birrane-dtn-ampmgr-sql-00
+    docidentifier:
+    - content: draft-birrane-dtn-ampmgr-sql-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-birrane-dtn-ampmgr-sql-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-birrane-dtn-ampmgr-sql-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

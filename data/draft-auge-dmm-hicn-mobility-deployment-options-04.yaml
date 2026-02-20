@@ -1,196 +1,171 @@
 ---
-schema-version: v1.2.9
-id: draft-auge-dmm-hicn-mobility-deployment-options-04
-title:
-- content: 'Anchorless mobility management through hICN (hICN-AMM): Deployment options'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-auge-dmm-hicn-mobility-deployment-options-04
-  type: src
+id: draftaugedmmhicnmobilitydeploymentoptions04
 type: standard
-docid:
-- id: draft-auge-dmm-hicn-mobility-deployment-options-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Anchorless mobility management through hICN (hICN-AMM): Deployment options'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-auge-dmm-hicn-mobility-deployment-options-04
+docidentifier:
+- content: draft-auge-dmm-hicn-mobility-deployment-options
+  type: Internet-Draft
+- content: draft-auge-dmm-hicn-mobility-deployment-options-04
   type: Internet-Draft
   primary: true
-- id: I-D.auge-dmm-hicn-mobility-deployment-options
-  type: IETF
-  scope: anchor
 docnumber: I-D.auge-dmm-hicn-mobility-deployment-options
 date:
 - type: published
-  value: '2020-07-07'
+  at: '2020-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jordan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jordan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Auge
-        language:
-        - en
       completename:
+        language: en
         content: Jordan Auge
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Giovanna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Giovanna
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Carofiglio
-        language:
-        - en
       completename:
+        language: en
         content: Giovanna Carofiglio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luca
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luca
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Muscariello
-        language:
-        - en
       completename:
+        language: en
         content: Luca Muscariello
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michele
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michele
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Papalini
-        language:
-        - en
       completename:
+        language: en
         content: Michele Papalini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '04'
-revdate: '2020-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A novel mobility management approach has been proposed, that leverages
-    routable location-independent identifiers (IDs) and an Information-Centric Networking
-    (ICN) communication model integrated in IPv6, also referred to as Hybrid ICN (hICN).
-    In virtue of its anchorless property, we denote this approach as hICN-AMM (hICN
-    Anchorless Mobility Management) hereinafter. Such approach belongs to the category
-    of pure ID-based mobility management schemes whose objective is (i) to overcome
-    the limitations of traditional locator-based solutions like Mobile IP, (ii) to
-    remove the need for a global mapping system as the one required by locator- identifier
-    separation solutions like LISP or ILA. ID-based networking as proposed by ICN
-    architectures allows to disentangle forwarding operations from changes of network
-    location, hence removing tunnels and user plane or control plane anchors. This
-    document discusses hICN-AMM deployment options and related tradeoffs in terms
-    of cost/benefits. Particular attention is devoted to the insertion in the recently
-    proposed 5G Service Based Architecture under study at 3GPP where an hICN-AMM solution
-    might present a more efficient alternative to the traditional tunnel-based mobility
-    architecture through GTP-U.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A novel mobility management approach has been proposed, that\n   leverages
+    routable location-independent identifiers (IDs) and an\n   Information-Centric
+    Networking (ICN) communication model integrated\n   in IPv6, also referred to
+    as Hybrid ICN (hICN).  In virtue of its\n   anchorless property, we denote this
+    approach as hICN-AMM (hICN\n   Anchorless Mobility Management) hereinafter.\n\n
+    \  Such approach belongs to the category of pure ID-based mobility\n   management
+    schemes whose objective is (i) to overcome the limitations\n   of traditional
+    locator-based solutions like Mobile IP, (ii) to remove\n   the need for a global
+    mapping system as the one required by locator-\n   identifier separation solutions
+    like LISP or ILA.\n\n   ID-based networking as proposed by ICN architectures allows
+    to\n   disentangle forwarding operations from changes of network location,\n   hence
+    removing tunnels and user plane or control plane anchors.\n\n   This document
+    discusses hICN-AMM deployment options and related\n   tradeoffs in terms of cost/benefits.
+    \ Particular attention is devoted\n   to the insertion in the recently proposed
+    5G Service Based\n   Architecture under study at 3GPP where an hICN-AMM solution
+    might\n   present a more efficient alternative to the traditional tunnel-based\n
+    \  mobility architecture through GTP-U.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-auge-dmm-hicn-mobility-deployment-options-03
-    docid:
-    - id: draft-auge-dmm-hicn-mobility-deployment-options-03
+    formattedref: draft-auge-dmm-hicn-mobility-deployment-options-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-auge-dmm-hicn-mobility-deployment-options-03
+    docidentifier:
+    - content: draft-auge-dmm-hicn-mobility-deployment-options-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-auge-dmm-hicn-mobility-deployment-options-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-auge-dmm-hicn-mobility-deployment-options-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

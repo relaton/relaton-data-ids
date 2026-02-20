@@ -1,223 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-dcn-bmwg-containerized-infra-05
-title:
-- content: Considerations for Benchmarking Network Performance in Containerized Infrastructures
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dcn-bmwg-containerized-infra-05
-  type: src
+id: draftdcnbmwgcontainerizedinfra05
 type: standard
-docid:
-- id: draft-dcn-bmwg-containerized-infra-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Considerations for Benchmarking Network Performance in Containerized Infrastructures
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dcn-bmwg-containerized-infra-05
+docidentifier:
+- content: draft-dcn-bmwg-containerized-infra
+  type: Internet-Draft
+- content: draft-dcn-bmwg-containerized-infra-05
   type: Internet-Draft
   primary: true
-- id: I-D.dcn-bmwg-containerized-infra
-  type: IETF
-  scope: anchor
 docnumber: I-D.dcn-bmwg-containerized-infra
 date:
 - type: published
-  value: '2020-11-02'
+  at: '2020-11-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kj
-        language:
-        - en
       completename:
+        language: en
         content: KJ Sun
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: School of Electronic Engineering
-  role:
+        - language: en
+          content: School of Electronic Engineering
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hyunsik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hyunsik
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Hyunsik Yang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: School of Electronic Engineering
-  role:
+        - language: en
+          content: School of Electronic Engineering
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jangwon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jangwon
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Jangwon Lee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: School of Electronic Engineering
-  role:
+        - language: en
+          content: School of Electronic Engineering
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Nguyen
-        language:
-        - en
       completename:
+        language: en
         content: Quang-Huy Nguyen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: School of Electronic Engineering
-  role:
+        - language: en
+          content: School of Electronic Engineering
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Younghan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Younghan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Kim
-        language:
-        - en
       completename:
+        language: en
         content: Younghan Kim
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: School of Electronic Engineering
-  role:
-  - type: author
+        - language: en
+          content: School of Electronic Engineering
 version:
 - draft: '05'
-revdate: '2020-11-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft describes considerations for benchmarking network performance
-    in containerized infrastructures. In the containerized infrastructure, Virtualized
-    Network Functions(VNFs) are deployed on operating-system-level virtualization
-    platform by abstracting the user namespace as opposed to virtualization using
-    a hypervisor. Leveraging this, the system configurations and networking scenarios
-    for benchmarking will be partially changed by the way in which the resource allocation
-    and network technologies specified for containerized VNFs. In this draft, we compare
-    the state of the art in a container networking architecture with networking on
-    VM-based virtualized systems, and provide several test scenarios for benchmarking
-    network performance in containerized infrastructures.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft describes considerations for benchmarking network\n   performance
+    in containerized infrastructures.  In the containerized\n   infrastructure, Virtualized
+    Network Functions(VNFs) are deployed on\n   operating-system-level virtualization
+    platform by abstracting the\n   user namespace as opposed to virtualization using
+    a hypervisor.\n   Leveraging this, the system configurations and networking scenarios\n
+    \  for benchmarking will be partially changed by the way in which the\n   resource
+    allocation and network technologies specified for\n   containerized VNFs.  In
+    this draft, we compare the state of the art\n   in a container networking architecture
+    with networking on VM-based\n   virtualized systems, and provide several test
+    scenarios for\n   benchmarking network performance in containerized infrastructures.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dcn-bmwg-containerized-infra-04
-    docid:
-    - id: draft-dcn-bmwg-containerized-infra-04
+    formattedref: draft-dcn-bmwg-containerized-infra-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dcn-bmwg-containerized-infra-04
+    docidentifier:
+    - content: draft-dcn-bmwg-containerized-infra-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dcn-bmwg-containerized-infra-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-dcn-bmwg-containerized-infra-06
-    docid:
-    - id: draft-dcn-bmwg-containerized-infra-06
+    formattedref: draft-dcn-bmwg-containerized-infra-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dcn-bmwg-containerized-infra-06
+    docidentifier:
+    - content: draft-dcn-bmwg-containerized-infra-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dcn-bmwg-containerized-infra-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dcn-bmwg-containerized-infra-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,229 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pce-stateful-pce-vendor-12
-title:
-- content: Conveying Vendor-Specific Information in the Path Computation Element (PCE)
-    Communication Protocol (PCEP) extensions for Stateful PCE.
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-12
-  type: src
+id: draftietfpcestatefulpcevendor12
 type: standard
-docid:
-- id: draft-ietf-pce-stateful-pce-vendor-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Conveying Vendor-Specific Information in the Path Computation Element (PCE)
+    Communication Protocol (PCEP) extensions for Stateful PCE.
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-12
+docidentifier:
+- content: draft-ietf-pce-stateful-pce-vendor
+  type: Internet-Draft
+- content: draft-ietf-pce-stateful-pce-vendor-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pce-stateful-pce-vendor
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pce-stateful-pce-vendor
 date:
 - type: published
-  value: '2024-11-18'
+  at: '2024-11-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Cheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cheng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Cheng Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haomian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haomian
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Zheng
-        language:
-        - en
       completename:
+        language: en
         content: Haomian Zheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siva
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivabalan
-        language:
-        - en
       completename:
+        language: en
         content: Siva Sivabalan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
-  role:
+        - language: en
+          content: Ciena
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samuel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samuel
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sidor
-        language:
-        - en
       completename:
+        language: en
         content: Samuel Sidor
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zafar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zafar
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Ali
-        language:
-        - en
       completename:
+        language: en
         content: Zafar Ali
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems, Inc.
 version:
 - draft: '12'
-revdate: '2024-11-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies extensions to the Path Computation Element
-    Communication Protocol (PCEP) that enable the inclusion of vendor- specific information
-    in stateful PCE operations. These extensions allow vendors to incorporate proprietary
-    data within PCEP messages, facilitating enhanced network optimization and functionality
-    in environments requiring vendor-specific features. The extensions maintain compatibility
-    with existing PCEP implementations and promote interoperability across diverse
-    network deployments. RFC 7470 defines a facility to carry vendor-specific information
-    in stateless PCE Communication Protocol (PCEP) messages. This document extends
-    this capability for the Stateful PCEP messages.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies extensions to the Path Computation Element\n
+    \  Communication Protocol (PCEP) that enable the inclusion of vendor-\n   specific
+    information in stateful PCE operations.  These extensions\n   allow vendors to
+    incorporate proprietary data within PCEP messages,\n   facilitating enhanced network
+    optimization and functionality in\n   environments requiring vendor-specific features.
+    \ The extensions\n   maintain compatibility with existing PCEP implementations
+    and promote\n   interoperability across diverse network deployments.  RFC 7470\n
+    \  defines a facility to carry vendor-specific information in stateless\n   PCE
+    Communication Protocol (PCEP) messages.  This document extends\n   this capability
+    for the Stateful PCEP messages.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pce-stateful-pce-vendor-11
-    docid:
-    - id: draft-ietf-pce-stateful-pce-vendor-11
+    formattedref: draft-ietf-pce-stateful-pce-vendor-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-11
+    docidentifier:
+    - content: draft-ietf-pce-stateful-pce-vendor-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-stateful-pce-vendor-11
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pce-stateful-pce-vendor-13
-    docid:
-    - id: draft-ietf-pce-stateful-pce-vendor-13
+    formattedref: draft-ietf-pce-stateful-pce-vendor-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-13
+    docidentifier:
+    - content: draft-ietf-pce-stateful-pce-vendor-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-stateful-pce-vendor-13
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pce-stateful-pce-vendor-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

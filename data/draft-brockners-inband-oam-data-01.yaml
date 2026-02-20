@@ -1,231 +1,192 @@
 ---
-schema-version: v1.2.9
-id: draft-brockners-inband-oam-data-01
-title:
-- content: Data Formats for In-band OAM
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-brockners-inband-oam-data-01
-  type: src
+id: draftbrocknersinbandoamdata01
 type: standard
-docid:
-- id: draft-brockners-inband-oam-data-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Data Formats for In-band OAM
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-brockners-inband-oam-data-01
+docidentifier:
+- content: draft-brockners-inband-oam-data
+  type: Internet-Draft
+- content: draft-brockners-inband-oam-data-01
   type: Internet-Draft
   primary: true
-- id: I-D.brockners-inband-oam-data
-  type: IETF
-  scope: anchor
 docnumber: I-D.brockners-inband-oam-data
 date:
 - type: published
-  value: '2016-07-18'
+  at: '2016-07-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Frank
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Frank
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Brockners
-        language:
-        - en
       completename:
+        language: en
         content: Frank Brockners
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shwetha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shwetha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bhandari
-        language:
-        - en
       completename:
+        language: en
         content: Shwetha Bhandari
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carlos
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carlos
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Pignataro
-        language:
-        - en
       completename:
+        language: en
         content: Carlos Pignataro
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Gredler
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Gredler
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Leddy
-        language:
-        - en
       completename:
+        language: en
         content: John Leddy
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Youell
-        language:
-        - en
       completename:
+        language: en
         content: Stephen Youell
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2016-07-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In-band operation, administration and maintenance (OAM) records operational
-    and telemetry information in the packet while the packet traverses a path between
-    two points in the network. This document discusses the data types and data formats
-    for in-band OAM data records. In-band OAM data records can be embedded into a
-    variety of transports such as NSH, Segment Routing, VXLAN-GPE, native IPv6 (via
-    extension header), or IPv4. In-band OAM is to complement current out-of-band OAM
-    mechanisms based on ICMP or other types of probe packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In-band operation, administration and maintenance (OAM) records\n   operational
+    and telemetry information in the packet while the packet\n   traverses a path
+    between two points in the network.  This document\n   discusses the data types
+    and data formats for in-band OAM data\n   records.  In-band OAM data records can
+    be embedded into a variety of\n   transports such as NSH, Segment Routing, VXLAN-GPE,
+    native IPv6 (via\n   extension header), or IPv4.  In-band OAM is to complement
+    current\n   out-of-band OAM mechanisms based on ICMP or other types of probe\n
+    \  packets.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-brockners-inband-oam-data-00
-    docid:
-    - id: draft-brockners-inband-oam-data-00
+    formattedref: draft-brockners-inband-oam-data-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-brockners-inband-oam-data-00
+    docidentifier:
+    - content: draft-brockners-inband-oam-data-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-brockners-inband-oam-data-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-brockners-inband-oam-data-02
-    docid:
-    - id: draft-brockners-inband-oam-data-02
+    formattedref: draft-brockners-inband-oam-data-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-brockners-inband-oam-data-02
+    docidentifier:
+    - content: draft-brockners-inband-oam-data-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-brockners-inband-oam-data-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-brockners-inband-oam-data-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

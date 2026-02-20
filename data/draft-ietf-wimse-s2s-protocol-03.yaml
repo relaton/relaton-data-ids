@@ -1,202 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-wimse-s2s-protocol-03
-title:
-- content: WIMSE Workload to Workload Authentication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-s2s-protocol-03
-  type: src
+id: draftietfwimses2sprotocol03
 type: standard
-docid:
-- id: draft-ietf-wimse-s2s-protocol-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: WIMSE Workload to Workload Authentication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-s2s-protocol-03
+docidentifier:
+- content: draft-ietf-wimse-s2s-protocol
+  type: Internet-Draft
+- content: draft-ietf-wimse-s2s-protocol-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-wimse-s2s-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-wimse-s2s-protocol
 date:
 - type: published
-  value: '2025-03-03'
+  at: '2025-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Campbell
-        language:
-        - en
       completename:
+        language: en
         content: Brian Campbell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ping Identity
-  role:
+        - language: en
+          content: Ping Identity
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Salowey
-        language:
-        - en
       completename:
+        language: en
         content: Joe Salowey
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Venafi
-  role:
+        - language: en
+          content: Venafi
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arndt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arndt
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Schwenkschuster
-        language:
-        - en
       completename:
+        language: en
         content: Arndt Schwenkschuster
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SPIRL
-  role:
+        - language: en
+          content: SPIRL
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yaron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yaron
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Sheffer
-        language:
-        - en
       completename:
+        language: en
         content: Yaron Sheffer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intuit
-  role:
-  - type: author
+        - language: en
+          content: Intuit
 version:
 - draft: '03'
-revdate: '2025-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The WIMSE architecture defines authentication and authorization for
-    software workloads in a variety of runtime environments, from the most basic ones
-    up to complex multi-service, multi-cloud, multi- tenant deployments. This document
-    defines the simplest, atomic unit of this architecture: the protocol between two
-    workloads that need to verify each other's identity in order to communicate securely.
-    The scope of this protocol is a single HTTP request-and-response pair. To address
-    the needs of different setups, we propose two protocols, one at the application
-    level and one that makes use of trusted TLS transport. These two protocols are
-    compatible, in the sense that a single call chain can have some calls use one
-    protocol and some use the other. Workload A can call Workload B with mutual TLS
-    authentication, while the next call from Workload B to Workload C would be authenticated
-    at the application level.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The WIMSE architecture defines authentication and authorization for\n
+    \  software workloads in a variety of runtime environments, from the\n   most
+    basic ones up to complex multi-service, multi-cloud, multi-\n   tenant deployments.
+    \ This document defines the simplest, atomic unit\n   of this architecture: the
+    protocol between two workloads that need to\n   verify each other's identity in
+    order to communicate securely.  The\n   scope of this protocol is a single HTTP
+    request-and-response pair.\n   To address the needs of different setups, we propose
+    two protocols,\n   one at the application level and one that makes use of trusted
+    TLS\n   transport.  These two protocols are compatible, in the sense that a\n
+    \  single call chain can have some calls use one protocol and some use\n   the
+    other.  Workload A can call Workload B with mutual TLS\n   authentication, while
+    the next call from Workload B to Workload C\n   would be authenticated at the
+    application level.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-wimse-s2s-protocol-02
-    docid:
-    - id: draft-ietf-wimse-s2s-protocol-02
+    formattedref: draft-ietf-wimse-s2s-protocol-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-s2s-protocol-02
+    docidentifier:
+    - content: draft-ietf-wimse-s2s-protocol-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-wimse-s2s-protocol-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-wimse-s2s-protocol-04
-    docid:
-    - id: draft-ietf-wimse-s2s-protocol-04
+    formattedref: draft-ietf-wimse-s2s-protocol-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-s2s-protocol-04
+    docidentifier:
+    - content: draft-ietf-wimse-s2s-protocol-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-wimse-s2s-protocol-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-wimse-s2s-protocol-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

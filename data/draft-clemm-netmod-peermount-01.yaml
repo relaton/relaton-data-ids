@@ -1,210 +1,185 @@
 ---
-schema-version: v1.2.9
-id: draft-clemm-netmod-peermount-01
-title:
-- content: Mounting YANG-Defined Information from Remote Datastores
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-clemm-netmod-peermount-01
-  type: src
+id: draftclemmnetmodpeermount01
 type: standard
-docid:
-- id: draft-clemm-netmod-peermount-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Mounting YANG-Defined Information from Remote Datastores
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-clemm-netmod-peermount-01
+docidentifier:
+- content: draft-clemm-netmod-peermount
+  type: Internet-Draft
+- content: draft-clemm-netmod-peermount-01
   type: Internet-Draft
   primary: true
-- id: I-D.clemm-netmod-peermount
-  type: IETF
-  scope: anchor
 docnumber: I-D.clemm-netmod-peermount
 date:
 - type: published
-  value: '2023-10-23'
+  at: '2023-10-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Voit
-        language:
-        - en
       completename:
+        language: en
         content: Eric Voit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aihua
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aihua
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Guo
-        language:
-        - en
       completename:
+        language: en
         content: Aihua Guo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ignacio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: I. D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ignacio
+      - language: en
+        script: Latn
+        initial: I
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: I. D.
       surname:
+        language: en
         content: Martinez-Casanueva
-        language:
-        - en
       completename:
+        language: en
         content: Ignacio Dominguez Martinez-Casanueva
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica I+D
-  role:
-  - type: author
+        - language: en
+          content: Telefonica I+D
 version:
 - draft: '01'
-revdate: '2023-10-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a mechanism, Peer-Mount, that allows YANG datastores
-    to reference and incorporate information from remote datastores. This is accomplished
-    by extending YANG with the ability to define mount points that reference data
-    nodes in other YANG subtrees and subsequently allowing those data nodes to be
-    accessed by client applications as if part of an alternative data hierarchy. In
-    addition, means to manage and administer tho mount points are provided. This facilitates
-    the development of applications that need to access network-wide data that treanscends
-    individual network devices while ensuring network-wide data consistency. One example
-    concerns example applications that require a network inventory and/or network
-    topology with access to select management data within the nodes that comprise
-    it. The concept of Peer-Mount was first introduced in an earlier Internet Draft
-    that was no longer pursued due to lack of interest at the time. It is being revived
-    now in light of renewed IETF interest in network inventory, network topology,
-    and related use cases, for which Peer- Mount is of specific interest. Other concepts
-    defined in the earlier draft, notably Alias-Mount, are not considered here since
-    they provide other capabilities that are less applicable to those topics.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a mechanism, Peer-Mount, that allows YANG\n   datastores
+    to reference and incorporate information from remote\n   datastores.  This is
+    accomplished by extending YANG with the ability\n   to define mount points that
+    reference data nodes in other YANG\n   subtrees and subsequently allowing those
+    data nodes to be accessed by\n   client applications as if part of an alternative
+    data hierarchy.  In\n   addition, means to manage and administer tho mount points
+    are\n   provided.  This facilitates the development of applications that need\n
+    \  to access network-wide data that treanscends individual network\n   devices
+    while ensuring network-wide data consistency.  One example\n   concerns example
+    applications that require a network inventory and/or\n   network topology with
+    access to select management data within the\n   nodes that comprise it.\n\n   The
+    concept of Peer-Mount was first introduced in an earlier Internet\n   Draft that
+    was no longer pursued due to lack of interest at the time.\n   It is being revived
+    now in light of renewed IETF interest in network\n   inventory, network topology,
+    and related use cases, for which Peer-\n   Mount is of specific interest.  Other
+    concepts defined in the earlier\n   draft, notably Alias-Mount, are not considered
+    here since they\n   provide other capabilities that are less applicable to those
+    topics.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-clemm-netmod-peermount-00
-    docid:
-    - id: draft-clemm-netmod-peermount-00
+    formattedref: draft-clemm-netmod-peermount-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-clemm-netmod-peermount-00
+    docidentifier:
+    - content: draft-clemm-netmod-peermount-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-clemm-netmod-peermount-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-clemm-netmod-peermount-02
-    docid:
-    - id: draft-clemm-netmod-peermount-02
+    formattedref: draft-clemm-netmod-peermount-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-clemm-netmod-peermount-02
+    docidentifier:
+    - content: draft-clemm-netmod-peermount-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-clemm-netmod-peermount-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-clemm-netmod-peermount-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

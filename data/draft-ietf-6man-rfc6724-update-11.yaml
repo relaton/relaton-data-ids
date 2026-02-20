@@ -1,175 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-6man-rfc6724-update-11
-title:
-- content: Prioritizing known-local IPv6 ULAs through address selection policy
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-11
-  type: src
+id: draftietf6manrfc6724update11
 type: standard
-docid:
-- id: draft-ietf-6man-rfc6724-update-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Prioritizing known-local IPv6 ULAs through address selection policy
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-11
+docidentifier:
+- content: draft-ietf-6man-rfc6724-update
+  type: Internet-Draft
+- content: draft-ietf-6man-rfc6724-update-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-6man-rfc6724-update
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-6man-rfc6724-update
 date:
 - type: published
-  value: '2024-10-11'
+  at: '2024-10-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nick
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Buraglio
-        language:
-        - en
       completename:
+        language: en
         content: Nick Buraglio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Energy Sciences Network
-  role:
+        - language: en
+          content: Energy Sciences Network
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tim
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Chown
-        language:
-        - en
       completename:
+        language: en
         content: Tim Chown
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Jisc
-  role:
+        - language: en
+          content: Jisc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeremy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeremy
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Duncan
-        language:
-        - en
       completename:
+        language: en
         content: Jeremy Duncan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tachyon Dynamics
-  role:
-  - type: author
+        - language: en
+          content: Tachyon Dynamics
 version:
 - draft: '11'
-revdate: '2024-10-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>When RFC 6724 was published it defined an address selection algorithm
-    along with a default policy table, and noted a number of examples where that policy
-    table might benefit from adjustment for specific scenarios. It also noted that
-    it is important for implementations to provide a way to change the default policies
-    as more experience is gained. This update draws on several years of such operational
-    experience to refine RFC 6724, with emphasis on preference for the use of ULA
-    addresses over IPv4 addresses and the addition of mandatory support for Rule 5.5.
-    It also defines the concept of "known-local" ULA prefixes and the means by which
-    nodes can identify them and insert them into their policy table such that ULA-to-ULA
-    communications become preferred over GUA-to-GUA for local use. The update also
-    demotes the preference for 6to4 addresses. These changes to default behavior improve
-    supportability of common use cases, including automatic / unmanaged scenarios.
-    It is recognized that some less common deployment scenarios may require explicit
-    configuration or custom changes to achieve desired operational parameters.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   When RFC 6724 was published it defined an address selection algorithm\n
+    \  along with a default policy table, and noted a number of examples\n   where
+    that policy table might benefit from adjustment for specific\n   scenarios.  It
+    also noted that it is important for implementations to\n   provide a way to change
+    the default policies as more experience is\n   gained.  This update draws on several
+    years of such operational\n   experience to refine RFC 6724, with emphasis on
+    preference for the\n   use of ULA addresses over IPv4 addresses and the addition
+    of\n   mandatory support for Rule 5.5.  It also defines the concept of\n   \"known-local\"
+    ULA prefixes and the means by which nodes can identify\n   them and insert them
+    into their policy table such that ULA-to-ULA\n   communications become preferred
+    over GUA-to-GUA for local use.  The\n   update also demotes the preference for
+    6to4 addresses.  These changes\n   to default behavior improve supportability
+    of common use cases,\n   including automatic / unmanaged scenarios.  It is recognized
+    that\n   some less common deployment scenarios may require explicit\n   configuration
+    or custom changes to achieve desired operational\n   parameters.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-6man-rfc6724-update-10
-    docid:
-    - id: draft-ietf-6man-rfc6724-update-10
+    formattedref: draft-ietf-6man-rfc6724-update-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-10
+    docidentifier:
+    - content: draft-ietf-6man-rfc6724-update-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-rfc6724-update-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-6man-rfc6724-update-12
-    docid:
-    - id: draft-ietf-6man-rfc6724-update-12
+    formattedref: draft-ietf-6man-rfc6724-update-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-12
+    docidentifier:
+    - content: draft-ietf-6man-rfc6724-update-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-rfc6724-update-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-6man-rfc6724-update-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,144 +1,127 @@
 ---
-schema-version: v1.2.9
-id: draft-hapner-hybi-messagebroker-subprotocol-03
-title:
-- content: The MessageBroker WebSocket Subprotocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hapner-hybi-messagebroker-subprotocol-03
-  type: src
+id: drafthapnerhybimessagebrokersubprotocol03
 type: standard
-docid:
-- id: draft-hapner-hybi-messagebroker-subprotocol-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The MessageBroker WebSocket Subprotocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hapner-hybi-messagebroker-subprotocol-03
+docidentifier:
+- content: draft-hapner-hybi-messagebroker-subprotocol
+  type: Internet-Draft
+- content: draft-hapner-hybi-messagebroker-subprotocol-03
   type: Internet-Draft
   primary: true
-- id: I-D.hapner-hybi-messagebroker-subprotocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.hapner-hybi-messagebroker-subprotocol
 date:
 - type: published
-  value: '2012-08-14'
+  at: '2012-08-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mark
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mark
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Hapner
-        language:
-        - en
       completename:
+        language: en
         content: Mark Hapner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clebert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clebert
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Suconic
-        language:
-        - en
       completename:
+        language: en
         content: Clebert Suconic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: redhat
-  role:
-  - type: author
+        - language: en
+          content: redhat
 version:
 - draft: '03'
-revdate: '2012-08-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The WebSocket protocol [I-D.ietf-hybi-thewebsocketprotocol] provides
-    a subprotocol extension facility. The MessageBroker WebSocket Subprotocol (MBWS)
-    is a WebSocket Subprotocol used by messaging clients to send messages to, and
-    receive messages from an internet message broker (herein called a message broker).
-    A message broker is a messaging intermediary that queues messages sent by its
-    clients for asynchronous delivery to its clients. Messages are addressed to message-broker-specific
-    address names. Clients send messages to addresses and consume messages from addresses.
-    Clients do not send messages directly to other clients. Message brokers provide
-    a range of functionality that is outside the scope of MBWS. Typically an internet
-    message broker provides a REST API for working with this functionality; such as
-    configuring client credentials; setting client access controls; configuring address
-    routing; etc. MBWS limits its scope to the definition of a WebSocket subprotocol
-    that provides a full duplex, reliable message transport protocol between message
-    brokers and their clients; and, between message brokers. Since reliable message
-    transport is often independent of a broker's particular features, MBWS can be
-    used as the message transport protocol for a wide range of message brokers. The
-    MBWS subprotocol defines a binary message frame and a text message frame. Both
-    types of frame carry the same protocol; however, the protocol bindings differ
-    slightly. The binary frame is a WebSocket binary message that contains an MBWS
-    binary header followed by a binary message body. The text frame is a WebSocket
-    UTF-8 text message that contains an MBWS text header followed by a text message
-    body.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The WebSocket protocol [I-D.ietf-hybi-thewebsocketprotocol] provides\n
+    \  a subprotocol extension facility.  The MessageBroker WebSocket\n   Subprotocol
+    (MBWS) is a WebSocket Subprotocol used by messaging\n   clients to send messages
+    to, and receive messages from an internet\n   message broker (herein called a
+    message broker).  A message broker is\n   a messaging intermediary that queues
+    messages sent by its clients for\n   asynchronous delivery to its clients.\n\n
+    \  Messages are addressed to message-broker-specific address names.\n   Clients
+    send messages to addresses and consume messages from\n   addresses.  Clients do
+    not send messages directly to other clients.\n\n   Message brokers provide a range
+    of functionality that is outside the\n   scope of MBWS.  Typically an internet
+    message broker provides a REST\n   API for working with this functionality; such
+    as configuring client\n   credentials; setting client access controls; configuring
+    address\n   routing; etc.\n\n   MBWS limits its scope to the definition of a WebSocket
+    subprotocol\n   that provides a full duplex, reliable message transport protocol\n
+    \  between message brokers and their clients; and, between message\n   brokers.\n\n
+    \  Since reliable message transport is often independent of a broker's\n   particular
+    features, MBWS can be used as the message transport\n   protocol for a wide range
+    of message brokers.\n\n   The MBWS subprotocol defines a binary message frame
+    and a text\n   message frame.  Both types of frame carry the same protocol; however,\n
+    \  the protocol bindings differ slightly.  The binary frame is a\n   WebSocket
+    binary message that contains an MBWS binary header followed\n   by a binary message
+    body.  The text frame is a WebSocket UTF-8 text\n   message that contains an MBWS
+    text header followed by a text message\n   body.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-hapner-hybi-messagebroker-subprotocol-02
-    docid:
-    - id: draft-hapner-hybi-messagebroker-subprotocol-02
+    formattedref: draft-hapner-hybi-messagebroker-subprotocol-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hapner-hybi-messagebroker-subprotocol-02
+    docidentifier:
+    - content: draft-hapner-hybi-messagebroker-subprotocol-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hapner-hybi-messagebroker-subprotocol-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hapner-hybi-messagebroker-subprotocol-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

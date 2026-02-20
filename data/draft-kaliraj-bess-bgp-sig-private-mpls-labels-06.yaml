@@ -1,176 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
-title:
-- content: BGP Signaled MPLS Namespaces
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
-  type: src
+id: draftkalirajbessbgpsigprivatemplslabels06
 type: standard
-docid:
-- id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP Signaled MPLS Namespaces
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
+docidentifier:
+- content: draft-kaliraj-bess-bgp-sig-private-mpls-labels
+  type: Internet-Draft
+- content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
   type: Internet-Draft
   primary: true
-- id: I-D.kaliraj-bess-bgp-sig-private-mpls-labels
-  type: IETF
-  scope: anchor
 docnumber: I-D.kaliraj-bess-bgp-sig-private-mpls-labels
 date:
 - type: published
-  value: '2023-07-10'
+  at: '2023-07-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kaliraj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kaliraj
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Vairavakkalai
-        language:
-        - en
       completename:
+        language: en
         content: Kaliraj Vairavakkalai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeyananth
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: J. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeyananth
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: J. M.
       surname:
+        language: en
         content: Jeganathan
-        language:
-        - en
       completename:
+        language: en
         content: Jeyananth Minto Jeganathan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Praveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Praveen
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Ramadenu
-        language:
-        - en
       completename:
+        language: en
         content: Praveen Ramadenu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T Services, Inc.
-  role:
-  - type: author
+        - language: en
+          content: AT&T Services, Inc.
 version:
 - draft: '06'
-revdate: '2023-07-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>The MPLS forwarding layer in a core network is a shared resource. The
-    MPLS FIB at nodes in this layer contains labels that are dynamically allocated
-    and locally significant at that node. These labels are scoped in context of the
-    global loopback address. Let us call this the global MPLS namespace. For some
-    usecases like upstream label allocation, it is useful to create private MPLS namespaces
-    (virtual MPLS FIB) over this shared MPLS forwarding layer. This allows installing
-    deterministic label values in the private FIBs created at nodes participating
-    in the private MPLS namespace, while preserving the "locally significant" nature
-    of the underlying shared global MPLS FIB. This document defines new address families
-    (AFI: 16399, SAFI: 128, or 1) and associated signaling mechanisms to create and
-    use MPLS forwarding contexts in a network. Some example use cases are also described.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The MPLS forwarding layer in a core network is a shared resource.\n
+    \  The MPLS FIB at nodes in this layer contains labels that are\n   dynamically
+    allocated and locally significant at that node.  These\n   labels are scoped in
+    context of the global loopback address.  Let us\n   call this the global MPLS
+    namespace.\n\n   For some usecases like upstream label allocation, it is useful
+    to\n   create private MPLS namespaces (virtual MPLS FIB) over this shared\n   MPLS
+    forwarding layer.  This allows installing deterministic label\n   values in the
+    private FIBs created at nodes participating in the\n   private MPLS namespace,
+    while preserving the \"locally significant\"\n   nature of the underlying shared
+    global MPLS FIB.\n\n   This document defines new address families (AFI: 16399,
+    SAFI: 128, or\n   1) and associated signaling mechanisms to create and use MPLS\n
+    \  forwarding contexts in a network.  Some example use cases are also\n   described.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
-    docid:
-    - id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
+    formattedref: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
+    docidentifier:
+    - content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
-    docid:
-    - id: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
+    formattedref: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
+    docidentifier:
+    - content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

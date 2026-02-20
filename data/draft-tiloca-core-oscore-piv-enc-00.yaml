@@ -1,140 +1,121 @@
 ---
-schema-version: v1.2.9
-id: draft-tiloca-core-oscore-piv-enc-00
-title:
-- content: Encrypted Partial IV in the Constrained Application Protocol (CoAP) OSCORE
-    Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-00
-  type: src
+id: drafttilocacoreoscorepivenc00
 type: standard
-docid:
-- id: draft-tiloca-core-oscore-piv-enc-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Encrypted Partial IV in the Constrained Application Protocol (CoAP) OSCORE
+    Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-00
+docidentifier:
+- content: draft-tiloca-core-oscore-piv-enc
+  type: Internet-Draft
+- content: draft-tiloca-core-oscore-piv-enc-00
   type: Internet-Draft
   primary: true
-- id: I-D.tiloca-core-oscore-piv-enc
-  type: IETF
-  scope: anchor
 docnumber: I-D.tiloca-core-oscore-piv-enc
 date:
 - type: published
-  value: '2025-07-07'
+  at: '2025-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Tiloca
-        language:
-        - en
       completename:
+        language: en
         content: Marco Tiloca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE AB
-  role:
+        - language: en
+          content: RISE AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Mattsson
-        language:
-        - en
       completename:
+        language: en
         content: John Preuß Mattsson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
-  - type: author
+        - language: en
+          content: Ericsson AB
 version:
 - draft: '00'
-revdate: '2025-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The security protocol Object Security for Constrained RESTful Environments
-    (OSCORE) provides end-to-end protection of messages exchanged with the Constrained
-    Application Protocol (CoAP). Messages protected with OSCORE include a CoAP OSCORE
-    option, where the field Partial IV specifies the sequence number value used by
-    the message sender. In the interest of encrypting as much information as reasonably
-    possible, this document defines a lightweight add-on method for encrypting the
-    Partial IV within the OSCORE option. Therefore, it updates RFC 8613. Combined
-    with the update of OSCORE identifiers, the encryption of Partial IV values helps
-    counteracting on-path adversaries that attempt to correlate the sequence numbers
-    observed in different network paths, in order to track OSCORE endpoints that perform
-    a network path migration. The defined encryption method is applicable also to
-    the security protocol Group Object Security for Constrained RESTful Environments
-    (Group OSCORE).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The security protocol Object Security for Constrained RESTful\n   Environments
+    (OSCORE) provides end-to-end protection of messages\n   exchanged with the Constrained
+    Application Protocol (CoAP).  Messages\n   protected with OSCORE include a CoAP
+    OSCORE option, where the field\n   Partial IV specifies the sequence number value
+    used by the message\n   sender.  In the interest of encrypting as much information
+    as\n   reasonably possible, this document defines a lightweight add-on\n   method
+    for encrypting the Partial IV within the OSCORE option.\n   Therefore, it updates
+    RFC 8613.  Combined with the update of OSCORE\n   identifiers, the encryption
+    of Partial IV values helps counteracting\n   on-path adversaries that attempt
+    to correlate the sequence numbers\n   observed in different network paths, in
+    order to track OSCORE\n   endpoints that perform a network path migration.  The
+    defined\n   encryption method is applicable also to the security protocol Group\n
+    \  Object Security for Constrained RESTful Environments (Group OSCORE).\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-tiloca-core-oscore-piv-enc-01
-    docid:
-    - id: draft-tiloca-core-oscore-piv-enc-01
+    formattedref: draft-tiloca-core-oscore-piv-enc-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-01
+    docidentifier:
+    - content: draft-tiloca-core-oscore-piv-enc-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tiloca-core-oscore-piv-enc-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tiloca-core-oscore-piv-enc-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

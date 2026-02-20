@@ -1,200 +1,171 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rmcat-nada-13
-title:
-- content: 'Network-Assisted Dynamic Adaptation (NADA): A Unified Congestion Control
-    Scheme for Real-Time Media'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-nada-13
-  type: src
+id: draftietfrmcatnada13
 type: standard
-docid:
-- id: draft-ietf-rmcat-nada-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Network-Assisted Dynamic Adaptation (NADA): A Unified Congestion Control
+    Scheme for Real-Time Media'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-nada-13
+docidentifier:
+- content: draft-ietf-rmcat-nada
+  type: Internet-Draft
+- content: draft-ietf-rmcat-nada-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rmcat-nada
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rmcat-nada
 date:
 - type: published
-  value: '2019-09-06'
+  at: '2019-09-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaoqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaoqing
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaoqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: R. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rong
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: R. P.
       surname:
+        language: en
         content: "*"
-        language:
-        - en
       completename:
+        language: en
         content: Rong Pan *
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: "* Pending affiliation change."
-  role:
+        - language: en
+          content: "* Pending affiliation change."
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: M. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: M. A.
       surname:
+        language: en
         content: Ramalho
-        language:
-        - en
       completename:
+        language: en
         content: Michael A. Ramalho
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: S. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sergio
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: S. M.
       surname:
+        language: en
         content: de la Cruz
-        language:
-        - en
       completename:
+        language: en
         content: Sergio Mena de la Cruz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '13'
-revdate: '2019-09-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes Network-Assisted Dynamic Adaptation (NADA),
-    a novel congestion control scheme for interactive real-time media applications
-    such as video conferencing. In the proposed scheme, the sender regulates its sending
+- language: en
+  script: Latn
+  content: "This document describes Network-Assisted Dynamic Adaptation (NADA), a
+    novel congestion control scheme for interactive real-time media applications such
+    as video conferencing.  In the proposed scheme, the sender regulates its sending
     rate, based on either implicit or explicit congestion signaling, in a unified
-    approach. The scheme can benefit from Explicit Congestion Notification (ECN) markings
-    from network nodes. It also maintains consistent sender behavior in the absence
-    of such markings by reacting to queuing delays and packet losses instead.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    approach.  The scheme can benefit from Explicit Congestion Notification (ECN)
+    markings from network nodes.  It also maintains consistent sender behavior in
+    the absence of such markings by reacting to queuing delays and packet losses instead.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rmcat-nada-12
-    docid:
-    - id: draft-ietf-rmcat-nada-12
+    formattedref: draft-ietf-rmcat-nada-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rmcat-nada-12
+    docidentifier:
+    - content: draft-ietf-rmcat-nada-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rmcat-nada-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rmcat-nada-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

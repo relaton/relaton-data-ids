@@ -1,218 +1,189 @@
 ---
-schema-version: v1.2.9
-id: draft-yizhou-trill-tc-awareness-03
-title:
-- content: Aware Spanning Tree Topology Change on RBridges
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tc-awareness-03
-  type: src
+id: draftyizhoutrilltcawareness03
 type: standard
-docid:
-- id: draft-yizhou-trill-tc-awareness-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Aware Spanning Tree Topology Change on RBridges
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tc-awareness-03
+docidentifier:
+- content: draft-yizhou-trill-tc-awareness
+  type: Internet-Draft
+- content: draft-yizhou-trill-tc-awareness-03
   type: Internet-Draft
   primary: true
-- id: I-D.yizhou-trill-tc-awareness
-  type: IETF
-  scope: anchor
 docnumber: I-D.yizhou-trill-tc-awareness
 date:
 - type: published
-  value: '2013-11-21'
+  at: '2013-11-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yizhou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yizhou
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Yizhou Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hao
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Weiguo
-        language:
-        - en
       completename:
+        language: en
         content: Hao Weiguo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jon
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Hudson
-        language:
-        - en
       completename:
+        language: en
         content: Jon Hudson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Brocade
-  role:
+        - language: en
+          content: Brocade
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Naveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Naveen
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Nimmu
-        language:
-        - en
       completename:
+        language: en
         content: Naveen Nimmu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Broadcom
-  role:
+        - language: en
+          content: Broadcom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anoop
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anoop
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Ghanwani
-        language:
-        - en
       completename:
+        language: en
         content: Anoop Ghanwani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DELL
-  role:
-  - type: author
+        - language: en
+          content: DELL
 version:
 - draft: '03'
-revdate: '2013-11-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When a local LAN running spanning tree protocol connecting to TRILL
-    campus via more than one RBridge, there are several ways to perform loop avoidance.
-    One of them illustrated by RFC6325 [RFC6325] A.3 was to make relevant ports on
-    edge RBridges involving in spanning tree calculation. When edge RBridges are emulated
-    as a single highest priority root, the local bridged LAN will be naturally partitioned
-    after running spanning tree protocol. This approach achieves better link utilization
-    and intra-VLAN load balancing in some scenarios. This document describes how the
-    edge RBridges react to topology change occurring in bridged LAN in order to make
-    the abovementioned spanning tree approach function correct.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   When a local LAN running spanning tree protocol connecting to TRILL\n
+    \  campus via more than one RBridge, there are several ways to perform\n   loop
+    avoidance. One of them illustrated by RFC6325 [RFC6325] A.3 was\n   to make relevant
+    ports on edge RBridges involving in spanning tree\n   calculation. When edge RBridges
+    are emulated as a single highest\n   priority root, the local bridged LAN will
+    be naturally partitioned\n   after running spanning tree protocol. This approach
+    achieves better\n   link utilization and intra-VLAN load balancing in some scenarios.\n
+    \  This document describes how the edge RBridges react to topology\n   change
+    occurring in bridged LAN in order to make the abovementioned\n   spanning tree
+    approach function correct.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-yizhou-trill-tc-awareness-02
-    docid:
-    - id: draft-yizhou-trill-tc-awareness-02
+    formattedref: draft-yizhou-trill-tc-awareness-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tc-awareness-02
+    docidentifier:
+    - content: draft-yizhou-trill-tc-awareness-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-yizhou-trill-tc-awareness-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yizhou-trill-tc-awareness-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,234 +1,205 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dmm-tn-aware-mobility-10
-title:
-- content: Mobility aware Transport Network Slicing for 5G
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dmm-tn-aware-mobility-10
-  type: src
+id: draftietfdmmtnawaremobility10
 type: standard
-docid:
-- id: draft-ietf-dmm-tn-aware-mobility-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Mobility aware Transport Network Slicing for 5G
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dmm-tn-aware-mobility-10
+docidentifier:
+- content: draft-ietf-dmm-tn-aware-mobility
+  type: Internet-Draft
+- content: draft-ietf-dmm-tn-aware-mobility-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dmm-tn-aware-mobility
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dmm-tn-aware-mobility
 date:
 - type: published
-  value: '2024-08-23'
+  at: '2024-08-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Uma
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: U
-        formatted_initials:
-          content: U.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Uma
+      - language: en
+        script: Latn
+        initial: U
+      formatted_initials:
+        language: en
+        content: U.
       surname:
+        language: en
         content: Chunduri
-        language:
-        - en
       completename:
+        language: en
         content: Uma Chunduri
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel Corporation
-  role:
+        - language: en
+          content: Intel Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kaippallimalil
-        language:
-        - en
       completename:
+        language: en
         content: John Kaippallimalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sridhar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sridhar
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bhaskaran
-        language:
-        - en
       completename:
+        language: en
         content: Sridhar Bhaskaran
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Rakuten Symphony
-  role:
+        - language: en
+          content: Rakuten Symphony
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
-  role:
+        - language: en
+          content: Microsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Praveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Praveen
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Muley
-        language:
-        - en
       completename:
+        language: en
         content: Praveen Muley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '10'
-revdate: '2024-08-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Network slicing in 5G supports logical networks for communication services
-    of multiple 5G customers to be multiplexed over the same infrastructure. While
-    5G slicing covers logical separation of various aspects of 5G services, user's
-    data plane packets over the radio access network (RAN) and mobile core network
-    (5GC) use IP transport in many segments of the end-to-end 5G slice. When end-to-
-    end slices in a 5G system use IP network resources, they are mapped to corresponding
-    IP transport network slice(s) which in turn provide the bandwidth, latency, isolation
-    and other criteria requested by the 5G slice. This document describes mapping
-    of 5G slices to IP or Layer 2 transport network slices when the IP transport network
-    (slice provider) is separated from the networks in which the 5G network functions
-    are deployed, for example, 5G functions that are distributed across data centers.
-    The slice mapping proposed here is supported transparently when a 5G user device
-    moves across 5G attachment points and session anchors. NOTE: This document will
-    be updated to address 3GPP TS 28.541 (6.3.41) ConnectionPointInfo and Attachment-Circuits-as-a-Service
-    in Section 3.4 prior to WGLC reviews.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Network slicing in 5G supports logical networks for communication\n
+    \  services of multiple 5G customers to be multiplexed over the same\n   infrastructure.
+    \ While 5G slicing covers logical separation of\n   various aspects of 5G services,
+    user's data plane packets over the\n   radio access network (RAN) and mobile core
+    network (5GC) use IP\n   transport in many segments of the end-to-end 5G slice.
+    \ When end-to-\n   end slices in a 5G system use IP network resources, they are
+    mapped\n   to corresponding IP transport network slice(s) which in turn provide\n
+    \  the bandwidth, latency, isolation and other criteria requested by the\n   5G
+    slice.\n\n   This document describes mapping of 5G slices to IP or Layer 2\n   transport
+    network slices when the IP transport network (slice\n   provider) is separated
+    from the networks in which the 5G network\n   functions are deployed, for example,
+    5G functions that are\n   distributed across data centers.  The slice mapping
+    proposed here is\n   supported transparently when a 5G user device moves across
+    5G\n   attachment points and session anchors.\n\n   NOTE: This document will be
+    updated to address 3GPP TS 28.541\n   (6.3.41) ConnectionPointInfo and Attachment-Circuits-as-a-Service
+    in\n   Section 3.4 prior to WGLC reviews.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dmm-tn-aware-mobility-09
-    docid:
-    - id: draft-ietf-dmm-tn-aware-mobility-09
+    formattedref: draft-ietf-dmm-tn-aware-mobility-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dmm-tn-aware-mobility-09
+    docidentifier:
+    - content: draft-ietf-dmm-tn-aware-mobility-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dmm-tn-aware-mobility-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dmm-tn-aware-mobility-11
-    docid:
-    - id: draft-ietf-dmm-tn-aware-mobility-11
+    formattedref: draft-ietf-dmm-tn-aware-mobility-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dmm-tn-aware-mobility-11
+    docidentifier:
+    - content: draft-ietf-dmm-tn-aware-mobility-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dmm-tn-aware-mobility-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dmm-tn-aware-mobility-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,225 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lsr-ospf-prefix-extended-flags-05
-title:
-- content: Prefix Flag Extension for OSPFv2 and OSPFv3
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-05
-  type: src
+id: draftietflsrospfprefixextendedflags05
 type: standard
-docid:
-- id: draft-ietf-lsr-ospf-prefix-extended-flags-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Prefix Flag Extension for OSPFv2 and OSPFv3
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-05
+docidentifier:
+- content: draft-ietf-lsr-ospf-prefix-extended-flags
+  type: Internet-Draft
+- content: draft-ietf-lsr-ospf-prefix-extended-flags-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsr-ospf-prefix-extended-flags
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lsr-ospf-prefix-extended-flags
 date:
 - type: published
-  value: '2025-01-25'
+  at: '2025-01-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ran
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Ran Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Detao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Detao
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Detao Zhao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liyan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Gong
-        language:
-        - en
       completename:
+        language: en
         content: Liyan Gong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China mobile
-  role:
-  - type: author
+        - language: en
+          content: China mobile
 version:
 - draft: '05'
-revdate: '2025-01-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Each OSPF prefix is advertised with an 8-bit options field, using the
-    Prefix Options (OSPFv3) and the flag field in the OSPFv2 Extended Prefix TLV (OSPFv2).
-    However for OSPFv3, all the Prefix Options bits have already been assigned, and
-    for OSPFv2, there are not many bits left unassigned in the OSPFv2 Extended Prefix
-    TLV. This document solves the problem of insufficient options bit by defining
-    variable-length Prefix Attribute Flags Sub-TLVs for OSPFv2 and OSPFv3.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Each OSPF prefix is advertised with an 8-bit options field, using the\n
+    \  Prefix Options (OSPFv3) and the flag field in the OSPFv2 Extended\n   Prefix
+    TLV (OSPFv2).  However for OSPFv3, all the Prefix Options bits\n   have already
+    been assigned, and for OSPFv2, there are not many bits\n   left unassigned in
+    the OSPFv2 Extended Prefix TLV.\n\n   This document solves the problem of insufficient
+    options bit by\n   defining variable-length Prefix Attribute Flags Sub-TLVs for
+    OSPFv2\n   and OSPFv3.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lsr-ospf-prefix-extended-flags-04
-    docid:
-    - id: draft-ietf-lsr-ospf-prefix-extended-flags-04
+    formattedref: draft-ietf-lsr-ospf-prefix-extended-flags-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-04
+    docidentifier:
+    - content: draft-ietf-lsr-ospf-prefix-extended-flags-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospf-prefix-extended-flags-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lsr-ospf-prefix-extended-flags-06
-    docid:
-    - id: draft-ietf-lsr-ospf-prefix-extended-flags-06
+    formattedref: draft-ietf-lsr-ospf-prefix-extended-flags-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-06
+    docidentifier:
+    - content: draft-ietf-lsr-ospf-prefix-extended-flags-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospf-prefix-extended-flags-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lsr-ospf-prefix-extended-flags-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

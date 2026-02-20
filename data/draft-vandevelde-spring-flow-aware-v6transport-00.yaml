@@ -1,156 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-vandevelde-spring-flow-aware-v6transport-00
-title:
-- content: Flow Aware IPv6 Segment Routing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-vandevelde-spring-flow-aware-v6transport-00
-  type: src
+id: draftvandeveldespringflowawarev6transport00
 type: standard
-docid:
-- id: draft-vandevelde-spring-flow-aware-v6transport-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Flow Aware IPv6 Segment Routing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-vandevelde-spring-flow-aware-v6transport-00
+docidentifier:
+- content: draft-vandevelde-spring-flow-aware-v6transport
+  type: Internet-Draft
+- content: draft-vandevelde-spring-flow-aware-v6transport-00
   type: Internet-Draft
   primary: true
-- id: I-D.vandevelde-spring-flow-aware-v6transport
-  type: IETF
-  scope: anchor
 docnumber: I-D.vandevelde-spring-flow-aware-v6transport
 date:
 - type: published
-  value: '2017-03-09'
+  at: '2017-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Gunter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gunter
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Van de Velde
-        language:
-        - en
       completename:
+        language: en
         content: Gunter Van de Velde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Giuseppe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Giuseppe
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fioccola
-        language:
-        - en
       completename:
+        language: en
         content: Giuseppe Fioccola
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecom Italia
-  role:
+        - language: en
+          content: Telecom Italia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Praveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Praveen
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Muley
-        language:
-        - en
       completename:
+        language: en
         content: Praveen Muley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '00'
-revdate: '2017-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Flow-Aware transport of Pseudowires over an MPLS Packet Switched Network
-    (RFC6391) introduces an ECMP use-case, making assumption that the payload of a
-    pseudowire comprises of a number of distinct flows. RFC6391 provides a mechanism
-    for fine flow granularity beyond the individual pseudowire, helping better flow
-    granularity for ECMP purpose. To identify the granular pseudowire flows the concept
-    of MPLS Flow Label is introduced. Furthermore RFC6391 defines the required LDP
-    protocol extensions to exchange the MPLS Flow Label between LDP speakers. Another
-    method to exchange MPLS flow labels is found in draft-ietf- bess-fat-pw-bgp. Draft-ietf-bess-fat-pw-bgp
-    defines extensions required to synchronise flow label state between PEs using
-    BGP-based signalling procedures. This draft assumes MPLS is the transport technology
-    used. This draft extends the applicability of draft-ietf-bess-fat-pw-bgp and uses
-    the BGP derived flow label for IPv6 Segment Routing transport. The PE responsible
-    for imposing the IPv6 Segment Routing top level header will in addition to an
-    IPv6 header AND the IPv6 Source Routing header ALSO impose the BGP derived Flow
-    Label as the IPv6 outer header flow Label. This functionality will provide fine
-    ECMP granularity of IPv6 Segment routing enabled pseudowire transport services.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Flow-Aware transport of Pseudowires over an MPLS Packet Switched\n
+    \  Network (RFC6391) introduces an ECMP use-case, making assumption that\n   the
+    payload of a pseudowire comprises of a number of distinct flows.\n   RFC6391 provides
+    a mechanism for fine flow granularity beyond the\n   individual pseudowire, helping
+    better flow granularity for ECMP\n   purpose.  To identify the granular pseudowire
+    flows the concept of\n   MPLS Flow Label is introduced.  Furthermore RFC6391 defines
+    the\n   required LDP protocol extensions to exchange the MPLS Flow Label\n   between
+    LDP speakers.\n\n   Another method to exchange MPLS flow labels is found in draft-ietf-\n
+    \  bess-fat-pw-bgp.  Draft-ietf-bess-fat-pw-bgp defines extensions\n   required
+    to synchronise flow label state between PEs using BGP-based\n   signalling procedures.
+    \ This draft assumes MPLS is the transport\n   technology used.\n\n   This draft
+    extends the applicability of draft-ietf-bess-fat-pw-bgp\n   and uses the BGP derived
+    flow label for IPv6 Segment Routing\n   transport.  The PE responsible for imposing
+    the IPv6 Segment Routing\n   top level header will in addition to an IPv6 header
+    AND the IPv6\n   Source Routing header ALSO impose the BGP derived Flow Label
+    as the\n   IPv6 outer header flow Label.  This functionality will provide fine\n
+    \  ECMP granularity of IPv6 Segment routing enabled pseudowire transport\n   services.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-vandevelde-spring-flow-aware-v6transport-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,235 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-irtf-cfrg-randomness-improvements-04
-title:
-- content: Randomness Improvements for Security Protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-randomness-improvements-04
-  type: src
+id: draftirtfcfrgrandomnessimprovements04
 type: standard
-docid:
-- id: draft-irtf-cfrg-randomness-improvements-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Randomness Improvements for Security Protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-randomness-improvements-04
+docidentifier:
+- content: draft-irtf-cfrg-randomness-improvements
+  type: Internet-Draft
+- content: draft-irtf-cfrg-randomness-improvements-04
   type: Internet-Draft
   primary: true
-- id: I-D.irtf-cfrg-randomness-improvements
-  type: IETF
-  scope: anchor
 docnumber: I-D.irtf-cfrg-randomness-improvements
 date:
 - type: published
-  value: '2019-03-11'
+  at: '2019-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Cas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cas
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Cremers
-        language:
-        - en
       completename:
+        language: en
         content: Cas Cremers
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Oxford
-  role:
+        - language: en
+          content: University of Oxford
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luke
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luke
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Garratt
-        language:
-        - en
       completename:
+        language: en
         content: Luke Garratt
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Oxford
-  role:
+        - language: en
+          content: University of Oxford
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stanislav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: S. V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stanislav
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: S. V.
       surname:
+        language: en
         content: Smyshlyaev
-        language:
-        - en
       completename:
+        language: en
         content: Stanislav V. Smyshlyaev
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CryptoPro
-  role:
+        - language: en
+          content: CryptoPro
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nick
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Sullivan
-        language:
-        - en
       completename:
+        language: en
         content: Nick Sullivan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
-  role:
+        - language: en
+          content: Cloudflare
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: C. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: C. A.
       surname:
+        language: en
         content: Wood
-        language:
-        - en
       completename:
+        language: en
         content: Christopher A. Wood
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple Inc.
 version:
 - draft: '04'
-revdate: '2019-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Randomness is a crucial ingredient for TLS and related security protocols.
-    Weak or predictable "cryptographically-strong" pseudorandom number generators
-    (CSPRNGs) can be abused or exploited for malicious purposes. The Dual EC random
-    number backdoor and Debian bugs are relevant examples of this problem. An initial
-    entropy source that seeds a CSPRNG might be weak or broken as well, which can
-    also lead to critical and systemic security problems. This document describes
-    a way for security protocol participants to augment their CSPRNGs using long-term
-    private keys. This improves randomness from broken or otherwise subverted CSPRNGs.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Randomness is a crucial ingredient for TLS and related security\n   protocols.
+    \ Weak or predictable \"cryptographically-strong\"\n   pseudorandom number generators
+    (CSPRNGs) can be abused or exploited\n   for malicious purposes.  The Dual EC
+    random number backdoor and\n   Debian bugs are relevant examples of this problem.
+    \ An initial\n   entropy source that seeds a CSPRNG might be weak or broken as
+    well,\n   which can also lead to critical and systemic security problems.  This\n
+    \  document describes a way for security protocol participants to\n   augment
+    their CSPRNGs using long-term private keys.  This improves\n   randomness from
+    broken or otherwise subverted CSPRNGs.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-irtf-cfrg-randomness-improvements-03
-    docid:
-    - id: draft-irtf-cfrg-randomness-improvements-03
+    formattedref: draft-irtf-cfrg-randomness-improvements-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-randomness-improvements-03
+    docidentifier:
+    - content: draft-irtf-cfrg-randomness-improvements-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-cfrg-randomness-improvements-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-irtf-cfrg-randomness-improvements-05
-    docid:
-    - id: draft-irtf-cfrg-randomness-improvements-05
+    formattedref: draft-irtf-cfrg-randomness-improvements-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-randomness-improvements-05
+    docidentifier:
+    - content: draft-irtf-cfrg-randomness-improvements-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-cfrg-randomness-improvements-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-irtf-cfrg-randomness-improvements-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

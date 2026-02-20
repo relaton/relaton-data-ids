@@ -1,190 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-extended-evpn-optimized-ir-00
-title:
-- content: Extended Procedures for EVPN Optimized Ingress Replication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-extended-evpn-optimized-ir-00
-  type: src
+id: draftietfbessextendedevpnoptimizedir00
 type: standard
-docid:
-- id: draft-ietf-bess-extended-evpn-optimized-ir-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Extended Procedures for EVPN Optimized Ingress Replication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-extended-evpn-optimized-ir-00
+docidentifier:
+- content: draft-ietf-bess-extended-evpn-optimized-ir
+  type: Internet-Draft
+- content: draft-ietf-bess-extended-evpn-optimized-ir-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-extended-evpn-optimized-ir
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-extended-evpn-optimized-ir
 date:
 - type: published
-  value: '2020-02-20'
+  at: '2020-02-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wen
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Wen Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Selvakumar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Selvakumar
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivaraj
-        language:
-        - en
       completename:
+        language: en
         content: Selvakumar Sivaraj
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishal
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Garg
-        language:
-        - en
       completename:
+        language: en
         content: Vishal Garg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '00'
-revdate: '2020-02-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>[EVPN-AR] specifies an optimized ingress replication solution for more
-    efficient multicast and broadcast delivery in a Network Virtualization Overlay
-    (NVO) network for EVPN. This document extends the optimized ingress replication
-    procedures specified in [EVPN-AR] to overcome the limitation that an AR- REPLICATOR
-    may have. An AR-REPLICATOR may be unable to retain the source IP address or include
-    the expected ESI label that is required for EVPN split horizon filtering when
-    replicating the packet on behalf of its multihomed AR-LEAF. Under this circumstance,
-    the extended procedures specified in this document allows the support of EVPN
-    multihoming on the AR-LEAFs as well as optimized ingress replication for the rest
-    of the EVPN overlay network.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   [EVPN-AR] specifies an optimized ingress replication solution for\n
+    \  more efficient multicast and broadcast delivery in a Network\n   Virtualization
+    Overlay (NVO) network for EVPN.\n\n   This document extends the optimized ingress
+    replication procedures\n   specified in [EVPN-AR] to overcome the limitation that
+    an AR-\n   REPLICATOR may have.  An AR-REPLICATOR may be unable to retain the\n
+    \  source IP address or include the expected ESI label that is required\n   for
+    EVPN split horizon filtering when replicating the packet on\n   behalf of its
+    multihomed AR-LEAF.  Under this circumstance, the\n   extended procedures specified
+    in this document allows the support of\n   EVPN multihoming on the AR-LEAFs as
+    well as optimized ingress\n   replication for the rest of the EVPN overlay network.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-extended-evpn-optimized-ir-01
-    docid:
-    - id: draft-ietf-bess-extended-evpn-optimized-ir-01
+    formattedref: draft-ietf-bess-extended-evpn-optimized-ir-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-extended-evpn-optimized-ir-01
+    docidentifier:
+    - content: draft-ietf-bess-extended-evpn-optimized-ir-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-extended-evpn-optimized-ir-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-extended-evpn-optimized-ir-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

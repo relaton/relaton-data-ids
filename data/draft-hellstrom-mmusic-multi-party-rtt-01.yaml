@@ -1,122 +1,109 @@
 ---
-schema-version: v1.2.9
-id: draft-hellstrom-mmusic-multi-party-rtt-01
-title:
-- content: Real-time text media handling in multi-party conferences
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hellstrom-mmusic-multi-party-rtt-01
-  type: src
+id: drafthellstrommmusicmultipartyrtt01
 type: standard
-docid:
-- id: draft-hellstrom-mmusic-multi-party-rtt-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Real-time text media handling in multi-party conferences
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hellstrom-mmusic-multi-party-rtt-01
+docidentifier:
+- content: draft-hellstrom-mmusic-multi-party-rtt
+  type: Internet-Draft
+- content: draft-hellstrom-mmusic-multi-party-rtt-01
   type: Internet-Draft
   primary: true
-- id: I-D.hellstrom-mmusic-multi-party-rtt
-  type: IETF
-  scope: anchor
 docnumber: I-D.hellstrom-mmusic-multi-party-rtt
 date:
 - type: published
-  value: '2020-02-23'
+  at: '2020-02-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Gunnar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gunnar
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Hellstrom
-        language:
-        - en
       completename:
+        language: en
         content: Gunnar Hellstrom
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Omnitor
-  role:
-  - type: author
+        - language: en
+          content: Omnitor
 version:
 - draft: '01'
-revdate: '2020-02-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo specifies methods for Real-Time Text (RTT) media handling
-    in multi-party calls. The main solution is to carry Real-Time text by the RTP
-    protocol in a time-sampled mode according to RFC 4103. The main solution for centralized
-    multi-party handling of real-time text is achieved through a media control unit
-    coordinating multiple RTP text streams into one RTP session. Identification for
-    the streams are provided through the CSRC lists in the RTP packets and through
-    the RTCP messages. This mechanism enables the receiving application to present
-    the received real-time text medium separated per source, in different ways according
-    to user preferences. Some presentation related features are also described explaining
-    suitable variations of transmission and presentation of text. Call control features
-    are described for the SIP environment. A number of alternative methods for providing
-    the multi-party negotiation, transmission and presentation are discussed and a
-    recommendation for the main one is provided. Two alternative methods using a single
-    RTP stream and source identification inline in the text stream are also described,
-    one of them being provided as a lower functionality fallback method for endpoints
-    with no multi-party awareness for RTT. Brief information is also provided for
-    multi-party RTT in the WebRTC environment. EDITOR NOTE: A number of alternatives
-    are specified for discussion. A decision is needed which alternatives are preferred
-    and then how the preferred alternatives shall be emphasized.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo specifies methods for Real-Time Text (RTT) media handling\n
+    \  in multi-party calls.  The main solution is to carry Real-Time text\n   by
+    the RTP protocol in a time-sampled mode according to RFC 4103.\n   The main solution
+    for centralized multi-party handling of real-time\n   text is achieved through
+    a media control unit coordinating multiple\n   RTP text streams into one RTP session.\n\n
+    \  Identification for the streams are provided through the CSRC lists in\n   the
+    RTP packets and through the RTCP messages.  This mechanism\n   enables the receiving
+    application to present the received real-time\n   text medium separated per source,
+    in different ways according to user\n   preferences.  Some presentation related
+    features are also described\n   explaining suitable variations of transmission
+    and presentation of\n   text.\n\n   Call control features are described for the
+    SIP environment.  A\n   number of alternative methods for providing the multi-party\n
+    \  negotiation, transmission and presentation are discussed and a\n   recommendation
+    for the main one is provided.  Two alternative methods\n   using a single RTP
+    stream and source identification inline in the\n   text stream are also described,
+    one of them being provided as a lower\n   functionality fallback method for endpoints
+    with no multi-party\n   awareness for RTT.\n\n   Brief information is also provided
+    for multi-party RTT in the WebRTC\n   environment.\n\n   EDITOR NOTE: A number
+    of alternatives are specified for discussion.\n   A decision is needed which alternatives
+    are preferred and then how\n   the preferred alternatives shall be emphasized.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-hellstrom-mmusic-multi-party-rtt-00
-    docid:
-    - id: draft-hellstrom-mmusic-multi-party-rtt-00
+    formattedref: draft-hellstrom-mmusic-multi-party-rtt-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hellstrom-mmusic-multi-party-rtt-00
+    docidentifier:
+    - content: draft-hellstrom-mmusic-multi-party-rtt-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hellstrom-mmusic-multi-party-rtt-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-hellstrom-mmusic-multi-party-rtt-02
-    docid:
-    - id: draft-hellstrom-mmusic-multi-party-rtt-02
+    formattedref: draft-hellstrom-mmusic-multi-party-rtt-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hellstrom-mmusic-multi-party-rtt-02
+    docidentifier:
+    - content: draft-hellstrom-mmusic-multi-party-rtt-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hellstrom-mmusic-multi-party-rtt-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hellstrom-mmusic-multi-party-rtt-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

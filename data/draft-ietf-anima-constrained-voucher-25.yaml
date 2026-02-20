@@ -1,202 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-anima-constrained-voucher-25
-title:
-- content: Constrained Bootstrapping Remote Secure Key Infrastructure (cBRSKI)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-voucher-25
-  type: src
+id: draftietfanimaconstrainedvoucher25
 type: standard
-docid:
-- id: draft-ietf-anima-constrained-voucher-25
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Constrained Bootstrapping Remote Secure Key Infrastructure (cBRSKI)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-voucher-25
+docidentifier:
+- content: draft-ietf-anima-constrained-voucher
+  type: Internet-Draft
+- content: draft-ietf-anima-constrained-voucher-25
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-anima-constrained-voucher
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-anima-constrained-voucher
 date:
 - type: published
-  value: '2024-07-08'
+  at: '2024-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Richardson
-        language:
-        - en
       completename:
+        language: en
         content: Michael Richardson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sandelman Software Works
-  role:
+        - language: en
+          content: Sandelman Software Works
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Van der Stok
-        language:
-        - en
       completename:
+        language: en
         content: Peter Van der Stok
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: vanderstok consultancy
-  role:
+        - language: en
+          content: vanderstok consultancy
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Panos
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Panos
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Kampanakis
-        language:
-        - en
       completename:
+        language: en
         content: Panos Kampanakis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Esko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Esko
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Dijk
-        language:
-        - en
       completename:
+        language: en
         content: Esko Dijk
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IoTconsultancy.nl
-  role:
-  - type: author
+        - language: en
+          content: IoTconsultancy.nl
 version:
 - draft: '25'
-revdate: '2024-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines the Constrained Bootstrapping Remote Secure Key
-    Infrastructure (cBRSKI) protocol, which provides a solution for secure zero-touch
-    onboarding of resource-constrained (IoT) devices into the network of a domain
-    owner. This protocol is designed for constrained networks, which may have limited
-    data throughput or may experience frequent packet loss. cBRSKI is a variant of
-    the BRSKI protocol, which uses an artifact signed by the device manufacturer called
-    the "voucher" which enables a new device and the owner's network to mutually authenticate.
-    While the BRSKI voucher data is encoded in JSON, cBRSKI uses a compact CBOR-encoded
-    voucher. The BRSKI voucher data definition is extended with new data types that
-    allow for smaller voucher sizes. The Enrollment over Secure Transport (EST) protocol,
-    used in BRSKI, is replaced with EST-over- CoAPS; and HTTPS used in BRSKI is replaced
-    with DTLS-secured CoAP (CoAPS). This document Updates RFC 8995 and RFC 9148.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines the Constrained Bootstrapping Remote Secure Key\n
+    \  Infrastructure (cBRSKI) protocol, which provides a solution for\n   secure
+    zero-touch onboarding of resource-constrained (IoT) devices\n   into the network
+    of a domain owner.  This protocol is designed for\n   constrained networks, which
+    may have limited data throughput or may\n   experience frequent packet loss. cBRSKI
+    is a variant of the BRSKI\n   protocol, which uses an artifact signed by the device
+    manufacturer\n   called the \"voucher\" which enables a new device and the owner's\n
+    \  network to mutually authenticate.  While the BRSKI voucher data is\n   encoded
+    in JSON, cBRSKI uses a compact CBOR-encoded voucher.  The\n   BRSKI voucher data
+    definition is extended with new data types that\n   allow for smaller voucher
+    sizes.  The Enrollment over Secure\n   Transport (EST) protocol, used in BRSKI,
+    is replaced with EST-over-\n   CoAPS; and HTTPS used in BRSKI is replaced with
+    DTLS-secured CoAP\n   (CoAPS).  This document Updates RFC 8995 and RFC 9148.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-anima-constrained-voucher-24
-    docid:
-    - id: draft-ietf-anima-constrained-voucher-24
+    formattedref: draft-ietf-anima-constrained-voucher-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-voucher-24
+    docidentifier:
+    - content: draft-ietf-anima-constrained-voucher-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-anima-constrained-voucher-24
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-anima-constrained-voucher-26
-    docid:
-    - id: draft-ietf-anima-constrained-voucher-26
+    formattedref: draft-ietf-anima-constrained-voucher-26
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-voucher-26
+    docidentifier:
+    - content: draft-ietf-anima-constrained-voucher-26
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-anima-constrained-voucher-26
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-anima-constrained-voucher-25
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

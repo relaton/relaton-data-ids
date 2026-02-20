@@ -1,178 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-jose-json-web-proof-07
-title:
-- content: JSON Web Proof
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-07
-  type: src
+id: draftietfjosejsonwebproof07
 type: standard
-docid:
-- id: draft-ietf-jose-json-web-proof-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: JSON Web Proof
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-07
+docidentifier:
+- content: draft-ietf-jose-json-web-proof
+  type: Internet-Draft
+- content: draft-ietf-jose-json-web-proof-07
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-jose-json-web-proof
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-jose-json-web-proof
 date:
 - type: published
-  value: '2024-10-21'
+  at: '2024-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Waite
-        language:
-        - en
       completename:
+        language: en
         content: David Waite
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ping Identity
-  role:
+        - language: en
+          content: Ping Identity
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: M. B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: M. B.
       surname:
+        language: en
         content: Jones
-        language:
-        - en
       completename:
+        language: en
         content: Michael B. Jones
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Self-Issued Consulting
-  role:
+        - language: en
+          content: Self-Issued Consulting
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeremie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeremie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Miller
-        language:
-        - en
       completename:
+        language: en
         content: Jeremie Miller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ping Identity
-  role:
-  - type: author
+        - language: en
+          content: Ping Identity
 version:
 - draft: '07'
-revdate: '2024-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The JOSE set of standards established JSON-based container formats
-    for Keys, Signatures, and Encryption. They also established IANA registries to
-    enable the algorithms and representations used for them to be extended. Since
-    those were created, newer cryptographic algorithms that support selective disclosure
-    and unlinkability have matured and started seeing early market adoption. The COSE
-    set of standards likewise does this for CBOR-based containers, focusing on the
-    needs of environments which are better served using CBOR, such as constrained
-    devices and networks. This document defines a new container format similar in
-    purpose and design to JSON Web Signature (JWS) and COSE Signed Messages called
-    a _JSON Web Proof (JWP)_. Unlike JWS, which integrity-protects only a single payload,
-    JWP can integrity-protect multiple payloads in one message. It also specifies
-    a new presentation form that supports selective disclosure of individual payloads,
-    enables additional proof computation, and adds a protected header to prevent replay.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The JOSE set of standards established JSON-based container formats\n
+    \  for Keys, Signatures, and Encryption.  They also established IANA\n   registries
+    to enable the algorithms and representations used for them\n   to be extended.
+    \ Since those were created, newer cryptographic\n   algorithms that support selective
+    disclosure and unlinkability have\n   matured and started seeing early market
+    adoption.  The COSE set of\n   standards likewise does this for CBOR-based containers,
+    focusing on\n   the needs of environments which are better served using CBOR,
+    such as\n   constrained devices and networks.\n\n   This document defines a new
+    container format similar in purpose and\n   design to JSON Web Signature (JWS)
+    and COSE Signed Messages called a\n   _JSON Web Proof (JWP)_. Unlike JWS, which
+    integrity-protects only a\n   single payload, JWP can integrity-protect multiple
+    payloads in one\n   message.  It also specifies a new presentation form that supports\n
+    \  selective disclosure of individual payloads, enables additional proof\n   computation,
+    and adds a protected header to prevent replay.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-jose-json-web-proof-06
-    docid:
-    - id: draft-ietf-jose-json-web-proof-06
+    formattedref: draft-ietf-jose-json-web-proof-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-06
+    docidentifier:
+    - content: draft-ietf-jose-json-web-proof-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-jose-json-web-proof-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-jose-json-web-proof-08
-    docid:
-    - id: draft-ietf-jose-json-web-proof-08
+    formattedref: draft-ietf-jose-json-web-proof-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-08
+    docidentifier:
+    - content: draft-ietf-jose-json-web-proof-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-jose-json-web-proof-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-jose-json-web-proof-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

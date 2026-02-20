@@ -1,185 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-t2t-senml-as-coreconf-01
-title:
-- content: SenML is CORECONF (almost)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-t2t-senml-as-coreconf-01
-  type: src
+id: draftt2tsenmlascoreconf01
 type: standard
-docid:
-- id: draft-t2t-senml-as-coreconf-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SenML is CORECONF (almost)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-t2t-senml-as-coreconf-01
+docidentifier:
+- content: draft-t2t-senml-as-coreconf
+  type: Internet-Draft
+- content: draft-t2t-senml-as-coreconf-01
   type: Internet-Draft
   primary: true
-- id: I-D.t2t-senml-as-coreconf
-  type: IETF
-  scope: anchor
 docnumber: I-D.t2t-senml-as-coreconf
 date:
 - type: published
-  value: '2024-09-12'
+  at: '2024-09-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Manoj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Manoj
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: G
-        language:
-        - en
       completename:
+        language: en
         content: Manoj G
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Institut MINES TELECOM; IMT Atlantique
-  role:
+        - language: en
+          content: Institut MINES TELECOM; IMT Atlantique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Laurent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Laurent
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Toutain
-        language:
-        - en
       completename:
+        language: en
         content: Laurent Toutain
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Institut MINES TELECOM; IMT Atlantique
-  role:
+        - language: en
+          content: Institut MINES TELECOM; IMT Atlantique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alex
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Fernandez
-        language:
-        - en
       completename:
+        language: en
         content: Alex Fernandez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Institut MINES TELECOM; IMT Atlantique
-  role:
+        - language: en
+          content: Institut MINES TELECOM; IMT Atlantique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: BONNIN
-        language:
-        - en
       completename:
+        language: en
         content: Jean-Marie BONNIN
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Institut MINES TELECOM; IMT Atlantique
-  role:
-  - type: author
+        - language: en
+          content: Institut MINES TELECOM; IMT Atlantique
 version:
 - draft: '01'
-revdate: '2024-09-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>SenML is one of the data formats used by the Internet-of-Things (IoT)
-    devices to send simple sensor readings and device parameters over the network.
-    However, a lack of a YANG model for SenML means it cannot be used by the applications
-    which already use YANG for data modeling and validation. Furthermore, some of
-    the encoding formats and tools available for YANG models, cannot be used by the
-    devices sending data in SenML format. This document provides one of the ways to
-    model SenML data in YANG. Additionally, SenML data is encoded into CORECONF format
-    using this YANG model to concisely represent the data.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   SenML is one of the data formats used by the Internet-of-Things (IoT)\n
+    \  devices to send simple sensor readings and device parameters over the\n   network.
+    \ However, a lack of a YANG model for SenML means it cannot\n   be used by the
+    applications which already use YANG for data modeling\n   and validation.  Furthermore,
+    some of the encoding formats and tools\n   available for YANG models, cannot be
+    used by the devices sending data\n   in SenML format.  This document provides
+    one of the ways to model\n   SenML data in YANG.  Additionally, SenML data is
+    encoded into\n   CORECONF format using this YANG model to concisely represent
+    the\n   data.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-t2t-senml-as-coreconf-00
-    docid:
-    - id: draft-t2t-senml-as-coreconf-00
+    formattedref: draft-t2t-senml-as-coreconf-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-t2t-senml-as-coreconf-00
+    docidentifier:
+    - content: draft-t2t-senml-as-coreconf-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-t2t-senml-as-coreconf-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-t2t-senml-as-coreconf-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

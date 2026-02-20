@@ -1,232 +1,203 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-enhanced-vpn-06
-title:
-- content: A Framework for Enhanced Virtual Private Networks (VPN+) Service
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn-06
-  type: src
+id: draftietfteasenhancedvpn06
 type: standard
-docid:
-- id: draft-ietf-teas-enhanced-vpn-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Framework for Enhanced Virtual Private Networks (VPN+) Service
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn-06
+docidentifier:
+- content: draft-ietf-teas-enhanced-vpn
+  type: Internet-Draft
+- content: draft-ietf-teas-enhanced-vpn-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-enhanced-vpn
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-enhanced-vpn
 date:
 - type: published
-  value: '2020-07-13'
+  at: '2020-07-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stewart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stewart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bryant
-        language:
-        - en
       completename:
+        language: en
         content: Stewart Bryant
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenqiang
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenqiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Takuya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Takuya
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Miyasaka
-        language:
-        - en
       completename:
+        language: en
         content: Takuya Miyasaka
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: KDDI Corporation
-  role:
+        - language: en
+          content: KDDI Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Young
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Young
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Young Lee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Samsung
-  role:
-  - type: author
+        - language: en
+          content: Samsung
 version:
 - draft: '06'
-revdate: '2020-07-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the framework for Enhanced Virtual Private
-    Network (VPN+) service. The purpose is to support the needs of new applications,
-    particularly applications that are associated with 5G services, by utilizing an
-    approach that is based on existing VPN and Traffic Engineering (TE) technologies
-    and adds features that specific services require over and above traditional VPNs.
-    Typically, VPN+ will be used to form the underpinning of network slicing, but
-    could also be of use in its own right providing enhanced connectivity services
-    between customer sites. It is envisaged that enhanced VPNs will be delivered using
-    a combination of existing, modified, and new networking technologies. This document
-    provides an overview of relevant technologies and identifies some areas for potential
-    new work. Comparing to traditional VPNs, It is not envisaged that quite large
-    numbers of VPN+ services will be deployed in a network. In other word, it is not
-    intended that all existing VPNs supported by a network will use VPN+ related techniques.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the framework for Enhanced Virtual Private\n
+    \  Network (VPN+) service.  The purpose is to support the needs of new\n   applications,
+    particularly applications that are associated with 5G\n   services, by utilizing
+    an approach that is based on existing VPN and\n   Traffic Engineering (TE) technologies
+    and adds features that specific\n   services require over and above traditional
+    VPNs.\n\n   Typically, VPN+ will be used to form the underpinning of network\n
+    \  slicing, but could also be of use in its own right providing enhanced\n   connectivity
+    services between customer sites.\n\n   It is envisaged that enhanced VPNs will
+    be delivered using a\n   combination of existing, modified, and new networking
+    technologies.\n   This document provides an overview of relevant technologies
+    and\n   identifies some areas for potential new work.\n\n   Comparing to traditional
+    VPNs, It is not envisaged that quite large\n   numbers of VPN+ services will be
+    deployed in a network.  In other\n   word, it is not intended that all existing
+    VPNs supported by a\n   network will use VPN+ related techniques.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-enhanced-vpn-05
-    docid:
-    - id: draft-ietf-teas-enhanced-vpn-05
+    formattedref: draft-ietf-teas-enhanced-vpn-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn-05
+    docidentifier:
+    - content: draft-ietf-teas-enhanced-vpn-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-enhanced-vpn-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-enhanced-vpn-07
-    docid:
-    - id: draft-ietf-teas-enhanced-vpn-07
+    formattedref: draft-ietf-teas-enhanced-vpn-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-enhanced-vpn-07
+    docidentifier:
+    - content: draft-ietf-teas-enhanced-vpn-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-enhanced-vpn-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-enhanced-vpn-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

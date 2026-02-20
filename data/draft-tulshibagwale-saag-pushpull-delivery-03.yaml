@@ -1,172 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-tulshibagwale-saag-pushpull-delivery-03
-title:
-- content: Push And Pull Based Security Event Token (SET) Delivery
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tulshibagwale-saag-pushpull-delivery-03
-  type: src
+id: drafttulshibagwalesaagpushpulldelivery03
 type: standard
-docid:
-- id: draft-tulshibagwale-saag-pushpull-delivery-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Push And Pull Based Security Event Token (SET) Delivery
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tulshibagwale-saag-pushpull-delivery-03
+docidentifier:
+- content: draft-tulshibagwale-saag-pushpull-delivery
+  type: Internet-Draft
+- content: draft-tulshibagwale-saag-pushpull-delivery-03
   type: Internet-Draft
   primary: true
-- id: I-D.tulshibagwale-saag-pushpull-delivery
-  type: IETF
-  scope: anchor
 docnumber: I-D.tulshibagwale-saag-pushpull-delivery
 date:
 - type: published
-  value: '2025-04-17'
+  at: '2025-04-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Atul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Atul
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Tulshibagwale
-        language:
-        - en
       completename:
+        language: en
         content: Atul Tulshibagwale
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SGNL
-  role:
+        - language: en
+          content: SGNL
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Apoorva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Apoorva
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Deshpande
-        language:
-        - en
       completename:
+        language: en
         content: Apoorva Deshpande
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Okta
-  role:
+        - language: en
+          content: Okta
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aaron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aaron
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Parecki
-        language:
-        - en
       completename:
+        language: en
         content: Aaron Parecki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Okta
-  role:
-  - type: author
+        - language: en
+          content: Okta
 version:
 - draft: '03'
-revdate: '2025-04-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This specification defines how multiple Security Event Tokens (SETs)
-    can be delivered and received to and by an intended recipeint using HTTP POST
-    over TLS or WebSocket binding. This specification enabled following two use cases
-    - * In situations where a transmitter of Security Event Tokens (SETs) to a network
-    peer is also a receiver of SETs from the same peer, it is helpful to have an efficient
-    way of sending and receiving SETs in one HTTP transaction. In many cases, such
-    as when using the OpenID Shared Signals Framework (SSF), the situation where each
-    entity is both a transmitter and receiver is getting increasingly common. * In
-    situations where a transmitter of Security Event Tokens (SETs) wants to transmit
-    multiple SETs to the reciever in a single HTTP call. Using current mechanisms
-    such as "Push-Based Delivery of Security Event Tokens (SETs) Using HTTP" or "Poll-Based
-    Delivery of Security Event Tokens (SETs) Using HTTP" both require two or more
-    HTTP connections to exchange SETs between peers. This is inefficient due to the
-    latency of setting up each communication. This specification enables mutiple events
-    to be transmitted in bi-directional transmission and reception of multiple SETs
-    in one HTTP connection, and enables them to do so over a single HTTP or WebSocket
-    binding. About This Document This note is to be removed before publishing as an
-    RFC. The latest revision of this draft can be found at https://sgnl- ai.github.io/pushpull/.
-    Status information for this document may be found at https://datatracker.ietf.org/doc/draft-tulshibagwale-saag-
-    pushpull-delivery/. Source for this draft and an issue tracker can be found at
-    https://github.com/SGNL-ai/pushpull.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification defines how multiple Security Event Tokens (SETs)\n
+    \  can be delivered and received to and by an intended recipeint using\n   HTTP
+    POST over TLS or WebSocket binding.\n\n   This specification enabled following
+    two use cases -\n\n   *  In situations where a transmitter of Security Event Tokens
+    (SETs)\n      to a network peer is also a receiver of SETs from the same peer,\n
+    \     it is helpful to have an efficient way of sending and receiving\n      SETs
+    in one HTTP transaction.  In many cases, such as when using\n      the OpenID
+    Shared Signals Framework (SSF), the situation where\n      each entity is both
+    a transmitter and receiver is getting\n      increasingly common.\n\n   *  In
+    situations where a transmitter of Security Event Tokens (SETs)\n      wants to
+    transmit multiple SETs to the reciever in a single HTTP\n      call.\n\n   Using
+    current mechanisms such as \"Push-Based Delivery of Security\n   Event Tokens
+    (SETs) Using HTTP\" or \"Poll-Based Delivery of Security\n   Event Tokens (SETs)
+    Using HTTP\" both require two or more HTTP\n   connections to exchange SETs between
+    peers.  This is inefficient due\n   to the latency of setting up each communication.
+    \ This specification\n   enables mutiple events to be transmitted in bi-directional\n
+    \  transmission and reception of multiple SETs in one HTTP connection,\n   and
+    enables them to do so over a single HTTP or WebSocket binding.\n\nAbout This Document\n\n
+    \  This note is to be removed before publishing as an RFC.\n\n   The latest revision
+    of this draft can be found at https://sgnl-\n   ai.github.io/pushpull/.  Status
+    information for this document may be\n   found at https://datatracker.ietf.org/doc/draft-tulshibagwale-saag-\n
+    \  pushpull-delivery/.\n\n   Source for this draft and an issue tracker can be
+    found at\n   https://github.com/SGNL-ai/pushpull.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tulshibagwale-saag-pushpull-delivery-02
-    docid:
-    - id: draft-tulshibagwale-saag-pushpull-delivery-02
+    formattedref: draft-tulshibagwale-saag-pushpull-delivery-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tulshibagwale-saag-pushpull-delivery-02
+    docidentifier:
+    - content: draft-tulshibagwale-saag-pushpull-delivery-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tulshibagwale-saag-pushpull-delivery-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tulshibagwale-saag-pushpull-delivery-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

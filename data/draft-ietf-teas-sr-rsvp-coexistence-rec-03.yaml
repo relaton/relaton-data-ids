@@ -1,205 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-sr-rsvp-coexistence-rec-03
-title:
-- content: Recommendations for RSVP-TE and Segment Routing LSP co-existence
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-sr-rsvp-coexistence-rec-03
-  type: src
+id: draftietfteassrrsvpcoexistencerec03
 type: standard
-docid:
-- id: draft-ietf-teas-sr-rsvp-coexistence-rec-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Recommendations for RSVP-TE and Segment Routing LSP co-existence
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-sr-rsvp-coexistence-rec-03
+docidentifier:
+- content: draft-ietf-teas-sr-rsvp-coexistence-rec
+  type: Internet-Draft
+- content: draft-ietf-teas-sr-rsvp-coexistence-rec-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-sr-rsvp-coexistence-rec
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-sr-rsvp-coexistence-rec
 date:
 - type: published
-  value: '2018-04-26'
+  at: '2018-04-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Harish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Harish
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Sitaraman
-        language:
-        - en
       completename:
+        language: en
         content: Harish Sitaraman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishnu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: V. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishnu
+      - language: en
+        script: Latn
+        initial: V
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: V. P.
       surname:
+        language: en
         content: Beeram
-        language:
-        - en
       completename:
+        language: en
         content: Vishnu Pavan Beeram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ina
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ina
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Minei
-        language:
-        - en
       completename:
+        language: en
         content: Ina Minei
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc.
-  role:
+        - language: en
+          content: Google, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siva
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivabalan
-        language:
-        - en
       completename:
+        language: en
         content: Siva Sivabalan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '03'
-revdate: '2018-04-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Operators are looking to introduce services over Segment Routing (SR)
-    LSPs in networks running Resource Reservation Protocol (RSVP-TE) LSPs. In some
-    instances, operators are also migrating existing services from RSVP-TE to SR LSPs.
-    For example, there might be certain services that are well suited for SR and need
-    to co-exist with RSVP-TE in the same network. In other cases, services running
-    on RSVP-TE might be migrated to run over SR. Such introduction or migration of
-    traffic to SR might require co-existence with RSVP-TE in the same network for
-    an extended period of time depending on the operator's intent. The following document
-    provides solution options for keeping the traffic engineering database (TED) consistent
-    across the network, accounting for the different bandwidth utilization between
-    SR and RSVP-TE.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Operators are looking to introduce services over Segment Routing (SR)\n
+    \  LSPs in networks running Resource Reservation Protocol (RSVP-TE)\n   LSPs.
+    \ In some instances, operators are also migrating existing\n   services from RSVP-TE
+    to SR LSPs.  For example, there might be\n   certain services that are well suited
+    for SR and need to co-exist\n   with RSVP-TE in the same network.  In other cases,
+    services running\n   on RSVP-TE might be migrated to run over SR.  Such introduction
+    or\n   migration of traffic to SR might require co-existence with RSVP-TE in\n
+    \  the same network for an extended period of time depending on the\n   operator's
+    intent.  The following document provides solution options\n   for keeping the
+    traffic engineering database (TED) consistent across\n   the network, accounting
+    for the different bandwidth utilization\n   between SR and RSVP-TE.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-sr-rsvp-coexistence-rec-02
-    docid:
-    - id: draft-ietf-teas-sr-rsvp-coexistence-rec-02
+    formattedref: draft-ietf-teas-sr-rsvp-coexistence-rec-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-sr-rsvp-coexistence-rec-02
+    docidentifier:
+    - content: draft-ietf-teas-sr-rsvp-coexistence-rec-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-sr-rsvp-coexistence-rec-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-sr-rsvp-coexistence-rec-04
-    docid:
-    - id: draft-ietf-teas-sr-rsvp-coexistence-rec-04
+    formattedref: draft-ietf-teas-sr-rsvp-coexistence-rec-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-sr-rsvp-coexistence-rec-04
+    docidentifier:
+    - content: draft-ietf-teas-sr-rsvp-coexistence-rec-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-sr-rsvp-coexistence-rec-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-sr-rsvp-coexistence-rec-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

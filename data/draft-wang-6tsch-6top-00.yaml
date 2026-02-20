@@ -1,163 +1,142 @@
 ---
-schema-version: v1.2.9
-id: draft-wang-6tsch-6top-00
-title:
-- content: 6TSCH Operation Sublayer (6top)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wang-6tsch-6top-00
-  type: src
+id: draftwang6tsch6top00
 type: standard
-docid:
-- id: draft-wang-6tsch-6top-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 6TSCH Operation Sublayer (6top)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wang-6tsch-6top-00
+docidentifier:
+- content: draft-wang-6tsch-6top
+  type: Internet-Draft
+- content: draft-wang-6tsch-6top-00
   type: Internet-Draft
   primary: true
-- id: I-D.wang-6tsch-6top
-  type: IETF
-  scope: anchor
 docnumber: I-D.wang-6tsch-6top
 date:
 - type: published
-  value: '2013-07-14'
+  at: '2013-07-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Univ. of Sci. and Tech. Beijing
-  role:
+        - language: en
+          content: Univ. of Sci. and Tech. Beijing
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xavier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xavier
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Vilajosana
-        language:
-        - en
       completename:
+        language: en
         content: Xavier Vilajosana
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitat Oberta de Catalunya
-  role:
+        - language: en
+          content: Universitat Oberta de Catalunya
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Watteyne
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Watteyne
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Linear Technology
-  role:
-  - type: author
+        - language: en
+          content: Linear Technology
 version:
 - draft: '00'
-revdate: '2013-07-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The recently published [IEEE802154e] standard formalizes the concept
-    of link-layer resources in LLNs. Nodes are synchronized and follow a schedule.
-    A time slot in that schedule corresponds to an atomic link-layer resource, and
-    can be allocated to any pair of neighbors in the network. This allows the schedule
-    to be built to tightly match each node's bandwidth, latency and energy constraints,
-    while ensuring collision-free communication. The [IEEE802154e] standard does not,
-    however, present a mechanism to do so, as building and managing the schedule is
-    out of the standard's scope. Routing layers such as the IETF IPv6 Routing Protocol
-    for LLNs (RPL) provide a mechanism to route multipoint-to-point traffic (from
-    devices inside the LLN towards a central control point) and point-to-multipoint
-    traffic (from the central control point to the devices inside the LLN). Network
-    layer overlays cannot be optimized and adapted to take advantage of the cell-based
-    topology created by the underlying TSCH MAC layer as a missing set of functionalities
-    need to be defined. This document describes the 6TSCH Operation Sublayer (6top)
-    and the main commands it provides to upper network layers such as RPL or GMPLS.
-    The set of functionalities includes feedback metrics from cell states so network
-    layers can take routing decisions, TSCH configuration and control procedures,
-    and the support for centralized and decentralized scheduling policies. In addition,
-    6top can be configured to enable packet switching at layer 2.5, analogous to GMPLS.
-    Once a multi-hop track is defined, input cells can be mapped to output cells and
-    packets can be relayed without the need of higher layer routing. 6top defines
-    the operations so input cells and output cells can be mapped and the configuration
-    maintained.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The recently published [IEEE802154e] standard formalizes the concept\n
+    \  of link-layer resources in LLNs.  Nodes are synchronized and follow a\n   schedule.
+    \ A time slot in that schedule corresponds to an atomic\n   link-layer resource,
+    and can be allocated to any pair of neighbors in\n   the network.  This allows
+    the schedule to be built to tightly match\n   each node's bandwidth, latency and
+    energy constraints, while ensuring\n   collision-free communication.  The [IEEE802154e]
+    standard does not,\n   however, present a mechanism to do so, as building and
+    managing the\n   schedule is out of the standard's scope.  Routing layers such
+    as the\n   IETF IPv6 Routing Protocol for LLNs (RPL) provide a mechanism to\n
+    \  route multipoint-to-point traffic (from devices inside the LLN\n   towards
+    a central control point) and point-to-multipoint traffic\n   (from the central
+    control point to the devices inside the LLN).\n   Network layer overlays cannot
+    be optimized and adapted to take\n   advantage of the cell-based topology created
+    by the underlying TSCH\n   MAC layer as a missing set of functionalities need
+    to be defined.\n   This document describes the 6TSCH Operation Sublayer (6top)
+    and the\n   main commands it provides to upper network layers such as RPL or\n
+    \  GMPLS.  The set of functionalities includes feedback metrics from\n   cell
+    states so network layers can take routing decisions, TSCH\n   configuration and
+    control procedures, and the support for centralized\n   and decentralized scheduling
+    policies.  In addition, 6top can be\n   configured to enable packet switching
+    at layer 2.5, analogous to\n   GMPLS.  Once a multi-hop track is defined, input
+    cells can be mapped\n   to output cells and packets can be relayed without the
+    need of higher\n   layer routing. 6top defines the operations so input cells and
+    output\n   cells can be mapped and the configuration maintained.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wang-6tsch-6top-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

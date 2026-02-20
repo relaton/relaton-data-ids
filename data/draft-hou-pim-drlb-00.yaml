@@ -1,179 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-hou-pim-drlb-00
-title:
-- content: Protocol Independent Multicast DR Load Balancing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hou-pim-drlb-00
-  type: src
+id: drafthoupimdrlb00
 type: standard
-docid:
-- id: draft-hou-pim-drlb-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Protocol Independent Multicast DR Load Balancing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hou-pim-drlb-00
+docidentifier:
+- content: draft-hou-pim-drlb
+  type: Internet-Draft
+- content: draft-hou-pim-drlb-00
   type: Internet-Draft
   primary: true
-- id: I-D.hou-pim-drlb
-  type: IETF
-  scope: anchor
 docnumber: I-D.hou-pim-drlb
 date:
 - type: published
-  value: '2011-10-14'
+  at: '2011-10-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yiqun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yiqun
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cai
-        language:
-        - en
       completename:
+        language: en
         content: Yiqun Cai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sri
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Vallepalli
-        language:
-        - en
       completename:
+        language: en
         content: Sri Vallepalli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Heidi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Heidi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Ou
-        language:
-        - en
       completename:
+        language: en
         content: Heidi Ou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andy
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Green
-        language:
-        - en
       completename:
+        language: en
         content: Andy Green
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: British Telecom
-  role:
-  - type: author
+        - language: en
+          content: British Telecom
 version:
 - draft: '00'
-revdate: '2011-10-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>On a multi-access network such as an Ethernet, one of the PIM routers
-    is elected as a Designated Routers (DR). The PIM DR has two roles in the PIM protocol.
-    On the first hop network, the PIM DR is responsible for registering an active
-    source to the RP if the group is operated in PIM SM. On the last hop network,
-    the PIM DR is responsible for tracking local multicast listeners and forwarding
-    traffic to these listeners if the group is operated in PIM SM/SSM/DM. In this
-    document, we propose a modification to the PIM protocol that allows multiple of
-    these last hop routers to be selected so that the forwarding load can be distributed
-    to and handled among these routers. A router responsible for forwarding for a
-    particular group is called a Group Designated Router (GDR).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   On a multi-access network such as an Ethernet, one of the PIM routers\n
+    \  is elected as a Designated Routers (DR).  The PIM DR has two roles in\n   the
+    PIM protocol.  On the first hop network, the PIM DR is\n   responsible for registering
+    an active source to the RP if the group\n   is operated in PIM SM.  On the last
+    hop network, the PIM DR is\n   responsible for tracking local multicast listeners
+    and forwarding\n   traffic to these listeners if the group is operated in PIM
+    SM/SSM/DM.\n   In this document, we propose a modification to the PIM protocol
+    that\n   allows multiple of these last hop routers to be selected so that the\n
+    \  forwarding load can be distributed to and handled among these\n   routers.
+    \ A router responsible for forwarding for a particular group\n   is called a Group
+    Designated Router (GDR).\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hou-pim-drlb-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

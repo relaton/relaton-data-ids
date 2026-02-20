@@ -1,207 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-dnoveck-nfsv4-storage-control-01
-title:
-- content: Storage Control Extensions for NFS Version 4
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dnoveck-nfsv4-storage-control-01
-  type: src
+id: draftdnovecknfsv4storagecontrol01
 type: standard
-docid:
-- id: draft-dnoveck-nfsv4-storage-control-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Storage Control Extensions for NFS Version 4
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dnoveck-nfsv4-storage-control-01
+docidentifier:
+- content: draft-dnoveck-nfsv4-storage-control
+  type: Internet-Draft
+- content: draft-dnoveck-nfsv4-storage-control-01
   type: Internet-Draft
   primary: true
-- id: I-D.dnoveck-nfsv4-storage-control
-  type: IETF
-  scope: anchor
 docnumber: I-D.dnoveck-nfsv4-storage-control
 date:
 - type: published
-  value: '2011-03-29'
+  at: '2011-03-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Noveck
-        language:
-        - en
       completename:
+        language: en
         content: David Noveck
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: EMC
-  role:
+        - language: en
+          content: EMC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pranoop
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pranoop
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Erasani
-        language:
-        - en
       completename:
+        language: en
         content: Pranoop Erasani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp
-  role:
+        - language: en
+          content: NetApp
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lakshmi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lakshmi
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Bairavasundaram
-        language:
-        - en
       completename:
+        language: en
         content: Lakshmi Bairavasundaram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp
-  role:
+        - language: en
+          content: NetApp
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peng
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Dai
-        language:
-        - en
       completename:
+        language: en
         content: Peng Dai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vmware
-  role:
+        - language: en
+          content: Vmware
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christos
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christos
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Karamonolis
-        language:
-        - en
       completename:
+        language: en
         content: Christos Karamonolis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vmware
-  role:
-  - type: author
+        - language: en
+          content: Vmware
 version:
 - draft: '01'
-revdate: '2011-03-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Developments in storage systems have made it important for applications
-    to have control over the characteristics of the storage that will be used for
-    their particular files. The development of pNFS has added to the usefulness of
-    such control mechanisms as it has created the opportunity for the hierarchical
-    organization of file names to be separated from the control of storage characteristics
-    for individual files, including the assignment to storage locations to reflect
-    the performance or other needs of those specific files. This document proposes
-    extensions to NFS version 4 to allow storage requirements to be communicated to
-    the NFS version 4 server.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Developments in storage systems have made it important for\napplications
+    to have control over the characteristics of the storage\nthat will be used for
+    their particular files.  The development of\npNFS has added to the usefulness
+    of such control mechanisms as it has\ncreated the opportunity for the hierarchical
+    organization of file\nnames to be separated from the control of storage characteristics
+    for\nindividual files, including the assignment to storage locations to\nreflect
+    the performance or other needs of those specific files.  This\ndocument proposes
+    extensions to NFS version 4 to allow storage\nrequirements to be communicated
+    to the NFS version 4 server.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dnoveck-nfsv4-storage-control-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

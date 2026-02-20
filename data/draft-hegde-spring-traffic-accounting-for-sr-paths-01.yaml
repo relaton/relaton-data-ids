@@ -1,118 +1,105 @@
 ---
-schema-version: v1.2.9
-id: draft-hegde-spring-traffic-accounting-for-sr-paths-01
-title:
-- content: Traffic Accounting for MPLS Segment Routing Paths
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hegde-spring-traffic-accounting-for-sr-paths-01
-  type: src
+id: drafthegdespringtrafficaccountingforsrpaths01
 type: standard
-docid:
-- id: draft-hegde-spring-traffic-accounting-for-sr-paths-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Traffic Accounting for MPLS Segment Routing Paths
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hegde-spring-traffic-accounting-for-sr-paths-01
+docidentifier:
+- content: draft-hegde-spring-traffic-accounting-for-sr-paths
+  type: Internet-Draft
+- content: draft-hegde-spring-traffic-accounting-for-sr-paths-01
   type: Internet-Draft
   primary: true
-- id: I-D.hegde-spring-traffic-accounting-for-sr-paths
-  type: IETF
-  scope: anchor
 docnumber: I-D.hegde-spring-traffic-accounting-for-sr-paths
 date:
 - type: published
-  value: '2017-10-30'
+  at: '2017-10-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shraddha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shraddha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hegde
-        language:
-        - en
       completename:
+        language: en
         content: Shraddha Hegde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks, Inc.
 version:
 - draft: '01'
-revdate: '2017-10-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Traffic statistics form an important part of operations and maintenance
-    data that are used to create demand matrices and for capacity planning in networks.
-    Segment Routing (SR) is a source routing paradigm that uses stack of labels to
-    represent a path. The SR path specific state is not stored in any other node in
-    the network except the head-end node of the SR path. Traffic statistics specific
-    to each SR path are an important component of the data which helps the controllers
-    to lay out the SR paths in a way that optimizes the use of network resources.
-    SR paths are inherently ECMP aware. As SR paths do not have state in the core
-    of the network, it is not possible to collect the SR path traffic statistics accurately
-    on each interface. This document describes an MPLS forwarding plane mechanism
-    to identify the SR path to which a packet belongs and so facilitate accounting
-    of traffic for MPLS SR paths. The mechanisms described in this document may also
-    be applied to other MPLS paths (i.e., Label Switched Paths) and can be used to
-    track traffic statistics in multipoint-to-point environments such as those where
-    LDP is in use.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Traffic statistics form an important part of operations and\n   maintenance
+    data that are used to create demand matrices and for\n   capacity planning in
+    networks.  Segment Routing (SR) is a source\n   routing paradigm that uses stack
+    of labels to represent a path.  The\n   SR path specific state is not stored in
+    any other node in the network\n   except the head-end node of the SR path.  Traffic
+    statistics specific\n   to each SR path are an important component of the data
+    which helps\n   the controllers to lay out the SR paths in a way that optimizes
+    the\n   use of network resources.  SR paths are inherently ECMP aware.\n\n   As
+    SR paths do not have state in the core of the network, it is not\n   possible
+    to collect the SR path traffic statistics accurately on each\n   interface.  This
+    document describes an MPLS forwarding plane\n   mechanism to identify the SR path
+    to which a packet belongs and so\n   facilitate accounting of traffic for MPLS
+    SR paths.\n\n   The mechanisms described in this document may also be applied
+    to\n   other MPLS paths (i.e., Label Switched Paths) and can be used to\n   track
+    traffic statistics in multipoint-to-point environments such as\n   those where
+    LDP is in use.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-hegde-spring-traffic-accounting-for-sr-paths-00
-    docid:
-    - id: draft-hegde-spring-traffic-accounting-for-sr-paths-00
+    formattedref: draft-hegde-spring-traffic-accounting-for-sr-paths-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hegde-spring-traffic-accounting-for-sr-paths-00
+    docidentifier:
+    - content: draft-hegde-spring-traffic-accounting-for-sr-paths-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hegde-spring-traffic-accounting-for-sr-paths-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-hegde-spring-traffic-accounting-for-sr-paths-02
-    docid:
-    - id: draft-hegde-spring-traffic-accounting-for-sr-paths-02
+    formattedref: draft-hegde-spring-traffic-accounting-for-sr-paths-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hegde-spring-traffic-accounting-for-sr-paths-02
+    docidentifier:
+    - content: draft-hegde-spring-traffic-accounting-for-sr-paths-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hegde-spring-traffic-accounting-for-sr-paths-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hegde-spring-traffic-accounting-for-sr-paths-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

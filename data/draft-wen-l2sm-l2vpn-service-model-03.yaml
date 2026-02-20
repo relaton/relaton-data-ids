@@ -1,186 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-wen-l2sm-l2vpn-service-model-03
-title:
-- content: A YANG Data Model for L2VPN Service Delivery
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wen-l2sm-l2vpn-service-model-03
-  type: src
+id: draftwenl2sml2vpnservicemodel03
 type: standard
-docid:
-- id: draft-wen-l2sm-l2vpn-service-model-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A YANG Data Model for L2VPN Service Delivery
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wen-l2sm-l2vpn-service-model-03
+docidentifier:
+- content: draft-wen-l2sm-l2vpn-service-model
+  type: Internet-Draft
+- content: draft-wen-l2sm-l2vpn-service-model-03
   type: Internet-Draft
   primary: true
-- id: I-D.wen-l2sm-l2vpn-service-model
-  type: IETF
-  scope: anchor
 docnumber: I-D.wen-l2sm-l2vpn-service-model
 date:
 - type: published
-  value: '2016-10-29'
+  at: '2016-10-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wen
-        language:
-        - en
       completename:
+        language: en
         content: Bin Wen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Giuseppe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Giuseppe
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fioccola
-        language:
-        - en
       completename:
+        language: en
         content: Giuseppe Fioccola
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chongfeng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chongfeng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Chongfeng Xie
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luay
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Jalil
-        language:
-        - en
       completename:
+        language: en
         content: Luay Jalil
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2016-10-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model that can be used to configure
-    a Layer 2 Provider Provisioned VPN service. This model is intended to be instantiated
-    at management system to deliver the overall service. This model is not a configuration
-    model to be used directly on network elements, but provides an abstracted view
-    of the Layer 2 VPN service configuration components. It is up to a management
-    system to take this as an input and use specific configurations models to configure
-    the different network elements to deliver the service. How configuration of network
-    elements is done is out of scope of the document. The data model in this document
-    includes support for point-to-point Virtual Private Wire Services (VPWS) and multipoint
-    Virtual Private LAN services (VPLS) that use Pseudowires signaled using the Label
-    Distribution Protocol (LDP) and the Border Gateway Protocol (BGP) as described
-    in RFC4761 and RFC6624.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a YANG data model that can be used to configure\n
+    \  a Layer 2 Provider Provisioned VPN service.\n\n   This model is intended to
+    be instantiated at management system to\n   deliver the overall service.  This
+    model is not a configuration model\n   to be used directly on network elements,
+    but provides an abstracted\n   view of the Layer 2 VPN service configuration components.
+    \ It is up\n   to a management system to take this as an input and use specific\n
+    \  configurations models to configure the different network elements to\n   deliver
+    the service.  How configuration of network elements is done\n   is out of scope
+    of the document.\n\n   The data model in this document includes support for point-to-point\n
+    \  Virtual Private Wire Services (VPWS) and multipoint Virtual Private\n   LAN
+    services (VPLS) that use Pseudowires signaled using the Label\n   Distribution
+    Protocol (LDP) and the Border Gateway Protocol (BGP) as\n   described in RFC4761
+    and RFC6624.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wen-l2sm-l2vpn-service-model-02
-    docid:
-    - id: draft-wen-l2sm-l2vpn-service-model-02
+    formattedref: draft-wen-l2sm-l2vpn-service-model-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wen-l2sm-l2vpn-service-model-02
+    docidentifier:
+    - content: draft-wen-l2sm-l2vpn-service-model-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wen-l2sm-l2vpn-service-model-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wen-l2sm-l2vpn-service-model-04
-    docid:
-    - id: draft-wen-l2sm-l2vpn-service-model-04
+    formattedref: draft-wen-l2sm-l2vpn-service-model-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wen-l2sm-l2vpn-service-model-04
+    docidentifier:
+    - content: draft-wen-l2sm-l2vpn-service-model-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wen-l2sm-l2vpn-service-model-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wen-l2sm-l2vpn-service-model-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

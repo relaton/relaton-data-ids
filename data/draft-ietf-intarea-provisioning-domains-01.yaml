@@ -1,197 +1,171 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-intarea-provisioning-domains-01
-title:
-- content: Discovering Provisioning Domain Names and Data
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-intarea-provisioning-domains-01
-  type: src
+id: draftietfintareaprovisioningdomains01
 type: standard
-docid:
-- id: draft-ietf-intarea-provisioning-domains-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Discovering Provisioning Domain Names and Data
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-intarea-provisioning-domains-01
+docidentifier:
+- content: draft-ietf-intarea-provisioning-domains
+  type: Internet-Draft
+- content: draft-ietf-intarea-provisioning-domains-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-intarea-provisioning-domains
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-intarea-provisioning-domains
 date:
 - type: published
-  value: '2018-02-09'
+  at: '2018-02-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pierre
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pierre
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Pfister
-        language:
-        - en
       completename:
+        language: en
         content: Pierre Pfister
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Vyncke
-        language:
-        - en
       completename:
+        language: en
         content: Éric Vyncke
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tommy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tommy
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Pauly
-        language:
-        - en
       completename:
+        language: en
         content: Tommy Pauly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple
-  role:
+        - language: en
+          content: Apple
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Schinazi
-        language:
-        - en
       completename:
+        language: en
         content: David Schinazi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple
-  role:
-  - type: author
+        - language: en
+          content: Apple
 version:
 - draft: '01'
-revdate: '2018-02-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>An increasing number of hosts access the Internet via multiple interfaces
-    or, in IPv6 multi-homed networks, via multiple IPv6 prefix configurations. This
-    document describes a way for hosts to identify such means, called Provisioning
-    Domains (PvDs), with Fully Qualified Domain Names (FQDN). Those identifiers are
-    advertised in a new Router Advertisement (RA) option and, when present, are associated
-    with the set of information included within the RA. Based on this FQDN, hosts
-    can retrieve additional information about their network access characteristics
-    via an HTTP over TLS query. This allows applications to select which Provisioning
-    Domains to use as well as to provide configuration parameters to the transport
-    layer and above.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   An increasing number of hosts access the Internet via multiple\n   interfaces
+    or, in IPv6 multi-homed networks, via multiple IPv6 prefix\n   configurations.\n\n
+    \  This document describes a way for hosts to identify such means,\n   called
+    Provisioning Domains (PvDs), with Fully Qualified Domain Names\n   (FQDN).  Those
+    identifiers are advertised in a new Router\n   Advertisement (RA) option and,
+    when present, are associated with the\n   set of information included within the
+    RA.\n\n   Based on this FQDN, hosts can retrieve additional information about\n
+    \  their network access characteristics via an HTTP over TLS query.\n   This allows
+    applications to select which Provisioning Domains to use\n   as well as to provide
+    configuration parameters to the transport layer\n   and above.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-intarea-provisioning-domains-00
-    docid:
-    - id: draft-ietf-intarea-provisioning-domains-00
+    formattedref: draft-ietf-intarea-provisioning-domains-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-intarea-provisioning-domains-00
+    docidentifier:
+    - content: draft-ietf-intarea-provisioning-domains-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-intarea-provisioning-domains-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-intarea-provisioning-domains-02
-    docid:
-    - id: draft-ietf-intarea-provisioning-domains-02
+    formattedref: draft-ietf-intarea-provisioning-domains-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-intarea-provisioning-domains-02
+    docidentifier:
+    - content: draft-ietf-intarea-provisioning-domains-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-intarea-provisioning-domains-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-intarea-provisioning-domains-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

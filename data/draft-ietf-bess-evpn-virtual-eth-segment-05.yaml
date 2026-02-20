@@ -1,229 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-virtual-eth-segment-05
-title:
-- content: EVPN Virtual Ethernet Segment
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-virtual-eth-segment-05
-  type: src
+id: draftietfbessevpnvirtualethsegment05
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-virtual-eth-segment-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN Virtual Ethernet Segment
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-virtual-eth-segment-05
+docidentifier:
+- content: draft-ietf-bess-evpn-virtual-eth-segment
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-virtual-eth-segment-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-virtual-eth-segment
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-virtual-eth-segment
 date:
 - type: published
-  value: '2020-03-02'
+  at: '2020-03-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Patrice
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrice
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Brissette
-        language:
-        - en
       completename:
+        language: en
         content: Patrice Brissette
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rick
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Schell
-        language:
-        - en
       completename:
+        language: en
         content: Rick Schell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper
-  role:
+        - language: en
+          content: Juniper
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '05'
-revdate: '2020-03-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>EVPN and PBB-EVPN introduce a family of solutions for multipoint Ethernet
-    services over MPLS/IP network with many advanced features among which their multi-homing
-    capabilities. These solutions introduce Single-Active and All-Active for an Ethernet
-    Segment (ES), itself defined as a set of physical links between the multi-homed
-    device/network and a set of PE devices that they are connected to. This document
-    extends the Ethernet Segment concept so that an ES can be associated to a set
-    of EVCs (e.g., VLANs) or other objects such as MPLS Label Switch Paths (LSPs)
-    or Pseudowires (PWs), referred to as Virtual Ethernet Segments (vES). This draft
-    describes the requirements and the extensions needed to support vES in EVPN and
-    PBB-EVPN.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   EVPN and PBB-EVPN introduce a family of solutions for multipoint\n
+    \  Ethernet services over MPLS/IP network with many advanced features\n   among
+    which their multi-homing capabilities.  These solutions\n   introduce Single-Active
+    and All-Active for an Ethernet Segment (ES),\n   itself defined as a set of physical
+    links between the multi-homed\n   device/network and a set of PE devices that
+    they are connected to.\n   This document extends the Ethernet Segment concept
+    so that an ES can\n   be associated to a set of EVCs (e.g., VLANs) or other objects
+    such as\n   MPLS Label Switch Paths (LSPs) or Pseudowires (PWs), referred to as\n
+    \  Virtual Ethernet Segments (vES).  This draft describes the\n   requirements
+    and the extensions needed to support vES in EVPN and\n   PBB-EVPN.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-evpn-virtual-eth-segment-04
-    docid:
-    - id: draft-ietf-bess-evpn-virtual-eth-segment-04
+    formattedref: draft-ietf-bess-evpn-virtual-eth-segment-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-virtual-eth-segment-04
+    docidentifier:
+    - content: draft-ietf-bess-evpn-virtual-eth-segment-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-virtual-eth-segment-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-evpn-virtual-eth-segment-06
-    docid:
-    - id: draft-ietf-bess-evpn-virtual-eth-segment-06
+    formattedref: draft-ietf-bess-evpn-virtual-eth-segment-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-virtual-eth-segment-06
+    docidentifier:
+    - content: draft-ietf-bess-evpn-virtual-eth-segment-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-virtual-eth-segment-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-virtual-eth-segment-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

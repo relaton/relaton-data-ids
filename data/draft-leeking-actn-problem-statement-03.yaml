@@ -1,231 +1,201 @@
 ---
-schema-version: v1.2.9
-id: draft-leeking-actn-problem-statement-03
-title:
-- content: Problem Statement for Abstraction and Control of Transport Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-leeking-actn-problem-statement-03
-  type: src
+id: draftleekingactnproblemstatement03
 type: standard
-docid:
-- id: draft-leeking-actn-problem-statement-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Problem Statement for Abstraction and Control of Transport Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-leeking-actn-problem-statement-03
+docidentifier:
+- content: draft-leeking-actn-problem-statement
+  type: Internet-Draft
+- content: draft-leeking-actn-problem-statement-03
   type: Internet-Draft
   primary: true
-- id: I-D.leeking-actn-problem-statement
-  type: IETF
-  scope: anchor
 docnumber: I-D.leeking-actn-problem-statement
 date:
 - type: published
-  value: '2014-09-29'
+  at: '2014-09-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Young
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Young
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Young Lee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: King
-        language:
-        - en
       completename:
+        language: en
         content: Daniel King
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Lancaster University
-  role:
+        - language: en
+          content: Lancaster University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: France Telecom
-  role:
+        - language: en
+          content: France Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ruiquan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ruiquan
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Jing
-        language:
-        - en
       completename:
+        language: en
         content: Ruiquan Jing
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: L. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: L. M.
       surname:
+        language: en
         content: Contreras
-        language:
-        - en
       completename:
+        language: en
         content: Luis M. Contreras
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
-  - type: author
+        - language: en
+          content: Telefonica
 version:
 - draft: '03'
-revdate: '2014-09-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Previously transport networks were typically static, lacked flexibility,
-    and required long planning times when deploying new services. Network Providers
-    and Service Providers have embraced technologies that allow separation of data
-    plane and control plane, distributed signaling for path setup and protection,
-    and centralized path computation for service planning and traffic engineering.
-    Although these technologies provide significant benefits, they do not meet the
-    growing need for network programmability, automation, resource sharing, and service
-    elasticity necessary for meeting operator's requirement for their virtual network
-    operation. Virtual network operation refers to the creation of a virtualized environment
-    allowing operators to view the abstraction of the underlying multi-admin, multi-vendor,
-    multi- technology networks and to operate, control and manage these multiple networks
-    as if a single virtualized network. Another dimension of virtual network operation
-    is associated with use of the common core transport network resource by multi-tenant
-    service networks as a way of providing a virtualized infrastructure to flexibly
-    offer new services and applications. The work effort investigating this problem
-    space is known as Abstraction and Control of Transport Networks (ACTN). This document
-    provides an ACTN problem description, scope of work, and outlines the core requirements
-    to facilitate virtual network operation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Previously transport networks were typically static, lacked\n   flexibility,
+    and required long planning times when deploying new\n   services. Network Providers
+    and Service Providers have embraced\n   technologies that allow separation of
+    data plane and control plane,\n   distributed signaling for path setup and protection,
+    and centralized\n   path computation for service planning and traffic engineering.\n
+    \  Although these technologies provide significant benefits, they do\n   not meet
+    the growing need for network programmability, automation,\n   resource sharing,
+    and service elasticity necessary for meeting\n   operator's requirement for their
+    virtual network operation.\n\n   Virtual network operation refers to the creation
+    of a\n   virtualized environment allowing operators to view the\n   abstraction
+    of the underlying multi-admin, multi-vendor, multi-\n   technology networks and
+    to operate, control and manage these\n   multiple networks as if a single virtualized
+    network. Another\n   dimension of virtual network operation is associated with
+    use of\n   the common core transport network resource by multi-tenant\n   service
+    networks as a way of providing a virtualized\n   infrastructure to flexibly offer
+    new services and applications.\n\n   The work effort investigating this problem
+    space is known as\n   Abstraction and Control of Transport Networks (ACTN). This\n
+    \  document provides an ACTN problem description, scope of work,\n   and outlines
+    the core requirements to facilitate virtual network\n   operation.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-leeking-actn-problem-statement-02
-    docid:
-    - id: draft-leeking-actn-problem-statement-02
+    formattedref: draft-leeking-actn-problem-statement-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-leeking-actn-problem-statement-02
+    docidentifier:
+    - content: draft-leeking-actn-problem-statement-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-leeking-actn-problem-statement-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-leeking-actn-problem-statement-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

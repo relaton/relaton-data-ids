@@ -1,212 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-self-ping-05
-title:
-- content: LSP Self-Ping
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-self-ping-05
-  type: src
+id: draftietfmplsselfping05
 type: standard
-docid:
-- id: draft-ietf-mpls-self-ping-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: LSP Self-Ping
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-self-ping-05
+docidentifier:
+- content: draft-ietf-mpls-self-ping
+  type: Internet-Draft
+- content: draft-ietf-mpls-self-ping-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-self-ping
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-self-ping
 date:
 - type: published
-  value: '2015-10-02'
+  at: '2015-10-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ron
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Bonica
-        language:
-        - en
       completename:
+        language: en
         content: Ron Bonica
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ina
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ina
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Minei
-        language:
-        - en
       completename:
+        language: en
         content: Ina Minei
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Conn
-        language:
-        - en
       completename:
+        language: en
         content: Michael Conn
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dante
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dante
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Pacella
-        language:
-        - en
       completename:
+        language: en
         content: Dante Pacella
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Tomotaki
-        language:
-        - en
       completename:
+        language: en
         content: Luis Tomotaki
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '05'
-revdate: '2015-10-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When certain RSVP-TE optimizations are implemented, ingress LSRs can
-    receive RSVP RESV messages before forwarding state has been installed on all downstream
-    nodes. According to the RSVP-TE specification, the ingress LSR can forward traffic
-    through an LSP as soon as it receives a RESV message. However, if the ingress
-    LSR forwards traffic through the LSP before forwarding state has been installed
-    on all downstream nodes, traffic can be lost. This document describes LSP Self-ping.
-    When an ingress LSR receives an RESV message, it can invoke LSP Self-ping procedures
-    to ensure that forwarding state has been installed on all downstream nodes. LSP
-    Self-ping is a new protocol. It is not an extension of LSP Ping. Although LSP
-    Ping and LSP Self-ping are named similarly, each is designed for a unique purpose.
-    Each protocol listens on its own UDP port and executes its own procedures. LSP
-    Self-ping is an extremely light-weight mechanism. It does not consume control
-    plane resources on transit or egress LSRs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   When certain RSVP-TE optimizations are implemented, ingress LSRs can\n
+    \  receive RSVP RESV messages before forwarding state has been installed\n   on
+    all downstream nodes.  According to the RSVP-TE specification, the\n   ingress
+    LSR can forward traffic through an LSP as soon as it receives\n   a RESV message.
+    \ However, if the ingress LSR forwards traffic through\n   the LSP before forwarding
+    state has been installed on all downstream\n   nodes, traffic can be lost.\n\n
+    \  This document describes LSP Self-ping.  When an ingress LSR receives\n   an
+    RESV message, it can invoke LSP Self-ping procedures to ensure\n   that forwarding
+    state has been installed on all downstream nodes.\n\n   LSP Self-ping is a new
+    protocol.  It is not an extension of LSP Ping.\n   Although LSP Ping and LSP Self-ping
+    are named similarly, each is\n   designed for a unique purpose.  Each protocol
+    listens on its own UDP\n   port and executes its own procedures.\n\n   LSP Self-ping
+    is an extremely light-weight mechanism.  It does not\n   consume control plane
+    resources on transit or egress LSRs.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mpls-self-ping-04
-    docid:
-    - id: draft-ietf-mpls-self-ping-04
+    formattedref: draft-ietf-mpls-self-ping-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-self-ping-04
+    docidentifier:
+    - content: draft-ietf-mpls-self-ping-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-self-ping-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-self-ping-06
-    docid:
-    - id: draft-ietf-mpls-self-ping-06
+    formattedref: draft-ietf-mpls-self-ping-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-self-ping-06
+    docidentifier:
+    - content: draft-ietf-mpls-self-ping-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-self-ping-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-self-ping-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,219 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-sr-policy-safi-13
-title:
-- content: Advertising Segment Routing Policies in BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-safi-13
-  type: src
+id: draftietfidrsrpolicysafi13
 type: standard
-docid:
-- id: draft-ietf-idr-sr-policy-safi-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Advertising Segment Routing Policies in BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-safi-13
+docidentifier:
+- content: draft-ietf-idr-sr-policy-safi
+  type: Internet-Draft
+- content: draft-ietf-idr-sr-policy-safi-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-sr-policy-safi
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-sr-policy-safi
 date:
 - type: published
-  value: '2025-02-06'
+  at: '2025-02-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stefano
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefano
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Previdi
-        language:
-        - en
       completename:
+        language: en
         content: Stefano Previdi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clarence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clarence
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Filsfils
-        language:
-        - en
       completename:
+        language: en
         content: Clarence Filsfils
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Mattes
-        language:
-        - en
       completename:
+        language: en
         content: Paul Mattes
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
-  role:
+        - language: en
+          content: Microsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dhanendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dhanendra
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Jain
-        language:
-        - en
       completename:
+        language: en
         content: Dhanendra Jain
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
-  - type: author
+        - language: en
+          content: Google
 version:
 - draft: '13'
-revdate: '2025-02-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A Segment Routing (SR) Policy is an ordered list of segments (also
-    referred to as instructions) that define a source-routed policy. An SR Policy
-    consists of one or more candidate paths, each comprising one or more segment lists.
-    A headend can be provisioned with these candidate paths using various mechanisms,
-    such as CLI, NETCONF, PCEP, or BGP. This document specifies how BGP can be used
-    to distribute SR Policy candidate paths. It introduces a BGP SAFI for advertising
-    a candidate path of an SR Policy and defines sub-TLVs for the Tunnel Encapsulation
-    Attribute to signal information related to these candidate paths. Furthermore,
-    this document updates RFC9012 by extending the Color Extended Community to support
-    additional steering modes over SR Policy.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A Segment Routing (SR) Policy is an ordered list of segments (also\n
+    \  referred to as instructions) that define a source-routed policy.  An\n   SR
+    Policy consists of one or more candidate paths, each comprising\n   one or more
+    segment lists.  A headend can be provisioned with these\n   candidate paths using
+    various mechanisms, such as CLI, NETCONF, PCEP,\n   or BGP.\n\n   This document
+    specifies how BGP can be used to distribute SR Policy\n   candidate paths.  It
+    introduces a BGP SAFI for advertising a\n   candidate path of an SR Policy and
+    defines sub-TLVs for the Tunnel\n   Encapsulation Attribute to signal information
+    related to these\n   candidate paths.\n\n   Furthermore, this document updates
+    RFC9012 by extending the Color\n   Extended Community to support additional steering
+    modes over SR\n   Policy.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-sr-policy-safi-12
-    docid:
-    - id: draft-ietf-idr-sr-policy-safi-12
+    formattedref: draft-ietf-idr-sr-policy-safi-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-safi-12
+    docidentifier:
+    - content: draft-ietf-idr-sr-policy-safi-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-sr-policy-safi-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-sr-policy-safi-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

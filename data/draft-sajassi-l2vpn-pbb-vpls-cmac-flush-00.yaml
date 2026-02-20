@@ -1,206 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
-title:
-- content: Customer MAC Address Flushing Mechanisms for Provider Backbone Bridging
-    over VPLS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
-  type: src
+id: draftsajassil2vpnpbbvplscmacflush00
 type: standard
-docid:
-- id: draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Customer MAC Address Flushing Mechanisms for Provider Backbone Bridging
+    over VPLS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
+docidentifier:
+- content: draft-sajassi-l2vpn-pbb-vpls-cmac-flush
+  type: Internet-Draft
+- content: draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
   type: Internet-Draft
   primary: true
-- id: I-D.sajassi-l2vpn-pbb-vpls-cmac-flush
-  type: IETF
-  scope: anchor
 docnumber: I-D.sajassi-l2vpn-pbb-vpls-cmac-flush
 date:
 - type: published
-  value: '2008-07-07'
+  at: '2008-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N. N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N. N.
       surname:
+        language: en
         content: Bitar
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Nabil N. Bitar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samer
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Salam
-        language:
-        - en
       completename:
+        language: en
         content: Samer Salam
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luyuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luyuan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fang
-        language:
-        - en
       completename:
+        language: en
         content: Luyuan Fang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dinesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dinesh
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Mohan
-        language:
-        - en
       completename:
+        language: en
         content: Dinesh Mohan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
+        - language: en
+          content: Nortel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '00'
-revdate: '2008-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The scalability of H-VPLS (either with MPLS or Ethernet access network)
-    can be improved by incorporating Provider Backbone Bridge (PBB) functionality
-    in VPLS access. PBB introduces the notion of Backbone MAC (B-MAC) addresses vs.
-    Customer MAC (C-MAC) addresses, thereby leading to the requirement for having
-    MAC address flushing mechanisms for each. This document discusses a C-MAC address
-    flushing notification mechanism to be used in VPLS networks that employ PBB technology.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: " The scalability of H-VPLS (either with MPLS or Ethernet access \n   network)
+    can be improved by incorporating Provider Backbone Bridge \n    (PBB) functionality
+    in VPLS access. \n    \n   PBB introduces the notion of Backbone MAC (B-MAC) addresses
+    vs. \n   Customer MAC (C-MAC) addresses, thereby leading to the requirement \n
+    \  for having MAC address flushing mechanisms for each. \n    \n   This document
+    discusses a C-MAC address flushing notification \n   mechanism to be used in VPLS
+    networks that employ PBB technology. \n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sajassi-l2vpn-pbb-vpls-cmac-flush-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

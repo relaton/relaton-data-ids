@@ -1,95 +1,82 @@
 ---
-schema-version: v1.2.9
-id: draft-mglt-add-rdp-isp-00
-title:
-- content: DNS Resolver Discovery Protocol (DRDP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mglt-add-rdp-isp-00
-  type: src
+id: draftmgltaddrdpisp00
 type: standard
-docid:
-- id: draft-mglt-add-rdp-isp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DNS Resolver Discovery Protocol (DRDP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mglt-add-rdp-isp-00
+docidentifier:
+- content: draft-mglt-add-rdp-isp
+  type: Internet-Draft
+- content: draft-mglt-add-rdp-isp-00
   type: Internet-Draft
   primary: true
-- id: I-D.mglt-add-rdp-isp
-  type: IETF
-  scope: anchor
 docnumber: I-D.mglt-add-rdp-isp
 date:
 - type: published
-  value: '2020-07-28'
+  at: '2020-07-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '00'
-revdate: '2020-07-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The DNS Resolving service Discovery Protocol (DRDP) enables to discover
-    resolving services available and eventually upgrade to an encrypted resolving
-    service. DRDP requires a resolving domain or a pointer to a list of resolving
-    domains. Currently ISP or CPEs do not advertise resolving domain or pointers to
-    resolving domains which does not make possible for a DNS client to discover potential
-    resolving services - such as encrypted DNS for example - made available by the
-    ISP. Instead, ISPs or CPE advertise via DHCP the IP address of the host with a
-    IA Address Option [RFC3315] and the IP addresses of the resolver provided by the
-    ISP with Recursive Name Server option [RFC3646]. This document describes a procedure
-    for a DNS client to derive resolving domains from the legacy configuration of
-    the host. This is expected to ease the deployment of encrypted DNS from ISP as
-    it will enable OS, applications to discover resolving service put in place by
-    the ISP even though the CPE has not been upgraded.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The DNS Resolving service Discovery Protocol (DRDP) enables to\n   discover
+    resolving services available and eventually upgrade to an\n   encrypted resolving
+    service.\n\n   DRDP requires a resolving domain or a pointer to a list of resolving\n
+    \  domains.  Currently ISP or CPEs do not advertise resolving domain or\n   pointers
+    to resolving domains which does not make possible for a DNS\n   client to discover
+    potential resolving services - such as encrypted\n   DNS for example - made available
+    by the ISP.\n\n   Instead, ISPs or CPE advertise via DHCP the IP address of the
+    host\n   with a IA Address Option [RFC3315] and the IP addresses of the\n   resolver
+    provided by the ISP with Recursive Name Server option\n   [RFC3646].\n\n   This
+    document describes a procedure for a DNS client to derive\n   resolving domains
+    from the legacy configuration of the host.\n\n   This is expected to ease the
+    deployment of encrypted DNS from ISP as\n   it will enable OS, applications to
+    discover resolving service put in\n   place by the ISP even though the CPE has
+    not been upgraded.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mglt-add-rdp-isp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

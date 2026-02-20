@@ -1,206 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-seedorf-ppsp-design-considerations-02
-title:
-- content: Design Considerations for a Peer-to-Peer Streaming Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-seedorf-ppsp-design-considerations-02
-  type: src
+id: draftseedorfppspdesignconsiderations02
 type: standard
-docid:
-- id: draft-seedorf-ppsp-design-considerations-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Design Considerations for a Peer-to-Peer Streaming Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-seedorf-ppsp-design-considerations-02
+docidentifier:
+- content: draft-seedorf-ppsp-design-considerations
+  type: Internet-Draft
+- content: draft-seedorf-ppsp-design-considerations-02
   type: Internet-Draft
   primary: true
-- id: I-D.seedorf-ppsp-design-considerations
-  type: IETF
-  scope: anchor
 docnumber: I-D.seedorf-ppsp-design-considerations
 date:
 - type: published
-  value: '2011-04-20'
+  at: '2011-04-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Seedorf
-        language:
-        - en
       completename:
+        language: en
         content: Jan Seedorf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NEC
-  role:
+        - language: en
+          content: NEC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Martin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Martin
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Stiemerling
-        language:
-        - en
       completename:
+        language: en
         content: Martin Stiemerling
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NEC
-  role:
+        - language: en
+          content: NEC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Mellia
-        language:
-        - en
       completename:
+        language: en
         content: Marco Mellia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Politecnico di Torino
-  role:
+        - language: en
+          content: Politecnico di Torino
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Renato
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Renato
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Cigno
-        language:
-        - en
       completename:
+        language: en
         content: Renato Cigno
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Trento
-  role:
+        - language: en
+          content: University of Trento
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Csaba
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Csaba
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Kiraly
-        language:
-        - en
       completename:
+        language: en
         content: Csaba Kiraly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Trento
-  role:
-  - type: author
+        - language: en
+          content: University of Trento
 version:
 - draft: '02'
-revdate: '2011-04-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Streaming video on P2P overlays puts extremely high demands and stress
-    on the underlying network, especially in case of TV and live streaming. The EU
-    research project NAPA-WINE has devised an overall architecture for live video
-    streaming that supports the needs of the users and content providers, while being
-    respective of network-level needs, as reducing inter-AS traffic using ALTO-like
-    services. In this document, we describe generic elements of this software architecture
-    for P2P live streaming and derive the corresponding implications for standardizing
-    a Peer-to-Peer streaming protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Streaming video on P2P overlays puts extremely high demands and\nstress
+    on the underlying network, especially in case of TV and live\nstreaming.  The
+    EU research project NAPA-WINE has devised an overall\narchitecture for live video
+    streaming that supports the needs of the\nusers and content providers, while being
+    respective of network-level\nneeds, as reducing inter-AS traffic using ALTO-like
+    services.  In\nthis document, we describe generic elements of this software\narchitecture
+    for P2P live streaming and derive the corresponding\nimplications for standardizing
+    a Peer-to-Peer streaming protocol.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-seedorf-ppsp-design-considerations-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

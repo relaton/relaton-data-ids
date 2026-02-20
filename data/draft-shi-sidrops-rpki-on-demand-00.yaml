@@ -1,178 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-shi-sidrops-rpki-on-demand-00
-title:
-- content: Considerations for On-Demand Retrieval of Multiple RPKI Object Types
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-shi-sidrops-rpki-on-demand-00
-  type: src
+id: draftshisidropsrpkiondemand00
 type: standard
-docid:
-- id: draft-shi-sidrops-rpki-on-demand-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Considerations for On-Demand Retrieval of Multiple RPKI Object Types
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-shi-sidrops-rpki-on-demand-00
+docidentifier:
+- content: draft-shi-sidrops-rpki-on-demand
+  type: Internet-Draft
+- content: draft-shi-sidrops-rpki-on-demand-00
   type: Internet-Draft
   primary: true
-- id: I-D.shi-sidrops-rpki-on-demand
-  type: IETF
-  scope: anchor
 docnumber: I-D.shi-sidrops-rpki-on-demand
 date:
 - type: published
-  value: '2026-01-29'
+  at: '2026-01-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jiayi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jiayi
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Jiayi Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Libin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Libin
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Libin Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lancheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lancheng
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Lancheng Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
-  - type: author
+        - language: en
+          content: Tsinghua University
 version:
 - draft: '00'
-revdate: '2026-01-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Resource Public Key Infrastructure (RPKI) RFC6480 [RFC6481] relies
-    on Publication Points (PPs) to distribute cryptographically verifiable objects.
-    Under the current design, Relying Parties (RPs) retrieve the complete set of RPKI
-    objects from repositories, even when their operational requirements are limited
-    to a specific subset, for example, ROAs only. This all-or-nothing retrieval model
-    may result in increased bandwidth consumption, higher synchronization latency,
-    and unnecessary computational overhead. This document examines these challenges
-    and discusses directions for enabling more selective and efficient access to RPKI
-    data.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Resource Public Key Infrastructure (RPKI) RFC6480 [RFC6481]\n   relies
+    on Publication Points (PPs) to distribute cryptographically\n   verifiable objects.
+    \ Under the current design, Relying Parties (RPs)\n   retrieve the complete set
+    of RPKI objects from repositories, even\n   when their operational requirements
+    are limited to a specific subset,\n   for example, ROAs only.  This all-or-nothing
+    retrieval model may\n   result in increased bandwidth consumption, higher synchronization\n
+    \  latency, and unnecessary computational overhead.  This document\n   examines
+    these challenges and discusses directions for enabling more\n   selective and
+    efficient access to RPKI data.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-shi-sidrops-rpki-on-demand-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,212 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-route-leak-detection-mitigation-06
-title:
-- content: Methods for Detection and Mitigation of BGP Route Leaks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-06
-  type: src
+id: draftietfidrrouteleakdetectionmitigation06
 type: standard
-docid:
-- id: draft-ietf-idr-route-leak-detection-mitigation-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Methods for Detection and Mitigation of BGP Route Leaks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-06
+docidentifier:
+- content: draft-ietf-idr-route-leak-detection-mitigation
+  type: Internet-Draft
+- content: draft-ietf-idr-route-leak-detection-mitigation-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-route-leak-detection-mitigation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-route-leak-detection-mitigation
 date:
 - type: published
-  value: '2017-03-06'
+  at: '2017-03-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kotikalapudi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kotikalapudi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sriram
-        language:
-        - en
       completename:
+        language: en
         content: Kotikalapudi Sriram
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Doug
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Doug
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Montgomery
-        language:
-        - en
       completename:
+        language: en
         content: Doug Montgomery
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Dickson
-        language:
-        - en
       completename:
+        language: en
         content: Brian Dickson
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keyur
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Patel
-        language:
-        - en
       completename:
+        language: en
         content: Keyur Patel
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrei
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Robachevsky
-        language:
-        - en
       completename:
+        language: en
         content: Andrei Robachevsky
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '06'
-revdate: '2017-03-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC 7908 provides a definition of the route leak problem, and also
-    enumerates several types of route leaks. This document first examines which of
-    those route-leak types are detected and mitigated by the existing origin validation
-    (OV) [RFC 6811]. It is recognized that OV offers a limited detection and mitigation
-    capability against route leaks. This document specifies enhancements that significantly
-    extend the route-leak prevention, detection, and mitigation capabilities of BGP.
-    One solution component involves intra-AS messaging from ingress router to egress
-    router using a BGP Community or Attribute. This intra-AS messaging prevents the
-    AS from causing route leaks. Another solution component involves carrying a per-hop
-    route-leak protection (RLP) field in BGP updates. The RLP fields are proposed
-    to be carried in a new optional transitive attribute, called BGP RLP attribute.
-    The RLP attribute helps with detection and mitigation of route leaks at ASes downstream
-    from the leaking AS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 7908 provides a definition of the route leak problem, and also\n
+    \  enumerates several types of route leaks.  This document first\n   examines
+    which of those route-leak types are detected and mitigated\n   by the existing
+    origin validation (OV) [RFC 6811].  It is recognized\n   that OV offers a limited
+    detection and mitigation capability against\n   route leaks.  This document specifies
+    enhancements that significantly\n   extend the route-leak prevention, detection,
+    and mitigation\n   capabilities of BGP.  One solution component involves intra-AS\n
+    \  messaging from ingress router to egress router using a BGP Community\n   or
+    Attribute.  This intra-AS messaging prevents the AS from causing\n   route leaks.
+    \ Another solution component involves carrying a per-hop\n   route-leak protection
+    (RLP) field in BGP updates.  The RLP fields are\n   proposed to be carried in
+    a new optional transitive attribute, called\n   BGP RLP attribute.  The RLP attribute
+    helps with detection and\n   mitigation of route leaks at ASes downstream from
+    the leaking AS.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-route-leak-detection-mitigation-05
-    docid:
-    - id: draft-ietf-idr-route-leak-detection-mitigation-05
+    formattedref: draft-ietf-idr-route-leak-detection-mitigation-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-05
+    docidentifier:
+    - content: draft-ietf-idr-route-leak-detection-mitigation-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-route-leak-detection-mitigation-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-route-leak-detection-mitigation-07
-    docid:
-    - id: draft-ietf-idr-route-leak-detection-mitigation-07
+    formattedref: draft-ietf-idr-route-leak-detection-mitigation-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-07
+    docidentifier:
+    - content: draft-ietf-idr-route-leak-detection-mitigation-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-route-leak-detection-mitigation-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-route-leak-detection-mitigation-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

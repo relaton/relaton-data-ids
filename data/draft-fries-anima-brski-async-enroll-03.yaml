@@ -1,174 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-fries-anima-brski-async-enroll-03
-title:
-- content: Support of asynchronous Enrollment in BRSKI
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-fries-anima-brski-async-enroll-03
-  type: src
+id: draftfriesanimabrskiasyncenroll03
 type: standard
-docid:
-- id: draft-fries-anima-brski-async-enroll-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Support of asynchronous Enrollment in BRSKI
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-fries-anima-brski-async-enroll-03
+docidentifier:
+- content: draft-fries-anima-brski-async-enroll
+  type: Internet-Draft
+- content: draft-fries-anima-brski-async-enroll-03
   type: Internet-Draft
   primary: true
-- id: I-D.fries-anima-brski-async-enroll
-  type: IETF
-  scope: anchor
 docnumber: I-D.fries-anima-brski-async-enroll
 date:
 - type: published
-  value: '2020-03-06'
+  at: '2020-03-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Steffen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Steffen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Fries
-        language:
-        - en
       completename:
+        language: en
         content: Steffen Fries
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens AG
-  role:
+        - language: en
+          content: Siemens AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hendrik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hendrik
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Brockhaus
-        language:
-        - en
       completename:
+        language: en
         content: Hendrik Brockhaus
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens AG
-  role:
+        - language: en
+          content: Siemens AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eliot
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eliot
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Lear
-        language:
-        - en
       completename:
+        language: en
         content: Eliot Lear
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '03'
-revdate: '2020-03-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses enhancements of bootstrapping of a remote secure
-    key infrastructure (BRSKI) to also operate in domains featuring no or only timely
-    limited connectivity to backend services offering enrollment functionality, specifically
-    a Public Key Infrastructure (PKI). The enhancements proposed to enable this are
-    also applied to further set of use cases in which a pledge may not have a direct
-    connection to the registrar and is served by for instance by a commissioning tool
-    as an agent providing registrar connectivity. In the context of deploying new
-    devices the design of BRSKI allows for online (synchronous object exchange) and
-    offline interactions (asynchronous object exchange) with a manufacturer's authorization
-    service. For this it utilizes an authenticated self- contained voucher to transport
-    the domain credentials as a signed object to establish an initial trust between
-    a pledge and the target deployment domain. The currently supported enrollment
-    protocol for request and distribution of deployment domain specific device certificates
-    provides only limited support for asynchronous PKI interactions. This memo motivates
-    the enhancement of supporting authenticated self-contained objects for certificate
-    management by using an abstract notation. The enhancement allows on one hand off-
-    site operation of PKI services outside the deployment domain of the pledge. This
-    addresses specifically scenarios, in which the final authorization of a certification
-    request of a pledge cannot be made in the deployment domain and is therefore delegated
-    to a operator backend. On the other hand, this enhancement also facilitates the
-    exchange of certificate management information via a pledge agent. The goal is
-    to enable the usage of existing and potentially new PKI protocols supporting authenticated
-    self-containment for certificate management exchanges.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document discusses enhancements of bootstrapping of a remote\n
+    \  secure key infrastructure (BRSKI) to also operate in domains\n   featuring
+    no or only timely limited connectivity to backend services\n   offering enrollment
+    functionality, specifically a Public Key\n   Infrastructure (PKI).  The enhancements
+    proposed to enable this are\n   also applied to further set of use cases in which
+    a pledge may not\n   have a direct connection to the registrar and is served by
+    for\n   instance by a commissioning tool as an agent providing registrar\n   connectivity.
+    \ In the context of deploying new devices the design of\n   BRSKI allows for online
+    (synchronous object exchange) and offline\n   interactions (asynchronous object
+    exchange) with a manufacturer's\n   authorization service.  For this it utilizes
+    an authenticated self-\n   contained voucher to transport the domain credentials
+    as a signed\n   object to establish an initial trust between a pledge and the
+    target\n   deployment domain.  The currently supported enrollment protocol for\n
+    \  request and distribution of deployment domain specific device\n   certificates
+    provides only limited support for asynchronous PKI\n   interactions.  This memo
+    motivates the enhancement of supporting\n   authenticated self-contained objects
+    for certificate management by\n   using an abstract notation.  The enhancement
+    allows on one hand off-\n   site operation of PKI services outside the deployment
+    domain of the\n   pledge.  This addresses specifically scenarios, in which the
+    final\n   authorization of a certification request of a pledge cannot be made\n
+    \  in the deployment domain and is therefore delegated to a operator\n   backend.
+    \ On the other hand, this enhancement also facilitates the\n   exchange of certificate
+    management information via a pledge agent.\n   The goal is to enable the usage
+    of existing and potentially new PKI\n   protocols supporting authenticated self-containment
+    for certificate\n   management exchanges.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-fries-anima-brski-async-enroll-02
-    docid:
-    - id: draft-fries-anima-brski-async-enroll-02
+    formattedref: draft-fries-anima-brski-async-enroll-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fries-anima-brski-async-enroll-02
+    docidentifier:
+    - content: draft-fries-anima-brski-async-enroll-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-fries-anima-brski-async-enroll-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-fries-anima-brski-async-enroll-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,207 +1,172 @@
 ---
-schema-version: v1.2.9
-id: draft-randriamasy-alto-cost-calendar-00
-title:
-- content: ALTO Cost Calendar
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-randriamasy-alto-cost-calendar-00
-  type: src
+id: draftrandriamasyaltocostcalendar00
 type: standard
-docid:
-- id: draft-randriamasy-alto-cost-calendar-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ALTO Cost Calendar
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-randriamasy-alto-cost-calendar-00
+docidentifier:
+- content: draft-randriamasy-alto-cost-calendar
+  type: Internet-Draft
+- content: draft-randriamasy-alto-cost-calendar-00
   type: Internet-Draft
   primary: true
-- id: I-D.randriamasy-alto-cost-calendar
-  type: IETF
-  scope: anchor
 docnumber: I-D.randriamasy-alto-cost-calendar
 date:
 - type: published
-  value: '2014-07-04'
+  at: '2014-07-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sabine
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sabine
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Randriamasy
-        language:
-        - en
       completename:
+        language: en
         content: Sabine Randriamasy
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: Y. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: Y. R.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Y. Richard Yang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Deng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Deng
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lingli
-        language:
-        - en
       completename:
+        language: en
         content: Deng Lingli
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nico
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nico
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Schwan
-        language:
-        - en
       completename:
+        language: en
         content: Nico Schwan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2014-07-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The goal of Application-Layer Traffic Optimization (ALTO) is to bridge
-    the gap between network and applications by provisioning network related information
-    in order to allow applications to make informed decisions. The present draft proposes
-    to extend the cost information provided by the ALTO protocol. The purpose is to
-    broaden the decision possibilities of applications to not only decide 'where'
-    to connect to, but also 'when'. This is useful to applications that have a degree
-    of freedom on when to schedule data transfers, such as non- instantaneous data
-    replication between data centers or service provisioning to end systems with irregular
-    connectivity. ALTO guidance to schedule application traffic can also efficiently
-    help for load balancing and resources efficiency. The draft specifies a new Cost
-    Mode, "Calendar" Mode, that is applicable to time-sensitive ALTO metrics and allows
-    Applications to carefully schedule their connections or data transfers. In the
-    Calendar Mode, an ALTO Server exposes ALTO Cost Values in JSON arrays where each
-    value corresponds to a given time interval. The time intervals as well as other
-    Calendar attributes are specified in the IRD. Besides the functional time-shift
-    enhancement the ALTO Cost Calendar also allows to schedule the ALTO requests themselves
-    and thus save a number of ALTO transactions.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The goal of Application-Layer Traffic Optimization (ALTO) is to\n   bridge
+    the gap between network and applications by provisioning\n   network related information
+    in order to allow applications to make\n   informed decisions.  The present draft
+    proposes to extend the cost\n   information provided by the ALTO protocol.  The
+    purpose is to broaden\n   the decision possibilities of applications to not only
+    decide 'where'\n   to connect to, but also 'when'.  This is useful to applications
+    that\n   have a degree of freedom on when to schedule data transfers, such as\n
+    \  non- instantaneous data replication between data centers or service\n   provisioning
+    to end systems with irregular connectivity.  ALTO\n   guidance to schedule application
+    traffic can also efficiently help\n   for load balancing and resources efficiency.\n\n
+    \  The draft specifies a new Cost Mode, \"Calendar\" Mode, that is\n   applicable
+    to time-sensitive ALTO metrics and allows Applications to\n   carefully schedule
+    their connections or data transfers.  In the\n   Calendar Mode, an ALTO Server
+    exposes ALTO Cost Values in JSON arrays\n   where each value corresponds to a
+    given time interval.  The time\n   intervals as well as other Calendar attributes
+    are specified in the\n   IRD.  Besides the functional time-shift enhancement the
+    ALTO Cost\n   Calendar also allows to schedule the ALTO requests themselves and\n
+    \  thus save a number of ALTO transactions.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-randriamasy-alto-cost-calendar-01
-    docid:
-    - id: draft-randriamasy-alto-cost-calendar-01
+    formattedref: draft-randriamasy-alto-cost-calendar-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-randriamasy-alto-cost-calendar-01
+    docidentifier:
+    - content: draft-randriamasy-alto-cost-calendar-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-randriamasy-alto-cost-calendar-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-randriamasy-alto-cost-calendar-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

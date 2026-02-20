@@ -1,102 +1,88 @@
 ---
-schema-version: v1.2.9
-id: draft-shi-moq-kvcache-00
-title:
-- content: KVCache over MoQT
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-shi-moq-kvcache-00
-  type: src
+id: draftshimoqkvcache00
 type: standard
-docid:
-- id: draft-shi-moq-kvcache-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: KVCache over MoQT
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-shi-moq-kvcache-00
+docidentifier:
+- content: draft-shi-moq-kvcache
+  type: Internet-Draft
+- content: draft-shi-moq-kvcache-00
   type: Internet-Draft
   primary: true
-- id: I-D.shi-moq-kvcache
-  type: IETF
-  scope: anchor
 docnumber: I-D.shi-moq-kvcache
 date:
 - type: published
-  value: '2025-03-03'
+  at: '2025-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hang
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Hang Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '00'
-revdate: '2025-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Large language model (LLM) inference involves two stages: prefill and
-    decode. The prefill phase processes the prompt in parallel, generating the KVCache,
-    which is then used by the decode phase to produce tokens sequentially. KVCache
-    can be reused if the model and prompt is the same, reducing computing cost of
-    the prefill. However, its large size makes efficient transfer challenging. Delivering
-    these over architectures enabled by publish/subscribe transport like MoQT, allows
-    local nodes to cache the KVCache to be later retrieved via new subscriptions,
-    saving the bandwidth. This document specifies the transmission of KVCache over
-    MoQT.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Large language model (LLM) inference involves two stages: prefill and\n
+    \  decode.  The prefill phase processes the prompt in parallel,\n   generating
+    the KVCache, which is then used by the decode phase to\n   produce tokens sequentially.
+    \ KVCache can be reused if the model and\n   prompt is the same, reducing computing
+    cost of the prefill.  However,\n   its large size makes efficient transfer challenging.
+    \ Delivering\n   these over architectures enabled by publish/subscribe transport
+    like\n   MoQT, allows local nodes to cache the KVCache to be later retrieved\n
+    \  via new subscriptions, saving the bandwidth.  This document specifies\n   the
+    transmission of KVCache over MoQT.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-shi-moq-kvcache-01
-    docid:
-    - id: draft-shi-moq-kvcache-01
+    formattedref: draft-shi-moq-kvcache-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-shi-moq-kvcache-01
+    docidentifier:
+    - content: draft-shi-moq-kvcache-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-shi-moq-kvcache-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-shi-moq-kvcache-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

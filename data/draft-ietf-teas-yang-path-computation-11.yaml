@@ -1,229 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-yang-path-computation-11
-title:
-- content: Yang model for requesting Path Computation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-11
-  type: src
+id: draftietfteasyangpathcomputation11
 type: standard
-docid:
-- id: draft-ietf-teas-yang-path-computation-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Yang model for requesting Path Computation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-11
+docidentifier:
+- content: draft-ietf-teas-yang-path-computation
+  type: Internet-Draft
+- content: draft-ietf-teas-yang-path-computation-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-yang-path-computation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-yang-path-computation
 date:
 - type: published
-  value: '2020-11-16'
+  at: '2020-11-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Italo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Italo
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Busi
-        language:
-        - en
       completename:
+        language: en
         content: Italo Busi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sergio
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Belotti
-        language:
-        - en
       completename:
+        language: en
         content: Sergio Belotti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Victor Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anurag
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anurag
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sharma
-        language:
-        - en
       completename:
+        language: en
         content: Anurag Sharma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Yan Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
-  - type: author
+        - language: en
+          content: China Unicom
 version:
 - draft: '11'
-revdate: '2020-11-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>There are scenarios, typically in a hierarchical SDN context, where
-    the topology information provided by a TE network provider may not be sufficient
-    for its client to perform end-to-end path computation. In these cases the client
-    would need to request the provider to calculate some (partial) feasible paths.
-    This document defines a YANG data model for an RPC to request path computation.
-    This model complements the solution, defined in RFCXXXX, to configure a TE Tunnel
-    path in "compute-only" mode. [RFC EDITOR NOTE: Please replace RFC XXXX with the
-    RFC number of draft-ietf-teas-yang-te once it has been published. Moreover this
-    document describes some use cases where a path computation request, via YANG-based
-    protocols (e.g., NETCONF or RESTCONF), can be needed.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   There are scenarios, typically in a hierarchical SDN context, where\n
+    \  the topology information provided by a TE network provider may not\n   be sufficient
+    for its client to perform end-to-end path computation.\n   In these cases the
+    client would need to request the provider to\n   calculate some (partial) feasible
+    paths.\n\n   This document defines a YANG data model for an RPC to request path\n
+    \  computation. This model complements the solution, defined in\n   RFCXXXX, to
+    configure a TE Tunnel path in \"compute-only\" mode.\n\n   [RFC EDITOR NOTE: Please
+    replace RFC XXXX with the RFC number of\n   draft-ietf-teas-yang-te once it has
+    been published.\n\n   Moreover this document describes some use cases where a
+    path\n   computation request, via YANG-based protocols (e.g., NETCONF or\n   RESTCONF),
+    can be needed.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-yang-path-computation-10
-    docid:
-    - id: draft-ietf-teas-yang-path-computation-10
+    formattedref: draft-ietf-teas-yang-path-computation-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-10
+    docidentifier:
+    - content: draft-ietf-teas-yang-path-computation-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-yang-path-computation-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-yang-path-computation-12
-    docid:
-    - id: draft-ietf-teas-yang-path-computation-12
+    formattedref: draft-ietf-teas-yang-path-computation-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-12
+    docidentifier:
+    - content: draft-ietf-teas-yang-path-computation-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-yang-path-computation-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-yang-path-computation-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

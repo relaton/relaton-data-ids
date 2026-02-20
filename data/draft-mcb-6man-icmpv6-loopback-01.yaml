@@ -1,214 +1,185 @@
 ---
-schema-version: v1.2.9
-id: draft-mcb-6man-icmpv6-loopback-01
-title:
-- content: Internet Control Message Protocol (ICMPv6) Loopback
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mcb-6man-icmpv6-loopback-01
-  type: src
+id: draftmcb6manicmpv6loopback01
 type: standard
-docid:
-- id: draft-mcb-6man-icmpv6-loopback-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Internet Control Message Protocol (ICMPv6) Loopback
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mcb-6man-icmpv6-loopback-01
+docidentifier:
+- content: draft-mcb-6man-icmpv6-loopback
+  type: Internet-Draft
+- content: draft-mcb-6man-icmpv6-loopback-01
   type: Internet-Draft
   primary: true
-- id: I-D.mcb-6man-icmpv6-loopback
-  type: IETF
-  scope: anchor
 docnumber: I-D.mcb-6man-icmpv6-loopback
 date:
 - type: published
-  value: '2024-06-03'
+  at: '2024-06-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tal
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Mizrahi
-        language:
-        - en
       completename:
+        language: en
         content: Tal Mizrahi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tianran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tianran
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Zhou
-        language:
-        - en
       completename:
+        language: en
         content: Tianran Zhou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shahar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shahar
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Belkar
-        language:
-        - en
       completename:
+        language: en
         content: Shahar Belkar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Reuven
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Reuven
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Cohen
-        language:
-        - en
       completename:
+        language: en
         content: Reuven Cohen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Justin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Justin
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Iurman
-        language:
-        - en
       completename:
+        language: en
         content: Justin Iurman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universite de Liege
-  role:
-  - type: author
+        - language: en
+          content: Universite de Liege
 version:
 - draft: '01'
-revdate: '2024-06-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines ICMPv6 Loopback, which enables a two-way packet
-    exchange that can be used for probing and for diagnostic purposes. ICMPv6 Loopback
-    is similar to ICMPv6 Echo, except that after a Loopback Request is sent, its corresponding
-    Reply includes as much of the IPv6 Loopback Request packet as possible, including
-    the IPv6 header and IPv6 extension headers and options if they are present.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines ICMPv6 Loopback, which enables a two-way packet\n
+    \  exchange that can be used for probing and for diagnostic purposes.\n   ICMPv6
+    Loopback is similar to ICMPv6 Echo, except that after a\n   Loopback Request is
+    sent, its corresponding Reply includes as much of\n   the IPv6 Loopback Request
+    packet as possible, including the IPv6\n   header and IPv6 extension headers and
+    options if they are present.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mcb-6man-icmpv6-loopback-00
-    docid:
-    - id: draft-mcb-6man-icmpv6-loopback-00
+    formattedref: draft-mcb-6man-icmpv6-loopback-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcb-6man-icmpv6-loopback-00
+    docidentifier:
+    - content: draft-mcb-6man-icmpv6-loopback-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mcb-6man-icmpv6-loopback-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mcb-6man-icmpv6-loopback-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,209 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-li-sidrops-stealthy-hijacking-00
-title:
-- content: Risk of Stealthy BGP Hijacking under Incomplete Adoption of Route Origin
-    Validation (ROV)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-stealthy-hijacking-00
-  type: src
+id: draftlisidropsstealthyhijacking00
 type: standard
-docid:
-- id: draft-li-sidrops-stealthy-hijacking-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Risk of Stealthy BGP Hijacking under Incomplete Adoption of Route Origin
+    Validation (ROV)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-stealthy-hijacking-00
+docidentifier:
+- content: draft-li-sidrops-stealthy-hijacking
+  type: Internet-Draft
+- content: draft-li-sidrops-stealthy-hijacking-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-sidrops-stealthy-hijacking
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-sidrops-stealthy-hijacking
 date:
 - type: published
-  value: '2025-05-08'
+  at: '2025-05-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Qi
-        language:
-        - en
       completename:
+        language: en
         content: Li Qi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yihao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yihao
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Yihao Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Ke Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhuotao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhuotao
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: liu
-        language:
-        - en
       completename:
+        language: en
         content: Zhuotao liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jianping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jianping
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Jianping Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
-  - type: author
+        - language: en
+          content: Tsinghua University
 version:
 - draft: '00'
-revdate: '2025-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how incomplete adoption of Route Origin Validation
-    (ROV) makes certain forms of BGP hijacking less visible on the control plane while
-    still capable of diverting traffic. We explain the underlying mechanism, define
-    the form of the threat, analyze an real-world incident that exemplifies the issue,
-    and discuss potential countermeasures to mitigate its impact.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes how incomplete adoption of Route Origin\n   Validation
+    (ROV) makes certain forms of BGP hijacking less visible on\n   the control plane
+    while still capable of diverting traffic.  We\n   explain the underlying mechanism,
+    define the form of the threat,\n   analyze an real-world incident that exemplifies
+    the issue, and\n   discuss potential countermeasures to mitigate its impact.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-li-sidrops-stealthy-hijacking-01
-    docid:
-    - id: draft-li-sidrops-stealthy-hijacking-01
+    formattedref: draft-li-sidrops-stealthy-hijacking-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-stealthy-hijacking-01
+    docidentifier:
+    - content: draft-li-sidrops-stealthy-hijacking-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-sidrops-stealthy-hijacking-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-sidrops-stealthy-hijacking-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

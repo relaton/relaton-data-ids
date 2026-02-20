@@ -1,194 +1,168 @@
 ---
-schema-version: v1.2.9
-id: draft-tiloca-core-oscore-piv-enc-01
-title:
-- content: Stand-in Key Identifier and Encrypted Partial IV in the Constrained Application
-    Protocol (CoAP) OSCORE Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-01
-  type: src
+id: drafttilocacoreoscorepivenc01
 type: standard
-docid:
-- id: draft-tiloca-core-oscore-piv-enc-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Stand-in Key Identifier and Encrypted Partial IV in the Constrained Application
+    Protocol (CoAP) OSCORE Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-01
+docidentifier:
+- content: draft-tiloca-core-oscore-piv-enc
+  type: Internet-Draft
+- content: draft-tiloca-core-oscore-piv-enc-01
   type: Internet-Draft
   primary: true
-- id: I-D.tiloca-core-oscore-piv-enc
-  type: IETF
-  scope: anchor
 docnumber: I-D.tiloca-core-oscore-piv-enc
 date:
 - type: published
-  value: '2025-10-20'
+  at: '2025-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Tiloca
-        language:
-        - en
       completename:
+        language: en
         content: Marco Tiloca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE AB
-  role:
+        - language: en
+          content: RISE AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Mattsson
-        language:
-        - en
       completename:
+        language: en
         content: John Preuß Mattsson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
+        - language: en
+          content: Ericsson AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rikard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rikard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Höglund
-        language:
-        - en
       completename:
+        language: en
         content: Rikard Höglund
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE AB
-  role:
+        - language: en
+          content: RISE AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Selander
-        language:
-        - en
       completename:
+        language: en
         content: Göran Selander
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
-  - type: author
+        - language: en
+          content: Ericsson AB
 version:
 - draft: '01'
-revdate: '2025-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The security protocol Object Security for Constrained RESTful Environments
-    (OSCORE) provides end-to-end protection of messages exchanged with the Constrained
-    Application Protocol (CoAP). Messages protected with OSCORE include a CoAP OSCORE
-    option, where the "Partial IV" field specifies the sequence number value used
-    by the message sender and the "kid" field specifies the identifier of the message
-    sender. In order to reduce the information exposed on the wire that can be used
-    for fingerprinting traffic and for tracking endpoints, this document defines a
-    lightweight add-on method that obfuscates certain fields of the OSCORE option,
-    by encrypting the "Partial IV" field and overwriting the "kid" field with a stand-in
-    identifier. Therefore, it updates RFC 8613. With minor adaptations, the defined
-    method is applicable also to the security protocol Group Object Security for Constrained
-    RESTful Environments (Group OSCORE) that protects group communication for CoAP.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The security protocol Object Security for Constrained RESTful\n   Environments
+    (OSCORE) provides end-to-end protection of messages\n   exchanged with the Constrained
+    Application Protocol (CoAP).  Messages\n   protected with OSCORE include a CoAP
+    OSCORE option, where the\n   \"Partial IV\" field specifies the sequence number
+    value used by the\n   message sender and the \"kid\" field specifies the identifier
+    of the\n   message sender.  In order to reduce the information exposed on the\n
+    \  wire that can be used for fingerprinting traffic and for tracking\n   endpoints,
+    this document defines a lightweight add-on method that\n   obfuscates certain
+    fields of the OSCORE option, by encrypting the\n   \"Partial IV\" field and overwriting
+    the \"kid\" field with a stand-in\n   identifier.  Therefore, it updates RFC 8613.
+    \ With minor adaptations,\n   the defined method is applicable also to the security
+    protocol Group\n   Object Security for Constrained RESTful Environments (Group
+    OSCORE)\n   that protects group communication for CoAP.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tiloca-core-oscore-piv-enc-00
-    docid:
-    - id: draft-tiloca-core-oscore-piv-enc-00
+    formattedref: draft-tiloca-core-oscore-piv-enc-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-00
+    docidentifier:
+    - content: draft-tiloca-core-oscore-piv-enc-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tiloca-core-oscore-piv-enc-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tiloca-core-oscore-piv-enc-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

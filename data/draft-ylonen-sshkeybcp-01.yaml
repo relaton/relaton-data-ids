@@ -1,145 +1,129 @@
 ---
-schema-version: v1.2.9
-id: draft-ylonen-sshkeybcp-01
-title:
-- content: Managing SSH Keys for Automated Access - Current Recommended Practice
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ylonen-sshkeybcp-01
-  type: src
+id: draftylonensshkeybcp01
 type: standard
-docid:
-- id: draft-ylonen-sshkeybcp-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Managing SSH Keys for Automated Access - Current Recommended Practice
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ylonen-sshkeybcp-01
+docidentifier:
+- content: draft-ylonen-sshkeybcp
+  type: Internet-Draft
+- content: draft-ylonen-sshkeybcp-01
   type: Internet-Draft
   primary: true
-- id: I-D.ylonen-sshkeybcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.ylonen-sshkeybcp
 date:
 - type: published
-  value: '2013-04-03'
+  at: '2013-04-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tatu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tatu
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Ylonen
-        language:
-        - en
       completename:
+        language: en
         content: Tatu Ylonen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SSH Communications Security
-  role:
+        - language: en
+          content: SSH Communications Security
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Kent
-        language:
-        - en
       completename:
+        language: en
         content: Greg Kent
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SecureIT
-  role:
-  - type: author
+        - language: en
+          content: SecureIT
 version:
 - draft: '01'
-revdate: '2013-04-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document presents current recommended practice for managing SSH
-    user keys for automated access. It provides guidelines for discovering, remediating,
-    and continuously managing SSH user keys and other authentication credentials.
-    Various threats from poorly managed SSH keys are identified, including virus spread,
-    unaudited backdoors, illegitimate access using leaked keys, lack of proper termination
-    of access, use of legitimate access for unintended purposes, and accidental human
-    errors. Hundreds of thousands, even over a million SSH keys authorizing access
-    have been found from the IT environments of many large organizations. This is
-    many times more than they have interactive users. These access-granting credentials
-    have largely been ignored in identity and access management, and present a real
-    risk to information security. A process is presented for discovering who has access
-    to what, bringing an existing IT environment under control with respect to automated
-    access and SSH keys. The process includes moving authorized keys to protected
-    locations, removing unused keys, associating authorized keys with a business process
-    or application and removing keys for which no valid purpose can be found, rotating
-    existing keys, restricting what can be done with each authorized key, and establishing
-    an approval process for new authorized keys. A process is also presented for continuous
-    monitoring and controlled authorized key setup. Finally, recommendations are made
-    for security policy makers for ensuring that automated access and SSH keys are
-    properly addressed in an organization's security policy. Specific requirements
-    are presented that address the security issues while keeping costs reasonable.
-    Guidance is also provided on how to reduce operational cost while addressing the
-    threats and how to use tools to automate the management process.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document presents current recommended practice for managing SSH\n
+    \  user keys for automated access.  It provides guidelines for\n   discovering,
+    remediating, and continuously managing SSH user keys and\n   other authentication
+    credentials.\n\n   Various threats from poorly managed SSH keys are identified,\n
+    \  including virus spread, unaudited backdoors, illegitimate access\n   using
+    leaked keys, lack of proper termination of access, use of\n   legitimate access
+    for unintended purposes, and accidental human\n   errors.\n\n   Hundreds of thousands,
+    even over a million SSH keys authorizing\n   access have been found from the IT
+    environments of many large\n   organizations.  This is many times more than they
+    have interactive\n   users.  These access-granting credentials have largely been
+    ignored\n   in identity and access management, and present a real risk to\n   information
+    security.\n\n   A process is presented for discovering who has access to what,\n
+    \  bringing an existing IT environment under control with respect to\n   automated
+    access and SSH keys.  The process includes moving\n   authorized keys to protected
+    locations, removing unused keys,\n   associating authorized keys with a business
+    process or application\n   and removing keys for which no valid purpose can be
+    found, rotating\n   existing keys, restricting what can be done with each authorized
+    key,\n   and establishing an approval process for new authorized keys.  A\n   process
+    is also presented for continuous monitoring and controlled\n   authorized key
+    setup.\n\n   Finally, recommendations are made for security policy makers for\n
+    \  ensuring that automated access and SSH keys are properly addressed in\n   an
+    organization's security policy.\n\n   Specific requirements are presented that
+    address the security issues\n   while keeping costs reasonable.\n\n   Guidance
+    is also provided on how to reduce operational cost while\n   addressing the threats
+    and how to use tools to automate the\n   management process.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ylonen-sshkeybcp-00
-    docid:
-    - id: draft-ylonen-sshkeybcp-00
+    formattedref: draft-ylonen-sshkeybcp-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ylonen-sshkeybcp-00
+    docidentifier:
+    - content: draft-ylonen-sshkeybcp-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ylonen-sshkeybcp-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ylonen-sshkeybcp-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

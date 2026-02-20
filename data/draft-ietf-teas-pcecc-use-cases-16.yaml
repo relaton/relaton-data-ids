@@ -1,236 +1,206 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-pcecc-use-cases-16
-title:
-- content: Use Cases for a PCE as a Central Controller (PCECC)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pcecc-use-cases-16
-  type: src
+id: draftietfteaspceccusecases16
 type: standard
-docid:
-- id: draft-ietf-teas-pcecc-use-cases-16
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Use Cases for a PCE as a Central Controller (PCECC)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pcecc-use-cases-16
+docidentifier:
+- content: draft-ietf-teas-pcecc-use-cases
+  type: Internet-Draft
+- content: draft-ietf-teas-pcecc-use-cases-16
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-pcecc-use-cases
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-pcecc-use-cases
 date:
 - type: published
-  value: '2024-05-27'
+  at: '2024-05-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dhruv
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dhody
-        language:
-        - en
       completename:
+        language: en
         content: Dhruv Dhody
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Quintin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Quintin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Quintin Zhao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Etheric Networks
-  role:
+        - language: en
+          content: Etheric Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zekung
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zekung
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Ke
-        language:
-        - en
       completename:
+        language: en
         content: Zekung Ke
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tencent Holdings Ltd.
-  role:
+        - language: en
+          content: Tencent Holdings Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Boris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Boris
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Khasanov
-        language:
-        - en
       completename:
+        language: en
         content: Boris Khasanov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Yandex LLC
-  role:
-  - type: author
+        - language: en
+          content: Yandex LLC
 version:
 - draft: '16'
-revdate: '2024-05-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The PCE is a core component of a Software-Defined Networking (SDN)
-    system. It can be used to compute optimal paths for network traffic and update
-    existing paths to reflect changes in the network or traffic demands. PCE was developed
-    to derive traffic-engineered paths in MPLS networks, which are supplied to the
-    head end of the paths using the Path Computation Element Communication Protocol
-    (PCEP). SDN has much broader applicability than signaled MPLS traffic- engineered
-    (TE) networks, and the PCE may be used to determine paths in a range of use cases
-    including static LSPs, Segment Routing (SR), Service Function Chaining (SFC),
-    and most forms of a routed or switched network. It is, therefore, reasonable to
-    consider PCEP as a control protocol for use in these environments to allow the
-    PCE to be fully enabled as a central controller. A PCE as a Central Controller
-    (PCECC) can simplify the processing of a distributed control plane by blending
-    it with elements of SDN without necessarily completely replacing it. This document
-    describes general considerations for PCECC deployment and examines its applicability
-    and benefits, as well as its challenges and limitations, through a number of use
-    cases. PCEP extensions which are required for the PCECC use cases are covered
-    in separate documents.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The PCE is a core component of a Software-Defined Networking (SDN)\n
+    \  system.  It can be used to compute optimal paths for network traffic\n   and
+    update existing paths to reflect changes in the network or\n   traffic demands.
+    \ PCE was developed to derive traffic-engineered\n   paths in MPLS networks, which
+    are supplied to the head end of the\n   paths using the Path Computation Element
+    Communication Protocol\n   (PCEP).\n\n   SDN has much broader applicability than
+    signaled MPLS traffic-\n   engineered (TE) networks, and the PCE may be used to
+    determine paths\n   in a range of use cases including static LSPs, Segment Routing
+    (SR),\n   Service Function Chaining (SFC), and most forms of a routed or\n   switched
+    network.  It is, therefore, reasonable to consider PCEP as a\n   control protocol
+    for use in these environments to allow the PCE to be\n   fully enabled as a central
+    controller.\n\n   A PCE as a Central Controller (PCECC) can simplify the processing
+    of\n   a distributed control plane by blending it with elements of SDN\n   without
+    necessarily completely replacing it.  This document describes\n   general considerations
+    for PCECC deployment and examines its\n   applicability and benefits, as well
+    as its challenges and\n   limitations, through a number of use cases.  PCEP extensions
+    which\n   are required for the PCECC use cases are covered in separate\n   documents.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-pcecc-use-cases-15
-    docid:
-    - id: draft-ietf-teas-pcecc-use-cases-15
+    formattedref: draft-ietf-teas-pcecc-use-cases-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pcecc-use-cases-15
+    docidentifier:
+    - content: draft-ietf-teas-pcecc-use-cases-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-pcecc-use-cases-15
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-pcecc-use-cases-17
-    docid:
-    - id: draft-ietf-teas-pcecc-use-cases-17
+    formattedref: draft-ietf-teas-pcecc-use-cases-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pcecc-use-cases-17
+    docidentifier:
+    - content: draft-ietf-teas-pcecc-use-cases-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-pcecc-use-cases-17
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-pcecc-use-cases-16
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

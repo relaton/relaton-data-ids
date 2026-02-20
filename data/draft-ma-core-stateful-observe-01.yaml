@@ -1,165 +1,141 @@
 ---
-schema-version: v1.2.9
-id: draft-ma-core-stateful-observe-01
-title:
-- content: Stateful Observation in CoAP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ma-core-stateful-observe-01
-  type: src
+id: draftmacorestatefulobserve01
 type: standard
-docid:
-- id: draft-ma-core-stateful-observe-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Stateful Observation in CoAP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ma-core-stateful-observe-01
+docidentifier:
+- content: draft-ma-core-stateful-observe
+  type: Internet-Draft
+- content: draft-ma-core-stateful-observe-01
   type: Internet-Draft
   primary: true
-- id: I-D.ma-core-stateful-observe
-  type: IETF
-  scope: anchor
 docnumber: I-D.ma-core-stateful-observe
 date:
 - type: published
-  value: '2012-12-29'
+  at: '2012-12-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Changsha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Changsha
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Changsha Ma
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peilin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peilin
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Hong
-        language:
-        - en
       completename:
+        language: en
         content: Peilin Hong
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kaiping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kaiping
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Xue
-        language:
-        - en
       completename:
+        language: en
         content: Kaiping Xue
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2012-12-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Observe Option allows a CoAP client to observe changes in the state
-    of resources and obtain a current representation of the last resource state. To
-    be an observer of an origin server's resources, the client is required to register
-    its interest with the server. A successful registration will make the client added
-    into the server's observation list, while a failed one may drive the client to
-    re- register. However, repeated and frequent re-registrations cannot guarantee
-    the client to eventually become an observer of the target server. In the case
-    that the server is unable or unwilling to accept an observer, the time-intensive
-    re-registrations will just bring redundant messages in the constrained network
-    and considerable energy consumption on both the client and the server. This memo
-    defines a new CoAP option, State, for providing stateful observation on the resources
-    of CoAP servers. By observing the state of the server in terms of the Observe
-    Option, a client can explicitly learn when the server will not actively reject
-    an observation registration, and then can wisely performs the re-registration.
-    This avoids the potential registration flooding that causes considerable network
-    overhead and energy consumption on the constrained nodes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Observe Option allows a CoAP client to observe changes in the\n
+    \  state of resources and obtain a current representation of the last\n   resource
+    state.  To be an observer of an origin server's resources,\n   the client is required
+    to register its interest with the server.  A\n   successful registration will
+    make the client added into the server's\n   observation list, while a failed one
+    may drive the client to re-\n   register.\n\n   However, repeated and frequent
+    re-registrations cannot guarantee the\n   client to eventually become an observer
+    of the target server.  In the\n   case that the server is unable or unwilling
+    to accept an observer,\n   the time-intensive re-registrations will just bring
+    redundant\n   messages in the constrained network and considerable energy\n   consumption
+    on both the client and the server.\n\n   This memo defines a new CoAP option,
+    State, for providing stateful\n   observation on the resources of CoAP servers.
+    \ By observing the state\n   of the server in terms of the Observe Option, a client
+    can explicitly\n   learn when the server will not actively reject an observation\n
+    \  registration, and then can wisely performs the re-registration.  This\n   avoids
+    the potential registration flooding that causes considerable\n   network overhead
+    and energy consumption on the constrained nodes.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ma-core-stateful-observe-00
-    docid:
-    - id: draft-ma-core-stateful-observe-00
+    formattedref: draft-ma-core-stateful-observe-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ma-core-stateful-observe-00
+    docidentifier:
+    - content: draft-ma-core-stateful-observe-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ma-core-stateful-observe-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ma-core-stateful-observe-02
-    docid:
-    - id: draft-ma-core-stateful-observe-02
+    formattedref: draft-ma-core-stateful-observe-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ma-core-stateful-observe-02
+    docidentifier:
+    - content: draft-ma-core-stateful-observe-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ma-core-stateful-observe-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ma-core-stateful-observe-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,181 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-wang-tls-service-affinity-00
-title:
-- content: Service Affinity Solution based on Transport Layer Security (TLS)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-00
-  type: src
+id: draftwangtlsserviceaffinity00
 type: standard
-docid:
-- id: draft-wang-tls-service-affinity-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Service Affinity Solution based on Transport Layer Security (TLS)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-00
+docidentifier:
+- content: draft-wang-tls-service-affinity
+  type: Internet-Draft
+- content: draft-wang-tls-service-affinity-00
   type: Internet-Draft
   primary: true
-- id: I-D.wang-tls-service-affinity
-  type: IETF
-  scope: anchor
 docnumber: I-D.wang-tls-service-affinity
 date:
 - type: published
-  value: '2025-10-17'
+  at: '2025-10-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Wei Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aijun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aijun
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Aijun Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohit
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Sahni
-        language:
-        - en
       completename:
+        language: en
         content: Mohit Sahni
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Palo Alto Networks
-  role:
+        - language: en
+          content: Palo Alto Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketul
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sheth
-        language:
-        - en
       completename:
+        language: en
         content: Ketul Sheth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Palo Alto Networks
-  role:
-  - type: author
+        - language: en
+          content: Palo Alto Networks
 version:
 - draft: '00'
-revdate: '2025-10-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft proposes a service affinity solution between client and
-    server based on Transport Layer Security (TLS). An extension to Transport Layer
-    Security (TLS) 1.3 to enable session migration. This mechanism is designed for
-    modern network architectures, particularly for multi-homed servers that possess
-    multiple network interfaces and IP addresses. Comparing to the existing solutions
-    such as maintaining the customer- based connection status table in network devices,
-    HTTP redirection and DNS redirection, this solution can avoid the waste of resources
-    caused by saving a large amount of customer status data in the network devices,
-    and realize the optimized scheduling of resources based on network conditions
-    and computing resources in the computing- aware traffic steering scenario, so
-    as to realize the reasonable operation of network resources, cloud resources and
-    computing resources.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft proposes a service affinity solution between client and\n
+    \  server based on Transport Layer Security (TLS).  An extension to\n   Transport
+    Layer Security (TLS) 1.3 to enable session migration.  This\n   mechanism is designed
+    for modern network architectures, particularly\n   for multi-homed servers that
+    possess multiple network interfaces and\n   IP addresses.\n\n   Comparing to the
+    existing solutions such as maintaining the customer-\n   based connection status
+    table in network devices, HTTP redirection\n   and DNS redirection, this solution
+    can avoid the waste of resources\n   caused by saving a large amount of customer
+    status data in the\n   network devices, and realize the optimized scheduling of
+    resources\n   based on network conditions and computing resources in the computing-\n
+    \  aware traffic steering scenario, so as to realize the reasonable\n   operation
+    of network resources, cloud resources and computing\n   resources.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wang-tls-service-affinity-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

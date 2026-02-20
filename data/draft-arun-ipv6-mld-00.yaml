@@ -1,90 +1,77 @@
 ---
-schema-version: v1.2.9
-id: draft-arun-ipv6-mld-00
-title:
-- content: MLDv1 and MVDv2 Optimization
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-arun-ipv6-mld-00
-  type: src
+id: draftarunipv6mld00
 type: standard
-docid:
-- id: draft-arun-ipv6-mld-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MLDv1 and MVDv2 Optimization
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-arun-ipv6-mld-00
+docidentifier:
+- content: draft-arun-ipv6-mld
+  type: Internet-Draft
+- content: draft-arun-ipv6-mld-00
   type: Internet-Draft
   primary: true
-- id: I-D.arun-ipv6-mld
-  type: IETF
-  scope: anchor
 docnumber: I-D.arun-ipv6-mld
 date:
 - type: published
-  value: '2006-09-14'
+  at: '2006-09-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Arun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arun
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Prasad
-        language:
-        - en
       completename:
+        language: en
         content: Arun Prasad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Motorola India Private Ltd
-  role:
-  - type: author
+        - language: en
+          content: Motorola India Private Ltd
 version:
 - draft: '00'
-revdate: '2006-09-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes an optimization for MLDv1 (RFC 2710) and MLDv2
-    (RFC 3810). As per this optimization, a new router on coming up will not send
-    periodic "General Query" messages to get the list of multicast listeners. Instead,
-    it will try to get the same from the Querier on the link. Only if no Querier are
-    present on the link, will the new router move to Querier state and send "General
-    Query" messages. This approach provides an advantage in eliminating possibly large
-    number of "Multicast Listener Report" messages every time a new router comes up
-    on a link. More the number of listeners on a link, more the advantage.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes an optimization for MLDv1 (RFC 2710) and\n
+    \  MLDv2 (RFC 3810).\n   As per this optimization, a new router on coming up will
+    not send\n   periodic \"General Query\" messages to get the list of multicast\n
+    \  listeners. Instead, it will try to get the same from the Querier on\n   the
+    link. Only if no Querier are present on the link, will the new\n   router move
+    to Querier state and send \"General Query\" messages.\n   This approach provides
+    an advantage in eliminating possibly large\n   number of \"Multicast Listener
+    Report\" messages every time a new\n   router comes up on a link. More the number
+    of listeners on a link,\n   more the advantage.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-arun-ipv6-mld-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

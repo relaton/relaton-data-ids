@@ -1,224 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lsr-ospfv3-srv6-extensions-01
-title:
-- content: OSPFv3 Extensions for SRv6
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospfv3-srv6-extensions-01
-  type: src
+id: draftietflsrospfv3srv6extensions01
 type: standard
-docid:
-- id: draft-ietf-lsr-ospfv3-srv6-extensions-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPFv3 Extensions for SRv6
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospfv3-srv6-extensions-01
+docidentifier:
+- content: draft-ietf-lsr-ospfv3-srv6-extensions
+  type: Internet-Draft
+- content: draft-ietf-lsr-ospfv3-srv6-extensions-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsr-ospfv3-srv6-extensions
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lsr-ospfv3-srv6-extensions
 date:
 - type: published
-  value: '2020-08-14'
+  at: '2020-08-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dean
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dean
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Cheng
-        language:
-        - en
       completename:
+        language: en
         content: Dean Cheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '01'
-revdate: '2020-08-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Segment Routing (SR) allows for a flexible definition of end-to-end
-    paths by encoding paths as sequences of topological sub-paths, called "segments".
-    Segment Routing architecture can be implemented over an MPLS data plane as well
-    as an IPv6 data plane. This draft describes the OSPFv3 extensions required to
-    support Segment Routing over an IPv6 data plane (SRv6).</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment Routing (SR) allows for a flexible definition of end-to-end\n
+    \  paths by encoding paths as sequences of topological sub-paths, called\n   \"segments\".
+    \ Segment Routing architecture can be implemented over an\n   MPLS data plane
+    as well as an IPv6 data plane.  This draft describes\n   the OSPFv3 extensions
+    required to support Segment Routing over an\n   IPv6 data plane (SRv6).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lsr-ospfv3-srv6-extensions-00
-    docid:
-    - id: draft-ietf-lsr-ospfv3-srv6-extensions-00
+    formattedref: draft-ietf-lsr-ospfv3-srv6-extensions-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospfv3-srv6-extensions-00
+    docidentifier:
+    - content: draft-ietf-lsr-ospfv3-srv6-extensions-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospfv3-srv6-extensions-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lsr-ospfv3-srv6-extensions-02
-    docid:
-    - id: draft-ietf-lsr-ospfv3-srv6-extensions-02
+    formattedref: draft-ietf-lsr-ospfv3-srv6-extensions-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospfv3-srv6-extensions-02
+    docidentifier:
+    - content: draft-ietf-lsr-ospfv3-srv6-extensions-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospfv3-srv6-extensions-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lsr-ospfv3-srv6-extensions-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

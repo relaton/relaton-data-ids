@@ -1,115 +1,102 @@
 ---
-schema-version: v1.2.9
-id: draft-herbert-fast-06
-title:
-- content: Firewall and Service Tickets (FAST)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-herbert-fast-06
-  type: src
+id: draftherbertfast06
 type: standard
-docid:
-- id: draft-herbert-fast-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Firewall and Service Tickets (FAST)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-herbert-fast-06
+docidentifier:
+- content: draft-herbert-fast
+  type: Internet-Draft
+- content: draft-herbert-fast-06
   type: Internet-Draft
   primary: true
-- id: I-D.herbert-fast
-  type: IETF
-  scope: anchor
 docnumber: I-D.herbert-fast
 date:
 - type: published
-  value: '2023-08-04'
+  at: '2023-08-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Herbert
-        language:
-        - en
       completename:
+        language: en
         content: Tom Herbert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SiPanda
-  role:
-  - type: author
+        - language: en
+          content: SiPanda
 version:
 - draft: '06'
-revdate: '2023-08-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Firewall and Service Tickets is a generic and extensible protocol mechanism
-    for hosts to send explicit signals to on-path elements to request network services
-    on a per packet basis. This is a type of "host to networks signaling", and the
-    data of the signal is a "ticket" that accompanies a packet. A ticket indicates
-    the requested services or a grant of admission into a network; tickets are processed
-    by network nodes to instantiate the requested services. Tickets are scoped to
-    be relevant to their "origin domain" which is the network or limited domain in
-    which they are issued. Outside of their origin domain tickets are not processed
-    and are forwarded as opaque data. To prevent forgery and to obscure the services
-    being requested, tickets are authenticated, encrypted, or otherwise obfuscated
-    such that they can only be read by network nodes in their origin domain. Tickets
-    are sent in IPv6 Hop-by-Hop options.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Firewall and Service Tickets is a generic and extensible protocol\n
+    \  mechanism for hosts to send explicit signals to on-path elements to\n   request
+    network services on a per packet basis.  This is a type of\n   \"host to networks
+    signaling\", and the data of the signal is a\n   \"ticket\" that accompanies a
+    packet.  A ticket indicates the requested\n   services or a grant of admission
+    into a network; tickets are\n   processed by network nodes to instantiate the
+    requested services.\n   Tickets are scoped to be relevant to their \"origin domain\"
+    which is\n   the network or limited domain in which they are issued.  Outside
+    of\n   their origin domain tickets are not processed and are forwarded as\n   opaque
+    data.  To prevent forgery and to obscure the services being\n   requested, tickets
+    are authenticated, encrypted, or otherwise\n   obfuscated such that they can only
+    be read by network nodes in their\n   origin domain.  Tickets are sent in IPv6
+    Hop-by-Hop options.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-herbert-fast-05
-    docid:
-    - id: draft-herbert-fast-05
+    formattedref: draft-herbert-fast-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-herbert-fast-05
+    docidentifier:
+    - content: draft-herbert-fast-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-herbert-fast-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-herbert-fast-07
-    docid:
-    - id: draft-herbert-fast-07
+    formattedref: draft-herbert-fast-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-herbert-fast-07
+    docidentifier:
+    - content: draft-herbert-fast-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-herbert-fast-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-herbert-fast-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

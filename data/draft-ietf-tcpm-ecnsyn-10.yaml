@@ -1,159 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tcpm-ecnsyn-10
-title:
-- content: Adding Explicit Congestion Notification (ECN) Capability to TCP's SYN/ACK
-    Packets
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-ecnsyn-10
-  type: src
+id: draftietftcpmecnsyn10
 type: standard
-docid:
-- id: draft-ietf-tcpm-ecnsyn-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Adding Explicit Congestion Notification (ECN) Capability to TCP's SYN/ACK
+    Packets
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-ecnsyn-10
+docidentifier:
+- content: draft-ietf-tcpm-ecnsyn
+  type: Internet-Draft
+- content: draft-ietf-tcpm-ecnsyn-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tcpm-ecnsyn
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tcpm-ecnsyn
 date:
 - type: published
-  value: '2009-05-25'
+  at: '2009-05-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Amit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Amit
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mondal
-        language:
-        - en
       completename:
+        language: en
         content: Amit Mondal
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Northwestern University
-  role:
+        - language: en
+          content: Northwestern University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aleksandar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aleksandar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kuzmanovic
-        language:
-        - en
       completename:
+        language: en
         content: Aleksandar Kuzmanovic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Northwestern University
-  role:
+        - language: en
+          content: Northwestern University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K. K.
       surname:
+        language: en
         content: Ramakrishnan
-        language:
-        - en
       completename:
+        language: en
         content: Dr. K. K. Ramakrishnan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T Labs Research
-  role:
+        - language: en
+          content: AT&T Labs Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sally
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sally
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Floyd
-        language:
-        - en
       completename:
+        language: en
         content: Sally Floyd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICSI
-  role:
-  - type: author
+        - language: en
+          content: ICSI
 version:
 - draft: '10'
-revdate: '2009-05-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The proposal in this document is Experimental. While it may be deployed
+- language: en
+  script: Latn
+  content: "The proposal in this document is Experimental. While it may be deployed
     in the current Internet, it does not represent a consensus that this is the best
     possible mechanism for the use of Explicit Congestion Notification (ECN) in TCP
-    SYN/ACK packets. This document describes an optional, experimental modification
+    SYN/ACK packets.\n\n This document describes an optional, experimental modification
     to RFC 3168 to allow TCP SYN/ACK packets to be ECN-Capable. For TCP, RFC 3168
     specifies setting an ECN-Capable codepoint on data packets, but not on SYN and
     SYN/ACK packets. However, because of the high cost to the TCP transfer of having
@@ -171,23 +151,16 @@ abstract:
     SYN/ACK packet is dropped, or for some other reason the TCP responder does not
     receive an acknowledgement in the specified time, the TCP responder follows TCP
     standards for a dropped SYN/ACK packet (setting the retransmission timer). This
-    memo defines an Experimental Protocol for the Internet community.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    memo defines an Experimental Protocol for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tcpm-ecnsyn-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

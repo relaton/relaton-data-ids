@@ -1,192 +1,165 @@
 ---
-schema-version: v1.2.9
-id: draft-somaraju-ace-multicast-02
-title:
-- content: Security for Low-Latency Group Communication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-somaraju-ace-multicast-02
-  type: src
+id: draftsomarajuacemulticast02
 type: standard
-docid:
-- id: draft-somaraju-ace-multicast-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Security for Low-Latency Group Communication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-somaraju-ace-multicast-02
+docidentifier:
+- content: draft-somaraju-ace-multicast
+  type: Internet-Draft
+- content: draft-somaraju-ace-multicast-02
   type: Internet-Draft
   primary: true
-- id: I-D.somaraju-ace-multicast
-  type: IETF
-  scope: anchor
 docnumber: I-D.somaraju-ace-multicast
 date:
 - type: published
-  value: '2016-10-31'
+  at: '2016-10-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Abhinav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Abhinav
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Somaraju
-        language:
-        - en
       completename:
+        language: en
         content: Abhinav Somaraju
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S. S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep S. Kumar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
+        - language: en
+          content: Philips Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ARM Ltd.
-  role:
+        - language: en
+          content: ARM Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Walter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Walter
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Werner
-        language:
-        - en
       completename:
+        language: en
         content: Walter Werner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Werner Management Services e.U.
-  role:
-  - type: author
+        - language: en
+          content: Werner Management Services e.U.
 version:
 - draft: '02'
-revdate: '2016-10-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Some Internet of Things application domains require secure group communication.
-    This draft describes procedures for authorization, key management, and securing
-    group messages. We specify the usage of object security at the application layer
-    for group communication and assume that CoAP is used as the application layer
-    protocol. The architecture allows the usage of symmetric and asymmetric keys to
-    secure the group messages. The asymmetric key solution provides the ability to
-    uniquely authenticate the source of all group messages and this is the recommended
-    architecture for most applications. However, some applications have strict requirements
-    on latency for group communication (e.g. in non-emergency lighting applications)
-    and it may not always be feasible to use the secure source authenticated architecture.
-    In such applications we recommend the use of dynamically generated symmetric group
-    keys to secure group communications.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Some Internet of Things application domains require secure group\n
+    \  communication.  This draft describes procedures for authorization,\n   key
+    management, and securing group messages.  We specify the usage of\n   object security
+    at the application layer for group communication and\n   assume that CoAP is used
+    as the application layer protocol.  The\n   architecture allows the usage of symmetric
+    and asymmetric keys to\n   secure the group messages.  The asymmetric key solution
+    provides the\n   ability to uniquely authenticate the source of all group messages
+    and\n   this is the recommended architecture for most applications.  However,\n
+    \  some applications have strict requirements on latency for group\n   communication
+    (e.g. in non-emergency lighting applications) and it\n   may not always be feasible
+    to use the secure source authenticated\n   architecture.  In such applications
+    we recommend the use of\n   dynamically generated symmetric group keys to secure
+    group\n   communications.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-somaraju-ace-multicast-01
-    docid:
-    - id: draft-somaraju-ace-multicast-01
+    formattedref: draft-somaraju-ace-multicast-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-somaraju-ace-multicast-01
+    docidentifier:
+    - content: draft-somaraju-ace-multicast-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-somaraju-ace-multicast-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-somaraju-ace-multicast-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

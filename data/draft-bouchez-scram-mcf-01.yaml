@@ -1,104 +1,91 @@
 ---
-schema-version: v1.2.9
-id: draft-bouchez-scram-mcf-01
-title:
-- content: SCRAM with Modular Crypt Format (SCRAM-MCF)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bouchez-scram-mcf-01
-  type: src
+id: draftbouchezscrammcf01
 type: standard
-docid:
-- id: draft-bouchez-scram-mcf-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SCRAM with Modular Crypt Format (SCRAM-MCF)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bouchez-scram-mcf-01
+docidentifier:
+- content: draft-bouchez-scram-mcf
+  type: Internet-Draft
+- content: draft-bouchez-scram-mcf-01
   type: Internet-Draft
   primary: true
-- id: I-D.bouchez-scram-mcf
-  type: IETF
-  scope: anchor
 docnumber: I-D.bouchez-scram-mcf
 date:
 - type: published
-  value: '2025-11-23'
+  at: '2025-11-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Arnaud
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arnaud
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bouchez
-        language:
-        - en
       completename:
+        language: en
         content: Arnaud Bouchez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tranquil IT SAS
-  role:
-  - type: author
+        - language: en
+          content: Tranquil IT SAS
 version:
 - draft: '01'
-revdate: '2025-11-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies SCRAM-MCF, an extension to the Salted Challenge
-    Response Authentication Mechanism (SCRAM) family of SASL mechanisms ([RFC5802])
-    and HTTP Digest extensions ([RFC7616], [RFC7677]). The extension replaces the
-    PBKDF2-specific iteration count attributes i= and s= in the server-first-message
-    with a generic Modular Crypt Format (MCF) descriptor f=. This allows servers to
-    use modern memory- hard key derivation functions such as Argon2, SCrypt, or bcrypt
-    while preserving the full security properties and message flow of SCRAM. The change
-    is fully backward compatible: servers can continue sending i= and s= for legacy
-    clients and only send f= (or both) when the client advertises support. This document
-    is intended to be discussed and potentially adopted by the KITTEN working group.
-    Feedback from the KITTEN WG is welcome on the kitten@ietf.org mailing list.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies SCRAM-MCF, an extension to the Salted\n   Challenge
+    Response Authentication Mechanism (SCRAM) family of SASL\n   mechanisms ([RFC5802])
+    and HTTP Digest extensions ([RFC7616],\n   [RFC7677]).\n\n   The extension replaces
+    the PBKDF2-specific iteration count attributes\n   i= and s= in the server-first-message
+    with a generic Modular Crypt\n   Format (MCF) descriptor f=. This allows servers
+    to use modern memory-\n   hard key derivation functions such as Argon2, SCrypt,
+    or bcrypt while\n   preserving the full security properties and message flow of
+    SCRAM.\n\n   The change is fully backward compatible: servers can continue sending\n
+    \  i= and s= for legacy clients and only send f= (or both) when the\n   client
+    advertises support.\n\n   This document is intended to be discussed and potentially
+    adopted by\n   the KITTEN working group.  Feedback from the KITTEN WG is welcome
+    on\n   the kitten@ietf.org mailing list.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-bouchez-scram-mcf-00
-    docid:
-    - id: draft-bouchez-scram-mcf-00
+    formattedref: draft-bouchez-scram-mcf-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bouchez-scram-mcf-00
+    docidentifier:
+    - content: draft-bouchez-scram-mcf-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bouchez-scram-mcf-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bouchez-scram-mcf-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

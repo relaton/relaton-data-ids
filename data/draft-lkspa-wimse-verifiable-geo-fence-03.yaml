@@ -1,218 +1,188 @@
 ---
-schema-version: v1.2.9
-id: draft-lkspa-wimse-verifiable-geo-fence-03
-title:
-- content: 'Zero-Trust Sovereign AI: Verifiable Geofencing & Residency Proofs for
-    Cybersecure Workloads'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lkspa-wimse-verifiable-geo-fence-03
-  type: src
+id: draftlkspawimseverifiablegeofence03
 type: standard
-docid:
-- id: draft-lkspa-wimse-verifiable-geo-fence-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Zero-Trust Sovereign AI: Verifiable Geofencing & Residency Proofs for
+    Cybersecure Workloads'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lkspa-wimse-verifiable-geo-fence-03
+docidentifier:
+- content: draft-lkspa-wimse-verifiable-geo-fence
+  type: Internet-Draft
+- content: draft-lkspa-wimse-verifiable-geo-fence-03
   type: Internet-Draft
   primary: true
-- id: I-D.lkspa-wimse-verifiable-geo-fence
-  type: IETF
-  scope: anchor
 docnumber: I-D.lkspa-wimse-verifiable-geo-fence
 date:
 - type: published
-  value: '2025-10-19'
+  at: '2025-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ramki
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ramki
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Krishnan
-        language:
-        - en
       completename:
+        language: en
         content: Ramki Krishnan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vishanti Systems
-  role:
+        - language: en
+          content: Vishanti Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ned
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ned
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Ned Smith
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Prasad
-        language:
-        - en
       completename:
+        language: en
         content: A Prasad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Oracle
-  role:
+        - language: en
+          content: Oracle
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Srinivasa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Srinivasa
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Addepalli
-        language:
-        - en
       completename:
+        language: en
         content: Srinivasa Addepalli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aryaka
-  role:
-  - type: author
+        - language: en
+          content: Aryaka
 version:
 - draft: '03'
-revdate: '2025-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Modern cloud and distributed environments face significant risks from
-    stolen bearer tokens, protocol replay, and trust gaps in transit. This document
-    presents a framework for modernizing workload security through cryptographically
-    verifiable geofencing, proof-of-possession, and protocol-aware residency enforcement.
-    By binding workload identity to both geographic and host attributes, and supplementing
-    bearer tokens with verifiable, location- and host- bound claims, the framework
-    addresses the challenges of bearer token theft, proof-of-possession and trust-in-transit
-    for all networking protocols. Leveraging trusted hardware, attestation protocols,
-    and geolocation services, this approach ensures that only authorized workloads
-    in approved locations and environments can access sensitive data or services,
-    even in the presence of advanced threats.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Modern cloud and distributed environments face significant risks from\n
+    \  stolen bearer tokens, protocol replay, and trust gaps in transit.\n   This
+    document presents a framework for modernizing workload security\n   through cryptographically
+    verifiable geofencing, proof-of-possession,\n   and protocol-aware residency enforcement.\n\n
+    \  By binding workload identity to both geographic and host attributes,\n   and
+    supplementing bearer tokens with verifiable, location- and host-\n   bound claims,
+    the framework addresses the challenges of bearer token\n   theft, proof-of-possession
+    and trust-in-transit for all networking\n   protocols.  Leveraging trusted hardware,
+    attestation protocols, and\n   geolocation services, this approach ensures that
+    only authorized\n   workloads in approved locations and environments can access
+    sensitive\n   data or services, even in the presence of advanced threats.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lkspa-wimse-verifiable-geo-fence-02
-    docid:
-    - id: draft-lkspa-wimse-verifiable-geo-fence-02
+    formattedref: draft-lkspa-wimse-verifiable-geo-fence-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lkspa-wimse-verifiable-geo-fence-02
+    docidentifier:
+    - content: draft-lkspa-wimse-verifiable-geo-fence-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lkspa-wimse-verifiable-geo-fence-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lkspa-wimse-verifiable-geo-fence-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

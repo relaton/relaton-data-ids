@@ -1,158 +1,137 @@
 ---
-schema-version: v1.2.9
-id: draft-xu-intarea-challenge-icmpv6-00
-title:
-- content: Enhancing ICMPv6 Error Message Authentication Using Challenge-Confirm Mechanism
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-00
-  type: src
+id: draftxuintareachallengeicmpv600
 type: standard
-docid:
-- id: draft-xu-intarea-challenge-icmpv6-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhancing ICMPv6 Error Message Authentication Using Challenge-Confirm Mechanism
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-00
+docidentifier:
+- content: draft-xu-intarea-challenge-icmpv6
+  type: Internet-Draft
+- content: draft-xu-intarea-challenge-icmpv6-00
   type: Internet-Draft
   primary: true
-- id: I-D.xu-intarea-challenge-icmpv6
-  type: IETF
-  scope: anchor
 docnumber: I-D.xu-intarea-challenge-icmpv6
 date:
 - type: published
-  value: '2025-02-26'
+  at: '2025-02-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Ke Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University & Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Tsinghua University & Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xuewei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuewei
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Feng
-        language:
-        - en
       completename:
+        language: en
         content: Xuewei Feng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Ao Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Southeast University
-  role:
-  - type: author
+        - language: en
+          content: Southeast University
 version:
 - draft: '00'
-revdate: '2025-02-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>As well as the Internet Control Message Protocol for IPv4 (ICMPv4),
-    the Internet Control Message Protocol for IPv6 (ICMPv6) is significant for network
-    diagnostics and error reporting. However, like ICMPv4, ICMPv6 is also vulnerable
-    to off-path forgery, making it difficult for the receiver to verify the legitimacy
-    of a received ICMPv6 error message, particularly when the message contains stateless
-    protocol data (e.g., the message includes a UDP/ICMPv6 packet). Consequently,
-    adversaries on the Internet can forge ICMPv6 error messages carrying stateless
-    protocol data, leading the receiver to erroneously accept the forged message and
-    respond to it. This document proposes enhancement to ICMPv6 by introducing a challenge-
-    confirm mechanism that leverages random numbers embedded in the IPv6 Extension
-    Headers. The enhancement aims to strengthen the authentication of ICMPv6 error
-    messages, thereby mitigating the risks associated with forged messages and improving
-    the overall robustness of the protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   As well as the Internet Control Message Protocol for IPv4 (ICMPv4),\n
+    \  the Internet Control Message Protocol for IPv6 (ICMPv6) is\n   significant
+    for network diagnostics and error reporting.  However,\n   like ICMPv4, ICMPv6
+    is also vulnerable to off-path forgery, making it\n   difficult for the receiver
+    to verify the legitimacy of a received\n   ICMPv6 error message, particularly
+    when the message contains\n   stateless protocol data (e.g., the message includes
+    a UDP/ICMPv6\n   packet).  Consequently, adversaries on the Internet can forge
+    ICMPv6\n   error messages carrying stateless protocol data, leading the receiver\n
+    \  to erroneously accept the forged message and respond to it.  This\n   document
+    proposes enhancement to ICMPv6 by introducing a challenge-\n   confirm mechanism
+    that leverages random numbers embedded in the IPv6\n   Extension Headers.  The
+    enhancement aims to strengthen the\n   authentication of ICMPv6 error messages,
+    thereby mitigating the risks\n   associated with forged messages and improving
+    the overall robustness\n   of the protocol.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-xu-intarea-challenge-icmpv6-01
-    docid:
-    - id: draft-xu-intarea-challenge-icmpv6-01
+    formattedref: draft-xu-intarea-challenge-icmpv6-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-01
+    docidentifier:
+    - content: draft-xu-intarea-challenge-icmpv6-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-intarea-challenge-icmpv6-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-xu-intarea-challenge-icmpv6-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

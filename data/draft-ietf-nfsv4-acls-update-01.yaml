@@ -1,132 +1,120 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-nfsv4-acls-update-01
-title:
-- content: ACLs within the NFSv4 Protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-acls-update-01
-  type: src
+id: draftietfnfsv4aclsupdate01
 type: standard
-docid:
-- id: draft-ietf-nfsv4-acls-update-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ACLs within the NFSv4 Protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-acls-update-01
+docidentifier:
+- content: draft-ietf-nfsv4-acls-update
+  type: Internet-Draft
+- content: draft-ietf-nfsv4-acls-update-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-nfsv4-acls-update
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-nfsv4-acls-update
 date:
 - type: published
-  value: '2025-12-29'
+  at: '2025-12-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Noveck
-        language:
-        - en
       completename:
+        language: en
         content: David Noveck
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp
-  role:
-  - type: author
+        - language: en
+          content: NetApp
 version:
 - draft: '01'
-revdate: '2025-12-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document is part of the set of documents intended to update the
-    description of NFSv4 Minor Version One as part of the rfc881bis respecification
-    effort for NFSv4.1. It describes the structure and function of NFSv4 Access Control
-    Lists within NFSv4.0 and NFSv4.1. These minor versions define ACLs using an ACL
-    model based on Windows ACLs. Support for other ACL models such as draft POSIX
-    ACLs remains an option that could be taken advantage of in later minor versions
-    such as NFSv4.2. This document describes the structure of these Windows-derived
-    NFSv4 ACLs and their role in the NFSv4 security architecture. While the focus
-    of this document is on the role of these ACLs in providing a more flexible approach
-    to file access authorization than is made available by the POSIX-derived authorization-related
-    attributes, the potential provision of other security-related functionality is
-    covered as well. Because of the failure of previous specifications to provide
-    a satisfactory description of the authorization semantics of NFSv4 ACLs, this
-    document takes a different approach to many matters while maintaining compatibility
-    with implementations od previous specifications, which dealt with the need for
-    support for UNIX- oriented clients and server by leaving many important matters
-    unspecified. [Consensus Needed (Items #117a, #119a)]: In this document, the relationship
-    among the multiple ACL models for which potential support was mentioned has changed.
-    A core set of functionality, shared in large part with that derived from a subset
-    of the functionality provided by the now-withdrawn draft-POSIX ACLs is presented
-    as the conceptual base of the feature set. Additional sets of features used to
-    provide the functionality needed by clients expecting Windows semantics as part
-    of the NFSv4 ACL model are considered as OPTIONAL extensions to that core. In
-    addition it is made clear that support for the draft POSIX ACL model is not yet
-    present in NFSv4.1, but that a subset of that functionality is available. When
-    the resulting document is eventually published as an RFC, it will supersede the
-    descriptions of ACL structure and semantics appearing in existing minor version
-    specification documents for NFSv4.0 and NFSv4.1, thereby updating RFC7530 and
-    RFC8881.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document is part of the set of documents intended to update the\n
+    \  description of NFSv4 Minor Version One as part of the rfc881bis\n   respecification
+    effort for NFSv4.1.  It describes the structure and\n   function of NFSv4 Access
+    Control Lists within NFSv4.0 and NFSv4.1.\n   These minor versions define ACLs
+    using an ACL model based on Windows\n   ACLs.\n\n   Support for other ACL models
+    such as draft POSIX ACLs remains an\n   option that could be taken advantage of
+    in later minor versions such\n   as NFSv4.2.\n\n   This document describes the
+    structure of these Windows-derived NFSv4\n   ACLs and their role in the NFSv4
+    security architecture.  While the\n   focus of this document is on the role of
+    these ACLs in providing a\n   more flexible approach to file access authorization
+    than is made\n   available by the POSIX-derived authorization-related attributes,
+    the\n   potential provision of other security-related functionality is\n   covered
+    as well.\n\n   Because of the failure of previous specifications to provide a\n
+    \  satisfactory description of the authorization semantics of NFSv4\n   ACLs,
+    this document takes a different approach to many matters while\n   maintaining
+    compatibility with implementations od previous\n   specifications, which dealt
+    with the need for support for UNIX-\n   oriented clients and server by leaving
+    many important matters\n   unspecified.\n\n   [Consensus Needed (Items #117a,
+    #119a)]: In this document, the\n   relationship among the multiple ACL models
+    for which potential\n   support was mentioned has changed.  A core set of functionality,\n
+    \  shared in large part with that derived from a subset of the\n   functionality
+    provided by the now-withdrawn draft-POSIX ACLs is\n   presented as the conceptual
+    base of the feature set.  Additional sets\n   of features used to provide the
+    functionality needed by clients\n   expecting Windows semantics as part of the
+    NFSv4 ACL model are\n   considered as OPTIONAL extensions to that core.  In addition
+    it is\n   made clear that support for the draft POSIX ACL model is not yet\n   present
+    in NFSv4.1, but that a subset of that functionality is\n   available.\n\n   When
+    the resulting document is eventually published as an RFC, it\n   will supersede
+    the descriptions of ACL structure and semantics\n   appearing in existing minor
+    version specification documents for\n   NFSv4.0 and NFSv4.1, thereby updating
+    RFC7530 and RFC8881.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-nfsv4-acls-update-00
-    docid:
-    - id: draft-ietf-nfsv4-acls-update-00
+    formattedref: draft-ietf-nfsv4-acls-update-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-acls-update-00
+    docidentifier:
+    - content: draft-ietf-nfsv4-acls-update-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nfsv4-acls-update-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-nfsv4-acls-update-02
-    docid:
-    - id: draft-ietf-nfsv4-acls-update-02
+    formattedref: draft-ietf-nfsv4-acls-update-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-acls-update-02
+    docidentifier:
+    - content: draft-ietf-nfsv4-acls-update-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nfsv4-acls-update-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-nfsv4-acls-update-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,117 +1,104 @@
 ---
-schema-version: v1.2.9
-id: draft-boucadair-dnsop-prefix64-01
-title:
-- content: An EDNS0 Option for Sharing Pref64::/n
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-boucadair-dnsop-prefix64-01
-  type: src
+id: draftboucadairdnsopprefix6401
 type: standard
-docid:
-- id: draft-boucadair-dnsop-prefix64-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An EDNS0 Option for Sharing Pref64::/n
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-boucadair-dnsop-prefix64-01
+docidentifier:
+- content: draft-boucadair-dnsop-prefix64
+  type: Internet-Draft
+- content: draft-boucadair-dnsop-prefix64-01
   type: Internet-Draft
   primary: true
-- id: I-D.boucadair-dnsop-prefix64
-  type: IETF
-  scope: anchor
 docnumber: I-D.boucadair-dnsop-prefix64
 date:
 - type: published
-  value: '2021-06-23'
+  at: '2021-06-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
-  - type: author
+        - language: en
+          content: Orange
 version:
 - draft: '01'
-revdate: '2021-06-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies an Extension Mechanisms for DNS (EDNS0) option
-    to convey the IPv6 prefix used to build IPv4-converted IPv6 addresses. When conveyed
-    in a DNS query, the option communicates the IPv6 prefix used in the network from
-    which the query was originated. Such a network is assumed to enable a Network
-    Address and Protocol Translation from IPv6 clients to IPv4 servers (NAT64) function.
-    DNS64-capable servers will use that prefix to build synthesized AAAA records,
-    rather than relying on a preconfigured prefix. When conveyed in a DNS reply, the
-    option conveys the IPv6 prefix that is used by a DNS64-capable server to synthesized
-    AAAA records. Such information helps to automatically detect mismatches between
-    the local NAT64 configuration and the one enforced at the DNS64 server. Also,
-    security-aware and validating hosts may use the new EDNS0 option to signal the
-    presence of a NAT64 function. That signal is used by the DNS server to fill the
-    additional section of the AAAA reply in order to supply A RRs of the target. Dual
-    queries and delays are thus avoided. This document updates RFC 6147.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies an Extension Mechanisms for DNS (EDNS0)\n   option
+    to convey the IPv6 prefix used to build IPv4-converted IPv6\n   addresses.  When
+    conveyed in a DNS query, the option communicates the\n   IPv6 prefix used in the
+    network from which the query was originated.\n   Such a network is assumed to
+    enable a Network Address and Protocol\n   Translation from IPv6 clients to IPv4
+    servers (NAT64) function.\n   DNS64-capable servers will use that prefix to build
+    synthesized AAAA\n   records, rather than relying on a preconfigured prefix.  When\n
+    \  conveyed in a DNS reply, the option conveys the IPv6 prefix that is\n   used
+    by a DNS64-capable server to synthesized AAAA records.  Such\n   information helps
+    to automatically detect mismatches between the\n   local NAT64 configuration and
+    the one enforced at the DNS64 server.\n   Also, security-aware and validating
+    hosts may use the new EDNS0\n   option to signal the presence of a NAT64 function.
+    \ That signal is\n   used by the DNS server to fill the additional section of
+    the AAAA\n   reply in order to supply A RRs of the target.  Dual queries and\n
+    \  delays are thus avoided.\n\n   This document updates RFC 6147.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-boucadair-dnsop-prefix64-00
-    docid:
-    - id: draft-boucadair-dnsop-prefix64-00
+    formattedref: draft-boucadair-dnsop-prefix64-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-boucadair-dnsop-prefix64-00
+    docidentifier:
+    - content: draft-boucadair-dnsop-prefix64-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-boucadair-dnsop-prefix64-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-boucadair-dnsop-prefix64-02
-    docid:
-    - id: draft-boucadair-dnsop-prefix64-02
+    formattedref: draft-boucadair-dnsop-prefix64-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-boucadair-dnsop-prefix64-02
+    docidentifier:
+    - content: draft-boucadair-dnsop-prefix64-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-boucadair-dnsop-prefix64-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-boucadair-dnsop-prefix64-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

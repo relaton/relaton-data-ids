@@ -1,233 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-hu-spring-segment-routing-proxy-forwarding-08
-title:
-- content: SR-TE Path Midpoint Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding-08
-  type: src
+id: drafthuspringsegmentroutingproxyforwarding08
 type: standard
-docid:
-- id: draft-hu-spring-segment-routing-proxy-forwarding-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SR-TE Path Midpoint Protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding-08
+docidentifier:
+- content: draft-hu-spring-segment-routing-proxy-forwarding
+  type: Internet-Draft
+- content: draft-hu-spring-segment-routing-proxy-forwarding-08
   type: Internet-Draft
   primary: true
-- id: I-D.hu-spring-segment-routing-proxy-forwarding
-  type: IETF
-  scope: anchor
 docnumber: I-D.hu-spring-segment-routing-proxy-forwarding
 date:
 - type: published
-  value: '2020-05-18'
+  at: '2020-05-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Huaimo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huaimo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huaimo Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Junda
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Junda
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Yao
-        language:
-        - en
       completename:
+        language: en
         content: Junda Yao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bowers
-        language:
-        - en
       completename:
+        language: en
         content: Chris Bowers
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
-  - type: author
+        - language: en
+          content: China Telecom
 version:
 - draft: '08'
-revdate: '2020-05-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Segment Routing Traffic Engineering (SR-TE) supports the creation of
-    explicit paths using segment lists containing adjacency-SIDs, node- SIDs, anycast-SIDs,
-    and binding-SIDs. When the segment list defining an SR-TE path contains a node-SID,
-    and the node fails, the network may no longer be able to properly forward traffic
-    on that SR-TE path. [I-D.bashandy-rtgwg-segment-routing-ti-lfa] and [I-D.hegde-spring-node-protection-for-sr-te-paths]
-    describe a mechanism that allows local repair actions on the direct neighbors
-    of the failed node to temporarily route traffic to the node immediately following
-    the failed node on the SR-TE path segment list. However, once the IGP shortest
-    paths have converged, the local repair mechanism is no longer sufficient to continue
-    forwarding traffic using the original segment list of the SR-TE path, since the
-    non- neighbors of the failed node will no longer have a route to reach the failed
-    node. This document describes a mechanism that allows traffic to continue to be
-    forwarded on an SR-TE path for an extended period of time after the failure of
-    a node used in the path's segment list.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment Routing Traffic Engineering (SR-TE) supports the creation of\n
+    \  explicit paths using segment lists containing adjacency-SIDs, node-\n   SIDs,
+    anycast-SIDs, and binding-SIDs.  When the segment list defining\n   an SR-TE path
+    contains a node-SID, and the node fails, the network\n   may no longer be able
+    to properly forward traffic on that SR-TE path.\n   [I-D.bashandy-rtgwg-segment-routing-ti-lfa]
+    and\n   [I-D.hegde-spring-node-protection-for-sr-te-paths] describe a\n   mechanism
+    that allows local repair actions on the direct neighbors of\n   the failed node
+    to temporarily route traffic to the node immediately\n   following the failed
+    node on the SR-TE path segment list.  However,\n   once the IGP shortest paths
+    have converged, the local repair\n   mechanism is no longer sufficient to continue
+    forwarding traffic\n   using the original segment list of the SR-TE path, since
+    the non-\n   neighbors of the failed node will no longer have a route to reach
+    the\n   failed node.  This document describes a mechanism that allows traffic\n
+    \  to continue to be forwarded on an SR-TE path for an extended period\n   of
+    time after the failure of a node used in the path's segment list.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-hu-spring-segment-routing-proxy-forwarding-07
-    docid:
-    - id: draft-hu-spring-segment-routing-proxy-forwarding-07
+    formattedref: draft-hu-spring-segment-routing-proxy-forwarding-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding-07
+    docidentifier:
+    - content: draft-hu-spring-segment-routing-proxy-forwarding-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hu-spring-segment-routing-proxy-forwarding-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-hu-spring-segment-routing-proxy-forwarding-09
-    docid:
-    - id: draft-hu-spring-segment-routing-proxy-forwarding-09
+    formattedref: draft-hu-spring-segment-routing-proxy-forwarding-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hu-spring-segment-routing-proxy-forwarding-09
+    docidentifier:
+    - content: draft-hu-spring-segment-routing-proxy-forwarding-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hu-spring-segment-routing-proxy-forwarding-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hu-spring-segment-routing-proxy-forwarding-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

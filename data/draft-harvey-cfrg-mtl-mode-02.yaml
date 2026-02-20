@@ -1,207 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-harvey-cfrg-mtl-mode-02
-title:
-- content: Merkle Tree Ladder Mode (MTL) Signatures
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-harvey-cfrg-mtl-mode-02
-  type: src
+id: draftharveycfrgmtlmode02
 type: standard
-docid:
-- id: draft-harvey-cfrg-mtl-mode-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Merkle Tree Ladder Mode (MTL) Signatures
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-harvey-cfrg-mtl-mode-02
+docidentifier:
+- content: draft-harvey-cfrg-mtl-mode
+  type: Internet-Draft
+- content: draft-harvey-cfrg-mtl-mode-02
   type: Internet-Draft
   primary: true
-- id: I-D.harvey-cfrg-mtl-mode
-  type: IETF
-  scope: anchor
 docnumber: I-D.harvey-cfrg-mtl-mode
 date:
 - type: published
-  value: '2023-12-12'
+  at: '2023-12-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Harvey
-        language:
-        - en
       completename:
+        language: en
         content: Joe Harvey
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Burt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Burt
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Kaliski
-        language:
-        - en
       completename:
+        language: en
         content: Burt Kaliski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Fregly
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Fregly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Swapneel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Swapneel
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sheth
-        language:
-        - en
       completename:
+        language: en
         content: Swapneel Sheth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
-  - type: author
+        - language: en
+          content: Verisign Labs
 version:
 - draft: '02'
-revdate: '2023-12-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document provides an interoperable specification for Merkle tree
-    ladder (MTL) mode, a technique for using an underlying signature scheme to authenticate
-    an evolving series of messages. MTL mode can reduce the signature scheme's operational
-    impact. Rather than signing messages individually, the MTL mode of operation signs
-    structures called "Merkle tree ladders" that are derived from the messages to
-    be authenticated. Individual messages are then authenticated relative to the ladder
-    using a Merkle tree authentication path and the ladder is authenticated using
-    the public key of the underlying signature scheme. The size and computational
-    cost of the underlying signatures are thereby amortized across multiple messages,
-    reducing the scheme's operational impact. The reduction can be particularly beneficial
-    when MTL mode is applied to a post-quantum signature scheme that has a large signature
-    size or computational cost. As an example, the document shows how to use MTL mode
-    with SPHINCS+ (and the SLH-DSA subset specified in the draft FIPS 205), the stateless
-    hash-based signature scheme selected by NIST for standardization. Like other Merkle
-    tree techniques, MTL mode's security is based only on cryptographic hash functions,
-    so the mode is quantum-safe based on the quantum-resistance of its cryptographic
-    hash functions.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document provides an interoperable specification for Merkle tree\n
+    \  ladder (MTL) mode, a technique for using an underlying signature\n   scheme
+    to authenticate an evolving series of messages.  MTL mode can\n   reduce the signature
+    scheme's operational impact.  Rather than\n   signing messages individually, the
+    MTL mode of operation signs\n   structures called \"Merkle tree ladders\" that
+    are derived from the\n   messages to be authenticated.  Individual messages are
+    then\n   authenticated relative to the ladder using a Merkle tree\n   authentication
+    path and the ladder is authenticated using the public\n   key of the underlying
+    signature scheme.  The size and computational\n   cost of the underlying signatures
+    are thereby amortized across\n   multiple messages, reducing the scheme's operational
+    impact.  The\n   reduction can be particularly beneficial when MTL mode is applied
+    to\n   a post-quantum signature scheme that has a large signature size or\n   computational
+    cost.  As an example, the document shows how to use MTL\n   mode with SPHINCS+
+    (and the SLH-DSA subset specified in the draft\n   FIPS 205), the stateless hash-based
+    signature scheme selected by NIST\n   for standardization.  Like other Merkle
+    tree techniques, MTL mode's\n   security is based only on cryptographic hash functions,
+    so the mode\n   is quantum-safe based on the quantum-resistance of its cryptographic\n
+    \  hash functions.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-harvey-cfrg-mtl-mode-01
-    docid:
-    - id: draft-harvey-cfrg-mtl-mode-01
+    formattedref: draft-harvey-cfrg-mtl-mode-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-harvey-cfrg-mtl-mode-01
+    docidentifier:
+    - content: draft-harvey-cfrg-mtl-mode-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-harvey-cfrg-mtl-mode-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-harvey-cfrg-mtl-mode-03
-    docid:
-    - id: draft-harvey-cfrg-mtl-mode-03
+    formattedref: draft-harvey-cfrg-mtl-mode-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-harvey-cfrg-mtl-mode-03
+    docidentifier:
+    - content: draft-harvey-cfrg-mtl-mode-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-harvey-cfrg-mtl-mode-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-harvey-cfrg-mtl-mode-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

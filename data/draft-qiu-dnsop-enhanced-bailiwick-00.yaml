@@ -1,138 +1,121 @@
 ---
-schema-version: v1.2.9
-id: draft-qiu-dnsop-enhanced-bailiwick-00
-title:
-- content: Enhanced Bailiwick Checking for DNS Resolvers to Mitigate Cache Poisoning
-    Vulnerabilities
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-qiu-dnsop-enhanced-bailiwick-00
-  type: src
+id: draftqiudnsopenhancedbailiwick00
 type: standard
-docid:
-- id: draft-qiu-dnsop-enhanced-bailiwick-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhanced Bailiwick Checking for DNS Resolvers to Mitigate Cache Poisoning
+    Vulnerabilities
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-qiu-dnsop-enhanced-bailiwick-00
+docidentifier:
+- content: draft-qiu-dnsop-enhanced-bailiwick
+  type: Internet-Draft
+- content: draft-qiu-dnsop-enhanced-bailiwick-00
   type: Internet-Draft
   primary: true
-- id: I-D.qiu-dnsop-enhanced-bailiwick
-  type: IETF
-  scope: anchor
 docnumber: I-D.qiu-dnsop-enhanced-bailiwick
 date:
 - type: published
-  value: '2025-07-19'
+  at: '2025-07-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yuqi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuqi
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qiu
-        language:
-        - en
       completename:
+        language: en
         content: Yuqi Qiu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
+        - language: en
+          content: Nankai University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiang
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Xiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
-  - type: author
+        - language: en
+          content: Nankai University
 version:
 - draft: '00'
-revdate: '2025-07-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Domain Name System (DNS) relies on caching to function efficiently.
-    However, DNS cache poisoning remains a significant threat. The "bailiwick" rule
-    is a fundamental security mechanism intended to prevent resolvers from caching
-    out-of-bailiwick data sent by malicious or misconfigured authoritative servers.
-    Current DNS standards provide high-level guidance on bailiwick checking but lack
-    specific algorithmic definitions, leading to inconsistent implementations across
-    different DNS software. These inconsistencies can be exploited, particularly in
-    DNS servers that operate in multiple modes, such as Conditional DNS Servers (CDNS),
-    which may act as both recursive resolvers and forwarders and often share a common
-    cache. This document specifies enhanced and more precise rules for bailiwick checking
-    in DNS resolvers, including those operating as forwarders or CDNS. The goal is
-    to provide clearer guidelines for implementers, reduce the attack surface for
-    cache poisoning, and improve the overall security and robustness of the DNS infrastructure.
-    The recommendations herein are informed by recent research highlighting vulnerabilities
-    in existing bailiwick implementations.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Domain Name System (DNS) relies on caching to function\n   efficiently.
+    \ However, DNS cache poisoning remains a significant\n   threat.  The \"bailiwick\"
+    rule is a fundamental security mechanism\n   intended to prevent resolvers from
+    caching out-of-bailiwick data sent\n   by malicious or misconfigured authoritative
+    servers.  Current DNS\n   standards provide high-level guidance on bailiwick checking
+    but lack\n   specific algorithmic definitions, leading to inconsistent\n   implementations
+    across different DNS software.  These inconsistencies\n   can be exploited, particularly
+    in DNS servers that operate in\n   multiple modes, such as Conditional DNS Servers
+    (CDNS), which may act\n   as both recursive resolvers and forwarders and often
+    share a common\n   cache.\n\n   This document specifies enhanced and more precise
+    rules for bailiwick\n   checking in DNS resolvers, including those operating as
+    forwarders or\n   CDNS.  The goal is to provide clearer guidelines for implementers,\n
+    \  reduce the attack surface for cache poisoning, and improve the\n   overall
+    security and robustness of the DNS infrastructure.  The\n   recommendations herein
+    are informed by recent research highlighting\n   vulnerabilities in existing bailiwick
+    implementations.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-qiu-dnsop-enhanced-bailiwick-01
-    docid:
-    - id: draft-qiu-dnsop-enhanced-bailiwick-01
+    formattedref: draft-qiu-dnsop-enhanced-bailiwick-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-qiu-dnsop-enhanced-bailiwick-01
+    docidentifier:
+    - content: draft-qiu-dnsop-enhanced-bailiwick-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-qiu-dnsop-enhanced-bailiwick-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-qiu-dnsop-enhanced-bailiwick-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

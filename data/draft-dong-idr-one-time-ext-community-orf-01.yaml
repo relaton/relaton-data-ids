@@ -1,198 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-idr-one-time-ext-community-orf-01
-title:
-- content: One-time Extended Community Based Outbound Route Filter for BGP-4
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-idr-one-time-ext-community-orf-01
-  type: src
+id: draftdongidronetimeextcommunityorf01
 type: standard
-docid:
-- id: draft-dong-idr-one-time-ext-community-orf-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: One-time Extended Community Based Outbound Route Filter for BGP-4
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-idr-one-time-ext-community-orf-01
+docidentifier:
+- content: draft-dong-idr-one-time-ext-community-orf
+  type: Internet-Draft
+- content: draft-dong-idr-one-time-ext-community-orf-01
   type: Internet-Draft
   primary: true
-- id: I-D.dong-idr-one-time-ext-community-orf
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-idr-one-time-ext-community-orf
 date:
 - type: published
-  value: '2011-07-10'
+  at: '2011-07-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qing
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Zeng
-        language:
-        - en
       completename:
+        language: en
         content: Qing Zeng
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jakob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jakob
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Heitz
-        language:
-        - en
       completename:
+        language: en
         content: Jakob Heitz
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rob
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Shakir
-        language:
-        - en
       completename:
+        language: en
         content: Rob Shakir
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keyur
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Patel
-        language:
-        - en
       completename:
+        language: en
         content: Keyur Patel
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2011-07-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines a new Outbound Router Filter (ORF) type for BGP,
-    termed "One-time Extended Community Outbound Route Filter", which would allow
-    a BGP speaker to send to its BGP peer a route refresh request with a set of extended-community-based
-    filters to make the peer re-advertise only the specific routes matching the filters
-    to the speaker. This ORF-type enables a BGP speaker to refresh some specific routes
-    without requiring its peer to re- advertise the whole Adj-RIB-Out, which makes
-    the route refresh operation more efficient and reduces the impact on network stability.
-    This filter does not change the outbound route filters on BGP peers and should
-    only be used for one-time filtering.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a new Outbound Router Filter (ORF) type for\n
+    \  BGP, termed \"One-time Extended Community Outbound Route Filter\",\n   which
+    would allow a BGP speaker to send to its BGP peer a route\n   refresh request
+    with a set of extended-community-based filters to\n   make the peer re-advertise
+    only the specific routes matching the\n   filters to the speaker.  This ORF-type
+    enables a BGP speaker to\n   refresh some specific routes without requiring its
+    peer to re-\n   advertise the whole Adj-RIB-Out, which makes the route refresh\n
+    \  operation more efficient and reduces the impact on network stability.\n   This
+    filter does not change the outbound route filters on BGP peers\n   and should
+    only be used for one-time filtering.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-dong-idr-one-time-ext-community-orf-02
-    docid:
-    - id: draft-dong-idr-one-time-ext-community-orf-02
+    formattedref: draft-dong-idr-one-time-ext-community-orf-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-idr-one-time-ext-community-orf-02
+    docidentifier:
+    - content: draft-dong-idr-one-time-ext-community-orf-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-idr-one-time-ext-community-orf-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-idr-one-time-ext-community-orf-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

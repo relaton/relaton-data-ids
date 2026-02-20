@@ -1,180 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-keoh-dtls-multicast-security-00
-title:
-- content: DTLS-based Multicast Security for Low-Power and Lossy Networks (LLNs)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-keoh-dtls-multicast-security-00
-  type: src
+id: draftkeohdtlsmulticastsecurity00
 type: standard
-docid:
-- id: draft-keoh-dtls-multicast-security-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DTLS-based Multicast Security for Low-Power and Lossy Networks (LLNs)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-keoh-dtls-multicast-security-00
+docidentifier:
+- content: draft-keoh-dtls-multicast-security
+  type: Internet-Draft
+- content: draft-keoh-dtls-multicast-security-00
   type: Internet-Draft
   primary: true
-- id: I-D.keoh-dtls-multicast-security
-  type: IETF
-  scope: anchor
 docnumber: I-D.keoh-dtls-multicast-security
 date:
 - type: published
-  value: '2013-07-06'
+  at: '2013-07-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sye
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sye
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Keoh
-        language:
-        - en
       completename:
+        language: en
         content: Sye Keoh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
+        - language: en
+          content: Philips Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Kumar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
+        - language: en
+          content: Philips Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Garcia-Morchon
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Garcia-Morchon
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
+        - language: en
+          content: Philips Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Esko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Esko
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Dijk
-        language:
-        - en
       completename:
+        language: en
         content: Esko Dijk
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
-  - type: author
+        - language: en
+          content: Philips Research
 version:
 - draft: '00'
-revdate: '2013-07-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Wireless IP-based systems will be increasingly used for building control
-    systems in the future where wireless devices interconnect with each other, forming
-    low-power and lossy networks (LLNs). The CoAP/6LoWPAN standards are emerging as
-    the de-facto protocols in this area for resource-constrained devices. Both multicast
-    and security are key needs in these networks. This draft presents a method for
-    securing multicast communication in LLNs based on the DTLS which is already present
-    in CoAP devices. This draft deals with the adaptation of the DTLS record layer
-    to protect multicast group communication, assuming that all member devices already
-    have a group key in their own possession. The DTLS record layer implementation
-    is used to encrypt a multicast message and to provide message authentication using
-    the group key before sending the message via IP multicast to the group.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Wireless IP-based systems will be increasingly used for building\n
+    \  control systems in the future where wireless devices interconnect\n   with
+    each other, forming low-power and lossy networks (LLNs).  The\n   CoAP/6LoWPAN
+    standards are emerging as the de-facto protocols in this\n   area for resource-constrained
+    devices.  Both multicast and security\n   are key needs in these networks.  This
+    draft presents a method for\n   securing multicast communication in LLNs based
+    on the DTLS which is\n   already present in CoAP devices.  This draft deals with
+    the\n   adaptation of the DTLS record layer to protect multicast group\n   communication,
+    assuming that all member devices already have a group\n   key in their own possession.
+    \ The DTLS record layer implementation is\n   used to encrypt a multicast message
+    and to provide message\n   authentication using the group key before sending the
+    message via IP\n   multicast to the group.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-keoh-dtls-multicast-security-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

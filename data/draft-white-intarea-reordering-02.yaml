@@ -1,188 +1,163 @@
 ---
-schema-version: v1.2.9
-id: draft-white-intarea-reordering-02
-title:
-- content: Proposal for Updates to Guidance on Packet Reordering
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-02
-  type: src
+id: draftwhiteintareareordering02
 type: standard
-docid:
-- id: draft-white-intarea-reordering-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Proposal for Updates to Guidance on Packet Reordering
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-02
+docidentifier:
+- content: draft-white-intarea-reordering
+  type: Internet-Draft
+- content: draft-white-intarea-reordering-02
   type: Internet-Draft
   primary: true
-- id: I-D.white-intarea-reordering
-  type: IETF
-  scope: anchor
 docnumber: I-D.white-intarea-reordering
 date:
 - type: published
-  value: '2025-10-20'
+  at: '2025-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: White
-        language:
-        - en
       completename:
+        language: en
         content: Greg White
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
+        - language: en
+          content: CableLabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ingemar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ingemar
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Johansson
-        language:
-        - en
       completename:
+        language: en
         content: Ingemar Johansson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dibakar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dibakar
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Das
-        language:
-        - en
       completename:
+        language: en
         content: Dibakar Das
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Box
-        language:
-        - en
       completename:
+        language: en
         content: Chris Box
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: BT Group
-  role:
-  - type: author
+        - language: en
+          content: BT Group
 version:
 - draft: '02'
-revdate: '2025-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Several link technology standards mandate that equipment guarantee in-order
-    delivery of layer 2 frames, apparently due to a belief that this is required by
-    higher layer protocols. To meet this requirement they implement a "resequencing"
-    operation to restore the original packet order. This can introduce delays that
-    result in net degradation of performance. Modern TCP and QUIC implementations
-    support features that significantly improve their tolerance to out- of-order delivery.
-    This draft is intended to provide new information for layer 2 technology standards
-    regarding the need to assure in- order delivery to support IETF protocols.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Several link technology standards mandate that equipment guarantee\n
+    \  in-order delivery of layer 2 frames, apparently due to a belief that\n   this
+    is required by higher layer protocols.  To meet this requirement\n   they implement
+    a \"resequencing\" operation to restore the original\n   packet order.  This can
+    introduce delays that result in net\n   degradation of performance.  Modern TCP
+    and QUIC implementations\n   support features that significantly improve their
+    tolerance to out-\n   of-order delivery.  This draft is intended to provide new
+    information\n   for layer 2 technology standards regarding the need to assure
+    in-\n   order delivery to support IETF protocols.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-white-intarea-reordering-01
-    docid:
-    - id: draft-white-intarea-reordering-01
+    formattedref: draft-white-intarea-reordering-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-01
+    docidentifier:
+    - content: draft-white-intarea-reordering-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-white-intarea-reordering-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-white-intarea-reordering-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

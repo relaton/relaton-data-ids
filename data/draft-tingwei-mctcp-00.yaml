@@ -1,209 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-tingwei-mctcp-00
-title:
-- content: Congestion-Aware and Robust MultiCast TCP in Software-Defined Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tingwei-mctcp-00
-  type: src
+id: drafttingweimctcp00
 type: standard
-docid:
-- id: draft-tingwei-mctcp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Congestion-Aware and Robust MultiCast TCP in Software-Defined Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tingwei-mctcp-00
+docidentifier:
+- content: draft-tingwei-mctcp
+  type: Internet-Draft
+- content: draft-tingwei-mctcp-00
   type: Internet-Draft
   primary: true
-- id: I-D.tingwei-mctcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.tingwei-mctcp
 date:
 - type: published
-  value: '2015-09-28'
+  at: '2015-09-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tingwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tingwei
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Tingwei Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huazhong University of Science and Technology
-  role:
+        - language: en
+          content: Huazhong University of Science and Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fang
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Fang Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huazhong University of Science and Technology
-  role:
+        - language: en
+          content: Huazhong University of Science and Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Feng
-        language:
-        - en
       completename:
+        language: en
         content: Dan Feng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huazhong University of Science and Technology
-  role:
+        - language: en
+          content: Huazhong University of Science and Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qingyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qingyu
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Qingyu Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huazhong University of Science and Technology
-  role:
+        - language: en
+          content: Huazhong University of Science and Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yanwen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yanwen
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Yanwen Xie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huazhong University of Science and Technology
-  role:
-  - type: author
+        - language: en
+          content: Huazhong University of Science and Technology
 version:
 - draft: '00'
-revdate: '2015-09-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Reliable group communication is required in distributed applications,
-    such as distributed file systems (HDFS, GFS and Ceph), where such group communication
-    is defined by the sender and the group members are small (e.g. three). However,
-    existing standards for reliable multicast transport are receiver-initiated and
-    suffer from inefficiency in either host-side protocols or multicast routing. This
-    draft proposes a sender-initiated, efficient, congestion-aware and robust reliable
-    multicast solution in Software-Defined Networks (SDN), called MCTCP (MultiCast
-    TCP). The main idea behind MCTCP is to manage the multicast groups in a centralized
-    manner, and reactively schedule multicast flows to active and low-utilized links,
-    and it is implemented by extending TCP as the host-side protocol and managing
-    multicast groups in SDN-controller.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Reliable group communication is required in distributed applications,\n
+    \  such as distributed file systems (HDFS, GFS and Ceph), where such\n   group
+    communication is defined by the sender and the group members\n   are small (e.g.
+    three).  However, existing standards for reliable\n   multicast transport are
+    receiver-initiated and suffer from\n   inefficiency in either host-side protocols
+    or multicast routing.\n\n   This draft proposes a sender-initiated, efficient,
+    congestion-aware\n   and robust reliable multicast solution in Software-Defined
+    Networks\n   (SDN), called MCTCP (MultiCast TCP).  The main idea behind MCTCP
+    is\n   to manage the multicast groups in a centralized manner, and\n   reactively
+    schedule multicast flows to active and low-utilized links,\n   and it is implemented
+    by extending TCP as the host-side protocol and\n   managing multicast groups in
+    SDN-controller.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tingwei-mctcp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,200 +1,174 @@
 ---
-schema-version: v1.2.9
-id: draft-xu-lsr-isis-flooding-reduction-in-msdc-01
-title:
-- content: IS-IS Flooding Reduction in MSDC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-xu-lsr-isis-flooding-reduction-in-msdc-01
-  type: src
+id: draftxulsrisisfloodingreductioninmsdc01
 type: standard
-docid:
-- id: draft-xu-lsr-isis-flooding-reduction-in-msdc-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IS-IS Flooding Reduction in MSDC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-xu-lsr-isis-flooding-reduction-in-msdc-01
+docidentifier:
+- content: draft-xu-lsr-isis-flooding-reduction-in-msdc
+  type: Internet-Draft
+- content: draft-xu-lsr-isis-flooding-reduction-in-msdc-01
   type: Internet-Draft
   primary: true
-- id: I-D.xu-lsr-isis-flooding-reduction-in-msdc
-  type: IETF
-  scope: anchor
 docnumber: I-D.xu-lsr-isis-flooding-reduction-in-msdc
 date:
 - type: published
-  value: '2018-10-18'
+  at: '2018-10-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaohu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaohu
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaohu Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba, Inc
-  role:
+        - language: en
+          content: Alibaba, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luyuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luyuan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fang
-        language:
-        - en
       completename:
+        language: en
         content: Luyuan Fang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Expedia, Inc
-  role:
+        - language: en
+          content: Expedia, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apstra, Inc.
-  role:
+        - language: en
+          content: Apstra, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shaowen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shaowen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Shaowen Ma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper
-  role:
-  - type: author
+        - language: en
+          content: Juniper
 version:
 - draft: '01'
-revdate: '2018-10-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>IS-IS is commonly used as an underlay routing protocol for MSDC (Massively
-    Scalable Data Center) networks. For a given IS-IS router within the CLOS topology,
-    it would receive multiple copies of exactly the same LSP from multiple IS-IS neighbors.
-    In addition, two IS-IS neighbors may send each other the same LSP simultaneously.
-    The unneccessary link-state information flooding wastes the precious process resource
-    of IS-IS routers greatly due to the fact that there are too many IS-IS neighbors
-    for each IS-IS router within the CLOS topology. This document proposes some extensions
-    to IS-IS so as to reduce the IS-IS flooding within MSDC networks greatly. The
-    reduction of the IS-IS flooding is much beneficial to improve the scalability
-    of MSDC networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   IS-IS is commonly used as an underlay routing protocol for MSDC\n   (Massively
+    Scalable Data Center) networks.  For a given IS-IS router\n   within the CLOS
+    topology, it would receive multiple copies of exactly\n   the same LSP from multiple
+    IS-IS neighbors.  In addition, two IS-IS\n   neighbors may send each other the
+    same LSP simultaneously.  The\n   unneccessary link-state information flooding
+    wastes the precious\n   process resource of IS-IS routers greatly due to the fact
+    that there\n   are too many IS-IS neighbors for each IS-IS router within the CLOS\n
+    \  topology.  This document proposes some extensions to IS-IS so as to\n   reduce
+    the IS-IS flooding within MSDC networks greatly.  The\n   reduction of the IS-IS
+    flooding is much beneficial to improve the\n   scalability of MSDC networks.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-xu-lsr-isis-flooding-reduction-in-msdc-00
-    docid:
-    - id: draft-xu-lsr-isis-flooding-reduction-in-msdc-00
+    formattedref: draft-xu-lsr-isis-flooding-reduction-in-msdc-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-lsr-isis-flooding-reduction-in-msdc-00
+    docidentifier:
+    - content: draft-xu-lsr-isis-flooding-reduction-in-msdc-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-lsr-isis-flooding-reduction-in-msdc-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-xu-lsr-isis-flooding-reduction-in-msdc-02
-    docid:
-    - id: draft-xu-lsr-isis-flooding-reduction-in-msdc-02
+    formattedref: draft-xu-lsr-isis-flooding-reduction-in-msdc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-lsr-isis-flooding-reduction-in-msdc-02
+    docidentifier:
+    - content: draft-xu-lsr-isis-flooding-reduction-in-msdc-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-lsr-isis-flooding-reduction-in-msdc-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-xu-lsr-isis-flooding-reduction-in-msdc-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

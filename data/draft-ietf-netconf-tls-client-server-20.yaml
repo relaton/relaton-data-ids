@@ -1,150 +1,133 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-tls-client-server-20
-title:
-- content: YANG Groupings for TLS Clients and TLS Servers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-tls-client-server-20
-  type: src
+id: draftietfnetconftlsclientserver20
 type: standard
-docid:
-- id: draft-ietf-netconf-tls-client-server-20
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: YANG Groupings for TLS Clients and TLS Servers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-tls-client-server-20
+docidentifier:
+- content: draft-ietf-netconf-tls-client-server
+  type: Internet-Draft
+- content: draft-ietf-netconf-tls-client-server-20
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-tls-client-server
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-tls-client-server
 date:
 - type: published
-  value: '2020-07-08'
+  at: '2020-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Watsen
-        language:
-        - en
       completename:
+        language: en
         content: Kent Watsen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Watsen Networks
-  role:
+        - language: en
+          content: Watsen Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gary
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gary
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Gary Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '20'
-revdate: '2020-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document defines three YANG modules: the first defines groupings
-    for a generic TLS client, the second defines groupings for a generic TLS server,
-    and the third defines common identities and groupings used by both the client
-    and the server. It is intended that these groupings will be used by applications
-    using the TLS protocol. Editorial Note (To be removed by RFC Editor) This draft
-    contains placeholder values that need to be replaced with finalized values at
-    the time of publication. This note summarizes all of the substitutions that are
-    needed. No other RFC Editor instructions are specified elsewhere in this document.
-    Artwork in this document contains shorthand references to drafts in progress.
-    Please apply the following replacements: * "AAAA" --&gt; the assigned RFC value
-    for draft-ietf-netconf-crypto- types * "BBBB" --&gt; the assigned RFC value for
-    draft-ietf-netconf-trust- anchors * "CCCC" --&gt; the assigned RFC value for draft-ietf-netconf-keystore
-    * "DDDD" --&gt; the assigned RFC value for draft-ietf-netconf-tcp- client-server
-    * "FFFF" --&gt; the assigned RFC value for this draft Artwork in this document
-    contains placeholder values for the date of publication of this draft. Please
-    apply the following replacement: * "2020-07-08" --&gt; the publication date of
-    this draft The following Appendix section is to be removed prior to publication:
-    * Appendix A. Change Log</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines three YANG modules: the first defines groupings\n
+    \  for a generic TLS client, the second defines groupings for a generic\n   TLS
+    server, and the third defines common identities and groupings\n   used by both
+    the client and the server.  It is intended that these\n   groupings will be used
+    by applications using the TLS protocol.\n\nEditorial Note (To be removed by RFC
+    Editor)\n\n   This draft contains placeholder values that need to be replaced
+    with\n   finalized values at the time of publication.  This note summarizes\n
+    \  all of the substitutions that are needed.  No other RFC Editor\n   instructions
+    are specified elsewhere in this document.\n\n   Artwork in this document contains
+    shorthand references to drafts in\n   progress.  Please apply the following replacements:\n\n
+    \  *  \"AAAA\" --> the assigned RFC value for draft-ietf-netconf-crypto-\n      types\n\n
+    \  *  \"BBBB\" --> the assigned RFC value for draft-ietf-netconf-trust-\n      anchors\n\n
+    \  *  \"CCCC\" --> the assigned RFC value for draft-ietf-netconf-keystore\n\n
+    \  *  \"DDDD\" --> the assigned RFC value for draft-ietf-netconf-tcp-\n      client-server\n\n
+    \  *  \"FFFF\" --> the assigned RFC value for this draft\n\n   Artwork in this
+    document contains placeholder values for the date of\n   publication of this draft.
+    \ Please apply the following replacement:\n\n   *  \"2020-07-08\" --> the publication
+    date of this draft\n\n   The following Appendix section is to be removed prior
+    to publication:\n\n   *  Appendix A.  Change Log\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-tls-client-server-19
-    docid:
-    - id: draft-ietf-netconf-tls-client-server-19
+    formattedref: draft-ietf-netconf-tls-client-server-19
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-tls-client-server-19
+    docidentifier:
+    - content: draft-ietf-netconf-tls-client-server-19
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-tls-client-server-19
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-tls-client-server-21
-    docid:
-    - id: draft-ietf-netconf-tls-client-server-21
+    formattedref: draft-ietf-netconf-tls-client-server-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-tls-client-server-21
+    docidentifier:
+    - content: draft-ietf-netconf-tls-client-server-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-tls-client-server-21
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-tls-client-server-20
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

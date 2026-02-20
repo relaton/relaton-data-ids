@@ -1,226 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-vpn-prefix-orf-15
-title:
-- content: VPN Prefix Outbound Route Filter (VPN Prefix ORF) for BGP-4
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-vpn-prefix-orf-15
-  type: src
+id: draftietfidrvpnprefixorf15
 type: standard
-docid:
-- id: draft-ietf-idr-vpn-prefix-orf-15
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: VPN Prefix Outbound Route Filter (VPN Prefix ORF) for BGP-4
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-vpn-prefix-orf-15
+docidentifier:
+- content: draft-ietf-idr-vpn-prefix-orf
+  type: Internet-Draft
+- content: draft-ietf-idr-vpn-prefix-orf-15
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-vpn-prefix-orf
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-vpn-prefix-orf
 date:
 - type: published
-  value: '2025-06-04'
+  at: '2025-06-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Wei Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aijun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aijun
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Aijun Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haibo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Haibo Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
+        - language: en
+          content: Verizon Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '15'
-revdate: '2025-06-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft defines a new type of Outbound Route Filter (ORF), known
-    as the VPN Prefix ORF. The VPN Prefix ORF mechanism is applicable when VPN routes
-    from different VRFs are exchanged through a single shared BGP session.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft defines a new type of Outbound Route Filter (ORF), known\n
+    \  as the VPN Prefix ORF.  The VPN Prefix ORF mechanism is applicable\n   when
+    VPN routes from different VRFs are exchanged through a single\n   shared BGP session.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-vpn-prefix-orf-14
-    docid:
-    - id: draft-ietf-idr-vpn-prefix-orf-14
+    formattedref: draft-ietf-idr-vpn-prefix-orf-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-vpn-prefix-orf-14
+    docidentifier:
+    - content: draft-ietf-idr-vpn-prefix-orf-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-vpn-prefix-orf-14
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-vpn-prefix-orf-16
-    docid:
-    - id: draft-ietf-idr-vpn-prefix-orf-16
+    formattedref: draft-ietf-idr-vpn-prefix-orf-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-vpn-prefix-orf-16
+    docidentifier:
+    - content: draft-ietf-idr-vpn-prefix-orf-16
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-vpn-prefix-orf-16
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-vpn-prefix-orf-15
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

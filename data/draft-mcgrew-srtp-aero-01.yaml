@@ -1,162 +1,141 @@
 ---
-schema-version: v1.2.9
-id: draft-mcgrew-srtp-aero-01
-title:
-- content: Using Authenticated Encryption with Replay prOtection (AERO) in SRTP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mcgrew-srtp-aero-01
-  type: src
+id: draftmcgrewsrtpaero01
 type: standard
-docid:
-- id: draft-mcgrew-srtp-aero-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Using Authenticated Encryption with Replay prOtection (AERO) in SRTP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mcgrew-srtp-aero-01
+docidentifier:
+- content: draft-mcgrew-srtp-aero
+  type: Internet-Draft
+- content: draft-mcgrew-srtp-aero-01
   type: Internet-Draft
   primary: true
-- id: I-D.mcgrew-srtp-aero
-  type: IETF
-  scope: anchor
 docnumber: I-D.mcgrew-srtp-aero
 date:
 - type: published
-  value: '2013-10-21'
+  at: '2013-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: McGrew
-        language:
-        - en
       completename:
+        language: en
         content: David McGrew
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wing
-        language:
-        - en
       completename:
+        language: en
         content: Dan Wing
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Foley
-        language:
-        - en
       completename:
+        language: en
         content: John Foley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '01'
-revdate: '2013-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Authenticated Encryption with Replay prOtection (AERO) is a cryptographic
-    technique that provides all of the security services that are used in the Secure
-    Real-time Transport Protocol (SRTP). This note describes how to use AERO in SRTP.
-    AERO has minimal data expansion, avoids the need to manage implicit state, and
-    provides strong misuse resistance. These properties make it an ideal cryptographic
-    transform for SRTP, as it enables SRTP to easily handle multiple senders sharing
-    the same key, multiple receivers with late- joiners in a session, decentralized
-    conferences with minimal control, and mixers that selectively forward RTP traffic.
-    RTP architectures that utilize AERO can use the normal SSRC collision detection
-    mechanism, and can ignore problematic SRTP artifacts such as the Roll-Over Counter
-    (ROC) and Initial Sequence Number.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Authenticated Encryption with Replay prOtection (AERO) is a\n   cryptographic
+    technique that provides all of the security services\n   that are used in the
+    Secure Real-time Transport Protocol (SRTP).\n   This note describes how to use
+    AERO in SRTP.  AERO has minimal data\n   expansion, avoids the need to manage
+    implicit state, and provides\n   strong misuse resistance.  These properties make
+    it an ideal\n   cryptographic transform for SRTP, as it enables SRTP to easily
+    handle\n   multiple senders sharing the same key, multiple receivers with late-\n
+    \  joiners in a session, decentralized conferences with minimal control,\n   and
+    mixers that selectively forward RTP traffic.  RTP architectures\n   that utilize
+    AERO can use the normal SSRC collision detection\n   mechanism, and can ignore
+    problematic SRTP artifacts such as the\n   Roll-Over Counter (ROC) and Initial
+    Sequence Number.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mcgrew-srtp-aero-00
-    docid:
-    - id: draft-mcgrew-srtp-aero-00
+    formattedref: draft-mcgrew-srtp-aero-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcgrew-srtp-aero-00
+    docidentifier:
+    - content: draft-mcgrew-srtp-aero-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mcgrew-srtp-aero-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mcgrew-srtp-aero-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

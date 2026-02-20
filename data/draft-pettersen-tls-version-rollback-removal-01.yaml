@@ -1,117 +1,101 @@
 ---
-schema-version: v1.2.9
-id: draft-pettersen-tls-version-rollback-removal-01
-title:
-- content: Managing and removing automatic version rollback in TLS Clients
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pettersen-tls-version-rollback-removal-01
-  type: src
+id: draftpettersentlsversionrollbackremoval01
 type: standard
-docid:
-- id: draft-pettersen-tls-version-rollback-removal-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Managing and removing automatic version rollback in TLS Clients
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pettersen-tls-version-rollback-removal-01
+docidentifier:
+- content: draft-pettersen-tls-version-rollback-removal
+  type: Internet-Draft
+- content: draft-pettersen-tls-version-rollback-removal-01
   type: Internet-Draft
   primary: true
-- id: I-D.pettersen-tls-version-rollback-removal
-  type: IETF
-  scope: anchor
 docnumber: I-D.pettersen-tls-version-rollback-removal
 date:
 - type: published
-  value: '2013-01-09'
+  at: '2013-01-09'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Yngve
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: Y. N.
-          language:
-          - en
-      surname:
-        content: Pettersen
-        language:
-        - en
-      completename:
-        content: Yngve N. Pettersen
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Yngve
+      - language: en
+        script: Latn
+        initial: "Y"
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: Y. N.
+      surname:
+        language: en
+        content: Pettersen
+      completename:
+        language: en
+        content: Yngve N. Pettersen
 version:
 - draft: '01'
-revdate: '2013-01-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Ever since vendors started deploying TLS 1.0 clients, these clients
-    have had to handle server implementations that do not tolerate the TLS version
-    supported by the client, usually by automatically signaling an older supported
-    version instead. Such version rollbacks represent a potential security hazard,
-    if the older version should become vulnerable to attacks. The same history repeated
-    when TLS Extensions were introduced, as some servers would not negotiate with
-    clients that sent these protocol extensions, forcing clients to reduce protocol
-    functionality in order to maintain interoperability. This document outlines a
-    procedure to help clients decide when they may use version rollback to maintain
-    interoperability with legacy servers, under what conditions the clients should
-    not allow version rollbacks, such as when the server has indicated support for
-    the TLS Renegotiation Information extension. The intention of this procedure is
-    to limit the use of automatic version rollback to legacy servers and eventually
-    eliminate its use.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Ever since vendors started deploying TLS 1.0 clients, these clients\n
+    \  have had to handle server implementations that do not tolerate the\n   TLS
+    version supported by the client, usually by automatically\n   signaling an older
+    supported version instead.  Such version rollbacks\n   represent a potential security
+    hazard, if the older version should\n   become vulnerable to attacks.  The same
+    history repeated when TLS\n   Extensions were introduced, as some servers would
+    not negotiate with\n   clients that sent these protocol extensions, forcing clients
+    to\n   reduce protocol functionality in order to maintain interoperability.\n\n
+    \  This document outlines a procedure to help clients decide when they\n   may
+    use version rollback to maintain interoperability with legacy\n   servers, under
+    what conditions the clients should not allow version\n   rollbacks, such as when
+    the server has indicated support for the TLS\n   Renegotiation Information extension.
+    \ The intention of this procedure\n   is to limit the use of automatic version
+    rollback to legacy servers\n   and eventually eliminate its use.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-pettersen-tls-version-rollback-removal-00
-    docid:
-    - id: draft-pettersen-tls-version-rollback-removal-00
+    formattedref: draft-pettersen-tls-version-rollback-removal-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pettersen-tls-version-rollback-removal-00
+    docidentifier:
+    - content: draft-pettersen-tls-version-rollback-removal-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pettersen-tls-version-rollback-removal-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-pettersen-tls-version-rollback-removal-02
-    docid:
-    - id: draft-pettersen-tls-version-rollback-removal-02
+    formattedref: draft-pettersen-tls-version-rollback-removal-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pettersen-tls-version-rollback-removal-02
+    docidentifier:
+    - content: draft-pettersen-tls-version-rollback-removal-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pettersen-tls-version-rollback-removal-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pettersen-tls-version-rollback-removal-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

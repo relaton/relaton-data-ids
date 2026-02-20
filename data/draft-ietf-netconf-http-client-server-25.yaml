@@ -1,134 +1,123 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-http-client-server-25
-title:
-- content: YANG Groupings for HTTP Clients and HTTP Servers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-http-client-server-25
-  type: src
+id: draftietfnetconfhttpclientserver25
 type: standard
-docid:
-- id: draft-ietf-netconf-http-client-server-25
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: YANG Groupings for HTTP Clients and HTTP Servers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-http-client-server-25
+docidentifier:
+- content: draft-ietf-netconf-http-client-server
+  type: Internet-Draft
+- content: draft-ietf-netconf-http-client-server-25
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-http-client-server
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-http-client-server
 date:
 - type: published
-  value: '2025-02-12'
+  at: '2025-02-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Watsen
-        language:
-        - en
       completename:
+        language: en
         content: Kent Watsen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Watsen Networks
-  role:
-  - type: author
+        - language: en
+          content: Watsen Networks
 version:
 - draft: '25'
-revdate: '2025-02-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document presents two YANG modules: the first defines a minimal
-    grouping for configuring an HTTP client, and the second defines a minimal grouping
-    for configuring an HTTP server. It is intended that these groupings will be used
-    to help define the configuration for simple HTTP-based protocols (not for complete
-    web servers or browsers). Editorial Note (To be removed by RFC Editor) This draft
-    contains placeholder values that need to be replaced with finalized values at
-    the time of publication. This note summarizes all of the substitutions that are
-    needed. No other RFC Editor instructions are specified elsewhere in this document.
-    Artwork in this document contains shorthand references to drafts in progress.
-    Please apply the following replacements (note: not all may be present): * AAAA
-    --&gt; the assigned RFC value for draft-ietf-netconf-crypto- types * DDDD --&gt;
-    the assigned RFC value for draft-ietf-netconf-tcp-client- server * FFFF --&gt;
-    the assigned RFC value for draft-ietf-netconf-tls-client- server * GGGG --&gt;
-    the assigned RFC value for this draft * JJJJ --&gt; the assigned RFC value for
-    draft-ietf-netconf-udp-client- server Artwork in this document contains placeholder
-    values for the date of publication of this draft. Please apply the following replacement:
-    * 2025-02-12 --&gt; the publication date of this draft The "Relation to other
-    RFCs" section Section 1.1 contains the text "one or more YANG modules" and, later,
-    "modules". This text is sourced from a file in a context where it is unknown how
-    many modules a draft defines. The text is not wrong as is, but it may be improved
-    by stating more directly how many modules are defined. The "Relation to other
-    RFCs" section Section 1.1 contains a self- reference to this draft, along with
-    a corresponding reference in the Appendix. Please replace the self-reference in
-    this section with "This RFC" (or similar) and remove the self-reference in the
-    "Normative/Informative References" section, whichever it is in. Tree-diagrams
-    in this draft may use the ''\'' line-folding mode defined in RFC 8792. However,
-    nicer-to-the-eye is when the ''\\'' line-folding mode is used. The AD suggested
-    suggested putting a request here for the RFC Editor to help convert "ugly" ''\''
-    folded examples to use the ''\\'' folding mode. "Help convert" may be interpreted
-    as, identify what looks ugly and ask the authors to make the adjustment. The following
-    Appendix section is to be removed prior to publication: * Appendix A. Change Log</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document presents two YANG modules: the first defines a minimal\n
+    \  grouping for configuring an HTTP client, and the second defines a\n   minimal
+    grouping for configuring an HTTP server.  It is intended that\n   these groupings
+    will be used to help define the configuration for\n   simple HTTP-based protocols
+    (not for complete web servers or\n   browsers).\n\nEditorial Note (To be removed
+    by RFC Editor)\n\n   This draft contains placeholder values that need to be replaced
+    with\n   finalized values at the time of publication.  This note summarizes\n
+    \  all of the substitutions that are needed.  No other RFC Editor\n   instructions
+    are specified elsewhere in this document.\n\n   Artwork in this document contains
+    shorthand references to drafts in\n   progress.  Please apply the following replacements
+    (note: not all may\n   be present):\n\n   *  AAAA --> the assigned RFC value for
+    draft-ietf-netconf-crypto-\n      types\n\n   *  DDDD --> the assigned RFC value
+    for draft-ietf-netconf-tcp-client-\n      server\n\n   *  FFFF --> the assigned
+    RFC value for draft-ietf-netconf-tls-client-\n      server\n\n   *  GGGG --> the
+    assigned RFC value for this draft\n\n   *  JJJJ --> the assigned RFC value for
+    draft-ietf-netconf-udp-client-\n      server\n\n   Artwork in this document contains
+    placeholder values for the date of\n   publication of this draft.  Please apply
+    the following replacement:\n\n   *  2025-02-12 --> the publication date of this
+    draft\n   The \"Relation to other RFCs\" section Section 1.1 contains the text\n
+    \  \"one or more YANG modules\" and, later, \"modules\".  This text is\n   sourced
+    from a file in a context where it is unknown how many modules\n   a draft defines.
+    \ The text is not wrong as is, but it may be improved\n   by stating more directly
+    how many modules are defined.\n\n   The \"Relation to other RFCs\" section Section
+    1.1 contains a self-\n   reference to this draft, along with a corresponding reference
+    in the\n   Appendix.  Please replace the self-reference in this section with\n
+    \  \"This RFC\" (or similar) and remove the self-reference in the\n   \"Normative/Informative
+    References\" section, whichever it is in.\n\n   Tree-diagrams in this draft may
+    use the '\\' line-folding mode defined\n   in RFC 8792.  However, nicer-to-the-eye
+    is when the '\\\\' line-folding\n   mode is used.  The AD suggested suggested
+    putting a request here for\n   the RFC Editor to help convert \"ugly\" '\\' folded
+    examples to use the\n   '\\\\' folding mode.  \"Help convert\" may be interpreted
+    as, identify\n   what looks ugly and ask the authors to make the adjustment.\n\n
+    \  The following Appendix section is to be removed prior to publication:\n\n   *
+    \ Appendix A.  Change Log\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-http-client-server-24
-    docid:
-    - id: draft-ietf-netconf-http-client-server-24
+    formattedref: draft-ietf-netconf-http-client-server-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-http-client-server-24
+    docidentifier:
+    - content: draft-ietf-netconf-http-client-server-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-http-client-server-24
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-http-client-server-26
-    docid:
-    - id: draft-ietf-netconf-http-client-server-26
+    formattedref: draft-ietf-netconf-http-client-server-26
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-http-client-server-26
+    docidentifier:
+    - content: draft-ietf-netconf-http-client-server-26
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-http-client-server-26
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-http-client-server-25
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

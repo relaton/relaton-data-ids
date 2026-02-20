@@ -1,201 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pce-state-sync-08
-title:
-- content: Procedures for Communication between Stateful Path Computation Elements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-state-sync-08
-  type: src
+id: draftietfpcestatesync08
 type: standard
-docid:
-- id: draft-ietf-pce-state-sync-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Procedures for Communication between Stateful Path Computation Elements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-state-sync-08
+docidentifier:
+- content: draft-ietf-pce-state-sync
+  type: Internet-Draft
+- content: draft-ietf-pce-state-sync-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pce-state-sync
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pce-state-sync
 date:
 - type: published
-  value: '2024-09-18'
+  at: '2024-09-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stephane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephane
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Litkowski
-        language:
-        - en
       completename:
+        language: en
         content: Stephane Litkowski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siva
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivabalan
-        language:
-        - en
       completename:
+        language: en
         content: Siva Sivabalan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ciena Corporation
-  role:
+        - language: en
+          content: Ciena Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cheng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Cheng Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haomian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haomian
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Zheng
-        language:
-        - en
       completename:
+        language: en
         content: Haomian Zheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '08'
-revdate: '2024-09-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Path Computation Element (PCE) Communication Protocol (PCEP) provides
-    mechanisms for PCEs to perform path computation in response to a Path Computation
-    Client (PCC) request. The Stateful PCE extensions allow stateful control of Multi-Protocol
-    Label Switching (MPLS) Traffic Engineering (TE) Label Switched Paths (LSPs) using
-    PCEP. A Path Computation Client (PCC) can synchronize LSP state information to
-    a Stateful Path Computation Element (PCE). A PCC can have multiple PCEP sessions
-    towards multiple PCEs. There are some use cases, where an inter-PCE stateful communication
-    can bring additional resiliency in the design, for instance when some PCC-PCE
-    session fails. This document describes the procedures to allow stateful communication
-    between PCEs for various use-cases and also the procedures to prevent computations
-    loops.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Path Computation Element (PCE) Communication Protocol (PCEP)\n
+    \  provides mechanisms for PCEs to perform path computation in response\n   to
+    a Path Computation Client (PCC) request.  The Stateful PCE\n   extensions allow
+    stateful control of Multi-Protocol Label Switching\n   (MPLS) Traffic Engineering
+    (TE) Label Switched Paths (LSPs) using\n   PCEP.\n\n   A Path Computation Client
+    (PCC) can synchronize LSP state information\n   to a Stateful Path Computation
+    Element (PCE).  A PCC can have\n   multiple PCEP sessions towards multiple PCEs.
+    \ There are some use\n   cases, where an inter-PCE stateful communication can
+    bring additional\n   resiliency in the design, for instance when some PCC-PCE
+    session\n   fails.\n\n   This document describes the procedures to allow stateful\n
+    \  communication between PCEs for various use-cases and also the\n   procedures
+    to prevent computations loops.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pce-state-sync-07
-    docid:
-    - id: draft-ietf-pce-state-sync-07
+    formattedref: draft-ietf-pce-state-sync-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-state-sync-07
+    docidentifier:
+    - content: draft-ietf-pce-state-sync-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-state-sync-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pce-state-sync-09
-    docid:
-    - id: draft-ietf-pce-state-sync-09
+    formattedref: draft-ietf-pce-state-sync-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-state-sync-09
+    docidentifier:
+    - content: draft-ietf-pce-state-sync-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-state-sync-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pce-state-sync-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

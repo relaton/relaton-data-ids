@@ -1,174 +1,149 @@
 ---
-schema-version: v1.2.9
-id: draft-katsube-csr-arch-00
-title:
-- content: Cell Switch Router - Architecture and Protocol Overview -
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-katsube-csr-arch-00
-  type: src
+id: draftkatsubecsrarch00
 type: standard
-docid:
-- id: draft-katsube-csr-arch-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Cell Switch Router - Architecture and Protocol Overview -
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-katsube-csr-arch-00
+docidentifier:
+- content: draft-katsube-csr-arch
+  type: Internet-Draft
+- content: draft-katsube-csr-arch-00
   type: Internet-Draft
   primary: true
-- id: I-D.katsube-csr-arch
-  type: IETF
-  scope: anchor
 docnumber: I-D.katsube-csr-arch
 date:
 - type: published
-  value: '1997-12-29'
+  at: '1997-12-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yasuhiro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yasuhiro
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Katsube
-        language:
-        - en
       completename:
+        language: en
         content: Yasuhiro Katsube
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Toshiba Corporation
-  role:
+        - language: en
+          content: Toshiba Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hiroshi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hiroshi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Esaki
-        language:
-        - en
       completename:
+        language: en
         content: Hiroshi Esaki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Toshiba Corporation
-  role:
+        - language: en
+          content: Toshiba Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Nagami
-        language:
-        - en
       completename:
+        language: en
         content: Ken-ichi Nagami
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Toshiba Corporation
-  role:
+        - language: en
+          content: Toshiba Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Ohba
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Yoshihiro Ohba
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Toshiba Corporation
-  role:
-  - type: author
+        - language: en
+          content: Toshiba Corporation
 version:
 - draft: '00'
-revdate: '1997-12-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memorandum describes an internetworking architecture of Cell Switch
-    Router (CSR) and related control protocol overview. Cell Switch Router is an ATM-based
-    label switching router that can provide ATM cut-through paths for packet flows
-    with various levels of granularity while retaining current router-based internetworking
-    architecture. The proposed architecture is able to provide the cut-through path
-    in response to the creation of IP forwarding entry (topology-driven), the arrival
-    of data packets (traffic-driven), and the reception of control packets such as
-    RSVP (request-driven). One important feature that is provided by the proposed
-    architecture is interoperability with the emerging ATM network platform, specified
-    by the ATM Forum and/or ITU-T, which provides PVC (Permanent Virtual Channel),
-    VP (Virtual Path), or SVC (Switched Virtual Channel) services.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memorandum describes an internetworking architecture of Cell\n
+    \  Switch Router (CSR) and related control protocol overview. Cell\n   Switch
+    Router is an ATM-based label switching router that can\n   provide ATM cut-through
+    paths for packet flows with various levels\n   of granularity while retaining
+    current router-based internetworking\n   architecture. The proposed architecture
+    is able to provide the\n   cut-through path in response to the creation of IP
+    forwarding entry\n   (topology-driven), the arrival of data packets (traffic-driven),\n
+    \  and the reception of control packets such as RSVP (request-driven).\n   One
+    important feature that is provided by the proposed architecture\n   is interoperability
+    with the emerging ATM network platform,\n   specified by the ATM Forum and/or
+    ITU-T, which provides PVC\n   (Permanent Virtual Channel), VP (Virtual Path),
+    or SVC (Switched\n   Virtual Channel) services.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-katsube-csr-arch-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

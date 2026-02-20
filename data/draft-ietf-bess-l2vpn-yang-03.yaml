@@ -1,231 +1,191 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-l2vpn-yang-03
-title:
-- content: YANG Data Model for MPLS-based L2VPN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-l2vpn-yang-03
-  type: src
+id: draftietfbessl2vpnyang03
 type: standard
-docid:
-- id: draft-ietf-bess-l2vpn-yang-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: YANG Data Model for MPLS-based L2VPN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-l2vpn-yang-03
+docidentifier:
+- content: draft-ietf-bess-l2vpn-yang
+  type: Internet-Draft
+- content: draft-ietf-bess-l2vpn-yang-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-l2vpn-yang
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-l2vpn-yang
 date:
 - type: published
-  value: '2017-03-13'
+  at: '2017-03-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Himanshu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: H. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Himanshu
+      - language: en
+        script: Latn
+        initial: H
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: H. C.
       surname:
+        language: en
         content: Shah
-        language:
-        - en
       completename:
+        language: en
         content: Himanshu C. Shah
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Patrice
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrice
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Brissette
-        language:
-        - en
       completename:
+        language: en
         content: Patrice Brissette
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Ing-Wher Chen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Iftekhar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Iftekhar
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Hussain
-        language:
-        - en
       completename:
+        language: en
         content: Iftekhar Hussain
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wen
-        language:
-        - en
       completename:
+        language: en
         content: Bin Wen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kishore
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kishore
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Tiruveedhula
-        language:
-        - en
       completename:
+        language: en
         content: Kishore Tiruveedhula
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2017-03-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a YANG data model for Layer 2 VPN (L2VPN) services
-    over MPLS networks. These services include point-to-point Virtual Private Wire
-    Service (VPWS) and multipoint Virtual Private LAN service (VPLS) that uses LDP
-    and BGP signaled Pseudowires. It is expected that this model will be used by the
-    management tools run by the network operators in order to manage and monitor the
-    network resources that they use to deliver L2VPN services.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a YANG data model for Layer 2 VPN (L2VPN)\n
+    \  services over MPLS networks.  These services include point-to-point\n   Virtual
+    Private Wire Service (VPWS) and multipoint Virtual Private\n   LAN service (VPLS)
+    that uses LDP and BGP signaled Pseudowires.  It is\n   expected that this model
+    will be used by the management tools run by\n   the network operators in order
+    to manage and monitor the network\n   resources that they use to deliver L2VPN
+    services.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-l2vpn-yang-02
-    docid:
-    - id: draft-ietf-bess-l2vpn-yang-02
+    formattedref: draft-ietf-bess-l2vpn-yang-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-l2vpn-yang-02
+    docidentifier:
+    - content: draft-ietf-bess-l2vpn-yang-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-l2vpn-yang-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-l2vpn-yang-04
-    docid:
-    - id: draft-ietf-bess-l2vpn-yang-04
+    formattedref: draft-ietf-bess-l2vpn-yang-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-l2vpn-yang-04
+    docidentifier:
+    - content: draft-ietf-bess-l2vpn-yang-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-l2vpn-yang-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-l2vpn-yang-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

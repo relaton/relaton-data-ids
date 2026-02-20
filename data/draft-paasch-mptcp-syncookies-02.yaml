@@ -1,158 +1,137 @@
 ---
-schema-version: v1.2.9
-id: draft-paasch-mptcp-syncookies-02
-title:
-- content: Making Multipath TCP robust for stateless webservers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-paasch-mptcp-syncookies-02
-  type: src
+id: draftpaaschmptcpsyncookies02
 type: standard
-docid:
-- id: draft-paasch-mptcp-syncookies-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Making Multipath TCP robust for stateless webservers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-paasch-mptcp-syncookies-02
+docidentifier:
+- content: draft-paasch-mptcp-syncookies
+  type: Internet-Draft
+- content: draft-paasch-mptcp-syncookies-02
   type: Internet-Draft
   primary: true
-- id: I-D.paasch-mptcp-syncookies
-  type: IETF
-  scope: anchor
 docnumber: I-D.paasch-mptcp-syncookies
 date:
 - type: published
-  value: '2015-10-14'
+  at: '2015-10-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christoph
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christoph
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Paasch
-        language:
-        - en
       completename:
+        language: en
         content: Christoph Paasch
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple, Inc.
-  role:
+        - language: en
+          content: Apple, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anumita
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anumita
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Biswas
-        language:
-        - en
       completename:
+        language: en
         content: Anumita Biswas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple, Inc.
-  role:
+        - language: en
+          content: Apple, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Darren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Darren
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Haas
-        language:
-        - en
       completename:
+        language: en
         content: Darren Haas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple, Inc.
 version:
 - draft: '02'
-revdate: '2015-10-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a modification of the MPTCP handshake that allows
-    it to work efficiently with stateless servers. We first identify the issues around
-    stateless connection establishment using SYN-cookies. Further, we suggest an extension
-    to Multipath TCP to overcome these issues and discuss alternatives. As a side-effect,
-    the proposed modification to the handshake opens the door to reduce the size of
-    the MP_CAPABLE option in the SYN. This reduces the growing pressure on the TCP-option
-    space in the SYN- segment, giving space for future extensions to TCP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a modification of the MPTCP handshake that\n
+    \  allows it to work efficiently with stateless servers.  We first\n   identify
+    the issues around stateless connection establishment using\n   SYN-cookies.  Further,
+    we suggest an extension to Multipath TCP to\n   overcome these issues and discuss
+    alternatives.\n\n   As a side-effect, the proposed modification to the handshake
+    opens\n   the door to reduce the size of the MP_CAPABLE option in the SYN.\n   This
+    reduces the growing pressure on the TCP-option space in the SYN-\n   segment,
+    giving space for future extensions to TCP.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-paasch-mptcp-syncookies-01
-    docid:
-    - id: draft-paasch-mptcp-syncookies-01
+    formattedref: draft-paasch-mptcp-syncookies-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-paasch-mptcp-syncookies-01
+    docidentifier:
+    - content: draft-paasch-mptcp-syncookies-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-paasch-mptcp-syncookies-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-paasch-mptcp-syncookies-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,201 +1,166 @@
 ---
-schema-version: v1.2.9
-id: draft-li-ulp-00
-title:
-- content: An RTP Payload Format for Generic FEC with Uneven Level Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-ulp-00
-  type: src
+id: draftliulp00
 type: standard
-docid:
-- id: draft-li-ulp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An RTP Payload Format for Generic FEC with Uneven Level Protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-ulp-00
+docidentifier:
+- content: draft-li-ulp
+  type: Internet-Draft
+- content: draft-li-ulp-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-ulp
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-ulp
 date:
 - type: published
-  value: '2000-07-07'
+  at: '2000-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Adam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: A. H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adam
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: A. H.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Adam H. Li
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fang
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Fang Liu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: J. D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: J. D.
       surname:
+        language: en
         content: Villasenor
-        language:
-        - en
       completename:
+        language: en
         content: John D. Villasenor
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeong
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Park
-        language:
-        - en
       completename:
+        language: en
         content: Jeong Park
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Samsung Electronics
-  role:
+        - language: en
+          content: Samsung Electronics
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dong
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Park
-        language:
-        - en
       completename:
+        language: en
         content: Dong Park
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2000-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies a payload format for generic forward error
-    correction to achieve uneven level protection (ULP) of media encapsulated in RTP.
-    It is an extension to the forward error correction scheme specified in RFC 2733
-    [1], and it is also based on the exclusive-or (parity) operation. The payload
-    format allows end systems to transmit using arbitrary protection length and levels,
-    in additional to using arbitrary block lengths. It also allows for the both complete
-    recovery of the critical payload and RTP header fields, and partial recovery when
-    complete recovery is not possible due to the packet lost situation. This scheme
-    is backward compatible with non-FEC capable hosts, and hosts that are only capable
-    of FEC schemes specified in RFC2733 [1], so that receivers which do not wish to
-    implement ULP forward error correction can just ignore the extensions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document specifies a payload format for generic forward error \ncorrection
+    to achieve uneven level protection (ULP) of media \nencapsulated in RTP. It is
+    an extension to the forward error correction \nscheme specified in RFC 2733 [1],
+    and it is also based on the \nexclusive-or (parity) operation. The payload format
+    allows end systems \nto transmit using arbitrary protection length and levels,
+    in additional \nto using arbitrary block lengths. It also allows for the both
+    complete \nrecovery of the critical payload and RTP header fields, and partial
+    \nrecovery when complete recovery is not possible due to the packet lost \nsituation.
+    This scheme is backward compatible with non-FEC capable \nhosts, and hosts that
+    are only capable of FEC schemes specified in \nRFC2733 [1], so that receivers
+    which do not wish to implement ULP \nforward error correction can just ignore
+    the extensions.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-ulp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

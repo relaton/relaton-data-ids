@@ -1,193 +1,168 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-restconf-notif-05
-title:
-- content: RESTCONF and HTTP Transport for Event Notifications
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-notif-05
-  type: src
+id: draftietfnetconfrestconfnotif05
 type: standard
-docid:
-- id: draft-ietf-netconf-restconf-notif-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RESTCONF and HTTP Transport for Event Notifications
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-notif-05
+docidentifier:
+- content: draft-ietf-netconf-restconf-notif
+  type: Internet-Draft
+- content: draft-ietf-netconf-restconf-notif-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-restconf-notif
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-restconf-notif
 date:
 - type: published
-  value: '2018-05-18'
+  at: '2018-05-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Voit
-        language:
-        - en
       completename:
+        language: en
         content: Eric Voit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Einar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Einar
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Nilsen-Nygaard
-        language:
-        - en
       completename:
+        language: en
         content: Einar Nilsen-Nygaard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andy
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bierman
-        language:
-        - en
       completename:
+        language: en
         content: Andy Bierman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: YumaWorks
-  role:
-  - type: author
+        - language: en
+          content: YumaWorks
 version:
 - draft: '05'
-revdate: '2018-05-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines RESTCONF, HTTP2, and HTTP1.1 bindings for the
-    transport of subscription requests and corresponding push updates. Being subscribed
-    may be either publisher defined event streams or nodes/subtrees of YANG Datastores.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines RESTCONF, HTTP2, and HTTP1.1 bindings for the\n
+    \  transport of subscription requests and corresponding push updates.\n   Being
+    subscribed may be either publisher defined event streams or\n   nodes/subtrees
+    of YANG Datastores.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-restconf-notif-04
-    docid:
-    - id: draft-ietf-netconf-restconf-notif-04
+    formattedref: draft-ietf-netconf-restconf-notif-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-notif-04
+    docidentifier:
+    - content: draft-ietf-netconf-restconf-notif-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-restconf-notif-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-restconf-notif-06
-    docid:
-    - id: draft-ietf-netconf-restconf-notif-06
+    formattedref: draft-ietf-netconf-restconf-notif-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-notif-06
+    docidentifier:
+    - content: draft-ietf-netconf-restconf-notif-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-restconf-notif-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-restconf-notif-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

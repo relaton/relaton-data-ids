@@ -1,164 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-6man-rs-refresh-02
-title:
-- content: IPv6 Neighbor Discovery Optional RS/RA Refresh
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rs-refresh-02
-  type: src
+id: draftietf6manrsrefresh02
 type: standard
-docid:
-- id: draft-ietf-6man-rs-refresh-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPv6 Neighbor Discovery Optional RS/RA Refresh
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rs-refresh-02
+docidentifier:
+- content: draft-ietf-6man-rs-refresh
+  type: Internet-Draft
+- content: draft-ietf-6man-rs-refresh-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-6man-rs-refresh
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-6man-rs-refresh
 date:
 - type: published
-  value: '2016-10-31'
+  at: '2016-10-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Erik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Erik
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Nordmark
-        language:
-        - en
       completename:
+        language: en
         content: Erik Nordmark
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arista Networks
-  role:
+        - language: en
+          content: Arista Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Yourtchenko
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Yourtchenko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Suresh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Suresh
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Krishnan
-        language:
-        - en
       completename:
+        language: en
         content: Suresh Krishnan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '02'
-revdate: '2016-10-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>IPv6 Neighbor Discovery relies on periodic multicast Router Advertisement
-    messages to update timer values and to distribute new information (such as new
-    prefixes) to hosts. On some links the use of periodic multicast messages to all
-    host becomes expensive, and in some cases it results in hosts waking up frequently.
-    Many implementations of RFC 4861 also use multicast for solicited Router Advertisement
-    messages, even though that behavior is optional. This specification provides an
-    optional mechanism for hosts and routers where instead of periodic multicast Router
-    Advertisements the hosts are instructed (by the routers) to use Router Solicitations
-    to request refreshed Router Advertisements. This mechanism is enabled by configuring
-    the router to include a new option in the Router Advertisement in order to allow
-    the network administrator to choose host behavior based on whether periodic multicast
-    are more efficient on their link or not. The routers can also tell whether the
-    hosts are capable of the new behavior through a new flag in the Router Solicitations.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   IPv6 Neighbor Discovery relies on periodic multicast Router\n   Advertisement
+    messages to update timer values and to distribute new\n   information (such as
+    new prefixes) to hosts.  On some links the use\n   of periodic multicast messages
+    to all host becomes expensive, and in\n   some cases it results in hosts waking
+    up frequently.  Many\n   implementations of RFC 4861 also use multicast for solicited
+    Router\n   Advertisement messages, even though that behavior is optional.\n\n
+    \  This specification provides an optional mechanism for hosts and\n   routers
+    where instead of periodic multicast Router Advertisements the\n   hosts are instructed
+    (by the routers) to use Router Solicitations to\n   request refreshed Router Advertisements.
+    \ This mechanism is enabled\n   by configuring the router to include a new option
+    in the Router\n   Advertisement in order to allow the network administrator to
+    choose\n   host behavior based on whether periodic multicast are more efficient\n
+    \  on their link or not.  The routers can also tell whether the hosts\n   are
+    capable of the new behavior through a new flag in the Router\n   Solicitations.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-6man-rs-refresh-01
-    docid:
-    - id: draft-ietf-6man-rs-refresh-01
+    formattedref: draft-ietf-6man-rs-refresh-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rs-refresh-01
+    docidentifier:
+    - content: draft-ietf-6man-rs-refresh-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-rs-refresh-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-6man-rs-refresh-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

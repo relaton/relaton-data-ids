@@ -1,148 +1,131 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-bgp-ct-25
-title:
-- content: BGP Classful Transport Planes
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ct-25
-  type: src
+id: draftietfidrbgpct25
 type: standard
-docid:
-- id: draft-ietf-idr-bgp-ct-25
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP Classful Transport Planes
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ct-25
+docidentifier:
+- content: draft-ietf-idr-bgp-ct
+  type: Internet-Draft
+- content: draft-ietf-idr-bgp-ct-25
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgp-ct
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-bgp-ct
 date:
 - type: published
-  value: '2024-02-16'
+  at: '2024-02-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kaliraj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kaliraj
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Vairavakkalai
-        language:
-        - en
       completename:
+        language: en
         content: Kaliraj Vairavakkalai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Natrajan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Natrajan
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Venkataraman
-        language:
-        - en
       completename:
+        language: en
         content: Natrajan Venkataraman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks, Inc.
 version:
 - draft: '25'
-revdate: '2024-02-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document specifies a mechanism referred to as "Intent Driven Service
-    Mapping". The mechanism uses BGP to express intent based association of overlay
-    routes with underlay routes having specific Traffic Engineering (TE) characteristics
-    satisfying a certain Service Level Agreement (SLA). This is achieved by defining
-    new constructs to group underlay routes with sufficiently similar TE characteristics
-    into identifiable classes (called "Transport Classes"), that overlay routes use
-    as an ordered set to resolve reachability (Resolution Schemes) towards service
-    endpoints. These constructs can be used, for example, to realize the "IETF Network
-    Slice" defined in TEAS Network Slices framework. Additionally, this document specifies
-    protocol procedures for BGP that enable dissemination of service mapping information
-    in a network that may span multiple cooperating administrative domains. These
-    domains may be administered either by the same provider or by closely coordinating
-    providers. A new BGP address family that leverages RFC 4364 procedures and follows
-    RFC 8277 NLRI encoding is defined to advertise underlay routes with its identified
-    class. This new address family is called "BGP Classful Transport", a.k.a., BGP
-    CT.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies a mechanism referred to as \"Intent Driven\n
+    \  Service Mapping\".  The mechanism uses BGP to express intent based\n   association
+    of overlay routes with underlay routes having specific\n   Traffic Engineering
+    (TE) characteristics satisfying a certain Service\n   Level Agreement (SLA).  This
+    is achieved by defining new constructs\n   to group underlay routes with sufficiently
+    similar TE characteristics\n   into identifiable classes (called \"Transport Classes\"),
+    that overlay\n   routes use as an ordered set to resolve reachability (Resolution\n
+    \  Schemes) towards service endpoints.  These constructs can be used,\n   for
+    example, to realize the \"IETF Network Slice\" defined in TEAS\n   Network Slices
+    framework.\n\n   Additionally, this document specifies protocol procedures for
+    BGP\n   that enable dissemination of service mapping information in a network\n
+    \  that may span multiple cooperating administrative domains.  These\n   domains
+    may be administered either by the same provider or by closely\n   coordinating
+    providers.  A new BGP address family that leverages RFC\n   4364 procedures and
+    follows RFC 8277 NLRI encoding is defined to\n   advertise underlay routes with
+    its identified class.  This new\n   address family is called \"BGP Classful Transport\",
+    a.k.a., BGP CT.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-bgp-ct-24
-    docid:
-    - id: draft-ietf-idr-bgp-ct-24
+    formattedref: draft-ietf-idr-bgp-ct-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ct-24
+    docidentifier:
+    - content: draft-ietf-idr-bgp-ct-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-ct-24
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-bgp-ct-26
-    docid:
-    - id: draft-ietf-idr-bgp-ct-26
+    formattedref: draft-ietf-idr-bgp-ct-26
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ct-26
+    docidentifier:
+    - content: draft-ietf-idr-bgp-ct-26
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-ct-26
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-bgp-ct-25
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

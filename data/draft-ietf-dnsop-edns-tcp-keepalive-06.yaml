@@ -1,190 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-edns-tcp-keepalive-06
-title:
-- content: The edns-tcp-keepalive EDNS0 Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-edns-tcp-keepalive-06
-  type: src
+id: draftietfdnsopednstcpkeepalive06
 type: standard
-docid:
-- id: draft-ietf-dnsop-edns-tcp-keepalive-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The edns-tcp-keepalive EDNS0 Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-edns-tcp-keepalive-06
+docidentifier:
+- content: draft-ietf-dnsop-edns-tcp-keepalive
+  type: Internet-Draft
+- content: draft-ietf-dnsop-edns-tcp-keepalive-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-edns-tcp-keepalive
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-edns-tcp-keepalive
 date:
 - type: published
-  value: '2016-02-22'
+  at: '2016-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Red Hat
-  role:
+        - language: en
+          content: Red Hat
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Abley
-        language:
-        - en
       completename:
+        language: en
         content: Joe Abley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Dyn, Inc.
-  role:
+        - language: en
+          content: Dyn, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sara
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sara
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Dickinson
-        language:
-        - en
       completename:
+        language: en
         content: Sara Dickinson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sinodun
-  role:
+        - language: en
+          content: Sinodun
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ray
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ray
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Bellis
-        language:
-        - en
       completename:
+        language: en
         content: Ray Bellis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ISC
-  role:
-  - type: author
+        - language: en
+          content: ISC
 version:
 - draft: '06'
-revdate: '2016-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>DNS messages between clients and servers may be received over either
-    UDP or TCP. UDP transport involves keeping less state on a busy server, but can
-    cause truncation and retries over TCP. Additionally, UDP can be exploited for
-    reflection attacks. Using TCP would reduce retransmits and amplification. However,
-    clients commonly use TCP only for retries and servers typically use idle timeouts
-    on the order of seconds. This document defines an EDNS0 option ("edns-tcp-keepalive")
+- language: en
+  script: Latn
+  content: "DNS messages between clients and servers may be received over either UDP
+    or TCP. UDP transport involves keeping less state on a busy server, but can cause
+    truncation and retries over TCP. Additionally, UDP can be exploited for reflection
+    attacks. Using TCP would reduce retransmits and amplification. However, clients
+    commonly use TCP only for retries and servers typically use idle timeouts on the
+    order of seconds.\n\n This document defines an EDNS0 option (\"edns-tcp-keepalive\")
     that allows DNS servers to signal a variable idle timeout. This signalling encourages
     the use of long-lived TCP connections by allowing the state associated with TCP
     transport to be managed effectively with minimal impact on the DNS transaction
-    time.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    time.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-edns-tcp-keepalive-05
-    docid:
-    - id: draft-ietf-dnsop-edns-tcp-keepalive-05
+    formattedref: draft-ietf-dnsop-edns-tcp-keepalive-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-edns-tcp-keepalive-05
+    docidentifier:
+    - content: draft-ietf-dnsop-edns-tcp-keepalive-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-edns-tcp-keepalive-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-edns-tcp-keepalive-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

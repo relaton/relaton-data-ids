@@ -1,235 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mptcp-rfc6824bis-09
-title:
-- content: TCP Extensions for Multipath Operation with Multiple Addresses
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-rfc6824bis-09
-  type: src
+id: draftietfmptcprfc6824bis09
 type: standard
-docid:
-- id: draft-ietf-mptcp-rfc6824bis-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: TCP Extensions for Multipath Operation with Multiple Addresses
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-rfc6824bis-09
+docidentifier:
+- content: draft-ietf-mptcp-rfc6824bis
+  type: Internet-Draft
+- content: draft-ietf-mptcp-rfc6824bis-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mptcp-rfc6824bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mptcp-rfc6824bis
 date:
 - type: published
-  value: '2017-07-28'
+  at: '2017-07-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Ford
-        language:
-        - en
       completename:
+        language: en
         content: Alan Ford
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Pexip
-  role:
+        - language: en
+          content: Pexip
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Costin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Costin
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Raiciu
-        language:
-        - en
       completename:
+        language: en
         content: Costin Raiciu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: U. Politechnica of Bucharest
-  role:
+        - language: en
+          content: U. Politechnica of Bucharest
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mark
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: M. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mark
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: M. J.
       surname:
+        language: en
         content: Handley
-        language:
-        - en
       completename:
+        language: en
         content: Mark J. Handley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: U. College London
-  role:
+        - language: en
+          content: U. College London
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Olivier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olivier
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Bonaventure
-        language:
-        - en
       completename:
+        language: en
         content: Olivier Bonaventure
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: U. catholique de Louvain
-  role:
+        - language: en
+          content: U. catholique de Louvain
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christoph
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christoph
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Paasch
-        language:
-        - en
       completename:
+        language: en
         content: Christoph Paasch
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple, Inc.
 version:
 - draft: '09'
-revdate: '2017-07-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>TCP/IP communication is currently restricted to a single path per connection,
-    yet multiple paths often exist between peers. The simultaneous use of these multiple
-    paths for a TCP/IP session would improve resource usage within the network and,
-    thus, improve user experience through higher throughput and improved resilience
-    to network failure. Multipath TCP provides the ability to simultaneously use multiple
-    paths between peers. This document presents a set of extensions to traditional
-    TCP to support multipath operation. The protocol offers the same type of service
-    to applications as TCP (i.e., reliable bytestream), and it provides the components
-    necessary to establish and use multiple TCP flows across potentially disjoint
-    paths. This document specifies v1 of Multipath TCP, obsoleting v0 as specified
-    in RFC6824 [RFC6824] through clarifications and modifications primarily driven
-    by deployment experience.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   TCP/IP communication is currently restricted to a single path per\n
+    \  connection, yet multiple paths often exist between peers.  The\n   simultaneous
+    use of these multiple paths for a TCP/IP session would\n   improve resource usage
+    within the network and, thus, improve user\n   experience through higher throughput
+    and improved resilience to\n   network failure.\n\n   Multipath TCP provides the
+    ability to simultaneously use multiple\n   paths between peers.  This document
+    presents a set of extensions to\n   traditional TCP to support multipath operation.
+    \ The protocol offers\n   the same type of service to applications as TCP (i.e.,
+    reliable\n   bytestream), and it provides the components necessary to establish\n
+    \  and use multiple TCP flows across potentially disjoint paths.\n\n   This document
+    specifies v1 of Multipath TCP, obsoleting v0 as\n   specified in RFC6824 [RFC6824]
+    through clarifications and\n   modifications primarily driven by deployment experience.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mptcp-rfc6824bis-08
-    docid:
-    - id: draft-ietf-mptcp-rfc6824bis-08
+    formattedref: draft-ietf-mptcp-rfc6824bis-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-rfc6824bis-08
+    docidentifier:
+    - content: draft-ietf-mptcp-rfc6824bis-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mptcp-rfc6824bis-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mptcp-rfc6824bis-10
-    docid:
-    - id: draft-ietf-mptcp-rfc6824bis-10
+    formattedref: draft-ietf-mptcp-rfc6824bis-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-rfc6824bis-10
+    docidentifier:
+    - content: draft-ietf-mptcp-rfc6824bis-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mptcp-rfc6824bis-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mptcp-rfc6824bis-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

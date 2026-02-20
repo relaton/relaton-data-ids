@@ -1,223 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-mna-nrp-selector-00
-title:
-- content: MPLS Network Actions for Network Resource Partition Selector
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-nrp-selector-00
-  type: src
+id: draftietfmplsmnanrpselector00
 type: standard
-docid:
-- id: draft-ietf-mpls-mna-nrp-selector-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MPLS Network Actions for Network Resource Partition Selector
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-nrp-selector-00
+docidentifier:
+- content: draft-ietf-mpls-mna-nrp-selector
+  type: Internet-Draft
+- content: draft-ietf-mpls-mna-nrp-selector-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-mna-nrp-selector
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-mna-nrp-selector
 date:
 - type: published
-  value: '2025-05-13'
+  at: '2025-05-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tony
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tony
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Tony Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishnu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: V. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishnu
+      - language: en
+        script: Latn
+        initial: V
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: V. P.
       surname:
+        language: en
         content: Beeram
-        language:
-        - en
       completename:
+        language: en
         content: Vishnu Pavan Beeram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tarek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tarek
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Saad
-        language:
-        - en
       completename:
+        language: en
         content: Tarek Saad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Israel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Israel
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Meilik
-        language:
-        - en
       completename:
+        language: en
         content: Israel Meilik
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Broadcom
-  role:
-  - type: author
+        - language: en
+          content: Broadcom
 version:
 - draft: '00'
-revdate: '2025-05-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>An IETF Network Slice service provides connectivity coupled with a
-    set of network resource commitments and is expressed in terms of one or more connectivity
-    constructs. A Network Resource Partition (NRP) is a collection of resources identified
-    in the underlay network to support IETF Network Slice services. A Slice-Flow Aggregate
-    refers to the set of traffic streams from one or more connectivity constructs
-    belonging to one or more IETF Network Slices that are mapped to a specific NRP
-    and provided the same forwarding treatment. The packets associated with a Slice-Flow
-    Aggregate may carry a marking in the packet's network layer header to identify
-    this association and this marking is referred to as NRP Selector. The NRP Selector
-    is used to map the packet to the associated NRP and provide the corresponding
-    forwarding treatment to the packet. MPLS Network Actions (MNA) technologies are
-    used to indicate actions for Label Switched Paths (LSPs) and/or MPLS packets and
-    to transfer data needed for these actions. This document discusses options for
-    using MPLS Network Actions (MNAs) to carry the NRP Selector in MPLS packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   An IETF Network Slice service provides connectivity coupled with a\n
+    \  set of network resource commitments and is expressed in terms of one\n   or
+    more connectivity constructs.  A Network Resource Partition (NRP)\n   is a collection
+    of resources identified in the underlay network to\n   support IETF Network Slice
+    services.  A Slice-Flow Aggregate refers\n   to the set of traffic streams from
+    one or more connectivity\n   constructs belonging to one or more IETF Network
+    Slices that are\n   mapped to a specific NRP and provided the same forwarding
+    treatment.\n   The packets associated with a Slice-Flow Aggregate may carry a\n
+    \  marking in the packet's network layer header to identify this\n   association
+    and this marking is referred to as NRP Selector.  The NRP\n   Selector is used
+    to map the packet to the associated NRP and provide\n   the corresponding forwarding
+    treatment to the packet.\n\n   MPLS Network Actions (MNA) technologies are used
+    to indicate actions\n   for Label Switched Paths (LSPs) and/or MPLS packets and
+    to transfer\n   data needed for these actions.  This document discusses options
+    for\n   using MPLS Network Actions (MNAs) to carry the NRP Selector in MPLS\n
+    \  packets.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-mna-nrp-selector-01
-    docid:
-    - id: draft-ietf-mpls-mna-nrp-selector-01
+    formattedref: draft-ietf-mpls-mna-nrp-selector-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-nrp-selector-01
+    docidentifier:
+    - content: draft-ietf-mpls-mna-nrp-selector-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-mna-nrp-selector-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-mna-nrp-selector-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

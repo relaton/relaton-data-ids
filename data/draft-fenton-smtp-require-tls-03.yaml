@@ -1,102 +1,88 @@
 ---
-schema-version: v1.2.9
-id: draft-fenton-smtp-require-tls-03
-title:
-- content: SMTP Require TLS Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-fenton-smtp-require-tls-03
-  type: src
+id: draftfentonsmtprequiretls03
 type: standard
-docid:
-- id: draft-fenton-smtp-require-tls-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SMTP Require TLS Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-fenton-smtp-require-tls-03
+docidentifier:
+- content: draft-fenton-smtp-require-tls
+  type: Internet-Draft
+- content: draft-fenton-smtp-require-tls-03
   type: Internet-Draft
   primary: true
-- id: I-D.fenton-smtp-require-tls
-  type: IETF
-  scope: anchor
 docnumber: I-D.fenton-smtp-require-tls
 date:
 - type: published
-  value: '2017-02-13'
+  at: '2017-02-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Fenton
-        language:
-        - en
       completename:
+        language: en
         content: Jim Fenton
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Altmode Networks
-  role:
-  - type: author
+        - language: en
+          content: Altmode Networks
 version:
 - draft: '03'
-revdate: '2017-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The SMTP STARTTLS option, used in negotiating transport-level encryption
-    of SMTP connections, is not as useful from a security standpoint as it might be
-    because of its opportunistic nature; message delivery is prioritized over security.
-    This document describes a complementary SMTP service extension, REQUIRETLS. If
-    the REQUIRETLS option is used when sending a message, it asserts a request on
-    the part of the message sender to override the default negotiation of TLS, either
-    by requiring that TLS be negotiated when the message is relayed, or by requesting
-    that policy mechanisms such as SMTP STS and DANE be ignored when relaying a high
-    priority message.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The SMTP STARTTLS option, used in negotiating transport-level\n   encryption
+    of SMTP connections, is not as useful from a security\n   standpoint as it might
+    be because of its opportunistic nature;\n   message delivery is prioritized over
+    security.  This document\n   describes a complementary SMTP service extension,
+    REQUIRETLS.  If the\n   REQUIRETLS option is used when sending a message, it asserts
+    a\n   request on the part of the message sender to override the default\n   negotiation
+    of TLS, either by requiring that TLS be negotiated when\n   the message is relayed,
+    or by requesting that policy mechanisms such\n   as SMTP STS and DANE be ignored
+    when relaying a high priority\n   message.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-fenton-smtp-require-tls-02
-    docid:
-    - id: draft-fenton-smtp-require-tls-02
+    formattedref: draft-fenton-smtp-require-tls-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fenton-smtp-require-tls-02
+    docidentifier:
+    - content: draft-fenton-smtp-require-tls-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-fenton-smtp-require-tls-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-fenton-smtp-require-tls-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

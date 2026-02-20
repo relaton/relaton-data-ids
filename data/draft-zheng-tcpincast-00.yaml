@@ -1,170 +1,142 @@
 ---
-schema-version: v1.2.9
-id: draft-zheng-tcpincast-00
-title:
-- content: An Effective Approach to Preventing TCP Incast Throughput Collapse for
-    Data Center Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zheng-tcpincast-00
-  type: src
+id: draftzhengtcpincast00
 type: standard
-docid:
-- id: draft-zheng-tcpincast-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An Effective Approach to Preventing TCP Incast Throughput Collapse for
+    Data Center Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zheng-tcpincast-00
+docidentifier:
+- content: draft-zheng-tcpincast
+  type: Internet-Draft
+- content: draft-zheng-tcpincast-00
   type: Internet-Draft
   primary: true
-- id: I-D.zheng-tcpincast
-  type: IETF
-  scope: anchor
 docnumber: I-D.zheng-tcpincast
 date:
 - type: published
-  value: '2016-06-25'
+  at: '2016-06-25'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Hongyun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
-      surname:
-        content: Zheng
-        language:
-        - en
-      completename:
-        content: Hongyun Zheng
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chunming
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hongyun
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
-        content: Qiao
-        language:
-        - en
+        language: en
+        content: Zheng
       completename:
+        language: en
+        content: Hongyun Zheng
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Chunming
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
+      surname:
+        language: en
+        content: Qiao
+      completename:
+        language: en
         content: Chunming Qiao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SUNY
-  role:
+        - language: en
+          content: SUNY
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kai
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Kai Chen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongxiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongxiang
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Yongxiang Zhao
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2016-06-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document presents an effective solution to the known TCP incast
-    problem in data center networks. The incast problem refers to a drastic TCP throughput
-    drop when the number of servers synchroni- cally sending data to the same receiver
-    is too large. Our idea is avoiding packet losses before TCP incast happens. The
-    scheme is limiting the number of concurrent senders such that the link can be
-    filled as fully as possible but no packet losses. In this document we examine
-    the condition that the link can be saturated but no packet losses. Then based
-    on the condition we propose an approach to estimates the reasonable number of
-    concurrent senders. Our approach does not modify TCP protocol itself and can thus
-    be applied to any TCP variant, and works regardless of the type of data center
-    network topology and throughput limitation. Analysis and simulation results show
-    that our approach eliminates the incast problem and noticeably improves TCP throughput.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document presents an effective solution to the known TCP incast\n
+    \  problem in data center networks. The incast problem refers to a\n   drastic
+    TCP throughput drop when the number of servers synchroni-\n   cally sending data
+    to the same receiver is too large. Our idea is\n   avoiding packet losses before
+    TCP incast happens. The scheme is\n   limiting the number of concurrent senders
+    such that the link can be\n   filled as fully as possible but no packet losses.
+    In this document\n   we examine the condition that the link can be saturated but
+    no\n   packet losses. Then based on the condition we propose an approach to\n
+    \  estimates the reasonable number of concurrent senders. Our approach\n   does
+    not modify TCP protocol itself and can thus be applied to any\n   TCP variant,
+    and works regardless of the type of data center network\n   topology and throughput
+    limitation. Analysis and simulation results\n   show that our approach eliminates
+    the incast problem and noticeably\n   improves TCP throughput.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zheng-tcpincast-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

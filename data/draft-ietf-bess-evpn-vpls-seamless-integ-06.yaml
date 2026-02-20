@@ -1,205 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-vpls-seamless-integ-06
-title:
-- content: "(PBB-)EVPN Seamless Integration with (PBB-)VPLS"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-vpls-seamless-integ-06
-  type: src
+id: draftietfbessevpnvplsseamlessinteg06
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-vpls-seamless-integ-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: "(PBB-)EVPN Seamless Integration with (PBB-)VPLS"
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-vpls-seamless-integ-06
+docidentifier:
+- content: draft-ietf-bess-evpn-vpls-seamless-integ
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-vpls-seamless-integ-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-vpls-seamless-integ
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-vpls-seamless-integ
 date:
 - type: published
-  value: '2019-01-22'
+  at: '2019-01-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Editor
-  role:
+        - language: en
+          content: Editor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samer
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Salam
-        language:
-        - en
       completename:
+        language: en
         content: Samer Salam
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: N. D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nick
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: N. D.
       surname:
+        language: en
         content: Regno
-        language:
-        - en
       completename:
+        language: en
         content: Nick Del Regno
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '06'
-revdate: '2019-01-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies mechanisms for backward compatibility of Ethernet
-    VPN (EVPN) and Provider Backbone Bridge Ethernet VPN (PBB- EVPN) solutions with
-    Virtual Private LAN Service (VPLS) and Provider Backbone Bridge VPLS (PBB-VPLS)
-    solutions. It also provides mechanisms for seamless integration of these two technologies
-    in the same MPLS/IP network on a per-VPN-instance basis. Implementation of this
-    document enables service providers to introduce EVPN/PBB-EVPN PEs in their brown-field
-    deployments of VPLS/PBB-VPLS networks. This document specifies control-plane and
-    forwarding behavior needed for auto-discovery of a VPN instance, multicast and
-    unicast operation, as well as MAC-mobility operation in order to enable seamless
-    integration between EVPN and VPLS PEs as well as between PBB-VPLS and PBB-EVPN
-    PEs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies mechanisms for backward compatibility of\n
+    \  Ethernet VPN (EVPN) and Provider Backbone Bridge Ethernet VPN (PBB-\n   EVPN)
+    solutions with Virtual Private LAN Service (VPLS) and Provider\n   Backbone Bridge
+    VPLS (PBB-VPLS) solutions. It also provides\n   mechanisms for seamless integration
+    of these two technologies in the\n   same MPLS/IP network on a per-VPN-instance
+    basis. Implementation of\n   this document enables service providers to introduce
+    EVPN/PBB-EVPN\n   PEs in their brown-field deployments of VPLS/PBB-VPLS networks.
+    This\n   document specifies control-plane and forwarding behavior needed for\n
+    \  auto-discovery of a VPN instance, multicast and unicast operation, as\n   well
+    as MAC-mobility operation in order to enable seamless\n   integration between
+    EVPN and VPLS PEs as well as between PBB-VPLS and\n   PBB-EVPN PEs.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-evpn-vpls-seamless-integ-05
-    docid:
-    - id: draft-ietf-bess-evpn-vpls-seamless-integ-05
+    formattedref: draft-ietf-bess-evpn-vpls-seamless-integ-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-vpls-seamless-integ-05
+    docidentifier:
+    - content: draft-ietf-bess-evpn-vpls-seamless-integ-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-vpls-seamless-integ-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-evpn-vpls-seamless-integ-07
-    docid:
-    - id: draft-ietf-bess-evpn-vpls-seamless-integ-07
+    formattedref: draft-ietf-bess-evpn-vpls-seamless-integ-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-vpls-seamless-integ-07
+    docidentifier:
+    - content: draft-ietf-bess-evpn-vpls-seamless-integ-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-vpls-seamless-integ-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-vpls-seamless-integ-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

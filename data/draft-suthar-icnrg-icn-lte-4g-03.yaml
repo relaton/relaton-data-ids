@@ -1,207 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-suthar-icnrg-icn-lte-4g-03
-title:
-- content: Native Deployment of ICN in LTE, 4G Mobile Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-suthar-icnrg-icn-lte-4g-03
-  type: src
+id: draftsutharicnrgicnlte4g03
 type: standard
-docid:
-- id: draft-suthar-icnrg-icn-lte-4g-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Native Deployment of ICN in LTE, 4G Mobile Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-suthar-icnrg-icn-lte-4g-03
+docidentifier:
+- content: draft-suthar-icnrg-icn-lte-4g
+  type: Internet-Draft
+- content: draft-suthar-icnrg-icn-lte-4g-03
   type: Internet-Draft
   primary: true
-- id: I-D.suthar-icnrg-icn-lte-4g
-  type: IETF
-  scope: anchor
 docnumber: I-D.suthar-icnrg-icn-lte-4g
 date:
 - type: published
-  value: '2017-09-19'
+  at: '2017-09-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Prakash
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prakash
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Suthar
-        language:
-        - en
       completename:
+        language: en
         content: Prakash Suthar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Milan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Milan
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Stolic
-        language:
-        - en
       completename:
+        language: en
         content: Milan Stolic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anil
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jangam
-        language:
-        - en
       completename:
+        language: en
         content: Anil Jangam
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dirk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dirk
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Trossen
-        language:
-        - en
       completename:
+        language: en
         content: Dirk Trossen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Inc.
-  role:
-  - type: author
+        - language: en
+          content: InterDigital Inc.
 version:
 - draft: '03'
-revdate: '2017-09-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>LTE, 4G mobile networks use IP based transport for control plane to
-    establish the data session and user plane for actual data delivery. In existing
-    architecture, IP transport used in user plane is not optimized for data transport,
-    which leads to an inefficient data delivery. IP unicast routing from server to
-    clients is used for delivery of multimedia content to User Equipment (UE), where
-    each user gets a separate stream. From bandwidth and routing perspective this
-    approach is inefficient. Multicast and broadcast technologies have emerged recently
-    for mobile networks, but their deployments are very limited or at an experimental
-    stage due to complex architecture and radio spectrum issues. ICN is a rapidly
-    emerging technology with built-in features for efficient multimedia data delivery,
-    however majority of the work is focused on fixed networks. The main focus of this
-    draft is on native deployment of ICN in cellular mobile networks by using ICN
-    in 3GPP protocol stack. ICN has an inherent capability for multicast, anchorless
-    mobility, security and it is optimized for data delivery using local caching at
-    the edge. The native ICN (it runs directly on cellular layer 2 protocols like
-    PDCP/RLC/MAC/L1) or dual stack (along with IP) deployment will bring all inherent
-    benefits and help in optimizing mobile networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   LTE, 4G mobile networks use IP based transport for control plane to\n
+    \  establish the data session and user plane for actual data delivery.\n   In
+    existing architecture, IP transport used in user plane is not\n   optimized for
+    data transport, which leads to an inefficient data\n   delivery. IP unicast routing
+    from server to clients is used for\n   delivery of multimedia content to User
+    Equipment (UE), where each\n   user gets a separate stream. From bandwidth and
+    routing perspective\n   this approach is inefficient. Multicast and broadcast
+    technologies\n   have emerged recently for mobile networks, but their deployments
+    are\n   very limited or at an experimental stage due to complex architecture\n
+    \  and radio spectrum issues. ICN is a rapidly emerging technology with\n   built-in
+    features for efficient multimedia data delivery, however\n   majority of the work
+    is focused on fixed networks. The main focus of\n   this draft is on native deployment
+    of ICN in cellular mobile networks\n   by using ICN in 3GPP protocol stack. ICN
+    has an inherent capability\n   for multicast, anchorless mobility, security and
+    it is optimized for\n   data delivery using local caching at the edge. The native
+    ICN (it\n   runs directly on cellular layer 2 protocols like PDCP/RLC/MAC/L1)
+    or\n   dual stack (along with IP) deployment will bring all inherent\n   benefits
+    and help in optimizing mobile networks.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-suthar-icnrg-icn-lte-4g-02
-    docid:
-    - id: draft-suthar-icnrg-icn-lte-4g-02
+    formattedref: draft-suthar-icnrg-icn-lte-4g-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-suthar-icnrg-icn-lte-4g-02
+    docidentifier:
+    - content: draft-suthar-icnrg-icn-lte-4g-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-suthar-icnrg-icn-lte-4g-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-suthar-icnrg-icn-lte-4g-04
-    docid:
-    - id: draft-suthar-icnrg-icn-lte-4g-04
+    formattedref: draft-suthar-icnrg-icn-lte-4g-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-suthar-icnrg-icn-lte-4g-04
+    docidentifier:
+    - content: draft-suthar-icnrg-icn-lte-4g-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-suthar-icnrg-icn-lte-4g-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-suthar-icnrg-icn-lte-4g-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

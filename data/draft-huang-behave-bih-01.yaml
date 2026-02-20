@@ -1,160 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-huang-behave-bih-01
-title:
-- content: Dual Stack Hosts Using "Bump-in-the-Host" (BIH)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-huang-behave-bih-01
-  type: src
+id: drafthuangbehavebih01
 type: standard
-docid:
-- id: draft-huang-behave-bih-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Dual Stack Hosts Using "Bump-in-the-Host" (BIH)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-huang-behave-bih-01
+docidentifier:
+- content: draft-huang-behave-bih
+  type: Internet-Draft
+- content: draft-huang-behave-bih-01
   type: Internet-Draft
   primary: true
-- id: I-D.huang-behave-bih
-  type: IETF
-  scope: anchor
 docnumber: I-D.huang-behave-bih
 date:
 - type: published
-  value: '2010-07-30'
+  at: '2010-07-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bill
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bill
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Huang
-        language:
-        - en
       completename:
+        language: en
         content: Bill Huang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: DENG
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: DENG
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Deng
-        language:
-        - en
       completename:
+        language: en
         content: DENG Hui
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Teemu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Teemu
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Savolainen
-        language:
-        - en
       completename:
+        language: en
         content: Teemu Savolainen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '01'
-revdate: '2010-07-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes the "Bump-In-the-Host" (BIH), a host based protocol
-    translation mechanism that allows a subset of applications supporting only one
-    IP address family to communicate with peers that are reachable or supporting only
-    the other address family. This specification addresses scenarios where a host
-    is provided dual stack or IPv6 only network connectivity. In the dual stack network
-    case, single address family applications in the host sometime will communicate
-    directly with other hosts using the different address family. In the case of IPv6
-    only network or IPv6 only destination, IPv4 originated communications have to
-    be translated into IPv6. The BIH makes the IPv4 applications think they talk to
-    IPv4 peers and hence hides the IPv6 from those applications. Acknowledgement of
-    previous work This document is an update to and directly derivative from Kazuaki
-    TSHUCHIYA, Hidemitsu HIGUCHI, and Yoshifumi ATARASHI [RFC2767] and from Seungyun
-    Lee, Myung-Ki Shin, Yong-Jin Kim, Alain Durand, and Erik Nordmark's [RFC3338],
-    which similarly provides a dual stack host means to communicate with other IPv6
-    host using existing IPv4 appliations. This document combines and updates both
-    [RFC2767] and [RFC3338]. The changes in this document reflect five components
-    1. Supporting IPv6 only network connections 2. IPv4 address pool use private address
-    instead of the unassigned IPv4 addresses (0.0.0.1 - 0.0.0.255) 3. Extending ENR
-    and address mapper to operate differently 4. Adding an alternative way to implement
-    the ENR 5. Going for standards track instead of experimental/ informational</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes the \"Bump-In-the-Host\" (BIH), a host based\nprotocol
+    translation mechanism that allows a subset of applications\nsupporting only one
+    IP address family to communicate with peers that\nare reachable or supporting
+    only the other address family.\n\nThis specification addresses scenarios where
+    a host is provided dual\nstack or IPv6 only network connectivity.  In the dual
+    stack network\ncase, single address family applications in the host sometime will\ncommunicate
+    directly with other hosts using the different address\nfamily.  In the case of
+    IPv6 only network or IPv6 only destination,\nIPv4 originated communications have
+    to be translated into IPv6.  The\nBIH makes the IPv4 applications think they talk
+    to IPv4 peers and\nhence hides the IPv6 from those applications.\n\nAcknowledgement
+    of previous work\n\nThis document is an update to and directly derivative from
+    Kazuaki\nTSHUCHIYA, Hidemitsu HIGUCHI, and Yoshifumi ATARASHI [RFC2767] and\nfrom
+    Seungyun Lee, Myung-Ki Shin, Yong-Jin Kim, Alain Durand, and\nErik Nordmark's
+    [RFC3338], which similarly provides a dual stack host\nmeans to communicate with
+    other IPv6 host using existing IPv4\nappliations.  This document combines and
+    updates both [RFC2767] and\n[RFC3338].\n\nThe changes in this document reflect
+    five components\n\n\n1.  Supporting IPv6 only network connections\n\n\n2.  IPv4
+    address pool use private address instead of the\n\nunassigned IPv4 addresses (0.0.0.1
+    - 0.0.0.255)\n\n\n3.  Extending ENR and address mapper to operate differently\n\n\n4.
+    \ Adding an alternative way to implement the ENR\n\n5.  Going for standards track
+    instead of experimental/\n\ninformational\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-huang-behave-bih-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

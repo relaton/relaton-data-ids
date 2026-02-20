@@ -1,207 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-opsawg-l2nm-11
-title:
-- content: A Layer 2 VPN Network YANG Model
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-11
-  type: src
+id: draftietfopsawgl2nm11
 type: standard
-docid:
-- id: draft-ietf-opsawg-l2nm-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Layer 2 VPN Network YANG Model
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-11
+docidentifier:
+- content: draft-ietf-opsawg-l2nm
+  type: Internet-Draft
+- content: draft-ietf-opsawg-l2nm-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-l2nm
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-opsawg-l2nm
 date:
 - type: published
-  value: '2021-11-16'
+  at: '2021-11-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Samier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samier
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Barguil
-        language:
-        - en
       completename:
+        language: en
         content: Samier Barguil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: O. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: O. G.
       surname:
+        language: en
         content: de Dios
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Gonzalez de Dios
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: L. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: L. A.
       surname:
+        language: en
         content: Munoz
-        language:
-        - en
       completename:
+        language: en
         content: Luis Angel Munoz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vodafone
-  role:
-  - type: author
+        - language: en
+          content: Vodafone
 version:
 - draft: '11'
-revdate: '2021-11-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines an L2VPN Network YANG Model (L2NM) that can be
-    used to manage the provisioning of Layer 2 Virtual Private Network (VPN) services
-    within a network (e.g., service provider network). The L2NM complements the Layer
-    2 Service Model (L2SM) by providing a network-centric view of the service that
-    is internal to a service providers. The L2NM is particularly meant to be used
-    by a network controller to derive the configuration information that will be sent
-    to relevant network devices. Also, the document defines the initial versions of
-    two IANA- maintained modules that defines a set of identities of BGP Layer 2 encapsulation
-    types and pseudowire types.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines an L2VPN Network YANG Model (L2NM) that can be\n
+    \  used to manage the provisioning of Layer 2 Virtual Private Network\n   (VPN)
+    services within a network (e.g., service provider network).\n   The L2NM complements
+    the Layer 2 Service Model (L2SM) by providing a\n   network-centric view of the
+    service that is internal to a service\n   providers.  The L2NM is particularly
+    meant to be used by a network\n   controller to derive the configuration information
+    that will be sent\n   to relevant network devices.\n\n   Also, the document defines
+    the initial versions of two IANA-\n   maintained modules that defines a set of
+    identities of BGP Layer 2\n   encapsulation types and pseudowire types.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-l2nm-10
-    docid:
-    - id: draft-ietf-opsawg-l2nm-10
+    formattedref: draft-ietf-opsawg-l2nm-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-10
+    docidentifier:
+    - content: draft-ietf-opsawg-l2nm-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-l2nm-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-opsawg-l2nm-12
-    docid:
-    - id: draft-ietf-opsawg-l2nm-12
+    formattedref: draft-ietf-opsawg-l2nm-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-l2nm-12
+    docidentifier:
+    - content: draft-ietf-opsawg-l2nm-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-l2nm-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-opsawg-l2nm-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,203 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-wu-l3sm-rfc8049bis-09
-title:
-- content: YANG Data Model for L3VPN Service Delivery
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wu-l3sm-rfc8049bis-09
-  type: src
+id: draftwul3smrfc8049bis09
 type: standard
-docid:
-- id: draft-wu-l3sm-rfc8049bis-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: YANG Data Model for L3VPN Service Delivery
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wu-l3sm-rfc8049bis-09
+docidentifier:
+- content: draft-wu-l3sm-rfc8049bis
+  type: Internet-Draft
+- content: draft-wu-l3sm-rfc8049bis-09
   type: Internet-Draft
   primary: true
-- id: I-D.wu-l3sm-rfc8049bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.wu-l3sm-rfc8049bis
 date:
 - type: published
-  value: '2017-10-30'
+  at: '2017-10-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephane
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Litkowski
-        language:
-        - en
       completename:
+        language: en
         content: Stephane Litkowski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange Business Services
-  role:
+        - language: en
+          content: Orange Business Services
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Tomotaki
-        language:
-        - en
       completename:
+        language: en
         content: Luis Tomotaki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kenichi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kenichi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Ogaki
-        language:
-        - en
       completename:
+        language: en
         content: Kenichi Ogaki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: KDDI Corporation
-  role:
-  - type: author
+        - language: en
+          content: KDDI Corporation
 version:
 - draft: '09'
-revdate: '2017-10-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a YANG data model that can be used for communication
-    between customers and network operators and to deliver a Layer 3 provider-provisioned
-    VPN service. This document is limited to BGP PE-based VPNs as described in RFCs
-    4026, 4110, and 4364. This model is intended to be instantiated at the management
-    system to deliver the overall service. It is not a configuration model to be used
-    directly on network elements. This model provides an abstracted view of the Layer
-    3 IP VPN service configuration components. It will be up to the management system
-    to take this model as input and use specific configuration models to configure
-    the different network elements to deliver the service. How the configuration of
-    network elements is done is out of scope for this document. This document obsoletes
-    RFC 8049 to replace the unimplementable module in that RFC with a new module with
-    the same name that is not backward compatible. The changes are a series of small
-    fixes to the YANG module, and some clarifications to the text.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a YANG data model that can be used for\n   communication
+    between customers and network operators and to deliver\n   a Layer 3 provider-provisioned
+    VPN service.  This document is limited\n   to BGP PE-based VPNs as described in
+    RFCs 4026, 4110, and 4364.  This\n   model is intended to be instantiated at the
+    management system to\n   deliver the overall service.  It is not a configuration
+    model to be\n   used directly on network elements.  This model provides an abstracted\n
+    \  view of the Layer 3 IP VPN service configuration components.  It will\n   be
+    up to the management system to take this model as input and use\n   specific configuration
+    models to configure the different network\n   elements to deliver the service.
+    \ How the configuration of network\n   elements is done is out of scope for this
+    document.\n\n   This document obsoletes RFC 8049 to replace the unimplementable\n
+    \  module in that RFC with a new module with the same name that is not\n   backward
+    compatible.  The changes are a series of small fixes to the\n   YANG module, and
+    some clarifications to the text.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wu-l3sm-rfc8049bis-08
-    docid:
-    - id: draft-wu-l3sm-rfc8049bis-08
+    formattedref: draft-wu-l3sm-rfc8049bis-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wu-l3sm-rfc8049bis-08
+    docidentifier:
+    - content: draft-wu-l3sm-rfc8049bis-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wu-l3sm-rfc8049bis-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wu-l3sm-rfc8049bis-10
-    docid:
-    - id: draft-wu-l3sm-rfc8049bis-10
+    formattedref: draft-wu-l3sm-rfc8049bis-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wu-l3sm-rfc8049bis-10
+    docidentifier:
+    - content: draft-wu-l3sm-rfc8049bis-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wu-l3sm-rfc8049bis-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wu-l3sm-rfc8049bis-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

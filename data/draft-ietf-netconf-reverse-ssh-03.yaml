@@ -1,105 +1,90 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-reverse-ssh-03
-title:
-- content: Reverse Secure Shell (Reverse SSH)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-reverse-ssh-03
-  type: src
+id: draftietfnetconfreversessh03
 type: standard
-docid:
-- id: draft-ietf-netconf-reverse-ssh-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Reverse Secure Shell (Reverse SSH)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-reverse-ssh-03
+docidentifier:
+- content: draft-ietf-netconf-reverse-ssh
+  type: Internet-Draft
+- content: draft-ietf-netconf-reverse-ssh-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-reverse-ssh
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-reverse-ssh
 date:
 - type: published
-  value: '2014-02-14'
+  at: '2014-02-14'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Watsen
-        language:
-        - en
-      completename:
-        content: Kent Watsen
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
+      surname:
+        language: en
+        content: Watsen
+      completename:
+        language: en
+        content: Kent Watsen
 version:
 - draft: '03'
-revdate: '2014-02-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This memo presents a technique for a NETCONF server to initiate a SSH
-    connection to a NETCONF client. This is accomplished by the NETCONF client listening
-    on IANA-assigned TCP port YYYY and starting the SSH client protocol immediately
-    after accepting a TCP connection on it. This role-reversal is necessary as the
-    NETCONF server must also be the SSH Server, in order for the NETCONF client to
-    open the IANA- assigned SSH subsystem "netconf".</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo presents a technique for a NETCONF server to initiate a SSH\n
+    \  connection to a NETCONF client.  This is accomplished by the NETCONF\n   client
+    listening on IANA-assigned TCP port YYYY and starting the SSH\n   client protocol
+    immediately after accepting a TCP connection on it.\n   This role-reversal is
+    necessary as the NETCONF server must also be\n   the SSH Server, in order for
+    the NETCONF client to open the IANA-\n   assigned SSH subsystem \"netconf\".\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-reverse-ssh-02
-    docid:
-    - id: draft-ietf-netconf-reverse-ssh-02
+    formattedref: draft-ietf-netconf-reverse-ssh-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-reverse-ssh-02
+    docidentifier:
+    - content: draft-ietf-netconf-reverse-ssh-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-reverse-ssh-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-reverse-ssh-04
-    docid:
-    - id: draft-ietf-netconf-reverse-ssh-04
+    formattedref: draft-ietf-netconf-reverse-ssh-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-reverse-ssh-04
+    docidentifier:
+    - content: draft-ietf-netconf-reverse-ssh-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-reverse-ssh-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-reverse-ssh-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

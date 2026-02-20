@@ -1,180 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-google-self-published-geofeeds-03
-title:
-- content: A Format for Self-published IP Geolocation Feeds
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-google-self-published-geofeeds-03
-  type: src
+id: draftgoogleselfpublishedgeofeeds03
 type: standard
-docid:
-- id: draft-google-self-published-geofeeds-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Format for Self-published IP Geolocation Feeds
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-google-self-published-geofeeds-03
+docidentifier:
+- content: draft-google-self-published-geofeeds
+  type: Internet-Draft
+- content: draft-google-self-published-geofeeds-03
   type: Internet-Draft
   primary: true
-- id: I-D.google-self-published-geofeeds
-  type: IETF
-  scope: anchor
 docnumber: I-D.google-self-published-geofeeds
 date:
 - type: published
-  value: '2019-03-11'
+  at: '2019-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Erik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Erik
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Kline
-        language:
-        - en
       completename:
+        language: en
         content: Erik Kline
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Japan
-  role:
+        - language: en
+          content: Google Japan
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Krzysztof
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Krzysztof
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Duleba
-        language:
-        - en
       completename:
+        language: en
         content: Krzysztof Duleba
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Switzerland GmbH
-  role:
+        - language: en
+          content: Google Switzerland GmbH
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zoltan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zoltan
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Szamonek
-        language:
-        - en
       completename:
+        language: en
         content: Zoltan Szamonek
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Switzerland GmbH
-  role:
-  - type: author
+        - language: en
+          content: Google Switzerland GmbH
 version:
 - draft: '03'
-revdate: '2019-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document records a format whereby a network operator can publish
-    a mapping of IP address prefixes to simplified geolocation information, colloquially
-    termed a geolocation "feed". Interested parties can poll and parse these feeds
-    to update or merge with other geolocation data sources and procedures. This format
-    intentionally only allows specifying coarse level location. Some technical organizations
-    operating networks that move from one conference location to the next have already
-    experimentally published small geolocation feeds. At least one consumer (Google)
-    has incorporated these ad hoc feeds into a geolocation data pipeline, and is using
-    it to allow ISPs to inform them where the prefixes live. [RFC Ed - Please remove
-    publication: The IETF Meeting network currently publishes a feed in this format
-    at: https://noc.ietf.org/geo/google.csv -- this has significantly cut down on
-    the number of "Gah! Why does the network believe I''m in Montreal, that was last
-    meeting! How am I supposed to find a pub?!" complaints. A number of other meeting
-    networks, including RIPE and ICANN publish this information as well, see below.
-    ] [ Ed note: Text inside square brackets ([]) is additional background information,
-    answers to frequently asked questions, general musings, etc. They will be removed
-    before publication.] [ This document is being collaborated on in Github at: https://github.com/google/self-published-geo.
-    The most recent version of the document, open issues, etc should all be available
-    here. The authors (gratefully) accept pull requests ]</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document records a format whereby a network operator can publish\n
+    \  a mapping of IP address prefixes to simplified geolocation\n   information,
+    colloquially termed a geolocation \"feed\".  Interested\n   parties can poll and
+    parse these feeds to update or merge with other\n   geolocation data sources and
+    procedures.  This format intentionally\n   only allows specifying coarse level
+    location.\n\n   Some technical organizations operating networks that move from
+    one\n   conference location to the next have already experimentally published\n
+    \  small geolocation feeds.  At least one consumer (Google) has\n   incorporated
+    these ad hoc feeds into a geolocation data pipeline, and\n   is using it to allow
+    ISPs to inform them where the prefixes live.\n\n   [RFC Ed - Please remove publication:
+    The IETF Meeting network\n   currently publishes a feed in this format at:\n   https://noc.ietf.org/geo/google.csv
+    -- this has significantly cut\n   down on the number of \"Gah!  Why does the network
+    believe I'm in\n   Montreal, that was last meeting!  How am I supposed to find
+    a pub?!\"\n   complaints.  A number of other meeting networks, including RIPE
+    and\n   ICANN publish this information as well, see below. ]\n\n   [ Ed note:
+    Text inside square brackets ([]) is additional background\n   information, answers
+    to frequently asked questions, general musings,\n   etc.  They will be removed
+    before publication.]\n\n   [ This document is being collaborated on in Github
+    at:\n   https://github.com/google/self-published-geo . The most recent\n   version
+    of the document, open issues, etc should all be available\n   here.  The authors
+    (gratefully) accept pull requests ]\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-google-self-published-geofeeds-02
-    docid:
-    - id: draft-google-self-published-geofeeds-02
+    formattedref: draft-google-self-published-geofeeds-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-google-self-published-geofeeds-02
+    docidentifier:
+    - content: draft-google-self-published-geofeeds-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-google-self-published-geofeeds-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-google-self-published-geofeeds-04
-    docid:
-    - id: draft-google-self-published-geofeeds-04
+    formattedref: draft-google-self-published-geofeeds-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-google-self-published-geofeeds-04
+    docidentifier:
+    - content: draft-google-self-published-geofeeds-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-google-self-published-geofeeds-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-google-self-published-geofeeds-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,202 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-eag-distribution-11
+id: draftietfidreagdistribution11
+type: standard
+schema_version: v1.4.1
 title:
-- content: |-
+- language: en
+  script: Latn
+  content: |-
     Distribution of Traffic Engineering Extended
         Admin Groups using BGP-LS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-eag-distribution-11
-  type: src
-type: standard
-docid:
-- id: draft-ietf-idr-eag-distribution-11
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-eag-distribution-11
+docidentifier:
+- content: draft-ietf-idr-eag-distribution
+  type: Internet-Draft
+- content: draft-ietf-idr-eag-distribution-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-eag-distribution
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-eag-distribution
 date:
 - type: published
-  value: '2019-11-21'
+  at: '2019-11-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zitao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zitao
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Zitao Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apstra, Inc.
-  role:
+        - language: en
+          content: Apstra, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '11'
-revdate: '2019-11-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Administrative groups (commonly referred to as "colors" or "link colors")
-    are link attributes that are advertised by link state protocols like IS-IS (Intermediate
-    System to Intermediate System) and OSPF (Open Shortest Path First) and used for
-    traffic engineering. These administrative groups have initially been defined as
-    a fixed- length 32-bit bitmask. As networks grew and more use-cases were introduced,
-    the 32-bit length was found to be constraining and hence extended administrative
-    groups were introduced in the link state protocols. The 32-bit administrative
-    groups are already advertised as link attributes in BGP-LS (Border Gateway Protocol
-    Link-State). This document defines extensions to BGP-LS for advertisement of the
-    extended administrative groups.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Administrative groups (commonly referred to as \"colors\" or \"link\n
+    \  colors\") are link attributes that are advertised by link state\n   protocols
+    like IS-IS (Intermediate System to Intermediate System) and\n   OSPF (Open Shortest
+    Path First) and used for traffic engineering.\n   These administrative groups
+    have initially been defined as a fixed-\n   length 32-bit bitmask.  As networks
+    grew and more use-cases were\n   introduced, the 32-bit length was found to be
+    constraining and hence\n   extended administrative groups were introduced in the
+    link state\n   protocols.  The 32-bit administrative groups are already advertised\n
+    \  as link attributes in BGP-LS (Border Gateway Protocol Link-State).\n   This
+    document defines extensions to BGP-LS for advertisement of the\n   extended administrative
+    groups.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-eag-distribution-10
-    docid:
-    - id: draft-ietf-idr-eag-distribution-10
+    formattedref: draft-ietf-idr-eag-distribution-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-eag-distribution-10
+    docidentifier:
+    - content: draft-ietf-idr-eag-distribution-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-eag-distribution-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-eag-distribution-12
-    docid:
-    - id: draft-ietf-idr-eag-distribution-12
+    formattedref: draft-ietf-idr-eag-distribution-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-eag-distribution-12
+    docidentifier:
+    - content: draft-ietf-idr-eag-distribution-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-eag-distribution-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-eag-distribution-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

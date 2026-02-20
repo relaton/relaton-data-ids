@@ -1,240 +1,210 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-datacenter-gateway-03
-title:
-- content: Gateway Auto-Discovery and Route Advertisement for Segment Routing Enabled
-    Domain Interconnection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-03
-  type: src
+id: draftietfbessdatacentergateway03
 type: standard
-docid:
-- id: draft-ietf-bess-datacenter-gateway-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Gateway Auto-Discovery and Route Advertisement for Segment Routing Enabled
+    Domain Interconnection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-03
+docidentifier:
+- content: draft-ietf-bess-datacenter-gateway
+  type: Internet-Draft
+- content: draft-ietf-bess-datacenter-gateway-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-datacenter-gateway
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-datacenter-gateway
 date:
 - type: published
-  value: '2019-08-20'
+  at: '2019-08-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Adrian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adrian
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Farrel
-        language:
-        - en
       completename:
+        language: en
         content: Adrian Farrel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Old Dog Consulting
-  role:
+        - language: en
+          content: Old Dog Consulting
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keyur
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Patel
-        language:
-        - en
       completename:
+        language: en
         content: Keyur Patel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc.
-  role:
+        - language: en
+          content: Arrcus, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luay
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Jalil
-        language:
-        - en
       completename:
+        language: en
         content: Luay Jalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
-  - type: author
+        - language: en
+          content: Verizon
 version:
 - draft: '03'
-revdate: '2019-08-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Data centers are critical components of the infrastructure used by
-    network operators to provide services to their customers. Data centers are attached
-    to the Internet or a backbone network by gateway routers. One data center typically
-    has more than one gateway for commercial, load balancing, and resiliency reasons.
-    Segment Routing is a popular protocol mechanism for use within a data center,
-    but also for steering traffic that flows between two data center sites. In order
-    that one data center site may load balance the traffic it sends to another data
-    center site, it needs to know the complete set of gateway routers at the remote
-    data center, the points of connection from those gateways to the backbone network,
-    and the connectivity across the backbone network. Segment Routing may also be
-    operated in other domains, such as access networks. Those domains also need to
-    be connected across backbone networks through gateways. This document defines
-    a mechanism using the BGP Tunnel Encapsulation attribute to allow each gateway
-    router to advertise the routes to the prefixes in the Segment Routing domains
-    to which it provides access, and also to advertise on behalf of each other gateway
-    to the same Segment Routing domain.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Data centers are critical components of the infrastructure used by\n
+    \  network operators to provide services to their customers.  Data\n   centers
+    are attached to the Internet or a backbone network by gateway\n   routers.  One
+    data center typically has more than one gateway for\n   commercial, load balancing,
+    and resiliency reasons.\n\n   Segment Routing is a popular protocol mechanism
+    for use within a data\n   center, but also for steering traffic that flows between
+    two data\n   center sites.  In order that one data center site may load balance\n
+    \  the traffic it sends to another data center site, it needs to know\n   the
+    complete set of gateway routers at the remote data center, the\n   points of connection
+    from those gateways to the backbone network, and\n   the connectivity across the
+    backbone network.\n\n   Segment Routing may also be operated in other domains,
+    such as access\n   networks.  Those domains also need to be connected across backbone\n
+    \  networks through gateways.\n\n   This document defines a mechanism using the
+    BGP Tunnel Encapsulation\n   attribute to allow each gateway router to advertise
+    the routes to the\n   prefixes in the Segment Routing domains to which it provides
+    access,\n   and also to advertise on behalf of each other gateway to the same\n
+    \  Segment Routing domain.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-datacenter-gateway-02
-    docid:
-    - id: draft-ietf-bess-datacenter-gateway-02
+    formattedref: draft-ietf-bess-datacenter-gateway-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-02
+    docidentifier:
+    - content: draft-ietf-bess-datacenter-gateway-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-datacenter-gateway-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-datacenter-gateway-04
-    docid:
-    - id: draft-ietf-bess-datacenter-gateway-04
+    formattedref: draft-ietf-bess-datacenter-gateway-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-04
+    docidentifier:
+    - content: draft-ietf-bess-datacenter-gateway-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-datacenter-gateway-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-datacenter-gateway-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

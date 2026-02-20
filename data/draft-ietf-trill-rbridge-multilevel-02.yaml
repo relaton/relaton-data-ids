@@ -1,221 +1,186 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-trill-rbridge-multilevel-02
-title:
-- content: Alternatives for Multilevel TRILL (Transparent Interconnection of Lots
-    of Links)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-rbridge-multilevel-02
-  type: src
+id: draftietftrillrbridgemultilevel02
 type: standard
-docid:
-- id: draft-ietf-trill-rbridge-multilevel-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Alternatives for Multilevel TRILL (Transparent Interconnection of Lots
+    of Links)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-rbridge-multilevel-02
+docidentifier:
+- content: draft-ietf-trill-rbridge-multilevel
+  type: Internet-Draft
+- content: draft-ietf-trill-rbridge-multilevel-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-trill-rbridge-multilevel
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-trill-rbridge-multilevel
 date:
 - type: published
-  value: '2016-04-19'
+  at: '2016-04-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Radia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Radia
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Perlman
-        language:
-        - en
       completename:
+        language: en
         content: Radia Perlman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: D. E.
       surname:
+        language: en
         content: Eastlake
-        language:
-        - en
       completename:
+        language: en
         content: Donald E. Eastlake 3rd
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mingui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mingui
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Mingui Zhang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anoop
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anoop
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Ghanwani
-        language:
-        - en
       completename:
+        language: en
         content: Anoop Ghanwani
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hongjun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hongjun
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Zhai
-        language:
-        - en
       completename:
+        language: en
         content: Hongjun Zhai
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2016-04-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Extending TRILL to multiple levels has challenges that are not addressed
-    by the already-existing capability of IS-IS to have multiple levels. One issue
-    is with the handling of multi-destination packet distribution trees. Another issue
-    is with TRILL switch nicknames. There have been two proposed approaches. One approach,
-    which we refer to as the "unique nickname" approach, gives unique nicknames to
-    all the TRILL switches in the multilevel campus, either by having the level-1/level-2
-    border TRILL switches advertise which nicknames are not available for assignment
-    in the area, or by partitioning the 16-bit nickname into an "area" field and a
-    "nickname inside the area" field. The other approach, which we refer to as the
-    "aggregated nickname" approach, involves hiding the nicknames within areas, allowing
-    nicknames to be reused in different areas, by having the border TRILL switches
-    rewrite the nickname fields when entering or leaving an area. Each of those approaches
-    has advantages and disadvantages. This informational document suggests allowing
-    a choice of approach in each area. This allows the simplicity of the unique nickname
-    approach in installations in which there is no danger of running out of nicknames
-    and allows the complexity of hiding the nicknames in an area to be phased into
-    larger installations on a per- area basis.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Extending TRILL to multiple levels has challenges that are not\n   addressed
+    by the already-existing capability of IS-IS to have\n   multiple levels.  One
+    issue is with the handling of multi-destination\n   packet distribution trees.
+    Another issue is with TRILL switch\n   nicknames.  There have been two proposed
+    approaches.  One approach,\n   which we refer to as the \"unique nickname\" approach,
+    gives unique\n   nicknames to all the TRILL switches in the multilevel campus,
+    either\n   by having the level-1/level-2 border TRILL switches advertise which\n
+    \  nicknames are not available for assignment in the area, or by\n   partitioning
+    the 16-bit nickname into an \"area\" field and a \"nickname\n   inside the area\"
+    field.  The other approach, which we refer to as the\n   \"aggregated nickname\"
+    approach, involves hiding the nicknames within\n   areas, allowing nicknames to
+    be reused in different areas, by having\n   the border TRILL switches rewrite
+    the nickname fields when entering\n   or leaving an area. Each of those approaches
+    has advantages and\n   disadvantages. This informational document suggests allowing
+    a choice\n   of approach in each area. This allows the simplicity of the unique\n
+    \  nickname approach in installations in which there is no danger of\n   running
+    out of nicknames and allows the complexity of hiding the\n   nicknames in an area
+    to be phased into larger installations on a per-\n   area basis.\n\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-trill-rbridge-multilevel-01
-    docid:
-    - id: draft-ietf-trill-rbridge-multilevel-01
+    formattedref: draft-ietf-trill-rbridge-multilevel-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-rbridge-multilevel-01
+    docidentifier:
+    - content: draft-ietf-trill-rbridge-multilevel-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-trill-rbridge-multilevel-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-trill-rbridge-multilevel-03
-    docid:
-    - id: draft-ietf-trill-rbridge-multilevel-03
+    formattedref: draft-ietf-trill-rbridge-multilevel-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-rbridge-multilevel-03
+    docidentifier:
+    - content: draft-ietf-trill-rbridge-multilevel-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-trill-rbridge-multilevel-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-trill-rbridge-multilevel-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

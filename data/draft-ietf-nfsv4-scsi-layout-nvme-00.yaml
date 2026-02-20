@@ -1,182 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-nfsv4-scsi-layout-nvme-00
-title:
-- content: Using the Parallel NFS (pNFS) SCSI Layout with NVMe
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-scsi-layout-nvme-00
-  type: src
+id: draftietfnfsv4scsilayoutnvme00
 type: standard
-docid:
-- id: draft-ietf-nfsv4-scsi-layout-nvme-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Using the Parallel NFS (pNFS) SCSI Layout with NVMe
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-scsi-layout-nvme-00
+docidentifier:
+- content: draft-ietf-nfsv4-scsi-layout-nvme
+  type: Internet-Draft
+- content: draft-ietf-nfsv4-scsi-layout-nvme-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-nfsv4-scsi-layout-nvme
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-nfsv4-scsi-layout-nvme
 date:
 - type: published
-  value: '2022-09-29'
+  at: '2022-09-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christoph
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christoph
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Hellwig
-        language:
-        - en
       completename:
+        language: en
         content: Christoph Hellwig
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chuck
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chuck
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Lever
-        language:
-        - en
       completename:
+        language: en
         content: Chuck Lever
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Oracle Corporation
-  role:
+        - language: en
+          content: Oracle Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sorin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sorin
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Faibish
-        language:
-        - en
       completename:
+        language: en
         content: Sorin Faibish
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cirrus Data Solutions Inc.
-  role:
+        - language: en
+          content: Cirrus Data Solutions Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: D. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: D. L.
       surname:
+        language: en
         content: Black
-        language:
-        - en
       completename:
+        language: en
         content: David L. Black
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Dell Technologies
-  role:
-  - type: author
+        - language: en
+          content: Dell Technologies
 version:
 - draft: '00'
-revdate: '2022-09-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document explains how to use the Parallel Network File System
-    (pNFS) SCSI Layout Type with transports using the NVMe or NVMe over Fabrics protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document explains how to use the Parallel Network File System\n
+    \  (pNFS) SCSI Layout Type with transports using the NVMe or NVMe over\n   Fabrics
+    protocol.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-nfsv4-scsi-layout-nvme-01
-    docid:
-    - id: draft-ietf-nfsv4-scsi-layout-nvme-01
+    formattedref: draft-ietf-nfsv4-scsi-layout-nvme-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-scsi-layout-nvme-01
+    docidentifier:
+    - content: draft-ietf-nfsv4-scsi-layout-nvme-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nfsv4-scsi-layout-nvme-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-nfsv4-scsi-layout-nvme-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

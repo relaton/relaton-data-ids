@@ -1,172 +1,150 @@
 ---
-schema-version: v1.2.9
-id: draft-bormann-cbor-time-tag-01
-title:
-- content: Concise Binary Object Representation (CBOR) Tags for Time, Duration, and
-    Period
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bormann-cbor-time-tag-01
-  type: src
+id: draftbormanncbortimetag01
 type: standard
-docid:
-- id: draft-bormann-cbor-time-tag-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Concise Binary Object Representation (CBOR) Tags for Time, Duration, and
+    Period
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bormann-cbor-time-tag-01
+docidentifier:
+- content: draft-bormann-cbor-time-tag
+  type: Internet-Draft
+- content: draft-bormann-cbor-time-tag-01
   type: Internet-Draft
   primary: true
-- id: I-D.bormann-cbor-time-tag
-  type: IETF
-  scope: anchor
 docnumber: I-D.bormann-cbor-time-tag
 date:
 - type: published
-  value: '2017-06-14'
+  at: '2017-06-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitaet Bremen TZI
-  role:
+        - language: en
+          content: Universitaet Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ben
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ben
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Gamari
-        language:
-        - en
       completename:
+        language: en
         content: Ben Gamari
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Well-Typed
-  role:
+        - language: en
+          content: Well-Typed
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
-  - type: author
+        - language: en
+          content: Fraunhofer SIT
 version:
 - draft: '01'
-revdate: '2017-06-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Concise Binary Object Representation (CBOR, RFC 7049) is a data
-    format whose design goals include the possibility of extremely small code size,
-    fairly small message size, and extensibility without the need for version negotiation.
-    In CBOR, one point of extensibility is the definition of CBOR tags. RFC 7049 defines
-    two tags for time: CBOR tag 0 (RFC3339 time) and tag 1 (Posix time [TIME_T], int
-    or float). Since then, additional requirements have become known. The present
-    document defines a CBOR tag for time that allows a more elaborate representation
-    of time, and anticipates the definition of related CBOR tags for duration and
-    time period. It is intended as the reference document for the IANA registration
-    of the CBOR tags defined.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Concise Binary Object Representation (CBOR, RFC 7049) is a data\n
+    \  format whose design goals include the possibility of extremely small\n   code
+    size, fairly small message size, and extensibility without the\n   need for version
+    negotiation.\n\n   In CBOR, one point of extensibility is the definition of CBOR
+    tags.\n   RFC 7049 defines two tags for time: CBOR tag 0 (RFC3339 time) and tag\n
+    \  1 (Posix time [TIME_T], int or float).  Since then, additional\n   requirements
+    have become known.  The present document defines a CBOR\n   tag for time that
+    allows a more elaborate representation of time, and\n   anticipates the definition
+    of related CBOR tags for duration and time\n   period.  It is intended as the
+    reference document for the IANA\n   registration of the CBOR tags defined.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-bormann-cbor-time-tag-00
-    docid:
-    - id: draft-bormann-cbor-time-tag-00
+    formattedref: draft-bormann-cbor-time-tag-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bormann-cbor-time-tag-00
+    docidentifier:
+    - content: draft-bormann-cbor-time-tag-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bormann-cbor-time-tag-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-bormann-cbor-time-tag-02
-    docid:
-    - id: draft-bormann-cbor-time-tag-02
+    formattedref: draft-bormann-cbor-time-tag-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bormann-cbor-time-tag-02
+    docidentifier:
+    - content: draft-bormann-cbor-time-tag-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bormann-cbor-time-tag-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bormann-cbor-time-tag-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

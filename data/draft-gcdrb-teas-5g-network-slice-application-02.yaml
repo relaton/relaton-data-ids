@@ -1,220 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-gcdrb-teas-5g-network-slice-application-02
-title:
-- content: IETF Network Slice Application in 3GPP 5G End-to-End Network Slice
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-gcdrb-teas-5g-network-slice-application-02
-  type: src
+id: draftgcdrbteas5gnetworksliceapplication02
 type: standard
-docid:
-- id: draft-gcdrb-teas-5g-network-slice-application-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IETF Network Slice Application in 3GPP 5G End-to-End Network Slice
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-gcdrb-teas-5g-network-slice-application-02
+docidentifier:
+- content: draft-gcdrb-teas-5g-network-slice-application
+  type: Internet-Draft
+- content: draft-gcdrb-teas-5g-network-slice-application-02
   type: Internet-Draft
   primary: true
-- id: I-D.gcdrb-teas-5g-network-slice-application
-  type: IETF
-  scope: anchor
 docnumber: I-D.gcdrb-teas-5g-network-slice-application
 date:
 - type: published
-  value: '2023-03-07'
+  at: '2023-03-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xuesong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuesong
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Xuesong Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: L. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: L. M.
       surname:
+        language: en
         content: Contreras
-        language:
-        - en
       completename:
+        language: en
         content: Luis M. Contreras
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Reza
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Reza
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Rokui
-        language:
-        - en
       completename:
+        language: en
         content: Reza Rokui
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ciena
-  role:
+        - language: en
+          content: Ciena
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ivan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ivan
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Bykov
-        language:
-        - en
       completename:
+        language: en
         content: Ivan Bykov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ribbon Communications
-  role:
-  - type: author
+        - language: en
+          content: Ribbon Communications
 version:
 - draft: '02'
-revdate: '2023-03-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Network Slicing is one of the core features in 5G, which provides different
-    network service as independent logical networks. To provide 5G network slices
-    service, an end-to-end network slice needs to consists of 3 major types of network
-    segments: Radio Access Network (RAN), Mobile Core Network (CN) and Transport Network
-    (TN). This document describes the application of IETF network slice in providing
-    5G end-to-end network slices, including the network slice identification mapping,
-    network slice parameter mapping and 5G IETF Network Slice NBI.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Network Slicing is one of the core features in 5G, which provides\n
+    \  different network service as independent logical networks.  To\n   provide
+    5G network slices service, an end-to-end network slice needs\n   to consists of
+    3 major types of network segments: Radio Access\n   Network (RAN), Mobile Core
+    Network (CN) and Transport Network (TN).\n   This document describes the application
+    of IETF network slice in\n   providing 5G end-to-end network slices, including
+    the network slice\n   identification mapping, network slice parameter mapping
+    and 5G IETF\n   Network Slice NBI.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-gcdrb-teas-5g-network-slice-application-01
-    docid:
-    - id: draft-gcdrb-teas-5g-network-slice-application-01
+    formattedref: draft-gcdrb-teas-5g-network-slice-application-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-gcdrb-teas-5g-network-slice-application-01
+    docidentifier:
+    - content: draft-gcdrb-teas-5g-network-slice-application-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-gcdrb-teas-5g-network-slice-application-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-gcdrb-teas-5g-network-slice-application-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

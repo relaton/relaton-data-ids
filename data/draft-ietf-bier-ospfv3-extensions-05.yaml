@@ -1,178 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bier-ospfv3-extensions-05
-title:
-- content: OSPFv3 Extensions for BIER
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-ospfv3-extensions-05
-  type: src
+id: draftietfbierospfv3extensions05
 type: standard
-docid:
-- id: draft-ietf-bier-ospfv3-extensions-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPFv3 Extensions for BIER
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-ospfv3-extensions-05
+docidentifier:
+- content: draft-ietf-bier-ospfv3-extensions
+  type: Internet-Draft
+- content: draft-ietf-bier-ospfv3-extensions-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bier-ospfv3-extensions
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bier-ospfv3-extensions
 date:
 - type: published
-  value: '2021-11-19'
+  at: '2021-11-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nagendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: N. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nagendra
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: N. K.
       surname:
+        language: en
         content: Nainar
-        language:
-        - en
       completename:
+        language: en
         content: Nagendra Kumar Nainar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Individual Contributor
-  role:
-  - type: author
+        - language: en
+          content: Individual Contributor
 version:
 - draft: '05'
-revdate: '2021-11-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Bit Index Explicit Replication (BIER) is an architecture that provides
-    multicast forwarding through a "BIER domain" without requiring intermediate routers
-    to maintain multicast related per-flow state. Neither does BIER require an explicit
-    tree-building protocol for its operation. A multicast data packet enters a BIER
-    domain at a "Bit-Forwarding Ingress Router" (BFIR), and leaves the BIER domain
-    at one or more "Bit-Forwarding Egress Routers" (BFERs). The BFIR router adds a
-    BIER header to the packet. Such header contains a bit-string in which each bit
-    represents exactly one BFER to forward the packet to. The set of BFERs to which
-    the multicast packet needs to be forwarded is expressed by the according set of
-    bits set in BIER packet header. This document describes the OSPFv3 [RFC8362] protocol
-    extensions required for BIER with MPLS encapsulation [RFC8296]. Support for other
-    encapsulation types is outside the scope of this document. The use of multiple
-    encapsulation types is outside the scope of this document.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Bit Index Explicit Replication (BIER) is an architecture that\n   provides
+    multicast forwarding through a \"BIER domain\" without\n   requiring intermediate
+    routers to maintain multicast related per-flow\n   state.  Neither does BIER require
+    an explicit tree-building protocol\n   for its operation.  A multicast data packet
+    enters a BIER domain at a\n   \"Bit-Forwarding Ingress Router\" (BFIR), and leaves
+    the BIER domain at\n   one or more \"Bit-Forwarding Egress Routers\" (BFERs).
+    \ The BFIR router\n   adds a BIER header to the packet.  Such header contains
+    a bit-string\n   in which each bit represents exactly one BFER to forward the
+    packet\n   to.  The set of BFERs to which the multicast packet needs to be\n   forwarded
+    is expressed by the according set of bits set in BIER\n   packet header.\n\n   This
+    document describes the OSPFv3 [RFC8362] protocol extensions\n   required for BIER
+    with MPLS encapsulation [RFC8296].  Support for\n   other encapsulation types
+    is outside the scope of this document.  The\n   use of multiple encapsulation
+    types is outside the scope of this\n   document.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bier-ospfv3-extensions-04
-    docid:
-    - id: draft-ietf-bier-ospfv3-extensions-04
+    formattedref: draft-ietf-bier-ospfv3-extensions-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-ospfv3-extensions-04
+    docidentifier:
+    - content: draft-ietf-bier-ospfv3-extensions-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bier-ospfv3-extensions-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bier-ospfv3-extensions-06
-    docid:
-    - id: draft-ietf-bier-ospfv3-extensions-06
+    formattedref: draft-ietf-bier-ospfv3-extensions-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-ospfv3-extensions-06
+    docidentifier:
+    - content: draft-ietf-bier-ospfv3-extensions-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bier-ospfv3-extensions-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bier-ospfv3-extensions-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

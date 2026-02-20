@@ -1,172 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-li-iccrg-minimum-rtt-estimation-00
-title:
-- content: Minimum RTT Estimation Under Low ACK Frequency
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-iccrg-minimum-rtt-estimation-00
-  type: src
+id: draftliiccrgminimumrttestimation00
 type: standard
-docid:
-- id: draft-li-iccrg-minimum-rtt-estimation-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Minimum RTT Estimation Under Low ACK Frequency
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-iccrg-minimum-rtt-estimation-00
+docidentifier:
+- content: draft-li-iccrg-minimum-rtt-estimation
+  type: Internet-Draft
+- content: draft-li-iccrg-minimum-rtt-estimation-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-iccrg-minimum-rtt-estimation
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-iccrg-minimum-rtt-estimation
 date:
 - type: published
-  value: '2026-01-21'
+  at: '2026-01-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tong
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Tong Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Renmin University of China
-  role:
+        - language: en
+          content: Renmin University of China
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Ke Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Bo Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tencent
-  role:
+        - language: en
+          content: Tencent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Youjian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Youjian
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Youjian Zhao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
-  - type: author
+        - language: en
+          content: Tsinghua University
 version:
 - draft: '00'
-revdate: '2026-01-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>In traditional acknowledgment mechanisms, the sender frequently "pulls"
-    ACK packets, resulting in significant protocol control overhead. This leads to
-    wasted CPU and I/O resources, contention for packet spectrum on half-duplex links
-    (e.g., WLAN), and reverse-path congestion in asymmetric links (e.g., satellite
-    network). Reducing the number of ACKs is essential in scenarios where ACK overhead
-    is non-negligible. However, a lower ACK frequency can introduce biases in delay
-    estimation, such as overestimating the minimum round-trip time (minRTT). This
-    document proposes how to calibrate the estimation of the minRTT under low ACK
-    frequency conditions.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In traditional acknowledgment mechanisms, the sender frequently\n   \"pulls\"
+    ACK packets, resulting in significant protocol control\n   overhead.  This leads
+    to wasted CPU and I/O resources, contention for\n   packet spectrum on half-duplex
+    links (e.g., WLAN), and reverse-path\n   congestion in asymmetric links (e.g.,
+    satellite network).  Reducing\n   the number of ACKs is essential in scenarios
+    where ACK overhead is\n   non-negligible.  However, a lower ACK frequency can
+    introduce biases\n   in delay estimation, such as overestimating the minimum round-trip\n
+    \  time (minRTT).  This document proposes how to calibrate the\n   estimation
+    of the minRTT under low ACK frequency conditions.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-iccrg-minimum-rtt-estimation-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

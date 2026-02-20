@@ -1,180 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-wang-loops-srv6-binding-00
-title:
-- content: Embedding LOOPS in SRv6
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wang-loops-srv6-binding-00
-  type: src
+id: draftwangloopssrv6binding00
 type: standard
-docid:
-- id: draft-wang-loops-srv6-binding-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Embedding LOOPS in SRv6
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wang-loops-srv6-binding-00
+docidentifier:
+- content: draft-wang-loops-srv6-binding
+  type: Internet-Draft
+- content: draft-wang-loops-srv6-binding-00
   type: Internet-Draft
   primary: true
-- id: I-D.wang-loops-srv6-binding
-  type: IETF
-  scope: anchor
 docnumber: I-D.wang-loops-srv6-binding
 date:
 - type: published
-  value: '2020-03-09'
+  at: '2020-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jianglong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jianglong
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Jianglong Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shizhong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shizhong
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Nie
-        language:
-        - en
       completename:
+        language: en
         content: Shizhong Nie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lei
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Bo
-        language:
-        - en
       completename:
+        language: en
         content: Lei Bo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitaet Bremen TZI
-  role:
-  - type: author
+        - language: en
+          content: Universitaet Bremen TZI
 version:
 - draft: '00'
-revdate: '2020-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>LOOPS (Local Optimizations on Path Segments) aims to provide local
-    in-network loss recovery. It can be used with tunneling protocols to efficiently
-    recover lost packets on a single segment of an end-to-end path instead of leaving
-    recovery to the end-to-end protocol, traversing the entire path. Segment Routing
-    (SR) leverages the source routing mechanisms and steers the packets through an
-    policy instantiated as an ordered list of instructions called segments. LOOPS
-    can be embedded in an SR segment to improve the packet recovery. draft-welzl-loops-gen-info
-    defines the generic information model, without binding that to any specific protocols,
-    to be carried between LOOPS ingress and egress nodes, which can be SR segment
-    endpoints. This document specifies the concrete mechanisms to embed LOOPS in SRv6
-    segment.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   LOOPS (Local Optimizations on Path Segments) aims to provide local\n
+    \  in-network loss recovery.  It can be used with tunneling protocols to\n   efficiently
+    recover lost packets on a single segment of an end-to-end\n   path instead of
+    leaving recovery to the end-to-end protocol,\n   traversing the entire path.\n\n
+    \  Segment Routing (SR) leverages the source routing mechanisms and\n   steers
+    the packets through an policy instantiated as an ordered list\n   of instructions
+    called segments.  LOOPS can be embedded in an SR\n   segment to improve the packet
+    recovery. draft-welzl-loops-gen-info\n   defines the generic information model,
+    without binding that to any\n   specific protocols, to be carried between LOOPS
+    ingress and egress\n   nodes, which can be SR segment endpoints.  This document
+    specifies\n   the concrete mechanisms to embed LOOPS in SRv6 segment.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wang-loops-srv6-binding-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

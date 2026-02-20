@@ -1,180 +1,159 @@
 ---
-schema-version: v1.2.9
-id: draft-white-intarea-reordering-01
-title:
-- content: Proposal for Updates to Guidance on Packet Reordering
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-01
-  type: src
+id: draftwhiteintareareordering01
 type: standard
-docid:
-- id: draft-white-intarea-reordering-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Proposal for Updates to Guidance on Packet Reordering
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-01
+docidentifier:
+- content: draft-white-intarea-reordering
+  type: Internet-Draft
+- content: draft-white-intarea-reordering-01
   type: Internet-Draft
   primary: true
-- id: I-D.white-intarea-reordering
-  type: IETF
-  scope: anchor
 docnumber: I-D.white-intarea-reordering
 date:
 - type: published
-  value: '2025-03-15'
+  at: '2025-03-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: White
-        language:
-        - en
       completename:
+        language: en
         content: Greg White
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
+        - language: en
+          content: CableLabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ingemar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ingemar
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Johansson
-        language:
-        - en
       completename:
+        language: en
         content: Ingemar Johansson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dibakar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dibakar
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Das
-        language:
-        - en
       completename:
+        language: en
         content: Dibakar Das
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
-  - type: author
+        - language: en
+          content: Intel
 version:
 - draft: '01'
-revdate: '2025-03-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Several link technology standards mandate that equipment guarantee in-order
-    delivery of layer 2 frames, apparently due to a belief that this is required by
-    higher layer protocols. In addition, certain link types can introduce out-of-order
-    arrivals at the end of the layer 2 link, which the receiving equipment is required
-    to rectify by delaying higher sequenced frames until all lower sequenced frames
-    can be delivered or are deemed lost. The delaying of higher sequenced frames is
-    generally done without any knowledge of the higher layer protocols in use, let
-    alone any knowledge of higher layer protocol contexts (e.g. TCP connections) in
-    the case that the layer 2 link is carrying a multiplex of such contexts. It could,
-    for example, be the case that all of the higher sequenced frames being delayed
-    are carrying packets for different layer 4 contexts than a single lower- sequenced
-    frame that triggered the delay. The result is that this "re-sequencing" operation
-    can introduce delays that result in degradation of performance rather than improving
-    it. Moreover, modern, performant TCP and QUIC implementations support features
-    that significantly improve their tolerance to out-of-order delivery. This draft
-    is intended to promote an analysis and discussion of the sensitivity of modern
-    IETF protocols to out-of-order delivery, and to potentially develop new information
-    for layer 2 technology standards regarding the need to assure in-order delivery
-    to support IETF protocols.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Several link technology standards mandate that equipment guarantee\n
+    \  in-order delivery of layer 2 frames, apparently due to a belief that\n   this
+    is required by higher layer protocols.  In addition, certain\n   link types can
+    introduce out-of-order arrivals at the end of the\n   layer 2 link, which the
+    receiving equipment is required to rectify by\n   delaying higher sequenced frames
+    until all lower sequenced frames can\n   be delivered or are deemed lost.  The
+    delaying of higher sequenced\n   frames is generally done without any knowledge
+    of the higher layer\n   protocols in use, let alone any knowledge of higher layer
+    protocol\n   contexts (e.g. TCP connections) in the case that the layer 2 link
+    is\n   carrying a multiplex of such contexts.  It could, for example, be the\n
+    \  case that all of the higher sequenced frames being delayed are\n   carrying
+    packets for different layer 4 contexts than a single lower-\n   sequenced frame
+    that triggered the delay.  The result is that this\n   \"re-sequencing\" operation
+    can introduce delays that result in\n   degradation of performance rather than
+    improving it.  Moreover,\n   modern, performant TCP and QUIC implementations support
+    features that\n   significantly improve their tolerance to out-of-order delivery.\n\n
+    \  This draft is intended to promote an analysis and discussion of the\n   sensitivity
+    of modern IETF protocols to out-of-order delivery, and to\n   potentially develop
+    new information for layer 2 technology standards\n   regarding the need to assure
+    in-order delivery to support IETF\n   protocols.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-white-intarea-reordering-00
-    docid:
-    - id: draft-white-intarea-reordering-00
+    formattedref: draft-white-intarea-reordering-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-00
+    docidentifier:
+    - content: draft-white-intarea-reordering-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-white-intarea-reordering-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-white-intarea-reordering-02
-    docid:
-    - id: draft-white-intarea-reordering-02
+    formattedref: draft-white-intarea-reordering-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-white-intarea-reordering-02
+    docidentifier:
+    - content: draft-white-intarea-reordering-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-white-intarea-reordering-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-white-intarea-reordering-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

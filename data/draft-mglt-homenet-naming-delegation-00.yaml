@@ -1,149 +1,126 @@
 ---
-schema-version: v1.2.9
-id: draft-mglt-homenet-naming-delegation-00
-title:
-- content: IPv6 Home Network Naming Delegation Architecture
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mglt-homenet-naming-delegation-00
-  type: src
+id: draftmglthomenetnamingdelegation00
 type: standard
-docid:
-- id: draft-mglt-homenet-naming-delegation-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPv6 Home Network Naming Delegation Architecture
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mglt-homenet-naming-delegation-00
+docidentifier:
+- content: draft-mglt-homenet-naming-delegation
+  type: Internet-Draft
+- content: draft-mglt-homenet-naming-delegation-00
   type: Internet-Draft
   primary: true
-- id: I-D.mglt-homenet-naming-delegation
-  type: IETF
-  scope: anchor
 docnumber: I-D.mglt-homenet-naming-delegation
 date:
 - type: published
-  value: '2012-07-29'
+  at: '2012-07-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wouter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wouter
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Cloetens
-        language:
-        - en
       completename:
+        language: en
         content: Wouter Cloetens
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SoftAtHome
-  role:
+        - language: en
+          content: SoftAtHome
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Philippe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Philippe
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Lemordant
-        language:
-        - en
       completename:
+        language: en
         content: Philippe Lemordant
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2012-07-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the Naming Delegation Architecture that makes
-    IPv6 Home Network globally reachable with Names or Fully Qualified Domain Names
-    (FQDN). In this architecture, the Customer Premise Equipment (CPE) acts as the
-    DNS Authoritative Server of the Home Network also called the Delegated DNS Server.
-    The Naming Delegation is configured between the Delegated DNS Server and the Delegating
-    DNS Server managed by the ISP. The use case considered in this document is an
-    End User that subscribes its ISP a specific Delegated Domain for its Home Network.
-    This document describes how the CPE automatically sets the Naming Delegation between
-    the Delegating and Delegated DNS Server. The Naming Delegation is requested by
-    the CPE. The CPE DHCP Client and the ISP DHCP Server exchange DHCP Options to
-    properly set the Naming Delegation. More specifically, the CPE DHCP Client (resp.
-    the ISP DHCP Server) configures the DNS(SEC) Zones of the Delegated DNS Server
-    (resp. Delegating DNS Server). For the Delegating DNS Server, the necessary pieces
-    of information required to set the Naming Delegation are the IP address of the
-    Delegated DNS Server, and if DNSSEC is used, the Delegation of Signing Information.
-    For the Delegated DNS Server, the necessary information is the Delegated Domain
-    associated to the Home Network.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the Naming Delegation Architecture that makes\n
+    \  IPv6 Home Network globally reachable with Names or Fully Qualified\n   Domain
+    Names (FQDN).  In this architecture, the Customer Premise\n   Equipment (CPE)
+    acts as the DNS Authoritative Server of the Home\n   Network also called the Delegated
+    DNS Server.  The Naming Delegation\n   is configured between the Delegated DNS
+    Server and the Delegating DNS\n   Server managed by the ISP.\n\n   The use case
+    considered in this document is an End User that\n   subscribes its ISP a specific
+    Delegated Domain for its Home Network.\n   This document describes how the CPE
+    automatically sets the Naming\n   Delegation between the Delegating and Delegated
+    DNS Server.\n\n   The Naming Delegation is requested by the CPE.  The CPE DHCP
+    Client\n   and the ISP DHCP Server exchange DHCP Options to properly set the\n
+    \  Naming Delegation.  More specifically, the CPE DHCP Client (resp. the\n   ISP
+    DHCP Server) configures the DNS(SEC) Zones of the Delegated DNS\n   Server (resp.
+    Delegating DNS Server).  For the Delegating DNS Server,\n   the necessary pieces
+    of information required to set the Naming\n   Delegation are the IP address of
+    the Delegated DNS Server, and if\n   DNSSEC is used, the Delegation of Signing
+    Information.  For the\n   Delegated DNS Server, the necessary information is the
+    Delegated\n   Domain associated to the Home Network.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mglt-homenet-naming-delegation-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

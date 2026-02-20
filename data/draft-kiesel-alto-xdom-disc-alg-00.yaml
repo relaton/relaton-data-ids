@@ -1,156 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-kiesel-alto-xdom-disc-alg-00
-title:
-- content: Application Layer Traffic Optimization (ALTO) Cross-Domain Server Discovery
-    - Experimental Algorithm Specification
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kiesel-alto-xdom-disc-alg-00
-  type: src
+id: draftkieselaltoxdomdiscalg00
 type: standard
-docid:
-- id: draft-kiesel-alto-xdom-disc-alg-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Application Layer Traffic Optimization (ALTO) Cross-Domain Server Discovery
+    - Experimental Algorithm Specification
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kiesel-alto-xdom-disc-alg-00
+docidentifier:
+- content: draft-kiesel-alto-xdom-disc-alg
+  type: Internet-Draft
+- content: draft-kiesel-alto-xdom-disc-alg-00
   type: Internet-Draft
   primary: true
-- id: I-D.kiesel-alto-xdom-disc-alg
-  type: IETF
-  scope: anchor
 docnumber: I-D.kiesel-alto-xdom-disc-alg
 date:
 - type: published
-  value: '2014-07-04'
+  at: '2014-07-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sebastian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sebastian
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kiesel
-        language:
-        - en
       completename:
+        language: en
         content: Sebastian Kiesel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Stuttgart
-  role:
+        - language: en
+          content: University of Stuttgart
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kilian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kilian
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Krause
-        language:
-        - en
       completename:
+        language: en
         content: Kilian Krause
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Stuttgart
-  role:
+        - language: en
+          content: University of Stuttgart
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Martin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Martin
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Stiemerling
-        language:
-        - en
       completename:
+        language: en
         content: Martin Stiemerling
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H-DA
-  role:
-  - type: author
+        - language: en
+          content: H-DA
 version:
 - draft: '00'
-revdate: '2014-07-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The goal of Application-Layer Traffic Optimization (ALTO) is to provide
-    guidance to applications that have to select one or several hosts from a set of
-    candidates capable of providing a desired resource. ALTO is realized by a client-server
-    protocol. Before an ALTO client can ask for guidance it needs to discover one
-    or more ALTO servers that can provide suitable guidance. This document contains
-    a strawman proposal for an ALTO Cross-Domain Server Discovery procedure (also
-    known as Third-Party Discovery). Technically, the algorithm specified in this
-    document takes one IP address and a U-NAPTR Service Parameter (i.e., "ALTO:http"
-    or "ALTO:https") as parameters. It performs several DNS lookups (for U-NAPTR and
-    SOA resource records) and returns one or more URI(s) of information resources
-    related to that IP address. The functionality has been validated in a lab environment.
-    However, the feasibility and possible side-effects of Internet-wide "production
-    use" are not yet understood. The purpose of this document is to foster further
-    discussion within the ALTO working group. Readers of this document should exercise
-    caution in evaluating its value for implementation and deployment.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The goal of Application-Layer Traffic Optimization (ALTO) is to\n   provide
+    guidance to applications that have to select one or several\n   hosts from a set
+    of candidates capable of providing a desired\n   resource.  ALTO is realized by
+    a client-server protocol.  Before an\n   ALTO client can ask for guidance it needs
+    to discover one or more\n   ALTO servers that can provide suitable guidance.\n\n
+    \  This document contains a strawman proposal for an ALTO Cross-Domain\n   Server
+    Discovery procedure (also known as Third-Party Discovery).\n   Technically, the
+    algorithm specified in this document takes one\n   IP address and a U-NAPTR Service
+    Parameter (i.e., \"ALTO:http\" or\n   \"ALTO:https\") as parameters.  It performs
+    several DNS lookups (for\n   U-NAPTR and SOA resource records) and returns one
+    or more URI(s) of\n   information resources related to that IP address.\n\n   The
+    functionality has been validated in a lab environment.  However,\n   the feasibility
+    and possible side-effects of Internet-wide\n   \"production use\" are not yet
+    understood.  The purpose of this\n   document is to foster further discussion
+    within the ALTO working\n   group.  Readers of this document should exercise caution
+    in\n   evaluating its value for implementation and deployment.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kiesel-alto-xdom-disc-alg-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

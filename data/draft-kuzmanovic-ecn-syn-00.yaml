@@ -1,96 +1,82 @@
 ---
-schema-version: v1.2.9
-id: draft-kuzmanovic-ecn-syn-00
-title:
-- content: Adding Explicit Congestion Notification (ECN) Capability to TCP's SYN/ACK
-    Packets
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kuzmanovic-ecn-syn-00
-  type: src
+id: draftkuzmanovicecnsyn00
 type: standard
-docid:
-- id: draft-kuzmanovic-ecn-syn-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Adding Explicit Congestion Notification (ECN) Capability to TCP's SYN/ACK
+    Packets
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kuzmanovic-ecn-syn-00
+docidentifier:
+- content: draft-kuzmanovic-ecn-syn
+  type: Internet-Draft
+- content: draft-kuzmanovic-ecn-syn-00
   type: Internet-Draft
   primary: true
-- id: I-D.kuzmanovic-ecn-syn
-  type: IETF
-  scope: anchor
 docnumber: I-D.kuzmanovic-ecn-syn
 date:
 - type: published
-  value: '2005-10-04'
+  at: '2005-10-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Aleksandar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aleksandar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kuzmanovic
-        language:
-        - en
       completename:
+        language: en
         content: Aleksandar Kuzmanovic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Northwestern University
-  role:
-  - type: author
+        - language: en
+          content: Northwestern University
 version:
 - draft: '00'
-revdate: '2005-10-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft specifies a modification to RFC 3168 to allow TCP SYN/ACK
-    packets to be ECN-Capable. For TCP, RFC 3168 only specified setting an ECN-Capable
-    codepoint on data packets, and not on SYN and SYN/ACK packets. However, because
-    of the high cost to the TCP transfer of having a SYN/ACK packet dropped, with
-    the resulting retransmit timeout, this document is specifying the use of ECN for
-    the SYN/ACK packet itself, when sent in response to a SYN packet with the two
-    ECN flags set in the TCP header, indicating a willingness to use ECN. Setting
-    TCP SYN/ACK packets as ECN-Capable can be of great benefit to the TCP connection,
-    avoiding the severe penalty of a retransmit timeout for a connection that has
-    not yet started placing a load on the network. The sender of the SYN/ACK packet
-    must respond to an ECN mark by reducing its initial congestion window from two,
-    three, or four segments to one segment, reducing the subsequent load from that
-    connection on the network.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This draft specifies a modification to RFC 3168 to allow TCP SYN/ACK\n
+    \  packets to be ECN-Capable.  For TCP, RFC 3168 only specified setting\n   an
+    ECN-Capable codepoint on data packets, and not on SYN and SYN/ACK\n   packets.
+    \ However, because of the high cost to the TCP transfer of\n   having a SYN/ACK
+    packet dropped, with the resulting retransmit\n   timeout, this document is specifying
+    the use of ECN for the SYN/ACK\n   packet itself, when sent in response to a SYN
+    packet with the two ECN\n   flags set in the TCP header, indicating a willingness
+    to use ECN.\n   Setting TCP SYN/ACK packets as ECN-Capable can be of great benefit
+    to\n   the TCP connection, avoiding the severe penalty of a retransmit\n   timeout
+    for a connection that has not yet started placing a load on\n   the network.  The
+    sender of the SYN/ACK packet must respond to an ECN\n   mark by reducing its initial
+    congestion window from two, three, or\n   four segments to one segment, reducing
+    the subsequent load from that\n   connection on the network.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kuzmanovic-ecn-syn-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

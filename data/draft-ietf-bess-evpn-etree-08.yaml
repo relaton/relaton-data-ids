@@ -1,232 +1,192 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-etree-08
-title:
-- content: E-TREE Support in EVPN & PBB-EVPN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-etree-08
-  type: src
+id: draftietfbessevpnetree08
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-etree-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: E-TREE Support in EVPN & PBB-EVPN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-etree-08
+docidentifier:
+- content: draft-ietf-bess-evpn-etree
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-etree-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-etree
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-etree
 date:
 - type: published
-  value: '2017-01-13'
+  at: '2017-01-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samer
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Salam
-        language:
-        - en
       completename:
+        language: en
         content: Samer Salam
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Uttaro
-        language:
-        - en
       completename:
+        language: en
         content: Jim Uttaro
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sami
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sami
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Boutros
-        language:
-        - en
       completename:
+        language: en
         content: Sami Boutros
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '08'
-revdate: '2017-01-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Metro Ethernet Forum (MEF) has defined a rooted-multipoint Ethernet
-    service known as Ethernet Tree (E-Tree). A solution framework for supporting this
-    service in MPLS networks is proposed in and RFC called "A Framework for E-Tree
-    Service over MPLS Network". This document discusses how those functional requirements
-    can be easily met with (PBB-)EVPN and how (PBB-)EVPN offers a more efficient implementation
-    of these functions. This document makes use of the most significant bit of the
-    scope governed by the IANA registry created by RFC7385, and hence updates that
-    RFC accordingly.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Metro Ethernet Forum (MEF) has defined a rooted-multipoint\n   Ethernet
+    service known as Ethernet Tree (E-Tree). A solution\n   framework for supporting
+    this service in MPLS networks is proposed in\n   and RFC called \"A Framework
+    for E-Tree Service over MPLS Network\".\n   This document discusses how those
+    functional requirements can be\n   easily met with (PBB-)EVPN and how (PBB-)EVPN
+    offers a more efficient\n   implementation of these functions. This document makes
+    use of the\n   most significant bit of the scope governed by the IANA registry\n
+    \  created by RFC7385, and hence updates that RFC accordingly.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-evpn-etree-07
-    docid:
-    - id: draft-ietf-bess-evpn-etree-07
+    formattedref: draft-ietf-bess-evpn-etree-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-etree-07
+    docidentifier:
+    - content: draft-ietf-bess-evpn-etree-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-etree-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-evpn-etree-09
-    docid:
-    - id: draft-ietf-bess-evpn-etree-09
+    formattedref: draft-ietf-bess-evpn-etree-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-etree-09
+    docidentifier:
+    - content: draft-ietf-bess-evpn-etree-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-etree-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-etree-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

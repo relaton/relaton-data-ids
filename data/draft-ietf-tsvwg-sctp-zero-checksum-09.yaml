@@ -1,198 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tsvwg-sctp-zero-checksum-09
-title:
-- content: Zero Checksum for the Stream Control Transmission Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-zero-checksum-09
-  type: src
+id: draftietftsvwgsctpzerochecksum09
 type: standard
-docid:
-- id: draft-ietf-tsvwg-sctp-zero-checksum-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Zero Checksum for the Stream Control Transmission Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-zero-checksum-09
+docidentifier:
+- content: draft-ietf-tsvwg-sctp-zero-checksum
+  type: Internet-Draft
+- content: draft-ietf-tsvwg-sctp-zero-checksum-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tsvwg-sctp-zero-checksum
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tsvwg-sctp-zero-checksum
 date:
 - type: published
-  value: '2024-03-28'
+  at: '2024-03-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Tüxen
-        language:
-        - en
       completename:
+        language: en
         content: Michael Tüxen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Münster University of Applied Sciences
-  role:
+        - language: en
+          content: Münster University of Applied Sciences
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Boivie
-        language:
-        - en
       completename:
+        language: en
         content: Victor Boivie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Florent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Florent
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Castelli
-        language:
-        - en
       completename:
+        language: en
         content: Florent Castelli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Randell
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Randell
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Jesup
-        language:
-        - en
       completename:
+        language: en
         content: Randell Jesup
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Mozilla Corporation
-  role:
-  - type: author
+        - language: en
+          content: Mozilla Corporation
 version:
 - draft: '09'
-revdate: '2024-03-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Stream Control Transmission Protocol (SCTP) uses a 32-bit checksum
-    in the common header of each packet to provide some level of data integrity. If
-    another method used by SCTP already provides the same or a higher level of data
-    integrity, computing this checksum does not provide any additional protection,
-    but does consume computing resources. This document provides a simple extension
-    allowing SCTP to save these computing resources by using zero as the checksum
-    in a backwards compatible way. It also defines how this feature can be used when
-    SCTP packets are encapsulated in Datagram Transport Layer Security (DTLS) packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Stream Control Transmission Protocol (SCTP) uses a 32-bit\n   checksum
+    in the common header of each packet to provide some level of\n   data integrity.
+    \ If another method used by SCTP already provides the\n   same or a higher level
+    of data integrity, computing this checksum\n   does not provide any additional
+    protection, but does consume\n   computing resources.\n\n   This document provides
+    a simple extension allowing SCTP to save these\n   computing resources by using
+    zero as the checksum in a backwards\n   compatible way.  It also defines how this
+    feature can be used when\n   SCTP packets are encapsulated in Datagram Transport
+    Layer Security\n   (DTLS) packets.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tsvwg-sctp-zero-checksum-08
-    docid:
-    - id: draft-ietf-tsvwg-sctp-zero-checksum-08
+    formattedref: draft-ietf-tsvwg-sctp-zero-checksum-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-zero-checksum-08
+    docidentifier:
+    - content: draft-ietf-tsvwg-sctp-zero-checksum-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tsvwg-sctp-zero-checksum-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-tsvwg-sctp-zero-checksum-10
-    docid:
-    - id: draft-ietf-tsvwg-sctp-zero-checksum-10
+    formattedref: draft-ietf-tsvwg-sctp-zero-checksum-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-zero-checksum-10
+    docidentifier:
+    - content: draft-ietf-tsvwg-sctp-zero-checksum-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tsvwg-sctp-zero-checksum-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tsvwg-sctp-zero-checksum-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

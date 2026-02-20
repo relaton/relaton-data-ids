@@ -1,171 +1,141 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rohc-rtp-ace-00
-title:
-- content: Adaptive Header ComprEssion (ACE) for Real-Time Multimedia
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rohc-rtp-ace-00
-  type: src
+id: draftietfrohcrtpace00
 type: standard
-docid:
-- id: draft-ietf-rohc-rtp-ace-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Adaptive Header ComprEssion (ACE) for Real-Time Multimedia
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rohc-rtp-ace-00
+docidentifier:
+- content: draft-ietf-rohc-rtp-ace
+  type: Internet-Draft
+- content: draft-ietf-rohc-rtp-ace-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rohc-rtp-ace
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rohc-rtp-ace
 date:
 - type: published
-  value: '2000-05-25'
+  at: '2000-05-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Clanton
-        language:
-        - en
       completename:
+        language: en
         content: Christopher Clanton
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haihong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haihong
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Zheng
-        language:
-        - en
       completename:
+        language: en
         content: Haihong Zheng
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Khiem
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Khiem
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Le
-        language:
-        - en
       completename:
+        language: en
         content: Khiem Le
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhigang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhigang
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Zhigang Liu
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2000-05-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When Real-Time Multimedia over IP is applied to cellular systems, it
-    is critical to minimize the overhead of the IP/UDP/RTP header, as spectral efficiency
-    is a top requirement. Robustness to errors and error bursts is also a must. Existing
-    IP/UDP/RTP header compression schemes such as that presented in IETF RFC 2508
-    [CRTP], do not provide sufficient performance in such environments. This report
-    describes a new scheme (ACE, or Adaptive header ComprEssion), which like RFC 2508,
-    is based on the idea that most of the time IP/UDP/RTP fields are either constant
-    or can be extrapolated in a linear fashion. However, ACE incorporates several
-    additional concepts which enable it to provide excellent compression efficiency
-    (exceeds the performance of [CRTP]) along with a high degree of error-resiliency.
-    Some of the concepts employed, such as Variable Length Encoding (VLE), enable
-    ACE to adapt to changing behavior in the IP/UDP/RTP header fields, such that good
-    efficiency and robustness characteristics are maintained over a wide range of
-    operating conditions. ACE is a general framework that can be parameterized to
-    account for the existence/non-existence and performance characteristics of the
-    feedback channel. Thus, ACE is applicable over both bi-directional and unidirectional
-    links. ACE is also able to perform a seamless handoff, i.e. the scheme can resume
-    efficient compression operation immediately after handoff.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "When Real-Time Multimedia over IP is applied to cellular systems, it\nis
+    critical to minimize the overhead of the IP/UDP/RTP header, as\nspectral efficiency
+    is a top requirement.  Robustness to errors and\nerror bursts is also a must.\nExisting
+    IP/UDP/RTP header compression schemes such as that presented\nin IETF RFC 2508
+    [CRTP], do not provide sufficient performance in\nsuch environments.  This report
+    describes a new scheme (ACE, or\nAdaptive header ComprEssion) , which like RFC
+    2508, is based on the\nidea that most of the time IP/UDP/RTP fields are either
+    constant or\ncan be extrapolated in a linear fashion.  However, ACE incorporates\nseveral
+    additional concepts which enable it to provide excellent\ncompression efficiency
+    (exceeds the performance of [CRTP]) along with\na high degree of error-resiliency.
+    \ Some of the concepts employed,\nsuch as Variable Length Encoding (VLE), enable
+    ACE to adapt to\nchanging behavior in the IP/UDP/RTP header fields, such that
+    good\nefficiency and robustness characteristics are maintained over a wide\nrange
+    of operating conditions.\nACE is a general framework that can be parameterized
+    to account for\nthe existence/non-existence and performance characteristics of
+    the\nfeedback channel.  Thus, ACE is applicable over both bi-directional\nand
+    unidirectional links.\nACE is also able to perform a seamless handoff, i.e. the
+    scheme can\nresume efficient compression operation immediately after handoff.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rohc-rtp-ace-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

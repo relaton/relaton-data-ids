@@ -1,187 +1,161 @@
 ---
-schema-version: v1.2.9
-id: draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
-title:
-- content: Stateless Hash-Based Signatures in Merkle Tree Ladder Mode (SLH-DSA-MTL)
-    for DNSSEC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
-  type: src
+id: draftfreglydnsopslhdsamtldnssec00
 type: standard
-docid:
-- id: draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Stateless Hash-Based Signatures in Merkle Tree Ladder Mode (SLH-DSA-MTL)
+    for DNSSEC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
+docidentifier:
+- content: draft-fregly-dnsop-slh-dsa-mtl-dnssec
+  type: Internet-Draft
+- content: draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
   type: Internet-Draft
   primary: true
-- id: I-D.fregly-dnsop-slh-dsa-mtl-dnssec
-  type: IETF
-  scope: anchor
 docnumber: I-D.fregly-dnsop-slh-dsa-mtl-dnssec
 date:
 - type: published
-  value: '2023-12-19'
+  at: '2023-12-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Fregly
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Fregly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Harvey
-        language:
-        - en
       completename:
+        language: en
         content: Joe Harvey
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Burt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Burt
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Kaliski
-        language:
-        - en
       completename:
+        language: en
         content: Burt Kaliski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
+        - language: en
+          content: Verisign Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Duane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Duane
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wessels
-        language:
-        - en
       completename:
+        language: en
         content: Duane Wessels
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign Labs
-  role:
-  - type: author
+        - language: en
+          content: Verisign Labs
 version:
 - draft: '00'
-revdate: '2023-12-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how to apply the Stateless Hash-Based Digital
-    Signature Algorithm in Merkle Tree Ladder mode to the DNS Security Extensions.
-    This combination is referred to as the SLH-DSA-MTL Signature scheme. This document
-    describes how to specify SLH-DSA-MTL keys and signatures in DNSSEC. It uses both
-    the SHA2 and SHAKE family of hash functions. This document also provides guidance
-    for use of EDNS(0) in signature retrieval.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes how to apply the Stateless Hash-Based Digital\n
+    \  Signature Algorithm in Merkle Tree Ladder mode to the DNS Security\n   Extensions.
+    \ This combination is referred to as the SLH-DSA-MTL\n   Signature scheme.  This
+    document describes how to specify SLH-DSA-MTL\n   keys and signatures in DNSSEC.
+    \ It uses both the SHA2 and SHAKE\n   family of hash functions.  This document
+    also provides guidance for\n   use of EDNS(0) in signature retrieval.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
-    docid:
-    - id: draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
+    formattedref: draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
+    docidentifier:
+    - content: draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-fregly-dnsop-slh-dsa-mtl-dnssec-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-fregly-dnsop-slh-dsa-mtl-dnssec-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

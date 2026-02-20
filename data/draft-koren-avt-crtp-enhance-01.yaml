@@ -1,210 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-koren-avt-crtp-enhance-01
-title:
-- content: Enhancements to IP/UDP/RTP Header Compression
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-koren-avt-crtp-enhance-01
-  type: src
+id: draftkorenavtcrtpenhance01
 type: standard
-docid:
-- id: draft-koren-avt-crtp-enhance-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhancements to IP/UDP/RTP Header Compression
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-koren-avt-crtp-enhance-01
+docidentifier:
+- content: draft-koren-avt-crtp-enhance
+  type: Internet-Draft
+- content: draft-koren-avt-crtp-enhance-01
   type: Internet-Draft
   primary: true
-- id: I-D.koren-avt-crtp-enhance
-  type: IETF
-  scope: anchor
 docnumber: I-D.koren-avt-crtp-enhance
 date:
 - type: published
-  value: '2000-03-14'
+  at: '2000-03-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alex
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Tweedly
-        language:
-        - en
       completename:
+        language: en
         content: Alex Tweedly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: S. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephen
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: S. L.
       surname:
+        language: en
         content: Casner
-        language:
-        - en
       completename:
+        language: en
         content: Stephen L. Casner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wing
-        language:
-        - en
       completename:
+        language: en
         content: Dan Wing
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thima
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thima
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Koren
-        language:
-        - en
       completename:
+        language: en
         content: Thima Koren
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Geevarghese
-        language:
-        - en
       completename:
+        language: en
         content: John Geevarghese
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Motorola India
-  role:
-  - type: author
+        - language: en
+          content: Motorola India
 version:
 - draft: '01'
-revdate: '2000-03-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes enhancements to CRTP, the header compression
-    algorithm for RTP streams described in [RFC2508]. Each enhancement addresses issues
-    with RFC2508 in different deployment scenarios. Each section below provides a
-    description of the proposed enhancement, the scenario where it is useful and the
-    justification for its use. Each of these enhancements could be evaluated separately.
-    The enhancements are applicable both for IPv4 and IPv6. The IPCP option ‘IP header
-    compression’ (described in RFC2509) is also extended to negotiate using the CRTP
-    enhancements.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes enhancements to CRTP, the header compression \nalgorithm
+    for RTP streams described in [RFC2508]. Each enhancement \naddresses issues with
+    RFC2508 in different deployment scenarios. Each \nsection below provides a description
+    of the proposed enhancement, the \nscenario where it is useful and the justification
+    for its use.\nEach of these enhancements could be evaluated separately.\nThe enhancements
+    are applicable both for IPv4 and IPv6.\nThe IPCP option ‘IP header compression’
+    (described in RFC2509) is also \nextended to negotiate using the CRTP enhancements.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-koren-avt-crtp-enhance-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

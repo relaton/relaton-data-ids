@@ -1,101 +1,87 @@
 ---
-schema-version: v1.2.9
-id: draft-ounsworth-cfrg-kem-combiners-00
-title:
-- content: Combiner function for hybrid key encapsulation mechanisms (Hybrid KEMs)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ounsworth-cfrg-kem-combiners-00
-  type: src
+id: draftounsworthcfrgkemcombiners00
 type: standard
-docid:
-- id: draft-ounsworth-cfrg-kem-combiners-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Combiner function for hybrid key encapsulation mechanisms (Hybrid KEMs)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ounsworth-cfrg-kem-combiners-00
+docidentifier:
+- content: draft-ounsworth-cfrg-kem-combiners
+  type: Internet-Draft
+- content: draft-ounsworth-cfrg-kem-combiners-00
   type: Internet-Draft
   primary: true
-- id: I-D.ounsworth-cfrg-kem-combiners
-  type: IETF
-  scope: anchor
 docnumber: I-D.ounsworth-cfrg-kem-combiners
 date:
 - type: published
-  value: '2022-11-25'
+  at: '2022-11-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Ounsworth
-        language:
-        - en
       completename:
+        language: en
         content: Mike Ounsworth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
-  - type: author
+        - language: en
+          content: Entrust Limited
 version:
 - draft: '00'
-revdate: '2022-11-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The migration to post-quantum cryptography often calls for performing
-    multiple key encapsulations in parallel and then combining their outputs to derive
-    a single shared secret. This document defines the KEM combiner KDF( H(ss1) ||
-    H(ss2) ) which is considered to be a dual PRF in practice, even though not provably
-    secure. This mechanism simplifies to KDF( ss1 || ss2 ) when used with a KEM which
-    internally uses a KDF to produce its shared secret. RSA-KEM, ECDH, Edwards curve
-    DH, and CRYSTALS-Kyber are shown to meet this criteria and therefore be safe to
-    use with the simplified KEM combiner.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The migration to post-quantum cryptography often calls for performing\n
+    \  multiple key encapsulations in parallel and then combining their\n   outputs
+    to derive a single shared secret.\n\n   This document defines the KEM combiner
+    KDF( H(ss1) || H(ss2) ) which\n   is considered to be a dual PRF in practice,
+    even though not provably\n   secure.  This mechanism simplifies to KDF( ss1 ||
+    ss2 ) when used\n   with a KEM which internally uses a KDF to produce its shared
+    secret.\n   RSA-KEM, ECDH, Edwards curve DH, and CRYSTALS-Kyber are shown to meet\n
+    \  this criteria and therefore be safe to use with the simplified KEM\n   combiner.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ounsworth-cfrg-kem-combiners-01
-    docid:
-    - id: draft-ounsworth-cfrg-kem-combiners-01
+    formattedref: draft-ounsworth-cfrg-kem-combiners-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ounsworth-cfrg-kem-combiners-01
+    docidentifier:
+    - content: draft-ounsworth-cfrg-kem-combiners-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ounsworth-cfrg-kem-combiners-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ounsworth-cfrg-kem-combiners-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,200 +1,175 @@
 ---
-schema-version: v1.2.9
-id: draft-li-rtgwg-enhanced-ti-lfa-11
-title:
-- content: Enhanced Topology Independent Loop-free Alternate Fast Re-route
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa-11
-  type: src
+id: draftlirtgwgenhancedtilfa11
 type: standard
-docid:
-- id: draft-li-rtgwg-enhanced-ti-lfa-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhanced Topology Independent Loop-free Alternate Fast Re-route
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa-11
+docidentifier:
+- content: draft-li-rtgwg-enhanced-ti-lfa
+  type: Internet-Draft
+- content: draft-li-rtgwg-enhanced-ti-lfa-11
   type: Internet-Draft
   primary: true
-- id: I-D.li-rtgwg-enhanced-ti-lfa
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-rtgwg-enhanced-ti-lfa
 date:
 - type: published
-  value: '2024-10-21'
+  at: '2024-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Cheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cheng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Cheng Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shraddha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shraddha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hegde
-        language:
-        - en
       completename:
+        language: en
         content: Shraddha Hegde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks Inc.
 version:
 - draft: '11'
-revdate: '2024-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Topology Independent Loop-free Alternate Fast Re-route (TI-LFA) aims
-    at providing protection of node and adjacency segments within the Segment Routing
-    (SR) framework. A key aspect of TI-LFA is the FRR path selection approach establishing
-    protection over the expected post-convergence paths from the point of local repair.
-    However, the TI-LFA FRR path may skip the node even if it is specified in the
-    SID list to be traveled. This document defines Enhanced TI-LFA(TI-LFA+) by adding
-    a No-bypass indicator for segments to ensure that the FRR route will not bypass
-    the specific node, such as firewall. Also, this document defines No- bypass flag
-    and No-FRR flag in SRH to indicate not to bypass nodes and not to perform FRR
-    on all the nodes along the SRv6 path, respectively.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Topology Independent Loop-free Alternate Fast Re-route (TI-LFA) aims\n
+    \  at providing protection of node and adjacency segments within the\n   Segment
+    Routing (SR) framework.  A key aspect of TI-LFA is the FRR\n   path selection
+    approach establishing protection over the expected\n   post-convergence paths
+    from the point of local repair.  However, the\n   TI-LFA FRR path may skip the
+    node even if it is specified in the SID\n   list to be traveled.\n\n   This document
+    defines Enhanced TI-LFA(TI-LFA+) by adding a No-bypass\n   indicator for segments
+    to ensure that the FRR route will not bypass\n   the specific node, such as firewall.
+    \ Also, this document defines No-\n   bypass flag and No-FRR flag in SRH to indicate
+    not to bypass nodes\n   and not to perform FRR on all the nodes along the SRv6
+    path,\n   respectively.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-li-rtgwg-enhanced-ti-lfa-10
-    docid:
-    - id: draft-li-rtgwg-enhanced-ti-lfa-10
+    formattedref: draft-li-rtgwg-enhanced-ti-lfa-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa-10
+    docidentifier:
+    - content: draft-li-rtgwg-enhanced-ti-lfa-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-rtgwg-enhanced-ti-lfa-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-li-rtgwg-enhanced-ti-lfa-12
-    docid:
-    - id: draft-li-rtgwg-enhanced-ti-lfa-12
+    formattedref: draft-li-rtgwg-enhanced-ti-lfa-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-rtgwg-enhanced-ti-lfa-12
+    docidentifier:
+    - content: draft-li-rtgwg-enhanced-ti-lfa-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-rtgwg-enhanced-ti-lfa-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-rtgwg-enhanced-ti-lfa-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

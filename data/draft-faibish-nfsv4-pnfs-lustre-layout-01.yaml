@@ -1,134 +1,115 @@
 ---
-schema-version: v1.2.9
-id: draft-faibish-nfsv4-pnfs-lustre-layout-01
-title:
-- content: Parallel NFS (pNFS) Lustre Layout Operations
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-faibish-nfsv4-pnfs-lustre-layout-01
-  type: src
+id: draftfaibishnfsv4pnfslustrelayout01
 type: standard
-docid:
-- id: draft-faibish-nfsv4-pnfs-lustre-layout-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Parallel NFS (pNFS) Lustre Layout Operations
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-faibish-nfsv4-pnfs-lustre-layout-01
+docidentifier:
+- content: draft-faibish-nfsv4-pnfs-lustre-layout
+  type: Internet-Draft
+- content: draft-faibish-nfsv4-pnfs-lustre-layout-01
   type: Internet-Draft
   primary: true
-- id: I-D.faibish-nfsv4-pnfs-lustre-layout
-  type: IETF
-  scope: anchor
 docnumber: I-D.faibish-nfsv4-pnfs-lustre-layout
 date:
 - type: published
-  value: '2012-10-19'
+  at: '2012-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sorin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sorin
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Faibish
-        language:
-        - en
       completename:
+        language: en
         content: Sorin Faibish
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peng
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Tao
-        language:
-        - en
       completename:
+        language: en
         content: Peng Tao
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2012-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Parallel NFS (pNFS) extends Network File System version 4.1(NFSv4.1)
-    to allow clients to directly access file data on the storage used by the NFSv4.1
-    server. This ability to bypass the server for data access can increase both performance
-    and parallelism, but requires additional client functionality for data access,
-    some of which is dependent on the class of storage used, a.k.a. the Layout Type.
-    The main pNFS operations and data types in NFSv4 Minor version 1 specify a layout-type-independent
-    layer; layout-type-specific information is conveyed using opaque data structures
-    whose internal structure is further defined by the particular layout type specification.
-    This document specifies the NFSv4.1 Lustre pNFS Layout Type as a companion to
-    the main NFSv4 Minor version 1 specification.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Parallel NFS (pNFS) extends Network File System version 4.1(NFSv4.1)\n
+    \  to allow clients to directly access file data on the storage used by\n   the
+    NFSv4.1 server. This ability to bypass the server for data\n   access can increase
+    both performance and parallelism, but requires\n   additional client functionality
+    for data access, some of which is\n   dependent on the class of storage used,
+    a.k.a. the Layout Type. The\n   main pNFS operations and data types in NFSv4 Minor
+    version 1 specify\n   a layout-type-independent layer; layout-type-specific information
+    is\n   conveyed using opaque data structures whose internal structure is\n   further
+    defined by the particular layout type specification. This\n   document specifies
+    the NFSv4.1 Lustre pNFS Layout Type as a\n   companion to the main NFSv4 Minor
+    version 1 specification.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-faibish-nfsv4-pnfs-lustre-layout-00
-    docid:
-    - id: draft-faibish-nfsv4-pnfs-lustre-layout-00
+    formattedref: draft-faibish-nfsv4-pnfs-lustre-layout-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-faibish-nfsv4-pnfs-lustre-layout-00
+    docidentifier:
+    - content: draft-faibish-nfsv4-pnfs-lustre-layout-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-faibish-nfsv4-pnfs-lustre-layout-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-faibish-nfsv4-pnfs-lustre-layout-02
-    docid:
-    - id: draft-faibish-nfsv4-pnfs-lustre-layout-02
+    formattedref: draft-faibish-nfsv4-pnfs-lustre-layout-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-faibish-nfsv4-pnfs-lustre-layout-02
+    docidentifier:
+    - content: draft-faibish-nfsv4-pnfs-lustre-layout-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-faibish-nfsv4-pnfs-lustre-layout-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-faibish-nfsv4-pnfs-lustre-layout-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

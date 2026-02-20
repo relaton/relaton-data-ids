@@ -1,227 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-nvo3-vmm-14
-title:
-- content: Virtual Machine Mobility Solutions for L2 and L3 Overlay Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-vmm-14
-  type: src
+id: draftietfnvo3vmm14
 type: standard
-docid:
-- id: draft-ietf-nvo3-vmm-14
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Virtual Machine Mobility Solutions for L2 and L3 Overlay Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-vmm-14
+docidentifier:
+- content: draft-ietf-nvo3-vmm
+  type: Internet-Draft
+- content: draft-ietf-nvo3-vmm-14
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-nvo3-vmm
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-nvo3-vmm
 date:
 - type: published
-  value: '2020-04-01'
+  at: '2020-04-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Linda
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Linda
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Dunbar
-        language:
-        - en
       completename:
+        language: en
         content: Linda Dunbar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Behcet
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Behcet
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Sarikaya
-        language:
-        - en
       completename:
+        language: en
         content: Behcet Sarikaya
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Denpel Informatique
-  role:
+        - language: en
+          content: Denpel Informatique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bhumip
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bhumip
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Khasnabish
-        language:
-        - en
       completename:
+        language: en
         content: Bhumip Khasnabish
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent
-  role:
+        - language: en
+          content: Independent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Herbert
-        language:
-        - en
       completename:
+        language: en
         content: Tom Herbert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Saumya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Saumya
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dikshit
-        language:
-        - en
       completename:
+        language: en
         content: Saumya Dikshit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aruba-HPE
-  role:
-  - type: author
+        - language: en
+          content: Aruba-HPE
 version:
 - draft: '14'
-revdate: '2020-04-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes virtual machine mobility solutions commonly
-    used in data centers built with overlay-based network. This document is intended
-    for describing the solutions and the impact of moving VMs (or applications) from
-    one Rack to another connected by the Overlay networks. For layer 2, it is based
-    on using an NVA (Network Virtualization Authority) - NVE (Network Virtualization
-    Edge) protocol to update ARP (Address Resolution Protocol) table or neighbor cache
-    entries after a VM (virtual machine) moves from an Old NVE to a New NVE. For Layer
-    3, it is based on address and connection migration after the move.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes virtual machine mobility solutions commonly\n
+    \  used in data centers built with overlay-based network. This document\n   is
+    intended for describing the solutions and the impact of moving\n   VMs (or applications)
+    from one Rack to another connected by the\n   Overlay networks.\n\n   For layer
+    2, it is based on using an NVA (Network Virtualization\n   Authority) - NVE (Network
+    Virtualization Edge) protocol to update\n   ARP (Address Resolution Protocol)
+    table or neighbor cache entries\n   after a VM (virtual machine) moves from an
+    Old NVE to a New NVE.\n   For Layer 3, it is based on address and connection migration
+    after\n   the move.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-nvo3-vmm-13
-    docid:
-    - id: draft-ietf-nvo3-vmm-13
+    formattedref: draft-ietf-nvo3-vmm-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-vmm-13
+    docidentifier:
+    - content: draft-ietf-nvo3-vmm-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nvo3-vmm-13
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-nvo3-vmm-15
-    docid:
-    - id: draft-ietf-nvo3-vmm-15
+    formattedref: draft-ietf-nvo3-vmm-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-vmm-15
+    docidentifier:
+    - content: draft-ietf-nvo3-vmm-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nvo3-vmm-15
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-nvo3-vmm-14
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

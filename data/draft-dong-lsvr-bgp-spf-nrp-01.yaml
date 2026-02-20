@@ -1,175 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-lsvr-bgp-spf-nrp-01
-title:
-- content: BGP SPF for Network Resource Partitions
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-nrp-01
-  type: src
+id: draftdonglsvrbgpspfnrp01
 type: standard
-docid:
-- id: draft-dong-lsvr-bgp-spf-nrp-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP SPF for Network Resource Partitions
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-nrp-01
+docidentifier:
+- content: draft-dong-lsvr-bgp-spf-nrp
+  type: Internet-Draft
+- content: draft-dong-lsvr-bgp-spf-nrp-01
   type: Internet-Draft
   primary: true
-- id: I-D.dong-lsvr-bgp-spf-nrp
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-lsvr-bgp-spf-nrp
 date:
 - type: published
-  value: '2022-10-16'
+  at: '2022-10-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haibo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Haibo Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '01'
-revdate: '2022-10-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A VTN is a virtual underlay network which has customized network topology
-    and a set of dedicated or shared network resources. Network Resource Partition
-    (NRP) refers to a set of network resources that are available to carry traffic
-    and meet the SLOs and SLEs. Multiple NRPs can be created in a network to provide
-    different Virtual Transport Networks (VTN) to meet the requirements of different
-    services or different service groups. In the context of network slicing, a VTN
-    can be instantiated as a Network Resource Partition (NRP). As the number of NRP
-    increases, there can be scalability concerns about using Interial Gateway Protocols
-    (IGP) to distribute the NRP information in the network. In networks where BGP
-    Shortest Path First (SPF) can used as the underlay routing mechanism to distribute
-    the link-state information among network nodes, the information of NRPs needs
-    to be distributed along with the basic network information. This document specifies
-    the BGP SPF mechanisms with necessary extensions to distribute the NRP information
-    and perform NRP-specific path computation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A VTN is a virtual underlay network which has customized network\n
+    \  topology and a set of dedicated or shared network resources.  Network\n   Resource
+    Partition (NRP) refers to a set of network resources that\n   are available to
+    carry traffic and meet the SLOs and SLEs.  Multiple\n   NRPs can be created in
+    a network to provide different Virtual\n   Transport Networks (VTN) to meet the
+    requirements of different\n   services or different service groups.  In the context
+    of network\n   slicing, a VTN can be instantiated as a Network Resource Partition\n
+    \  (NRP).\n\n   As the number of NRP increases, there can be scalability concerns\n
+    \  about using Interial Gateway Protocols (IGP) to distribute the NRP\n   information
+    in the network.  In networks where BGP Shortest Path\n   First (SPF) can used
+    as the underlay routing mechanism to distribute\n   the link-state information
+    among network nodes, the information of\n   NRPs needs to be distributed along
+    with the basic network\n   information.  This document specifies the BGP SPF mechanisms
+    with\n   necessary extensions to distribute the NRP information and perform\n
+    \  NRP-specific path computation.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dong-lsvr-bgp-spf-nrp-00
-    docid:
-    - id: draft-dong-lsvr-bgp-spf-nrp-00
+    formattedref: draft-dong-lsvr-bgp-spf-nrp-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-nrp-00
+    docidentifier:
+    - content: draft-dong-lsvr-bgp-spf-nrp-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-lsvr-bgp-spf-nrp-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-dong-lsvr-bgp-spf-nrp-02
-    docid:
-    - id: draft-dong-lsvr-bgp-spf-nrp-02
+    formattedref: draft-dong-lsvr-bgp-spf-nrp-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-lsvr-bgp-spf-nrp-02
+    docidentifier:
+    - content: draft-dong-lsvr-bgp-spf-nrp-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-lsvr-bgp-spf-nrp-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-lsvr-bgp-spf-nrp-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

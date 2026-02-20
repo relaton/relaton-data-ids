@@ -1,226 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-opsawg-model-automation-framework-00
+id: draftietfopsawgmodelautomationframework00
+type: standard
+schema_version: v1.4.1
 title:
-- content: |-
+- language: en
+  script: Latn
+  content: |-
     A Framework for
         Automating Service and Network Management with YANG
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-model-automation-framework-00
-  type: src
-type: standard
-docid:
-- id: draft-ietf-opsawg-model-automation-framework-00
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-model-automation-framework-00
+docidentifier:
+- content: draft-ietf-opsawg-model-automation-framework
+  type: Internet-Draft
+- content: draft-ietf-opsawg-model-automation-framework-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-model-automation-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-opsawg-model-automation-framework
 date:
 - type: published
-  value: '2019-11-17'
+  at: '2019-11-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica I+D
-  role:
+        - language: en
+          content: Telefonica I+D
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chongfeng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chongfeng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Chongfeng Xie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liang
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Liang Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '00'
-revdate: '2019-11-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Data models for service and network management provides a programmatic
-    approach for representing (virtual) services or networks and deriving (1) configuration
-    information that will be communicated to network and service components that are
-    used to build and deliver the service and (2) state information that will be monitored
-    and tracked. Indeed, data models can be used during various phases of the service
-    and network management life cycle, such as service instantiation, service provisioning,
-    optimization, monitoring, and diagnostic. Also, data models are instrumental in
-    the automation of network management. They also provide closed-loop control for
-    the sake of adaptive and deterministic service creation, delivery, and maintenance.
-    This document provides a framework that describes and discusses an architecture
-    for service and network management automation that takes advantage of YANG modeling
-    technologies. This framework is drawn from a network provider perspective irrespective
-    of the origin of a data module; it can accommodate even modules that are developed
-    outside the IETF. The document aims to exemplify an approach that specifies the
-    journey from technology-agnostic services to technology-specific actions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Data models for service and network management provides a\n   programmatic
+    approach for representing (virtual) services or networks\n   and deriving (1)
+    configuration information that will be communicated\n   to network and service
+    components that are used to build and deliver\n   the service and (2) state information
+    that will be monitored and\n   tracked.  Indeed, data models can be used during
+    various phases of\n   the service and network management life cycle, such as service\n
+    \  instantiation, service provisioning, optimization, monitoring, and\n   diagnostic.
+    \ Also, data models are instrumental in the automation of\n   network management.
+    \ They also provide closed-loop control for the\n   sake of adaptive and deterministic
+    service creation, delivery, and\n   maintenance.\n\n   This document provides
+    a framework that describes and discusses an\n   architecture for service and network
+    management automation that takes\n   advantage of YANG modeling technologies.
+    \ This framework is drawn\n   from a network provider perspective irrespective
+    of the origin of a\n   data module; it can accommodate even modules that are developed\n
+    \  outside the IETF.\n\n   The document aims to exemplify an approach that specifies
+    the journey\n   from technology-agnostic services to technology-specific actions.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-opsawg-model-automation-framework-01
-    docid:
-    - id: draft-ietf-opsawg-model-automation-framework-01
+    formattedref: draft-ietf-opsawg-model-automation-framework-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-model-automation-framework-01
+    docidentifier:
+    - content: draft-ietf-opsawg-model-automation-framework-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-model-automation-framework-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-opsawg-model-automation-framework-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

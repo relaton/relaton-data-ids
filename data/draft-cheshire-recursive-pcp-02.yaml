@@ -1,102 +1,88 @@
 ---
-schema-version: v1.2.9
-id: draft-cheshire-recursive-pcp-02
-title:
-- content: Recursive PCP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cheshire-recursive-pcp-02
-  type: src
+id: draftcheshirerecursivepcp02
 type: standard
-docid:
-- id: draft-cheshire-recursive-pcp-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Recursive PCP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cheshire-recursive-pcp-02
+docidentifier:
+- content: draft-cheshire-recursive-pcp
+  type: Internet-Draft
+- content: draft-cheshire-recursive-pcp-02
   type: Internet-Draft
   primary: true
-- id: I-D.cheshire-recursive-pcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.cheshire-recursive-pcp
 date:
 - type: published
-  value: '2013-03-10'
+  at: '2013-03-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stuart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stuart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Cheshire
-        language:
-        - en
       completename:
+        language: en
         content: Stuart Cheshire
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple
-  role:
-  - type: author
+        - language: en
+          content: Apple
 version:
 - draft: '02'
-revdate: '2013-03-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Port Control Protocol (PCP) allows clients to request explicit
-    dynamic inbound and outbound port mappings in their closest on-path NAT, firewall,
-    or other middlebox. However, in today's world, there may be more than one NAT
-    on the path between a client and the public Internet. This document describes
-    how the closest on-path middlebox generates a corresponding upstream PCP request
-    to the next closest on-path middlebox, to request an appropriate explicit dynamic
-    port mapping in that middlebox too. Applied recursively, this generates the necessary
-    chain of port mappings in any number of middleboxes on the path between the client
-    and the public Internet.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Port Control Protocol (PCP) allows clients to request explicit\n
+    \  dynamic inbound and outbound port mappings in their closest on-path\n   NAT,
+    firewall, or other middlebox.  However, in today's world, there\n   may be more
+    than one NAT on the path between a client and the public\n   Internet.  This document
+    describes how the closest on-path middlebox\n   generates a corresponding upstream
+    PCP request to the next closest\n   on-path middlebox, to request an appropriate
+    explicit dynamic port\n   mapping in that middlebox too.  Applied recursively,
+    this generates\n   the necessary chain of port mappings in any number of middleboxes
+    on\n   the path between the client and the public Internet.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-cheshire-recursive-pcp-01
-    docid:
-    - id: draft-cheshire-recursive-pcp-01
+    formattedref: draft-cheshire-recursive-pcp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cheshire-recursive-pcp-01
+    docidentifier:
+    - content: draft-cheshire-recursive-pcp-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cheshire-recursive-pcp-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cheshire-recursive-pcp-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

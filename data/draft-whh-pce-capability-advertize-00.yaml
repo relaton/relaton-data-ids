@@ -1,219 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-whh-pce-capability-advertize-00
-title:
-- content: PCEP Extension for INTERACTING-CAPBILITY
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-whh-pce-capability-advertize-00
-  type: src
+id: draftwhhpcecapabilityadvertize00
 type: standard
-docid:
-- id: draft-whh-pce-capability-advertize-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PCEP Extension for INTERACTING-CAPBILITY
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-whh-pce-capability-advertize-00
+docidentifier:
+- content: draft-whh-pce-capability-advertize
+  type: Internet-Draft
+- content: draft-whh-pce-capability-advertize-00
   type: Internet-Draft
   primary: true
-- id: I-D.whh-pce-capability-advertize
-  type: IETF
-  scope: anchor
 docnumber: I-D.whh-pce-capability-advertize
 date:
 - type: published
-  value: '2022-03-25'
+  at: '2022-03-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Minxue
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Minxue
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Minxue Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liuyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liuyan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Han
-        language:
-        - en
       completename:
+        language: en
         content: Liuyan Han
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mianzhang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mianzhang
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Huang
-        language:
-        - en
       completename:
+        language: en
         content: Mianzhang Huang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CICT
-  role:
+        - language: en
+          content: CICT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhen
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Han
-        language:
-        - en
       completename:
+        language: en
         content: Zhen Han
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CICT
-  role:
+        - language: en
+          content: CICT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jinyou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jinyou
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dai
-        language:
-        - en
       completename:
+        language: en
         content: Jinyou Dai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CICT
-  role:
-  - type: author
+        - language: en
+          content: CICT
 version:
 - draft: '00'
-revdate: '2022-03-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The PCE communication Protocol (PCEP) is used to convey path computation
-    requests and responses both between Path Computation Clients (PCCs), Path Computation
-    Elements (PCEs) and cooperating PCEs, support of traffic engineering in Multiprotocol
-    Label Switching (MPLS), Generalized MPLS (GMPLS) and Segment Routing (SR) networks.
-    In PCEP, due to the different implementing of PCC tunnel capability, especially
-    bidirectional SR tunnels, the PCE can only provides path computation functions
-    between the PCCs which adopt identical mechanisms. With the introduction and evolvement
-    of 5G and other network scenarios, the scale of bearing and transport network
-    has developed to a high level. On the other hand, with the improvement of network
-    slicing ability, network equipments can provide network slicing service, such
-    as enhanced VPNs (VPN+). Transport network employing time slot isolation technology,
-    such as FlexE,MTN,can provide advanced timeslot slicing for the high quality customer
-    services. The high quality customer services, for example industry production
-    service, demand for superior SLA and end-to-end timeslot service slicing, regardless
-    of whether it is across of different network equipment providers or across of
-    different regions. Therefore, there is an urgent need of a method to support PCE
-    to provide end-to-end path computation and establishment of SR tunnels regardless
-    of PCC enables different protocol selections. This document specifies the extensions
-    to PCE communication Protocol (PCEP) to carry bidirectional SR tunnel capability
-    advertisement information in PCEP message to enhance PCE ability to perceive the
-    protocol mechanism supported by PCC.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The PCE communication Protocol (PCEP) is used to convey path\n   computation
+    requests and responses both between Path Computation\n   Clients (PCCs), Path
+    Computation Elements (PCEs) and cooperating\n   PCEs, support of traffic engineering
+    in Multiprotocol Label Switching\n   (MPLS), Generalized MPLS (GMPLS) and Segment
+    Routing (SR) networks.\n   In PCEP, due to the different implementing of PCC tunnel
+    capability,\n   especially bidirectional SR tunnels, the PCE can only provides
+    path\n   computation functions between the PCCs which adopt identical\n   mechanisms.\n\n
+    \  With the introduction and evolvement of 5G and other network\n   scenarios,
+    the scale of bearing and transport network has developed\n   to a high level.
+    \ On the other hand, with the improvement of network\n   slicing ability, network
+    equipments can provide network slicing\n   service, such as enhanced VPNs (VPN+).
+    \ Transport network employing\n   time slot isolation technology, such as FlexE,MTN,can
+    provide\n   advanced timeslot slicing for the high quality customer services.\n
+    \  The high quality customer services, for example industry production\n   service,
+    demand for superior SLA and end-to-end timeslot service\n   slicing, regardless
+    of whether it is across of different network\n   equipment providers or across
+    of different regions.  Therefore, there\n   is an urgent need of a method to support
+    PCE to provide end-to-end\n   path computation and establishment of SR tunnels
+    regardless of PCC\n   enables different protocol selections.\n\n   This document
+    specifies the extensions to PCE communication Protocol\n   (PCEP) to carry bidirectional
+    SR tunnel capability advertisement\n   information in PCEP message to enhance
+    PCE ability to perceive the\n   protocol mechanism supported by PCC.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-whh-pce-capability-advertize-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

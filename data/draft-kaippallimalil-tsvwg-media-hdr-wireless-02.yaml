@@ -1,177 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
-title:
-- content: Media Header Extensions for Wireless Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-02
-  type: src
+id: draftkaippallimaliltsvwgmediahdrwireless02
 type: standard
-docid:
-- id: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Media Header Extensions for Wireless Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-02
+docidentifier:
+- content: draft-kaippallimalil-tsvwg-media-hdr-wireless
+  type: Internet-Draft
+- content: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
   type: Internet-Draft
   primary: true
-- id: I-D.kaippallimalil-tsvwg-media-hdr-wireless
-  type: IETF
-  scope: anchor
 docnumber: I-D.kaippallimalil-tsvwg-media-hdr-wireless
 date:
 - type: published
-  value: '2023-07-05'
+  at: '2023-07-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kaippallimalil
-        language:
-        - en
       completename:
+        language: en
         content: John Kaippallimalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sri
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Gundavelli
-        language:
-        - en
       completename:
+        language: en
         content: Sri Gundavelli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Spencer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Spencer
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Dawkins
-        language:
-        - en
       completename:
+        language: en
         content: Spencer Dawkins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tencent
-  role:
-  - type: author
+        - language: en
+          content: Tencent
 version:
 - draft: '02'
-revdate: '2023-07-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Wireless networks like 5G cellular or Wi-Fi experience significant
-    variations in link capacity over short intervals due to wireless channel conditions,
-    interference, or the end-user's movement. These variations in capacity take place
-    in the order of hundreds of milliseconds and is much too fast for end-to-end congestion
-    signaling by itself to convey the changes for an application to adapt. Media applications
-    on the other hand demand both high throughput and low latency, and are able to
-    dynamically adjust the size and quality of a stream to match available network
-    bandwidth. However, catering to such media flows over a radio link where the capacity
-    changes rapidly requires the buffers and QoS in general to be managed carefully.
-    This draft proposes to provide metadata about the media transported in each packet
-    to allow the wireless network to manage radio resources optimally and to maximize
-    network utilization while also improving application performance. This draft discusses
-    at a high level potential solution options to this problem and the trade-offs
-    involved. The draft then defines a solution that uses a new UDP option to carry
-    media metadata between a UDP source and destination. This option is compact and
-    has low processing overhead at the wireless router.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Wireless networks like 5G cellular or Wi-Fi experience significant\n
+    \  variations in link capacity over short intervals due to wireless\n   channel
+    conditions, interference, or the end-user's movement.  These\n   variations in
+    capacity take place in the order of hundreds of\n   milliseconds and is much too
+    fast for end-to-end congestion signaling\n   by itself to convey the changes for
+    an application to adapt.  Media\n   applications on the other hand demand both
+    high throughput and low\n   latency, and are able to dynamically adjust the size
+    and quality of a\n   stream to match available network bandwidth.  However, catering
+    to\n   such media flows over a radio link where the capacity changes rapidly\n
+    \  requires the buffers and QoS in general to be managed carefully.\n   This draft
+    proposes to provide metadata about the media transported\n   in each packet to
+    allow the wireless network to manage radio\n   resources optimally and to maximize
+    network utilization while also\n   improving application performance.\n\n   This
+    draft discusses at a high level potential solution options to\n   this problem
+    and the trade-offs involved.  The draft then defines a\n   solution that uses
+    a new UDP option to carry media metadata between a\n   UDP source and destination.
+    \ This option is compact and has low\n   processing overhead at the wireless router.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
-    docid:
-    - id: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
+    formattedref: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-01
+    docidentifier:
+    - content: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kaippallimalil-tsvwg-media-hdr-wireless-03
-    docid:
-    - id: draft-kaippallimalil-tsvwg-media-hdr-wireless-03
+    formattedref: draft-kaippallimalil-tsvwg-media-hdr-wireless-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-03
+    docidentifier:
+    - content: draft-kaippallimalil-tsvwg-media-hdr-wireless-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaippallimalil-tsvwg-media-hdr-wireless-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

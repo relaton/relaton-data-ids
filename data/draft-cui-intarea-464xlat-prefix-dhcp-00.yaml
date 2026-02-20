@@ -1,206 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-cui-intarea-464xlat-prefix-dhcp-00
-title:
-- content: DHCPv6 Options for Discovery of 464XLAT IPv6 Prefixes
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cui-intarea-464xlat-prefix-dhcp-00
-  type: src
+id: draftcuiintarea464xlatprefixdhcp00
 type: standard
-docid:
-- id: draft-cui-intarea-464xlat-prefix-dhcp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DHCPv6 Options for Discovery of 464XLAT IPv6 Prefixes
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cui-intarea-464xlat-prefix-dhcp-00
+docidentifier:
+- content: draft-cui-intarea-464xlat-prefix-dhcp
+  type: Internet-Draft
+- content: draft-cui-intarea-464xlat-prefix-dhcp-00
   type: Internet-Draft
   primary: true
-- id: I-D.cui-intarea-464xlat-prefix-dhcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.cui-intarea-464xlat-prefix-dhcp
 date:
 - type: published
-  value: '2014-12-25'
+  at: '2014-12-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cui
-        language:
-        - en
       completename:
+        language: en
         content: Yong Cui
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lishan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lishan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Lishan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cong
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Cong Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jianping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jianping
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Jianping Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fred
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fred
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Baker
-        language:
-        - en
       completename:
+        language: en
         content: Fred Baker
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '00'
-revdate: '2014-12-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>464XLAT provides limited IPv4 connectivity across an IPv6-only network
-    using translation technology. The customer-side translator (CLAT) performs stateless
-    1:1 mapping of an IPv4 destination address into a provider-side translator (PLAT)
-    IPv6 prefix, which subsequently translates it back into IPv4. Different PLATs
-    will likely have different IPv6 prefixes, to attract traffic to the correct PLAT.
-    Thus, an automatic PLAT-side prefix discovery method is necessary for CLATs. This
-    document defines a DHCPv6-based method to inform a CLAT of a PLAT's IPv6 prefix
-    and the IPv4 prefixes it serves.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   464XLAT provides limited IPv4 connectivity across an IPv6-only\n   network
+    using translation technology.  The customer-side translator\n   (CLAT) performs
+    stateless 1:1 mapping of an IPv4 destination address\n   into a provider-side
+    translator (PLAT) IPv6 prefix, which\n   subsequently translates it back into
+    IPv4.  Different PLATs will\n   likely have different IPv6 prefixes, to attract
+    traffic to the\n   correct PLAT.  Thus, an automatic PLAT-side prefix discovery
+    method\n   is necessary for CLATs.\n\n   This document defines a DHCPv6-based
+    method to inform a CLAT of a\n   PLAT's IPv6 prefix and the IPv4 prefixes it serves.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cui-intarea-464xlat-prefix-dhcp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

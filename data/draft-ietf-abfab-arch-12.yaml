@@ -1,211 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-abfab-arch-12
-title:
-- content: Application Bridging for Federated Access Beyond Web (ABFAB) Architecture
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-abfab-arch-12
-  type: src
+id: draftietfabfabarch12
 type: standard
-docid:
-- id: draft-ietf-abfab-arch-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Application Bridging for Federated Access Beyond Web (ABFAB) Architecture
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-abfab-arch-12
+docidentifier:
+- content: draft-ietf-abfab-arch
+  type: Internet-Draft
+- content: draft-ietf-abfab-arch-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-abfab-arch
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-abfab-arch
 date:
 - type: published
-  value: '2014-02-13'
+  at: '2014-02-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Josh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Josh
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Howlett
-        language:
-        - en
       completename:
+        language: en
         content: Josh Howlett
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sam
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hartman
-        language:
-        - en
       completename:
+        language: en
         content: Sam Hartman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eliot
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eliot
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Lear
-        language:
-        - en
       completename:
+        language: en
         content: Eliot Lear
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Schaad
-        language:
-        - en
       completename:
+        language: en
         content: Jim Schaad
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '12'
-revdate: '2014-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Over the last decade a substantial amount of work has occurred in the
-    space of federated access management. Most of this effort has focused on two use
-    cases: network access and web-based access. However, the solutions to these use
-    cases that have been proposed and deployed tend to have few building blocks in
-    common. This memo describes an architecture that makes use of extensions to the
-    commonly used security mechanisms for both federated and non- federated access
-    management, including the Remote Authentication Dial In User Service (RADIUS)
-    the Generic Security Service Application Program Interface (GSS-API), the Extensible
-    Authentication Protocol (EAP) and the Security Assertion Markup Language (SAML).
-    The architecture addresses the problem of federated access management to primarily
-    non-web-based services, in a manner that will scale to large numbers of identity
-    providers, relying parties, and federations.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Over the last decade a substantial amount of work has occurred in the\n
+    \  space of federated access management.  Most of this effort has\n   focused
+    on two use cases: network access and web-based access.\n   However, the solutions
+    to these use cases that have been proposed and\n   deployed tend to have few building
+    blocks in common.\n\n   This memo describes an architecture that makes use of
+    extensions to\n   the commonly used security mechanisms for both federated and
+    non-\n   federated access management, including the Remote Authentication Dial\n
+    \  In User Service (RADIUS) the Generic Security Service Application\n   Program
+    Interface (GSS-API), the Extensible Authentication Protocol\n   (EAP) and the
+    Security Assertion Markup Language (SAML).  The\n   architecture addresses the
+    problem of federated access management to\n   primarily non-web-based services,
+    in a manner that will scale to\n   large numbers of identity providers, relying
+    parties, and\n   federations.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-abfab-arch-11
-    docid:
-    - id: draft-ietf-abfab-arch-11
+    formattedref: draft-ietf-abfab-arch-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-abfab-arch-11
+    docidentifier:
+    - content: draft-ietf-abfab-arch-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-abfab-arch-11
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-abfab-arch-13
-    docid:
-    - id: draft-ietf-abfab-arch-13
+    formattedref: draft-ietf-abfab-arch-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-abfab-arch-13
+    docidentifier:
+    - content: draft-ietf-abfab-arch-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-abfab-arch-13
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-abfab-arch-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

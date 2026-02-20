@@ -1,103 +1,89 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-let-localhost-be-localhost-02
-title:
-- content: Let 'localhost' be localhost.
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost-02
-  type: src
+id: draftietfdnsopletlocalhostbelocalhost02
 type: standard
-docid:
-- id: draft-ietf-dnsop-let-localhost-be-localhost-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Let 'localhost' be localhost.
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost-02
+docidentifier:
+- content: draft-ietf-dnsop-let-localhost-be-localhost
+  type: Internet-Draft
+- content: draft-ietf-dnsop-let-localhost-be-localhost-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-let-localhost-be-localhost
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-let-localhost-be-localhost
 date:
 - type: published
-  value: '2017-12-18'
+  at: '2017-12-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: West
-        language:
-        - en
       completename:
+        language: en
         content: Mike West
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc
-  role:
-  - type: author
+        - language: en
+          content: Google, Inc
 version:
 - draft: '02'
-revdate: '2017-12-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document updates the treatment of the special-use domain name "localhost"
-    as specified in RFC6761, Section 6.3, with the goal of ensuring that it can be
-    safely relied upon as a name for the local host's loopback interface. To that
-    end, stub resolvers are required to resolve localhost names to loopback addresses.
-    Recursive DNS servers are required to return "NXDOMAIN" when queried for localhost
-    names, making non-conformant stub resolvers more likely to fail and produce problem
-    reports that result in updates. Together, these requirements would allow applications
-    and specifications to join regular users in drawing the common-sense conclusions
-    that "localhost" means "localhost", and doesn't resolve to somewhere else on the
-    network.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document updates the treatment of the special-use domain name\n
+    \  \"localhost\" as specified in RFC6761, Section 6.3, with the goal of\n   ensuring
+    that it can be safely relied upon as a name for the local\n   host's loopback
+    interface.  To that end, stub resolvers are required\n   to resolve localhost
+    names to loopback addresses.  Recursive DNS\n   servers are required to return
+    \"NXDOMAIN\" when queried for localhost\n   names, making non-conformant stub
+    resolvers more likely to fail and\n   produce problem reports that result in updates.\n\n
+    \  Together, these requirements would allow applications and\n   specifications
+    to join regular users in drawing the common-sense\n   conclusions that \"localhost\"
+    means \"localhost\", and doesn't resolve\n   to somewhere else on the network.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-let-localhost-be-localhost-01
-    docid:
-    - id: draft-ietf-dnsop-let-localhost-be-localhost-01
+    formattedref: draft-ietf-dnsop-let-localhost-be-localhost-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-let-localhost-be-localhost-01
+    docidentifier:
+    - content: draft-ietf-dnsop-let-localhost-be-localhost-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-let-localhost-be-localhost-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-let-localhost-be-localhost-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

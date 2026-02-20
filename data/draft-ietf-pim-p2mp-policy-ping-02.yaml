@@ -1,201 +1,175 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pim-p2mp-policy-ping-02
-title:
-- content: P2MP Policy Ping
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-p2mp-policy-ping-02
-  type: src
+id: draftietfpimp2mppolicyping02
 type: standard
-docid:
-- id: draft-ietf-pim-p2mp-policy-ping-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: P2MP Policy Ping
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-p2mp-policy-ping-02
+docidentifier:
+- content: draft-ietf-pim-p2mp-policy-ping
+  type: Internet-Draft
+- content: draft-ietf-pim-p2mp-policy-ping-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pim-p2mp-policy-ping
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pim-p2mp-policy-ping
 date:
 - type: published
-  value: '2023-03-09'
+  at: '2023-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hooman
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hooman
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Bidgoli
-        language:
-        - en
       completename:
+        language: en
         content: Hooman Bidgoli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Voyer
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Voyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
-  role:
+        - language: en
+          content: Bell Canada
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rishabh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rishabh
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Parekh
-        language:
-        - en
       completename:
+        language: en
         content: Rishabh Parekh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco System
-  role:
+        - language: en
+          content: Cisco System
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhaohui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: Z. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhaohui
+      - language: en
+        script: Latn
+        initial: Z
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: Z. J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zhaohui (Jeffrey) Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '02'
-revdate: '2023-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>SR P2MP policies are set of policies that enable architecture for P2MP
-    service delivery. A P2MP Policy consists of candidate paths that connects the
-    Root of the Tree to a set of Leaves. The P2MP policy is composed of replication
-    segments. A replication segment is a forwarding instruction for a candidate path
-    which is downloaded to the Root, transit nodes and the leaves. This document describes
-    a simple and efficient mechanism that can be used to detect data plane failures
-    in P2MP Policy Candidate Paths (CPs) and Path Instances (PIs).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   SR P2MP policies are set of policies that enable architecture for\n
+    \  P2MP service delivery.  A P2MP Policy consists of candidate paths\n   that
+    connects the Root of the Tree to a set of Leaves.  The P2MP\n   policy is composed
+    of replication segments.  A replication segment is\n   a forwarding instruction
+    for a candidate path which is downloaded to\n   the Root, transit nodes and the
+    leaves.\n\n   This document describes a simple and efficient mechanism that can
+    be\n   used to detect data plane failures in P2MP Policy Candidate Paths\n   (CPs)
+    and Path Instances (PIs).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pim-p2mp-policy-ping-01
-    docid:
-    - id: draft-ietf-pim-p2mp-policy-ping-01
+    formattedref: draft-ietf-pim-p2mp-policy-ping-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-p2mp-policy-ping-01
+    docidentifier:
+    - content: draft-ietf-pim-p2mp-policy-ping-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-p2mp-policy-ping-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pim-p2mp-policy-ping-03
-    docid:
-    - id: draft-ietf-pim-p2mp-policy-ping-03
+    formattedref: draft-ietf-pim-p2mp-policy-ping-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-p2mp-policy-ping-03
+    docidentifier:
+    - content: draft-ietf-pim-p2mp-policy-ping-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-p2mp-policy-ping-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pim-p2mp-policy-ping-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

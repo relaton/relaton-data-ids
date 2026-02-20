@@ -1,182 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
-title:
-- content: GMPLS RSVP-TE Extensions for Ethernet OAM Configuration
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
-  type: src
+id: drafttakacsccamprsvpteethoamext03
 type: standard
-docid:
-- id: draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: GMPLS RSVP-TE Extensions for Ethernet OAM Configuration
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
+docidentifier:
+- content: draft-takacs-ccamp-rsvp-te-eth-oam-ext
+  type: Internet-Draft
+- content: draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
   type: Internet-Draft
   primary: true
-- id: I-D.takacs-ccamp-rsvp-te-eth-oam-ext
-  type: IETF
-  scope: anchor
 docnumber: I-D.takacs-ccamp-rsvp-te-eth-oam-ext
 date:
 - type: published
-  value: '2008-11-03'
+  at: '2008-11-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Attila
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Attila
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Takacs
-        language:
-        - en
       completename:
+        language: en
         content: Attila Takacs
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Balazs
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Balazs
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Gero
-        language:
-        - en
       completename:
+        language: en
         content: Balazs Gero
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Don
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Don
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Fedyk
-        language:
-        - en
       completename:
+        language: en
         content: Don Fedyk
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
+        - language: en
+          content: Nortel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dinesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dinesh
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Mohan
-        language:
-        - en
       completename:
+        language: en
         content: Dinesh Mohan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
-  - type: author
+        - language: en
+          content: Nortel
 version:
 - draft: '03'
-revdate: '2008-11-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The GMPLS controlled Ethernet Label Switching (GELS) work is extending
-    GMPLS RSVP-TE to support the establishment of Ethernet LSPs. IEEE Ethernet Connectivity
-    Fault Management (CFM) specifies an adjunct OAM flow to check connectivity in
-    Ethernet networks. CFM can be also used with Ethernet LSPs for fault detection
-    and triggering recovery mechanisms. The ITU-T Y.1731 specification builds on CFM
-    and specifies additional OAM mechanisms, including Performance Monitoring, for
-    Ethernet networks. This document specifies extensions of GMPLS RSVP-TE to support
-    the setup of the associated Ethernet OAM (CFM and Y.1731) entities adding a technology
-    specific TLV to [OAM-CONF-FWK].Changes from previous version Technology independent
-    extensions were moved to a separate framework document leaving only the Ethernet
-    specific extensions in this document.Requirements Language The key words "MUST",
-    "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",
-    "MAY", and "OPTIONAL" in this document are to be interpreted as described in</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The GMPLS controlled Ethernet Label Switching (GELS) work is\nextending
+    GMPLS RSVP-TE to support the establishment of Ethernet\nLSPs.  IEEE Ethernet Connectivity
+    Fault Management (CFM) specifies an\nadjunct OAM flow to check connectivity in
+    Ethernet networks.  CFM can\nbe also used with Ethernet LSPs for fault detection
+    and triggering\nrecovery mechanisms.  The ITU-T Y.1731 specification builds on
+    CFM\nand specifies additional OAM mechanisms, including Performance\nMonitoring,
+    for Ethernet networks.  This document specifies\nextensions of GMPLS RSVP-TE to
+    support the setup of the associated\nEthernet OAM (CFM and Y.1731) entities adding
+    a technology specific\nTLV to [OAM-CONF-FWK].Changes from previous version\n\nTechnology
+    independent extensions were moved to a separate framework\ndocument leaving only
+    the Ethernet specific extensions in this\ndocument.Requirements Language\n\nThe
+    key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\",\n\"SHOULD\",
+    \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this\ndocument are
+    to be interpreted as described in\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-takacs-ccamp-rsvp-te-eth-oam-ext-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

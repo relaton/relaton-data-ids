@@ -1,209 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-yang-idr-sr-candidate-path-switch-00
-title:
-- content: Segment Routing Candidate Path Hot-standby switch in BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yang-idr-sr-candidate-path-switch-00
-  type: src
+id: draftyangidrsrcandidatepathswitch00
 type: standard
-docid:
-- id: draft-yang-idr-sr-candidate-path-switch-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Segment Routing Candidate Path Hot-standby switch in BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yang-idr-sr-candidate-path-switch-00
+docidentifier:
+- content: draft-yang-idr-sr-candidate-path-switch
+  type: Internet-Draft
+- content: draft-yang-idr-sr-candidate-path-switch-00
   type: Internet-Draft
   primary: true
-- id: I-D.yang-idr-sr-candidate-path-switch
-  type: IETF
-  scope: anchor
 docnumber: I-D.yang-idr-sr-candidate-path-switch
 date:
 - type: published
-  value: '2021-02-02'
+  at: '2021-02-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Liping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liping
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Liping Yang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C Technologies
-  role:
+        - language: en
+          content: H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hao
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Hao Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C Technologies
-  role:
+        - language: en
+          content: H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yang
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Yang Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C Technologies
-  role:
+        - language: en
+          content: H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yuanxiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuanxiang
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qiu
-        language:
-        - en
       completename:
+        language: en
         content: Yuanxiang Qiu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C Technologies
-  role:
+        - language: en
+          content: H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mengxiao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mengxiao
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Mengxiao Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C Technologies
-  role:
-  - type: author
+        - language: en
+          content: H3C Technologies
 version:
 - draft: '00'
-revdate: '2021-02-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Segment Routing is a source routing paradigm that explicitly indicates
-    the forwarding path for packets at the ingress node. An SR policy is a set of
-    candidate SR paths consisting of one or more segment lists with necessary path
-    attributes. If an SR policy has multiple valid candidate paths, the device chooses
-    the candidate path with the greatest preference value. If the chosen path fails,
-    the SR policy must select another candidate path. During path reselection, packet
-    loss might occur and thus affect service continuity. Therefore the candidate path
-    hot-standby function occurs, the headend can compute two candidate paths, one
-    is master and the other is backup, set them to the forwarding plane, and in this
-    way, the switchover time is reduced. This document defines extensions to BGP to
-    distribute hot-standby switch within SR policies.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment Routing is a source routing paradigm that explicitly\n   indicates
+    the forwarding path for packets at the ingress node.  An SR\n   policy is a set
+    of candidate SR paths consisting of one or more\n   segment lists with necessary
+    path attributes. If an SR policy has\n   multiple valid candidate paths, the device
+    chooses the candidate path\n   with the greatest preference value. If the chosen
+    path fails, the SR\n   policy must select another candidate path. During path
+    reselection,\n   packet loss might occur and thus affect service continuity. Therefore\n
+    \  the candidate path hot-standby function occurs, the headend can\n   compute
+    two candidate paths, one is master and the other is backup,\n   set them to the
+    forwarding plane, and in this way, the switchover\n   time is reduced.\n\n   This
+    document defines extensions to BGP to distribute hot-standby\n   switch within
+    SR policies.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yang-idr-sr-candidate-path-switch-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,238 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-mirsky-mpls-residence-time-06
-title:
-- content: Residence Time Measurement in MPLS network
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mirsky-mpls-residence-time-06
-  type: src
+id: draftmirskymplsresidencetime06
 type: standard
-docid:
-- id: draft-mirsky-mpls-residence-time-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Residence Time Measurement in MPLS network
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mirsky-mpls-residence-time-06
+docidentifier:
+- content: draft-mirsky-mpls-residence-time
+  type: Internet-Draft
+- content: draft-mirsky-mpls-residence-time-06
   type: Internet-Draft
   primary: true
-- id: I-D.mirsky-mpls-residence-time
-  type: IETF
-  scope: anchor
 docnumber: I-D.mirsky-mpls-residence-time
 date:
 - type: published
-  value: '2015-05-02'
+  at: '2015-05-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Mirsky
-        language:
-        - en
       completename:
+        language: en
         content: Greg Mirsky
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stefano
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefano
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Ruffini
-        language:
-        - en
       completename:
+        language: en
         content: Stefano Ruffini
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: E. W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: E. W.
       surname:
+        language: en
         content: Gray
-        language:
-        - en
       completename:
+        language: en
         content: Eric Gray
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stewart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stewart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bryant
-        language:
-        - en
       completename:
+        language: en
         content: Stewart Bryant
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sasha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: A. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sasha
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: A. S.
       surname:
+        language: en
         content: Vainshtein
-        language:
-        - en
       completename:
+        language: en
         content: Sasha Vainshtein
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '06'
-revdate: '2015-05-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies G-ACh based Residence Time Measurement and
-    how it can be used by time synchronization protocols being transported over MPLS
-    domain. Residence time is the variable part of propagation delay of timing and
-    synchronization messages and knowing what this delay is for each message allows
-    for a more accurate determination of the delay to be taken into account in applying
-    the value included in a PTP event message.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies G-ACh based Residence Time Measurement and\n
+    \  how it can be used by time synchronization protocols being\n   transported
+    over MPLS domain.\n\n   Residence time is the variable part of propagation delay
+    of timing\n   and synchronization messages and knowing what this delay is for
+    each\n   message allows for a more accurate determination of the delay to be\n
+    \  taken into account in applying the value included in a PTP event\n   message.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mirsky-mpls-residence-time-05
-    docid:
-    - id: draft-mirsky-mpls-residence-time-05
+    formattedref: draft-mirsky-mpls-residence-time-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mirsky-mpls-residence-time-05
+    docidentifier:
+    - content: draft-mirsky-mpls-residence-time-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mirsky-mpls-residence-time-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-mirsky-mpls-residence-time-07
-    docid:
-    - id: draft-mirsky-mpls-residence-time-07
+    formattedref: draft-mirsky-mpls-residence-time-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mirsky-mpls-residence-time-07
+    docidentifier:
+    - content: draft-mirsky-mpls-residence-time-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mirsky-mpls-residence-time-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mirsky-mpls-residence-time-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

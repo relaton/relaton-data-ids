@@ -1,183 +1,158 @@
 ---
-schema-version: v1.2.9
-id: draft-tiloca-dice-secure-groupcomm-00
-title:
-- content: Secure Two-Way DTLS-Based Group Communication in the IoT
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tiloca-dice-secure-groupcomm-00
-  type: src
+id: drafttilocadicesecuregroupcomm00
 type: standard
-docid:
-- id: draft-tiloca-dice-secure-groupcomm-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Secure Two-Way DTLS-Based Group Communication in the IoT
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tiloca-dice-secure-groupcomm-00
+docidentifier:
+- content: draft-tiloca-dice-secure-groupcomm
+  type: Internet-Draft
+- content: draft-tiloca-dice-secure-groupcomm-00
   type: Internet-Draft
   primary: true
-- id: I-D.tiloca-dice-secure-groupcomm
-  type: IETF
-  scope: anchor
 docnumber: I-D.tiloca-dice-secure-groupcomm
 date:
 - type: published
-  value: '2015-10-14'
+  at: '2015-10-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Tiloca
-        language:
-        - en
       completename:
+        language: en
         content: Marco Tiloca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SICS Swedish ICT AB
-  role:
+        - language: en
+          content: SICS Swedish ICT AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shahid
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shahid
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Raza
-        language:
-        - en
       completename:
+        language: en
         content: Shahid Raza
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SICS Swedish ICT AB
-  role:
+        - language: en
+          content: SICS Swedish ICT AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kirill
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kirill
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Nikitin
-        language:
-        - en
       completename:
+        language: en
         content: Kirill Nikitin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: EPFL
-  role:
+        - language: en
+          content: EPFL
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Kumar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Philips Research
-  role:
-  - type: author
+        - language: en
+          content: Philips Research
 version:
 - draft: '00'
-revdate: '2015-10-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>CoAP has emerged as the de-facto IoT standard for communication involving
-    resource-constrained devices composing Low-power and Lossy Networks (LLNs). CoAP
-    mandates the adoption of the DTLS protocol to secure unicast communication. However,
-    in several IoT application scenarios involving a group of multiple devices, the
-    adoption of CoAP multicast communication through IPv6 results in a number of advantages,
-    especially in terms of performance and scalability. Yet, CoAP does not specify
-    how to secure multicast group communication in an interoperable way. This draft
-    presents a method to secure communication in a multicast group, through an adaptation
-    of the DTLS record layer. In particular, group members rely on the same group
-    keying material in order to secure both request messages sent via multicast and
-    possible unicast messages sent as response. Since the group keying material is
-    provided upon joining the group, all group members are not required to perform
-    any DTLS handshake with each other. The proposed method makes it possible to provide
-    either group authentication or source authentication of secured messages.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   CoAP has emerged as the de-facto IoT standard for communication\n   involving
+    resource-constrained devices composing Low-power and Lossy\n   Networks (LLNs).
+    CoAP mandates the adoption of the DTLS protocol to\n   secure unicast communication.
+    However, in several IoT application\n   scenarios involving a group of multiple
+    devices, the adoption of CoAP\n   multicast communication through IPv6 results
+    in a number of\n   advantages, especially in terms of performance and scalability.
+    Yet,\n   CoAP does not specify how to secure multicast group communication in\n
+    \  an interoperable way. This draft presents a method to secure\n   communication
+    in a multicast group, through an adaptation of the DTLS\n   record layer. In particular,
+    group members rely on the same group\n   keying material in order to secure both
+    request messages sent via\n   multicast and possible unicast messages sent as
+    response. Since the\n   group keying material is provided upon joining the group,
+    all group\n   members are not required to perform any DTLS handshake with each\n
+    \  other. The proposed method makes it possible to provide either group\n   authentication
+    or source authentication of secured messages.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tiloca-dice-secure-groupcomm-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

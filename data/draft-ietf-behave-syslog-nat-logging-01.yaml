@@ -1,185 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-behave-syslog-nat-logging-01
-title:
-- content: Syslog Format for NAT Logging
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-behave-syslog-nat-logging-01
-  type: src
+id: draftietfbehavesyslognatlogging01
 type: standard
-docid:
-- id: draft-ietf-behave-syslog-nat-logging-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Syslog Format for NAT Logging
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-behave-syslog-nat-logging-01
+docidentifier:
+- content: draft-ietf-behave-syslog-nat-logging
+  type: Internet-Draft
+- content: draft-ietf-behave-syslog-nat-logging-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-behave-syslog-nat-logging
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-behave-syslog-nat-logging
 date:
 - type: published
-  value: '2013-05-08'
+  at: '2013-05-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhonghua
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhonghua
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Zhonghua Chen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cathy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cathy
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Zhou
-        language:
-        - en
       completename:
+        language: en
         content: Cathy Zhou
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tina
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tina
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Tsou
-        language:
-        - en
       completename:
+        language: en
         content: Tina Tsou (Ting ZOU)
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Taylor
-        language:
-        - en
       completename:
+        language: en
         content: Tom Taylor
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2013-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With the wide deployment of Carrier Grade NAT (CGN) devices, the logging
-    of NAT-related events has become very important for legal purposes. The logs may
-    be required to identify a host that was used to launch malicious attacks or engage
-    in illegal behaviour, and/or may be required for accounting purposes. This document
-    identifies the events that need to be logged and the parameters that are required
-    in the logs depending on the context in which the NAT is being used. It goes on
-    to standardize formats for reporting these events and parameters using SYSLOG
-    (RFC 5424). A companion document specifies formats for reporting the same events
-    and parameters using IPFIX (RFC 5101). Applicability statements are provided in
-    this document and its companion to guide operators and implementors in their choice
-    of which technology to use for logging.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With the wide deployment of Carrier Grade NAT (CGN) devices, the\n
+    \  logging of NAT-related events has become very important for legal\n   purposes.
+    \ The logs may be required to identify a host that was used\n   to launch malicious
+    attacks or engage in illegal behaviour, and/or\n   may be required for accounting
+    purposes.  This document identifies\n   the events that need to be logged and
+    the parameters that are\n   required in the logs depending on the context in which
+    the NAT is\n   being used.  It goes on to standardize formats for reporting these\n
+    \  events and parameters using SYSLOG (RFC 5424).  A companion document\n   specifies
+    formats for reporting the same events and parameters using\n   IPFIX (RFC 5101).
+    \ Applicability statements are provided in this\n   document and its companion
+    to guide operators and implementors in\n   their choice of which technology to
+    use for logging.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-behave-syslog-nat-logging-00
-    docid:
-    - id: draft-ietf-behave-syslog-nat-logging-00
+    formattedref: draft-ietf-behave-syslog-nat-logging-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-behave-syslog-nat-logging-00
+    docidentifier:
+    - content: draft-ietf-behave-syslog-nat-logging-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-behave-syslog-nat-logging-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-behave-syslog-nat-logging-02
-    docid:
-    - id: draft-ietf-behave-syslog-nat-logging-02
+    formattedref: draft-ietf-behave-syslog-nat-logging-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-behave-syslog-nat-logging-02
+    docidentifier:
+    - content: draft-ietf-behave-syslog-nat-logging-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-behave-syslog-nat-logging-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-behave-syslog-nat-logging-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,203 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-jain-mvpn-bfd-fast-upstream-failover-00
-title:
-- content: BGP Extensions for Multicast VPN Fast Upstream Failover
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-jain-mvpn-bfd-fast-upstream-failover-00
-  type: src
+id: draftjainmvpnbfdfastupstreamfailover00
 type: standard
-docid:
-- id: draft-jain-mvpn-bfd-fast-upstream-failover-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP Extensions for Multicast VPN Fast Upstream Failover
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jain-mvpn-bfd-fast-upstream-failover-00
+docidentifier:
+- content: draft-jain-mvpn-bfd-fast-upstream-failover
+  type: Internet-Draft
+- content: draft-jain-mvpn-bfd-fast-upstream-failover-00
   type: Internet-Draft
   primary: true
-- id: I-D.jain-mvpn-bfd-fast-upstream-failover
-  type: IETF
-  scope: anchor
 docnumber: I-D.jain-mvpn-bfd-fast-upstream-failover
 date:
 - type: published
-  value: '2012-04-21'
+  at: '2012-04-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pradeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pradeep
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Jain
-        language:
-        - en
       completename:
+        language: en
         content: Pradeep Jain
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent, Inc.
-  role:
+        - language: en
+          content: Alcatel-Lucent, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kanwar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kanwar
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Singh
-        language:
-        - en
       completename:
+        language: en
         content: Kanwar Singh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent, Inc.
-  role:
+        - language: en
+          content: Alcatel-Lucent, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jayant
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jayant
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kotalwar
-        language:
-        - en
       completename:
+        language: en
         content: Jayant Kotalwar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent, Inc.
-  role:
+        - language: en
+          content: Alcatel-Lucent, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nehal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nehal
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Bhau
-        language:
-        - en
       completename:
+        language: en
         content: Nehal Bhau
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent, Inc.
-  role:
+        - language: en
+          content: Alcatel-Lucent, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clayton
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clayton
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Hassen
-        language:
-        - en
       completename:
+        language: en
         content: Clayton Hassen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
-  role:
-  - type: author
+        - language: en
+          content: Bell Canada
 version:
 - draft: '00'
-revdate: '2012-04-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines BGP extensions and procedures that allows use
-    of BFD for Multi Point Networks for fast detection and failover for upstream faults
-    in Multicast VPNs. The upstream failures addressed in this proposal can be failure
-    of any node between the Root PE and Leaf PE or failure between the Multicast Source
-    and Root PE.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines BGP extensions and procedures that allows use\n
+    \  of BFD for Multi Point Networks for fast detection and failover for\n   upstream
+    faults in Multicast VPNs.  The upstream failures addressed\n   in this proposal
+    can be failure of any node between the Root PE and\n   Leaf PE or failure between
+    the Multicast Source and Root PE.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-jain-mvpn-bfd-fast-upstream-failover-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

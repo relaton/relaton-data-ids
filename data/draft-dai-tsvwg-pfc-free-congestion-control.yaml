@@ -1,57 +1,53 @@
 ---
-schema-version: v1.2.9
-id: draft-dai-tsvwg-pfc-free-congestion-control
+id: draftdaitsvwgpfcfreecongestioncontrol
+schema_version: v1.4.1
+formattedref: draft-dai-tsvwg-pfc-free-congestion-control
 title:
-- content: PFC-Free Low Delay Control Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-dai-tsvwg-pfc-free-congestion-control
+- language: en
+  script: Latn
+  content: PFC-Free Low Delay Control Protocol
+docidentifier:
+- content: draft-dai-tsvwg-pfc-free-congestion-control
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>Today, low-latency transport protocols like RDMA over Converged Ethernet
-    (RoCE) can provide good delay and throughput performance in small and lightly
-    loaded high-speed datacenter networks due to lossless transport based on priority-based
-    flow control (PFC). However, PFC suffers from various issues from performance
-    degradation and unreliability (e.g., deadlock), limiting the deployment of RoCE
-    to only small scale clusters (~1000). This document presents LDCP, a new transport
-    that scales loss- sensitive transports, e.g., RDMA, to entire data-centers containing
-    tens of thousands machines, without dependency on PFC for losslessness, i.e.,
-    PFC-free. LDCP develops a novel end-to-end congestion control scheme and achieves
-    very low queue occupancy even under high network utilization or large traffic
-    churns, resulting in almost no packet loss. Meanwhile, LDCP allows a new flow
-    to jump start at full speed at the very beginning and therefore minimizes the
-    latency for short RPC-style transactions. LDCP relies on only WRED and ECN, two
-    widely supported features on switches, so it can be easily deployed in existing
-    network infrastructures. Finally, LDCP is simple by design and thus can be easily
-    implemented by programmable or ASIC NICs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Today, low-latency transport protocols like RDMA over Converged\n   Ethernet
+    (RoCE) can provide good delay and throughput performance in\n   small and lightly
+    loaded high-speed datacenter networks due to\n   lossless transport based on priority-based
+    flow control (PFC).\n   However, PFC suffers from various issues from performance
+    degradation\n   and unreliability (e.g., deadlock), limiting the deployment of
+    RoCE\n   to only small scale clusters (~1000).\n\n   This document presents LDCP,
+    a new transport that scales loss-\n   sensitive transports, e.g., RDMA, to entire
+    data-centers containing\n   tens of thousands machines, without dependency on
+    PFC for\n   losslessness, i.e., PFC-free.  LDCP develops a novel end-to-end\n
+    \  congestion control scheme and achieves very low queue occupancy even\n   under
+    high network utilization or large traffic churns, resulting in\n   almost no packet
+    loss.  Meanwhile, LDCP allows a new flow to jump\n   start at full speed at the
+    very beginning and therefore minimizes the\n   latency for short RPC-style transactions.
+    \ LDCP relies on only WRED\n   and ECN, two widely supported features on switches,
+    so it can be\n   easily deployed in existing network infrastructures.  Finally,
+    LDCP\n   is simple by design and thus can be easily implemented by\n   programmable
+    or ASIC NICs.\n\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-dai-tsvwg-pfc-free-congestion-control-00
-    docid:
-    - id: draft-dai-tsvwg-pfc-free-congestion-control-00
+    formattedref: draft-dai-tsvwg-pfc-free-congestion-control-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dai-tsvwg-pfc-free-congestion-control-00
+    docidentifier:
+    - content: draft-dai-tsvwg-pfc-free-congestion-control-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dai-tsvwg-pfc-free-congestion-control-00
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-dai-tsvwg-pfc-free-congestion-control-01
-    docid:
-    - id: draft-dai-tsvwg-pfc-free-congestion-control-01
+    formattedref: draft-dai-tsvwg-pfc-free-congestion-control-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dai-tsvwg-pfc-free-congestion-control-01
+    docidentifier:
+    - content: draft-dai-tsvwg-pfc-free-congestion-control-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dai-tsvwg-pfc-free-congestion-control-01
-      format: text/plain

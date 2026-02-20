@@ -1,225 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-huitema-quic-dnsoquic-05
-title:
-- content: Specification of DNS over Dedicated QUIC Connections
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-huitema-quic-dnsoquic-05
-  type: src
+id: drafthuitemaquicdnsoquic05
 type: standard
-docid:
-- id: draft-huitema-quic-dnsoquic-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Specification of DNS over Dedicated QUIC Connections
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-huitema-quic-dnsoquic-05
+docidentifier:
+- content: draft-huitema-quic-dnsoquic
+  type: Internet-Draft
+- content: draft-huitema-quic-dnsoquic-05
   type: Internet-Draft
   primary: true
-- id: I-D.huitema-quic-dnsoquic
-  type: IETF
-  scope: anchor
 docnumber: I-D.huitema-quic-dnsoquic
 date:
 - type: published
-  value: '2018-06-29'
+  at: '2018-06-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Huitema
-        language:
-        - en
       completename:
+        language: en
         content: Christian Huitema
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Private Octopus Inc.
-  role:
+        - language: en
+          content: Private Octopus Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Melinda
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Melinda
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Shore
-        language:
-        - en
       completename:
+        language: en
         content: Melinda Shore
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fastly
-  role:
+        - language: en
+          content: Fastly
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Allison
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Allison
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mankin
-        language:
-        - en
       completename:
+        language: en
         content: Allison Mankin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
+        - language: en
+          content: Salesforce
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sara
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sara
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Dickinson
-        language:
-        - en
       completename:
+        language: en
         content: Sara Dickinson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sinodun IT
-  role:
+        - language: en
+          content: Sinodun IT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jana
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Iyengar
-        language:
-        - en
       completename:
+        language: en
         content: Jana Iyengar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fastly
-  role:
-  - type: author
+        - language: en
+          content: Fastly
 version:
 - draft: '05'
-revdate: '2018-06-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the use of QUIC to provide transport privacy
-    for DNS. The encryption provided by QUIC has similar properties to that provided
-    by TLS, while QUIC transport eliminates the head-of- line blocking issues inherent
-    with TCP and provides more efficient error corrections than UDP. DNS over QUIC
-    (DNS/QUIC) has privacy properties similar to DNS over TLS specified in RFC7858,
-    and performance similar to classic DNS over UDP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the use of QUIC to provide transport privacy\n
+    \  for DNS.  The encryption provided by QUIC has similar properties to\n   that
+    provided by TLS, while QUIC transport eliminates the head-of-\n   line blocking
+    issues inherent with TCP and provides more efficient\n   error corrections than
+    UDP.  DNS over QUIC (DNS/QUIC) has privacy\n   properties similar to DNS over
+    TLS specified in RFC7858, and\n   performance similar to classic DNS over UDP.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-huitema-quic-dnsoquic-04
-    docid:
-    - id: draft-huitema-quic-dnsoquic-04
+    formattedref: draft-huitema-quic-dnsoquic-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-huitema-quic-dnsoquic-04
+    docidentifier:
+    - content: draft-huitema-quic-dnsoquic-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-huitema-quic-dnsoquic-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-huitema-quic-dnsoquic-06
-    docid:
-    - id: draft-huitema-quic-dnsoquic-06
+    formattedref: draft-huitema-quic-dnsoquic-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-huitema-quic-dnsoquic-06
+    docidentifier:
+    - content: draft-huitema-quic-dnsoquic-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-huitema-quic-dnsoquic-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-huitema-quic-dnsoquic-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

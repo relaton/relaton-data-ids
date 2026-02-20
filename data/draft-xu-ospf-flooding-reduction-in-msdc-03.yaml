@@ -1,190 +1,165 @@
 ---
-schema-version: v1.2.9
-id: draft-xu-ospf-flooding-reduction-in-msdc-03
-title:
-- content: OSPF Flooding Reduction in MSDC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-xu-ospf-flooding-reduction-in-msdc-03
-  type: src
+id: draftxuospffloodingreductioninmsdc03
 type: standard
-docid:
-- id: draft-xu-ospf-flooding-reduction-in-msdc-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPF Flooding Reduction in MSDC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-xu-ospf-flooding-reduction-in-msdc-03
+docidentifier:
+- content: draft-xu-ospf-flooding-reduction-in-msdc
+  type: Internet-Draft
+- content: draft-xu-ospf-flooding-reduction-in-msdc-03
   type: Internet-Draft
   primary: true
-- id: I-D.xu-ospf-flooding-reduction-in-msdc
-  type: IETF
-  scope: anchor
 docnumber: I-D.xu-ospf-flooding-reduction-in-msdc
 date:
 - type: published
-  value: '2018-01-09'
+  at: '2018-01-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaohu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaohu
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaohu Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luyuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luyuan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fang
-        language:
-        - en
       completename:
+        language: en
         content: Luyuan Fang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Expedia, Inc
-  role:
+        - language: en
+          content: Expedia, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Individual
-  role:
+        - language: en
+          content: Individual
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shaowen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shaowen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Shaowen Ma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper
-  role:
-  - type: author
+        - language: en
+          content: Juniper
 version:
 - draft: '03'
-revdate: '2018-01-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>OSPF is commonly used as an underlay routing protocol for MSDC (Massively
-    Scalable Data Center) networks. For a given OSPF router within the CLOS topology,
-    it would receive multiple copies of exactly the same LSA from multiple OSPF neighbors.
-    In addition, two OSPF neighbors may send each other the same LSA simultaneously.
-    The unneccessary link-state information flooding wastes the precious process resource
-    of OSPF routers greatly due to the fact that there are too many OSPF neighbors
-    for each OSPF router within the CLOS topology. This document proposes some extensions
-    to OSPF so as to reduce the OSPF flooding within MSDC networks greatly. The reduction
-    of the OSPF flooding is much beneficial to improve the scalability of MSDC networks.
-    These modifications are applicable to both OSPFv2 and OSPFv3.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   OSPF is commonly used as an underlay routing protocol for MSDC\n   (Massively
+    Scalable Data Center) networks.  For a given OSPF router\n   within the CLOS topology,
+    it would receive multiple copies of exactly\n   the same LSA from multiple OSPF
+    neighbors.  In addition, two OSPF\n   neighbors may send each other the same LSA
+    simultaneously.  The\n   unneccessary link-state information flooding wastes the
+    precious\n   process resource of OSPF routers greatly due to the fact that there\n
+    \  are too many OSPF neighbors for each OSPF router within the CLOS\n   topology.
+    \ This document proposes some extensions to OSPF so as to\n   reduce the OSPF
+    flooding within MSDC networks greatly.  The reduction\n   of the OSPF flooding
+    is much beneficial to improve the scalability of\n   MSDC networks.  These modifications
+    are applicable to both OSPFv2 and\n   OSPFv3.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-xu-ospf-flooding-reduction-in-msdc-02
-    docid:
-    - id: draft-xu-ospf-flooding-reduction-in-msdc-02
+    formattedref: draft-xu-ospf-flooding-reduction-in-msdc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-ospf-flooding-reduction-in-msdc-02
+    docidentifier:
+    - content: draft-xu-ospf-flooding-reduction-in-msdc-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-ospf-flooding-reduction-in-msdc-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-xu-ospf-flooding-reduction-in-msdc-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

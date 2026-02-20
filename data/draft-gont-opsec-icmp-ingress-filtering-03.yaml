@@ -1,187 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-gont-opsec-icmp-ingress-filtering-03
-title:
-- content: Defeating Attacks which employ Forged ICMPv4/ICMPv6 Error Messages
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-gont-opsec-icmp-ingress-filtering-03
-  type: src
+id: draftgontopsecicmpingressfiltering03
 type: standard
-docid:
-- id: draft-gont-opsec-icmp-ingress-filtering-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Defeating Attacks which employ Forged ICMPv4/ICMPv6 Error Messages
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-gont-opsec-icmp-ingress-filtering-03
+docidentifier:
+- content: draft-gont-opsec-icmp-ingress-filtering
+  type: Internet-Draft
+- content: draft-gont-opsec-icmp-ingress-filtering-03
   type: Internet-Draft
   primary: true
-- id: I-D.gont-opsec-icmp-ingress-filtering
-  type: IETF
-  scope: anchor
 docnumber: I-D.gont-opsec-icmp-ingress-filtering
 date:
 - type: published
-  value: '2017-07-03'
+  at: '2017-07-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Fernando
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fernando
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Gont
-        language:
-        - en
       completename:
+        language: en
         content: Fernando Gont
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ray
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ray
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Hunter
-        language:
-        - en
       completename:
+        language: en
         content: Ray Hunter
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Globis Consulting BV
-  role:
+        - language: en
+          content: Globis Consulting BV
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeroen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeroen
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Massar
-        language:
-        - en
       completename:
+        language: en
         content: Jeroen Massar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Massar Networking
-  role:
+        - language: en
+          content: Massar Networking
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Will
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: W. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Will
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: W. S.
       surname:
+        language: en
         content: LIU
-        language:
-        - en
       completename:
+        language: en
         content: Will (Shucheng) LIU
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '03'
-revdate: '2017-07-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Over the years, a number of attack vectors that employ forged ICMPv4/
-    ICMPv6 error messages have been disclosed and exploited in the wild. The aforementioned
-    attack vectors do not require that the source address of the packets be forged,
-    but do require that the addresses of the IPv4/IPv6 packet embedded in the ICMPv4/ICMPv6
-    payload be forged. This document discusses a simple, effective, and straightforward
-    method for using ingress traffic filtering to mitigate attacks that use forged
-    addresses in the IPv4/IPv6 packet embedded in an ICMPv4/ICMPv6 payload.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Over the years, a number of attack vectors that employ forged ICMPv4/\n
+    \  ICMPv6 error messages have been disclosed and exploited in the wild.\n   The
+    aforementioned attack vectors do not require that the source\n   address of the
+    packets be forged, but do require that the addresses\n   of the IPv4/IPv6 packet
+    embedded in the ICMPv4/ICMPv6 payload be\n   forged.  This document discusses
+    a simple, effective, and\n   straightforward method for using ingress traffic
+    filtering to\n   mitigate attacks that use forged addresses in the IPv4/IPv6 packet\n
+    \  embedded in an ICMPv4/ICMPv6 payload.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-gont-opsec-icmp-ingress-filtering-02
-    docid:
-    - id: draft-gont-opsec-icmp-ingress-filtering-02
+    formattedref: draft-gont-opsec-icmp-ingress-filtering-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-gont-opsec-icmp-ingress-filtering-02
+    docidentifier:
+    - content: draft-gont-opsec-icmp-ingress-filtering-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-gont-opsec-icmp-ingress-filtering-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-gont-opsec-icmp-ingress-filtering-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

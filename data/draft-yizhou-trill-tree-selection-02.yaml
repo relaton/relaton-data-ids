@@ -1,240 +1,201 @@
 ---
-schema-version: v1.2.9
-id: draft-yizhou-trill-tree-selection-02
-title:
-- content: VLAN based Tree Selection for Multi-destination Frames
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tree-selection-02
-  type: src
+id: draftyizhoutrilltreeselection02
 type: standard
-docid:
-- id: draft-yizhou-trill-tree-selection-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: VLAN based Tree Selection for Multi-destination Frames
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tree-selection-02
+docidentifier:
+- content: draft-yizhou-trill-tree-selection
+  type: Internet-Draft
+- content: draft-yizhou-trill-tree-selection-02
   type: Internet-Draft
   primary: true
-- id: I-D.yizhou-trill-tree-selection
-  type: IETF
-  scope: anchor
 docnumber: I-D.yizhou-trill-tree-selection
 date:
 - type: published
-  value: '2013-01-14'
+  at: '2013-01-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yizhou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yizhou
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Yizhou Li
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hao
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Weiguo
-        language:
-        - en
       completename:
+        language: en
         content: Hao Weiguo
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Radia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Radia
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Perlman
-        language:
-        - en
       completename:
+        language: en
         content: Radia Perlman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Naveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Naveen
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Nimmu
-        language:
-        - en
       completename:
+        language: en
         content: Naveen Nimmu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Somnath
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Somnath
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Chatterjee
-        language:
-        - en
       completename:
+        language: en
         content: Somnath Chatterjee
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sunny
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sunny
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Rajagopalan
-        language:
-        - en
       completename:
+        language: en
         content: Sunny Rajagopalan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2013-01-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>TRILL uses the distribution trees to deliver multi-destination frames.
-    Multiple trees can be used by an ingress RBridge for different flow based on VLAN
-    and/or multicast group. Different ingress RBridges may choose different distribution
-    trees for the same VLAN and/or multicast group traffic. Distribution trees are
-    normally pruned based on VLAN. For any RBridge RBn, if RBn has downstream receivers
-    of VLAN x in a distribution tree t, there will be an entry of (t, x, port list)
-    in the multicast forwarding table on RBn. If there are n trees and m VLANs, the
-    multicast forwarding table size on RBn is typically n*m entries. The value of
-    m is up to 4096 and n is the total number of distribution trees in the campus.
-    If fine grained labeling is implemented or finer granularity filtering such as
-    VLAN plus L2/L3 multicast address is used for pruning, the multicast forwarding
-    table size further increases dramatically. TRILL multicast forwarding table size
-    is limited by hardware and L3 multicasting may share the same table with it in
-    hardware implementations. Therefore multicast table entry is a precious resource.
-    This document specifies a VLAN based tree selection mechanism to reduce the TRILL
-    multicast forwarding table size on RBridge.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   TRILL uses the distribution trees to deliver multi-destination frames.\n
+    \  Multiple trees can be used by an ingress RBridge for different flow\n   based
+    on VLAN and/or multicast group. Different ingress RBridges may\n   choose different
+    distribution trees for the same VLAN and/or\n   multicast group traffic. Distribution
+    trees are normally pruned based\n   on VLAN.\n\n   For any RBridge RBn, if RBn
+    has downstream receivers of VLAN x in a\n   distribution tree t, there will be
+    an entry of (t, x, port list) in\n   the multicast forwarding table on RBn. If
+    there are n trees and m\n   VLANs, the multicast forwarding table size on RBn
+    is typically n*m\n   entries. The value of m is up to 4096 and n is the total
+    number of\n   distribution trees in the campus. If fine grained labeling is\n
+    \  implemented or finer granularity filtering such as VLAN plus L2/L3\n   multicast
+    address is used for pruning, the multicast forwarding table\n   size further increases
+    dramatically. TRILL multicast forwarding table\n   size is limited by hardware
+    and L3 multicasting may share the same\n   table with it in hardware implementations.
+    Therefore multicast table\n   entry is a precious resource. This document specifies
+    a VLAN based\n   tree selection mechanism to reduce the TRILL multicast forwarding\n
+    \  table size on RBridge.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-yizhou-trill-tree-selection-01
-    docid:
-    - id: draft-yizhou-trill-tree-selection-01
+    formattedref: draft-yizhou-trill-tree-selection-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tree-selection-01
+    docidentifier:
+    - content: draft-yizhou-trill-tree-selection-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-yizhou-trill-tree-selection-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-yizhou-trill-tree-selection-03
-    docid:
-    - id: draft-yizhou-trill-tree-selection-03
+    formattedref: draft-yizhou-trill-tree-selection-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yizhou-trill-tree-selection-03
+    docidentifier:
+    - content: draft-yizhou-trill-tree-selection-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-yizhou-trill-tree-selection-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yizhou-trill-tree-selection-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

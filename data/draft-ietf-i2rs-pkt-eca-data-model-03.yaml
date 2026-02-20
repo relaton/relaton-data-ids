@@ -1,161 +1,140 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-i2rs-pkt-eca-data-model-03
-title:
-- content: Filter-Based Packet Forwarding ECA Policy
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-i2rs-pkt-eca-data-model-03
-  type: src
+id: draftietfi2rspktecadatamodel03
 type: standard
-docid:
-- id: draft-ietf-i2rs-pkt-eca-data-model-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Filter-Based Packet Forwarding ECA Policy
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-i2rs-pkt-eca-data-model-03
+docidentifier:
+- content: draft-ietf-i2rs-pkt-eca-data-model
+  type: Internet-Draft
+- content: draft-ietf-i2rs-pkt-eca-data-model-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-i2rs-pkt-eca-data-model
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-i2rs-pkt-eca-data-model
 date:
 - type: published
-  value: '2017-03-13'
+  at: '2017-03-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Susan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Susan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hares
-        language:
-        - en
       completename:
+        language: en
         content: Susan Hares
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Linda
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Linda
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Dunbar
-        language:
-        - en
       completename:
+        language: en
         content: Linda Dunbar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Russ
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Russ
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: White
-        language:
-        - en
       completename:
+        language: en
         content: Russ White
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '03'
-revdate: '2017-03-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the yang data model for packet forwarding policy
-    that filters received packets and forwards (or drops) the packets. Filters for
-    Layer 2, Layer 3, Layer 4, and packet-arrival time are linked together to support
-    filtering for the routing layer. Prior to forwarding the packets out other interfaces,
-    some of the fields in the packets may be modified. (If one considers the packet
-    reception an event, this packet policy is a minimalistic Event-Match Condition-Action
-    policy.) This policy controls forwarding of packets received by a routing device
-    on one or more interfaces on which this policy is enabled. This data model may
-    be used in either the configuration datastore, control plane datastores, or the
-    I2RS ephemeral control plane datastore.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the yang data model for packet forwarding\n
+    \  policy that filters received packets and forwards (or drops) the\n   packets.
+    \ Filters for Layer 2, Layer 3, Layer 4, and packet-arrival\n   time are linked
+    together to support filtering for the routing layer.\n   Prior to forwarding the
+    packets out other interfaces, some of the\n   fields in the packets may be modified.
+    \ (If one considers the packet\n   reception an event, this packet policy is a
+    minimalistic Event-Match\n   Condition-Action policy.)  This policy controls forwarding
+    of packets\n   received by a routing device on one or more interfaces on which
+    this\n   policy is enabled.\n\n   This data model may be used in either the configuration
+    datastore,\n   control plane datastores, or the I2RS ephemeral control plane\n
+    \  datastore.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-i2rs-pkt-eca-data-model-02
-    docid:
-    - id: draft-ietf-i2rs-pkt-eca-data-model-02
+    formattedref: draft-ietf-i2rs-pkt-eca-data-model-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-i2rs-pkt-eca-data-model-02
+    docidentifier:
+    - content: draft-ietf-i2rs-pkt-eca-data-model-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-i2rs-pkt-eca-data-model-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-i2rs-pkt-eca-data-model-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

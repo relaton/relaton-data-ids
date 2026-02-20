@@ -1,197 +1,172 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-suit-manifest-10
-title:
-- content: A Concise Binary Object Representation (CBOR)-based Serialization Format
-    for the Software Updates for Internet of Things (SUIT) Manifest
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-manifest-10
-  type: src
+id: draftietfsuitmanifest10
 type: standard
-docid:
-- id: draft-ietf-suit-manifest-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Concise Binary Object Representation (CBOR)-based Serialization Format
+    for the Software Updates for Internet of Things (SUIT) Manifest
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-manifest-10
+docidentifier:
+- content: draft-ietf-suit-manifest
+  type: Internet-Draft
+- content: draft-ietf-suit-manifest-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-suit-manifest
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-suit-manifest
 date:
 - type: published
-  value: '2020-11-02'
+  at: '2020-11-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Brendan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brendan
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Moran
-        language:
-        - en
       completename:
+        language: en
         content: Brendan Moran
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
+        - language: en
+          content: Fraunhofer SIT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Koen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Koen
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Zandberg
-        language:
-        - en
       completename:
+        language: en
         content: Koen Zandberg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Inria
-  role:
-  - type: author
+        - language: en
+          content: Inria
 version:
 - draft: '10'
-revdate: '2020-11-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification describes the format of a manifest. A manifest is
-    a bundle of metadata about code/data obtained by a recipient (chiefly the firmware
-    for an IoT device), where to find the that code/data, the devices to which it
-    applies, and cryptographic information protecting the manifest. Software updates
-    and Trusted Invocation both tend to use sequences of common operations, so the
-    manifest encodes those sequences of operations, rather than declaring the metadata.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification describes the format of a manifest.  A manifest
+    is\n   a bundle of metadata about code/data obtained by a recipient (chiefly\n
+    \  the firmware for an IoT device), where to find the that code/data,\n   the
+    devices to which it applies, and cryptographic information\n   protecting the
+    manifest.  Software updates and Trusted Invocation\n   both tend to use sequences
+    of common operations, so the manifest\n   encodes those sequences of operations,
+    rather than declaring the\n   metadata.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-suit-manifest-09
-    docid:
-    - id: draft-ietf-suit-manifest-09
+    formattedref: draft-ietf-suit-manifest-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-manifest-09
+    docidentifier:
+    - content: draft-ietf-suit-manifest-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-suit-manifest-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-suit-manifest-11
-    docid:
-    - id: draft-ietf-suit-manifest-11
+    formattedref: draft-ietf-suit-manifest-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-manifest-11
+    docidentifier:
+    - content: draft-ietf-suit-manifest-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-suit-manifest-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-suit-manifest-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

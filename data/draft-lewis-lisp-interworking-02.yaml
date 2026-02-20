@@ -1,182 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-lewis-lisp-interworking-02
-title:
-- content: Interworking LISP with IPv4 and IPv6
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lewis-lisp-interworking-02
-  type: src
+id: draftlewislispinterworking02
 type: standard
-docid:
-- id: draft-lewis-lisp-interworking-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Interworking LISP with IPv4 and IPv6
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lewis-lisp-interworking-02
+docidentifier:
+- content: draft-lewis-lisp-interworking
+  type: Internet-Draft
+- content: draft-lewis-lisp-interworking-02
   type: Internet-Draft
   primary: true
-- id: I-D.lewis-lisp-interworking
-  type: IETF
-  scope: anchor
 docnumber: I-D.lewis-lisp-interworking
 date:
 - type: published
-  value: '2009-01-28'
+  at: '2009-01-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Darrel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Darrel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lewis
-        language:
-        - en
       completename:
+        language: en
         content: Darrel Lewis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Meyer
-        language:
-        - en
       completename:
+        language: en
         content: David Meyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vince
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vince
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Fuller
-        language:
-        - en
       completename:
+        language: en
         content: Vince Fuller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '02'
-revdate: '2009-01-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes techniques for allowing sites running the Locator/ID
-    Separation Protocol (LISP [LISP]) to interoperate with Internet sites not running
-    LISP. A fundamental property of LISP- speaking sites is that they use Endpoint
-    Identifiers (EIDs), rather than traditional IP addresses, in the source and destination
-    fields of all traffic they emit or receive. While EIDs are syntactically identical
-    to IP addresses, routes for them are not carried in the global routing system
-    so an interoperability mechanism is needed for non-LISP-speaking sites to exchange
-    traffic with LISP-speaking sites. This document introduces two such mechanisms:
-    the first uses a new network element, the LISP Proxy Tunnel Router (PTR) (Section
-    5) to act as a intermediate LISP Ingress Tunnel Router (ITR) for non-LISP- speaking
-    hosts while the second adds Network Address Translation (NAT) functionality to
-    LISP Ingress and LISP Egress Tunnel Routers (xTRs) to substitute routable IP addresses
-    for non-routable EIDs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes techniques for allowing sites running the\n   Locator/ID
+    Separation Protocol (LISP [LISP]) to interoperate with\n   Internet sites not
+    running LISP.  A fundamental property of LISP-\n   speaking sites is that they
+    use Endpoint Identifiers (EIDs), rather\n   than traditional IP addresses, in
+    the source and destination fields\n   of all traffic they emit or receive.  While
+    EIDs are syntactically\n   identical to IP addresses, routes for them are not
+    carried in the\n   global routing system so an interoperability mechanism is needed
+    for\n   non-LISP-speaking sites to exchange traffic with LISP-speaking sites.\n
+    \  This document introduces two such mechanisms: the first uses a new\n   network
+    element, the LISP Proxy Tunnel Router (PTR) (Section 5) to\n   act as a intermediate
+    LISP Ingress Tunnel Router (ITR) for non-LISP-\n   speaking hosts while the second
+    adds Network Address Translation\n   (NAT) functionality to LISP Ingress and LISP
+    Egress Tunnel Routers\n   (xTRs) to substitute routable IP addresses for non-routable
+    EIDs.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lewis-lisp-interworking-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

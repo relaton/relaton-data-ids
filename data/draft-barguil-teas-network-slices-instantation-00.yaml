@@ -1,199 +1,171 @@
 ---
-schema-version: v1.2.9
-id: draft-barguil-teas-network-slices-instantation-00
-title:
-- content: Instantiation of IETF Network Slices in service providers networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-barguil-teas-network-slices-instantation-00
-  type: src
+id: draftbarguilteasnetworkslicesinstantation00
 type: standard
-docid:
-- id: draft-barguil-teas-network-slices-instantation-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Instantiation of IETF Network Slices in service providers networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-barguil-teas-network-slices-instantation-00
+docidentifier:
+- content: draft-barguil-teas-network-slices-instantation
+  type: Internet-Draft
+- content: draft-barguil-teas-network-slices-instantation-00
   type: Internet-Draft
   primary: true
-- id: I-D.barguil-teas-network-slices-instantation
-  type: IETF
-  scope: anchor
 docnumber: I-D.barguil-teas-network-slices-instantation
 date:
 - type: published
-  value: '2021-02-22'
+  at: '2021-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Samier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samier
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Barguil
-        language:
-        - en
       completename:
+        language: en
         content: Samier Barguil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: L. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: L. M.
       surname:
+        language: en
         content: Contreras
-        language:
-        - en
       completename:
+        language: en
         content: Luis M. Contreras
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Victor Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: O. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: O. G.
       surname:
+        language: en
         content: de Dios
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Gonzalez de Dios
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
-  - type: author
+        - language: en
+          content: Telefonica
 version:
 - draft: '00'
-revdate: '2021-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The IETF has produced several YANG data models to support the Software-Defined
-    Networking and Network Slice Architecture. This document describes the relationship
-    between the abstract (generic, or base) Service Models utilized for the Network
-    Slices requests and the Network Models (e.g. L3NM, L2NM). This document describes
-    the communication between the Network Slice Controller and a network controller
-    for IETF network slice creation. The YANG service models available for network
-    slicing provide a customer-oriented view of the network. Thus, once the Network
-    Slice controller (NSC)receives a request, it needs to expand it to accomplish
-    the specific parameters expected by the network controller. The network models
-    are analyzed in terms of how they can satisfy the IETF Network Slice requirements.
-    Identified gaps on existing models are reported.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The IETF has produced several YANG data models to support the\n   Software-Defined
+    Networking and Network Slice Architecture.  This\n   document describes the relationship
+    between the abstract (generic, or\n   base) Service Models utilized for the Network
+    Slices requests and the\n   Network Models (e.g.  L3NM, L2NM).  This document
+    describes the\n   communication between the Network Slice Controller and a network\n
+    \  controller for IETF network slice creation.\n\n   The YANG service models available
+    for network slicing provide a\n   customer-oriented view of the network.  Thus,
+    once the Network Slice\n   controller (NSC)receives a request, it needs to expand
+    it to\n   accomplish the specific parameters expected by the network\n   controller.
+    \ The network models are analyzed in terms of how they can\n   satisfy the IETF
+    Network Slice requirements.  Identified gaps on\n   existing models are reported.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-barguil-teas-network-slices-instantation-01
-    docid:
-    - id: draft-barguil-teas-network-slices-instantation-01
+    formattedref: draft-barguil-teas-network-slices-instantation-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-barguil-teas-network-slices-instantation-01
+    docidentifier:
+    - content: draft-barguil-teas-network-slices-instantation-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-barguil-teas-network-slices-instantation-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-barguil-teas-network-slices-instantation-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

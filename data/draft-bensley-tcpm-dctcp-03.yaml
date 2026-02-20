@@ -1,156 +1,131 @@
 ---
-schema-version: v1.2.9
-id: draft-bensley-tcpm-dctcp-03
-title:
-- content: 'Microsoft''s Datacenter TCP (DCTCP): TCP Congestion Control for Datacenters'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bensley-tcpm-dctcp-03
-  type: src
+id: draftbensleytcpmdctcp03
 type: standard
-docid:
-- id: draft-bensley-tcpm-dctcp-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Microsoft''s Datacenter TCP (DCTCP): TCP Congestion Control for Datacenters'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bensley-tcpm-dctcp-03
+docidentifier:
+- content: draft-bensley-tcpm-dctcp
+  type: Internet-Draft
+- content: draft-bensley-tcpm-dctcp-03
   type: Internet-Draft
   primary: true
-- id: I-D.bensley-tcpm-dctcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.bensley-tcpm-dctcp
 date:
 - type: published
-  value: '2015-04-13'
+  at: '2015-04-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stephen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bensley
-        language:
-        - en
       completename:
+        language: en
         content: Stephen Bensley
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lars
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lars
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Eggert
-        language:
-        - en
       completename:
+        language: en
         content: Lars Eggert
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dave
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dave
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Thaler
-        language:
-        - en
       completename:
+        language: en
         content: Dave Thaler
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2015-04-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo describes Datacenter TCP (DCTCP), an improvement to TCP congestion
-    control for datacenter traffic, as implemented in Windows Server 2012. DCTCP enhances
-    Explicit Congestion Notification (ECN) processing to estimate the fraction of
-    bytes that encounter congestion, rather than simply detecting that some congestion
-    has occurred. DCTCP then scales the TCP congestion window based on this estimate.
-    This method achieves high burst tolerance, low latency, and high throughput with
-    shallow-buffered switches.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo describes Datacenter TCP (DCTCP), an improvement to TCP\n
+    \  congestion control for datacenter traffic, as implemented in Windows\n   Server
+    2012.  DCTCP enhances Explicit Congestion Notification (ECN)\n   processing to
+    estimate the fraction of bytes that encounter\n   congestion, rather than simply
+    detecting that some congestion has\n   occurred.  DCTCP then scales the TCP congestion
+    window based on this\n   estimate.  This method achieves high burst tolerance,
+    low latency,\n   and high throughput with shallow-buffered switches.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-bensley-tcpm-dctcp-02
-    docid:
-    - id: draft-bensley-tcpm-dctcp-02
+    formattedref: draft-bensley-tcpm-dctcp-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bensley-tcpm-dctcp-02
+    docidentifier:
+    - content: draft-bensley-tcpm-dctcp-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bensley-tcpm-dctcp-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-bensley-tcpm-dctcp-04
-    docid:
-    - id: draft-bensley-tcpm-dctcp-04
+    formattedref: draft-bensley-tcpm-dctcp-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bensley-tcpm-dctcp-04
+    docidentifier:
+    - content: draft-bensley-tcpm-dctcp-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bensley-tcpm-dctcp-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bensley-tcpm-dctcp-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

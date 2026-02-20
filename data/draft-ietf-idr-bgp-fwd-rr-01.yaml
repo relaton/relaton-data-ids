@@ -1,139 +1,121 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-bgp-fwd-rr-01
-title:
-- content: BGP Route Reflector in Forwarding Path
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-01
-  type: src
+id: draftietfidrbgpfwdrr01
 type: standard
-docid:
-- id: draft-ietf-idr-bgp-fwd-rr-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP Route Reflector in Forwarding Path
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-01
+docidentifier:
+- content: draft-ietf-idr-bgp-fwd-rr
+  type: Internet-Draft
+- content: draft-ietf-idr-bgp-fwd-rr-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgp-fwd-rr
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-bgp-fwd-rr
 date:
 - type: published
-  value: '2024-02-16'
+  at: '2024-02-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kaliraj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kaliraj
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Vairavakkalai
-        language:
-        - en
       completename:
+        language: en
         content: Kaliraj Vairavakkalai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Natrajan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Natrajan
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Venkataraman
-        language:
-        - en
       completename:
+        language: en
         content: Natrajan Venkataraman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks, Inc.
 version:
 - draft: '01'
-revdate: '2024-02-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The procedures in BGP Route Reflection (RR) spec [RFC4456] primarily
-    deal with scenarios where the RR is reflecting BGP routes with next hop unchanged.
-    These procedures can sometimes result in traffic forwarding loops in deployments
-    where the RR is in forwarding path, because of reflecting BGP routes with next
-    hop set to self. This document specifies approaches to minimize possiblity of
-    such traffic forwarding loops. One of those approaches updates path selection
-    procedures specified in Section 9 of BGP RR. [RFC4456]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The procedures in BGP Route Reflection (RR) spec [RFC4456] primarily\n
+    \  deal with scenarios where the RR is reflecting BGP routes with next\n   hop
+    unchanged.\n\n   These procedures can sometimes result in traffic forwarding loops
+    in\n   deployments where the RR is in forwarding path, because of reflecting\n
+    \  BGP routes with next hop set to self.\n\n   This document specifies approaches
+    to minimize possiblity of such\n   traffic forwarding loops.  One of those approaches
+    updates path\n   selection procedures specified in Section 9 of BGP RR.  [RFC4456]\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-bgp-fwd-rr-00
-    docid:
-    - id: draft-ietf-idr-bgp-fwd-rr-00
+    formattedref: draft-ietf-idr-bgp-fwd-rr-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-00
+    docidentifier:
+    - content: draft-ietf-idr-bgp-fwd-rr-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-fwd-rr-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-bgp-fwd-rr-02
-    docid:
-    - id: draft-ietf-idr-bgp-fwd-rr-02
+    formattedref: draft-ietf-idr-bgp-fwd-rr-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-02
+    docidentifier:
+    - content: draft-ietf-idr-bgp-fwd-rr-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-fwd-rr-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-bgp-fwd-rr-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

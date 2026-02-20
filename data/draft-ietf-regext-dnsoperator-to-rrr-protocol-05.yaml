@@ -1,192 +1,167 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-regext-dnsoperator-to-rrr-protocol-05
-title:
-- content: Third Party DNS operator to Registrars/Registries Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-regext-dnsoperator-to-rrr-protocol-05
-  type: src
+id: draftietfregextdnsoperatortorrrprotocol05
 type: standard
-docid:
-- id: draft-ietf-regext-dnsoperator-to-rrr-protocol-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Third Party DNS operator to Registrars/Registries Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-regext-dnsoperator-to-rrr-protocol-05
+docidentifier:
+- content: draft-ietf-regext-dnsoperator-to-rrr-protocol
+  type: Internet-Draft
+- content: draft-ietf-regext-dnsoperator-to-rrr-protocol-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-regext-dnsoperator-to-rrr-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-regext-dnsoperator-to-rrr-protocol
 date:
 - type: published
-  value: '2018-05-04'
+  at: '2018-05-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jacques
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jacques
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Latour
-        language:
-        - en
       completename:
+        language: en
         content: Jacques Latour
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CIRA
-  role:
+        - language: en
+          content: CIRA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Guðmundsson
-        language:
-        - en
       completename:
+        language: en
         content: Ólafur Guðmundsson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare, Inc.
-  role:
+        - language: en
+          content: Cloudflare, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Red Hat
-  role:
+        - language: en
+          content: Red Hat
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Matthew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Matthew
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Pounsett
-        language:
-        - en
       completename:
+        language: en
         content: Matthew Pounsett
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nimbus Operations Inc.
-  role:
-  - type: author
+        - language: en
+          content: Nimbus Operations Inc.
 version:
 - draft: '05'
-revdate: '2018-05-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>There are several problems that arise in the standard Registrant/Registrar/Registry
-    model when the operator of a zone is neither the Registrant nor the Registrar
-    for the delegation. Historically the issues have been minor, and limited to difficulty
-    guiding the Registrant through the initial changes to the NS records for the delegation.
-    As this is usually a one time activity when the operator first takes charge of
-    the zone it has not been treated as a serious issue. When the domain uses DNSSEC
-    it necessary to make regular (sometimes annual) changes to the delegation, updating
-    DS record(s) in order to track KSK rollover. Under the current model this is prone
-    to delays and errors, as the Registrant must participate in updates to DS records.
-    This document describes a simple protocol that allows a third party DNS operator
-    to: establish the initial chain of trust (bootstrap DNSSEC) for a delegation;
-    update DS records for a delegation; and, remove DS records from a secure delegation.
-    The DNS operator may do these things in a trusted manner, without involving the
-    Registrant for each operation. This same protocol can be used by Registrants to
-    maintain their own domains if they wish.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   There are several problems that arise in the standard\n   Registrant/Registrar/Registry
+    model when the operator of a zone is\n   neither the Registrant nor the Registrar
+    for the delegation.\n   Historically the issues have been minor, and limited to
+    difficulty\n   guiding the Registrant through the initial changes to the NS records\n
+    \  for the delegation.  As this is usually a one time activity when the\n   operator
+    first takes charge of the zone it has not been treated as a\n   serious issue.\n\n
+    \  When the domain uses DNSSEC it necessary to make regular (sometimes\n   annual)
+    changes to the delegation, updating DS record(s) in order to\n   track KSK rollover.
+    \ Under the current model this is prone to delays\n   and errors, as the Registrant
+    must participate in updates to DS\n   records.\n\n   This document describes a
+    simple protocol that allows a third party\n   DNS operator to: establish the initial
+    chain of trust (bootstrap\n   DNSSEC) for a delegation; update DS records for
+    a delegation; and,\n   remove DS records from a secure delegation.  The DNS operator
+    may do\n   these things in a trusted manner, without involving the Registrant\n
+    \  for each operation.  This same protocol can be used by Registrants to\n   maintain
+    their own domains if they wish.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-regext-dnsoperator-to-rrr-protocol-04
-    docid:
-    - id: draft-ietf-regext-dnsoperator-to-rrr-protocol-04
+    formattedref: draft-ietf-regext-dnsoperator-to-rrr-protocol-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-regext-dnsoperator-to-rrr-protocol-04
+    docidentifier:
+    - content: draft-ietf-regext-dnsoperator-to-rrr-protocol-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-regext-dnsoperator-to-rrr-protocol-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-regext-dnsoperator-to-rrr-protocol-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

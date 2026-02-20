@@ -1,188 +1,158 @@
 ---
-schema-version: v1.2.9
-id: draft-zimmermann-tcpm-reordering-detection-01
-title:
-- content: Detection and Quantification of Packet Reordering with TCP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-reordering-detection-01
-  type: src
+id: draftzimmermanntcpmreorderingdetection01
 type: standard
-docid:
-- id: draft-zimmermann-tcpm-reordering-detection-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Detection and Quantification of Packet Reordering with TCP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-reordering-detection-01
+docidentifier:
+- content: draft-zimmermann-tcpm-reordering-detection
+  type: Internet-Draft
+- content: draft-zimmermann-tcpm-reordering-detection-01
   type: Internet-Draft
   primary: true
-- id: I-D.zimmermann-tcpm-reordering-detection
-  type: IETF
-  scope: anchor
 docnumber: I-D.zimmermann-tcpm-reordering-detection
 date:
 - type: published
-  value: '2014-05-20'
+  at: '2014-05-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Zimmermann
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Zimmermann
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lennart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lennart
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Schulte
-        language:
-        - en
       completename:
+        language: en
         content: Lennart Schulte
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Wolff
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Wolff
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arnd
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arnd
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Hannemann
-        language:
-        - en
       completename:
+        language: en
         content: Arnd Hannemann
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2014-05-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies an algorithm for the detection and quantification
-    of packet reordering for TCP. In the absence of explicit congestion notification
-    from the network, TCP uses only packet loss as an indication of congestion. One
-    of the signals TCP uses to determine loss is the arrival of three duplicate acknowledgments.
-    However, this heuristic is not always correct, notably in the case when paths
-    reorder packets. This results in degraded performance. The algorithm for the detection
-    and quantification of reordering in this document uses information gathered from
-    the TCP Timestamps Option, the TCP SACK Option and its DSACK extension. When a
-    reordering event is detected, the algorithm calculates a reordering extent by
-    determining the number of segments the reordered segment was late with respect
-    to its position in the sequence number space. Additionally, the algorithm computes
-    a second reordering extent that is relative to the amount of outstanding data
-    and thus provides a better estimation of the reordering delay when other sender
-    state changes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies an algorithm for the detection and\n   quantification
+    of packet reordering for TCP.  In the absence of\n   explicit congestion notification
+    from the network, TCP uses only\n   packet loss as an indication of congestion.
+    \ One of the signals TCP\n   uses to determine loss is the arrival of three duplicate\n
+    \  acknowledgments.  However, this heuristic is not always correct,\n   notably
+    in the case when paths reorder packets.  This results in\n   degraded performance.\n\n
+    \  The algorithm for the detection and quantification of reordering in\n   this
+    document uses information gathered from the TCP Timestamps\n   Option, the TCP
+    SACK Option and its DSACK extension.  When a\n   reordering event is detected,
+    the algorithm calculates a reordering\n   extent by determining the number of
+    segments the reordered segment\n   was late with respect to its position in the
+    sequence number space.\n   Additionally, the algorithm computes a second reordering
+    extent that\n   is relative to the amount of outstanding data and thus provides
+    a\n   better estimation of the reordering delay when other sender state\n   changes.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-zimmermann-tcpm-reordering-detection-00
-    docid:
-    - id: draft-zimmermann-tcpm-reordering-detection-00
+    formattedref: draft-zimmermann-tcpm-reordering-detection-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-reordering-detection-00
+    docidentifier:
+    - content: draft-zimmermann-tcpm-reordering-detection-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zimmermann-tcpm-reordering-detection-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-zimmermann-tcpm-reordering-detection-02
-    docid:
-    - id: draft-zimmermann-tcpm-reordering-detection-02
+    formattedref: draft-zimmermann-tcpm-reordering-detection-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-reordering-detection-02
+    docidentifier:
+    - content: draft-zimmermann-tcpm-reordering-detection-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zimmermann-tcpm-reordering-detection-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zimmermann-tcpm-reordering-detection-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

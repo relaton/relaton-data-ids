@@ -1,234 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-yang-path-computation-24
-title:
-- content: A YANG Data Model for requesting path computation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-24
-  type: src
+id: draftietfteasyangpathcomputation24
 type: standard
-docid:
-- id: draft-ietf-teas-yang-path-computation-24
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A YANG Data Model for requesting path computation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-24
+docidentifier:
+- content: draft-ietf-teas-yang-path-computation
+  type: Internet-Draft
+- content: draft-ietf-teas-yang-path-computation-24
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-yang-path-computation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-yang-path-computation
 date:
 - type: published
-  value: '2025-02-13'
+  at: '2025-02-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Italo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Italo
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Busi
-        language:
-        - en
       completename:
+        language: en
         content: Italo Busi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sergio
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Belotti
-        language:
-        - en
       completename:
+        language: en
         content: Sergio Belotti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: O. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: O. G.
       surname:
+        language: en
         content: de Dios
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Gonzalez de Dios
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anurag
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anurag
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sharma
-        language:
-        - en
       completename:
+        language: en
         content: Anurag Sharma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Yan Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
-  - type: author
+        - language: en
+          content: China Unicom
 version:
 - draft: '24'
-revdate: '2025-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>There are scenarios, typically in a hierarchical Software-Defined Networking
-    (SDN) context, where the topology information provided by a Traffic Engineering
-    (TE) network provider may be insufficient for its client to perform multi-domain
-    path computation. In these cases the client would need to request the TE network
-    provider to compute some intra-domain paths to be used by the client to choose
-    the optimal multi-domain paths. This document provides a mechanism to request
-    path computation by augmenting the Remote Procedure Calls (RPCs) defined in RFC
-    YYYY. [RFC EDITOR NOTE: Please replace RFC YYYY with the RFC number of draft-ietf-teas-yang-te
-    once it has been published. Moreover, this document describes some use cases where
-    the path computation request, via YANG-based protocols (e.g., NETCONF or RESTCONF),
-    can be needed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   There are scenarios, typically in a hierarchical Software-Defined\n
+    \  Networking (SDN) context, where the topology information provided by\n   a
+    Traffic Engineering (TE) network provider may be insufficient for\n   its client
+    to perform multi-domain path computation.  In these cases\n   the client would
+    need to request the TE network provider to compute\n   some intra-domain paths
+    to be used by the client to choose the\n   optimal multi-domain paths.\n\n   This
+    document provides a mechanism to request path computation by\n   augmenting the
+    Remote Procedure Calls (RPCs) defined in RFC YYYY.\n\n   [RFC EDITOR NOTE: Please
+    replace RFC YYYY with the RFC number of\n   draft-ietf-teas-yang-te once it has
+    been published.\n\n   Moreover, this document describes some use cases where the
+    path\n   computation request, via YANG-based protocols (e.g., NETCONF or\n   RESTCONF),
+    can be needed.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-yang-path-computation-23
-    docid:
-    - id: draft-ietf-teas-yang-path-computation-23
+    formattedref: draft-ietf-teas-yang-path-computation-23
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-23
+    docidentifier:
+    - content: draft-ietf-teas-yang-path-computation-23
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-yang-path-computation-23
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-yang-path-computation-25
-    docid:
-    - id: draft-ietf-teas-yang-path-computation-25
+    formattedref: draft-ietf-teas-yang-path-computation-25
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-25
+    docidentifier:
+    - content: draft-ietf-teas-yang-path-computation-25
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-yang-path-computation-25
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-yang-path-computation-24
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

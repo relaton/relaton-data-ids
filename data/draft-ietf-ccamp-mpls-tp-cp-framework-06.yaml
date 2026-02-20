@@ -1,217 +1,185 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ccamp-mpls-tp-cp-framework-06
-title:
-- content: MPLS Transport Profile (MPLS-TP) Control Plane Framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-mpls-tp-cp-framework-06
-  type: src
+id: draftietfccampmplstpcpframework06
 type: standard
-docid:
-- id: draft-ietf-ccamp-mpls-tp-cp-framework-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MPLS Transport Profile (MPLS-TP) Control Plane Framework
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-mpls-tp-cp-framework-06
+docidentifier:
+- content: draft-ietf-ccamp-mpls-tp-cp-framework
+  type: Internet-Draft
+- content: draft-ietf-ccamp-mpls-tp-cp-framework-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ccamp-mpls-tp-cp-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ccamp-mpls-tp-cp-framework
 date:
 - type: published
-  value: '2011-02-10'
+  at: '2011-02-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: E. W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: E. W.
       surname:
+        language: en
         content: Gray
-        language:
-        - en
       completename:
+        language: en
         content: Eric Gray
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N. N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N. N.
       surname:
+        language: en
         content: Bitar
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Nabil N. Bitar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luyuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luyuan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fang
-        language:
-        - en
       completename:
+        language: en
         content: Luyuan Fang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lou
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Berger
-        language:
-        - en
       completename:
+        language: en
         content: Lou Berger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LabN
-  role:
+        - language: en
+          content: LabN
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Loa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Loa
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Andersson
-        language:
-        - en
       completename:
+        language: en
         content: Loa Andersson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '06'
-revdate: '2011-02-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The MPLS Transport Profile (MPLS-TP) supports static provisioning of
-    transport paths via a Network Management System (NMS) and dynamic provisioning
-    of transport paths via a control plane. This document provides the framework for
-    MPLS-TP dynamic provisioning and covers control-plane addressing, routing, path
-    computation, signaling, traffic engineering, and path recovery. MPLS-TP uses GMPLS
-    as the control plane for MPLS-TP Label Switched Paths (LSPs). MPLS-TP also uses
-    the pseudowire (PW) control plane for pseudowires. Management-plane functions
-    are out of scope of this document. This document is a product of a joint Internet
-    Engineering Task Force (IETF) / International Telecommunication Union Telecommunication
-    Standardization Sector (ITU-T) effort to include an MPLS Transport Profile within
-    the IETF MPLS and Pseudowire Emulation Edge-to-Edge (PWE3) architectures to support
-    the capabilities and functionalities of a packet transport network as defined
-    by the ITU-T. This document is not an Internet Standards Track specification;
-    it is published for informational purposes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The MPLS Transport Profile (MPLS-TP) supports static provisioning of transport
+    paths via a Network Management System (NMS) and dynamic provisioning of transport
+    paths via a control plane. This document provides the framework for MPLS-TP dynamic
+    provisioning and covers control-plane addressing, routing, path computation, signaling,
+    traffic engineering, and path recovery. MPLS-TP uses GMPLS as the control plane
+    for MPLS-TP Label Switched Paths (LSPs). MPLS-TP also uses the pseudowire (PW)
+    control plane for pseudowires. Management-plane functions are out of scope of
+    this document.\n\n This document is a product of a joint Internet Engineering
+    Task Force (IETF) / International Telecommunication Union Telecommunication Standardization
+    Sector (ITU-T) effort to include an MPLS Transport Profile within the IETF MPLS
+    and Pseudowire Emulation Edge-to-Edge (PWE3) architectures to support the capabilities
+    and functionalities of a packet transport network as defined by the ITU-T.\n\n
+    This document is not an Internet Standards Track specification; it is published
+    for informational purposes.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ccamp-mpls-tp-cp-framework-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,229 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-zzhang-spring-service-interworking-01
-title:
-- content: MPLS/SRv6 Service Interworking Option BC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zzhang-spring-service-interworking-01
-  type: src
+id: draftzzhangspringserviceinterworking01
 type: standard
-docid:
-- id: draft-zzhang-spring-service-interworking-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MPLS/SRv6 Service Interworking Option BC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zzhang-spring-service-interworking-01
+docidentifier:
+- content: draft-zzhang-spring-service-interworking
+  type: Internet-Draft
+- content: draft-zzhang-spring-service-interworking-01
   type: Internet-Draft
   primary: true
-- id: I-D.zzhang-spring-service-interworking
-  type: IETF
-  scope: anchor
 docnumber: I-D.zzhang-spring-service-interworking
 date:
 - type: published
-  value: '2023-05-01'
+  at: '2023-05-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhaohui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: Z. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhaohui
+      - language: en
+        script: Latn
+        initial: Z
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: Z. J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zhaohui (Jeffrey) Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shay
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Zadok
-        language:
-        - en
       completename:
+        language: en
         content: Shay Zadok
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Broadcom
-  role:
+        - language: en
+          content: Broadcom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luay
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Jalil
-        language:
-        - en
       completename:
+        language: en
         content: Luay Jalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Voyer
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Voyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
-  role:
-  - type: author
+        - language: en
+          content: Bell Canada
 version:
 - draft: '01'
-revdate: '2023-05-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Draft-bonica-spring-srv6-end-dtm specifies SRv6/MPLS transport interworking
-    procedures, and draft-agrawal-spring-srv6-mpls- interworking specifies SRv6/MPLS
-    transport and service interworking procedures. For service interworking, the latter
-    draft defines two modes, similar to VPN Inter-AS Option A and Option B. This document
-    specifies another Option BC for service interworking which has much better scaling
-    property.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Draft-bonica-spring-srv6-end-dtm specifies SRv6/MPLS transport\n   interworking
+    procedures, and draft-agrawal-spring-srv6-mpls-\n   interworking specifies SRv6/MPLS
+    transport and service interworking\n   procedures.  For service interworking,
+    the latter draft defines two\n   modes, similar to VPN Inter-AS Option A and Option
+    B.  This document\n   specifies another Option BC for service interworking which
+    has much\n   better scaling property.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-zzhang-spring-service-interworking-00
-    docid:
-    - id: draft-zzhang-spring-service-interworking-00
+    formattedref: draft-zzhang-spring-service-interworking-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zzhang-spring-service-interworking-00
+    docidentifier:
+    - content: draft-zzhang-spring-service-interworking-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zzhang-spring-service-interworking-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-zzhang-spring-service-interworking-02
-    docid:
-    - id: draft-zzhang-spring-service-interworking-02
+    formattedref: draft-zzhang-spring-service-interworking-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zzhang-spring-service-interworking-02
+    docidentifier:
+    - content: draft-zzhang-spring-service-interworking-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zzhang-spring-service-interworking-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zzhang-spring-service-interworking-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,160 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-pwouters-multi-sa-performance-01
-title:
-- content: IKEv2 support for per-queue Child SAs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pwouters-multi-sa-performance-01
-  type: src
+id: draftpwoutersmultisaperformance01
 type: standard
-docid:
-- id: draft-pwouters-multi-sa-performance-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IKEv2 support for per-queue Child SAs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pwouters-multi-sa-performance-01
+docidentifier:
+- content: draft-pwouters-multi-sa-performance
+  type: Internet-Draft
+- content: draft-pwouters-multi-sa-performance-01
   type: Internet-Draft
   primary: true
-- id: I-D.pwouters-multi-sa-performance
-  type: IETF
-  scope: anchor
 docnumber: I-D.pwouters-multi-sa-performance
 date:
 - type: published
-  value: '2021-02-22'
+  at: '2021-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Antony
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
-      surname:
+      forename:
+      - language: en
+        script: Latn
         content: Antony
-        language:
-        - en
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
+      surname:
+        language: en
+        content: Antony
       completename:
+        language: en
         content: Antony Antony
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: secunet Security Networks AG
-  role:
+        - language: en
+          content: secunet Security Networks AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Steffen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Steffen
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Klassert
-        language:
-        - en
       completename:
+        language: en
         content: Steffen Klassert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: secunet Security Networks AG
-  role:
+        - language: en
+          content: secunet Security Networks AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Red Hat
-  role:
-  - type: author
+        - language: en
+          content: Red Hat
 version:
 - draft: '01'
-revdate: '2021-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines two Notification Payloads for the Internet Key
-    Exchange Protocol Version 2 (IKEv2): NUM_QUEUES and QUEUE_INFO. These payloads
-    add support for indicating that the negotiating of multiple identical Child SAs
-    are to be used to optimize performance based on the number of queues or CPUs,
-    or to create multiple Child SAs for different Quality of Service (QoS) levels.
-    It indicates that a newer idetnical Child SA should not be interpreted as a replacement
-    Child SA. Using multiple identical Child Sa's has the benefit that each stream
-    has its own Sequence Number, ensuring that CPU's don't have to synchronize their
-    crypto state or disable their packet replay detection.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines two Notification Payloads for the Internet Key\n
+    \  Exchange Protocol Version 2 (IKEv2): NUM_QUEUES and QUEUE_INFO.\n   These payloads
+    add support for indicating that the negotiating of\n   multiple identical Child
+    SAs are to be used to optimize performance\n   based on the number of queues or
+    CPUs, or to create multiple Child\n   SAs for different Quality of Service (QoS)
+    levels.  It indicates that\n   a newer idetnical Child SA should not be interpreted
+    as a replacement\n   Child SA.\n\n   Using multiple identical Child Sa's has the
+    benefit that each stream\n   has its own Sequence Number, ensuring that CPU's
+    don't have to\n   synchronize their crypto state or disable their packet replay\n
+    \  detection.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-pwouters-multi-sa-performance-00
-    docid:
-    - id: draft-pwouters-multi-sa-performance-00
+    formattedref: draft-pwouters-multi-sa-performance-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pwouters-multi-sa-performance-00
+    docidentifier:
+    - content: draft-pwouters-multi-sa-performance-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pwouters-multi-sa-performance-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pwouters-multi-sa-performance-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

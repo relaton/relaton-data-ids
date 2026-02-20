@@ -1,155 +1,134 @@
 ---
-schema-version: v1.2.9
-id: draft-montagud-avtcore-eed-rtcp-idms-00
-title:
-- content: Early Event-Driven (EED) RTCP Feedback for Rapid IDMS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-montagud-avtcore-eed-rtcp-idms-00
-  type: src
+id: draftmontagudavtcoreeedrtcpidms00
 type: standard
-docid:
-- id: draft-montagud-avtcore-eed-rtcp-idms-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Early Event-Driven (EED) RTCP Feedback for Rapid IDMS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-montagud-avtcore-eed-rtcp-idms-00
+docidentifier:
+- content: draft-montagud-avtcore-eed-rtcp-idms
+  type: Internet-Draft
+- content: draft-montagud-avtcore-eed-rtcp-idms-00
   type: Internet-Draft
   primary: true
-- id: I-D.montagud-avtcore-eed-rtcp-idms
-  type: IETF
-  scope: anchor
 docnumber: I-D.montagud-avtcore-eed-rtcp-idms
 date:
 - type: published
-  value: '2015-02-09'
+  at: '2015-02-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mario
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mario
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Montagud
-        language:
-        - en
       completename:
+        language: en
         content: Mario Montagud
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UPV
-  role:
+        - language: en
+          content: UPV
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fernando
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fernando
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Boronat
-        language:
-        - en
       completename:
+        language: en
         content: Fernando Boronat
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UPV
-  role:
+        - language: en
+          content: UPV
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hans
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hans
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Stokking
-        language:
-        - en
       completename:
+        language: en
         content: Hans Stokking
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: TNO
-  role:
-  - type: author
+        - language: en
+          content: TNO
 version:
 - draft: '00'
-revdate: '2015-02-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC 7272 defines two RTCP messages to enable Inter-Destination Media
-    Synchronization (IDMS). However, if such RTCP messages are exchanged using the
-    Regular RTCP reporting rules specified in RFC 3550, unacceptable delays can be
-    originated when exchanging the synchronization information conveyed into RTCP
-    packets. Accordingly, this document proposes Early Event-Driven (EED) RTCP reporting
-    rules and messages to enable higher interactivity, dynamism, flexibility and accuracy
-    when using RTP/RTCP for IDMS. Such IDMS extensions are targeted at providing faster
-    reaction on dynamic situations, such as out-of-sync situations and channel change
-    delays, as well as a finer granularity for synchronizing media-related events,
-    while still adhering to the RTCP bandwidth bounds specified in RFC 3550. Besides,
-    a new RTP/AVPF transport layer feedback message is proposed to allow the request
-    of re-IDMS setting instructions (e.g., in case of RTCP packet loss) as well as
-    rapid accommodation of latecomers in on-going sessions. Finally, this document
-    also discusses various situations in which the reporting of Reduced-Size RTCP
-    packets (RFC 3556) can be applicable and beneficial for IDMS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 7272 defines two RTCP messages to enable Inter-Destination Media\n
+    \  Synchronization (IDMS).  However, if such RTCP messages are exchanged\n   using
+    the Regular RTCP reporting rules specified in RFC 3550,\n   unacceptable delays
+    can be originated when exchanging the\n   synchronization information conveyed
+    into RTCP packets.  Accordingly,\n   this document proposes Early Event-Driven
+    (EED) RTCP reporting rules\n   and messages to enable higher interactivity, dynamism,
+    flexibility\n   and accuracy when using RTP/RTCP for IDMS.  Such IDMS extensions
+    are\n   targeted at providing faster reaction on dynamic situations, such as\n
+    \  out-of-sync situations and channel change delays, as well as a finer\n   granularity
+    for synchronizing media-related events, while still\n   adhering to the RTCP bandwidth
+    bounds specified in RFC 3550.\n   Besides, a new RTP/AVPF transport layer feedback
+    message is proposed\n   to allow the request of re-IDMS setting instructions (e.g.,
+    in case\n   of RTCP packet loss) as well as rapid accommodation of latecomers
+    in\n   on-going sessions.  Finally, this document also discusses various\n   situations
+    in which the reporting of Reduced-Size RTCP packets (RFC\n   3556) can be applicable
+    and beneficial for IDMS.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-montagud-avtcore-eed-rtcp-idms-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

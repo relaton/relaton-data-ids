@@ -1,101 +1,87 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-6man-predictable-fragment-id-00
-title:
-- content: Security Implications of Predictable Fragment Identification Values
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-predictable-fragment-id-00
-  type: src
+id: draftietf6manpredictablefragmentid00
 type: standard
-docid:
-- id: draft-ietf-6man-predictable-fragment-id-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Security Implications of Predictable Fragment Identification Values
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-predictable-fragment-id-00
+docidentifier:
+- content: draft-ietf-6man-predictable-fragment-id
+  type: Internet-Draft
+- content: draft-ietf-6man-predictable-fragment-id-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-6man-predictable-fragment-id
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-6man-predictable-fragment-id
 date:
 - type: published
-  value: '2013-03-22'
+  at: '2013-03-22'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Fernando
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
-      surname:
-        content: Gont
-        language:
-        - en
-      completename:
-        content: Fernando Gont
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Fernando
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
+      surname:
+        language: en
+        content: Gont
+      completename:
+        language: en
+        content: Fernando Gont
 version:
 - draft: '00'
-revdate: '2013-03-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>IPv6 specifies the Fragment Header, which is employed for the fragmentation
-    and reassembly mechanisms. The Fragment Header contains an "Identification" field
-    which, together with the IPv6 Source Address and the IPv6 Destination Address
-    of the packet, identifies fragments that correspond to the same original datagram,
-    such that they can be reassembled together at the receiving host. The only requirement
-    for setting the "Identification" value is that it must be different than that
-    of any other fragmented packet sent recently with the same Source Address and
-    Destination Address. Some implementations simply use a global counter for setting
-    the Fragment Identification field, thus leading to predictable values. This document
-    analyzes the security implications of predictable Identification values, and updates
-    RFC 2460 specifying additional requirements for setting the Fragment Identification,
-    such that the aforementioned security implications are mitigated.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   IPv6 specifies the Fragment Header, which is employed for the\n   fragmentation
+    and reassembly mechanisms.  The Fragment Header\n   contains an \"Identification\"
+    field which, together with the IPv6\n   Source Address and the IPv6 Destination
+    Address of the packet,\n   identifies fragments that correspond to the same original
+    datagram,\n   such that they can be reassembled together at the receiving host.\n
+    \  The only requirement for setting the \"Identification\" value is that\n   it
+    must be different than that of any other fragmented packet sent\n   recently with
+    the same Source Address and Destination Address.  Some\n   implementations simply
+    use a global counter for setting the Fragment\n   Identification field, thus leading
+    to predictable values.  This\n   document analyzes the security implications of
+    predictable\n   Identification values, and updates RFC 2460 specifying additional\n
+    \  requirements for setting the Fragment Identification, such that the\n   aforementioned
+    security implications are mitigated.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-6man-predictable-fragment-id-01
-    docid:
-    - id: draft-ietf-6man-predictable-fragment-id-01
+    formattedref: draft-ietf-6man-predictable-fragment-id-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-predictable-fragment-id-01
+    docidentifier:
+    - content: draft-ietf-6man-predictable-fragment-id-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-predictable-fragment-id-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-6man-predictable-fragment-id-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

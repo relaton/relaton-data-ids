@@ -1,188 +1,163 @@
 ---
-schema-version: v1.2.9
-id: draft-acee-lsr-ospf-transport-instance-00
-title:
-- content: OSPF Transport Instance Extensions
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-acee-lsr-ospf-transport-instance-00
-  type: src
+id: draftaceelsrospftransportinstance00
 type: standard
-docid:
-- id: draft-acee-lsr-ospf-transport-instance-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPF Transport Instance Extensions
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-acee-lsr-ospf-transport-instance-00
+docidentifier:
+- content: draft-acee-lsr-ospf-transport-instance
+  type: Internet-Draft
+- content: draft-acee-lsr-ospf-transport-instance-00
   type: Internet-Draft
   primary: true
-- id: I-D.acee-lsr-ospf-transport-instance
-  type: IETF
-  scope: anchor
 docnumber: I-D.acee-lsr-ospf-transport-instance
 date:
 - type: published
-  value: '2020-09-10'
+  at: '2020-09-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Acee
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Acee
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Lindem
-        language:
-        - en
       completename:
+        language: en
         content: Acee Lindem
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yingzhen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yingzhen
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qu
-        language:
-        - en
       completename:
+        language: en
         content: Yingzhen Qu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Abhay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Abhay
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Roy
-        language:
-        - en
       completename:
+        language: en
         content: Abhay Roy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc.
-  role:
+        - language: en
+          content: Arrcus, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sina
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sina
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Mirtorabi
-        language:
-        - en
       completename:
+        language: en
         content: Sina Mirtorabi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '00'
-revdate: '2020-09-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>OSPFv2 and OSPFv3 include a reliable flooding mechanism to disseminate
-    routing topology and Traffic Engineering (TE) information within a routing domain.
-    Given the effectiveness of these mechanisms, it is convenient to envision using
-    the same mechanism for dissemination of other types of information within the
-    domain. However, burdening OSPF with this additional information will impact intra-domain
-    routing convergence and possibly jeopardize the stability of the OSPF routing
-    domain. This document presents mechanism to relegate this ancillary information
-    to a separate OSPF instance and minimize the impact.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   OSPFv2 and OSPFv3 include a reliable flooding mechanism to\n   disseminate
+    routing topology and Traffic Engineering (TE) information\n   within a routing
+    domain.  Given the effectiveness of these\n   mechanisms, it is convenient to
+    envision using the same mechanism for\n   dissemination of other types of information
+    within the domain.\n   However, burdening OSPF with this additional information
+    will impact\n   intra-domain routing convergence and possibly jeopardize the\n
+    \  stability of the OSPF routing domain.  This document presents\n   mechanism
+    to relegate this ancillary information to a separate OSPF\n   instance and minimize
+    the impact.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-acee-lsr-ospf-transport-instance-01
-    docid:
-    - id: draft-acee-lsr-ospf-transport-instance-01
+    formattedref: draft-acee-lsr-ospf-transport-instance-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-acee-lsr-ospf-transport-instance-01
+    docidentifier:
+    - content: draft-acee-lsr-ospf-transport-instance-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-acee-lsr-ospf-transport-instance-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-acee-lsr-ospf-transport-instance-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

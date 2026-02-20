@@ -1,229 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-quan-l4s-ioam-00
-title:
-- content: IOAM network awareness for Low Latency, Low Loss, and Scalable Throughput
-    (L4S)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-quan-l4s-ioam-00
-  type: src
+id: draftquanl4sioam00
 type: standard
-docid:
-- id: draft-quan-l4s-ioam-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IOAM network awareness for Low Latency, Low Loss, and Scalable Throughput
+    (L4S)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-quan-l4s-ioam-00
+docidentifier:
+- content: draft-quan-l4s-ioam
+  type: Internet-Draft
+- content: draft-quan-l4s-ioam-00
   type: Internet-Draft
   primary: true
-- id: I-D.quan-l4s-ioam
-  type: IETF
-  scope: anchor
 docnumber: I-D.quan-l4s-ioam
 date:
 - type: published
-  value: '2024-03-03'
+  at: '2024-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Quan
-        language:
-        - en
       completename:
+        language: en
         content: Wei Quan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Beijing Jiaotong
                   University
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Su
-        language:
-        - en
       completename:
+        language: en
         content: Wei Su
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Beijing Jiaotong
                   University
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shuaihao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shuaihao
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Pan
-        language:
-        - en
       completename:
+        language: en
         content: Shuaihao Pan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Beijing Jiaotong
                   University
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaobin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaobin
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Liang
-        language:
-        - en
       completename:
+        language: en
         content: Xiaobin Liang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             China Telecom Research
                   Institute
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Liang
-        language:
-        - en
       completename:
+        language: en
         content: Jie Liang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             China Telecom Research
                   Institute
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2024-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification defines a framework how to update L4S Dual-Queue
-    Coupled AQM with In Situ Operations, Administration, and Maintenance (IOAM). These
-    are designed for consistently very low queuing latency, very low congestion loss,
-    and scaling of perflow throughput by using Explicit Congestion Notification (ECN)
-    using the operational and telemetry information collected by IOAM. Since L4S lacks
-    information about the use of network status and network nodes, which also affect
-    network performance in practice, it is considered to use direct export mode for
-    information collection of L4S-IOAM to strengthen the AQM regulation of L4S. It
-    then gives the normative requirements that are necessary.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification defines a framework how to update L4S Dual-Queue\n
+    \  Coupled AQM with In Situ Operations, Administration, and Maintenance\n   (IOAM).
+    \ These are designed for consistently very low queuing\n   latency, very low congestion
+    loss, and scaling of perflow throughput\n   by using Explicit Congestion Notification
+    (ECN) using the operational\n   and telemetry information collected by IOAM.  Since
+    L4S lacks\n   information about the use of network status and network nodes, which\n
+    \  also affect network performance in practice, it is considered to use\n   direct
+    export mode for information collection of L4S-IOAM to\n   strengthen the AQM regulation
+    of L4S.  It then gives the normative\n   requirements that are necessary.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-quan-l4s-ioam-01
-    docid:
-    - id: draft-quan-l4s-ioam-01
+    formattedref: draft-quan-l4s-ioam-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-quan-l4s-ioam-01
+    docidentifier:
+    - content: draft-quan-l4s-ioam-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-quan-l4s-ioam-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-quan-l4s-ioam-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

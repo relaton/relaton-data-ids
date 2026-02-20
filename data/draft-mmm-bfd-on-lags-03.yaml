@@ -1,172 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-mmm-bfd-on-lags-03
-title:
-- content: Bidirectional Forwarding Detection (BFD) on Link Aggregation Group (LAG)
-    Interfaces
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mmm-bfd-on-lags-03
-  type: src
+id: draftmmmbfdonlags03
 type: standard
-docid:
-- id: draft-mmm-bfd-on-lags-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Bidirectional Forwarding Detection (BFD) on Link Aggregation Group (LAG)
+    Interfaces
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mmm-bfd-on-lags-03
+docidentifier:
+- content: draft-mmm-bfd-on-lags
+  type: Internet-Draft
+- content: draft-mmm-bfd-on-lags-03
   type: Internet-Draft
   primary: true
-- id: I-D.mmm-bfd-on-lags
-  type: IETF
-  scope: anchor
 docnumber: I-D.mmm-bfd-on-lags
 date:
 - type: published
-  value: '2012-02-01'
+  at: '2012-02-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Manav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Manav
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Bhatia
-        language:
-        - en
       completename:
+        language: en
         content: Manav Bhatia
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sami
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sami
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Boutros
-        language:
-        - en
       completename:
+        language: en
         content: Sami Boutros
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marc
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marc
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Binderberger
-        language:
-        - en
       completename:
+        language: en
         content: Marc Binderberger
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeffrey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeffrey
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Haas
-        language:
-        - en
       completename:
+        language: en
         content: Jeffrey Haas
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2012-02-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a mechanism to run BFD on Link Aggregation Group
-    (LAG) interfaces. It does so by running an independent BFD async session on every
-    LAG member link. The mechanism allows to verify the link connectivity, either
-    in combination with or in absence of LACP, with a shorter detection time than
-    what LACP offers. The connectivity check can also cover elements of layer 3. A
-    dedicated well-known UDP port is introduced that all BFD packets over member links
-    use to disambiguate those from ordinary BFD packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a mechanism to run BFD on Link Aggregation\n
+    \  Group (LAG) interfaces.  It does so by running an independent BFD\n   async
+    session on every LAG member link.\n\n   The mechanism allows to verify the link
+    connectivity, either in\n   combination with or in absence of LACP, with a shorter
+    detection time\n   than what LACP offers.  The connectivity check can also cover\n
+    \  elements of layer 3.\n\n   A dedicated well-known UDP port is introduced that
+    all BFD packets\n   over member links use to disambiguate those from ordinary
+    BFD\n   packets.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-mmm-bfd-on-lags-04
-    docid:
-    - id: draft-mmm-bfd-on-lags-04
+    formattedref: draft-mmm-bfd-on-lags-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mmm-bfd-on-lags-04
+    docidentifier:
+    - content: draft-mmm-bfd-on-lags-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mmm-bfd-on-lags-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mmm-bfd-on-lags-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

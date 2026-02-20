@@ -1,233 +1,202 @@
 ---
-schema-version: v1.2.9
-id: draft-ao-sfc-oam-path-consistency-09
-title:
-- content: SFC OAM for path consistency
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ao-sfc-oam-path-consistency-09
-  type: src
+id: draftaosfcoampathconsistency09
 type: standard
-docid:
-- id: draft-ao-sfc-oam-path-consistency-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SFC OAM for path consistency
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ao-sfc-oam-path-consistency-09
+docidentifier:
+- content: draft-ao-sfc-oam-path-consistency
+  type: Internet-Draft
+- content: draft-ao-sfc-oam-path-consistency-09
   type: Internet-Draft
   primary: true
-- id: I-D.ao-sfc-oam-path-consistency
-  type: IETF
-  scope: anchor
 docnumber: I-D.ao-sfc-oam-path-consistency
 date:
 - type: published
-  value: '2020-12-14'
+  at: '2020-12-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Mirsky
-        language:
-        - en
       completename:
+        language: en
         content: Greg Mirsky
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corp.
-  role:
+        - language: en
+          content: ZTE Corp.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ting
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ting
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Ao
-        language:
-        - en
       completename:
+        language: en
         content: Ting Ao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Individual contributor
-  role:
+        - language: en
+          content: Individual contributor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhonghua
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhonghua
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Zhonghua Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Leung
-        language:
-        - en
       completename:
+        language: en
         content: Kent Leung
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco System
-  role:
+        - language: en
+          content: Cisco System
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
-  - type: author
+        - language: en
+          content: Verizon Inc.
 version:
 - draft: '09'
-revdate: '2020-12-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Service Function Chain (SFC) defines an ordered set of service functions
-    (SFs) to be applied to packets and/or frames and/or flows selected due to classification.
-    SFC Operation, Administration and Maintenance can monitor the continuity of the
-    SFC, i.e., that all SFC elements are reachable to each other in the downstream
-    direction. But SFC OAM must support verification that the order of traversing
-    these SFs corresponds to the state defined by the SFC control plane or orchestrator,
-    the metric referred to in this document as the path consistency of the SFC. This
-    document defines a new SFC active OAM method to support SFC consistency check,
-    i.e., verification that all elements of the given SFC are being traversed in the
-    expected order.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Service Function Chain (SFC) defines an ordered set of service\n   functions
+    (SFs) to be applied to packets and/or frames and/or flows\n   selected due to
+    classification.  SFC Operation, Administration and\n   Maintenance can monitor
+    the continuity of the SFC, i.e., that all SFC\n   elements are reachable to each
+    other in the downstream direction.\n   But SFC OAM must support verification that
+    the order of traversing\n   these SFs corresponds to the state defined by the
+    SFC control plane\n   or orchestrator, the metric referred to in this document
+    as the path\n   consistency of the SFC.  This document defines a new SFC active
+    OAM\n   method to support SFC consistency check, i.e., verification that all\n
+    \  elements of the given SFC are being traversed in the expected order.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ao-sfc-oam-path-consistency-08
-    docid:
-    - id: draft-ao-sfc-oam-path-consistency-08
+    formattedref: draft-ao-sfc-oam-path-consistency-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ao-sfc-oam-path-consistency-08
+    docidentifier:
+    - content: draft-ao-sfc-oam-path-consistency-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ao-sfc-oam-path-consistency-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ao-sfc-oam-path-consistency-10
-    docid:
-    - id: draft-ao-sfc-oam-path-consistency-10
+    formattedref: draft-ao-sfc-oam-path-consistency-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ao-sfc-oam-path-consistency-10
+    docidentifier:
+    - content: draft-ao-sfc-oam-path-consistency-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ao-sfc-oam-path-consistency-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ao-sfc-oam-path-consistency-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,241 +1,210 @@
 ---
-schema-version: v1.2.9
-id: draft-aguado-opsawg-l3sm-l3nm-01
-title:
-- content: Layer 3 VPN Network Model
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-aguado-opsawg-l3sm-l3nm-01
-  type: src
+id: draftaguadoopsawgl3sml3nm01
 type: standard
-docid:
-- id: draft-aguado-opsawg-l3sm-l3nm-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Layer 3 VPN Network Model
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-aguado-opsawg-l3sm-l3nm-01
+docidentifier:
+- content: draft-aguado-opsawg-l3sm-l3nm
+  type: Internet-Draft
+- content: draft-aguado-opsawg-l3sm-l3nm-01
   type: Internet-Draft
   primary: true
-- id: I-D.aguado-opsawg-l3sm-l3nm
-  type: IETF
-  scope: anchor
 docnumber: I-D.aguado-opsawg-l3sm-l3nm
 date:
 - type: published
-  value: '2019-07-08'
+  at: '2019-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alejandro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alejandro
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Aguado
-        language:
-        - en
       completename:
+        language: en
         content: Alejandro Aguado
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: O. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: O. G.
       surname:
+        language: en
         content: de Dios
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Gonzalez de Dios
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Victor Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Voyer
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Voyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
-  role:
+        - language: en
+          content: Bell Canada
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: L. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: L. A.
       surname:
+        language: en
         content: Munoz
-        language:
-        - en
       completename:
+        language: en
         content: Luis Angel Munoz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vodafone
-  role:
-  - type: author
+        - language: en
+          content: Vodafone
 version:
 - draft: '01'
-revdate: '2019-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC 8299 [RFC8299] defines a L3VPN Service Model (L3SM) YANG data model
-    that can be used for communication between customers and network operators. It
-    assumes that there is a monolithic management system with full control of transport
-    resources. This approach (that is valid for the customer to network operator conversation)
-    limits the usage of the model to the role of a Customer Service Model, according
-    to the terminology defined in RFC 8309 [RFC8309]. There is a need for a YANG model
-    for use between the entity that interacts directly with the customer (service
-    orchestrator) and the entity in charge of network orchestration and control which,
-    according to RFC 8309 [RFC8309], can be referred as Service Delivery Model. In
-    some cases, the control of the network is further expanded into per- domain control.
-    This document uses the L3SM model defined in RFC 8299 [RFC8299], and extends it
-    to facilitate communication between the service orchestrator and transport orchestrator
-    (MSDC), and an MDSC and domain controllers. The resulting model is called the
-    L3VPN Network Model (L3NM).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 8299 [RFC8299] defines a L3VPN Service Model (L3SM) YANG data\n
+    \  model that can be used for communication between customers and\n   network
+    operators.  It assumes that there is a monolithic management\n   system with full
+    control of transport resources.  This approach (that\n   is valid for the customer
+    to network operator conversation) limits\n   the usage of the model to the role
+    of a Customer Service Model,\n   according to the terminology defined in RFC 8309
+    [RFC8309].\n\n   There is a need for a YANG model for use between the entity that\n
+    \  interacts directly with the customer (service orchestrator) and the\n   entity
+    in charge of network orchestration and control which,\n   according to RFC 8309
+    [RFC8309], can be referred as Service Delivery\n   Model.  In some cases, the
+    control of the network is further expanded\n   into per- domain control.\n\n   This
+    document uses the L3SM model defined in RFC 8299 [RFC8299], and\n   extends it
+    to facilitate communication between the service\n   orchestrator and transport
+    orchestrator (MSDC), and an MDSC and\n   domain controllers.  The resulting model
+    is called the L3VPN Network\n   Model (L3NM).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-aguado-opsawg-l3sm-l3nm-00
-    docid:
-    - id: draft-aguado-opsawg-l3sm-l3nm-00
+    formattedref: draft-aguado-opsawg-l3sm-l3nm-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-aguado-opsawg-l3sm-l3nm-00
+    docidentifier:
+    - content: draft-aguado-opsawg-l3sm-l3nm-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-aguado-opsawg-l3sm-l3nm-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-aguado-opsawg-l3sm-l3nm-02
-    docid:
-    - id: draft-aguado-opsawg-l3sm-l3nm-02
+    formattedref: draft-aguado-opsawg-l3sm-l3nm-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-aguado-opsawg-l3sm-l3nm-02
+    docidentifier:
+    - content: draft-aguado-opsawg-l3sm-l3nm-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-aguado-opsawg-l3sm-l3nm-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-aguado-opsawg-l3sm-l3nm-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

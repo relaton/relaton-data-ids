@@ -1,264 +1,259 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-srv6-egress-protection
+id: draftietfrtgwgsrv6egressprotection
+schema_version: v1.4.1
+formattedref: draft-ietf-rtgwg-srv6-egress-protection
 title:
-- content: SRv6 Path Egress Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-ietf-rtgwg-srv6-egress-protection
+- language: en
+  script: Latn
+  content: SRv6 Path Egress Protection
+docidentifier:
+- content: draft-ietf-rtgwg-srv6-egress-protection
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>TI-LFA specifies fast protections for transit nodes and links of an
-    SR path. However, it does not present any fast protections for the egress node
-    of the SR path. This document describes protocol extensions for fast protecting
-    the egress node and link of a Segment Routing for IPv6 (SRv6) path. The solution
-    uses IGP extensions and a Mirror SID (End.M) behavior to steer traffic to a protector
-    egress upon failure of the primary egress. This document operates within a single
-    link-state IGP area/level and uses IS-IS/OSPFv3 to advertise a Mirror SID and
-    the protected locators for egress node/link protection. While the mechanism can
-    protect traffic whose active segment at the egress is a Service SID (e.g., VPN
-    SID), it is not suitable for large-scale deployments with a high cardinality of
-    VPN/service instances or random multi-homing patterns, because the amount of egress-protection
-    information to be flooded in the IGP increases and may impact convergence and
-    control- plane load.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   TI-LFA specifies fast protections for transit nodes and links of an\n
+    \  SR path.  However, it does not present any fast protections for the\n   egress
+    node of the SR path.  This document describes protocol\n   extensions for fast
+    protecting the egress node and link of a Segment\n   Routing for IPv6 (SRv6) path.
+    \ The solution uses IGP extensions and a\n   Mirror SID (End.M) behavior to steer
+    traffic to a protector egress\n   upon failure of the primary egress.\n\n   This
+    document operates within a single link-state IGP area/level and\n   uses IS-IS/OSPFv3
+    to advertise a Mirror SID and the protected\n   locators for egress node/link
+    protection.  While the mechanism can\n   protect traffic whose active segment
+    at the egress is a Service SID\n   (e.g., VPN SID), it is not suitable for large-scale
+    deployments with\n   a high cardinality of VPN/service instances or random multi-homing\n
+    \  patterns, because the amount of egress-protection information to be\n   flooded
+    in the IGP increases and may impact convergence and control-\n   plane load.\n\n\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-00
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-00
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-00
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-00
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-01
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-01
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-01
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-01
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-02
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-02
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-02
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-02
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-03
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-03
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-03
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-03
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-04
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-04
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-04
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-04
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-05
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-05
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-05
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-05
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-06
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-06
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-06
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-06
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-07
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-07
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-07
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-07
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-08
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-08
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-08
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-08
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-09
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-09
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-09
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-09
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-10
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-10
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-10
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-10
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-11
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-11
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-11
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-11
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-12
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-12
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-12
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-12
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-13
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-13
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-13
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-13
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-14
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-14
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-14
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-14
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-15
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-15
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-15
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-15
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-16
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-16
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-16
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-16
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-16
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-17
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-17
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-17
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-17
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-18
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-18
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-18
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-18
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-18
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-19
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-19
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-19
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-19
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-19
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-19
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-20
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-20
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-20
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-20
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-20
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-20
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-21
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-21
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-21
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-21
-      format: text/plain
 - type: includes
   bibitem:
-    id: draft-ietf-rtgwg-srv6-egress-protection-22
-    docid:
-    - id: draft-ietf-rtgwg-srv6-egress-protection-22
+    formattedref: draft-ietf-rtgwg-srv6-egress-protection-22
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-22
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-22
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-srv6-egress-protection-22
-      format: text/plain

@@ -1,167 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-freeman-plasma-requirements-08
-title:
-- content: Requirements for Message Access Control
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-freeman-plasma-requirements-08
-  type: src
+id: draftfreemanplasmarequirements08
 type: standard
-docid:
-- id: draft-freeman-plasma-requirements-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Requirements for Message Access Control
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-freeman-plasma-requirements-08
+docidentifier:
+- content: draft-freeman-plasma-requirements
+  type: Internet-Draft
+- content: draft-freeman-plasma-requirements-08
   type: Internet-Draft
   primary: true
-- id: I-D.freeman-plasma-requirements
-  type: IETF
-  scope: anchor
 docnumber: I-D.freeman-plasma-requirements
 date:
 - type: published
-  value: '2013-10-21'
+  at: '2013-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Trevor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Trevor
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Freeman
-        language:
-        - en
       completename:
+        language: en
         content: Trevor Freeman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Schaad
-        language:
-        - en
       completename:
+        language: en
         content: Jim Schaad
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Patrick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrick
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Patterson
-        language:
-        - en
       completename:
+        language: en
         content: Patrick Patterson
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '08'
-revdate: '2013-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>There are many situations where organizations want to protect information
-    with robust access control, either for implementation of intellectual property
-    right protections, enforcement of contractual confidentiality agreements or because
-    of legal regulations. The Enhanced Security Services (ESS) for S/MIME defines
-    an access control mechanism for email which is enforced by the recipient's client
-    after decryption of the message. The ESS mechanism therefore is dependent on the
-    correct access policy configuration of every recipient's client. This mechanism
-    also provides full access to the data to all recipients prior to the access control
-    check, which is considered to be inadequate for robust access control due to the
-    difficulty in demonstrating policy compliance. This document lays out the deficiencies
-    of the current ESS security label, and presents requirements for a new model for
-    providing access control to messages where the access check is performed prior
-    to message content decryption. This new model also does not require policy configuration
-    on the client thereby simplifying deployment and compliance verification. The
-    proposed model additionally provides a method where non-X.509 certificate credentials
-    can be used for encryption/decryption of S/MIME messages. The name Plasma was
-    assigned to this effort as part of the IETF process. It is derived from PoLicy
-    enhAnced Secure eMAil.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   There are many situations where organizations want to protect\n   information
+    with robust access control, either for implementation of\n   intellectual property
+    right protections, enforcement of contractual\n   confidentiality agreements or
+    because of legal regulations.  The\n   Enhanced Security Services (ESS) for S/MIME
+    defines an access control\n   mechanism for email which is enforced by the recipient's
+    client after\n   decryption of the message. The ESS mechanism therefore is dependent\n
+    \  on the correct access policy configuration of every recipient's\n   client.
+    This mechanism also provides full access to the data to all\n   recipients prior
+    to the access control check, which is considered to\n   be inadequate for robust
+    access control due to the difficulty in\n   demonstrating policy compliance.\n\n
+    \  This document lays out the deficiencies of the current ESS security\n   label,
+    and presents requirements for a new model for providing access\n   control to
+    messages where the access check is performed prior to\n   message content decryption.
+    This new model also does not require\n   policy configuration on the client thereby
+    simplifying deployment and\n   compliance verification.\n\n   The proposed model
+    additionally provides a method where non-X.509\n   certificate credentials can
+    be used for encryption/decryption of\n   S/MIME messages.\n\n   The name Plasma
+    was assigned to this effort as part of the IETF\n   process. It is derived from
+    PoLicy enhAnced Secure eMAil.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-freeman-plasma-requirements-07
-    docid:
-    - id: draft-freeman-plasma-requirements-07
+    formattedref: draft-freeman-plasma-requirements-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-freeman-plasma-requirements-07
+    docidentifier:
+    - content: draft-freeman-plasma-requirements-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-freeman-plasma-requirements-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-freeman-plasma-requirements-09
-    docid:
-    - id: draft-freeman-plasma-requirements-09
+    formattedref: draft-freeman-plasma-requirements-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-freeman-plasma-requirements-09
+    docidentifier:
+    - content: draft-freeman-plasma-requirements-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-freeman-plasma-requirements-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-freeman-plasma-requirements-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

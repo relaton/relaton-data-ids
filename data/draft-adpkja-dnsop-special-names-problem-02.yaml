@@ -1,193 +1,163 @@
 ---
-schema-version: v1.2.9
-id: draft-adpkja-dnsop-special-names-problem-02
-title:
-- content: Problem Statement for the Reservation of Top-Level Domains in the Special-Use
-    Domain Names Registry
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-adpkja-dnsop-special-names-problem-02
-  type: src
+id: draftadpkjadnsopspecialnamesproblem02
 type: standard
-docid:
-- id: draft-adpkja-dnsop-special-names-problem-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Problem Statement for the Reservation of Top-Level Domains in the Special-Use
+    Domain Names Registry
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-adpkja-dnsop-special-names-problem-02
+docidentifier:
+- content: draft-adpkja-dnsop-special-names-problem
+  type: Internet-Draft
+- content: draft-adpkja-dnsop-special-names-problem-02
   type: Internet-Draft
   primary: true
-- id: I-D.adpkja-dnsop-special-names-problem
-  type: IETF
-  scope: anchor
 docnumber: I-D.adpkja-dnsop-special-names-problem
 date:
 - type: published
-  value: '2016-03-21'
+  at: '2016-03-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Abley
-        language:
-        - en
       completename:
+        language: en
         content: Joe Abley
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Koch
-        language:
-        - en
       completename:
+        language: en
         content: Peter Koch
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alain
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alain
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Durand
-        language:
-        - en
       completename:
+        language: en
         content: Alain Durand
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Warren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: W. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Warren
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: W. A.
       surname:
+        language: en
         content: Kumari
-        language:
-        - en
       completename:
+        language: en
         content: Warren "Ace" Kumari
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2016-03-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The dominant protocol for name resolution on the Internet is the Domain
-    Name System (DNS). However, other protocols exist that are fundamentally different
-    from the DNS, and may or may not share the same namespace. When an end-user triggers
-    resolution of a name on a system which supports multiple, different protocols
-    (or resolution mechanisms) for name resolution, it is desirable that the protocol
-    used is unambiguous, and that requests intended for one protocol are not inadvertently
-    answered using another. RFC 6761 introduced a framework by which, under certain
-    circumstances, a particular domain name could be acknowledged as being special.
-    This framework has been used twice to reserve top- level domains (.local and.onion)
-    that should not be used within the DNS, to avoid the possibility of namespace
-    collisions in parallel use of non-DNS name resolution protocols. Various challenges
-    have become apparent with this application of the guidance provided in RFC 6761.
-    This document aims to document those challenges in the form of a problem statement,
-    to facilitate further discussion of potential solutions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The dominant protocol for name resolution on the Internet is the\n
+    \  Domain Name System (DNS).  However, other protocols exist that are\n   fundamentally
+    different from the DNS, and may or may not share the\n   same namespace.\n\n   When
+    an end-user triggers resolution of a name on a system which\n   supports multiple,
+    different protocols (or resolution mechanisms) for\n   name resolution, it is
+    desirable that the protocol used is\n   unambiguous, and that requests intended
+    for one protocol are not\n   inadvertently answered using another.\n\n   RFC 6761
+    introduced a framework by which, under certain\n   circumstances, a particular
+    domain name could be acknowledged as\n   being special.  This framework has been
+    used twice to reserve top-\n   level domains (.local and .onion) that should not
+    be used within the\n   DNS, to avoid the possibility of namespace collisions in
+    parallel use\n   of non-DNS name resolution protocols.\n\n   Various challenges
+    have become apparent with this application of the\n   guidance provided in RFC
+    6761.  This document aims to document those\n   challenges in the form of a problem
+    statement, to facilitate further\n   discussion of potential solutions.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-adpkja-dnsop-special-names-problem-01
-    docid:
-    - id: draft-adpkja-dnsop-special-names-problem-01
+    formattedref: draft-adpkja-dnsop-special-names-problem-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-adpkja-dnsop-special-names-problem-01
+    docidentifier:
+    - content: draft-adpkja-dnsop-special-names-problem-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-adpkja-dnsop-special-names-problem-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-adpkja-dnsop-special-names-problem-03
-    docid:
-    - id: draft-adpkja-dnsop-special-names-problem-03
+    formattedref: draft-adpkja-dnsop-special-names-problem-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-adpkja-dnsop-special-names-problem-03
+    docidentifier:
+    - content: draft-adpkja-dnsop-special-names-problem-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-adpkja-dnsop-special-names-problem-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-adpkja-dnsop-special-names-problem-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

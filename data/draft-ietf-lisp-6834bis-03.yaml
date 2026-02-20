@@ -1,174 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lisp-6834bis-03
-title:
-- content: Locator/ID Separation Protocol (LISP) Map-Versioning
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-6834bis-03
-  type: src
+id: draftietflisp6834bis03
 type: standard
-docid:
-- id: draft-ietf-lisp-6834bis-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Locator/ID Separation Protocol (LISP) Map-Versioning
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-6834bis-03
+docidentifier:
+- content: draft-ietf-lisp-6834bis
+  type: Internet-Draft
+- content: draft-ietf-lisp-6834bis-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lisp-6834bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lisp-6834bis
 date:
 - type: published
-  value: '2019-02-15'
+  at: '2019-02-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Luigi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luigi
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Iannone
-        language:
-        - en
       completename:
+        language: en
         content: Luigi Iannone
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecom ParisTech
-  role:
+        - language: en
+          content: Telecom ParisTech
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Damien
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Damien
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Saucez
-        language:
-        - en
       completename:
+        language: en
         content: Damien Saucez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA Sophia Antipolis
-  role:
+        - language: en
+          content: INRIA Sophia Antipolis
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Olivier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olivier
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Bonaventure
-        language:
-        - en
       completename:
+        language: en
         content: Olivier Bonaventure
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universite catholique de Louvain
-  role:
-  - type: author
+        - language: en
+          content: Universite catholique de Louvain
 version:
 - draft: '03'
-revdate: '2019-02-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes the LISP (Locator/ID Separation Protocol) Map-Versioning
-    mechanism, which provides in-packet information about Endpoint ID to Routing Locator
-    (EID-to-RLOC) mappings used to encapsulate LISP data packets. The proposed approach
-    is based on associating a version number to EID-to-RLOC mappings and the transport
-    of such a version number in the LISP-specific header of LISP-encapsulated packets.
-    LISP Map-Versioning is particularly useful to inform communicating Ingress Tunnel
-    Routers (ITRs) and Egress Tunnel Routers (ETRs) about modifications of the mappings
-    used to encapsulate packets. The mechanism is optional and transparent to implementations
-    not supporting this feature, since in the LISP- specific header and in the Map
-    Records, bits used for Map-Versioning can be safely ignored by ITRs and ETRs that
-    do not support or do not want to use the mechanism. This document obsoletes RFC
-    6834 "Locator/ID Separation Protocol (LISP) Map-Versioning", which is the initial
-    experimental specifications of the mechanisms updated by this document.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the LISP (Locator/ID Separation Protocol)\n
+    \  Map-Versioning mechanism, which provides in-packet information about\n   Endpoint
+    ID to Routing Locator (EID-to-RLOC) mappings used to\n   encapsulate LISP data
+    packets.  The proposed approach is based on\n   associating a version number to
+    EID-to-RLOC mappings and the\n   transport of such a version number in the LISP-specific
+    header of\n   LISP-encapsulated packets.  LISP Map-Versioning is particularly\n
+    \  useful to inform communicating Ingress Tunnel Routers (ITRs) and\n   Egress
+    Tunnel Routers (ETRs) about modifications of the mappings used\n   to encapsulate
+    packets.  The mechanism is optional and transparent to\n   implementations not
+    supporting this feature, since in the LISP-\n   specific header and in the Map
+    Records, bits used for Map-Versioning\n   can be safely ignored by ITRs and ETRs
+    that do not support or do not\n   want to use the mechanism.\n\n   This document
+    obsoletes RFC 6834 \"Locator/ID Separation Protocol\n   (LISP) Map-Versioning\",
+    which is the initial experimental\n   specifications of the mechanisms updated
+    by this document.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lisp-6834bis-02
-    docid:
-    - id: draft-ietf-lisp-6834bis-02
+    formattedref: draft-ietf-lisp-6834bis-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-6834bis-02
+    docidentifier:
+    - content: draft-ietf-lisp-6834bis-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-6834bis-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lisp-6834bis-04
-    docid:
-    - id: draft-ietf-lisp-6834bis-04
+    formattedref: draft-ietf-lisp-6834bis-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-6834bis-04
+    docidentifier:
+    - content: draft-ietf-lisp-6834bis-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-6834bis-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lisp-6834bis-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

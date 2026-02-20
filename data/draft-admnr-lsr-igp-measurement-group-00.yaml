@@ -1,209 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-admnr-lsr-igp-measurement-group-00
-title:
-- content: Advertising IGP Measurement Group using TLV
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-admnr-lsr-igp-measurement-group-00
-  type: src
+id: draftadmnrlsrigpmeasurementgroup00
 type: standard
-docid:
-- id: draft-admnr-lsr-igp-measurement-group-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Advertising IGP Measurement Group using TLV
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-admnr-lsr-igp-measurement-group-00
+docidentifier:
+- content: draft-admnr-lsr-igp-measurement-group
+  type: Internet-Draft
+- content: draft-admnr-lsr-igp-measurement-group-00
   type: Internet-Draft
   primary: true
-- id: I-D.admnr-lsr-igp-measurement-group
-  type: IETF
-  scope: anchor
 docnumber: I-D.admnr-lsr-igp-measurement-group
 date:
 - type: published
-  value: '2026-02-03'
+  at: '2026-02-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mahesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mahesh
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Jethanandani
-        language:
-        - en
       completename:
+        language: en
         content: Mahesh Jethanandani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc
-  role:
+        - language: en
+          content: Arrcus, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Derek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: D. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Derek
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: D. M.
       surname:
+        language: en
         content: Yeung
-        language:
-        - en
       completename:
+        language: en
         content: Derek M. Yeung
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc
-  role:
+        - language: en
+          content: Arrcus, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Acee
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Acee
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Lindem
-        language:
-        - en
       completename:
+        language: en
         content: Acee Lindem
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc
-  role:
+        - language: en
+          content: Arrcus, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Reshad
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Reshad
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Rahman
-        language:
-        - en
       completename:
+        language: en
         content: Reshad Rahman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Equinix, Inc
-  role:
+        - language: en
+          content: Equinix, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nico
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nico
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Strina
-        language:
-        - en
       completename:
+        language: en
         content: Nico Strina
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Equinix, Inc
-  role:
-  - type: author
+        - language: en
+          content: Equinix, Inc
 version:
 - draft: '00'
-revdate: '2026-02-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines an IS-IS capability sub-TLV for advertising measurement
-    group membership for Active Measurement Protocols (AMPs) such as TWAMP and STAMP.
-    The mechanism allows IGP routers to discover other routers participating in different
-    measurement groups, enabling automatic discovery of measurement endpoints across
-    IGP areas. The solution uses interface addresses (IPv4 or IPv6) to identify measurement
-    group membership, where the same interface address may be used for multiple measurement
-    groups.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines an IS-IS capability sub-TLV for advertising\n
+    \  measurement group membership for Active Measurement Protocols (AMPs)\n   such
+    as TWAMP and STAMP.  The mechanism allows IGP routers to\n   discover other routers
+    participating in different measurement groups,\n   enabling automatic discovery
+    of measurement endpoints across IGP\n   areas.  The solution uses interface addresses
+    (IPv4 or IPv6) to\n   identify measurement group membership, where the same interface\n
+    \  address may be used for multiple measurement groups.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-admnr-lsr-igp-measurement-group-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

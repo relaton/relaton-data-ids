@@ -1,239 +1,209 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-cats-usecases-requirements-10
-title:
-- content: Computing-Aware Traffic Steering (CATS) Problem Statement, Use Cases, and
-    Requirements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-usecases-requirements-10
-  type: src
+id: draftietfcatsusecasesrequirements10
 type: standard
-docid:
-- id: draft-ietf-cats-usecases-requirements-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Computing-Aware Traffic Steering (CATS) Problem Statement, Use Cases, and
+    Requirements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-usecases-requirements-10
+docidentifier:
+- content: draft-ietf-cats-usecases-requirements
+  type: Internet-Draft
+- content: draft-ietf-cats-usecases-requirements-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-cats-usecases-requirements
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-cats-usecases-requirements
 date:
 - type: published
-  value: '2025-11-30'
+  at: '2025-11-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kehan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kehan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Yao
-        language:
-        - en
       completename:
+        language: en
         content: Kehan Yao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: L. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luis
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: L. M.
       surname:
+        language: en
         content: Contreras
-        language:
-        - en
       completename:
+        language: en
         content: Luis M. Contreras
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hang
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Shi
-        language:
-        - en
       completename:
+        language: en
         content: Hang Shi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shuai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shuai
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Shuai Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
+        - language: en
+          content: China Unicom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qing
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: An
-        language:
-        - en
       completename:
+        language: en
         content: Qing An
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Group
-  role:
-  - type: author
+        - language: en
+          content: Alibaba Group
 version:
 - draft: '10'
-revdate: '2025-11-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Distributed computing is a computing pattern that service providers
-    can follow and use to achieve better service response time and optimized energy
-    consumption. In such a distributed computing environment, compute intensive and
-    delay sensitive services can be improved by utilizing computing resources hosted
-    in various computing facilities. Ideally, compute services are balanced across
-    servers and network resources to enable higher throughput and lower response time.
-    To achieve this, the choice of server and network resources should consider metrics
-    that are oriented towards compute capabilities and resources instead of simply
-    dispatching the service requests in a static way or optimizing solely on connectivity
-    metrics. The process of selecting servers or service instance locations, and of
-    directing traffic to them on chosen network resources is called "Computing-Aware
-    Traffic Steering" (CATS). This document provides the problem statement and the
-    typical scenarios for CATS, which shows the necessity of considering more factors
-    when steering traffic to the appropriate computing resource to better meet the
-    customer's expectations.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Distributed computing is a computing pattern that service providers\n
+    \  can follow and use to achieve better service response time and\n   optimized
+    energy consumption.  In such a distributed computing\n   environment, compute
+    intensive and delay sensitive services can be\n   improved by utilizing computing
+    resources hosted in various computing\n   facilities.  Ideally, compute services
+    are balanced across servers\n   and network resources to enable higher throughput
+    and lower response\n   time.  To achieve this, the choice of server and network
+    resources\n   should consider metrics that are oriented towards compute\n   capabilities
+    and resources instead of simply dispatching the service\n   requests in a static
+    way or optimizing solely on connectivity\n   metrics.  The process of selecting
+    servers or service instance\n   locations, and of directing traffic to them on
+    chosen network\n   resources is called \"Computing-Aware Traffic Steering\" (CATS).\n\n
+    \  This document provides the problem statement and the typical\n   scenarios
+    for CATS, which shows the necessity of considering more\n   factors when steering
+    traffic to the appropriate computing resource\n   to better meet the customer's
+    expectations.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-cats-usecases-requirements-09
-    docid:
-    - id: draft-ietf-cats-usecases-requirements-09
+    formattedref: draft-ietf-cats-usecases-requirements-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-usecases-requirements-09
+    docidentifier:
+    - content: draft-ietf-cats-usecases-requirements-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-cats-usecases-requirements-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-cats-usecases-requirements-11
-    docid:
-    - id: draft-ietf-cats-usecases-requirements-11
+    formattedref: draft-ietf-cats-usecases-requirements-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-usecases-requirements-11
+    docidentifier:
+    - content: draft-ietf-cats-usecases-requirements-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-cats-usecases-requirements-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-cats-usecases-requirements-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

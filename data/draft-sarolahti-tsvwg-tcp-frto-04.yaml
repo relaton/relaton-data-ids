@@ -1,122 +1,104 @@
 ---
-schema-version: v1.2.9
-id: draft-sarolahti-tsvwg-tcp-frto-04
-title:
-- content: 'F-RTO: An Algorithm for Detecting Spurious Retransmission Timeouts with
-    TCP and SCTP'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sarolahti-tsvwg-tcp-frto-04
-  type: src
+id: draftsarolahtitsvwgtcpfrto04
 type: standard
-docid:
-- id: draft-sarolahti-tsvwg-tcp-frto-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'F-RTO: An Algorithm for Detecting Spurious Retransmission Timeouts with
+    TCP and SCTP'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sarolahti-tsvwg-tcp-frto-04
+docidentifier:
+- content: draft-sarolahti-tsvwg-tcp-frto
+  type: Internet-Draft
+- content: draft-sarolahti-tsvwg-tcp-frto-04
   type: Internet-Draft
   primary: true
-- id: I-D.sarolahti-tsvwg-tcp-frto
-  type: IETF
-  scope: anchor
 docnumber: I-D.sarolahti-tsvwg-tcp-frto
 date:
 - type: published
-  value: '2003-06-03'
+  at: '2003-06-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pasi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pasi
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Sarolahti
-        language:
-        - en
       completename:
+        language: en
         content: Pasi Sarolahti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia Research Center
-  role:
+        - language: en
+          content: Nokia Research Center
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Markku
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Markku
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Kojo
-        language:
-        - en
       completename:
+        language: en
         content: Markku Kojo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Helsinki
-  role:
-  - type: author
+        - language: en
+          content: University of Helsinki
 version:
 - draft: '04'
-revdate: '2003-06-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Spurious retransmission timeouts (RTOs) cause suboptimal TCP performance,
-    because they often result in unnecessary retransmission of the last window of
-    data. This document describes the 'Forward RTO Recovery' (F-RTO) algorithm for
-    detecting spurious TCP RTOs. F-RTO is a TCP sender only algorithm that does not
-    require any TCP options to operate. After retransmitting the first unacknowledged
-    segment triggered by an RTO, the F-RTO algorithm at a TCP sender monitors the
-    incoming acknowledgements to determine whether the timeout was spurious and to
-    decide whether to send new segments or retransmit unacknowledged segments. The
-    algorithm effectively helps to avoid additional unnecessary retransmissions and
-    thereby improves TCP performance in case of a spurious timeout.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Spurious retransmission timeouts (RTOs) cause suboptimal TCP\nperformance,
+    because they often result in unnecessary retransmission\nof the last window of
+    data. This document describes the 'Forward RTO\nRecovery' (F-RTO) algorithm for
+    detecting spurious TCP RTOs. F-RTO is\na TCP sender only algorithm that does not
+    require any TCP options to\noperate. After retransmitting the first unacknowledged
+    segment\ntriggered by an RTO, the F-RTO algorithm at a TCP sender monitors the\nincoming
+    acknowledgements to determine whether the timeout was\nspurious and to decide
+    whether to send new segments or retransmit\nunacknowledged segments. The algorithm
+    effectively helps to avoid\nadditional unnecessary retransmissions and thereby
+    improves TCP\nperformance in case of a spurious timeout.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sarolahti-tsvwg-tcp-frto-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

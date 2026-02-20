@@ -1,182 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-yao-alto-core-level-load-balancing-00
-title:
-- content: A Load-aware core level load balancing framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yao-alto-core-level-load-balancing-00
-  type: src
+id: draftyaoaltocorelevelloadbalancing00
 type: standard
-docid:
-- id: draft-yao-alto-core-level-load-balancing-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Load-aware core level load balancing framework
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yao-alto-core-level-load-balancing-00
+docidentifier:
+- content: draft-yao-alto-core-level-load-balancing
+  type: Internet-Draft
+- content: draft-yao-alto-core-level-load-balancing-00
   type: Internet-Draft
   primary: true
-- id: I-D.yao-alto-core-level-load-balancing
-  type: IETF
-  scope: anchor
 docnumber: I-D.yao-alto-core-level-load-balancing
 date:
 - type: published
-  value: '2023-03-13'
+  at: '2023-03-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kehan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kehan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Yao
-        language:
-        - en
       completename:
+        language: en
         content: Kehan Yao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhiqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhiqiang
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhiqiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tian
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Pan
-        language:
-        - en
       completename:
+        language: en
         content: Tian Pan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Beijing University of Posts and
                   Telecommunications
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zou
-        language:
-        - en
       completename:
+        language: en
         content: Yan Zou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Beijing University of Posts and
                   Telecommunications
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2023-03-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Most existing literature on load balancing in data center networks(DCN)
-    focuses on balancing traffic between servers (links), but there is relatively
-    little attention given to balancing traffic at the core-level of individual servers.
-    In this draft, we present a load balancing framework for DCN that is aware of
-    core-level load, in order to address this issue. Specifically, our approach transfers
-    real-time load from CPUs to an L4 load balancer, which then selects a core with
-    lower load based on load information to deliver the data packet. Theoretically,
-    our approach can completely avoid this problem, making the system more stable
-    and enabling higher CPU utilization without overprovisioning.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Most existing literature on load balancing in data center\n   networks(DCN)
+    focuses on balancing traffic between servers (links),\n   but there is relatively
+    little attention given to balancing traffic\n   at the core-level of individual
+    servers.  In this draft, we present a\n   load balancing framework for DCN that
+    is aware of core-level load, in\n   order to address this issue.  Specifically,
+    our approach transfers\n   real-time load from CPUs to an L4 load balancer, which
+    then selects a\n   core with lower load based on load information to deliver the
+    data\n   packet.  Theoretically, our approach can completely avoid this\n   problem,
+    making the system more stable and enabling higher CPU\n   utilization without
+    overprovisioning.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yao-alto-core-level-load-balancing-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

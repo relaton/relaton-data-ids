@@ -1,184 +1,159 @@
 ---
-schema-version: v1.2.9
-id: draft-liu-bess-multihome-srv6-service-sid-flag-02
-title:
-- content: SRv6 Service SID Flag Extension for Multi-homed SRv6 BGP Services
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-liu-bess-multihome-srv6-service-sid-flag-02
-  type: src
+id: draftliubessmultihomesrv6servicesidflag02
 type: standard
-docid:
-- id: draft-liu-bess-multihome-srv6-service-sid-flag-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SRv6 Service SID Flag Extension for Multi-homed SRv6 BGP Services
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-liu-bess-multihome-srv6-service-sid-flag-02
+docidentifier:
+- content: draft-liu-bess-multihome-srv6-service-sid-flag
+  type: Internet-Draft
+- content: draft-liu-bess-multihome-srv6-service-sid-flag-02
   type: Internet-Draft
   primary: true
-- id: I-D.liu-bess-multihome-srv6-service-sid-flag
-  type: IETF
-  scope: anchor
 docnumber: I-D.liu-bess-multihome-srv6-service-sid-flag
 date:
 - type: published
-  value: '2023-10-07'
+  at: '2023-10-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yisong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yisong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yisong Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Changwang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Changwang
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Changwang Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: New H3C Technologies
-  role:
+        - language: en
+          content: New H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mengxiao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mengxiao
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Mengxiao Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: New H3C Technologies
-  role:
+        - language: en
+          content: New H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yao
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yao Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE
-  role:
-  - type: author
+        - language: en
+          content: ZTE
 version:
 - draft: '02'
-revdate: '2023-10-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In some multihoming SRv6 L3VPN and EVPN scenarios, there are requirements
-    for the egress PE to advertise multiple SRv6 Service SIDs for the same service,
-    such as egress fast reroute and anycast load balancing. This document defines
-    No-Further-FRR-flag and Anycast-flag for SRv6 Service SIDs carried in BGP messages.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In some multihoming SRv6 L3VPN and EVPN scenarios, there are\n   requirements
+    for the egress PE to advertise multiple SRv6 Service\n   SIDs for the same service,
+    such as egress fast reroute and anycast\n   load balancing. This document defines
+    No-Further-FRR-flag and\n   Anycast-flag for SRv6 Service SIDs carried in BGP
+    messages.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-liu-bess-multihome-srv6-service-sid-flag-01
-    docid:
-    - id: draft-liu-bess-multihome-srv6-service-sid-flag-01
+    formattedref: draft-liu-bess-multihome-srv6-service-sid-flag-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-bess-multihome-srv6-service-sid-flag-01
+    docidentifier:
+    - content: draft-liu-bess-multihome-srv6-service-sid-flag-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-liu-bess-multihome-srv6-service-sid-flag-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-liu-bess-multihome-srv6-service-sid-flag-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

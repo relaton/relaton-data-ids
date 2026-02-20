@@ -1,190 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-aigp-11
-title:
-- content: The Accumulated IGP Metric Attribute for BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-aigp-11
-  type: src
+id: draftietfidraigp11
 type: standard
-docid:
-- id: draft-ietf-idr-aigp-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The Accumulated IGP Metric Attribute for BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-aigp-11
+docidentifier:
+- content: draft-ietf-idr-aigp
+  type: Internet-Draft
+- content: draft-ietf-idr-aigp-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-aigp
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-aigp
 date:
 - type: published
-  value: '2013-11-21'
+  at: '2013-11-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Prodosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prodosh
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Mohapatra
-        language:
-        - en
       completename:
+        language: en
         content: Prodosh Mohapatra
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rex
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Fernando
-        language:
-        - en
       completename:
+        language: en
         content: Rex Fernando
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Uttaro
-        language:
-        - en
       completename:
+        language: en
         content: Jim Uttaro
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '11'
-revdate: '2013-11-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Routing protocols that have been designed to run within a single administrative
-    domain ("IGPs") generally do so by assigning a metric to each link, and then choosing
-    as the installed path between two nodes the path for which the total distance
-    (sum of the metric of each link along the path) is minimized. BGP, designed to
-    provide routing over a large number of independent administrative domains ("autonomous
-    systems"), does not make its path selection decisions through the use of a metric.
-    It is generally recognized that any attempt to do so would incur significant scalability
-    problems, as well as inter-administration coordination problems. However, there
-    are deployments in which a single administration runs several contiguous BGP networks.
-    In such cases, it can be desirable, within that single administrative domain,
-    for BGP to select paths based on a metric, just as an IGP would do. The purpose
-    of this document is to provide a specification for doing so.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Routing protocols that have been designed to run within a single\n
+    \  administrative domain (\"IGPs\") generally do so by assigning a metric\n   to
+    each link, and then choosing as the installed path between two\n   nodes the path
+    for which the total distance (sum of the metric of\n   each link along the path)
+    is minimized.  BGP, designed to provide\n   routing over a large number of independent
+    administrative domains\n   (\"autonomous systems\"), does not make its path selection
+    decisions\n   through the use of a metric.  It is generally recognized that any\n
+    \  attempt to do so would incur significant scalability problems, as\n   well
+    as inter-administration coordination problems.  However, there\n   are deployments
+    in which a single administration runs several\n   contiguous BGP networks.  In
+    such cases, it can be desirable, within\n   that single administrative domain,
+    for BGP to select paths based on a\n   metric, just as an IGP would do.  The purpose
+    of this document is to\n   provide a specification for doing so.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-aigp-10
-    docid:
-    - id: draft-ietf-idr-aigp-10
+    formattedref: draft-ietf-idr-aigp-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-aigp-10
+    docidentifier:
+    - content: draft-ietf-idr-aigp-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-aigp-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-aigp-12
-    docid:
-    - id: draft-ietf-idr-aigp-12
+    formattedref: draft-ietf-idr-aigp-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-aigp-12
+    docidentifier:
+    - content: draft-ietf-idr-aigp-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-aigp-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-aigp-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

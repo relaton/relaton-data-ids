@@ -1,222 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-purkayastha-sfc-service-indirection-02
-title:
-- content: Alternative Handling of Dynamic Chaining and Service Indirection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-purkayastha-sfc-service-indirection-02
-  type: src
+id: draftpurkayasthasfcserviceindirection02
 type: standard
-docid:
-- id: draft-purkayastha-sfc-service-indirection-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Alternative Handling of Dynamic Chaining and Service Indirection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-purkayastha-sfc-service-indirection-02
+docidentifier:
+- content: draft-purkayastha-sfc-service-indirection
+  type: Internet-Draft
+- content: draft-purkayastha-sfc-service-indirection-02
   type: Internet-Draft
   primary: true
-- id: I-D.purkayastha-sfc-service-indirection
-  type: IETF
-  scope: anchor
 docnumber: I-D.purkayastha-sfc-service-indirection
 date:
 - type: published
-  value: '2018-03-01'
+  at: '2018-03-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Debashish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Debashish
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Purkayastha
-        language:
-        - en
       completename:
+        language: en
         content: Debashish Purkayastha
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akbar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akbar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Rahman
-        language:
-        - en
       completename:
+        language: en
         content: Akbar Rahman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dirk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dirk
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Trossen
-        language:
-        - en
       completename:
+        language: en
         content: Dirk Trossen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zoran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zoran
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Despotovic
-        language:
-        - en
       completename:
+        language: en
         content: Zoran Despotovic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ramin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ramin
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Khalili
-        language:
-        - en
       completename:
+        language: en
         content: Ramin Khalili
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '02'
-revdate: '2018-03-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Many stringent requirements are imposed on today's network, such as
-    low latency, high availability and reliability in order to support several use
-    cases such as IoT, Gaming, Content distribution, Robotics etc. Networks need to
-    be flexible and dynamic in terms of allocation of services and resources. Network
-    Operators should be able to reconfigure the composition of a service and steer
-    users towards new service end points as user move or resource availability changes.
-    SFC allows network operators to easily create and reconfigure service function
-    chains dynamically in response to changing network requirements. We discuss a
-    use case where Service Function Chain can adapt or self-organize as demanded by
-    the network condition without requiring SPI re-classification. This can be achieved,
-    for example, by decoupling the service consumer and service endpoint by a new
-    service function proposed in this draft. We describe few requirements for this
-    service function to enable dynamic switching between consumer and end point.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many stringent requirements are imposed on today's network, such as\n
+    \  low latency, high availability and reliability in order to support\n   several
+    use cases such as IoT, Gaming, Content distribution, Robotics\n   etc.  Networks
+    need to be flexible and dynamic in terms of allocation\n   of services and resources.
+    \ Network Operators should be able to\n   reconfigure the composition of a service
+    and steer users towards new\n   service end points as user move or resource availability
+    changes.\n   SFC allows network operators to easily create and reconfigure service\n
+    \  function chains dynamically in response to changing network\n   requirements.
+    \ We discuss a use case where Service Function Chain can\n   adapt or self-organize
+    as demanded by the network condition without\n   requiring SPI re-classification.
+    \ This can be achieved, for example,\n   by decoupling the service consumer and
+    service endpoint by a new\n   service function proposed in this draft.  We describe
+    few\n   requirements for this service function to enable dynamic switching\n   between
+    consumer and end point.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-purkayastha-sfc-service-indirection-01
-    docid:
-    - id: draft-purkayastha-sfc-service-indirection-01
+    formattedref: draft-purkayastha-sfc-service-indirection-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-purkayastha-sfc-service-indirection-01
+    docidentifier:
+    - content: draft-purkayastha-sfc-service-indirection-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-purkayastha-sfc-service-indirection-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-purkayastha-sfc-service-indirection-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

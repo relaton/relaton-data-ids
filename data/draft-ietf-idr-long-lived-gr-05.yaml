@@ -1,202 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-long-lived-gr-05
-title:
-- content: Support for Long-lived BGP Graceful Restart
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-long-lived-gr-05
-  type: src
+id: draftietfidrlonglivedgr05
 type: standard
-docid:
-- id: draft-ietf-idr-long-lived-gr-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Support for Long-lived BGP Graceful Restart
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-long-lived-gr-05
+docidentifier:
+- content: draft-ietf-idr-long-lived-gr
+  type: Internet-Draft
+- content: draft-ietf-idr-long-lived-gr-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-long-lived-gr
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-long-lived-gr
 date:
 - type: published
-  value: '2023-06-29'
+  at: '2023-06-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Uttaro
-        language:
-        - en
       completename:
+        language: en
         content: Jim Uttaro
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent Contributor
-  role:
+        - language: en
+          content: Independent Contributor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Enke
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Enke
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Enke Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Palo Alto Networks
-  role:
+        - language: en
+          content: Palo Alto Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Scudder
-        language:
-        - en
       completename:
+        language: en
         content: John Scudder
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '05'
-revdate: '2023-06-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>In this document, we introduce a new BGP capability termed "Long- lived
-    Graceful Restart Capability" so that stale routes can be retained for a longer
-    time upon session failure than is provided for by BGP Graceful Restart (RFC 4724).
-    A well-known BGP community "LLGR_STALE" is introduced for marking stale routes
-    retained for a longer time. A second well-known BGP community, "NO_LLGR", is introduced
-    to mark routes for which these procedures should not be applied. We also specify
-    that such long-lived stale routes be treated as the least-preferred, and their
-    advertisements be limited to BGP speakers that have advertised the new capability.
-    Use of this extension is not advisable in all cases, and we provide guidelines
-    to help determine if it is. We update RFC 6368 by specifying that the LLGR_STALE
-    community must be propagated into, or out of, the path attributes exchanged between
-    PE and CE.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In this document, we introduce a new BGP capability termed \"Long-\n
+    \  lived Graceful Restart Capability\" so that stale routes can be\n   retained
+    for a longer time upon session failure than is provided for\n   by BGP Graceful
+    Restart (RFC 4724).  A well-known BGP community\n   \"LLGR_STALE\" is introduced
+    for marking stale routes retained for a\n   longer time.  A second well-known
+    BGP community, \"NO_LLGR\", is\n   introduced to mark routes for which these procedures
+    should not be\n   applied.  We also specify that such long-lived stale routes
+    be\n   treated as the least-preferred, and their advertisements be limited\n   to
+    BGP speakers that have advertised the new capability.  Use of this\n   extension
+    is not advisable in all cases, and we provide guidelines to\n   help determine
+    if it is.\n\n   We update RFC 6368 by specifying that the LLGR_STALE community
+    must\n   be propagated into, or out of, the path attributes exchanged between\n
+    \  PE and CE.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-long-lived-gr-04
-    docid:
-    - id: draft-ietf-idr-long-lived-gr-04
+    formattedref: draft-ietf-idr-long-lived-gr-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-long-lived-gr-04
+    docidentifier:
+    - content: draft-ietf-idr-long-lived-gr-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-long-lived-gr-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-long-lived-gr-06
-    docid:
-    - id: draft-ietf-idr-long-lived-gr-06
+    formattedref: draft-ietf-idr-long-lived-gr-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-long-lived-gr-06
+    docidentifier:
+    - content: draft-ietf-idr-long-lived-gr-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-long-lived-gr-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-long-lived-gr-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

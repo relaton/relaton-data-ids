@@ -1,211 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-smm-bess-alt-label-00
-title:
-- content: Signaling Alternative Labels for BGP Prefixes
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-smm-bess-alt-label-00
-  type: src
+id: draftsmmbessaltlabel00
 type: standard
-docid:
-- id: draft-smm-bess-alt-label-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signaling Alternative Labels for BGP Prefixes
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-smm-bess-alt-label-00
+docidentifier:
+- content: draft-smm-bess-alt-label
+  type: Internet-Draft
+- content: draft-smm-bess-alt-label-00
   type: Internet-Draft
   primary: true
-- id: I-D.smm-bess-alt-label
-  type: IETF
-  scope: anchor
 docnumber: I-D.smm-bess-alt-label
 date:
 - type: published
-  value: '2025-10-20'
+  at: '2025-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shyam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shyam
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sethuram
-        language:
-        - en
       completename:
+        language: en
         content: Shyam Sethuram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mankamana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: M. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mankamana
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: M. P.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Mankamana Prasad Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: SATYA
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: M. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: SATYA
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: M. R.
       surname:
+        language: en
         content: Satya
-        language:
-        - en
       completename:
+        language: en
         content: SATYA R MOHANTY
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zscaler
-  role:
+        - language: en
+          content: Zscaler
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Israel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Israel
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Means
-        language:
-        - en
       completename:
+        language: en
         content: Israel Means
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T Labs, Inc.
-  role:
+        - language: en
+          content: AT&T Labs, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Praveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Praveen
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Ramadenu
-        language:
-        - en
       completename:
+        language: en
         content: Praveen Ramadenu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T Labs, Inc.
-  role:
-  - type: author
+        - language: en
+          content: AT&T Labs, Inc.
 version:
 - draft: '00'
-revdate: '2025-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A single MPLS label or a label stack is advertised along with an address
-    prefix as part of the NLRI belonging to labeled address families such as Labeled
-    Unicast (RFC 8277), VPN (RFC 4364), etc. This document specifies a method to advertise
-    one or more additional, alternative labels for a set of address prefixes using
-    the Next Hop Dependent Characteristics (NHC) attribute.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A single MPLS label or a label stack is advertised along with an\n
+    \  address prefix as part of the NLRI belonging to labeled address\n   families
+    such as Labeled Unicast (RFC 8277), VPN (RFC 4364), etc.\n\n   This document specifies
+    a method to advertise one or more additional,\n   alternative labels for a set
+    of address prefixes using the Next Hop\n   Dependent Characteristics (NHC) attribute.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-smm-bess-alt-label-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

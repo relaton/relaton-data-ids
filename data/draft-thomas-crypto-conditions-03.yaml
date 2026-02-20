@@ -1,177 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-thomas-crypto-conditions-03
-title:
-- content: Crypto-Conditions
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-thomas-crypto-conditions-03
-  type: src
+id: draftthomascryptoconditions03
 type: standard
-docid:
-- id: draft-thomas-crypto-conditions-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Crypto-Conditions
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-thomas-crypto-conditions-03
+docidentifier:
+- content: draft-thomas-crypto-conditions
+  type: Internet-Draft
+- content: draft-thomas-crypto-conditions-03
   type: Internet-Draft
   primary: true
-- id: I-D.thomas-crypto-conditions
-  type: IETF
-  scope: anchor
 docnumber: I-D.thomas-crypto-conditions
 date:
 - type: published
-  value: '2017-07-18'
+  at: '2017-07-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stefan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Thomas
-        language:
-        - en
       completename:
+        language: en
         content: Stefan Thomas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ripple
-  role:
+        - language: en
+          content: Ripple
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rome
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rome
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Reginelli
-        language:
-        - en
       completename:
+        language: en
         content: Rome Reginelli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ripple
-  role:
+        - language: en
+          content: Ripple
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Adrian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adrian
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Hope-Bailie
-        language:
-        - en
       completename:
+        language: en
         content: Adrian Hope-Bailie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ripple
-  role:
-  - type: author
+        - language: en
+          content: Ripple
 version:
 - draft: '03'
-revdate: '2017-07-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The crypto-conditions specification defines a set of encoding formats
-    and data structures for *conditions* and *fulfillments*. A condition uniquely
-    identifies a logical "boolean circuit" constructed from one or more logic gates,
-    evaluated by either validating a cryptographic signature or verifying the preimage
-    of a hash digest. A fulfillment is a data structure encoding one or more cryptographic
-    signatures and hash digest preimages that define the structure of the circuit
-    and provide inputs to the logic gates allowing for the result of the circuit to
-    be evaluated. A fulfillment is validated by evaluating that the circuit output
-    is TRUE but also that the provided fulfillment matches the circuit fingerprint,
-    the condition. Since evaluation of some of the logic gates in the circuit (those
-    that are signatures) also take a message as input the evaluation of the entire
-    fulfillment takes an optional input message which is passed to each logic gate
-    as required. As such the algorithm to validate a fulfillment against a condition
-    and a message matches that of other signature schemes and a crypto-condition can
-    serve as a sophisticated and flexible replacement for a simple signature where
-    the condition is used as the public key and the fulfillment as the signature.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The crypto-conditions specification defines a set of encoding formats\n
+    \  and data structures for *conditions* and *fulfillments*.  A condition\n   uniquely
+    identifies a logical \"boolean circuit\" constructed from one\n   or more logic
+    gates, evaluated by either validating a cryptographic\n   signature or verifying
+    the preimage of a hash digest.  A fulfillment\n   is a data structure encoding
+    one or more cryptographic signatures and\n   hash digest preimages that define
+    the structure of the circuit and\n   provide inputs to the logic gates allowing
+    for the result of the\n   circuit to be evaluated.\n\n   A fulfillment is validated
+    by evaluating that the circuit output is\n   TRUE but also that the provided fulfillment
+    matches the circuit\n   fingerprint, the condition.\n\n   Since evaluation of
+    some of the logic gates in the circuit (those\n   that are signatures) also take
+    a message as input the evaluation of\n   the entire fulfillment takes an optional
+    input message which is\n   passed to each logic gate as required.  As such the
+    algorithm to\n   validate a fulfillment against a condition and a message matches
+    that\n   of other signature schemes and a crypto-condition can serve as a\n   sophisticated
+    and flexible replacement for a simple signature where\n   the condition is used
+    as the public key and the fulfillment as the\n   signature.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-thomas-crypto-conditions-02
-    docid:
-    - id: draft-thomas-crypto-conditions-02
+    formattedref: draft-thomas-crypto-conditions-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-thomas-crypto-conditions-02
+    docidentifier:
+    - content: draft-thomas-crypto-conditions-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-thomas-crypto-conditions-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-thomas-crypto-conditions-04
-    docid:
-    - id: draft-thomas-crypto-conditions-04
+    formattedref: draft-thomas-crypto-conditions-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-thomas-crypto-conditions-04
+    docidentifier:
+    - content: draft-thomas-crypto-conditions-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-thomas-crypto-conditions-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-thomas-crypto-conditions-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

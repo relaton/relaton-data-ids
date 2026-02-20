@@ -1,169 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-p2mp-bfd-11
-title:
-- content: Bidirectional Forwarding Detection (BFD) for Multipoint Networks over Point-to-Multi-Point
-    MPLS Label Switched Path (LSP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-p2mp-bfd-11
-  type: src
+id: draftietfmplsp2mpbfd11
 type: standard
-docid:
-- id: draft-ietf-mpls-p2mp-bfd-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Bidirectional Forwarding Detection (BFD) for Multipoint Networks over Point-to-Multi-Point
+    MPLS Label Switched Path (LSP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-p2mp-bfd-11
+docidentifier:
+- content: draft-ietf-mpls-p2mp-bfd
+  type: Internet-Draft
+- content: draft-ietf-mpls-p2mp-bfd-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-p2mp-bfd
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-p2mp-bfd
 date:
 - type: published
-  value: '2025-02-19'
+  at: '2025-02-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Mirsky
-        language:
-        - en
       completename:
+        language: en
         content: Greg Mirsky
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
+        - language: en
+          content: Verizon Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: D. E.
       surname:
+        language: en
         content: Eastlake
-        language:
-        - en
       completename:
+        language: en
         content: Donald E. Eastlake 3rd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent
-  role:
-  - type: author
+        - language: en
+          content: Independent
 version:
 - draft: '11'
-revdate: '2025-02-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes procedures for using Bidirectional Forwarding
-    Detection (BFD) for multipoint networks to detect data plane failures in Multiprotocol
-    Label Switching (MPLS) point-to-multipoint Label Switched Paths (LSPs) and Segment
-    Routing (SR) point-to-multipoint policies with SR over MPLS data plane. Furthermore,
-    this document also updates RFC 8562 and recommends the use of an IPv6 address
-    from the Dummy IPv6 range TBA2/64 (Section 7.1) and discourages the use of an
-    IPv4 loopback address mapped to IPv6. It also describes the applicability of LSP
-    Ping, as in-band, and the control plane, as out-band, solutions to bootstrap a
-    BFD session. It also describes the behavior of the active tail for head notification.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes procedures for using Bidirectional Forwarding\n
+    \  Detection (BFD) for multipoint networks to detect data plane failures\n   in
+    Multiprotocol Label Switching (MPLS) point-to-multipoint Label\n   Switched Paths
+    (LSPs) and Segment Routing (SR) point-to-multipoint\n   policies with SR over
+    MPLS data plane.\n\n   Furthermore, this document also updates RFC 8562 and recommends
+    the\n   use of an IPv6 address from the Dummy IPv6 range TBA2/64\n   (Section
+    7.1) and discourages the use of an IPv4 loopback address\n   mapped to IPv6.\n\n
+    \  It also describes the applicability of LSP Ping, as in-band, and the\n   control
+    plane, as out-band, solutions to bootstrap a BFD session.\n\n   It also describes
+    the behavior of the active tail for head\n   notification.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mpls-p2mp-bfd-10
-    docid:
-    - id: draft-ietf-mpls-p2mp-bfd-10
+    formattedref: draft-ietf-mpls-p2mp-bfd-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-p2mp-bfd-10
+    docidentifier:
+    - content: draft-ietf-mpls-p2mp-bfd-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-p2mp-bfd-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-p2mp-bfd-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

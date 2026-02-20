@@ -1,142 +1,125 @@
 ---
-schema-version: v1.2.9
-id: draft-lencse-bmwg-multiple-ip-addresses-03
-title:
-- content: Recommendations for using Multiple IP Addresses in Benchmarking Tests
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lencse-bmwg-multiple-ip-addresses-03
-  type: src
+id: draftlencsebmwgmultipleipaddresses03
 type: standard
-docid:
-- id: draft-lencse-bmwg-multiple-ip-addresses-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Recommendations for using Multiple IP Addresses in Benchmarking Tests
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lencse-bmwg-multiple-ip-addresses-03
+docidentifier:
+- content: draft-lencse-bmwg-multiple-ip-addresses
+  type: Internet-Draft
+- content: draft-lencse-bmwg-multiple-ip-addresses-03
   type: Internet-Draft
   primary: true
-- id: I-D.lencse-bmwg-multiple-ip-addresses
-  type: IETF
-  scope: anchor
 docnumber: I-D.lencse-bmwg-multiple-ip-addresses
 date:
 - type: published
-  value: '2024-10-15'
+  at: '2024-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Lencse
-        language:
-        - en
       completename:
+        language: en
         content: Gábor Lencse
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Széchenyi István University
-  role:
+        - language: en
+          content: Széchenyi István University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Keiichi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keiichi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Shima
-        language:
-        - en
       completename:
+        language: en
         content: Keiichi Shima
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SoftBank Corp.
-  role:
-  - type: author
+        - language: en
+          content: SoftBank Corp.
 version:
 - draft: '03'
-revdate: '2024-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC 2544 has defined a benchmarking methodology for network interconnect
-    devices. Its test frame format contained fixed IP addresses and fixed port numbers.
-    RFC 4814 introduced pseudorandom port numbers but used a single source and destination
-    IP address pair when testing with a single destination network. This limitation
-    may cause an issue when the device under test uses the Receive-Side Scaling (RSS)
-    mechanism in the packet processing flow. RSS has two implementations: the first
-    only includes the IP addresses, whereas the second also includes the port numbers
-    in the tuple used for hashing. Benchmarking tests that use a single IP address
-    pair and RFC 4814 pseudorandom port numbers are biased against the first type
-    of RSS implementation because traffic is not distributed among the processing
-    elements. This document recommends the usage of pseudorandom IP addresses in a
-    similar manner as RFC 4814 did with the port numbers. If accepted, this document
-    updates all affected RFCs, including RFC 2544, RFC 4814, RFC 5180, RFC 8219.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 2544 has defined a benchmarking methodology for network\n   interconnect
+    devices.  Its test frame format contained fixed IP\n   addresses and fixed port
+    numbers.  RFC 4814 introduced pseudorandom\n   port numbers but used a single
+    source and destination IP address pair\n   when testing with a single destination
+    network.  This limitation may\n   cause an issue when the device under test uses
+    the Receive-Side\n   Scaling (RSS) mechanism in the packet processing flow.  RSS
+    has two\n   implementations: the first only includes the IP addresses, whereas\n
+    \  the second also includes the port numbers in the tuple used for\n   hashing.
+    \ Benchmarking tests that use a single IP address pair and\n   RFC 4814 pseudorandom
+    port numbers are biased against the first type\n   of RSS implementation because
+    traffic is not distributed among the\n   processing elements.  This document recommends
+    the usage of\n   pseudorandom IP addresses in a similar manner as RFC 4814 did
+    with\n   the port numbers.\n\n   If accepted, this document updates all affected
+    RFCs, including RFC\n   2544, RFC 4814, RFC 5180, RFC 8219.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lencse-bmwg-multiple-ip-addresses-02
-    docid:
-    - id: draft-lencse-bmwg-multiple-ip-addresses-02
+    formattedref: draft-lencse-bmwg-multiple-ip-addresses-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lencse-bmwg-multiple-ip-addresses-02
+    docidentifier:
+    - content: draft-lencse-bmwg-multiple-ip-addresses-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lencse-bmwg-multiple-ip-addresses-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-lencse-bmwg-multiple-ip-addresses-04
-    docid:
-    - id: draft-lencse-bmwg-multiple-ip-addresses-04
+    formattedref: draft-lencse-bmwg-multiple-ip-addresses-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lencse-bmwg-multiple-ip-addresses-04
+    docidentifier:
+    - content: draft-lencse-bmwg-multiple-ip-addresses-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lencse-bmwg-multiple-ip-addresses-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lencse-bmwg-multiple-ip-addresses-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

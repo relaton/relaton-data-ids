@@ -1,196 +1,171 @@
 ---
-schema-version: v1.2.9
-id: draft-kuhn-tsvwg-careful-resume-00
-title:
-- content: Careful convergence of congestion control from retained state with QUIC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kuhn-tsvwg-careful-resume-00
-  type: src
+id: draftkuhntsvwgcarefulresume00
 type: standard
-docid:
-- id: draft-kuhn-tsvwg-careful-resume-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Careful convergence of congestion control from retained state with QUIC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kuhn-tsvwg-careful-resume-00
+docidentifier:
+- content: draft-kuhn-tsvwg-careful-resume
+  type: Internet-Draft
+- content: draft-kuhn-tsvwg-careful-resume-00
   type: Internet-Draft
   primary: true
-- id: I-D.kuhn-tsvwg-careful-resume
-  type: IETF
-  scope: anchor
 docnumber: I-D.kuhn-tsvwg-careful-resume
 date:
 - type: published
-  value: '2023-03-03'
+  at: '2023-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nicolas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicolas
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Kuhn
-        language:
-        - en
       completename:
+        language: en
         content: Nicolas Kuhn
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Thales Alenia Space
-  role:
+        - language: en
+          content: Thales Alenia Space
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Emile
-        language:
-        - en
       completename:
+        language: en
         content: Stephan Emile
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gorry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gorry
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fairhurst
-        language:
-        - en
       completename:
+        language: en
         content: Gorry Fairhurst
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Aberdeen
-  role:
+        - language: en
+          content: University of Aberdeen
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Huitema
-        language:
-        - en
       completename:
+        language: en
         content: Christian Huitema
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Private Octopus Inc.
-  role:
-  - type: author
+        - language: en
+          content: Private Octopus Inc.
 version:
 - draft: '00'
-revdate: '2023-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses careful convergence of Congestion Control (CC)
-    in QUIC, providing a cautious method that enables fast startup in a wide range
-    of connections: reconnections using previous transport security credentials (0-RTT
-    context), reconnections between 2 peers (prior knowledge of transport context),
-    application-limited traffic. The method provides QUIC with transport services
-    that resemble those currently available in TCP, such as TCP Control Block (TCB)
-    [RFC9040] caching or updates to support application-limited traffic. The method
-    reuses a set of computed CC parameters that are based on the previously observed
-    path characteristics between the the same pair of transport endpoints, such as
-    the bottleneck bandwidth, available capacity, or the RTT. These parameters are
-    stored, allowing then to be later used to modify the CC behavior of a subsequent
-    connection. The document also discusses assumptions and defines requirements around
-    how a sender utilizes these parameters to provide opportunities for a new connection
-    to more quickly get up to speed (i.e. utilize the available capacity). It discusses
-    how these changes impact the capacity at a shared network bottleneck and the safe
-    response that is needed after any indication that the new rate is inappropriate.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document discusses careful convergence of Congestion Control\n
+    \  (CC) in QUIC, providing a cautious method that enables fast startup\n   in
+    a wide range of connections : reconnections using previous\n   transport security
+    credentials (0-RTT context), reconnections between\n   2 peers (prior knowledge
+    of transport context), application-limited\n   traffic.\n\n   The method provides
+    QUIC with transport services that resemble those\n   currently available in TCP,
+    such as TCP Control Block (TCB) [RFC9040]\n   caching or updates to support application-limited
+    traffic.\n\n   The method reuses a set of computed CC parameters that are based
+    on\n   the previously observed path characteristics between the the same\n   pair
+    of transport endpoints, such as the bottleneck bandwidth,\n   available capacity,
+    or the RTT.  These parameters are stored,\n   allowing then to be later used to
+    modify the CC behavior of a\n   subsequent connection.  The document also discusses
+    assumptions and\n   defines requirements around how a sender utilizes these parameters
+    to\n   provide opportunities for a new connection to more quickly get up to\n
+    \  speed (i.e. utilize the available capacity).  It discusses how these\n   changes
+    impact the capacity at a shared network bottleneck and the\n   safe response that
+    is needed after any indication that the new rate\n   is inappropriate.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-kuhn-tsvwg-careful-resume-01
-    docid:
-    - id: draft-kuhn-tsvwg-careful-resume-01
+    formattedref: draft-kuhn-tsvwg-careful-resume-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kuhn-tsvwg-careful-resume-01
+    docidentifier:
+    - content: draft-kuhn-tsvwg-careful-resume-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kuhn-tsvwg-careful-resume-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kuhn-tsvwg-careful-resume-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

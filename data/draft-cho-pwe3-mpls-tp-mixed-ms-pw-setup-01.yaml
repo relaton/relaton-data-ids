@@ -1,151 +1,130 @@
 ---
-schema-version: v1.2.9
-id: draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
-title:
-- content: Stitching Dynamically and Statically Provisioned Segments To Construct
-    End-To-End Multi-Segment Pseudowires
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
-  type: src
+id: draftchopwe3mplstpmixedmspwsetup01
 type: standard
-docid:
-- id: draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Stitching Dynamically and Statically Provisioned Segments To Construct
+    End-To-End Multi-Segment Pseudowires
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
+docidentifier:
+- content: draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup
+  type: Internet-Draft
+- content: draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
   type: Internet-Draft
   primary: true
-- id: I-D.cho-pwe3-mpls-tp-mixed-ms-pw-setup
-  type: IETF
-  scope: anchor
 docnumber: I-D.cho-pwe3-mpls-tp-mixed-ms-pw-setup
 date:
 - type: published
-  value: '2011-10-28'
+  at: '2011-10-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hyunwoo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hyunwoo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Cho
-        language:
-        - en
       completename:
+        language: en
         content: Hyunwoo Cho
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETRI
-  role:
+        - language: en
+          content: ETRI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Ryoo
-        language:
-        - en
       completename:
+        language: en
         content: Jeong-dong Ryoo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETRI
-  role:
+        - language: en
+          content: ETRI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: King
-        language:
-        - en
       completename:
+        language: en
         content: Daniel King
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Old Dog Consulting
-  role:
-  - type: author
+        - language: en
+          content: Old Dog Consulting
 version:
 - draft: '01'
-revdate: '2011-10-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The MPLS Transport Profile (MPLS-TP) transport paths can be statically
-    provisioned via a Network Management System (NMS) or dynamically provisioned via
-    a control plane. The transport paths provided by MPLS-TP are used as a server
-    layer for pseudowires carrying client signals other than IP or MPLS. It may be
-    necessary to support MPLS-TP pseudowires, to extend across multiple domains. This
-    document outlines the requirements and solution for coordinating MPLS-TP transport
-    paths and a multi-segment PWs that will traverse multiple domains, where some
-    domains are statically provisioned, and other domains that are dynamically provisioned.
-    This document is a product of a joint Internet Engineering Task Force (IETF) /
-    International Telecommunication Union Telecommunication Standardization Sector
-    (ITU-T) effort to include an MPLS Transport Profile within the IETF MPLS and Pseudowire
-    Emulation Edge-to-Edge (PWE3) architectures to support the capabilities and functionalities
-    of a packet transport network as defined by the ITU-T.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The MPLS Transport Profile (MPLS-TP) transport paths can be\n   statically
+    provisioned via a Network Management System (NMS) or\n   dynamically provisioned
+    via a control plane. The transport paths\n   provided by MPLS-TP are used as a
+    server layer for pseudowires\n   carrying client signals other than IP or MPLS.
+    It may be necessary\n   to support MPLS-TP pseudowires, to extend across multiple
+    domains.\n\n   This document outlines the requirements and solution for\n   coordinating
+    MPLS-TP transport paths and a multi-segment PWs that\n   will traverse multiple
+    domains, where some domains are statically\n   provisioned, and other domains
+    that are dynamically provisioned.\n\n   This document is a product of a joint
+    Internet Engineering Task Force\n   (IETF) / International Telecommunication Union
+    Telecommunication\n   Standardization Sector (ITU-T) effort to include an MPLS
+    Transport\n   Profile within the IETF MPLS and Pseudowire Emulation Edge-to-Edge\n
+    \  (PWE3) architectures to support the capabilities and functionalities\n   of
+    a packet transport network as defined by the ITU-T.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cho-pwe3-mpls-tp-mixed-ms-pw-setup-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

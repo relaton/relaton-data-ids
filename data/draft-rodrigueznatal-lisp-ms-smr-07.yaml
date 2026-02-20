@@ -1,229 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-rodrigueznatal-lisp-ms-smr-07
-title:
-- content: MS-originated SMRs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-rodrigueznatal-lisp-ms-smr-07
-  type: src
+id: draftrodrigueznatallispmssmr07
 type: standard
-docid:
-- id: draft-rodrigueznatal-lisp-ms-smr-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MS-originated SMRs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-rodrigueznatal-lisp-ms-smr-07
+docidentifier:
+- content: draft-rodrigueznatal-lisp-ms-smr
+  type: Internet-Draft
+- content: draft-rodrigueznatal-lisp-ms-smr-07
   type: Internet-Draft
   primary: true
-- id: I-D.rodrigueznatal-lisp-ms-smr
-  type: IETF
-  scope: anchor
 docnumber: I-D.rodrigueznatal-lisp-ms-smr
 date:
 - type: published
-  value: '2018-10-01'
+  at: '2018-10-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alberto
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alberto
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Rodriguez-Natal
-        language:
-        - en
       completename:
+        language: en
         content: Alberto Rodriguez-Natal
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Albert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Albert
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Cabellos-Aparicio
-        language:
-        - en
       completename:
+        language: en
         content: Albert Cabellos-Aparicio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Technical University of Catalonia
-  role:
+        - language: en
+          content: Technical University of Catalonia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vina
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vina
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Ermagan
-        language:
-        - en
       completename:
+        language: en
         content: Vina Ermagan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fabio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fabio
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Maino
-        language:
-        - en
       completename:
+        language: en
         content: Fabio Maino
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sharon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sharon
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Barkai
-        language:
-        - en
       completename:
+        language: en
         content: Sharon Barkai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fermi Serverless
-  role:
-  - type: author
+        - language: en
+          content: Fermi Serverless
 version:
 - draft: '07'
-revdate: '2018-10-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document extends [I-D.ietf-lisp-rfc6833bis] to allow Map Servers
-    to send SMR messages. This extension is intended to be used in some SDN deployments
-    that use LISP as a southbound protocol with (P)ITRs that are compliant with [I-D.ietf-lisp-rfc6833bis].
-    In this use-case mapping updates do not come from ETRs, but rather from a centralized
-    controller that pushes the updates directly to the Mapping System. In such deployments,
-    Map Servers will benefit from having a mechanism to inform directly (P)ITRs about
-    updates in the mappings they are serving. Although implementations of this extension
-    exist, this extension is deprecated by [I-D.ietf-lisp-pubsub] and it is being
-    documented for informational purposes. Newer implementations should look into
-    [I-D.ietf-lisp-pubsub] to support PubSub in LISP deployments.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document extends [I-D.ietf-lisp-rfc6833bis] to allow Map Servers\n
+    \  to send SMR messages.\n\n   This extension is intended to be used in some SDN
+    deployments that\n   use LISP as a southbound protocol with (P)ITRs that are compliant\n
+    \  with [I-D.ietf-lisp-rfc6833bis].  In this use-case mapping updates do\n   not
+    come from ETRs, but rather from a centralized controller that\n   pushes the updates
+    directly to the Mapping System.  In such\n   deployments, Map Servers will benefit
+    from having a mechanism to\n   inform directly (P)ITRs about updates in the mappings
+    they are\n   serving.  Although implementations of this extension exist, this\n
+    \  extension is deprecated by [I-D.ietf-lisp-pubsub] and it is being\n   documented
+    for informational purposes.  Newer implementations should\n   look into [I-D.ietf-lisp-pubsub]
+    to support PubSub in LISP\n   deployments.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-rodrigueznatal-lisp-ms-smr-06
-    docid:
-    - id: draft-rodrigueznatal-lisp-ms-smr-06
+    formattedref: draft-rodrigueznatal-lisp-ms-smr-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rodrigueznatal-lisp-ms-smr-06
+    docidentifier:
+    - content: draft-rodrigueznatal-lisp-ms-smr-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rodrigueznatal-lisp-ms-smr-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-rodrigueznatal-lisp-ms-smr-08
-    docid:
-    - id: draft-rodrigueznatal-lisp-ms-smr-08
+    formattedref: draft-rodrigueznatal-lisp-ms-smr-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rodrigueznatal-lisp-ms-smr-08
+    docidentifier:
+    - content: draft-rodrigueznatal-lisp-ms-smr-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rodrigueznatal-lisp-ms-smr-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-rodrigueznatal-lisp-ms-smr-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

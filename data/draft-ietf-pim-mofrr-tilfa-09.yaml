@@ -1,235 +1,206 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pim-mofrr-tilfa-09
-title:
-- content: Multicast-only Fast Reroute Based on Topology Independent Loop-free Alternate
-    Fast Reroute
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-mofrr-tilfa-09
-  type: src
+id: draftietfpimmofrrtilfa09
 type: standard
-docid:
-- id: draft-ietf-pim-mofrr-tilfa-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multicast-only Fast Reroute Based on Topology Independent Loop-free Alternate
+    Fast Reroute
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-mofrr-tilfa-09
+docidentifier:
+- content: draft-ietf-pim-mofrr-tilfa
+  type: Internet-Draft
+- content: draft-ietf-pim-mofrr-tilfa-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pim-mofrr-tilfa
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pim-mofrr-tilfa
 date:
 - type: published
-  value: '2025-01-21'
+  at: '2025-01-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yisong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yisong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yisong Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: McBride
-        language:
-        - en
       completename:
+        language: en
         content: Mike McBride
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Inc.
-  role:
+        - language: en
+          content: Futurewei Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zheng
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zheng Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jingrong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jingrong
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Jingrong Xie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Changwang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Changwang
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Changwang Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: New H3C Technologies
-  role:
-  - type: author
+        - language: en
+          content: New H3C Technologies
 version:
 - draft: '09'
-revdate: '2025-01-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies the use of Topology Independent Loop-Free Alternate
-    (TI-LFA) mechanisms with Multicast Only Fast ReRoute (MoFRR) for Protocol Independent
-    Multicast (PIM). The TI-LFA mechanism is designed for standard link-state Interior
-    Gateway Protocol (IGP) shortest path and Segment Routing (SR) scenarios. TI- LFA
-    provides fast reroute protection for unicast traffic in IP networks by precomputing
-    backup paths that avoid potential failures. By integrating TI-LFA with MoFRR,
-    this document extends the benefits of fast reroute mechanisms to multicast traffic,
-    enabling enhanced resilience and minimized packet loss in multicast networks.
-    The document outlines the necessary protocol extensions and operational considerations
-    to implement TI-LFA in conjunction with MoFRR for PIM, ensuring that multicast
-    traffic is rapidly rerouted in the event of a failure. This document uses the
-    backup path computed by TI-LFA through IGP as a secondary Upstream Multicast Hop
-    (UMH) for PIM. By using the TI-LFA backup path to send PIM secondary join messages
-    hop- by-hop, it achieves the generation of a fast reroute backup path for PIM
-    multicast.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies the use of Topology Independent Loop-Free\n
+    \  Alternate (TI-LFA) mechanisms with Multicast Only Fast ReRoute\n   (MoFRR)
+    for Protocol Independent Multicast (PIM).  The TI-LFA\n   mechanism is designed
+    for standard link-state Interior Gateway\n   Protocol (IGP) shortest path and
+    Segment Routing (SR) scenarios.  TI-\n   LFA provides fast reroute protection
+    for unicast traffic in IP\n   networks by precomputing backup paths that avoid
+    potential failures.\n   By integrating TI-LFA with MoFRR, this document extends
+    the benefits\n   of fast reroute mechanisms to multicast traffic, enabling enhanced\n
+    \  resilience and minimized packet loss in multicast networks.  The\n   document
+    outlines the necessary protocol extensions and operational\n   considerations
+    to implement TI-LFA in conjunction with MoFRR for PIM,\n   ensuring that multicast
+    traffic is rapidly rerouted in the event of a\n   failure.  This document uses
+    the backup path computed by TI-LFA\n   through IGP as a secondary Upstream Multicast
+    Hop (UMH) for PIM.  By\n   using the TI-LFA backup path to send PIM secondary
+    join messages hop-\n   by-hop, it achieves the generation of a fast reroute backup
+    path for\n   PIM multicast.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pim-mofrr-tilfa-08
-    docid:
-    - id: draft-ietf-pim-mofrr-tilfa-08
+    formattedref: draft-ietf-pim-mofrr-tilfa-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-mofrr-tilfa-08
+    docidentifier:
+    - content: draft-ietf-pim-mofrr-tilfa-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-mofrr-tilfa-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pim-mofrr-tilfa-10
-    docid:
-    - id: draft-ietf-pim-mofrr-tilfa-10
+    formattedref: draft-ietf-pim-mofrr-tilfa-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-mofrr-tilfa-10
+    docidentifier:
+    - content: draft-ietf-pim-mofrr-tilfa-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-mofrr-tilfa-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pim-mofrr-tilfa-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

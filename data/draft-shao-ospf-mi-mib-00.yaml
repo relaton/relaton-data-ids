@@ -1,120 +1,102 @@
 ---
-schema-version: v1.2.9
-id: draft-shao-ospf-mi-mib-00
-title:
-- content: OSPF Version 2 Multiple Instance Management Information Base
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-shao-ospf-mi-mib-00
-  type: src
+id: draftshaoospfmimib00
 type: standard
-docid:
-- id: draft-shao-ospf-mi-mib-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPF Version 2 Multiple Instance Management Information Base
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-shao-ospf-mi-mib-00
+docidentifier:
+- content: draft-shao-ospf-mi-mib
+  type: Internet-Draft
+- content: draft-shao-ospf-mi-mib-00
   type: Internet-Draft
   primary: true
-- id: I-D.shao-ospf-mi-mib
-  type: IETF
-  scope: anchor
 docnumber: I-D.shao-ospf-mi-mib
 date:
 - type: published
-  value: '2010-10-14'
+  at: '2010-10-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaofan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaofan
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Shao
-        language:
-        - en
       completename:
+        language: en
         content: Xiaofan Shao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: fangwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: fangwei
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: hu
-        language:
-        - en
       completename:
+        language: en
         content: fangwei hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
-  - type: author
+        - language: en
+          content: ZTE Corporation
 version:
 - draft: '00'
-revdate: '2010-10-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The OSPF MIB defined by the IETF (RFC 1850) was designed to work with
-    only one OSPF process/instance on a given router. It currently doesn't offer a
-    mechanism to access ospf mib obejects of different instances. For example, there
-    is only a single ospfRouterId object, not a table of them. In order to handle
-    multiple instances, RFC 4750 suggests that you use SNMPv3 contexts to provide
-    per-instance views. This document introduces a way for OSPF MIB to support multiple
-    instance, no mater in SNMPv2 or SNMPv3 contexts, by adding the object ospfProcId
-    into every OSPF MIB group. According to the specified ospfProcId, other obejects
-    in this OSPF instance can be accessed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The OSPF MIB defined by the IETF (RFC 1850) was designed to work with\nonly
+    one OSPF process/instance on a given router.\n\nIt currently doesn't offer a mechanism
+    to access ospf mib obejects of\ndifferent instances.  For example, there is only
+    a single\nospfRouterId object, not a table of them.\n\nIn order to handle multiple
+    instances, RFC 4750 suggests that you use\nSNMPv3 contexts to provide per-instance
+    views.  This document\nintroduces a way for OSPF MIB to support multiple instance,
+    no mater\nin SNMPv2 or SNMPv3 contexts, by adding the object ospfProcId into\nevery
+    OSPF MIB group.  According to the specified ospfProcId, other\nobejects in this
+    OSPF instance can be accessed.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-shao-ospf-mi-mib-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

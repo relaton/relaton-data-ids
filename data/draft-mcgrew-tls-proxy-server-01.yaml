@@ -1,166 +1,145 @@
 ---
-schema-version: v1.2.9
-id: draft-mcgrew-tls-proxy-server-01
-title:
-- content: TLS Proxy Server Extension
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mcgrew-tls-proxy-server-01
-  type: src
+id: draftmcgrewtlsproxyserver01
 type: standard
-docid:
-- id: draft-mcgrew-tls-proxy-server-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: TLS Proxy Server Extension
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mcgrew-tls-proxy-server-01
+docidentifier:
+- content: draft-mcgrew-tls-proxy-server
+  type: Internet-Draft
+- content: draft-mcgrew-tls-proxy-server-01
   type: Internet-Draft
   primary: true
-- id: I-D.mcgrew-tls-proxy-server
-  type: IETF
-  scope: anchor
 docnumber: I-D.mcgrew-tls-proxy-server
 date:
 - type: published
-  value: '2012-07-16'
+  at: '2012-07-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: McGrew
-        language:
-        - en
       completename:
+        language: en
         content: David McGrew
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wing
-        language:
-        - en
       completename:
+        language: en
         content: Dan Wing
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Philip
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Philip
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Gladstone
-        language:
-        - en
       completename:
+        language: en
         content: Philip Gladstone
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent
-  role:
-  - type: author
+        - language: en
+          content: Independent
 version:
 - draft: '01'
-revdate: '2012-07-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Transport Layer Security (TLS) is commonly used to protect HTTP and
-    other protocols; it provides encrypted and authenticated conversations between
-    a client and a server. In some scenarios, two TLS sessions are used, so that a
-    third device can participate in the protected communication. In these cases, separate
-    TLS sessions are run between the client and the middle device, on one side, and
-    the middle device and the server on the other side. This provides the needed security,
-    as long as the client, server, and middle device use appropriate and consistent
-    security policies. However, this last part is problematic; how can the middle
-    device know if a client trusts a server? At present, TLS provides no mechanism
-    to coordinate policies, and there is no convenient way to do so. This note defines
-    a TLS extension that allows a TLS server to provide a TLS client with all of information
-    about the other TLS server (or servers) that are participating in the application
-    layer traffic that the client needs to make a well-informed access control decision.
-    This empowers the client to reject TLS sessions that include servers that it does
-    not trust.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Transport Layer Security (TLS) is commonly used to protect HTTP and\n
+    \  other protocols; it provides encrypted and authenticated\n   conversations
+    between a client and a server.  In some scenarios, two\n   TLS sessions are used,
+    so that a third device can participate in the\n   protected communication.  In
+    these cases, separate TLS sessions are\n   run between the client and the middle
+    device, on one side, and the\n   middle device and the server on the other side.
+    \ This provides the\n   needed security, as long as the client, server, and middle
+    device use\n   appropriate and consistent security policies.  However, this last\n
+    \  part is problematic; how can the middle device know if a client\n   trusts
+    a server?  At present, TLS provides no mechanism to coordinate\n   policies, and
+    there is no convenient way to do so.\n\n   This note defines a TLS extension that
+    allows a TLS server to provide\n   a TLS client with all of information about
+    the other TLS server (or\n   servers) that are participating in the application
+    layer traffic that\n   the client needs to make a well-informed access control
+    decision.\n   This empowers the client to reject TLS sessions that include servers\n
+    \  that it does not trust.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mcgrew-tls-proxy-server-00
-    docid:
-    - id: draft-mcgrew-tls-proxy-server-00
+    formattedref: draft-mcgrew-tls-proxy-server-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcgrew-tls-proxy-server-00
+    docidentifier:
+    - content: draft-mcgrew-tls-proxy-server-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mcgrew-tls-proxy-server-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mcgrew-tls-proxy-server-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

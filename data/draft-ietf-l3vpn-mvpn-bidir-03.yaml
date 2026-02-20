@@ -1,187 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-l3vpn-mvpn-bidir-03
-title:
-- content: 'MVPN: Using Bidirectional P-Tunnels'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-l3vpn-mvpn-bidir-03
-  type: src
+id: draftietfl3vpnmvpnbidir03
 type: standard
-docid:
-- id: draft-ietf-l3vpn-mvpn-bidir-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'MVPN: Using Bidirectional P-Tunnels'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-l3vpn-mvpn-bidir-03
+docidentifier:
+- content: draft-ietf-l3vpn-mvpn-bidir
+  type: Internet-Draft
+- content: draft-ietf-l3vpn-mvpn-bidir-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-l3vpn-mvpn-bidir
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-l3vpn-mvpn-bidir
 date:
 - type: published
-  value: '2012-07-05'
+  at: '2012-07-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yiqun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yiqun
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cai
-        language:
-        - en
       completename:
+        language: en
         content: Yiqun Cai
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arjen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arjen
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Boers
-        language:
-        - en
       completename:
+        language: en
         content: Arjen Boers
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2012-07-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The documents specifying multicast support for BGP/MPLS IP VPNs allow
-    customer multicast data to be transported through a service provider's network
-    through a set multicast tunnels. Such tunnels are advertised by BGP in a BGP attribute
-    known as the "Provider Multicast Service Interface (PMSI) Tunnel Attribute". The
-    base specifications allow the PMSI Tunnel Attribute to advertise bidirectional
-    multicast distribution trees as "PMSI Tunnels"; however, those documents do not
-    provide all the necessary details for using those tunnels. These details are provided
-    in this document. This document also specifies the procedures for assigning customer
-    multicast flows to specific bidirectional PMSI tunnels.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The documents specifying multicast support for BGP/MPLS IP VPNs allow\n
+    \  customer multicast data to be transported through a service\n   provider's
+    network through a set multicast tunnels.  Such tunnels are\n   advertised by BGP
+    in a BGP attribute known as the \"Provider Multicast\n   Service Interface (PMSI)
+    Tunnel Attribute\".  The base specifications\n   allow the PMSI Tunnel Attribute
+    to advertise bidirectional multicast\n   distribution trees as \"PMSI Tunnels\";
+    however, those documents do not\n   provide all the necessary details for using
+    those tunnels.  These\n   details are provided in this document.  This document
+    also specifies\n   the procedures for assigning customer multicast flows to specific\n
+    \  bidirectional PMSI tunnels.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-l3vpn-mvpn-bidir-02
-    docid:
-    - id: draft-ietf-l3vpn-mvpn-bidir-02
+    formattedref: draft-ietf-l3vpn-mvpn-bidir-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-l3vpn-mvpn-bidir-02
+    docidentifier:
+    - content: draft-ietf-l3vpn-mvpn-bidir-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-l3vpn-mvpn-bidir-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-l3vpn-mvpn-bidir-04
-    docid:
-    - id: draft-ietf-l3vpn-mvpn-bidir-04
+    formattedref: draft-ietf-l3vpn-mvpn-bidir-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-l3vpn-mvpn-bidir-04
+    docidentifier:
+    - content: draft-ietf-l3vpn-mvpn-bidir-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-l3vpn-mvpn-bidir-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-l3vpn-mvpn-bidir-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

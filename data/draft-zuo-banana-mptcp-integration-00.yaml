@@ -1,208 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-zuo-banana-mptcp-integration-00
-title:
-- content: Integration of Bonding Tunnels and MPTCP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zuo-banana-mptcp-integration-00
-  type: src
+id: draftzuobananamptcpintegration00
 type: standard
-docid:
-- id: draft-zuo-banana-mptcp-integration-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Integration of Bonding Tunnels and MPTCP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zuo-banana-mptcp-integration-00
+docidentifier:
+- content: draft-zuo-banana-mptcp-integration
+  type: Internet-Draft
+- content: draft-zuo-banana-mptcp-integration-00
   type: Internet-Draft
   primary: true
-- id: I-D.zuo-banana-mptcp-integration
-  type: IETF
-  scope: anchor
 docnumber: I-D.zuo-banana-mptcp-integration
 date:
 - type: published
-  value: '2017-06-08'
+  at: '2017-06-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nicolai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicolai
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Leymann
-        language:
-        - en
       completename:
+        language: en
         content: Nicolai Leymann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom AG
-  role:
+        - language: en
+          content: Deutsche Telekom AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cornelius
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cornelius
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Heidemann
-        language:
-        - en
       completename:
+        language: en
         content: Cornelius Heidemann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom AG
-  role:
+        - language: en
+          content: Deutsche Telekom AG
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liang
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Liang Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jing
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Zuo
-        language:
-        - en
       completename:
+        language: en
         content: Jing Zuo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lianshu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lianshu
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Zheng
-        language:
-        - en
       completename:
+        language: en
         content: Lianshu Zheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '00'
-revdate: '2017-06-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BANdwidth Aggregation for interNet Access (BANANA) based on tunnel
-    bonding protocols and Multipath TCP (MPTCP) are two different technology suites
-    that offer subscribers with higher bandwidth and reliability. MPTCP excels at
-    conducting TCP traffic since its flow/congestion control scheme has been well
-    developed while tunnel bonding protocols support not only TCP traffic but also
-    UDP traffic. The integration of the two kinds of technologies can be considered
-    to make use of advantages of both. Moreover, extensions made to the tunnel bonding
-    protocols can simplify the MPTCP stack and keep it intact. This document specifies
-    the extensions for tunnel bonding protocols to realize integrative deployment
-    of tunnel bonding solutions and MPTCP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   BANdwidth Aggregation for interNet Access (BANANA) based on tunnel\n
+    \  bonding protocols and Multipath TCP (MPTCP) are two different\n   technology
+    suites that offer subscribers with higher bandwidth and\n   reliability. MPTCP
+    excels at conducting TCP traffic since its\n   flow/congestion control scheme
+    has been well developed while tunnel\n   bonding protocols support not only TCP
+    traffic but also UDP traffic.\n   The integration of the two kinds of technologies
+    can be considered to\n   make use of advantages of both. Moreover, extensions
+    made to the\n   tunnel bonding protocols can simplify the MPTCP stack and keep
+    it\n   intact. This document specifies the extensions for tunnel bonding\n   protocols
+    to realize integrative deployment of tunnel bonding\n   solutions and MPTCP.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zuo-banana-mptcp-integration-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

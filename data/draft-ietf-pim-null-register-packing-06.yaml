@@ -1,207 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pim-null-register-packing-06
-title:
-- content: PIM Null-Register packing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-null-register-packing-06
-  type: src
+id: draftietfpimnullregisterpacking06
 type: standard
-docid:
-- id: draft-ietf-pim-null-register-packing-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PIM Null-Register packing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-null-register-packing-06
+docidentifier:
+- content: draft-ietf-pim-null-register-packing
+  type: Internet-Draft
+- content: draft-ietf-pim-null-register-packing-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pim-null-register-packing
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pim-null-register-packing
 date:
 - type: published
-  value: '2020-10-31'
+  at: '2020-10-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Vikas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: V. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vikas
+      - language: en
+        script: Latn
+        initial: V
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: V. R.
       surname:
+        language: en
         content: Kamath
-        language:
-        - en
       completename:
+        language: en
         content: Vikas Ramesh Kamath
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: VMware
-  role:
+        - language: en
+          content: VMware
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ramakrishnan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: R. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ramakrishnan
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: R. C.
       surname:
+        language: en
         content: Sundaram
-        language:
-        - en
       completename:
+        language: en
         content: Ramakrishnan Cokkanathapuram Sundaram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Raunak
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Raunak
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Banthia
-        language:
-        - en
       completename:
+        language: en
         content: Raunak Banthia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apstra
-  role:
+        - language: en
+          content: Apstra
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ananya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ananya
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gopal
-        language:
-        - en
       completename:
+        language: en
         content: Ananya Gopal
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems, Inc.
 version:
 - draft: '06'
-revdate: '2020-10-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In PIM-SM networks PIM Register messages are sent by the Designated
-    Router (DR) to the Rendezvous Point (RP) to signal the presence of Multicast sources
-    in the network. There are periodic PIM Null- Registers sent by a DR to the RP
-    to keep the state alive at the RP as long as the source is active. The PIM Null-Register
-    message carries information about a single Multicast source and group. This document
-    defines a standard to send information about multiple multicast sources and multicast
-    groups in a single PIM Null-Register message, in a packed format. This document
-    also discusses the interoperability between PIM routers that support the new packed
-    message format and PIM routers that do not support the new format.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In PIM-SM networks PIM Register messages are sent by the Designated\n
+    \  Router (DR) to the Rendezvous Point (RP) to signal the presence of\n   Multicast
+    sources in the network.  There are periodic PIM Null-\n   Registers sent by a
+    DR to the RP to keep the state alive at the RP as\n   long as the source is active.
+    \ The PIM Null-Register message carries\n   information about a single Multicast
+    source and group.\n\n   This document defines a standard to send information about
+    multiple\n   multicast sources and multicast groups in a single PIM Null-Register\n
+    \  message, in a packed format.  This document also discusses the\n   interoperability
+    between PIM routers that support the new packed\n   message format and PIM routers
+    that do not support the new format.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pim-null-register-packing-05
-    docid:
-    - id: draft-ietf-pim-null-register-packing-05
+    formattedref: draft-ietf-pim-null-register-packing-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-null-register-packing-05
+    docidentifier:
+    - content: draft-ietf-pim-null-register-packing-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-null-register-packing-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pim-null-register-packing-07
-    docid:
-    - id: draft-ietf-pim-null-register-packing-07
+    formattedref: draft-ietf-pim-null-register-packing-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-null-register-packing-07
+    docidentifier:
+    - content: draft-ietf-pim-null-register-packing-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-null-register-packing-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pim-null-register-packing-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

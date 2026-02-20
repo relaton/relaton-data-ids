@@ -1,139 +1,122 @@
 ---
-schema-version: v1.2.9
-id: draft-dugeon-pce-stateful-interdomain-00
-title:
-- content: PCEP Extension for Stateful Inter-Domain Tunnels
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dugeon-pce-stateful-interdomain-00
-  type: src
+id: draftdugeonpcestatefulinterdomain00
 type: standard
-docid:
-- id: draft-dugeon-pce-stateful-interdomain-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PCEP Extension for Stateful Inter-Domain Tunnels
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dugeon-pce-stateful-interdomain-00
+docidentifier:
+- content: draft-dugeon-pce-stateful-interdomain
+  type: Internet-Draft
+- content: draft-dugeon-pce-stateful-interdomain-00
   type: Internet-Draft
   primary: true
-- id: I-D.dugeon-pce-stateful-interdomain
-  type: IETF
-  scope: anchor
 docnumber: I-D.dugeon-pce-stateful-interdomain
 date:
 - type: published
-  value: '2017-10-27'
+  at: '2017-10-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Olivier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olivier
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Dugeon
-        language:
-        - en
       completename:
+        language: en
         content: Olivier Dugeon
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Julien
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Julien
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Meuric
-        language:
-        - en
       completename:
+        language: en
         content: Julien Meuric
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
-  - type: author
+        - language: en
+          content: Orange
 version:
 - draft: '00'
-revdate: '2017-10-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Path Computation Element (PCE) working group (WG) has produced
-    a set of RFCs to standardize the behavior of the Path Computation Element as a
-    tool to help MPLS-TE, GMPLS LSP tunnels and Segment Routing paths placement. This
-    also include the ability to compute inter-domain LSPs or Segment Routing path
-    following a distributed or hierarchical approach. In complement to the original
-    stateless mode, a stateful mode has been added. In particular, the new PCInitiate
-    message allows a PCE to directly ask a PCC to setup an MPLS-TE, GMPLS LSP tunnel
-    or a Segment Routing path. However, once computed, the inter-domain LSPs or Segment
-    Routing path are hard to setup in the underlying network. Especially, in operational
-    network, RSVP-TE signaling is not enable between AS border routers. But, such
-    RSVP-TE signaling is mandatory to setup contiguous LSP tunnels or to stitch or
-    nest independent LSP tunnels to form the end-to-end inter-domain paths. This document
-    proposes to combine a Backward Recursive or Hierarchical method with PCInitiate
-    message to setup independent paths per domain, and combine these different paths
-    together in order to operated them as end-to-end inter-domain paths without the
-    need of signaling session between AS border routers. A new Stitching Label is
-    defined and new LSP-TYPE code points are considered for that purpose.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Path Computation Element (PCE) working group (WG) has produced
+    a\n   set of RFCs to standardize the behavior of the Path Computation\n   Element
+    as a tool to help MPLS-TE, GMPLS LSP tunnels and Segment\n   Routing paths placement.
+    \ This also include the ability to compute\n   inter-domain LSPs or Segment Routing
+    path following a distributed or\n   hierarchical approach.  In complement to the
+    original stateless mode,\n   a stateful mode has been added.  In particular, the
+    new PCInitiate\n   message allows a PCE to directly ask a PCC to setup an MPLS-TE,
+    GMPLS\n   LSP tunnel or a Segment Routing path.  However, once computed, the\n
+    \  inter-domain LSPs or Segment Routing path are hard to setup in the\n   underlying
+    network.  Especially, in operational network, RSVP-TE\n   signaling is not enable
+    between AS border routers.  But, such RSVP-TE\n   signaling is mandatory to setup
+    contiguous LSP tunnels or to stitch\n   or nest independent LSP tunnels to form
+    the end-to-end inter-domain\n   paths.  This document proposes to combine a Backward
+    Recursive or\n   Hierarchical method with PCInitiate message to setup independent\n
+    \  paths per domain, and combine these different paths together in order\n   to
+    operated them as end-to-end inter-domain paths without the need of\n   signaling
+    session between AS border routers.  A new Stitching Label\n   is defined and new
+    LSP-TYPE code points are considered for that\n   purpose.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-dugeon-pce-stateful-interdomain-01
-    docid:
-    - id: draft-dugeon-pce-stateful-interdomain-01
+    formattedref: draft-dugeon-pce-stateful-interdomain-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dugeon-pce-stateful-interdomain-01
+    docidentifier:
+    - content: draft-dugeon-pce-stateful-interdomain-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dugeon-pce-stateful-interdomain-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dugeon-pce-stateful-interdomain-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

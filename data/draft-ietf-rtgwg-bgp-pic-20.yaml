@@ -1,174 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-bgp-pic-20
-title:
-- content: BGP Prefix Independent Convergence
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-20
-  type: src
+id: draftietfrtgwgbgppic20
 type: standard
-docid:
-- id: draft-ietf-rtgwg-bgp-pic-20
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP Prefix Independent Convergence
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-20
+docidentifier:
+- content: draft-ietf-rtgwg-bgp-pic
+  type: Internet-Draft
+- content: draft-ietf-rtgwg-bgp-pic-20
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-bgp-pic
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rtgwg-bgp-pic
 date:
 - type: published
-  value: '2023-10-01'
+  at: '2023-10-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ahmed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ahmed
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bashandy
-        language:
-        - en
       completename:
+        language: en
         content: Ahmed Bashandy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clarence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clarence
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Filsfils
-        language:
-        - en
       completename:
+        language: en
         content: Clarence Filsfils
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Prodosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prodosh
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Mohapatra
-        language:
-        - en
       completename:
+        language: en
         content: Prodosh Mohapatra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sproute Networks
-  role:
-  - type: author
+        - language: en
+          content: Sproute Networks
 version:
 - draft: '20'
-revdate: '2023-10-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In a network comprising thousands of BGP peers exchanging millions
-    of routes, many routes are reachable via more than one next-hop. Given the large
-    scaling targets, it is desirable to restore traffic after failure in a time period
-    that does not depend on the number of BGP prefixes. This document describes an
-    architecture by which traffic can be re- routed to equal cost multi-path (ECMP)
-    or pre-calculated backup paths in a timeframe that does not depend on the number
-    of BGP prefixes. The objective is achieved through organizing the forwarding data
-    structures in a hierarchical manner and sharing forwarding elements among the
-    maximum possible number of routes. The described technique yields prefix independent
-    convergence while ensuring incremental deployment, complete automation, and zero
-    management and provisioning effort. It is noteworthy to mention that the benefits
-    of BGP Prefix Independent Convergence (BGP-PIC) are hinged on the existence of
-    more than one path whether as ECMP or primary-backup.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "In a network comprising thousands of BGP peers exchanging millions of\nroutes,
+    many routes are reachable via more than one next-hop. Given\nthe large scaling
+    targets, it is desirable to restore traffic after\nfailure in a time period that
+    does not depend on the number of BGP\nprefixes.\n\nThis document describes an
+    architecture by which traffic can be re-\nrouted to equal cost multi-path (ECMP)
+    or pre-calculated backup paths\nin a timeframe that does not depend on the number
+    of BGP prefixes.\nThe objective is achieved through organizing the forwarding
+    data\nstructures in a hierarchical manner and sharing forwarding elements\namong
+    the maximum possible number of routes. The described technique\nyields prefix
+    independent convergence while ensuring incremental\ndeployment, complete automation,
+    and zero management and provisioning\neffort. It is noteworthy to mention that
+    the benefits of BGP Prefix\nIndependent Convergence (BGP-PIC) are hinged on the
+    existence of more\nthan one path whether as ECMP or primary-backup.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-bgp-pic-19
-    docid:
-    - id: draft-ietf-rtgwg-bgp-pic-19
+    formattedref: draft-ietf-rtgwg-bgp-pic-19
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-19
+    docidentifier:
+    - content: draft-ietf-rtgwg-bgp-pic-19
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-bgp-pic-19
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rtgwg-bgp-pic-21
-    docid:
-    - id: draft-ietf-rtgwg-bgp-pic-21
+    formattedref: draft-ietf-rtgwg-bgp-pic-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-21
+    docidentifier:
+    - content: draft-ietf-rtgwg-bgp-pic-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-bgp-pic-21
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rtgwg-bgp-pic-20
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

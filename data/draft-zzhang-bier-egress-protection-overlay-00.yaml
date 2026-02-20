@@ -1,221 +1,189 @@
 ---
-schema-version: v1.2.9
-id: draft-zzhang-bier-egress-protection-overlay-00
-title:
-- content: BIER Flow Overlay with Anycast Egress Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zzhang-bier-egress-protection-overlay-00
-  type: src
+id: draftzzhangbieregressprotectionoverlay00
 type: standard
-docid:
-- id: draft-zzhang-bier-egress-protection-overlay-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BIER Flow Overlay with Anycast Egress Protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zzhang-bier-egress-protection-overlay-00
+docidentifier:
+- content: draft-zzhang-bier-egress-protection-overlay
+  type: Internet-Draft
+- content: draft-zzhang-bier-egress-protection-overlay-00
   type: Internet-Draft
   primary: true
-- id: I-D.zzhang-bier-egress-protection-overlay
-  type: IETF
-  scope: anchor
 docnumber: I-D.zzhang-bier-egress-protection-overlay
 date:
 - type: published
-  value: '2023-03-11'
+  at: '2023-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhaohui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: Z. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhaohui
+      - language: en
+        script: Latn
+        initial: Z
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: Z. J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zhaohui (Jeffrey) Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus
-  role:
+        - language: en
+          content: Arrcus
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zheng
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zheng Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE
-  role:
+        - language: en
+          content: ZTE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mankamana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: M. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mankamana
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: M. P.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Mankamana Prasad Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Huaimo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huaimo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huaimo Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
-  - type: author
+        - language: en
+          content: Futurewei
 version:
 - draft: '00'
-revdate: '2023-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document discusses considerations and specifies procedures for
-    multicast flow overlay when BIER Anycast is used for egress protection in the
-    context of MVPN and EVPN. Future revisions will cover other flow overlay protocols
-    like PIM/MLD/mLDP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document discusses considerations and specifies procedures for\n
+    \  multicast flow overlay when BIER Anycast is used for egress\n   protection
+    in the context of MVPN and EVPN.  Future revisions will\n   cover other flow overlay
+    protocols like PIM/MLD/mLDP.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-zzhang-bier-egress-protection-overlay-01
-    docid:
-    - id: draft-zzhang-bier-egress-protection-overlay-01
+    formattedref: draft-zzhang-bier-egress-protection-overlay-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zzhang-bier-egress-protection-overlay-01
+    docidentifier:
+    - content: draft-zzhang-bier-egress-protection-overlay-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zzhang-bier-egress-protection-overlay-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zzhang-bier-egress-protection-overlay-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,215 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-keoh-dice-multicast-security-07
-title:
-- content: DTLS-based Multicast Security in Constrained Environments
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-keoh-dice-multicast-security-07
-  type: src
+id: draftkeohdicemulticastsecurity07
 type: standard
-docid:
-- id: draft-keoh-dice-multicast-security-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DTLS-based Multicast Security in Constrained Environments
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-keoh-dice-multicast-security-07
+docidentifier:
+- content: draft-keoh-dice-multicast-security
+  type: Internet-Draft
+- content: draft-keoh-dice-multicast-security-07
   type: Internet-Draft
   primary: true
-- id: I-D.keoh-dice-multicast-security
-  type: IETF
-  scope: anchor
 docnumber: I-D.keoh-dice-multicast-security
 date:
 - type: published
-  value: '2014-05-09'
+  at: '2014-05-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sye
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: S. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sye
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: S. L.
       surname:
+        language: en
         content: Keoh
-        language:
-        - en
       completename:
+        language: en
         content: Sye Loong Keoh
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Kumar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Garcia-Morchon
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Garcia-Morchon
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Esko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Esko
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Dijk
-        language:
-        - en
       completename:
+        language: en
         content: Esko Dijk
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akbar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akbar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Rahman
-        language:
-        - en
       completename:
+        language: en
         content: Akbar Rahman
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '07'
-revdate: '2014-05-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The CoAP standard is fast emerging as a key protocol in the area of
-    resource-constrained devices. Such IP-based systems are foreseen to be used for
-    building and lighting control systems where devices interconnect with each other,
-    forming, for example, low-power and lossy networks (LLNs). Both multicast and
-    its security are key needs in these networks. This draft presents a method for
-    securing IPv6 multicast communication based on the DTLS which is already supported
-    for unicast communication for CoAP devices. This draft deals with the adaptation
-    of the DTLS record layer to protect multicast group communication, assuming that
-    all group members already have the group security association parameters in their
-    possession. The adapted DTLS record layer provides message confidentiality, integrity
-    and replay protection to group messages using the group keying material before
-    sending the message via IPv6 multicast to the group.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The CoAP standard is fast emerging as a key protocol in the area of\n
+    \  resource-constrained devices.  Such IP-based systems are foreseen to\n   be
+    used for building and lighting control systems where devices\n   interconnect
+    with each other, forming, for example, low-power and\n   lossy networks (LLNs).
+    \ Both multicast and its security are key needs\n   in these networks.  This draft
+    presents a method for securing IPv6\n   multicast communication based on the DTLS
+    which is already supported\n   for unicast communication for CoAP devices.  This
+    draft deals with\n   the adaptation of the DTLS record layer to protect multicast
+    group\n   communication, assuming that all group members already have the group\n
+    \  security association parameters in their possession.  The adapted\n   DTLS
+    record layer provides message confidentiality, integrity and\n   replay protection
+    to group messages using the group keying material\n   before sending the message
+    via IPv6 multicast to the group.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-keoh-dice-multicast-security-06
-    docid:
-    - id: draft-keoh-dice-multicast-security-06
+    formattedref: draft-keoh-dice-multicast-security-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-keoh-dice-multicast-security-06
+    docidentifier:
+    - content: draft-keoh-dice-multicast-security-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-keoh-dice-multicast-security-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-keoh-dice-multicast-security-08
-    docid:
-    - id: draft-keoh-dice-multicast-security-08
+    formattedref: draft-keoh-dice-multicast-security-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-keoh-dice-multicast-security-08
+    docidentifier:
+    - content: draft-keoh-dice-multicast-security-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-keoh-dice-multicast-security-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-keoh-dice-multicast-security-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

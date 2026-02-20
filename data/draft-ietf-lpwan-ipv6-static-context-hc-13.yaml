@@ -1,176 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lpwan-ipv6-static-context-hc-13
-title:
-- content: LPWAN Static Context Header Compression (SCHC) and fragmentation for IPv6
-    and UDP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-13
-  type: src
+id: draftietflpwanipv6staticcontexthc13
 type: standard
-docid:
-- id: draft-ietf-lpwan-ipv6-static-context-hc-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: LPWAN Static Context Header Compression (SCHC) and fragmentation for IPv6
+    and UDP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-13
+docidentifier:
+- content: draft-ietf-lpwan-ipv6-static-context-hc
+  type: Internet-Draft
+- content: draft-ietf-lpwan-ipv6-static-context-hc-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lpwan-ipv6-static-context-hc
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lpwan-ipv6-static-context-hc
 date:
 - type: published
-  value: '2018-05-22'
+  at: '2018-05-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ana
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Minaburo
-        language:
-        - en
       completename:
+        language: en
         content: Ana Minaburo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Acklio
-  role:
+        - language: en
+          content: Acklio
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Laurent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Laurent
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Toutain
-        language:
-        - en
       completename:
+        language: en
         content: Laurent Toutain
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IMT-Atlantique
-  role:
+        - language: en
+          content: IMT-Atlantique
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carles
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carles
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Gomez
-        language:
-        - en
       completename:
+        language: en
         content: Carles Gomez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitat Politècnica de Catalunya
-  role:
-  - type: author
+        - language: en
+          content: Universitat Politècnica de Catalunya
 version:
 - draft: '13'
-revdate: '2018-05-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines the Static Context Header Compression (SCHC)
-    framework, which provides header compression and fragmentation functionality.
-    SCHC has been tailored for Low Power Wide Area Networks (LPWAN). SCHC compression
-    is based on a common static context stored in both LPWAN devices and in the network
-    sides. This document defines SCHC header compression mechanism and its deployment
-    for IPv6/UDP headers. This document also specifies a fragmentation and reassembly
-    mechanism that is used to support the IPv6 MTU requirement over the LPWAN technologies.
-    The Fragmentation is needed for IPv6 datagrams that, after SCHC compression or
-    when it has not been possible to apply such compression, still exceed the layer
-    two maximum payload size. The SCHC header compression mechanism is independent
-    of the specific LPWAN technology over which it will be used. Note that this document
-    defines generic functionalities and advisedly offers flexibility with regard to
-    parameters settings and mechanism choices, that are expected to be made in other
-    technology-specific documents.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines the Static Context Header Compression (SCHC)\n
+    \  framework, which provides header compression and fragmentation\n   functionality.
+    \ SCHC has been tailored for Low Power Wide Area\n   Networks (LPWAN).\n\n   SCHC
+    compression is based on a common static context stored in both\n   LPWAN devices
+    and in the network sides.  This document defines SCHC\n   header compression mechanism
+    and its deployment for IPv6/UDP headers.\n   This document also specifies a fragmentation
+    and reassembly mechanism\n   that is used to support the IPv6 MTU requirement
+    over the LPWAN\n   technologies.  The Fragmentation is needed for IPv6 datagrams
+    that,\n   after SCHC compression or when it has not been possible to apply such\n
+    \  compression, still exceed the layer two maximum payload size.\n\n   The SCHC
+    header compression mechanism is independent of the specific\n   LPWAN technology
+    over which it will be used.  Note that this document\n   defines generic functionalities
+    and advisedly offers flexibility with\n   regard to parameters settings and mechanism
+    choices, that are\n   expected to be made in other technology-specific documents.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lpwan-ipv6-static-context-hc-12
-    docid:
-    - id: draft-ietf-lpwan-ipv6-static-context-hc-12
+    formattedref: draft-ietf-lpwan-ipv6-static-context-hc-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-12
+    docidentifier:
+    - content: draft-ietf-lpwan-ipv6-static-context-hc-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lpwan-ipv6-static-context-hc-12
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lpwan-ipv6-static-context-hc-14
-    docid:
-    - id: draft-ietf-lpwan-ipv6-static-context-hc-14
+    formattedref: draft-ietf-lpwan-ipv6-static-context-hc-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-14
+    docidentifier:
+    - content: draft-ietf-lpwan-ipv6-static-context-hc-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lpwan-ipv6-static-context-hc-14
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lpwan-ipv6-static-context-hc-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

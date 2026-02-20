@@ -1,217 +1,188 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-wimse-workload-identity-bcp-02
-title:
-- content: OAuth 2.0 Client Assertion in Workload Environments
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-workload-identity-bcp-02
-  type: src
+id: draftietfwimseworkloadidentitybcp02
 type: standard
-docid:
-- id: draft-ietf-wimse-workload-identity-bcp-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OAuth 2.0 Client Assertion in Workload Environments
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-workload-identity-bcp-02
+docidentifier:
+- content: draft-ietf-wimse-workload-identity-bcp
+  type: Internet-Draft
+- content: draft-ietf-wimse-workload-identity-bcp-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-wimse-workload-identity-bcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-wimse-workload-identity-bcp
 date:
 - type: published
-  value: '2024-11-13'
+  at: '2024-11-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Benedikt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Benedikt
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Hofmann
-        language:
-        - en
       completename:
+        language: en
         content: Benedikt Hofmann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens
-  role:
+        - language: en
+          content: Siemens
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens
-  role:
+        - language: en
+          content: Siemens
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Edoardo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Edoardo
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Giordano
-        language:
-        - en
       completename:
+        language: en
         content: Edoardo Giordano
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yaroslav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yaroslav
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Rosomakho
-        language:
-        - en
       completename:
+        language: en
         content: Yaroslav Rosomakho
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zscaler
-  role:
+        - language: en
+          content: Zscaler
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arndt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arndt
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Schwenkschuster
-        language:
-        - en
       completename:
+        language: en
         content: Arndt Schwenkschuster
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SPIRL
-  role:
-  - type: author
+        - language: en
+          content: SPIRL
 version:
 - draft: '02'
-revdate: '2024-11-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The use of the OAuth 2.0 framework for container orchestration systems
-    poses a challenge as managing secrets, such as client_id and client_secret, can
-    be complex and error-prone. Instead of manual provisioning these credentials the
-    industry has moved to a federation-based approach where credentials of the underlying
-    workload platform are used as assertions towards an OAuth authorization server
-    leveraging the Client Assertion Flow [RFC7521], in particular [RFC7523]. This
-    specification describes a meta flow in Section 3.1, gives security recommendations
-    in Section 4 and outlines concrete patterns in Appendix A.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The use of the OAuth 2.0 framework for container orchestration\n   systems
+    poses a challenge as managing secrets, such as client_id and\n   client_secret,
+    can be complex and error-prone.  Instead of manual\n   provisioning these credentials
+    the industry has moved to a\n   federation-based approach where credentials of
+    the underlying\n   workload platform are used as assertions towards an OAuth\n
+    \  authorization server leveraging the Client Assertion Flow [RFC7521],\n   in
+    particular [RFC7523].\n\n   This specification describes a meta flow in Section
+    3.1, gives\n   security recommendations in Section 4 and outlines concrete patterns\n
+    \  in Appendix A.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-wimse-workload-identity-bcp-01
-    docid:
-    - id: draft-ietf-wimse-workload-identity-bcp-01
+    formattedref: draft-ietf-wimse-workload-identity-bcp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-workload-identity-bcp-01
+    docidentifier:
+    - content: draft-ietf-wimse-workload-identity-bcp-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-wimse-workload-identity-bcp-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-wimse-workload-identity-bcp-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

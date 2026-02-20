@@ -1,205 +1,175 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-best-external-05
-title:
-- content: Advertisement of the best external route in BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-best-external-05
-  type: src
+id: draftietfidrbestexternal05
 type: standard
-docid:
-- id: draft-ietf-idr-best-external-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Advertisement of the best external route in BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-best-external-05
+docidentifier:
+- content: draft-ietf-idr-best-external
+  type: Internet-Draft
+- content: draft-ietf-idr-best-external-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-best-external
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-best-external
 date:
 - type: published
-  value: '2012-01-03'
+  at: '2012-01-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pedro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pedro
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Marques
-        language:
-        - en
       completename:
+        language: en
         content: Pedro Marques
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rex
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Fernando
-        language:
-        - en
       completename:
+        language: en
         content: Rex Fernando
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Enke
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Enke
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Enke Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Prodosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prodosh
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Mohapatra
-        language:
-        - en
       completename:
+        language: en
         content: Prodosh Mohapatra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Gredler
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Gredler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '05'
-revdate: '2012-01-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The current BGP-4 protocol specification [RFC4271] states that the
-    selection process chooses the best path for a given route which is added to the
-    Loc-Rib and advertised to all peers. Previous versions [RFC1771] of the specification
-    defined a different rule for Internal BGP Updates. Given that Internal paths are
-    not re- advertised to Internal peers, it was specified that the best of the external
-    paths, as determined by the path selection tie breaking algorithm, would be advertised
-    to Internal peers. This document extends that procedure to operate in environments
-    where Route Reflection [RFC4456] or Confederations [RFC5065] are used and explains
-    why advertising the additional routing information can improve convergence time
-    without causing routing loops. Additional benefits include reduction of inter-domain
-    churn and avoidance of permanent route oscillation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The current BGP-4 protocol specification [RFC4271] states that the\n
+    \  selection process chooses the best path for a given route which is\n   added
+    to the Loc-Rib and advertised to all peers.\n\n   Previous versions [RFC1771]
+    of the specification defined a different\n   rule for Internal BGP Updates.  Given
+    that Internal paths are not re-\n   advertised to Internal peers, it was specified
+    that the best of the\n   external paths, as determined by the path selection tie
+    breaking\n   algorithm, would be advertised to Internal peers.\n\n   This document
+    extends that procedure to operate in environments where\n   Route Reflection [RFC4456]
+    or Confederations [RFC5065] are used and\n   explains why advertising the additional
+    routing information can\n   improve convergence time without causing routing loops.\n\n
+    \  Additional benefits include reduction of inter-domain churn and\n   avoidance
+    of permanent route oscillation.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-best-external-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

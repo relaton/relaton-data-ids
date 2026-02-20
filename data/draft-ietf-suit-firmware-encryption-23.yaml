@@ -1,225 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-suit-firmware-encryption-23
-title:
-- content: Encrypted Payloads in SUIT Manifests
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-23
-  type: src
+id: draftietfsuitfirmwareencryption23
 type: standard
-docid:
-- id: draft-ietf-suit-firmware-encryption-23
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Encrypted Payloads in SUIT Manifests
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-23
+docidentifier:
+- content: draft-ietf-suit-firmware-encryption
+  type: Internet-Draft
+- content: draft-ietf-suit-firmware-encryption-23
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-suit-firmware-encryption
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-suit-firmware-encryption
 date:
 - type: published
-  value: '2025-01-29'
+  at: '2025-01-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Applied Sciences Bonn-Rhein-Sieg
-  role:
+        - language: en
+          content: University of Applied Sciences Bonn-Rhein-Sieg
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Russ
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Russ
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Housley
-        language:
-        - en
       completename:
+        language: en
         content: Russ Housley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vigil Security, LLC
-  role:
+        - language: en
+          content: Vigil Security, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Brendan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brendan
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Moran
-        language:
-        - en
       completename:
+        language: en
         content: Brendan Moran
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Brown
-        language:
-        - en
       completename:
+        language: en
         content: David Brown
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Linaro
-  role:
+        - language: en
+          content: Linaro
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ken
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ken
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Takayama
-        language:
-        - en
       completename:
+        language: en
         content: Ken Takayama
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SECOM CO., LTD.
-  role:
-  - type: author
+        - language: en
+          content: SECOM CO., LTD.
 version:
 - draft: '23'
-revdate: '2025-01-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies techniques for encrypting software, firmware,
-    machine learning models, and personalization data by utilizing the IETF SUIT manifest.
-    Key agreement is provided by ephemeral-static (ES) Diffie-Hellman (DH) and AES
-    Key Wrap (AES-KW). ES-DH uses public key cryptography while AES-KW uses a pre-shared
-    key. Encryption of the plaintext is accomplished with conventional symmetric key
-    cryptography.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies techniques for encrypting software, firmware,\n
+    \  machine learning models, and personalization data by utilizing the\n   IETF
+    SUIT manifest.  Key agreement is provided by ephemeral-static\n   (ES) Diffie-Hellman
+    (DH) and AES Key Wrap (AES-KW).  ES-DH uses\n   public key cryptography while
+    AES-KW uses a pre-shared key.\n   Encryption of the plaintext is accomplished
+    with conventional\n   symmetric key cryptography.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-suit-firmware-encryption-22
-    docid:
-    - id: draft-ietf-suit-firmware-encryption-22
+    formattedref: draft-ietf-suit-firmware-encryption-22
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-22
+    docidentifier:
+    - content: draft-ietf-suit-firmware-encryption-22
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-suit-firmware-encryption-22
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-suit-firmware-encryption-24
-    docid:
-    - id: draft-ietf-suit-firmware-encryption-24
+    formattedref: draft-ietf-suit-firmware-encryption-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-24
+    docidentifier:
+    - content: draft-ietf-suit-firmware-encryption-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-suit-firmware-encryption-24
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-suit-firmware-encryption-23
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

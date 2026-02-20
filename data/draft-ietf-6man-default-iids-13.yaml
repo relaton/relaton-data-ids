@@ -1,192 +1,161 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-6man-default-iids-13
-title:
-- content: Recommendation on Stable IPv6 Interface Identifiers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-default-iids-13
-  type: src
+id: draftietf6mandefaultiids13
 type: standard
-docid:
-- id: draft-ietf-6man-default-iids-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Recommendation on Stable IPv6 Interface Identifiers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-default-iids-13
+docidentifier:
+- content: draft-ietf-6man-default-iids
+  type: Internet-Draft
+- content: draft-ietf-6man-default-iids-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-6man-default-iids
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-6man-default-iids
 date:
 - type: published
-  value: '2016-07-08'
+  at: '2016-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Fernando
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fernando
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Gont
-        language:
-        - en
       completename:
+        language: en
         content: Fernando Gont
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alissa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alissa
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Cooper
-        language:
-        - en
       completename:
+        language: en
         content: Alissa Cooper
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dave
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dave
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Thaler
-        language:
-        - en
       completename:
+        language: en
         content: Dave Thaler
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Will
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: W. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Will
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: W. S.
       surname:
+        language: en
         content: LIU
-        language:
-        - en
       completename:
+        language: en
         content: Will (Shucheng) LIU
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '13'
-revdate: '2016-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document changes the recommended default IID generation scheme
-    for cases where SLAAC is used to generate a stable IPv6 address. It recommends
-    using the mechanism specified in RFC7217 in such cases, and recommends against
-    embedding stable link-layer addresses in IPv6 Interface Identifiers. It formally
-    updates RFC2464, RFC2467, RFC2470, RFC2491, RFC2492, RFC2497, RFC2590, RFC3146,
-    RFC3572, RFC4291, RFC4338, RFC4391, RFC5072, and RFC5121, by removing the text
-    in these RFCs that required the IPv6 Interface Identifiers to be derived from
-    the underlying stable link-layer address, and replacing this text with recommendations
-    consistent with those in this document. Additionally, this document updates RFC3315
-    by specifying additional requirements on the generation of Interface Identifiers
-    used in Dynamic Host Configuration Protocol version 6 (DHCPv6). It also provides
-    advice to system administrators who employ manual configuration. This document
-    does not change any existing recommendations concerning the use of temporary addresses
-    as specified in RFC 4941.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document changes the recommended default IID generation scheme\n
+    \  for cases where SLAAC is used to generate a stable IPv6 address.  It\n   recommends
+    using the mechanism specified in RFC7217 in such cases,\n   and recommends against
+    embedding stable link-layer addresses in IPv6\n   Interface Identifiers.  It formally
+    updates RFC2464, RFC2467,\n   RFC2470, RFC2491, RFC2492, RFC2497, RFC2590, RFC3146,
+    RFC3572,\n   RFC4291, RFC4338, RFC4391, RFC5072, and RFC5121, by removing the
+    text\n   in these RFCs that required the IPv6 Interface Identifiers to be\n   derived
+    from the underlying stable link-layer address, and replacing\n   this text with
+    recommendations consistent with those in this\n   document.  Additionally, this
+    document updates RFC3315 by specifying\n   additional requirements on the generation
+    of Interface Identifiers\n   used in Dynamic Host Configuration Protocol version
+    6 (DHCPv6).  It\n   also provides advice to system administrators who employ manual\n
+    \  configuration.  This document does not change any existing\n   recommendations
+    concerning the use of temporary addresses as\n   specified in RFC 4941.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-6man-default-iids-12
-    docid:
-    - id: draft-ietf-6man-default-iids-12
+    formattedref: draft-ietf-6man-default-iids-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-default-iids-12
+    docidentifier:
+    - content: draft-ietf-6man-default-iids-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-default-iids-12
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-6man-default-iids-14
-    docid:
-    - id: draft-ietf-6man-default-iids-14
+    formattedref: draft-ietf-6man-default-iids-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-default-iids-14
+    docidentifier:
+    - content: draft-ietf-6man-default-iids-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-6man-default-iids-14
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-6man-default-iids-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

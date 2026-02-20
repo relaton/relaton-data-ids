@@ -1,220 +1,191 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pquip-hbs-state-03
-title:
-- content: 'Hash-based Signatures: State and Backup Management'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pquip-hbs-state-03
-  type: src
+id: draftietfpquiphbsstate03
 type: standard
-docid:
-- id: draft-ietf-pquip-hbs-state-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Hash-based Signatures: State and Backup Management'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pquip-hbs-state-03
+docidentifier:
+- content: draft-ietf-pquip-hbs-state
+  type: Internet-Draft
+- content: draft-ietf-pquip-hbs-state-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pquip-hbs-state
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pquip-hbs-state
 date:
 - type: published
-  value: '2026-02-07'
+  at: '2026-02-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Thom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Wiggers
-        language:
-        - en
       completename:
+        language: en
         content: Thom Wiggers
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: PQShield
-  role:
+        - language: en
+          content: PQShield
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kaveh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kaveh
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Bashiri
-        language:
-        - en
       completename:
+        language: en
         content: Kaveh Bashiri
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: BSI
-  role:
+        - language: en
+          content: BSI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stefan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kölbl
-        language:
-        - en
       completename:
+        language: en
         content: Stefan Kölbl
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Goodman
-        language:
-        - en
       completename:
+        language: en
         content: Jim Goodman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Crypto4A Technologies
-  role:
+        - language: en
+          content: Crypto4A Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stavros
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stavros
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kousidis
-        language:
-        - en
       completename:
+        language: en
         content: Stavros Kousidis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: BSI
-  role:
-  - type: author
+        - language: en
+          content: BSI
 version:
 - draft: '03'
-revdate: '2026-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Stateful Hash-Based Signature Schemes (Stateful HBS) such as LMS, HSS,
-    XMSS and XMSS^MT combine Merkle trees with One-Time Signatures (OTS) to provide
-    signatures that are resistant against attacks using large-scale quantum computers.
-    Unlike conventional stateless digital signature schemes, Stateful HBS have a state
-    to keep track of which OTS keys have been used, as double-signing with the same
-    OTS key allows forgeries. This document provides guidance and catalogs security
-    considerations for the operational and technical aspects of deploying systems
-    that rely on Stateful HBS. Management of the state of the Stateful HBS, including
-    any handling of redundant key material, is a sensitive topic. This document describes
-    some approaches to handle the associated challenges. It also describes the challenges
-    that need to be resolved before certain approaches should be considered.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Stateful Hash-Based Signature Schemes (Stateful HBS) such as LMS,\n
+    \  HSS, XMSS and XMSS^MT combine Merkle trees with One-Time Signatures\n   (OTS)
+    to provide signatures that are resistant against attacks using\n   large-scale
+    quantum computers.  Unlike conventional stateless digital\n   signature schemes,
+    Stateful HBS have a state to keep track of which\n   OTS keys have been used,
+    as double-signing with the same OTS key\n   allows forgeries.\n\n   This document
+    provides guidance and catalogs security considerations\n   for the operational
+    and technical aspects of deploying systems that\n   rely on Stateful HBS.  Management
+    of the state of the Stateful HBS,\n   including any handling of redundant key
+    material, is a sensitive\n   topic.  This document describes some approaches to
+    handle the\n   associated challenges.  It also describes the challenges that need
+    to\n   be resolved before certain approaches should be considered.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pquip-hbs-state-02
-    docid:
-    - id: draft-ietf-pquip-hbs-state-02
+    formattedref: draft-ietf-pquip-hbs-state-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pquip-hbs-state-02
+    docidentifier:
+    - content: draft-ietf-pquip-hbs-state-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pquip-hbs-state-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pquip-hbs-state-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

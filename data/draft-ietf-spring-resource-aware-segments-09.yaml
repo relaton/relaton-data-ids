@@ -1,228 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-spring-resource-aware-segments-09
-title:
-- content: Introducing Resource Awareness to SR Segments
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments-09
-  type: src
+id: draftietfspringresourceawaresegments09
 type: standard
-docid:
-- id: draft-ietf-spring-resource-aware-segments-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Introducing Resource Awareness to SR Segments
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments-09
+docidentifier:
+- content: draft-ietf-spring-resource-aware-segments
+  type: Internet-Draft
+- content: draft-ietf-spring-resource-aware-segments-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-spring-resource-aware-segments
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-spring-resource-aware-segments
 date:
 - type: published
-  value: '2024-05-06'
+  at: '2024-05-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Takuya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Takuya
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Miyasaka
-        language:
-        - en
       completename:
+        language: en
         content: Takuya Miyasaka
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: KDDI Corporation
-  role:
+        - language: en
+          content: KDDI Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fengwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fengwei
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Fengwei Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenqiang
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenqiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '09'
-revdate: '2024-05-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the mechanism to associate network resources
-    to Segment Routing Identifiers (SIDs). Such SIDs are referred to as resource-aware
-    SIDs in this document. The resource-aware SIDs retain their original forwarding
-    semantics, but with the additional semantics to identify the set of network resources
-    available for the packet processing and forwarding action. The resource-aware
-    SIDs can therefore be used to build SR paths or virtual networks with a set of
-    reserved network resources. The proposed mechanism is applicable to both segment
-    routing with MPLS data plane (SR-MPLS) and segment routing with IPv6 data plane
-    (SRv6).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the mechanism to associate network resources\n
+    \  to Segment Routing Identifiers (SIDs).  Such SIDs are referred to as\n   resource-aware
+    SIDs in this document.  The resource-aware SIDs retain\n   their original forwarding
+    semantics, but with the additional\n   semantics to identify the set of network
+    resources available for the\n   packet processing and forwarding action.  The
+    resource-aware SIDs can\n   therefore be used to build SR paths or virtual networks
+    with a set of\n   reserved network resources.  The proposed mechanism is applicable
+    to\n   both segment routing with MPLS data plane (SR-MPLS) and segment\n   routing
+    with IPv6 data plane (SRv6).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-spring-resource-aware-segments-08
-    docid:
-    - id: draft-ietf-spring-resource-aware-segments-08
+    formattedref: draft-ietf-spring-resource-aware-segments-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments-08
+    docidentifier:
+    - content: draft-ietf-spring-resource-aware-segments-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-spring-resource-aware-segments-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-spring-resource-aware-segments-10
-    docid:
-    - id: draft-ietf-spring-resource-aware-segments-10
+    formattedref: draft-ietf-spring-resource-aware-segments-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-resource-aware-segments-10
+    docidentifier:
+    - content: draft-ietf-spring-resource-aware-segments-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-spring-resource-aware-segments-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-spring-resource-aware-segments-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

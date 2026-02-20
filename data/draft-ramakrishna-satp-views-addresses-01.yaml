@@ -1,236 +1,207 @@
 ---
-schema-version: v1.2.9
-id: draft-ramakrishna-satp-views-addresses-01
-title:
-- content: Views and View Addresses for Secure Asset Transfer
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-satp-views-addresses-01
-  type: src
+id: draftramakrishnasatpviewsaddresses01
 type: standard
-docid:
-- id: draft-ramakrishna-satp-views-addresses-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Views and View Addresses for Secure Asset Transfer
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-satp-views-addresses-01
+docidentifier:
+- content: draft-ramakrishna-satp-views-addresses
+  type: Internet-Draft
+- content: draft-ramakrishna-satp-views-addresses-01
   type: Internet-Draft
   primary: true
-- id: I-D.ramakrishna-satp-views-addresses
-  type: IETF
-  scope: anchor
 docnumber: I-D.ramakrishna-satp-views-addresses
 date:
 - type: published
-  value: '2023-07-07'
+  at: '2023-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Venkatraman
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Venkatraman
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Ramakrishna
-        language:
-        - en
       completename:
+        language: en
         content: Venkatraman Ramakrishna
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vinayaka
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vinayaka
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Pandit
-        language:
-        - en
       completename:
+        language: en
         content: Vinayaka Pandit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ermyas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ermyas
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Abebe
-        language:
-        - en
       completename:
+        language: en
         content: Ermyas Abebe
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Consensys
-  role:
+        - language: en
+          content: Consensys
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Nishad
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Nishad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Krishnasuri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Krishnasuri
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Narayanam
-        language:
-        - en
       completename:
+        language: en
         content: Krishnasuri Narayanam
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
-  - type: author
+        - language: en
+          content: IBM Research
 version:
 - draft: '01'
-revdate: '2023-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With increasing use of DLT (distributed ledger technology) systems,
-    including blockchain systems and networks, for virtual assets, there is a need
-    for asset-related data and metadata to traverse system boundaries and link their
-    respective business workflows. Core requirements for such interoperation between
-    systems are the abilities of these systems to project views of their assets to
-    external parties, either individual agents or other systems, and the abilities
-    of those external parties to locate and address the views they are interested
-    in. A view denotes the complete or partial state of a virtual asset, or the output
-    of a function computed over the states of one or more assets, or locks or pledges
-    made over assets for internal or external parties. Systems projecting these views
-    must be able to guard them using custom access control policies, and external
-    parties consuming them must be able to verify them independently for authenticity,
-    finality, and freshness. The end-to-end protocol that allows an external party
-    to request a view by an address and a DLT system to return a view in response
-    must be DLT-neutral and mask the interior particularities and complexities of
-    the DLT systems. The view generation and verification modules at the endpoints
-    must obey the native consensus logic of their respective systems.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With increasing use of DLT (distributed ledger technology) systems,\n
+    \  including blockchain systems and networks, for virtual assets, there is a\n
+    \  need for asset-related data and metadata to traverse system boundaries\n   and
+    link their respective business workflows. Core requirements for such\n   interoperation
+    between systems are the abilities of these systems to\n   project views of their
+    assets to external parties, either individual\n   agents or other systems, and
+    the abilities of those external parties to\n   locate and address the views they
+    are interested in. A view denotes the\n   complete or partial state of a virtual
+    asset, or the output of a function\n   computed over the states of one or more
+    assets, or locks or pledges made\n   over assets for internal or external parties.
+    Systems projecting these\n   views must be able to guard them using custom access
+    control policies,\n   and external parties consuming them must be able to verify
+    them\n   independently for authenticity, finality, and freshness. The end-to-end\n
+    \  protocol that allows an external party to request a view by an address\n   and
+    a DLT system to return a view in response must be DLT-neutral and\n   mask the
+    interior particularities and complexities of the DLT systems.\n   The view generation
+    and verification modules at the endpoints must obey\n   the native consensus logic
+    of their respective systems.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ramakrishna-satp-views-addresses-00
-    docid:
-    - id: draft-ramakrishna-satp-views-addresses-00
+    formattedref: draft-ramakrishna-satp-views-addresses-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-satp-views-addresses-00
+    docidentifier:
+    - content: draft-ramakrishna-satp-views-addresses-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ramakrishna-satp-views-addresses-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ramakrishna-satp-views-addresses-02
-    docid:
-    - id: draft-ramakrishna-satp-views-addresses-02
+    formattedref: draft-ramakrishna-satp-views-addresses-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-satp-views-addresses-02
+    docidentifier:
+    - content: draft-ramakrishna-satp-views-addresses-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ramakrishna-satp-views-addresses-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ramakrishna-satp-views-addresses-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

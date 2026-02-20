@@ -1,200 +1,174 @@
 ---
-schema-version: v1.2.9
-id: draft-wang-bess-mvpn-upstream-df-selection-07
-title:
-- content: Multicast VPN Upstream Designated Forwarder Selection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-07
-  type: src
+id: draftwangbessmvpnupstreamdfselection07
 type: standard
-docid:
-- id: draft-wang-bess-mvpn-upstream-df-selection-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multicast VPN Upstream Designated Forwarder Selection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-07
+docidentifier:
+- content: draft-wang-bess-mvpn-upstream-df-selection
+  type: Internet-Draft
+- content: draft-wang-bess-mvpn-upstream-df-selection-07
   type: Internet-Draft
   primary: true
-- id: I-D.wang-bess-mvpn-upstream-df-selection
-  type: IETF
-  scope: anchor
 docnumber: I-D.wang-bess-mvpn-upstream-df-selection
 date:
 - type: published
-  value: '2023-05-15'
+  at: '2023-05-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Fanghong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fanghong
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Duan
-        language:
-        - en
       completename:
+        language: en
         content: Fanghong Duan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siyu
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Siyu Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yisong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yisong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yisong Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Heng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Heng
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Heng Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ruijie Networks Co., Ltd.
-  role:
-  - type: author
+        - language: en
+          content: Ruijie Networks Co., Ltd.
 version:
 - draft: '07'
-revdate: '2023-05-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines Multicast Virtual Private Network (VPN) extensions
-    and procedures of designated forwarder election performed between ingress PEs,
-    which is different from the one described in [RFC9026] in which the upstream designated
-    forwarder determined by using the "Standby PE Community" carried in the C-Multicast
-    routes. Based on the DF election, the failure detection point discovery mechanism
-    between DF and standby DF is extended in MVPN procedures to achieve fast failover
-    by using BFD session to track the status of detection point. To realize a stable
-    "warm root standby", this document obsolete the P-Tunnel status determining procedure
-    for downstream PEs in regular MVPN by introducing a RPF Set Checking mechanism
-    as an instead.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines Multicast Virtual Private Network (VPN)\n   extensions
+    and procedures of designated forwarder election performed\n   between ingress
+    PEs, which is different from the one described in\n   [RFC9026] in which the upstream
+    designated forwarder determined by\n   using the \"Standby PE Community\" carried
+    in the C-Multicast routes.\n   Based on the DF election, the failure detection
+    point discovery\n   mechanism between DF and standby DF is extended in MVPN procedures
+    to\n   achieve fast failover by using BFD session to track the status of\n   detection
+    point.  To realize a stable \"warm root standby\", this\n   document obsolete
+    the P-Tunnel status determining procedure for\n   downstream PEs in regular MVPN
+    by introducing a RPF Set Checking\n   mechanism as an instead.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wang-bess-mvpn-upstream-df-selection-06
-    docid:
-    - id: draft-wang-bess-mvpn-upstream-df-selection-06
+    formattedref: draft-wang-bess-mvpn-upstream-df-selection-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-06
+    docidentifier:
+    - content: draft-wang-bess-mvpn-upstream-df-selection-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wang-bess-mvpn-upstream-df-selection-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wang-bess-mvpn-upstream-df-selection-08
-    docid:
-    - id: draft-wang-bess-mvpn-upstream-df-selection-08
+    formattedref: draft-wang-bess-mvpn-upstream-df-selection-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-08
+    docidentifier:
+    - content: draft-wang-bess-mvpn-upstream-df-selection-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wang-bess-mvpn-upstream-df-selection-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wang-bess-mvpn-upstream-df-selection-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

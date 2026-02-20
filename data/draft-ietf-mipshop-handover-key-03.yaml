@@ -1,130 +1,112 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mipshop-handover-key-03
-title:
-- content: Distributing a Symmetric Fast Mobile IPv6 (FMIPv6) Handover Key Using SEcure
-    Neighbor Discovery (SEND)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mipshop-handover-key-03
-  type: src
+id: draftietfmipshophandoverkey03
 type: standard
-docid:
-- id: draft-ietf-mipshop-handover-key-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Distributing a Symmetric Fast Mobile IPv6 (FMIPv6) Handover Key Using SEcure
+    Neighbor Discovery (SEND)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mipshop-handover-key-03
+docidentifier:
+- content: draft-ietf-mipshop-handover-key
+  type: Internet-Draft
+- content: draft-ietf-mipshop-handover-key-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mipshop-handover-key
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mipshop-handover-key
 date:
 - type: published
-  value: '2007-10-31'
+  at: '2007-10-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Rajeev
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rajeev
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Koodli
-        language:
-        - en
       completename:
+        language: en
         content: Rajeev Koodli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Starent Networks
-  role:
+        - language: en
+          content: Starent Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: James
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: James
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kempf
-        language:
-        - en
       completename:
+        language: en
         content: James Kempf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DoCoMo Labs USA
-  role:
-  - type: author
+        - language: en
+          content: DoCoMo Labs USA
 version:
 - draft: '03'
-revdate: '2007-10-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Fast Mobile IPv6 requires that a Fast Binding Update is secured using
+- language: en
+  script: Latn
+  content: "Fast Mobile IPv6 requires that a Fast Binding Update is secured using
     a security association shared between an Access Router and a Mobile Node in order
-    to avoid certain attacks. In this document, a method for provisioning a shared
+    to avoid certain attacks.  In this document, a method for provisioning a shared
     key from the Access Router to the Mobile Node is defined to protect this signaling.
-    The Mobile Node generates a public/private key pair using the same public key
-    algorithm as for SEND (RFC 3971). The Mobile Node sends the public key to the
-    Access Router. The Access Router encrypts a shared handover key using the public
-    key and sends it back to the Mobile Node. The Mobile Node decrypts the shared
+    \ The Mobile Node generates a public/private key pair using the same public key
+    algorithm as for SEND (RFC 3971).  The Mobile Node sends the public key to the
+    Access Router.  The Access Router encrypts a shared handover key using the public
+    key and sends it back to the Mobile Node.  The Mobile Node decrypts the shared
     handover key using the matching private key, and the handover key is then available
-    for generating an authenticator on a Fast Binding Update. The Mobile Node and
+    for generating an authenticator on a Fast Binding Update.  The Mobile Node and
     Access Router use the Router Solicitation for Proxy Advertisement and Proxy Router
-    Advertisement from Fast Mobile IPv6 for the key exchange. The key exchange messages
+    Advertisement from Fast Mobile IPv6 for the key exchange.  The key exchange messages
     are required to have SEND security; that is, the source address is a Cryptographically
     Generated Address (CGA) and the messages are signed using the CGA private key
-    of the sending node. This allows the Access Router, prior to providing the shared
+    of the sending node.  This allows the Access Router, prior to providing the shared
     handover key, to verify the authorization of the Mobile Node to claim the address
     so that the previous care-of CGA in the Fast Binding Update can act as the name
-    of the key. [STANDARDS-TRACK]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    of the key. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mipshop-handover-key-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

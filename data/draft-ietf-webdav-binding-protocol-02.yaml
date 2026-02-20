@@ -1,212 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-webdav-binding-protocol-02
-title:
-- content: WebDAV Bindings
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-webdav-binding-protocol-02
-  type: src
+id: draftietfwebdavbindingprotocol02
 type: standard
-docid:
-- id: draft-ietf-webdav-binding-protocol-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: WebDAV Bindings
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-webdav-binding-protocol-02
+docidentifier:
+- content: draft-ietf-webdav-binding-protocol
+  type: Internet-Draft
+- content: draft-ietf-webdav-binding-protocol-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-webdav-binding-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-webdav-binding-protocol
 date:
 - type: published
-  value: '1999-12-22'
+  at: '1999-12-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: James
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: J. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: James
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: J. R.
       surname:
+        language: en
         content: Davis
-        language:
-        - en
       completename:
+        language: en
         content: James R. Davis
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Crawford
-        language:
-        - en
       completename:
+        language: en
         content: John Crawford
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Judith
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Judith
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Slein
-        language:
-        - en
       completename:
+        language: en
         content: Judith Slein
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Xerox
-  role:
+        - language: en
+          content: Xerox
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Charles
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: C. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Charles
+      - language: en
+        script: Latn
+        initial: C
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: C. R.
       surname:
+        language: en
         content: Fay
-        language:
-        - en
       completename:
+        language: en
         content: Charles R. Fay
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: FileNet
-  role:
+        - language: en
+          content: FileNet
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Geoffrey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: G. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Geoffrey
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: G. M.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Geoffrey M. Clemm
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '1999-12-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This is one of a pair of specifications that extend the WebDAV Distributed
-    Authoring Protocol to enable clients to create new access paths to existing resources.
-    The two protocol extensions have very different characteristics that make them
-    useful for different sorts of applications. The present specification defines
-    bindings, and the BIND method for creating them. Creating a new binding to a resource
-    indirectly creates one or more new URIs mapped to that resource, which can then
-    be used to access it. Servers are required to insure the integrity of any bindings
-    that they allow to be created. The related specification, RFC xxxx, defines redirect
-    reference resources. A redirect reference resource is a resource whose default
-    response is an HTTP/1.1 302 (Found) status code, redirecting the client to a different
-    resource, the target resource. A redirect reference makes it possible to access
-    the target resource indirectly, through any URI mapped to the redirect reference
-    resource. There are no integrity guarantees associated with redirect reference
-    resources.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This is one of a pair of specifications that extend the WebDAV \nDistributed
+    Authoring Protocol to enable clients to create new access \npaths to existing
+    resources.  The two protocol extensions have very \ndifferent characteristics
+    that make them useful for different sorts of \napplications.\n \nThe present specification
+    defines bindings, and the BIND method for \ncreating them.  Creating a new binding
+    to a resource indirectly creates \none or more new URIs mapped to that resource,
+    which can then be used to \naccess it.  Servers are required to insure the integrity
+    of any bindings \nthat they allow to be created.\n\nThe related specification,
+    RFC xxxx, defines redirect reference \nresources.  A redirect reference resource
+    is a resource whose default \nresponse is an HTTP/1.1 302 (Found) status code,
+    redirecting the client \nto a different resource, the target resource.  A redirect
+    reference \nmakes it possible to access the target resource indirectly, through
+    any \nURI mapped to the redirect reference resource.  There are no integrity \nguarantees
+    associated with redirect reference resources.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-webdav-binding-protocol-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

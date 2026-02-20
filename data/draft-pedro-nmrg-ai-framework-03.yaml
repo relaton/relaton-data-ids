@@ -1,187 +1,167 @@
 ---
-schema-version: v1.2.9
-id: draft-pedro-nmrg-ai-framework-03
-title:
-- content: Artificial Intelligence Framework for Network Management
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pedro-nmrg-ai-framework-03
-  type: src
+id: draftpedronmrgaiframework03
 type: standard
-docid:
-- id: draft-pedro-nmrg-ai-framework-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Artificial Intelligence Framework for Network Management
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pedro-nmrg-ai-framework-03
+docidentifier:
+- content: draft-pedro-nmrg-ai-framework
+  type: Internet-Draft
+- content: draft-pedro-nmrg-ai-framework-03
   type: Internet-Draft
   primary: true
-- id: I-D.pedro-nmrg-ai-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.pedro-nmrg-ai-framework
 date:
 - type: published
-  value: '2023-06-29'
+  at: '2023-06-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pedro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pedro
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Martinez-Julia
-        language:
-        - en
       completename:
+        language: en
         content: Pedro Martinez-Julia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NICT
-  role:
+        - language: en
+          content: NICT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shunsuke
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shunsuke
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Homma
-        language:
-        - en
       completename:
+        language: en
         content: Shunsuke Homma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
+        - language: en
+          content: NTT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica I+D
-  role:
-  - type: author
+        - language: en
+          content: Telefonica I+D
 version:
 - draft: '03'
-revdate: '2023-06-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The adoption of artificial intelligence (AI) in network management
-    (NM) solutions is the way to resolve complex management problems arisen from the
-    adoption of NFV, SDN, and network slicing technologies. The AINEMA framework,
-    as discussed in this document, includes the functions, capabilities, and components
-    that MUST be provided by AI modules and models to be successfully applied to NM.
-    This is enlarged by the consideration of seamless integration of different services,
-    including the ability of having multiple AI models working in parallel, as well
-    as the ability of complex reasoning and event processing. In addition, disparate
-    sources of information are put together with limited complexity, through the definition
-    of a control and management service bus. It allows, for instance, to involve external
-    events in NM operations. Using all available sources of information --- namely,
-    intelligence sources --- allows NM solutions to apply proper intelligence processes
-    instead of simple AI-based guesses. Such processes are highly based in reasoning
-    and formal and target-based intelligence analysis and decision --- providing evidence-based
-    conclusions and proofs for the decisions. This will allow computer and network
-    system infrastructures --- and user demands --- to grow in complexity. The construction
-    and maintenance of AINEMA-compatible components MUST consider the existence several
-    mechanisms, which are extended beyond machine learning (ML). For instance, intelligent
-    reasoning is a key aspect of AINEMA that MUST be taken into account by autonomic
-    management components and solutions. It will provide enormous benefits to NM solutions
-    by, for example, inferring new knowledge and applying different kind of rules
-    (e.g. logical) to choose from several actions. While ML solutions work with data,
-    so they only require to retrieve data from the network infrastructure, AINEMA
-    modules MUST work in collaboration to the network it is managing. This makes the
-    challenges arisen from intelligent reasoning essential for the evolution of NM.
-    They will be addressed within the context of AINEMA.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The adoption of artificial intelligence (AI) in network management\n
+    \  (NM) solutions is the way to resolve complex management problems\n   arisen
+    from the adoption of NFV, SDN, and network slicing\n   technologies.  The AINEMA
+    framework, as discussed in this document,\n   includes the functions, capabilities,
+    and components that MUST be\n   provided by AI modules and models to be successfully
+    applied to NM.\n   This is enlarged by the consideration of seamless integration
+    of\n   different services, including the ability of having multiple AI\n   models
+    working in parallel, as well as the ability of complex\n   reasoning and event
+    processing.  In addition, disparate sources of\n   information are put together
+    with limited complexity, through the\n   definition of a control and management
+    service bus.  It allows, for\n   instance, to involve external events in NM operations.
+    \ Using all\n   available sources of information --- namely, intelligence sources
+    ---\n   allows NM solutions to apply proper intelligence processes instead of\n
+    \  simple AI-based guesses.  Such processes are highly based in\n   reasoning
+    and formal and target-based intelligence analysis and\n   decision --- providing
+    evidence-based conclusions and proofs for the\n   decisions.  This will allow
+    computer and network system\n   infrastructures --- and user demands --- to grow
+    in complexity.\n\n   The construction and maintenance of AINEMA-compatible components
+    MUST\n   consider the existence several mechanisms, which are extended beyond\n
+    \  machine learning (ML).  For instance, intelligent reasoning is a key\n   aspect
+    of AINEMA that MUST be taken into account by autonomic\n   management components
+    and solutions.  It will provide enormous\n   benefits to NM solutions by, for
+    example, inferring new knowledge and\n   applying different kind of rules (e.g.
+    logical) to choose from\n   several actions.  While ML solutions work with data,
+    so they only\n   require to retrieve data from the network infrastructure, AINEMA\n
+    \  modules MUST work in collaboration to the network it is managing.\n   This
+    makes the challenges arisen from intelligent reasoning essential\n   for the evolution
+    of NM.  They will be addressed within the context\n   of AINEMA.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-pedro-nmrg-ai-framework-02
-    docid:
-    - id: draft-pedro-nmrg-ai-framework-02
+    formattedref: draft-pedro-nmrg-ai-framework-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pedro-nmrg-ai-framework-02
+    docidentifier:
+    - content: draft-pedro-nmrg-ai-framework-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pedro-nmrg-ai-framework-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-pedro-nmrg-ai-framework-04
-    docid:
-    - id: draft-pedro-nmrg-ai-framework-04
+    formattedref: draft-pedro-nmrg-ai-framework-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pedro-nmrg-ai-framework-04
+    docidentifier:
+    - content: draft-pedro-nmrg-ai-framework-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pedro-nmrg-ai-framework-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pedro-nmrg-ai-framework-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

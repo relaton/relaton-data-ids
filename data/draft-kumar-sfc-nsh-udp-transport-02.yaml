@@ -1,237 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-kumar-sfc-nsh-udp-transport-02
-title:
-- content: UDP Transport for Network Service Header
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kumar-sfc-nsh-udp-transport-02
-  type: src
+id: draftkumarsfcnshudptransport02
 type: standard
-docid:
-- id: draft-kumar-sfc-nsh-udp-transport-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: UDP Transport for Network Service Header
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kumar-sfc-nsh-udp-transport-02
+docidentifier:
+- content: draft-kumar-sfc-nsh-udp-transport
+  type: Internet-Draft
+- content: draft-kumar-sfc-nsh-udp-transport-02
   type: Internet-Draft
   primary: true
-- id: I-D.kumar-sfc-nsh-udp-transport
-  type: IETF
-  scope: anchor
 docnumber: I-D.kumar-sfc-nsh-udp-transport
 date:
 - type: published
-  value: '2016-02-11'
+  at: '2016-02-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Surendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Surendra
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Surendra Kumar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Larry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Larry
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Kreeger
-        language:
-        - en
       completename:
+        language: en
         content: Larry Kreeger
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sumandra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sumandra
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Majee
-        language:
-        - en
       completename:
+        language: en
         content: Sumandra Majee
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Walter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Walter
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Haeffner
-        language:
-        - en
       completename:
+        language: en
         content: Walter Haeffner
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rajeev
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rajeev
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Manur
-        language:
-        - en
       completename:
+        language: en
         content: Rajeev Manur
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: D. T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: D. T.
       surname:
+        language: en
         content: Melman
-        language:
-        - en
       completename:
+        language: en
         content: David T. Melman
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2016-02-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft describes the transport encapsulation to carry Network Service
-    Header (NSH) over UDP transport protocol. This enables applications and services
-    using NSH to communicate over a simple layer-3 network without topological constraints.
-    It brings down the barrier to deploy NSH by not requiring additional overhead
-    as is typical of overlay encapsulation mechanisms designed on top of UDP. As a
-    first benefit, this method eases the deployment of Service Function Chaining (SFC)
-    by allowing SFC components to utilize the basic UDP/IP stack available in virtually
-    all network elements and end systems to setup the virtual network and realize
-    Service Function Chains (SFCs).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft describes the transport encapsulation to carry Network\n
+    \  Service Header (NSH) over UDP transport protocol.  This enables\n   applications
+    and services using NSH to communicate over a simple\n   layer-3 network without
+    topological constraints.  It brings down the\n   barrier to deploy NSH by not
+    requiring additional overhead as is\n   typical of overlay encapsulation mechanisms
+    designed on top of UDP.\n\n   As a first benefit, this method eases the deployment
+    of Service\n   Function Chaining (SFC) by allowing SFC components to utilize the\n
+    \  basic UDP/IP stack available in virtually all network elements and\n   end
+    systems to setup the virtual network and realize Service Function\n   Chains (SFCs).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kumar-sfc-nsh-udp-transport-01
-    docid:
-    - id: draft-kumar-sfc-nsh-udp-transport-01
+    formattedref: draft-kumar-sfc-nsh-udp-transport-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kumar-sfc-nsh-udp-transport-01
+    docidentifier:
+    - content: draft-kumar-sfc-nsh-udp-transport-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kumar-sfc-nsh-udp-transport-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kumar-sfc-nsh-udp-transport-03
-    docid:
-    - id: draft-kumar-sfc-nsh-udp-transport-03
+    formattedref: draft-kumar-sfc-nsh-udp-transport-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kumar-sfc-nsh-udp-transport-03
+    docidentifier:
+    - content: draft-kumar-sfc-nsh-udp-transport-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kumar-sfc-nsh-udp-transport-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kumar-sfc-nsh-udp-transport-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

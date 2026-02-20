@@ -1,142 +1,123 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-core-block-20
-title:
-- content: Block-wise transfers in CoAP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-core-block-20
-  type: src
+id: draftietfcoreblock20
 type: standard
-docid:
-- id: draft-ietf-core-block-20
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Block-wise transfers in CoAP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-core-block-20
+docidentifier:
+- content: draft-ietf-core-block
+  type: Internet-Draft
+- content: draft-ietf-core-block-20
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-core-block
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-core-block
 date:
 - type: published
-  value: '2016-04-29'
+  at: '2016-04-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zach
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zach
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Shelby
-        language:
-        - en
       completename:
+        language: en
         content: Zach Shelby
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '20'
-revdate: '2016-04-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>CoAP is a RESTful transfer protocol for constrained nodes and networks.
-    Basic CoAP messages work well for the small payloads we expect from temperature
-    sensors, light switches, and similar building-automation devices. Occasionally,
-    however, applications will need to transfer larger payloads -- for instance, for
-    firmware updates. With HTTP, TCP does the grunt work of slicing large payloads
-    up into multiple packets and ensuring that they all arrive and are handled in
-    the right order. CoAP is based on datagram transports such as UDP or DTLS, which
-    limits the maximum size of resource representations that can be transferred without
-    too much fragmentation. Although UDP supports larger payloads through IP fragmentation,
-    it is limited to 64 KiB and, more importantly, doesn''t really work well for constrained
-    applications and networks. Instead of relying on IP fragmentation, this specification
-    extends basic CoAP with a pair of "Block" options, for transferring multiple blocks
-    of information from a resource representation in multiple request-response pairs.
-    In many important cases, the Block options enable a server to be truly stateless:
-    the server can handle each block transfer separately, with no need for a connection
-    setup or other server-side memory of previous block transfers. In summary, the
-    Block options provide a minimal way to transfer larger representations in a block-wise
-    fashion.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   CoAP is a RESTful transfer protocol for constrained nodes and\n   networks.
+    \ Basic CoAP messages work well for the small payloads we\n   expect from temperature
+    sensors, light switches, and similar\n   building-automation devices.  Occasionally,
+    however, applications\n   will need to transfer larger payloads -- for instance,
+    for firmware\n   updates.  With HTTP, TCP does the grunt work of slicing large\n
+    \  payloads up into multiple packets and ensuring that they all arrive\n   and
+    are handled in the right order.\n\n   CoAP is based on datagram transports such
+    as UDP or DTLS, which\n   limits the maximum size of resource representations
+    that can be\n   transferred without too much fragmentation.  Although UDP supports\n
+    \  larger payloads through IP fragmentation, it is limited to 64 KiB\n   and,
+    more importantly, doesn't really work well for constrained\n   applications and
+    networks.\n\n   Instead of relying on IP fragmentation, this specification extends\n
+    \  basic CoAP with a pair of \"Block\" options, for transferring multiple\n   blocks
+    of information from a resource representation in multiple\n   request-response
+    pairs.  In many important cases, the Block options\n   enable a server to be truly
+    stateless: the server can handle each\n   block transfer separately, with no need
+    for a connection setup or\n   other server-side memory of previous block transfers.\n\n
+    \  In summary, the Block options provide a minimal way to transfer\n   larger
+    representations in a block-wise fashion.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-core-block-19
-    docid:
-    - id: draft-ietf-core-block-19
+    formattedref: draft-ietf-core-block-19
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-block-19
+    docidentifier:
+    - content: draft-ietf-core-block-19
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-core-block-19
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-core-block-21
-    docid:
-    - id: draft-ietf-core-block-21
+    formattedref: draft-ietf-core-block-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-block-21
+    docidentifier:
+    - content: draft-ietf-core-block-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-core-block-21
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-core-block-20
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

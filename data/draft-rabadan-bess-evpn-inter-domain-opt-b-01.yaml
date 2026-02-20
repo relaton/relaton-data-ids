@@ -1,201 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-rabadan-bess-evpn-inter-domain-opt-b-01
-title:
-- content: EVPN Inter-Domain Option-B Solution
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-rabadan-bess-evpn-inter-domain-opt-b-01
-  type: src
+id: draftrabadanbessevpninterdomainoptb01
 type: standard
-docid:
-- id: draft-rabadan-bess-evpn-inter-domain-opt-b-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN Inter-Domain Option-B Solution
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-rabadan-bess-evpn-inter-domain-opt-b-01
+docidentifier:
+- content: draft-rabadan-bess-evpn-inter-domain-opt-b
+  type: Internet-Draft
+- content: draft-rabadan-bess-evpn-inter-domain-opt-b-01
   type: Internet-Draft
   primary: true
-- id: I-D.rabadan-bess-evpn-inter-domain-opt-b
-  type: IETF
-  scope: anchor
 docnumber: I-D.rabadan-bess-evpn-inter-domain-opt-b
 date:
 - type: published
-  value: '2023-04-17'
+  at: '2023-04-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Senthil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Senthil
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sathappan
-        language:
-        - en
       completename:
+        language: en
         content: Senthil Sathappan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wen
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Wen Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper
-  role:
-  - type: author
+        - language: en
+          content: Juniper
 version:
 - draft: '01'
-revdate: '2023-04-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>An EVPN Inter-Domain interconnect solution is required if two or more
-    sites of the same Ethernet Virtual Private Network (EVPN) are attached to different
-    IGP domains or Autonomous Systems (AS), and they need to communicate. The Inter-Domain
-    Option-B connectivity model is one of the most popular solutions for such EVPN
-    connectivity. While multiple documents refer to this type of interconnect solution
-    and specify different aspects of it, there is no document that summarizes the
-    impact of the Inter-Domain Option-B connectivity in the EVPN procedures. This
-    document does not specify new procedures but analyses the EVPN procedures in an
-    Inter-Domain Option-B network and suggests potential solutions for the described
-    issues. Those solutions are based on either other specifications or based on local
-    implementations that do not modify the end-to-end EVPN control plane.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   An EVPN Inter-Domain interconnect solution is required if two or more\n
+    \  sites of the same Ethernet Virtual Private Network (EVPN) are\n   attached
+    to different IGP domains or Autonomous Systems (AS), and\n   they need to communicate.
+    \ The Inter-Domain Option-B connectivity\n   model is one of the most popular
+    solutions for such EVPN\n   connectivity.  While multiple documents refer to this
+    type of\n   interconnect solution and specify different aspects of it, there is\n
+    \  no document that summarizes the impact of the Inter-Domain Option-B\n   connectivity
+    in the EVPN procedures.  This document does not specify\n   new procedures but
+    analyses the EVPN procedures in an Inter-Domain\n   Option-B network and suggests
+    potential solutions for the described\n   issues.  Those solutions are based on
+    either other specifications or\n   based on local implementations that do not
+    modify the end-to-end EVPN\n   control plane.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-rabadan-bess-evpn-inter-domain-opt-b-00
-    docid:
-    - id: draft-rabadan-bess-evpn-inter-domain-opt-b-00
+    formattedref: draft-rabadan-bess-evpn-inter-domain-opt-b-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rabadan-bess-evpn-inter-domain-opt-b-00
+    docidentifier:
+    - content: draft-rabadan-bess-evpn-inter-domain-opt-b-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rabadan-bess-evpn-inter-domain-opt-b-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-rabadan-bess-evpn-inter-domain-opt-b-02
-    docid:
-    - id: draft-rabadan-bess-evpn-inter-domain-opt-b-02
+    formattedref: draft-rabadan-bess-evpn-inter-domain-opt-b-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rabadan-bess-evpn-inter-domain-opt-b-02
+    docidentifier:
+    - content: draft-rabadan-bess-evpn-inter-domain-opt-b-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rabadan-bess-evpn-inter-domain-opt-b-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-rabadan-bess-evpn-inter-domain-opt-b-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

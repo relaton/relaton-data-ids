@@ -1,220 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-grizzle-scim-pam-ext-01
-title:
-- content: SCIM Extension for Privileged Access Management
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-grizzle-scim-pam-ext-01
-  type: src
+id: draftgrizzlescimpamext01
 type: standard
-docid:
-- id: draft-grizzle-scim-pam-ext-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SCIM Extension for Privileged Access Management
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-grizzle-scim-pam-ext-01
+docidentifier:
+- content: draft-grizzle-scim-pam-ext
+  type: Internet-Draft
+- content: draft-grizzle-scim-pam-ext-01
   type: Internet-Draft
   primary: true
-- id: I-D.grizzle-scim-pam-ext
-  type: IETF
-  scope: anchor
 docnumber: I-D.grizzle-scim-pam-ext
 date:
 - type: published
-  value: '2017-10-18'
+  at: '2017-10-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kelly
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kelly
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Grizzle
-        language:
-        - en
       completename:
+        language: en
         content: Kelly Grizzle
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SailPoint
-  role:
+        - language: en
+          content: SailPoint
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Benjamin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Benjamin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Yoder
-        language:
-        - en
       completename:
+        language: en
         content: Benjamin Yoder
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Thycotic
-  role:
+        - language: en
+          content: Thycotic
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jason
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jason
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Jones
-        language:
-        - en
       completename:
+        language: en
         content: Jason Jones
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bomgar
-  role:
+        - language: en
+          content: Bomgar
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Philip
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Philip
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Lieberman
-        language:
-        - en
       completename:
+        language: en
         content: Philip Lieberman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Lieberman Software
-  role:
+        - language: en
+          content: Lieberman Software
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Edward
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Edward
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Nunez
-        language:
-        - en
       completename:
+        language: en
         content: Edward Nunez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CyberArk
-  role:
-  - type: author
+        - language: en
+          content: CyberArk
 version:
 - draft: '01'
-revdate: '2017-10-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The System for Cross-domain Identity Management (SCIM) specification
-    [RFC7643] provides schemas that represent common identity information about users
-    and groups. Privileged Access Management (PAM) software typically makes use of
-    common user and group models - as well as defining additional constructs - to
-    provide fine-grained authorization and management for privileged access. This
-    document contains a SCIM 2.0 extension for Privileged Access Management, which
-    includes extensions to the core User and Group objects, and new resource types
-    and schemas for standard Privileged Access Management constructs. This extension
-    is intended to provide greater interoperability between PAM software and clients,
-    a common language for PAM concepts, and a baseline that can be further extended
-    to support more complex PAM requirements.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The System for Cross-domain Identity Management (SCIM) specification\n
+    \  [RFC7643] provides schemas that represent common identity information\n   about
+    users and groups.  Privileged Access Management (PAM) software\n   typically makes
+    use of common user and group models - as well as\n   defining additional constructs
+    - to provide fine-grained\n   authorization and management for privileged access.\n\n
+    \  This document contains a SCIM 2.0 extension for Privileged Access\n   Management,
+    which includes extensions to the core User and Group\n   objects, and new resource
+    types and schemas for standard Privileged\n   Access Management constructs.  This
+    extension is intended to provide\n   greater interoperability between PAM software
+    and clients, a common\n   language for PAM concepts, and a baseline that can be
+    further\n   extended to support more complex PAM requirements.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-grizzle-scim-pam-ext-00
-    docid:
-    - id: draft-grizzle-scim-pam-ext-00
+    formattedref: draft-grizzle-scim-pam-ext-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grizzle-scim-pam-ext-00
+    docidentifier:
+    - content: draft-grizzle-scim-pam-ext-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-grizzle-scim-pam-ext-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-grizzle-scim-pam-ext-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

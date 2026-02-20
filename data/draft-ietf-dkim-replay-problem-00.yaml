@@ -1,179 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dkim-replay-problem-00
-title:
-- content: DKIM Replay Problem Statement
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dkim-replay-problem-00
-  type: src
+id: draftietfdkimreplayproblem00
 type: standard
-docid:
-- id: draft-ietf-dkim-replay-problem-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DKIM Replay Problem Statement
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dkim-replay-problem-00
+docidentifier:
+- content: draft-ietf-dkim-replay-problem
+  type: Internet-Draft
+- content: draft-ietf-dkim-replay-problem-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dkim-replay-problem
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dkim-replay-problem
 date:
 - type: published
-  value: '2023-07-28'
+  at: '2023-07-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Chuang
-        language:
-        - en
       completename:
+        language: en
         content: Wei Chuang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc.
-  role:
+        - language: en
+          content: Google, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dave
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dave
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Crocker
-        language:
-        - en
       completename:
+        language: en
         content: Dave Crocker
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Brandenburg InternetWorking
-  role:
+        - language: en
+          content: Brandenburg InternetWorking
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Allen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Allen
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Robin
-        language:
-        - en
       completename:
+        language: en
         content: Allen Robin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc.
-  role:
+        - language: en
+          content: Google, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bron
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Gondwana
-        language:
-        - en
       completename:
+        language: en
         content: Bron Gondwana
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fastmail Pty Ltd
-  role:
-  - type: author
+        - language: en
+          content: Fastmail Pty Ltd
 version:
 - draft: '00'
-revdate: '2023-07-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>DomainKeys Identified Mail (DKIM, RFC6376) permits claiming some responsibility
-    for a message by cryptographically associating a domain name with the message.
-    For data covered by the cryptographic signature, this also enables detecting changes
-    made during transit. DKIM survives basic email relaying. In a Replay Attack, a
-    recipient of a DKIM-signed message re-posts the message to other recipients,while
-    retaining the original, validating signature, and thereby leveraging the reputation
-    of the original signer. This document discusses the resulting damage to email
-    delivery, interoperability, and associated mail flows. A significant challenge
-    to mitigating this problem is that it is difficult for receivers to differentiate
-    between legitimate forwarding flows and a DKIM Replay Attack.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DomainKeys Identified Mail (DKIM, RFC6376) permits claiming some\n
+    \  responsibility for a message by cryptographically associating a\n   domain
+    name with the message.  For data covered by the cryptographic\n   signature, this
+    also enables detecting changes made during transit.\n   DKIM survives basic email
+    relaying.  In a Replay Attack, a recipient\n   of a DKIM-signed message re-posts
+    the message to other\n   recipients,while retaining the original, validating signature,
+    and\n   thereby leveraging the reputation of the original signer.  This\n   document
+    discusses the resulting damage to email delivery,\n   interoperability, and associated
+    mail flows.  A significant challenge\n   to mitigating this problem is that it
+    is difficult for receivers to\n   differentiate between legitimate forwarding
+    flows and a DKIM Replay\n   Attack.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dkim-replay-problem-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

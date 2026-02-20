@@ -1,166 +1,145 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-sfc-00
-title:
-- content: An MPLS-Based Forwarding Plane for Service Function Chaining
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-sfc-00
-  type: src
+id: draftietfmplssfc00
 type: standard
-docid:
-- id: draft-ietf-mpls-sfc-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An MPLS-Based Forwarding Plane for Service Function Chaining
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-sfc-00
+docidentifier:
+- content: draft-ietf-mpls-sfc
+  type: Internet-Draft
+- content: draft-ietf-mpls-sfc-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-sfc
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-sfc
 date:
 - type: published
-  value: '2018-04-04'
+  at: '2018-04-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Adrian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adrian
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Farrel
-        language:
-        - en
       completename:
+        language: en
         content: Adrian Farrel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stewart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stewart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bryant
-        language:
-        - en
       completename:
+        language: en
         content: Stewart Bryant
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '00'
-revdate: '2018-04-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Service Function Chaining (SFC) is the process of directing packets
-    through a network so that they can be acted on by an ordered set of abstract service
-    functions before being delivered to the intended destination. An architecture
-    for SFC is defined in RFC7665. The Network Service Header (NSH) can be inserted
-    into packets to steer them along a specific path to realize a Service Function
-    Chain. Multiprotocol Label Switching (MPLS) is a widely deployed forwarding technology
-    that uses labels placed in a packet in a label stack to identify the forwarding
-    actions to be taken at each hop through a network. Actions may include swapping
-    or popping the labels as well, as using the labels to determine the next hop for
-    forwarding the packet. Labels may also be used to establish the context under
-    which the packet is forwarded. This document describes how Service Function Chaining
-    can be achieved in an MPLS network by means of a logical representation of the
-    NSH in an MPLS label stack. It does not deprecate or replace the NSH, but acknowledges
-    that there may be a need for an interim deployment of SFC functionality in brownfield
-    networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Service Function Chaining (SFC) is the process of directing packets\n
+    \  through a network so that they can be acted on by an ordered set of\n   abstract
+    service functions before being delivered to the intended\n   destination.  An
+    architecture for SFC is defined in RFC7665.\n\n   The Network Service Header (NSH)
+    can be inserted into packets to\n   steer them along a specific path to realize
+    a Service Function Chain.\n\n   Multiprotocol Label Switching (MPLS) is a widely
+    deployed forwarding\n   technology that uses labels placed in a packet in a label
+    stack to\n   identify the forwarding actions to be taken at each hop through a\n
+    \  network.  Actions may include swapping or popping the labels as well,\n   as
+    using the labels to determine the next hop for forwarding the\n   packet.  Labels
+    may also be used to establish the context under which\n   the packet is forwarded.\n\n
+    \  This document describes how Service Function Chaining can be achieved\n   in
+    an MPLS network by means of a logical representation of the NSH in\n   an MPLS
+    label stack.  It does not deprecate or replace the NSH, but\n   acknowledges that
+    there may be a need for an interim deployment of\n   SFC functionality in brownfield
+    networks.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-sfc-01
-    docid:
-    - id: draft-ietf-mpls-sfc-01
+    formattedref: draft-ietf-mpls-sfc-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-sfc-01
+    docidentifier:
+    - content: draft-ietf-mpls-sfc-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-sfc-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-sfc-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

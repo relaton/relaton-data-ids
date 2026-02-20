@@ -1,178 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-dressler-ipfix-aggregation-05
-title:
-- content: IPFIX Flow Aggregation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dressler-ipfix-aggregation-05
-  type: src
+id: draftdressleripfixaggregation05
 type: standard
-docid:
-- id: draft-dressler-ipfix-aggregation-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPFIX Flow Aggregation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dressler-ipfix-aggregation-05
+docidentifier:
+- content: draft-dressler-ipfix-aggregation
+  type: Internet-Draft
+- content: draft-dressler-ipfix-aggregation-05
   type: Internet-Draft
   primary: true
-- id: I-D.dressler-ipfix-aggregation
-  type: IETF
-  scope: anchor
 docnumber: I-D.dressler-ipfix-aggregation
 date:
 - type: published
-  value: '2008-07-14'
+  at: '2008-07-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Falko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Falko
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Dressler
-        language:
-        - en
       completename:
+        language: en
         content: Falko Dressler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Univ. Erlangen
-  role:
+        - language: en
+          content: Univ. Erlangen
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christoph
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christoph
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Sommer
-        language:
-        - en
       completename:
+        language: en
         content: Christoph Sommer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Univ. Erlangen
-  role:
+        - language: en
+          content: Univ. Erlangen
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gerhard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gerhard
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Muenz
-        language:
-        - en
       completename:
+        language: en
         content: Gerhard Muenz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Univ. Tuebingen
-  role:
+        - language: en
+          content: Univ. Tuebingen
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Atsushi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Atsushi
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kobayashi
-        language:
-        - en
       completename:
+        language: en
         content: Atsushi Kobayashi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT PF Lab.
-  role:
-  - type: author
+        - language: en
+          content: NTT PF Lab.
 version:
 - draft: '05'
-revdate: '2008-07-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>IPFIX Flow Aggregation describes a methodology for reducing the amount
-    of measurement data exchanged between monitoring devices (IPFIX Exporters) and
-    analyzers (IPFIX Collectors). Aggregation techniques represent a necessary enhancement
-    in order to cope with increasing amounts of monitoring data that accrue with the
-    ever- growing network capacities. Using Flow Selection Criteria and Compound Flow
-    creation techniques, measurement information of multiple Flows that are sharing
-    some common criteria is merged to be exported in one Compound Flow. Subsets of
-    Flows eligible for aggregation, as well as the desired degree of similarity, can
-    be customized using a set of Aggregation Rules.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "IPFIX Flow Aggregation describes a methodology for reducing the\namount
+    of measurement data exchanged between monitoring devices\n(IPFIX Exporters) and
+    analyzers (IPFIX Collectors).  Aggregation\ntechniques represent a necessary enhancement
+    in order to cope with\nincreasing amounts of monitoring data that accrue with
+    the ever-\ngrowing network capacities.  Using Flow Selection Criteria and\nCompound
+    Flow creation techniques, measurement information of\nmultiple Flows that are
+    sharing some common criteria is merged to be\nexported in one Compound Flow.  Subsets
+    of Flows eligible for\naggregation, as well as the desired degree of similarity,
+    can be\ncustomized using a set of Aggregation Rules.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dressler-ipfix-aggregation-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

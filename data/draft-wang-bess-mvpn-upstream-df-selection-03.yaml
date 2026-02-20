@@ -1,142 +1,124 @@
 ---
-schema-version: v1.2.9
-id: draft-wang-bess-mvpn-upstream-df-selection-03
-title:
-- content: Multicast VPN Upstream Designated Forwarder Selection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-03
-  type: src
+id: draftwangbessmvpnupstreamdfselection03
 type: standard
-docid:
-- id: draft-wang-bess-mvpn-upstream-df-selection-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multicast VPN Upstream Designated Forwarder Selection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-03
+docidentifier:
+- content: draft-wang-bess-mvpn-upstream-df-selection
+  type: Internet-Draft
+- content: draft-wang-bess-mvpn-upstream-df-selection-03
   type: Internet-Draft
   primary: true
-- id: I-D.wang-bess-mvpn-upstream-df-selection
-  type: IETF
-  scope: anchor
 docnumber: I-D.wang-bess-mvpn-upstream-df-selection
 date:
 - type: published
-  value: '2022-11-21'
+  at: '2022-11-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Fanghong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fanghong
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Duan
-        language:
-        - en
       completename:
+        language: en
         content: Fanghong Duan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siyu
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Siyu Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '03'
-revdate: '2022-11-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines Multicast Virtual Private Network (VPN) extensions
-    and procedures of designated forwarder election performed between ingress PEs,
-    which is different from the one described in [RFC9026] in which the upstream designated
-    fowarder determined by using the "Standby PE Community" carried in the C-Multicast
-    routes. Based on the DF election, the failure detcetion point discovery mechanism
-    between DF and standby DF is extended in MVPN procedures to achieve fast failover
-    by using BFD session to track the status of detection point. To realize a stable
-    "warm root standby", this document obsolete the P-Tunnel status determining procedure
-    for downstream PEs in regular MVPN by introducing an anycast RPF checking mechanism
-    in dataplane as an instead.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines Multicast Virtual Private Network (VPN)\n   extensions
+    and procedures of designated forwarder election performed\n   between ingress
+    PEs, which is different from the one described in\n   [RFC9026] in which the upstream
+    designated fowarder determined by\n   using the \"Standby PE Community\" carried
+    in the C-Multicast routes.\n   Based on the DF election, the failure detcetion
+    point discovery\n   mechanism between DF and standby DF is extended in MVPN procedures
+    to\n   achieve fast failover by using BFD session to track the status of\n   detection
+    point.  To realize a stable \"warm root standby\", this\n   document obsolete
+    the P-Tunnel status determining procedure for\n   downstream PEs in regular MVPN
+    by introducing an anycast RPF checking\n   mechanism in dataplane as an instead.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wang-bess-mvpn-upstream-df-selection-02
-    docid:
-    - id: draft-wang-bess-mvpn-upstream-df-selection-02
+    formattedref: draft-wang-bess-mvpn-upstream-df-selection-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-02
+    docidentifier:
+    - content: draft-wang-bess-mvpn-upstream-df-selection-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wang-bess-mvpn-upstream-df-selection-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wang-bess-mvpn-upstream-df-selection-04
-    docid:
-    - id: draft-wang-bess-mvpn-upstream-df-selection-04
+    formattedref: draft-wang-bess-mvpn-upstream-df-selection-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-bess-mvpn-upstream-df-selection-04
+    docidentifier:
+    - content: draft-wang-bess-mvpn-upstream-df-selection-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wang-bess-mvpn-upstream-df-selection-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wang-bess-mvpn-upstream-df-selection-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

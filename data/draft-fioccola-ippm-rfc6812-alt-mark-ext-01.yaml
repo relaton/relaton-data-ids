@@ -1,216 +1,187 @@
 ---
-schema-version: v1.2.9
-id: draft-fioccola-ippm-rfc6812-alt-mark-ext-01
-title:
-- content: Alternate Marking Extension to Cisco SLA Protocol RFC6812
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-fioccola-ippm-rfc6812-alt-mark-ext-01
-  type: src
+id: draftfioccolaippmrfc6812altmarkext01
 type: standard
-docid:
-- id: draft-fioccola-ippm-rfc6812-alt-mark-ext-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Alternate Marking Extension to Cisco SLA Protocol RFC6812
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-fioccola-ippm-rfc6812-alt-mark-ext-01
+docidentifier:
+- content: draft-fioccola-ippm-rfc6812-alt-mark-ext
+  type: Internet-Draft
+- content: draft-fioccola-ippm-rfc6812-alt-mark-ext-01
   type: Internet-Draft
   primary: true
-- id: I-D.fioccola-ippm-rfc6812-alt-mark-ext
-  type: IETF
-  scope: anchor
 docnumber: I-D.fioccola-ippm-rfc6812-alt-mark-ext
 date:
 - type: published
-  value: '2016-03-21'
+  at: '2016-03-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Giuseppe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Giuseppe
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fioccola
-        language:
-        - en
       completename:
+        language: en
         content: Giuseppe Fioccola
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecom Italia
-  role:
+        - language: en
+          content: Telecom Italia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mauro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mauro
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Cociglio
-        language:
-        - en
       completename:
+        language: en
         content: Mauro Cociglio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecom Italia
-  role:
+        - language: en
+          content: Telecom Italia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mouli
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mouli
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Chandramouli
-        language:
-        - en
       completename:
+        language: en
         content: Mouli Chandramouli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alessandro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alessandro
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Capello
-        language:
-        - en
       completename:
+        language: en
         content: Alessandro Capello
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecom Italia
-  role:
-  - type: author
+        - language: en
+          content: Telecom Italia
 version:
 - draft: '01'
-revdate: '2016-03-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Cisco's Service-Level Assurance Protocol (Cisco's SLA Protocol) RFC
-    6812 [RFC6812] is a Performance Measurement protocol that has been widely deployed.
-    The protocol is used to measure service-level parameters such as network latency,
-    delay variation, and packet/frame loss. This document describes an extension to
-    the Cisco SLA Protocol Measurement-Type UDP-Measurement, in order to implement
-    alternate marking methodology detailed in [I-D.tempia-ippm-p3m]. The extension
-    is used to measure service level parameters by marking test traffic.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Cisco's Service-Level Assurance Protocol (Cisco's SLA Protocol) RFC\n
+    \  6812 [RFC6812] is a Performance Measurement protocol that has been\n   widely
+    deployed.  The protocol is used to measure service-level\n   parameters such as
+    network latency, delay variation, and packet/frame\n   loss.  This document describes
+    an extension to the Cisco SLA Protocol\n   Measurement-Type UDP-Measurement, in
+    order to implement alternate\n   marking methodology detailed in [I-D.tempia-ippm-p3m].
+    \ The extension\n   is used to measure service level parameters by marking test
+    traffic.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-fioccola-ippm-rfc6812-alt-mark-ext-00
-    docid:
-    - id: draft-fioccola-ippm-rfc6812-alt-mark-ext-00
+    formattedref: draft-fioccola-ippm-rfc6812-alt-mark-ext-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fioccola-ippm-rfc6812-alt-mark-ext-00
+    docidentifier:
+    - content: draft-fioccola-ippm-rfc6812-alt-mark-ext-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-fioccola-ippm-rfc6812-alt-mark-ext-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-fioccola-ippm-rfc6812-alt-mark-ext-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

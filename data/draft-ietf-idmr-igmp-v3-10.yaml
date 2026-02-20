@@ -1,196 +1,162 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idmr-igmp-v3-10
-title:
-- content: Internet Group Management Protocol, Version 3
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idmr-igmp-v3-10
-  type: src
+id: draftietfidmrigmpv310
 type: standard
-docid:
-- id: draft-ietf-idmr-igmp-v3-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Internet Group Management Protocol, Version 3
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idmr-igmp-v3-10
+docidentifier:
+- content: draft-ietf-idmr-igmp-v3
+  type: Internet-Draft
+- content: draft-ietf-idmr-igmp-v3-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idmr-igmp-v3
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idmr-igmp-v3
 date:
 - type: published
-  value: '2002-04-26'
+  at: '2002-04-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bradley
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bradley
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Cain
-        language:
-        - en
       completename:
+        language: en
         content: Bradley Cain
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: S. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: S. E.
       surname:
+        language: en
         content: Deering
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Steve E. Deering
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bill
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bill
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Fenner
-        language:
-        - en
       completename:
+        language: en
         content: Bill Fenner (ˢˣˠ)
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Isidor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Isidor
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Kouvelas
-        language:
-        - en
       completename:
+        language: en
         content: Isidor Kouvelas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ajit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ajit
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Thyagarajan
-        language:
-        - en
       completename:
+        language: en
         content: Ajit Thyagarajan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '10'
-revdate: '2002-04-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies Version 3 of the Internet Group Management
-    Protocol, IGMPv3. IGMP is the protocol used by IPv4 systems to report their IP
-    multicast group memberships to neighboring multicast routers. Version 3 of IGMP
-    adds support for 'source filtering', that is, the ability for a system to report
-    interest in receiving packets *only* from specific source addresses, or from *all
-    but* specific source addresses, sent to a particular multicast address. That information
-    may be used by multicast routing protocols to avoid delivering multicast packets
-    from specific sources to networks where there are no interested receivers. This
-    document obsoletes RFC 2236.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document specifies Version 3 of the Internet Group Management\nProtocol,
+    IGMPv3.  IGMP is the protocol used by IPv4 systems to report\ntheir IP multicast
+    group memberships to neighboring multicast routers.\nVersion 3 of IGMP adds support
+    for 'source filtering', that is, the\nability for a system to report interest
+    in receiving packets *only* from\nspecific source addresses, or from *all but*
+    specific source addresses,\nsent to a particular multicast address.  That information
+    may be used by\nmulticast routing protocols to avoid delivering multicast packets
+    from\nspecific sources to networks where there are no interested receivers.\nThis
+    document obsoletes RFC 2236.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idmr-igmp-v3-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

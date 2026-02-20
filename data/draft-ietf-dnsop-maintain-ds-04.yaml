@@ -1,138 +1,119 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-maintain-ds-04
-title:
-- content: Managing DS records from parent via CDS/CDNSKEY
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-maintain-ds-04
-  type: src
+id: draftietfdnsopmaintainds04
 type: standard
-docid:
-- id: draft-ietf-dnsop-maintain-ds-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Managing DS records from parent via CDS/CDNSKEY
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-maintain-ds-04
+docidentifier:
+- content: draft-ietf-dnsop-maintain-ds
+  type: Internet-Draft
+- content: draft-ietf-dnsop-maintain-ds-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-maintain-ds
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-maintain-ds
 date:
 - type: published
-  value: '2016-10-31'
+  at: '2016-10-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Guðmundsson
-        language:
-        - en
       completename:
+        language: en
         content: Ólafur Guðmundsson
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2016-10-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>RFC7344 specifies how DNS trust can be maintained across key rollovers
-    in-band between parent and child. This document elevates RFC7344 from informational
-    to standards track and adds a standard track method for initial trust setup and
-    removal of secure entry point. Changing a domain's DNSSEC status can be a complicated
-    matter involving multiple unrelated parties. Some of these parties, such as the
-    DNS operator, might not even be known by all the organizations involved. The inability
-    to disable DNSSEC via in-band signaling is seen as a problem or liability that
-    prevents some DNSSEC adoption at large scale. This document adds a method for
-    in-band signaling of these DNSSEC status changes. This document describes reasonable
-    policies to ease deployment of the initial acceptance of new secure entry points
-    (DS records) It is preferable that operators collaborate on the transfer or move
-    of a domain. The best method is to perform a Key Signing Key ("KSK") plus Zone
-    Signing Key ("ZSK") rollover. If that is not possible, the method using an unsigned
-    intermediate state described in this document can be used to move the domain between
-    two parties. This leaves the domain temporarily unsigned and vulnerable to DNS
-    spoofing, but that is preferred over the alternative of validation failures due
-    to a mismatched DS and DNSKEY record.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC7344 specifies how DNS trust can be maintained across key\n   rollovers
+    in-band between parent and child.  This document elevates\n   RFC7344 from informational
+    to standards track and adds a standard\n   track method for initial trust setup
+    and removal of secure entry\n   point.\n\n   Changing a domain's DNSSEC status
+    can be a complicated matter\n   involving multiple unrelated parties.  Some of
+    these parties, such as\n   the DNS operator, might not even be known by all the
+    organizations\n   involved.  The inability to disable DNSSEC via in-band signaling
+    is\n   seen as a problem or liability that prevents some DNSSEC adoption at\n
+    \  large scale.  This document adds a method for in-band signaling of\n   these
+    DNSSEC status changes.\n\n   This document describes reasonable policies to ease
+    deployment of the\n   initial acceptance of new secure entry points (DS records)\n\n
+    \  It is preferable that operators collaborate on the transfer or move\n   of
+    a domain.  The best method is to perform a Key Signing Key (\"KSK\")\n   plus
+    Zone Signing Key (\"ZSK\") rollover.  If that is not possible, the\n   method
+    using an unsigned intermediate state described in this\n   document can be used
+    to move the domain between two parties.  This\n   leaves the domain temporarily
+    unsigned and vulnerable to DNS\n   spoofing, but that is preferred over the alternative
+    of validation\n   failures due to a mismatched DS and DNSKEY record.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-maintain-ds-03
-    docid:
-    - id: draft-ietf-dnsop-maintain-ds-03
+    formattedref: draft-ietf-dnsop-maintain-ds-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-maintain-ds-03
+    docidentifier:
+    - content: draft-ietf-dnsop-maintain-ds-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-maintain-ds-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dnsop-maintain-ds-05
-    docid:
-    - id: draft-ietf-dnsop-maintain-ds-05
+    formattedref: draft-ietf-dnsop-maintain-ds-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-maintain-ds-05
+    docidentifier:
+    - content: draft-ietf-dnsop-maintain-ds-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-maintain-ds-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-maintain-ds-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

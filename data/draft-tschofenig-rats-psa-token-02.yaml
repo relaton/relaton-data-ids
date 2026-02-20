@@ -1,230 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-tschofenig-rats-psa-token-02
-title:
-- content: Arm's Platform Security Architecture (PSA) Attestation Token
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tschofenig-rats-psa-token-02
-  type: src
+id: drafttschofenigratspsatoken02
 type: standard
-docid:
-- id: draft-tschofenig-rats-psa-token-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Arm's Platform Security Architecture (PSA) Attestation Token
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tschofenig-rats-psa-token-02
+docidentifier:
+- content: draft-tschofenig-rats-psa-token
+  type: Internet-Draft
+- content: draft-tschofenig-rats-psa-token-02
   type: Internet-Draft
   primary: true
-- id: I-D.tschofenig-rats-psa-token
-  type: IETF
-  scope: anchor
 docnumber: I-D.tschofenig-rats-psa-token
 date:
 - type: published
-  value: '2019-07-08'
+  at: '2019-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Simon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Simon
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Frost
-        language:
-        - en
       completename:
+        language: en
         content: Simon Frost
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mathias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mathias
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Brossard
-        language:
-        - en
       completename:
+        language: en
         content: Mathias Brossard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Adrian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: A. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adrian
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: A. L.
       surname:
+        language: en
         content: Shaw
-        language:
-        - en
       completename:
+        language: en
         content: Adrian L. Shaw
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
+        - language: en
+          content: Arm Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Fossati
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Fossati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arm Limited
-  role:
-  - type: author
+        - language: en
+          content: Arm Limited
 version:
 - draft: '02'
-revdate: '2019-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The insecurity of IoT systems is a widely known and discussed problem.
-    The Arm Platform Security Architecture (PSA) is being developed to address this
-    challenge by making it easier to build secure systems. This document specifies
-    token format and claims used in the attestation API of the Arm Platform Security
-    Architecture (PSA). At its core, the Entity Attestation Token (EAT) format is
-    used and populated with a set of claims. This specification describes what claims
-    are used by the PSA and what has been implemented within Arm Trusted Firmware-M.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The insecurity of IoT systems is a widely known and discussed\n   problem.
+    \ The Arm Platform Security Architecture (PSA) is being\n   developed to address
+    this challenge by making it easier to build\n   secure systems.\n\n   This document
+    specifies token format and claims used in the\n   attestation API of the Arm Platform
+    Security Architecture (PSA).\n\n   At its core, the Entity Attestation Token (EAT)
+    format is used and\n   populated with a set of claims.  This specification describes
+    what\n   claims are used by the PSA and what has been implemented within Arm\n
+    \  Trusted Firmware-M.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tschofenig-rats-psa-token-01
-    docid:
-    - id: draft-tschofenig-rats-psa-token-01
+    formattedref: draft-tschofenig-rats-psa-token-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tschofenig-rats-psa-token-01
+    docidentifier:
+    - content: draft-tschofenig-rats-psa-token-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tschofenig-rats-psa-token-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-tschofenig-rats-psa-token-03
-    docid:
-    - id: draft-tschofenig-rats-psa-token-03
+    formattedref: draft-tschofenig-rats-psa-token-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tschofenig-rats-psa-token-03
+    docidentifier:
+    - content: draft-tschofenig-rats-psa-token-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tschofenig-rats-psa-token-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tschofenig-rats-psa-token-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

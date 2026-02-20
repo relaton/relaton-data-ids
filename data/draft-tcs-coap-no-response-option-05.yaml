@@ -1,162 +1,138 @@
 ---
-schema-version: v1.2.9
-id: draft-tcs-coap-no-response-option-05
-title:
-- content: CoAP option for no server-response
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-05
-  type: src
+id: drafttcscoapnoresponseoption05
 type: standard
-docid:
-- id: draft-tcs-coap-no-response-option-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: CoAP option for no server-response
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-05
+docidentifier:
+- content: draft-tcs-coap-no-response-option
+  type: Internet-Draft
+- content: draft-tcs-coap-no-response-option-05
   type: Internet-Draft
   primary: true
-- id: I-D.tcs-coap-no-response-option
-  type: IETF
-  scope: anchor
 docnumber: I-D.tcs-coap-no-response-option
 date:
 - type: published
-  value: '2014-01-28'
+  at: '2014-01-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Abhijan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Abhijan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bhattacharyya
-        language:
-        - en
       completename:
+        language: en
         content: Abhijan Bhattacharyya
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Soma
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Soma
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bandyopadhyay
-        language:
-        - en
       completename:
+        language: en
         content: Soma Bandyopadhyay
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arpan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arpan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Pal
-        language:
-        - en
       completename:
+        language: en
         content: Arpan Pal
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '05'
-revdate: '2014-01-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>There can be typical M2M scenarios where responses from the data sink
-    to the data source against request/ notification from the source might be considered
-    redundant. This kind of open-loop exchange (with no reverse path from the sink
-    to the source) may be desired while updating resources in constrained systems
-    looking for maximized throughput with minimized resource consumption. CoAP already
-    provides a non-confirmable (NON) mode of exchange where The receiving end-point
-    does not respond with ACK. However, the receiving end-point responds the sender
-    with a status code indicating "the result of the attempt to understand and satisfy
-    the request". This draft introduces a header option: ''No-Response'' to suppress
-    responses from the receiver and discusses exemplary use cases which motivated
-    this proposition based on real experience. This option also provides granularity
-    by allowing suppression of a typical class or a combination of classes of responses.
-    This option may be effective for both unicast and multicast scenarios.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   There can be typical M2M scenarios where responses from the data\n
+    \  sink to the data source against request/ notification from the\n   source might
+    be considered redundant. This kind of open-loop\n   exchange (with no reverse
+    path from the sink to the source) may be\n   desired while updating resources
+    in constrained systems looking for\n   maximized throughput with minimized resource
+    consumption. CoAP\n   already provides a non-confirmable (NON) mode of exchange
+    where The\n   receiving end-point does not respond with ACK. However, the\n   receiving
+    end-point responds the sender with a status code\n   indicating \"the result of
+    the attempt to understand and satisfy the\n   request\".\n\n   This draft introduces
+    a header option: 'No-Response' to suppress\n   responses from the receiver and
+    discusses exemplary use cases which\n   motivated this proposition based on real
+    experience. This option\n   also provides granularity by allowing suppression
+    of a typical class\n   or a combination of classes of responses. This option may
+    be\n   effective for both unicast and multicast scenarios.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tcs-coap-no-response-option-04
-    docid:
-    - id: draft-tcs-coap-no-response-option-04
+    formattedref: draft-tcs-coap-no-response-option-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-04
+    docidentifier:
+    - content: draft-tcs-coap-no-response-option-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tcs-coap-no-response-option-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-tcs-coap-no-response-option-06
-    docid:
-    - id: draft-tcs-coap-no-response-option-06
+    formattedref: draft-tcs-coap-no-response-option-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-06
+    docidentifier:
+    - content: draft-tcs-coap-no-response-option-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tcs-coap-no-response-option-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tcs-coap-no-response-option-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

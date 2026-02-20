@@ -1,170 +1,149 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-anima-constrained-join-proxy-10
-title:
-- content: Constrained Join Proxy for Bootstrapping Protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-join-proxy-10
-  type: src
+id: draftietfanimaconstrainedjoinproxy10
 type: standard
-docid:
-- id: draft-ietf-anima-constrained-join-proxy-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Constrained Join Proxy for Bootstrapping Protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-join-proxy-10
+docidentifier:
+- content: draft-ietf-anima-constrained-join-proxy
+  type: Internet-Draft
+- content: draft-ietf-anima-constrained-join-proxy-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-anima-constrained-join-proxy
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-anima-constrained-join-proxy
 date:
 - type: published
-  value: '2022-04-14'
+  at: '2022-04-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Richardson
-        language:
-        - en
       completename:
+        language: en
         content: Michael Richardson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sandelman Software Works
-  role:
+        - language: en
+          content: Sandelman Software Works
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Van der Stok
-        language:
-        - en
       completename:
+        language: en
         content: Peter Van der Stok
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: vanderstok consultancy
-  role:
+        - language: en
+          content: vanderstok consultancy
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Panos
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Panos
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Kampanakis
-        language:
-        - en
       completename:
+        language: en
         content: Panos Kampanakis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '10'
-revdate: '2022-04-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document extends the work of Bootstrapping Remote Secure Key Infrastructures
-    (BRSKI) by replacing the Circuit-proxy between Pledge and Registrar by a stateless/stateful
-    constrained Join Proxy. The constrained Join Proxy is a mesh neighbor of the Pledge
-    and can relay a DTLS session originating from a Pledge with only link-local addresses
-    to a Registrar which is not a mesh neighbor of the Pledge. This document defines
-    a protocol to securely assign a Pledge to a domain, represented by a Registrar,
-    using an intermediary node between Pledge and Registrar. This intermediary node
-    is known as a "constrained Join Proxy". An enrolled Pledge can act as a constrained
-    Join Proxy.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document extends the work of Bootstrapping Remote Secure Key\n
+    \  Infrastructures (BRSKI) by replacing the Circuit-proxy between Pledge\n   and
+    Registrar by a stateless/stateful constrained Join Proxy.  The\n   constrained
+    Join Proxy is a mesh neighbor of the Pledge and can relay\n   a DTLS session originating
+    from a Pledge with only link-local\n   addresses to a Registrar which is not a
+    mesh neighbor of the Pledge.\n\n   This document defines a protocol to securely
+    assign a Pledge to a\n   domain, represented by a Registrar, using an intermediary
+    node\n   between Pledge and Registrar.  This intermediary node is known as a\n
+    \  \"constrained Join Proxy\".  An enrolled Pledge can act as a\n   constrained
+    Join Proxy.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-anima-constrained-join-proxy-09
-    docid:
-    - id: draft-ietf-anima-constrained-join-proxy-09
+    formattedref: draft-ietf-anima-constrained-join-proxy-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-join-proxy-09
+    docidentifier:
+    - content: draft-ietf-anima-constrained-join-proxy-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-anima-constrained-join-proxy-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-anima-constrained-join-proxy-11
-    docid:
-    - id: draft-ietf-anima-constrained-join-proxy-11
+    formattedref: draft-ietf-anima-constrained-join-proxy-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-anima-constrained-join-proxy-11
+    docidentifier:
+    - content: draft-ietf-anima-constrained-join-proxy-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-anima-constrained-join-proxy-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-anima-constrained-join-proxy-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,228 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ccamp-client-signal-yang-08
-title:
-- content: A YANG Data Model for Transport Network Client Signals
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-08
-  type: src
+id: draftietfccampclientsignalyang08
 type: standard
-docid:
-- id: draft-ietf-ccamp-client-signal-yang-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A YANG Data Model for Transport Network Client Signals
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-08
+docidentifier:
+- content: draft-ietf-ccamp-client-signal-yang
+  type: Internet-Draft
+- content: draft-ietf-ccamp-client-signal-yang-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ccamp-client-signal-yang
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ccamp-client-signal-yang
 date:
 - type: published
-  value: '2023-01-09'
+  at: '2023-01-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Haomian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haomian
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Zheng
-        language:
-        - en
       completename:
+        language: en
         content: Haomian Zheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aihua
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aihua
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Guo
-        language:
-        - en
       completename:
+        language: en
         content: Aihua Guo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Italo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Italo
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Busi
-        language:
-        - en
       completename:
+        language: en
         content: Italo Busi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anton
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anton
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Snitser
-        language:
-        - en
       completename:
+        language: en
         content: Anton Snitser
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Francesco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Francesco
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Lazzeri
-        language:
-        - en
       completename:
+        language: en
         content: Francesco Lazzeri
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '08'
-revdate: '2023-01-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A transport network is a server-layer network to provide connectivity
-    services to its client. The topology and tunnel information in the transport layer
-    has already been defined by generic Traffic- engineered models and technology-specific
-    models (e.g., OTN, WSON). However, how the client signals are accessing to the
-    network has not been described. These information is necessary to both client
-    and provider. This draft describes how the client signals are carried over transport
-    network and defines YANG data models which are required during configuration procedure.
-    More specifically, several client signal (of transport network) models including
-    ETH, STM-n, FC and so on, are defined in this draft.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A transport network is a server-layer network to provide connectivity\n
+    \  services to its client.  The topology and tunnel information in the\n   transport
+    layer has already been defined by generic Traffic-\n   engineered models and technology-specific
+    models (e.g., OTN, WSON).\n   However, how the client signals are accessing to
+    the network has not\n   been described.  These information is necessary to both
+    client and\n   provider.\n\n   This draft describes how the client signals are
+    carried over\n   transport network and defines YANG data models which are required\n
+    \  during configuration procedure.  More specifically, several client\n   signal
+    (of transport network) models including ETH, STM-n, FC and so\n   on, are defined
+    in this draft.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ccamp-client-signal-yang-07
-    docid:
-    - id: draft-ietf-ccamp-client-signal-yang-07
+    formattedref: draft-ietf-ccamp-client-signal-yang-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-07
+    docidentifier:
+    - content: draft-ietf-ccamp-client-signal-yang-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ccamp-client-signal-yang-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ccamp-client-signal-yang-09
-    docid:
-    - id: draft-ietf-ccamp-client-signal-yang-09
+    formattedref: draft-ietf-ccamp-client-signal-yang-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-client-signal-yang-09
+    docidentifier:
+    - content: draft-ietf-ccamp-client-signal-yang-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ccamp-client-signal-yang-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ccamp-client-signal-yang-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

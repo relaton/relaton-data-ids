@@ -1,211 +1,181 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-sfc-offloads-00
-title:
-- content: Service Function Simple Offloads
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-offloads-00
-  type: src
+id: draftietfsfcoffloads00
 type: standard
-docid:
-- id: draft-ietf-sfc-offloads-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Service Function Simple Offloads
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-offloads-00
+docidentifier:
+- content: draft-ietf-sfc-offloads
+  type: Internet-Draft
+- content: draft-ietf-sfc-offloads-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-sfc-offloads
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-sfc-offloads
 date:
 - type: published
-  value: '2017-04-02'
+  at: '2017-04-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Surendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Surendra
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Surendra Kumar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Guichard
-        language:
-        - en
       completename:
+        language: en
         content: Jim Guichard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies Co.,Ltd.
-  role:
+        - language: en
+          content: Huawei Technologies Co.,Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Quinn
-        language:
-        - en
       completename:
+        language: en
         content: Paul Quinn
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: J. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joel
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: J. M.
       surname:
+        language: en
         content: Halpern
-        language:
-        - en
       completename:
+        language: en
         content: Joel M. Halpern
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sumandra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sumandra
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Majee
-        language:
-        - en
       completename:
+        language: en
         content: Sumandra Majee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: F5 Networks
-  role:
-  - type: author
+        - language: en
+          content: F5 Networks
 version:
 - draft: '00'
-revdate: '2017-04-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Service Function Chaining (SFC) enables services to be delivered by
-    selective traffic steering through an ordered set of service functions. Once classified
-    into an SFC, the traffic for a given flow is steered through all the service functions
-    of the SFC for the life of the traffic flow even though this is often not necessary.
-    Steering traffic to service functions only while required and not otherwise, leads
-    to shorter SFC forwarding paths with improved latencies, reduced resource consumption
-    and better user experience. This document describes the rationale, techniques
-    and necessary protocol extensions to achieve such optimization, with focus on
-    one such technique termed "simple offloads".</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Service Function Chaining (SFC) enables services to be delivered by\n
+    \  selective traffic steering through an ordered set of service\n   functions.
+    \ Once classified into an SFC, the traffic for a given flow\n   is steered through
+    all the service functions of the SFC for the life\n   of the traffic flow even
+    though this is often not necessary.\n   Steering traffic to service functions
+    only while required and not\n   otherwise, leads to shorter SFC forwarding paths
+    with improved\n   latencies, reduced resource consumption and better user experience.\n\n
+    \  This document describes the rationale, techniques and necessary\n   protocol
+    extensions to achieve such optimization, with focus on one\n   such technique
+    termed \"simple offloads\".\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-sfc-offloads-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

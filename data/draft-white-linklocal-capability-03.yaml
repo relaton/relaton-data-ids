@@ -1,176 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-white-linklocal-capability-03
-title:
-- content: Link-Local Next Hop Capability for BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-white-linklocal-capability-03
-  type: src
+id: draftwhitelinklocalcapability03
 type: standard
-docid:
-- id: draft-white-linklocal-capability-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Link-Local Next Hop Capability for BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-white-linklocal-capability-03
+docidentifier:
+- content: draft-white-linklocal-capability
+  type: Internet-Draft
+- content: draft-white-linklocal-capability-03
   type: Internet-Draft
   primary: true
-- id: I-D.white-linklocal-capability
-  type: IETF
-  scope: anchor
 docnumber: I-D.white-linklocal-capability
 date:
 - type: published
-  value: '2024-12-30'
+  at: '2024-12-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Russ
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Russ
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: White
-        language:
-        - en
       completename:
+        language: en
         content: Russ White
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Akamai Technologies
-  role:
+        - language: en
+          content: Akamai Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nvidia
-  role:
+        - language: en
+          content: Nvidia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Donatas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donatas
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Abraitis
-        language:
-        - en
       completename:
+        language: en
         content: Donatas Abraitis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Hostinger
-  role:
-  - type: author
+        - language: en
+          content: Hostinger
 version:
 - draft: '03'
-revdate: '2024-12-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BGP, described in [RFC4271], was originally designed to provide reachability
-    between domains and between the edges of a domain. As such, BGP assumes the next
-    hop towards any reachable destination may not reside on the advertising speaker,
-    but rather may either be through a router connected to the same subnet as the
-    speaker, or through a router only reachable by traversing multiple hops through
-    the network. Because of this, BGP does not recognize the use of IPv6 link-local
-    addresses, as described in [RFC4291], as a valid next hop for forwarding purposes.
-    However, BGP speakers are now often deployed on point-to-point links in networks
-    where multihop reachability of any kind is not assumed or desired (all next hops
-    are assumed to be the speaker reachable through a directly connected point-to-point
-    link). This is common, for instance, in data center fabrics. In these situations,
-    a global IPv6 address is not required for the advertisement of reachability information;
-    in fact, providing global IPv6 addresses in these kinds of networks can be detrimental
-    to Zero Touch Provisioning (ZTP). This draft standardizes the operation of BGP
-    over a point-to-point link using link-local IPv6 addressing only.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   BGP, described in [RFC4271], was originally designed to provide\n   reachability
+    between domains and between the edges of a domain.  As\n   such, BGP assumes the
+    next hop towards any reachable destination may\n   not reside on the advertising
+    speaker, but rather may either be\n   through a router connected to the same subnet
+    as the speaker, or\n   through a router only reachable by traversing multiple
+    hops through\n   the network.  Because of this, BGP does not recognize the use
+    of IPv6\n   link-local addresses, as described in [RFC4291], as a valid next hop\n
+    \  for forwarding purposes.\n\n   However, BGP speakers are now often deployed
+    on point-to-point links\n   in networks where multihop reachability of any kind
+    is not assumed or\n   desired (all next hops are assumed to be the speaker reachable\n
+    \  through a directly connected point-to-point link).  This is common,\n   for
+    instance, in data center fabrics.  In these situations, a global\n   IPv6 address
+    is not required for the advertisement of reachability\n   information; in fact,
+    providing global IPv6 addresses in these kinds\n   of networks can be detrimental
+    to Zero Touch Provisioning (ZTP).\n\n   This draft standardizes the operation
+    of BGP over a point-to-point\n   link using link-local IPv6 addressing only.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-white-linklocal-capability-02
-    docid:
-    - id: draft-white-linklocal-capability-02
+    formattedref: draft-white-linklocal-capability-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-white-linklocal-capability-02
+    docidentifier:
+    - content: draft-white-linklocal-capability-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-white-linklocal-capability-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-white-linklocal-capability-04
-    docid:
-    - id: draft-white-linklocal-capability-04
+    formattedref: draft-white-linklocal-capability-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-white-linklocal-capability-04
+    docidentifier:
+    - content: draft-white-linklocal-capability-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-white-linklocal-capability-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-white-linklocal-capability-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,207 +1,175 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pwe3-control-protocol-17
-title:
-- content: Pseudowire Setup and Maintenance Using the Label Distribution Protocol
-    (LDP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pwe3-control-protocol-17
-  type: src
+id: draftietfpwe3controlprotocol17
 type: standard
-docid:
-- id: draft-ietf-pwe3-control-protocol-17
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Pseudowire Setup and Maintenance Using the Label Distribution Protocol
+    (LDP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pwe3-control-protocol-17
+docidentifier:
+- content: draft-ietf-pwe3-control-protocol
+  type: Internet-Draft
+- content: draft-ietf-pwe3-control-protocol-17
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pwe3-control-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pwe3-control-protocol
 date:
 - type: published
-  value: '2005-06-13'
+  at: '2005-06-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nasser
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nasser
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: El-Aawar
-        language:
-        - en
       completename:
+        language: en
         content: Nasser El-Aawar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Toby
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Toby
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Toby Smith
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Network Appliance
-  role:
+        - language: en
+          content: Network Appliance
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Giles
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Giles
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Heron
-        language:
-        - en
       completename:
+        language: en
         content: Giles Heron
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tellabs
-  role:
+        - language: en
+          content: Tellabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luca
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luca
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Martini
-        language:
-        - en
       completename:
+        language: en
         content: Luca Martini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '17'
-revdate: '2005-06-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Layer 2 services (such as Frame Relay, Asynchronous Transfer Mode, and
-    Ethernet) can be "emulated" over an MPLS backbone by encapsulating the Layer 2
-    Protocol Data Units (PDU) and transmitting them over "pseudowires". It is also
-    possible to use pseudowires to provide low-rate Time Division Multiplexed and
-    a Synchronous Optical NETworking circuit emulation over an MPLS-enabled network.
-    This document specifies a protocol for establishing and maintaining the pseudowires,
-    using extensions to Label Distribution Protocol (LDP). Procedures for encapsulating
-    Layer 2 PDUs are specified in a set of companion documents. [STANDARDS-TRACK]</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Layer 2 services (such as Frame Relay, Asynchronous Transfer Mode, and
+    Ethernet) can be \"emulated\" over an MPLS backbone by encapsulating the Layer
+    2 Protocol Data Units (PDU) and transmitting them over \"pseudowires\".  It is
+    also possible to use pseudowires to provide low-rate Time Division Multiplexed
+    and a Synchronous Optical NETworking circuit emulation over an MPLS-enabled network.
+    \ This document specifies a protocol for establishing and maintaining the pseudowires,
+    using extensions to Label Distribution Protocol (LDP).  Procedures for encapsulating
+    Layer 2 PDUs are specified in a set of companion documents. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pwe3-control-protocol-17
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

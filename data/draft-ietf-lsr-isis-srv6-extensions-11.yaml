@@ -1,224 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lsr-isis-srv6-extensions-11
-title:
-- content: IS-IS Extension to Support Segment Routing over IPv6 Dataplane
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-extensions-11
-  type: src
+id: draftietflsrisissrv6extensions11
 type: standard
-docid:
-- id: draft-ietf-lsr-isis-srv6-extensions-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IS-IS Extension to Support Segment Routing over IPv6 Dataplane
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-extensions-11
+docidentifier:
+- content: draft-ietf-lsr-isis-srv6-extensions
+  type: Internet-Draft
+- content: draft-ietf-lsr-isis-srv6-extensions-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsr-isis-srv6-extensions
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lsr-isis-srv6-extensions
 date:
 - type: published
-  value: '2020-10-08'
+  at: '2020-10-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clarence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clarence
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Filsfils
-        language:
-        - en
       completename:
+        language: en
         content: Clarence Filsfils
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ahmed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ahmed
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bashandy
-        language:
-        - en
       completename:
+        language: en
         content: Ahmed Bashandy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Individual
-  role:
+        - language: en
+          content: Individual
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '11'
-revdate: '2020-10-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Segment Routing (SR) allows for a flexible definition of end-to-end
-    paths by encoding paths as sequences of topological sub-paths, called "segments".
-    Segment routing architecture can be implemented over an MPLS data plane as well
-    as an IPv6 data plane. This draft describes the IS-IS extensions required to support
-    Segment Routing over an IPv6 data plane.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment Routing (SR) allows for a flexible definition of end-to-end\n
+    \  paths by encoding paths as sequences of topological sub-paths, called\n   \"segments\".
+    \ Segment routing architecture can be implemented over an\n   MPLS data plane
+    as well as an IPv6 data plane.  This draft describes\n   the IS-IS extensions
+    required to support Segment Routing over an IPv6\n   data plane.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lsr-isis-srv6-extensions-10
-    docid:
-    - id: draft-ietf-lsr-isis-srv6-extensions-10
+    formattedref: draft-ietf-lsr-isis-srv6-extensions-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-extensions-10
+    docidentifier:
+    - content: draft-ietf-lsr-isis-srv6-extensions-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-isis-srv6-extensions-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lsr-isis-srv6-extensions-12
-    docid:
-    - id: draft-ietf-lsr-isis-srv6-extensions-12
+    formattedref: draft-ietf-lsr-isis-srv6-extensions-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-isis-srv6-extensions-12
+    docidentifier:
+    - content: draft-ietf-lsr-isis-srv6-extensions-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-isis-srv6-extensions-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lsr-isis-srv6-extensions-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

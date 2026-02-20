@@ -1,225 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pce-sid-algo-05
-title:
-- content: Carrying SR Algorithm information in PCE-based Networks.
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-sid-algo-05
-  type: src
+id: draftietfpcesidalgo05
 type: standard
-docid:
-- id: draft-ietf-pce-sid-algo-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Carrying SR Algorithm information in PCE-based Networks.
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-sid-algo-05
+docidentifier:
+- content: draft-ietf-pce-sid-algo
+  type: Internet-Draft
+- content: draft-ietf-pce-sid-algo-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pce-sid-algo
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pce-sid-algo
 date:
 - type: published
-  value: '2023-09-21'
+  at: '2023-09-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Samuel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samuel
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sidor
-        language:
-        - en
       completename:
+        language: en
         content: Samuel Sidor
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexej
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexej
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Tokar
-        language:
-        - en
       completename:
+        language: en
         content: Alexej Tokar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shaofu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shaofu
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Peng
-        language:
-        - en
       completename:
+        language: en
         content: Shaofu Peng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shuping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shuping
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Peng
-        language:
-        - en
       completename:
+        language: en
         content: Shuping Peng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Stone
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Stone
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '05'
-revdate: '2023-09-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Algorithm associated with a prefix Segment-ID (SID) defines the
-    path computation Algorithm used by Interior Gateway Protocols (IGPs). This information
-    is available to controllers such as the Path Computation Element (PCE) via topology
-    learning. This document proposes an approach for informing headend routers regarding
-    the Algorithm associated with each prefix SID used in PCE-computed paths, as well
-    as signalling a specific SR algorithm as a constraint to the PCE.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Algorithm associated with a prefix Segment-ID (SID) defines the\n
+    \  path computation Algorithm used by Interior Gateway Protocols (IGPs).\n   This
+    information is available to controllers such as the Path\n   Computation Element
+    (PCE) via topology learning.  This document\n   proposes an approach for informing
+    headend routers regarding the\n   Algorithm associated with each prefix SID used
+    in PCE-computed paths,\n   as well as signalling a specific SR algorithm as a
+    constraint to the\n   PCE.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pce-sid-algo-04
-    docid:
-    - id: draft-ietf-pce-sid-algo-04
+    formattedref: draft-ietf-pce-sid-algo-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-sid-algo-04
+    docidentifier:
+    - content: draft-ietf-pce-sid-algo-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-sid-algo-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pce-sid-algo-06
-    docid:
-    - id: draft-ietf-pce-sid-algo-06
+    formattedref: draft-ietf-pce-sid-algo-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-sid-algo-06
+    docidentifier:
+    - content: draft-ietf-pce-sid-algo-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pce-sid-algo-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pce-sid-algo-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

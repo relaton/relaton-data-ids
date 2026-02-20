@@ -1,199 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-oauth-mtls-10
-title:
-- content: OAuth 2.0 Mutual TLS Client Authentication and Certificate Bound Access
-    Tokens
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mtls-10
-  type: src
+id: draftietfoauthmtls10
 type: standard
-docid:
-- id: draft-ietf-oauth-mtls-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OAuth 2.0 Mutual TLS Client Authentication and Certificate Bound Access
+    Tokens
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mtls-10
+docidentifier:
+- content: draft-ietf-oauth-mtls
+  type: Internet-Draft
+- content: draft-ietf-oauth-mtls-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-oauth-mtls
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-oauth-mtls
 date:
 - type: published
-  value: '2018-07-17'
+  at: '2018-07-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Campbell
-        language:
-        - en
       completename:
+        language: en
         content: Brian Campbell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ping Identity
-  role:
+        - language: en
+          content: Ping Identity
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Bradley
-        language:
-        - en
       completename:
+        language: en
         content: John Bradley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Yubico
-  role:
+        - language: en
+          content: Yubico
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nat
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nat
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Sakimura
-        language:
-        - en
       completename:
+        language: en
         content: Nat Sakimura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nomura Research Institute
-  role:
+        - language: en
+          content: Nomura Research Institute
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Torsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Torsten
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Lodderstedt
-        language:
-        - en
       completename:
+        language: en
         content: Torsten Lodderstedt
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: YES Europe AG
-  role:
-  - type: author
+        - language: en
+          content: YES Europe AG
 version:
 - draft: '10'
-revdate: '2018-07-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes OAuth client authentication and certificate
-    bound access tokens using mutual Transport Layer Security (TLS) authentication
-    with X.509 certificates. OAuth clients are provided a mechanism for authentication
-    to the authorization sever using mutual TLS, based on either self-signed certificates
-    or public key infrastructure (PKI). OAuth authorization servers are provided a
-    mechanism for binding access tokens to a client's mutual TLS certificate, and
-    OAuth protected resources are provided a method for ensuring that such an access
-    token presented to it was issued to the client presenting the token.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes OAuth client authentication and certificate\n
+    \  bound access tokens using mutual Transport Layer Security (TLS)\n   authentication
+    with X.509 certificates.  OAuth clients are provided a\n   mechanism for authentication
+    to the authorization sever using mutual\n   TLS, based on either self-signed certificates
+    or public key\n   infrastructure (PKI).  OAuth authorization servers are provided
+    a\n   mechanism for binding access tokens to a client's mutual TLS\n   certificate,
+    and OAuth protected resources are provided a method for\n   ensuring that such
+    an access token presented to it was issued to the\n   client presenting the token.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-oauth-mtls-09
-    docid:
-    - id: draft-ietf-oauth-mtls-09
+    formattedref: draft-ietf-oauth-mtls-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mtls-09
+    docidentifier:
+    - content: draft-ietf-oauth-mtls-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-oauth-mtls-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-oauth-mtls-11
-    docid:
-    - id: draft-ietf-oauth-mtls-11
+    formattedref: draft-ietf-oauth-mtls-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-mtls-11
+    docidentifier:
+    - content: draft-ietf-oauth-mtls-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-oauth-mtls-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-oauth-mtls-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

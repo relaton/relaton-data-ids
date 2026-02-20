@@ -1,187 +1,161 @@
 ---
-schema-version: v1.2.9
-id: draft-chan-netext-distributed-lma-03
-title:
-- content: Distributed Local Mobility Anchors
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-chan-netext-distributed-lma-03
-  type: src
+id: draftchannetextdistributedlma03
 type: standard
-docid:
-- id: draft-chan-netext-distributed-lma-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Distributed Local Mobility Anchors
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-chan-netext-distributed-lma-03
+docidentifier:
+- content: draft-chan-netext-distributed-lma
+  type: Internet-Draft
+- content: draft-chan-netext-distributed-lma-03
   type: Internet-Draft
   primary: true
-- id: I-D.chan-netext-distributed-lma
-  type: IETF
-  scope: anchor
 docnumber: I-D.chan-netext-distributed-lma
 date:
 - type: published
-  value: '2010-03-08'
+  at: '2010-03-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: H
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: H. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: H
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: H. A.
       surname:
+        language: en
         content: Chan
-        language:
-        - en
       completename:
+        language: en
         content: H Anthony Chan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Frank
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Frank
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Xia
-        language:
-        - en
       completename:
+        language: en
         content: Frank Xia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Justin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Justin
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Xiang
-        language:
-        - en
       completename:
+        language: en
         content: Justin Xiang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hanan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hanan
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Ahmed
-        language:
-        - en
       completename:
+        language: en
         content: Hanan Ahmed
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '03'
-revdate: '2010-03-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft proposes a distributed local mobility anchors architecture.
-    It splits the functions of a local mobility anchor into different logical functions:
-    (1) allocation of home network prefixes or home addresses to mobile nodes, (2)
-    location management (LM) which includes managing the IP addresses and locations
-    of the mobile nodes, and (3) mobility routing (MR) which includes intercepting
-    and forwarding packets. The distributed local mobility anchors architecture consists
-    of home local mobility anchors (H-LMA) at the registered networks and visited
-    local mobility anchors (V-LMA) at the visited networks. The V-LMA provides mobility
-    routing function to avoid triangle routing problem in Proxy mobile IP, whereas
-    the H-LMA keeps the location management function. The needed location information
-    of a mobile node is acquired by a V-LMA from the H-LMA only when a packet is first
-    sent to the mobile node via the V-LMA and are then cached at the V-LMA to enable
-    optimized mobility routing for packets subsequently sent to the mobile node. When
-    either the source or the destination node is a fixed node, bypassing the tunneling
-    role of all LMA's will expose the location information of the mobile node in some
-    cases. Yet unnecessarily long routes are still avoid by having multiple V-LMA's
-    in different networks and serving the packet transport with the nearest V-LMA.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This draft proposes a distributed local mobility anchors\narchitecture.
+    \ It splits the functions of a local mobility anchor\ninto different logical functions:
+    (1) allocation of home network\nprefixes or home addresses to mobile nodes, (2)
+    location management\n(LM) which includes managing the IP addresses and locations
+    of the\nmobile nodes, and (3) mobility routing (MR) which includes\nintercepting
+    and forwarding packets.  The distributed local mobility\nanchors architecture
+    consists of home local mobility anchors (H-LMA)\nat the registered networks and
+    visited local mobility anchors (V-LMA)\nat the visited networks.  The V-LMA provides
+    mobility routing\nfunction to avoid triangle routing problem in Proxy mobile IP,\nwhereas
+    the H-LMA keeps the location management function.  The needed\nlocation information
+    of a mobile node is acquired by a V-LMA from the\nH-LMA only when a packet is
+    first sent to the mobile node via the\nV-LMA and are then cached at the V-LMA
+    to enable optimized mobility\nrouting for packets subsequently sent to the mobile
+    node.\n\nWhen either the source or the destination node is a fixed node,\nbypassing
+    the tunneling role of all LMA's will expose the location\ninformation of the mobile
+    node in some cases.  Yet unnecessarily long\nroutes are still avoid by having
+    multiple V-LMA's in different\nnetworks and serving the packet transport with
+    the nearest V-LMA.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-chan-netext-distributed-lma-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

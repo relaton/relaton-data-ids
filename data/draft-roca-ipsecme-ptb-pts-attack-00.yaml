@@ -1,124 +1,107 @@
 ---
-schema-version: v1.2.9
-id: draft-roca-ipsecme-ptb-pts-attack-00
-title:
-- content: Too Big or Too Small? The PTB-PTS ICMP-based Attack against IPsec Gateways
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-roca-ipsecme-ptb-pts-attack-00
-  type: src
+id: draftrocaipsecmeptbptsattack00
 type: standard
-docid:
-- id: draft-roca-ipsecme-ptb-pts-attack-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Too Big or Too Small? The PTB-PTS ICMP-based Attack against IPsec Gateways
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-roca-ipsecme-ptb-pts-attack-00
+docidentifier:
+- content: draft-roca-ipsecme-ptb-pts-attack
+  type: Internet-Draft
+- content: draft-roca-ipsecme-ptb-pts-attack-00
   type: Internet-Draft
   primary: true
-- id: I-D.roca-ipsecme-ptb-pts-attack
-  type: IETF
-  scope: anchor
 docnumber: I-D.roca-ipsecme-ptb-pts-attack
 date:
 - type: published
-  value: '2015-07-06'
+  at: '2015-07-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Vincent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vincent
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Roca
-        language:
-        - en
       completename:
+        language: en
         content: Vincent Roca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA
-  role:
+        - language: en
+          content: INRIA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Saikou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Saikou
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Fall
-        language:
-        - en
       completename:
+        language: en
         content: Saikou Fall
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA
-  role:
-  - type: author
+        - language: en
+          content: INRIA
 version:
 - draft: '00'
-revdate: '2015-07-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document introduces the "Packet Too Big"-"Packet Too Small" Internet
-    Control Message Protocol (ICMP) based attack against IPsec gateways. We explain
-    how an attacker having eavesdropping and packet injection capabilities, from the
-    unsecure network where he only sees encrypted packets, can force a gateway to
-    reduce the Path Maximum Transmission Unit (PMTU) of an IPsec tunnel to the minimum,
-    which can trigger severe issues for the hosts behind this gateway: with a Linux
-    host, depending on the PMTU discovery algorithm in use (i.e., PMTUd versus PLPMTUd)
-    and protocol (TCP versus UDP), the attack either creates a Denial of Service or
-    major performance penalties. This attack highlights two fundamental problems,
-    namely: (1) the impossibility to distinguish legitimate from illegitimate ICMP
-    packets coming from the untrusted network, and (2) the contradictions in the way
-    Path MTU is managed by some end hosts when this Path MTU is below the minimum
-    packet size any link should support because of the IPsec encapsulation.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document introduces the \"Packet Too Big\"-\"Packet Too Small\"\n
+    \  Internet Control Message Protocol (ICMP) based attack against IPsec\n   gateways.
+    \ We explain how an attacker having eavesdropping and packet\n   injection capabilities,
+    from the unsecure network where he only sees\n   encrypted packets, can force
+    a gateway to reduce the Path Maximum\n   Transmission Unit (PMTU) of an IPsec
+    tunnel to the minimum, which can\n   trigger severe issues for the hosts behind
+    this gateway: with a Linux\n   host, depending on the PMTU discovery algorithm
+    in use (i.e., PMTUd\n   versus PLPMTUd) and protocol (TCP versus UDP), the attack
+    either\n   creates a Denial of Service or major performance penalties.  This\n
+    \  attack highlights two fundamental problems, namely: (1) the\n   impossibility
+    to distinguish legitimate from illegitimate ICMP\n   packets coming from the untrusted
+    network, and (2) the contradictions\n   in the way Path MTU is managed by some
+    end hosts when this Path MTU\n   is below the minimum packet size any link should
+    support because of\n   the IPsec encapsulation.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-roca-ipsecme-ptb-pts-attack-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

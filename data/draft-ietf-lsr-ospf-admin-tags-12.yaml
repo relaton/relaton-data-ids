@@ -1,170 +1,149 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lsr-ospf-admin-tags-12
-title:
-- content: Extensions to OSPF for Advertising Prefix Administrative Tags
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-admin-tags-12
-  type: src
+id: draftietflsrospfadmintags12
 type: standard
-docid:
-- id: draft-ietf-lsr-ospf-admin-tags-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Extensions to OSPF for Advertising Prefix Administrative Tags
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-admin-tags-12
+docidentifier:
+- content: draft-ietf-lsr-ospf-admin-tags
+  type: Internet-Draft
+- content: draft-ietf-lsr-ospf-admin-tags-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsr-ospf-admin-tags
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lsr-ospf-admin-tags
 date:
 - type: published
-  value: '2023-11-20'
+  at: '2023-11-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Acee
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Acee
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Lindem
-        language:
-        - en
       completename:
+        language: en
         content: Acee Lindem
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LabN Consulting LLC
-  role:
+        - language: en
+          content: LabN Consulting LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yingzhen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yingzhen
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qu
-        language:
-        - en
       completename:
+        language: en
         content: Yingzhen Qu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
-  - type: author
+        - language: en
+          content: Futurewei
 version:
 - draft: '12'
-revdate: '2023-11-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>It is useful for routers in OSPFv2 and OSPFv3 routing domains to be
-    able to associate tags with prefixes. Previously, OSPFv2 and OSPFv3 were relegated
-    to a single tag and only for AS External and Not-So- Stubby-Area (NSSA) prefixes.
-    With the flexible encodings provided by OSPFv2 Prefix/Link Attribute Advertisement
-    and OSPFv3 Extended LSAs, multiple administrative tags may be advertised for all
-    types of prefixes. These administrative tags can be used for many applications
-    including route redistribution policy, selective prefix prioritization, selective
-    IP Fast-ReRoute (IPFRR) prefix protection, and many others. The ISIS protocol
-    supports a similar mechanism that is described in RFC 5130.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   It is useful for routers in OSPFv2 and OSPFv3 routing domains to be\n
+    \  able to associate tags with prefixes.  Previously, OSPFv2 and OSPFv3\n   were
+    relegated to a single tag and only for AS External and Not-So-\n   Stubby-Area
+    (NSSA) prefixes.  With the flexible encodings provided by\n   OSPFv2 Prefix/Link
+    Attribute Advertisement and OSPFv3 Extended LSAs,\n   multiple administrative
+    tags may be advertised for all types of\n   prefixes.  These administrative tags
+    can be used for many\n   applications including route redistribution policy, selective
+    prefix\n   prioritization, selective IP Fast-ReRoute (IPFRR) prefix protection,\n
+    \  and many others.\n\n   The ISIS protocol supports a similar mechanism that
+    is described in\n   RFC 5130.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lsr-ospf-admin-tags-11
-    docid:
-    - id: draft-ietf-lsr-ospf-admin-tags-11
+    formattedref: draft-ietf-lsr-ospf-admin-tags-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-admin-tags-11
+    docidentifier:
+    - content: draft-ietf-lsr-ospf-admin-tags-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospf-admin-tags-11
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lsr-ospf-admin-tags-13
-    docid:
-    - id: draft-ietf-lsr-ospf-admin-tags-13
+    formattedref: draft-ietf-lsr-ospf-admin-tags-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-admin-tags-13
+    docidentifier:
+    - content: draft-ietf-lsr-ospf-admin-tags-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospf-admin-tags-13
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lsr-ospf-admin-tags-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

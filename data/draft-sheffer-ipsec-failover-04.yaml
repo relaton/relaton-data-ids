@@ -1,191 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-sheffer-ipsec-failover-04
-title:
-- content: IPsec Gateway Failover Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sheffer-ipsec-failover-04
-  type: src
+id: draftshefferipsecfailover04
 type: standard
-docid:
-- id: draft-sheffer-ipsec-failover-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPsec Gateway Failover Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sheffer-ipsec-failover-04
+docidentifier:
+- content: draft-sheffer-ipsec-failover
+  type: Internet-Draft
+- content: draft-sheffer-ipsec-failover-04
   type: Internet-Draft
   primary: true
-- id: I-D.sheffer-ipsec-failover
-  type: IETF
-  scope: anchor
 docnumber: I-D.sheffer-ipsec-failover
 date:
 - type: published
-  value: '2008-07-12'
+  at: '2008-07-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yaron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yaron
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Sheffer
-        language:
-        - en
       completename:
+        language: en
         content: Yaron Sheffer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Check Point
-  role:
+        - language: en
+          content: Check Point
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia Siemens Networks
-  role:
+        - language: en
+          content: Nokia Siemens Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lakshminath
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: L. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lakshminath
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: L. R.
       surname:
+        language: en
         content: Dondeti
-        language:
-        - en
       completename:
+        language: en
         content: Lakshminath R. Dondeti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: QUALCOMM, Inc.
-  role:
+        - language: en
+          content: QUALCOMM, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vidya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vidya
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Narayanan
-        language:
-        - en
       completename:
+        language: en
         content: Vidya Narayanan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: QUALCOMM, Inc.
-  role:
-  - type: author
+        - language: en
+          content: QUALCOMM, Inc.
 version:
 - draft: '04'
-revdate: '2008-07-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Internet Key Exchange version 2 (IKEv2) protocol has a certain
-    computational and communication overhead with respect to the number of round-trips
-    required and the cryptographic operations involved. In remote access situations,
-    the Extensible Authentication Protocol is used for authentication, which adds
-    several more round trips and therefore latency. To re-establish security associations
-    (SA) upon a failure recovery condition is time consuming, especially when an IPsec
-    peer, such as a VPN gateway, needs to re-establish a large number of SAs with
-    various end points. A high number of concurrent sessions might cause additional
-    problems for an IPsec peer during SA re-establishment. In many failure cases it
-    would be useful to provide an efficient way to resume an interrupted IKE/IPsec
-    session. This document proposes an extension to IKEv2 that allows a client to
-    re-establish an IKE SA with a gateway in a highly efficient manner, utilizing
-    a previously established IKE SA. A client can reconnect to a gateway from which
-    it was disconnected, or alternatively migrate to another gateway that is associated
-    with the previous one. The proposed approach conveys IKEv2 state information,
-    in the form of an encrypted ticket, to a VPN client that is later presented to
-    the VPN gateway for re-authentication. The encrypted ticket can only be decrypted
-    by the VPN gateway in order to restore state for faster session setup.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The Internet Key Exchange version 2 (IKEv2) protocol has a certain\ncomputational
+    and communication overhead with respect to the number\nof round-trips required
+    and the cryptographic operations involved.\nIn remote access situations, the Extensible
+    Authentication Protocol\nis used for authentication, which adds several more round
+    trips and\ntherefore latency.\n\nTo re-establish security associations (SA) upon
+    a failure recovery\ncondition is time consuming, especially when an IPsec peer,
+    such as a\nVPN gateway, needs to re-establish a large number of SAs with various\nend
+    points.  A high number of concurrent sessions might cause\nadditional problems
+    for an IPsec peer during SA re-establishment.\n\nIn many failure cases it would
+    be useful to provide an efficient way\nto resume an interrupted IKE/IPsec session.
+    \ This document proposes\nan extension to IKEv2 that allows a client to re-establish
+    an IKE SA\nwith a gateway in a highly efficient manner, utilizing a previously\nestablished
+    IKE SA.\n\nA client can reconnect to a gateway from which it was disconnected,\nor
+    alternatively migrate to another gateway that is associated with\nthe previous
+    one.  The proposed approach conveys IKEv2 state\ninformation, in the form of an
+    encrypted ticket, to a VPN client that\nis later presented to the VPN gateway
+    for re-authentication.  The\nencrypted ticket can only be decrypted by the VPN
+    gateway in order to\nrestore state for faster session setup.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sheffer-ipsec-failover-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,218 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-eckert-detnet-glbf-05
+id: drafteckertdetnetglbf05
+type: standard
+schema_version: v1.4.1
 title:
-- content: Deterministic Networking (DetNet) Data Plane - guaranteed Latency Based
+- language: en
+  script: Latn
+  content: Deterministic Networking (DetNet) Data Plane - guaranteed Latency Based
     Forwarding (gLBF) for bounded latency with low jitter and asynchronous forwarding
     in Deterministic Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-eckert-detnet-glbf-05
-  type: src
-type: standard
-docid:
-- id: draft-eckert-detnet-glbf-05
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-eckert-detnet-glbf-05
+docidentifier:
+- content: draft-eckert-detnet-glbf
+  type: Internet-Draft
+- content: draft-eckert-detnet-glbf-05
   type: Internet-Draft
   primary: true
-- id: I-D.eckert-detnet-glbf
-  type: IETF
-  scope: anchor
 docnumber: I-D.eckert-detnet-glbf
 date:
 - type: published
-  value: '2025-10-20'
+  at: '2025-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Toerless
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T. T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Toerless
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T. T.
       surname:
+        language: en
         content: Eckert
-        language:
-        - en
       completename:
+        language: en
         content: Toerless Eckert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies USA
-  role:
+        - language: en
+          content: Futurewei Technologies USA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sympotech
-  role:
+        - language: en
+          content: Sympotech
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stewart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stewart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Bryant
-        language:
-        - en
       completename:
+        language: en
         content: Stewart Bryant
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent
-  role:
+        - language: en
+          content: Independent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stefan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hommes
-        language:
-        - en
       completename:
+        language: en
         content: Stefan Hommes
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZF Friedrichshafen AG
-  role:
-  - type: author
+        - language: en
+          content: ZF Friedrichshafen AG
 version:
 - draft: '05'
-revdate: '2025-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This memo proposes a mechanism called "guaranteed Latency Based Forwarding"
-    (gLBF) as part of DetNet for hop-by-hop packet forwarding with per-hop deterministically
-    bounded latency and minimal jitter. gLBF is intended to be useful across a wide
-    range of networks and applications with need for high-precision deterministic
-    networking services, including in-car networks or networks used for industrial
-    automation across on factory floors, all the way to ++100Gbps country-wide networks.
-    Contrary to other mechanisms, gLBF does not require network wide clock synchronization,
-    nor does it need to maintain per-flow state at network nodes, avoiding drawbacks
-    of other known methods while leveraging their advantages. Specifically, gLBF uses
-    the queuing model and calculus of Urgency Based Scheduling (UBS, [UBS]), which
-    is used by TSN Asynchronous Traffic Shaping [TSN-ATS]. gLBF is intended to be
-    a plug-in replacement for TSN-ATN or as a parallel mechanism beside TSN-ATS because
-    it allows to keeping the same controller-plane design which is selecting paths
-    for TSN-ATS, sizing TSN-ATS queues, calculating latencies and admitting flows
-    to calculated paths for calculated latencies. In addition to reducing the jitter
-    compared to TSN-ATS by additional buffering (dampening) in the network, gLBF also
-    eliminates the need for per-flow, per-hop state maintenance required by TSN-ATS.
-    This avoids the need to signal per-flow state to every hop from the controller-plane
-    and associated scaling problems. It also reduces implementation cost for high-speed
-    networking hardware due to the avoidance of additional high-speed speed read/write
-    memory access to retrieve, process and update per-flow state variables for a large
-    number of flows.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo proposes a mechanism called \"guaranteed Latency Based\n
+    \  Forwarding\" (gLBF) as part of DetNet for hop-by-hop packet forwarding\n   with
+    per-hop deterministically bounded latency and minimal jitter.\n\n   gLBF is intended
+    to be useful across a wide range of networks and\n   applications with need for
+    high-precision deterministic networking\n   services, including in-car networks
+    or networks used for industrial\n   automation across on factory floors, all the
+    way to ++100Gbps\n   country-wide networks.\n\n   Contrary to other mechanisms,
+    gLBF does not require network wide\n   clock synchronization, nor does it need
+    to maintain per-flow state at\n   network nodes, avoiding drawbacks of other known
+    methods while\n   leveraging their advantages.\n\n   Specifically, gLBF uses the
+    queuing model and calculus of Urgency\n   Based Scheduling (UBS, [UBS]), which
+    is used by TSN Asynchronous\n   Traffic Shaping [TSN-ATS]. gLBF is intended to
+    be a plug-in\n   replacement for TSN-ATN or as a parallel mechanism beside TSN-ATS\n
+    \  because it allows to keeping the same controller-plane design which\n   is
+    selecting paths for TSN-ATS, sizing TSN-ATS queues, calculating\n   latencies
+    and admitting flows to calculated paths for calculated\n   latencies.\n\n   In
+    addition to reducing the jitter compared to TSN-ATS by additional\n   buffering
+    (dampening) in the network, gLBF also eliminates the need\n   for per-flow, per-hop
+    state maintenance required by TSN-ATS.  This\n   avoids the need to signal per-flow
+    state to every hop from the\n   controller-plane and associated scaling problems.
+    \ It also reduces\n   implementation cost for high-speed networking hardware due
+    to the\n   avoidance of additional high-speed speed read/write memory access to\n
+    \  retrieve, process and update per-flow state variables for a large\n   number
+    of flows.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-eckert-detnet-glbf-04
-    docid:
-    - id: draft-eckert-detnet-glbf-04
+    formattedref: draft-eckert-detnet-glbf-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-eckert-detnet-glbf-04
+    docidentifier:
+    - content: draft-eckert-detnet-glbf-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-eckert-detnet-glbf-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-eckert-detnet-glbf-06
-    docid:
-    - id: draft-eckert-detnet-glbf-06
+    formattedref: draft-eckert-detnet-glbf-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-eckert-detnet-glbf-06
+    docidentifier:
+    - content: draft-eckert-detnet-glbf-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-eckert-detnet-glbf-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-eckert-detnet-glbf-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

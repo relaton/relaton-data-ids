@@ -1,102 +1,89 @@
 ---
-schema-version: v1.2.9
-id: draft-arciszewski-xchacha-00
-title:
-- content: 'XChaCha: eXtended-nonce ChaCha and AEAD_XChaCha20_Poly1305'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-arciszewski-xchacha-00
-  type: src
+id: draftarciszewskixchacha00
 type: standard
-docid:
-- id: draft-arciszewski-xchacha-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'XChaCha: eXtended-nonce ChaCha and AEAD_XChaCha20_Poly1305'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-arciszewski-xchacha-00
+docidentifier:
+- content: draft-arciszewski-xchacha
+  type: Internet-Draft
+- content: draft-arciszewski-xchacha-00
   type: Internet-Draft
   primary: true
-- id: I-D.arciszewski-xchacha
-  type: IETF
-  scope: anchor
 docnumber: I-D.arciszewski-xchacha
 date:
 - type: published
-  value: '2018-09-07'
+  at: '2018-09-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Scott
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Scott
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Arciszewski
-        language:
-        - en
       completename:
+        language: en
         content: Scott Arciszewski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Paragon Initiative Enterprises
-  role:
-  - type: author
+        - language: en
+          content: Paragon Initiative Enterprises
 version:
 - draft: '00'
-revdate: '2018-09-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The eXtended-nonce ChaCha cipher construction (XChaCha) allows for
-    ChaCha-based ciphersuites to accept a 192-bit nonce with similar guarantees to
-    the original construction, except with a much lower probability of nonce misuse
-    occurring. This enables XChaCha constructions to be stateless, while retaining
-    the same security assumptions as ChaCha. This document defines XChaCha20, which
-    uses HChaCha20 to convert the key and part of the nonce into a subkey, which is
-    in turn used with the remainder of the nonce with ChaCha20 to generate a pseudorandom
-    keystream (e.g. for message encryption). This document also defines AEAD_XChaCha20_Poly1305,
-    a variant of [RFC7539] that utilizes the XChaCha20 construction in place of ChaCha20.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The eXtended-nonce ChaCha cipher construction (XChaCha) allows for\n
+    \  ChaCha-based ciphersuites to accept a 192-bit nonce with similar\n   guarantees
+    to the original construction, except with a much lower\n   probability of nonce
+    misuse occurring.  This enables XChaCha\n   constructions to be stateless, while
+    retaining the same security\n   assumptions as ChaCha.\n\n   This document defines
+    XChaCha20, which uses HChaCha20 to convert the\n   key and part of the nonce into
+    a subkey, which is in turn used with\n   the remainder of the nonce with ChaCha20
+    to generate a pseudorandom\n   keystream (e.g. for message encryption).\n\n   This
+    document also defines AEAD_XChaCha20_Poly1305, a variant of\n   [RFC7539] that
+    utilizes the XChaCha20 construction in place of\n   ChaCha20.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-arciszewski-xchacha-01
-    docid:
-    - id: draft-arciszewski-xchacha-01
+    formattedref: draft-arciszewski-xchacha-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-arciszewski-xchacha-01
+    docidentifier:
+    - content: draft-arciszewski-xchacha-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-arciszewski-xchacha-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-arciszewski-xchacha-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,228 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-joung-detnet-stateless-fair-queuing-03
-title:
-- content: Latency Guarantee with Stateless Fair Queuing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-03
-  type: src
+id: draftjoungdetnetstatelessfairqueuing03
 type: standard
-docid:
-- id: draft-joung-detnet-stateless-fair-queuing-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Latency Guarantee with Stateless Fair Queuing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-03
+docidentifier:
+- content: draft-joung-detnet-stateless-fair-queuing
+  type: Internet-Draft
+- content: draft-joung-detnet-stateless-fair-queuing-03
   type: Internet-Draft
   primary: true
-- id: I-D.joung-detnet-stateless-fair-queuing
-  type: IETF
-  scope: anchor
 docnumber: I-D.joung-detnet-stateless-fair-queuing
 date:
 - type: published
-  value: '2024-07-02'
+  at: '2024-07-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jinoo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jinoo
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Joung
-        language:
-        - en
       completename:
+        language: en
         content: Jinoo Joung
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sangmyung University
-  role:
+        - language: en
+          content: Sangmyung University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Ryoo
-        language:
-        - en
       completename:
+        language: en
         content: Jeong-dong Ryoo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETRI
-  role:
+        - language: en
+          content: ETRI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Taesik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Taesik
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Cheung
-        language:
-        - en
       completename:
+        language: en
         content: Taesik Cheung
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETRI
-  role:
+        - language: en
+          content: ETRI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yizhou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yizhou
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Yizhou Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peng
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Peng Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '03'
-revdate: '2024-07-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies the framework and the operational procedure
-    for deterministic networking with a set of work conserving packet schedulers that
-    guarantees end-to-end (E2E) latency bounds to flows. The schedulers in core nodes
-    do not need to maintain flow states. Instead, the entrance node of a flow marks
-    an ideal service completion time according to a fluid model, called Finish Time
-    (FT), of a packet in the packet header. The subsequent core nodes update FT by
-    adding a delay factor, which is a function of the flow and upstream nodes. The
-    packets in the queue of the scheduler are served in the ascending order of FT.
-    This mechanism is called the stateless fair queuing. The result is that flows
-    are isolated from each other almost perfectly. The latency bound of a flow depends
-    only on the flow's intrinsic parameters, except the maximum packet length among
-    other flows sharing each output link with the flow.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies the framework and the operational procedure\n
+    \  for deterministic networking with a set of work conserving packet\n   schedulers
+    that guarantees end-to-end (E2E) latency bounds to flows.\n   The schedulers in
+    core nodes do not need to maintain flow states.\n   Instead, the entrance node
+    of a flow marks an ideal service\n   completion time according to a fluid model,
+    called Finish Time (FT),\n   of a packet in the packet header.  The subsequent
+    core nodes update\n   FT by adding a delay factor, which is a function of the
+    flow and\n   upstream nodes.  The packets in the queue of the scheduler are served\n
+    \  in the ascending order of FT.  This mechanism is called the stateless\n   fair
+    queuing.  The result is that flows are isolated from each other\n   almost perfectly.
+    \ The latency bound of a flow depends only on the\n   flow's intrinsic parameters,
+    except the maximum packet length among\n   other flows sharing each output link
+    with the flow.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-joung-detnet-stateless-fair-queuing-02
-    docid:
-    - id: draft-joung-detnet-stateless-fair-queuing-02
+    formattedref: draft-joung-detnet-stateless-fair-queuing-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-02
+    docidentifier:
+    - content: draft-joung-detnet-stateless-fair-queuing-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-joung-detnet-stateless-fair-queuing-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-joung-detnet-stateless-fair-queuing-04
-    docid:
-    - id: draft-joung-detnet-stateless-fair-queuing-04
+    formattedref: draft-joung-detnet-stateless-fair-queuing-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-04
+    docidentifier:
+    - content: draft-joung-detnet-stateless-fair-queuing-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-joung-detnet-stateless-fair-queuing-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-joung-detnet-stateless-fair-queuing-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

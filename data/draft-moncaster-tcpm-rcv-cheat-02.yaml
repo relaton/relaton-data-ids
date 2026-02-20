@@ -1,167 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-moncaster-tcpm-rcv-cheat-02
-title:
-- content: A TCP Test to Allow Senders to Identify Receiver Non-Compliance
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-moncaster-tcpm-rcv-cheat-02
-  type: src
+id: draftmoncastertcpmrcvcheat02
 type: standard
-docid:
-- id: draft-moncaster-tcpm-rcv-cheat-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A TCP Test to Allow Senders to Identify Receiver Non-Compliance
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-moncaster-tcpm-rcv-cheat-02
+docidentifier:
+- content: draft-moncaster-tcpm-rcv-cheat
+  type: Internet-Draft
+- content: draft-moncaster-tcpm-rcv-cheat-02
   type: Internet-Draft
   primary: true
-- id: I-D.moncaster-tcpm-rcv-cheat
-  type: IETF
-  scope: anchor
 docnumber: I-D.moncaster-tcpm-rcv-cheat
 date:
 - type: published
-  value: '2007-11-08'
+  at: '2007-11-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Moncaster
-        language:
-        - en
       completename:
+        language: en
         content: T Moncaster
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bob
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Briscoe
-        language:
-        - en
       completename:
+        language: en
         content: Bob Briscoe
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arnaud
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arnaud
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jacquet
-        language:
-        - en
       completename:
+        language: en
         content: Arnaud Jacquet
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2007-11-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>The TCP protocol relies on receivers sending accurate and timely feedback
-    to the sender. Currently the sender has no means to verify that a receiver is
-    correctly sending this feedback according to the protocol. A receiver that is
-    non-compliant has the potential to disrupt a sender''s resource allocation, increasing
-    its transmission rate on that connection which in turn could adversely affect
-    the network itself. This document presents a two stage test process that can be
-    used to identify whether a receiver is non-compliant. The tests enshrine the principle
-    that one shouldn''t attribute to malice that which may be accidental. The first
-    stage test causes minimum impact to the receiver but raises a suspicion of non-compliance.
-    The second stage test can then be used to verify that the receiver is non-compliant.
-    This specification does not modify the core TCP protocol - the tests can either
-    be implemented as a test suite or as a stand-alone test through a simple modification
-    to the sender implementation. Status By submitting this Internet-Draft, each author
-    represents that any applicable patent or other IPR claims of which he or she is
-    aware have been or will be disclosed, and any of which he or she becomes aware
-    will be disclosed, in accordance with Section 6 of BCP 79. Internet-Drafts are
-    working documents of the Internet Engineering Task Force (IETF), its areas, and
-    its working groups. Note that other groups may also distribute working documents
-    as Internet- Drafts. Internet-Drafts are draft documents valid for a maximum of
-    six months and may be updated, replaced, or obsoleted by other documents at any
-    time. It is inappropriate to use Internet-Drafts as reference material or to cite
-    them other than as "work in progress." The list of current Internet-Drafts can
-    be accessed at http://www.ietf.org/ietf/1id-abstracts.txt. The list of Internet-
-    Draft Shadow Directories can be accessed at http://www.ietf.org/shadow.html. Changes
-    from previous drafts (to be removed by the RFC Editor) From -01 to -02: A number
-    of changes made following an extensive review from Alfred Hoenes. These were largely
-    to better comply with the stated aims of the previous version but also included
-    some tidying up of the protocol details and a new section on a possible unwanted
-    interaction. From -00 to -01: Draft rewritten to emphasise testing for non-compliance.
-    Some changes to protocol to remove possible unwanted interactions with other TCP
-    variants. Sections added on comparison of solutions and alternative uses of test.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The TCP protocol relies on receivers sending accurate and timely\nfeedback
+    to the sender.  Currently the sender has no means to verify\nthat a receiver is
+    correctly sending this feedback according to the\nprotocol.  A receiver that is
+    non-compliant has the potential to\ndisrupt a sender's resource allocation, increasing
+    its transmission\nrate on that connection which in turn could adversely affect
+    the\nnetwork itself.  This document presents a two stage test process that\ncan
+    be used to identify whether a receiver is non-compliant.  The\ntests enshrine
+    the principle that one shouldn't attribute to malice\nthat which may be accidental.
+    \ The first stage test causes minimum\nimpact to the receiver but raises a suspicion
+    of non-compliance.  The\nsecond stage test can then be used to verify that the
+    receiver is\nnon-compliant.  This specification does not modify the core TCP\nprotocol
+    - the tests can either be implemented as a test suite or as\na stand-alone test
+    through a simple modification to the sender\nimplementation.\n\nStatus\n\nBy submitting
+    this Internet-Draft, each author represents that any\napplicable patent or other
+    IPR claims of which he or she is aware\nhave been or will be disclosed, and any
+    of which he or she becomes\naware will be disclosed, in accordance with Section
+    6 of BCP 79.\nInternet-Drafts are working documents of the Internet Engineering\nTask
+    Force (IETF), its areas, and its working groups.  Note that\nother groups may
+    also distribute working documents as Internet-\nDrafts.  Internet-Drafts are draft
+    documents valid for a maximum of\nsix months and may be updated, replaced, or
+    obsoleted by other\ndocuments at any time.  It is inappropriate to use Internet-Drafts
+    as\nreference material or to cite them other than as \"work in progress.\"\nThe
+    list of current Internet-Drafts can be accessed at\nhttp://www.ietf.org/ietf/1id-abstracts.txt.
+    \ The list of Internet-\nDraft Shadow Directories can be accessed at\nhttp://www.ietf.org/shadow.html.\n\nChanges
+    from previous drafts (to be removed by the RFC Editor)\n\nFrom -01 to -02:\n\n\nA
+    number of changes made following an extensive review from Alfred\n\nHoenes.  These
+    were largely to better comply with the stated aims\n\nof the previous version
+    but also included some tidying up of the\n\nprotocol details and a new section
+    on a possible unwanted\n\ninteraction.\n\nFrom -00 to -01:\n\n\nDraft rewritten
+    to emphasise testing for non-compliance.  Some\n\nchanges to protocol to remove
+    possible unwanted interactions with\n\nother TCP variants.  Sections added on
+    comparison of solutions and\n\nalternative uses of test.\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-moncaster-tcpm-rcv-cheat-03
-    docid:
-    - id: draft-moncaster-tcpm-rcv-cheat-03
+    formattedref: draft-moncaster-tcpm-rcv-cheat-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-moncaster-tcpm-rcv-cheat-03
+    docidentifier:
+    - content: draft-moncaster-tcpm-rcv-cheat-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-moncaster-tcpm-rcv-cheat-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-moncaster-tcpm-rcv-cheat-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

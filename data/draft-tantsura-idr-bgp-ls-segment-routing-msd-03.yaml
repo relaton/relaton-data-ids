@@ -1,181 +1,151 @@
 ---
-schema-version: v1.2.9
-id: draft-tantsura-idr-bgp-ls-segment-routing-msd-03
-title:
-- content: Signaling Maximum SID Depth using Border Gateway Protocol Link-State
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-bgp-ls-segment-routing-msd-03
-  type: src
+id: drafttantsuraidrbgplssegmentroutingmsd03
 type: standard
-docid:
-- id: draft-tantsura-idr-bgp-ls-segment-routing-msd-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signaling Maximum SID Depth using Border Gateway Protocol Link-State
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-bgp-ls-segment-routing-msd-03
+docidentifier:
+- content: draft-tantsura-idr-bgp-ls-segment-routing-msd
+  type: Internet-Draft
+- content: draft-tantsura-idr-bgp-ls-segment-routing-msd-03
   type: Internet-Draft
   primary: true
-- id: I-D.tantsura-idr-bgp-ls-segment-routing-msd
-  type: IETF
-  scope: anchor
 docnumber: I-D.tantsura-idr-bgp-ls-segment-routing-msd
 date:
 - type: published
-  value: '2017-03-06'
+  at: '2017-03-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Uma
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: U
-        formatted_initials:
-          content: U.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Uma
+      - language: en
+        script: Latn
+        initial: U
+      formatted_initials:
+        language: en
+        content: U.
       surname:
+        language: en
         content: Chunduri
-        language:
-        - en
       completename:
+        language: en
         content: Uma Chunduri
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Mirsky
-        language:
-        - en
       completename:
+        language: en
         content: Greg Mirsky
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siva
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivabalan
-        language:
-        - en
       completename:
+        language: en
         content: Siva Sivabalan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2017-03-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a way to signal Maximum SID Depth (MSD) supported
-    by a node at node and/or link granularity by a BGP-LS speaker. In a Segment Routing
-    (SR) enabled network a centralized controller that programs SR tunnels needs to
-    know the MSD supported by the head-end at node and/or link granularity to push
-    the SID stack of an appropriate depth. MSD is relevant to the head-end of a SR
-    tunnel or Binding-SID anchor node where Binding-SID expansions might result in
-    creation of a new SID stack.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a way to signal Maximum SID Depth (MSD)\n   supported
+    by a node at node and/or link granularity by a BGP-LS\n   speaker.  In a Segment
+    Routing (SR) enabled network a centralized\n   controller that programs SR tunnels
+    needs to know the MSD supported\n   by the head-end at node and/or link granularity
+    to push the SID stack\n   of an appropriate depth.  MSD is relevant to the head-end
+    of a SR\n   tunnel or Binding-SID anchor node where Binding-SID expansions might\n
+    \  result in creation of a new SID stack.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tantsura-idr-bgp-ls-segment-routing-msd-02
-    docid:
-    - id: draft-tantsura-idr-bgp-ls-segment-routing-msd-02
+    formattedref: draft-tantsura-idr-bgp-ls-segment-routing-msd-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-bgp-ls-segment-routing-msd-02
+    docidentifier:
+    - content: draft-tantsura-idr-bgp-ls-segment-routing-msd-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tantsura-idr-bgp-ls-segment-routing-msd-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-tantsura-idr-bgp-ls-segment-routing-msd-04
-    docid:
-    - id: draft-tantsura-idr-bgp-ls-segment-routing-msd-04
+    formattedref: draft-tantsura-idr-bgp-ls-segment-routing-msd-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-bgp-ls-segment-routing-msd-04
+    docidentifier:
+    - content: draft-tantsura-idr-bgp-ls-segment-routing-msd-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tantsura-idr-bgp-ls-segment-routing-msd-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tantsura-idr-bgp-ls-segment-routing-msd-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

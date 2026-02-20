@@ -1,219 +1,184 @@
 ---
-schema-version: v1.2.9
-id: draft-balaji-mpls-lawful-intercept-thru-label-dis-02
-title:
-- content: Label-based Provider-Provisioned Lawful Intercept for L3 VPNs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-balaji-mpls-lawful-intercept-thru-label-dis-02
-  type: src
+id: draftbalajimplslawfulinterceptthrulabeldis02
 type: standard
-docid:
-- id: draft-balaji-mpls-lawful-intercept-thru-label-dis-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Label-based Provider-Provisioned Lawful Intercept for L3 VPNs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-balaji-mpls-lawful-intercept-thru-label-dis-02
+docidentifier:
+- content: draft-balaji-mpls-lawful-intercept-thru-label-dis
+  type: Internet-Draft
+- content: draft-balaji-mpls-lawful-intercept-thru-label-dis-02
   type: Internet-Draft
   primary: true
-- id: I-D.balaji-mpls-lawful-intercept-thru-label-dis
-  type: IETF
-  scope: anchor
 docnumber: I-D.balaji-mpls-lawful-intercept-thru-label-dis
 date:
 - type: published
-  value: '2012-08-19'
+  at: '2012-08-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shankar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shankar
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Raman
-        language:
-        - en
       completename:
+        language: en
         content: Shankar Raman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Balaji
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: B. V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Balaji
+      - language: en
+        script: Latn
+        initial: B
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: B. V.
       surname:
+        language: en
         content: Venkataswami
-        language:
-        - en
       completename:
+        language: en
         content: Balaji Venkat Venkataswami
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gaurav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gaurav
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Raina
-        language:
-        - en
       completename:
+        language: en
         content: Gaurav Raina
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vasan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vasan
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Srini
-        language:
-        - en
       completename:
+        language: en
         content: Vasan Srini
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bhargav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bhargav
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Bhikkaji
-        language:
-        - en
       completename:
+        language: en
         content: Bhargav Bhikkaji
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2012-08-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In models of Single-AS and inter-provider Multi- Protocol Label Switching
-    (MPLS) based Virtual Private Networks (VPNs) Lawful Intercept is a key requirement.
-    For example, MPLS-based Layer 3 VPN models do not have any provider provisioned
-    methods of lawful intercept that are comprehensive, quick and easy to provision
-    from one single point. More particularly the auto-provisioning of lawful intercept
-    for all sets of streams travelling between VPN sites and consequent re-direction
-    of these streams to the appropriate government network has not been covered without
-    multiple instances of having to configure the intercept at various points in the
-    network both in the Single-AS case and the Inter-Provider VPN case. In this paper,
-    we propose a technique which uses a set of pre-defined labels called Lawful Intercept
-    labels and a method for provisioning lawful intercept amongst the various PE devices
-    using these labels both in the Single-AS and the inter-provider VPN cases. A single
-    point of action is the key to this idea. The intercepted traffic is mirrored on
-    a PE or a whole set of PEs or on all the PEs participating in the VPN. A technique
-    called the Domino-effect provisioning of these Label-based Provider Provisioned
-    Lawful Intercept mechanism is also outlined.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In models of Single-AS and inter-provider Multi- Protocol Label\n   Switching
+    (MPLS) based Virtual Private Networks (VPNs) Lawful\n   Intercept is a key requirement.
+    For example, MPLS-based Layer 3 VPN\n   models do not have any provider provisioned
+    methods of lawful\n   intercept that are comprehensive, quick and easy to provision
+    from\n   one single point. More particularly the auto-provisioning of lawful\n
+    \  intercept for all sets of streams travelling between VPN sites and\n   consequent
+    re-direction of these streams to the appropriate\n   government network has not
+    been covered without multiple instances of\n   having to configure the intercept
+    at various points in the network\n   both in the Single-AS case and the Inter-Provider
+    VPN case.\n\n   In this paper, we propose a technique which uses a set of pre-defined\n
+    \  labels called Lawful Intercept labels and a method for provisioning\n   lawful
+    intercept amongst the various PE devices using these labels\n   both in the Single-AS
+    and the inter-provider VPN cases. A single\n   point of action is the key to this
+    idea. The intercepted traffic is\n   mirrored on a PE or a whole set of PEs or
+    on all the PEs\n   participating in the VPN. A technique called the Domino-effect\n
+    \  provisioning of these Label-based Provider Provisioned Lawful\n   Intercept
+    mechanism is also outlined.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-balaji-mpls-lawful-intercept-thru-label-dis-01
-    docid:
-    - id: draft-balaji-mpls-lawful-intercept-thru-label-dis-01
+    formattedref: draft-balaji-mpls-lawful-intercept-thru-label-dis-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-balaji-mpls-lawful-intercept-thru-label-dis-01
+    docidentifier:
+    - content: draft-balaji-mpls-lawful-intercept-thru-label-dis-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-balaji-mpls-lawful-intercept-thru-label-dis-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-balaji-mpls-lawful-intercept-thru-label-dis-03
-    docid:
-    - id: draft-balaji-mpls-lawful-intercept-thru-label-dis-03
+    formattedref: draft-balaji-mpls-lawful-intercept-thru-label-dis-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-balaji-mpls-lawful-intercept-thru-label-dis-03
+    docidentifier:
+    - content: draft-balaji-mpls-lawful-intercept-thru-label-dis-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-balaji-mpls-lawful-intercept-thru-label-dis-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-balaji-mpls-lawful-intercept-thru-label-dis-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,193 +1,166 @@
 ---
-schema-version: v1.2.9
-id: draft-eastlake-randomness3-00
-title:
-- content: Randomness Requirements for Security
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-eastlake-randomness3-00
-  type: src
+id: drafteastlakerandomness300
 type: standard
-docid:
-- id: draft-eastlake-randomness3-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Randomness Requirements for Security
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-eastlake-randomness3-00
+docidentifier:
+- content: draft-eastlake-randomness3
+  type: Internet-Draft
+- content: draft-eastlake-randomness3-00
   type: Internet-Draft
   primary: true
-- id: I-D.eastlake-randomness3
-  type: IETF
-  scope: anchor
 docnumber: I-D.eastlake-randomness3
 date:
 - type: published
-  value: '2013-11-05'
+  at: '2013-11-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: D. E.
       surname:
+        language: en
         content: Eastlake
-        language:
-        - en
       completename:
+        language: en
         content: Donald E. Eastlake 3rd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: 3rd
-  role:
+        - language: en
+          content: 3rd
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Steve
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Steve
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Crocker
-        language:
-        - en
       completename:
+        language: en
         content: Steve Crocker
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Shinkuro
-  role:
+        - language: en
+          content: Shinkuro
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Charlie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Charlie
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Kaufman
-        language:
-        - en
       completename:
+        language: en
         content: Charlie Kaufman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
-  role:
+        - language: en
+          content: Microsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeffrey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: J. I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeffrey
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: J. I.
       surname:
+        language: en
         content: Schiller
-        language:
-        - en
       completename:
+        language: en
         content: Jeffrey I. Schiller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MIT
-  role:
-  - type: author
+        - language: en
+          content: MIT
 version:
 - draft: '00'
-revdate: '2013-11-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Security systems are built on strong cryptographic algorithms that
-    foil pattern analysis attempts. However, the security of these systems is dependent
-    on generating secret quantities for passwords, cryptographic keys, and similar
-    values. The use of pseudo-random processes to generate secret quantities can result
-    in pseudo- security. For example, the sophisticated attacker of these security
-    systems may find it easier to reproduce the environment that produced the secret
-    quantities, searching a resulting small set of possibilities, than to locate the
-    quantities in the whole of the potential number space. Choosing random quantities
-    to foil a resourceful and motivated adversary can be surprisingly difficult. This
-    document points out many pitfalls in using poor entropy sources or traditional
-    pseudo- random number generation techniques for generating such quantities. It
-    recommends the use of multiple sources with a strong mixing function, so that
-    no single source need be fully trusted, and provides techniques for extending
-    a random seed to a larger quantity of pseudo-random material in a cryptographically
-    secure way. And it gives examples of how large such quantities need to be for
-    some applications. This document obsoletes RFC 4086.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Security systems are built on strong cryptographic algorithms that\n
+    \  foil pattern analysis attempts. However, the security of these\n   systems
+    is dependent on generating secret quantities for passwords,\n   cryptographic
+    keys, and similar values. The use of pseudo-random\n   processes to generate secret
+    quantities can result in pseudo-\n   security.  For example, the sophisticated
+    attacker of these security\n   systems may find it easier to reproduce the environment
+    that produced\n   the secret quantities, searching a resulting small set of\n
+    \  possibilities, than to locate the quantities in the whole of the\n   potential
+    number space.\n\n   Choosing random quantities to foil a resourceful and motivated\n
+    \  adversary can be surprisingly difficult. This document points out\n   many
+    pitfalls in using poor entropy sources or traditional pseudo-\n   random number
+    generation techniques for generating such quantities.\n   It recommends the use
+    of multiple sources with a strong mixing\n   function, so that no single source
+    need be fully trusted, and\n   provides techniques for extending a random seed
+    to a larger quantity\n   of pseudo-random material in a cryptographically secure
+    way. And it\n   gives examples of how large such quantities need to be for some\n
+    \  applications. This document obsoletes RFC 4086.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-eastlake-randomness3-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,226 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-isis-mpls-elc-08
-title:
-- content: Signaling Entropy Label Capability and Entropy Readable Label Depth Using
-    IS-IS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mpls-elc-08
-  type: src
+id: draftietfisismplselc08
 type: standard
-docid:
-- id: draft-ietf-isis-mpls-elc-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signaling Entropy Label Capability and Entropy Readable Label Depth Using
+    IS-IS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mpls-elc-08
+docidentifier:
+- content: draft-ietf-isis-mpls-elc
+  type: Internet-Draft
+- content: draft-ietf-isis-mpls-elc-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-isis-mpls-elc
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-isis-mpls-elc
 date:
 - type: published
-  value: '2019-09-03'
+  at: '2019-09-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaohu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaohu
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaohu Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Inc
-  role:
+        - language: en
+          content: Alibaba Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sriganesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sriganesh
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kini
-        language:
-        - en
       completename:
+        language: en
         content: Sriganesh Kini
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clarence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clarence
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Filsfils
-        language:
-        - en
       completename:
+        language: en
         content: Clarence Filsfils
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stephane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephane
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Litkowski
-        language:
-        - en
       completename:
+        language: en
         content: Stephane Litkowski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
-  - type: author
+        - language: en
+          content: Orange
 version:
 - draft: '08'
-revdate: '2019-09-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Multiprotocol Label Switching (MPLS) has defined a mechanism to load-
-    balance traffic flows using Entropy Labels (EL). An ingress Label Switching Router
-    (LSR) cannot insert ELs for packets going into a given Label Switched Path (LSP)
-    unless an egress LSR has indicated via signaling that it has the capability to
-    process ELs, referred to as Entropy Label Capability (ELC), on that tunnel. In
-    addition, it would be useful for ingress LSRs to know each LSR's capability for
-    reading the maximum label stack depth and performing EL-based load- balancing,
-    referred to as Entropy Readable Label Depth (ERLD). This document defines a mechanism
-    to signal these two capabilities using IS-IS. These mechanisms are particularly
-    useful, where label advertisements are done via protocols like IS-IS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Multiprotocol Label Switching (MPLS) has defined a mechanism to load-\n
+    \  balance traffic flows using Entropy Labels (EL).  An ingress Label\n   Switching
+    Router (LSR) cannot insert ELs for packets going into a\n   given Label Switched
+    Path (LSP) unless an egress LSR has indicated\n   via signaling that it has the
+    capability to process ELs, referred to\n   as Entropy Label Capability (ELC),
+    on that tunnel.  In addition, it\n   would be useful for ingress LSRs to know
+    each LSR's capability for\n   reading the maximum label stack depth and performing
+    EL-based load-\n   balancing, referred to as Entropy Readable Label Depth (ERLD).
+    \ This\n   document defines a mechanism to signal these two capabilities using\n
+    \  IS-IS.  These mechanisms are particularly useful, where label\n   advertisements
+    are done via protocols like IS-IS.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-isis-mpls-elc-07
-    docid:
-    - id: draft-ietf-isis-mpls-elc-07
+    formattedref: draft-ietf-isis-mpls-elc-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mpls-elc-07
+    docidentifier:
+    - content: draft-ietf-isis-mpls-elc-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-isis-mpls-elc-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-isis-mpls-elc-09
-    docid:
-    - id: draft-ietf-isis-mpls-elc-09
+    formattedref: draft-ietf-isis-mpls-elc-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mpls-elc-09
+    docidentifier:
+    - content: draft-ietf-isis-mpls-elc-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-isis-mpls-elc-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-isis-mpls-elc-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

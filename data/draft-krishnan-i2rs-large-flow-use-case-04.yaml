@@ -1,228 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-krishnan-i2rs-large-flow-use-case-04
-title:
-- content: Large Flow Use Cases for I2RS PBR and QoS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-krishnan-i2rs-large-flow-use-case-04
-  type: src
+id: draftkrishnani2rslargeflowusecase04
 type: standard
-docid:
-- id: draft-krishnan-i2rs-large-flow-use-case-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Large Flow Use Cases for I2RS PBR and QoS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-krishnan-i2rs-large-flow-use-case-04
+docidentifier:
+- content: draft-krishnan-i2rs-large-flow-use-case
+  type: Internet-Draft
+- content: draft-krishnan-i2rs-large-flow-use-case-04
   type: Internet-Draft
   primary: true
-- id: I-D.krishnan-i2rs-large-flow-use-case
-  type: IETF
-  scope: anchor
 docnumber: I-D.krishnan-i2rs-large-flow-use-case
 date:
 - type: published
-  value: '2014-04-03'
+  at: '2014-04-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ramki
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ramki
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Krishnan
-        language:
-        - en
       completename:
+        language: en
         content: Ramki Krishnan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Brocade Communications
-  role:
+        - language: en
+          content: Brocade Communications
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anoop
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anoop
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Ghanwani
-        language:
-        - en
       completename:
+        language: en
         content: Anoop Ghanwani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Dell
-  role:
+        - language: en
+          content: Dell
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sriganesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sriganesh
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kini
-        language:
-        - en
       completename:
+        language: en
         content: Sriganesh Kini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dave
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dave
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: McDysan
-        language:
-        - en
       completename:
+        language: en
         content: Dave McDysan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: D. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: D. R.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego R. Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
-  - type: author
+        - language: en
+          content: Telefonica
 version:
 - draft: '04'
-revdate: '2014-04-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft discusses two use cases to help identify the requirements
-    for policy-based routing in I2RS. Both of the use cases involve identification
-    of certain flows and then using I2RS to program routers with special handling
-    for those flows. The first use case deals with improving bandwidth efficiency.
-    Demands on networking bandwidth are growing exponentially due to applications
-    such as large file transfers and those with rich media. Link Aggregation Group
-    (LAG) and Equal Cost Multipath (ECMP) are extensively deployed in networks to
-    scale the bandwidth. However, the static hash-based load balancing techniques
-    used today make inefficient use of the bandwidth in the presence of long-lived
-    large flows. We discuss how I2RS can be used for achieving better load balancing.
-    The second use case is for recognizing and mitigating Layer 3-4 based DDoS attacks.
-    Behavioral security threats such as Distributed Denial of Service (DDoS) attacks
-    are an ongoing problem in today's networks. DDoS attacks can be Layer 3-4 based
-    or Layer 7 based. We discuss how such attacks can be recognized and how I2RS can
-    be used for mitigating their effects.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft discusses two use cases to help identify the requirements\n
+    \  for policy-based routing in I2RS.  Both of the use cases involve\n   identification
+    of certain flows and then using I2RS to program\n   routers with special handling
+    for those flows.\n\n   The first use case deals with improving bandwidth efficiency.\n
+    \  Demands on networking bandwidth are growing exponentially due to\n   applications
+    such as large file transfers and those with rich media.\n   Link Aggregation Group
+    (LAG) and Equal Cost Multipath (ECMP) are\n   extensively deployed in networks
+    to scale the bandwidth. However,\n   the static hash-based load balancing techniques
+    used today make\n   inefficient use of the bandwidth in the presence of long-lived
+    large\n   flows. We discuss how I2RS can be used for achieving better load\n   balancing.\n\n
+    \  The second use case is for recognizing and mitigating Layer 3-4\n   based DDoS
+    attacks. Behavioral security threats such as Distributed\n   Denial of Service
+    (DDoS) attacks are an ongoing problem in today's\n   networks. DDoS attacks can
+    be Layer 3-4 based or Layer 7 based. We\n   discuss how such attacks can be recognized
+    and how I2RS can be used\n   for mitigating their effects.\n\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-krishnan-i2rs-large-flow-use-case-03
-    docid:
-    - id: draft-krishnan-i2rs-large-flow-use-case-03
+    formattedref: draft-krishnan-i2rs-large-flow-use-case-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-krishnan-i2rs-large-flow-use-case-03
+    docidentifier:
+    - content: draft-krishnan-i2rs-large-flow-use-case-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-krishnan-i2rs-large-flow-use-case-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-krishnan-i2rs-large-flow-use-case-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

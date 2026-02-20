@@ -1,230 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-spring-sr-redundancy-protection-03
-title:
-- content: SRv6 for Redundancy Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection-03
-  type: src
+id: draftietfspringsrredundancyprotection03
 type: standard
-docid:
-- id: draft-ietf-spring-sr-redundancy-protection-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SRv6 for Redundancy Protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection-03
+docidentifier:
+- content: draft-ietf-spring-sr-redundancy-protection
+  type: Internet-Draft
+- content: draft-ietf-spring-sr-redundancy-protection-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-spring-sr-redundancy-protection
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-spring-sr-redundancy-protection
 date:
 - type: published
-  value: '2024-01-17'
+  at: '2024-01-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xuesong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuesong
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Xuesong Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mach
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mach
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Mach Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fan
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Fan Yang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pablo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pablo
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Camarillo
-        language:
-        - en
       completename:
+        language: en
         content: Pablo Camarillo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
-  - type: author
+        - language: en
+          content: Verizon Inc.
 version:
 - draft: '03'
-revdate: '2024-01-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Redundancy Protection is a generalized protection mechanism to achieve
-    high reliability of service transmission in Segment Routing network. The mechanism
-    uses the "Live-Live" methodology, with the aim of enhancing the functionalities
-    of Segment Routing over IPv6. Inspired by DetNet Packet Replication and Packet
-    Elimination functions, this document introduces two new Segments to provide replication
-    and elimination functions on specific network nodes by leveraging SRv6 Segment
-    programming capabilities.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Redundancy Protection is a generalized protection mechanism to\n   achieve
+    high reliability of service transmission in Segment Routing\n   network.  The
+    mechanism uses the \"Live-Live\" methodology, with the\n   aim of enhancing the
+    functionalities of Segment Routing over IPv6.\n   Inspired by DetNet Packet Replication
+    and Packet Elimination\n   functions, this document introduces two new Segments
+    to provide\n   replication and elimination functions on specific network nodes
+    by\n   leveraging SRv6 Segment programming capabilities.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-spring-sr-redundancy-protection-02
-    docid:
-    - id: draft-ietf-spring-sr-redundancy-protection-02
+    formattedref: draft-ietf-spring-sr-redundancy-protection-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection-02
+    docidentifier:
+    - content: draft-ietf-spring-sr-redundancy-protection-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-spring-sr-redundancy-protection-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-spring-sr-redundancy-protection-04
-    docid:
-    - id: draft-ietf-spring-sr-redundancy-protection-04
+    formattedref: draft-ietf-spring-sr-redundancy-protection-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-sr-redundancy-protection-04
+    docidentifier:
+    - content: draft-ietf-spring-sr-redundancy-protection-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-spring-sr-redundancy-protection-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-spring-sr-redundancy-protection-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

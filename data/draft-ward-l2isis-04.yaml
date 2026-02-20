@@ -1,212 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-ward-l2isis-04
-title:
-- content: Carrying Attached Addresses in IS-IS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ward-l2isis-04
-  type: src
+id: draftwardl2isis04
 type: standard
-docid:
-- id: draft-ward-l2isis-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Carrying Attached Addresses in IS-IS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ward-l2isis-04
+docidentifier:
+- content: draft-ward-l2isis
+  type: Internet-Draft
+- content: draft-ward-l2isis-04
   type: Internet-Draft
   primary: true
-- id: I-D.ward-l2isis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ward-l2isis
 date:
 - type: published
-  value: '2008-11-03'
+  at: '2008-11-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Ward
-        language:
-        - en
       completename:
+        language: en
         content: David Ward
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ayan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ayan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Banerjee
-        language:
-        - en
       completename:
+        language: en
         content: Ayan Banerjee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Russ
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Russ
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: White
-        language:
-        - en
       completename:
+        language: en
         content: Russ White
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Radia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Radia
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Perlman
-        language:
-        - en
       completename:
+        language: en
         content: Radia Perlman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sun Microsystems
-  role:
-  - type: author
+        - language: en
+          content: Sun Microsystems
 version:
 - draft: '04'
-revdate: '2008-11-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft specifies the IS-IS extensions necessary to support multi-
-    link IPv4 and IPv6 networks, as well as to provide true link state routing to
-    any protocols running directly over layer 2. While supporting this concept involves
-    several pieces, this document only describes extensions to IS-IS. We leave it
-    to the systems using these IS-IS extensions to explain how the information carried
-    in IS-IS is used.1. Overview There are a number of systems (for example, [RBRIDGES])
-    which have proposed using layer 2 addresses carried in a link state routing protocol,
-    specifically IS-IS [IS-IS] [RFC1195], to provide true layer 2 routing in specific
-    environments. This draft proposes a set of TLVs and sub-TLVs to be added to [IS-IS]
-    level 1 PDUs, and three new PDU types, to support these proposed systems. This
-    draft does not propose new forwarding mechanisms using this additional information
-    carried within IS-IS. There is a short section included on two possible ways to
-    build a shortest path first tree including this information, to illustrate how
-    this information might be used.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This draft specifies the IS-IS extensions necessary to support multi-\nlink
+    IPv4 and IPv6 networks, as well as to provide true link state\nrouting to any
+    protocols running directly over layer 2.  While\nsupporting this concept involves
+    several pieces, this document only\ndescribes extensions to IS-IS.  We leave it
+    to the systems using\nthese IS-IS extensions to explain how the information carried
+    in\nIS-IS is used.1.  Overview\n\nThere are a number of systems (for example,
+    [RBRIDGES]) which have\nproposed using layer 2 addresses carried in a link state
+    routing\nprotocol, specifically IS-IS [IS-IS] [RFC1195], to provide true layer\n2
+    routing in specific environments.  This draft proposes a set of\nTLVs and sub-TLVs
+    to be added to [IS-IS] level 1 PDUs, and three new\nPDU types, to support these
+    proposed systems.\n\nThis draft does not propose new forwarding mechanisms using
+    this\nadditional information carried within IS-IS.  There is a short\nsection
+    included on two possible ways to build a shortest path first\ntree including this
+    information, to illustrate how this information\nmight be used.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ward-l2isis-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

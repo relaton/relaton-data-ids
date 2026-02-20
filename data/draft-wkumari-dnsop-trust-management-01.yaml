@@ -1,205 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-wkumari-dnsop-trust-management-01
-title:
-- content: Signalling of DNS Security (DNSSEC) Trust Anchors
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-trust-management-01
-  type: src
+id: draftwkumaridnsoptrustmanagement01
 type: standard
-docid:
-- id: draft-wkumari-dnsop-trust-management-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signalling of DNS Security (DNSSEC) Trust Anchors
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-trust-management-01
+docidentifier:
+- content: draft-wkumari-dnsop-trust-management
+  type: Internet-Draft
+- content: draft-wkumari-dnsop-trust-management-01
   type: Internet-Draft
   primary: true
-- id: I-D.wkumari-dnsop-trust-management
-  type: IETF
-  scope: anchor
 docnumber: I-D.wkumari-dnsop-trust-management
 date:
 - type: published
-  value: '2015-10-05'
+  at: '2015-10-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Warren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: W. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Warren
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: W. A.
       surname:
+        language: en
         content: Kumari
-        language:
-        - en
       completename:
+        language: en
         content: Warren "Ace" Kumari
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Geoff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Geoff
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Huston
-        language:
-        - en
       completename:
+        language: en
         content: Geoff Huston
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: APNIC
-  role:
+        - language: en
+          content: APNIC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Evan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Evan
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Hunt
-        language:
-        - en
       completename:
+        language: en
         content: Evan Hunt
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Internet Systems Consortium
-  role:
+        - language: en
+          content: Internet Systems Consortium
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Roy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Roy
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Arends
-        language:
-        - en
       completename:
+        language: en
         content: Roy Arends
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICANN
-  role:
-  - type: author
+        - language: en
+          content: ICANN
 version:
 - draft: '01'
-revdate: '2015-10-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>[ Editor note: This originally included a mechanism to actually roll
-    the keys (like RFC5011 does), but feedback from the Prague meeting indicated a
-    strong preference for signalling only. ] This document describes a simple method
-    for validating recursive resolvers to signal their configured list of DNSSEC trust
-    anchors. This mechanism allows the trust anchor maintainer to monitor the progress
-    of the migration to a new trust anchor, and so predict the effect before decommissioning
-    the existing trust anchor. It is primarily aimed at the root DNSSEC trust anchor,
-    but should be applicable to trust anchors elsewhere in the DNS as well. [ Ed note
-    - informal summary: One of the big issues with rolling the root key is that it
-    is unclear who all is using RFC5011, who all has successfully fetched and installed
-    the new key, and, most importantly, who all will die when the old key is revoked.
-    By having resolvers query for a special QNAME, comprised of the list of TAs that
-    it knows about, we effectively signal "up stream" to the authoritative server.
-    By querying for this name, the recursive exposes its list of TAs to this authoritative
-    server. This allows the TA maintainer to gather information relating to the state
-    of TAs on resolvers.] [ Ed note: Text inside square brackets ([]) is additional
-    background information, answers to frequently asked questions, general musings,
-    etc. They will be removed before publication.] [ This document is being collaborated
-    on in Github at: https://github.com/wkumari/draft-wkumari-dnsop-trust-management.
-    The most recent version of the document, open issues, etc should all be available
-    here. The authors (gratefully) accept pull requests ]</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   [ Editor note: This originally included a mechanism to actually roll\n
+    \  the keys (like RFC5011 does), but feedback from the Prague meeting\n   indicated
+    a strong preference for signalling only. ]\n\n   This document describes a simple
+    method for validating recursive\n   resolvers to signal their configured list
+    of DNSSEC trust anchors.\n   This mechanism allows the trust anchor maintainer
+    to monitor the\n   progress of the migration to a new trust anchor, and so predict
+    the\n   effect before decommissioning the existing trust anchor.\n\n   It is primarily
+    aimed at the root DNSSEC trust anchor, but should be\n   applicable to trust anchors
+    elsewhere in the DNS as well.\n\n   [ Ed note - informal summary: One of the big
+    issues with rolling the\n   root key is that it is unclear who all is using RFC5011,
+    who all has\n   successfully fetched and installed the new key, and, most\n   importantly,
+    who all will die when the old key is revoked.  By having\n   resolvers query for
+    a special QNAME, comprised of the list of TAs\n   that it knows about, we effectively
+    signal \"up stream\" to the\n   authoritative server.  By querying for this name,
+    the recursive\n   exposes its list of TAs to this authoritative server.  This
+    allows\n   the TA maintainer to gather information relating to the state of TAs\n
+    \  on resolvers.]\n\n   [ Ed note: Text inside square brackets ([]) is additional
+    background\n   information, answers to frequently asked questions, general musings,\n
+    \  etc.  They will be removed before publication.]\n\n   [ This document is being
+    collaborated on in Github at:\n   https://github.com/wkumari/draft-wkumari-dnsop-trust-management.
+    \ The\n   most recent version of the document, open issues, etc should all be\n
+    \  available here.  The authors (gratefully) accept pull requests ]\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wkumari-dnsop-trust-management-00
-    docid:
-    - id: draft-wkumari-dnsop-trust-management-00
+    formattedref: draft-wkumari-dnsop-trust-management-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-trust-management-00
+    docidentifier:
+    - content: draft-wkumari-dnsop-trust-management-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wkumari-dnsop-trust-management-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wkumari-dnsop-trust-management-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

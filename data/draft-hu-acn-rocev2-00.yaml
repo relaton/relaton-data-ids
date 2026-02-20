@@ -1,210 +1,181 @@
 ---
-schema-version: v1.2.9
-id: draft-hu-acn-rocev2-00
-title:
-- content: Inter-domain congestion notification for SRv6-based distributed RoCEv2
-    network
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hu-acn-rocev2-00
-  type: src
+id: drafthuacnrocev200
 type: standard
-docid:
-- id: draft-hu-acn-rocev2-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Inter-domain congestion notification for SRv6-based distributed RoCEv2
+    network
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hu-acn-rocev2-00
+docidentifier:
+- content: draft-hu-acn-rocev2
+  type: Internet-Draft
+- content: draft-hu-acn-rocev2-00
   type: Internet-Draft
   primary: true
-- id: I-D.hu-acn-rocev2
-  type: IETF
-  scope: anchor
 docnumber: I-D.hu-acn-rocev2
 date:
 - type: published
-  value: '2025-09-03'
+  at: '2025-09-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zehua
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zehua
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zehua Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xuesong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuesong
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Xuesong Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jiayuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jiayuan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Jiayuan Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tanxin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tanxin
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Pi
-        language:
-        - en
       completename:
+        language: en
         content: Tanxin Pi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
-  - type: author
+        - language: en
+          content: China Telecom
 version:
 - draft: '00'
-revdate: '2025-09-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Some AI services drive the need to transmit RMDA packets across wide
-    area network (WAN) via SRv6 tunnels. RoCEv2 is the most popular open standard
-    for achieving RDMA and network offloads over ethernet, with its congestion control
-    based on the combination of PFC and ECN. Due to certain limitations of PFC and
-    ECN, some drafts have been put forward to realize more faster congestion notification
-    (FANTEL). Upon detection of congestion, these drafts proposals directly sending
-    congestion notifications to relevant nodes, enabling near real-time congestion
-    control. However, in SRv6-based WAN environments, congestion notifications cannot
-    be directly delivered from WAN devices to intra-DC devices. This document specifies
-    new SRv6 Segment Identifiers (SIDs) and the corresponding processing rules for
-    device, supporting the forwarding of congestion notification across domains.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Some AI services drive the need to transmit RMDA packets across wide\n
+    \  area network (WAN) via SRv6 tunnels.  RoCEv2 is the most popular open\n   standard
+    for achieving RDMA and network offloads over ethernet, with\n   its congestion
+    control based on the combination of PFC and ECN.  Due\n   to certain limitations
+    of PFC and ECN, some drafts have been put\n   forward to realize more faster congestion
+    notification (FANTEL).\n   Upon detection of congestion, these drafts proposals
+    directly sending\n   congestion notifications to relevant nodes, enabling near
+    real-time\n   congestion control.  However, in SRv6-based WAN environments,\n
+    \  congestion notifications cannot be directly delivered from WAN\n   devices
+    to intra-DC devices.  This document specifies new SRv6\n   Segment Identifiers
+    (SIDs) and the corresponding processing rules for\n   device, supporting the forwarding
+    of congestion notification across\n   domains.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hu-acn-rocev2-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

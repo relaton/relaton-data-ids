@@ -1,149 +1,132 @@
 ---
-schema-version: v1.2.9
-id: draft-chuang-replay-resistant-arc-06
-title:
-- content: Replay Resistant Authenticated Receiver Chain
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-chuang-replay-resistant-arc-06
-  type: src
+id: draftchuangreplayresistantarc06
 type: standard
-docid:
-- id: draft-chuang-replay-resistant-arc-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Replay Resistant Authenticated Receiver Chain
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-chuang-replay-resistant-arc-06
+docidentifier:
+- content: draft-chuang-replay-resistant-arc
+  type: Internet-Draft
+- content: draft-chuang-replay-resistant-arc-06
   type: Internet-Draft
   primary: true
-- id: I-D.chuang-replay-resistant-arc
-  type: IETF
-  scope: anchor
 docnumber: I-D.chuang-replay-resistant-arc
 date:
 - type: published
-  value: '2023-05-09'
+  at: '2023-05-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Chuang
-        language:
-        - en
       completename:
+        language: en
         content: Wei Chuang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc.
-  role:
+        - language: en
+          content: Google, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bron
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Gondwana
-        language:
-        - en
       completename:
+        language: en
         content: Bron Gondwana
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fastmail Pty Ltd
-  role:
-  - type: author
+        - language: en
+          content: Fastmail Pty Ltd
 version:
 - draft: '06'
-revdate: '2023-05-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>DKIM (RFC6376) is an IETF standard for the cryptographic protocol to
-    authenticate email at the domain level and protect the integrity of messages during
-    transit. Section 8.6 defines a vulnerability called DKIM Replay as a spam message
-    sent through a SMTP MTA DKIM signer, that then is sent to many more recipients,
-    leveraging the reputation of the signer. We propose two Replay Resistant cryptographic
-    domain based protocols that leverage ARC (RFC8617). The first technique discloses
-    all SMTP recipients as signed RFC822 headers by the sender which allows a receiver
-    to verify this. The second technique defines a SMTP extension that allows both
-    the sender and receiver to participate in signing the message signature. It includes
-    a path building technique that accurately defines the SMTP forwarding path of
-    the message. Both techniques permit a receiver to detect DKIM and ARC replay attacks
-    and other attacks. This specification also defines a relay flow identifier to
-    prevent spammers from using relay forwarding. We do this by having relays categorize
-    their authenticated traffic flows and publish to receivers identifiers associated
-    with those flows. Receivers can use this identifier to help categorize traffic
-    through the relay and use that identifier to apply fine-grain anti-abuse policies
-    instead of on the entire traffic through the relay.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DKIM (RFC6376) is an IETF standard for the cryptographic protocol to\n
+    \  authenticate email at the domain level and protect the integrity of\n   messages
+    during transit.  Section 8.6 defines a vulnerability called\n   DKIM Replay as
+    a spam message sent through a SMTP MTA DKIM signer,\n   that then is sent to many
+    more recipients, leveraging the reputation\n   of the signer.  We propose two
+    Replay Resistant cryptographic domain\n   based protocols that leverage ARC (RFC8617).
+    \ The first technique\n   discloses all SMTP recipients as signed RFC822 headers
+    by the sender\n   which allows a receiver to verify this.  The second technique
+    defines\n   a SMTP extension that allows both the sender and receiver to\n   participate
+    in signing the message signature.  It includes a path\n   building technique that
+    accurately defines the SMTP forwarding path\n   of the message.  Both techniques
+    permit a receiver to detect DKIM and\n   ARC replay attacks and other attacks.
+    \ This specification also\n   defines a relay flow identifier to prevent spammers
+    from using relay\n   forwarding.  We do this by having relays categorize their\n
+    \  authenticated traffic flows and publish to receivers identifiers\n   associated
+    with those flows.  Receivers can use this identifier to\n   help categorize traffic
+    through the relay and use that identifier to\n   apply fine-grain anti-abuse policies
+    instead of on the entire traffic\n   through the relay.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-chuang-replay-resistant-arc-05
-    docid:
-    - id: draft-chuang-replay-resistant-arc-05
+    formattedref: draft-chuang-replay-resistant-arc-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chuang-replay-resistant-arc-05
+    docidentifier:
+    - content: draft-chuang-replay-resistant-arc-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chuang-replay-resistant-arc-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-chuang-replay-resistant-arc-07
-    docid:
-    - id: draft-chuang-replay-resistant-arc-07
+    formattedref: draft-chuang-replay-resistant-arc-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chuang-replay-resistant-arc-07
+    docidentifier:
+    - content: draft-chuang-replay-resistant-arc-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chuang-replay-resistant-arc-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-chuang-replay-resistant-arc-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

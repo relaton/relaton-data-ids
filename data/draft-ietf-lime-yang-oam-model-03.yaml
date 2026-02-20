@@ -1,231 +1,191 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lime-yang-oam-model-03
-title:
-- content: Generic YANG Data Model for Connection Oriented Operations, Administration,
-    and Maintenance(OAM) protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lime-yang-oam-model-03
-  type: src
+id: draftietflimeyangoammodel03
 type: standard
-docid:
-- id: draft-ietf-lime-yang-oam-model-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Generic YANG Data Model for Connection Oriented Operations, Administration,
+    and Maintenance(OAM) protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lime-yang-oam-model-03
+docidentifier:
+- content: draft-ietf-lime-yang-oam-model
+  type: Internet-Draft
+- content: draft-ietf-lime-yang-oam-model-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lime-yang-oam-model
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lime-yang-oam-model
 date:
 - type: published
-  value: '2016-03-20'
+  at: '2016-03-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tissa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tissa
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Senevirathne
-        language:
-        - en
       completename:
+        language: en
         content: Tissa Senevirathne
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Norman
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Norman
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Finn
-        language:
-        - en
       completename:
+        language: en
         content: Norman Finn
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Deepak
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Deepak
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Deepak Kumar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samer
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Salam
-        language:
-        - en
       completename:
+        language: en
         content: Samer Salam
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zitao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zitao
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Zitao Wang
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2016-03-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document presents a base YANG Data model for connection oriented
-    OAM protocols. It provides a technology-independent abstraction of key OAM constructs
-    for connection oriented protocols. Based model presented here can be extended
-    to include technology specific details. This is leading to uniformity between
-    OAM protocols and support nested OAM workflows (i.e., performing OAM functions
-    at different levels through a unified interface).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document presents a base YANG Data model for connection oriented\n
+    \  OAM protocols.  It provides a technology-independent abstraction of\n   key
+    OAM constructs for connection oriented protocols.  Based model\n   presented here
+    can be extended to include technology specific\n   details.  This is leading to
+    uniformity between OAM protocols and\n   support nested OAM workflows (i.e., performing
+    OAM functions at\n   different levels through a unified interface).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lime-yang-oam-model-02
-    docid:
-    - id: draft-ietf-lime-yang-oam-model-02
+    formattedref: draft-ietf-lime-yang-oam-model-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lime-yang-oam-model-02
+    docidentifier:
+    - content: draft-ietf-lime-yang-oam-model-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lime-yang-oam-model-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lime-yang-oam-model-04
-    docid:
-    - id: draft-ietf-lime-yang-oam-model-04
+    formattedref: draft-ietf-lime-yang-oam-model-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lime-yang-oam-model-04
+    docidentifier:
+    - content: draft-ietf-lime-yang-oam-model-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lime-yang-oam-model-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lime-yang-oam-model-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,227 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-huque-dnsop-multi-alg-rules-05
-title:
-- content: Multiple Algorithm Rules in DNSSEC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-huque-dnsop-multi-alg-rules-05
-  type: src
+id: drafthuquednsopmultialgrules05
 type: standard
-docid:
-- id: draft-huque-dnsop-multi-alg-rules-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multiple Algorithm Rules in DNSSEC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-huque-dnsop-multi-alg-rules-05
+docidentifier:
+- content: draft-huque-dnsop-multi-alg-rules
+  type: Internet-Draft
+- content: draft-huque-dnsop-multi-alg-rules-05
   type: Internet-Draft
   primary: true
-- id: I-D.huque-dnsop-multi-alg-rules
-  type: IETF
-  scope: anchor
 docnumber: I-D.huque-dnsop-multi-alg-rules
 date:
 - type: published
-  value: '2025-05-28'
+  at: '2025-05-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shumon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shumon
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Huque
-        language:
-        - en
       completename:
+        language: en
         content: Shumon Huque
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
+        - language: en
+          content: Salesforce
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Thomassen
-        language:
-        - en
       completename:
+        language: en
         content: Peter Thomassen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: deSEC, SSE
-  role:
+        - language: en
+          content: deSEC, SSE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Viktor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Viktor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Dukhovni
-        language:
-        - en
       completename:
+        language: en
         content: Viktor Dukhovni
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
-  role:
+        - language: en
+          content: Google LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Duane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Duane
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wessels
-        language:
-        - en
       completename:
+        language: en
         content: Duane Wessels
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verisign
-  role:
+        - language: en
+          content: Verisign
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Elmerot
-        language:
-        - en
       completename:
+        language: en
         content: Christian Elmerot
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
-  role:
-  - type: author
+        - language: en
+          content: Cloudflare
 version:
 - draft: '05'
-revdate: '2025-05-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document restates the requirements on DNSSEC signing and validation
-    and makes small adjustments in order to allow for more flexible handling of configurations
-    that advertise multiple Secure Entry Points (SEP) with different signing algorithms
-    via their DS record or trust anchor set. The adjusted rules allow both for multi-
-    signer operation and for the transfer of signed DNS zones between providers, where
-    the providers support disjoint DNSSEC algorithm sets. In addition, the proposal
-    enables pre-publication of a trust anchor in preparation for an algorithm rollover,
-    such as of the root zone. This document updates RFCs 4035, 6840, and 8624.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document restates the requirements on DNSSEC signing and\n   validation
+    and makes small adjustments in order to allow for more\n   flexible handling of
+    configurations that advertise multiple Secure\n   Entry Points (SEP) with different
+    signing algorithms via their DS\n   record or trust anchor set.  The adjusted
+    rules allow both for multi-\n   signer operation and for the transfer of signed
+    DNS zones between\n   providers, where the providers support disjoint DNSSEC algorithm\n
+    \  sets.  In addition, the proposal enables pre-publication of a trust\n   anchor
+    in preparation for an algorithm rollover, such as of the root\n   zone.\n\n   This
+    document updates RFCs 4035, 6840, and 8624.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-huque-dnsop-multi-alg-rules-04
-    docid:
-    - id: draft-huque-dnsop-multi-alg-rules-04
+    formattedref: draft-huque-dnsop-multi-alg-rules-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-huque-dnsop-multi-alg-rules-04
+    docidentifier:
+    - content: draft-huque-dnsop-multi-alg-rules-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-huque-dnsop-multi-alg-rules-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-huque-dnsop-multi-alg-rules-06
-    docid:
-    - id: draft-huque-dnsop-multi-alg-rules-06
+    formattedref: draft-huque-dnsop-multi-alg-rules-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-huque-dnsop-multi-alg-rules-06
+    docidentifier:
+    - content: draft-huque-dnsop-multi-alg-rules-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-huque-dnsop-multi-alg-rules-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-huque-dnsop-multi-alg-rules-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

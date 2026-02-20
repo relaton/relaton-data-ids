@@ -1,184 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-uloop-delay-02
-title:
-- content: Microloop prevention by introducing a local convergence delay
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-uloop-delay-02
-  type: src
+id: draftietfrtgwguloopdelay02
 type: standard
-docid:
-- id: draft-ietf-rtgwg-uloop-delay-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Microloop prevention by introducing a local convergence delay
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-uloop-delay-02
+docidentifier:
+- content: draft-ietf-rtgwg-uloop-delay
+  type: Internet-Draft
+- content: draft-ietf-rtgwg-uloop-delay-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-uloop-delay
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rtgwg-uloop-delay
 date:
 - type: published
-  value: '2016-06-03'
+  at: '2016-06-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stephane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephane
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Litkowski
-        language:
-        - en
       completename:
+        language: en
         content: Stephane Litkowski
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Clarence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Clarence
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Filsfils
-        language:
-        - en
       completename:
+        language: en
         content: Clarence Filsfils
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pierre
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pierre
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Francois
-        language:
-        - en
       completename:
+        language: en
         content: Pierre Francois
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2016-06-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a mechanism for link-state routing protocols
-    to prevent local transient forwarding loops in case of link failure. This mechanism
-    Proposes a two-steps convergence by introducing a delay between the convergence
-    of the node adjacent to the topology change and the network wide convergence.
-    As this mechanism delays the IGP convergence it may only be used for planned maintenance
-    or when fast reroute protects the traffic between the link failure and the IGP
-    convergence. The proposed mechanism will be limited to link down event in order
-    to keep simplicity. Simulations using real network topologies have been performed
-    and show that local loops are a significant portion (&gt;50%) of the total forwarding
-    loops.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a mechanism for link-state routing protocols\n
+    \  to prevent local transient forwarding loops in case of link failure.\n   This
+    mechanism Proposes a two-steps convergence by introducing a\n   delay between
+    the convergence of the node adjacent to the topology\n   change and the network
+    wide convergence.\n\n   As this mechanism delays the IGP convergence it may only
+    be used for\n   planned maintenance or when fast reroute protects the traffic
+    between\n   the link failure and the IGP convergence.\n\n   The proposed mechanism
+    will be limited to link down event in order to\n   keep simplicity.\n\n   Simulations
+    using real network topologies have been performed and\n   show that local loops
+    are a significant portion (>50%) of the total\n   forwarding loops.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-uloop-delay-01
-    docid:
-    - id: draft-ietf-rtgwg-uloop-delay-01
+    formattedref: draft-ietf-rtgwg-uloop-delay-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-uloop-delay-01
+    docidentifier:
+    - content: draft-ietf-rtgwg-uloop-delay-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-uloop-delay-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rtgwg-uloop-delay-03
-    docid:
-    - id: draft-ietf-rtgwg-uloop-delay-03
+    formattedref: draft-ietf-rtgwg-uloop-delay-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-uloop-delay-03
+    docidentifier:
+    - content: draft-ietf-rtgwg-uloop-delay-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-uloop-delay-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rtgwg-uloop-delay-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

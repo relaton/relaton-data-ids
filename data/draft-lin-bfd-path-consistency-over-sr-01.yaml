@@ -1,173 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-lin-bfd-path-consistency-over-sr-01
-title:
-- content: BFD Path Consistency over SR
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lin-bfd-path-consistency-over-sr-01
-  type: src
+id: draftlinbfdpathconsistencyoversr01
 type: standard
-docid:
-- id: draft-lin-bfd-path-consistency-over-sr-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BFD Path Consistency over SR
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lin-bfd-path-consistency-over-sr-01
+docidentifier:
+- content: draft-lin-bfd-path-consistency-over-sr
+  type: Internet-Draft
+- content: draft-lin-bfd-path-consistency-over-sr-01
   type: Internet-Draft
   primary: true
-- id: I-D.lin-bfd-path-consistency-over-sr
-  type: IETF
-  scope: anchor
 docnumber: I-D.lin-bfd-path-consistency-over-sr
 date:
 - type: published
-  value: '2023-04-26'
+  at: '2023-04-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Changwang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Changwang
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Changwang Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: New H3C Technologies
-  role:
+        - language: en
+          content: New H3C Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Weiqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Weiqiang
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Cheng
-        language:
-        - en
       completename:
+        language: en
         content: Weiqiang Cheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jiang
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wenying
-        language:
-        - en
       completename:
+        language: en
         content: Jiang Wenying
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '01'
-revdate: '2023-04-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Bidirectional Forwarding Detection (BFD) can be used to monitor paths
-    between nodes. U-BFD defined in [I-D.ietf-bfd-unaffiliated-echo] can effectively
-    reduce the device equipment. Seamless BFD (S-BFD) provides a simplified mechanism
-    which is suitable for monitoring of paths that are setup dynamically and on a
-    large scale network. In SR network, BFD can also be used to monitor SR paths.
-    When a headend use BFD to monitor the segment list/CPath of SR Policy, the forward
-    path of control packet is indicated by segment list, the reverse path of response
-    control packet is via the shortest path from the reflector back to the initiator
-    (headend) as determined by routing. The forward path and reverse path of control
-    packet are likely inconsistent going through different intermediate nodes or links.
-    This document describes a method to keep the forward path and reverse path consistent
-    when using S-BFD or U-BFD to detect SR Policy</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Bidirectional Forwarding Detection (BFD) can be used to monitor\n   paths
+    between nodes.\n\n   U-BFD defined in [I-D.ietf-bfd-unaffiliated-echo] can effectively\n
+    \  reduce the device equipment.\n\n   Seamless BFD (S-BFD) provides a simplified
+    mechanism which is\n   suitable for monitoring of paths that are setup dynamically
+    and on a\n   large scale network.\n\n   In SR network, BFD can also be used to
+    monitor SR paths. When a\n   headend use BFD to monitor the segment list/CPath
+    of SR Policy, the\n   forward path of control packet is indicated by segment list,
+    the\n   reverse path of response control packet is via the shortest path\n   from
+    the reflector back to the initiator (headend) as determined by\n   routing. The
+    forward path and reverse path of control packet are\n   likely inconsistent going
+    through different intermediate nodes or\n   links.\n\n   This document describes
+    a method to keep the forward path and\n   reverse path consistent when using S-BFD
+    or U-BFD to detect SR\n   Policy\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lin-bfd-path-consistency-over-sr-00
-    docid:
-    - id: draft-lin-bfd-path-consistency-over-sr-00
+    formattedref: draft-lin-bfd-path-consistency-over-sr-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lin-bfd-path-consistency-over-sr-00
+    docidentifier:
+    - content: draft-lin-bfd-path-consistency-over-sr-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lin-bfd-path-consistency-over-sr-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-lin-bfd-path-consistency-over-sr-02
-    docid:
-    - id: draft-lin-bfd-path-consistency-over-sr-02
+    formattedref: draft-lin-bfd-path-consistency-over-sr-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lin-bfd-path-consistency-over-sr-02
+    docidentifier:
+    - content: draft-lin-bfd-path-consistency-over-sr-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lin-bfd-path-consistency-over-sr-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lin-bfd-path-consistency-over-sr-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

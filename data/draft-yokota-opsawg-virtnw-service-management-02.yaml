@@ -1,208 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-yokota-opsawg-virtnw-service-management-02
-title:
-- content: Managing Service Mobility for Virtualized Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yokota-opsawg-virtnw-service-management-02
-  type: src
+id: draftyokotaopsawgvirtnwservicemanagement02
 type: standard
-docid:
-- id: draft-yokota-opsawg-virtnw-service-management-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Managing Service Mobility for Virtualized Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yokota-opsawg-virtnw-service-management-02
+docidentifier:
+- content: draft-yokota-opsawg-virtnw-service-management
+  type: Internet-Draft
+- content: draft-yokota-opsawg-virtnw-service-management-02
   type: Internet-Draft
   primary: true
-- id: I-D.yokota-opsawg-virtnw-service-management
-  type: IETF
-  scope: anchor
 docnumber: I-D.yokota-opsawg-virtnw-service-management
 date:
 - type: published
-  value: '2011-10-18'
+  at: '2011-10-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ashutosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ashutosh
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dutta
-        language:
-        - en
       completename:
+        language: en
         content: Ashutosh Dutta
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NIKSUN
-  role:
+        - language: en
+          content: NIKSUN
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carl
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carl
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Williams
-        language:
-        - en
       completename:
+        language: en
         content: Carl Williams
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MCSR Labs
-  role:
+        - language: en
+          content: MCSR Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fuchun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fuchun
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Fuchun Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telcordia Technologies
-  role:
+        - language: en
+          content: Telcordia Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hidetoshi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hidetoshi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Yokota
-        language:
-        - en
       completename:
+        language: en
         content: Hidetoshi Yokota
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: KDDI Lab
-  role:
+        - language: en
+          content: KDDI Lab
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishwas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishwas
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Manral
-        language:
-        - en
       completename:
+        language: en
         content: Vishwas Manral
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IPInfusion Inc.
-  role:
-  - type: author
+        - language: en
+          content: IPInfusion Inc.
 version:
 - draft: '02'
-revdate: '2011-10-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In virtualized networks, machines with processing and storage are virtualized
-    resources on which network functional entities can be allocated and relocated
-    dynamically. Such dynamic allocation and relocation of network entities imposes
-    the challenge of service mobility, i.e., how to maintain not only coupling relations
-    between those network entities but also sessions established between those entities
-    in a virtualized environment. This document provides a reference model for managing
-    service mobility in the virtual environment and defines the control protocol between
-    the virtualized platform and the managing controller to realize service mobility.
-    Such capability is especially longed for realizing more scalable and reliable
-    telecom networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In virtualized networks, machines with processing and storage are\n
+    \  virtualized resources on which network functional entities can be\n   allocated
+    and relocated dynamically.  Such dynamic allocation and\n   relocation of network
+    entities imposes the challenge of service\n   mobility, i.e., how to maintain
+    not only coupling relations between\n   those network entities but also sessions
+    established between those\n   entities in a virtualized environment.  This document
+    provides a\n   reference model for managing service mobility in the virtual\n
+    \  environment and defines the control protocol between the virtualized\n   platform
+    and the managing controller to realize service mobility.\n   Such capability is
+    especially longed for realizing more scalable and\n   reliable telecom networks.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yokota-opsawg-virtnw-service-management-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

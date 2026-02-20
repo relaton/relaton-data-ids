@@ -1,199 +1,167 @@
 ---
-schema-version: v1.2.9
-id: draft-dujovne-6tisch-on-the-fly-02
-title:
-- content: 6TiSCH On-the-Fly Scheduling
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dujovne-6tisch-on-the-fly-02
-  type: src
+id: draftdujovne6tischonthefly02
 type: standard
-docid:
-- id: draft-dujovne-6tisch-on-the-fly-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 6TiSCH On-the-Fly Scheduling
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dujovne-6tisch-on-the-fly-02
+docidentifier:
+- content: draft-dujovne-6tisch-on-the-fly
+  type: Internet-Draft
+- content: draft-dujovne-6tisch-on-the-fly-02
   type: Internet-Draft
   primary: true
-- id: I-D.dujovne-6tisch-on-the-fly
-  type: IETF
-  scope: anchor
 docnumber: I-D.dujovne-6tisch-on-the-fly
 date:
 - type: published
-  value: '2014-02-14'
+  at: '2014-02-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: D. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: D. R.
       surname:
+        language: en
         content: Dujovne
-        language:
-        - en
       completename:
+        language: en
         content: Diego Roberto Dujovne
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luigi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: L. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luigi
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: L. A.
       surname:
+        language: en
         content: Grieco
-        language:
-        - en
       completename:
+        language: en
         content: Luigi Alfredo Grieco
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Maria
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: M. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Maria
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: M. R.
       surname:
+        language: en
         content: Palattella
-        language:
-        - en
       completename:
+        language: en
         content: Maria Rita Palattella
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nicola
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicola
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Accettura
-        language:
-        - en
       completename:
+        language: en
         content: Nicola Accettura
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2014-02-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the environment, problem statement, and goals
-    of the On-The-Fly (OTF) scheduling approach for the IEEE802.15.4e TSCH MAC protocol
-    in the context of LLNs. The purpose of OTF is to dynamically adapt the aggregate
-    bandwidth, i.e., the number of reserved soft cells between neighbor nodes, based
-    on the specific application constraints to be satisfied. The soft cell and Bundle
-    reservation with OTF is distributed: through the 6top interface, neighbor nodes
-    negotiate the cell(s) to be (re)allocated/deleted, without intervention of a centralized
-    entity. This document aims at defining a module which uses the functionalities
-    provided by the 6top sublayer to (i) extract statistics and (ii) determine when
-    to reserve /delete soft cells in the schedule. The exact reservation and deletion
-    algorithm, and the number and type of statistics to be used in the algorithm are
-    out of scope. OTF deals only with the number of soft cells to be reserved/deleted;
-    it is up to 6top to select the specific soft cells within the TSCH schedule.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the environment, problem statement, and goals\n
+    \  of the On-The-Fly (OTF) scheduling approach for the IEEE802.15.4e\n   TSCH
+    MAC protocol in the context of LLNs.  The purpose of OTF is to\n   dynamically
+    adapt the aggregate bandwidth, i.e., the number of\n   reserved soft cells between
+    neighbor nodes, based on the specific\n   application constraints to be satisfied.
+    \ The soft cell and Bundle\n   reservation with OTF is distributed: through the
+    6top interface,\n   neighbor nodes negotiate the cell(s) to be (re)allocated/deleted,\n
+    \  without intervention of a centralized entity.  This document aims at\n   defining
+    a module which uses the functionalities provided by the 6top\n   sublayer to (i)
+    extract statistics and (ii) determine when to reserve\n   /delete soft cells in
+    the schedule.  The exact reservation and\n   deletion algorithm, and the number
+    and type of statistics to be used\n   in the algorithm are out of scope.  OTF
+    deals only with the number of\n   soft cells to be reserved/deleted; it is up
+    to 6top to select the\n   specific soft cells within the TSCH schedule.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dujovne-6tisch-on-the-fly-01
-    docid:
-    - id: draft-dujovne-6tisch-on-the-fly-01
+    formattedref: draft-dujovne-6tisch-on-the-fly-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dujovne-6tisch-on-the-fly-01
+    docidentifier:
+    - content: draft-dujovne-6tisch-on-the-fly-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dujovne-6tisch-on-the-fly-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-dujovne-6tisch-on-the-fly-03
-    docid:
-    - id: draft-dujovne-6tisch-on-the-fly-03
+    formattedref: draft-dujovne-6tisch-on-the-fly-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dujovne-6tisch-on-the-fly-03
+    docidentifier:
+    - content: draft-dujovne-6tisch-on-the-fly-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dujovne-6tisch-on-the-fly-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dujovne-6tisch-on-the-fly-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

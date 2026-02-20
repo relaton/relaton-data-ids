@@ -1,173 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lisp-rfc6833bis-15
-title:
-- content: Locator/ID Separation Protocol (LISP) Control-Plane
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6833bis-15
-  type: src
+id: draftietflisprfc6833bis15
 type: standard
-docid:
-- id: draft-ietf-lisp-rfc6833bis-15
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Locator/ID Separation Protocol (LISP) Control-Plane
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6833bis-15
+docidentifier:
+- content: draft-ietf-lisp-rfc6833bis
+  type: Internet-Draft
+- content: draft-ietf-lisp-rfc6833bis-15
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lisp-rfc6833bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lisp-rfc6833bis
 date:
 - type: published
-  value: '2018-09-18'
+  at: '2018-09-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Vince
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vince
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Fuller
-        language:
-        - en
       completename:
+        language: en
         content: Vince Fuller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Albert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Albert
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Cabellos-Aparicio
-        language:
-        - en
       completename:
+        language: en
         content: Albert Cabellos-Aparicio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UPC/BarcelonaTech
-  role:
-  - type: author
+        - language: en
+          content: UPC/BarcelonaTech
 version:
 - draft: '15'
-revdate: '2018-09-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes the Control-Plane and Mapping Service for the
-    Locator/ID Separation Protocol (LISP), implemented by two new types of LISP-speaking
-    devices -- the LISP Map-Resolver and LISP Map-Server -- that provides a simplified
-    "front end" for one or more Endpoint ID to Routing Locator mapping databases.
-    By using this Control-Plane service interface and communicating with Map-Resolvers
-    and Map-Servers, LISP Ingress Tunnel Routers (ITRs) and Egress Tunnel Routers
-    (ETRs) are not dependent on the details of mapping database systems, which facilitates
-    modularity with different database designs. Since these devices implement the
-    "edge" of the LISP Control-Plane infrastructure, connect directly to LISP-capable
-    Internet end sites, and comprising the bulk of LISP-speaking devices, reducing
-    their implementation and operational complexity should also reduce the overall
-    cost and effort of deploying LISP. This document obsoletes RFC 6830 and 6833.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the Control-Plane and Mapping Service for the\n
+    \  Locator/ID Separation Protocol (LISP), implemented by two new types\n   of
+    LISP-speaking devices -- the LISP Map-Resolver and LISP Map-Server\n   -- that
+    provides a simplified \"front end\" for one or more Endpoint ID\n   to Routing
+    Locator mapping databases.\n\n   By using this Control-Plane service interface
+    and communicating with\n   Map-Resolvers and Map-Servers, LISP Ingress Tunnel
+    Routers (ITRs) and\n   Egress Tunnel Routers (ETRs) are not dependent on the details
+    of\n   mapping database systems, which facilitates modularity with different\n
+    \  database designs.  Since these devices implement the \"edge\" of the\n   LISP
+    Control-Plane infrastructure, connect directly to LISP-capable\n   Internet end
+    sites, and comprising the bulk of LISP-speaking devices,\n   reducing their implementation
+    and operational complexity should also\n   reduce the overall cost and effort
+    of deploying LISP.\n\n   This document obsoletes RFC 6830 and 6833.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lisp-rfc6833bis-14
-    docid:
-    - id: draft-ietf-lisp-rfc6833bis-14
+    formattedref: draft-ietf-lisp-rfc6833bis-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6833bis-14
+    docidentifier:
+    - content: draft-ietf-lisp-rfc6833bis-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-rfc6833bis-14
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lisp-rfc6833bis-16
-    docid:
-    - id: draft-ietf-lisp-rfc6833bis-16
+    formattedref: draft-ietf-lisp-rfc6833bis-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6833bis-16
+    docidentifier:
+    - content: draft-ietf-lisp-rfc6833bis-16
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-rfc6833bis-16
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lisp-rfc6833bis-15
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

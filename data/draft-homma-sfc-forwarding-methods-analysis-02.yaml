@@ -1,232 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-homma-sfc-forwarding-methods-analysis-02
-title:
-- content: Analysis on Forwarding Methods for Service Chaining
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-homma-sfc-forwarding-methods-analysis-02
-  type: src
+id: drafthommasfcforwardingmethodsanalysis02
 type: standard
-docid:
-- id: draft-homma-sfc-forwarding-methods-analysis-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Analysis on Forwarding Methods for Service Chaining
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-homma-sfc-forwarding-methods-analysis-02
+docidentifier:
+- content: draft-homma-sfc-forwarding-methods-analysis
+  type: Internet-Draft
+- content: draft-homma-sfc-forwarding-methods-analysis-02
   type: Internet-Draft
   primary: true
-- id: I-D.homma-sfc-forwarding-methods-analysis
-  type: IETF
-  scope: anchor
 docnumber: I-D.homma-sfc-forwarding-methods-analysis
 date:
 - type: published
-  value: '2015-06-08'
+  at: '2015-06-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shunsuke
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shunsuke
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Homma
-        language:
-        - en
       completename:
+        language: en
         content: Shunsuke Homma
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
+      formatted_initials:
+        language: en
       surname:
+        language: en
         content: Kengo
-        language:
-        - en
       completename:
+        language: en
         content: Kengo
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego Lopez
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dolson
-        language:
-        - en
       completename:
+        language: en
         content: David Dolson
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexey
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gorbunov
-        language:
-        - en
       completename:
+        language: en
         content: Alexey Gorbunov
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nicolai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicolai
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Leymann
-        language:
-        - en
       completename:
+        language: en
         content: Nicolai Leymann
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2015-06-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Some working groups of the IETF and other Standards Developing Organizations
-    are now discussing use cases of a technology that enables data packets to traverse
-    appropriate service functions located remotely through networks. This is called
-    Service Chaining in this document. (Also, in Network Functions Virtualisation
-    (NFV), a subject that forwarding packets to required service functions in appropriate
-    order is called VNF Forwarding Graph.) This draft does not focus only on SFC method,
-    and thus, use the term "Service Chaining." SFC may be one of approaches to realize
-    Service Chaining. There are several Service Chaining methods to forward data packets
-    to service functions, and the applicable methods will vary depending on the service
-    requirements of individual networks. This document presents the results of analyzing
-    packet forwarding methods and path selection patterns for achieving Service Chaining.
-    For forwarding data packets to the appropriate service functions, distribution
-    of route information and steering data packets following the route information,
-    are required. Examples of route information are packet identifier and the routing
-    configurations based on the identifier. Also, forwarding functions are required
-    to decide the path according to the route information.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Some working groups of the IETF and other Standards Developing\n   Organizations
+    are now discussing use cases of a technology that\n   enables data packets to
+    traverse appropriate service functions\n   located remotely through networks.
+    \ This is called Service Chaining\n   in this document.  (Also, in Network Functions
+    Virtualisation (NFV),\n   a subject that forwarding packets to required service
+    functions in\n   appropriate order is called VNF Forwarding Graph.)  This draft
+    does\n   not focus only on SFC method, and thus, use the term \"Service\n   Chaining.\"
+    \ SFC may be one of approaches to realize Service Chaining.\n   There are several
+    Service Chaining methods to forward data packets to\n   service functions, and
+    the applicable methods will vary depending on\n   the service requirements of
+    individual networks.\n\n   This document presents the results of analyzing packet
+    forwarding\n   methods and path selection patterns for achieving Service Chaining.\n
+    \  For forwarding data packets to the appropriate service functions,\n   distribution
+    of route information and steering data packets following\n   the route information,
+    are required.  Examples of route information\n   are packet identifier and the
+    routing configurations based on the\n   identifier.  Also, forwarding functions
+    are required to decide the\n   path according to the route information.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-homma-sfc-forwarding-methods-analysis-01
-    docid:
-    - id: draft-homma-sfc-forwarding-methods-analysis-01
+    formattedref: draft-homma-sfc-forwarding-methods-analysis-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-homma-sfc-forwarding-methods-analysis-01
+    docidentifier:
+    - content: draft-homma-sfc-forwarding-methods-analysis-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-homma-sfc-forwarding-methods-analysis-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-homma-sfc-forwarding-methods-analysis-03
-    docid:
-    - id: draft-homma-sfc-forwarding-methods-analysis-03
+    formattedref: draft-homma-sfc-forwarding-methods-analysis-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-homma-sfc-forwarding-methods-analysis-03
+    docidentifier:
+    - content: draft-homma-sfc-forwarding-methods-analysis-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-homma-sfc-forwarding-methods-analysis-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-homma-sfc-forwarding-methods-analysis-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

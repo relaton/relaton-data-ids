@@ -1,230 +1,191 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dhc-dynamic-shared-v4allocation-02
-title:
-- content: Dynamic Allocation of Shared IPv4 Addresses
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dhc-dynamic-shared-v4allocation-02
-  type: src
+id: draftietfdhcdynamicsharedv4allocation02
 type: standard
-docid:
-- id: draft-ietf-dhc-dynamic-shared-v4allocation-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Dynamic Allocation of Shared IPv4 Addresses
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dhc-dynamic-shared-v4allocation-02
+docidentifier:
+- content: draft-ietf-dhc-dynamic-shared-v4allocation
+  type: Internet-Draft
+- content: draft-ietf-dhc-dynamic-shared-v4allocation-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dhc-dynamic-shared-v4allocation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dhc-dynamic-shared-v4allocation
 date:
 - type: published
-  value: '2014-09-26'
+  at: '2014-09-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cui
-        language:
-        - en
       completename:
+        language: en
         content: Yong Cui
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qiong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qiong
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Sun
-        language:
-        - en
       completename:
+        language: en
         content: Qiong Sun
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ian
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Farrer
-        language:
-        - en
       completename:
+        language: en
         content: Ian Farrer
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yiu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yiu
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Yiu Lee
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Sun
-        language:
-        - en
       completename:
+        language: en
         content: Qi Sun
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2014-09-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo describes the dynamic allocation of shared IPv4 addresses
-    to clients using DHCPv4. Address sharing allows a single IPv4 address to be allocated
-    to multiple active clients simultaneously, each client being differentiated by
-    a unique set of transport layer source port numbers. The necessary changes to
-    existing DHCPv4 client and server behavior are described and a new DHCPv4 option
-    for provisioning clients with shared IPv4 addresses is included. Due to the nature
-    of IP addresses sharing, some limitations to their applicability are necessary.
-    This memo describes these limitations and recommends suitable architectures and
-    technologies where address sharing may be utilized.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo describes the dynamic allocation of shared IPv4 addresses\n
+    \  to clients using DHCPv4.  Address sharing allows a single IPv4\n   address
+    to be allocated to multiple active clients simultaneously,\n   each client being
+    differentiated by a unique set of transport layer\n   source port numbers.  The
+    necessary changes to existing DHCPv4 client\n   and server behavior are described
+    and a new DHCPv4 option for\n   provisioning clients with shared IPv4 addresses
+    is included.\n\n   Due to the nature of IP addresses sharing, some limitations
+    to their\n   applicability are necessary.  This memo describes these limitations\n
+    \  and recommends suitable architectures and technologies where address\n   sharing
+    may be utilized.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dhc-dynamic-shared-v4allocation-01
-    docid:
-    - id: draft-ietf-dhc-dynamic-shared-v4allocation-01
+    formattedref: draft-ietf-dhc-dynamic-shared-v4allocation-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dhc-dynamic-shared-v4allocation-01
+    docidentifier:
+    - content: draft-ietf-dhc-dynamic-shared-v4allocation-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dhc-dynamic-shared-v4allocation-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dhc-dynamic-shared-v4allocation-03
-    docid:
-    - id: draft-ietf-dhc-dynamic-shared-v4allocation-03
+    formattedref: draft-ietf-dhc-dynamic-shared-v4allocation-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dhc-dynamic-shared-v4allocation-03
+    docidentifier:
+    - content: draft-ietf-dhc-dynamic-shared-v4allocation-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dhc-dynamic-shared-v4allocation-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dhc-dynamic-shared-v4allocation-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,210 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ipsecme-ipsecha-protocol-06
-title:
-- content: Protocol Support for High Availability of IKEv2/IPsec
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ipsecha-protocol-06
-  type: src
+id: draftietfipsecmeipsechaprotocol06
 type: standard
-docid:
-- id: draft-ietf-ipsecme-ipsecha-protocol-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Protocol Support for High Availability of IKEv2/IPsec
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ipsecha-protocol-06
+docidentifier:
+- content: draft-ietf-ipsecme-ipsecha-protocol
+  type: Internet-Draft
+- content: draft-ietf-ipsecme-ipsecha-protocol-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ipsecme-ipsecha-protocol
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ipsecme-ipsecha-protocol
 date:
 - type: published
-  value: '2011-05-06'
+  at: '2011-05-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Rajeshwar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rajeshwar
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Jenwar
-        language:
-        - en
       completename:
+        language: en
         content: Rajeshwar Jenwar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kalyani
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kalyani
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Garigipati
-        language:
-        - en
       completename:
+        language: en
         content: Kalyani Garigipati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yaron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yaron
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Sheffer
-        language:
-        - en
       completename:
+        language: en
         content: Yaron Sheffer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Porticor
-  role:
+        - language: en
+          content: Porticor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dacheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dacheng
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Dacheng Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yoav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yoav
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Nir
-        language:
-        - en
       completename:
+        language: en
         content: Yoav Nir
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Check Point
-  role:
-  - type: author
+        - language: en
+          content: Check Point
 version:
 - draft: '06'
-revdate: '2011-05-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The IPsec protocol suite is widely used for business-critical network
+- language: en
+  script: Latn
+  content: "The IPsec protocol suite is widely used for business-critical network
     traffic. In order to make IPsec deployments highly available, more scalable, and
     failure-resistant, they are often implemented as IPsec High Availability (HA)
     clusters. However, there are many issues in IPsec HA clustering, and in particular
     in Internet Key Exchange Protocol version 2 (IKEv2) clustering. An earlier document,
-    "IPsec Cluster Problem Statement", enumerates the issues encountered in the IKEv2/IPsec
-    HA cluster environment. This document resolves these issues with the least possible
-    change to the protocol. This document defines an extension to the IKEv2 protocol
-    to solve the main issues of "IPsec Cluster Problem Statement" in the commonly
-    deployed hot standby cluster, and provides implementation advice for other issues.
-    The main issues solved are the synchronization of IKEv2 Message ID counters, and
-    of IPsec replay counters. [STANDARDS-TRACK]</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    \"IPsec Cluster Problem Statement\", enumerates the issues encountered in the
+    IKEv2/IPsec HA cluster environment. This document resolves these issues with the
+    least possible change to the protocol.\n\n This document defines an extension
+    to the IKEv2 protocol to solve the main issues of \"IPsec Cluster Problem Statement\"
+    in the commonly deployed hot standby cluster, and provides implementation advice
+    for other issues. The main issues solved are the synchronization of IKEv2 Message
+    ID counters, and of IPsec replay counters. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ipsecme-ipsecha-protocol-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

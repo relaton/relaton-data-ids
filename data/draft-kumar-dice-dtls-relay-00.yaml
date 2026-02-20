@@ -1,157 +1,132 @@
 ---
-schema-version: v1.2.9
-id: draft-kumar-dice-dtls-relay-00
-title:
-- content: DTLS Relay for Constrained Environments
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kumar-dice-dtls-relay-00
-  type: src
+id: draftkumardicedtlsrelay00
 type: standard
-docid:
-- id: draft-kumar-dice-dtls-relay-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DTLS Relay for Constrained Environments
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kumar-dice-dtls-relay-00
+docidentifier:
+- content: draft-kumar-dice-dtls-relay
+  type: Internet-Draft
+- content: draft-kumar-dice-dtls-relay-00
   type: Internet-Draft
   primary: true
-- id: I-D.kumar-dice-dtls-relay
-  type: IETF
-  scope: anchor
 docnumber: I-D.kumar-dice-dtls-relay
 date:
 - type: published
-  value: '2013-10-21'
+  at: '2013-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Kumar
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Kumar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sye
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: S. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sye
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: S. L.
       surname:
+        language: en
         content: Keoh
-        language:
-        - en
       completename:
+        language: en
         content: Sye Loong Keoh
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Oscar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oscar
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Garcia-Morchon
-        language:
-        - en
       completename:
+        language: en
         content: Oscar Garcia-Morchon
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2013-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The 6LoWPAN and CoAP standards defined for resource-constrained devices
-    are fast emerging as the de-facto protocols for enabling the Internet-of-Things
-    (IoTs). Security is an important concern in IoTs and the DTLS protocol has been
-    chosen as the preferred method for securing CoAP messages. DTLS is a point-to-point
-    protocol relying on the IP routing to deliver messages between the client and
-    the server. However in some low-power lossy networks (LLNs) with multi-hop, a
-    new "joining" device may not be initially IP routable. This prevents DTLS from
-    being directly useful as an authentication and confidentiality protocol during
-    this stage, requiring other security protocols to be implemented on the device.
-    These devices being resource-constrained often cannot accommodate more than one
-    security protocol in their code memory. To overcome this problem and reuse DTLS,
-    we present a DTLS Relay solution for the non-IP routable "joining" device to establish
-    a secure DTLS connection with a DTLS server. Further we present a stateful and
-    stateless mode of operation for the DTLS Relay.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The 6LoWPAN and CoAP standards defined for resource-constrained\n   devices
+    are fast emerging as the de-facto protocols for enabling the\n   Internet-of-Things
+    (IoTs).  Security is an important concern in IoTs\n   and the DTLS protocol has
+    been chosen as the preferred method for\n   securing CoAP messages.  DTLS is a
+    point-to-point protocol relying on\n   the IP routing to deliver messages between
+    the client and the server.\n   However in some low-power lossy networks (LLNs)
+    with multi-hop, a new\n   \"joining\" device may not be initially IP routable.
+    \ This prevents\n   DTLS from being directly useful as an authentication and\n
+    \  confidentiality protocol during this stage, requiring other security\n   protocols
+    to be implemented on the device.  These devices being\n   resource-constrained
+    often cannot accommodate more than one security\n   protocol in their code memory.
+    \ To overcome this problem and reuse\n   DTLS, we present a DTLS Relay solution
+    for the non-IP routable\n   \"joining\" device to establish a secure DTLS connection
+    with a DTLS\n   server.  Further we present a stateful and stateless mode of\n
+    \  operation for the DTLS Relay.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-kumar-dice-dtls-relay-01
-    docid:
-    - id: draft-kumar-dice-dtls-relay-01
+    formattedref: draft-kumar-dice-dtls-relay-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kumar-dice-dtls-relay-01
+    docidentifier:
+    - content: draft-kumar-dice-dtls-relay-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kumar-dice-dtls-relay-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kumar-dice-dtls-relay-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

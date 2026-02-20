@@ -1,150 +1,132 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dprive-opportunistic-adotq-01
-title:
-- content: Recursive to Authoritative DNS with Encryption
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-opportunistic-adotq-01
-  type: src
+id: draftietfdpriveopportunisticadotq01
 type: standard
-docid:
-- id: draft-ietf-dprive-opportunistic-adotq-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Recursive to Authoritative DNS with Encryption
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-opportunistic-adotq-01
+docidentifier:
+- content: draft-ietf-dprive-opportunistic-adotq
+  type: Internet-Draft
+- content: draft-ietf-dprive-opportunistic-adotq-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dprive-opportunistic-adotq
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dprive-opportunistic-adotq
 date:
 - type: published
-  value: '2021-02-22'
+  at: '2021-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: P. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: P. E.
       surname:
+        language: en
         content: Hoffman
-        language:
-        - en
       completename:
+        language: en
         content: Paul E. Hoffman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICANN
-  role:
+        - language: en
+          content: ICANN
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: van Dijk
-        language:
-        - en
       completename:
+        language: en
         content: Peter van Dijk
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: PowerDNS
-  role:
-  - type: author
+        - language: en
+          content: PowerDNS
 version:
 - draft: '01'
-revdate: '2021-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a use case and a method for a DNS recursive
-    resolver to use either opportunistic encryption (that is, encryption with optional
-    authentication) or fully-authenticated encryption when communicating with authoritative
-    servers. The motivating use case for this method is that more encryption on the
-    Internet is better, some resolver operators will only want to offer fully-authenticated
-    encryption when encryption is available, and some resolver operators believe that
-    opportunistic encryption is better than no encryption at all. The method described
-    here is optional for both the recursive resolver and the authoritative server.
-    This method supports both fully-authenticate encryption and opportunistic encryption
-    using the same mechanism for discovery of encryption support and discovery of
-    authenticated public keys for the server. IMPORTANT NOTE: This version of the
-    document is completely different than the earlier version. It now covers both
-    opportunistic and fully-authenticated encryption. It is in a very rough state,
-    and there are many holes in the description.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a use case and a method for a DNS recursive\n
+    \  resolver to use either opportunistic encryption (that is, encryption\n   with
+    optional authentication) or fully-authenticated encryption when\n   communicating
+    with authoritative servers.  The motivating use case\n   for this method is that
+    more encryption on the Internet is better,\n   some resolver operators will only
+    want to offer fully-authenticated\n   encryption when encryption is available,
+    and some resolver operators\n   believe that opportunistic encryption is better
+    than no encryption at\n   all.  The method described here is optional for both
+    the recursive\n   resolver and the authoritative server.  This method supports
+    both\n   fully-authenticate encryption and opportunistic encryption using the\n
+    \  same mechanism for discovery of encryption support and discovery of\n   authenticated
+    public keys for the server.\n\n   IMPORTANT NOTE: This version of the document
+    is completely different\n   than the earlier version.  It now covers both opportunistic
+    and\n   fully-authenticated encryption.  It is in a very rough state, and\n   there
+    are many holes in the description.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dprive-opportunistic-adotq-00
-    docid:
-    - id: draft-ietf-dprive-opportunistic-adotq-00
+    formattedref: draft-ietf-dprive-opportunistic-adotq-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-opportunistic-adotq-00
+    docidentifier:
+    - content: draft-ietf-dprive-opportunistic-adotq-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-opportunistic-adotq-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dprive-opportunistic-adotq-02
-    docid:
-    - id: draft-ietf-dprive-opportunistic-adotq-02
+    formattedref: draft-ietf-dprive-opportunistic-adotq-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-opportunistic-adotq-02
+    docidentifier:
+    - content: draft-ietf-dprive-opportunistic-adotq-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-opportunistic-adotq-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dprive-opportunistic-adotq-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

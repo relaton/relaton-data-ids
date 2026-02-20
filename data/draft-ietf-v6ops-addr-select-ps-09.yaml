@@ -1,176 +1,150 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-v6ops-addr-select-ps-09
-title:
-- content: 'Problem Statement for Default Address Selection in Multi-Prefix Environments:
-    Operational Issues of RFC 3484 Default Rules'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-addr-select-ps-09
-  type: src
+id: draftietfv6opsaddrselectps09
 type: standard
-docid:
-- id: draft-ietf-v6ops-addr-select-ps-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Problem Statement for Default Address Selection in Multi-Prefix Environments:
+    Operational Issues of RFC 3484 Default Rules'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-addr-select-ps-09
+docidentifier:
+- content: draft-ietf-v6ops-addr-select-ps
+  type: Internet-Draft
+- content: draft-ietf-v6ops-addr-select-ps-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-v6ops-addr-select-ps
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-v6ops-addr-select-ps
 date:
 - type: published
-  value: '2008-06-17'
+  at: '2008-06-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tomohiro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tomohiro
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Fujisaki
-        language:
-        - en
       completename:
+        language: en
         content: Tomohiro Fujisaki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
+        - language: en
+          content: NTT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ruri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ruri
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Hiromi
-        language:
-        - en
       completename:
+        language: en
         content: Ruri Hiromi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intec Netcore
-  role:
+        - language: en
+          content: Intec Netcore
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Kanayama
-        language:
-        - en
       completename:
+        language: en
         content: Ken-ichi Kanayama
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INTEC Systems
-  role:
+        - language: en
+          content: INTEC Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arifumi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arifumi
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Matsumoto
-        language:
-        - en
       completename:
+        language: en
         content: Arifumi Matsumoto
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
-  - type: author
+        - language: en
+          content: NTT
 version:
 - draft: '09'
-revdate: '2008-06-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A single physical link can have multiple prefixes assigned to it. In
+- language: en
+  script: Latn
+  content: "A single physical link can have multiple prefixes assigned to it.  In
     that environment, end hosts might have multiple IP addresses and be required to
-    use them selectively. RFC 3484 defines default source and destination address
-    selection rules and is implemented in a variety of OSs. But, it has been too difficult
-    to use operationally for several reasons. In some environments where multiple
-    prefixes are assigned on a single physical link, the host using the default address
-    selection rules will experience some trouble in communication. This document describes
-    the possible problems that end hosts could encounter in an environment with multiple
-    prefixes. This memo provides information for the Internet community.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    use them selectively.  RFC 3484 defines default source and destination address
+    selection rules and is implemented in a variety of OSs.  But, it has been too
+    difficult to use operationally for several reasons.  In some environments where
+    multiple prefixes are assigned on a single physical link, the host using the default
+    address selection rules will experience some trouble in communication.  This document
+    describes the possible problems that end hosts could encounter in an environment
+    with multiple prefixes.  This memo provides information for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-v6ops-addr-select-ps-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

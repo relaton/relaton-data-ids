@@ -1,139 +1,122 @@
 ---
-schema-version: v1.2.9
-id: draft-oauth-ai-agents-on-behalf-of-user-01
-title:
-- content: 'OAuth 2.0 Extension: On-Behalf-Of User Authorization for AI Agents'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-01
-  type: src
+id: draftoauthaiagentsonbehalfofuser01
 type: standard
-docid:
-- id: draft-oauth-ai-agents-on-behalf-of-user-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'OAuth 2.0 Extension: On-Behalf-Of User Authorization for AI Agents'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-01
+docidentifier:
+- content: draft-oauth-ai-agents-on-behalf-of-user
+  type: Internet-Draft
+- content: draft-oauth-ai-agents-on-behalf-of-user-01
   type: Internet-Draft
   primary: true
-- id: I-D.oauth-ai-agents-on-behalf-of-user
-  type: IETF
-  scope: anchor
 docnumber: I-D.oauth-ai-agents-on-behalf-of-user
 date:
 - type: published
-  value: '2025-05-08'
+  at: '2025-05-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Thilina
-        language:
-        - en
       completename:
+        language: en
         content: Thilina
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: WSO2
-  role:
+        - language: en
+          content: WSO2
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ayesha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ayesha
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dissanayaka
-        language:
-        - en
       completename:
+        language: en
         content: Ayesha Dissanayaka
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: WSO2
-  role:
-  - type: author
+        - language: en
+          content: WSO2
 version:
 - draft: '01'
-revdate: '2025-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification extends the OAuth 2.0 Authorization Framework [RFC6749]
-    to enable AI agents to securely obtain access tokens for acting on behalf of users.
-    It introduces the *requested_actor* parameter in authorization requests to identify
-    the specific agent requiring delegation and the *actor_token* parameter in token
-    requests to authenticate the agent during the exchange of an authorization code
-    for an access token. The flow can be initiated by a resource server challenge,
-    ensuring that user consent is obtained dynamically when access is attempted. This
-    extension ensures secure delegation with explicit user consent, streamlines the
-    authorization flow, and enhances auditability through access token claims that
-    document the delegation chain from the user to the agent via a client application.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification extends the OAuth 2.0 Authorization Framework\n
+    \  [RFC6749] to enable AI agents to securely obtain access tokens for\n   acting
+    on behalf of users.  It introduces the *requested_actor*\n   parameter in authorization
+    requests to identify the specific agent\n   requiring delegation and the *actor_token*
+    parameter in token\n   requests to authenticate the agent during the exchange
+    of an\n   authorization code for an access token.  The flow can be initiated by\n
+    \  a resource server challenge, ensuring that user consent is obtained\n   dynamically
+    when access is attempted.  This extension ensures secure\n   delegation with explicit
+    user consent, streamlines the authorization\n   flow, and enhances auditability
+    through access token claims that\n   document the delegation chain from the user
+    to the agent via a client\n   application.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-oauth-ai-agents-on-behalf-of-user-00
-    docid:
-    - id: draft-oauth-ai-agents-on-behalf-of-user-00
+    formattedref: draft-oauth-ai-agents-on-behalf-of-user-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-00
+    docidentifier:
+    - content: draft-oauth-ai-agents-on-behalf-of-user-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-oauth-ai-agents-on-behalf-of-user-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-oauth-ai-agents-on-behalf-of-user-02
-    docid:
-    - id: draft-oauth-ai-agents-on-behalf-of-user-02
+    formattedref: draft-oauth-ai-agents-on-behalf-of-user-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-oauth-ai-agents-on-behalf-of-user-02
+    docidentifier:
+    - content: draft-oauth-ai-agents-on-behalf-of-user-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-oauth-ai-agents-on-behalf-of-user-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-oauth-ai-agents-on-behalf-of-user-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

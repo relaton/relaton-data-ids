@@ -1,174 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-trossen-sfc-name-based-sff-05
-title:
-- content: Name-Based Service Function Forwarder (nSFF) component within SFC framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-05
-  type: src
+id: drafttrossensfcnamebasedsff05
 type: standard
-docid:
-- id: draft-trossen-sfc-name-based-sff-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Name-Based Service Function Forwarder (nSFF) component within SFC framework
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-05
+docidentifier:
+- content: draft-trossen-sfc-name-based-sff
+  type: Internet-Draft
+- content: draft-trossen-sfc-name-based-sff-05
   type: Internet-Draft
   primary: true
-- id: I-D.trossen-sfc-name-based-sff
-  type: IETF
-  scope: anchor
 docnumber: I-D.trossen-sfc-name-based-sff
 date:
 - type: published
-  value: '2019-05-15'
+  at: '2019-05-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dirk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dirk
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Trossen
-        language:
-        - en
       completename:
+        language: en
         content: Dirk Trossen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Europe, Ltd
-  role:
+        - language: en
+          content: InterDigital Europe, Ltd
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Debashish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Debashish
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Purkayastha
-        language:
-        - en
       completename:
+        language: en
         content: Debashish Purkayastha
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
+        - language: en
+          content: InterDigital Communications, LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akbar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akbar
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Rahman
-        language:
-        - en
       completename:
+        language: en
         content: Akbar Rahman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: InterDigital Communications, LLC
-  role:
-  - type: author
+        - language: en
+          content: InterDigital Communications, LLC
 version:
 - draft: '05'
-revdate: '2019-05-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Adoption of cloud and fog technology allows operators to deploy a single
-    "Service Function" to multiple "Execution locations". The decision to steer traffic
-    to a specific location may change frequently based on load, proximity etc. Under
-    the current SFC framework, steering traffic dynamically to the different execution
-    end points require a specific 're-chaining', i.e., a change in the service function
-    path reflecting the different IP endpoints to be used for the new execution points.
-    This procedure may be complex and take time. In order to simplify re-chaining
-    and reduce the time to complete the procedure, we discuss separating the logical
-    Service Function Path from the specific execution end points. This can be done
-    by identifying the Service Functions using a name rather than a routable IP endpoint
-    (or Layer 2 address). This draft describes the necessary extensions, additional
-    functions and protocol details in SFF (Service Function Forwarder) to handle name
-    based relationships.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Adoption of cloud and fog technology allows operators to deploy a\n
+    \  single \"Service Function\" to multiple \"Execution locations\".  The\n   decision
+    to steer traffic to a specific location may change\n   frequently based on load,
+    proximity etc.  Under the current SFC\n   framework, steering traffic dynamically
+    to the different execution\n   end points require a specific 're-chaining', i.e.,
+    a change in the\n   service function path reflecting the different IP endpoints
+    to be\n   used for the new execution points.  This procedure may be complex and\n
+    \  take time.  In order to simplify re-chaining and reduce the time to\n   complete
+    the procedure, we discuss separating the logical Service\n   Function Path from
+    the specific execution end points.  This can be\n   done by identifying the Service
+    Functions using a name rather than a\n   routable IP endpoint (or Layer 2 address).
+    \ This draft describes the\n   necessary extensions, additional functions and
+    protocol details in\n   SFF (Service Function Forwarder) to handle name based
+    relationships.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-trossen-sfc-name-based-sff-04
-    docid:
-    - id: draft-trossen-sfc-name-based-sff-04
+    formattedref: draft-trossen-sfc-name-based-sff-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-04
+    docidentifier:
+    - content: draft-trossen-sfc-name-based-sff-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-trossen-sfc-name-based-sff-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-trossen-sfc-name-based-sff-06
-    docid:
-    - id: draft-trossen-sfc-name-based-sff-06
+    formattedref: draft-trossen-sfc-name-based-sff-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-trossen-sfc-name-based-sff-06
+    docidentifier:
+    - content: draft-trossen-sfc-name-based-sff-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-trossen-sfc-name-based-sff-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-trossen-sfc-name-based-sff-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

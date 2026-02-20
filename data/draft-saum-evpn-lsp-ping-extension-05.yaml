@@ -1,234 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-saum-evpn-lsp-ping-extension-05
-title:
-- content: EVPN Mpls Ping Extension
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-saum-evpn-lsp-ping-extension-05
-  type: src
+id: draftsaumevpnlsppingextension05
 type: standard
-docid:
-- id: draft-saum-evpn-lsp-ping-extension-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN Mpls Ping Extension
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-saum-evpn-lsp-ping-extension-05
+docidentifier:
+- content: draft-saum-evpn-lsp-ping-extension
+  type: Internet-Draft
+- content: draft-saum-evpn-lsp-ping-extension-05
   type: Internet-Draft
   primary: true
-- id: I-D.saum-evpn-lsp-ping-extension
-  type: IETF
-  scope: anchor
 docnumber: I-D.saum-evpn-lsp-ping-extension
 date:
 - type: published
-  value: '2024-05-22'
+  at: '2024-05-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Saumya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Saumya
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dikshit
-        language:
-        - en
       completename:
+        language: en
         content: Saumya Dikshit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aruba Networks, HPE
-  role:
+        - language: en
+          content: Aruba Networks, HPE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
+        - language: en
+          content: Verizon Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Srinath
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Srinath
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Rao
-        language:
-        - en
       completename:
+        language: en
         content: Srinath Rao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aruba Networks, HPE
-  role:
+        - language: en
+          content: Aruba Networks, HPE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Santosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Santosh
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Easale
-        language:
-        - en
       completename:
+        language: en
         content: Santosh Easale
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aruba Networks, HPE
-  role:
+        - language: en
+          content: Aruba Networks, HPE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ashwini
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ashwini
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dahiya
-        language:
-        - en
       completename:
+        language: en
         content: Ashwini Dahiya
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aruba Networks, HPE
-  role:
-  - type: author
+        - language: en
+          content: Aruba Networks, HPE
 version:
 - draft: '05'
-revdate: '2024-05-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In an EVPN or any other VPN deployment, there is an urgent need to
-    tailor the reachability checks of the client nodes via off-box tools which can
-    be triggered from a remote Overlay end-point or a centralized controller. There
-    is also a ease of operability needed when the knowledge known is partial or incomplete.
-    This document aims to address the limitation in current standards for doing so
-    and provides solution which can be made standards in future. As an additional
-    requirement, in network border routers, there are liaison/ dummy VRFs created
-    to leak routes from one network/fabric to another. There are scenarios wherein
-    an explicit reachability check for these type of VRFs is not possible with existing
-    mpls-ping mechanisms. This draft intends to address this as well. Few of missing
-    pieces are equally applicable to the native lsp ping as well.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In an EVPN or any other VPN deployment, there is an urgent need to\n
+    \  tailor the reachability checks of the client nodes via off-box tools\n   which
+    can be triggered from a remote Overlay end-point or a\n   centralized controller.
+    \ There is also a ease of operability needed\n   when the knowledge known is partial
+    or incomplete.  This document\n   aims to address the limitation in current standards
+    for doing so and\n   provides solution which can be made standards in future.
+    \ As an\n   additional requirement, in network border routers, there are liaison/\n
+    \  dummy VRFs created to leak routes from one network/fabric to another.\n   There
+    are scenarios wherein an explicit reachability check for these\n   type of VRFs
+    is not possible with existing mpls-ping mechanisms.\n   This draft intends to
+    address this as well.  Few of missing pieces\n   are equally applicable to the
+    native lsp ping as well.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-saum-evpn-lsp-ping-extension-04
-    docid:
-    - id: draft-saum-evpn-lsp-ping-extension-04
+    formattedref: draft-saum-evpn-lsp-ping-extension-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-saum-evpn-lsp-ping-extension-04
+    docidentifier:
+    - content: draft-saum-evpn-lsp-ping-extension-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-saum-evpn-lsp-ping-extension-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-saum-evpn-lsp-ping-extension-06
-    docid:
-    - id: draft-saum-evpn-lsp-ping-extension-06
+    formattedref: draft-saum-evpn-lsp-ping-extension-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-saum-evpn-lsp-ping-extension-06
+    docidentifier:
+    - content: draft-saum-evpn-lsp-ping-extension-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-saum-evpn-lsp-ping-extension-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-saum-evpn-lsp-ping-extension-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,208 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-rsvp-shared-labels-05
-title:
-- content: Signaling RSVP-TE tunnels on a shared MPLS forwarding plane
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-rsvp-shared-labels-05
-  type: src
+id: draftietfmplsrsvpsharedlabels05
 type: standard
-docid:
-- id: draft-ietf-mpls-rsvp-shared-labels-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signaling RSVP-TE tunnels on a shared MPLS forwarding plane
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-rsvp-shared-labels-05
+docidentifier:
+- content: draft-ietf-mpls-rsvp-shared-labels
+  type: Internet-Draft
+- content: draft-ietf-mpls-rsvp-shared-labels-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-rsvp-shared-labels
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-rsvp-shared-labels
 date:
 - type: published
-  value: '2018-10-15'
+  at: '2018-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Harish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Harish
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Sitaraman
-        language:
-        - en
       completename:
+        language: en
         content: Harish Sitaraman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishnu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: V. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishnu
+      - language: en
+        script: Latn
+        initial: V
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: V. P.
       surname:
+        language: en
         content: Beeram
-        language:
-        - en
       completename:
+        language: en
         content: Vishnu Pavan Beeram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tejal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tejal
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Parikh
-        language:
-        - en
       completename:
+        language: en
         content: Tejal Parikh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tarek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tarek
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Saad
-        language:
-        - en
       completename:
+        language: en
         content: Tarek Saad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '05'
-revdate: '2018-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>As the scale of MPLS RSVP-TE networks has grown, so the number of Label
-    Switched Paths (LSPs) supported by individual network elements has increased.
-    Various implementation recommendations have been proposed to manage the resulting
-    increase in control plane state. However, those changes have had no effect on
-    the number of labels that a transit Label Switching Router (LSR) has to support
-    in the forwarding plane. That number is governed by the number of LSPs transiting
-    or terminated at the LSR and is directly related to the total LSP state in the
-    control plane. This document defines a mechanism to prevent the maximum size of
-    the label space limit on an LSR from being a constraint to control plane scaling
-    on that node. It introduces the notion of pre-installed 'per Traffic Engineering
-    (TE) link labels' that can be shared by MPLS RSVP-TE LSPs that traverse these
-    TE links. This approach significantly reduces the forwarding plane state required
-    to support a large number of LSPs. This couples the feature benefits of the RSVP-TE
-    control plane with the simplicity of the Segment Routing MPLS forwarding plane.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   As the scale of MPLS RSVP-TE networks has grown, so the number of\n
+    \  Label Switched Paths (LSPs) supported by individual network elements\n   has
+    increased.  Various implementation recommendations have been\n   proposed to manage
+    the resulting increase in control plane state.\n\n   However, those changes have
+    had no effect on the number of labels\n   that a transit Label Switching Router
+    (LSR) has to support in the\n   forwarding plane.  That number is governed by
+    the number of LSPs\n   transiting or terminated at the LSR and is directly related
+    to the\n   total LSP state in the control plane.\n\n   This document defines a
+    mechanism to prevent the maximum size of the\n   label space limit on an LSR from
+    being a constraint to control plane\n   scaling on that node.  It introduces the
+    notion of pre-installed 'per\n   Traffic Engineering (TE) link labels' that can
+    be shared by MPLS\n   RSVP-TE LSPs that traverse these TE links.  This approach\n
+    \  significantly reduces the forwarding plane state required to support\n   a
+    large number of LSPs.  This couples the feature benefits of the\n   RSVP-TE control
+    plane with the simplicity of the Segment Routing MPLS\n   forwarding plane.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mpls-rsvp-shared-labels-04
-    docid:
-    - id: draft-ietf-mpls-rsvp-shared-labels-04
+    formattedref: draft-ietf-mpls-rsvp-shared-labels-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-rsvp-shared-labels-04
+    docidentifier:
+    - content: draft-ietf-mpls-rsvp-shared-labels-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-rsvp-shared-labels-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-rsvp-shared-labels-06
-    docid:
-    - id: draft-ietf-mpls-rsvp-shared-labels-06
+    formattedref: draft-ietf-mpls-rsvp-shared-labels-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-rsvp-shared-labels-06
+    docidentifier:
+    - content: draft-ietf-mpls-rsvp-shared-labels-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-rsvp-shared-labels-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-rsvp-shared-labels-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

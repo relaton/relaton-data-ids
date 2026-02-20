@@ -1,188 +1,162 @@
 ---
-schema-version: v1.2.9
-id: draft-tschofenig-core-coap-tcp-tls-05
-title:
-- content: A TCP and TLS Transport for the Constrained Application Protocol (CoAP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tschofenig-core-coap-tcp-tls-05
-  type: src
+id: drafttschofenigcorecoaptcptls05
 type: standard
-docid:
-- id: draft-tschofenig-core-coap-tcp-tls-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A TCP and TLS Transport for the Constrained Application Protocol (CoAP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tschofenig-core-coap-tcp-tls-05
+docidentifier:
+- content: draft-tschofenig-core-coap-tcp-tls
+  type: Internet-Draft
+- content: draft-tschofenig-core-coap-tcp-tls-05
   type: Internet-Draft
   primary: true
-- id: I-D.tschofenig-core-coap-tcp-tls
-  type: IETF
-  scope: anchor
 docnumber: I-D.tschofenig-core-coap-tcp-tls
 date:
 - type: published
-  value: '2015-11-02'
+  at: '2015-11-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universitaet Bremen TZI
-  role:
+        - language: en
+          content: Universitaet Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Simon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Simon
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Lemay
-        language:
-        - en
       completename:
+        language: en
         content: Simon Lemay
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zebra Technologies
-  role:
+        - language: en
+          content: Zebra Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zebra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zebra
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Technologies
-        language:
-        - en
       completename:
+        language: en
         content: Zebra Technologies
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zebra Technologies
-  role:
+        - language: en
+          content: Zebra Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ARM Ltd.
-  role:
-  - type: author
+        - language: en
+          content: ARM Ltd.
 version:
 - draft: '05'
-revdate: '2015-11-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Hypertext Transfer Protocol (HTTP) was designed with TCP as the
-    underlying transport protocol. The Constrained Application Protocol (CoAP), while
-    inspired by HTTP, has been defined to make use of UDP instead of TCP. Therefore,
-    reliable delivery and a simple congestion control and flow control mechanism are
-    provided by the message layer of the CoAP protocol. A number of environments benefit
-    from the use of CoAP directly over a reliable byte stream such as TCP, which already
-    provides these services. This document defines the use of CoAP over TCP as well
-    as CoAP over TLS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Hypertext Transfer Protocol (HTTP) was designed with TCP as the\n
+    \  underlying transport protocol.  The Constrained Application Protocol\n   (CoAP),
+    while inspired by HTTP, has been defined to make use of UDP\n   instead of TCP.
+    \ Therefore, reliable delivery and a simple congestion\n   control and flow control
+    mechanism are provided by the message layer\n   of the CoAP protocol.\n\n   A
+    number of environments benefit from the use of CoAP directly over a\n   reliable
+    byte stream such as TCP, which already provides these\n   services.  This document
+    defines the use of CoAP over TCP as well as\n   CoAP over TLS.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tschofenig-core-coap-tcp-tls-04
-    docid:
-    - id: draft-tschofenig-core-coap-tcp-tls-04
+    formattedref: draft-tschofenig-core-coap-tcp-tls-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tschofenig-core-coap-tcp-tls-04
+    docidentifier:
+    - content: draft-tschofenig-core-coap-tcp-tls-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tschofenig-core-coap-tcp-tls-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tschofenig-core-coap-tcp-tls-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

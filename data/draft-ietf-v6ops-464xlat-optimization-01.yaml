@@ -1,144 +1,126 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-v6ops-464xlat-optimization-01
-title:
-- content: 464XLAT/NAT64 Optimization
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-01
-  type: src
+id: draftietfv6ops464xlatoptimization01
 type: standard
-docid:
-- id: draft-ietf-v6ops-464xlat-optimization-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 464XLAT/NAT64 Optimization
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-01
+docidentifier:
+- content: draft-ietf-v6ops-464xlat-optimization
+  type: Internet-Draft
+- content: draft-ietf-v6ops-464xlat-optimization-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-v6ops-464xlat-optimization
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-v6ops-464xlat-optimization
 date:
 - type: published
-  value: '2020-07-07'
+  at: '2020-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jordi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jordi
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Martinez
-        language:
-        - en
       completename:
+        language: en
         content: Jordi Palet Martinez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: The IPv6 Company
-  role:
+        - language: en
+          content: The IPv6 Company
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alejandro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alejandro
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: D'Egidio
-        language:
-        - en
       completename:
+        language: en
         content: Alejandro D'Egidio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telecentro
-  role:
-  - type: author
+        - language: en
+          content: Telecentro
 version:
 - draft: '01'
-revdate: '2020-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes possible solutions to avoid certain drawbacks
-    of IP/ICMP Translation Algorithm (SIIT) when the destinations are already available
-    with IPv6. When SIIT is used as a stateless NAT46 and IPv4-only devices or applications
-    initiate traffic flows to dual- stack services (in the operator network or Internet),
-    those flows will be translated back to IPv4 by a NAT64. Avoiding this dual- translation
-    will significantly reduce the usage of the NAT64 and the relevant logging, which
-    may be a high impact when traffic flows are towards CDNs, caches or similar resources.
-    This is the case for 464XLAT and MAP-T.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes possible solutions to avoid certain drawbacks\n
+    \  of IP/ICMP Translation Algorithm (SIIT) when the destinations are\n   already
+    available with IPv6.  When SIIT is used as a stateless NAT46\n   and IPv4-only
+    devices or applications initiate traffic flows to dual-\n   stack services (in
+    the operator network or Internet), those flows\n   will be translated back to
+    IPv4 by a NAT64.  Avoiding this dual-\n   translation will significantly reduce
+    the usage of the NAT64 and the\n   relevant logging, which may be a high impact
+    when traffic flows are\n   towards CDNs, caches or similar resources.  This is
+    the case for\n   464XLAT and MAP-T.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-v6ops-464xlat-optimization-00
-    docid:
-    - id: draft-ietf-v6ops-464xlat-optimization-00
+    formattedref: draft-ietf-v6ops-464xlat-optimization-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-00
+    docidentifier:
+    - content: draft-ietf-v6ops-464xlat-optimization-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-v6ops-464xlat-optimization-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-v6ops-464xlat-optimization-02
-    docid:
-    - id: draft-ietf-v6ops-464xlat-optimization-02
+    formattedref: draft-ietf-v6ops-464xlat-optimization-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-02
+    docidentifier:
+    - content: draft-ietf-v6ops-464xlat-optimization-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-v6ops-464xlat-optimization-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-v6ops-464xlat-optimization-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

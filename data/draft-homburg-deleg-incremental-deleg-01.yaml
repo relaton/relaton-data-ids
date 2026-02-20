@@ -1,202 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-homburg-deleg-incremental-deleg-01
-title:
-- content: Incrementally Deployable Extensible Delegation for DNS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-homburg-deleg-incremental-deleg-01
-  type: src
+id: drafthomburgdelegincrementaldeleg01
 type: standard
-docid:
-- id: draft-homburg-deleg-incremental-deleg-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Incrementally Deployable Extensible Delegation for DNS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-homburg-deleg-incremental-deleg-01
+docidentifier:
+- content: draft-homburg-deleg-incremental-deleg
+  type: Internet-Draft
+- content: draft-homburg-deleg-incremental-deleg-01
   type: Internet-Draft
   primary: true
-- id: I-D.homburg-deleg-incremental-deleg
-  type: IETF
-  scope: anchor
 docnumber: I-D.homburg-deleg-incremental-deleg
 date:
 - type: published
-  value: '2025-01-08'
+  at: '2025-01-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Philip
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Philip
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Homburg
-        language:
-        - en
       completename:
+        language: en
         content: Philip Homburg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NLnet Labs
-  role:
+        - language: en
+          content: NLnet Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tim
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Wicinski
-        language:
-        - en
       completename:
+        language: en
         content: Tim Wicinski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cox Communications
-  role:
+        - language: en
+          content: Cox Communications
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jesse
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jesse
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: van Zutphen
-        language:
-        - en
       completename:
+        language: en
         content: Jesse van Zutphen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Amsterdam
-  role:
+        - language: en
+          content: University of Amsterdam
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Willem
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Willem
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Toorop
-        language:
-        - en
       completename:
+        language: en
         content: Willem Toorop
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NLnet Labs
-  role:
-  - type: author
+        - language: en
+          content: NLnet Labs
 version:
 - draft: '01'
-revdate: '2025-01-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a mechanism for extensible delegations in the
-    DNS. The mechanism realizes delegations with resource record sets placed below
-    a _deleg label in the apex of the delegating zone. This authoritative delegation
-    point can be aliased to other names using CNAME and DNAME. This document proposes
-    a new DNS resource record type, DELEG, which is based on the SVCB and inherits
-    extensibility from it. Support in recursive resolvers suffices for the mechanism
-    to be fully functional. The number of subsequent interactions between the recursive
-    resolver and the authoritative name servers is comparable with those for DNS Query
-    Name Minimisation. Additionally, but not required, support in the authoritative
-    name servers enables optimized behavior with reduced (simultaneous) queries. None,
-    mixed or full deployment of the mechanism on authoritative name servers are all
-    fully functional, allowing for the mechanism to be incrementally deployed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a mechanism for extensible delegations in the\n
+    \  DNS.  The mechanism realizes delegations with resource record sets\n   placed
+    below a _deleg label in the apex of the delegating zone.  This\n   authoritative
+    delegation point can be aliased to other names using\n   CNAME and DNAME.  This
+    document proposes a new DNS resource record\n   type, DELEG, which is based on
+    the SVCB and inherits extensibility\n   from it.\n\n   Support in recursive resolvers
+    suffices for the mechanism to be fully\n   functional.  The number of subsequent
+    interactions between the\n   recursive resolver and the authoritative name servers
+    is comparable\n   with those for DNS Query Name Minimisation.  Additionally, but
+    not\n   required, support in the authoritative name servers enables optimized\n
+    \  behavior with reduced (simultaneous) queries.  None, mixed or full\n   deployment
+    of the mechanism on authoritative name servers are all\n   fully functional, allowing
+    for the mechanism to be incrementally\n   deployed.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-homburg-deleg-incremental-deleg-00
-    docid:
-    - id: draft-homburg-deleg-incremental-deleg-00
+    formattedref: draft-homburg-deleg-incremental-deleg-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-homburg-deleg-incremental-deleg-00
+    docidentifier:
+    - content: draft-homburg-deleg-incremental-deleg-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-homburg-deleg-incremental-deleg-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-homburg-deleg-incremental-deleg-02
-    docid:
-    - id: draft-homburg-deleg-incremental-deleg-02
+    formattedref: draft-homburg-deleg-incremental-deleg-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-homburg-deleg-incremental-deleg-02
+    docidentifier:
+    - content: draft-homburg-deleg-incremental-deleg-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-homburg-deleg-incremental-deleg-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-homburg-deleg-incremental-deleg-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

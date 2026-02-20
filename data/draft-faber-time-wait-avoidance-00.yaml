@@ -1,145 +1,121 @@
 ---
-schema-version: v1.2.9
-id: draft-faber-time-wait-avoidance-00
-title:
-- content: Avoiding the TCP TIME_WAIT state at Busy Servers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-faber-time-wait-avoidance-00
-  type: src
+id: draftfabertimewaitavoidance00
 type: standard
-docid:
-- id: draft-faber-time-wait-avoidance-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Avoiding the TCP TIME_WAIT state at Busy Servers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-faber-time-wait-avoidance-00
+docidentifier:
+- content: draft-faber-time-wait-avoidance
+  type: Internet-Draft
+- content: draft-faber-time-wait-avoidance-00
   type: Internet-Draft
   primary: true
-- id: I-D.faber-time-wait-avoidance
-  type: IETF
-  scope: anchor
 docnumber: I-D.faber-time-wait-avoidance
 date:
 - type: published
-  value: '1997-09-11'
+  at: '1997-09-11'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: J. D.
-          language:
-          - en
-      surname:
-        content: Touch
-        language:
-        - en
-      completename:
-        content: Dr. Joseph D. Touch
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ted
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: J. D.
       surname:
-        content: Faber
-        language:
-        - en
+        language: en
+        content: Touch
       completename:
+        language: en
+        content: Dr. Joseph D. Touch
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Ted
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
+      surname:
+        language: en
+        content: Faber
+      completename:
+        language: en
         content: Ted Faber
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: J. Touch
-  role:
+        - language: en
+          content: J. Touch
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Yue
-        language:
-        - en
       completename:
+        language: en
         content: Wei Yue
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '1997-09-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the problems associated with the accumulation
-    of TCP TIME_WAIT states at a network server, such as a web server, and details
-    two methods for avoiding that accumulation. Servers that have many TCP connections
-    in TIME_WAIT state experience performance degradation, and can collapse. One solution
-    is a TCP modification that causes clients to enter TIME_WAIT state rather than
-    servers. The other is an HTTP modification that allows the client to close the
-    transport connection, maintaining the TIME_WAIT state at the client. The goal
-    of both approaches is ensure that TIME_WAIT states accumu- late at the less loaded
-    endpoint. The document also presents initial performance data from reference implementations
-    of these solutions, which suggest that the modifica- tions improve HTTP connection
-    rates at the server by as much as 50%, and allow servers to operate at small transaction
-    throughputs that they cannot sustain their default configuration.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "      This document describes the problems associated with the accumulation\n
+    \  of TCP TIME_WAIT states at a network server, such as a web server,\n   and
+    details two methods for avoiding that accumulation.  Servers that\n   have many
+    TCP connections in TIME_WAIT state experience performance\n   degradation, and
+    can collapse.  One solution is a TCP modification\n   that causes clients to enter
+    TIME_WAIT state rather than servers.\n   The other is an HTTP modification that
+    allows the client to close the\n   transport connection, maintaining the TIME_WAIT
+    state at the client.\n   The goal of both approaches is ensure that TIME_WAIT
+    states accumu-\n   late at the less loaded endpoint.\n\n   The document also presents
+    initial performance data from reference\n   implementations of these solutions,
+    which suggest that the modifica-\n   tions improve HTTP connection rates at the
+    server by as much as 50%,\n   and allow servers to operate at small transaction
+    throughputs that\n   they cannot sustain their default configuration.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-faber-time-wait-avoidance-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,223 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-decraene-lsr-isis-flooding-speed-05
-title:
-- content: IS-IS Flooding Parameters advertisement
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-05
-  type: src
+id: draftdecraenelsrisisfloodingspeed05
 type: standard
-docid:
-- id: draft-decraene-lsr-isis-flooding-speed-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IS-IS Flooding Parameters advertisement
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-05
+docidentifier:
+- content: draft-decraene-lsr-isis-flooding-speed
+  type: Internet-Draft
+- content: draft-decraene-lsr-isis-flooding-speed-05
   type: Internet-Draft
   primary: true
-- id: I-D.decraene-lsr-isis-flooding-speed
-  type: IETF
-  scope: anchor
 docnumber: I-D.decraene-lsr-isis-flooding-speed
 date:
 - type: published
-  value: '2020-10-29'
+  at: '2020-10-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bowers
-        language:
-        - en
       completename:
+        language: en
         content: Chris Bowers
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Jayesh
-        language:
-        - en
       completename:
+        language: en
         content: Jayesh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tony
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tony
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Tony Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arista Networks
-  role:
+        - language: en
+          content: Arista Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gunter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gunter
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Van de Velde
-        language:
-        - en
       completename:
+        language: en
         content: Gunter Van de Velde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '05'
-revdate: '2020-10-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a mechanism to adjust IS-IS flooding speed between
-    two adjacent routers by adjusting the sender flooding speed to the capability
-    of the receiver. This helps improving the flooding throughput, reducing LSPs losses
-    and retransmissions due to receiver overload, and avoiding manual tuning of flooding
-    parameters by the network operator. This document defines a new TLV for SNP and/or
-    Hello messages. This TLV may carry a set of parameters indicating the performance
-    capacity to receive LSPs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a mechanism to adjust IS-IS flooding speed\n
+    \  between two adjacent routers by adjusting the sender flooding speed\n   to
+    the capability of the receiver.  This helps improving the flooding\n   throughput,
+    reducing LSPs losses and retransmissions due to receiver\n   overload, and avoiding
+    manual tuning of flooding parameters by the\n   network operator.  This document
+    defines a new TLV for SNP and/or\n   Hello messages.  This TLV may carry a set
+    of parameters indicating\n   the performance capacity to receive LSPs.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-decraene-lsr-isis-flooding-speed-04
-    docid:
-    - id: draft-decraene-lsr-isis-flooding-speed-04
+    formattedref: draft-decraene-lsr-isis-flooding-speed-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-04
+    docidentifier:
+    - content: draft-decraene-lsr-isis-flooding-speed-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-decraene-lsr-isis-flooding-speed-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-decraene-lsr-isis-flooding-speed-06
-    docid:
-    - id: draft-decraene-lsr-isis-flooding-speed-06
+    formattedref: draft-decraene-lsr-isis-flooding-speed-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-06
+    docidentifier:
+    - content: draft-decraene-lsr-isis-flooding-speed-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-decraene-lsr-isis-flooding-speed-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-decraene-lsr-isis-flooding-speed-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

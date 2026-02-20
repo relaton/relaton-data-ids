@@ -1,213 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-grow-route-leak-problem-definition-04
-title:
-- content: Problem Definition and Classification of BGP Route Leaks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-route-leak-problem-definition-04
-  type: src
+id: draftietfgrowrouteleakproblemdefinition04
 type: standard
-docid:
-- id: draft-ietf-grow-route-leak-problem-definition-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Problem Definition and Classification of BGP Route Leaks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-route-leak-problem-definition-04
+docidentifier:
+- content: draft-ietf-grow-route-leak-problem-definition
+  type: Internet-Draft
+- content: draft-ietf-grow-route-leak-problem-definition-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-grow-route-leak-problem-definition
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-grow-route-leak-problem-definition
 date:
 - type: published
-  value: '2016-02-11'
+  at: '2016-02-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kotikalapudi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kotikalapudi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sriram
-        language:
-        - en
       completename:
+        language: en
         content: Kotikalapudi Sriram
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Doug
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Doug
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Montgomery
-        language:
-        - en
       completename:
+        language: en
         content: Doug Montgomery
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Danny
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: D. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Danny
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: D. R.
       surname:
+        language: en
         content: McPherson
-        language:
-        - en
       completename:
+        language: en
         content: Danny R. McPherson
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Osterweil
-        language:
-        - en
       completename:
+        language: en
         content: Eric Osterweil
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Dickson
-        language:
-        - en
       completename:
+        language: en
         content: Brian Dickson
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2016-02-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>A systemic vulnerability of the Border Gateway Protocol routing system,
-    known as 'route leaks', has received significant attention in recent years. Frequent
-    incidents that result in significant disruptions to Internet routing are labeled
-    "route leaks", but to date we have lacked a common definition of the term. In
-    this document, we provide a working definition of route leaks, keeping in mind
-    the real occurrences that have received significant attention. Further, we attempt
-    to enumerate (though not exhaustively) different types of route leaks based on
-    observed events on the Internet. We aim to provide a taxonomy that covers several
-    forms of route leaks that have been observed and are of concern to Internet user
-    community as well as the network operator community.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A systemic vulnerability of the Border Gateway Protocol routing\n   system,
+    known as 'route leaks', has received significant attention in\n   recent years.
+    \ Frequent incidents that result in significant\n   disruptions to Internet routing
+    are labeled \"route leaks\", but to\n   date we have lacked a common definition
+    of the term.  In this\n   document, we provide a working definition of route leaks,
+    keeping in\n   mind the real occurrences that have received significant attention.\n
+    \  Further, we attempt to enumerate (though not exhaustively) different\n   types
+    of route leaks based on observed events on the Internet.  We\n   aim to provide
+    a taxonomy that covers several forms of route leaks\n   that have been observed
+    and are of concern to Internet user community\n   as well as the network operator
+    community.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-grow-route-leak-problem-definition-03
-    docid:
-    - id: draft-ietf-grow-route-leak-problem-definition-03
+    formattedref: draft-ietf-grow-route-leak-problem-definition-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-route-leak-problem-definition-03
+    docidentifier:
+    - content: draft-ietf-grow-route-leak-problem-definition-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-grow-route-leak-problem-definition-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-grow-route-leak-problem-definition-05
-    docid:
-    - id: draft-ietf-grow-route-leak-problem-definition-05
+    formattedref: draft-ietf-grow-route-leak-problem-definition-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-route-leak-problem-definition-05
+    docidentifier:
+    - content: draft-ietf-grow-route-leak-problem-definition-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-grow-route-leak-problem-definition-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-grow-route-leak-problem-definition-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

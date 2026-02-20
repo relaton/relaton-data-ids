@@ -1,140 +1,137 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-restconf-client-server-19
-title:
-- content: RESTCONF Client and Server Models
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-client-server-19
-  type: src
+id: draftietfnetconfrestconfclientserver19
 type: standard
-docid:
-- id: draft-ietf-netconf-restconf-client-server-19
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RESTCONF Client and Server Models
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-client-server-19
+docidentifier:
+- content: draft-ietf-netconf-restconf-client-server
+  type: Internet-Draft
+- content: draft-ietf-netconf-restconf-client-server-19
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-restconf-client-server
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-restconf-client-server
 date:
 - type: published
-  value: '2020-05-20'
+  at: '2020-05-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Watsen
-        language:
-        - en
       completename:
+        language: en
         content: Kent Watsen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Watsen Networks
-  role:
-  - type: author
+        - language: en
+          content: Watsen Networks
 version:
 - draft: '19'
-revdate: '2020-05-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document defines two YANG modules, one module to configure a RESTCONF
-    client and the other module to configure a RESTCONF server. Both modules support
-    the TLS transport protocol with both standard RESTCONF and RESTCONF Call Home
-    connections. Editorial Note (To be removed by RFC Editor) This draft contains
-    placeholder values that need to be replaced with finalized values at the time
-    of publication. This note summarizes all of the substitutions that are needed.
-    No other RFC Editor instructions are specified elsewhere in this document. Artwork
-    in this document contains shorthand references to drafts in progress. Please apply
-    the following replacements (note: not all may be present): o "AAAA" --&gt; the
-    assigned RFC value for draft-ietf-netconf-crypto- types o "BBBB" --&gt; the assigned
-    RFC value for draft-ietf-netconf-trust- anchors o "CCCC" --&gt; the assigned RFC
-    value for draft-ietf-netconf-keystore o "DDDD" --&gt; the assigned RFC value for
-    draft-ietf-netconf-tcp- client-server o "EEEE" --&gt; the assigned RFC value for
-    draft-ietf-netconf-ssh- client-server o "FFFF" --&gt; the assigned RFC value for
-    draft-ietf-netconf-tls- client-server o "GGGG" --&gt; the assigned RFC value for
-    draft-ietf-netconf-http- client-server o "HHHH" --&gt; the assigned RFC value
-    for draft-ietf-netconf-netconf- client-server o "IIII" --&gt; the assigned RFC
-    value for this draft Artwork in this document contains placeholder values for
-    the date of publication of this draft. Please apply the following replacement:
-    o "2020-05-20" --&gt; the publication date of this draft The following Appendix
-    section is to be removed prior to publication: o Appendix B. Change Log Note to
-    Reviewers (To be removed by RFC Editor) This document presents a YANG module or
-    modules that is/are part of a collection of drafts that work together to produce
-    the ultimate goal of the NETCONF WG: to define configuration modules for NETCONF
-    client and servers, and RESTCONF client and servers. The relationship between
-    the various drafts in the collection is presented in the below diagram. crypto-types
-    ^ ^ / \ / \ trust-anchors keystore ^ ^ ^ ^ | +---------+ | | | | | | | +------------+
-    | tcp-client-server | / | | ^ ^ ssh-client-server | | | | ^ tls-client-server
-    | | | ^ ^ http-client-server | | | | | ^ | | | +-----+ +---------+ | | | | | |
-    | | +-----------|--------|--------------+ | | | | | | | | +-----------+ | | |
-    | | | | | | | | | | | | | | netconf-client-server restconf-client-server Full
-    draft names and link to drafts: o draft-ietf-netconf-crypto-types (html [1]) o
-    draft-ietf-netconf-trust-anchors (html [2]) o draft-ietf-netconf-keystore (html
-    [3]) o draft-ietf-netconf-tcp-client-server (html [4]) o draft-ietf-netconf-ssh-client-server
-    (html [5]) o draft-ietf-netconf-tls-client-server (html [6]) o draft-ietf-netconf-http-client-server
-    (html [7]) o draft-ietf-netconf-netconf-client-server (html [8]) o draft-ietf-netconf-restconf-client-server
-    (html [9])</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines two YANG modules, one module to configure a\n
+    \  RESTCONF client and the other module to configure a RESTCONF server.\n   Both
+    modules support the TLS transport protocol with both standard\n   RESTCONF and
+    RESTCONF Call Home connections.\n\nEditorial Note (To be removed by RFC Editor)\n\n
+    \  This draft contains placeholder values that need to be replaced with\n   finalized
+    values at the time of publication.  This note summarizes\n   all of the substitutions
+    that are needed.  No other RFC Editor\n   instructions are specified elsewhere
+    in this document.\n\n   Artwork in this document contains shorthand references
+    to drafts in\n   progress.  Please apply the following replacements (note: not
+    all may\n   be present):\n\n   o  \"AAAA\" --> the assigned RFC value for draft-ietf-netconf-crypto-\n
+    \     types\n\n   o  \"BBBB\" --> the assigned RFC value for draft-ietf-netconf-trust-\n
+    \     anchors\n\n   o  \"CCCC\" --> the assigned RFC value for draft-ietf-netconf-keystore\n\n
+    \  o  \"DDDD\" --> the assigned RFC value for draft-ietf-netconf-tcp-\n      client-server\n\n
+    \  o  \"EEEE\" --> the assigned RFC value for draft-ietf-netconf-ssh-\n      client-server\n\n
+    \  o  \"FFFF\" --> the assigned RFC value for draft-ietf-netconf-tls-\n      client-server\n\n
+    \  o  \"GGGG\" --> the assigned RFC value for draft-ietf-netconf-http-\n      client-server\n\n
+    \  o  \"HHHH\" --> the assigned RFC value for draft-ietf-netconf-netconf-\n      client-server\n\n
+    \  o  \"IIII\" --> the assigned RFC value for this draft\n\n   Artwork in this
+    document contains placeholder values for the date of\n   publication of this draft.
+    \ Please apply the following replacement:\n\n   o  \"2020-05-20\" --> the publication
+    date of this draft\n\n   The following Appendix section is to be removed prior
+    to publication:\n\n   o  Appendix B.  Change Log\n\nNote to Reviewers (To be removed
+    by RFC Editor)\n\n   This document presents a YANG module or modules that is/are
+    part of a\n   collection of drafts that work together to produce the ultimate
+    goal\n   of the NETCONF WG: to define configuration modules for NETCONF client\n
+    \  and servers, and RESTCONF client and servers.\n\n   The relationship between
+    the various drafts in the collection is\n   presented in the below diagram.\n\n
+    \                                 crypto-types\n                                    ^
+    \     ^\n                                   /        \\\n                                  /
+    \         \\\n                       trust-anchors        keystore\n                         ^
+    \    ^              ^  ^\n                         |     +---------+    |  |\n
+    \                        |               |    |  |\n                         |
+    \      +------------+  |\n   tcp-client-server     |      /        |       |\n
+    \     ^    ^        ssh-client-server    |       |\n      |    |           ^            tls-client-server\n
+    \     |    |           |              ^     ^        http-client-server\n      |
+    \   |           |              |     |                 ^\n      |    |           |
+    \       +-----+     +---------+       |\n      |    |           |        |                     |
+    \      |\n      |    +-----------|--------|--------------+      |       |\n      |
+    \               |        |              |      |       |\n      +-----------+
+    \   |        |              |      |       |\n                  |    |        |
+    \             |      |       |\n                  |    |        |              |
+    \     |       |\n               netconf-client-server       restconf-client-server\n
+    \  Full draft names and link to drafts:\n\n   o  draft-ietf-netconf-crypto-types
+    (html [1])\n\n   o  draft-ietf-netconf-trust-anchors (html [2])\n\n   o  draft-ietf-netconf-keystore
+    (html [3])\n\n   o  draft-ietf-netconf-tcp-client-server (html [4])\n\n   o  draft-ietf-netconf-ssh-client-server
+    (html [5])\n\n   o  draft-ietf-netconf-tls-client-server (html [6])\n\n   o  draft-ietf-netconf-http-client-server
+    (html [7])\n\n   o  draft-ietf-netconf-netconf-client-server (html [8])\n\n   o
+    \ draft-ietf-netconf-restconf-client-server (html [9])\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-restconf-client-server-18
-    docid:
-    - id: draft-ietf-netconf-restconf-client-server-18
+    formattedref: draft-ietf-netconf-restconf-client-server-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-client-server-18
+    docidentifier:
+    - content: draft-ietf-netconf-restconf-client-server-18
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-restconf-client-server-18
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-restconf-client-server-20
-    docid:
-    - id: draft-ietf-netconf-restconf-client-server-20
+    formattedref: draft-ietf-netconf-restconf-client-server-20
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-restconf-client-server-20
+    docidentifier:
+    - content: draft-ietf-netconf-restconf-client-server-20
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-restconf-client-server-20
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-restconf-client-server-19
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,226 +1,187 @@
 ---
-schema-version: v1.2.9
-id: draft-zhangj-pce-multi-fiber-inter-domain-00
-title:
-- content: PCEP extension for multi-fiber existing in inter-domain link
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zhangj-pce-multi-fiber-inter-domain-00
-  type: src
+id: draftzhangjpcemultifiberinterdomain00
 type: standard
-docid:
-- id: draft-zhangj-pce-multi-fiber-inter-domain-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PCEP extension for multi-fiber existing in inter-domain link
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zhangj-pce-multi-fiber-inter-domain-00
+docidentifier:
+- content: draft-zhangj-pce-multi-fiber-inter-domain
+  type: Internet-Draft
+- content: draft-zhangj-pce-multi-fiber-inter-domain-00
   type: Internet-Draft
   primary: true
-- id: I-D.zhangj-pce-multi-fiber-inter-domain
-  type: IETF
-  scope: anchor
 docnumber: I-D.zhangj-pce-multi-fiber-inter-domain
 date:
 - type: published
-  value: '2012-07-08'
+  at: '2012-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Jie Zhang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jingjing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jingjing
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Jingjing Wang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yongli
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongli
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Yongli Zhao
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shanguo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shanguo
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Huang
-        language:
-        - en
       completename:
+        language: en
         content: Shanguo Huang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhihong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhihong
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Zhihong Wang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xuping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuping
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Cao
-        language:
-        - en
       completename:
+        language: en
         content: Xuping Cao
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2012-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In real networks, the link between two adjacent nodes always has multi-fibers.
-    The condition above happens more frequently especially for the gateway nodes in
-    the multi-domain network. Moreover, the number of links between two adjacent domains
-    is always more than one. From the view of parent PCE, the two conditions above
-    will be regarded as the problem of multi-fiber between adjacent nodes. However,
-    most route computing algorithms always can not solve the problem of multi-fiber
-    between adjacent nodes. As a result, parent PCE will not compute the route sequence
-    with specific fibers. It brings distress and problems when parent PCE computing
-    the loose route sequence. In order to solve the problems existing in real networks,
-    an efficient solution will be proposed for parent PCE facing the multi- fiber
-    between adjacent nodes. Some interface and structure will be expanded in this
-    proposal.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In real networks, the link between two adjacent nodes always has\n
+    \  multi-fibers.  The condition above happens more frequently especially\n   for
+    the gateway nodes in the multi-domain network.  Moreover, the\n   number of links
+    between two adjacent domains is always more than one.\n   From the view of parent
+    PCE, the two conditions above will be\n   regarded as the problem of multi-fiber
+    between adjacent nodes.\n   However, most route computing algorithms always can
+    not solve the\n   problem of multi-fiber between adjacent nodes.  As a result,
+    parent\n   PCE will not compute the route sequence with specific fibers.  It\n
+    \  brings distress and problems when parent PCE computing the loose\n   route
+    sequence.\n\n   In order to solve the problems existing in real networks, an\n
+    \  efficient solution will be proposed for parent PCE facing the multi-\n   fiber
+    between adjacent nodes.  Some interface and structure will be\n   expanded in
+    this proposal.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-zhangj-pce-multi-fiber-inter-domain-01
-    docid:
-    - id: draft-zhangj-pce-multi-fiber-inter-domain-01
+    formattedref: draft-zhangj-pce-multi-fiber-inter-domain-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zhangj-pce-multi-fiber-inter-domain-01
+    docidentifier:
+    - content: draft-zhangj-pce-multi-fiber-inter-domain-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zhangj-pce-multi-fiber-inter-domain-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zhangj-pce-multi-fiber-inter-domain-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

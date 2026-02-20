@@ -1,194 +1,169 @@
 ---
-schema-version: v1.2.9
-id: draft-cuspdt-rtgwg-cu-separation-infor-model-00
-title:
-- content: Information Model of Control-Plane and User-Plane separation BNG
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cuspdt-rtgwg-cu-separation-infor-model-00
-  type: src
+id: draftcuspdtrtgwgcuseparationinformodel00
 type: standard
-docid:
-- id: draft-cuspdt-rtgwg-cu-separation-infor-model-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Information Model of Control-Plane and User-Plane separation BNG
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cuspdt-rtgwg-cu-separation-infor-model-00
+docidentifier:
+- content: draft-cuspdt-rtgwg-cu-separation-infor-model
+  type: Internet-Draft
+- content: draft-cuspdt-rtgwg-cu-separation-infor-model-00
   type: Internet-Draft
   primary: true
-- id: I-D.cuspdt-rtgwg-cu-separation-infor-model
-  type: IETF
-  scope: anchor
 docnumber: I-D.cuspdt-rtgwg-cu-separation-infor-model
 date:
 - type: published
-  value: '2018-02-26'
+  at: '2018-02-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zitao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zitao
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Zitao Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rong
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Gu
-        language:
-        - en
       completename:
+        language: en
         content: Rong Gu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Victor Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sujun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sujun
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Sujun Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '00'
-revdate: '2018-02-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>To improve network resource utilization and reduce the operation expense,
-    the Control-Plane and User-Plane separation conception is raised [TR-384]. This
-    document describes the information model for the interface between Control-Plane
-    and User-Plane separation BNG. This information model may involve both control
-    channel interface and configuration channel interface. The interface for control
-    channel allows the Control-Plane to send several flow tables to the User- Plane,
-    such as user's information table, user's interface table, and user's QoS table,
-    etc. And it also allows the User-Plane to report the resources and statistics
-    information to the Control-Plane. The interface for configuration channel is in
-    charge of the version negotiation of protocols between the Control-Plane and User-Plane,
-    the configuration for devices of Control-Plane and User-Plane, and the reports
-    of User-Plane's capabilities, etc. The information model defined in this document
-    enables defining a standardized data model. Such a data model can be used to define
-    an interface to the CU separation BNG.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   To improve network resource utilization and reduce the operation\n
+    \  expense, the Control-Plane and User-Plane separation conception is\n   raised
+    [TR-384].  This document describes the information model for\n   the interface
+    between Control-Plane and User-Plane separation BNG.\n   This information model
+    may involve both control channel interface and\n   configuration channel interface.
+    \ The interface for control channel\n   allows the Control-Plane to send several
+    flow tables to the User-\n   Plane, such as user's information table, user's interface
+    table, and\n   user's QoS table, etc.  And it also allows the User-Plane to report\n
+    \  the resources and statistics information to the Control-Plane.  The\n   interface
+    for configuration channel is in charge of the version\n   negotiation of protocols
+    between the Control-Plane and User-Plane,\n   the configuration for devices of
+    Control-Plane and User-Plane, and\n   the reports of User-Plane's capabilities,
+    etc.  The information model\n   defined in this document enables defining a standardized
+    data model.\n   Such a data model can be used to define an interface to the CU\n
+    \  separation BNG.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-cuspdt-rtgwg-cu-separation-infor-model-01
-    docid:
-    - id: draft-cuspdt-rtgwg-cu-separation-infor-model-01
+    formattedref: draft-cuspdt-rtgwg-cu-separation-infor-model-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cuspdt-rtgwg-cu-separation-infor-model-01
+    docidentifier:
+    - content: draft-cuspdt-rtgwg-cu-separation-infor-model-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cuspdt-rtgwg-cu-separation-infor-model-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cuspdt-rtgwg-cu-separation-infor-model-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

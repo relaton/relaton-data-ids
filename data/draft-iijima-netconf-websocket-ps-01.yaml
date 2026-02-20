@@ -1,175 +1,145 @@
 ---
-schema-version: v1.2.9
-id: draft-iijima-netconf-websocket-ps-01
-title:
-- content: NETCONF over WebSocket
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-iijima-netconf-websocket-ps-01
-  type: src
+id: draftiijimanetconfwebsocketps01
 type: standard
-docid:
-- id: draft-iijima-netconf-websocket-ps-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: NETCONF over WebSocket
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-iijima-netconf-websocket-ps-01
+docidentifier:
+- content: draft-iijima-netconf-websocket-ps
+  type: Internet-Draft
+- content: draft-iijima-netconf-websocket-ps-01
   type: Internet-Draft
   primary: true
-- id: I-D.iijima-netconf-websocket-ps
-  type: IETF
-  scope: anchor
 docnumber: I-D.iijima-netconf-websocket-ps
 date:
 - type: published
-  value: '2011-10-20'
+  at: '2011-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tomoyuki
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tomoyuki
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Iijima
-        language:
-        - en
       completename:
+        language: en
         content: Tomoyuki Iijima
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hiroyasu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hiroyasu
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Kimura
-        language:
-        - en
       completename:
+        language: en
         content: Hiroyasu Kimura
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yoshifumi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yoshifumi
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Atarashi
-        language:
-        - en
       completename:
+        language: en
         content: Yoshifumi Atarashi
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hidemitsu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hidemitsu
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Higuchi
-        language:
-        - en
       completename:
+        language: en
         content: Hidemitsu Higuchi
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2011-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo proposes transporting NETCONF over WebSocket protocol[I-D.ietf-hybi-thewebsocketprotocol].
-    The use of HTTP and Web-based applications are increasing with the emergence of
-    advanced drawing technologies and cloud computing. IT management systems supporting
-    browser-based interface are getting common. It's natural for network management
-    systems to support Web-based interface. Currently, however, few network management
-    protocols support the transportation over HTTP. Although NETCONF[RFC6241] was
-    defined to be sent over SOAP/HTTPS[RFC4743], it was excluded from the options
-    of realizing notification mechanism[RFC5277] since HTTP lacks bi- directional
-    capabilty. At present, WebSocket protocol, the update of HTTP with bi-directional
-    capability, is available. This memo describes the way NETCONF is sent over WebSocket
-    protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo proposes transporting NETCONF over WebSocket\n   protocol[I-D.ietf-hybi-thewebsocketprotocol].
+    \ The use of HTTP and\n   Web-based applications are increasing with the emergence
+    of advanced\n   drawing technologies and cloud computing.  IT management systems\n
+    \  supporting browser-based interface are getting common.  It's natural\n   for
+    network management systems to support Web-based interface.\n   Currently, however,
+    few network management protocols support the\n   transportation over HTTP.  Although
+    NETCONF[RFC6241] was defined to\n   be sent over SOAP/HTTPS[RFC4743], it was excluded
+    from the options of\n   realizing notification mechanism[RFC5277] since HTTP lacks
+    bi-\n   directional capabilty.  At present, WebSocket protocol, the update of\n
+    \  HTTP with bi-directional capability, is available.  This memo\n   describes
+    the way NETCONF is sent over WebSocket protocol.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-iijima-netconf-websocket-ps-02
-    docid:
-    - id: draft-iijima-netconf-websocket-ps-02
+    formattedref: draft-iijima-netconf-websocket-ps-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-iijima-netconf-websocket-ps-02
+    docidentifier:
+    - content: draft-iijima-netconf-websocket-ps-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-iijima-netconf-websocket-ps-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-iijima-netconf-websocket-ps-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

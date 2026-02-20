@@ -1,97 +1,84 @@
 ---
-schema-version: v1.2.9
-id: draft-pala-ocspv2-00
-title:
-- content: Online Certificate Status Protocol - Version 2 (OCSPv2)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pala-ocspv2-00
-  type: src
+id: draftpalaocspv200
 type: standard
-docid:
-- id: draft-pala-ocspv2-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Online Certificate Status Protocol - Version 2 (OCSPv2)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pala-ocspv2-00
+docidentifier:
+- content: draft-pala-ocspv2
+  type: Internet-Draft
+- content: draft-pala-ocspv2-00
   type: Internet-Draft
   primary: true
-- id: I-D.pala-ocspv2
-  type: IETF
-  scope: anchor
 docnumber: I-D.pala-ocspv2
 date:
 - type: published
-  value: '2019-02-05'
+  at: '2019-02-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Massimiliano
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Massimiliano
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Pala
-        language:
-        - en
       completename:
+        language: en
         content: Massimiliano Pala
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
-  - type: author
+        - language: en
+          content: CableLabs
 version:
 - draft: '00'
-revdate: '2019-02-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With the increase number of protocols and applications that rely on
-    digital certificates to authenticate either the communication channel (TLS) or
-    the data itself (PKIX), the need for providing an efficient revocation system
-    is paramount. Although the Online Certificate Status Protocol (OCSP) allows for
-    efficient lookup of the revocation status of a certificate, the distribution of
-    this information via HTTP (or very rarely) HTTPS is not particularly efficient
-    for high volume websites without incurring in high distribution costs (e.g., CDN).
-    In particular, this specification defines a new set of messages (i.e., OCSPv2
-    Request and OCSPv2 Response) that address the inefficiencies of OCSPv1 by (a)
-    providing range-based responses to optimize (reduce) the number of pre-computed
-    responses required by a CA, and (b) allowing the inclusion of other (certificate
-    chain) responses in the same response for round-trip and caching optimization.
-    The deployment of OCSPv2 to validate the status of a certificate is meant to lower
-    the costs of providing revocation services and increase the efficiency of the
-    service, thus allowing for short-lived responses (i.e., hours instead of days).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With the increase number of protocols and applications that rely on\n
+    \  digital certificates to authenticate either the communication channel\n   (TLS)
+    or the data itself (PKIX), the need for providing an efficient\n   revocation
+    system is paramount.  Although the Online Certificate\n   Status Protocol (OCSP)
+    allows for efficient lookup of the revocation\n   status of a certificate, the
+    distribution of this information via\n   HTTP (or very rarely) HTTPS is not particularly
+    efficient for high\n   volume websites without incurring in high distribution
+    costs (e.g.,\n   CDN).\n\n   In particular, this specification defines a new set
+    of messages\n   (i.e., OCSPv2 Request and OCSPv2 Response) that address the\n
+    \  inefficiencies of OCSPv1 by (a) providing range-based responses to\n   optimize
+    (reduce) the number of pre-computed responses required by a\n   CA, and (b) allowing
+    the inclusion of other (certificate chain)\n   responses in the same response
+    for round-trip and caching\n   optimization.\n\n   The deployment of OCSPv2 to
+    validate the status of a certificate is\n   meant to lower the costs of providing
+    revocation services and\n   increase the efficiency of the service, thus allowing
+    for short-lived\n   responses (i.e., hours instead of days).\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pala-ocspv2-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

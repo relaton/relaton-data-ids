@@ -1,196 +1,170 @@
 ---
-schema-version: v1.2.9
-id: draft-cardwell-iccrg-bbr-congestion-control-00
-title:
-- content: BBR Congestion Control
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cardwell-iccrg-bbr-congestion-control-00
-  type: src
+id: draftcardwelliccrgbbrcongestioncontrol00
 type: standard
-docid:
-- id: draft-cardwell-iccrg-bbr-congestion-control-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BBR Congestion Control
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cardwell-iccrg-bbr-congestion-control-00
+docidentifier:
+- content: draft-cardwell-iccrg-bbr-congestion-control
+  type: Internet-Draft
+- content: draft-cardwell-iccrg-bbr-congestion-control-00
   type: Internet-Draft
   primary: true
-- id: I-D.cardwell-iccrg-bbr-congestion-control
-  type: IETF
-  scope: anchor
 docnumber: I-D.cardwell-iccrg-bbr-congestion-control
 date:
 - type: published
-  value: '2017-07-03'
+  at: '2017-07-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Neal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Neal
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Cardwell
-        language:
-        - en
       completename:
+        language: en
         content: Neal Cardwell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc
-  role:
+        - language: en
+          content: Google, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yuchung
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuchung
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cheng
-        language:
-        - en
       completename:
+        language: en
         content: Yuchung Cheng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc
-  role:
+        - language: en
+          content: Google, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Soheil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: S. H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Soheil
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: S. H.
       surname:
+        language: en
         content: Yeganeh
-        language:
-        - en
       completename:
+        language: en
         content: Soheil Hassas Yeganeh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc
-  role:
+        - language: en
+          content: Google, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Van
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Van
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Jacobson
-        language:
-        - en
       completename:
+        language: en
         content: Van Jacobson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google, Inc
-  role:
-  - type: author
+        - language: en
+          content: Google, Inc
 version:
 - draft: '00'
-revdate: '2017-07-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document specifies the BBR congestion control algorithm. BBR uses
-    recent measurements of a transport connection's delivery rate and round-trip time
-    to build an explicit model that includes both the maximum recent bandwidth available
-    to that connection, and its minimum recent round-trip delay. BBR then uses this
-    model to control both how fast it sends data and the maximum amount of data it
-    allows in flight in the network at any time. Relative to loss-based congestion
-    control algorithms such as Reno [RFC5681] or CUBIC [draft-ietf-tcpm-cubic], BBR
-    offers substantially higher throughput for bottlenecks with shallow buffers or
-    random losses, and substantially lower queueing delays for bottlenecks with deep
-    buffers (avoiding "bufferbloat"). This algorithm can be implemented in any transport
-    protocol that supports packet-delivery acknowledgment (thus far, open source implementations
-    are available for TCP [RFC793] and QUIC [draft-ietf-quic-transport-00]).</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies the BBR congestion control algorithm.  BBR\n
+    \  uses recent measurements of a transport connection's delivery rate\n   and
+    round-trip time to build an explicit model that includes both the\n   maximum
+    recent bandwidth available to that connection, and its\n   minimum recent round-trip
+    delay.  BBR then uses this model to control\n   both how fast it sends data and
+    the maximum amount of data it allows\n   in flight in the network at any time.
+    \ Relative to loss-based\n   congestion control algorithms such as Reno [RFC5681]
+    or CUBIC\n   [draft-ietf-tcpm-cubic], BBR offers substantially higher throughput\n
+    \  for bottlenecks with shallow buffers or random losses, and\n   substantially
+    lower queueing delays for bottlenecks with deep buffers\n   (avoiding \"bufferbloat\").
+    \ This algorithm can be implemented in any\n   transport protocol that supports
+    packet-delivery acknowledgment (thus\n   far, open source implementations are
+    available for TCP [RFC793] and\n   QUIC [draft-ietf-quic-transport-00]).\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-cardwell-iccrg-bbr-congestion-control-01
-    docid:
-    - id: draft-cardwell-iccrg-bbr-congestion-control-01
+    formattedref: draft-cardwell-iccrg-bbr-congestion-control-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cardwell-iccrg-bbr-congestion-control-01
+    docidentifier:
+    - content: draft-cardwell-iccrg-bbr-congestion-control-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cardwell-iccrg-bbr-congestion-control-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cardwell-iccrg-bbr-congestion-control-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

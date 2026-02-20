@@ -1,193 +1,168 @@
 ---
-schema-version: v1.2.9
-id: draft-birkholz-rats-coswid-rim-00
-title:
-- content: Reference Integrity Measurement Extension for Concise Software Identities
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-birkholz-rats-coswid-rim-00
-  type: src
+id: draftbirkholzratscoswidrim00
 type: standard
-docid:
-- id: draft-birkholz-rats-coswid-rim-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Reference Integrity Measurement Extension for Concise Software Identities
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-birkholz-rats-coswid-rim-00
+docidentifier:
+- content: draft-birkholz-rats-coswid-rim
+  type: Internet-Draft
+- content: draft-birkholz-rats-coswid-rim-00
   type: Internet-Draft
   primary: true
-- id: I-D.birkholz-rats-coswid-rim
-  type: IETF
-  scope: anchor
 docnumber: I-D.birkholz-rats-coswid-rim
 date:
 - type: published
-  value: '2020-03-09'
+  at: '2020-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
+        - language: en
+          content: Fraunhofer SIT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Patrick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrick
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Uiterwijk
-        language:
-        - en
       completename:
+        language: en
         content: Patrick Uiterwijk
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Red Hat
-  role:
+        - language: en
+          content: Red Hat
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jessica
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jessica
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Fitzgerald-McKay
-        language:
-        - en
       completename:
+        language: en
         content: Jessica Fitzgerald-McKay
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Department of Defense
-  role:
+        - language: en
+          content: Department of Defense
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Waltermire
-        language:
-        - en
       completename:
+        language: en
         content: David Waltermire
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: National Institute of Standards and Technology
-  role:
-  - type: author
+        - language: en
+          content: National Institute of Standards and Technology
 version:
 - draft: '00'
-revdate: '2020-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Concise Software Identification (CoSWID) tags identify and describe
-    individual software components, patches, and installation bundles. CoSWID is based
-    on ISO/IEC 19770-2:2015 2:2015 that provides a complementary XML schema definition
-    (XSD) for Software Identification (SWID) tags. CoSWID supports the same features
-    as the corresponding XML SWID tags. The CoSWID specification also includes more
-    structured extensibility features and reduces a few of ambiguities that are not
-    explicitly resolved in the ISO XSD. In this document, these extensibility features
-    (extension points) are used to add attributes to the CoSWID specification. The
-    new attributes allow for the use of CoSWID as Reference Integrity Measurements
-    (RIM). There are three set of RIM features defined in this specification. 1.)
-    attributes that support RIM manifests for Measured Boot, 2.) attributes that support
-    package manager managed structures, and 3.) attributes that allow for OID to be
-    used in the description of Reference Integrity Measurements.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Concise Software Identification (CoSWID) tags identify and describe\n
+    \  individual software components, patches, and installation bundles.\n   CoSWID
+    is based on ISO/IEC 19770-2:2015 2:2015 that provides a\n   complementary XML
+    schema definition (XSD) for Software Identification\n   (SWID) tags.  CoSWID supports
+    the same features as the corresponding\n   XML SWID tags.  The CoSWID specification
+    also includes more\n   structured extensibility features and reduces a few of
+    ambiguities\n   that are not explicitly resolved in the ISO XSD.  In this document,\n
+    \  these extensibility features (extension points) are used to add\n   attributes
+    to the CoSWID specification.  The new attributes allow for\n   the use of CoSWID
+    as Reference Integrity Measurements (RIM).  There\n   are three set of RIM features
+    defined in this specification. 1.)\n   attributes that support RIM manifests for
+    Measured Boot, 2.)\n   attributes that support package manager managed structures,
+    and 3.)\n   attributes that allow for OID to be used in the description of\n   Reference
+    Integrity Measurements.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-birkholz-rats-coswid-rim-01
-    docid:
-    - id: draft-birkholz-rats-coswid-rim-01
+    formattedref: draft-birkholz-rats-coswid-rim-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-birkholz-rats-coswid-rim-01
+    docidentifier:
+    - content: draft-birkholz-rats-coswid-rim-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-birkholz-rats-coswid-rim-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-birkholz-rats-coswid-rim-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

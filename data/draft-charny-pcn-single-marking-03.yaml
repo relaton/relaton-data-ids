@@ -1,181 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-charny-pcn-single-marking-03
-title:
-- content: Pre-Congestion Notification Using Single Marking for Admission and Termination
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-charny-pcn-single-marking-03
-  type: src
+id: draftcharnypcnsinglemarking03
 type: standard
-docid:
-- id: draft-charny-pcn-single-marking-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Pre-Congestion Notification Using Single Marking for Admission and Termination
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-charny-pcn-single-marking-03
+docidentifier:
+- content: draft-charny-pcn-single-marking
+  type: Internet-Draft
+- content: draft-charny-pcn-single-marking-03
   type: Internet-Draft
   primary: true
-- id: I-D.charny-pcn-single-marking
-  type: IETF
-  scope: anchor
 docnumber: I-D.charny-pcn-single-marking
 date:
 - type: published
-  value: '2007-11-18'
+  at: '2007-11-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Anna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anna
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Charny
-        language:
-        - en
       completename:
+        language: en
         content: Anna Charny
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xinyang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xinyang
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Xinyang Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Le Faucheur
-        language:
-        - en
       completename:
+        language: en
         content: François Le Faucheur
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vassilis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vassilis
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Liatsos
-        language:
-        - en
       completename:
+        language: en
         content: Vassilis Liatsos
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '03'
-revdate: '2007-11-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Pre-Congestion Notification described in [I-D.eardley-pcn-architecture]
-    and earlier in [I-D.briscoe-tsvwg-cl-architecture] approach proposes the use of
-    an Admission Control mechanism to limit the amount of real-time PCN traffic to
-    a configured level during the normal operating conditions, and the use of a Flow
-    Termination mechanism to tear-down some of the flows to bring the PCN traffic
-    level down to a desirable amount during unexpected events such as network failures,
-    with the goal of maintaining the QoS assurances to the remaining flows. In [I-D.eardley-pcn-architecture],
-    Admission and Flow Termination use two different markings and two different metering
-    mechanisms in the internal nodes of the PCN region. This draft proposes a mechanism
-    using a single marking and metering for both Admission and Flow Termination, and
-    presents an analysis of the tradeoffs. A side- effect of this proposal is that
-    a different marking and metering Admission mechanism than that proposed in [I-D.eardley-pcn-architecture]
-    may be also feasible, and may result in a number of benefits. In addition, this
-    draft proposes a migration path for incremental deployment of this approach as
-    an intermediate step to the dual-marking approach.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Pre-Congestion Notification described in\n[I-D.eardley-pcn-architecture]
+    and earlier in\n[I-D.briscoe-tsvwg-cl-architecture] approach proposes the use
+    of an\nAdmission Control mechanism to limit the amount of real-time PCN\ntraffic
+    to a configured level during the normal operating conditions,\nand the use of
+    a Flow Termination mechanism to tear-down some of the\nflows to bring the PCN
+    traffic level down to a desirable amount\nduring unexpected events such as network
+    failures, with the goal of\nmaintaining the QoS assurances to the remaining flows.
+    \ In\n[I-D.eardley-pcn-architecture], Admission and Flow Termination use\ntwo
+    different markings and two different metering mechanisms in the\ninternal nodes
+    of the PCN region.  This draft proposes a mechanism\nusing a single marking and
+    metering for both Admission and Flow\nTermination, and presents an analysis of
+    the tradeoffs.  A side-\neffect of this proposal is that a different marking and
+    metering\nAdmission mechanism than that proposed in\n[I-D.eardley-pcn-architecture]
+    may be also feasible, and may result\nin a number of benefits.  In addition, this
+    draft proposes a\nmigration path for incremental deployment of this approach as
+    an\nintermediate step to the dual-marking approach.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-charny-pcn-single-marking-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

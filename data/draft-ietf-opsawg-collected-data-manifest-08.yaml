@@ -1,232 +1,201 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-opsawg-collected-data-manifest-08
-title:
-- content: A Data Manifest for Contextualized Telemetry Data
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-collected-data-manifest-08
-  type: src
+id: draftietfopsawgcollecteddatamanifest08
 type: standard
-docid:
-- id: draft-ietf-opsawg-collected-data-manifest-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Data Manifest for Contextualized Telemetry Data
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-collected-data-manifest-08
+docidentifier:
+- content: draft-ietf-opsawg-collected-data-manifest
+  type: Internet-Draft
+- content: draft-ietf-opsawg-collected-data-manifest-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-collected-data-manifest
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-opsawg-collected-data-manifest
 date:
 - type: published
-  value: '2025-06-27'
+  at: '2025-06-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Claise
-        language:
-        - en
       completename:
+        language: en
         content: Benoît Claise
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jean
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jean
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Quilbeuf
-        language:
-        - en
       completename:
+        language: en
         content: Jean Quilbeuf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica I+D
-  role:
+        - language: en
+          content: Telefonica I+D
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ignacio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: I. D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ignacio
+      - language: en
+        script: Latn
+        initial: I
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: I. D.
       surname:
+        language: en
         content: Martinez-Casanueva
-        language:
-        - en
       completename:
+        language: en
         content: Ignacio Dominguez Martinez-Casanueva
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica I+D
-  role:
+        - language: en
+          content: Telefonica I+D
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Graf
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Graf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Swisscom
-  role:
-  - type: author
+        - language: en
+          content: Swisscom
 version:
 - draft: '08'
-revdate: '2025-06-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Network platforms use Network Telemetry, such as YANG-Push, to continuously
-    stream information, including both counters and state information. This document
-    describes the metadata that ensure that the collected data can be interpreted
-    correctly. This document specifies the data manifest, composed of two YANG data
-    models (the platform manifest and the non-normative data collection manifest).
-    These YANG modules are specified at the network level (e.g., network controllers)
-    to provide a model that encompasses several network platforms. The data manifest
-    must be streamed and stored along with the data, up to the collection and analytics
-    systems to keep the collected data fully exploitable by the data scientists and
-    relevant tools. Additionally, this document specifies an augmentation of the YANG-Push
-    model to include the actual collection period, in case it differs from the configured
-    collection period.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Network platforms use Network Telemetry, such as YANG-Push, to\n   continuously
+    stream information, including both counters and state\n   information.  This document
+    describes the metadata that ensure that\n   the collected data can be interpreted
+    correctly.  This document\n   specifies the data manifest, composed of two YANG
+    data models (the\n   platform manifest and the non-normative data collection manifest).\n
+    \  These YANG modules are specified at the network level (e.g., network\n   controllers)
+    to provide a model that encompasses several network\n   platforms.  The data manifest
+    must be streamed and stored along with\n   the data, up to the collection and
+    analytics systems to keep the\n   collected data fully exploitable by the data
+    scientists and relevant\n   tools.  Additionally, this document specifies an augmentation
+    of the\n   YANG-Push model to include the actual collection period, in case it\n
+    \  differs from the configured collection period.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-collected-data-manifest-07
-    docid:
-    - id: draft-ietf-opsawg-collected-data-manifest-07
+    formattedref: draft-ietf-opsawg-collected-data-manifest-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-collected-data-manifest-07
+    docidentifier:
+    - content: draft-ietf-opsawg-collected-data-manifest-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-collected-data-manifest-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-opsawg-collected-data-manifest-09
-    docid:
-    - id: draft-ietf-opsawg-collected-data-manifest-09
+    formattedref: draft-ietf-opsawg-collected-data-manifest-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-collected-data-manifest-09
+    docidentifier:
+    - content: draft-ietf-opsawg-collected-data-manifest-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-collected-data-manifest-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-opsawg-collected-data-manifest-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

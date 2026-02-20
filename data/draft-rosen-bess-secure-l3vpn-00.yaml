@@ -1,150 +1,133 @@
 ---
-schema-version: v1.2.9
-id: draft-rosen-bess-secure-l3vpn-00
-title:
-- content: Augmenting RFC 4364 Technology to Provide Secure Layer L3VPNs over Public
-    Infrastructure
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-rosen-bess-secure-l3vpn-00
-  type: src
+id: draftrosenbesssecurel3vpn00
 type: standard
-docid:
-- id: draft-rosen-bess-secure-l3vpn-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Augmenting RFC 4364 Technology to Provide Secure Layer L3VPNs over Public
+    Infrastructure
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-rosen-bess-secure-l3vpn-00
+docidentifier:
+- content: draft-rosen-bess-secure-l3vpn
+  type: Internet-Draft
+- content: draft-rosen-bess-secure-l3vpn-00
   type: Internet-Draft
   primary: true
-- id: I-D.rosen-bess-secure-l3vpn
-  type: IETF
-  scope: anchor
 docnumber: I-D.rosen-bess-secure-l3vpn
 date:
 - type: published
-  value: '2018-06-11'
+  at: '2018-06-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ron
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Bonica
-        language:
-        - en
       completename:
+        language: en
         content: Ron Bonica
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '00'
-revdate: '2018-06-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Layer 3 Virtual Private Network (VPN) technology described in RFC
-    4364 is focused on the scenario in which a network Service Provider (SP) maintains
-    a secure backbone network and offers VPN service over that network to its customers.
-    Customers access the SP's network by attaching "Customer Edge" (CE) routers to
-    "Provider Edge" (PE) routers, and exchanging cleartext IP packets. PE routers
-    generally serve multiple customers, and prevent unauthorized communication among
-    customers. Customer data sent across the backbone (from one PE to another) is
-    encapsulated in MPLS, using an MPLS label to associate a given packet with a given
-    customer. The labeled packets are then sent across the backbone network in the
-    clear, using MPLS transport. However, many customers want a VPN service that is
-    secure enough to run over the public Internet, and which does not require them
-    to send cleartext IP packets to a service provider. Often they want to connect
-    directly to edge nodes of the public Internet, which does not provide MPLS support.
-    Each customer may itself have multiple tenants who are not allowed to intercommunicate
-    with each other freely. In this case, the customer many need to provide a VPN
-    service for the tenants. This document describes a way in which this can be achieved
-    using the technology of RFC 4364. The functionality assigned therein to a PE router
-    can be placed instead in Customer Premises Equipment. This functionality can be
-    augmented by transmitting MPLS packets through IPsec Security Associations. The
-    BGP control plane sessions can also be protected by IPsec. This allows a customer
-    to use RFC 4364 technology to provide VPN service to its internal departments,
-    while sending only IPsec-protected packets to the Internet or other backbone network,
-    and eliminating the need for MPLS transport in the backbone.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Layer 3 Virtual Private Network (VPN) technology described in RFC\n
+    \  4364 is focused on the scenario in which a network Service Provider\n   (SP)
+    maintains a secure backbone network and offers VPN service over\n   that network
+    to its customers.  Customers access the SP's network by\n   attaching \"Customer
+    Edge\" (CE) routers to \"Provider Edge\" (PE)\n   routers, and exchanging cleartext
+    IP packets.  PE routers generally\n   serve multiple customers, and prevent unauthorized
+    communication\n   among customers.  Customer data sent across the backbone (from
+    one PE\n   to another) is encapsulated in MPLS, using an MPLS label to associate\n
+    \  a given packet with a given customer.  The labeled packets are then\n   sent
+    across the backbone network in the clear, using MPLS transport.\n   However, many
+    customers want a VPN service that is secure enough to\n   run over the public
+    Internet, and which does not require them to send\n   cleartext IP packets to
+    a service provider.  Often they want to\n   connect directly to edge nodes of
+    the public Internet, which does not\n   provide MPLS support.  Each customer may
+    itself have multiple tenants\n   who are not allowed to intercommunicate with
+    each other freely.  In\n   this case, the customer many need to provide a VPN
+    service for the\n   tenants.  This document describes a way in which this can
+    be achieved\n   using the technology of RFC 4364.  The functionality assigned
+    therein\n   to a PE router can be placed instead in Customer Premises Equipment.\n
+    \  This functionality can be augmented by transmitting MPLS packets\n   through
+    IPsec Security Associations.  The BGP control plane sessions\n   can also be protected
+    by IPsec.  This allows a customer to use RFC\n   4364 technology to provide VPN
+    service to its internal departments,\n   while sending only IPsec-protected packets
+    to the Internet or other\n   backbone network, and eliminating the need for MPLS
+    transport in the\n   backbone.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-rosen-bess-secure-l3vpn-01
-    docid:
-    - id: draft-rosen-bess-secure-l3vpn-01
+    formattedref: draft-rosen-bess-secure-l3vpn-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rosen-bess-secure-l3vpn-01
+    docidentifier:
+    - content: draft-rosen-bess-secure-l3vpn-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rosen-bess-secure-l3vpn-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-rosen-bess-secure-l3vpn-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

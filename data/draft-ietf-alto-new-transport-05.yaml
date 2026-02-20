@@ -1,211 +1,186 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-alto-new-transport-05
-title:
-- content: ALTO Transport Information Publication Service
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-05
-  type: src
+id: draftietfaltonewtransport05
 type: standard
-docid:
-- id: draft-ietf-alto-new-transport-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ALTO Transport Information Publication Service
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-05
+docidentifier:
+- content: draft-ietf-alto-new-transport
+  type: Internet-Draft
+- content: draft-ietf-alto-new-transport-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-alto-new-transport
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-alto-new-transport
 date:
 - type: published
-  value: '2023-02-06'
+  at: '2023-02-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Roland
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Roland
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Schott
-        language:
-        - en
       completename:
+        language: en
         content: Roland Schott
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom
-  role:
+        - language: en
+          content: Deutsche Telekom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: Y. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: Y. R.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Y. Richard Yang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Yale University
-  role:
+        - language: en
+          content: Yale University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kai
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kai
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Gao
-        language:
-        - en
       completename:
+        language: en
         content: Kai Gao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sichuan University
-  role:
+        - language: en
+          content: Sichuan University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lachlan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lachlan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Keller
-        language:
-        - en
       completename:
+        language: en
         content: Lachlan Keller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Yale University
-  role:
-  - type: author
+        - language: en
+          content: Yale University
 version:
 - draft: '05'
-revdate: '2023-02-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The ALTO base protocol [RFC7285] is based on HTTP/1.x, designed for
-    the simple, sequential request-reply use case, in which an ALTO client requests
-    a sequence of information resources, and the server sends the complete content
-    of each information resource to the client one by one. To support the use case
-    that an ALTO client can monitor multiple resources at the same time and the ALTO
-    server sends only their updates, the ALTO Working Group introduced ALTO/SSE [RFC8895],
-    which defines a new, SSE-based multiplexing protocol on top of HTTP/1.x, to allow
-    the server to concurrently, and incrementally push updates to the client whenever
-    monitored network information resources change. However, newer versions of HTTP
-    (e.g., HTTP/2 [RFC7540]) already support concurrent, non-blocking transport of
-    multiple streams in the same HTTP connection. This document introduces the ALTO
-    transport information publication service (TIPS), which allows the naming of (i.e.,
-    assigning resource identifiers to) individual incremental updates to multiple
-    ALTO information resources and the distribution of the naming, enabling ALTO to
-    take advantage of newer HTTP versions. In particular, it gives an ALTO client
-    the new capability to explicitly request (pull) a specific incremental update.
-    It also provides an ALTO server the new capability to push a specific incremental
-    update using native HTTP/2 or HTTP/3 server push. This document defines TIPS as
-    a service, independent of client pull or server push. A companion document [draft-schott-alto-new-transport-push]
-    defines the complete server- push ALTO transport based on ALTO TIPS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The ALTO base protocol [RFC7285] is based on HTTP/1.x, designed for\n
+    \  the simple, sequential request-reply use case, in which an ALTO\n   client
+    requests a sequence of information resources, and the server\n   sends the complete
+    content of each information resource to the client\n   one by one.  To support
+    the use case that an ALTO client can monitor\n   multiple resources at the same
+    time and the ALTO server sends only\n   their updates, the ALTO Working Group
+    introduced ALTO/SSE [RFC8895],\n   which defines a new, SSE-based multiplexing
+    protocol on top of\n   HTTP/1.x, to allow the server to concurrently, and incrementally
+    push\n   updates to the client whenever monitored network information\n   resources
+    change.  However, newer versions of HTTP (e.g., HTTP/2\n   [RFC7540]) already
+    support concurrent, non-blocking transport of\n   multiple streams in the same
+    HTTP connection.  This document\n   introduces the ALTO transport information
+    publication service (TIPS),\n   which allows the naming of (i.e., assigning resource
+    identifiers to)\n   individual incremental updates to multiple ALTO information
+    resources\n   and the distribution of the naming, enabling ALTO to take advantage\n
+    \  of newer HTTP versions.  In particular, it gives an ALTO client the\n   new
+    capability to explicitly request (pull) a specific incremental\n   update.  It
+    also provides an ALTO server the new capability to push a\n   specific incremental
+    update using native HTTP/2 or HTTP/3 server\n   push.  This document defines TIPS
+    as a service, independent of client\n   pull or server push.  A companion document\n
+    \  [draft-schott-alto-new-transport-push] defines the complete server-\n   push
+    ALTO transport based on ALTO TIPS.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-alto-new-transport-04
-    docid:
-    - id: draft-ietf-alto-new-transport-04
+    formattedref: draft-ietf-alto-new-transport-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-04
+    docidentifier:
+    - content: draft-ietf-alto-new-transport-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-new-transport-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-alto-new-transport-06
-    docid:
-    - id: draft-ietf-alto-new-transport-06
+    formattedref: draft-ietf-alto-new-transport-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-06
+    docidentifier:
+    - content: draft-ietf-alto-new-transport-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-alto-new-transport-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-alto-new-transport-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

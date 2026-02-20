@@ -1,180 +1,151 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tcpm-rtorestart-05
-title:
-- content: TCP and SCTP RTO Restart
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rtorestart-05
-  type: src
+id: draftietftcpmrtorestart05
 type: standard
-docid:
-- id: draft-ietf-tcpm-rtorestart-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: TCP and SCTP RTO Restart
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rtorestart-05
+docidentifier:
+- content: draft-ietf-tcpm-rtorestart
+  type: Internet-Draft
+- content: draft-ietf-tcpm-rtorestart-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tcpm-rtorestart
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tcpm-rtorestart
 date:
 - type: published
-  value: '2015-03-09'
+  at: '2015-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Per
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Per
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Hurtig
-        language:
-        - en
       completename:
+        language: en
         content: Per Hurtig
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anna
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Brunstrom
-        language:
-        - en
       completename:
+        language: en
         content: Anna Brunstrom
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andreas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andreas
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Petlund
-        language:
-        - en
       completename:
+        language: en
         content: Andreas Petlund
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Welzl
-        language:
-        - en
       completename:
+        language: en
         content: Michael Welzl
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '05'
-revdate: '2015-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a modified algorithm for managing the TCP and
-    SCTP retransmission timers that provides faster loss recovery when there is a
-    small amount of outstanding data for a connection. The modification, RTO Restart
-    (RTOR), allows the transport to restart its retransmission timer more aggressively
-    in situations where fast retransmit cannot be used. This enables faster loss detection
-    and recovery for connections that are short-lived or application-limited.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a modified algorithm for managing the TCP and\n
+    \  SCTP retransmission timers that provides faster loss recovery when\n   there
+    is a small amount of outstanding data for a connection.  The\n   modification,
+    RTO Restart (RTOR), allows the transport to restart its\n   retransmission timer
+    more aggressively in situations where fast\n   retransmit cannot be used.  This
+    enables faster loss detection and\n   recovery for connections that are short-lived
+    or application-limited.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tcpm-rtorestart-04
-    docid:
-    - id: draft-ietf-tcpm-rtorestart-04
+    formattedref: draft-ietf-tcpm-rtorestart-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rtorestart-04
+    docidentifier:
+    - content: draft-ietf-tcpm-rtorestart-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-rtorestart-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-tcpm-rtorestart-06
-    docid:
-    - id: draft-ietf-tcpm-rtorestart-06
+    formattedref: draft-ietf-tcpm-rtorestart-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rtorestart-06
+    docidentifier:
+    - content: draft-ietf-tcpm-rtorestart-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-rtorestart-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tcpm-rtorestart-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

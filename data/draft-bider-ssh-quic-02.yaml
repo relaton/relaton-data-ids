@@ -1,112 +1,98 @@
 ---
-schema-version: v1.2.9
-id: draft-bider-ssh-quic-02
-title:
-- content: QUIC-based UDP Transport for Secure Shell (SSH)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-02
-  type: src
+id: draftbidersshquic02
 type: standard
-docid:
-- id: draft-bider-ssh-quic-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: QUIC-based UDP Transport for Secure Shell (SSH)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-02
+docidentifier:
+- content: draft-bider-ssh-quic
+  type: Internet-Draft
+- content: draft-bider-ssh-quic-02
   type: Internet-Draft
   primary: true
-- id: I-D.bider-ssh-quic
-  type: IETF
-  scope: anchor
 docnumber: I-D.bider-ssh-quic
 date:
 - type: published
-  value: '2020-07-07'
+  at: '2020-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: denis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: denis
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: bider
-        language:
-        - en
       completename:
+        language: en
         content: denis bider
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bitvise Limited
-  role:
-  - type: author
+        - language: en
+          content: Bitvise Limited
 version:
 - draft: '02'
-revdate: '2020-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Secure Shell protocol (SSH) [RFC4251] is widely used for purposes
-    including secure remote administration, file transfer using SFTP and SCP, and
-    encrypted tunneling of TCP connections. Because it is based on TCP, SSH suffers
-    similar problems as motivate the HTTP protocol to transition its transport to
-    UDP-based QUIC [QUIC]. These include: unauthenticated network intermediaries can
-    trivially disconnect SSH sessions; SSH connections are lost when mobile clients
-    change IP addresses; performance limitations in OS-based TCP stacks; and many
-    round-trips to establish the connection. This memo specifies SSH key exchange
-    over UDP and leverages QUIC to provide a UDP-based transport.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Secure Shell protocol (SSH) [RFC4251] is widely used for purposes\n
+    \  including secure remote administration, file transfer using SFTP and\n   SCP,
+    and encrypted tunneling of TCP connections.  Because it is based\n   on TCP, SSH
+    suffers similar problems as motivate the HTTP protocol to\n   transition its transport
+    to UDP-based QUIC [QUIC].  These include:\n   unauthenticated network intermediaries
+    can trivially disconnect SSH\n   sessions; SSH connections are lost when mobile
+    clients change IP\n   addresses; performance limitations in OS-based TCP stacks;
+    and many\n   round-trips to establish the connection.  This memo specifies SSH
+    key\n   exchange over UDP and leverages QUIC to provide a UDP-based\n   transport.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-bider-ssh-quic-01
-    docid:
-    - id: draft-bider-ssh-quic-01
+    formattedref: draft-bider-ssh-quic-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-01
+    docidentifier:
+    - content: draft-bider-ssh-quic-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bider-ssh-quic-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-bider-ssh-quic-03
-    docid:
-    - id: draft-bider-ssh-quic-03
+    formattedref: draft-bider-ssh-quic-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-03
+    docidentifier:
+    - content: draft-bider-ssh-quic-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bider-ssh-quic-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bider-ssh-quic-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

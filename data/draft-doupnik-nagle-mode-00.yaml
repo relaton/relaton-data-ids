@@ -1,89 +1,75 @@
 ---
-schema-version: v1.2.9
-id: draft-doupnik-nagle-mode-00
-title:
-- content: A new TCP transmission policy replacing Nagle mode
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-doupnik-nagle-mode-00
-  type: src
+id: draftdoupniknaglemode00
 type: standard
-docid:
-- id: draft-doupnik-nagle-mode-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A new TCP transmission policy replacing Nagle mode
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-doupnik-nagle-mode-00
+docidentifier:
+- content: draft-doupnik-nagle-mode
+  type: Internet-Draft
+- content: draft-doupnik-nagle-mode-00
   type: Internet-Draft
   primary: true
-- id: I-D.doupnik-nagle-mode
-  type: IETF
-  scope: anchor
 docnumber: I-D.doupnik-nagle-mode
 date:
 - type: published
-  value: '1999-06-14'
+  at: '1999-06-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Doupnik
-        language:
-        - en
       completename:
+        language: en
         content: Joe Doupnik
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Utah State University
-  role:
-  - type: author
+        - language: en
+          content: Utah State University
 version:
 - draft: '00'
-revdate: '1999-06-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Both Nagle mode and delayed ACKs attempt to conserve network and host
-    machine resources by delaying transmissions in the expectation that the current
-    material can be piggybacked onto a future transmission. Unfortunately when both
-    mechanisms are active at the same time on either end of a connection a deadlock
-    can exist, which is broken by arrival of new data for transmission or firing of
-    the delayed ACK timer. This produces classical timer based ACKing, which for the
-    common 200ms ACK delay yields five exchanges per second.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Both Nagle mode and delayed ACKs attempt to conserve network and host\nmachine
+    resources by delaying transmissions in the expectation that\nthe current material
+    can be piggybacked onto a future transmission.\nUnfortunately when both mechanisms
+    are active at the same time on\neither end of a connection a deadlock can exist,
+    which is broken by\narrival of new data for transmission or firing of the delayed
+    ACK\ntimer. This produces classical timer based ACKing, which for the\ncommon
+    200ms ACK delay yields five exchanges per second.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-doupnik-nagle-mode-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

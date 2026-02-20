@@ -1,124 +1,107 @@
 ---
-schema-version: v1.2.9
-id: draft-li-dnsop-ecs-aggregation-fix-00
-title:
-- content: Strengthening DNS Query Aggregation against ECS-based Attacks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-dnsop-ecs-aggregation-fix-00
-  type: src
+id: draftlidnsopecsaggregationfix00
 type: standard
-docid:
-- id: draft-li-dnsop-ecs-aggregation-fix-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Strengthening DNS Query Aggregation against ECS-based Attacks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-dnsop-ecs-aggregation-fix-00
+docidentifier:
+- content: draft-li-dnsop-ecs-aggregation-fix
+  type: Internet-Draft
+- content: draft-li-dnsop-ecs-aggregation-fix-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-dnsop-ecs-aggregation-fix
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-dnsop-ecs-aggregation-fix
 date:
 - type: published
-  value: '2025-10-15'
+  at: '2025-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Xiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiang
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Xiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
+        - language: en
+          content: Nankai University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yuqi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuqi
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Qiu
-        language:
-        - en
       completename:
+        language: en
         content: Yuqi Qiu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nankai University
-  role:
-  - type: author
+        - language: en
+          content: Nankai University
 version:
 - draft: '00'
-revdate: '2025-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The DNS query aggregation mechanism is a critical defense against DNS
-    cache poisoning attacks that exploit the "Birthday Paradox". However, recent research
-    has revealed that flawed implementations of the EDNS Client Subnet (ECS) option,
-    as specified in RFC 7871, can be exploited to bypass this defense. This allows
-    attackers to force a resolver to issue multiple simultaneous queries for the same
-    domain name by crafting queries with different ECS options. This vulnerability
-    revives the classic DNS Birthday Attack, posing a significant threat to DNS resolvers
-    and the clients they serve. This document specifies a stricter and more coherent
-    processing model for the ECS option in DNS resolvers. It introduces a mechanism
-    for resolvers to track the ECS support state of authoritative nameservers and
-    mandates query aggregation for zones determined to not support ECS. These changes
-    are designed to close the identified vulnerability and restore the effectiveness
-    of query aggregation as a defense mechanism.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The DNS query aggregation mechanism is a critical defense against DNS\n
+    \  cache poisoning attacks that exploit the \"Birthday Paradox\".\n   However,
+    recent research has revealed that flawed implementations of\n   the EDNS Client
+    Subnet (ECS) option, as specified in RFC 7871, can be\n   exploited to bypass
+    this defense.  This allows attackers to force a\n   resolver to issue multiple
+    simultaneous queries for the same domain\n   name by crafting queries with different
+    ECS options.  This\n   vulnerability revives the classic DNS Birthday Attack,
+    posing a\n   significant threat to DNS resolvers and the clients they serve.\n\n
+    \  This document specifies a stricter and more coherent processing model\n   for
+    the ECS option in DNS resolvers.  It introduces a mechanism for\n   resolvers
+    to track the ECS support state of authoritative nameservers\n   and mandates query
+    aggregation for zones determined to not support\n   ECS.  These changes are designed
+    to close the identified\n   vulnerability and restore the effectiveness of query
+    aggregation as a\n   defense mechanism.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-dnsop-ecs-aggregation-fix-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

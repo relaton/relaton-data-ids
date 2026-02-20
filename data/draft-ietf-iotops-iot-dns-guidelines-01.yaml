@@ -1,223 +1,192 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-iotops-iot-dns-guidelines-01
-title:
-- content: IoT DNS Security and Privacy Guidelines
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-iotops-iot-dns-guidelines-01
-  type: src
+id: draftietfiotopsiotdnsguidelines01
 type: standard
-docid:
-- id: draft-ietf-iotops-iot-dns-guidelines-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IoT DNS Security and Privacy Guidelines
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-iotops-iot-dns-guidelines-01
+docidentifier:
+- content: draft-ietf-iotops-iot-dns-guidelines
+  type: Internet-Draft
+- content: draft-ietf-iotops-iot-dns-guidelines-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-iotops-iot-dns-guidelines
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-iotops-iot-dns-guidelines
 date:
 - type: published
-  value: '2026-01-23'
+  at: '2026-01-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Abhishek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: A. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Abhishek
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: A. K.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Abhishek Kumar Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Inria
-  role:
+        - language: en
+          content: Inria
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Losty
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Losty
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UCL
-  role:
+        - language: en
+          content: UCL
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: A. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anna
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: A. M.
       surname:
+        language: en
         content: Mandalari
-        language:
-        - en
       completename:
+        language: en
         content: Anna Maria Mandalari
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UCL
-  role:
+        - language: en
+          content: UCL
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Mozley
-        language:
-        - en
       completename:
+        language: en
         content: Jim Mozley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Infoblox
-  role:
+        - language: en
+          content: Infoblox
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mathieu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mathieu
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Cunche
-        language:
-        - en
       completename:
+        language: en
         content: Mathieu Cunche
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Inria
-  role:
-  - type: author
+        - language: en
+          content: Inria
 version:
 - draft: '01'
-revdate: '2026-01-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document outlines best current practices for Internet of Things
-    (IoT) device providers regarding the implementation of DNS stub resolvers, with
-    the aim of mitigating security threats, enhancing privacy, and resolving operational
-    challenges. It also provides guidelines for network operators on mitigating the
-    risks identified in this draft as DNS resolution includes services outside of
-    the stub-resolver, and for device providers' management zones.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document outlines best current practices for Internet of Things\n
+    \  (IoT) device providers regarding the implementation of DNS stub\n   resolvers,
+    with the aim of mitigating security threats, enhancing\n   privacy, and resolving
+    operational challenges.  It also provides\n   guidelines for network operators
+    on mitigating the risks identified\n   in this draft as DNS resolution includes
+    services outside of the\n   stub-resolver, and for device providers' management
+    zones.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-iotops-iot-dns-guidelines-00
-    docid:
-    - id: draft-ietf-iotops-iot-dns-guidelines-00
+    formattedref: draft-ietf-iotops-iot-dns-guidelines-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-iotops-iot-dns-guidelines-00
+    docidentifier:
+    - content: draft-ietf-iotops-iot-dns-guidelines-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-iotops-iot-dns-guidelines-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-iotops-iot-dns-guidelines-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

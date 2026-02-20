@@ -1,226 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-multihomed-prefix-lfa-06
-title:
-- content: LFA selection for Multi-Homed Prefixes
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-multihomed-prefix-lfa-06
-  type: src
+id: draftietfrtgwgmultihomedprefixlfa06
 type: standard
-docid:
-- id: draft-ietf-rtgwg-multihomed-prefix-lfa-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: LFA selection for Multi-Homed Prefixes
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-multihomed-prefix-lfa-06
+docidentifier:
+- content: draft-ietf-rtgwg-multihomed-prefix-lfa
+  type: Internet-Draft
+- content: draft-ietf-rtgwg-multihomed-prefix-lfa-06
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-multihomed-prefix-lfa
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rtgwg-multihomed-prefix-lfa
 date:
 - type: published
-  value: '2018-02-08'
+  at: '2018-02-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pushpasis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pushpasis
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Sarkar
-        language:
-        - en
       completename:
+        language: en
         content: Pushpasis Sarkar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc.
-  role:
+        - language: en
+          content: Arrcus, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shraddha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shraddha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hegde
-        language:
-        - en
       completename:
+        language: en
         content: Shraddha Hegde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Uma
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: U
-        formatted_initials:
-          content: U.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Uma
+      - language: en
+        script: Latn
+        initial: U
+      formatted_initials:
+        language: en
+        content: U.
       surname:
+        language: en
         content: Chunduri
-        language:
-        - en
       completename:
+        language: en
         content: Uma Chunduri
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei USA
-  role:
+        - language: en
+          content: Huawei USA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nuage Networks
-  role:
+        - language: en
+          content: Nuage Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Gredler
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Gredler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RtBrick, Inc.
-  role:
-  - type: author
+        - language: en
+          content: RtBrick, Inc.
 version:
 - draft: '06'
-revdate: '2018-02-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document shares experience gained from implementing algorithms
-    to determine Loop-Free Alternates for multi-homed prefixes. In particular, this
-    document provides explicit inequalities that can be used to evaluate neighbors
-    as a potential alternates for multi-homed prefixes. It also provides detailed
-    criteria for evaluating potential alternates for external prefixes advertised
-    by OSPF ASBRs. This documents updates and expands some of the "Routing Aspects"
-    as specified in Section 6 of RFC 5286.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document shares experience gained from implementing algorithms\n
+    \  to determine Loop-Free Alternates for multi-homed prefixes.  In\n   particular,
+    this document provides explicit inequalities that can be\n   used to evaluate
+    neighbors as a potential alternates for multi-homed\n   prefixes.  It also provides
+    detailed criteria for evaluating\n   potential alternates for external prefixes
+    advertised by OSPF ASBRs.\n   This documents updates and expands some of the \"Routing
+    Aspects\" as\n   specified in Section 6 of RFC 5286.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-multihomed-prefix-lfa-05
-    docid:
-    - id: draft-ietf-rtgwg-multihomed-prefix-lfa-05
+    formattedref: draft-ietf-rtgwg-multihomed-prefix-lfa-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-multihomed-prefix-lfa-05
+    docidentifier:
+    - content: draft-ietf-rtgwg-multihomed-prefix-lfa-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-multihomed-prefix-lfa-05
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rtgwg-multihomed-prefix-lfa-07
-    docid:
-    - id: draft-ietf-rtgwg-multihomed-prefix-lfa-07
+    formattedref: draft-ietf-rtgwg-multihomed-prefix-lfa-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-multihomed-prefix-lfa-07
+    docidentifier:
+    - content: draft-ietf-rtgwg-multihomed-prefix-lfa-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-multihomed-prefix-lfa-07
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rtgwg-multihomed-prefix-lfa-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

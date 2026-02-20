@@ -1,195 +1,169 @@
 ---
-schema-version: v1.2.9
-id: draft-negi-pce-segment-routing-ipv6-00
-title:
-- content: PCEP Extensions for Segment Routing leveraging the IPv6 data plane
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-negi-pce-segment-routing-ipv6-00
-  type: src
+id: draftnegipcesegmentroutingipv600
 type: standard
-docid:
-- id: draft-negi-pce-segment-routing-ipv6-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PCEP Extensions for Segment Routing leveraging the IPv6 data plane
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-negi-pce-segment-routing-ipv6-00
+docidentifier:
+- content: draft-negi-pce-segment-routing-ipv6
+  type: Internet-Draft
+- content: draft-negi-pce-segment-routing-ipv6-00
   type: Internet-Draft
   primary: true
-- id: I-D.negi-pce-segment-routing-ipv6
-  type: IETF
-  scope: anchor
 docnumber: I-D.negi-pce-segment-routing-ipv6
 date:
 - type: published
-  value: '2017-10-19'
+  at: '2017-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mahendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: M. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mahendra
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: M. S.
       surname:
+        language: en
         content: Negi
-        language:
-        - en
       completename:
+        language: en
         content: Mahendra Singh Negi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Prejeeth
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prejeeth
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Kaladharan
-        language:
-        - en
       completename:
+        language: en
         content: Prejeeth Kaladharan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dhruv
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dhody
-        language:
-        - en
       completename:
+        language: en
         content: Dhruv Dhody
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Siva
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Siva
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivabalan
-        language:
-        - en
       completename:
+        language: en
         content: Siva Sivabalan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '00'
-revdate: '2017-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Source Packet Routing in Networking (SPRING) architecture describes
-    how Segment Routing (SR) can be used to steer packets through an IPv6 or MPLS
-    network using the source routing paradigm. Segment Routing (SR) enables any head-end
-    node to select any path without relying on a hop-by-hop signaling technique (e.g.,
-    LDP or RSVP-TE). It depends only on "segments" that are advertised by Link- State
-    Interior Gateway Protocols (IGPs). A Segment Routed Path can be derived from a
-    variety of mechanisms, including an IGP Shortest Path Tree (SPT), explicit configuration,
-    or a Path Computation Element (PCE). Since, Segment Routing can be applied to
-    both MPLS and IPv6 forwarding plane, a PCE should be able to compute SR-Path for
-    both MPLS and IPv6 forwarding plane. This draft describes the extensions required
-    for Segment Routing support for IPv6 data plane in PCEP.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Source Packet Routing in Networking (SPRING) architecture\n   describes
+    how Segment Routing (SR) can be used to steer packets\n   through an IPv6 or MPLS
+    network using the source routing paradigm.\n   Segment Routing (SR) enables any
+    head-end node to select any path\n   without relying on a hop-by-hop signaling
+    technique (e.g., LDP or\n   RSVP-TE).\n\n   It depends only on \"segments\" that
+    are advertised by Link- State\n   Interior Gateway Protocols (IGPs).  A Segment
+    Routed Path can be\n   derived from a variety of mechanisms, including an IGP
+    Shortest Path\n   Tree (SPT), explicit configuration, or a Path Computation Element\n
+    \  (PCE).\n\n   Since, Segment Routing can be applied to both MPLS and IPv6\n
+    \  forwarding plane, a PCE should be able to compute SR-Path for both\n   MPLS
+    and IPv6 forwarding plane.  This draft describes the extensions\n   required for
+    Segment Routing support for IPv6 data plane in PCEP.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-negi-pce-segment-routing-ipv6-01
-    docid:
-    - id: draft-negi-pce-segment-routing-ipv6-01
+    formattedref: draft-negi-pce-segment-routing-ipv6-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-negi-pce-segment-routing-ipv6-01
+    docidentifier:
+    - content: draft-negi-pce-segment-routing-ipv6-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-negi-pce-segment-routing-ipv6-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-negi-pce-segment-routing-ipv6-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,230 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dprive-xfr-over-tls-03
-title:
-- content: DNS Zone Transfer-over-TLS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-03
-  type: src
+id: draftietfdprivexfrovertls03
 type: standard
-docid:
-- id: draft-ietf-dprive-xfr-over-tls-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DNS Zone Transfer-over-TLS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-03
+docidentifier:
+- content: draft-ietf-dprive-xfr-over-tls
+  type: Internet-Draft
+- content: draft-ietf-dprive-xfr-over-tls-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dprive-xfr-over-tls
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dprive-xfr-over-tls
 date:
 - type: published
-  value: '2020-11-02'
+  at: '2020-11-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Willem
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Willem
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Toorop
-        language:
-        - en
       completename:
+        language: en
         content: Willem Toorop
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NLnet Labs
-  role:
+        - language: en
+          content: NLnet Labs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sara
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sara
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Dickinson
-        language:
-        - en
       completename:
+        language: en
         content: Sara Dickinson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sinodun IT
-  role:
+        - language: en
+          content: Sinodun IT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shivan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: S. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shivan
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: S. K.
       surname:
+        language: en
         content: Sahib
-        language:
-        - en
       completename:
+        language: en
         content: Shivan Kaul Sahib
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
+        - language: en
+          content: Salesforce
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pallavi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pallavi
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Aras
-        language:
-        - en
       completename:
+        language: en
         content: Pallavi Aras
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
+        - language: en
+          content: Salesforce
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Allison
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Allison
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mankin
-        language:
-        - en
       completename:
+        language: en
         content: Allison Mankin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
-  - type: author
+        - language: en
+          content: Salesforce
 version:
 - draft: '03'
-revdate: '2020-11-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>DNS zone transfers are transmitted in clear text, which gives attackers
-    the opportunity to collect the content of a zone by eavesdropping on network connections.
-    The DNS Transaction Signature (TSIG) mechanism is specified to restrict direct
-    zone transfer to authorized clients only, but it does not add confidentiality.
-    This document specifies use of TLS, rather then clear text, to prevent zone content
-    collection via passive monitoring of zone transfers: XFR-over-TLS (XoT). Additionally,
-    this specification updates RFC1995, RFC5936 and RFC7766.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DNS zone transfers are transmitted in clear text, which gives\n   attackers
+    the opportunity to collect the content of a zone by\n   eavesdropping on network
+    connections.  The DNS Transaction Signature\n   (TSIG) mechanism is specified
+    to restrict direct zone transfer to\n   authorized clients only, but it does not
+    add confidentiality.  This\n   document specifies use of TLS, rather then clear
+    text, to prevent\n   zone content collection via passive monitoring of zone transfers:\n
+    \  XFR-over-TLS (XoT).  Additionally, this specification updates\n   RFC1995,
+    RFC5936 and RFC7766.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dprive-xfr-over-tls-02
-    docid:
-    - id: draft-ietf-dprive-xfr-over-tls-02
+    formattedref: draft-ietf-dprive-xfr-over-tls-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-02
+    docidentifier:
+    - content: draft-ietf-dprive-xfr-over-tls-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-xfr-over-tls-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dprive-xfr-over-tls-04
-    docid:
-    - id: draft-ietf-dprive-xfr-over-tls-04
+    formattedref: draft-ietf-dprive-xfr-over-tls-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-04
+    docidentifier:
+    - content: draft-ietf-dprive-xfr-over-tls-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-xfr-over-tls-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dprive-xfr-over-tls-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

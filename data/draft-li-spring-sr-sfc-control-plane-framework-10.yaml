@@ -1,234 +1,205 @@
 ---
-schema-version: v1.2.9
-id: draft-li-spring-sr-sfc-control-plane-framework-10
-title:
-- content: A Framework for Constructing Service Function Chaining Systems Based on
-    Segment Routing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework-10
-  type: src
+id: draftlispringsrsfccontrolplaneframework10
 type: standard
-docid:
-- id: draft-li-spring-sr-sfc-control-plane-framework-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Framework for Constructing Service Function Chaining Systems Based on
+    Segment Routing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework-10
+docidentifier:
+- content: draft-li-spring-sr-sfc-control-plane-framework
+  type: Internet-Draft
+- content: draft-li-spring-sr-sfc-control-plane-framework-10
   type: Internet-Draft
   primary: true
-- id: I-D.li-spring-sr-sfc-control-plane-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-spring-sr-sfc-control-plane-framework
 date:
 - type: published
-  value: '2024-03-01'
+  at: '2024-03-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yuanyang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuanyang
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Yin
-        language:
-        - en
       completename:
+        language: en
         content: Yuanyang Yin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cheng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Cheng Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ahmed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ahmed
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: El Sawaf
-        language:
-        - en
       completename:
+        language: en
         content: Ahmed El Sawaf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Saudi Telecom Company
-  role:
+        - language: en
+          content: Saudi Telecom Company
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hongyi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hongyi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Huang
-        language:
-        - en
       completename:
+        language: en
         content: Hongyi Huang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '10'
-revdate: '2024-03-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Segment Routing (SR) introduces a versatile methodology for defining
-    end-to-end network paths by encoding sequences of topological sub- paths, known
-    as "segments". This architecture can be deployed over both MPLS and IPv6 data
-    planes, offering a flexible routing solution. Service Function Chaining (SFC)
-    supports the establishment of composite services through an ordered sequence of
-    Service Functions (SFs) that are applied to packets or frames based on initial
-    classification. SFC's implementation can utilize various underlying technologies,
-    including the Network Service Header (NSH) and SR, to facilitate the creation
-    and management of service chains. This document presents a comprehensive control
-    framework for developing SFC architectures using Segment Routing. It explores
-    control plane solutions for the distribution of service function instance routes
-    and service function paths, as well as techniques for directing packets into specific
-    service function chains. The discussion encompasses both theoretical foundations
-    and practical considerations for integrating SR into SFC deployments.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment Routing (SR) introduces a versatile methodology for defining\n
+    \  end-to-end network paths by encoding sequences of topological sub-\n   paths,
+    known as \"segments\".  This architecture can be deployed over\n   both MPLS and
+    IPv6 data planes, offering a flexible routing solution.\n\n   Service Function
+    Chaining (SFC) supports the establishment of\n   composite services through an
+    ordered sequence of Service Functions\n   (SFs) that are applied to packets or
+    frames based on initial\n   classification.  SFC's implementation can utilize
+    various underlying\n   technologies, including the Network Service Header (NSH)
+    and SR, to\n   facilitate the creation and management of service chains.\n\n   This
+    document presents a comprehensive control framework for\n   developing SFC architectures
+    using Segment Routing.  It explores\n   control plane solutions for the distribution
+    of service function\n   instance routes and service function paths, as well as
+    techniques for\n   directing packets into specific service function chains.  The\n
+    \  discussion encompasses both theoretical foundations and practical\n   considerations
+    for integrating SR into SFC deployments.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-li-spring-sr-sfc-control-plane-framework-09
-    docid:
-    - id: draft-li-spring-sr-sfc-control-plane-framework-09
+    formattedref: draft-li-spring-sr-sfc-control-plane-framework-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework-09
+    docidentifier:
+    - content: draft-li-spring-sr-sfc-control-plane-framework-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-spring-sr-sfc-control-plane-framework-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-li-spring-sr-sfc-control-plane-framework-11
-    docid:
-    - id: draft-li-spring-sr-sfc-control-plane-framework-11
+    formattedref: draft-li-spring-sr-sfc-control-plane-framework-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-spring-sr-sfc-control-plane-framework-11
+    docidentifier:
+    - content: draft-li-spring-sr-sfc-control-plane-framework-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-spring-sr-sfc-control-plane-framework-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-spring-sr-sfc-control-plane-framework-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

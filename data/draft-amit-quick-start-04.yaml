@@ -1,129 +1,112 @@
 ---
-schema-version: v1.2.9
-id: draft-amit-quick-start-04
-title:
-- content: Quick-Start for TCP and IP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-amit-quick-start-04
-  type: src
+id: draftamitquickstart04
 type: standard
-docid:
-- id: draft-amit-quick-start-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Quick-Start for TCP and IP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-amit-quick-start-04
+docidentifier:
+- content: draft-amit-quick-start
+  type: Internet-Draft
+- content: draft-amit-quick-start-04
   type: Internet-Draft
   primary: true
-- id: I-D.amit-quick-start
-  type: IETF
-  scope: anchor
 docnumber: I-D.amit-quick-start
 date:
 - type: published
-  value: '2005-02-22'
+  at: '2005-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Amit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Amit
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jain
-        language:
-        - en
       completename:
+        language: en
         content: Amit Jain
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: F5 Networks
-  role:
+        - language: en
+          content: F5 Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sally
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sally
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Floyd
-        language:
-        - en
       completename:
+        language: en
         content: Sally Floyd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: M. Allman
-  role:
-  - type: author
+        - language: en
+          content: M. Allman
 version:
 - draft: '04'
-revdate: '2005-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft specifies an optional Quick-Start mechanism for transport
-    protocols, in cooperation with routers, to determine an allowed sending rate at
-    the start and at times in the middle of a data transfer. While Quick-Start is
-    designed to be used by a range of transport protocols, in this document we describe
-    its use with TCP. By using Quick-Start, a TCP host, say, host A, would indicate
-    its desired sending rate in bytes per second, using a Quick Start Request option
-    in the IP header of a TCP packet. A Quick-Start request for a higher sending rate
-    would be sent in a TCP packet. Each router along the path could, in turn, either
-    approve the requested rate, reduce the requested rate, or indicate that the Quick-Start
-    request is not approved. If the Quick-Start request is not approved, then the
-    sender would use the default congestion control mechanisms. The Quick-Start mechanism
-    can determine if there are routers along the path that do not understand the Quick-
-    Start Request option, or have not agreed to the Quick-Start rate request. TCP
-    host B communicates the final rate request to TCP host A in a transport-level
-    Quick-Start Response in an answering TCP packet. Quick-Start is designed to allow
-    connections to use higher sending rates when there is significant unused bandwidth
-    along the path, and all of the routers along the path support the Quick-Start
-    Request.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This draft specifies an optional Quick-Start mechanism for transport\n
+    \   protocols, in cooperation with routers, to determine an allowed\n    sending
+    rate at the start and at times in the middle of a data\n    transfer.  While Quick-Start
+    is designed to be used by a range of\n    transport protocols, in this document
+    we describe its use with TCP.\n    By using Quick-Start, a TCP host, say, host
+    A, would indicate its\n    desired sending rate in bytes per second, using a Quick
+    Start\n    Request option in the IP header of a TCP packet.  A Quick-Start\n    request
+    for a higher sending rate would be sent in a TCP packet.\n    Each router along
+    the path could, in turn, either approve the\n    requested rate, reduce the requested
+    rate, or indicate that the\n    Quick-Start request is not approved.  If the Quick-Start
+    request is\n    not approved, then the sender would use the default congestion\n
+    \   control mechanisms.  The Quick-Start mechanism can determine if\n    there
+    are routers along the path that do not understand the Quick-\n    Start Request
+    option, or have not agreed to the Quick-Start rate\n    request.  TCP host B communicates
+    the final rate request to TCP host\n    A in a transport-level Quick-Start Response
+    in an answering TCP\n    packet.  Quick-Start is designed to allow connections
+    to use higher\n    sending rates when there is significant unused bandwidth along
+    the\n    path, and all of the routers along the path support the Quick-Start\n
+    \   Request.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-amit-quick-start-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

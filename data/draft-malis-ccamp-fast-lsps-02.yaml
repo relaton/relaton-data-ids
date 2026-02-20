@@ -1,222 +1,185 @@
 ---
-schema-version: v1.2.9
-id: draft-malis-ccamp-fast-lsps-02
-title:
-- content: Requirements for Very Fast Setup of GMPLS LSPs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-malis-ccamp-fast-lsps-02
-  type: src
+id: draftmalisccampfastlsps02
 type: standard
-docid:
-- id: draft-malis-ccamp-fast-lsps-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Requirements for Very Fast Setup of GMPLS LSPs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-malis-ccamp-fast-lsps-02
+docidentifier:
+- content: draft-malis-ccamp-fast-lsps
+  type: Internet-Draft
+- content: draft-malis-ccamp-fast-lsps-02
   type: Internet-Draft
   primary: true
-- id: I-D.malis-ccamp-fast-lsps
-  type: IETF
-  scope: anchor
 docnumber: I-D.malis-ccamp-fast-lsps
 date:
 - type: published
-  value: '2014-08-11'
+  at: '2014-08-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: A. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: A. G.
       surname:
+        language: en
         content: Malis
-        language:
-        - en
       completename:
+        language: en
         content: Andrew G. Malis
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ronald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: R. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ronald
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: R. A.
       surname:
+        language: en
         content: Skoog
-        language:
-        - en
       completename:
+        language: en
         content: Ronald A. Skoog
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haim
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Kobrinski
-        language:
-        - en
       completename:
+        language: en
         content: Haim Kobrinski
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: George
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: George
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Clapp
-        language:
-        - en
       completename:
+        language: en
         content: George Clapp
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vishnu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vishnu
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Shukla
-        language:
-        - en
       completename:
+        language: en
         content: Vishnu Shukla
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2014-08-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Defense Advanced Research Projects Agency (DARPA) Core Optical
-    Networks (CORONET) program has laid out a vision for the next evolution of IP
-    and optical commercial and government networks, with a focus on highly dynamic
-    and resilient multi-terabit core networks. It anticipates the need for rapid (sub-second)
-    setup and SONET/SDH- like restoration times for high-churn (up to tens of requests
-    per second network-wide and one second to one minute holding times) on- demand
-    wavelength, sub-wavelength and packet services for a variety of applications (e.g.,
-    grid computing, cloud computing, data visualization, fast data transfer, etc.).
-    This must be done while meeting stringent call blocking requirements, and while
-    minimizing the use of resources such as time slots, switch ports, wavelength conversion
-    and wavelength-km. This document discusses the requirements for extensions to
-    Generalized Multi-Protocol Label Switching (GMPLS) signaling for expediting the
-    control of Label Switched Paths (LSPs), including sub- wavelengths (e.g., OTN
-    ODUs) and full wavelengths, in order to satisfy application requirements laid
-    out in this program.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Defense Advanced Research Projects Agency (DARPA) Core Optical\n
+    \  Networks (CORONET) program has laid out a vision for the next\n   evolution
+    of IP and optical commercial and government networks, with\n   a focus on highly
+    dynamic and resilient multi-terabit core networks.\n   It anticipates the need
+    for rapid (sub-second) setup and SONET/SDH-\n   like restoration times for high-churn
+    (up to tens of requests per\n   second network-wide and one second to one minute
+    holding times) on-\n   demand wavelength, sub-wavelength and packet services for
+    a variety\n   of applications (e.g., grid computing, cloud computing, data\n   visualization,
+    fast data transfer, etc.).  This must be done while\n   meeting stringent call
+    blocking requirements, and while minimizing\n   the use of resources such as time
+    slots, switch ports, wavelength\n   conversion and wavelength-km.\n\n   This document
+    discusses the requirements for extensions to\n   Generalized Multi-Protocol Label
+    Switching (GMPLS) signaling for\n   expediting the control of Label Switched Paths
+    (LSPs), including sub-\n   wavelengths (e.g., OTN ODUs) and full wavelengths,
+    in order to\n   satisfy application requirements laid out in this program.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-malis-ccamp-fast-lsps-01
-    docid:
-    - id: draft-malis-ccamp-fast-lsps-01
+    formattedref: draft-malis-ccamp-fast-lsps-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-malis-ccamp-fast-lsps-01
+    docidentifier:
+    - content: draft-malis-ccamp-fast-lsps-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-malis-ccamp-fast-lsps-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-malis-ccamp-fast-lsps-03
-    docid:
-    - id: draft-malis-ccamp-fast-lsps-03
+    formattedref: draft-malis-ccamp-fast-lsps-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-malis-ccamp-fast-lsps-03
+    docidentifier:
+    - content: draft-malis-ccamp-fast-lsps-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-malis-ccamp-fast-lsps-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-malis-ccamp-fast-lsps-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

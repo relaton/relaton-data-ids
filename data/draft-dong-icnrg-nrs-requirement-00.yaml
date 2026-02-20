@@ -1,174 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-icnrg-nrs-requirement-00
-title:
-- content: Requirements of Name Resolution Service in ICN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-icnrg-nrs-requirement-00
-  type: src
+id: draftdongicnrgnrsrequirement00
 type: standard
-docid:
-- id: draft-dong-icnrg-nrs-requirement-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Requirements of Name Resolution Service in ICN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-icnrg-nrs-requirement-00
+docidentifier:
+- content: draft-dong-icnrg-nrs-requirement
+  type: Internet-Draft
+- content: draft-dong-icnrg-nrs-requirement-00
   type: Internet-Draft
   primary: true
-- id: I-D.dong-icnrg-nrs-requirement
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-icnrg-nrs-requirement
 date:
 - type: published
-  value: '2016-07-21'
+  at: '2016-07-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Lijun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lijun
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Lijun Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: GQ Wang
-  role:
+        - language: en
+          content: GQ Wang
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cedric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cedric
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Westphal
-        language:
-        - en
       completename:
+        language: en
         content: Cedric Westphal
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Guoqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Guoqiang
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Guoqiang Wang
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jianping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jianping
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Jianping Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: City University Hong Kong
-  role:
-  - type: author
+        - language: en
+          content: City University Hong Kong
 version:
 - draft: '00'
-revdate: '2016-07-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document summarizes the existing approaches for name resolution
-    in various ICN architectures, and categorizes them into two groups: (1) standalone
-    name resolution; (2) name based routing. It compares the two types of approaches
-    from the aspects of update message overhead, resolution capability, node failure
-    impact, and maintained database. And hybrid approaches also exist with a subnet
-    of routers carrying out name based routing. Despite the coexistence of different
-    name resolution approaches, the Name Resolution Service (NRS) is most essential
-    service that shall be provided by the ICN infrastructure. The document gives the
-    definition of NRS in ICN and proposes some requirements of NRS, i.e. resolution
-    guarantee, delay sensitivity, minimum inter-domain traffic, failure resilience,
-    accuracy, security and accessibility, scalability, and time transiency, support
-    for manifest, interoperability, resolution result selection, heterogeneity, unspecified
-    Content Name.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document summarizes the existing approaches for name resolution\n
+    \  in various ICN architectures, and categorizes them into two groups:\n   (1)
+    standalone name resolution; (2) name based routing. It compares\n   the two types
+    of approaches from the aspects of update message\n   overhead, resolution capability,
+    node failure impact, and maintained\n   database. And hybrid approaches also exist
+    with a subnet of routers\n   carrying out name based routing. Despite the coexistence
+    of\n   different name resolution approaches, the Name Resolution Service\n   (NRS)
+    is most essential service that shall be provided by the ICN\n   infrastructure.
+    The document gives the definition of NRS in ICN and\n   proposes some requirements
+    of NRS, i.e. resolution guarantee, delay\n   sensitivity, minimum inter-domain
+    traffic, failure resilience,\n   accuracy, security and accessibility, scalability,
+    and time\n   transiency, support for manifest, interoperability, resolution\n
+    \  result selection, heterogeneity, unspecified Content Name.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-icnrg-nrs-requirement-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

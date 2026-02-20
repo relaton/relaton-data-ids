@@ -1,193 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-briscoe-conex-re-ecn-tcp-01
-title:
-- content: 'Re-ECN: Adding Accountability for Causing Congestion to TCP/IP'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-briscoe-conex-re-ecn-tcp-01
-  type: src
+id: draftbriscoeconexreecntcp01
 type: standard
-docid:
-- id: draft-briscoe-conex-re-ecn-tcp-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Re-ECN: Adding Accountability for Causing Congestion to TCP/IP'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-briscoe-conex-re-ecn-tcp-01
+docidentifier:
+- content: draft-briscoe-conex-re-ecn-tcp
+  type: Internet-Draft
+- content: draft-briscoe-conex-re-ecn-tcp-01
   type: Internet-Draft
   primary: true
-- id: I-D.briscoe-conex-re-ecn-tcp
-  type: IETF
-  scope: anchor
 docnumber: I-D.briscoe-conex-re-ecn-tcp
 date:
 - type: published
-  value: '2012-10-22'
+  at: '2012-10-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bob
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Briscoe
-        language:
-        - en
       completename:
+        language: en
         content: Bob Briscoe
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arnaud
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arnaud
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jacquet
-        language:
-        - en
       completename:
+        language: en
         content: Arnaud Jacquet
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Toby
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Toby
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Moncaster
-        language:
-        - en
       completename:
+        language: en
         content: Toby Moncaster
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Alan Smith
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2012-10-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document introduces re-ECN (re-inserted explicit congestion notification),
-    which is intended to make a simple but far-reaching change to the Internet architecture.
-    The sender uses the IP header to reveal the congestion that it expects on the
-    end-to-end path. The protocol works by arranging an extended ECN field in each
-    packet so that, as it crosses any interface in an internetwork, it will carry
-    a truthful prediction of congestion on the remainder of its path. It can be deployed
-    incrementally around unmodified routers. The purpose of this document is to specify
-    the re-ECN protocol at the IP layer and to give guidelines on any consequent changes
-    required to transport protocols. It includes the changes required to TCP both
-    as an example and as a specification. It briefly gives examples of mechanisms
-    that can use the protocol to ensure data sources respond sufficiently to congestion,
-    but these are described more fully in a companion document. Note concerning Intended
-    Status: If this draft were ever published as an RFC it would probably have historic
-    status. There is limited space in the IP header, so re-ECN had to compromise by
-    requiring the receiver to be ECN-enabled otherwise the sender could not use re-ECN.
-    Re-ECN was a precursor to chartering of the IETF's Congestion Exposure (ConEx)
-    working group, but during chartering there were still too few ECN receivers enabled,
-    therefore it was decided to pursue other compromises in order to fit a similar
-    capability into the IP header.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document introduces re-ECN (re-inserted explicit congestion\n
+    \  notification), which is intended to make a simple but far-reaching\n   change
+    to the Internet architecture.  The sender uses the IP header\n   to reveal the
+    congestion that it expects on the end-to-end path.  The\n   protocol works by
+    arranging an extended ECN field in each packet so\n   that, as it crosses any
+    interface in an internetwork, it will carry a\n   truthful prediction of congestion
+    on the remainder of its path.  It\n   can be deployed incrementally around unmodified
+    routers.  The purpose\n   of this document is to specify the re-ECN protocol at
+    the IP layer\n   and to give guidelines on any consequent changes required to\n
+    \  transport protocols.  It includes the changes required to TCP both as\n   an
+    example and as a specification.  It briefly gives examples of\n   mechanisms that
+    can use the protocol to ensure data sources respond\n   sufficiently to congestion,
+    but these are described more fully in a\n   companion document.\n\n   Note concerning
+    Intended Status: If this draft were ever published as\n   an RFC it would probably
+    have historic status.  There is limited\n   space in the IP header, so re-ECN
+    had to compromise by requiring the\n   receiver to be ECN-enabled otherwise the
+    sender could not use re-ECN.\n   Re-ECN was a precursor to chartering of the IETF's
+    Congestion\n   Exposure (ConEx) working group, but during chartering there were\n
+    \  still too few ECN receivers enabled, therefore it was decided to\n   pursue
+    other compromises in order to fit a similar capability into\n   the IP header.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-briscoe-conex-re-ecn-tcp-00
-    docid:
-    - id: draft-briscoe-conex-re-ecn-tcp-00
+    formattedref: draft-briscoe-conex-re-ecn-tcp-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-briscoe-conex-re-ecn-tcp-00
+    docidentifier:
+    - content: draft-briscoe-conex-re-ecn-tcp-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-briscoe-conex-re-ecn-tcp-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-briscoe-conex-re-ecn-tcp-02
-    docid:
-    - id: draft-briscoe-conex-re-ecn-tcp-02
+    formattedref: draft-briscoe-conex-re-ecn-tcp-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-briscoe-conex-re-ecn-tcp-02
+    docidentifier:
+    - content: draft-briscoe-conex-re-ecn-tcp-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-briscoe-conex-re-ecn-tcp-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-briscoe-conex-re-ecn-tcp-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

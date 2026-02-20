@@ -1,234 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-sprecher-mobile-tg-exposure-req-arch-01
-title:
-- content: Requirements and reference architecture for Mobile Throughput Guidance
-    Exposure
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sprecher-mobile-tg-exposure-req-arch-01
-  type: src
+id: draftsprechermobiletgexposurereqarch01
 type: standard
-docid:
-- id: draft-sprecher-mobile-tg-exposure-req-arch-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Requirements and reference architecture for Mobile Throughput Guidance
+    Exposure
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sprecher-mobile-tg-exposure-req-arch-01
+docidentifier:
+- content: draft-sprecher-mobile-tg-exposure-req-arch
+  type: Internet-Draft
+- content: draft-sprecher-mobile-tg-exposure-req-arch-01
   type: Internet-Draft
   primary: true
-- id: I-D.sprecher-mobile-tg-exposure-req-arch
-  type: IETF
-  scope: anchor
 docnumber: I-D.sprecher-mobile-tg-exposure-req-arch
 date:
 - type: published
-  value: '2015-02-20'
+  at: '2015-02-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ankur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ankur
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jain
-        language:
-        - en
       completename:
+        language: en
         content: Ankur Jain
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andreas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andreas
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Terzis
-        language:
-        - en
       completename:
+        language: en
         content: Andreas Terzis
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nurit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nurit
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Sprecher
-        language:
-        - en
       completename:
+        language: en
         content: Nurit Sprecher
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Swaminathan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Swaminathan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Arunachalam
-        language:
-        - en
       completename:
+        language: en
         content: Swaminathan Arunachalam
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kevin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kevin
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Kevin Smith
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Guenter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Guenter
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Klas
-        language:
-        - en
       completename:
+        language: en
         content: Guenter Klas
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2015-02-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Rapidly-varying conditions in a cellular network can cause problems
-    for the Transmission Control Protocol (TCP), which in turn can degrade application
-    performance. This document presents the problem statement and proposes solution
-    principles. It specifies the requirements and reference architecture for a mobile
-    throughput guidance exposure mechanism that can be used to assist TCP in cellular
-    networks, ensuring better network efficiency and enhanced service delivery performance.
-    The proposed mechanism can be applied to any content or TCP/IP based application
-    content delivery. This document describes the applicability of the mechanism for
-    Intelligent Video Acceleration over cellular networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Rapidly-varying conditions in a cellular network can cause problems\n
+    \  for the Transmission Control Protocol (TCP), which in turn can\n   degrade
+    application performance.\n\n   This document presents the problem statement and
+    proposes solution\n   principles.  It specifies the requirements and reference
+    architecture\n   for a mobile throughput guidance exposure mechanism that can
+    be used\n   to assist TCP in cellular networks, ensuring better network\n   efficiency
+    and enhanced service delivery performance.\n\n   The proposed mechanism can be
+    applied to any content or TCP/IP based\n   application content delivery.  This
+    document describes the\n   applicability of the mechanism for Intelligent Video
+    Acceleration\n   over cellular networks.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sprecher-mobile-tg-exposure-req-arch-00
-    docid:
-    - id: draft-sprecher-mobile-tg-exposure-req-arch-00
+    formattedref: draft-sprecher-mobile-tg-exposure-req-arch-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sprecher-mobile-tg-exposure-req-arch-00
+    docidentifier:
+    - content: draft-sprecher-mobile-tg-exposure-req-arch-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sprecher-mobile-tg-exposure-req-arch-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-sprecher-mobile-tg-exposure-req-arch-02
-    docid:
-    - id: draft-sprecher-mobile-tg-exposure-req-arch-02
+    formattedref: draft-sprecher-mobile-tg-exposure-req-arch-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sprecher-mobile-tg-exposure-req-arch-02
+    docidentifier:
+    - content: draft-sprecher-mobile-tg-exposure-req-arch-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sprecher-mobile-tg-exposure-req-arch-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sprecher-mobile-tg-exposure-req-arch-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,211 +1,181 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-grow-va-perf-00
-title:
-- content: Performance of Virtual Aggregation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-va-perf-00
-  type: src
+id: draftietfgrowvaperf00
 type: standard
-docid:
-- id: draft-ietf-grow-va-perf-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Performance of Virtual Aggregation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-va-perf-00
+docidentifier:
+- content: draft-ietf-grow-va-perf
+  type: Internet-Draft
+- content: draft-ietf-grow-va-perf-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-grow-va-perf
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-grow-va-perf
 date:
 - type: published
-  value: '2009-07-05'
+  at: '2009-07-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hitesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hitesh
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Ballani
-        language:
-        - en
       completename:
+        language: en
         content: Hitesh Ballani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cornell U.
-  role:
+        - language: en
+          content: Cornell U.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Francis
-        language:
-        - en
       completename:
+        language: en
         content: Paul Francis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MPI-SWS
-  role:
+        - language: en
+          content: MPI-SWS
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Jen
-        language:
-        - en
       completename:
+        language: en
         content: Dan Jen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UCLA
-  role:
+        - language: en
+          content: UCLA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaohu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaohu
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaohu Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lixia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lixia
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Lixia Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UCLA
-  role:
-  - type: author
+        - language: en
+          content: UCLA
 version:
 - draft: '00'
-revdate: '2009-07-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The document "FIB Suppression with Virtual Aggregation" [I-D.francis-intra-va]
-    describes how router FIB size may be reduced. This approach entails a trade-off
-    between path-length and load versus FIB size. It also has the potential to reduce
-    convergence time. This document describes the results of several studies that
-    examine these characteristics. The results of a study for a Tier-1 ISP with a
-    relatively sophisticated deployment of VA, shows that FIB size could be reduced
-    ten times or more with a worst-case latency penalty of 4ms and a worst-case load
-    increase of &lt;1.5%. Another study, examining a much simpler style of VA deployment,
-    also for a Tier-1 ISP, shows that FIB size can be reduced by four times (in routers
-    serving as APRs), and more than 10 times in other routers. Here, worst-case latency
-    increase was 16 ms, though this is almost certainly an over-estimate, both because
-    traceroute was used to make the measurement, and because popular prefixes were
-    not considered.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The document \"FIB Suppression with Virtual Aggregation\"\n[I-D.francis-intra-va]
+    describes how router FIB size may be reduced.\nThis approach entails a trade-off
+    between path-length and load versus\nFIB size.  It also has the potential to reduce
+    convergence time.\nThis document describes the results of several studies that
+    examine\nthese characteristics.  The results of a study for a Tier-1 ISP with\na
+    relatively sophisticated deployment of VA, shows that FIB size\ncould be reduced
+    ten times or more with a worst-case latency penalty\nof 4ms and a worst-case load
+    increase of <1.5%.  Another study,\nexamining a much simpler style of VA deployment,
+    also for a Tier-1\nISP, shows that FIB size can be reduced by four times (in routers\nserving
+    as APRs), and more than 10 times in other routers.  Here,\nworst-case latency
+    increase was 16 ms, though this is almost\ncertainly an over-estimate, both because
+    traceroute was used to make\nthe measurement, and because popular prefixes were
+    not considered.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-grow-va-perf-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

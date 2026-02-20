@@ -1,121 +1,103 @@
 ---
-schema-version: v1.2.9
-id: draft-zimmermann-tcpm-spurious-rxmit-00
-title:
-- content: Using the TCP Echo Option for Spurious Retransmission Detection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-spurious-rxmit-00
-  type: src
+id: draftzimmermanntcpmspuriousrxmit00
 type: standard
-docid:
-- id: draft-zimmermann-tcpm-spurious-rxmit-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Using the TCP Echo Option for Spurious Retransmission Detection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zimmermann-tcpm-spurious-rxmit-00
+docidentifier:
+- content: draft-zimmermann-tcpm-spurious-rxmit
+  type: Internet-Draft
+- content: draft-zimmermann-tcpm-spurious-rxmit-00
   type: Internet-Draft
   primary: true
-- id: I-D.zimmermann-tcpm-spurious-rxmit
-  type: IETF
-  scope: anchor
 docnumber: I-D.zimmermann-tcpm-spurious-rxmit
 date:
 - type: published
-  value: '2015-07-20'
+  at: '2015-07-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Zimmermann
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Zimmermann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp, Inc.
-  role:
+        - language: en
+          content: NetApp, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Richard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Scheffenegger
-        language:
-        - en
       completename:
+        language: en
         content: Richard Scheffenegger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp, Inc.
-  role:
-  - type: author
+        - language: en
+          content: NetApp, Inc.
 version:
 - draft: '00'
-revdate: '2015-07-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Spurious Retransmission Detection (SRD) algorithm allows a TCP
-    sender to always detect if it has entered loss recovery unnecessarily. It requires
-    that both the TCP Echo option defined in [I-D.zimmermann-tcpm-echo-option], and
-    the SACK option [RFC2018] be enabled for a connection. The SRD algorithm makes
-    use of the fact that the TCP Echo option, used in conjunction with the SACK feedback,
-    can be used to completely eliminate the retransmission ambiguity in TCP. Based
-    on the reflected data contained in the first acceptable ACK that arrives during
-    loss recovery, it decides whether loss recovery was entered unnecessarily. The
-    SRD mechanism further enables improvements in loss recovery. This includes a TCP
-    enhancement to detect and quickly resend lost retransmissions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Spurious Retransmission Detection (SRD) algorithm allows a TCP\n
+    \  sender to always detect if it has entered loss recovery\n   unnecessarily.
+    \ It requires that both the TCP Echo option defined in\n   [I-D.zimmermann-tcpm-echo-option],
+    and the SACK option [RFC2018] be\n   enabled for a connection.  The SRD algorithm
+    makes use of the fact\n   that the TCP Echo option, used in conjunction with the
+    SACK feedback,\n   can be used to completely eliminate the retransmission ambiguity
+    in\n   TCP.  Based on the reflected data contained in the first acceptable\n   ACK
+    that arrives during loss recovery, it decides whether loss\n   recovery was entered
+    unnecessarily.  The SRD mechanism further\n   enables improvements in loss recovery.
+    \ This includes a TCP\n   enhancement to detect and quickly resend lost retransmissions.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zimmermann-tcpm-spurious-rxmit-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

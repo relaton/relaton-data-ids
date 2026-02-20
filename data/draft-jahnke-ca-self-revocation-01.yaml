@@ -1,122 +1,109 @@
 ---
-schema-version: v1.2.9
-id: draft-jahnke-ca-self-revocation-01
-title:
-- content: Universal Trust Anchor Self-Revocation Extension for Critical Internet
-    Infrastructure
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-jahnke-ca-self-revocation-01
-  type: src
+id: draftjahnkecaselfrevocation01
 type: standard
-docid:
-- id: draft-jahnke-ca-self-revocation-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Universal Trust Anchor Self-Revocation Extension for Critical Internet
+    Infrastructure
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jahnke-ca-self-revocation-01
+docidentifier:
+- content: draft-jahnke-ca-self-revocation
+  type: Internet-Draft
+- content: draft-jahnke-ca-self-revocation-01
   type: Internet-Draft
   primary: true
-- id: I-D.jahnke-ca-self-revocation
-  type: IETF
-  scope: anchor
 docnumber: I-D.jahnke-ca-self-revocation
 date:
 - type: published
-  value: '2025-05-30'
+  at: '2025-05-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Torsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Torsten
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Jahnke
-        language:
-        - en
       completename:
+        language: en
         content: Torsten Jahnke
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aviontex GmbH
-  role:
-  - type: author
+        - language: en
+          content: Aviontex GmbH
 version:
 - draft: '01'
-revdate: '2025-05-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document defines a cryptographically secure mechanism for Certificate
-    Authorities (CAs) and other self-signed trust anchors to perform controlled self-revocation
-    upon compromise detection. This addresses a fundamental architectural paradox
-    in current internet infrastructure: self-signed trust anchors (PKI Root CAs, DNSSEC
-    KSKs, Code Signing Roots, Government PKIs, Industrial Control System CAs, Mobile
-    Platform Roots, and Critical Infrastructure Trust Anchors) cannot be cryptographically
-    revoked because any revocation mechanism requires the anchor''s private key, but
-    if attackers possess that key (the primary threat), they control the revocation
-    process. This specification solves this 25-year-old "unsolvable" problem by making
-    attackers inadvertently help terminate their own attacks. The mechanism provides
-    automated detection with mandatory manual authorization, enabling trust anchor
-    operators to terminate anchor validity within hours instead of months while maintaining
-    strict dual-person control. This addresses fundamental architectural limitations
-    exposed by historical incidents such as the DigiNotar compromise in 2011 and Symantec
-    certificate missuance incidents, where extended cleanup periods affected millions
-    of users globally, as well as theoretical compromise scenarios affecting DNSSEC,
-    government PKI, industrial control systems, and other critical infrastructure
-    trust anchors.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a cryptographically secure mechanism for\n   Certificate
+    Authorities (CAs) and other self-signed trust anchors\n   to perform controlled
+    self-revocation upon compromise detection.\n   This addresses a fundamental architectural
+    paradox in current\n   internet infrastructure: self-signed trust anchors (PKI
+    Root CAs,\n   DNSSEC KSKs, Code Signing Roots, Government PKIs, Industrial\n   Control
+    System CAs, Mobile Platform Roots, and Critical\n   Infrastructure Trust Anchors)
+    cannot be cryptographically revoked\n   because any revocation mechanism requires
+    the anchor's private key,\n   but if attackers possess that key (the primary threat),
+    they\n   control the revocation process.\n\n   This specification solves this
+    25-year-old \"unsolvable\" problem by\n   making attackers inadvertently help
+    terminate their own attacks.\n   The mechanism provides automated detection with
+    mandatory manual\n   authorization, enabling trust anchor operators to terminate
+    anchor\n   validity within hours instead of months while maintaining strict\n
+    \  dual-person control. This addresses fundamental architectural\n   limitations
+    exposed by historical incidents such as the DigiNotar\n   compromise in 2011 and
+    Symantec certificate missuance incidents,\n   where extended cleanup periods affected
+    millions of users globally,\n   as well as theoretical compromise scenarios affecting
+    DNSSEC,\n   government PKI, industrial control systems, and other critical\n   infrastructure
+    trust anchors.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-jahnke-ca-self-revocation-00
-    docid:
-    - id: draft-jahnke-ca-self-revocation-00
+    formattedref: draft-jahnke-ca-self-revocation-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jahnke-ca-self-revocation-00
+    docidentifier:
+    - content: draft-jahnke-ca-self-revocation-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jahnke-ca-self-revocation-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-jahnke-ca-self-revocation-02
-    docid:
-    - id: draft-jahnke-ca-self-revocation-02
+    formattedref: draft-jahnke-ca-self-revocation-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jahnke-ca-self-revocation-02
+    docidentifier:
+    - content: draft-jahnke-ca-self-revocation-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jahnke-ca-self-revocation-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-jahnke-ca-self-revocation-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

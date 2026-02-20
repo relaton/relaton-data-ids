@@ -1,145 +1,127 @@
 ---
-schema-version: v1.2.9
-id: draft-leddy-6man-truncate-02
-title:
-- content: Destination Originates Internet Control Message Protocol (ICMP) Packet
-    Too Big (PTB) Messages
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-leddy-6man-truncate-02
-  type: src
+id: draftleddy6mantruncate02
 type: standard
-docid:
-- id: draft-leddy-6man-truncate-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Destination Originates Internet Control Message Protocol (ICMP) Packet
+    Too Big (PTB) Messages
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-leddy-6man-truncate-02
+docidentifier:
+- content: draft-leddy-6man-truncate
+  type: Internet-Draft
+- content: draft-leddy-6man-truncate-02
   type: Internet-Draft
   primary: true
-- id: I-D.leddy-6man-truncate
-  type: IETF
-  scope: anchor
 docnumber: I-D.leddy-6man-truncate
 date:
 - type: published
-  value: '2018-06-07'
+  at: '2018-06-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Leddy
-        language:
-        - en
       completename:
+        language: en
         content: John Leddy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Comcast
-  role:
+        - language: en
+          content: Comcast
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ron
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Bonica
-        language:
-        - en
       completename:
+        language: en
         content: Ron Bonica
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '02'
-revdate: '2018-06-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines procedures that enhance Path MTU Discovery (PMTUD),
-    so that it no longer relies on the network's ability to deliver an ICMP Packet
-    Too Big (PTB) message from a downstream router to an IPv6 source node. According
-    to these procedures, selected packets carry a new IPv6 Destination option. When
-    a downstream router cannot forward one of these packets because of MTU issues,
-    it truncates the packet, marks it to indicate that it has been truncated, and
-    forwards it towards the destination node. When the destination node receives a
-    packet that has been truncated, it sends an ICMP PTB message to the source node.
-    The source node uses MTU information contained by the ICMP PTB message to update
-    its PMTU estimate. The destination node also examines the new Destination option
-    to determine whether it should discard the truncated packet or deliver it to an
-    upper-layer protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines procedures that enhance Path MTU Discovery\n
+    \  (PMTUD), so that it no longer relies on the network's ability to\n   deliver
+    an ICMP Packet Too Big (PTB) message from a downstream router\n   to an IPv6 source
+    node.  According to these procedures, selected\n   packets carry a new IPv6 Destination
+    option.  When a downstream\n   router cannot forward one of these packets because
+    of MTU issues, it\n   truncates the packet, marks it to indicate that it has been\n
+    \  truncated, and forwards it towards the destination node.\n\n   When the destination
+    node receives a packet that has been truncated,\n   it sends an ICMP PTB message
+    to the source node.  The source node\n   uses MTU information contained by the
+    ICMP PTB message to update its\n   PMTU estimate.\n\n   The destination node also
+    examines the new Destination option to\n   determine whether it should discard
+    the truncated packet or deliver\n   it to an upper-layer protocol.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-leddy-6man-truncate-01
-    docid:
-    - id: draft-leddy-6man-truncate-01
+    formattedref: draft-leddy-6man-truncate-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-leddy-6man-truncate-01
+    docidentifier:
+    - content: draft-leddy-6man-truncate-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-leddy-6man-truncate-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-leddy-6man-truncate-03
-    docid:
-    - id: draft-leddy-6man-truncate-03
+    formattedref: draft-leddy-6man-truncate-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-leddy-6man-truncate-03
+    docidentifier:
+    - content: draft-leddy-6man-truncate-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-leddy-6man-truncate-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-leddy-6man-truncate-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

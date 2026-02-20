@@ -1,164 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-li-sidrops-drr-architecture-01
-title:
-- content: Decentralized RPKI Repository Architecture
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-drr-architecture-01
-  type: src
+id: draftlisidropsdrrarchitecture01
 type: standard
-docid:
-- id: draft-li-sidrops-drr-architecture-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Decentralized RPKI Repository Architecture
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-drr-architecture-01
+docidentifier:
+- content: draft-li-sidrops-drr-architecture
+  type: Internet-Draft
+- content: draft-li-sidrops-drr-architecture-01
   type: Internet-Draft
   primary: true
-- id: I-D.li-sidrops-drr-architecture
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-sidrops-drr-architecture
 date:
 - type: published
-  value: '2026-01-06'
+  at: '2026-01-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yingying
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yingying
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Su
-        language:
-        - en
       completename:
+        language: en
         content: Yingying Su
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Li Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
-  - type: author
+        - language: en
+          content: Zhongguancun Laboratory
 version:
 - draft: '01'
-revdate: '2026-01-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Resource Public Key Infrastructure (RPKI) plays a crucial role
-    in securing inter-domain routing. However, the current RPKI Repository system
-    suffers from fundamental limitations in reliability, scalability, and consistency.
-    In particular, single-point failures at repository publication points (PPs), the
-    growing number of bidirectional connections between PPs and relying parties (RPs),
-    and the lack of a globally consistent historical RPKI data view pose significant
-    risks to the resilience, integrity, and authority of the global RPKI ecosystem.
-    This document proposes the Decentralized RPKI Repository (dRR), a novel repository
-    architecture that decouples RPKI object signing authority from RPKI object management
-    authority (e.g., storage and distribution). dRR introduces a distributed group
-    of certificate servers (CSs) and a layer of Monitors to achieve robust, scalable,
-    and auditable RPKI data management. The architecture maintains full compatibility
-    with the existing RPKI trust model rooted in the five RIR trust anchors, enabling
-    incremental deployment without disrupting current relying parties (RPs) validation
-    semantics. By doing so, dRR addresses longstanding repository challenges and enhances
-    the overall efficiency and trustworthiness of RPKI-based routing security.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Resource Public Key Infrastructure (RPKI) plays a crucial role
+    in\n   securing inter-domain routing.  However, the current RPKI Repository\n
+    \  system suffers from fundamental limitations in reliability,\n   scalability,
+    and consistency.  In particular, single-point failures\n   at repository publication
+    points (PPs), the growing number of\n   bidirectional connections between PPs
+    and relying parties (RPs), and\n   the lack of a globally consistent historical
+    RPKI data view pose\n   significant risks to the resilience, integrity, and authority
+    of the\n   global RPKI ecosystem.\n\n   This document proposes the Decentralized
+    RPKI Repository (dRR), a\n   novel repository architecture that decouples RPKI
+    object signing\n   authority from RPKI object management authority (e.g., storage
+    and\n   distribution). dRR introduces a distributed group of certificate\n   servers
+    (CSs) and a layer of Monitors to achieve robust, scalable,\n   and auditable RPKI
+    data management.  The architecture maintains full\n   compatibility with the existing
+    RPKI trust model rooted in the five\n   RIR trust anchors, enabling incremental
+    deployment without disrupting\n   current relying parties (RPs) validation semantics.
+    \ By doing so, dRR\n   addresses longstanding repository challenges and enhances
+    the overall\n   efficiency and trustworthiness of RPKI-based routing security.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-li-sidrops-drr-architecture-00
-    docid:
-    - id: draft-li-sidrops-drr-architecture-00
+    formattedref: draft-li-sidrops-drr-architecture-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-drr-architecture-00
+    docidentifier:
+    - content: draft-li-sidrops-drr-architecture-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-sidrops-drr-architecture-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-sidrops-drr-architecture-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

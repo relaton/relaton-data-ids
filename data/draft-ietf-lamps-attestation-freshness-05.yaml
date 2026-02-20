@@ -1,189 +1,163 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lamps-attestation-freshness-05
+id: draftietflampsattestationfreshness05
+type: standard
+schema_version: v1.4.1
 title:
-- content: Nonce-based Freshness for Remote Attestation in Certificate Signing Requests
+- language: en
+  script: Latn
+  content: Nonce-based Freshness for Remote Attestation in Certificate Signing Requests
     (CSRs) for the Certification Management Protocol (CMP), for Enrollment over Secure
     Transport (EST), and for Certificate Management over CMS (CMC)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-attestation-freshness-05
-  type: src
-type: standard
-docid:
-- id: draft-ietf-lamps-attestation-freshness-05
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-attestation-freshness-05
+docidentifier:
+- content: draft-ietf-lamps-attestation-freshness
+  type: Internet-Draft
+- content: draft-ietf-lamps-attestation-freshness-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lamps-attestation-freshness
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lamps-attestation-freshness
 date:
 - type: published
-  value: '2025-10-19'
+  at: '2025-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens
-  role:
+        - language: en
+          content: Siemens
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hendrik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hendrik
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Brockhaus
-        language:
-        - en
       completename:
+        language: en
         content: Hendrik Brockhaus
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Siemens
-  role:
+        - language: en
+          content: Siemens
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Mandel
-        language:
-        - en
       completename:
+        language: en
         content: Joe Mandel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AKAYLA, Inc.
-  role:
+        - language: en
+          content: AKAYLA, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sean
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sean
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Turner
-        language:
-        - en
       completename:
+        language: en
         content: Sean Turner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: sn3rd
-  role:
-  - type: author
+        - language: en
+          content: sn3rd
 version:
 - draft: '05'
-revdate: '2025-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When an end entity includes attestation Evidence in a Certificate Signing
-    Request (CSR), it may be necessary to demonstrate the freshness of the provided
-    Evidence. Current attestation technology commonly achieves this using nonces.
-    This document outlines the process through which nonces are supplied to the end
-    entity by an RA/CA for inclusion in Evidence, leveraging the Certificate Management
-    Protocol (CMP), Enrollment over Secure Transport (EST), and Certificate Management
-    over CMS (CMC).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   When an end entity includes attestation Evidence in a Certificate\n
+    \  Signing Request (CSR), it may be necessary to demonstrate the\n   freshness
+    of the provided Evidence.  Current attestation technology\n   commonly achieves
+    this using nonces.\n\n   This document outlines the process through which nonces
+    are supplied\n   to the end entity by an RA/CA for inclusion in Evidence, leveraging\n
+    \  the Certificate Management Protocol (CMP), Enrollment over Secure\n   Transport
+    (EST), and Certificate Management over CMS (CMC).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lamps-attestation-freshness-04
-    docid:
-    - id: draft-ietf-lamps-attestation-freshness-04
+    formattedref: draft-ietf-lamps-attestation-freshness-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-attestation-freshness-04
+    docidentifier:
+    - content: draft-ietf-lamps-attestation-freshness-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lamps-attestation-freshness-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lamps-attestation-freshness-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

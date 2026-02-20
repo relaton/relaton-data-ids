@@ -1,231 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ntp-using-nts-for-ntp-27
-title:
-- content: Network Time Security for the Network Time Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-27
-  type: src
+id: draftietfntpusingntsforntp27
 type: standard
-docid:
-- id: draft-ietf-ntp-using-nts-for-ntp-27
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Network Time Security for the Network Time Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-27
+docidentifier:
+- content: draft-ietf-ntp-using-nts-for-ntp
+  type: Internet-Draft
+- content: draft-ietf-ntp-using-nts-for-ntp-27
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ntp-using-nts-for-ntp
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ntp-using-nts-for-ntp
 date:
 - type: published
-  value: '2020-03-24'
+  at: '2020-03-24'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: D. F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: D. F.
       surname:
+        language: en
         content: Franke
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Fox Franke
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Akamai Technologies
-  role:
+        - language: en
+          content: Akamai Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dieter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dieter
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Sibold
-        language:
-        - en
       completename:
+        language: en
         content: Dieter Sibold
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Physikalisch-Technische
                   Bundesanstalt
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kristof
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kristof
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Teichel
-        language:
-        - en
       completename:
+        language: en
         content: Kristof Teichel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: |-
+        - language: en
+          content: |-
             Physikalisch-Technische
                   Bundesanstalt
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marcus
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marcus
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Dansarie
-        language:
-        - en
       completename:
+        language: en
         content: Marcus Dansarie
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ragnar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ragnar
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Sundblad
-        language:
-        - en
       completename:
+        language: en
         content: Ragnar Sundblad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Netnod
-  role:
-  - type: author
+        - language: en
+          content: Netnod
 version:
 - draft: '27'
-revdate: '2020-03-24'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo specifies Network Time Security (NTS), a mechanism for using
-    Transport Layer Security (TLS) and Authenticated Encryption with Associated Data
-    (AEAD) to provide cryptographic security for the client-server mode of the Network
-    Time Protocol (NTP). NTS is structured as a suite of two loosely coupled sub-protocols.
-    The first (NTS-KE) handles initial authentication and key establishment over TLS.
-    The second handles encryption and authentication during NTP time synchronization
-    via extension fields in the NTP packets, and holds all required state only on
-    the client via opaque cookies.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo specifies Network Time Security (NTS), a mechanism for\n
+    \  using Transport Layer Security (TLS) and Authenticated Encryption\n   with
+    Associated Data (AEAD) to provide cryptographic security for the\n   client-server
+    mode of the Network Time Protocol (NTP).\n\n   NTS is structured as a suite of
+    two loosely coupled sub-protocols.\n   The first (NTS-KE) handles initial authentication
+    and key\n   establishment over TLS.  The second handles encryption and\n   authentication
+    during NTP time synchronization via extension fields\n   in the NTP packets, and
+    holds all required state only on the client\n   via opaque cookies.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ntp-using-nts-for-ntp-26
-    docid:
-    - id: draft-ietf-ntp-using-nts-for-ntp-26
+    formattedref: draft-ietf-ntp-using-nts-for-ntp-26
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-26
+    docidentifier:
+    - content: draft-ietf-ntp-using-nts-for-ntp-26
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ntp-using-nts-for-ntp-26
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ntp-using-nts-for-ntp-28
-    docid:
-    - id: draft-ietf-ntp-using-nts-for-ntp-28
+    formattedref: draft-ietf-ntp-using-nts-for-ntp-28
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-28
+    docidentifier:
+    - content: draft-ietf-ntp-using-nts-for-ntp-28
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ntp-using-nts-for-ntp-28
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ntp-using-nts-for-ntp-27
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

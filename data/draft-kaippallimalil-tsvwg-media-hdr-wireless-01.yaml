@@ -1,151 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
-title:
-- content: Media Header Extensions for Wireless Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-01
-  type: src
+id: draftkaippallimaliltsvwgmediahdrwireless01
 type: standard
-docid:
-- id: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Media Header Extensions for Wireless Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-01
+docidentifier:
+- content: draft-kaippallimalil-tsvwg-media-hdr-wireless
+  type: Internet-Draft
+- content: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
   type: Internet-Draft
   primary: true
-- id: I-D.kaippallimalil-tsvwg-media-hdr-wireless
-  type: IETF
-  scope: anchor
 docnumber: I-D.kaippallimalil-tsvwg-media-hdr-wireless
 date:
 - type: published
-  value: '2023-02-20'
+  at: '2023-02-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kaippallimalil
-        language:
-        - en
       completename:
+        language: en
         content: John Kaippallimalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sri
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Gundavelli
-        language:
-        - en
       completename:
+        language: en
         content: Sri Gundavelli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '01'
-revdate: '2023-02-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Wireless networks like 5G cellular or Wi-Fi experience significant
-    variations in link capacity over short intervals due to wireless channel conditions,
-    interference, or the end-user's movement. These variations in capacity take place
-    in the order of hundreds of milliseconds and is much too fast for end-to-end congestion
-    signaling by itself to convey the changes for an application to adapt. Media applications
-    on the other hand demand both high throughput and low latency, and are able to
-    dynamically adjust the size and quality of a stream to match available network
-    bandwidth. However, catering to such media flows over a radio link where the capacity
-    changes rapidly requires the buffers and QoS in general to be managed carefully.
-    This draft proposes additional information about the media transported in each
-    packet to manage the buffers and optimize the scheduling of radio resources. The
-    set of information proposed here includes importance of the packet, burst length
-    and time budget to be conveyed by the media application in a new UDP option. The
-    metadata in the UDP option is used to provide the wireless network the flexibility
-    to prioritize packets that are essential when the radio capacity is temporarily
-    low, defer packets that can tolerate some additional delay, or even drop packets
-    selectively in more extreme conditions. This draft defines media metadata, a new
-    UDP option to carry this metadata and the operational aspects for using it between
-    a UDP source and a on-path wireless entity.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Wireless networks like 5G cellular or Wi-Fi experience significant\n
+    \  variations in link capacity over short intervals due to wireless\n   channel
+    conditions, interference, or the end-user's movement.  These\n   variations in
+    capacity take place in the order of hundreds of\n   milliseconds and is much too
+    fast for end-to-end congestion signaling\n   by itself to convey the changes for
+    an application to adapt.  Media\n   applications on the other hand demand both
+    high throughput and low\n   latency, and are able to dynamically adjust the size
+    and quality of a\n   stream to match available network bandwidth.  However, catering
+    to\n   such media flows over a radio link where the capacity changes rapidly\n
+    \  requires the buffers and QoS in general to be managed carefully.\n   This draft
+    proposes additional information about the media\n   transported in each packet
+    to manage the buffers and optimize the\n   scheduling of radio resources.  The
+    set of information proposed here\n   includes importance of the packet, burst
+    length and time budget to be\n   conveyed by the media application in a new UDP
+    option.  The metadata\n   in the UDP option is used to provide the wireless network
+    the\n   flexibility to prioritize packets that are essential when the radio\n
+    \  capacity is temporarily low, defer packets that can tolerate some\n   additional
+    delay, or even drop packets selectively in more extreme\n   conditions.\n\n   This
+    draft defines media metadata, a new UDP option to carry this\n   metadata and
+    the operational aspects for using it between a UDP\n   source and a on-path wireless
+    entity.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kaippallimalil-tsvwg-media-hdr-wireless-00
-    docid:
-    - id: draft-kaippallimalil-tsvwg-media-hdr-wireless-00
+    formattedref: draft-kaippallimalil-tsvwg-media-hdr-wireless-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-00
+    docidentifier:
+    - content: draft-kaippallimalil-tsvwg-media-hdr-wireless-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaippallimalil-tsvwg-media-hdr-wireless-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
-    docid:
-    - id: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
+    formattedref: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kaippallimalil-tsvwg-media-hdr-wireless-02
+    docidentifier:
+    - content: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kaippallimalil-tsvwg-media-hdr-wireless-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kaippallimalil-tsvwg-media-hdr-wireless-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,210 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-pillay-esnault-moyer-ospfv3-pece-00
-title:
-- content: OSPFv3 as a PE-CE routing protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pillay-esnault-moyer-ospfv3-pece-00
-  type: src
+id: draftpillayesnaultmoyerospfv3pece00
 type: standard
-docid:
-- id: draft-pillay-esnault-moyer-ospfv3-pece-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPFv3 as a PE-CE routing protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pillay-esnault-moyer-ospfv3-pece-00
+docidentifier:
+- content: draft-pillay-esnault-moyer-ospfv3-pece
+  type: Internet-Draft
+- content: draft-pillay-esnault-moyer-ospfv3-pece-00
   type: Internet-Draft
   primary: true
-- id: I-D.pillay-esnault-moyer-ospfv3-pece
-  type: IETF
-  scope: anchor
 docnumber: I-D.pillay-esnault-moyer-ospfv3-pece
 date:
 - type: published
-  value: '2008-07-07'
+  at: '2008-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Padma
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Padma
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Pillay-Esnault
-        language:
-        - en
       completename:
+        language: en
         content: Padma Pillay-Esnault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Moyer
-        language:
-        - en
       completename:
+        language: en
         content: Peter Moyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Doyle
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Doyle
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Jeff Doyle and Associates
-  role:
+        - language: en
+          content: Jeff Doyle and Associates
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Emre
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Emre
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Ertekin
-        language:
-        - en
       completename:
+        language: en
         content: Emre Ertekin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Booz Allen Hamilton
-  role:
+        - language: en
+          content: Booz Allen Hamilton
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Lundberg
-        language:
-        - en
       completename:
+        language: en
         content: Michael Lundberg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Booz Allen Hamilton
-  role:
-  - type: author
+        - language: en
+          content: Booz Allen Hamilton
 version:
 - draft: '00'
-revdate: '2008-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Many Service Providers (SPs) offer the Virtual Private Network (VPN)
-    services to their customers, using a technique in which Customer Edge (CE) routers
-    are routing peers of Provider Edge (PE) routers. The Border Gateway Protocol (BGP)
-    is used to distribute the customer's routes across the provider's IP backbone
-    network, and Multiprotocol Label Switching (MPLS) is used to tunnel customer packets
-    across the provider's backbone. This is known as a "BGP/MPLS IP VPN". Originally
-    only IPv4 was supported and it was later extended to support IPv6 VPNs as well.
-    Extensions were later added for the support of the Open Shortest Path First protocol
-    version 2 (OSPFv2) as a PE-CE routing protocol for the IPv4 VPNs. This document
-    extends those specifications to support OSPF version 3 (OSPFv3) as a PE-CE routing
-    protocol. The OSPFv3 PE-CE functionality is identical to that of OSPFv2 except
-    for the differences described in this document.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Many Service Providers (SPs) offer the Virtual Private Network (VPN)\nservices
+    to their customers, using a technique in which Customer Edge\n(CE) routers are
+    routing peers of Provider Edge (PE) routers.  The\nBorder Gateway Protocol (BGP)
+    is used to distribute the customer's\nroutes across the provider's IP backbone
+    network, and Multiprotocol\nLabel Switching (MPLS) is used to tunnel customer
+    packets across the\nprovider's backbone.  This is known as a \"BGP/MPLS IP VPN\".\nOriginally
+    only IPv4 was supported and it was later extended to\nsupport IPv6 VPNs as well.
+    \ Extensions were later added for the\nsupport of the Open Shortest Path First
+    protocol version 2 (OSPFv2)\nas a PE-CE routing protocol for the IPv4 VPNs.  This
+    document extends\nthose specifications to support OSPF version 3 (OSPFv3) as a
+    PE-CE\nrouting protocol.  The OSPFv3 PE-CE functionality is identical to\nthat
+    of OSPFv2 except for the differences described in this document.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pillay-esnault-moyer-ospfv3-pece-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

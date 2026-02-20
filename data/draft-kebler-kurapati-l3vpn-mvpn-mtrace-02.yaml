@@ -1,227 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
-title:
-- content: Multicast Traceroute for MVPNs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
-  type: src
+id: draftkeblerkurapatil3vpnmvpnmtrace02
 type: standard
-docid:
-- id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multicast Traceroute for MVPNs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
+docidentifier:
+- content: draft-kebler-kurapati-l3vpn-mvpn-mtrace
+  type: Internet-Draft
+- content: draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
   type: Internet-Draft
   primary: true
-- id: I-D.kebler-kurapati-l3vpn-mvpn-mtrace
-  type: IETF
-  scope: anchor
 docnumber: I-D.kebler-kurapati-l3vpn-mvpn-mtrace
 date:
 - type: published
-  value: '2018-10-17'
+  at: '2018-10-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Robert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Robert
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Kebler
-        language:
-        - en
       completename:
+        language: en
         content: Robert Kebler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pavan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pavan
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Kurapati
-        language:
-        - en
       completename:
+        language: en
         content: Pavan Kurapati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Saud
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Saud
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Asif
-        language:
-        - en
       completename:
+        language: en
         content: Saud Asif
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AT&T LABS
-  role:
+        - language: en
+          content: AT&T LABS
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mankamana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: M. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mankamana
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: M. P.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Mankamana Prasad Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stig
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Venaas
-        language:
-        - en
       completename:
+        language: en
         content: Stig Venaas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '02'
-revdate: '2018-10-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Mtrace is a tool used to troubleshoot issues in a network deploying
-    Multicast service. When multicast is used within a VPN service offering, the base
-    Mtrace specification does not detect the failures. This document specifies a method
-    of using multicast traceroute in a network offering Multicast in VPN service.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Mtrace is a tool used to troubleshoot issues in a network deploying\n
+    \  Multicast service.  When multicast is used within a VPN service\n   offering,
+    the base Mtrace specification does not detect the failures.\n   This document
+    specifies a method of using multicast traceroute in a\n   network offering Multicast
+    in VPN service.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
-    docid:
-    - id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
+    formattedref: draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
+    docidentifier:
+    - content: draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kebler-kurapati-l3vpn-mvpn-mtrace-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
-    docid:
-    - id: draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
+    formattedref: draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
+    docidentifier:
+    - content: draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-kebler-kurapati-l3vpn-mvpn-mtrace-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kebler-kurapati-l3vpn-mvpn-mtrace-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

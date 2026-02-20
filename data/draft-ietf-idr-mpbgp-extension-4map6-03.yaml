@@ -1,225 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-mpbgp-extension-4map6-03
-title:
-- content: MP-BGP Extension and the Procedures for IPv4/IPv6 Mapping Advertisement
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-mpbgp-extension-4map6-03
-  type: src
+id: draftietfidrmpbgpextension4map603
 type: standard
-docid:
-- id: draft-ietf-idr-mpbgp-extension-4map6-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MP-BGP Extension and the Procedures for IPv4/IPv6 Mapping Advertisement
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-mpbgp-extension-4map6-03
+docidentifier:
+- content: draft-ietf-idr-mpbgp-extension-4map6
+  type: Internet-Draft
+- content: draft-ietf-idr-mpbgp-extension-4map6-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-mpbgp-extension-4map6
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-mpbgp-extension-4map6
 date:
 - type: published
-  value: '2024-11-02'
+  at: '2024-11-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Chongfeng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chongfeng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Chongfeng Xie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Guozhen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Guozhen
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Guozhen Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xing
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Xing Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CERNET Center/Tsinghua University
-  role:
+        - language: en
+          content: CERNET Center/Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Guoliang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Guoliang
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Han
-        language:
-        - en
       completename:
+        language: en
         content: Guoliang Han
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Indirection Network Inc.
-  role:
+        - language: en
+          content: Indirection Network Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhongfeng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhongfeng
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Guo
-        language:
-        - en
       completename:
+        language: en
         content: Zhongfeng Guo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alibaba Cloud
-  role:
-  - type: author
+        - language: en
+          content: Alibaba Cloud
 version:
 - draft: '03'
-revdate: '2024-11-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines MP-BGP extension and the procedures for IPv4
-    service delivery in multi-domain IPv6-only underlay networks. It defines a new
-    TLV in the BGP Tunnel Encapsulation attribute to be used in conjunction with the
-    specific AFI/SAFI for IPv4 and IPv6. The behaviors of each type of network (IPv4
-    and IPv6) are also illustrated. In addition, this document provides the deployment
-    and operation considerations when the extension is deployed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines MP-BGP extension and the procedures for IPv4\n
+    \  service delivery in multi-domain IPv6-only underlay networks.  It\n   defines
+    a new TLV in the BGP Tunnel Encapsulation attribute to be\n   used in conjunction
+    with the specific AFI/SAFI for IPv4 and IPv6.\n   The behaviors of each type of
+    network (IPv4 and IPv6) are also\n   illustrated.  In addition, this document
+    provides the deployment and\n   operation considerations when the extension is
+    deployed.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-mpbgp-extension-4map6-02
-    docid:
-    - id: draft-ietf-idr-mpbgp-extension-4map6-02
+    formattedref: draft-ietf-idr-mpbgp-extension-4map6-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-mpbgp-extension-4map6-02
+    docidentifier:
+    - content: draft-ietf-idr-mpbgp-extension-4map6-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-mpbgp-extension-4map6-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-mpbgp-extension-4map6-04
-    docid:
-    - id: draft-ietf-idr-mpbgp-extension-4map6-04
+    formattedref: draft-ietf-idr-mpbgp-extension-4map6-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-mpbgp-extension-4map6-04
+    docidentifier:
+    - content: draft-ietf-idr-mpbgp-extension-4map6-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-mpbgp-extension-4map6-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-mpbgp-extension-4map6-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

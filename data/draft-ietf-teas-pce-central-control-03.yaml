@@ -1,209 +1,185 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-teas-pce-central-control-03
-title:
-- content: An Architecture for Use of PCE and PCEP in a Network with Central Control
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pce-central-control-03
-  type: src
+id: draftietfteaspcecentralcontrol03
 type: standard
-docid:
-- id: draft-ietf-teas-pce-central-control-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An Architecture for Use of PCE and PCEP in a Network with Central Control
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pce-central-control-03
+docidentifier:
+- content: draft-ietf-teas-pce-central-control
+  type: Internet-Draft
+- content: draft-ietf-teas-pce-central-control-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-teas-pce-central-control
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-teas-pce-central-control
 date:
 - type: published
-  value: '2017-06-15'
+  at: '2017-06-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Adrian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adrian
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Farrel
-        language:
-        - en
       completename:
+        language: en
         content: Adrian Farrel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Quintin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Quintin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Quintin Zhao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chao
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Zhou
-        language:
-        - en
       completename:
+        language: en
         content: Chao Zhou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '03'
-revdate: '2017-06-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>The Path Computation Element (PCE) has become established as a core
-    component of Software Defined Networking (SDN) systems. It can compute optimal
-    paths for traffic across a network for any definition of "optimal" and can also
-    monitor changes in resource availability and traffic demands to update the paths.
-    Conventionally, the PCE has been used to derive paths for MPLS Label Switched
-    Paths (LSPs). These paths are supplied using the Path Computation Element Communication
-    Protocol (PCEP) to the head end of the LSP for signaling in the MPLS network.
-    SDN has a far broader applicability than just signaled MPLS traffic engineered
-    networks, and the PCE may be used to determine paths in a wide range of use cases
-    including static LSPs, segment routing, service function chaining (SFC), and indeed
-    any form of routed or switched network. It is, therefore, reasonable to consider
-    PCEP as a general southbound control protocol for use in these environments to
-    allow the PCE to be fully enabled as a central controller. This document briefly
-    introduces the architecture for PCE as a central controller, examines the motivations
-    and applicability for PCEP as a southbound interface, and introduces the implications
-    for the protocol. A PCE-based central controller can simplify the processing of
-    distributed control plane by blending it with elements of SDN and without necessarily
-    completely replacing it. This document does not describe use cases in detail and
-    does not define protocol extensions: that work is left for other documents.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Path Computation Element (PCE) has become established as a core\n
+    \  component of Software Defined Networking (SDN) systems.  It can\n   compute
+    optimal paths for traffic across a network for any definition\n   of \"optimal\"
+    and can also monitor changes in resource availability\n   and traffic demands
+    to update the paths.\n\n   Conventionally, the PCE has been used to derive paths
+    for MPLS Label\n   Switched Paths (LSPs).  These paths are supplied using the
+    Path\n   Computation Element Communication Protocol (PCEP) to the head end of\n
+    \  the LSP for signaling in the MPLS network.\n\n   SDN has a far broader applicability
+    than just signaled MPLS traffic\n   engineered networks, and the PCE may be used
+    to determine paths in a\n   wide range of use cases including static LSPs, segment
+    routing,\n   service function chaining (SFC), and indeed any form of routed or\n
+    \  switched network.  It is, therefore, reasonable to consider PCEP as a\n   general
+    southbound control protocol for use in these environments to\n   allow the PCE
+    to be fully enabled as a central controller.\n\n   This document briefly introduces
+    the architecture for PCE as a\n   central controller, examines the motivations
+    and applicability for\n   PCEP as a southbound interface, and introduces the implications
+    for\n   the protocol.  A PCE-based central controller can simplify the\n   processing
+    of distributed control plane by blending it with elements\n   of SDN and without
+    necessarily completely replacing it.\n\n   This document does not describe use
+    cases in detail and does not\n   define protocol extensions: that work is left
+    for other documents.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-teas-pce-central-control-02
-    docid:
-    - id: draft-ietf-teas-pce-central-control-02
+    formattedref: draft-ietf-teas-pce-central-control-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pce-central-control-02
+    docidentifier:
+    - content: draft-ietf-teas-pce-central-control-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-pce-central-control-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-teas-pce-central-control-04
-    docid:
-    - id: draft-ietf-teas-pce-central-control-04
+    formattedref: draft-ietf-teas-pce-central-control-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-pce-central-control-04
+    docidentifier:
+    - content: draft-ietf-teas-pce-central-control-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-teas-pce-central-control-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-teas-pce-central-control-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

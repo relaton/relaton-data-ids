@@ -1,166 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-minto-rsvp-lsp-egress-fast-protection-03
-title:
-- content: RSVP-TE LSP egress fast-protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-minto-rsvp-lsp-egress-fast-protection-03
-  type: src
+id: draftmintorsvplspegressfastprotection03
 type: standard
-docid:
-- id: draft-minto-rsvp-lsp-egress-fast-protection-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RSVP-TE LSP egress fast-protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-minto-rsvp-lsp-egress-fast-protection-03
+docidentifier:
+- content: draft-minto-rsvp-lsp-egress-fast-protection
+  type: Internet-Draft
+- content: draft-minto-rsvp-lsp-egress-fast-protection-03
   type: Internet-Draft
   primary: true
-- id: I-D.minto-rsvp-lsp-egress-fast-protection
-  type: IETF
-  scope: anchor
 docnumber: I-D.minto-rsvp-lsp-egress-fast-protection
 date:
 - type: published
-  value: '2013-11-03'
+  at: '2013-11-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jeyananth
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: J. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeyananth
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: J. M.
       surname:
+        language: en
         content: Jeganathan
-        language:
-        - en
       completename:
+        language: en
         content: Jeyananth Minto Jeganathan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Gredler
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Gredler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yimin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yimin
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Shen
-        language:
-        - en
       completename:
+        language: en
         content: Yimin Shen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '03'
-revdate: '2013-11-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC4090 defines a fast reroute mechanism for locally repairing an RSVP-TE
-    LSP in the order of 10s of milliseconds, in the event of a downstream link or
-    node failure. However, this mechanism does not provide node protection for LSP
-    egress nodes, even when an alternate egress node (a backup egress) is available
-    that could carry the traffic to its ultimate destination. This document addresses
-    this scenario and describes how to provide egress protection by establishing a
-    bypass LSP from the penultimate-hop node of a LSP to the backup egress node. The
-    methods described in this document enable local repair in the order of 10s of
-    milliseconds, in the event of the egress node failure. These methods are only
-    applicable if traffic carried by the LSP can be rerouted to its ultimate destination
-    by the backup egress node.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC4090 defines a fast reroute mechanism for locally repairing an\n
+    \  RSVP-TE LSP in the order of 10s of milliseconds, in the event of a\n   downstream
+    link or node failure.  However, this mechanism does not\n   provide node protection
+    for LSP egress nodes, even when an alternate\n   egress node (a backup egress)
+    is available that could carry the\n   traffic to its ultimate destination.  This
+    document addresses this\n   scenario and describes how to provide egress protection
+    by\n   establishing a bypass LSP from the penultimate-hop node of a LSP to\n   the
+    backup egress node.  The methods described in this document\n   enable local repair
+    in the order of 10s of milliseconds, in the event\n   of the egress node failure.
+    \ These methods are only applicable if\n   traffic carried by the LSP can be rerouted
+    to its ultimate\n   destination by the backup egress node.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-minto-rsvp-lsp-egress-fast-protection-02
-    docid:
-    - id: draft-minto-rsvp-lsp-egress-fast-protection-02
+    formattedref: draft-minto-rsvp-lsp-egress-fast-protection-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-minto-rsvp-lsp-egress-fast-protection-02
+    docidentifier:
+    - content: draft-minto-rsvp-lsp-egress-fast-protection-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-minto-rsvp-lsp-egress-fast-protection-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-minto-rsvp-lsp-egress-fast-protection-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

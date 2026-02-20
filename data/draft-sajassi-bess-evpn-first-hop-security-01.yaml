@@ -1,199 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-sajassi-bess-evpn-first-hop-security-01
-title:
-- content: EVPN First Hop Security
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-first-hop-security-01
-  type: src
+id: draftsajassibessevpnfirsthopsecurity01
 type: standard
-docid:
-- id: draft-sajassi-bess-evpn-first-hop-security-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN First Hop Security
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-first-hop-security-01
+docidentifier:
+- content: draft-sajassi-bess-evpn-first-hop-security
+  type: Internet-Draft
+- content: draft-sajassi-bess-evpn-first-hop-security-01
   type: Internet-Draft
   primary: true
-- id: I-D.sajassi-bess-evpn-first-hop-security
-  type: IETF
-  scope: anchor
 docnumber: I-D.sajassi-bess-evpn-first-hop-security
 date:
 - type: published
-  value: '2023-07-26'
+  at: '2023-07-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lukas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lukas
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Krattiger
-        language:
-        - en
       completename:
+        language: en
         content: Lukas Krattiger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: krishnaswamy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: krishnaswamy
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: ananthamurthy
-        language:
-        - en
       completename:
+        language: en
         content: krishnaswamy ananthamurthy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samir
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samir
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Thoria
-        language:
-        - en
       completename:
+        language: en
         content: Samir Thoria
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '01'
-revdate: '2023-07-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>DHCP Snoop database stores valid IPv4-to-MAC and IPv6-to-MAC bindings
-    by snooping on Dynamic Host Configuration Protocol (DHCP) messages. These bindings
-    are used by security functions like Dynamic ARP Inspection (DAI), Neighbor Discovery
-    Inspection (NDI), IPv4 Source Guard, and IPv6 Source Guard to safeguard against
-    traffic received with a spoofed address. These functions are collectively referred
-    to as First Hop Security (FHS). This document proposes BGP extensions and new
-    procedures to Ethernet VPN (EVPN) [RFC7432] for distribution and synchronization
-    of DHCP snoop database to support FHS. Such synchronization is needed to support
-    EVPN host mobility and multi- homing.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DHCP Snoop database stores valid IPv4-to-MAC and IPv6-to-MAC bindings\n
+    \  by snooping on Dynamic Host Configuration Protocol (DHCP) messages.\n   These
+    bindings are used by security functions like Dynamic ARP\n   Inspection (DAI),
+    Neighbor Discovery Inspection (NDI), IPv4 Source\n   Guard, and IPv6 Source Guard
+    to safeguard against traffic received\n   with a spoofed address.  These functions
+    are collectively referred to\n   as First Hop Security (FHS).  This document proposes
+    BGP extensions\n   and new procedures to Ethernet VPN (EVPN) [RFC7432] for distribution\n
+    \  and synchronization of DHCP snoop database to support FHS.  Such\n   synchronization
+    is needed to support EVPN host mobility and multi-\n   homing.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sajassi-bess-evpn-first-hop-security-00
-    docid:
-    - id: draft-sajassi-bess-evpn-first-hop-security-00
+    formattedref: draft-sajassi-bess-evpn-first-hop-security-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-first-hop-security-00
+    docidentifier:
+    - content: draft-sajassi-bess-evpn-first-hop-security-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sajassi-bess-evpn-first-hop-security-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-sajassi-bess-evpn-first-hop-security-02
-    docid:
-    - id: draft-sajassi-bess-evpn-first-hop-security-02
+    formattedref: draft-sajassi-bess-evpn-first-hop-security-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-first-hop-security-02
+    docidentifier:
+    - content: draft-sajassi-bess-evpn-first-hop-security-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sajassi-bess-evpn-first-hop-security-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sajassi-bess-evpn-first-hop-security-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

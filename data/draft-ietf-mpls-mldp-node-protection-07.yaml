@@ -1,208 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-mldp-node-protection-07
-title:
-- content: mLDP Node Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-node-protection-07
-  type: src
+id: draftietfmplsmldpnodeprotection07
 type: standard
-docid:
-- id: draft-ietf-mpls-mldp-node-protection-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: mLDP Node Protection
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-node-protection-07
+docidentifier:
+- content: draft-ietf-mpls-mldp-node-protection
+  type: Internet-Draft
+- content: draft-ietf-mpls-mldp-node-protection-07
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-mldp-node-protection
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-mldp-node-protection
 date:
 - type: published
-  value: '2015-09-16'
+  at: '2015-09-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Syed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Syed
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Raza
-        language:
-        - en
       completename:
+        language: en
         content: Syed Raza
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alia
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Atlas
-        language:
-        - en
       completename:
+        language: en
         content: Alia Atlas
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Quintin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Quintin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Zhao
-        language:
-        - en
       completename:
+        language: en
         content: Quintin Zhao
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '07'
-revdate: '2015-09-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes procedures to support node protection for Point-to-Multipoint
-    and Multipoint-to-Multipoint Label Switched Paths (MP LSPs) that have been built
-    by the "Multipoint Label Distribution Protocol"(mLDP) [RFC6388]. In order to protect
-    a node N, the Point of Local Repair (PLR) Label Switched Router (LSR) of N must
-    learn the Merge Point (MPT) LSR(s) of node N such that traffic can be redirected
-    to them in case node N fails. Redirecting the traffic around the failed node N
-    depends on existing Point-to-Point (P2P) Label Switched Paths (LSPs). The pre-established
-    LSPs originate from the PLR LSR and terminate on the MPT LSRs while bypassing
-    LSR N.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes procedures to support node protection for\n
+    \  Point-to-Multipoint and Multipoint-to-Multipoint Label Switched Paths\n   (MP
+    LSPs) that have been built by the \"Multipoint Label Distribution\n   Protocol\"(mLDP)
+    [RFC6388].  In order to protect a node N, the Point\n   of Local Repair (PLR)
+    Label Switched Router (LSR) of N must learn the\n   Merge Point (MPT) LSR(s) of
+    node N such that traffic can be\n   redirected to them in case node N fails.  Redirecting
+    the traffic\n   around the failed node N depends on existing Point-to-Point (P2P)\n
+    \  Label Switched Paths (LSPs).  The pre-established LSPs originate from\n   the
+    PLR LSR and terminate on the MPT LSRs while bypassing LSR N.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mpls-mldp-node-protection-06
-    docid:
-    - id: draft-ietf-mpls-mldp-node-protection-06
+    formattedref: draft-ietf-mpls-mldp-node-protection-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-node-protection-06
+    docidentifier:
+    - content: draft-ietf-mpls-mldp-node-protection-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-mldp-node-protection-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-mpls-mldp-node-protection-08
-    docid:
-    - id: draft-ietf-mpls-mldp-node-protection-08
+    formattedref: draft-ietf-mpls-mldp-node-protection-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mldp-node-protection-08
+    docidentifier:
+    - content: draft-ietf-mpls-mldp-node-protection-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-mldp-node-protection-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-mldp-node-protection-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

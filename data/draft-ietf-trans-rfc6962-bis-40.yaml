@@ -1,231 +1,201 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-trans-rfc6962-bis-40
-title:
-- content: Certificate Transparency Version 2.0
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-trans-rfc6962-bis-40
-  type: src
+id: draftietftransrfc6962bis40
 type: standard
-docid:
-- id: draft-ietf-trans-rfc6962-bis-40
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Certificate Transparency Version 2.0
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-trans-rfc6962-bis-40
+docidentifier:
+- content: draft-ietf-trans-rfc6962-bis
+  type: Internet-Draft
+- content: draft-ietf-trans-rfc6962-bis-40
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-trans-rfc6962-bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-trans-rfc6962-bis
 date:
 - type: published
-  value: '2021-07-28'
+  at: '2021-07-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ben
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ben
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Laurie
-        language:
-        - en
       completename:
+        language: en
         content: Ben Laurie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google UK Ltd.
-  role:
+        - language: en
+          content: Google UK Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Adam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adam
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Langley
-        language:
-        - en
       completename:
+        language: en
         content: Adam Langley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Inc.
-  role:
+        - language: en
+          content: Google Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Emilia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Emilia
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Kasper
-        language:
-        - en
       completename:
+        language: en
         content: Emilia Kasper
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Switzerland GmbH
-  role:
+        - language: en
+          content: Google Switzerland GmbH
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eran
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Messeri
-        language:
-        - en
       completename:
+        language: en
         content: Eran Messeri
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google UK Ltd.
-  role:
+        - language: en
+          content: Google UK Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rob
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Stradling
-        language:
-        - en
       completename:
+        language: en
         content: Rob Stradling
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sectigo Ltd.
-  role:
-  - type: author
+        - language: en
+          content: Sectigo Ltd.
 version:
 - draft: '40'
-revdate: '2021-07-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes version 2.0 of the Certificate Transparency
-    (CT) protocol for publicly logging the existence of Transport Layer Security (TLS)
-    server certificates as they are issued or observed, in a manner that allows anyone
-    to audit certification authority (CA) activity and notice the issuance of suspect
-    certificates as well as to audit the certificate logs themselves. The intent is
-    that eventually clients would refuse to honor certificates that do not appear
-    in a log, effectively forcing CAs to add all issued certificates to the logs.
-    This document obsoletes RFC 6962. It also specifies a new TLS extension that is
-    used to send various CT log artifacts. Logs are network services that implement
-    the protocol operations for submissions and queries that are defined in this document.
-    [RFC Editor: please update 'RFCXXXX' to refer to this document, once its RFC number
-    is known, through the document.]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes version 2.0 of the Certificate Transparency\n
+    \  (CT) protocol for publicly logging the existence of Transport Layer\n   Security
+    (TLS) server certificates as they are issued or observed, in\n   a manner that
+    allows anyone to audit certification authority (CA)\n   activity and notice the
+    issuance of suspect certificates as well as\n   to audit the certificate logs
+    themselves.  The intent is that\n   eventually clients would refuse to honor certificates
+    that do not\n   appear in a log, effectively forcing CAs to add all issued\n   certificates
+    to the logs.\n\n   This document obsoletes RFC 6962.  It also specifies a new
+    TLS\n   extension that is used to send various CT log artifacts.\n\n   Logs are
+    network services that implement the protocol operations for\n   submissions and
+    queries that are defined in this document.\n\n   [RFC Editor: please update 'RFCXXXX'
+    to refer to this document, once\n   its RFC number is known, through the document.]\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-trans-rfc6962-bis-39
-    docid:
-    - id: draft-ietf-trans-rfc6962-bis-39
+    formattedref: draft-ietf-trans-rfc6962-bis-39
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-trans-rfc6962-bis-39
+    docidentifier:
+    - content: draft-ietf-trans-rfc6962-bis-39
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-trans-rfc6962-bis-39
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-trans-rfc6962-bis-41
-    docid:
-    - id: draft-ietf-trans-rfc6962-bis-41
+    formattedref: draft-ietf-trans-rfc6962-bis-41
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-trans-rfc6962-bis-41
+    docidentifier:
+    - content: draft-ietf-trans-rfc6962-bis-41
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-trans-rfc6962-bis-41
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-trans-rfc6962-bis-40
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

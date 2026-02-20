@@ -1,236 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-nvo3-hpvr2nve-cp-req-14
-title:
-- content: Split Network Virtualization Edge (Split-NVE) Control Plane Requirements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-hpvr2nve-cp-req-14
-  type: src
+id: draftietfnvo3hpvr2nvecpreq14
 type: standard
-docid:
-- id: draft-ietf-nvo3-hpvr2nve-cp-req-14
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Split Network Virtualization Edge (Split-NVE) Control Plane Requirements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-hpvr2nve-cp-req-14
+docidentifier:
+- content: draft-ietf-nvo3-hpvr2nve-cp-req
+  type: Internet-Draft
+- content: draft-ietf-nvo3-hpvr2nve-cp-req-14
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-nvo3-hpvr2nve-cp-req
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-nvo3-hpvr2nve-cp-req
 date:
 - type: published
-  value: '2018-02-07'
+  at: '2018-02-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yizhou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yizhou
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Yizhou Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: D. E.
       surname:
+        language: en
         content: Eastlake
-        language:
-        - en
       completename:
+        language: en
         content: Donald E. Eastlake 3rd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Larry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Larry
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Kreeger
-        language:
-        - en
       completename:
+        language: en
         content: Larry Kreeger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus, Inc
-  role:
+        - language: en
+          content: Arrcus, Inc
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Narten
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Thomas Narten
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM
-  role:
+        - language: en
+          content: IBM
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: D. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: D. L.
       surname:
+        language: en
         content: Black
-        language:
-        - en
       completename:
+        language: en
         content: David L. Black
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Dell EMC
-  role:
-  - type: author
+        - language: en
+          content: Dell EMC
 version:
 - draft: '14'
-revdate: '2018-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In a Split Network Virtualization Edge (Split-NVE) architecture, the
-    functions of the NVE (Network Virtualization Edge) are split across a server and
-    an external network equipment which is called an external NVE. The server-resident
-    control plane functionality resides in control software, which may be part of
-    hypervisor or container management software; for simplicity, this document refers
-    to the hypervisor as the location of this software. Control plane protocol(s)
-    between a hypervisor and its associated external NVE(s) are used by the hypervisor
-    to distribute its virtual machine networking state to the external NVE(s) for
-    further handling. This document illustrates the functionality required by this
-    type of control plane signaling protocol and outlines the high level requirements.
-    Virtual machine states as well as state transitioning are summarized to help clarify
-    the protocol requirements.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In a Split Network Virtualization Edge (Split-NVE) architecture, the\n
+    \  functions of the NVE (Network Virtualization Edge) are split across a\n   server
+    and an external network equipment which is called an external\n   NVE.  The server-resident
+    control plane functionality resides in\n   control software, which may be part
+    of hypervisor or container\n   management software; for simplicity, this document
+    refers to the\n   hypervisor as the location of this software.\n\n   Control plane
+    protocol(s) between a hypervisor and its associated\n   external NVE(s) are used
+    by the hypervisor to distribute its virtual\n   machine networking state to the
+    external NVE(s) for further handling.\n   This document illustrates the functionality
+    required by this type of\n   control plane signaling protocol and outlines the
+    high level\n   requirements. Virtual machine states as well as state transitioning\n
+    \  are summarized to help clarify the protocol requirements.\n\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-nvo3-hpvr2nve-cp-req-13
-    docid:
-    - id: draft-ietf-nvo3-hpvr2nve-cp-req-13
+    formattedref: draft-ietf-nvo3-hpvr2nve-cp-req-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-hpvr2nve-cp-req-13
+    docidentifier:
+    - content: draft-ietf-nvo3-hpvr2nve-cp-req-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nvo3-hpvr2nve-cp-req-13
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-nvo3-hpvr2nve-cp-req-15
-    docid:
-    - id: draft-ietf-nvo3-hpvr2nve-cp-req-15
+    formattedref: draft-ietf-nvo3-hpvr2nve-cp-req-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nvo3-hpvr2nve-cp-req-15
+    docidentifier:
+    - content: draft-ietf-nvo3-hpvr2nve-cp-req-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-nvo3-hpvr2nve-cp-req-15
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-nvo3-hpvr2nve-cp-req-14
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

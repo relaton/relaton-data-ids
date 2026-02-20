@@ -1,208 +1,178 @@
 ---
-schema-version: v1.2.9
-id: draft-fu-cats-flow-lb-02
-title:
-- content: Flow-Level Load Balancing of Computing-Aware Traffic Steering (CATS)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-02
-  type: src
+id: draftfucatsflowlb02
 type: standard
-docid:
-- id: draft-fu-cats-flow-lb-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Flow-Level Load Balancing of Computing-Aware Traffic Steering (CATS)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-02
+docidentifier:
+- content: draft-fu-cats-flow-lb
+  type: Internet-Draft
+- content: draft-fu-cats-flow-lb-02
   type: Internet-Draft
   primary: true
-- id: I-D.fu-cats-flow-lb
-  type: IETF
-  scope: anchor
 docnumber: I-D.fu-cats-flow-lb
 date:
 - type: published
-  value: '2025-08-19'
+  at: '2025-08-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
+      formatted_initials:
+        language: en
       surname:
+        language: en
         content: Huakai.Fu
-        language:
-        - en
       completename:
+        language: en
         content: Huakai.Fu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Huang
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Huang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liwei
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Liwei Ma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Duan
-        language:
-        - en
       completename:
+        language: en
         content: Wei Duan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Tan
-        language:
-        - en
       completename:
+        language: en
         content: Bin Tan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
-  - type: author
+        - language: en
+          content: ZTE Corporation
 version:
 - draft: '02'
-revdate: '2025-08-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a flow-level load balancing solution for CATS,
-    and is designed to effectively manage CS-ID traffic by addressing issues like
-    frequent control plane operations and uneven use of computing resources. The approach
-    entails concurrently identifying multiple next-hop choices, factoring in both
-    network pathways and service instances. Traffic is then distributed among these
-    service instances using flow-based load balancing, which relies on the five- tuple
-    characteristics of packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a flow-level load balancing solution for CATS,\n
+    \  and is designed to effectively manage CS-ID traffic by addressing\n   issues
+    like frequent control plane operations and uneven use of\n   computing resources.
+    \ The approach entails concurrently identifying\n   multiple next-hop choices,
+    factoring in both network pathways and\n   service instances.  Traffic is then
+    distributed among these service\n   instances using flow-based load balancing,
+    which relies on the five-\n   tuple characteristics of packets.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-fu-cats-flow-lb-01
-    docid:
-    - id: draft-fu-cats-flow-lb-01
+    formattedref: draft-fu-cats-flow-lb-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-01
+    docidentifier:
+    - content: draft-fu-cats-flow-lb-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-fu-cats-flow-lb-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-fu-cats-flow-lb-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

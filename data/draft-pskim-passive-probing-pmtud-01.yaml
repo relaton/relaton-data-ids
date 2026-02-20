@@ -1,109 +1,94 @@
 ---
-schema-version: v1.2.9
-id: draft-pskim-passive-probing-pmtud-01
-title:
-- content: Passive Probing for Path MTU Discovery with QUIC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-pskim-passive-probing-pmtud-01
-  type: src
+id: draftpskimpassiveprobingpmtud01
 type: standard
-docid:
-- id: draft-pskim-passive-probing-pmtud-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Passive Probing for Path MTU Discovery with QUIC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-pskim-passive-probing-pmtud-01
+docidentifier:
+- content: draft-pskim-passive-probing-pmtud
+  type: Internet-Draft
+- content: draft-pskim-passive-probing-pmtud-01
   type: Internet-Draft
   primary: true
-- id: I-D.pskim-passive-probing-pmtud
-  type: IETF
-  scope: anchor
 docnumber: I-D.pskim-passive-probing-pmtud
 date:
 - type: published
-  value: '2023-07-09'
+  at: '2023-07-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Pyung
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: P. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pyung
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: P. S.
       surname:
+        language: en
         content: Kim
-        language:
-        - en
       completename:
+        language: en
         content: Pyung Soo Kim
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: TU Korea
-  role:
-  - type: author
+        - language: en
+          content: TU Korea
 version:
 - draft: '01'
-revdate: '2023-07-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft consider a Path MTU Discovery(PMTUD) for QUIC. First, why
-    it is important to determine the best PMTU for QUIC is explained, and the active
-    probing approach for discovering the best PMTU is briefly introduced. Then, as
-    an alternative to discover the best PMTU, the passive probing approach is adopted.
-    The process of discovering the best PMTU is not carried out separately, but is
-    carried out simultaneously in the actual application data communication. A probe
-    packet is defined newly using 1-RTT packet which includes actual application data
-    as well as a short packet header and a PING_EXT frame. The PING_EXT frame is also
-    defined newly. Until the best PMTU is discovered, the size of the probe packet
-    is changed according to the size of the PMTU candidate. A simple discovery algorithm
-    using only the PMTU candidate sequence with linear upward is described in this
-    draft.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft consider a Path MTU Discovery(PMTUD) for QUIC. First, why\n
+    \  it is important to determine the best PMTU for QUIC is explained, and\n   the
+    active probing approach for discovering the best PMTU is briefly\n   introduced.
+    Then, as an alternative to discover the best PMTU, the\n   passive probing approach
+    is adopted. The process of discovering the\n   best PMTU is not carried out separately,
+    but is carried out\n   simultaneously in the actual application data communication.
+    A probe\n   packet is defined newly using 1-RTT packet which includes actual\n
+    \  application data as well as a short packet header and a PING_EXT\n   frame.
+    The PING_EXT frame is also defined newly. Until the best PMTU\n   is discovered,
+    the size of the probe packet is changed according to\n   the size of the PMTU
+    candidate. A simple discovery algorithm using\n   only the PMTU candidate sequence
+    with linear upward is described in\n   this draft.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-pskim-passive-probing-pmtud-00
-    docid:
-    - id: draft-pskim-passive-probing-pmtud-00
+    formattedref: draft-pskim-passive-probing-pmtud-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pskim-passive-probing-pmtud-00
+    docidentifier:
+    - content: draft-pskim-passive-probing-pmtud-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-pskim-passive-probing-pmtud-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-pskim-passive-probing-pmtud-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

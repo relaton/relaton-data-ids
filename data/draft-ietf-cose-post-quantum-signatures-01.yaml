@@ -1,217 +1,188 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-cose-post-quantum-signatures-01
-title:
-- content: JOSE and COSE Encoding for Post-Quantum Signatures
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-post-quantum-signatures-01
-  type: src
+id: draftietfcosepostquantumsignatures01
 type: standard
-docid:
-- id: draft-ietf-cose-post-quantum-signatures-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: JOSE and COSE Encoding for Post-Quantum Signatures
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-post-quantum-signatures-01
+docidentifier:
+- content: draft-ietf-cose-post-quantum-signatures
+  type: Internet-Draft
+- content: draft-ietf-cose-post-quantum-signatures-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-cose-post-quantum-signatures
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-cose-post-quantum-signatures
 date:
 - type: published
-  value: '2022-10-20'
+  at: '2022-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Prorock
-        language:
-        - en
       completename:
+        language: en
         content: Michael Prorock
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: mesur.io
-  role:
+        - language: en
+          content: mesur.io
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Orie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Orie
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Steele
-        language:
-        - en
       completename:
+        language: en
         content: Orie Steele
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Transmute
-  role:
+        - language: en
+          content: Transmute
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rafael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rafael
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Misoczki
-        language:
-        - en
       completename:
+        language: en
         content: Rafael Misoczki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Osborne
-        language:
-        - en
       completename:
+        language: en
         content: Michael Osborne
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM
-  role:
+        - language: en
+          content: IBM
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christine
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christine
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Cloostermans
-        language:
-        - en
       completename:
+        language: en
         content: Christine Cloostermans
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NXP
-  role:
-  - type: author
+        - language: en
+          content: NXP
 version:
 - draft: '01'
-revdate: '2022-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes JSON and CBOR serializations for several Post-Quantum
-    Cryptography (PQC) based suites including CRYSTALS Dilithium, Falcon, and SPHINCS+.
-    This document does not define any new cryptography, only seralizations of existing
-    cryptographic systems. This document registers key types for JOSE and COSE, specifically
-    LWE, NTRU, and HASH. Key types in this document are specified by the cryptographic
-    algorithm family in use by a particular algorithm as discussed in RFC7517. This
-    document registers signature algorithms types for JOSE and COSE, specifically
-    CRYDI3 and others as required for use of various post- quantum signature schemes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes JSON and CBOR serializations for several\n
+    \  Post-Quantum Cryptography (PQC) based suites including CRYSTALS\n   Dilithium,
+    Falcon, and SPHINCS+.\n\n   This document does not define any new cryptography,
+    only\n   seralizations of existing cryptographic systems.\n\n   This document
+    registers key types for JOSE and COSE, specifically\n   LWE, NTRU, and HASH.\n\n
+    \  Key types in this document are specified by the cryptographic\n   algorithm
+    family in use by a particular algorithm as discussed in\n   RFC7517.\n\n   This
+    document registers signature algorithms types for JOSE and COSE,\n   specifically
+    CRYDI3 and others as required for use of various post-\n   quantum signature schemes.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-cose-post-quantum-signatures-00
-    docid:
-    - id: draft-ietf-cose-post-quantum-signatures-00
+    formattedref: draft-ietf-cose-post-quantum-signatures-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-post-quantum-signatures-00
+    docidentifier:
+    - content: draft-ietf-cose-post-quantum-signatures-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-cose-post-quantum-signatures-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-cose-post-quantum-signatures-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

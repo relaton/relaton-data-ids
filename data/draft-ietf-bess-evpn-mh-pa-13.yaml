@@ -1,220 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-mh-pa-13
-title:
-- content: EVPN Port-Active Redundancy Mode
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-mh-pa-13
-  type: src
+id: draftietfbessevpnmhpa13
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-mh-pa-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN Port-Active Redundancy Mode
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-mh-pa-13
+docidentifier:
+- content: draft-ietf-bess-evpn-mh-pa
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-mh-pa-13
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-mh-pa
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-mh-pa
 date:
 - type: published
-  value: '2024-12-05'
+  at: '2024-12-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Patrice
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrice
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Brissette
-        language:
-        - en
       completename:
+        language: en
         content: Patrice Brissette
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luc
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: L. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luc
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: L. A.
       surname:
+        language: en
         content: Burdet
-        language:
-        - en
       completename:
+        language: en
         content: Luc André Burdet
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wen
-        language:
-        - en
       completename:
+        language: en
         content: Bin Wen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Comcast
-  role:
+        - language: en
+          content: Comcast
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eddie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eddie
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Leyton
-        language:
-        - en
       completename:
+        language: en
         content: Eddie Leyton
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Wireless
-  role:
+        - language: en
+          content: Verizon Wireless
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '13'
-revdate: '2024-12-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Multi-Chassis Link Aggregation Group (MC-LAG) technology enables
-    establishing a logical link-aggregation connection with a redundant group of independent
-    nodes. The objective of MC-LAG is to enhance both network availability and bandwidth
-    utilization through various modes of traffic load-balancing. RFC7432 defines EVPN-based
-    MC-LAG with Single-active and All-active multi-homing redundancy modes. This document
-    builds on the existing redundancy mechanisms supported by EVPN and introduces
-    a new active/standby redundancy mode, called 'Port-Active'.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Multi-Chassis Link Aggregation Group (MC-LAG) technology enables\n
+    \  establishing a logical link-aggregation connection with a redundant\n   group
+    of independent nodes.  The objective of MC-LAG is to enhance\n   both network
+    availability and bandwidth utilization through various\n   modes of traffic load-balancing.
+    \ RFC7432 defines EVPN-based MC-LAG\n   with Single-active and All-active multi-homing
+    redundancy modes.\n   This document builds on the existing redundancy mechanisms
+    supported\n   by EVPN and introduces a new active/standby redundancy mode, called\n
+    \  'Port-Active'.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-evpn-mh-pa-12
-    docid:
-    - id: draft-ietf-bess-evpn-mh-pa-12
+    formattedref: draft-ietf-bess-evpn-mh-pa-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-mh-pa-12
+    docidentifier:
+    - content: draft-ietf-bess-evpn-mh-pa-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-mh-pa-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-mh-pa-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

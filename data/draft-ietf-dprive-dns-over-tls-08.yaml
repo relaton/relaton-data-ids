@@ -1,237 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dprive-dns-over-tls-08
-title:
-- content: Specification for DNS over TLS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-dns-over-tls-08
-  type: src
+id: draftietfdprivednsovertls08
 type: standard
-docid:
-- id: draft-ietf-dprive-dns-over-tls-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Specification for DNS over TLS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-dns-over-tls-08
+docidentifier:
+- content: draft-ietf-dprive-dns-over-tls
+  type: Internet-Draft
+- content: draft-ietf-dprive-dns-over-tls-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dprive-dns-over-tls
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dprive-dns-over-tls
 date:
 - type: published
-  value: '2016-03-15'
+  at: '2016-03-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zi Hu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Liang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Liang
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Liang Zhu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Heidemann
-        language:
-        - en
       completename:
+        language: en
         content: John Heidemann
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Allison
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Allison
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mankin
-        language:
-        - en
       completename:
+        language: en
         content: Allison Mankin
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Duane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Duane
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Wessels
-        language:
-        - en
       completename:
+        language: en
         content: Duane Wessels
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: P. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: P. E.
       surname:
+        language: en
         content: Hoffman
-        language:
-        - en
       completename:
+        language: en
         content: Paul E. Hoffman
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '08'
-revdate: '2016-03-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the use of TLS to provide privacy for DNS.
-    Encryption provided by TLS eliminates opportunities for eavesdropping and on-path
-    tampering with DNS queries in the network, such as discussed in RFC 7626. In addition,
-    this document specifies two usage profiles for DNS-over-TLS and provides advice
-    on performance considerations to minimize overhead from using TCP and TLS with
-    DNS. This document focuses on securing stub-to-recursive traffic, as per the charter
-    of the DPRIVE working group. It does not prevent future applications of the protocol
-    to recursive-to-authoritative traffic. Note: this document was formerly named
-    draft-ietf-dprive-start-tls-for-dns. Its name has been changed to better describe
-    the mechanism now used. Please refer to working group archives under the former
-    name for history and previous discussion. [RFC Editor: please remove this paragraph
-    prior to publication]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the use of TLS to provide privacy for DNS.\n
+    \  Encryption provided by TLS eliminates opportunities for eavesdropping\n   and
+    on-path tampering with DNS queries in the network, such as\n   discussed in RFC
+    7626.  In addition, this document specifies two\n   usage profiles for DNS-over-TLS
+    and provides advice on performance\n   considerations to minimize overhead from
+    using TCP and TLS with DNS.\n\n   This document focuses on securing stub-to-recursive
+    traffic, as per\n   the charter of the DPRIVE working group.  It does not prevent
+    future\n   applications of the protocol to recursive-to-authoritative traffic.\n\n
+    \  Note: this document was formerly named\n   draft-ietf-dprive-start-tls-for-dns.
+    \ Its name has been changed to\n   better describe the mechanism now used.  Please
+    refer to working\n   group archives under the former name for history and previous\n
+    \  discussion.  [RFC Editor: please remove this paragraph prior to\n   publication]\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dprive-dns-over-tls-07
-    docid:
-    - id: draft-ietf-dprive-dns-over-tls-07
+    formattedref: draft-ietf-dprive-dns-over-tls-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-dns-over-tls-07
+    docidentifier:
+    - content: draft-ietf-dprive-dns-over-tls-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-dns-over-tls-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dprive-dns-over-tls-09
-    docid:
-    - id: draft-ietf-dprive-dns-over-tls-09
+    formattedref: draft-ietf-dprive-dns-over-tls-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-dns-over-tls-09
+    docidentifier:
+    - content: draft-ietf-dprive-dns-over-tls-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dprive-dns-over-tls-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dprive-dns-over-tls-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,187 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-avt-rtp-isac-03
-title:
-- content: RTP Payload Format for the iSAC Codec
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtp-isac-03
-  type: src
+id: draftietfavtrtpisac03
 type: standard
-docid:
-- id: draft-ietf-avt-rtp-isac-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RTP Payload Format for the iSAC Codec
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtp-isac-03
+docidentifier:
+- content: draft-ietf-avt-rtp-isac
+  type: Internet-Draft
+- content: draft-ietf-avt-rtp-isac-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-avt-rtp-isac
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-avt-rtp-isac
 date:
 - type: published
-  value: '2013-01-16'
+  at: '2013-01-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Jones
-        language:
-        - en
       completename:
+        language: en
         content: Paul Jones
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pascal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pascal
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Huart
-        language:
-        - en
       completename:
+        language: en
         content: Pascal Huart
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Turaj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: T. Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Turaj
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: T. Z.
       surname:
+        language: en
         content: Shabestary
-        language:
-        - en
       completename:
+        language: en
         content: Turaj Zakizadeh Shabestary
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Harald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: H. T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Harald
+      - language: en
+        script: Latn
+        initial: H
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: H. T.
       surname:
+        language: en
         content: Alvestrand
-        language:
-        - en
       completename:
+        language: en
         content: Harald T. Alvestrand
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2013-01-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>iSAC is a proprietary wideband speech and audio codec developed by
-    Global IP Solutions (now part of Google), suitable for use in Voice over IP applications.
-    This document describes the payload format for iSAC generated bit streams within
-    a Real-Time Protocol (RTP) packet. Also included here are the necessary details
-    for the use of iSAC with the Session Description Protocol (SDP).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   iSAC is a proprietary wideband speech and audio codec developed by\n
+    \  Global IP Solutions (now part of Google), suitable for use in Voice\n   over
+    IP applications.  This document describes the payload format for\n   iSAC generated
+    bit streams within a Real-Time Protocol (RTP) packet.\n   Also included here are
+    the necessary details for the use of iSAC with\n   the Session Description Protocol
+    (SDP).\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-avt-rtp-isac-02
-    docid:
-    - id: draft-ietf-avt-rtp-isac-02
+    formattedref: draft-ietf-avt-rtp-isac-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtp-isac-02
+    docidentifier:
+    - content: draft-ietf-avt-rtp-isac-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-avt-rtp-isac-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-avt-rtp-isac-04
-    docid:
-    - id: draft-ietf-avt-rtp-isac-04
+    formattedref: draft-ietf-avt-rtp-isac-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-avt-rtp-isac-04
+    docidentifier:
+    - content: draft-ietf-avt-rtp-isac-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-avt-rtp-isac-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-avt-rtp-isac-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

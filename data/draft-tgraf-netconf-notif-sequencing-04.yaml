@@ -1,170 +1,147 @@
 ---
-schema-version: v1.2.9
-id: draft-tgraf-netconf-notif-sequencing-04
-title:
-- content: Support of Hostname and Sequencing in YANG Notifications
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tgraf-netconf-notif-sequencing-04
-  type: src
+id: drafttgrafnetconfnotifsequencing04
 type: standard
-docid:
-- id: draft-tgraf-netconf-notif-sequencing-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Support of Hostname and Sequencing in YANG Notifications
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tgraf-netconf-notif-sequencing-04
+docidentifier:
+- content: draft-tgraf-netconf-notif-sequencing
+  type: Internet-Draft
+- content: draft-tgraf-netconf-notif-sequencing-04
   type: Internet-Draft
   primary: true
-- id: I-D.tgraf-netconf-notif-sequencing
-  type: IETF
-  scope: anchor
 docnumber: I-D.tgraf-netconf-notif-sequencing
 date:
 - type: published
-  value: '2024-04-28'
+  at: '2024-04-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Graf
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Graf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Swisscom
-  role:
+        - language: en
+          content: Swisscom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jean
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jean
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Quilbeuf
-        language:
-        - en
       completename:
+        language: en
         content: Jean Quilbeuf
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: A. H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alex
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: A. H.
       surname:
+        language: en
         content: Feng
-        language:
-        - en
       completename:
+        language: en
         content: Alex Huang Feng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INSA-Lyon
-  role:
-  - type: author
+        - language: en
+          content: INSA-Lyon
 version:
 - draft: '04'
-revdate: '2024-04-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies a new YANG module that augment the NETCONF
-    Event Notification header to support hostname and sequence numbers to identify
-    from which network node and at which time the message was published. This allows
-    the collector to recognize loss, delay and reordering between the publisher and
-    the downstream system storing the message.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies a new YANG module that augment the NETCONF\n
+    \  Event Notification header to support hostname and sequence numbers to\n   identify
+    from which network node and at which time the message was\n   published.  This
+    allows the collector to recognize loss, delay and\n   reordering between the publisher
+    and the downstream system storing\n   the message.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tgraf-netconf-notif-sequencing-03
-    docid:
-    - id: draft-tgraf-netconf-notif-sequencing-03
+    formattedref: draft-tgraf-netconf-notif-sequencing-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tgraf-netconf-notif-sequencing-03
+    docidentifier:
+    - content: draft-tgraf-netconf-notif-sequencing-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tgraf-netconf-notif-sequencing-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-tgraf-netconf-notif-sequencing-05
-    docid:
-    - id: draft-tgraf-netconf-notif-sequencing-05
+    formattedref: draft-tgraf-netconf-notif-sequencing-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tgraf-netconf-notif-sequencing-05
+    docidentifier:
+    - content: draft-tgraf-netconf-notif-sequencing-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tgraf-netconf-notif-sequencing-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tgraf-netconf-notif-sequencing-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

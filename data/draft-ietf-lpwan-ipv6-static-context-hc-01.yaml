@@ -1,164 +1,140 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lpwan-ipv6-static-context-hc-01
-title:
-- content: LPWAN Static Context Header Compression (SCHC) and fragmentation for IPv6
-    and UDP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-01
-  type: src
+id: draftietflpwanipv6staticcontexthc01
 type: standard
-docid:
-- id: draft-ietf-lpwan-ipv6-static-context-hc-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: LPWAN Static Context Header Compression (SCHC) and fragmentation for IPv6
+    and UDP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-01
+docidentifier:
+- content: draft-ietf-lpwan-ipv6-static-context-hc
+  type: Internet-Draft
+- content: draft-ietf-lpwan-ipv6-static-context-hc-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lpwan-ipv6-static-context-hc
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lpwan-ipv6-static-context-hc
 date:
 - type: published
-  value: '2017-03-01'
+  at: '2017-03-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ana
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Minaburo
-        language:
-        - en
       completename:
+        language: en
         content: Ana Minaburo
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Laurent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Laurent
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Toutain
-        language:
-        - en
       completename:
+        language: en
         content: Laurent Toutain
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carles
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carles
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Gomez
-        language:
-        - en
       completename:
+        language: en
         content: Carles Gomez
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2017-03-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a header compression scheme and fragmentation
-    functionality for IPv6/UDP protocols. These techniques are especially tailored
-    for LPWAN (Low Power Wide Area Network) networks and could be extended to other
-    protocol stacks. The Static Context Header Compression (SCHC) offers a great level
-    of flexibility when processing the header fields. Static context means that information
-    stored in the context which, describes field values, does not change during the
-    packet transmission, avoiding complex resynchronization mechanisms, incompatible
-    with LPWAN characteristics. In most of the cases, IPv6/UDP headers are reduced
-    to a small identifier. This document describes the generic compression/decompression
-    process and applies it to IPv6/UDP headers. Similar mechanisms for other protocols
-    such as CoAP will be described in a separate document. Moreover, this document
-    specifies fragmentation and reassembly mechanims for SCHC compressed packets exceeding
-    the L2 pdu size and for the case where the SCHC compression is not possible then
-    the IPv6/UDP packet is sent.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a header compression scheme and fragmentation\n
+    \  functionality for IPv6/UDP protocols.  These techniques are\n   especially
+    tailored for LPWAN (Low Power Wide Area Network) networks\n   and could be extended
+    to other protocol stacks.\n\n   The Static Context Header Compression (SCHC) offers
+    a great level of\n   flexibility when processing the header fields.  Static context
+    means\n   that information stored in the context which, describes field values,\n
+    \  does not change during the packet transmission, avoiding complex\n   resynchronization
+    mechanisms, incompatible with LPWAN\n   characteristics.  In most of the cases,
+    IPv6/UDP headers are reduced\n   to a small identifier.\n\n   This document describes
+    the generic compression/decompression process\n   and applies it to IPv6/UDP headers.
+    \ Similar mechanisms for other\n   protocols such as CoAP will be described in
+    a separate document.\n   Moreover, this document specifies fragmentation and reassembly\n
+    \  mechanims for SCHC compressed packets exceeding the L2 pdu size and\n   for
+    the case where the SCHC compression is not possible then the\n   IPv6/UDP packet
+    is sent.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lpwan-ipv6-static-context-hc-00
-    docid:
-    - id: draft-ietf-lpwan-ipv6-static-context-hc-00
+    formattedref: draft-ietf-lpwan-ipv6-static-context-hc-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-00
+    docidentifier:
+    - content: draft-ietf-lpwan-ipv6-static-context-hc-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lpwan-ipv6-static-context-hc-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lpwan-ipv6-static-context-hc-02
-    docid:
-    - id: draft-ietf-lpwan-ipv6-static-context-hc-02
+    formattedref: draft-ietf-lpwan-ipv6-static-context-hc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lpwan-ipv6-static-context-hc-02
+    docidentifier:
+    - content: draft-ietf-lpwan-ipv6-static-context-hc-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lpwan-ipv6-static-context-hc-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lpwan-ipv6-static-context-hc-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

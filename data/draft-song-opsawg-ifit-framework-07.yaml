@@ -1,233 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-song-opsawg-ifit-framework-07
-title:
-- content: In-situ Flow Information Telemetry
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-07
-  type: src
+id: draftsongopsawgifitframework07
 type: standard
-docid:
-- id: draft-song-opsawg-ifit-framework-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: In-situ Flow Information Telemetry
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-07
+docidentifier:
+- content: draft-song-opsawg-ifit-framework
+  type: Internet-Draft
+- content: draft-song-opsawg-ifit-framework-07
   type: Internet-Draft
   primary: true
-- id: I-D.song-opsawg-ifit-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.song-opsawg-ifit-framework
 date:
 - type: published
-  value: '2019-11-04'
+  at: '2019-11-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Haoyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haoyu
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Song
-        language:
-        - en
       completename:
+        language: en
         content: Haoyu Song
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fengwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fengwei
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Fengwei Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Huanan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huanan
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huanan Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jaewhan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jaewhan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Jin
-        language:
-        - en
       completename:
+        language: en
         content: Jaewhan Jin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LG U+
-  role:
+        - language: en
+          content: LG U+
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jongyoon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jongyoon
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Shin
-        language:
-        - en
       completename:
+        language: en
         content: Jongyoon Shin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SK Telecom
-  role:
-  - type: author
+        - language: en
+          content: SK Telecom
 version:
 - draft: '07'
-revdate: '2019-11-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>For efficient network operation, most network operators rely on traditional
-    Operation, Administration and Maintenance (OAM) methods, which include proactive
-    and reactive techniques, running in active and passive modes. As networks increase
-    in scale, they become more susceptible to measurement accuracy and misconfiguration
-    errors. With the advent of programmable data-plane, emerging on-path telemetry
-    techniques provide unprecedented flow insight and fast notification of network
-    issues (e.g., jitter, increased latency, packet loss, significant bit error variations,
-    and unequal load- balancing). This document outlines an In-situ Flow Information
-    Telemetry (iFIT) reference framework, which enumerates several high level components
-    and describes how these components can be assembled to achieve a complete and
-    closed-loop working solution for on-path telemetry. iFIT addresses several deployment
-    challenges for on-path telemetry techniques, especially in carrier networks. As
-    an open framework, it does not detail the implementation of the components as
-    well as the interface between the components.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   For efficient network operation, most network operators rely on\n   traditional
+    Operation, Administration and Maintenance (OAM) methods,\n   which include proactive
+    and reactive techniques, running in active\n   and passive modes.  As networks
+    increase in scale, they become more\n   susceptible to measurement accuracy and
+    misconfiguration errors.\n\n   With the advent of programmable data-plane, emerging
+    on-path\n   telemetry techniques provide unprecedented flow insight and fast\n
+    \  notification of network issues (e.g., jitter, increased latency,\n   packet
+    loss, significant bit error variations, and unequal load-\n   balancing).\n\n
+    \  This document outlines an In-situ Flow Information Telemetry (iFIT)\n   reference
+    framework, which enumerates several high level components\n   and describes how
+    these components can be assembled to achieve a\n   complete and closed-loop working
+    solution for on-path telemetry.\n\n   iFIT addresses several deployment challenges
+    for on-path telemetry\n   techniques, especially in carrier networks.  As an open
+    framework, it\n   does not detail the implementation of the components as well
+    as the\n   interface between the components.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-song-opsawg-ifit-framework-06
-    docid:
-    - id: draft-song-opsawg-ifit-framework-06
+    formattedref: draft-song-opsawg-ifit-framework-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-06
+    docidentifier:
+    - content: draft-song-opsawg-ifit-framework-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-song-opsawg-ifit-framework-06
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-song-opsawg-ifit-framework-08
-    docid:
-    - id: draft-song-opsawg-ifit-framework-08
+    formattedref: draft-song-opsawg-ifit-framework-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-08
+    docidentifier:
+    - content: draft-song-opsawg-ifit-framework-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-song-opsawg-ifit-framework-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-song-opsawg-ifit-framework-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,184 +1,159 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-ebgp-dmz-00
-title:
-- content: Cumulative DMZ Link Bandwidth and load-balancing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-ebgp-dmz-00
-  type: src
+id: draftietfbessebgpdmz00
 type: standard
-docid:
-- id: draft-ietf-bess-ebgp-dmz-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Cumulative DMZ Link Bandwidth and load-balancing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-ebgp-dmz-00
+docidentifier:
+- content: draft-ietf-bess-ebgp-dmz
+  type: Internet-Draft
+- content: draft-ietf-bess-ebgp-dmz-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-ebgp-dmz
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-ebgp-dmz
 date:
 - type: published
-  value: '2022-04-01'
+  at: '2022-04-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
+      formatted_initials:
+        language: en
       surname:
+        language: en
         content: satyamoh@cisco.com
-        language:
-        - en
       completename:
+        language: en
         content: satyamoh@cisco.com
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arie
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Vayner
-        language:
-        - en
       completename:
+        language: en
         content: Arie Vayner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akshay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akshay
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gattani
-        language:
-        - en
       completename:
+        language: en
         content: Akshay Gattani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arista Networks
-  role:
+        - language: en
+          content: Arista Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ajay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ajay
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kini
-        language:
-        - en
       completename:
+        language: en
         content: Ajay Kini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arista Networks
-  role:
-  - type: author
+        - language: en
+          content: Arista Networks
 version:
 - draft: '00'
-revdate: '2022-04-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The DMZ Link Bandwidth draft provides a way to load-balance traffic
-    to a destination (which is in a different AS than the source) which is reachable
-    via more than one path. Typically, the link bandwidth (either configured on the
-    link of the EBGP egress interface or set via a policy) is encoded in an extended
-    community and then sent to the IBGP peer which employs multi-path. The link-bandwidth
-    value is then extracted from the path extended community and is used as a weight
-    in the FIB, which does the load-balancing. This draft extends the usage of the
-    DMZ link bandwidth to another setting where the ingress BGP speaker requires knowledge
-    of the cumulative bandwidth while doing the load-balancing. The draft also proposes
-    neighbor- level knobs to enable the link bandwidth extended community to be regenerated
-    and then advertised to EBGP peers to override the default behavior of not advertising
-    optional non-transitive attributes to EBGP peers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The DMZ Link Bandwidth draft provides a way to load-balance traffic\n
+    \  to a destination (which is in a different AS than the source) which\n   is
+    reachable via more than one path.  Typically, the link bandwidth\n   (either configured
+    on the link of the EBGP egress interface or set\n   via a policy) is encoded in
+    an extended community and then sent to\n   the IBGP peer which employs multi-path.
+    \ The link-bandwidth value is\n   then extracted from the path extended community
+    and is used as a\n   weight in the FIB, which does the load-balancing.  This draft
+    extends\n   the usage of the DMZ link bandwidth to another setting where the\n
+    \  ingress BGP speaker requires knowledge of the cumulative bandwidth\n   while
+    doing the load-balancing.  The draft also proposes neighbor-\n   level knobs to
+    enable the link bandwidth extended community to be\n   regenerated and then advertised
+    to EBGP peers to override the default\n   behavior of not advertising optional
+    non-transitive attributes to\n   EBGP peers.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-ebgp-dmz-01
-    docid:
-    - id: draft-ietf-bess-ebgp-dmz-01
+    formattedref: draft-ietf-bess-ebgp-dmz-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-ebgp-dmz-01
+    docidentifier:
+    - content: draft-ietf-bess-ebgp-dmz-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-ebgp-dmz-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-ebgp-dmz-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

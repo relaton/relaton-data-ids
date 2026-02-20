@@ -1,186 +1,159 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rats-msg-wrap-00
-title:
-- content: RATS Conceptual Messages Wrapper
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-00
-  type: src
+id: draftietfratsmsgwrap00
 type: standard
-docid:
-- id: draft-ietf-rats-msg-wrap-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RATS Conceptual Messages Wrapper
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-00
+docidentifier:
+- content: draft-ietf-rats-msg-wrap
+  type: Internet-Draft
+- content: draft-ietf-rats-msg-wrap-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rats-msg-wrap
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rats-msg-wrap
 date:
 - type: published
-  value: '2023-12-01'
+  at: '2023-12-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
+        - language: en
+          content: Fraunhofer SIT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ned
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ned
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Ned Smith
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Fossati
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Fossati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Linaro
-  role:
+        - language: en
+          content: Linaro
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2023-12-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines two encapsulation formats for RATS conceptual
-    messages (i.e., evidence, attestation results, endorsements and reference values.)
-    The first format uses a CBOR or JSON array with two mandatory members, one for
-    the type, another for the value, and a third optional member complementing the
-    type field that says which kind of conceptual message(s) are carried in the value.
-    The other format wraps the value in a CBOR byte string and prepends a CBOR tag
-    to convey the type information. This document also defines a corresponding CBOR
-    tag, as well as JSON Web Tokens (JWT) and CBOR Web Tokens (CWT) claims. These
-    allow embedding the wrapped conceptual messages into CBOR-based protocols and
-    web APIs, respectively.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines two encapsulation formats for RATS conceptual\n
+    \  messages (i.e., evidence, attestation results, endorsements and\n   reference
+    values.)\n\n   The first format uses a CBOR or JSON array with two mandatory\n
+    \  members, one for the type, another for the value, and a third\n   optional
+    member complementing the type field that says which kind of\n   conceptual message(s)
+    are carried in the value.  The other format\n   wraps the value in a CBOR byte
+    string and prepends a CBOR tag to\n   convey the type information.\n\n   This
+    document also defines a corresponding CBOR tag, as well as JSON\n   Web Tokens
+    (JWT) and CBOR Web Tokens (CWT) claims.  These allow\n   embedding the wrapped
+    conceptual messages into CBOR-based protocols\n   and web APIs, respectively.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rats-msg-wrap-01
-    docid:
-    - id: draft-ietf-rats-msg-wrap-01
+    formattedref: draft-ietf-rats-msg-wrap-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-01
+    docidentifier:
+    - content: draft-ietf-rats-msg-wrap-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rats-msg-wrap-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rats-msg-wrap-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

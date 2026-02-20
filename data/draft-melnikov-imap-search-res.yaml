@@ -1,42 +1,37 @@
 ---
-schema-version: v1.2.9
-id: draft-melnikov-imap-search-res
+id: draftmelnikovimapsearchres
+schema_version: v1.4.1
+formattedref: draft-melnikov-imap-search-res
 title:
-- content: IMAP Extension for Referencing the Last SEARCH Result
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-melnikov-imap-search-res
+- language: en
+  script: Latn
+  content: IMAP Extension for Referencing the Last SEARCH Result
+docidentifier:
+- content: draft-melnikov-imap-search-res
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>Many IMAP clients use the result of a SEARCH command as the input to
-    perform another operation, for example, fetching the found messages, deleting
-    them, or copying them to another mailbox. This can be achieved using standard
-    IMAP operations described in RFC 3501; however, this would be suboptimal. The
-    server will send the list of found messages to the client; after that, the client
-    will have to parse the list, reformat it, and send it back to the server. The
-    client can't pipeline the SEARCH command with the subsequent command, and, as
-    a result, the server might not be able to perform some optimizations. This document
+- language: en
+  script: Latn
+  content: "Many IMAP clients use the result of a SEARCH command as the input to perform
+    another operation, for example, fetching the found messages, deleting them, or
+    copying them to another mailbox.\n\n This can be achieved using standard IMAP
+    operations described in RFC 3501; however, this would be suboptimal. The server
+    will send the list of found messages to the client; after that, the client will
+    have to parse the list, reformat it, and send it back to the server. The client
+    can't pipeline the SEARCH command with the subsequent command, and, as a result,
+    the server might not be able to perform some optimizations.\n\n This document
     proposes an IMAP extension that allows a client to tell a server to use the result
     of a SEARCH (or Unique Identifier (UID) SEARCH) command as an input to any subsequent
-    command. [STANDARDS-TRACK]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    command. [STANDARDS-TRACK]\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-melnikov-imap-search-res-07
-    docid:
-    - id: draft-melnikov-imap-search-res-07
+    formattedref: draft-melnikov-imap-search-res-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-melnikov-imap-search-res-07
+    docidentifier:
+    - content: draft-melnikov-imap-search-res-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-melnikov-imap-search-res-07
-      format: text/plain

@@ -1,155 +1,133 @@
 ---
-schema-version: v1.2.9
-id: draft-loreto-sipping-3892bis-01
-title:
-- content: Updates to Referred-By in the Session Initiation Protocol (SIP).
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-loreto-sipping-3892bis-01
-  type: src
+id: draftloretosipping3892bis01
 type: standard
-docid:
-- id: draft-loreto-sipping-3892bis-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Updates to Referred-By in the Session Initiation Protocol (SIP).
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-loreto-sipping-3892bis-01
+docidentifier:
+- content: draft-loreto-sipping-3892bis
+  type: Internet-Draft
+- content: draft-loreto-sipping-3892bis-01
   type: Internet-Draft
   primary: true
-- id: I-D.loreto-sipping-3892bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.loreto-sipping-3892bis
 date:
 - type: published
-  value: '2009-03-01'
+  at: '2009-03-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nadia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nadia
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Bishai
-        language:
-        - en
       completename:
+        language: en
         content: Nadia Bishai
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Salvatore
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Salvatore
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Loreto
-        language:
-        - en
       completename:
+        language: en
         content: Salvatore Loreto
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Adamu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adamu
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Haruna
-        language:
-        - en
       completename:
+        language: en
         content: Adamu Haruna
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '01'
-revdate: '2009-03-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>SIP has a mechanism for conveying the identity of the referrer of a
-    request by means of the Referred-By header field. This header field may be used
-    when exploding a SIP MESSAGE request to a pre-defined group URI and when exploding
-    a SIP INVITE request to an ad-hoc group or to a pre-defined group URI. The Referred-By
-    header is only included if the P-Asserted-Identity header field or From header
-    field in the exploded SIP requests needs to carry another value, e.g. the URI
-    of a pre-defined group, or a conference focus URI. In those cases, the Referred-By
-    header field in the resulting exploded requests is set to the P-Asserted-Identity
-    header field or to the From header field of the original SIP request received
-    before exploding to convey to the receiver the identity of the original inviting
-    sender. RFC 3892 restricts the value of the header to only one SIP URI. However
-    the P-Asserted-Identity header field currently allows two URI values and may be
-    expanded in the future to carry more than two values as described in draft-ietf-sipping-update-pai-09.
-    This document extends the Referred-By definition to support more than one value
-    as well.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "SIP has a mechanism for conveying the identity of the referrer of a\nrequest
+    by means of the Referred-By header field.  This header field\nmay be used when
+    exploding a SIP MESSAGE request to a pre-defined\ngroup URI and when exploding
+    a SIP INVITE request to an ad-hoc group\nor to a pre-defined group URI.  The Referred-By
+    header is only\nincluded if the P-Asserted-Identity header field or From header
+    field\nin the exploded SIP requests needs to carry another value, e.g. the\nURI
+    of a pre-defined group, or a conference focus URI.  In those\ncases, the Referred-By
+    header field in the resulting exploded\nrequests is set to the P-Asserted-Identity
+    header field or to the\nFrom header field of the original SIP request received
+    before\nexploding to convey to the receiver the identity of the original\ninviting
+    sender.\n\nRFC 3892 restricts the value of the header to only one SIP URI.\nHowever
+    the P-Asserted-Identity header field currently allows two URI\nvalues and may
+    be expanded in the future to carry more than two\nvalues as described in draft-ietf-sipping-update-pai-09.
+    \ This\ndocument extends the Referred-By definition to support more than one\nvalue
+    as well.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-loreto-sipping-3892bis-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

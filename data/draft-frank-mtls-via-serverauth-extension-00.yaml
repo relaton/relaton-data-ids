@@ -1,96 +1,82 @@
 ---
-schema-version: v1.2.9
-id: draft-frank-mtls-via-serverauth-extension-00
-title:
-- content: Allow using serverAuth certificates for mutual TLS (mTLS) authentication
-    in server-to-server usages.
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-frank-mtls-via-serverauth-extension-00
-  type: src
+id: draftfrankmtlsviaserverauthextension00
 type: standard
-docid:
-- id: draft-frank-mtls-via-serverauth-extension-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Allow using serverAuth certificates for mutual TLS (mTLS) authentication
+    in server-to-server usages.
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-frank-mtls-via-serverauth-extension-00
+docidentifier:
+- content: draft-frank-mtls-via-serverauth-extension
+  type: Internet-Draft
+- content: draft-frank-mtls-via-serverauth-extension-00
   type: Internet-Draft
   primary: true
-- id: I-D.frank-mtls-via-serverauth-extension
-  type: IETF
-  scope: anchor
 docnumber: I-D.frank-mtls-via-serverauth-extension
 date:
 - type: published
-  value: '2025-06-16'
+  at: '2025-06-16'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Klaus
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Frank
-        language:
-        - en
-      completename:
-        content: Klaus Frank
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Klaus
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
+      surname:
+        language: en
+        content: Frank
+      completename:
+        language: en
+        content: Klaus Frank
 version:
 - draft: '00'
-revdate: '2025-06-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document aims to standardize the validation of mutual TLS authentication
-    between servers (server-to-server). It outlines recommended validation flows as
-    well as provides practical design recommendations. Basically the EKU id-kp-clientAuth
-    and id-kp- serverAuth get more precisely defined to represent their common understanding
-    by issuing CAs and browsers. id-kp-clientAuth aka. "TLS WWW client authentication"
-    SHOULD mean authentication of a natural or legal entity. id-kp-serverAuth aka.
-    "TLS WWW server authetnication" SHOULD mean authentication of a device. When two
-    id- kp-clientAuth certificates are used this means E2E authentication between
-    two users. Where as two id-kp-serverAuth certificates being used means server-to-server
-    authentication. And one user and one server certificate within one TLS connection
-    means client-to-server (or technically also server-to-client). The term "TLS-Client"
-    SHOULD no longer be used and mean the party sending the initial package while
-    establishing a TLS connection. This helps to avoid design issues moving forward
-    as currently some people thought TLS-Client auth was only ever used in "client-to-server"
-    and never within "server-to-server" context. Which sparked the demand for this
-    document to begin with to keep server-to-server auth with public trusted certificates
-    working.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document aims to standardize the validation of mutual TLS\n   authentication
+    between servers (server-to-server).  It outlines\n   recommended validation flows
+    as well as provides practical design\n   recommendations.  Basically the EKU id-kp-clientAuth
+    and id-kp-\n   serverAuth get more precisely defined to represent their common\n
+    \  understanding by issuing CAs and browsers.  id-kp-clientAuth aka.\n   \"TLS
+    WWW client authentication\" SHOULD mean authentication of a\n   natural or legal
+    entity.  id-kp-serverAuth aka.  \"TLS WWW server\n   authetnication\" SHOULD mean
+    authentication of a device.  When two id-\n   kp-clientAuth certificates are used
+    this means E2E authentication\n   between two users.  Where as two id-kp-serverAuth
+    certificates being\n   used means server-to-server authentication.  And one user
+    and one\n   server certificate within one TLS connection means client-to-server\n
+    \  (or technically also server-to-client).  The term \"TLS-Client\" SHOULD\n   no
+    longer be used and mean the party sending the initial package\n   while establishing
+    a TLS connection.  This helps to avoid design\n   issues moving forward as currently
+    some people thought TLS-Client\n   auth was only ever used in \"client-to-server\"
+    and never within\n   \"server-to-server\" context.  Which sparked the demand for
+    this\n   document to begin with to keep server-to-server auth with public\n   trusted
+    certificates working.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-frank-mtls-via-serverauth-extension-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

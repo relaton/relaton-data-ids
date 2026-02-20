@@ -1,226 +1,196 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bfd-optimizing-authentication-35
-title:
-- content: Optimizing BFD Authentication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-optimizing-authentication-35
-  type: src
+id: draftietfbfdoptimizingauthentication35
 type: standard
-docid:
-- id: draft-ietf-bfd-optimizing-authentication-35
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Optimizing BFD Authentication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-optimizing-authentication-35
+docidentifier:
+- content: draft-ietf-bfd-optimizing-authentication
+  type: Internet-Draft
+- content: draft-ietf-bfd-optimizing-authentication-35
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bfd-optimizing-authentication
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bfd-optimizing-authentication
 date:
 - type: published
-  value: '2025-10-08'
+  at: '2025-10-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mahesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mahesh
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Jethanandani
-        language:
-        - en
       completename:
+        language: en
         content: Mahesh Jethanandani
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Arrcus
-  role:
+        - language: en
+          content: Arrcus
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ashesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ashesh
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Ashesh Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aalyria Technologies
-  role:
+        - language: en
+          content: Aalyria Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeffrey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeffrey
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Haas
-        language:
-        - en
       completename:
+        language: en
         content: Jeffrey Haas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: HPE
-  role:
+        - language: en
+          content: HPE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ankur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ankur
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Saxena
-        language:
-        - en
       completename:
+        language: en
         content: Ankur Saxena
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ciena Corporation
-  role:
+        - language: en
+          content: Ciena Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Manav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Manav
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Bhatia
-        language:
-        - en
       completename:
+        language: en
         content: Manav Bhatia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
-  - type: author
+        - language: en
+          content: Google
 version:
 - draft: '35'
-revdate: '2025-10-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes an experimental optimization to BFD Authentication.
-    This optimization enables BFD to scale better when there is a desire to use authentication
-    where applying the same authentication mechanism to every BFD Control Packet may
-    adversely impact performance. This optimization partitions BFD Authentication
-    into a more computationally intensive mechanism that is applied to BFD significant
-    changes, and a less computationally intensive mechanism applied to the majority
-    of BFD Control Packets.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes an experimental optimization to BFD\n   Authentication.
+    \ This optimization enables BFD to scale better when\n   there is a desire to
+    use authentication where applying the same\n   authentication mechanism to every
+    BFD Control Packet may adversely\n   impact performance.  This optimization partitions
+    BFD Authentication\n   into a more computationally intensive mechanism that is
+    applied to\n   BFD significant changes, and a less computationally intensive\n
+    \  mechanism applied to the majority of BFD Control Packets.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bfd-optimizing-authentication-34
-    docid:
-    - id: draft-ietf-bfd-optimizing-authentication-34
+    formattedref: draft-ietf-bfd-optimizing-authentication-34
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-optimizing-authentication-34
+    docidentifier:
+    - content: draft-ietf-bfd-optimizing-authentication-34
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bfd-optimizing-authentication-34
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bfd-optimizing-authentication-36
-    docid:
-    - id: draft-ietf-bfd-optimizing-authentication-36
+    formattedref: draft-ietf-bfd-optimizing-authentication-36
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-optimizing-authentication-36
+    docidentifier:
+    - content: draft-ietf-bfd-optimizing-authentication-36
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bfd-optimizing-authentication-36
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bfd-optimizing-authentication-35
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

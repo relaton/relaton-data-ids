@@ -1,169 +1,140 @@
 ---
-schema-version: v1.2.9
-id: draft-dvir-roll-security-authentication-01
-title:
-- content: Version Number and Rank Authentication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dvir-roll-security-authentication-01
-  type: src
+id: draftdvirrollsecurityauthentication01
 type: standard
-docid:
-- id: draft-dvir-roll-security-authentication-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Version Number and Rank Authentication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dvir-roll-security-authentication-01
+docidentifier:
+- content: draft-dvir-roll-security-authentication
+  type: Internet-Draft
+- content: draft-dvir-roll-security-authentication-01
   type: Internet-Draft
   primary: true
-- id: I-D.dvir-roll-security-authentication
-  type: IETF
-  scope: anchor
 docnumber: I-D.dvir-roll-security-authentication
 date:
 - type: published
-  value: '2012-01-09'
+  at: '2012-01-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Amit
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Amit
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dvir
-        language:
-        - en
       completename:
+        language: en
         content: Amit Dvir
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Laszlo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Laszlo
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Dora
-        language:
-        - en
       completename:
+        language: en
         content: Laszlo Dora
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Levente
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Levente
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Buttyan
-        language:
-        - en
       completename:
+        language: en
         content: Levente Buttyan
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tamas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tamas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Holczer
-        language:
-        - en
       completename:
+        language: en
         content: Tamas Holczer
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2012-01-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Designing a routing protocol for large low-power and lossy networks
-    (LLNs), consisting of thousands of constrained nodes and unreliable links, presents
-    new challenges. The IPv6 Routing Protocol for Low- power and Lossy Networks (RPL),
-    have been developed by the IETF ROLL Working Group as a preferred routing protocol
-    to provide IPv6 routing functionality in LLNs. Unfortunately, the currently available
-    security services in RPL will not protect against a compromised internal node
-    that can construct and disseminate fake messages. Therefore, in RPL special security
-    care must be taken when the Destination Oriented Directed Acyclic Graph (DODAG)
-    root is updating the Version Number by which reconstruction of the routing topology
-    can be initiated. The same care also must be taken to prevent an internal attacker
-    (compromised DODAG node) to publish decreased Rank value, which causes a large
-    part of the DODAG to connect to the DODAG root via the attacker and give it the
-    ability to eavesdrop or manipulate a large part of the network traffic. In this
-    document, a new security service is described that prevents any misbehaving DODAG
-    node from illegitimately increasing the Version Number or publish illegitimately
-    decreased Rank values.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Designing a routing protocol for large low-power and lossy networks\n
+    \  (LLNs), consisting of thousands of constrained nodes and unreliable\n   links,
+    presents new challenges.  The IPv6 Routing Protocol for Low-\n   power and Lossy
+    Networks (RPL), have been developed by the IETF ROLL\n   Working Group as a preferred
+    routing protocol to provide IPv6 routing\n   functionality in LLNs.  Unfortunately,
+    the currently available\n   security services in RPL will not protect against
+    a compromised\n   internal node that can construct and disseminate fake messages.\n
+    \  Therefore, in RPL special security care must be taken when the\n   Destination
+    Oriented Directed Acyclic Graph (DODAG) root is updating\n   the Version Number
+    by which reconstruction of the routing topology\n   can be initiated.  The same
+    care also must be taken to prevent an\n   internal attacker (compromised DODAG
+    node) to publish decreased Rank\n   value, which causes a large part of the DODAG
+    to connect to the DODAG\n   root via the attacker and give it the ability to eavesdrop
+    or\n   manipulate a large part of the network traffic.  In this document, a\n
+    \  new security service is described that prevents any misbehaving DODAG\n   node
+    from illegitimately increasing the Version Number or publish\n   illegitimately
+    decreased Rank values.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dvir-roll-security-authentication-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

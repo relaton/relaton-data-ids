@@ -1,92 +1,78 @@
 ---
-schema-version: v1.2.9
-id: draft-groth-dns-encryption-02
-title:
-- content: DNS Encryption
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-groth-dns-encryption-02
-  type: src
+id: draftgrothdnsencryption02
 type: standard
-docid:
-- id: draft-groth-dns-encryption-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DNS Encryption
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-groth-dns-encryption-02
+docidentifier:
+- content: draft-groth-dns-encryption
+  type: Internet-Draft
+- content: draft-groth-dns-encryption-02
   type: Internet-Draft
   primary: true
-- id: I-D.groth-dns-encryption
-  type: IETF
-  scope: anchor
 docnumber: I-D.groth-dns-encryption
 date:
 - type: published
-  value: '2008-07-14'
+  at: '2008-07-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Duane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Duane
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Groth
-        language:
-        - en
       completename:
+        language: en
         content: Duane Groth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ITUA Inc.
-  role:
-  - type: author
+        - language: en
+          content: ITUA Inc.
 version:
 - draft: '02'
-revdate: '2008-07-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document requests IANA registration of a new DNS OpCode and ErrorCode
-    type in facilitating encryption of DNS requests and replies and feed back to the
-    client if plain text requests are not acceptable. Once this OpCode is seen the
-    DNS server attempts to decrypt the request using its private OpenPGP key. Inside
-    the encrypted packet is the AES key which the client expects to be used when the
-    server encrypts a response. A server may advertise that it is capable of DNS encryption
-    by returning OpenPGP fingerprints in TXT records using a similar format to Public
-    Key Association (PKA). The full pubic keys are returned from DNS servers by using
-    a CERT request against the host name(s) of the domain's NS records or via OpenPGP
-    key servers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document requests IANA registration of a new DNS OpCode and\nErrorCode
+    type in facilitating encryption of DNS requests and\nreplies and feed back to
+    the client if plain text requests are not\nacceptable. Once this OpCode is seen
+    the DNS server attempts to\ndecrypt the request using its private OpenPGP key.
+    Inside the\nencrypted packet is the AES key which the client expects to be used\nwhen
+    the server encrypts a response. A server may advertise that it\nis capable of
+    DNS encryption by returning OpenPGP fingerprints in\nTXT records using a similar
+    format to Public Key Association (PKA).\nThe full pubic keys are returned from
+    DNS servers by using a CERT\nrequest against the host name(s) of the domain's
+    NS records or via\nOpenPGP key servers.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-groth-dns-encryption-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

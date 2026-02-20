@@ -1,136 +1,119 @@
 ---
-schema-version: v1.2.9
-id: draft-decraene-idr-nlri-error-handling-00
-title:
-- content: NLRI Error handling
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-decraene-idr-nlri-error-handling-00
-  type: src
+id: draftdecraeneidrnlrierrorhandling00
 type: standard
-docid:
-- id: draft-decraene-idr-nlri-error-handling-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: NLRI Error handling
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-decraene-idr-nlri-error-handling-00
+docidentifier:
+- content: draft-decraene-idr-nlri-error-handling
+  type: Internet-Draft
+- content: draft-decraene-idr-nlri-error-handling-00
   type: Internet-Draft
   primary: true
-- id: I-D.decraene-idr-nlri-error-handling
-  type: IETF
-  scope: anchor
 docnumber: I-D.decraene-idr-nlri-error-handling
 date:
 - type: published
-  value: '2025-10-15'
+  at: '2025-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Scudder
-        language:
-        - en
       completename:
+        language: en
         content: John Scudder
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: HPE
-  role:
-  - type: author
+        - language: en
+          content: HPE
 version:
 - draft: '00'
-revdate: '2025-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>RFC 7606 partially revises the error handling for BGP UPDATE messages.
-    It reduces the cases of BGP session reset by defining and using less impactful
-    error handling approaches, such as attribute discard and treat-as-withdraw when
-    applicable. The treat-as-withdraw approach requires that the entire NLRI field
-    of the MP_REACH_NLRI attribute be successfully parsed. This typically means parsing
-    errors in MP_REACH_NLRI cannot be handled by any means short of session reset.
-    This is exacerbated by the use of non-key data within NLRI, which introduces parsing
-    complexity and additional error cases. This specification defines a non-transitive
-    BGP attribute, the "Treat-As-Withdraw Attribute", to encode NLRIs as per the format
-    of MP_UNREACH_NLRI. This attribute is used to allow the treat-as- withdraw error-handling
-    approach to be used in case an error in the MP_UNREACH_NLRI attribute prevents
-    the parsing of its NLRIs. This document updates RFC 7606 by mandating that the
-    Treat-As- Withdraw Attribute appear before the MP_REACH_NLRI (or any other) attribute
-    in an UPDATE message.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC 7606 partially revises the error handling for BGP UPDATE\n   messages.
+    \ It reduces the cases of BGP session reset by defining and\n   using less impactful
+    error handling approaches, such as attribute\n   discard and treat-as-withdraw
+    when applicable.  The treat-as-withdraw\n   approach requires that the entire
+    NLRI field of the MP_REACH_NLRI\n   attribute be successfully parsed.  This typically
+    means parsing\n   errors in MP_REACH_NLRI cannot be handled by any means short
+    of\n   session reset.  This is exacerbated by the use of non-key data within\n
+    \  NLRI, which introduces parsing complexity and additional error cases.\n\n   This
+    specification defines a non-transitive BGP attribute, the\n   \"Treat-As-Withdraw
+    Attribute\", to encode NLRIs as per the format of\n   MP_UNREACH_NLRI.  This attribute
+    is used to allow the treat-as-\n   withdraw error-handling approach to be used
+    in case an error in the\n   MP_UNREACH_NLRI attribute prevents the parsing of
+    its NLRIs.\n\n   This document updates RFC 7606 by mandating that the Treat-As-\n
+    \  Withdraw Attribute appear before the MP_REACH_NLRI (or any other)\n   attribute
+    in an UPDATE message.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-decraene-idr-nlri-error-handling-01
-    docid:
-    - id: draft-decraene-idr-nlri-error-handling-01
+    formattedref: draft-decraene-idr-nlri-error-handling-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-decraene-idr-nlri-error-handling-01
+    docidentifier:
+    - content: draft-decraene-idr-nlri-error-handling-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-decraene-idr-nlri-error-handling-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-decraene-idr-nlri-error-handling-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

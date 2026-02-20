@@ -1,228 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lisp-rfc6830bis-25
-title:
-- content: The Locator/ID Separation Protocol (LISP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6830bis-25
-  type: src
+id: draftietflisprfc6830bis25
 type: standard
-docid:
-- id: draft-ietf-lisp-rfc6830bis-25
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The Locator/ID Separation Protocol (LISP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6830bis-25
+docidentifier:
+- content: draft-ietf-lisp-rfc6830bis
+  type: Internet-Draft
+- content: draft-ietf-lisp-rfc6830bis-25
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lisp-rfc6830bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lisp-rfc6830bis
 date:
 - type: published
-  value: '2018-10-21'
+  at: '2018-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vince
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vince
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Fuller
-        language:
-        - en
       completename:
+        language: en
         content: Vince Fuller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Meyer
-        language:
-        - en
       completename:
+        language: en
         content: David Meyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Darrel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Darrel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lewis
-        language:
-        - en
       completename:
+        language: en
         content: Darrel Lewis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Albert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Albert
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Cabellos-Aparicio
-        language:
-        - en
       completename:
+        language: en
         content: Albert Cabellos-Aparicio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UPC/BarcelonaTech
-  role:
-  - type: author
+        - language: en
+          content: UPC/BarcelonaTech
 version:
 - draft: '25'
-revdate: '2018-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the Data-Plane protocol for the Locator/ID
-    Separation Protocol (LISP). LISP defines two namespaces, End-point Identifiers
-    (EIDs) that identify end-hosts and Routing Locators (RLOCs) that identify network
-    attachment points. With this, LISP effectively separates control from data, and
-    allows routers to create overlay networks. LISP-capable routers exchange encapsulated
-    packets according to EID-to-RLOC mappings stored in a local Map-Cache. LISP requires
-    no change to either host protocol stacks or to underlay routers and offers Traffic
-    Engineering, multihoming and mobility, among other features. This document obsoletes
-    RFC 6830.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the Data-Plane protocol for the Locator/ID\n
+    \  Separation Protocol (LISP).  LISP defines two namespaces, End-point\n   Identifiers
+    (EIDs) that identify end-hosts and Routing Locators\n   (RLOCs) that identify
+    network attachment points.  With this, LISP\n   effectively separates control
+    from data, and allows routers to create\n   overlay networks.  LISP-capable routers
+    exchange encapsulated packets\n   according to EID-to-RLOC mappings stored in
+    a local Map-Cache.\n\n   LISP requires no change to either host protocol stacks
+    or to underlay\n   routers and offers Traffic Engineering, multihoming and mobility,\n
+    \  among other features.\n\n   This document obsoletes RFC 6830.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-lisp-rfc6830bis-24
-    docid:
-    - id: draft-ietf-lisp-rfc6830bis-24
+    formattedref: draft-ietf-lisp-rfc6830bis-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6830bis-24
+    docidentifier:
+    - content: draft-ietf-lisp-rfc6830bis-24
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-rfc6830bis-24
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lisp-rfc6830bis-26
-    docid:
-    - id: draft-ietf-lisp-rfc6830bis-26
+    formattedref: draft-ietf-lisp-rfc6830bis-26
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lisp-rfc6830bis-26
+    docidentifier:
+    - content: draft-ietf-lisp-rfc6830bis-26
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lisp-rfc6830bis-26
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lisp-rfc6830bis-25
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

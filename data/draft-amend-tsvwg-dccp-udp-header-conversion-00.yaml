@@ -1,193 +1,168 @@
 ---
-schema-version: v1.2.9
-id: draft-amend-tsvwg-dccp-udp-header-conversion-00
-title:
-- content: Lossless and overhead free DCCP - UDP header conversion (U-DCCP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-amend-tsvwg-dccp-udp-header-conversion-00
-  type: src
+id: draftamendtsvwgdccpudpheaderconversion00
 type: standard
-docid:
-- id: draft-amend-tsvwg-dccp-udp-header-conversion-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Lossless and overhead free DCCP - UDP header conversion (U-DCCP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-amend-tsvwg-dccp-udp-header-conversion-00
+docidentifier:
+- content: draft-amend-tsvwg-dccp-udp-header-conversion
+  type: Internet-Draft
+- content: draft-amend-tsvwg-dccp-udp-header-conversion-00
   type: Internet-Draft
   primary: true
-- id: I-D.amend-tsvwg-dccp-udp-header-conversion
-  type: IETF
-  scope: anchor
 docnumber: I-D.amend-tsvwg-dccp-udp-header-conversion
 date:
 - type: published
-  value: '2019-03-11'
+  at: '2019-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Markus
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Markus
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Amend
-        language:
-        - en
       completename:
+        language: en
         content: Markus Amend
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telekom
-  role:
+        - language: en
+          content: Deutsche Telekom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anna
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Brunstrom
-        language:
-        - en
       completename:
+        language: en
         content: Anna Brunstrom
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Karlstad University
-  role:
+        - language: en
+          content: Karlstad University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andreas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andreas
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kassler
-        language:
-        - en
       completename:
+        language: en
         content: Andreas Kassler
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Karlstad University
-  role:
+        - language: en
+          content: Karlstad University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Veselin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Veselin
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Rakocevic
-        language:
-        - en
       completename:
+        language: en
         content: Veselin Rakocevic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: City University of London
-  role:
-  - type: author
+        - language: en
+          content: City University of London
 version:
 - draft: '00'
-revdate: '2019-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Datagram Congestion Control protocol (DCCP) is a non-widely deployed
-    transport protocol in the Internet. The reason for that is a typical chicken-egg
-    problem. Even if there would be a use for application developer to rely on DCCP,
-    middle-boxes like firewalls and NATs will prevent DCCP end-to-end since they lack
-    support for DCCP. However, as long as the protocol penetration of DCCP will not
-    increase, middle-boxes will not handle DCCP properly. To overcome this challenge
-    NAT/NATP traversal and UDP encapsulation for DCCP is already defined. However
-    the first requires special middle-box support and the latter introduces overhead.
-    The proposal of a multipath extension for DCCP further stresses the question of
-    efficient middle-box passing as its main goal is to be applied over the Internet,
-    traversing numerous uncontrolled middle-boxes. This document introduces a new
-    approach, disguising DCCP during transmission as UDP without requiring middle-box
-    modification nor introducing any overhead.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Datagram Congestion Control protocol (DCCP) is a non-widely\n   deployed
+    transport protocol in the Internet.  The reason for that is\n   a typical chicken-egg
+    problem.  Even if there would be a use for\n   application developer to rely on
+    DCCP, middle-boxes like firewalls\n   and NATs will prevent DCCP end-to-end since
+    they lack support for\n   DCCP.  However, as long as the protocol penetration
+    of DCCP will not\n   increase, middle-boxes will not handle DCCP properly.  To
+    overcome\n   this challenge NAT/NATP traversal and UDP encapsulation for DCCP
+    is\n   already defined.  However the first requires special middle-box\n   support
+    and the latter introduces overhead.  The proposal of a\n   multipath extension
+    for DCCP further stresses the question of\n   efficient middle-box passing as
+    its main goal is to be applied over\n   the Internet, traversing numerous uncontrolled
+    middle-boxes.  This\n   document introduces a new approach, disguising DCCP during\n
+    \  transmission as UDP without requiring middle-box modification nor\n   introducing
+    any overhead.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-amend-tsvwg-dccp-udp-header-conversion-01
-    docid:
-    - id: draft-amend-tsvwg-dccp-udp-header-conversion-01
+    formattedref: draft-amend-tsvwg-dccp-udp-header-conversion-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-amend-tsvwg-dccp-udp-header-conversion-01
+    docidentifier:
+    - content: draft-amend-tsvwg-dccp-udp-header-conversion-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-amend-tsvwg-dccp-udp-header-conversion-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-amend-tsvwg-dccp-udp-header-conversion-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

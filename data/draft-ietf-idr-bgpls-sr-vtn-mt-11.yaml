@@ -1,204 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-bgpls-sr-vtn-mt-11
-title:
-- content: Applicability of Border Gateway Protocol - Link State (BGP-LS) with Multi-Topology
-    (MT) for Segment Routing based Network Resource Partitions (NRPs)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgpls-sr-vtn-mt-11
-  type: src
+id: draftietfidrbgplssrvtnmt11
 type: standard
-docid:
-- id: draft-ietf-idr-bgpls-sr-vtn-mt-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Applicability of Border Gateway Protocol - Link State (BGP-LS) with Multi-Topology
+    (MT) for Segment Routing based Network Resource Partitions (NRPs)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgpls-sr-vtn-mt-11
+docidentifier:
+- content: draft-ietf-idr-bgpls-sr-vtn-mt
+  type: Internet-Draft
+- content: draft-ietf-idr-bgpls-sr-vtn-mt-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgpls-sr-vtn-mt
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-bgpls-sr-vtn-mt
 date:
 - type: published
-  value: '2025-06-13'
+  at: '2025-06-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Chongfeng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chongfeng
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Xie
-        language:
-        - en
       completename:
+        language: en
         content: Chongfeng Xie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Cong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Cong
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Cong Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '11'
-revdate: '2025-06-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>An NRP is a subset of the network resources and associated policies
-    on each of a connected set of links in the underlay network. An NRP could be used
-    as the underlay to support one or a group of enhanced VPN services, which provide
-    advanced features such as guaranteed resources, bounded latency or jitter to meet
-    specific customer connectivity requirements. When Segment Routing (SR) is used
-    for building NRPs, each NRP can be allocated with a group of Segment Identifiers
-    (SIDs) to identify the topology and resource attributes of network segments in
-    the NRP. In some network scenarios, each NRP can be associated with a unique logical
-    network topology. When a centralized network controller is used for NRP-specific
-    constraint-based path computation, especially when an NRP spans multiple IGP areas
-    or multiple Autonomous Systems (ASes), BGP-LS is needed to advertise the NRP topology
-    and associated resource information to the network controller. This document describes
-    a mechanism to distribute the information of SR based NRPs using BGP-LS with MT.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   An NRP is a subset of the network resources and associated policies\n
+    \  on each of a connected set of links in the underlay network.  An NRP\n   could
+    be used as the underlay to support one or a group of enhanced\n   VPN services,
+    which provide advanced features such as guaranteed\n   resources, bounded latency
+    or jitter to meet specific customer\n   connectivity requirements.\n\n   When
+    Segment Routing (SR) is used for building NRPs, each NRP can be\n   allocated
+    with a group of Segment Identifiers (SIDs) to identify the\n   topology and resource
+    attributes of network segments in the NRP.  In\n   some network scenarios, each
+    NRP can be associated with a unique\n   logical network topology.  When a centralized
+    network controller is\n   used for NRP-specific constraint-based path computation,
+    especially\n   when an NRP spans multiple IGP areas or multiple Autonomous Systems\n
+    \  (ASes), BGP-LS is needed to advertise the NRP topology and associated\n   resource
+    information to the network controller.  This document\n   describes a mechanism
+    to distribute the information of SR based NRPs\n   using BGP-LS with MT.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-bgpls-sr-vtn-mt-10
-    docid:
-    - id: draft-ietf-idr-bgpls-sr-vtn-mt-10
+    formattedref: draft-ietf-idr-bgpls-sr-vtn-mt-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgpls-sr-vtn-mt-10
+    docidentifier:
+    - content: draft-ietf-idr-bgpls-sr-vtn-mt-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgpls-sr-vtn-mt-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-bgpls-sr-vtn-mt-12
-    docid:
-    - id: draft-ietf-idr-bgpls-sr-vtn-mt-12
+    formattedref: draft-ietf-idr-bgpls-sr-vtn-mt-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgpls-sr-vtn-mt-12
+    docidentifier:
+    - content: draft-ietf-idr-bgpls-sr-vtn-mt-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgpls-sr-vtn-mt-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-bgpls-sr-vtn-mt-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

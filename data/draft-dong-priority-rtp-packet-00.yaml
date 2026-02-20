@@ -1,135 +1,118 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-priority-rtp-packet-00
-title:
-- content: Discarding Priority of RTP Video Packets
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-priority-rtp-packet-00
-  type: src
+id: draftdongpriorityrtppacket00
 type: standard
-docid:
-- id: draft-dong-priority-rtp-packet-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Discarding Priority of RTP Video Packets
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-priority-rtp-packet-00
+docidentifier:
+- content: draft-dong-priority-rtp-packet
+  type: Internet-Draft
+- content: draft-dong-priority-rtp-packet-00
   type: Internet-Draft
   primary: true
-- id: I-D.dong-priority-rtp-packet
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-priority-rtp-packet
 date:
 - type: published
-  value: '2022-06-30'
+  at: '2022-06-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Lijun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lijun
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Lijun Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies Inc.
-  role:
+        - language: en
+          content: Futurewei Technologies Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Richard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Richard Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei Technologies Inc.
-  role:
-  - type: author
+        - language: en
+          content: Futurewei Technologies Inc.
 version:
 - draft: '00'
-revdate: '2022-06-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document illustrates that significance difference or discarding
-    priority might exist among RTP packets which encapsulate video streaming data
-    with the existing modern video codecs, i.e., H.264/ AVC, SVC, H.265/HEVC and H.266/VVC.
-    The document overviews the RTP NALU header format for the existing modern video
-    codecs. Each contains at least one field that indicates the RTP packet's relative
-    significance within the video stream. With the dominance of video traffic in the
-    Internet, selectively dropping RTP packets from competing video streams according
-    to their significances or discarding priorities could be a complementary mechanism
-    when dealing with network congestion. The document proposes the Differentiated
-    Services Code Point (DSCP) value mapping to the RTP packet discarding priority
-    carried in the RTP NALU header. The document also proposes a new Hop-by-Hop Extension
-    Header (HbH-EH) with a value that is copied from the discarding priority of the
-    RTP packet, if the 6-bit DSCP value is not long enough for the mapping.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document illustrates that significance difference or discarding\n
+    \  priority might exist among RTP packets which encapsulate video\n   streaming
+    data with the existing modern video codecs, i.e., H.264/\n   AVC, SVC, H.265/HEVC
+    and H.266/VVC.\n\n   The document overviews the RTP NALU header format for the
+    existing\n   modern video codecs.  Each contains at least one field that indicates\n
+    \  the RTP packet's relative significance within the video stream.  With\n   the
+    dominance of video traffic in the Internet, selectively dropping\n   RTP packets
+    from competing video streams according to their\n   significances or discarding
+    priorities could be a complementary\n   mechanism when dealing with network congestion.
+    \ The document\n   proposes the Differentiated Services Code Point (DSCP) value
+    mapping\n   to the RTP packet discarding priority carried in the RTP NALU header.\n
+    \  The document also proposes a new Hop-by-Hop Extension Header (HbH-EH)\n   with
+    a value that is copied from the discarding priority of the RTP\n   packet, if
+    the 6-bit DSCP value is not long enough for the mapping.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-dong-priority-rtp-packet-01
-    docid:
-    - id: draft-dong-priority-rtp-packet-01
+    formattedref: draft-dong-priority-rtp-packet-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-priority-rtp-packet-01
+    docidentifier:
+    - content: draft-dong-priority-rtp-packet-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-priority-rtp-packet-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-priority-rtp-packet-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

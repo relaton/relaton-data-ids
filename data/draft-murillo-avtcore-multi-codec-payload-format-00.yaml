@@ -1,195 +1,169 @@
 ---
-schema-version: v1.2.9
-id: draft-murillo-avtcore-multi-codec-payload-format-00
-title:
-- content: Multi Codec RTP payload format
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-murillo-avtcore-multi-codec-payload-format-00
-  type: src
+id: draftmurilloavtcoremulticodecpayloadformat00
 type: standard
-docid:
-- id: draft-murillo-avtcore-multi-codec-payload-format-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multi Codec RTP payload format
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-murillo-avtcore-multi-codec-payload-format-00
+docidentifier:
+- content: draft-murillo-avtcore-multi-codec-payload-format
+  type: Internet-Draft
+- content: draft-murillo-avtcore-multi-codec-payload-format-00
   type: Internet-Draft
   primary: true
-- id: I-D.murillo-avtcore-multi-codec-payload-format
-  type: IETF
-  scope: anchor
 docnumber: I-D.murillo-avtcore-multi-codec-payload-format
 date:
 - type: published
-  value: '2021-07-11'
+  at: '2021-07-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: S. G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sergio
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: S. G.
       surname:
+        language: en
         content: Murillo
-        language:
-        - en
       completename:
+        language: en
         content: Sergio Garcia Murillo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CoSMo
-  role:
+        - language: en
+          content: CoSMo
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Youenn
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Youenn
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Fablet
-        language:
-        - en
       completename:
+        language: en
         content: Youenn Fablet
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gouaillard
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Alex Gouaillard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CoSMo
-  role:
+        - language: en
+          content: CoSMo
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Justin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Justin
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Uberti
-        language:
-        - en
       completename:
+        language: en
         content: Justin Uberti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Clubhouse
-  role:
-  - type: author
+        - language: en
+          content: Clubhouse
 version:
 - draft: '00'
-revdate: '2021-07-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RTP Media Chains usually rely on piping encoder output directly to
-    packetizers. Media packetization formats often support a specific codec format
-    and optimize RTP packets generation accordingly. With the development of Selective
-    Forward Unit (SFU) solutions, RTP Media Chains used in WebRTC solutions are increasingly
-    relying on application-specific transforms that sit between encoder and packetizer
-    on one end and between depacketizer and decoder on the other end. These transforms
-    are typically encrypting media content so that the media content is not readable
-    from the SFU, for instance using [SFrame] or [WebRTCInsertableStreams]. In that
-    context, RTP packetizers can no longer expect to use packetization formats that
-    mandate media content to be in a specific codec format. This document provides
-    a solution to that problem by describing a RTP packetization format that can be
-    used for many media content, and how to negotiate use of this format. This document
-    also describes a solution to allow SFUs to continue performing packet routing
-    on top of this RTP packetization format.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RTP Media Chains usually rely on piping encoder output directly to\n
+    \  packetizers.  Media packetization formats often support a specific\n   codec
+    format and optimize RTP packets generation accordingly.  With\n   the development
+    of Selective Forward Unit (SFU) solutions, RTP Media\n   Chains used in WebRTC
+    solutions are increasingly relying on\n   application-specific transforms that
+    sit between encoder and\n   packetizer on one end and between depacketizer and
+    decoder on the\n   other end.  These transforms are typically encrypting media
+    content\n   so that the media content is not readable from the SFU, for instance\n
+    \  using [SFrame] or [WebRTCInsertableStreams].  In that context, RTP\n   packetizers
+    can no longer expect to use packetization formats that\n   mandate media content
+    to be in a specific codec format.  This\n   document provides a solution to that
+    problem by describing a RTP\n   packetization format that can be used for many
+    media content, and how\n   to negotiate use of this format.  This document also
+    describes a\n   solution to allow SFUs to continue performing packet routing on
+    top\n   of this RTP packetization format.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-murillo-avtcore-multi-codec-payload-format-01
-    docid:
-    - id: draft-murillo-avtcore-multi-codec-payload-format-01
+    formattedref: draft-murillo-avtcore-multi-codec-payload-format-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-murillo-avtcore-multi-codec-payload-format-01
+    docidentifier:
+    - content: draft-murillo-avtcore-multi-codec-payload-format-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-murillo-avtcore-multi-codec-payload-format-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-murillo-avtcore-multi-codec-payload-format-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

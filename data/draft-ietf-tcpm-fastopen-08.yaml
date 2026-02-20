@@ -1,182 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tcpm-fastopen-08
-title:
-- content: TCP Fast Open
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-fastopen-08
-  type: src
+id: draftietftcpmfastopen08
 type: standard
-docid:
-- id: draft-ietf-tcpm-fastopen-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: TCP Fast Open
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-fastopen-08
+docidentifier:
+- content: draft-ietf-tcpm-fastopen
+  type: Internet-Draft
+- content: draft-ietf-tcpm-fastopen-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tcpm-fastopen
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tcpm-fastopen
 date:
 - type: published
-  value: '2014-03-11'
+  at: '2014-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yuchung
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yuchung
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cheng
-        language:
-        - en
       completename:
+        language: en
         content: Yuchung Cheng
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jerry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jerry
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Chu
-        language:
-        - en
       completename:
+        language: en
         content: Jerry Chu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sivasankar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sivasankar
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Radhakrishnan
-        language:
-        - en
       completename:
+        language: en
         content: Sivasankar Radhakrishnan
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Arvind
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Arvind
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Jain
-        language:
-        - en
       completename:
+        language: en
         content: Arvind Jain
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '08'
-revdate: '2014-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes an experimental TCP mechanism TCP Fast Open
-    (TFO). TFO allows data to be carried in the SYN and SYN-ACK packets and consumed
-    by the receiving end during the initial connection handshake, thus saving up to
-    one full round trip time (RTT) compared to the standard TCP, which requires a
-    three-way handshake (3WHS) to complete before data can be exchanged. However TFO
-    deviates from the standard TCP semantics since the data in the SYN could be replayed
-    to an application in some rare circumstances. Applications should not use TFO
-    unless they can tolerate this issue detailed in the Applicability section.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes an experimental TCP mechanism TCP Fast Open\n
+    \  (TFO). TFO allows data to be carried in the SYN and SYN-ACK packets\n   and
+    consumed by the receiving end during the initial connection\n   handshake, thus
+    saving up to one full round trip time (RTT) compared\n   to the standard TCP,
+    which requires a three-way handshake (3WHS) to\n   complete before data can be
+    exchanged. However TFO deviates from the\n   standard TCP semantics since the
+    data in the SYN could be replayed to\n   an application in some rare circumstances.
+    Applications should not\n   use TFO unless they can tolerate this issue detailed
+    in the\n   Applicability section.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tcpm-fastopen-07
-    docid:
-    - id: draft-ietf-tcpm-fastopen-07
+    formattedref: draft-ietf-tcpm-fastopen-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-fastopen-07
+    docidentifier:
+    - content: draft-ietf-tcpm-fastopen-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-fastopen-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-tcpm-fastopen-09
-    docid:
-    - id: draft-ietf-tcpm-fastopen-09
+    formattedref: draft-ietf-tcpm-fastopen-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-fastopen-09
+    docidentifier:
+    - content: draft-ietf-tcpm-fastopen-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-fastopen-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tcpm-fastopen-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

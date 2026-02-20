@@ -1,227 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-li-opsec-sav-gap-analysis-01
-title:
-- content: 'Soure Address Validation: Gap Analysis'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-opsec-sav-gap-analysis-01
-  type: src
+id: draftliopsecsavgapanalysis01
 type: standard
-docid:
-- id: draft-li-opsec-sav-gap-analysis-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Soure Address Validation: Gap Analysis'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-opsec-sav-gap-analysis-01
+docidentifier:
+- content: draft-li-opsec-sav-gap-analysis
+  type: Internet-Draft
+- content: draft-li-opsec-sav-gap-analysis-01
   type: Internet-Draft
   primary: true
-- id: I-D.li-opsec-sav-gap-analysis
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-opsec-sav-gap-analysis
 date:
 - type: published
-  value: '2021-01-10'
+  at: '2021-01-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua
-  role:
+        - language: en
+          content: Tsinghua
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jianping
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jianping
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Jianping Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua
-  role:
+        - language: en
+          content: Tsinghua
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yunan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yunan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Gu
-        language:
-        - en
       completename:
+        language: en
         content: Yunan Gu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lancheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lancheng
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Lancheng Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua
-  role:
+        - language: en
+          content: Tsinghua
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tao
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Lin
-        language:
-        - en
       completename:
+        language: en
         content: Tao Lin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: H3C
-  role:
-  - type: author
+        - language: en
+          content: H3C
 version:
 - draft: '01'
-revdate: '2021-01-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document identifies scenarios where existing IP spoofing approaches
-    for detection and mitigation don't perform perfectly. Exsiting SAV (source address
-    validation) approaches, either Ingress ACL filtering [RFC2827], unicast Reverse
-    Path Forwarding (uRPF) [RFC3704], Feasible Path uRPF [RFC 3704], or Enhanced Feasible-Path
-    uRPF [RFC8704] has limitations regarding eihter automated implemetation objective
-    or detection accuracy objective (0% false positive and 0% false negative). This
-    document provides the gap analysis of the exsting SAV approaches, and also provides
-    solution discussions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document identifies scenarios where existing IP spoofing\n   approaches
+    for detection and mitigation don't perform perfectly.\n   Exsiting SAV (source
+    address validation) approaches, either Ingress\n   ACL filtering [RFC2827], unicast
+    Reverse Path Forwarding (uRPF)\n   [RFC3704], Feasible Path uRPF [RFC 3704], or
+    Enhanced Feasible-Path\n   uRPF [RFC8704] has limitations regarding eihter automated\n
+    \  implemetation objective or detection accuracy objective (0% false\n   positive
+    and 0% false negative).  This document provides the gap\n   analysis of the exsting
+    SAV approaches, and also provides solution\n   discussions.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-li-opsec-sav-gap-analysis-00
-    docid:
-    - id: draft-li-opsec-sav-gap-analysis-00
+    formattedref: draft-li-opsec-sav-gap-analysis-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-opsec-sav-gap-analysis-00
+    docidentifier:
+    - content: draft-li-opsec-sav-gap-analysis-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-opsec-sav-gap-analysis-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-li-opsec-sav-gap-analysis-02
-    docid:
-    - id: draft-li-opsec-sav-gap-analysis-02
+    formattedref: draft-li-opsec-sav-gap-analysis-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-opsec-sav-gap-analysis-02
+    docidentifier:
+    - content: draft-li-opsec-sav-gap-analysis-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-opsec-sav-gap-analysis-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-opsec-sav-gap-analysis-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

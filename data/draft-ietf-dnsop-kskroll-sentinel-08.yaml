@@ -1,190 +1,165 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-kskroll-sentinel-08
-title:
-- content: A Root Key Trust Anchor Sentinel for DNSSEC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-08
-  type: src
+id: draftietfdnsopkskrollsentinel08
 type: standard
-docid:
-- id: draft-ietf-dnsop-kskroll-sentinel-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Root Key Trust Anchor Sentinel for DNSSEC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-08
+docidentifier:
+- content: draft-ietf-dnsop-kskroll-sentinel
+  type: Internet-Draft
+- content: draft-ietf-dnsop-kskroll-sentinel-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-kskroll-sentinel
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-kskroll-sentinel
 date:
 - type: published
-  value: '2018-03-24'
+  at: '2018-03-24'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Geoff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Geoff
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Huston
-        language:
-        - en
       completename:
+        language: en
         content: Geoff Huston
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: APNIC
-  role:
+        - language: en
+          content: APNIC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: J. D. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joao
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: J. D. S.
       surname:
+        language: en
         content: Damas
-        language:
-        - en
       completename:
+        language: en
         content: Joao da Silva Damas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: APNIC
-  role:
+        - language: en
+          content: APNIC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Warren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: W. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Warren
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: W. A.
       surname:
+        language: en
         content: Kumari
-        language:
-        - en
       completename:
+        language: en
         content: Warren "Ace" Kumari
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
-  - type: author
+        - language: en
+          content: Google
 version:
 - draft: '08'
-revdate: '2018-03-24'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>The DNS Security Extensions (DNSSEC) were developed to provide origin
-    authentication and integrity protection for DNS data by using digital signatures.
-    These digital signatures can be verified by building a chain of trust starting
-    from a trust anchor and proceeding down to a particular node in the DNS. This
-    document specifies a mechanism that will allow an end user and third parties to
-    determine the trusted key state for the root key of the resolvers that handle
-    that user''s DNS queries. Note that this method is only applicable for determing
-    which keys are in the trust store for the root key. There is an example / toy
-    implementation of this at http://www.ksk- test.net. [ This document is being collaborated
-    on in Github at: https://github.com/APNIC-Labs/draft-kskroll-sentinel. The most
-    recent version of the document, open issues, etc should all be available here.
-    The authors (gratefully) accept pull requests. Text in square brackets will be
-    removed before publication. ] [ NOTE: This version uses the labels "kskroll-sentinel-is-ta-&lt;key-
-    tag&gt;", "kskroll-sentinel-not-ta-&lt;key-tag&gt;"; older versions of this document
-    used "_is-ta-&lt;key-tag&gt;", "_not-ta-&lt;key-tag&gt;". Also note that the format
-    of the tag-index is now zero-filled decimal. Apolgies to those who have began
-    implmenting.]</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The DNS Security Extensions (DNSSEC) were developed to provide origin\n
+    \  authentication and integrity protection for DNS data by using digital\n   signatures.
+    \ These digital signatures can be verified by building a\n   chain of trust starting
+    from a trust anchor and proceeding down to a\n   particular node in the DNS.  This
+    document specifies a mechanism that\n   will allow an end user and third parties
+    to determine the trusted key\n   state for the root key of the resolvers that
+    handle that user's DNS\n   queries.  Note that this method is only applicable
+    for determing\n   which keys are in the trust store for the root key.\n\n   There
+    is an example / toy implementation of this at http://www.ksk-\n   test.net .\n\n
+    \  [ This document is being collaborated on in Github at:\n   https://github.com/APNIC-Labs/draft-kskroll-sentinel.
+    \ The most\n   recent version of the document, open issues, etc should all be\n
+    \  available here.  The authors (gratefully) accept pull requests.  Text\n   in
+    square brackets will be removed before publication. ]\n\n   [ NOTE: This version
+    uses the labels \"kskroll-sentinel-is-ta-<key-\n   tag>\", \"kskroll-sentinel-not-ta-<key-tag>\";
+    older versions of this\n   document used \"_is-ta-<key-tag>\", \"_not-ta-<key-tag>\".
+    \ Also note\n   that the format of the tag-index is now zero-filled decimal.\n
+    \  Apolgies to those who have began implmenting.]\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-kskroll-sentinel-07
-    docid:
-    - id: draft-ietf-dnsop-kskroll-sentinel-07
+    formattedref: draft-ietf-dnsop-kskroll-sentinel-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-07
+    docidentifier:
+    - content: draft-ietf-dnsop-kskroll-sentinel-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-kskroll-sentinel-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dnsop-kskroll-sentinel-09
-    docid:
-    - id: draft-ietf-dnsop-kskroll-sentinel-09
+    formattedref: draft-ietf-dnsop-kskroll-sentinel-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-09
+    docidentifier:
+    - content: draft-ietf-dnsop-kskroll-sentinel-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-kskroll-sentinel-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-kskroll-sentinel-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

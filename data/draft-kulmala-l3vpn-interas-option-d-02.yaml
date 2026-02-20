@@ -1,99 +1,86 @@
 ---
-schema-version: v1.2.9
-id: draft-kulmala-l3vpn-interas-option-d-02
-title:
-- content: ASBR VRF context for BGP/MPLS IP VPN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kulmala-l3vpn-interas-option-d-02
-  type: src
+id: draftkulmalal3vpninterasoptiond02
 type: standard
-docid:
-- id: draft-kulmala-l3vpn-interas-option-d-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ASBR VRF context for BGP/MPLS IP VPN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kulmala-l3vpn-interas-option-d-02
+docidentifier:
+- content: draft-kulmala-l3vpn-interas-option-d
+  type: Internet-Draft
+- content: draft-kulmala-l3vpn-interas-option-d-02
   type: Internet-Draft
   primary: true
-- id: I-D.kulmala-l3vpn-interas-option-d
-  type: IETF
-  scope: anchor
 docnumber: I-D.kulmala-l3vpn-interas-option-d
 date:
 - type: published
-  value: '2006-02-07'
+  at: '2006-02-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marko
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marko
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Kulmala
-        language:
-        - en
       completename:
+        language: en
         content: Marko Kulmala
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tellabs
-  role:
-  - type: author
+        - language: en
+          content: Tellabs
 version:
 - draft: '02'
-revdate: '2006-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes an additional option to the 'Multi-AS Backbones'
-    section of [RFC4364]. This option combines per VPN VRFs at the Autonomous System
-    Border Router (ASBR) as described in 'Option A' with the redistribution of labeled
-    VPN-IPv4 routes as described in 'Option B'. In addition, this option allows for
-    a data plane consisting of two methods of traffic forwarding between attached
-    ASBR pairs. In this Multi-AS option, the ASBR installs VPN-IPv4 routes into VRFs
-    in the same manner as described in [RFC4364] e.g. VPN-IPv4 routes are converted
-    back to IPv4 routes and imported into VRFs via Route Target (RT) based filtering
-    policies. Once installed in a VRF, selected IPv4 routes are converted to VPN-IPv4
-    routes by the addition of Route Distinguisher (RD) values, along with one or more
-    associated RTs as configured per VRF at the ASBR. Dependant on service provider
-    preference, traffic forwarding between attached ASBRs is either via per VRF attachment
-    circuits or a 'global' (non-VRF attachment circuit associated) IP interface. In
-    both traffic forwarding cases, packets may be MPLS-labeled or non-labeled. If
-    attached ASBR pairs belonging to separate Autonomous Systems (AS) make use of
-    this Multi-AS option, then VRF based route filtering policies via RTs is achieved
-    directly between ASBR pairs, independent of PE based RT filtering within an AS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes an additional option to the 'Multi-AS \nBackbones'
+    section of [RFC4364]. This option combines per VPN VRFs at \nthe Autonomous System
+    Border Router (ASBR) as described in 'Option A' \nwith the redistribution of labeled
+    VPN-IPv4 routes as described in \n'Option B'. In addition, this option allows
+    for a data plane consisting \nof two methods of traffic forwarding between attached
+    ASBR pairs.  \n\nIn this Multi-AS option, the ASBR installs VPN-IPv4 routes into
+    VRFs in \nthe same manner as described in [RFC4364] e.g. VPN-IPv4 routes are \nconverted
+    back to IPv4 routes and imported into VRFs via Route Target \n(RT) based filtering
+    policies. Once installed in a VRF, selected IPv4 \nroutes are converted to VPN-IPv4
+    routes by the addition of Route \nDistinguisher (RD) values, along with one or
+    more associated RTs as \nconfigured per VRF at the ASBR.  \n\nDependant on service
+    provider preference, traffic forwarding between \nattached ASBRs is either via
+    per VRF attachment circuits or a 'global' \n(non-VRF attachment circuit associated)
+    IP interface. In both traffic \nforwarding cases, packets may be MPLS-labeled
+    or non-labeled. \n\nIf attached ASBR pairs belonging to separate Autonomous Systems
+    (AS) \nmake use of this Multi-AS option, then VRF based route filtering \npolicies
+    via RTs is achieved directly between ASBR pairs, independent \nof PE based RT
+    filtering within an AS. \n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kulmala-l3vpn-interas-option-d-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,203 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-tiloca-ace-group-oscore-profile-10
+id: drafttilocaacegrouposcoreprofile10
+type: standard
+schema_version: v1.4.1
 title:
-- content: The Group Object Security for Constrained RESTful Environments (Group OSCORE)
+- language: en
+  script: Latn
+  content: The Group Object Security for Constrained RESTful Environments (Group OSCORE)
     Profile of the Authentication and Authorization for Constrained Environments (ACE)
     Framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-tiloca-ace-group-oscore-profile-10
-  type: src
-type: standard
-docid:
-- id: draft-tiloca-ace-group-oscore-profile-10
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-tiloca-ace-group-oscore-profile-10
+docidentifier:
+- content: draft-tiloca-ace-group-oscore-profile
+  type: Internet-Draft
+- content: draft-tiloca-ace-group-oscore-profile-10
   type: Internet-Draft
   primary: true
-- id: I-D.tiloca-ace-group-oscore-profile
-  type: IETF
-  scope: anchor
 docnumber: I-D.tiloca-ace-group-oscore-profile
 date:
 - type: published
-  value: '2023-03-08'
+  at: '2023-03-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Tiloca
-        language:
-        - en
       completename:
+        language: en
         content: Marco Tiloca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE AB
-  role:
+        - language: en
+          content: RISE AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rikard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rikard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Höglund
-        language:
-        - en
       completename:
+        language: en
         content: Rikard Höglund
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE AB
-  role:
+        - language: en
+          content: RISE AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ludwig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ludwig
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Seitz
-        language:
-        - en
       completename:
+        language: en
         content: Ludwig Seitz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Combitech
-  role:
+        - language: en
+          content: Combitech
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Francesca
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Francesca
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Palombini
-        language:
-        - en
       completename:
+        language: en
         content: Francesca Palombini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson AB
-  role:
-  - type: author
+        - language: en
+          content: Ericsson AB
 version:
 - draft: '10'
-revdate: '2023-03-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies a profile for the Authentication and Authorization
-    for Constrained Environments (ACE) framework. The profile uses Group OSCORE to
-    provide communication security between a Client and a (set of) Resource Server(s)
-    as members of an OSCORE Group. The profile securely binds an OAuth 2.0 Access
-    Token with the public key of the Client associated with the private key used in
-    the OSCORE group. The profile uses Group OSCORE to achieve server authentication,
-    as well as proof-of-possession for the Client's public key. Also, it provides
-    proof of the Client's membership to the OSCORE group, by binding the Access Token
-    to information from the Group OSCORE Security Context, thus allowing the Resource
-    Server(s) to verify the Client's membership upon receiving a message protected
-    with Group OSCORE from the Client.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies a profile for the Authentication and\n   Authorization
+    for Constrained Environments (ACE) framework.  The\n   profile uses Group OSCORE
+    to provide communication security between a\n   Client and a (set of) Resource
+    Server(s) as members of an OSCORE\n   Group.  The profile securely binds an OAuth
+    2.0 Access Token with the\n   public key of the Client associated with the private
+    key used in the\n   OSCORE group.  The profile uses Group OSCORE to achieve server\n
+    \  authentication, as well as proof-of-possession for the Client's\n   public
+    key.  Also, it provides proof of the Client's membership to\n   the OSCORE group,
+    by binding the Access Token to information from the\n   Group OSCORE Security
+    Context, thus allowing the Resource Server(s)\n   to verify the Client's membership
+    upon receiving a message protected\n   with Group OSCORE from the Client.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-tiloca-ace-group-oscore-profile-09
-    docid:
-    - id: draft-tiloca-ace-group-oscore-profile-09
+    formattedref: draft-tiloca-ace-group-oscore-profile-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tiloca-ace-group-oscore-profile-09
+    docidentifier:
+    - content: draft-tiloca-ace-group-oscore-profile-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tiloca-ace-group-oscore-profile-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-tiloca-ace-group-oscore-profile-11
-    docid:
-    - id: draft-tiloca-ace-group-oscore-profile-11
+    formattedref: draft-tiloca-ace-group-oscore-profile-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tiloca-ace-group-oscore-profile-11
+    docidentifier:
+    - content: draft-tiloca-ace-group-oscore-profile-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-tiloca-ace-group-oscore-profile-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-tiloca-ace-group-oscore-profile-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

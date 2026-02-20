@@ -1,166 +1,137 @@
 ---
-schema-version: v1.2.9
-id: draft-leecy-multicast-te-01
-title:
-- content: Engineering Paths for Multicast Traffic using MPLS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-leecy-multicast-te-01
-  type: src
+id: draftleecymulticastte01
 type: standard
-docid:
-- id: draft-leecy-multicast-te-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Engineering Paths for Multicast Traffic using MPLS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-leecy-multicast-te-01
+docidentifier:
+- content: draft-leecy-multicast-te
+  type: Internet-Draft
+- content: draft-leecy-multicast-te-01
   type: Internet-Draft
   primary: true
-- id: I-D.leecy-multicast-te
-  type: IETF
-  scope: anchor
 docnumber: I-D.leecy-multicast-te
 date:
 - type: published
-  value: '1999-11-11'
+  at: '1999-11-11'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Ken
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
-      surname:
-        content: Carlberg
-        language:
-        - en
-      completename:
-        content: Ken Carlberg
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Loa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ken
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
-        content: Andersson
-        language:
-        - en
+        language: en
+        content: Carlberg
       completename:
+        language: en
+        content: Ken Carlberg
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Loa
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
+      surname:
+        language: en
+        content: Andersson
+      completename:
+        language: en
         content: Loa Andersson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel Networks
-  role:
+        - language: en
+          content: Nortel Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Cheng-Yin Lee
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bora
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bora
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Akyol
-        language:
-        - en
       completename:
+        language: en
         content: Bora Akyol
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '1999-11-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a solution to engineer paths for IP multicast
-    traffic in a network, by directing the control messages to setup multicast trees
-    on engineered paths. This enables the network operator to have control over the
-    topology of multicast trees. This proposal partitions the multicast traffic engineering
-    problem such that multicast routing protocols do not have to be modified to allocate
-    resources for multicast traffic nor do resource allocation protocols such as RSVP
-    or CR-LDP have to be able to setup forwarding states (in this case labels) like
-    multicast routing protocols. Resources are allocated on the same trip that paths
-    are selected and setup. This prevent the problem of data being forwarded on branches
-    of the tree where resources have not being allocated yet. An important aspect
-    of this proposal is that it enables multicast paths to be engineered in an aggregatable
-    manner, allowing this solution to scale in the backbone.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes a solution to engineer paths for IP multicast\ntraffic
+    in a network, by directing the control messages to setup\nmulticast trees on engineered
+    paths. This enables the network\noperator to have control over the topology of
+    multicast trees.\nThis proposal partitions the multicast traffic engineering problem\nsuch
+    that multicast routing protocols do not have to be modified to\nallocate resources
+    for multicast traffic nor do resource allocation\nprotocols such as RSVP or CR-LDP
+    have to be able to setup forwarding\nstates (in this case labels) like multicast
+    routing protocols.\nResources are allocated on the same trip that paths are selected
+    and\nsetup.  This prevent the problem of data being forwarded on branches\nof
+    the tree where resources have not being allocated yet. An\nimportant aspect of
+    this proposal is that it enables multicast paths\nto be engineered in an aggregatable
+    manner, allowing this solution to\nscale in the backbone.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-leecy-multicast-te-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

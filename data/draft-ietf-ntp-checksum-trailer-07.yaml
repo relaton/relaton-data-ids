@@ -1,103 +1,89 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ntp-checksum-trailer-07
-title:
-- content: UDP Checksum Complement in the Network Time Protocol (NTP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-checksum-trailer-07
-  type: src
+id: draftietfntpchecksumtrailer07
 type: standard
-docid:
-- id: draft-ietf-ntp-checksum-trailer-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: UDP Checksum Complement in the Network Time Protocol (NTP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-checksum-trailer-07
+docidentifier:
+- content: draft-ietf-ntp-checksum-trailer
+  type: Internet-Draft
+- content: draft-ietf-ntp-checksum-trailer-07
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ntp-checksum-trailer
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ntp-checksum-trailer
 date:
 - type: published
-  value: '2016-03-10'
+  at: '2016-03-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tal
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Mizrahi
-        language:
-        - en
       completename:
+        language: en
         content: Tal Mizrahi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Marvell
-  role:
-  - type: author
+        - language: en
+          content: Marvell
 version:
 - draft: '07'
-revdate: '2016-03-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Network Time Protocol (NTP) allows clients to synchronize to a
-    time server using timestamped protocol messages. To facilitate accurate timestamping,
+- language: en
+  script: Latn
+  content: "The Network Time Protocol (NTP) allows clients to synchronize to a time
+    server using timestamped protocol messages.  To facilitate accurate timestamping,
     some implementations use hardware-based timestamping engines that integrate the
     accurate transmission time into every outgoing NTP packet during transmission.
-    Since these packets are transported over UDP, the UDP Checksum field is then updated
-    to reflect this modification. This document proposes an extension field that includes
-    a 2-octet Checksum Complement, allowing timestamping engines to reflect the checksum
-    modification in the last 2 octets of the packet rather than in the UDP Checksum
-    field. The behavior defined in this document is interoperable with existing NTP
-    implementations.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    \ Since these packets are transported over UDP, the UDP Checksum field is then
+    updated to reflect this modification.  This document proposes an extension field
+    that includes a 2-octet Checksum Complement, allowing timestamping engines to
+    reflect the checksum modification in the last 2 octets of the packet rather than
+    in the UDP Checksum field.  The behavior defined in this document is interoperable
+    with existing NTP implementations.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ntp-checksum-trailer-06
-    docid:
-    - id: draft-ietf-ntp-checksum-trailer-06
+    formattedref: draft-ietf-ntp-checksum-trailer-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-checksum-trailer-06
+    docidentifier:
+    - content: draft-ietf-ntp-checksum-trailer-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ntp-checksum-trailer-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ntp-checksum-trailer-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

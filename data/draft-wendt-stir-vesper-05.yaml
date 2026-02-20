@@ -1,153 +1,136 @@
 ---
-schema-version: v1.2.9
-id: draft-wendt-stir-vesper-05
-title:
-- content: VESPER - Framework for VErifiable STI Personas
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wendt-stir-vesper-05
-  type: src
+id: draftwendtstirvesper05
 type: standard
-docid:
-- id: draft-wendt-stir-vesper-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: VESPER - Framework for VErifiable STI Personas
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wendt-stir-vesper-05
+docidentifier:
+- content: draft-wendt-stir-vesper
+  type: Internet-Draft
+- content: draft-wendt-stir-vesper-05
   type: Internet-Draft
   primary: true
-- id: I-D.wendt-stir-vesper
-  type: IETF
-  scope: anchor
 docnumber: I-D.wendt-stir-vesper
 date:
 - type: published
-  value: '2025-09-05'
+  at: '2025-09-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Wendt
-        language:
-        - en
       completename:
+        language: en
         content: Chris Wendt
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Somos, Inc.
-  role:
+        - language: en
+          content: Somos, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Robert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Robert
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Śliwa
-        language:
-        - en
       completename:
+        language: en
         content: Robert Śliwa
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Somos, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Somos, Inc.
 version:
 - draft: '05'
-revdate: '2025-09-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document formalizes a profile and a framework for the use of delegate
-    certificates and authority tokens to strengthen the association between telephone
-    number assignments and the entities that have the authoritative right to use them.
-    It defines a model in which the TNAuthList Authority Token serves as a trusted
-    representation of telephone number assignment and right-to-use (RTU), anchored
-    by a Notary Agent that logs these associations through verifiable transparency
-    mechanisms. The framework also extends the use of authority tokens to support
-    other PASSporT claims like Rich Call Data (RCD) by defining a role for JWTClaimConstraints
-    Authority Tokens. These tokens are issued by authoritative or recognized and vetted
-    claim agents within the ecosystem to assert information associated with the entity
-    assigned a telephone number. The Notary Agent plays a critical role in recording
-    these claims and their provenance, enhancing transparency and accountability.
-    Delegate certificates encapsulate and incorporate both the telephone number and
-    associated information validated via authority tokens to the certification authority
-    issuing them, binding them to the authenticated telephone number of the calling
-    party. These certificates are published to a certificate transparency log, enabling
-    relying parties to independently verify the integrity and legitimacy of number
-    use and related claims. The VESPER (Verifiable STI PERsona) approach utilizes
-    STIR protocols and the ACME authority token to formalizing a verifiable, auditable,
-    and privacy-conscious foundation for associating telephone numbers with vetted
-    entities and validated assertion of associated metadata.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document formalizes a profile and a framework for the use of\n
+    \  delegate certificates and authority tokens to strengthen the\n   association
+    between telephone number assignments and the entities\n   that have the authoritative
+    right to use them.  It defines a model in\n   which the TNAuthList Authority Token
+    serves as a trusted\n   representation of telephone number assignment and right-to-use
+    (RTU),\n   anchored by a Notary Agent that logs these associations through\n   verifiable
+    transparency mechanisms.  The framework also extends the\n   use of authority
+    tokens to support other PASSporT claims like Rich\n   Call Data (RCD) by defining
+    a role for JWTClaimConstraints Authority\n   Tokens.  These tokens are issued
+    by authoritative or recognized and\n   vetted claim agents within the ecosystem
+    to assert information\n   associated with the entity assigned a telephone number.
+    \ The Notary\n   Agent plays a critical role in recording these claims and their\n
+    \  provenance, enhancing transparency and accountability.  Delegate\n   certificates
+    encapsulate and incorporate both the telephone number\n   and associated information
+    validated via authority tokens to the\n   certification authority issuing them,
+    binding them to the\n   authenticated telephone number of the calling party.  These\n
+    \  certificates are published to a certificate transparency log,\n   enabling
+    relying parties to independently verify the integrity and\n   legitimacy of number
+    use and related claims.  The VESPER (Verifiable\n   STI PERsona) approach utilizes
+    STIR protocols and the ACME authority\n   token to formalizing a verifiable, auditable,
+    and privacy-conscious\n   foundation for associating telephone numbers with vetted
+    entities and\n   validated assertion of associated metadata.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wendt-stir-vesper-04
-    docid:
-    - id: draft-wendt-stir-vesper-04
+    formattedref: draft-wendt-stir-vesper-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wendt-stir-vesper-04
+    docidentifier:
+    - content: draft-wendt-stir-vesper-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wendt-stir-vesper-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wendt-stir-vesper-06
-    docid:
-    - id: draft-wendt-stir-vesper-06
+    formattedref: draft-wendt-stir-vesper-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wendt-stir-vesper-06
+    docidentifier:
+    - content: draft-wendt-stir-vesper-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wendt-stir-vesper-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wendt-stir-vesper-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

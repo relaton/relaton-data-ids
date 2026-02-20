@@ -1,227 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-jeong-ipwave-vehicular-neighbor-discovery-01
-title:
-- content: IPv6 Neighbor Discovery for Prefix and Service Discovery in Vehicular Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-jeong-ipwave-vehicular-neighbor-discovery-01
-  type: src
+id: draftjeongipwavevehicularneighbordiscovery01
 type: standard
-docid:
-- id: draft-jeong-ipwave-vehicular-neighbor-discovery-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IPv6 Neighbor Discovery for Prefix and Service Discovery in Vehicular Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jeong-ipwave-vehicular-neighbor-discovery-01
+docidentifier:
+- content: draft-jeong-ipwave-vehicular-neighbor-discovery
+  type: Internet-Draft
+- content: draft-jeong-ipwave-vehicular-neighbor-discovery-01
   type: Internet-Draft
   primary: true
-- id: I-D.jeong-ipwave-vehicular-neighbor-discovery
-  type: IETF
-  scope: anchor
 docnumber: I-D.jeong-ipwave-vehicular-neighbor-discovery
 date:
 - type: published
-  value: '2017-10-30'
+  at: '2017-10-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Junsik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Junsik
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Jeong
-        language:
-        - en
       completename:
+        language: en
         content: Junsik Jeong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sungkyunkwan University
-  role:
+        - language: en
+          content: Sungkyunkwan University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yiwen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yiwen
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Shen
-        language:
-        - en
       completename:
+        language: en
         content: Yiwen Shen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sungkyunkwan University
-  role:
+        - language: en
+          content: Sungkyunkwan University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Younghwa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Younghwa
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Jo
-        language:
-        - en
       completename:
+        language: en
         content: Younghwa Jo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sungkyunkwan University
-  role:
+        - language: en
+          content: Sungkyunkwan University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jaehoon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jaehoon
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Jeong
-        language:
-        - en
       completename:
+        language: en
         content: Jaehoon Paul Jeong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Samsung Electronics
-  role:
+        - language: en
+          content: Samsung Electronics
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Jong-Hyouk Lee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sangmyung University
-  role:
-  - type: author
+        - language: en
+          content: Sangmyung University
 version:
 - draft: '01'
-revdate: '2017-10-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies an extension of IPv6 Neighbor Discovery (ND)
-    for rapid network prefix and service discovery in vehicular networks. It is assumed
-    that a vehicle or a Road-Side Unit (RSU) have an external network interface and
-    their internal network. The extended IPv6 ND called vehicular ND can support vehicle-to-infrastructure
-    communications as well as vehicle-to-vehicle communications. This document defines
-    new ND options to allow a vehicle to announce the network prefixes and services
-    inside its internal network to another vehicle or RSU.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies an extension of IPv6 Neighbor Discovery (ND)\n
+    \  for rapid network prefix and service discovery in vehicular networks.\n   It
+    is assumed that a vehicle or a Road-Side Unit (RSU) have an\n   external network
+    interface and their internal network.  The extended\n   IPv6 ND called vehicular
+    ND can support vehicle-to-infrastructure\n   communications as well as vehicle-to-vehicle
+    communications.  This\n   document defines new ND options to allow a vehicle to
+    announce the\n   network prefixes and services inside its internal network to
+    another\n   vehicle or RSU.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-jeong-ipwave-vehicular-neighbor-discovery-00
-    docid:
-    - id: draft-jeong-ipwave-vehicular-neighbor-discovery-00
+    formattedref: draft-jeong-ipwave-vehicular-neighbor-discovery-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jeong-ipwave-vehicular-neighbor-discovery-00
+    docidentifier:
+    - content: draft-jeong-ipwave-vehicular-neighbor-discovery-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jeong-ipwave-vehicular-neighbor-discovery-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-jeong-ipwave-vehicular-neighbor-discovery-02
-    docid:
-    - id: draft-jeong-ipwave-vehicular-neighbor-discovery-02
+    formattedref: draft-jeong-ipwave-vehicular-neighbor-discovery-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jeong-ipwave-vehicular-neighbor-discovery-02
+    docidentifier:
+    - content: draft-jeong-ipwave-vehicular-neighbor-discovery-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jeong-ipwave-vehicular-neighbor-discovery-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-jeong-ipwave-vehicular-neighbor-discovery-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

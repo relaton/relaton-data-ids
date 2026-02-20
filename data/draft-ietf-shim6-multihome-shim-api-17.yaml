@@ -1,178 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-shim6-multihome-shim-api-17
-title:
-- content: Sockets Application Program Interface (API) for Multihoming Shim
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-shim6-multihome-shim-api-17
-  type: src
+id: draftietfshim6multihomeshimapi17
 type: standard
-docid:
-- id: draft-ietf-shim6-multihome-shim-api-17
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Sockets Application Program Interface (API) for Multihoming Shim
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-shim6-multihome-shim-api-17
+docidentifier:
+- content: draft-ietf-shim6-multihome-shim-api
+  type: Internet-Draft
+- content: draft-ietf-shim6-multihome-shim-api-17
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-shim6-multihome-shim-api
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-shim6-multihome-shim-api
 date:
 - type: published
-  value: '2011-04-03'
+  at: '2011-04-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kristian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kristian
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Slavov
-        language:
-        - en
       completename:
+        language: en
         content: Kristian Slavov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shinta
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shinta
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sugimoto
-        language:
-        - en
       completename:
+        language: en
         content: Shinta Sugimoto
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Miika
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Miika
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Komu
-        language:
-        - en
       completename:
+        language: en
         content: Miika Komu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aalto University
-  role:
+        - language: en
+          content: Aalto University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marcelo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marcelo
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Bagnulo
-        language:
-        - en
       completename:
+        language: en
         content: Marcelo Bagnulo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UC3M
-  role:
-  - type: author
+        - language: en
+          content: UC3M
 version:
 - draft: '17'
-revdate: '2011-04-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document specifies sockets API extensions for the multihoming shim
+- language: en
+  script: Latn
+  content: "This document specifies sockets API extensions for the multihoming shim
     layer. The API aims to enable interactions between applications and the multihoming
     shim layer for advanced locator management, and access to information about failure
-    detection and path exploration. This document is based on an assumption that a
-    multihomed host is equipped with a conceptual sub-layer (hereafter called "shim
-    sub- layer") inside the IP layer that maintains mappings between identifiers and
-    locators. Examples of the shim are Shim6 and the Host Identity Protocol (HIP).
+    detection and path exploration.\n\n This document is based on an assumption that
+    a multihomed host is equipped with a conceptual sub-layer (hereafter called \"shim
+    sub- layer\") inside the IP layer that maintains mappings between identifiers
+    and locators. Examples of the shim are Shim6 and the Host Identity Protocol (HIP).
     This document is not an Internet Standards Track specification; it is published
-    for informational purposes.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    for informational purposes.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-shim6-multihome-shim-api-17
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

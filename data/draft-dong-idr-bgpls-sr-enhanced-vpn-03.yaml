@@ -1,235 +1,206 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-idr-bgpls-sr-enhanced-vpn-03
-title:
-- content: BGP-LS Extensions for Segment Routing based Enhanced VPN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-03
-  type: src
+id: draftdongidrbgplssrenhancedvpn03
 type: standard
-docid:
-- id: draft-dong-idr-bgpls-sr-enhanced-vpn-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP-LS Extensions for Segment Routing based Enhanced VPN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-03
+docidentifier:
+- content: draft-dong-idr-bgpls-sr-enhanced-vpn
+  type: Internet-Draft
+- content: draft-dong-idr-bgpls-sr-enhanced-vpn-03
   type: Internet-Draft
   primary: true
-- id: I-D.dong-idr-bgpls-sr-enhanced-vpn
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-idr-bgpls-sr-enhanced-vpn
 date:
 - type: published
-  value: '2021-02-22'
+  at: '2021-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xiongyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiongyan
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Tang
-        language:
-        - en
       completename:
+        language: en
         content: Xiongyan Tang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
+        - language: en
+          content: China Unicom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ran
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Pang
-        language:
-        - en
       completename:
+        language: en
         content: Ran Pang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
-  - type: author
+        - language: en
+          content: China Unicom
 version:
 - draft: '03'
-revdate: '2021-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Enhanced VPN (VPN+) aims to provide enhanced VPN services to support
-    some applications' needs of enhanced isolation and stringent performance requirements.
-    VPN+ requires integration between the overlay VPN connectivity and the characteristics
-    provided by the underlay network. A Virtual Transport Network (VTN) is a virtual
-    underlay network which consists of a customized network topology and a set of
-    network resource allocated from the physical network. A VTN could be used as the
-    underlay to support one or a group of VPN+ services. This document specifies the
-    BGP-LS mechanisms with necessary extensions to advertise the information of Segment
-    Routing (SR) based VTNs to a centralized network controller. Each VTN can have
-    a customized topology and a set of network resources allocated. Multiple VTNs
-    may shared the same topology, and multiple VTNs may share the same set of network
-    resources on some network segments. This allows flexible combination of network
-    topology and network resource attributes to build a large number of VTNs with
-    a relatively small number of logical topologies. The proposed mechanism is applicable
-    to both segment routing with MPLS data plane (SR-MPLS) and segment routing with
-    IPv6 data plane (SRv6).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Enhanced VPN (VPN+) aims to provide enhanced VPN services to support\n
+    \  some applications' needs of enhanced isolation and stringent\n   performance
+    requirements.  VPN+ requires integration between the\n   overlay VPN connectivity
+    and the characteristics provided by the\n   underlay network.  A Virtual Transport
+    Network (VTN) is a virtual\n   underlay network which consists of a customized
+    network topology and\n   a set of network resource allocated from the physical
+    network.  A VTN\n   could be used as the underlay to support one or a group of
+    VPN+\n   services.\n\n   This document specifies the BGP-LS mechanisms with necessary\n
+    \  extensions to advertise the information of Segment Routing (SR) based\n   VTNs
+    to a centralized network controller.  Each VTN can have a\n   customized topology
+    and a set of network resources allocated.\n   Multiple VTNs may shared the same
+    topology, and multiple VTNs may\n   share the same set of network resources on
+    some network segments.\n   This allows flexible combination of network topology
+    and network\n   resource attributes to build a large number of VTNs with a relatively\n
+    \  small number of logical topologies.  The proposed mechanism is\n   applicable
+    to both segment routing with MPLS data plane (SR-MPLS) and\n   segment routing
+    with IPv6 data plane (SRv6).\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dong-idr-bgpls-sr-enhanced-vpn-02
-    docid:
-    - id: draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    formattedref: draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    docidentifier:
+    - content: draft-dong-idr-bgpls-sr-enhanced-vpn-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-idr-bgpls-sr-enhanced-vpn-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-dong-idr-bgpls-sr-enhanced-vpn-04
-    docid:
-    - id: draft-dong-idr-bgpls-sr-enhanced-vpn-04
+    formattedref: draft-dong-idr-bgpls-sr-enhanced-vpn-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-04
+    docidentifier:
+    - content: draft-dong-idr-bgpls-sr-enhanced-vpn-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-idr-bgpls-sr-enhanced-vpn-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-idr-bgpls-sr-enhanced-vpn-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,230 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-sfc-multi-layer-oam-16
-title:
-- content: Active OAM for Service Function Chaining
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-multi-layer-oam-16
-  type: src
+id: draftietfsfcmultilayeroam16
 type: standard
-docid:
-- id: draft-ietf-sfc-multi-layer-oam-16
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Active OAM for Service Function Chaining
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-multi-layer-oam-16
+docidentifier:
+- content: draft-ietf-sfc-multi-layer-oam
+  type: Internet-Draft
+- content: draft-ietf-sfc-multi-layer-oam-16
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-sfc-multi-layer-oam
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-sfc-multi-layer-oam
 date:
 - type: published
-  value: '2021-10-19'
+  at: '2021-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Mirsky
-        language:
-        - en
       completename:
+        language: en
         content: Greg Mirsky
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wei
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Meng
-        language:
-        - en
       completename:
+        language: en
         content: Wei Meng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE Corporation
-  role:
+        - language: en
+          content: ZTE Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ting
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ting
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Ao
-        language:
-        - en
       completename:
+        language: en
         content: Ting Ao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Individual contributor
-  role:
+        - language: en
+          content: Individual contributor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Leung
-        language:
-        - en
       completename:
+        language: en
         content: Kent Leung
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco System
-  role:
+        - language: en
+          content: Cisco System
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
-  - type: author
+        - language: en
+          content: Verizon Inc.
 version:
 - draft: '16'
-revdate: '2021-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>A set of requirements for active Operation, Administration, and Maintenance
-    (OAM) of Service Function Chains (SFCs) in a network is presented in this document.
-    Based on these requirements, an encapsulation of active OAM messages in SFC and
-    a mechanism to detect and localize defects are described. This document updates
-    RFC 8300. Particularly, it updates the definition of O (OAM) bit in the Network
-    Service Header (NSH) (RFC 8300) and defines how an active OAM message is identified
-    in the NSH.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   A set of requirements for active Operation, Administration, and\n   Maintenance
+    (OAM) of Service Function Chains (SFCs) in a network is\n   presented in this
+    document.  Based on these requirements, an\n   encapsulation of active OAM messages
+    in SFC and a mechanism to detect\n   and localize defects are described.\n\n   This
+    document updates RFC 8300.  Particularly, it updates the\n   definition of O (OAM)
+    bit in the Network Service Header (NSH) (RFC\n   8300) and defines how an active
+    OAM message is identified in the NSH.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-sfc-multi-layer-oam-15
-    docid:
-    - id: draft-ietf-sfc-multi-layer-oam-15
+    formattedref: draft-ietf-sfc-multi-layer-oam-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-multi-layer-oam-15
+    docidentifier:
+    - content: draft-ietf-sfc-multi-layer-oam-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-sfc-multi-layer-oam-15
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-sfc-multi-layer-oam-17
-    docid:
-    - id: draft-ietf-sfc-multi-layer-oam-17
+    formattedref: draft-ietf-sfc-multi-layer-oam-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-sfc-multi-layer-oam-17
+    docidentifier:
+    - content: draft-ietf-sfc-multi-layer-oam-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-sfc-multi-layer-oam-17
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-sfc-multi-layer-oam-16
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

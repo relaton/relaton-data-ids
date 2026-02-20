@@ -1,224 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-ramakrishna-sat-data-sharing-01
-title:
-- content: Protocol for Requesting and Sharing Views across Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-sat-data-sharing-01
-  type: src
+id: draftramakrishnasatdatasharing01
 type: standard
-docid:
-- id: draft-ramakrishna-sat-data-sharing-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Protocol for Requesting and Sharing Views across Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-sat-data-sharing-01
+docidentifier:
+- content: draft-ramakrishna-sat-data-sharing
+  type: Internet-Draft
+- content: draft-ramakrishna-sat-data-sharing-01
   type: Internet-Draft
   primary: true
-- id: I-D.ramakrishna-sat-data-sharing
-  type: IETF
-  scope: anchor
 docnumber: I-D.ramakrishna-sat-data-sharing
 date:
 - type: published
-  value: '2023-04-10'
+  at: '2023-04-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Venkatraman
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Venkatraman
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Ramakrishna
-        language:
-        - en
       completename:
+        language: en
         content: Venkatraman Ramakrishna
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vinayaka
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vinayaka
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Pandit
-        language:
-        - en
       completename:
+        language: en
         content: Vinayaka Pandit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ermyas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ermyas
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Abebe
-        language:
-        - en
       completename:
+        language: en
         content: Ermyas Abebe
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Consensys
-  role:
+        - language: en
+          content: Consensys
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandeep
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandeep
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Nishad
-        language:
-        - en
       completename:
+        language: en
         content: Sandeep Nishad
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
+        - language: en
+          content: IBM Research
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dhinakaran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dhinakaran
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Vinayagamurthy
-        language:
-        - en
       completename:
+        language: en
         content: Dhinakaran Vinayagamurthy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Research
-  role:
-  - type: author
+        - language: en
+          content: IBM Research
 version:
 - draft: '01'
-revdate: '2023-04-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With increasing use of DLT (distributed ledger technology) systems,
-    including blockchain systems and networks, for virtual assets, there is a need
-    for asset-related data and metadata to traverse system boundaries and link their
-    respective business workflows. Systems and networks can define and project views,
-    or asset states, outside of their boundaries, as well as guard them using access
-    control policies, and external agents or other systems can address those views
-    in a globally unique manner. Universal interoperability requires such systems
-    and networks to request and supply views via gateway nodes using a request-response
-    protocol. The endpoints of this protocol lie within the respective systems or
-    in networks of peer nodes, but the cross-system protocol occurs through the systems’
-    respective gateways. The inter-gateway protocol that allows an external party
-    to request a view by an address and a DLT system to return a view in response
-    must be DLT-neutral and mask the internal particularities and complexities of
-    the DLT systems. The view generation and verification modules at the endpoints
-    must obey the native consensus logic of their respective networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With increasing use of DLT (distributed ledger technology) systems,\n
+    \  including blockchain systems and networks, for virtual assets, there is a\n
+    \  need for asset-related data and metadata to traverse system boundaries\n   and
+    link their respective business workflows. Systems and networks can\n   define
+    and project views, or asset states, outside of their boundaries,\n   as well as
+    guard them using access control policies, and external agents\n   or other systems
+    can address those views in a globally unique manner.\n   Universal interoperability
+    requires such systems and networks to request\n   and supply views via gateway
+    nodes using a request-response protocol. The\n   endpoints of this protocol lie
+    within the respective systems or in\n   networks of peer nodes, but the cross-system
+    protocol occurs through the\n   systems’ respective gateways. The inter-gateway
+    protocol that allows an\n   external party to request a view by an address and
+    a DLT system to return\n   a view in response must be DLT-neutral and mask the
+    internal\n   particularities and complexities of the DLT systems. The view generation\n
+    \  and verification modules at the endpoints must obey the native consensus\n
+    \  logic of their respective networks.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ramakrishna-sat-data-sharing-00
-    docid:
-    - id: draft-ramakrishna-sat-data-sharing-00
+    formattedref: draft-ramakrishna-sat-data-sharing-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ramakrishna-sat-data-sharing-00
+    docidentifier:
+    - content: draft-ramakrishna-sat-data-sharing-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ramakrishna-sat-data-sharing-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ramakrishna-sat-data-sharing-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

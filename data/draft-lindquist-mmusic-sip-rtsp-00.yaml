@@ -1,180 +1,154 @@
 ---
-schema-version: v1.2.9
-id: draft-lindquist-mmusic-sip-rtsp-00
-title:
-- content: SIP/SDP Overlap with RTSP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lindquist-mmusic-sip-rtsp-00
-  type: src
+id: draftlindquistmmusicsiprtsp00
 type: standard
-docid:
-- id: draft-lindquist-mmusic-sip-rtsp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SIP/SDP Overlap with RTSP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lindquist-mmusic-sip-rtsp-00
+docidentifier:
+- content: draft-lindquist-mmusic-sip-rtsp
+  type: Internet-Draft
+- content: draft-lindquist-mmusic-sip-rtsp-00
   type: Internet-Draft
   primary: true
-- id: I-D.lindquist-mmusic-sip-rtsp
-  type: IETF
-  scope: anchor
 docnumber: I-D.lindquist-mmusic-sip-rtsp
 date:
 - type: published
-  value: '2009-06-16'
+  at: '2009-06-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Lindquist
-        language:
-        - en
       completename:
+        language: en
         content: Jan Lindquist
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jouni
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jouni
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Maenpaa
-        language:
-        - en
       completename:
+        language: en
         content: Jouni Maenpaa
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Priya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Priya
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Rajagopal
-        language:
-        - en
       completename:
+        language: en
         content: Priya Rajagopal
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Motorola
-  role:
+        - language: en
+          content: Motorola
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xavier
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xavier
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Marjou
-        language:
-        - en
       completename:
+        language: en
         content: Xavier Marjou
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: France Telecom
-  role:
-  - type: author
+        - language: en
+          content: France Telecom
 version:
 - draft: '00'
-revdate: '2009-06-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Session Initiation Protocol (SIP) is widely used for establishing
-    multimedia sessions, whereas the Real Time Streaming Protocol (RTSP) is a protocol
-    for use in streaming media systems. RTSP has a dual role: it establishes a media
-    session for the delivery of streaming media as well as controls the streaming
-    session once it has been set up. Since RTSP is also used for session establishment,
-    there exists an overlap between the functionality provided by SIP and RTSP. In
-    this document, we analyze a model in which SIP and the SDP offer/ answer model
-    are used to set up a streaming session with an RTSP control channel and one or
-    more media delivery streams. Such a model is beneficial since it allows the reuse
-    of current architecture and functionality (e.g., authentication, charging, and
-    QoS) established around SIP also for RTSP-based streaming.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "The Session Initiation Protocol (SIP) is widely used for establishing\nmultimedia
+    sessions, whereas the Real Time Streaming Protocol (RTSP)\nis a protocol for use
+    in streaming media systems.  RTSP has a dual\nrole: it establishes a media session
+    for the delivery of streaming\nmedia as well as controls the streaming session
+    once it has been set\nup.  Since RTSP is also used for session establishment,
+    there exists\nan overlap between the functionality provided by SIP and RTSP.  In\nthis
+    document, we analyze a model in which SIP and the SDP offer/\nanswer model are
+    used to set up a streaming session with an RTSP\ncontrol channel and one or more
+    media delivery streams.  Such a model\nis beneficial since it allows the reuse
+    of current architecture and\nfunctionality (e.g., authentication, charging, and
+    QoS) established\naround SIP also for RTSP-based streaming.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lindquist-mmusic-sip-rtsp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,104 +1,89 @@
 ---
-schema-version: v1.2.9
-id: draft-mathis-tcpm-tcp-laminar-00
-title:
-- content: Laminar TCP and the case for refactoring TCP congestion control
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mathis-tcpm-tcp-laminar-00
-  type: src
+id: draftmathistcpmtcplaminar00
 type: standard
-docid:
-- id: draft-mathis-tcpm-tcp-laminar-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Laminar TCP and the case for refactoring TCP congestion control
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mathis-tcpm-tcp-laminar-00
+docidentifier:
+- content: draft-mathis-tcpm-tcp-laminar
+  type: Internet-Draft
+- content: draft-mathis-tcpm-tcp-laminar-00
   type: Internet-Draft
   primary: true
-- id: I-D.mathis-tcpm-tcp-laminar
-  type: IETF
-  scope: anchor
 docnumber: I-D.mathis-tcpm-tcp-laminar
 date:
 - type: published
-  value: '2012-02-21'
+  at: '2012-02-21'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Matt
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Mathis
-        language:
-        - en
-      completename:
-        content: Matt Mathis
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Matt
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
+      surname:
+        language: en
+        content: Mathis
+      completename:
+        language: en
+        content: Matt Mathis
 version:
 - draft: '00'
-revdate: '2012-02-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The primary state variables used by all TCP congestion control algorithms,
-    cwnd and ssthresh are heavily overloaded, carrying different semantics in different
-    states. This leads to excess implementation complexity and poorly defined behaviors
-    under some combinations of events, such as loss recovery during cwnd validation.
-    We propose a new framework for TCP congestion control, and to recast current standard
-    algorithms to use new state variables. This new framework will not generally change
-    the behavior of any of the primary congestion control algorithms when invoked
-    in isolation but will to permit new algorithms with better behaviors in many corner
-    cases, such as when two distinct primary algorithms are invoked concurrently.
-    It will also foster the creation of new algorithms to address some events that
-    are poorly treated by today's standards. For the vast majority of traditional
-    algorithms the transformation to the new state variables is completely straightforward.
-    However, the resulting implementation will technically be in violation of all
-    existing TCP standards, even if it is fully compliant with their principles and
-    intent.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The primary state variables used by all TCP congestion control\n   algorithms,
+    cwnd and ssthresh are heavily overloaded, carrying\n   different semantics in
+    different states.  This leads to excess\n   implementation complexity and poorly
+    defined behaviors under some\n   combinations of events, such as loss recovery
+    during cwnd validation.\n   We propose a new framework for TCP congestion control,
+    and to recast\n   current standard algorithms to use new state variables.  This
+    new\n   framework will not generally change the behavior of any of the\n   primary
+    congestion control algorithms when invoked in isolation but\n   will to permit
+    new algorithms with better behaviors in many corner\n   cases, such as when two
+    distinct primary algorithms are invoked\n   concurrently.  It will also foster
+    the creation of new algorithms to\n   address some events that are poorly treated
+    by today's standards.\n   For the vast majority of traditional algorithms the
+    transformation to\n   the new state variables is completely straightforward.  However,
+    the\n   resulting implementation will technically be in violation of all\n   existing
+    TCP standards, even if it is fully compliant with their\n   principles and intent.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-mathis-tcpm-tcp-laminar-01
-    docid:
-    - id: draft-mathis-tcpm-tcp-laminar-01
+    formattedref: draft-mathis-tcpm-tcp-laminar-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mathis-tcpm-tcp-laminar-01
+    docidentifier:
+    - content: draft-mathis-tcpm-tcp-laminar-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mathis-tcpm-tcp-laminar-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mathis-tcpm-tcp-laminar-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,220 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-liu-anima-grasp-distribution-13
-title:
-- content: Information Distribution in Autonomic Networking
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-liu-anima-grasp-distribution-13
-  type: src
+id: draftliuanimagraspdistribution13
 type: standard
-docid:
-- id: draft-liu-anima-grasp-distribution-13
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Information Distribution in Autonomic Networking
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-liu-anima-grasp-distribution-13
+docidentifier:
+- content: draft-liu-anima-grasp-distribution
+  type: Internet-Draft
+- content: draft-liu-anima-grasp-distribution-13
   type: Internet-Draft
   primary: true
-- id: I-D.liu-anima-grasp-distribution
-  type: IETF
-  scope: anchor
 docnumber: I-D.liu-anima-grasp-distribution
 date:
 - type: published
-  value: '2019-12-12'
+  at: '2019-12-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Bing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bing
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Bing Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xun
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xiao
-        language:
-        - en
       completename:
+        language: en
         content: Xun Xiao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MRC, Huawei Technologies
-  role:
+        - language: en
+          content: MRC, Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Artur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Artur
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Hecker
-        language:
-        - en
       completename:
+        language: en
         content: Artur Hecker
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MRC, Huawei Technologies
-  role:
+        - language: en
+          content: MRC, Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sheng
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Jiang
-        language:
-        - en
       completename:
+        language: en
         content: Sheng Jiang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zoran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zoran
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Despotovic
-        language:
-        - en
       completename:
+        language: en
         content: Zoran Despotovic
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: MRC, Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: MRC, Huawei Technologies
 version:
 - draft: '13'
-revdate: '2019-12-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a solution for information distribution in autonomic
-    networks. Information distribution is categorized into two different modes: 1)
-    instantaneous distribution; 2) publication for retrieval. In the former case,
-    the information is sent, propagates and is disposed of after reception. In the
-    latter case, information needs to be stored in the network. The capabilities to
-    distribute information are basic and fundamental needs for an autonomous network
-    (cf. ANI [I-D.ietf-anima-reference- model]). This document describes typical use
-    cases of information distribution in ANI and requirements to ANI, such that rich
-    information distribution can be natively supported. The document proposes extensions
-    to the autonomic nodes and suggests an implementation based on GRASP extensions
-    as a protocol on the wire.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a solution for information distribution in\n
+    \  autonomic networks. Information distribution is categorized into two\n   different
+    modes: 1) instantaneous distribution; 2) publication for\n   retrieval. In the
+    former case, the information is sent, propagates\n   and is disposed of after
+    reception. In the latter case, information\n   needs to be stored in the network.\n\n
+    \  The capabilities to distribute information are basic and fundamental\n   needs
+    for an autonomous network (cf. ANI [I-D.ietf-anima-reference-\n   model]). This
+    document describes typical use cases of information\n   distribution in ANI and
+    requirements to ANI, such that rich\n   information distribution can be natively
+    supported. The document\n   proposes extensions to the autonomic nodes and suggests
+    an\n   implementation based on GRASP extensions as a protocol on the wire.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-liu-anima-grasp-distribution-12
-    docid:
-    - id: draft-liu-anima-grasp-distribution-12
+    formattedref: draft-liu-anima-grasp-distribution-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-anima-grasp-distribution-12
+    docidentifier:
+    - content: draft-liu-anima-grasp-distribution-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-liu-anima-grasp-distribution-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-liu-anima-grasp-distribution-13
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

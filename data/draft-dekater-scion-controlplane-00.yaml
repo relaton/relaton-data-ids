@@ -1,165 +1,145 @@
 ---
-schema-version: v1.2.9
-id: draft-dekater-scion-controlplane-00
-title:
-- content: SCION Control Plane
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dekater-scion-controlplane-00
-  type: src
+id: draftdekaterscioncontrolplane00
 type: standard
-docid:
-- id: draft-dekater-scion-controlplane-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SCION Control Plane
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dekater-scion-controlplane-00
+docidentifier:
+- content: draft-dekater-scion-controlplane
+  type: Internet-Draft
+- content: draft-dekater-scion-controlplane-00
   type: Internet-Draft
   primary: true
-- id: I-D.dekater-scion-controlplane
-  type: IETF
-  scope: anchor
 docnumber: I-D.dekater-scion-controlplane
 date:
 - type: published
-  value: '2023-06-26'
+  at: '2023-06-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Corine
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Corine
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: de Kater
-        language:
-        - en
       completename:
+        language: en
         content: Corine de Kater
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SCION Association
-  role:
+        - language: en
+          content: SCION Association
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Matthias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Matthias
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Frei
-        language:
-        - en
       completename:
+        language: en
         content: Matthias Frei
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SCION Association
-  role:
+        - language: en
+          content: SCION Association
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nicola
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicola
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Rustignoli
-        language:
-        - en
       completename:
+        language: en
         content: Nicola Rustignoli
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SCION Association
-  role:
-  - type: author
+        - language: en
+          content: SCION Association
 version:
 - draft: '00'
-revdate: '2023-06-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the control plane of the path-aware, inter-
-    domain network architecture SCION (Scalability, Control, and Isolation On Next-generation
-    networks). One of the basic characteristics of SCION is that it gives path control
-    to SCION- capable endpoints. In fact, endpoints can choose between multiple path
-    options, enabling the optimization of network paths. The SCION control plane is
-    responsible for discovering these paths and making them available to the endpoints.
-    The main goal of SCION's control plane is to create and manage path segments,
-    which can then be combined into forwarding paths to transmit packets in the data
-    plane. This document first discusses how path exploration is realized through
-    beaconing and how path segments are created and registered. Each SCION autonomous
-    system (AS) can register segments according to its own policy - it is free to
-    specify which path properties and algorithm(s) to use in the selection procedure.
-    The document then describes the path lookup process, where endpoints obtain path
-    segments - a fundamental building block for the construction of end-to-end paths.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the control plane of the path-aware, inter-\n
+    \  domain network architecture SCION (Scalability, Control, and\n   Isolation
+    On Next-generation networks).  One of the basic\n   characteristics of SCION is
+    that it gives path control to SCION-\n   capable endpoints.  In fact, endpoints
+    can choose between multiple\n   path options, enabling the optimization of network
+    paths.  The SCION\n   control plane is responsible for discovering these paths
+    and making\n   them available to the endpoints.\n\n   The main goal of SCION's
+    control plane is to create and manage path\n   segments, which can then be combined
+    into forwarding paths to\n   transmit packets in the data plane.  This document
+    first discusses\n   how path exploration is realized through beaconing and how
+    path\n   segments are created and registered.  Each SCION autonomous system\n
+    \  (AS) can register segments according to its own policy - it is free\n   to
+    specify which path properties and algorithm(s) to use in the\n   selection procedure.
+    \ The document then describes the path lookup\n   process, where endpoints obtain
+    path segments - a fundamental\n   building block for the construction of end-to-end
+    paths.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-dekater-scion-controlplane-01
-    docid:
-    - id: draft-dekater-scion-controlplane-01
+    formattedref: draft-dekater-scion-controlplane-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dekater-scion-controlplane-01
+    docidentifier:
+    - content: draft-dekater-scion-controlplane-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dekater-scion-controlplane-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dekater-scion-controlplane-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

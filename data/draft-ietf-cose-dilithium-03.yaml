@@ -1,227 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-cose-dilithium-03
-title:
-- content: ML-DSA for JOSE and COSE
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-dilithium-03
-  type: src
+id: draftietfcosedilithium03
 type: standard
-docid:
-- id: draft-ietf-cose-dilithium-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ML-DSA for JOSE and COSE
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-dilithium-03
+docidentifier:
+- content: draft-ietf-cose-dilithium
+  type: Internet-Draft
+- content: draft-ietf-cose-dilithium-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-cose-dilithium
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-cose-dilithium
 date:
 - type: published
-  value: '2024-06-02'
+  at: '2024-06-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Prorock
-        language:
-        - en
       completename:
+        language: en
         content: Michael Prorock
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: mesur.io
-  role:
+        - language: en
+          content: mesur.io
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Orie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Orie
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Steele
-        language:
-        - en
       completename:
+        language: en
         content: Orie Steele
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Transmute
-  role:
+        - language: en
+          content: Transmute
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rafael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rafael
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Misoczki
-        language:
-        - en
       completename:
+        language: en
         content: Rafael Misoczki
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Osborne
-        language:
-        - en
       completename:
+        language: en
         content: Michael Osborne
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM
-  role:
+        - language: en
+          content: IBM
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christine
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christine
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Cloostermans
-        language:
-        - en
       completename:
+        language: en
         content: Christine Cloostermans
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NXP
-  role:
-  - type: author
+        - language: en
+          content: NXP
 version:
 - draft: '03'
-revdate: '2024-06-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes JSON Object Signing and Encryption (JOSE) and
-    CBOR Object Signing and Encryption (COSE) serializations for Module- Lattice-Based
-    Digital Signature Standard (ML-DSA), which was derived from Dilithium, a Post-Quantum
-    Cryptography (PQC) based digital signature scheme. This document does not define
-    any new cryptography, only seralizations of existing cryptographic systems described
-    in [FIPS-204]. Note to RFC Editor: This document should not proceed to AUTH48
-    until NIST completes paramater tuning and selection as a part of the PQC (https://csrc.nist.gov/projects/post-quantum-cryptography)
-    standardization process.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes JSON Object Signing and Encryption (JOSE) and\n
+    \  CBOR Object Signing and Encryption (COSE) serializations for Module-\n   Lattice-Based
+    Digital Signature Standard (ML-DSA), which was derived\n   from Dilithium, a Post-Quantum
+    Cryptography (PQC) based digital\n   signature scheme.\n\n   This document does
+    not define any new cryptography, only\n   seralizations of existing cryptographic
+    systems described in\n   [FIPS-204].\n\n   Note to RFC Editor: This document should
+    not proceed to AUTH48 until\n   NIST completes paramater tuning and selection
+    as a part of the PQC\n   (https://csrc.nist.gov/projects/post-quantum-cryptography)\n
+    \  standardization process.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-cose-dilithium-02
-    docid:
-    - id: draft-ietf-cose-dilithium-02
+    formattedref: draft-ietf-cose-dilithium-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-dilithium-02
+    docidentifier:
+    - content: draft-ietf-cose-dilithium-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-cose-dilithium-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-cose-dilithium-04
-    docid:
-    - id: draft-ietf-cose-dilithium-04
+    formattedref: draft-ietf-cose-dilithium-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-dilithium-04
+    docidentifier:
+    - content: draft-ietf-cose-dilithium-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-cose-dilithium-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-cose-dilithium-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

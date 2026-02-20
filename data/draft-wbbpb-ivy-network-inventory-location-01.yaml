@@ -1,222 +1,192 @@
 ---
-schema-version: v1.2.9
-id: draft-wbbpb-ivy-network-inventory-location-01
-title:
-- content: A Network Inventory Location Model
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wbbpb-ivy-network-inventory-location-01
-  type: src
+id: draftwbbpbivynetworkinventorylocation01
 type: standard
-docid:
-- id: draft-wbbpb-ivy-network-inventory-location-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Network Inventory Location Model
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wbbpb-ivy-network-inventory-location-01
+docidentifier:
+- content: draft-wbbpb-ivy-network-inventory-location
+  type: Internet-Draft
+- content: draft-wbbpb-ivy-network-inventory-location-01
   type: Internet-Draft
   primary: true
-- id: I-D.wbbpb-ivy-network-inventory-location
-  type: IETF
-  scope: anchor
 docnumber: I-D.wbbpb-ivy-network-inventory-location
 date:
 - type: published
-  value: '2024-08-06'
+  at: '2024-08-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Bo Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sergio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sergio
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Belotti
-        language:
-        - en
       completename:
+        language: en
         content: Sergio Belotti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Bouquier
-        language:
-        - en
       completename:
+        language: en
         content: Jean-Francois Bouquier
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Vodafone
-  role:
+        - language: en
+          content: Vodafone
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fabio
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fabio
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Peruzzini
-        language:
-        - en
       completename:
+        language: en
         content: Fabio Peruzzini
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: TIM
-  role:
+        - language: en
+          content: TIM
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Phil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Phil
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Bedard
-        language:
-        - en
       completename:
+        language: en
         content: Phil Bedard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '01'
-revdate: '2024-08-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a Yang data model for Network Inventory location,
-    e.g. site, room, rack, geo-location data, which is used to provide location information
-    with different granularities for network inventory items (such as Network Elements,
-    device components). Accurate location information is useful for network planning,
-    deployment, and maintenance. However, such information cannot be obtained or verified
-    from Network Elements and therefore is not included in the base Network Inventory
-    model defined in draft-ietf- ivy-network-inventory-yang. The purpose of this document
-    is to define a location model for network inventory that extends the base inventory
-    with comprehensive location data.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a Yang data model for Network Inventory\n   location,
+    e.g. site, room, rack, geo-location data, which is used to\n   provide location
+    information with different granularities for network\n   inventory items (such
+    as Network Elements, device components).\n\n   Accurate location information is
+    useful for network planning,\n   deployment, and maintenance.  However, such information
+    cannot be\n   obtained or verified from Network Elements and therefore is not\n
+    \  included in the base Network Inventory model defined in draft-ietf-\n   ivy-network-inventory-yang.
+    \ The purpose of this document is to\n   define a location model for network inventory
+    that extends the base\n   inventory with comprehensive location data.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wbbpb-ivy-network-inventory-location-00
-    docid:
-    - id: draft-wbbpb-ivy-network-inventory-location-00
+    formattedref: draft-wbbpb-ivy-network-inventory-location-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wbbpb-ivy-network-inventory-location-00
+    docidentifier:
+    - content: draft-wbbpb-ivy-network-inventory-location-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wbbpb-ivy-network-inventory-location-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wbbpb-ivy-network-inventory-location-02
-    docid:
-    - id: draft-wbbpb-ivy-network-inventory-location-02
+    formattedref: draft-wbbpb-ivy-network-inventory-location-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wbbpb-ivy-network-inventory-location-02
+    docidentifier:
+    - content: draft-wbbpb-ivy-network-inventory-location-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wbbpb-ivy-network-inventory-location-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wbbpb-ivy-network-inventory-location-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

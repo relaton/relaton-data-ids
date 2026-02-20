@@ -1,170 +1,149 @@
 ---
-schema-version: v1.2.9
-id: draft-xu-intarea-challenge-icmpv6-01
-title:
-- content: Enhancing ICMPv6 Error Message Authentication Using Challenge-Confirm Mechanism
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-01
-  type: src
+id: draftxuintareachallengeicmpv601
 type: standard
-docid:
-- id: draft-xu-intarea-challenge-icmpv6-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhancing ICMPv6 Error Message Authentication Using Challenge-Confirm Mechanism
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-01
+docidentifier:
+- content: draft-xu-intarea-challenge-icmpv6
+  type: Internet-Draft
+- content: draft-xu-intarea-challenge-icmpv6-01
   type: Internet-Draft
   primary: true
-- id: I-D.xu-intarea-challenge-icmpv6
-  type: IETF
-  scope: anchor
 docnumber: I-D.xu-intarea-challenge-icmpv6
 date:
 - type: published
-  value: '2025-06-30'
+  at: '2025-06-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Ke Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University & Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Tsinghua University & Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xuewei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xuewei
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Feng
-        language:
-        - en
       completename:
+        language: en
         content: Xuewei Feng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Ao Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Southeast University
-  role:
-  - type: author
+        - language: en
+          content: Southeast University
 version:
 - draft: '01'
-revdate: '2025-06-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The Internet Control Message Protocol for IPv6 (ICMPv6) is essential
-    for network diagnostics but is vulnerable to off-path spoofing attacks, especially
-    when error messages relate to stateless transport protocols like UDP. An attacker
-    can forge these messages to degrade performance or enable Man-in-the-Middle attacks.
-    This document explores solutions to this problem by first presenting a straightforward
-    but flawed stateful challenge-response mechanism. It explains how this "strawman"
-    approach, while preventing simple spoofing, introduces a severe vulnerability
-    to state-exhaustion Denial-of-Service (DoS) attacks. Building on this analysis,
-    the document then proposes a robust, stateless challenge-response mechanism inspired
-    by TCP SYN-Cookies. This proposal eliminates the need to store per-challenge state
-    by computationally generating challenges. It limits state management to minimal
-    flags on existing sockets or a bounded probabilistic data structure. This approach
-    effectively authenticates ICMPv6 error messages while inherently resisting both
-    off-path spoofing and state- exhaustion DoS attacks, thus improving the robustness
-    of ICMPv6.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Internet Control Message Protocol for IPv6 (ICMPv6) is essential\n
+    \  for network diagnostics but is vulnerable to off-path spoofing\n   attacks,
+    especially when error messages relate to stateless transport\n   protocols like
+    UDP.  An attacker can forge these messages to degrade\n   performance or enable
+    Man-in-the-Middle attacks.\n\n   This document explores solutions to this problem
+    by first presenting\n   a straightforward but flawed stateful challenge-response
+    mechanism.\n   It explains how this \"strawman\" approach, while preventing simple\n
+    \  spoofing, introduces a severe vulnerability to state-exhaustion\n   Denial-of-Service
+    (DoS) attacks.\n\n   Building on this analysis, the document then proposes a robust,\n
+    \  stateless challenge-response mechanism inspired by TCP SYN-Cookies.\n   This
+    proposal eliminates the need to store per-challenge state by\n   computationally
+    generating challenges.  It limits state management to\n   minimal flags on existing
+    sockets or a bounded probabilistic data\n   structure.  This approach effectively
+    authenticates ICMPv6 error\n   messages while inherently resisting both off-path
+    spoofing and state-\n   exhaustion DoS attacks, thus improving the robustness
+    of ICMPv6.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-xu-intarea-challenge-icmpv6-00
-    docid:
-    - id: draft-xu-intarea-challenge-icmpv6-00
+    formattedref: draft-xu-intarea-challenge-icmpv6-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-00
+    docidentifier:
+    - content: draft-xu-intarea-challenge-icmpv6-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-intarea-challenge-icmpv6-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-xu-intarea-challenge-icmpv6-02
-    docid:
-    - id: draft-xu-intarea-challenge-icmpv6-02
+    formattedref: draft-xu-intarea-challenge-icmpv6-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-intarea-challenge-icmpv6-02
+    docidentifier:
+    - content: draft-xu-intarea-challenge-icmpv6-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-intarea-challenge-icmpv6-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-xu-intarea-challenge-icmpv6-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

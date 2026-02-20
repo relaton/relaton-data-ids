@@ -1,213 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mptcp-architecture-05
-title:
-- content: Architectural Guidelines for Multipath TCP Development
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-architecture-05
-  type: src
+id: draftietfmptcparchitecture05
 type: standard
-docid:
-- id: draft-ietf-mptcp-architecture-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Architectural Guidelines for Multipath TCP Development
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mptcp-architecture-05
+docidentifier:
+- content: draft-ietf-mptcp-architecture
+  type: Internet-Draft
+- content: draft-ietf-mptcp-architecture-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mptcp-architecture
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mptcp-architecture
 date:
 - type: published
-  value: '2011-01-21'
+  at: '2011-01-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jana
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Iyengar
-        language:
-        - en
       completename:
+        language: en
         content: Jana Iyengar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Franklin and Marshall College
-  role:
+        - language: en
+          content: Franklin and Marshall College
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Costin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Costin
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Raiciu
-        language:
-        - en
       completename:
+        language: en
         content: Costin Raiciu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University College London
-  role:
+        - language: en
+          content: University College London
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sebastien
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sebastien
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Barre
-        language:
-        - en
       completename:
+        language: en
         content: Sebastien Barre
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universite catholique de Louvain
-  role:
+        - language: en
+          content: Universite catholique de Louvain
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mark
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: M. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mark
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: M. J.
       surname:
+        language: en
         content: Handley
-        language:
-        - en
       completename:
+        language: en
         content: Mark J. Handley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University College London
-  role:
+        - language: en
+          content: University College London
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Ford
-        language:
-        - en
       completename:
+        language: en
         content: Alan Ford
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Roke Manor Research
-  role:
-  - type: author
+        - language: en
+          content: Roke Manor Research
 version:
 - draft: '05'
-revdate: '2011-01-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Hosts are often connected by multiple paths, but TCP restricts communications
+- language: en
+  script: Latn
+  content: "Hosts are often connected by multiple paths, but TCP restricts communications
     to a single path per transport connection. Resource usage within the network would
     be more efficient were these multiple paths able to be used concurrently. This
     should enhance user experience through improved resilience to network failure
-    and higher throughput. This document outlines architectural guidelines for the
-    development of a Multipath Transport Protocol, with references to how these architectural
-    components come together in the development of a Multipath TCP (MPTCP). This document
-    lists certain high-level design decisions that provide foundations for the design
-    of the MPTCP protocol, based upon these architectural requirements. This document
-    is not an Internet Standards Track specification; it is published for informational
-    purposes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    and higher throughput.\n\n This document outlines architectural guidelines for
+    the development of a Multipath Transport Protocol, with references to how these
+    architectural components come together in the development of a Multipath TCP (MPTCP).
+    This document lists certain high-level design decisions that provide foundations
+    for the design of the MPTCP protocol, based upon these architectural requirements.
+    This document is not an Internet Standards Track specification; it is published
+    for informational purposes.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mptcp-architecture-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

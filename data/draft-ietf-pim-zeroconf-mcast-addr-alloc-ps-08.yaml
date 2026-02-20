@@ -1,173 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
-title:
-- content: Zeroconf Multicast Address Allocation Problem Statement and Requirements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
-  type: src
+id: draftietfpimzeroconfmcastaddrallocps08
 type: standard
-docid:
-- id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Zeroconf Multicast Address Allocation Problem Statement and Requirements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
+docidentifier:
+- content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps
+  type: Internet-Draft
+- content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pim-zeroconf-mcast-addr-alloc-ps
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pim-zeroconf-mcast-addr-alloc-ps
 date:
 - type: published
-  value: '2025-11-18'
+  at: '2025-11-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nathan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nathan
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Karstens
-        language:
-        - en
       completename:
+        language: en
         content: Nathan Karstens
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Garmin International, Inc.
-  role:
+        - language: en
+          content: Garmin International, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: lispers.net
-  role:
+        - language: en
+          content: lispers.net
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: McBride
-        language:
-        - en
       completename:
+        language: en
         content: Mike McBride
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
-  - type: author
+        - language: en
+          content: Futurewei
 version:
 - draft: '08'
-revdate: '2025-11-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document surveys current problems with existing protocols for automatically
-    assigning multicast IP addresses in zero-configuration ("zeroconf") networking
-    environments. It addresses key challenges, such as link-layer address collisions,
-    hardware limitations, multicast snooping inefficiencies, and the need to avoid
-    manual configuration. Based on these challenges, it derives requirements for a
-    lightweight, decentralized protocol capable of dynamically allocating unique multicast
-    group addresses without central coordination. The document presents explicit requirements
-    covering discovery, allocation, conflict detection and resolution, and lease management.
-    It also evaluates considerations specific to IPv6 and IPv4 multicast address ranges,
-    and identifies approaches that are unsuited for zeroconf deployment. This foundation
-    serves as a reference for developing future multicast address allocation protocols
-    that operate autonomously within local networks.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document surveys current problems with existing protocols for\n
+    \  automatically assigning multicast IP addresses in zero-configuration\n   (\"zeroconf\")
+    networking environments.  It addresses key challenges,\n   such as link-layer
+    address collisions, hardware limitations,\n   multicast snooping inefficiencies,
+    and the need to avoid manual\n   configuration.  Based on these challenges, it
+    derives requirements\n   for a lightweight, decentralized protocol capable of
+    dynamically\n   allocating unique multicast group addresses without central\n
+    \  coordination.\n\n   The document presents explicit requirements covering discovery,\n
+    \  allocation, conflict detection and resolution, and lease management.\n   It
+    also evaluates considerations specific to IPv6 and IPv4 multicast\n   address
+    ranges, and identifies approaches that are unsuited for\n   zeroconf deployment.
+    \ This foundation serves as a reference for\n   developing future multicast address
+    allocation protocols that operate\n   autonomously within local networks.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
-    docid:
-    - id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
+    formattedref: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
+    docidentifier:
+    - content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
-    docid:
-    - id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
+    formattedref: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
+    docidentifier:
+    - content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,162 +1,141 @@
 ---
-schema-version: v1.2.9
-id: draft-sriram-sidrops-asra-verification-03
-title:
-- content: Autonomous System Relationship Authorization (ASRA) as an Extension to
-    ASPA for Enhanced AS Path Verification
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-asra-verification-03
-  type: src
+id: draftsriramsidropsasraverification03
 type: standard
-docid:
-- id: draft-sriram-sidrops-asra-verification-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Autonomous System Relationship Authorization (ASRA) as an Extension to
+    ASPA for Enhanced AS Path Verification
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-asra-verification-03
+docidentifier:
+- content: draft-sriram-sidrops-asra-verification
+  type: Internet-Draft
+- content: draft-sriram-sidrops-asra-verification-03
   type: Internet-Draft
   primary: true
-- id: I-D.sriram-sidrops-asra-verification
-  type: IETF
-  scope: anchor
 docnumber: I-D.sriram-sidrops-asra-verification
 date:
 - type: published
-  value: '2025-11-03'
+  at: '2025-11-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kotikalapudi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kotikalapudi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sriram
-        language:
-        - en
       completename:
+        language: en
         content: Kotikalapudi Sriram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NIST
-  role:
+        - language: en
+          content: NIST
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nan
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Geng
-        language:
-        - en
       completename:
+        language: en
         content: Nan Geng
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Amir
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Amir
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Herzberg
-        language:
-        - en
       completename:
+        language: en
         content: Amir Herzberg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Connecticut
-  role:
-  - type: author
+        - language: en
+          content: University of Connecticut
 version:
 - draft: '03'
-revdate: '2025-11-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Autonomous System Provider Authorization (ASPA) record authorizes provider
-    ASes of a customer AS (CAS). While ASPA-based AS_PATH verification can correctly
-    detect and mitigate route leaks and some forged-origin or forged-path-segment
-    hijacks, it fails to detect some malicious path manipulations for routes that
-    are received from transit providers. This document utilizes a new RPKI object
-    called Autonomous System Relationship Authorization (ASRA) that significantly
-    enhances AS_PATH verification complementing ASPA. ASRA fills in a significant
-    gap in the ASPA method by adding the capability to detect fake links in the AS_PATHs
-    in BGP Updates propagated from providers to customers. ASRA achieves this by allowing
-    an AS to register additional AS relationships, i.e., customers and lateral peers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Autonomous System Provider Authorization (ASPA) record authorizes\n
+    \  provider ASes of a customer AS (CAS).  While ASPA-based AS_PATH\n   verification
+    can correctly detect and mitigate route leaks and some\n   forged-origin or forged-path-segment
+    hijacks, it fails to detect some\n   malicious path manipulations for routes that
+    are received from\n   transit providers.  This document utilizes a new RPKI object
+    called\n   Autonomous System Relationship Authorization (ASRA) that\n   significantly
+    enhances AS_PATH verification complementing ASPA.  ASRA\n   fills in a significant
+    gap in the ASPA method by adding the\n   capability to detect fake links in the
+    AS_PATHs in BGP Updates\n   propagated from providers to customers.  ASRA achieves
+    this by\n   allowing an AS to register additional AS relationships, i.e.,\n   customers
+    and lateral peers.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sriram-sidrops-asra-verification-02
-    docid:
-    - id: draft-sriram-sidrops-asra-verification-02
+    formattedref: draft-sriram-sidrops-asra-verification-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-asra-verification-02
+    docidentifier:
+    - content: draft-sriram-sidrops-asra-verification-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sriram-sidrops-asra-verification-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sriram-sidrops-asra-verification-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

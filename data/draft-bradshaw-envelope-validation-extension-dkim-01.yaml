@@ -1,105 +1,92 @@
 ---
-schema-version: v1.2.9
-id: draft-bradshaw-envelope-validation-extension-dkim-01
-title:
-- content: DKIM Envelope Validation Extension (eve)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bradshaw-envelope-validation-extension-dkim-01
-  type: src
+id: draftbradshawenvelopevalidationextensiondkim01
 type: standard
-docid:
-- id: draft-bradshaw-envelope-validation-extension-dkim-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DKIM Envelope Validation Extension (eve)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bradshaw-envelope-validation-extension-dkim-01
+docidentifier:
+- content: draft-bradshaw-envelope-validation-extension-dkim
+  type: Internet-Draft
+- content: draft-bradshaw-envelope-validation-extension-dkim-01
   type: Internet-Draft
   primary: true
-- id: I-D.bradshaw-envelope-validation-extension-dkim
-  type: IETF
-  scope: anchor
 docnumber: I-D.bradshaw-envelope-validation-extension-dkim
 date:
 - type: published
-  value: '2023-04-11'
+  at: '2023-04-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marc
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marc
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Bradshaw
-        language:
-        - en
       completename:
+        language: en
         content: Marc Bradshaw
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fastmail, PTY LTD
-  role:
-  - type: author
+        - language: en
+          content: Fastmail, PTY LTD
 version:
 - draft: '01'
-revdate: '2023-04-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>DKIM as defined in RFC6376 is an IETF standard of cryptographically
-    signing email with a domain key. DKIM is widely used to build a reputation based
-    on the signing domain and assign that reputation to message filtering. Section
-    8.6 defines a vulnerability called DKIM replay, in which a single message can
-    be replayed to a large group of unrelated recipients, thereby hijacking the reputation
-    of the original sender. This proposal defines a method of declaring the original
-    envelope sender and recipient(s) within a DKIM signature such that compliant DKIM
-    validators can detect a DKIM signature which may have been replayed and modify
-    their use of domain reputation accordingly. This technique remains fully backwards
-    compatible with DKIM validators which do not support the new methods, while allowing
-    compliant forwarders to declare their ingress authentication state in Authentication
-    Results headers for consumption by subsequent validators.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DKIM as defined in RFC6376 is an IETF standard of cryptographically\n
+    \  signing email with a domain key.  DKIM is widely used to build a\n   reputation
+    based on the signing domain and assign that reputation to\n   message filtering.
+    \ Section 8.6 defines a vulnerability called DKIM\n   replay, in which a single
+    message can be replayed to a large group of\n   unrelated recipients, thereby
+    hijacking the reputation of the\n   original sender.  This proposal defines a
+    method of declaring the\n   original envelope sender and recipient(s) within a
+    DKIM signature\n   such that compliant DKIM validators can detect a DKIM signature
+    which\n   may have been replayed and modify their use of domain reputation\n   accordingly.
+    \ This technique remains fully backwards compatible with\n   DKIM validators which
+    do not support the new methods, while allowing\n   compliant forwarders to declare
+    their ingress authentication state in\n   Authentication Results headers for consumption
+    by subsequent\n   validators.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-bradshaw-envelope-validation-extension-dkim-00
-    docid:
-    - id: draft-bradshaw-envelope-validation-extension-dkim-00
+    formattedref: draft-bradshaw-envelope-validation-extension-dkim-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bradshaw-envelope-validation-extension-dkim-00
+    docidentifier:
+    - content: draft-bradshaw-envelope-validation-extension-dkim-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-bradshaw-envelope-validation-extension-dkim-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bradshaw-envelope-validation-extension-dkim-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

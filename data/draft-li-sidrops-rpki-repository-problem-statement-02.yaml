@@ -1,191 +1,166 @@
 ---
-schema-version: v1.2.9
-id: draft-li-sidrops-rpki-repository-problem-statement-02
-title:
-- content: RPKI Repository Problem Statement and Analysis
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-02
-  type: src
+id: draftlisidropsrpkirepositoryproblemstatement02
 type: standard
-docid:
-- id: draft-li-sidrops-rpki-repository-problem-statement-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RPKI Repository Problem Statement and Analysis
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-02
+docidentifier:
+- content: draft-li-sidrops-rpki-repository-problem-statement
+  type: Internet-Draft
+- content: draft-li-sidrops-rpki-repository-problem-statement-02
   type: Internet-Draft
   primary: true
-- id: I-D.li-sidrops-rpki-repository-problem-statement
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-sidrops-rpki-repository-problem-statement
 date:
 - type: published
-  value: '2025-08-28'
+  at: '2025-08-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Li Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yingying
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yingying
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Su
-        language:
-        - en
       completename:
+        language: en
         content: Yingying Su
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Fu
-        language:
-        - en
       completename:
+        language: en
         content: Yu Fu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Unicom
-  role:
-  - type: author
+        - language: en
+          content: China Unicom
 version:
 - draft: '02'
-revdate: '2025-08-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With the increasing deployment of Route Origin Authorizations (ROAs)
-    and Route Origin Validation (ROV), the Resource Public Key Infrastructure (RPKI)
-    has become a critical component for securing inter-domain routing. RPKI leverages
-    cryptographic certificates to validate the authenticity and authorization of IP
-    address and AS number allocations. All RPKI objects are stored in distributed
-    repositories and periodically retrieved by relying parties (RPs). This document
-    presents a data-driven analysis of the current RPKI repository system, including
-    a global survey of AS administrators and an empirical evaluation of repository
-    operations. The analysis reveals that the existing repository architecture suffers
-    from limited scalability and suboptimal efficiency, and is highly sensitive to
-    failures. As the number of ROAs and RPs increases, the growing number of point-to-point
-    connections between repositories and RPs, coupled with the pull-based data synchronization
-    model, significantly degrades the system's scalability and performance. Moreover,
-    a failure or attack on any Publication Point (PP) can prevent RPs from obtaining
-    a complete and up-to-date view of RPKI data. This document further outlines the
-    fundamental requirements for building a scalable, resilient,and efficient RPKI
-    repository architecture to address these limitations.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With the increasing deployment of Route Origin Authorizations (ROAs)\n
+    \  and Route Origin Validation (ROV), the Resource Public Key\n   Infrastructure
+    (RPKI) has become a critical component for securing\n   inter-domain routing.
+    \ RPKI leverages cryptographic certificates to\n   validate the authenticity and
+    authorization of IP address and AS\n   number allocations.  All RPKI objects are
+    stored in distributed\n   repositories and periodically retrieved by relying parties
+    (RPs).\n   This document presents a data-driven analysis of the current RPKI\n
+    \  repository system, including a global survey of AS administrators and\n   an
+    empirical evaluation of repository operations.  The analysis\n   reveals that
+    the existing repository architecture suffers from\n   limited scalability and
+    suboptimal efficiency, and is highly\n   sensitive to failures.  As the number
+    of ROAs and RPs increases, the\n   growing number of point-to-point connections
+    between repositories and\n   RPs, coupled with the pull-based data synchronization
+    model,\n   significantly degrades the system's scalability and performance.\n
+    \  Moreover, a failure or attack on any Publication Point (PP) can\n   prevent
+    RPs from obtaining a complete and up-to-date view of RPKI\n   data.  This document
+    further outlines the fundamental requirements\n   for building a scalable, resilient,and
+    efficient RPKI repository\n   architecture to address these limitations.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-li-sidrops-rpki-repository-problem-statement-01
-    docid:
-    - id: draft-li-sidrops-rpki-repository-problem-statement-01
+    formattedref: draft-li-sidrops-rpki-repository-problem-statement-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-01
+    docidentifier:
+    - content: draft-li-sidrops-rpki-repository-problem-statement-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-sidrops-rpki-repository-problem-statement-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-sidrops-rpki-repository-problem-statement-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

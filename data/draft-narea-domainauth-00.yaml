@@ -1,91 +1,78 @@
 ---
-schema-version: v1.2.9
-id: draft-narea-domainauth-00
-title:
-- content: DomainAuth Version 1
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-narea-domainauth-00
-  type: src
+id: draftnareadomainauth00
 type: standard
-docid:
-- id: draft-narea-domainauth-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DomainAuth Version 1
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-narea-domainauth-00
+docidentifier:
+- content: draft-narea-domainauth
+  type: Internet-Draft
+- content: draft-narea-domainauth-00
   type: Internet-Draft
   primary: true
-- id: I-D.narea-domainauth
-  type: IETF
-  scope: anchor
 docnumber: I-D.narea-domainauth
 date:
 - type: published
-  value: '2025-04-01'
+  at: '2025-04-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Gus
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gus
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Narea
-        language:
-        - en
       completename:
+        language: en
         content: Gus Narea
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Relaycorp
-  role:
-  - type: author
+        - language: en
+          content: Relaycorp
 version:
 - draft: '00'
-revdate: '2025-04-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>This document defines DomainAuth, a protocol to attribute digital signatures
-    to domain names in such a way that verification can occur entirely offline without
-    a prior distribution of public keys. Each signature is distributed as part of
-    a self-contained "signature bundle" that encapsulates a complete chain of trust
-    comprising: (1) a DNSSEC chain from the root zone to a TXT record containing a
-    public key or its digest, (2) an X.509 certificate chain from the key specified
-    in the TXT record to the final signing key, and (3) the digital signature in the
-    form of a CMS SignedData structure. Finally, signatures can be attributed to the
-    domain name itself (e.g. "example.com") or specific users (e.g. "alice" of "example.com").</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines DomainAuth, a protocol to attribute digital\n
+    \  signatures to domain names in such a way that verification can occur\n   entirely
+    offline without a prior distribution of public keys.\n\n   Each signature is distributed
+    as part of a self-contained \"signature\n   bundle\" that encapsulates a complete
+    chain of trust comprising: (1) a\n   DNSSEC chain from the root zone to a TXT
+    record containing a public\n   key or its digest, (2) an X.509 certificate chain
+    from the key\n   specified in the TXT record to the final signing key, and (3)
+    the\n   digital signature in the form of a CMS SignedData structure.\n\n   Finally,
+    signatures can be attributed to the domain name itself (e.g.\n   \"example.com\")
+    or specific users (e.g. \"alice\" of \"example.com\").\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-narea-domainauth-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

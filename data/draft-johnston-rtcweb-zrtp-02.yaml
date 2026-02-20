@@ -1,223 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-johnston-rtcweb-zrtp-02
-title:
-- content: Using ZRTP to Secure WebRTC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-johnston-rtcweb-zrtp-02
-  type: src
+id: draftjohnstonrtcwebzrtp02
 type: standard
-docid:
-- id: draft-johnston-rtcweb-zrtp-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Using ZRTP to Secure WebRTC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-johnston-rtcweb-zrtp-02
+docidentifier:
+- content: draft-johnston-rtcweb-zrtp
+  type: Internet-Draft
+- content: draft-johnston-rtcweb-zrtp-02
   type: Internet-Draft
   primary: true
-- id: I-D.johnston-rtcweb-zrtp
-  type: IETF
-  scope: anchor
 docnumber: I-D.johnston-rtcweb-zrtp
 date:
 - type: published
-  value: '2015-07-06'
+  at: '2015-07-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Alan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alan
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Johnston
-        language:
-        - en
       completename:
+        language: en
         content: Alan Johnston
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Avaya
-  role:
+        - language: en
+          content: Avaya
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Philip
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Philip
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Zimmermann
-        language:
-        - en
       completename:
+        language: en
         content: Philip Zimmermann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Silent Circle
-  role:
+        - language: en
+          content: Silent Circle
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jon
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Callas
-        language:
-        - en
       completename:
+        language: en
         content: Jon Callas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Silent Circle
-  role:
+        - language: en
+          content: Silent Circle
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Travis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Travis
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Cross
-        language:
-        - en
       completename:
+        language: en
         content: Travis Cross
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: OfficeTone
-  role:
+        - language: en
+          content: OfficeTone
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Yoakum
-        language:
-        - en
       completename:
+        language: en
         content: John Yoakum
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Avaya
-  role:
-  - type: author
+        - language: en
+          content: Avaya
 version:
 - draft: '02'
-revdate: '2015-07-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>WebRTC, Web Real-Time Communications, is a set of protocols and APIs
-    used to enable web developers to add real-time communications into their web pages
-    and applications with a few lines of JavaScript. WebRTC media flows are encrypted
-    and authenticated by SRTP, the Secure Real-time Transport Protocol while the key
-    agreement is provided by DTLS-SRTP, Datagram Transport Layer Security for Secure
-    Real-time Transport Protocol. However, without some third party identity service
-    or certificate authority, WebRTC media flows have no protection against a man-in-the-middle
-    (MitM) attack. ZRTP, Media Path Key Agreement for Unicast Secure RTP, RFC 6189,
-    does provide protection against MitM attackers using key continuity augmented
-    with a Short Authentication String (SAS). This specification describes how ZRTP
-    can be used over the WebRTC data channel to provide MitM protection for WebRTC
-    media flows keyed using DTLS-SRTP. This provides users protection against MitM
-    attackers without requiring browsers to support ZRTP or users to download a plugin
-    or extension to implement ZRTP.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   WebRTC, Web Real-Time Communications, is a set of protocols and APIs\n
+    \  used to enable web developers to add real-time communications into\n   their
+    web pages and applications with a few lines of JavaScript.\n   WebRTC media flows
+    are encrypted and authenticated by SRTP, the\n   Secure Real-time Transport Protocol
+    while the key agreement is\n   provided by DTLS-SRTP, Datagram Transport Layer
+    Security for Secure\n   Real-time Transport Protocol.  However, without some third
+    party\n   identity service or certificate authority, WebRTC media flows have no\n
+    \  protection against a man-in-the-middle (MitM) attack.  ZRTP, Media\n   Path
+    Key Agreement for Unicast Secure RTP, RFC 6189, does provide\n   protection against
+    MitM attackers using key continuity augmented with\n   a Short Authentication
+    String (SAS).  This specification describes\n   how ZRTP can be used over the
+    WebRTC data channel to provide MitM\n   protection for WebRTC media flows keyed
+    using DTLS-SRTP.  This\n   provides users protection against MitM attackers without
+    requiring\n   browsers to support ZRTP or users to download a plugin or extension\n
+    \  to implement ZRTP.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-johnston-rtcweb-zrtp-01
-    docid:
-    - id: draft-johnston-rtcweb-zrtp-01
+    formattedref: draft-johnston-rtcweb-zrtp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-johnston-rtcweb-zrtp-01
+    docidentifier:
+    - content: draft-johnston-rtcweb-zrtp-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-johnston-rtcweb-zrtp-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-johnston-rtcweb-zrtp-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

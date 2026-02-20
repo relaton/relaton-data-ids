@@ -1,235 +1,204 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-weighted-hrw-01
-title:
-- content: Weighted HRW and its applications
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-weighted-hrw-01
-  type: src
+id: draftietfbessweightedhrw01
 type: standard
-docid:
-- id: draft-ietf-bess-weighted-hrw-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Weighted HRW and its applications
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-weighted-hrw-01
+docidentifier:
+- content: draft-ietf-bess-weighted-hrw
+  type: Internet-Draft
+- content: draft-ietf-bess-weighted-hrw-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-weighted-hrw
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-weighted-hrw
 date:
 - type: published
-  value: '2024-10-21'
+  at: '2024-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: SATYA
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: M. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: SATYA
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: M. R.
       surname:
+        language: en
         content: Satya
-        language:
-        - en
       completename:
+        language: en
         content: SATYA R MOHANTY
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zscaler
-  role:
+        - language: en
+          content: Zscaler
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mankamana
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: M. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mankamana
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: M. P.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Mankamana Prasad Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Acee
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Acee
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Lindem
-        language:
-        - en
       completename:
+        language: en
         content: Acee Lindem
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Drake
-        language:
-        - en
       completename:
+        language: en
         content: John Drake
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks, Inc.
 version:
 - draft: '01'
-revdate: '2024-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Rendezvous Hashing also known as Highest Random Weight (HRW) has been
-    used in many load balancing applications where the central problem is how to map
-    an object to as server such that the mapping is uniform and also minimally affected
-    by the change in the server set. Recently, it has found use in DF election algorithms
-    in the EVPN context and load balancing using DMZ. This draft deals with the problem
-    of achieving load balancing with minimal disruption when the servers have different
-    weights. It provides an algorithm to do so and also describes a few use-case scenarios
-    where this algorithmic technique can apply.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Rendezvous Hashing also known as Highest Random Weight (HRW) has been\n
+    \  used in many load balancing applications where the central problem is\n   how
+    to map an object to as server such that the mapping is uniform\n   and also minimally
+    affected by the change in the server set.\n   Recently, it has found use in DF
+    election algorithms in the EVPN\n   context and load balancing using DMZ.  This
+    draft deals with the\n   problem of achieving load balancing with minimal disruption
+    when the\n   servers have different weights.  It provides an algorithm to do so\n
+    \  and also describes a few use-case scenarios where this algorithmic\n   technique
+    can apply.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-weighted-hrw-00
-    docid:
-    - id: draft-ietf-bess-weighted-hrw-00
+    formattedref: draft-ietf-bess-weighted-hrw-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-weighted-hrw-00
+    docidentifier:
+    - content: draft-ietf-bess-weighted-hrw-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-weighted-hrw-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-weighted-hrw-02
-    docid:
-    - id: draft-ietf-bess-weighted-hrw-02
+    formattedref: draft-ietf-bess-weighted-hrw-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-weighted-hrw-02
+    docidentifier:
+    - content: draft-ietf-bess-weighted-hrw-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-weighted-hrw-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-weighted-hrw-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,172 +1,151 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ipsecme-implicit-iv-08
-title:
-- content: Implicit IV for Counter-based Ciphers in Encapsulating Security Payload
-    (ESP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-implicit-iv-08
-  type: src
+id: draftietfipsecmeimplicitiv08
 type: standard
-docid:
-- id: draft-ietf-ipsecme-implicit-iv-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Implicit IV for Counter-based Ciphers in Encapsulating Security Payload
+    (ESP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-implicit-iv-08
+docidentifier:
+- content: draft-ietf-ipsecme-implicit-iv
+  type: Internet-Draft
+- content: draft-ietf-ipsecme-implicit-iv-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ipsecme-implicit-iv
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ipsecme-implicit-iv
 date:
 - type: published
-  value: '2019-10-16'
+  at: '2019-10-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tobias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tobias
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Guggemos
-        language:
-        - en
       completename:
+        language: en
         content: Tobias Guggemos
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LMU Munich
-  role:
+        - language: en
+          content: LMU Munich
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yoav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yoav
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Nir
-        language:
-        - en
       completename:
+        language: en
         content: Yoav Nir
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Dell EMC
-  role:
-  - type: author
+        - language: en
+          content: Dell EMC
 version:
 - draft: '08'
-revdate: '2019-10-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Encapsulating Security Payload (ESP) sends an initialization vector
-    (IV) in each packet. The size of IV depends on the applied transform, being usually
-    8 or 16 octets for the transforms defined by the time this document is written.
-    Some algorithms such as AES-GCM, AES-CCM and ChaCha20-Poly1305 when used with
-    IPsec, take the IV to generate a nonce that is used as an input parameter for
-    encrypting and decrypting. These algorithms require a unique IV but do not require
-    an unpredictable IV. As a result, the value provided in the ESP Sequence Number
-    (SN) can be used instead to generate the nonce. This avoids sending the IV itself,
-    and saves in the case of AES-GCM, AES-CCM and ChaCha20-Poly1305 8 octets per packet.
-    This document describes how to do this.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Encapsulating Security Payload (ESP) sends an initialization vector\n
+    \  (IV) in each packet.  The size of IV depends on the applied\n   transform,
+    being usually 8 or 16 octets for the transforms defined by\n   the time this document
+    is written.  Some algorithms such as AES-GCM,\n   AES-CCM and ChaCha20-Poly1305
+    when used with IPsec, take the IV to\n   generate a nonce that is used as an input
+    parameter for encrypting\n   and decrypting.  These algorithms require a unique
+    IV but do not\n   require an unpredictable IV.  As a result, the value provided
+    in the\n   ESP Sequence Number (SN) can be used instead to generate the nonce.\n
+    \  This avoids sending the IV itself, and saves in the case of AES-GCM,\n   AES-CCM
+    and ChaCha20-Poly1305 8 octets per packet.  This document\n   describes how to
+    do this.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ipsecme-implicit-iv-07
-    docid:
-    - id: draft-ietf-ipsecme-implicit-iv-07
+    formattedref: draft-ietf-ipsecme-implicit-iv-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-implicit-iv-07
+    docidentifier:
+    - content: draft-ietf-ipsecme-implicit-iv-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ipsecme-implicit-iv-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ipsecme-implicit-iv-09
-    docid:
-    - id: draft-ietf-ipsecme-implicit-iv-09
+    formattedref: draft-ietf-ipsecme-implicit-iv-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-implicit-iv-09
+    docidentifier:
+    - content: draft-ietf-ipsecme-implicit-iv-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ipsecme-implicit-iv-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ipsecme-implicit-iv-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

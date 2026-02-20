@@ -1,174 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-dong-idr-bgpls-sr-enhanced-vpn-01
-title:
-- content: BGP-LS Extensions for Segment Routing based Enhanced VPN
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-01
-  type: src
+id: draftdongidrbgplssrenhancedvpn01
 type: standard
-docid:
-- id: draft-dong-idr-bgpls-sr-enhanced-vpn-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP-LS Extensions for Segment Routing based Enhanced VPN
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-01
+docidentifier:
+- content: draft-dong-idr-bgpls-sr-enhanced-vpn
+  type: Internet-Draft
+- content: draft-dong-idr-bgpls-sr-enhanced-vpn-01
   type: Internet-Draft
   primary: true
-- id: I-D.dong-idr-bgpls-sr-enhanced-vpn
-  type: IETF
-  scope: anchor
 docnumber: I-D.dong-idr-bgpls-sr-enhanced-vpn
 date:
 - type: published
-  value: '2020-03-09'
+  at: '2020-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenbin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenbin
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenbin Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '01'
-revdate: '2020-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Enhanced VPN (VPN+) is an enhancement to VPN services to support the
-    needs of new applications, particularly including the applications that are associated
-    with 5G services. These applications require enhanced isolation and have more
-    stringent performance requirements than that can be provided with traditional
-    overlay VPNs. An enhanced VPN may be used for 5G transport network slicing, and
-    will also be of use in more generic scenarios. To meet the requirement of enhanced
-    VPN services, a number of Virtual Transport Networks (VTNs) need to be created,
-    each with a subset of the underlay network topology and a set of network resources
-    allocated to meet the requirement of a specific VPN+ service, or a group of VPN+
-    services. This document specifies the BGP-LS mechanisms with necessary extensions
-    to advertise the information of Segment Routing (SR) based VTNs. The proposed
-    mechanism is applicable to both segment routing with MPLS data plane (SR-MPLS)
-    and segment routing with IPv6 data plane (SRv6).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Enhanced VPN (VPN+) is an enhancement to VPN services to support the\n
+    \  needs of new applications, particularly including the applications\n   that
+    are associated with 5G services.  These applications require\n   enhanced isolation
+    and have more stringent performance requirements\n   than that can be provided
+    with traditional overlay VPNs.  An enhanced\n   VPN may be used for 5G transport
+    network slicing, and will also be of\n   use in more generic scenarios.  To meet
+    the requirement of enhanced\n   VPN services, a number of Virtual Transport Networks
+    (VTNs) need to\n   be created, each with a subset of the underlay network topology
+    and a\n   set of network resources allocated to meet the requirement of a\n   specific
+    VPN+ service, or a group of VPN+ services.\n\n   This document specifies the BGP-LS
+    mechanisms with necessary\n   extensions to advertise the information of Segment
+    Routing (SR) based\n   VTNs.  The proposed mechanism is applicable to both segment
+    routing\n   with MPLS data plane (SR-MPLS) and segment routing with IPv6 data\n
+    \  plane (SRv6).\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dong-idr-bgpls-sr-enhanced-vpn-00
-    docid:
-    - id: draft-dong-idr-bgpls-sr-enhanced-vpn-00
+    formattedref: draft-dong-idr-bgpls-sr-enhanced-vpn-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-00
+    docidentifier:
+    - content: draft-dong-idr-bgpls-sr-enhanced-vpn-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-idr-bgpls-sr-enhanced-vpn-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-dong-idr-bgpls-sr-enhanced-vpn-02
-    docid:
-    - id: draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    formattedref: draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dong-idr-bgpls-sr-enhanced-vpn-02
+    docidentifier:
+    - content: draft-dong-idr-bgpls-sr-enhanced-vpn-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dong-idr-bgpls-sr-enhanced-vpn-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dong-idr-bgpls-sr-enhanced-vpn-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

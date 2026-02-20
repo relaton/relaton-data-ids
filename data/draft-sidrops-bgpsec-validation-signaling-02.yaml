@@ -1,168 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-sidrops-bgpsec-validation-signaling-02
-title:
-- content: BGPsec Validation State Signaling
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sidrops-bgpsec-validation-signaling-02
-  type: src
+id: draftsidropsbgpsecvalidationsignaling02
 type: standard
-docid:
-- id: draft-sidrops-bgpsec-validation-signaling-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGPsec Validation State Signaling
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sidrops-bgpsec-validation-signaling-02
+docidentifier:
+- content: draft-sidrops-bgpsec-validation-signaling
+  type: Internet-Draft
+- content: draft-sidrops-bgpsec-validation-signaling-02
   type: Internet-Draft
   primary: true
-- id: I-D.sidrops-bgpsec-validation-signaling
-  type: IETF
-  scope: anchor
 docnumber: I-D.sidrops-bgpsec-validation-signaling
 date:
 - type: published
-  value: '2020-07-13'
+  at: '2020-07-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Oliver
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Oliver
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Borchert
-        language:
-        - en
       completename:
+        language: en
         content: Oliver Borchert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: USA NIST
-  role:
+        - language: en
+          content: USA NIST
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Doug
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Doug
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Montgomery
-        language:
-        - en
       completename:
+        language: en
         content: Doug Montgomery
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: USA NIST
-  role:
+        - language: en
+          content: USA NIST
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Kopp
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Kopp
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DE-IX
-  role:
-  - type: author
+        - language: en
+          content: DE-IX
 version:
 - draft: '02'
-revdate: '2020-07-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a new BGP non-transitive extended community to
-    carry the BGPsec path validation state. BGP speakers that receive this community
-    string can use the embedded BGPsec validation state in conjunction with configured
-    local policies to influence their decision process. The ability to accept and
-    act on BGPsec path validation state from a neighbor allows for a reduction of
-    path validation processing load and/or increased resilience in the event that
-    a router is temporarily unable to perform local path validation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a new BGP non-transitive extended community to\n
+    \  carry the BGPsec path validation state.  BGP speakers that receive\n   this
+    community string can use the embedded BGPsec validation state in\n   conjunction
+    with configured local policies to influence their\n   decision process.  The ability
+    to accept and act on BGPsec path\n   validation state from a neighbor allows for
+    a reduction of path\n   validation processing load and/or increased resilience
+    in the event\n   that a router is temporarily unable to perform local path validation.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sidrops-bgpsec-validation-signaling-01
-    docid:
-    - id: draft-sidrops-bgpsec-validation-signaling-01
+    formattedref: draft-sidrops-bgpsec-validation-signaling-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sidrops-bgpsec-validation-signaling-01
+    docidentifier:
+    - content: draft-sidrops-bgpsec-validation-signaling-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sidrops-bgpsec-validation-signaling-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-sidrops-bgpsec-validation-signaling-03
-    docid:
-    - id: draft-sidrops-bgpsec-validation-signaling-03
+    formattedref: draft-sidrops-bgpsec-validation-signaling-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sidrops-bgpsec-validation-signaling-03
+    docidentifier:
+    - content: draft-sidrops-bgpsec-validation-signaling-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sidrops-bgpsec-validation-signaling-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sidrops-bgpsec-validation-signaling-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

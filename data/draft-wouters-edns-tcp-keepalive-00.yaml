@@ -1,127 +1,108 @@
 ---
-schema-version: v1.2.9
-id: draft-wouters-edns-tcp-keepalive-00
-title:
-- content: The edns-tcp-keepalive EDNS0 Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wouters-edns-tcp-keepalive-00
-  type: src
+id: draftwoutersednstcpkeepalive00
 type: standard
-docid:
-- id: draft-wouters-edns-tcp-keepalive-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The edns-tcp-keepalive EDNS0 Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wouters-edns-tcp-keepalive-00
+docidentifier:
+- content: draft-wouters-edns-tcp-keepalive
+  type: Internet-Draft
+- content: draft-wouters-edns-tcp-keepalive-00
   type: Internet-Draft
   primary: true
-- id: I-D.wouters-edns-tcp-keepalive
-  type: IETF
-  scope: anchor
 docnumber: I-D.wouters-edns-tcp-keepalive
 date:
 - type: published
-  value: '2013-10-15'
+  at: '2013-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Joe
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Joe
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Abley
-        language:
-        - en
       completename:
+        language: en
         content: Joe Abley
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2013-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>DNS messages between clients and servers may be received over either
-    UDP or TCP. UDP transport involves keeping less state on a busy server, but can
-    cause truncation and retries over TCP. Additionally, UDP can be exploited for
-    reflection attacks. Using TCP would reduce retransmits and amplification. However,
-    clients are currently limited in their use of the TCP transport as most implementations
-    limit the TCP session to a single DNS query and answer, making use of TCP only
-    suitable as a fallback protocol for UDP. This document defines an EDNS0 option
-    ("edns-tcp-keepalive") that allows DNS clients and servers to signal their respective
-    readiness to conduct multiple DNS transactions over individual TCP sessions. This
-    signalling facilitates a better balance of UDP and TCP transport between individual
-    clients and servers, reducing the impact of problems associated with UDP transport
-    and allowing the state associated with TCP transport to be managed effectively
-    with minimal impact on the DNS transaction time.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   DNS messages between clients and servers may be received over either\n
+    \  UDP or TCP.  UDP transport involves keeping less state on a busy\n   server,
+    but can cause truncation and retries over TCP.  Additionally,\n   UDP can be exploited
+    for reflection attacks.  Using TCP would reduce\n   retransmits and amplification.
+    \ However, clients are currently\n   limited in their use of the TCP transport
+    as most implementations\n   limit the TCP session to a single DNS query and answer,
+    making use of\n   TCP only suitable as a fallback protocol for UDP.\n\n   This
+    document defines an EDNS0 option (\"edns-tcp-keepalive\") that\n   allows DNS
+    clients and servers to signal their respective readiness\n   to conduct multiple
+    DNS transactions over individual TCP sessions.\n   This signalling facilitates
+    a better balance of UDP and TCP transport\n   between individual clients and servers,
+    reducing the impact of\n   problems associated with UDP transport and allowing
+    the state\n   associated with TCP transport to be managed effectively with minimal\n
+    \  impact on the DNS transaction time.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-wouters-edns-tcp-keepalive-01
-    docid:
-    - id: draft-wouters-edns-tcp-keepalive-01
+    formattedref: draft-wouters-edns-tcp-keepalive-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wouters-edns-tcp-keepalive-01
+    docidentifier:
+    - content: draft-wouters-edns-tcp-keepalive-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wouters-edns-tcp-keepalive-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wouters-edns-tcp-keepalive-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

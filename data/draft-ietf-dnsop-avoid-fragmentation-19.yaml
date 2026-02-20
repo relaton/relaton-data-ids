@@ -1,143 +1,125 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-avoid-fragmentation-19
-title:
-- content: IP Fragmentation Avoidance in DNS over UDP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-19
-  type: src
+id: draftietfdnsopavoidfragmentation19
 type: standard
-docid:
-- id: draft-ietf-dnsop-avoid-fragmentation-19
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: IP Fragmentation Avoidance in DNS over UDP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-19
+docidentifier:
+- content: draft-ietf-dnsop-avoid-fragmentation
+  type: Internet-Draft
+- content: draft-ietf-dnsop-avoid-fragmentation-19
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-avoid-fragmentation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-avoid-fragmentation
 date:
 - type: published
-  value: '2024-09-20'
+  at: '2024-09-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kazunori
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kazunori
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Fujiwara
-        language:
-        - en
       completename:
+        language: en
         content: Kazunori Fujiwara
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Japan Registry Services Co., Ltd.
-  role:
+        - language: en
+          content: Japan Registry Services Co., Ltd.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: P. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: P. A.
       surname:
+        language: en
         content: Vixie
-        language:
-        - en
       completename:
+        language: en
         content: Paul A. Vixie
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: AWS Security
-  role:
-  - type: author
+        - language: en
+          content: AWS Security
 version:
 - draft: '19'
-revdate: '2024-09-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The widely deployed EDNS0 feature in the DNS enables a DNS receiver
-    to indicate its received UDP message size capacity, which supports the sending
-    of large UDP responses by a DNS server. Large DNS/UDP messages are more likely
-    to be fragmented and IP fragmentation has exposed weaknesses in application protocols.
-    It is possible to avoid IP fragmentation in DNS by limiting the response size
-    where possible, and signaling the need to upgrade from UDP to TCP transport where
-    necessary. This document describes techniques to avoid IP fragmentation in DNS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The widely deployed EDNS0 feature in the DNS enables a DNS receiver\n
+    \  to indicate its received UDP message size capacity, which supports\n   the
+    sending of large UDP responses by a DNS server.  Large DNS/UDP\n   messages are
+    more likely to be fragmented and IP fragmentation has\n   exposed weaknesses in
+    application protocols.  It is possible to avoid\n   IP fragmentation in DNS by
+    limiting the response size where possible,\n   and signaling the need to upgrade
+    from UDP to TCP transport where\n   necessary.  This document describes techniques
+    to avoid IP\n   fragmentation in DNS.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-avoid-fragmentation-18
-    docid:
-    - id: draft-ietf-dnsop-avoid-fragmentation-18
+    formattedref: draft-ietf-dnsop-avoid-fragmentation-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-18
+    docidentifier:
+    - content: draft-ietf-dnsop-avoid-fragmentation-18
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-avoid-fragmentation-18
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dnsop-avoid-fragmentation-20
-    docid:
-    - id: draft-ietf-dnsop-avoid-fragmentation-20
+    formattedref: draft-ietf-dnsop-avoid-fragmentation-20
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-20
+    docidentifier:
+    - content: draft-ietf-dnsop-avoid-fragmentation-20
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-avoid-fragmentation-20
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-avoid-fragmentation-19
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

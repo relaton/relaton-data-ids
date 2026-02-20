@@ -1,213 +1,183 @@
 ---
-schema-version: v1.2.9
-id: draft-zzhang-bier-optimized-use-in-aidc-00
-title:
-- content: Optimized Use of BIER in AIML Data Centers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zzhang-bier-optimized-use-in-aidc-00
-  type: src
+id: draftzzhangbieroptimizeduseinaidc00
 type: standard
-docid:
-- id: draft-zzhang-bier-optimized-use-in-aidc-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Optimized Use of BIER in AIML Data Centers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zzhang-bier-optimized-use-in-aidc-00
+docidentifier:
+- content: draft-zzhang-bier-optimized-use-in-aidc
+  type: Internet-Draft
+- content: draft-zzhang-bier-optimized-use-in-aidc-00
   type: Internet-Draft
   primary: true
-- id: I-D.zzhang-bier-optimized-use-in-aidc
-  type: IETF
-  scope: anchor
 docnumber: I-D.zzhang-bier-optimized-use-in-aidc
 date:
 - type: published
-  value: '2025-10-20'
+  at: '2025-10-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhaohui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: Z. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhaohui
+      - language: en
+        script: Latn
+        initial: Z
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: Z. J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zhaohui (Jeffrey) Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xiaohu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xiaohu
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Xiaohu Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zheng
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zheng Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZTE
-  role:
+        - language: en
+          content: ZTE
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nvidia
-  role:
+        - language: en
+          content: Nvidia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aditya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aditya
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Mahale
-        language:
-        - en
       completename:
+        language: en
         content: Aditya Mahale
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cerebras
-  role:
-  - type: author
+        - language: en
+          content: Cerebras
 version:
 - draft: '00'
-revdate: '2025-10-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Use of multicast in AI Data Centers (AIDC) is getting attention for
-    efficient large-scale distribution of the same data to many receivers, given the
-    collectives like All2All and AllReduce. Emerging technologies like In Network
-    Compute(INC) can also benefit from using in-network-distribution of the packets
-    by offloading the distribution of the flows to the network. Given the bursty nature
-    of short-lived all2all flows, BIER is a very good multicast technology for AIDC
-    because it does not need the per-establishment of the multicast tree states. This
-    document discusses further optimization of BIER use in AIDC or similar deployment
-    scenarios, and updates RFC4604 by specifying an IGMP/MLD extension for sources
-    to report receiver information to the First Hop Routers. The extension can be
-    useful and is only needed when the source cannot impose the BIER encapsulation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Use of multicast in AI Data Centers (AIDC) is getting attention for\n
+    \  efficient large-scale distribution of the same data to many\n   receivers,
+    given the collectives like All2All and AllReduce.\n   Emerging technologies like
+    In Network Compute(INC) can also benefit\n   from using in-network-distribution
+    of the packets by offloading the\n   distribution of the flows to the network.
+    \ Given the bursty nature of\n   short-lived all2all flows, BIER is a very good
+    multicast technology\n   for AIDC because it does not need the per-establishment
+    of the\n   multicast tree states.  This document discusses further optimization\n
+    \  of BIER use in AIDC or similar deployment scenarios, and updates\n   RFC4604
+    by specifying an IGMP/MLD extension for sources to report\n   receiver information
+    to the First Hop Routers.  The extension can be\n   useful and is only needed
+    when the source cannot impose the BIER\n   encapsulation.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zzhang-bier-optimized-use-in-aidc-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

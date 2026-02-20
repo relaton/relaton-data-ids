@@ -1,195 +1,170 @@
 ---
-schema-version: v1.2.9
-id: draft-cpaasch-ippm-responsiveness-00
-title:
-- content: Responsiveness under Working Conditions
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cpaasch-ippm-responsiveness-00
-  type: src
+id: draftcpaaschippmresponsiveness00
 type: standard
-docid:
-- id: draft-cpaasch-ippm-responsiveness-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Responsiveness under Working Conditions
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cpaasch-ippm-responsiveness-00
+docidentifier:
+- content: draft-cpaasch-ippm-responsiveness
+  type: Internet-Draft
+- content: draft-cpaasch-ippm-responsiveness-00
   type: Internet-Draft
   primary: true
-- id: I-D.cpaasch-ippm-responsiveness
-  type: IETF
-  scope: anchor
 docnumber: I-D.cpaasch-ippm-responsiveness
 date:
 - type: published
-  value: '2021-08-13'
+  at: '2021-08-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christoph
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christoph
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Paasch
-        language:
-        - en
       completename:
+        language: en
         content: Christoph Paasch
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Randall
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Randall
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Meyer
-        language:
-        - en
       completename:
+        language: en
         content: Randall Meyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stuart
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stuart
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Cheshire
-        language:
-        - en
       completename:
+        language: en
         content: Stuart Cheshire
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Omer
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Omer
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Shapira
-        language:
-        - en
       completename:
+        language: en
         content: Omer Shapira
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple Inc.
 version:
 - draft: '00'
-revdate: '2021-08-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Bufferbloat has been a long-standing problem on the Internet with more
-    than a decade of work on standardizing technical solutions, implementations and
-    testing. However, to this date, bufferbloat is still a very common problem for
-    the end-users. Everyone "knows" that it is "normal" for a video conference to
-    have problems when somebody else on the same home-network is watching a 4K movie.
-    The reason for this problem is not the lack of technical solutions, but rather
-    a lack of awareness of the problem-space, and a lack of tooling to accurately
-    measure the problem. We believe that exposing the problem of bufferbloat to the
-    end-user by measuring the end- users' experience at a high level will help to
-    create the necessary awareness. This document is a first attempt at specifying
-    a measurement methodology to evaluate bufferbloat the way common users are experiencing
-    it today, using today's most frequently used protocols and mechanisms to accurately
-    measure the user-experience. We also provide a way to express the bufferbloat
-    as a measure of "Round-trips per minute" (RPM) to have a more intuitive way for
-    the users to understand the notion of bufferbloat.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Bufferbloat has been a long-standing problem on the Internet with\n
+    \  more than a decade of work on standardizing technical solutions,\n   implementations
+    and testing.  However, to this date, bufferbloat is\n   still a very common problem
+    for the end-users.  Everyone \"knows\" that\n   it is \"normal\" for a video conference
+    to have problems when somebody\n   else on the same home-network is watching a
+    4K movie.\n\n   The reason for this problem is not the lack of technical solutions,\n
+    \  but rather a lack of awareness of the problem-space, and a lack of\n   tooling
+    to accurately measure the problem.  We believe that exposing\n   the problem of
+    bufferbloat to the end-user by measuring the end-\n   users' experience at a high
+    level will help to create the necessary\n   awareness.\n\n   This document is
+    a first attempt at specifying a measurement\n   methodology to evaluate bufferbloat
+    the way common users are\n   experiencing it today, using today's most frequently
+    used protocols\n   and mechanisms to accurately measure the user-experience.  We
+    also\n   provide a way to express the bufferbloat as a measure of \"Round-trips\n
+    \  per minute\" (RPM) to have a more intuitive way for the users to\n   understand
+    the notion of bufferbloat.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-cpaasch-ippm-responsiveness-01
-    docid:
-    - id: draft-cpaasch-ippm-responsiveness-01
+    formattedref: draft-cpaasch-ippm-responsiveness-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cpaasch-ippm-responsiveness-01
+    docidentifier:
+    - content: draft-cpaasch-ippm-responsiveness-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cpaasch-ippm-responsiveness-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cpaasch-ippm-responsiveness-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

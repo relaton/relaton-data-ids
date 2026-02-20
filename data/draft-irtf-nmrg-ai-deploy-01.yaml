@@ -1,219 +1,190 @@
 ---
-schema-version: v1.2.9
-id: draft-irtf-nmrg-ai-deploy-01
-title:
-- content: Considerations of network/system for AI services
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-irtf-nmrg-ai-deploy-01
-  type: src
+id: draftirtfnmrgaideploy01
 type: standard
-docid:
-- id: draft-irtf-nmrg-ai-deploy-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Considerations of network/system for AI services
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-irtf-nmrg-ai-deploy-01
+docidentifier:
+- content: draft-irtf-nmrg-ai-deploy
+  type: Internet-Draft
+- content: draft-irtf-nmrg-ai-deploy-01
   type: Internet-Draft
   primary: true
-- id: I-D.irtf-nmrg-ai-deploy
-  type: IETF
-  scope: anchor
 docnumber: I-D.irtf-nmrg-ai-deploy
 date:
 - type: published
-  value: '2025-03-03'
+  at: '2025-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Hong
-        language:
-        - en
       completename:
+        language: en
         content: Yong-Geun Hong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Daejeon University
-  role:
+        - language: en
+          content: Daejeon University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Youn
-        language:
-        - en
       completename:
+        language: en
         content: Joo-Sang Youn
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DONG-EUI University
-  role:
+        - language: en
+          content: DONG-EUI University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hong
-        language:
-        - en
       completename:
+        language: en
         content: Seung-Woo Hong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ETRI
-  role:
+        - language: en
+          content: ETRI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Pedro
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Pedro
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Martinez-Julia
-        language:
-        - en
       completename:
+        language: en
         content: Pedro Martinez-Julia
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: National Institute of Information and Communications Technology
-  role:
+        - language: en
+          content: National Institute of Information and Communications Technology
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '01'
-revdate: '2025-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>As the development of AI technology has matured and AI technology has
-    begun to be applied in various fields, AI technology is changing from running
-    only on very high performance servers to commodity servers with small affordable
-    hardware, including microcontrollers, low performance CPUs, and AI chipsets. This
-    document considers how to configure the network and system in terms of AI inference
-    service to provide AI service in a distributed manner. It also describes the points
-    to consider in the environment where a client connects to a cloud server and an
-    edge device and requests an AI service. Some use cases of deploying network-based
-    AI services, such as self-driving vehicles and network digital twins, are described.?</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   As the development of AI technology has matured and AI technology has\n
+    \  begun to be applied in various fields, AI technology is changing from\n   running
+    only on very high performance servers to commodity servers\n   with small affordable
+    hardware, including microcontrollers, low\n   performance CPUs, and AI chipsets.
+    \ This document considers how to\n   configure the network and system in terms
+    of AI inference service to\n   provide AI service in a distributed manner.  It
+    also describes the\n   points to consider in the environment where a client connects
+    to a\n   cloud server and an edge device and requests an AI service.  Some use\n
+    \  cases of deploying network-based AI services, such as self-driving\n   vehicles
+    and network digital twins, are described.?\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-irtf-nmrg-ai-deploy-00
-    docid:
-    - id: draft-irtf-nmrg-ai-deploy-00
+    formattedref: draft-irtf-nmrg-ai-deploy-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-nmrg-ai-deploy-00
+    docidentifier:
+    - content: draft-irtf-nmrg-ai-deploy-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-nmrg-ai-deploy-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-irtf-nmrg-ai-deploy-02
-    docid:
-    - id: draft-irtf-nmrg-ai-deploy-02
+    formattedref: draft-irtf-nmrg-ai-deploy-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-nmrg-ai-deploy-02
+    docidentifier:
+    - content: draft-irtf-nmrg-ai-deploy-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-nmrg-ai-deploy-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-irtf-nmrg-ai-deploy-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

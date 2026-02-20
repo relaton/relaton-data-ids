@@ -1,225 +1,195 @@
 ---
-schema-version: v1.2.9
-id: draft-chen-grow-enhanced-as-loop-detection-04
-title:
-- content: Enhanced AS-Loop Detection for BGP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-chen-grow-enhanced-as-loop-detection-04
-  type: src
+id: draftchengrowenhancedasloopdetection04
 type: standard
-docid:
-- id: draft-chen-grow-enhanced-as-loop-detection-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Enhanced AS-Loop Detection for BGP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-chen-grow-enhanced-as-loop-detection-04
+docidentifier:
+- content: draft-chen-grow-enhanced-as-loop-detection
+  type: Internet-Draft
+- content: draft-chen-grow-enhanced-as-loop-detection-04
   type: Internet-Draft
   primary: true
-- id: I-D.chen-grow-enhanced-as-loop-detection
-  type: IETF
-  scope: anchor
 docnumber: I-D.chen-grow-enhanced-as-loop-detection
 date:
 - type: published
-  value: '2020-03-09'
+  at: '2020-03-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Huanan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huanan
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huanan Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Ma
-        language:
-        - en
       completename:
+        language: en
         content: Di Ma
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ZDNS
-  role:
+        - language: en
+          content: ZDNS
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yunan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yunan
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Gu
-        language:
-        - en
       completename:
+        language: en
         content: Yunan Gu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shunwan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shunwan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Zhuang
-        language:
-        - en
       completename:
+        language: en
         content: Shunwan Zhuang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haibo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Haibo Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '04'
-revdate: '2020-03-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Misconfiguration and malicious manipulation of BGP AS_Path may lead
-    to route hijack. This document proposes to enhance the BGP [RFC4271] Inbound/
-    Outbound route processing in the case of detecting an AS loop. It is an enhancement
-    to the current BGP's Inbound/Outbound processing and can be implemented directly
-    on the device, and this document also proposes a centralized usecase. This could
-    empower networks to quickly and accurately figure out they're being victimized.
-    Two options are proposed for the enhancement, a) a local check at the device;
-    b) data collection/analysis at the remote network controller/ server. Both approaches
-    are beneficial for route hijack detection.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Misconfiguration and malicious manipulation of BGP AS_Path may lead\n
+    \  to route hijack.  This document proposes to enhance the BGP [RFC4271]\n   Inbound/
+    Outbound route processing in the case of detecting an AS\n   loop.  It is an enhancement
+    to the current BGP's Inbound/Outbound\n   processing and can be implemented directly
+    on the device, and this\n   document also proposes a centralized usecase.  This
+    could empower\n   networks to quickly and accurately figure out they're being\n
+    \  victimized.\n\n   Two options are proposed for the enhancement, a) a local
+    check at the\n   device; b) data collection/analysis at the remote network controller/\n
+    \  server.  Both approaches are beneficial for route hijack detection.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-grow-enhanced-as-loop-detection-03
-    docid:
-    - id: draft-chen-grow-enhanced-as-loop-detection-03
+    formattedref: draft-chen-grow-enhanced-as-loop-detection-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chen-grow-enhanced-as-loop-detection-03
+    docidentifier:
+    - content: draft-chen-grow-enhanced-as-loop-detection-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chen-grow-enhanced-as-loop-detection-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-chen-grow-enhanced-as-loop-detection-05
-    docid:
-    - id: draft-chen-grow-enhanced-as-loop-detection-05
+    formattedref: draft-chen-grow-enhanced-as-loop-detection-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chen-grow-enhanced-as-loop-detection-05
+    docidentifier:
+    - content: draft-chen-grow-enhanced-as-loop-detection-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chen-grow-enhanced-as-loop-detection-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-chen-grow-enhanced-as-loop-detection-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

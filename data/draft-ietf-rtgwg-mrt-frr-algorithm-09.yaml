@@ -1,215 +1,183 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-mrt-frr-algorithm-09
-title:
-- content: An Algorithm for Computing IP/LDP Fast Reroute Using Maximally Redundant
-    Trees (MRT-FRR)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-mrt-frr-algorithm-09
-  type: src
+id: draftietfrtgwgmrtfrralgorithm09
 type: standard
-docid:
-- id: draft-ietf-rtgwg-mrt-frr-algorithm-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An Algorithm for Computing IP/LDP Fast Reroute Using Maximally Redundant
+    Trees (MRT-FRR)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-mrt-frr-algorithm-09
+docidentifier:
+- content: draft-ietf-rtgwg-mrt-frr-algorithm
+  type: Internet-Draft
+- content: draft-ietf-rtgwg-mrt-frr-algorithm-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-mrt-frr-algorithm
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rtgwg-mrt-frr-algorithm
 date:
 - type: published
-  value: '2016-02-16'
+  at: '2016-02-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Gabor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gabor
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Envedi
-        language:
-        - en
       completename:
+        language: en
         content: Gabor Sandor Envedi
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andras
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andras
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Csaszar
-        language:
-        - en
       completename:
+        language: en
         content: Andras Csaszar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alia
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Atlas
-        language:
-        - en
       completename:
+        language: en
         content: Alia Atlas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bowers
-        language:
-        - en
       completename:
+        language: en
         content: Chris Bowers
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Abishek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Abishek
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gopalan
-        language:
-        - en
       completename:
+        language: en
         content: Abishek Gopalan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Arizona
-  role:
-  - type: author
+        - language: en
+          content: University of Arizona
 version:
 - draft: '09'
-revdate: '2016-02-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document supports the solution put forth in "An Architecture for
-    IP/LDP Fast Reroute Using Maximally Redundant Trees (MRT-FRR)" (RFC 7812) by defining
-    the associated MRT Lowpoint algorithm that is used in the Default MRT Profile
-    to compute both the necessary Maximally Redundant Trees with their associated
-    next hops and the alternates to select for MRT-FRR.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document supports the solution put forth in \"An Architecture for
+    IP/LDP Fast Reroute Using Maximally Redundant Trees (MRT-FRR)\" (RFC 7812) by
+    defining the associated MRT Lowpoint algorithm that is used in the Default MRT
+    Profile to compute both the necessary Maximally Redundant Trees with their associated
+    next hops and the alternates to select for MRT-FRR.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-mrt-frr-algorithm-08
-    docid:
-    - id: draft-ietf-rtgwg-mrt-frr-algorithm-08
+    formattedref: draft-ietf-rtgwg-mrt-frr-algorithm-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-mrt-frr-algorithm-08
+    docidentifier:
+    - content: draft-ietf-rtgwg-mrt-frr-algorithm-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-mrt-frr-algorithm-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rtgwg-mrt-frr-algorithm-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

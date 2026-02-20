@@ -1,232 +1,201 @@
 ---
-schema-version: v1.2.9
-id: draft-chen-spring-srmpls-frr-ex-01
-title:
-- content: SR-MPLS FRR Extension
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-chen-spring-srmpls-frr-ex-01
-  type: src
+id: draftchenspringsrmplsfrrex01
 type: standard
-docid:
-- id: draft-chen-spring-srmpls-frr-ex-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: SR-MPLS FRR Extension
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-chen-spring-srmpls-frr-ex-01
+docidentifier:
+- content: draft-chen-spring-srmpls-frr-ex
+  type: Internet-Draft
+- content: draft-chen-spring-srmpls-frr-ex-01
   type: Internet-Draft
   primary: true
-- id: I-D.chen-spring-srmpls-frr-ex
-  type: IETF
-  scope: anchor
 docnumber: I-D.chen-spring-srmpls-frr-ex
 date:
 - type: published
-  value: '2023-09-13'
+  at: '2023-09-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Huaimo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huaimo
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huaimo Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aijun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aijun
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Aijun Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yisong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yisong
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Yisong Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gyan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: G. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gyan
+      - language: en
+        script: Latn
+        initial: G
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: G. S.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Gyan Mishra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon Inc.
-  role:
-  - type: author
+        - language: en
+          content: Verizon Inc.
 version:
 - draft: '01'
-revdate: '2023-09-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The current SR FRR such as TI-LFA provides fast re-route protection
-    for the failure of a node on an SR-MPLS path by the neighbor upstream node as
-    point of local repair (PLR) of the failed node. However, once the IGP converges,
-    the SR FRR is no longer sufficient to forward traffic of the path around the failure,
-    since the non-neighbor upstream node of the failed node will no longer have a
-    route to the failed node. This document describes a simple mechanism to extend
-    the fast re-route protection for the failure on an SR-MPLS path after the IGP
-    converges. The mechanism protects the node SID, adjacency SID and binding SID
-    of the failed node on the path.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The current SR FRR such as TI-LFA provides fast re-route protection\n
+    \  for the failure of a node on an SR-MPLS path by the neighbor upstream\n   node
+    as point of local repair (PLR) of the failed node.  However,\n   once the IGP
+    converges, the SR FRR is no longer sufficient to forward\n   traffic of the path
+    around the failure, since the non-neighbor\n   upstream node of the failed node
+    will no longer have a route to the\n   failed node.  This document describes a
+    simple mechanism to extend\n   the fast re-route protection for the failure on
+    an SR-MPLS path after\n   the IGP converges.  The mechanism protects the node
+    SID, adjacency\n   SID and binding SID of the failed node on the path.\n\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-spring-srmpls-frr-ex-00
-    docid:
-    - id: draft-chen-spring-srmpls-frr-ex-00
+    formattedref: draft-chen-spring-srmpls-frr-ex-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chen-spring-srmpls-frr-ex-00
+    docidentifier:
+    - content: draft-chen-spring-srmpls-frr-ex-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chen-spring-srmpls-frr-ex-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-chen-spring-srmpls-frr-ex-02
-    docid:
-    - id: draft-chen-spring-srmpls-frr-ex-02
+    formattedref: draft-chen-spring-srmpls-frr-ex-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chen-spring-srmpls-frr-ex-02
+    docidentifier:
+    - content: draft-chen-spring-srmpls-frr-ex-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chen-spring-srmpls-frr-ex-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-chen-spring-srmpls-frr-ex-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

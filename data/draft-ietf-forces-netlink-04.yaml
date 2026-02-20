@@ -1,183 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-forces-netlink-04
-title:
-- content: Linux Netlink as an IP Services Protocol
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-forces-netlink-04
-  type: src
+id: draftietfforcesnetlink04
 type: standard
-docid:
-- id: draft-ietf-forces-netlink-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Linux Netlink as an IP Services Protocol
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-forces-netlink-04
+docidentifier:
+- content: draft-ietf-forces-netlink
+  type: Internet-Draft
+- content: draft-ietf-forces-netlink-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-forces-netlink
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-forces-netlink
 date:
 - type: published
-  value: '2002-12-16'
+  at: '2002-12-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Andi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andi
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kleen
-        language:
-        - en
       completename:
+        language: en
         content: Andi Kleen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Suse
-  role:
+        - language: en
+          content: Suse
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hormuzd
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: H. M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hormuzd
+      - language: en
+        script: Latn
+        initial: H
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: H. M.
       surname:
+        language: en
         content: Khosravi
-        language:
-        - en
       completename:
+        language: en
         content: Hormuzd M. Khosravi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexey
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kuznetsov
-        language:
-        - en
       completename:
+        language: en
         content: Alexey Kuznetsov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INR/Swsoft
-  role:
+        - language: en
+          content: INR/Swsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jamal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jamal
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Hadi Salim
-        language:
-        - en
       completename:
+        language: en
         content: Jamal Hadi Salim
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Znyx Networks
-  role:
-  - type: author
+        - language: en
+          content: Znyx Networks
 version:
 - draft: '04'
-revdate: '2002-12-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes Linux Netlink, which is used in Linux both
-    as an intra-kernel messaging system as well as between kernel and user space.
-    The focus of this document is to describe Netlink's functionality as a protocol
-    between a Forwarding Engine Component (FEC) and a Control Plane Component (CPC),
-    the two components that define an IP service. As a result of this focus, this
-    document ignores other uses of Netlink, including its use as a intra-kernel messaging
-    system, as an inter- process communication scheme (IPC), or as a configuration
-    tool for other non-networking or non-IP network services (such as decnet, etc.).
-    This document is intended as informational in the context of prior art for the
-    ForCES IETF working group. This memo provides information for the Internet community.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes Linux Netlink, which is used in Linux both as
+    an intra-kernel messaging system as well as between kernel and user space.  The
+    focus of this document is to describe Netlink's functionality as a protocol between
+    a Forwarding Engine Component (FEC) and a Control Plane Component (CPC), the two
+    components that define an IP service.  As a result of this focus, this document
+    ignores other uses of Netlink, including its use as a intra-kernel messaging system,
+    as an inter- process communication scheme (IPC), or as a configuration tool for
+    other non-networking or non-IP network services (such as decnet, etc.).  This
+    document is intended as informational in the context of prior art for the ForCES
+    IETF working group.  This memo provides information for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-forces-netlink-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

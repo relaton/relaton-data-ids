@@ -1,96 +1,82 @@
 ---
-schema-version: v1.2.9
-id: draft-herbert-6man-icmp-limits-00
-title:
-- content: ICMPv6 errors for discarding packets due to processing limits
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-herbert-6man-icmp-limits-00
-  type: src
+id: draftherbert6manicmplimits00
 type: standard
-docid:
-- id: draft-herbert-6man-icmp-limits-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: ICMPv6 errors for discarding packets due to processing limits
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-herbert-6man-icmp-limits-00
+docidentifier:
+- content: draft-herbert-6man-icmp-limits
+  type: Internet-Draft
+- content: draft-herbert-6man-icmp-limits-00
   type: Internet-Draft
   primary: true
-- id: I-D.herbert-6man-icmp-limits
-  type: IETF
-  scope: anchor
 docnumber: I-D.herbert-6man-icmp-limits
 date:
 - type: published
-  value: '2017-05-08'
+  at: '2017-05-08'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
-      surname:
-        content: Herbert
-        language:
-        - en
-      completename:
-        content: Tom Herbert
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
+      surname:
+        language: en
+        content: Herbert
+      completename:
+        language: en
+        content: Tom Herbert
 version:
 - draft: '00'
-revdate: '2017-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Network nodes may discards packets if they are unable to process protocol
-    headers of packets due to processing constraints or limits. When such packets
-    are dropped, the sender receives no indication so it cannot take action to address
-    the cause of discarded packets. This document defines ICMP errors that can be
-    sent by a node that discards packets because it is unable to process the protocol
-    headers. A sender that receives such an ICMP error may be able to modify what
-    it sends in future packets to avoid subsequent packet discards.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Network nodes may discards packets if they are unable to process\n
+    \  protocol headers of packets due to processing constraints or limits.\n   When
+    such packets are dropped, the sender receives no indication so\n   it cannot take
+    action to address the cause of discarded packets. This\n   document defines ICMP
+    errors that can be sent by a node that discards\n   packets because it is unable
+    to process the protocol headers. A\n   sender that receives such an ICMP error
+    may be able to modify what it\n   sends in future packets to avoid subsequent
+    packet discards.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-herbert-6man-icmp-limits-01
-    docid:
-    - id: draft-herbert-6man-icmp-limits-01
+    formattedref: draft-herbert-6man-icmp-limits-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-herbert-6man-icmp-limits-01
+    docidentifier:
+    - content: draft-herbert-6man-icmp-limits-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-herbert-6man-icmp-limits-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-herbert-6man-icmp-limits-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

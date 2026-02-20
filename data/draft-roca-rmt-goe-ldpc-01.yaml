@@ -1,167 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-roca-rmt-goe-ldpc-01
-title:
-- content: The Generalized Object Encoding (GOE) LDPC-Staircase FEC Scheme
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-roca-rmt-goe-ldpc-01
-  type: src
+id: draftrocarmtgoeldpc01
 type: standard
-docid:
-- id: draft-roca-rmt-goe-ldpc-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The Generalized Object Encoding (GOE) LDPC-Staircase FEC Scheme
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-roca-rmt-goe-ldpc-01
+docidentifier:
+- content: draft-roca-rmt-goe-ldpc
+  type: Internet-Draft
+- content: draft-roca-rmt-goe-ldpc-01
   type: Internet-Draft
   primary: true
-- id: I-D.roca-rmt-goe-ldpc
-  type: IETF
-  scope: anchor
 docnumber: I-D.roca-rmt-goe-ldpc
 date:
 - type: published
-  value: '2012-07-31'
+  at: '2012-07-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Vincent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vincent
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Roca
-        language:
-        - en
       completename:
+        language: en
         content: Vincent Roca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA
-  role:
+        - language: en
+          content: INRIA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aline
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aline
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Roumy
-        language:
-        - en
       completename:
+        language: en
         content: Aline Roumy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA
-  role:
+        - language: en
+          content: INRIA
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bessem
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bessem
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Sayadi
-        language:
-        - en
       completename:
+        language: en
         content: Bessem Sayadi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent, Bell Labs
-  role:
-  - type: author
+        - language: en
+          content: Alcatel-Lucent, Bell Labs
 version:
 - draft: '01'
-revdate: '2012-07-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a Generalized Object Encoding (GOE) FEC Scheme
-    for the protection of one or multiple objects, in the context of a Content Delivery
-    Protocol (CDP) like FLUTE/ALC, FCAST/ALC or FCAST/NORM. Unlike [RFC5052], the
-    GOE approach [GOE] decouples the definition of Generalized Objects over which
-    FEC encoding takes place homogeneously, from the natural source object boundaries.
-    This separation enables either an Unequal Erasure Protection (UEP) of different
-    portions of a given source object, or an efficient and global protection of a
-    set of potentially small files, depending on the way the Generalized Objects are
-    defined. The present document defines the GOE LDPC-Staircase FEC Scheme, i.e.,
-    the GOE version of the FEC Encoding ID 3 (LDPC-Staircase) defined in [RFC5170]
-    with the further restriction that the number of encoding symbols per group (i.e.,
-    the number of symbols sent in the same packet) MUST be equal to 1 (G=1). This
-    document does not change the LDPC-Staircase code definition, and therefore it
-    inherits most of [RFC5170]. It only modifies the FEC Payload ID and FEC OTI, i.e.,
-    it addresses the problem of UEP and efficient file bundle protection by means
-    of pure signaling approach.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a Generalized Object Encoding (GOE) FEC\n   Scheme
+    for the protection of one or multiple objects, in the context\n   of a Content
+    Delivery Protocol (CDP) like FLUTE/ALC, FCAST/ALC or\n   FCAST/NORM.  Unlike [RFC5052],
+    the GOE approach [GOE] decouples the\n   definition of Generalized Objects over
+    which FEC encoding takes place\n   homogeneously, from the natural source object
+    boundaries.  This\n   separation enables either an Unequal Erasure Protection
+    (UEP) of\n   different portions of a given source object, or an efficient and\n
+    \  global protection of a set of potentially small files, depending on\n   the
+    way the Generalized Objects are defined.\n\n   The present document defines the
+    GOE LDPC-Staircase FEC Scheme, i.e.,\n   the GOE version of the FEC Encoding ID
+    3 (LDPC-Staircase) defined in\n   [RFC5170] with the further restriction that
+    the number of encoding\n   symbols per group (i.e., the number of symbols sent
+    in the same\n   packet) MUST be equal to 1 (G=1).  This document does not change
+    the\n   LDPC-Staircase code definition, and therefore it inherits most of\n   [RFC5170].
+    \ It only modifies the FEC Payload ID and FEC OTI, i.e., it\n   addresses the
+    problem of UEP and efficient file bundle protection by\n   means of pure signaling
+    approach.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-roca-rmt-goe-ldpc-00
-    docid:
-    - id: draft-roca-rmt-goe-ldpc-00
+    formattedref: draft-roca-rmt-goe-ldpc-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-roca-rmt-goe-ldpc-00
+    docidentifier:
+    - content: draft-roca-rmt-goe-ldpc-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-roca-rmt-goe-ldpc-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-roca-rmt-goe-ldpc-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

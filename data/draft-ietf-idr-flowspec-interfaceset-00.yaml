@@ -1,179 +1,150 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-flowspec-interfaceset-00
-title:
-- content: Applying BGP flowspec rules on a specific interface set
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-flowspec-interfaceset-00
-  type: src
+id: draftietfidrflowspecinterfaceset00
 type: standard
-docid:
-- id: draft-ietf-idr-flowspec-interfaceset-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Applying BGP flowspec rules on a specific interface set
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-flowspec-interfaceset-00
+docidentifier:
+- content: draft-ietf-idr-flowspec-interfaceset
+  type: Internet-Draft
+- content: draft-ietf-idr-flowspec-interfaceset-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-flowspec-interfaceset
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-flowspec-interfaceset
 date:
 - type: published
-  value: '2016-05-19'
+  at: '2016-05-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stephane
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stephane
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Litkowski
-        language:
-        - en
       completename:
+        language: en
         content: Stephane Litkowski
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Adam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Adam
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Simpson
-        language:
-        - en
       completename:
+        language: en
         content: Adam Simpson
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keyur
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Patel
-        language:
-        - en
       completename:
+        language: en
         content: Keyur Patel
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeffrey
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeffrey
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Haas
-        language:
-        - en
       completename:
+        language: en
         content: Jeffrey Haas
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2016-05-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BGP Flow-spec is an extension to BGP that allows for the dissemination
-    of traffic flow specification rules. The primary application of this extension
-    is DDoS mitigation where the flowspec rules are applied in most cases to all peering
-    routers of the network. This document will present another use case of BGP Flow-spec
-    where flow specifications are used to maintain some access control lists at network
-    boundary. BGP Flowspec is a very efficient distributing machinery that can help
-    in saving OPEX while deploying/updating ACLs. This new application requires flow
-    specification rules to be applied only on a specific subset of interfaces and
-    in a specific direction. The current specification of BGP Flow-spec does not detail
-    where the flow specification rules need to be applied. This document presents
-    a new interface-set flowspec action that will be used in complement of other actions
-    (marking, rate-limiting...). The purpose of this extension is to inform remote
-    routers on where to apply the flow specification. This extension can also be used
-    in a DDoS mitigation context where a provider wants to apply the filtering only
-    on specific peers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   BGP Flow-spec is an extension to BGP that allows for the\n   dissemination
+    of traffic flow specification rules.  The primary\n   application of this extension
+    is DDoS mitigation where the flowspec\n   rules are applied in most cases to all
+    peering routers of the\n   network.\n\n   This document will present another use
+    case of BGP Flow-spec where\n   flow specifications are used to maintain some
+    access control lists at\n   network boundary.  BGP Flowspec is a very efficient
+    distributing\n   machinery that can help in saving OPEX while deploying/updating
+    ACLs.\n   This new application requires flow specification rules to be applied\n
+    \  only on a specific subset of interfaces and in a specific direction.\n\n   The
+    current specification of BGP Flow-spec does not detail where the\n   flow specification
+    rules need to be applied.\n\n   This document presents a new interface-set flowspec
+    action that will\n   be used in complement of other actions (marking, rate-limiting
+    ...).\n   The purpose of this extension is to inform remote routers on where to\n
+    \  apply the flow specification.\n\n   This extension can also be used in a DDoS
+    mitigation context where a\n   provider wants to apply the filtering only on specific
+    peers.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-flowspec-interfaceset-01
-    docid:
-    - id: draft-ietf-idr-flowspec-interfaceset-01
+    formattedref: draft-ietf-idr-flowspec-interfaceset-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-flowspec-interfaceset-01
+    docidentifier:
+    - content: draft-ietf-idr-flowspec-interfaceset-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-flowspec-interfaceset-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-flowspec-interfaceset-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

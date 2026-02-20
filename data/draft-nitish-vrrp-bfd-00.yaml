@@ -1,152 +1,127 @@
 ---
-schema-version: v1.2.9
-id: draft-nitish-vrrp-bfd-00
-title:
-- content: Fast failure detection using peer learning in VRRP with BFD
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-nitish-vrrp-bfd-00
-  type: src
+id: draftnitishvrrpbfd00
 type: standard
-docid:
-- id: draft-nitish-vrrp-bfd-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Fast failure detection using peer learning in VRRP with BFD
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-nitish-vrrp-bfd-00
+docidentifier:
+- content: draft-nitish-vrrp-bfd
+  type: Internet-Draft
+- content: draft-nitish-vrrp-bfd-00
   type: Internet-Draft
   primary: true
-- id: I-D.nitish-vrrp-bfd
-  type: IETF
-  scope: anchor
 docnumber: I-D.nitish-vrrp-bfd
 date:
 - type: published
-  value: '2015-06-12'
+  at: '2015-06-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nitish
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nitish
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Gupta
-        language:
-        - en
       completename:
+        language: en
         content: Nitish Gupta
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aditya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aditya
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dogra
-        language:
-        - en
       completename:
+        language: en
         content: Aditya Dogra
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Colin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Colin
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Docherty
-        language:
-        - en
       completename:
+        language: en
         content: Colin Docherty
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2015-06-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft presents an enhanced failure detection mechanism to detect
-    the failure of VRRP Master router on the LAN using a peer learning mode. Typically
-    the VRRP protocol is able to perform the transparent fail-over detection within
-    a time period of 3 seconds with default fail-over timers. Real-time protocols
-    (voice/video/real-time transactional) require a maximum network disruption in
-    the order of 150ms for traffic on the network. A failure detection and fail-over
-    time of 150ms on conventionally configured VRRP protocol is extremely aggressive
-    and may impact the reliability and performance of the network. A more efficient
-    mechanism for real-time failure detection can be enabled in VRRP protocol by building
-    a peer table, using a new VRRP Advert packet type. This will help in forming a
-    mesh of BFD sessions. Once the BFD sessions are created, VRRP can receive faster
-    notification of failures, without the overhead of increased VRRP protocol Advert
-    messages.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft presents an enhanced failure detection mechanism to detect\n
+    \  the failure of VRRP Master router on the LAN using a peer learning\n   mode.
+    \ Typically the VRRP protocol is able to perform the transparent\n   fail-over
+    detection within a time period of 3 seconds with default\n   fail-over timers.
+    \ Real-time protocols (voice/video/real-time\n   transactional) require a maximum
+    network disruption in the order of\n   150ms for traffic on the network.  A failure
+    detection and fail-over\n   time of 150ms on conventionally configured VRRP protocol
+    is extremely\n   aggressive and may impact the reliability and performance of
+    the\n   network.\n\n   A more efficient mechanism for real-time failure detection
+    can be\n   enabled in VRRP protocol by building a peer table, using a new VRRP\n
+    \  Advert packet type.  This will help in forming a mesh of BFD\n   sessions.
+    \ Once the BFD sessions are created, VRRP can receive faster\n   notification
+    of failures, without the overhead of increased VRRP\n   protocol Advert messages.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-nitish-vrrp-bfd-01
-    docid:
-    - id: draft-nitish-vrrp-bfd-01
+    formattedref: draft-nitish-vrrp-bfd-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-nitish-vrrp-bfd-01
+    docidentifier:
+    - content: draft-nitish-vrrp-bfd-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-nitish-vrrp-bfd-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-nitish-vrrp-bfd-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,199 +1,173 @@
 ---
-schema-version: v1.2.9
-id: draft-mcnally-deterministic-cbor-12
-title:
-- content: 'dCBOR: A Deterministic CBOR Application Profile'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mcnally-deterministic-cbor-12
-  type: src
+id: draftmcnallydeterministiccbor12
 type: standard
-docid:
-- id: draft-mcnally-deterministic-cbor-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'dCBOR: A Deterministic CBOR Application Profile'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mcnally-deterministic-cbor-12
+docidentifier:
+- content: draft-mcnally-deterministic-cbor
+  type: Internet-Draft
+- content: draft-mcnally-deterministic-cbor-12
   type: Internet-Draft
   primary: true
-- id: I-D.mcnally-deterministic-cbor
-  type: IETF
-  scope: anchor
 docnumber: I-D.mcnally-deterministic-cbor
 date:
 - type: published
-  value: '2025-02-07'
+  at: '2025-02-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Wolf
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wolf
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: McNally
-        language:
-        - en
       completename:
+        language: en
         content: Wolf McNally
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Blockchain Commons
-  role:
+        - language: en
+          content: Blockchain Commons
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Allen
-        language:
-        - en
       completename:
+        language: en
         content: Christopher Allen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Blockchain Commons
-  role:
+        - language: en
+          content: Blockchain Commons
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Laurence
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Laurence
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Lundblade
-        language:
-        - en
       completename:
+        language: en
         content: Laurence Lundblade
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Security Theory LLC
-  role:
-  - type: author
+        - language: en
+          content: Security Theory LLC
 version:
 - draft: '12'
-revdate: '2025-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The purpose of determinism is to ensure that semantically equivalent
-    data items are encoded into identical byte streams. CBOR (RFC 8949) defines "Deterministically
-    Encoded CBOR" in its Section 4.2, but leaves some important choices up to the
-    application developer. The CBOR Common Deterministic Encoding (CDE) Internet Draft
-    builds on this by specifying a baseline for application profiles that wish to
-    implement deterministic encoding with CBOR. The present document provides an application
-    profile "dCBOR" that can be used to help achieve interoperable deterministic encoding
-    based on CDE for a variety of applications wishing an even narrower and clearly
-    defined set of choices.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The purpose of determinism is to ensure that semantically equivalent\n
+    \  data items are encoded into identical byte streams.  CBOR (RFC 8949)\n   defines
+    \"Deterministically Encoded CBOR\" in its Section 4.2, but\n   leaves some important
+    choices up to the application developer.  The\n   CBOR Common Deterministic Encoding
+    (CDE) Internet Draft builds on\n   this by specifying a baseline for application
+    profiles that wish to\n   implement deterministic encoding with CBOR.  The present
+    document\n   provides an application profile \"dCBOR\" that can be used to help\n
+    \  achieve interoperable deterministic encoding based on CDE for a\n   variety
+    of applications wishing an even narrower and clearly defined\n   set of choices.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mcnally-deterministic-cbor-11
-    docid:
-    - id: draft-mcnally-deterministic-cbor-11
+    formattedref: draft-mcnally-deterministic-cbor-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcnally-deterministic-cbor-11
+    docidentifier:
+    - content: draft-mcnally-deterministic-cbor-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mcnally-deterministic-cbor-11
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-mcnally-deterministic-cbor-13
-    docid:
-    - id: draft-mcnally-deterministic-cbor-13
+    formattedref: draft-mcnally-deterministic-cbor-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcnally-deterministic-cbor-13
+    docidentifier:
+    - content: draft-mcnally-deterministic-cbor-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mcnally-deterministic-cbor-13
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mcnally-deterministic-cbor-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,94 +1,80 @@
 ---
-schema-version: v1.2.9
-id: draft-ogud-dhc-udp-time-option-00
-title:
-- content: Providing Time over DHCP for devices w/o reliable clock upon boot
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ogud-dhc-udp-time-option-00
-  type: src
+id: draftoguddhcudptimeoption00
 type: standard
-docid:
-- id: draft-ogud-dhc-udp-time-option-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Providing Time over DHCP for devices w/o reliable clock upon boot
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ogud-dhc-udp-time-option-00
+docidentifier:
+- content: draft-ogud-dhc-udp-time-option
+  type: Internet-Draft
+- content: draft-ogud-dhc-udp-time-option-00
   type: Internet-Draft
   primary: true
-- id: I-D.ogud-dhc-udp-time-option
-  type: IETF
-  scope: anchor
 docnumber: I-D.ogud-dhc-udp-time-option
 date:
 - type: published
-  value: '2013-11-04'
+  at: '2013-11-04'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
-      surname:
-        content: Guðmundsson
-        language:
-        - en
-      completename:
-        content: Ólafur Guðmundsson
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
+      surname:
+        language: en
+        content: Guðmundsson
+      completename:
+        language: en
+        content: Ólafur Guðmundsson
 version:
 - draft: '00'
-revdate: '2013-11-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Many small inexpensive computing devices like home routers, Rasberry
-    Pi etc. do not have a battery thus the systems have no idea what the current time
-    is upon boot. Number of modern services take Time Synchronization for granted,
-    but operating systems do not allow the start of these services to be deferred
-    until after accurate clock has been confirmed. NTP provides accurate fine grain
-    clock synchronization but in order for NTP to succeed DNS needs work. DNSSEC resolvers
-    will fail if system clock is off by more than little bit. This draft proposes
-    a mechanism to offer "reasonable" current time to devices upon boot via DHCP.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many small inexpensive computing devices like home routers, Rasberry\n
+    \  Pi etc. do not have a battery thus the systems have no idea what the\n   current
+    time is upon boot.  Number of modern services take Time\n   Synchronization for
+    granted, but operating systems do not allow the\n   start of these services to
+    be deferred until after accurate clock has\n   been confirmed.\n\n   NTP provides
+    accurate fine grain clock synchronization but in order\n   for NTP to succeed
+    DNS needs work.  DNSSEC resolvers will fail if\n   system clock is off by more
+    than little bit.  This draft proposes a\n   mechanism to offer \"reasonable\"
+    current time to devices upon boot via\n   DHCP .\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ogud-dhc-udp-time-option-01
-    docid:
-    - id: draft-ogud-dhc-udp-time-option-01
+    formattedref: draft-ogud-dhc-udp-time-option-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ogud-dhc-udp-time-option-01
+    docidentifier:
+    - content: draft-ogud-dhc-udp-time-option-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ogud-dhc-udp-time-option-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ogud-dhc-udp-time-option-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

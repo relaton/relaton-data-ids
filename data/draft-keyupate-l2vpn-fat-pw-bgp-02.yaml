@@ -1,210 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-keyupate-l2vpn-fat-pw-bgp-02
-title:
-- content: Extensions to BGP Signaled Pseudowires to support Flow-Aware Transport
-    Labels
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-keyupate-l2vpn-fat-pw-bgp-02
-  type: src
+id: draftkeyupatel2vpnfatpwbgp02
 type: standard
-docid:
-- id: draft-keyupate-l2vpn-fat-pw-bgp-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Extensions to BGP Signaled Pseudowires to support Flow-Aware Transport
+    Labels
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-keyupate-l2vpn-fat-pw-bgp-02
+docidentifier:
+- content: draft-keyupate-l2vpn-fat-pw-bgp
+  type: Internet-Draft
+- content: draft-keyupate-l2vpn-fat-pw-bgp-02
   type: Internet-Draft
   primary: true
-- id: I-D.keyupate-l2vpn-fat-pw-bgp
-  type: IETF
-  scope: anchor
 docnumber: I-D.keyupate-l2vpn-fat-pw-bgp
 date:
 - type: published
-  value: '2014-10-27'
+  at: '2014-10-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Keyur
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Keyur
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Patel
-        language:
-        - en
       completename:
+        language: en
         content: Keyur Patel
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sami
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sami
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Boutros
-        language:
-        - en
       completename:
+        language: en
         content: Sami Boutros
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jose
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jose
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Liste
-        language:
-        - en
       completename:
+        language: en
         content: Jose Liste
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bin
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Wen
-        language:
-        - en
       completename:
+        language: en
         content: Bin Wen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2014-10-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>[RFC6391] describes a mechanism that uses an additional label (Flow
-    Label) in the MPLS label stack that allows Label Switch Routers to balance flows
-    within Pseudowires at a finer granularity than the individual Pseudowires across
-    the Equal Cost Multiple Paths (ECMPs) that exists within the Packet Switched Network
-    (PSN). Furthermore,[RFC6391] defines the LDP protocol extensions required to synchronize
-    the flow label states between the ingress and egress PEs when using the signaling
-    procedures defined in the [RFC4447]. This draft defines protocol extensions required
-    to synchronize flow label states among PEs when using the BGP-based signaling
-    procedures defined in [RFC4761]. These protocol extensions are equally applicable
-    to point-to-point L2VPNs defined in [RFC6624].</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   [RFC6391] describes a mechanism that uses an additional label (Flow\n
+    \  Label) in the MPLS label stack that allows Label Switch Routers to\n   balance
+    flows within Pseudowires at a finer granularity than the\n   individual Pseudowires
+    across the Equal Cost Multiple Paths (ECMPs)\n   that exists within the Packet
+    Switched Network (PSN).\n\n   Furthermore,[RFC6391] defines the LDP protocol extensions
+    required to\n   synchronize the flow label states between the ingress and egress
+    PEs\n   when using the signaling procedures defined in the [RFC4447].\n\n   This
+    draft defines protocol extensions required to synchronize flow\n   label states
+    among PEs when using the BGP-based signaling procedures\n   defined in [RFC4761].
+    \ These protocol extensions are equally\n   applicable to point-to-point L2VPNs
+    defined in [RFC6624].\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-keyupate-l2vpn-fat-pw-bgp-01
-    docid:
-    - id: draft-keyupate-l2vpn-fat-pw-bgp-01
+    formattedref: draft-keyupate-l2vpn-fat-pw-bgp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-keyupate-l2vpn-fat-pw-bgp-01
+    docidentifier:
+    - content: draft-keyupate-l2vpn-fat-pw-bgp-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-keyupate-l2vpn-fat-pw-bgp-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-keyupate-l2vpn-fat-pw-bgp-03
-    docid:
-    - id: draft-keyupate-l2vpn-fat-pw-bgp-03
+    formattedref: draft-keyupate-l2vpn-fat-pw-bgp-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-keyupate-l2vpn-fat-pw-bgp-03
+    docidentifier:
+    - content: draft-keyupate-l2vpn-fat-pw-bgp-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-keyupate-l2vpn-fat-pw-bgp-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-keyupate-l2vpn-fat-pw-bgp-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

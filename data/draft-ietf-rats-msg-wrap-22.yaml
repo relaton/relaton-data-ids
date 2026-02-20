@@ -1,237 +1,208 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rats-msg-wrap-22
-title:
-- content: RATS Conceptual Messages Wrapper (CMW)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-22
-  type: src
+id: draftietfratsmsgwrap22
 type: standard
-docid:
-- id: draft-ietf-rats-msg-wrap-22
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RATS Conceptual Messages Wrapper (CMW)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-22
+docidentifier:
+- content: draft-ietf-rats-msg-wrap
+  type: Internet-Draft
+- content: draft-ietf-rats-msg-wrap-22
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rats-msg-wrap
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rats-msg-wrap
 date:
 - type: published
-  value: '2025-12-04'
+  at: '2025-12-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
+        - language: en
+          content: Fraunhofer SIT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ned
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ned
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Ned Smith
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent
-  role:
+        - language: en
+          content: Independent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Fossati
-        language:
-        - en
       completename:
+        language: en
         content: Thomas Fossati
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Linaro
-  role:
+        - language: en
+          content: Linaro
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Applied Sciences Bonn-Rhein-Sieg
-  role:
+        - language: en
+          content: University of Applied Sciences Bonn-Rhein-Sieg
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dionna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dionna
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Glaze
-        language:
-        - en
       completename:
+        language: en
         content: Dionna Glaze
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
-  role:
-  - type: author
+        - language: en
+          content: Google LLC
 version:
 - draft: '22'
-revdate: '2025-12-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Conceptual Messages introduced by the RATS architecture (RFC 9334)
-    are protocol-agnostic data units that are conveyed between RATS roles during remote
-    attestation procedures. Conceptual Messages describe the meaning and function
-    of such data units within RATS data flows without specifying a wire format, encoding,
-    transport mechanism, or processing details. The initial set of Conceptual Messages
-    is defined in Section 8 of RFC 9334 and includes Evidence, Attestation Results,
-    Endorsements, Reference Values, and Appraisal Policies. This document introduces
-    the Conceptual Message Wrapper (CMW) that provides a common structure to encapsulate
-    these messages. It defines a dedicated CBOR tag, corresponding JSON Web Token
-    (JWT) and CBOR Web Token (CWT) claims, and an X.509 extension. This allows CMWs
-    to be used in CBOR-based protocols, web APIs using JWTs and CWTs, and PKIX artifacts
-    like X.509 certificates. Additionally, the draft defines a media type and a CoAP
-    content format to transport CMWs over protocols like HTTP, MIME, and CoAP. The
-    goal is to improve the interoperability and flexibility of remote attestation
-    protocols. Introducing a shared message format such as CMW enables consistent
-    support for different attestation message types, evolving message serialization
-    formats without breaking compatibility, and avoiding the need to redefine how
-    messages are handled within each protocol.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Conceptual Messages introduced by the RATS architecture (RFC\n
+    \  9334) are protocol-agnostic data units that are conveyed between RATS\n   roles
+    during remote attestation procedures.  Conceptual Messages\n   describe the meaning
+    and function of such data units within RATS data\n   flows without specifying
+    a wire format, encoding, transport\n   mechanism, or processing details.  The
+    initial set of Conceptual\n   Messages is defined in Section 8 of RFC 9334 and
+    includes Evidence,\n   Attestation Results, Endorsements, Reference Values, and
+    Appraisal\n   Policies.\n\n   This document introduces the Conceptual Message
+    Wrapper (CMW) that\n   provides a common structure to encapsulate these messages.
+    \ It\n   defines a dedicated CBOR tag, corresponding JSON Web Token (JWT) and\n
+    \  CBOR Web Token (CWT) claims, and an X.509 extension.\n\n   This allows CMWs
+    to be used in CBOR-based protocols, web APIs using\n   JWTs and CWTs, and PKIX
+    artifacts like X.509 certificates.\n   Additionally, the draft defines a media
+    type and a CoAP content\n   format to transport CMWs over protocols like HTTP,
+    MIME, and CoAP.\n\n   The goal is to improve the interoperability and flexibility
+    of remote\n   attestation protocols.  Introducing a shared message format such
+    as\n   CMW enables consistent support for different attestation message\n   types,
+    evolving message serialization formats without breaking\n   compatibility, and
+    avoiding the need to redefine how messages are\n   handled within each protocol.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rats-msg-wrap-21
-    docid:
-    - id: draft-ietf-rats-msg-wrap-21
+    formattedref: draft-ietf-rats-msg-wrap-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-21
+    docidentifier:
+    - content: draft-ietf-rats-msg-wrap-21
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rats-msg-wrap-21
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rats-msg-wrap-23
-    docid:
-    - id: draft-ietf-rats-msg-wrap-23
+    formattedref: draft-ietf-rats-msg-wrap-23
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-23
+    docidentifier:
+    - content: draft-ietf-rats-msg-wrap-23
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rats-msg-wrap-23
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rats-msg-wrap-22
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

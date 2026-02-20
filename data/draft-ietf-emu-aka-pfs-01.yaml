@@ -1,176 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-emu-aka-pfs-01
-title:
-- content: Perfect-Forward Secrecy for the Extensible Authentication Protocol Method
-    for Authentication and Key Agreement (EAP-AKA' PFS)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-01
-  type: src
+id: draftietfemuakapfs01
 type: standard
-docid:
-- id: draft-ietf-emu-aka-pfs-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Perfect-Forward Secrecy for the Extensible Authentication Protocol Method
+    for Authentication and Key Agreement (EAP-AKA' PFS)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-01
+docidentifier:
+- content: draft-ietf-emu-aka-pfs
+  type: Internet-Draft
+- content: draft-ietf-emu-aka-pfs-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-emu-aka-pfs
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-emu-aka-pfs
 date:
 - type: published
-  value: '2019-11-04'
+  at: '2019-11-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jari
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jari
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Arkko
-        language:
-        - en
       completename:
+        language: en
         content: Jari Arkko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Karl
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Karl
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Norrman
-        language:
-        - en
       completename:
+        language: en
         content: Karl Norrman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vesa
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vesa
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Torvinen
-        language:
-        - en
       completename:
+        language: en
         content: Vesa Torvinen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '01'
-revdate: '2019-11-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Many different attacks have been reported as part of revelations associated
-    with pervasive surveillance. Some of the reported attacks involved compromising
-    smart cards, such as attacking SIM card manufacturers and operators in an effort
-    to compromise shared secrets stored on these cards. Since the publication of those
-    reports, manufacturing and provisioning processes have gained much scrutiny and
-    have improved. However, the danger of resourceful attackers for these systems
-    is still a concern. This specification is an optional extension to the EAP-AKA'
-    authentication method which was defined in RFC 5448 (to be superseded by draft-ietf-emu-rfc5448bis).
-    The extension, when negotiated, provides Perfect Forward Secrecy for the session
-    key generated as a part of the authentication run in EAP-AKA'. This prevents an
-    attacker who has gained access to the long-term pre-shared secret in a SIM card
-    from being able to decrypt all past communications. In addition, if the attacker
-    stays merely a passive eavesdropper, the extension prevents attacks against future
-    sessions. This forces attackers to use active attacks instead.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many different attacks have been reported as part of revelations\n
+    \  associated with pervasive surveillance.  Some of the reported attacks\n   involved
+    compromising smart cards, such as attacking SIM card\n   manufacturers and operators
+    in an effort to compromise shared secrets\n   stored on these cards.  Since the
+    publication of those reports,\n   manufacturing and provisioning processes have
+    gained much scrutiny\n   and have improved.  However, the danger of resourceful
+    attackers for\n   these systems is still a concern.\n\n   This specification is
+    an optional extension to the EAP-AKA'\n   authentication method which was defined
+    in RFC 5448 (to be superseded\n   by draft-ietf-emu-rfc5448bis).  The extension,
+    when negotiated,\n   provides Perfect Forward Secrecy for the session key generated
+    as a\n   part of the authentication run in EAP-AKA'.  This prevents an\n   attacker
+    who has gained access to the long-term pre-shared secret in\n   a SIM card from
+    being able to decrypt all past communications.  In\n   addition, if the attacker
+    stays merely a passive eavesdropper, the\n   extension prevents attacks against
+    future sessions.  This forces\n   attackers to use active attacks instead.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-emu-aka-pfs-00
-    docid:
-    - id: draft-ietf-emu-aka-pfs-00
+    formattedref: draft-ietf-emu-aka-pfs-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-00
+    docidentifier:
+    - content: draft-ietf-emu-aka-pfs-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-emu-aka-pfs-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-emu-aka-pfs-02
-    docid:
-    - id: draft-ietf-emu-aka-pfs-02
+    formattedref: draft-ietf-emu-aka-pfs-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-02
+    docidentifier:
+    - content: draft-ietf-emu-aka-pfs-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-emu-aka-pfs-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-emu-aka-pfs-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

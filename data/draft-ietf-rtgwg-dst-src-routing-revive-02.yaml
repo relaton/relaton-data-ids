@@ -1,226 +1,197 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rtgwg-dst-src-routing-revive-02
-title:
-- content: Destination/Source Routing
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-dst-src-routing-revive-02
-  type: src
+id: draftietfrtgwgdstsrcroutingrevive02
 type: standard
-docid:
-- id: draft-ietf-rtgwg-dst-src-routing-revive-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Destination/Source Routing
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-dst-src-routing-revive-02
+docidentifier:
+- content: draft-ietf-rtgwg-dst-src-routing-revive
+  type: Internet-Draft
+- content: draft-ietf-rtgwg-dst-src-routing-revive-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rtgwg-dst-src-routing-revive
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rtgwg-dst-src-routing-revive
 date:
 - type: published
-  value: '2024-10-21'
+  at: '2024-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Lamparter
-        language:
-        - en
       completename:
+        language: en
         content: David Lamparter
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetDEF, Inc.
-  role:
+        - language: en
+          content: NetDEF, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anton
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anton
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Smirnov
-        language:
-        - en
       completename:
+        language: en
         content: Anton Smirnov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jen
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Linkova
-        language:
-        - en
       completename:
+        language: en
         content: Jen Linkova
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shu
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Yang
-        language:
-        - en
       completename:
+        language: en
         content: Shu Yang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Shenzhen University
-  role:
+        - language: en
+          content: Shenzhen University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mingwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mingwei
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Mingwei Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
-  - type: author
+        - language: en
+          content: Tsinghua University
 version:
 - draft: '02'
-revdate: '2024-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This note specifies using packets' source addresses in route lookups
-    as additional qualifier to be used in hop-by-hop routing decisions. This applies
-    to IPv6 [RFC2460] in general with specific considerations for routing protocol
-    left for separate documents. There is nothing precluding similar operation in
-    IPv4, but this is not in scope of this document. Note that destination/source
-    routing, source/destination routing, SADR, source-specific routing, source-sensitive
-    routing, S/D routing and D/S routing are all used synonymously.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This note specifies using packets' source addresses in route lookups\n
+    \  as additional qualifier to be used in hop-by-hop routing decisions.\n   This
+    applies to IPv6 [RFC2460] in general with specific\n   considerations for routing
+    protocol left for separate documents.\n   There is nothing precluding similar
+    operation in IPv4, but this is\n   not in scope of this document.\n\n   Note that
+    destination/source routing, source/destination routing,\n   SADR, source-specific
+    routing, source-sensitive routing, S/D routing\n   and D/S routing are all used
+    synonymously.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rtgwg-dst-src-routing-revive-01
-    docid:
-    - id: draft-ietf-rtgwg-dst-src-routing-revive-01
+    formattedref: draft-ietf-rtgwg-dst-src-routing-revive-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-dst-src-routing-revive-01
+    docidentifier:
+    - content: draft-ietf-rtgwg-dst-src-routing-revive-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-dst-src-routing-revive-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-rtgwg-dst-src-routing-revive-03
-    docid:
-    - id: draft-ietf-rtgwg-dst-src-routing-revive-03
+    formattedref: draft-ietf-rtgwg-dst-src-routing-revive-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-dst-src-routing-revive-03
+    docidentifier:
+    - content: draft-ietf-rtgwg-dst-src-routing-revive-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rtgwg-dst-src-routing-revive-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rtgwg-dst-src-routing-revive-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

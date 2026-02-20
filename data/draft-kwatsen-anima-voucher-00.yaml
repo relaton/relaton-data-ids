@@ -1,183 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-kwatsen-anima-voucher-00
-title:
-- content: Voucher and Voucher Revocation Profiles for Bootstrapping Protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-kwatsen-anima-voucher-00
-  type: src
+id: draftkwatsenanimavoucher00
 type: standard
-docid:
-- id: draft-kwatsen-anima-voucher-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Voucher and Voucher Revocation Profiles for Bootstrapping Protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-kwatsen-anima-voucher-00
+docidentifier:
+- content: draft-kwatsen-anima-voucher
+  type: Internet-Draft
+- content: draft-kwatsen-anima-voucher-00
   type: Internet-Draft
   primary: true
-- id: I-D.kwatsen-anima-voucher
-  type: IETF
-  scope: anchor
 docnumber: I-D.kwatsen-anima-voucher
 date:
 - type: published
-  value: '2016-12-07'
+  at: '2016-12-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kent
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Watsen
-        language:
-        - en
       completename:
+        language: en
         content: Kent Watsen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Richardson
-        language:
-        - en
       completename:
+        language: en
         content: Michael Richardson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SSW
-  role:
+        - language: en
+          content: SSW
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Max
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Max
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Pritikin
-        language:
-        - en
       completename:
+        language: en
         content: Max Pritikin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Toerless
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T. T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Toerless
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T. T.
       surname:
+        language: en
         content: Eckert
-        language:
-        - en
       completename:
+        language: en
         content: Toerless Eckert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '00'
-revdate: '2016-12-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This memo defines the two artifacts "voucher" and "voucher- revocation",
-    which are YANG-defined structures that have been signed by a TBD algorithm. The
-    voucher artifact is generated by the device's manufacture or delegate. The voucher's
-    purpose is to securely assign one or more devices to an owner. The voucher informs
-    each device which entity it should consider to be its owner. The voucher revocation
-    artifact is used by the manufacturer or delegate (i.e. the issuer of the voucher)
-    to revoke vouchers, if ever necessary. The voucher revocation format defined herein
-    supports both issuer-wide and voucher-specific constructs, enabling usage flexibility.
-    For both artifacts, this memo only defines the artifact, leaving it to future
-    work to describe specialized protocols for accessing them.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo defines the two artifacts \"voucher\" and \"voucher-\n   revocation\",
+    which are YANG-defined structures that have been signed\n   by a TBD algorithm.\n\n
+    \  The voucher artifact is generated by the device's manufacture or\n   delegate.
+    \ The voucher's purpose is to securely assign one or more\n   devices to an owner.
+    \ The voucher informs each device which entity it\n   should consider to be its
+    owner.\n\n   The voucher revocation artifact is used by the manufacturer or\n
+    \  delegate (i.e.  the issuer of the voucher) to revoke vouchers, if\n   ever
+    necessary.  The voucher revocation format defined herein\n   supports both issuer-wide
+    and voucher-specific constructs, enabling\n   usage flexibility.\n\n   For both
+    artifacts, this memo only defines the artifact, leaving it\n   to future work
+    to describe specialized protocols for accessing them.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-kwatsen-anima-voucher-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

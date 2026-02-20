@@ -1,113 +1,93 @@
 ---
-schema-version: v1.2.9
-id: draft-jarvinen-tcpm-sack-recovery-entry-01
-title:
-- content: Using TCP Selective Acknowledgement (SACK) Information to Determine Duplicate
-    Acknowledgements for Loss Recovery Initiation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-jarvinen-tcpm-sack-recovery-entry-01
-  type: src
+id: draftjarvinentcpmsackrecoveryentry01
 type: standard
-docid:
-- id: draft-jarvinen-tcpm-sack-recovery-entry-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Using TCP Selective Acknowledgement (SACK) Information to Determine Duplicate
+    Acknowledgements for Loss Recovery Initiation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jarvinen-tcpm-sack-recovery-entry-01
+docidentifier:
+- content: draft-jarvinen-tcpm-sack-recovery-entry
+  type: Internet-Draft
+- content: draft-jarvinen-tcpm-sack-recovery-entry-01
   type: Internet-Draft
   primary: true
-- id: I-D.jarvinen-tcpm-sack-recovery-entry
-  type: IETF
-  scope: anchor
 docnumber: I-D.jarvinen-tcpm-sack-recovery-entry
 date:
 - type: published
-  value: '2009-08-05'
+  at: '2009-08-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ilpo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ilpo
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Järvinen
-        language:
-        - en
       completename:
+        language: en
         content: Ilpo Järvinen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Markku
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Markku
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Kojo
-        language:
-        - en
       completename:
+        language: en
         content: Markku Kojo
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2009-08-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a TCP sender algorithm to trigger loss recovery
-    based on the information gathered on a SACK scoreboard instead of simply counting
-    the number of arriving duplicate acknowledgements in the traditional way. The
-    given algorithm is more robust to ACK losses, ACK reordering, missed duplicate
-    acknowledgements due to delayed acknowledgements, and extra duplicate acknowledgements
-    due to duplicated segments and out-of- window segments. The algorithm allows not
-    only a timely initiation of TCP loss recovery but also reduces false fast retransmits.
-    It has a low implementation cost on top of the SACK scoreboard defined in RFC
-    3517.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes a TCP sender algorithm to trigger loss\n recovery
+    based on the information gathered on a SACK scoreboard\n instead of simply counting
+    the number of arriving duplicate\n acknowledgements in the traditional way. The
+    given algorithm is more\n robust to ACK losses, ACK reordering, missed duplicate\n
+    acknowledgements due to delayed acknowledgements, and extra\n duplicate acknowledgements
+    due to duplicated segments and out-of-\n window segments. The algorithm allows
+    not only a timely initiation\n of TCP loss recovery but also reduces false fast
+    retransmits.  It\n has a low implementation cost on top of the SACK scoreboard
+    defined\n in RFC 3517.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-jarvinen-tcpm-sack-recovery-entry-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

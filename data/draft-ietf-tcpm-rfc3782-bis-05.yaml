@@ -1,178 +1,152 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tcpm-rfc3782-bis-05
-title:
-- content: The NewReno Modification to TCP's Fast Recovery Algorithm
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc3782-bis-05
-  type: src
+id: draftietftcpmrfc3782bis05
 type: standard
-docid:
-- id: draft-ietf-tcpm-rfc3782-bis-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The NewReno Modification to TCP's Fast Recovery Algorithm
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc3782-bis-05
+docidentifier:
+- content: draft-ietf-tcpm-rfc3782-bis
+  type: Internet-Draft
+- content: draft-ietf-tcpm-rfc3782-bis-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tcpm-rfc3782-bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tcpm-rfc3782-bis
 date:
 - type: published
-  value: '2012-01-20'
+  at: '2012-01-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Andrei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrei
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gurtov
-        language:
-        - en
       completename:
+        language: en
         content: Andrei Gurtov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Oulu
-  role:
+        - language: en
+          content: University of Oulu
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tom
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tom
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Henderson
-        language:
-        - en
       completename:
+        language: en
         content: Tom Henderson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Boeing
-  role:
+        - language: en
+          content: Boeing
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sally
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sally
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Floyd
-        language:
-        - en
       completename:
+        language: en
         content: Sally Floyd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICSI
-  role:
+        - language: en
+          content: ICSI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yoshifumi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yoshifumi
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Nishida
-        language:
-        - en
       completename:
+        language: en
         content: Yoshifumi Nishida
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: WIDE Project
-  role:
-  - type: author
+        - language: en
+          content: WIDE Project
 version:
 - draft: '05'
-revdate: '2012-01-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>RFC 5681 documents the following four intertwined TCP congestion control
+- language: en
+  script: Latn
+  content: "RFC 5681 documents the following four intertwined TCP congestion control
     algorithms: slow start, congestion avoidance, fast retransmit, and fast recovery.
-    RFC 5681 explicitly allows certain modifications of these algorithms, including
+    \ RFC 5681 explicitly allows certain modifications of these algorithms, including
     modifications that use the TCP Selective Acknowledgment (SACK) option (RFC 2883),
-    and modifications that respond to "partial acknowledgments" (ACKs that cover new
-    data, but not all the data outstanding when loss was detected) in the absence
-    of SACK. This document describes a specific algorithm for responding to partial
-    acknowledgments, referred to as "NewReno". This response to partial acknowledgments
-    was first proposed by Janey Hoe. This document obsoletes RFC 3782. [STANDARDS-TRACK]</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    and modifications that respond to \"partial acknowledgments\" (ACKs that cover
+    new data, but not all the data outstanding when loss was detected) in the absence
+    of SACK.  This document describes a specific algorithm for responding to partial
+    acknowledgments, referred to as \"NewReno\".  This response to partial acknowledgments
+    was first proposed by Janey Hoe.  This document obsoletes RFC 3782. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tcpm-rfc3782-bis-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

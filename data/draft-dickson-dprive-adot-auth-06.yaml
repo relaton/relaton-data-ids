@@ -1,102 +1,88 @@
 ---
-schema-version: v1.2.9
-id: draft-dickson-dprive-adot-auth-06
-title:
-- content: Authenticated DNS over TLS to Authoritative Servers
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-dickson-dprive-adot-auth-06
-  type: src
+id: draftdicksondpriveadotauth06
 type: standard
-docid:
-- id: draft-dickson-dprive-adot-auth-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Authenticated DNS over TLS to Authoritative Servers
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-dickson-dprive-adot-auth-06
+docidentifier:
+- content: draft-dickson-dprive-adot-auth
+  type: Internet-Draft
+- content: draft-dickson-dprive-adot-auth-06
   type: Internet-Draft
   primary: true
-- id: I-D.dickson-dprive-adot-auth
-  type: IETF
-  scope: anchor
 docnumber: I-D.dickson-dprive-adot-auth
 date:
 - type: published
-  value: '2021-11-09'
+  at: '2021-11-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Dickson
-        language:
-        - en
       completename:
+        language: en
         content: Brian Dickson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: GoDaddy
-  role:
-  - type: author
+        - language: en
+          content: GoDaddy
 version:
 - draft: '06'
-revdate: '2021-11-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This Internet Draft proposes a mechanism for DNS resolvers to discover
-    support for TLS transport to authoritative DNS servers, to validate this indication
-    of support, and to authenticate the TLS certificates involved. This requires that
-    the name server _names_ are in a DNSSEC signed zone. This also requires that the
-    delegation of the zone served is protected by [I-D.dickson-dnsop-ds-hack], since
-    the NS names are the keys used for discovery of TLS transport support. Additional
-    recommendations relate to use of various techniques for efficiency and scalability,
-    and new EDNS options to minimize round trips and for signaling between clients
-    and resolvers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This Internet Draft proposes a mechanism for DNS resolvers to\n   discover
+    support for TLS transport to authoritative DNS servers, to\n   validate this indication
+    of support, and to authenticate the TLS\n   certificates involved.\n\n   This
+    requires that the name server _names_ are in a DNSSEC signed\n   zone.\n\n   This
+    also requires that the delegation of the zone served is\n   protected by [I-D.dickson-dnsop-ds-hack],
+    since the NS names are the\n   keys used for discovery of TLS transport support.\n\n
+    \  Additional recommendations relate to use of various techniques for\n   efficiency
+    and scalability, and new EDNS options to minimize round\n   trips and for signaling
+    between clients and resolvers.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-dickson-dprive-adot-auth-05
-    docid:
-    - id: draft-dickson-dprive-adot-auth-05
+    formattedref: draft-dickson-dprive-adot-auth-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dickson-dprive-adot-auth-05
+    docidentifier:
+    - content: draft-dickson-dprive-adot-auth-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-dickson-dprive-adot-auth-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-dickson-dprive-adot-auth-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

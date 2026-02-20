@@ -1,164 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
-title:
-- content: BGP-LS with Flex-Algo for Segment Routing based Virtual Transport Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
-  type: src
+id: draftzhuidrbgplssrvtnflexalgo01
 type: standard
-docid:
-- id: draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP-LS with Flex-Algo for Segment Routing based Virtual Transport Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
+docidentifier:
+- content: draft-zhu-idr-bgpls-sr-vtn-flexalgo
+  type: Internet-Draft
+- content: draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
   type: Internet-Draft
   primary: true
-- id: I-D.zhu-idr-bgpls-sr-vtn-flexalgo
-  type: IETF
-  scope: anchor
 docnumber: I-D.zhu-idr-bgpls-sr-vtn-flexalgo
 date:
 - type: published
-  value: '2021-02-22'
+  at: '2021-02-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '01'
-revdate: '2021-02-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Enhanced VPN (VPN+) aims to provide enhanced VPN service to support
-    some application's needs of enhanced isolation and stringent performance requirements.
-    VPN+ requires integration between the overlay VPN and a particular set of resources
-    in the underlay network. A Virtual Transport Network (VTN) is a virtual underlay
-    network which has a customized network topology and a set of network resources
-    allocated from the physical network. A VTN could be used to support one or a group
-    of VPN+ services. When Segment Routing is used as the data plane to provide VTNs,
-    each VTN can be allocated with a group of SIDs to identify the topology and resource
-    attributes of network segments in the VTN. The association between the network
-    topology, the network resource attributes and the SR SIDs may need to be distributed
-    to a centralized network controller. For network scenarios where each VTN can
-    be identified by a unique Flex-Algo ID, this document describes a mechanism to
-    distribute the information of SR based VTNs using BGP-LS with Flex-Algo.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Enhanced VPN (VPN+) aims to provide enhanced VPN service to support\n
+    \  some application's needs of enhanced isolation and stringent\n   performance
+    requirements.  VPN+ requires integration between the\n   overlay VPN and a particular
+    set of resources in the underlay\n   network.  A Virtual Transport Network (VTN)
+    is a virtual underlay\n   network which has a customized network topology and
+    a set of network\n   resources allocated from the physical network.  A VTN could
+    be used\n   to support one or a group of VPN+ services.\n\n   When Segment Routing
+    is used as the data plane to provide VTNs, each\n   VTN can be allocated with
+    a group of SIDs to identify the topology\n   and resource attributes of network
+    segments in the VTN.  The\n   association between the network topology, the network
+    resource\n   attributes and the SR SIDs may need to be distributed to a\n   centralized
+    network controller.  For network scenarios where each VTN\n   can be identified
+    by a unique Flex-Algo ID, this document describes a\n   mechanism to distribute
+    the information of SR based VTNs using BGP-LS\n   with Flex-Algo.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
-    docid:
-    - id: draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
+    formattedref: draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
+    docidentifier:
+    - content: draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zhu-idr-bgpls-sr-vtn-flexalgo-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zhu-idr-bgpls-sr-vtn-flexalgo-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

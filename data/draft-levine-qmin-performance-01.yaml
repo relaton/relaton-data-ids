@@ -1,104 +1,89 @@
 ---
-schema-version: v1.2.9
-id: draft-levine-qmin-performance-01
-title:
-- content: Mitigating QNAME minimization performance problems
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-levine-qmin-performance-01
-  type: src
+id: draftlevineqminperformance01
 type: standard
-docid:
-- id: draft-levine-qmin-performance-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Mitigating QNAME minimization performance problems
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-levine-qmin-performance-01
+docidentifier:
+- content: draft-levine-qmin-performance
+  type: Internet-Draft
+- content: draft-levine-qmin-performance-01
   type: Internet-Draft
   primary: true
-- id: I-D.levine-qmin-performance
-  type: IETF
-  scope: anchor
 docnumber: I-D.levine-qmin-performance
 date:
 - type: published
-  value: '2024-05-05'
+  at: '2024-05-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: J. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: J. R.
       surname:
+        language: en
         content: Levine
-        language:
-        - en
       completename:
+        language: en
         content: John R. Levine
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Standcore LLC
-  role:
-  - type: author
+        - language: en
+          content: Standcore LLC
 version:
 - draft: '01'
-revdate: '2024-05-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>QNAME minimization improves DNS privacy by truncating query names sent
-    to authoritative name servers. While it works well when there is a zone cut between
-    each label in a name, when a zone includes more than one level of labels, it can
-    cause multiple redundant queries to the same server, significantly increasing
-    the load on that server without additional privacy benefits. This document describes
-    some situations where minimization causes load problems and potential ways to
-    fix the problem,</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   QNAME minimization improves DNS privacy by truncating query names\n
+    \  sent to authoritative name servers.  While it works well when there\n   is
+    a zone cut between each label in a name, when a zone includes more\n   than one
+    level of labels, it can cause multiple redundant queries to\n   the same server,
+    significantly increasing the load on that server\n   without additional privacy
+    benefits.  This document describes some\n   situations where minimization causes
+    load problems and potential ways\n   to fix the problem,\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-levine-qmin-performance-00
-    docid:
-    - id: draft-levine-qmin-performance-00
+    formattedref: draft-levine-qmin-performance-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-levine-qmin-performance-00
+    docidentifier:
+    - content: draft-levine-qmin-performance-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-levine-qmin-performance-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-levine-qmin-performance-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

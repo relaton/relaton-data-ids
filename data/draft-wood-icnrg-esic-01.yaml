@@ -1,136 +1,117 @@
 ---
-schema-version: v1.2.9
-id: draft-wood-icnrg-esic-01
-title:
-- content: Encrypted Sessions In CCNx (ESIC)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wood-icnrg-esic-01
-  type: src
+id: draftwoodicnrgesic01
 type: standard
-docid:
-- id: draft-wood-icnrg-esic-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Encrypted Sessions In CCNx (ESIC)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wood-icnrg-esic-01
+docidentifier:
+- content: draft-wood-icnrg-esic
+  type: Internet-Draft
+- content: draft-wood-icnrg-esic-01
   type: Internet-Draft
   primary: true
-- id: I-D.wood-icnrg-esic
-  type: IETF
-  scope: anchor
 docnumber: I-D.wood-icnrg-esic
 date:
 - type: published
-  value: '2017-09-12'
+  at: '2017-09-12'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Marc
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marc
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Mosko
-        language:
-        - en
       completename:
+        language: en
         content: Marc Mosko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: PARC, Inc.
-  role:
+        - language: en
+          content: PARC, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: C. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: C. A.
       surname:
+        language: en
         content: Wood
-        language:
-        - en
       completename:
+        language: en
         content: Christopher A. Wood
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of California Irvine
-  role:
-  - type: author
+        - language: en
+          content: University of California Irvine
 version:
 - draft: '01'
-revdate: '2017-09-12'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes how to transport CCNx packets inside an encrypted
-    session between peers that share a traffic secret, such as that which is derived
-    from [CCNxKE]. The peers create an outer naming context to identify the encryption
-    session in one direction between the consumer and the producer. The consumer sends
-    encrypted Interest messages to the producer, who responds with encrypted Content
-    Objects. Inside the outer context, the consumer sends Interests with different
-    names, which the producer may respond to or may send InterestReturns for. There
-    does not need to be a naming relationship between the outer names and the inner
-    names. The inner content is still protected by normal CCNx authentication mechanisms
-    and possiby encrypted under other schemes.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes how to transport CCNx packets inside an\n   encrypted
+    session between peers that share a traffic secret, such as\n   that which is derived
+    from [CCNxKE].  The peers create an outer\n   naming context to identify the encryption
+    session in one direction\n   between the consumer and the producer.  The consumer
+    sends encrypted\n   Interest messages to the producer, who responds with encrypted\n
+    \  Content Objects.  Inside the outer context, the consumer sends\n   Interests
+    with different names, which the producer may respond to or\n   may send InterestReturns
+    for.  There does not need to be a naming\n   relationship between the outer names
+    and the inner names.  The inner\n   content is still protected by normal CCNx
+    authentication mechanisms\n   and possiby encrypted under other schemes.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wood-icnrg-esic-00
-    docid:
-    - id: draft-wood-icnrg-esic-00
+    formattedref: draft-wood-icnrg-esic-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wood-icnrg-esic-00
+    docidentifier:
+    - content: draft-wood-icnrg-esic-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wood-icnrg-esic-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wood-icnrg-esic-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

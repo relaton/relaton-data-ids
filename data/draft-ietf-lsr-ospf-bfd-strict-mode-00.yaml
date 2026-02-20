@@ -1,187 +1,162 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-lsr-ospf-bfd-strict-mode-00
-title:
-- content: OSPF Strict-Mode for BFD
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-bfd-strict-mode-00
-  type: src
+id: draftietflsrospfbfdstrictmode00
 type: standard
-docid:
-- id: draft-ietf-lsr-ospf-bfd-strict-mode-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OSPF Strict-Mode for BFD
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-bfd-strict-mode-00
+docidentifier:
+- content: draft-ietf-lsr-ospf-bfd-strict-mode
+  type: Internet-Draft
+- content: draft-ietf-lsr-ospf-bfd-strict-mode-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-lsr-ospf-bfd-strict-mode
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-lsr-ospf-bfd-strict-mode
 date:
 - type: published
-  value: '2020-01-06'
+  at: '2020-01-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Albert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Albert
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Fu
-        language:
-        - en
       completename:
+        language: en
         content: Albert Fu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bloomberg
-  role:
+        - language: en
+          content: Bloomberg
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rejesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rejesh
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Shetty
-        language:
-        - en
       completename:
+        language: en
         content: Rejesh Shetty
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '00'
-revdate: '2020-01-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document specifies the extensions to OSPF that enables a router
-    and its neighbor to signal their intention to use Bidirectional Forwarding Detection
-    (BFD) for their adjacency using link-local advertisement between them. The signaling
-    of this BFD enablement, allows the router to block and not allow the establishment
-    of adjacency with its neighbor router until a BFD session is successfully established
-    between them. The document describes this OSPF "strict-mode" of BFD establishment
-    as a prerequisite to adjacency formation.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies the extensions to OSPF that enables a router\n
+    \  and its neighbor to signal their intention to use Bidirectional\n   Forwarding
+    Detection (BFD) for their adjacency using link-local\n   advertisement between
+    them.  The signaling of this BFD enablement,\n   allows the router to block and
+    not allow the establishment of\n   adjacency with its neighbor router until a
+    BFD session is\n   successfully established between them.  The document describes
+    this\n   OSPF \"strict-mode\" of BFD establishment as a prerequisite to\n   adjacency
+    formation.\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-lsr-ospf-bfd-strict-mode-01
-    docid:
-    - id: draft-ietf-lsr-ospf-bfd-strict-mode-01
+    formattedref: draft-ietf-lsr-ospf-bfd-strict-mode-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-bfd-strict-mode-01
+    docidentifier:
+    - content: draft-ietf-lsr-ospf-bfd-strict-mode-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-lsr-ospf-bfd-strict-mode-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-lsr-ospf-bfd-strict-mode-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,189 +1,162 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-l2gw-proto-00
-title:
-- content: EVPN Multi-Homing Mechanism for Layer-2 Gateway Protocols
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-l2gw-proto-00
-  type: src
+id: draftietfbessevpnl2gwproto00
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-l2gw-proto-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: EVPN Multi-Homing Mechanism for Layer-2 Gateway Protocols
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-l2gw-proto-00
+docidentifier:
+- content: draft-ietf-bess-evpn-l2gw-proto
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-l2gw-proto-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-l2gw-proto
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-l2gw-proto
 date:
 - type: published
-  value: '2021-05-03'
+  at: '2021-05-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Patrice
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Patrice
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Brissette
-        language:
-        - en
       completename:
+        language: en
         content: Patrice Brissette
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luc
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: L. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luc
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: L. A.
       surname:
+        language: en
         content: Burdet
-        language:
-        - en
       completename:
+        language: en
         content: Luc André Burdet
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Voyer
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Voyer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bell Canada
-  role:
-  - type: author
+        - language: en
+          content: Bell Canada
 version:
 - draft: '00'
-revdate: '2021-05-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The existing EVPN multi-homing load-balancing modes defined are Single-Active
-    and All-Active. Neither of these multi-homing mechanisms adequately represent
-    ethernet-segments facing access networks with Layer-2 Gateway protocols such as
-    G.8032, (M)STP, REP, MPLS-TP, etc. These loop-preventing Layer-2 protocols require
-    a new multi-homing mechanism defined in this draft.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The existing EVPN multi-homing load-balancing modes defined are\n   Single-Active
+    and All-Active.  Neither of these multi-homing\n   mechanisms adequately represent
+    ethernet-segments facing access\n   networks with Layer-2 Gateway protocols such
+    as G.8032, (M)STP, REP,\n   MPLS-TP, etc.  These loop-preventing Layer-2 protocols
+    require a new\n   multi-homing mechanism defined in this draft.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-evpn-l2gw-proto-01
-    docid:
-    - id: draft-ietf-bess-evpn-l2gw-proto-01
+    formattedref: draft-ietf-bess-evpn-l2gw-proto-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-l2gw-proto-01
+    docidentifier:
+    - content: draft-ietf-bess-evpn-l2gw-proto-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-l2gw-proto-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-l2gw-proto-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

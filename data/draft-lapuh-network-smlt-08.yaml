@@ -1,159 +1,137 @@
 ---
-schema-version: v1.2.9
-id: draft-lapuh-network-smlt-08
-title:
-- content: Split Multi-link Trunking (SMLT)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lapuh-network-smlt-08
-  type: src
+id: draftlapuhnetworksmlt08
 type: standard
-docid:
-- id: draft-lapuh-network-smlt-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Split Multi-link Trunking (SMLT)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lapuh-network-smlt-08
+docidentifier:
+- content: draft-lapuh-network-smlt
+  type: Internet-Draft
+- content: draft-lapuh-network-smlt-08
   type: Internet-Draft
   primary: true
-- id: I-D.lapuh-network-smlt
-  type: IETF
-  scope: anchor
 docnumber: I-D.lapuh-network-smlt
 date:
 - type: published
-  value: '2008-07-08'
+  at: '2008-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Roger
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Roger
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Lapuh
-        language:
-        - en
       completename:
+        language: en
         content: Roger Lapuh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
+        - language: en
+          content: Nortel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dinesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dinesh
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Mohan
-        language:
-        - en
       completename:
+        language: en
         content: Dinesh Mohan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
+        - language: en
+          content: Nortel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Richard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Mcgovern
-        language:
-        - en
       completename:
+        language: en
         content: Richard Mcgovern
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nortel
-  role:
-  - type: author
+        - language: en
+          content: Nortel
 version:
 - draft: '08'
-revdate: '2008-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document describes Split Multi-link Trunking (SMLT) for bridged
-    and routed networks. SMLT enables topologies with upstream node redundancy for
-    increased reliability of Layer 2 link aggregationsubnetworks based on [IEEE 802.3ad]
-    and router redundancy based on VRRP [RFC3768]. SMLT is an improvement over Multi-Link
-    Trunking (MLT), a method of link aggregation that allows multiple Ethernet links
-    to be aggregated together, and handled as a single logical trunk. MLT can be realized
-    via many different link aggregation mechanisms. Several methods of MLT are in
-    use today; one example is [IEEE 802.3ad]. SMLT is MLT with links of a link-aggregation
-    group connected to ports on two different devices (e.g. SMLT client and aggregation
-    device). Unlike MLT, at least one end of a link-aggregated group is dual-homed
-    to two different SMLT aggregation devices. In many cases those devices act as
-    bridges (switches) as well as L3 routers (Routing Switches). These two redundant
-    SMLT aggregation devices can share one or more VRRP routing instances; for that
-    SMLT-VRRP extends the VRRP functionality to an active-active router concept, where
-    both SMLT aggregation device route traffic for a common VRRP-ID, thus load balancing
-    traffic not only for L2 but also for L3. Conventions used in this document The
-    key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD
-    NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted
-    as described in RFC 2119.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes Split Multi-link Trunking (SMLT) for bridged\nand
+    routed networks. SMLT enables topologies with upstream node\nredundancy for increased
+    reliability of Layer 2 link aggregationsubnetworks based on [IEEE 802.3ad] and
+    router redundancy based on\nVRRP [RFC3768].\n\nSMLT is an improvement over Multi-Link
+    Trunking (MLT), a method of\nlink aggregation that allows multiple Ethernet links
+    to be aggregated\ntogether, and handled as a single logical trunk. MLT can be
+    realized\nvia many different link aggregation mechanisms. Several methods of\nMLT
+    are in use today; one example is [IEEE 802.3ad].\n\nSMLT is MLT with links of
+    a link-aggregation group connected to ports\non two different devices (e.g. SMLT
+    client and aggregation device).\nUnlike MLT, at least one end of a link-aggregated
+    group is dual-homed\nto two different SMLT aggregation devices. In many cases
+    those\ndevices act as bridges (switches) as well as L3 routers (Routing\nSwitches).
+    These two redundant SMLT aggregation devices can share one\nor more VRRP routing
+    instances; for that SMLT-VRRP extends the VRRP\nfunctionality to an active-active
+    router concept, where both SMLT\naggregation device route traffic for a common
+    VRRP-ID, thus load\nbalancing traffic not only for L2 but also for L3.\n\n\nConventions
+    used in this document\n\nThe key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\",
+    \"SHALL NOT\",\n\"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\"
+    in this\ndocument are to be interpreted as described in RFC 2119.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lapuh-network-smlt-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,229 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-hao-bess-evpn-centralized-df-02
-title:
-- content: Centralized EVPN DF Election
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-hao-bess-evpn-centralized-df-02
-  type: src
+id: drafthaobessevpncentralizeddf02
 type: standard
-docid:
-- id: draft-hao-bess-evpn-centralized-df-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Centralized EVPN DF Election
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-hao-bess-evpn-centralized-df-02
+docidentifier:
+- content: draft-hao-bess-evpn-centralized-df
+  type: Internet-Draft
+- content: draft-hao-bess-evpn-centralized-df-02
   type: Internet-Draft
   primary: true
-- id: I-D.hao-bess-evpn-centralized-df
-  type: IETF
-  scope: anchor
 docnumber: I-D.hao-bess-evpn-centralized-df
 date:
 - type: published
-  value: '2018-09-18'
+  at: '2018-09-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Donald
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: D. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: D. E.
       surname:
+        language: en
         content: Eastlake
-        language:
-        - en
       completename:
+        language: en
         content: Donald E. Eastlake 3rd
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hao
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hao
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Weiguo
-        language:
-        - en
       completename:
+        language: en
         content: Hao Weiguo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lili
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lili
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Lili Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yizhou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yizhou
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Yizhou Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shunwan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shunwan
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Zhuang
-        language:
-        - en
       completename:
+        language: en
         content: Shunwan Zhuang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '02'
-revdate: '2018-09-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document proposes a centralized DF Designated Forwarder election
-    mechanism to be used between an SDN (Software Defined Network) controller and
-    each PE (Provider Edge) device in an EVPN network. Such a mechanism overcomes
-    the issues of current standalone DF election defined in RFC 7432. A new BGP capability
-    and an additional DF Election Result Route Type are specified to support this
-    centralized DF mechanism.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document proposes a centralized DF Designated Forwarder election\n
+    \  mechanism to be used between an SDN (Software Defined Network)\n   controller
+    and each PE (Provider Edge) device in an EVPN network.\n   Such a mechanism overcomes
+    the issues of current standalone DF\n   election defined in RFC 7432. A new BGP
+    capability and an additional\n   DF Election Result Route Type are specified to
+    support this\n   centralized DF mechanism.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-hao-bess-evpn-centralized-df-01
-    docid:
-    - id: draft-hao-bess-evpn-centralized-df-01
+    formattedref: draft-hao-bess-evpn-centralized-df-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hao-bess-evpn-centralized-df-01
+    docidentifier:
+    - content: draft-hao-bess-evpn-centralized-df-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hao-bess-evpn-centralized-df-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-hao-bess-evpn-centralized-df-03
-    docid:
-    - id: draft-hao-bess-evpn-centralized-df-03
+    formattedref: draft-hao-bess-evpn-centralized-df-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hao-bess-evpn-centralized-df-03
+    docidentifier:
+    - content: draft-hao-bess-evpn-centralized-df-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hao-bess-evpn-centralized-df-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-hao-bess-evpn-centralized-df-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

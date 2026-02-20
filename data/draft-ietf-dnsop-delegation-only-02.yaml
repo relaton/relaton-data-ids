@@ -1,131 +1,114 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-delegation-only-02
-title:
-- content: The DELEGATION_ONLY DNSKEY flag
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-delegation-only-02
-  type: src
+id: draftietfdnsopdelegationonly02
 type: standard
-docid:
-- id: draft-ietf-dnsop-delegation-only-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The DELEGATION_ONLY DNSKEY flag
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-delegation-only-02
+docidentifier:
+- content: draft-ietf-dnsop-delegation-only
+  type: Internet-Draft
+- content: draft-ietf-dnsop-delegation-only-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-delegation-only
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-delegation-only
 date:
 - type: published
-  value: '2021-02-21'
+  at: '2021-02-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Red Hat
-  role:
+        - language: en
+          content: Red Hat
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Wes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Wes
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Hardaker
-        language:
-        - en
       completename:
+        language: en
         content: Wes Hardaker
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: USC/ISI
-  role:
-  - type: author
+        - language: en
+          content: USC/ISI
 version:
 - draft: '02'
-revdate: '2021-02-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document introduces a new DNSKEY flag called DELEGATION_ONLY that
-    indicates that this zone will only produce delegation responses for data outside
-    of its own apex (or _underscore labels). That is, the Answer Section for queries
-    that do not involve the apex (or _underscore labels) of the zone is empty, and
-    only glue records in the Authority Section and Additional Section will be acceptable
-    data in the response message. Additionally, it indicates that it is not expected
-    that the parent of this delegation-only zone bypasses or removes the delegation
-    to this zone. DNSSEC Validating Resolvers can use this flag to mark any data that
-    violates the DELEGATION_ONLY policy as Bogus.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document introduces a new DNSKEY flag called DELEGATION_ONLY\n
+    \  that indicates that this zone will only produce delegation responses\n   for
+    data outside of its own apex (or _underscore labels).  That is,\n   the Answer
+    Section for queries that do not involve the apex (or\n   _underscore labels) of
+    the zone is empty, and only glue records in\n   the Authority Section and Additional
+    Section will be acceptable data\n   in the response message.  Additionally, it
+    indicates that it is not\n   expected that the parent of this delegation-only
+    zone bypasses or\n   removes the delegation to this zone.  DNSSEC Validating Resolvers
+    can\n   use this flag to mark any data that violates the DELEGATION_ONLY\n   policy
+    as Bogus.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-delegation-only-01
-    docid:
-    - id: draft-ietf-dnsop-delegation-only-01
+    formattedref: draft-ietf-dnsop-delegation-only-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-delegation-only-01
+    docidentifier:
+    - content: draft-ietf-dnsop-delegation-only-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-delegation-only-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-delegation-only-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,215 +1,180 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bier-architecture-05
-title:
-- content: Multicast using Bit Index Explicit Replication
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-architecture-05
-  type: src
+id: draftietfbierarchitecture05
 type: standard
-docid:
-- id: draft-ietf-bier-architecture-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Multicast using Bit Index Explicit Replication
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-architecture-05
+docidentifier:
+- content: draft-ietf-bier-architecture
+  type: Internet-Draft
+- content: draft-ietf-bier-architecture-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bier-architecture
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bier-architecture
 date:
 - type: published
-  value: '2016-10-28'
+  at: '2016-10-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: IJsbrand
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: IJsbrand
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Wijnands
-        language:
-        - en
       completename:
+        language: en
         content: IJsbrand Wijnands
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Dolganow
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Dolganow
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tony
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tony
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Przygienda
-        language:
-        - en
       completename:
+        language: en
         content: Tony Przygienda
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sam
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sam
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Aldrin
-        language:
-        - en
       completename:
+        language: en
         content: Sam Aldrin
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '05'
-revdate: '2016-10-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document specifies a new architecture for the forwarding of multicast
-    data packets. It provides optimal forwarding of multicast packets through a "multicast
-    domain". However, it does not require a protocol for explicitly building multicast
-    distribution trees, nor does it require intermediate nodes to maintain any per-flow
-    state. This architecture is known as "Bit Index Explicit Replication" (BIER).
-    When a multicast data packet enters the domain, the ingress router determines
-    the set of egress routers to which the packet needs to be sent. The ingress router
-    then encapsulates the packet in a BIER header. The BIER header contains a bitstring
-    in which each bit represents exactly one egress router in the domain; to forward
-    the packet to a given set of egress routers, the bits corresponding to those routers
-    are set in the BIER header. Elimination of the per- flow state and the explicit
-    tree-building protocols results in a considerable simplification.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies a new architecture for the forwarding of\n
+    \  multicast data packets.  It provides optimal forwarding of multicast\n   packets
+    through a \"multicast domain\".  However, it does not require a\n   protocol for
+    explicitly building multicast distribution trees, nor\n   does it require intermediate
+    nodes to maintain any per-flow state.\n   This architecture is known as \"Bit
+    Index Explicit Replication\"\n   (BIER).  When a multicast data packet enters
+    the domain, the ingress\n   router determines the set of egress routers to which
+    the packet needs\n   to be sent.  The ingress router then encapsulates the packet
+    in a\n   BIER header.  The BIER header contains a bitstring in which each bit\n
+    \  represents exactly one egress router in the domain; to forward the\n   packet
+    to a given set of egress routers, the bits corresponding to\n   those routers
+    are set in the BIER header.  Elimination of the per-\n   flow state and the explicit
+    tree-building protocols results in a\n   considerable simplification.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bier-architecture-04
-    docid:
-    - id: draft-ietf-bier-architecture-04
+    formattedref: draft-ietf-bier-architecture-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-architecture-04
+    docidentifier:
+    - content: draft-ietf-bier-architecture-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bier-architecture-04
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bier-architecture-06
-    docid:
-    - id: draft-ietf-bier-architecture-06
+    formattedref: draft-ietf-bier-architecture-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-architecture-06
+    docidentifier:
+    - content: draft-ietf-bier-architecture-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bier-architecture-06
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bier-architecture-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

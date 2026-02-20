@@ -1,207 +1,172 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-oauth-pop-architecture-04
-title:
-- content: OAuth 2.0 Proof-of-Possession (PoP) Security Architecture
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-04
-  type: src
+id: draftietfoauthpoparchitecture04
 type: standard
-docid:
-- id: draft-ietf-oauth-pop-architecture-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: OAuth 2.0 Proof-of-Possession (PoP) Security Architecture
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-04
+docidentifier:
+- content: draft-ietf-oauth-pop-architecture
+  type: Internet-Draft
+- content: draft-ietf-oauth-pop-architecture-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-oauth-pop-architecture
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-oauth-pop-architecture
 date:
 - type: published
-  value: '2015-10-19'
+  at: '2015-10-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Phil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Phil
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Hunt
-        language:
-        - en
       completename:
+        language: en
         content: Phil Hunt
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Justin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Justin
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Richer
-        language:
-        - en
       completename:
+        language: en
         content: Justin Richer
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: William
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        formatted_initials:
-          content: W.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: William
+      - language: en
+        script: Latn
+        initial: W
+      formatted_initials:
+        language: en
+        content: W.
       surname:
+        language: en
         content: Mills
-        language:
-        - en
       completename:
+        language: en
         content: William Mills
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Prateek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prateek
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Mishra
-        language:
-        - en
       completename:
+        language: en
         content: Prateek Mishra
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hannes
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Tschofenig
-        language:
-        - en
       completename:
+        language: en
         content: Hannes Tschofenig
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2015-10-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The OAuth 2.0 bearer token specification, as defined in RFC 6750, allows
-    any party in possession of a bearer token (a "bearer") to get access to the associated
-    resources (without demonstrating possession of a cryptographic key). To prevent
-    misuse, bearer tokens must to be protected from disclosure in transit and at rest.
-    Some scenarios demand additional security protection whereby a client needs to
-    demonstrate possession of cryptographic keying material when accessing a protected
-    resource. This document motivates the development of the OAuth 2.0 proof-of-possession
-    security mechanism.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The OAuth 2.0 bearer token specification, as defined in RFC 6750,\n
+    \  allows any party in possession of a bearer token (a \"bearer\") to get\n   access
+    to the associated resources (without demonstrating possession\n   of a cryptographic
+    key).  To prevent misuse, bearer tokens must to be\n   protected from disclosure
+    in transit and at rest.\n\n   Some scenarios demand additional security protection
+    whereby a client\n   needs to demonstrate possession of cryptographic keying material
+    when\n   accessing a protected resource.  This document motivates the\n   development
+    of the OAuth 2.0 proof-of-possession security mechanism.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-oauth-pop-architecture-03
-    docid:
-    - id: draft-ietf-oauth-pop-architecture-03
+    formattedref: draft-ietf-oauth-pop-architecture-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-03
+    docidentifier:
+    - content: draft-ietf-oauth-pop-architecture-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-oauth-pop-architecture-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-oauth-pop-architecture-05
-    docid:
-    - id: draft-ietf-oauth-pop-architecture-05
+    formattedref: draft-ietf-oauth-pop-architecture-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-oauth-pop-architecture-05
+    docidentifier:
+    - content: draft-ietf-oauth-pop-architecture-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-oauth-pop-architecture-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-oauth-pop-architecture-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

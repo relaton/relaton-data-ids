@@ -1,235 +1,206 @@
 ---
-schema-version: v1.2.9
-id: draft-song-opsawg-ifit-framework-15
-title:
-- content: In-situ Flow Information Telemetry
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-15
-  type: src
+id: draftsongopsawgifitframework15
 type: standard
-docid:
-- id: draft-song-opsawg-ifit-framework-15
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: In-situ Flow Information Telemetry
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-15
+docidentifier:
+- content: draft-song-opsawg-ifit-framework
+  type: Internet-Draft
+- content: draft-song-opsawg-ifit-framework-15
   type: Internet-Draft
   primary: true
-- id: I-D.song-opsawg-ifit-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.song-opsawg-ifit-framework
 date:
 - type: published
-  value: '2021-09-28'
+  at: '2021-09-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Haoyu
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haoyu
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Song
-        language:
-        - en
       completename:
+        language: en
         content: Haoyu Song
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fengwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fengwei
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Fengwei Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Huanan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Huanan
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Huanan Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jaewhan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jaewhan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Jin
-        language:
-        - en
       completename:
+        language: en
         content: Jaewhan Jin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LG U+
-  role:
+        - language: en
+          content: LG U+
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jongyoon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jongyoon
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Shin
-        language:
-        - en
       completename:
+        language: en
         content: Jongyoon Shin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SK Telecom
-  role:
-  - type: author
+        - language: en
+          content: SK Telecom
 version:
 - draft: '15'
-revdate: '2021-09-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>As network scale increases and network operation becomes more sophisticated,
-    traditional Operation, Administration and Maintenance (OAM) methods, which include
-    proactive and reactive techniques, running in active and passive modes, are no
-    longer sufficient to meet the monitoring and measurement requirements. On-path
-    telemetry techniques which provide high-precision flow insight and real-time issue
-    notification are emerging to support suitable quality of experience for users
-    and applications, and fault or network deficiency identification before they become
-    critical. Centering on the new data-plane on-path telemetry techniques, this document
-    outlines a high-level framework to provide an operational environment that utilizes
-    these techniques to enable the collection and correlation of performance measurement
-    information from the network. The framework identifies the components that are
-    needed to coordinate the existing protocol tools and telemetry mechanisms, and
-    addresses key deployment challenges for flow-oriented on-path telemetry techniques,
-    especially in carrier networks. The framework is informational and intended to
-    guide system designers attempting to apply the referenced techniques as well as
-    to motivate further work to enhance the ecosystem.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   As network scale increases and network operation becomes more\n   sophisticated,
+    traditional Operation, Administration and Maintenance\n   (OAM) methods, which
+    include proactive and reactive techniques,\n   running in active and passive modes,
+    are no longer sufficient to meet\n   the monitoring and measurement requirements.
+    \ On-path telemetry\n   techniques which provide high-precision flow insight and
+    real-time\n   issue notification are emerging to support suitable quality of\n
+    \  experience for users and applications, and fault or network\n   deficiency
+    identification before they become critical.\n\n   Centering on the new data-plane
+    on-path telemetry techniques, this\n   document outlines a high-level framework
+    to provide an operational\n   environment that utilizes these techniques to enable
+    the collection\n   and correlation of performance measurement information from
+    the\n   network.  The framework identifies the components that are needed to\n
+    \  coordinate the existing protocol tools and telemetry mechanisms, and\n   addresses
+    key deployment challenges for flow-oriented on-path\n   telemetry techniques,
+    especially in carrier networks.\n\n   The framework is informational and intended
+    to guide system designers\n   attempting to apply the referenced techniques as
+    well as to motivate\n   further work to enhance the ecosystem .\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-song-opsawg-ifit-framework-14
-    docid:
-    - id: draft-song-opsawg-ifit-framework-14
+    formattedref: draft-song-opsawg-ifit-framework-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-14
+    docidentifier:
+    - content: draft-song-opsawg-ifit-framework-14
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-song-opsawg-ifit-framework-14
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-song-opsawg-ifit-framework-16
-    docid:
-    - id: draft-song-opsawg-ifit-framework-16
+    formattedref: draft-song-opsawg-ifit-framework-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-song-opsawg-ifit-framework-16
+    docidentifier:
+    - content: draft-song-opsawg-ifit-framework-16
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-song-opsawg-ifit-framework-16
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-song-opsawg-ifit-framework-15
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

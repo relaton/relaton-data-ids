@@ -1,224 +1,193 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-bgp-ls-flex-algo-ext-00
-title:
-- content: Advertising Flexible Algorithm Extensions in BGP Link-State
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-flex-algo-ext-00
-  type: src
+id: draftietfidrbgplsflexalgoext00
 type: standard
-docid:
-- id: draft-ietf-idr-bgp-ls-flex-algo-ext-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Advertising Flexible Algorithm Extensions in BGP Link-State
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-flex-algo-ext-00
+docidentifier:
+- content: draft-ietf-idr-bgp-ls-flex-algo-ext
+  type: Internet-Draft
+- content: draft-ietf-idr-bgp-ls-flex-algo-ext-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-bgp-ls-flex-algo-ext
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-bgp-ls-flex-algo-ext
 date:
 - type: published
-  value: '2025-11-10'
+  at: '2025-11-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shraddha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shraddha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hegde
-        language:
-        - en
       completename:
+        language: en
         content: Shraddha Hegde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks Inc.
-  role:
+        - language: en
+          content: Juniper Networks Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aravind
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: A. B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aravind
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: A. B.
       surname:
+        language: en
         content: MahendraBabu
-        language:
-        - en
       completename:
+        language: en
         content: Aravind Babu MahendraBabu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ketan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ketan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Talaulikar
-        language:
-        - en
       completename:
+        language: en
         content: Ketan Talaulikar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Peter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Peter
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Psenak
-        language:
-        - en
       completename:
+        language: en
         content: Peter Psenak
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bruno
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bruno
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Decraene
-        language:
-        - en
       completename:
+        language: en
         content: Bruno Decraene
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
-  - type: author
+        - language: en
+          content: Orange
 version:
 - draft: '00'
-revdate: '2025-11-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Flexible Algorithm is a solution that allows some routing protocols
-    (e.g., OSPF and IS-IS) to compute paths over a network based on user- defined
-    (and hence, flexible) constraints and metrics. The computation is performed by
-    routers participating in the specific network in a distributed manner using a
-    Flexible Algorithm Definition. This Definition is provisioned on one or more routers
-    and propagated through the network by OSPF and IS-IS flooding. BGP Link-State
-    (BGP-LS) enables the collection of various topology information from the network.
-    BGP-LS supports the advertisement of Flexible Algorithm Definition and other Flexible
-    Algorithm related advertisements as a part of the topology information from the
-    network. This document specifies the advertisement of further Flexible Algorithm
-    related extensions in BGP-LS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Flexible Algorithm is a solution that allows some routing protocols\n
+    \  (e.g., OSPF and IS-IS) to compute paths over a network based on user-\n   defined
+    (and hence, flexible) constraints and metrics.  The\n   computation is performed
+    by routers participating in the specific\n   network in a distributed manner using
+    a Flexible Algorithm\n   Definition.  This Definition is provisioned on one or
+    more routers\n   and propagated through the network by OSPF and IS-IS flooding.\n\n
+    \  BGP Link-State (BGP-LS) enables the collection of various topology\n   information
+    from the network.  BGP-LS supports the advertisement of\n   Flexible Algorithm
+    Definition and other Flexible Algorithm related\n   advertisements as a part of
+    the topology information from the\n   network.  This document specifies the advertisement
+    of further\n   Flexible Algorithm related extensions in BGP-LS.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-bgp-ls-flex-algo-ext-01
-    docid:
-    - id: draft-ietf-idr-bgp-ls-flex-algo-ext-01
+    formattedref: draft-ietf-idr-bgp-ls-flex-algo-ext-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-ls-flex-algo-ext-01
+    docidentifier:
+    - content: draft-ietf-idr-bgp-ls-flex-algo-ext-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-bgp-ls-flex-algo-ext-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-bgp-ls-flex-algo-ext-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

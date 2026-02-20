@@ -1,163 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tsvwg-rfc5405bis-04
-title:
-- content: UDP Usage Guidelines
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-rfc5405bis-04
-  type: src
+id: draftietftsvwgrfc5405bis04
 type: standard
-docid:
-- id: draft-ietf-tsvwg-rfc5405bis-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: UDP Usage Guidelines
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-rfc5405bis-04
+docidentifier:
+- content: draft-ietf-tsvwg-rfc5405bis
+  type: Internet-Draft
+- content: draft-ietf-tsvwg-rfc5405bis-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tsvwg-rfc5405bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tsvwg-rfc5405bis
 date:
 - type: published
-  value: '2015-07-30'
+  at: '2015-07-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Lars
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lars
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Eggert
-        language:
-        - en
       completename:
+        language: en
         content: Lars Eggert
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gorry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gorry
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fairhurst
-        language:
-        - en
       completename:
+        language: en
         content: Gorry Fairhurst
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Shepherd
-        language:
-        - en
       completename:
+        language: en
         content: Greg Shepherd
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2015-07-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The User Datagram Protocol (UDP) provides a minimal message-passing
-    transport that has no inherent congestion control mechanisms. This document provides
-    guidelines on the use of UDP for the designers of applications, tunnels and other
-    protocols that use UDP. Congestion control guidelines are a primary focus, but
-    the document also provides guidance on other topics, including message sizes,
-    reliability, checksums, middlebox traversal, the use of ECN, DSCPs, and ports.
-    Because congestion control is critical to the stable operation of the Internet,
-    applications and other protocols that choose to use UDP as an Internet transport
-    must employ mechanisms to prevent congestion collapse and to establish some degree
-    of fairness with concurrent traffic. They may also need to implement additional
-    mechanisms, depending on how they use UDP. Some guidance is also applicable to
-    the design of other protocols (e.g., protocols layered directly on IP or via IP-based
-    tunnels), especially when these protocols do not themselves provide congestion
-    control. If published as an RFC, this document will obsolete RFC5405.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The User Datagram Protocol (UDP) provides a minimal message-passing\n
+    \  transport that has no inherent congestion control mechanisms.  This\n   document
+    provides guidelines on the use of UDP for the designers of\n   applications, tunnels
+    and other protocols that use UDP.  Congestion\n   control guidelines are a primary
+    focus, but the document also\n   provides guidance on other topics, including
+    message sizes,\n   reliability, checksums, middlebox traversal, the use of ECN,
+    DSCPs,\n   and ports.\n\n   Because congestion control is critical to the stable
+    operation of the\n   Internet, applications and other protocols that choose to
+    use UDP as\n   an Internet transport must employ mechanisms to prevent congestion\n
+    \  collapse and to establish some degree of fairness with concurrent\n   traffic.
+    \ They may also need to implement additional mechanisms,\n   depending on how
+    they use UDP.\n\n   Some guidance is also applicable to the design of other protocols\n
+    \  (e.g., protocols layered directly on IP or via IP-based tunnels),\n   especially
+    when these protocols do not themselves provide congestion\n   control.\n\n   If
+    published as an RFC, this document will obsolete RFC5405.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tsvwg-rfc5405bis-03
-    docid:
-    - id: draft-ietf-tsvwg-rfc5405bis-03
+    formattedref: draft-ietf-tsvwg-rfc5405bis-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-rfc5405bis-03
+    docidentifier:
+    - content: draft-ietf-tsvwg-rfc5405bis-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tsvwg-rfc5405bis-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-tsvwg-rfc5405bis-05
-    docid:
-    - id: draft-ietf-tsvwg-rfc5405bis-05
+    formattedref: draft-ietf-tsvwg-rfc5405bis-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-rfc5405bis-05
+    docidentifier:
+    - content: draft-ietf-tsvwg-rfc5405bis-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tsvwg-rfc5405bis-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tsvwg-rfc5405bis-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

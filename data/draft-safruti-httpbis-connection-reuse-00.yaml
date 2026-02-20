@@ -1,100 +1,85 @@
 ---
-schema-version: v1.2.9
-id: draft-safruti-httpbis-connection-reuse-00
-title:
-- content: Connection Reuse for Multiple Hostnames and for Fast Redirect
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-safruti-httpbis-connection-reuse-00
-  type: src
+id: draftsafrutihttpbisconnectionreuse00
 type: standard
-docid:
-- id: draft-safruti-httpbis-connection-reuse-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Connection Reuse for Multiple Hostnames and for Fast Redirect
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-safruti-httpbis-connection-reuse-00
+docidentifier:
+- content: draft-safruti-httpbis-connection-reuse
+  type: Internet-Draft
+- content: draft-safruti-httpbis-connection-reuse-00
   type: Internet-Draft
   primary: true
-- id: I-D.safruti-httpbis-connection-reuse
-  type: IETF
-  scope: anchor
 docnumber: I-D.safruti-httpbis-connection-reuse
 date:
 - type: published
-  value: '2012-06-15'
+  at: '2012-06-15'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Ido
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
-      surname:
-        content: Safruti
-        language:
-        - en
-      completename:
-        content: Ido Safruti
-        language:
-        - en
-  role:
+- role:
   - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Ido
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
+      surname:
+        language: en
+        content: Safruti
+      completename:
+        language: en
+        content: Ido Safruti
 version:
 - draft: '00'
-revdate: '2012-06-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a suggested enhancement to HTTP, in which a
-    user-agent and a server can use a single connection to exchange requests/responses
-    for multiple requested hostnames for which the server is authorized to serve.
-    This enhancement suggests that user- agents will prefer to re-use an existing
-    connection if it can be used to other hosts, and presents methods for a server
-    to announce hosts that are served by it, as well as a mechanism for the user-agent
-    to validate that the server is indeed trusted to serve this hosts. This is highly
-    relevant when the server is actually a surrogate (like in a case of a CDN server),
-    or in multi-hosts hosting environments, where the same server serves multiple
-    hostnames/domains and can improve performance by the reuse of established and
-    already optimized connections.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a suggested enhancement to HTTP, in which a\n
+    \  user-agent and a server can use a single connection to exchange\n   requests/responses
+    for multiple requested hostnames for which the\n   server is authorized to serve.
+    \ This enhancement suggests that user-\n   agents will prefer to re-use an existing
+    connection if it can be used\n   to other hosts, and presents methods for a server
+    to announce hosts\n   that are served by it, as well as a mechanism for the user-agent
+    to\n   validate that the server is indeed trusted to serve this hosts.\n\n   This
+    is highly relevant when the server is actually a surrogate (like\n   in a case
+    of a CDN server), or in multi-hosts hosting environments,\n   where the same server
+    serves multiple hostnames/domains and can\n   improve performance by the reuse
+    of established and already optimized\n   connections.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-safruti-httpbis-connection-reuse-01
-    docid:
-    - id: draft-safruti-httpbis-connection-reuse-01
+    formattedref: draft-safruti-httpbis-connection-reuse-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-safruti-httpbis-connection-reuse-01
+    docidentifier:
+    - content: draft-safruti-httpbis-connection-reuse-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-safruti-httpbis-connection-reuse-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-safruti-httpbis-connection-reuse-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

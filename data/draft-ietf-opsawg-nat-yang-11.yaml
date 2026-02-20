@@ -1,229 +1,200 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-opsawg-nat-yang-11
-title:
-- content: A YANG Module for Network Address Translation (NAT)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-nat-yang-11
-  type: src
+id: draftietfopsawgnatyang11
 type: standard
-docid:
-- id: draft-ietf-opsawg-nat-yang-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A YANG Module for Network Address Translation (NAT)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-nat-yang-11
+docidentifier:
+- content: draft-ietf-opsawg-nat-yang
+  type: Internet-Draft
+- content: draft-ietf-opsawg-nat-yang-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-nat-yang
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-opsawg-nat-yang
 date:
 - type: published
-  value: '2018-02-07'
+  at: '2018-02-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mohamed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mohamed
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Boucadair
-        language:
-        - en
       completename:
+        language: en
         content: Mohamed Boucadair
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Senthil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Senthil
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sivakumar
-        language:
-        - en
       completename:
+        language: en
         content: Senthil Sivakumar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christian
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Jacquenet
-        language:
-        - en
       completename:
+        language: en
         content: Christian Jacquenet
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Suresh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Suresh
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Vinapamula
-        language:
-        - en
       completename:
+        language: en
         content: Suresh Vinapamula
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
-  - type: author
+        - language: en
+          content: Huawei
 version:
 - draft: '11'
-revdate: '2018-02-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>For the sake of network automation and the need for programming Network
-    Address Translation (NAT) function in particular, a data model for configuring
-    and managing the NAT is essential. This document defines a YANG module for the
-    NAT function. NAT44, Network Address and Protocol Translation from IPv6 Clients
-    to IPv4 Servers (NAT64), Customer-side transLATor (CLAT), Stateless IP/ ICMP Translation
-    (SIIT), Explicit Address Mappings for Stateless IP/ ICMP Translation (SIIT EAM),
-    and Destination NAT are covered in this document. Editorial Note (To be removed
-    by RFC Editor) Please update these statements with the RFC number to be assigned
-    to this document: "This version of this YANG module is part of RFC XXXX;" "RFC
-    XXXX: A YANG Module for Network Address Translation (NAT)"; "reference: RFC XXXX"</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   For the sake of network automation and the need for programming\n   Network
+    Address Translation (NAT) function in particular, a data\n   model for configuring
+    and managing the NAT is essential.  This\n   document defines a YANG module for
+    the NAT function.\n\n   NAT44, Network Address and Protocol Translation from IPv6
+    Clients to\n   IPv4 Servers (NAT64), Customer-side transLATor (CLAT), Stateless
+    IP/\n   ICMP Translation (SIIT), Explicit Address Mappings for Stateless IP/\n
+    \  ICMP Translation (SIIT EAM), and Destination NAT are covered in this\n   document.\n\nEditorial
+    Note (To be removed by RFC Editor)\n\n   Please update these statements with the
+    RFC number to be assigned to\n   this document:\n\n      \"This version of this
+    YANG module is part of RFC XXXX;\"\n\n      \"RFC XXXX: A YANG Module for Network
+    Address Translation (NAT)\";\n\n      \"reference: RFC XXXX\"\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-nat-yang-10
-    docid:
-    - id: draft-ietf-opsawg-nat-yang-10
+    formattedref: draft-ietf-opsawg-nat-yang-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-nat-yang-10
+    docidentifier:
+    - content: draft-ietf-opsawg-nat-yang-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-nat-yang-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-opsawg-nat-yang-12
-    docid:
-    - id: draft-ietf-opsawg-nat-yang-12
+    formattedref: draft-ietf-opsawg-nat-yang-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-nat-yang-12
+    docidentifier:
+    - content: draft-ietf-opsawg-nat-yang-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-nat-yang-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-opsawg-nat-yang-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

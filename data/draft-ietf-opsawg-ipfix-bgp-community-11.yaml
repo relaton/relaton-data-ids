@@ -1,177 +1,156 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-opsawg-ipfix-bgp-community-11
-title:
-- content: Export BGP community information in IP Flow Information Export (IPFIX)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-ipfix-bgp-community-11
-  type: src
+id: draftietfopsawgipfixbgpcommunity11
 type: standard
-docid:
-- id: draft-ietf-opsawg-ipfix-bgp-community-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Export BGP community information in IP Flow Information Export (IPFIX)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-ipfix-bgp-community-11
+docidentifier:
+- content: draft-ietf-opsawg-ipfix-bgp-community
+  type: Internet-Draft
+- content: draft-ietf-opsawg-ipfix-bgp-community-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-opsawg-ipfix-bgp-community
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-opsawg-ipfix-bgp-community
 date:
 - type: published
-  value: '2018-11-25'
+  at: '2018-11-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhenqiang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhenqiang
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Zhenqiang Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Rong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rong
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Gu
-        language:
-        - en
       completename:
+        language: en
         content: Rong Gu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
+        - language: en
+          content: China Mobile
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Jie Dong
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '11'
-revdate: '2018-11-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>By introducing new Information Elements (IEs), this draft extends the
-    existing BGP-related IEs to enable IPFIX [RFC7011] to export BGP community information,
-    including BGP standard communities [RFC1997], BGP extended communities [RFC4360],
-    and BGP large communities [RFC8092]. Network traffic information can then be accumulated
-    and analyzed at the BGP community granularity, which represents the traffic of
-    different kinds of customers, services, or geographical regions according to the
-    network operator's BGP community planning. Network traffic information at the
-    BGP community granularity is useful for network traffic analysis and engineering.
-    To clarify, no new BGP community attribute is defined in this document and this
-    document does not replace BGP Monitoring Protocol (BMP) defined in RFC7854. The
-    IEs introduced in this document are used by IPFIX, together with other IEs, to
-    facilitate the IPFIX Collector analyzing network traffic at the BGP community
-    granularity without needing to run the heavy BGP itself. When needed, the IPFIX
-    Mediator or Collector can use the IEs introduced in this document to report the
-    BGP community-related traffic flow information it gets either from Exporters or
-    through local correlation to other IPFIX devices.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   By introducing new Information Elements (IEs), this draft extends the\n
+    \  existing BGP-related IEs to enable IPFIX [RFC7011] to export BGP\n   community
+    information, including BGP standard communities [RFC1997],\n   BGP extended communities
+    [RFC4360], and BGP large communities\n   [RFC8092].  Network traffic information
+    can then be accumulated and\n   analyzed at the BGP community granularity, which
+    represents the\n   traffic of different kinds of customers, services, or geographical\n
+    \  regions according to the network operator's BGP community planning.\n   Network
+    traffic information at the BGP community granularity is\n   useful for network
+    traffic analysis and engineering.\n\n   To clarify, no new BGP community attribute
+    is defined in this\n   document and this document does not replace BGP Monitoring
+    Protocol\n   (BMP) defined in RFC7854.  The IEs introduced in this document are\n
+    \  used by IPFIX, together with other IEs, to facilitate the IPFIX\n   Collector
+    analyzing network traffic at the BGP community granularity\n   without needing
+    to run the heavy BGP itself.  When needed, the IPFIX\n   Mediator or Collector
+    can use the IEs introduced in this document to\n   report the BGP community-related
+    traffic flow information it gets\n   either from Exporters or through local correlation
+    to other IPFIX\n   devices.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-opsawg-ipfix-bgp-community-10
-    docid:
-    - id: draft-ietf-opsawg-ipfix-bgp-community-10
+    formattedref: draft-ietf-opsawg-ipfix-bgp-community-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-ipfix-bgp-community-10
+    docidentifier:
+    - content: draft-ietf-opsawg-ipfix-bgp-community-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-ipfix-bgp-community-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-opsawg-ipfix-bgp-community-12
-    docid:
-    - id: draft-ietf-opsawg-ipfix-bgp-community-12
+    formattedref: draft-ietf-opsawg-ipfix-bgp-community-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-opsawg-ipfix-bgp-community-12
+    docidentifier:
+    - content: draft-ietf-opsawg-ipfix-bgp-community-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-opsawg-ipfix-bgp-community-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-opsawg-ipfix-bgp-community-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,231 +1,202 @@
 ---
-schema-version: v1.2.9
-id: draft-sandowicz-httpbis-httpa2-01
-title:
-- content: The Hypertext Transfer Protocol Attestable (HTTPA) Version 2
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sandowicz-httpbis-httpa2-01
-  type: src
+id: draftsandowiczhttpbishttpa201
 type: standard
-docid:
-- id: draft-sandowicz-httpbis-httpa2-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The Hypertext Transfer Protocol Attestable (HTTPA) Version 2
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sandowicz-httpbis-httpa2-01
+docidentifier:
+- content: draft-sandowicz-httpbis-httpa2
+  type: Internet-Draft
+- content: draft-sandowicz-httpbis-httpa2-01
   type: Internet-Draft
   primary: true
-- id: I-D.sandowicz-httpbis-httpa2
-  type: IETF
-  scope: anchor
 docnumber: I-D.sandowicz-httpbis-httpa2
 date:
 - type: published
-  value: '2022-10-18'
+  at: '2022-10-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Hans
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hans
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Wang
-        language:
-        - en
       completename:
+        language: en
         content: Hans Wang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gordon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gordon
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: King
-        language:
-        - en
       completename:
+        language: en
         content: Gordon King
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nick
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Nick Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ned
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ned
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Smith
-        language:
-        - en
       completename:
+        language: en
         content: Ned Smith
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
+        - language: en
+          content: Intel
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Krzysztof
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Krzysztof
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sandowicz
-        language:
-        - en
       completename:
+        language: en
         content: Krzysztof Sandowicz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intel
-  role:
-  - type: author
+        - language: en
+          content: Intel
 version:
 - draft: '01'
-revdate: '2022-10-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Hypertext Transfer Protocol Attestable version 2 (HTTPA/2) is an
-    HTTP extension. It is a transaction-based protocol agnostic to Transport Layer
-    Security (TLS) in which the Trusted Execution Environment (TEE) is considered
-    a new type of requested resource over the Internet. The original Hypertext Transfer
-    Protocol Attestable (HTTPA) (referred to as HTTPA/1 in the rest of the document)
-    includes remote attestation (RA) process onto the HTTPS protocol in the assumption
-    of using Transport Layer Security (TLS) across the Internet. In contrast, the
-    design of HTTPA/2 could establish a trusted (attested) and more secure communication
-    without dependence on TLS. The definition of Attestation for the purposes of this
-    draft: The process of vouching for the accuracy of TEE based services, configuration,
-    and data where the TEE conveys Evidence about its environment, roots of trust
-    and protected functions. The Evidence is a digital expression of TEE trustworthiness.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Hypertext Transfer Protocol Attestable version 2 (HTTPA/2) is an\n
+    \  HTTP extension.  It is a transaction-based protocol agnostic to\n   Transport
+    Layer Security (TLS) in which the Trusted Execution\n   Environment (TEE) is considered
+    a new type of requested resource over\n   the Internet.  The original Hypertext
+    Transfer Protocol Attestable\n   (HTTPA) (referred to as HTTPA/1 in the rest of
+    the document) includes\n   remote attestation (RA) process onto the HTTPS protocol
+    in the\n   assumption of using Transport Layer Security (TLS) across the\n   Internet.
+    \ In contrast, the design of HTTPA/2 could establish a\n   trusted (attested)
+    and more secure communication without dependence\n   on TLS.\n\n   The definition
+    of Attestation for the purposes of this draft:\n\n   The process of vouching for
+    the accuracy of TEE based services,\n   configuration, and data where the TEE
+    conveys Evidence about its\n   environment, roots of trust and protected functions.
+    \ The Evidence is\n   a digital expression of TEE trustworthiness.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sandowicz-httpbis-httpa2-00
-    docid:
-    - id: draft-sandowicz-httpbis-httpa2-00
+    formattedref: draft-sandowicz-httpbis-httpa2-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sandowicz-httpbis-httpa2-00
+    docidentifier:
+    - content: draft-sandowicz-httpbis-httpa2-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sandowicz-httpbis-httpa2-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-sandowicz-httpbis-httpa2-02
-    docid:
-    - id: draft-sandowicz-httpbis-httpa2-02
+    formattedref: draft-sandowicz-httpbis-httpa2-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sandowicz-httpbis-httpa2-02
+    docidentifier:
+    - content: draft-sandowicz-httpbis-httpa2-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sandowicz-httpbis-httpa2-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sandowicz-httpbis-httpa2-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

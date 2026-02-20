@@ -1,227 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-taps-arch-12
-title:
-- content: An Architecture for Transport Services
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-taps-arch-12
-  type: src
+id: draftietftapsarch12
 type: standard
-docid:
-- id: draft-ietf-taps-arch-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An Architecture for Transport Services
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-taps-arch-12
+docidentifier:
+- content: draft-ietf-taps-arch
+  type: Internet-Draft
+- content: draft-ietf-taps-arch-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-taps-arch
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-taps-arch
 date:
 - type: published
-  value: '2022-01-03'
+  at: '2022-01-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tommy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tommy
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Pauly
-        language:
-        - en
       completename:
+        language: en
         content: Tommy Pauly
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Trammell
-        language:
-        - en
       completename:
+        language: en
         content: Brian Trammell
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google Switzerland GmbH
-  role:
+        - language: en
+          content: Google Switzerland GmbH
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Anna
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anna
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Brunstrom
-        language:
-        - en
       completename:
+        language: en
         content: Anna Brunstrom
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Karlstad University
-  role:
+        - language: en
+          content: Karlstad University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gorry
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gorry
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Fairhurst
-        language:
-        - en
       completename:
+        language: en
         content: Gorry Fairhurst
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Aberdeen
-  role:
+        - language: en
+          content: University of Aberdeen
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Colin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Colin
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Perkins
-        language:
-        - en
       completename:
+        language: en
         content: Colin Perkins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Glasgow
-  role:
-  - type: author
+        - language: en
+          content: University of Glasgow
 version:
 - draft: '12'
-revdate: '2022-01-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes an architecture for exposing transport protocol
-    features to applications for network communication, a Transport Services system.
-    The Transport Services Application Programming Interface (API) is based on an
-    asynchronous, event-driven interaction pattern. This API uses messages for representing
-    data transfer to applications, and describes how implementations can use multiple
-    IP addresses, multiple protocols, and multiple paths, and provide multiple application
-    streams. This document further defines common terminology and concepts to be used
-    in definitions of a Transport Service API and a Transport Services implementation.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes an architecture for exposing transport\n   protocol
+    features to applications for network communication, a\n   Transport Services system.
+    \ The Transport Services Application\n   Programming Interface (API) is based
+    on an asynchronous, event-driven\n   interaction pattern.  This API uses messages
+    for representing data\n   transfer to applications, and describes how implementations
+    can use\n   multiple IP addresses, multiple protocols, and multiple paths, and\n
+    \  provide multiple application streams.  This document further defines\n   common
+    terminology and concepts to be used in definitions of a\n   Transport Service
+    API and a Transport Services implementation.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-taps-arch-11
-    docid:
-    - id: draft-ietf-taps-arch-11
+    formattedref: draft-ietf-taps-arch-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-taps-arch-11
+    docidentifier:
+    - content: draft-ietf-taps-arch-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-taps-arch-11
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-taps-arch-13
-    docid:
-    - id: draft-ietf-taps-arch-13
+    formattedref: draft-ietf-taps-arch-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-taps-arch-13
+    docidentifier:
+    - content: draft-ietf-taps-arch-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-taps-arch-13
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-taps-arch-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

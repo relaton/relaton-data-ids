@@ -1,172 +1,150 @@
 ---
-schema-version: v1.2.9
-id: draft-rathi-mpls-egress-tlv-for-nil-fec-02
-title:
-- content: Egress TLV for Nil FEC in Label Switched Path Ping and Traceroute Mechanisms
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-rathi-mpls-egress-tlv-for-nil-fec-02
-  type: src
+id: draftrathimplsegresstlvfornilfec02
 type: standard
-docid:
-- id: draft-rathi-mpls-egress-tlv-for-nil-fec-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Egress TLV for Nil FEC in Label Switched Path Ping and Traceroute Mechanisms
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-rathi-mpls-egress-tlv-for-nil-fec-02
+docidentifier:
+- content: draft-rathi-mpls-egress-tlv-for-nil-fec
+  type: Internet-Draft
+- content: draft-rathi-mpls-egress-tlv-for-nil-fec-02
   type: Internet-Draft
   primary: true
-- id: I-D.rathi-mpls-egress-tlv-for-nil-fec
-  type: IETF
-  scope: anchor
 docnumber: I-D.rathi-mpls-egress-tlv-for-nil-fec
 date:
 - type: published
-  value: '2020-11-17'
+  at: '2020-11-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Deepti
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: D. N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Deepti
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: D. N.
       surname:
+        language: en
         content: Rathi
-        language:
-        - en
       completename:
+        language: en
         content: Deepti N. Rathi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks Inc.
-  role:
+        - language: en
+          content: Juniper Networks Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kapil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kapil
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Arora
-        language:
-        - en
       completename:
+        language: en
         content: Kapil Arora
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks Inc.
-  role:
+        - language: en
+          content: Juniper Networks Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shraddha
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shraddha
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Hegde
-        language:
-        - en
       completename:
+        language: en
         content: Shraddha Hegde
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks Inc.
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks Inc.
 version:
 - draft: '02'
-revdate: '2020-11-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Segment routing supports the creation of explicit paths using adjacency-
-    sids, node-sids, and anycast-sids. The SR-TE paths are built by stacking the labels
-    that represent the nodes and links in the explicit path. A very useful Operations
-    And Maintenance (OAM) requirement is to be able to ping and trace these paths.
-    A simple mpls ping/traceroute mechanism comprises of ability to traverse the SR-TE
-    path without having to validate the control plane state. This document describes
-    mpls ping and traceroute procedures using Nil FEC with additional extensions.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Segment routing supports the creation of explicit paths using\n   adjacency-
+    sids, node-sids, and anycast-sids.  The SR-TE paths are\n   built by stacking
+    the labels that represent the nodes and links in\n   the explicit path.  A very
+    useful Operations And Maintenance (OAM)\n   requirement is to be able to ping
+    and trace these paths.  A simple\n   mpls ping/traceroute mechanism comprises
+    of ability to traverse the\n   SR-TE path without having to validate the control
+    plane state.  This\n   document describes mpls ping and traceroute procedures
+    using Nil FEC\n   with additional extensions.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-rathi-mpls-egress-tlv-for-nil-fec-01
-    docid:
-    - id: draft-rathi-mpls-egress-tlv-for-nil-fec-01
+    formattedref: draft-rathi-mpls-egress-tlv-for-nil-fec-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rathi-mpls-egress-tlv-for-nil-fec-01
+    docidentifier:
+    - content: draft-rathi-mpls-egress-tlv-for-nil-fec-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rathi-mpls-egress-tlv-for-nil-fec-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-rathi-mpls-egress-tlv-for-nil-fec-03
-    docid:
-    - id: draft-rathi-mpls-egress-tlv-for-nil-fec-03
+    formattedref: draft-rathi-mpls-egress-tlv-for-nil-fec-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rathi-mpls-egress-tlv-for-nil-fec-03
+    docidentifier:
+    - content: draft-rathi-mpls-egress-tlv-for-nil-fec-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rathi-mpls-egress-tlv-for-nil-fec-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-rathi-mpls-egress-tlv-for-nil-fec-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

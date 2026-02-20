@@ -1,168 +1,143 @@
 ---
-schema-version: v1.2.9
-id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
-title:
-- content: Privacy-Enhanced Tokens for Authorization in ACE
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
-  type: src
+id: draftcuellaracepatprivenhancedauthztokens02
 type: standard
-docid:
-- id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Privacy-Enhanced Tokens for Authorization in ACE
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
+docidentifier:
+- content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens
+  type: Internet-Draft
+- content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
   type: Internet-Draft
   primary: true
-- id: I-D.cuellar-ace-pat-priv-enhanced-authz-tokens
-  type: IETF
-  scope: anchor
 docnumber: I-D.cuellar-ace-pat-priv-enhanced-authz-tokens
 date:
 - type: published
-  value: '2016-04-19'
+  at: '2016-04-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: J. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: J. R.
       surname:
+        language: en
         content: Cuellar
-        language:
-        - en
       completename:
+        language: en
         content: Jorge R Cuellar
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Prabhakaran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Prabhakaran
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Kasinathan
-        language:
-        - en
       completename:
+        language: en
         content: Prabhakaran Kasinathan
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Calvo
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Calvo
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2016-04-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>fixed size m (= 256 bits). But this data structure may be implemented
-    in several different ways, for instance as a set of tables representing the currently
-    relevant parts of the tree. We use a sequence of integer numbers as indexes for
-    the nodes (values) in the tree. To avoid parentheses, commas, and semicolons we
-    write for instance: "123" for the sequence of 3 numbers "1", "2", and "3". In
-    what follows, in all our examples of integer sequences, we will not use numbers
-    that require 2 or more digits (that is, numbers &gt; 9). The sequences of integers
-    are used to index values in a tree: x_a is the value at the node with position
-    (address) a. In other words, the nodes (and their values) are denoted as x_a,
-    where a is a sequence of integer numbers. The tree has a root x (x_a where a =
-    epsilon is the empty sequence). The children of x are x_1, x_2, x_3,..., x_N,
-    where k = 1..N is a singleton list, that is a list with only one number. If x_a
-    is a node in the tree, then the children of x_a all have the form x_a'', where
-    a''=a;i is a the concatenation of a and an integer i. The value x_a''= x_a; i=x_(a;i)
-    is calculated as G(x_a,i). In the case of a hash h:</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   fixed size m (= 256 bits).  But this data structure may be\n   implemented
+    in several different ways, for instance as a set of\n   tables representing the
+    currently relevant parts of the tree.\n\n   We use a sequence of integer numbers
+    as indexes for the nodes\n   (values) in the tree.  To avoid parentheses, commas,
+    and semicolons\n   we write for instance: \"123\" for the sequence of 3 numbers
+    \"1\", \"2\",\n   and \"3\".  In what follows, in all our examples of integer
+    sequences,\n   we will not use numbers that require 2 or more digits (that is,\n
+    \  numbers > 9).\n\n   The sequences of integers are used to index values in a
+    tree: x_a is\n   the value at the node with position (address) a.  In other words,
+    the\n   nodes (and their values) are denoted as x_a, where a is a sequence of\n
+    \  integer numbers.  The tree has a root x (x_a where a = epsilon is the\n   empty
+    sequence).  The children of x are x_1, x_2, x_3, ..., x_N,\n   where k = 1..N
+    is a singleton list, that is a list with only one\n   number.  If x_a is a node
+    in the tree, then the children of x_a all\n   have the form x_a', where a'=a;i
+    is a the concatenation of a and an\n   integer i.  The value x_a'= x_a; i=x_(a;i)
+    is calculated as G(x_a,i).\n   In the case of a hash h:\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
-    docid:
-    - id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
+    formattedref: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
+    docidentifier:
+    - content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
-    docid:
-    - id: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
+    formattedref: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
+    docidentifier:
+    - content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-cuellar-ace-pat-priv-enhanced-authz-tokens-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

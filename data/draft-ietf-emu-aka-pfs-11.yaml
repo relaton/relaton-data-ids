@@ -1,185 +1,163 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-emu-aka-pfs-11
-title:
-- content: Forward Secrecy for the Extensible Authentication Protocol Method for Authentication
-    and Key Agreement (EAP-AKA' FS)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-11
-  type: src
+id: draftietfemuakapfs11
 type: standard
-docid:
-- id: draft-ietf-emu-aka-pfs-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Forward Secrecy for the Extensible Authentication Protocol Method for Authentication
+    and Key Agreement (EAP-AKA' FS)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-11
+docidentifier:
+- content: draft-ietf-emu-aka-pfs
+  type: Internet-Draft
+- content: draft-ietf-emu-aka-pfs-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-emu-aka-pfs
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-emu-aka-pfs
 date:
 - type: published
-  value: '2023-07-10'
+  at: '2023-07-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jari
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jari
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Arkko
-        language:
-        - en
       completename:
+        language: en
         content: Jari Arkko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Karl
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Karl
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Norrman
-        language:
-        - en
       completename:
+        language: en
         content: Karl Norrman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: J. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
       surname:
+        language: en
         content: Mattsson
-        language:
-        - en
       completename:
+        language: en
         content: John Preuß Mattsson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '11'
-revdate: '2023-07-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Many different attacks have been reported as part of revelations associated
-    with pervasive surveillance. Some of the reported attacks involved compromising
-    the smart card supply chain, such as attacking Universal Subscriber Identity Module
-    (USIM) card manufacturers and operators in an effort to compromise long-term keys
-    stored on these cards. Since the publication of those reports, manufacturing and
-    provisioning processes have received much scrutiny and have improved. However,
-    resourceful attackers are always a cause for concern. Always assuming a breach,
-    such as long-term key compromise, and minimizing the impact of breach are essential
-    zero trust principles. This document updates RFC 9048, the improved Extensible
-    Authentication Protocol Method for 3GPP Mobile Network Authentication and Key
-    Agreement (EAP-AKA'), with an optional extension providing ephemeral key exchange.
-    Similarly, this document also updates the earlier version of the EAP-AKA' specification
-    in RFC 5448. The extension EAP-AKA' Forward Secrecy (EAP-AKA' FS), when negotiated,
-    provides forward secrecy for the session keys generated as a part of the authentication
-    run in EAP-AKA'. This prevents an attacker who has gained access to the long-term
-    key from obtaining session keys established in the past, assuming these have been
-    properly deleted. In addition, EAP-AKA' FS mitigates passive attacks (e.g., large
-    scale pervasive monitoring) against future sessions. This forces attackers to
-    use active attacks instead.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many different attacks have been reported as part of revelations\n
+    \  associated with pervasive surveillance.  Some of the reported attacks\n   involved
+    compromising the smart card supply chain, such as attacking\n   Universal Subscriber
+    Identity Module (USIM) card manufacturers and\n   operators in an effort to compromise
+    long-term keys stored on these\n   cards.  Since the publication of those reports,
+    manufacturing and\n   provisioning processes have received much scrutiny and have
+    improved.\n   However, resourceful attackers are always a cause for concern.\n
+    \  Always assuming a breach, such as long-term key compromise, and\n   minimizing
+    the impact of breach are essential zero trust principles.\n\n   This document
+    updates RFC 9048, the improved Extensible\n   Authentication Protocol Method for
+    3GPP Mobile Network Authentication\n   and Key Agreement (EAP-AKA'), with an optional
+    extension providing\n   ephemeral key exchange.  Similarly, this document also
+    updates the\n   earlier version of the EAP-AKA' specification in RFC 5448.  The\n
+    \  extension EAP-AKA' Forward Secrecy (EAP-AKA' FS), when negotiated,\n   provides
+    forward secrecy for the session keys generated as a part of\n   the authentication
+    run in EAP-AKA'.  This prevents an attacker who\n   has gained access to the long-term
+    key from obtaining session keys\n   established in the past, assuming these have
+    been properly deleted.\n   In addition, EAP-AKA' FS mitigates passive attacks
+    (e.g., large scale\n   pervasive monitoring) against future sessions.  This forces
+    attackers\n   to use active attacks instead.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-emu-aka-pfs-10
-    docid:
-    - id: draft-ietf-emu-aka-pfs-10
+    formattedref: draft-ietf-emu-aka-pfs-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-10
+    docidentifier:
+    - content: draft-ietf-emu-aka-pfs-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-emu-aka-pfs-10
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-emu-aka-pfs-12
-    docid:
-    - id: draft-ietf-emu-aka-pfs-12
+    formattedref: draft-ietf-emu-aka-pfs-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-aka-pfs-12
+    docidentifier:
+    - content: draft-ietf-emu-aka-pfs-12
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-emu-aka-pfs-12
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-emu-aka-pfs-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

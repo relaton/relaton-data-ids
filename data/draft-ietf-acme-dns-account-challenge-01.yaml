@@ -1,218 +1,187 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-acme-dns-account-challenge-01
-title:
-- content: Automated Certificate Management Environment (ACME) DNS Labeled With ACME
-    Account ID Challenge
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-challenge-01
-  type: src
+id: draftietfacmednsaccountchallenge01
 type: standard
-docid:
-- id: draft-ietf-acme-dns-account-challenge-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Automated Certificate Management Environment (ACME) DNS Labeled With ACME
+    Account ID Challenge
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-challenge-01
+docidentifier:
+- content: draft-ietf-acme-dns-account-challenge
+  type: Internet-Draft
+- content: draft-ietf-acme-dns-account-challenge-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-acme-dns-account-challenge
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-acme-dns-account-challenge
 date:
 - type: published
-  value: '2024-01-09'
+  at: '2024-01-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Antonios
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Antonios
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Chariton
-        language:
-        - en
       completename:
+        language: en
         content: Antonios Chariton
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Independent Contributor
-  role:
+        - language: en
+          content: Independent Contributor
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Amir
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Amir
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Omidi
-        language:
-        - en
       completename:
+        language: en
         content: Amir Omidi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Spirl
-  role:
+        - language: en
+          content: Spirl
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: James
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: James
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kasten
-        language:
-        - en
       completename:
+        language: en
         content: James Kasten
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Fotis
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fotis
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Loukos
-        language:
-        - en
       completename:
+        language: en
         content: Fotis Loukos
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stanislaw
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: S. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stanislaw
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: S. A.
       surname:
+        language: en
         content: Janikowski
-        language:
-        - en
       completename:
+        language: en
         content: Stanislaw A. Janikowski
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
-  - type: author
+        - language: en
+          content: Google
 version:
 - draft: '01'
-revdate: '2024-01-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document outlines a new challenge for the ACME protocol, enabling
-    an ACME client to answer a domain control validation challenge from an ACME server
-    using a DNS resource linked to the ACME Account ID. This allows multiple systems
-    or environments to handle challenge-solving for a single domain.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document outlines a new challenge for the ACME protocol,\n   enabling
+    an ACME client to answer a domain control validation\n   challenge from an ACME
+    server using a DNS resource linked to the ACME\n   Account ID.  This allows multiple
+    systems or environments to handle\n   challenge-solving for a single domain.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-acme-dns-account-challenge-00
-    docid:
-    - id: draft-ietf-acme-dns-account-challenge-00
+    formattedref: draft-ietf-acme-dns-account-challenge-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-challenge-00
+    docidentifier:
+    - content: draft-ietf-acme-dns-account-challenge-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-acme-dns-account-challenge-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-acme-dns-account-challenge-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

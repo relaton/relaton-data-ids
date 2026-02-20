@@ -1,141 +1,124 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-idr-route-leak-detection-mitigation-10
-title:
-- content: Methods for Detection and Mitigation of BGP Route Leaks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-10
-  type: src
+id: draftietfidrrouteleakdetectionmitigation10
 type: standard
-docid:
-- id: draft-ietf-idr-route-leak-detection-mitigation-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Methods for Detection and Mitigation of BGP Route Leaks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-10
+docidentifier:
+- content: draft-ietf-idr-route-leak-detection-mitigation
+  type: Internet-Draft
+- content: draft-ietf-idr-route-leak-detection-mitigation-10
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-idr-route-leak-detection-mitigation
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-idr-route-leak-detection-mitigation
 date:
 - type: published
-  value: '2018-10-22'
+  at: '2018-10-22'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Kotikalapudi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kotikalapudi
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Sriram
-        language:
-        - en
       completename:
+        language: en
         content: Kotikalapudi Sriram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: USA NIST
-  role:
+        - language: en
+          content: USA NIST
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Azimov
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Azimov
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Qrator Labs
-  role:
-  - type: author
+        - language: en
+          content: Qrator Labs
 version:
 - draft: '10'
-revdate: '2018-10-22'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Problem definition for route leaks and enumeration of types of route
-    leaks are provided in RFC 7908. This document describes a solution for detection
-    and mitigation route leaks which is based on conveying route-leak protection (RLP)
-    information in a Border Gateway Protocol (BGP) community. The RLP information
-    is carried in a new well-known transitive BGP community, called the RLP community.
-    The RLP community helps with detection and mitigation of route leaks at ASes downstream
-    from the leaking AS (in the path of the BGP update). This is an inter-AS (multi-hop)
-    solution mechanism. This solution complements the intra-AS (local AS) route-leak
-    avoidance solution that is described in ietf-idr-bgp-open-policy draft.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Problem definition for route leaks and enumeration of types of route\n
+    \  leaks are provided in RFC 7908.  This document describes a solution\n   for
+    detection and mitigation route leaks which is based on conveying\n   route-leak
+    protection (RLP) information in a Border Gateway Protocol\n   (BGP) community.
+    \ The RLP information is carried in a new well-known\n   transitive BGP community,
+    called the RLP community.  The RLP\n   community helps with detection and mitigation
+    of route leaks at ASes\n   downstream from the leaking AS (in the path of the
+    BGP update).  This\n   is an inter-AS (multi-hop) solution mechanism.  This solution\n
+    \  complements the intra-AS (local AS) route-leak avoidance solution\n   that
+    is described in ietf-idr-bgp-open-policy draft.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-idr-route-leak-detection-mitigation-09
-    docid:
-    - id: draft-ietf-idr-route-leak-detection-mitigation-09
+    formattedref: draft-ietf-idr-route-leak-detection-mitigation-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-09
+    docidentifier:
+    - content: draft-ietf-idr-route-leak-detection-mitigation-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-route-leak-detection-mitigation-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-idr-route-leak-detection-mitigation-11
-    docid:
-    - id: draft-ietf-idr-route-leak-detection-mitigation-11
+    formattedref: draft-ietf-idr-route-leak-detection-mitigation-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-11
+    docidentifier:
+    - content: draft-ietf-idr-route-leak-detection-mitigation-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-idr-route-leak-detection-mitigation-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-idr-route-leak-detection-mitigation-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

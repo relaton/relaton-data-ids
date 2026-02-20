@@ -1,166 +1,145 @@
 ---
-schema-version: v1.2.9
-id: draft-mglt-ipsecme-implicit-iv-03
-title:
-- content: Implicit IV for Counter-based Ciphers in IPsec
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mglt-ipsecme-implicit-iv-03
-  type: src
+id: draftmgltipsecmeimplicitiv03
 type: standard
-docid:
-- id: draft-mglt-ipsecme-implicit-iv-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Implicit IV for Counter-based Ciphers in IPsec
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mglt-ipsecme-implicit-iv-03
+docidentifier:
+- content: draft-mglt-ipsecme-implicit-iv
+  type: Internet-Draft
+- content: draft-mglt-ipsecme-implicit-iv-03
   type: Internet-Draft
   primary: true
-- id: I-D.mglt-ipsecme-implicit-iv
-  type: IETF
-  scope: anchor
 docnumber: I-D.mglt-ipsecme-implicit-iv
 date:
 - type: published
-  value: '2017-06-21'
+  at: '2017-06-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tobias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tobias
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Guggemos
-        language:
-        - en
       completename:
+        language: en
         content: Tobias Guggemos
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LMU Munich
-  role:
+        - language: en
+          content: LMU Munich
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yoav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yoav
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Nir
-        language:
-        - en
       completename:
+        language: en
         content: Yoav Nir
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Check Point Software Technologies Ltd.
-  role:
-  - type: author
+        - language: en
+          content: Check Point Software Technologies Ltd.
 version:
 - draft: '03'
-revdate: '2017-06-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>IPsec ESP sends an initialization vector (IV) or nonce in each packet,
-    adding 8 or 16 octets. Some algorithms such as AES-GCM, AES- CCM, AES-CTR and
-    ChaCha20-Poly1305 require a unique nonce but do not require an unpredictable nonce.
-    When using such algorithms the packet counter value can be used to generate a
-    nonce, saving 8 octets per packet. This document describes how to do this.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   IPsec ESP sends an initialization vector (IV) or nonce in each\n   packet,
+    adding 8 or 16 octets.  Some algorithms such as AES-GCM, AES-\n   CCM, AES-CTR
+    and ChaCha20-Poly1305 require a unique nonce but do not\n   require an unpredictable
+    nonce.  When using such algorithms the\n   packet counter value can be used to
+    generate a nonce, saving 8 octets\n   per packet.  This document describes how
+    to do this.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-mglt-ipsecme-implicit-iv-02
-    docid:
-    - id: draft-mglt-ipsecme-implicit-iv-02
+    formattedref: draft-mglt-ipsecme-implicit-iv-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mglt-ipsecme-implicit-iv-02
+    docidentifier:
+    - content: draft-mglt-ipsecme-implicit-iv-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mglt-ipsecme-implicit-iv-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-mglt-ipsecme-implicit-iv-04
-    docid:
-    - id: draft-mglt-ipsecme-implicit-iv-04
+    formattedref: draft-mglt-ipsecme-implicit-iv-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mglt-ipsecme-implicit-iv-04
+    docidentifier:
+    - content: draft-mglt-ipsecme-implicit-iv-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-mglt-ipsecme-implicit-iv-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mglt-ipsecme-implicit-iv-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

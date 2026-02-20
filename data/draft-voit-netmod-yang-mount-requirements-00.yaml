@@ -1,156 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-voit-netmod-yang-mount-requirements-00
-title:
-- content: Requirements for mounting of local and remote YANG subtrees
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-voit-netmod-yang-mount-requirements-00
-  type: src
+id: draftvoitnetmodyangmountrequirements00
 type: standard
-docid:
-- id: draft-voit-netmod-yang-mount-requirements-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Requirements for mounting of local and remote YANG subtrees
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-voit-netmod-yang-mount-requirements-00
+docidentifier:
+- content: draft-voit-netmod-yang-mount-requirements
+  type: Internet-Draft
+- content: draft-voit-netmod-yang-mount-requirements-00
   type: Internet-Draft
   primary: true
-- id: I-D.voit-netmod-yang-mount-requirements
-  type: IETF
-  scope: anchor
 docnumber: I-D.voit-netmod-yang-mount-requirements
 date:
 - type: published
-  value: '2016-03-18'
+  at: '2016-03-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Voit
-        language:
-        - en
       completename:
+        language: en
         content: Eric Voit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sander
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Mertens
-        language:
-        - en
       completename:
+        language: en
         content: Sander Mertens
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Prismtech
-  role:
-  - type: author
+        - language: en
+          content: Prismtech
 version:
 - draft: '00'
-revdate: '2016-03-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Applications want simple ways to reference and access YANG objects
-    and subtrees. These simplifications might include aliasing of local YANG information.
-    These simplifications might include remote referencing of YANG information distributed
-    across network. For such applications, development complexity is a barrier to
-    YANG usage and therefore must be minimized. Specific aspects of complexity developers
-    want to ignore include: o whether context specific aliases and paths to the same
-    information can be exposed on a single device, o whether authoritative information
-    is actually sourced from local or remote datastores, o whether the application
-    needs to manage the overhead of session establishment and maintenance in order
-    to access information on remote datastores, o whether objects have been locally
-    cached or not, and o whether there is a mix of controllers, NMSs, and/or CLI which
-    have access permission to update the primary copy of a particular object. The
-    solution requirements described in this document detail what is needed to support
-    application access to authoritative network YANG objects locally (via aliasing),
-    or remotely from controllers or peering network devices in such a way to meet
-    these goals.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Applications want simple ways to reference and access YANG objects\n
+    \  and subtrees.  These simplifications might include aliasing of local\n   YANG
+    information.  These simplifications might include remote\n   referencing of YANG
+    information distributed across network.\n\n   For such applications, development
+    complexity is a barrier to YANG\n   usage and therefore must be minimized.  Specific
+    aspects of\n   complexity developers want to ignore include:\n\n   o  whether
+    context specific aliases and paths to the same information\n      can be exposed
+    on a single device,\n\n   o  whether authoritative information is actually sourced
+    from local\n      or remote datastores,\n\n   o  whether the application needs
+    to manage the overhead of session\n      establishment and maintenance in order
+    to access information on\n      remote datastores,\n\n   o  whether objects have
+    been locally cached or not, and\n\n   o  whether there is a mix of controllers,
+    NMSs, and/or CLI which have\n      access permission to update the primary copy
+    of a particular\n      object.\n\n   The solution requirements described in this
+    document detail what is\n   needed to support application access to authoritative
+    network YANG\n   objects locally (via aliasing), or remotely from controllers
+    or\n   peering network devices in such a way to meet these goals.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-voit-netmod-yang-mount-requirements-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

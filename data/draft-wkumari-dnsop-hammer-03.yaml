@@ -1,188 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-wkumari-dnsop-hammer-03
-title:
-- content: Highly Automated Method for Maintaining Expiring Records
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-hammer-03
-  type: src
+id: draftwkumaridnsophammer03
 type: standard
-docid:
-- id: draft-wkumari-dnsop-hammer-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Highly Automated Method for Maintaining Expiring Records
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-hammer-03
+docidentifier:
+- content: draft-wkumari-dnsop-hammer
+  type: Internet-Draft
+- content: draft-wkumari-dnsop-hammer-03
   type: Internet-Draft
   primary: true
-- id: I-D.wkumari-dnsop-hammer
-  type: IETF
-  scope: anchor
 docnumber: I-D.wkumari-dnsop-hammer
 date:
 - type: published
-  value: '2017-06-28'
+  at: '2017-06-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Warren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: W
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: W. A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Warren
+      - language: en
+        script: Latn
+        initial: W
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: W. A.
       surname:
+        language: en
         content: Kumari
-        language:
-        - en
       completename:
+        language: en
         content: Warren "Ace" Kumari
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Roy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Roy
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Arends
-        language:
-        - en
       completename:
+        language: en
         content: Roy Arends
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ICANN
-  role:
+        - language: en
+          content: ICANN
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Suzanne
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Suzanne
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Woolf
-        language:
-        - en
       completename:
+        language: en
         content: Suzanne Woolf
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
-  - type: author
+        - language: en
+          content: Ericsson
 version:
 - draft: '03'
-revdate: '2017-06-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a simple DNS cache optimization which keeps
-    the most popular Resource Records set (RRset) in the DNS cache: Highly Automated
-    Method for Maintaining Expiring Records (HAMMER). The principle is that popular
-    RRset in the cache are fetched, that is to say resolved before their TTL expires
-    and flushed. By fetching RRset before they are being queried by an end user, that
-    is to say prefetched, HAMMER is expected to improve the quality of experience
-    of the end users as well as to optimize the resources involved in large DNSSEC
-    resolving platforms.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "This document describes a simple DNS cache optimization which keeps\n
+    \  the most popular Resource Records set (RRset) in the DNS cache:\n   Highly
+    Automated Method for Maintaining Expiring Records (HAMMER).\n\n   The principle
+    is that popular RRset in the cache are fetched, that is\n   to say resolved before
+    their TTL expires and flushed.  By fetching\n   RRset before they are being queried
+    by an end user, that is to say\n   prefetched, HAMMER is expected to improve the
+    quality of experience\n   of the end users as well as to optimize the resources
+    involved in\n   large DNSSEC resolving platforms.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wkumari-dnsop-hammer-02
-    docid:
-    - id: draft-wkumari-dnsop-hammer-02
+    formattedref: draft-wkumari-dnsop-hammer-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-hammer-02
+    docidentifier:
+    - content: draft-wkumari-dnsop-hammer-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wkumari-dnsop-hammer-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wkumari-dnsop-hammer-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

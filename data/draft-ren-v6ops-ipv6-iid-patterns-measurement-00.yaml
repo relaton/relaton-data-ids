@@ -1,208 +1,179 @@
 ---
-schema-version: v1.2.9
-id: draft-ren-v6ops-ipv6-iid-patterns-measurement-00
-title:
-- content: Measurement and Analysis of IPv6 Interface Identifier Patterns in the Real
-    World
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ren-v6ops-ipv6-iid-patterns-measurement-00
-  type: src
+id: draftrenv6opsipv6iidpatternsmeasurement00
 type: standard
-docid:
-- id: draft-ren-v6ops-ipv6-iid-patterns-measurement-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Measurement and Analysis of IPv6 Interface Identifier Patterns in the Real
+    World
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ren-v6ops-ipv6-iid-patterns-measurement-00
+docidentifier:
+- content: draft-ren-v6ops-ipv6-iid-patterns-measurement
+  type: Internet-Draft
+- content: draft-ren-v6ops-ipv6-iid-patterns-measurement-00
   type: Internet-Draft
   primary: true
-- id: I-D.ren-v6ops-ipv6-iid-patterns-measurement
-  type: IETF
-  scope: anchor
 docnumber: I-D.ren-v6ops-ipv6-iid-patterns-measurement
 date:
 - type: published
-  value: '2025-12-07'
+  at: '2025-12-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ren
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ren
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Gang
-        language:
-        - en
       completename:
+        language: en
         content: Ren Gang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
+      formatted_initials:
+        language: en
       surname:
+        language: en
         content: 张伟
-        language:
-        - en
       completename:
+        language: en
         content: 张伟
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Xia
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: X
-        formatted_initials:
-          content: X.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Xia
+      - language: en
+        script: Latn
+        initial: X
+      formatted_initials:
+        language: en
+        content: X.
       surname:
+        language: en
         content: Yin
-        language:
-        - en
       completename:
+        language: en
         content: Xia Yin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lin
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: He
-        language:
-        - en
       completename:
+        language: en
         content: Lin He
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Haisheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Haisheng
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Yu
-        language:
-        - en
       completename:
+        language: en
         content: Haisheng Yu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CNNIC
-  role:
-  - type: author
+        - language: en
+          content: CNNIC
 version:
 - draft: '00'
-revdate: '2025-12-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Interface Identifiers (IIDs) are critical components of IPv6 addresses,
-    significantly impacting user privacy and the feasibility of network reconnaissance.
-    RFC 7707 previously provided a comprehensive analysis of IID patterns based on
-    data from the early stages of IPv6 deployment. However, with the widespread adoption
-    of privacy-enhancing standards such as RFC 7217, historical data no longer accurately
-    reflects the current IPv6 ecosystem. This document provides updated measurements
-    of IID patterns by utilizing an improved pattern recognition method and incorporating
-    novel data sources, such as public mailing lists. The measurement data reveals
-    that while "Low-byte" patterns have decreased significantly in server addresses,
-    a substantial number of seemingly random addresses actually belong to non-random,
-    specific patterns, implying that heuristic scanning remains a viable vector. Furthermore,
-    while client devices have widely adopted randomized addresses-effectively enhancing
-    privacy-Client Premise Equipment (CPE) routers continue to exhibit a high usage
-    rate of IEEE EUI-64 addresses, constituting an often-overlooked privacy risk.
-    This document aims to update the statistics and analysis regarding IID pattern
-    distribution found in RFC 7707, providing essential insights for modern network
-    defense strategies and standard compliance.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Interface Identifiers (IIDs) are critical components of IPv6\n   addresses,
+    significantly impacting user privacy and the feasibility\n   of network reconnaissance.
+    \ RFC 7707 previously provided a\n   comprehensive analysis of IID patterns based
+    on data from the early\n   stages of IPv6 deployment.  However, with the widespread
+    adoption of\n   privacy-enhancing standards such as RFC 7217, historical data
+    no\n   longer accurately reflects the current IPv6 ecosystem.  This document\n
+    \  provides updated measurements of IID patterns by utilizing an\n   improved
+    pattern recognition method and incorporating novel data\n   sources, such as public
+    mailing lists.  The measurement data reveals\n   that while \"Low-byte\" patterns
+    have decreased significantly in server\n   addresses, a substantial number of
+    seemingly random addresses\n   actually belong to non-random, specific patterns,
+    implying that\n   heuristic scanning remains a viable vector.  Furthermore, while\n
+    \  client devices have widely adopted randomized addresses-effectively\n   enhancing
+    privacy-Client Premise Equipment (CPE) routers continue to\n   exhibit a high
+    usage rate of IEEE EUI-64 addresses, constituting an\n   often-overlooked privacy
+    risk.  This document aims to update the\n   statistics and analysis regarding
+    IID pattern distribution found in\n   RFC 7707, providing essential insights for
+    modern network defense\n   strategies and standard compliance.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ren-v6ops-ipv6-iid-patterns-measurement-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

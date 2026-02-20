@@ -1,207 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-stiemerling-rtsp-announce-01
-title:
-- content: RTSP 2.0 Asynchronous Notification
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-stiemerling-rtsp-announce-01
-  type: src
+id: draftstiemerlingrtspannounce01
 type: standard
-docid:
-- id: draft-stiemerling-rtsp-announce-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RTSP 2.0 Asynchronous Notification
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-stiemerling-rtsp-announce-01
+docidentifier:
+- content: draft-stiemerling-rtsp-announce
+  type: Internet-Draft
+- content: draft-stiemerling-rtsp-announce-01
   type: Internet-Draft
   primary: true
-- id: I-D.stiemerling-rtsp-announce
-  type: IETF
-  scope: anchor
 docnumber: I-D.stiemerling-rtsp-announce
 date:
 - type: published
-  value: '2008-02-25'
+  at: '2008-02-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Tetsuya
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tetsuya
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Ura
-        language:
-        - en
       completename:
+        language: en
         content: Tetsuya Ura
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
+        - language: en
+          content: NTT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kenshin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kenshin
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Oku
-        language:
-        - en
       completename:
+        language: en
         content: Kenshin Oku
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NTT
-  role:
+        - language: en
+          content: NTT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hiromi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hiromi
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Harada
-        language:
-        - en
       completename:
+        language: en
         content: Hiromi Harada
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Hitachi
-  role:
+        - language: en
+          content: Hitachi
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Akira
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Akira
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kobayashi
-        language:
-        - en
       completename:
+        language: en
         content: Akira Kobayashi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NEC Corp.
-  role:
+        - language: en
+          content: NEC Corp.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Martin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Martin
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Stiemerling
-        language:
-        - en
       completename:
+        language: en
         content: Martin Stiemerling
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NEC Europe Ltd.
-  role:
-  - type: author
+        - language: en
+          content: NEC Europe Ltd.
 version:
 - draft: '01'
-revdate: '2008-02-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Some IPTV deployments that are using the Real Time Streaming Protocol
-    (RTSP) require the ability of the server to notify clients about asynchronous
-    events occurring during an RTSP session. Current deployments typically use the
-    ANNOUNCE method of RTSP 1.0 for sending such asynchronous events from a server
-    to clients by using some proprietary extensions. However, the ANNOUNCE method
-    has been removed from the current RTSP 2.0 draft, leaving the new specification
-    without a mechanism for sending asynchronous messages from the server. This memo
-    describes a use case for such an asynchronous message and proposes a new RTSP
-    2.0 method.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Some IPTV deployments that are using the Real Time Streaming Protocol\n(RTSP)
+    require the ability of the server to notify clients about\nasynchronous events
+    occurring during an RTSP session.  Current\ndeployments typically use the ANNOUNCE
+    method of RTSP 1.0 for sending\nsuch asynchronous events from a server to clients
+    by using some\nproprietary extensions.  However, the ANNOUNCE method has been\nremoved
+    from the current RTSP 2.0 draft, leaving the new\nspecification without a mechanism
+    for sending asynchronous messages\nfrom the server.  This memo describes a use
+    case for such an\nasynchronous message and proposes a new RTSP 2.0 method.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-stiemerling-rtsp-announce-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

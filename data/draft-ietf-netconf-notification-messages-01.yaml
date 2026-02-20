@@ -1,195 +1,170 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-netconf-notification-messages-01
-title:
-- content: Notification Message Headers and Bundles
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-notification-messages-01
-  type: src
+id: draftietfnetconfnotificationmessages01
 type: standard
-docid:
-- id: draft-ietf-netconf-notification-messages-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Notification Message Headers and Bundles
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-notification-messages-01
+docidentifier:
+- content: draft-ietf-netconf-notification-messages
+  type: Internet-Draft
+- content: draft-ietf-netconf-notification-messages-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-netconf-notification-messages
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-netconf-notification-messages
 date:
 - type: published
-  value: '2017-09-29'
+  at: '2017-09-29'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Voit
-        language:
-        - en
       completename:
+        language: en
         content: Eric Voit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Andy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andy
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bierman
-        language:
-        - en
       completename:
+        language: en
         content: Andy Bierman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: YumaWorks
-  role:
+        - language: en
+          content: YumaWorks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alexander
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alexander
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Clemm
-        language:
-        - en
       completename:
+        language: en
         content: Alexander Clemm
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei
-  role:
+        - language: en
+          content: Huawei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tim
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Jenkins
-        language:
-        - en
       completename:
+        language: en
         content: Tim Jenkins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '01'
-revdate: '2017-09-29'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines a new notification message format, using yang-
-    data. Included are: o a new notification mechanism and encoding to replace the
-    one way operation of RFC-5277 o a set of common, transport agnostic message header
-    objects. o how to bundle multiple event records into a single notification message.
-    o how to ensure these new capabilities are only used with capable receivers.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a new notification message format, using yang-\n
+    \  data.  Included are:\n\n   o  a new notification mechanism and encoding to
+    replace the one way\n      operation of RFC-5277\n\n   o  a set of common, transport
+    agnostic message header objects.\n\n   o  how to bundle multiple event records
+    into a single notification\n      message.\n\n   o  how to ensure these new capabilities
+    are only used with capable\n      receivers.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-netconf-notification-messages-00
-    docid:
-    - id: draft-ietf-netconf-notification-messages-00
+    formattedref: draft-ietf-netconf-notification-messages-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-notification-messages-00
+    docidentifier:
+    - content: draft-ietf-netconf-notification-messages-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-notification-messages-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-netconf-notification-messages-02
-    docid:
-    - id: draft-ietf-netconf-notification-messages-02
+    formattedref: draft-ietf-netconf-notification-messages-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-notification-messages-02
+    docidentifier:
+    - content: draft-ietf-netconf-notification-messages-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-netconf-notification-messages-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-netconf-notification-messages-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

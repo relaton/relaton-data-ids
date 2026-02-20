@@ -1,24 +1,24 @@
 ---
-schema-version: v1.2.9
-id: draft-nguyen-ospf-restart
+id: draftnguyenospfrestart
+schema_version: v1.4.1
+formattedref: draft-nguyen-ospf-restart
 title:
-- content: OSPF Restart Signaling
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-nguyen-ospf-restart
+- language: en
+  script: Latn
+  content: OSPF Restart Signaling
+docidentifier:
+- content: draft-nguyen-ospf-restart
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>OSPF is a link-state intra-domain routing protocol used in IP networks.
+- language: en
+  script: Latn
+  content: "OSPF is a link-state intra-domain routing protocol used in IP networks.
     Routers find new and detect unreachable neighbors via the Hello subprotocol. Hello
     OSPF packets are also used to ensure two-way connectivity within time. When a
     router restarts its OSPF software, it may not know its neighbors. If such a router
     sends a Hello packet on an interface, its neighbors are going to reset the adjacency,
-    which may not be desirable in certain conditions. This memo describes a vendor-specific
+    which may not be desirable in certain conditions.\n\n This memo describes a vendor-specific
     mechanism that allows OSPF routers to inform their neighbors about the restart
     process. Note that this mechanism requires support from neighboring routers. The
     mechanism described in this document was proposed before Graceful OSPF Restart,
@@ -26,20 +26,15 @@ abstract:
     at least one major vendor and is currently deployed in the field. The purpose
     of this document is to capture the details of this mechanism for public use. This
     mechanism is not an IETF standard. This memo provides information for the Internet
-    community.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    community.\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-nguyen-ospf-restart-06
-    docid:
-    - id: draft-nguyen-ospf-restart-06
+    formattedref: draft-nguyen-ospf-restart-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-nguyen-ospf-restart-06
+    docidentifier:
+    - content: draft-nguyen-ospf-restart-06
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-nguyen-ospf-restart-06
-      format: text/plain

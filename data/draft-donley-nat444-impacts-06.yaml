@@ -1,218 +1,188 @@
 ---
-schema-version: v1.2.9
-id: draft-donley-nat444-impacts-06
-title:
-- content: Assessing the Impact of Carrier-Grade NAT on Network Applications
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-donley-nat444-impacts-06
-  type: src
+id: draftdonleynat444impacts06
 type: standard
-docid:
-- id: draft-donley-nat444-impacts-06
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Assessing the Impact of Carrier-Grade NAT on Network Applications
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-donley-nat444-impacts-06
+docidentifier:
+- content: draft-donley-nat444-impacts
+  type: Internet-Draft
+- content: draft-donley-nat444-impacts-06
   type: Internet-Draft
   primary: true
-- id: I-D.donley-nat444-impacts
-  type: IETF
-  scope: anchor
 docnumber: I-D.donley-nat444-impacts
 date:
 - type: published
-  value: '2013-04-05'
+  at: '2013-04-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Chris
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Chris
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Donley
-        language:
-        - en
       completename:
+        language: en
         content: Chris Donley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
+        - language: en
+          content: CableLabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lee
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lee
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Howard
-        language:
-        - en
       completename:
+        language: en
         content: Lee Howard
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Time Warner Cable
-  role:
+        - language: en
+          content: Time Warner Cable
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Kuarsingh
-        language:
-        - en
       completename:
+        language: en
         content: Victor Kuarsingh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Rogers Communications
-  role:
+        - language: en
+          content: Rogers Communications
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Berg
-        language:
-        - en
       completename:
+        language: en
         content: John Berg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
+        - language: en
+          content: CableLabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jinesh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jinesh
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Doshi
-        language:
-        - en
       completename:
+        language: en
         content: Jinesh Doshi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
-  - type: author
+        - language: en
+          content: Juniper Networks
 version:
 - draft: '06'
-revdate: '2013-04-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>NAT444 is an IPv4 extension technology being considered by Service
-    Providers as a means to continue offering IPv4 service to customers while transitioning
-    to IPv6. This technology adds an extra Carrier- Grade NAT (CGN) in the Service
-    Provider network, often resulting in two NATs. CableLabs, Time Warner Cable, and
-    Rogers Communications independently tested the impacts of NAT444 on many popular
+- language: en
+  script: Latn
+  content: "NAT444 is an IPv4 extension technology being considered by Service Providers
+    as a means to continue offering IPv4 service to customers while transitioning
+    to IPv6.  This technology adds an extra Carrier- Grade NAT (CGN) in the Service
+    Provider network, often resulting in two NATs.  CableLabs, Time Warner Cable,
+    and Rogers Communications independently tested the impacts of NAT444 on many popular
     Internet services using a variety of test scenarios, network topologies, and vendor
-    equipment. This document identifies areas where adding a second layer of NAT disrupts
-    the communication channel for common Internet applications. This document was
-    updated to include the Dual-Stack Lite (DS-Lite) impacts also.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    equipment.  This document identifies areas where adding a second layer of NAT
+    disrupts the communication channel for common Internet applications.  This document
+    was updated to include the Dual-Stack Lite (DS-Lite) impacts also.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-donley-nat444-impacts-05
-    docid:
-    - id: draft-donley-nat444-impacts-05
+    formattedref: draft-donley-nat444-impacts-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-donley-nat444-impacts-05
+    docidentifier:
+    - content: draft-donley-nat444-impacts-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-donley-nat444-impacts-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-donley-nat444-impacts-06
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

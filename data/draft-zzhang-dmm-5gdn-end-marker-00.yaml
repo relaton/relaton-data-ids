@@ -1,168 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-zzhang-dmm-5gdn-end-marker-00
-title:
-- content: End Marker in 5G Data Network
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zzhang-dmm-5gdn-end-marker-00
-  type: src
+id: draftzzhangdmm5gdnendmarker00
 type: standard
-docid:
-- id: draft-zzhang-dmm-5gdn-end-marker-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: End Marker in 5G Data Network
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zzhang-dmm-5gdn-end-marker-00
+docidentifier:
+- content: draft-zzhang-dmm-5gdn-end-marker
+  type: Internet-Draft
+- content: draft-zzhang-dmm-5gdn-end-marker-00
   type: Internet-Draft
   primary: true
-- id: I-D.zzhang-dmm-5gdn-end-marker
-  type: IETF
-  scope: anchor
 docnumber: I-D.zzhang-dmm-5gdn-end-marker
 date:
 - type: published
-  value: '2023-07-26'
+  at: '2023-07-26'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Zhaohui
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: Z. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhaohui
+      - language: en
+        script: Latn
+        initial: Z
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: Z. J.
       surname:
+        language: en
         content: Zhang
-        language:
-        - en
       completename:
+        language: en
         content: Zhaohui (Jeffrey) Zhang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks
-  role:
+        - language: en
+          content: Juniper Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marco
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marco
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Liebsch
-        language:
-        - en
       completename:
+        language: en
         content: Marco Liebsch
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NEC Lab
-  role:
+        - language: en
+          content: NEC Lab
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tianji
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tianji
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Jiang
-        language:
-        - en
       completename:
+        language: en
         content: Tianji Jiang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Mobile
-  role:
-  - type: author
+        - language: en
+          content: China Mobile
 version:
 - draft: '00'
-revdate: '2023-07-26'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In a mobile network, when a mobile device (referred to as User Equipment
-    or UE) moves from one Access Node (source AN) to another (target AN), the anchoring
-    node that connects the UE to the Data Network sends an End Marker to the source
-    AN after it starts sending UE traffic towards the target AN. The target AN buffers
-    the data until it receives the End Marker forwarded by the source AN. This is
-    to preserve the order of packets during the handover between ANs. The anchoring
-    node is referred to as User Plane Function (UPF) in 5G and it is a Network Function
-    of the mobile network. The UPFs are traditionally centrally deployed but are more
-    and more distributed closer to the edge. With distributed UPFs, handover becomes
-    necessary among UPFs, and the End Marker mechanism may need to be extended to
-    Data Network devices that are not mobile network functions. This document discusses
-    the problem and proposes a solution based on ICMP messages if packet ordering
-    needs to be preserved during handover between UPFs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In a mobile network, when a mobile device (referred to as User\n   Equipment
+    or UE) moves from one Access Node (source AN) to another\n   (target AN), the
+    anchoring node that connects the UE to the Data\n   Network sends an End Marker
+    to the source AN after it starts sending\n   UE traffic towards the target AN.
+    \ The target AN buffers the data\n   until it receives the End Marker forwarded
+    by the source AN.  This is\n   to preserve the order of packets during the handover
+    between ANs.\n\n   The anchoring node is referred to as User Plane Function (UPF)
+    in 5G\n   and it is a Network Function of the mobile network.  The UPFs are\n
+    \  traditionally centrally deployed but are more and more distributed\n   closer
+    to the edge.  With distributed UPFs, handover becomes\n   necessary among UPFs,
+    and the End Marker mechanism may need to be\n   extended to Data Network devices
+    that are not mobile network\n   functions.  This document discusses the problem
+    and proposes a\n   solution based on ICMP messages if packet ordering needs to
+    be\n   preserved during handover between UPFs.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-zzhang-dmm-5gdn-end-marker-01
-    docid:
-    - id: draft-zzhang-dmm-5gdn-end-marker-01
+    formattedref: draft-zzhang-dmm-5gdn-end-marker-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zzhang-dmm-5gdn-end-marker-01
+    docidentifier:
+    - content: draft-zzhang-dmm-5gdn-end-marker-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zzhang-dmm-5gdn-end-marker-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zzhang-dmm-5gdn-end-marker-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

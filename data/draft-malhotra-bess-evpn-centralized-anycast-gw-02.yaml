@@ -1,231 +1,202 @@
 ---
-schema-version: v1.2.9
-id: draft-malhotra-bess-evpn-centralized-anycast-gw-02
-title:
-- content: Centralized Anycast Gateway in Ethernet VPN(EVPN)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-malhotra-bess-evpn-centralized-anycast-gw-02
-  type: src
+id: draftmalhotrabessevpncentralizedanycastgw02
 type: standard
-docid:
-- id: draft-malhotra-bess-evpn-centralized-anycast-gw-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Centralized Anycast Gateway in Ethernet VPN(EVPN)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-malhotra-bess-evpn-centralized-anycast-gw-02
+docidentifier:
+- content: draft-malhotra-bess-evpn-centralized-anycast-gw
+  type: Internet-Draft
+- content: draft-malhotra-bess-evpn-centralized-anycast-gw-02
   type: Internet-Draft
   primary: true
-- id: I-D.malhotra-bess-evpn-centralized-anycast-gw
-  type: IETF
-  scope: anchor
 docnumber: I-D.malhotra-bess-evpn-centralized-anycast-gw
 date:
 - type: published
-  value: '2024-09-06'
+  at: '2024-09-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Neeraj
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Neeraj
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Malhotra
-        language:
-        - en
       completename:
+        language: en
         content: Neeraj Malhotra
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Krishnaswamy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Krishnaswamy
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Ananthamurthy
-        language:
-        - en
       completename:
+        language: en
         content: Krishnaswamy Ananthamurthy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lukas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lukas
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Krattiger
-        language:
-        - en
       completename:
+        language: en
         content: Lukas Krattiger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '02'
-revdate: '2024-09-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>EVPN Integrated Routing and Bridging (IRB) fabrics provide a flexible
-    and extensible method for Layer-2 and Layer-3 overlay network connectivity. [EVPN-IRB]
-    defines operation for symmetric and asymmetric EVPN IRB using distributed anycast
-    gateway architecture (DAG). In a DAG architecture, both bridging and first-hop
-    routing functions for overlay subnets are located on leaf PEs, with first-hop
-    routing provided by a distributed anycast gateway provisioned across the leaf
-    PEs. This document describes an architecture and operation for EVPN Centralized
-    Anycast Gateway (CAG), which allows the first- hop routing function for overlay
-    subnets to be centralized on designated IRB GWs while the bridging function is
-    still located on the leaf PEs. The documents also covers trade-offs of deploying
-    a CAG as compared with DAG. It further describes operation for inter- op between
-    CAG and DAG based EVPN-IRB network overlays.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   EVPN Integrated Routing and Bridging (IRB) fabrics provide a flexible\n
+    \  and extensible method for Layer-2 and Layer-3 overlay network\n   connectivity.
+    \ [EVPN-IRB] defines operation for symmetric and\n   asymmetric EVPN IRB using
+    distributed anycast gateway architecture\n   (DAG).  In a DAG architecture, both
+    bridging and first-hop routing\n   functions for overlay subnets are located on
+    leaf PEs, with first-hop\n   routing provided by a distributed anycast gateway
+    provisioned across\n   the leaf PEs.  This document describes an architecture
+    and operation\n   for EVPN Centralized Anycast Gateway (CAG), which allows the
+    first-\n   hop routing function for overlay subnets to be centralized on\n   designated
+    IRB GWs while the bridging function is still located on\n   the leaf PEs.  The
+    documents also covers trade-offs of deploying a\n   CAG as compared with DAG.
+    \ It further describes operation for inter-\n   op between CAG and DAG based EVPN-IRB
+    network overlays.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-malhotra-bess-evpn-centralized-anycast-gw-01
-    docid:
-    - id: draft-malhotra-bess-evpn-centralized-anycast-gw-01
+    formattedref: draft-malhotra-bess-evpn-centralized-anycast-gw-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-malhotra-bess-evpn-centralized-anycast-gw-01
+    docidentifier:
+    - content: draft-malhotra-bess-evpn-centralized-anycast-gw-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-malhotra-bess-evpn-centralized-anycast-gw-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-malhotra-bess-evpn-centralized-anycast-gw-03
-    docid:
-    - id: draft-malhotra-bess-evpn-centralized-anycast-gw-03
+    formattedref: draft-malhotra-bess-evpn-centralized-anycast-gw-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-malhotra-bess-evpn-centralized-anycast-gw-03
+    docidentifier:
+    - content: draft-malhotra-bess-evpn-centralized-anycast-gw-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-malhotra-bess-evpn-centralized-anycast-gw-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-malhotra-bess-evpn-centralized-anycast-gw-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

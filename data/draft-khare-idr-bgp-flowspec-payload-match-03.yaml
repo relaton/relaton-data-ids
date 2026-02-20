@@ -1,235 +1,205 @@
 ---
-schema-version: v1.2.9
-id: draft-khare-idr-bgp-flowspec-payload-match-03
-title:
-- content: BGP FlowSpec Payload Matching
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-03
-  type: src
+id: draftkhareidrbgpflowspecpayloadmatch03
 type: standard
-docid:
-- id: draft-khare-idr-bgp-flowspec-payload-match-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP FlowSpec Payload Matching
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-03
+docidentifier:
+- content: draft-khare-idr-bgp-flowspec-payload-match
+  type: Internet-Draft
+- content: draft-khare-idr-bgp-flowspec-payload-match-03
   type: Internet-Draft
   primary: true
-- id: I-D.khare-idr-bgp-flowspec-payload-match
-  type: IETF
-  scope: anchor
 docnumber: I-D.khare-idr-bgp-flowspec-payload-match
 date:
 - type: published
-  value: '2019-05-01'
+  at: '2019-05-01'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Anurag
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Anurag
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Khare
-        language:
-        - en
       completename:
+        language: en
         content: Anurag Khare
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Scudder
-        language:
-        - en
       completename:
+        language: en
         content: John Scudder
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Juniper Networks, Inc.
-  role:
+        - language: en
+          content: Juniper Networks, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luay
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Jalil
-        language:
-        - en
       completename:
+        language: en
         content: Luay Jalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Gallagher
-        language:
-        - en
       completename:
+        language: en
         content: Michael Gallagher
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
+        - language: en
+          content: Verizon
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kirill
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kirill
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Kasavchenko
-        language:
-        - en
       completename:
+        language: en
         content: Kirill Kasavchenko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetScout
-  role:
-  - type: author
+        - language: en
+          content: NetScout
 version:
 - draft: '03'
-revdate: '2019-05-01'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The rise in frequency, volume, and pernicious effects of DDoS attacks
-    has elevated them from fare for the specialist to generalist press. Numerous reports
-    detail the taxonomy of DDoS types, the varying motivations of their attackers,
-    as well as the resulting business and reputation loss of their targets. BGP FlowSpec
-    (RFC 5575, "Dissemination of Flow Specification Rules") can be used to rapidly
-    disseminate filters that thwart attacks, being particularly effective against
-    the volumetric type. Operators can use existing FlowSpec components to match on
-    pre-defined packet header fields. However recent enhancements to forwarding plane
-    filter implementations allow matches at arbitary locations within the packet header
-    and, to some extent, the payload. This capability can be used to detect highly
-    amplified attacks whose attack signature remains relatively constant while values
-    in the packet header vary, as well as the burgeoning variety of tunneled traffic.
-    We define a new FlowSpec component, "Flexible Match Conditions", with similar
-    matching semantics to those of existing components. This component will allow
-    the operator to define bounded match conditions using bit offsets and a variety
-    of match types.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The rise in frequency, volume, and pernicious effects of DDoS attacks\n
+    \  has elevated them from fare for the specialist to generalist press.\n   Numerous
+    reports detail the taxonomy of DDoS types, the varying\n   motivations of their
+    attackers, as well as the resulting business and\n   reputation loss of their
+    targets.\n\n   BGP FlowSpec (RFC 5575, \"Dissemination of Flow Specification Rules\")\n
+    \  can be used to rapidly disseminate filters that thwart attacks, being\n   particularly
+    effective against the volumetric type.  Operators can\n   use existing FlowSpec
+    components to match on pre-defined packet\n   header fields.  However recent enhancements
+    to forwarding plane\n   filter implementations allow matches at arbitary locations
+    within the\n   packet header and, to some extent, the payload.  This capability
+    can\n   be used to detect highly amplified attacks whose attack signature\n   remains
+    relatively constant while values in the packet header vary,\n   as well as the
+    burgeoning variety of tunneled traffic.\n\n   We define a new FlowSpec component,
+    \"Flexible Match Conditions\", with\n   similar matching semantics to those of
+    existing components.  This\n   component will allow the operator to define bounded
+    match conditions\n   using bit offsets and a variety of match types.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-khare-idr-bgp-flowspec-payload-match-02
-    docid:
-    - id: draft-khare-idr-bgp-flowspec-payload-match-02
+    formattedref: draft-khare-idr-bgp-flowspec-payload-match-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-02
+    docidentifier:
+    - content: draft-khare-idr-bgp-flowspec-payload-match-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-khare-idr-bgp-flowspec-payload-match-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-khare-idr-bgp-flowspec-payload-match-04
-    docid:
-    - id: draft-khare-idr-bgp-flowspec-payload-match-04
+    formattedref: draft-khare-idr-bgp-flowspec-payload-match-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-04
+    docidentifier:
+    - content: draft-khare-idr-bgp-flowspec-payload-match-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-khare-idr-bgp-flowspec-payload-match-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-khare-idr-bgp-flowspec-payload-match-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

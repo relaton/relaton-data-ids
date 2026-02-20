@@ -1,125 +1,106 @@
 ---
-schema-version: v1.2.9
-id: draft-seemann-quic-accurate-ack-ecn-01
-title:
-- content: QUIC Accurate ECN Acknowledgements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-accurate-ack-ecn-01
-  type: src
+id: draftseemannquicaccurateackecn01
 type: standard
-docid:
-- id: draft-seemann-quic-accurate-ack-ecn-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: QUIC Accurate ECN Acknowledgements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-accurate-ack-ecn-01
+docidentifier:
+- content: draft-seemann-quic-accurate-ack-ecn
+  type: Internet-Draft
+- content: draft-seemann-quic-accurate-ack-ecn-01
   type: Internet-Draft
   primary: true
-- id: I-D.seemann-quic-accurate-ack-ecn
-  type: IETF
-  scope: anchor
 docnumber: I-D.seemann-quic-accurate-ack-ecn
 date:
 - type: published
-  value: '2024-05-23'
+  at: '2024-05-23'
 contributor:
-- person:
-    name:
-      given:
-        forename:
-        - content: Marten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
-      surname:
-        content: Seemann
-        language:
-        - en
-      completename:
-        content: Marten Seemann
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vidhi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marten
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
-        content: Goel
-        language:
-        - en
+        language: en
+        content: Seemann
       completename:
+        language: en
+        content: Marten Seemann
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Vidhi
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
+      surname:
+        language: en
+        content: Goel
+      completename:
+        language: en
         content: Vidhi Goel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
-  - type: author
+        - language: en
+          content: Apple Inc.
 version:
 - draft: '01'
-revdate: '2024-05-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>QUIC defines a variant of the ACK frame that carries cumulative count
-    for each of the three ECN codepoints (ECT(1), ECT(0) and CE). From this information,
-    the recipient of the ACK frame cannot deduce which ECN marking the individual
-    packets were received with. This document defines an alternative ACK frame that
-    encodes enough information to indicate which ECN mark each individual packet was
-    received with. This information is essential for accurately performing adjustments
-    to congestion window and sending rate of the sender.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   QUIC defines a variant of the ACK frame that carries cumulative count\n
+    \  for each of the three ECN codepoints (ECT(1), ECT(0) and CE).  From\n   this
+    information, the recipient of the ACK frame cannot deduce which\n   ECN marking
+    the individual packets were received with.\n\n   This document defines an alternative
+    ACK frame that encodes enough\n   information to indicate which ECN mark each
+    individual packet was\n   received with.  This information is essential for accurately\n
+    \  performing adjustments to congestion window and sending rate of the\n   sender.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-seemann-quic-accurate-ack-ecn-00
-    docid:
-    - id: draft-seemann-quic-accurate-ack-ecn-00
+    formattedref: draft-seemann-quic-accurate-ack-ecn-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-accurate-ack-ecn-00
+    docidentifier:
+    - content: draft-seemann-quic-accurate-ack-ecn-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-seemann-quic-accurate-ack-ecn-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-seemann-quic-accurate-ack-ecn-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

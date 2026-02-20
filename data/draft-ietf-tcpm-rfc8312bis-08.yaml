@@ -1,228 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-tcpm-rfc8312bis-08
-title:
-- content: CUBIC for Fast and Long-Distance Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc8312bis-08
-  type: src
+id: draftietftcpmrfc8312bis08
 type: standard
-docid:
-- id: draft-ietf-tcpm-rfc8312bis-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: CUBIC for Fast and Long-Distance Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc8312bis-08
+docidentifier:
+- content: draft-ietf-tcpm-rfc8312bis
+  type: Internet-Draft
+- content: draft-ietf-tcpm-rfc8312bis-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-tcpm-rfc8312bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-tcpm-rfc8312bis
 date:
 - type: published
-  value: '2022-05-30'
+  at: '2022-05-30'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Lisong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lisong
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Lisong Xu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Nebraska-Lincoln
-  role:
+        - language: en
+          content: University of Nebraska-Lincoln
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sangtae
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sangtae
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Ha
-        language:
-        - en
       completename:
+        language: en
         content: Sangtae Ha
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Colorado at Boulder
-  role:
+        - language: en
+          content: University of Colorado at Boulder
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Injong
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Injong
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Rhee
-        language:
-        - en
       completename:
+        language: en
         content: Injong Rhee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Bowery Farming
-  role:
+        - language: en
+          content: Bowery Farming
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vidhi
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vidhi
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Goel
-        language:
-        - en
       completename:
+        language: en
         content: Vidhi Goel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Apple Inc.
-  role:
+        - language: en
+          content: Apple Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lars
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lars
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Eggert
-        language:
-        - en
       completename:
+        language: en
         content: Lars Eggert
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: NetApp
-  role:
-  - type: author
+        - language: en
+          content: NetApp
 version:
 - draft: '08'
-revdate: '2022-05-30'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>CUBIC is a standard TCP congestion control algorithm that uses a cubic
-    function instead of a linear congestion window increase function to improve scalability
-    and stability over fast and long- distance networks. CUBIC has been adopted as
-    the default TCP congestion control algorithm by the Linux, Windows, and Apple
-    stacks. This document updates the specification of CUBIC to include algorithmic
-    improvements based on these implementations and recent academic work. Based on
-    the extensive deployment experience with CUBIC, it also moves the specification
-    to the Standards Track, obsoleting RFC 8312. This also requires updating RFC 5681,
-    to allow for CUBIC's occasionally more aggressive sending behavior.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   CUBIC is a standard TCP congestion control algorithm that uses a\n
+    \  cubic function instead of a linear congestion window increase\n   function
+    to improve scalability and stability over fast and long-\n   distance networks.
+    \ CUBIC has been adopted as the default TCP\n   congestion control algorithm by
+    the Linux, Windows, and Apple stacks.\n\n   This document updates the specification
+    of CUBIC to include\n   algorithmic improvements based on these implementations
+    and recent\n   academic work.  Based on the extensive deployment experience with\n
+    \  CUBIC, it also moves the specification to the Standards Track,\n   obsoleting
+    RFC 8312.  This also requires updating RFC 5681, to allow\n   for CUBIC's occasionally
+    more aggressive sending behavior.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-tcpm-rfc8312bis-07
-    docid:
-    - id: draft-ietf-tcpm-rfc8312bis-07
+    formattedref: draft-ietf-tcpm-rfc8312bis-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc8312bis-07
+    docidentifier:
+    - content: draft-ietf-tcpm-rfc8312bis-07
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-rfc8312bis-07
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-tcpm-rfc8312bis-09
-    docid:
-    - id: draft-ietf-tcpm-rfc8312bis-09
+    formattedref: draft-ietf-tcpm-rfc8312bis-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rfc8312bis-09
+    docidentifier:
+    - content: draft-ietf-tcpm-rfc8312bis-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-tcpm-rfc8312bis-09
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-tcpm-rfc8312bis-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

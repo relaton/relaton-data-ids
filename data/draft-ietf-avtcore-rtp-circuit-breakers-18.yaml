@@ -1,104 +1,93 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-avtcore-rtp-circuit-breakers-18
-title:
-- content: 'Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-avtcore-rtp-circuit-breakers-18
-  type: src
+id: draftietfavtcorertpcircuitbreakers18
 type: standard
-docid:
-- id: draft-ietf-avtcore-rtp-circuit-breakers-18
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Multimedia Congestion Control: Circuit Breakers for Unicast RTP Sessions'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-avtcore-rtp-circuit-breakers-18
+docidentifier:
+- content: draft-ietf-avtcore-rtp-circuit-breakers
+  type: Internet-Draft
+- content: draft-ietf-avtcore-rtp-circuit-breakers-18
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-avtcore-rtp-circuit-breakers
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-avtcore-rtp-circuit-breakers
 date:
 - type: published
-  value: '2016-08-18'
+  at: '2016-08-18'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Colin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Colin
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Perkins
-        language:
-        - en
       completename:
+        language: en
         content: Colin Perkins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Glasgow
-  role:
+        - language: en
+          content: University of Glasgow
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Varun
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Varun
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Singh
-        language:
-        - en
       completename:
+        language: en
         content: Varun Singh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: callstats.io
-  role:
-  - type: author
+        - language: en
+          content: callstats.io
 version:
 - draft: '18'
-revdate: '2016-08-18'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Real-time Transport Protocol (RTP) is widely used in telephony,
-    video conferencing, and telepresence applications. Such applications are often
-    run on best-effort UDP/IP networks. If congestion control is not implemented in
-    these applications, then network congestion can lead to uncontrolled packet loss
-    and a resulting deterioration of the user's multimedia experience. The congestion
+- language: en
+  script: Latn
+  content: "The Real-time Transport Protocol (RTP) is widely used in telephony, video
+    conferencing, and telepresence applications. Such applications are often run on
+    best-effort UDP/IP networks. If congestion control is not implemented in these
+    applications, then network congestion can lead to uncontrolled packet loss and
+    a resulting deterioration of the user's multimedia experience. The congestion
     control algorithm acts as a safety measure by stopping RTP flows from using excessive
     resources and protecting the network from overload. At the time of this writing,
     however, while there are several proprietary solutions, there is no standard algorithm
-    for congestion control of interactive RTP flows. This document does not propose
+    for congestion control of interactive RTP flows.\n\n This document does not propose
     a congestion control algorithm. It instead defines a minimal set of RTP circuit
     breakers: conditions under which an RTP sender needs to stop transmitting media
     data to protect the network from excessive congestion. It is expected that, in
@@ -106,34 +95,27 @@ abstract:
     IP networks will be able to operate without triggering these circuit breakers.
     To avoid triggering the RTP circuit breaker, any Standards Track congestion control
     algorithms defined for RTP will need to operate within the envelope set by these
-    RTP circuit breaker algorithms.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    RTP circuit breaker algorithms.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-avtcore-rtp-circuit-breakers-17
-    docid:
-    - id: draft-ietf-avtcore-rtp-circuit-breakers-17
+    formattedref: draft-ietf-avtcore-rtp-circuit-breakers-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-avtcore-rtp-circuit-breakers-17
+    docidentifier:
+    - content: draft-ietf-avtcore-rtp-circuit-breakers-17
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-avtcore-rtp-circuit-breakers-17
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-avtcore-rtp-circuit-breakers-18
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

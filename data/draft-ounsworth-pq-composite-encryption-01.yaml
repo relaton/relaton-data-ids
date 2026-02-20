@@ -1,168 +1,147 @@
 ---
-schema-version: v1.2.9
-id: draft-ounsworth-pq-composite-encryption-01
-title:
-- content: Composite Encryption For Use In Internet PKI
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-encryption-01
-  type: src
+id: draftounsworthpqcompositeencryption01
 type: standard
-docid:
-- id: draft-ounsworth-pq-composite-encryption-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Composite Encryption For Use In Internet PKI
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-encryption-01
+docidentifier:
+- content: draft-ounsworth-pq-composite-encryption
+  type: Internet-Draft
+- content: draft-ounsworth-pq-composite-encryption-01
   type: Internet-Draft
   primary: true
-- id: I-D.ounsworth-pq-composite-encryption
-  type: IETF
-  scope: anchor
 docnumber: I-D.ounsworth-pq-composite-encryption
 date:
 - type: published
-  value: '2022-02-14'
+  at: '2022-02-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Ounsworth
-        language:
-        - en
       completename:
+        language: en
         content: Mike Ounsworth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
+        - language: en
+          content: Entrust Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Gray
-        language:
-        - en
       completename:
+        language: en
         content: John Gray
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
+        - language: en
+          content: Entrust Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Serge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Serge
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Mister
-        language:
-        - en
       completename:
+        language: en
         content: Serge Mister
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
-  - type: author
+        - language: en
+          content: Entrust Limited
 version:
 - draft: '01'
-revdate: '2022-02-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With the widespread adoption of post-quantum cryptography will come
-    the need for an entity to possess multiple public keys on different cryptographic
-    algorithms. Since the trustworthiness of individual post-quantum algorithms is
-    at question, a multi-key cryptographic operation will need to be performed in
-    such a way that breaking it requires breaking each of the component algorithms
-    individually. This requires defining new structures for holding composite encryption
-    data. This document defines a content encryption process following the hybrid
-    model as described in the NIST Post-Quantum Crypto FAQ. This draft defines three
-    composite encryption modes. First, Composite Key Transport using Encryption primitives
-    which encrypts a message (typically a content encryption key) for a recipient
-    with a composite public key composed entirely of encryption keys by encrypting
-    it with multiple one-time-pad keys, each encrypted under a different recipient
-    public key. Second, Composite Key Transport using Encryption and KEM primitives
-    is the generalization of the previous mode to support a mixture of encryption
-    and KEM algorithms. Third, Composite Key Exchange is the most general and supports
-    establishing a shared secret using any combination of encryption, KEM, and key
-    exchange primitives where a master shared secret is generated using NIST SP 800-56Cr2.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With the widespread adoption of post-quantum cryptography will come\n
+    \  the need for an entity to possess multiple public keys on different\n   cryptographic
+    algorithms.  Since the trustworthiness of individual\n   post-quantum algorithms
+    is at question, a multi-key cryptographic\n   operation will need to be performed
+    in such a way that breaking it\n   requires breaking each of the component algorithms
+    individually.\n   This requires defining new structures for holding composite\n
+    \  encryption data.\n\n   This document defines a content encryption process following
+    the\n   hybrid model as described in the NIST Post-Quantum Crypto FAQ.  This\n
+    \  draft defines three composite encryption modes.  First, Composite Key\n   Transport
+    using Encryption primitives which encrypts a message\n   (typically a content
+    encryption key) for a recipient with a composite\n   public key composed entirely
+    of encryption keys by encrypting it with\n   multiple one-time-pad keys, each
+    encrypted under a different\n   recipient public key.  Second, Composite Key Transport
+    using\n   Encryption and KEM primitives is the generalization of the previous\n
+    \  mode to support a mixture of encryption and KEM algorithms.  Third,\n   Composite
+    Key Exchange is the most general and supports establishing\n   a shared secret
+    using any combination of encryption, KEM, and key\n   exchange primitives where
+    a master shared secret is generated using\n   NIST SP 800-56Cr2.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ounsworth-pq-composite-encryption-00
-    docid:
-    - id: draft-ounsworth-pq-composite-encryption-00
+    formattedref: draft-ounsworth-pq-composite-encryption-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-encryption-00
+    docidentifier:
+    - content: draft-ounsworth-pq-composite-encryption-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ounsworth-pq-composite-encryption-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ounsworth-pq-composite-encryption-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

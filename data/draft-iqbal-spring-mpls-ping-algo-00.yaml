@@ -1,186 +1,159 @@
 ---
-schema-version: v1.2.9
-id: draft-iqbal-spring-mpls-ping-algo-00
-title:
-- content: Supporting Flexible Algorithm Prefix SIDs in LSP Ping/Traceroute
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-iqbal-spring-mpls-ping-algo-00
-  type: src
+id: draftiqbalspringmplspingalgo00
 type: standard
-docid:
-- id: draft-iqbal-spring-mpls-ping-algo-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Supporting Flexible Algorithm Prefix SIDs in LSP Ping/Traceroute
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-iqbal-spring-mpls-ping-algo-00
+docidentifier:
+- content: draft-iqbal-spring-mpls-ping-algo
+  type: Internet-Draft
+- content: draft-iqbal-spring-mpls-ping-algo-00
   type: Internet-Draft
   primary: true
-- id: I-D.iqbal-spring-mpls-ping-algo
-  type: IETF
-  scope: anchor
 docnumber: I-D.iqbal-spring-mpls-ping-algo
 date:
 - type: published
-  value: '2018-06-28'
+  at: '2018-06-28'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        formatted_initials:
-          content: ''
-          language:
-          - en
+      formatted_initials:
+        language: en
       surname:
+        language: en
         content: faiqbal@cisco.com
-        language:
-        - en
       completename:
+        language: en
         content: faiqbal@cisco.com
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nagendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: N. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nagendra
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: N. K.
       surname:
+        language: en
         content: Nainar
-        language:
-        - en
       completename:
+        language: en
         content: Nagendra Kumar Nainar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zafar
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zafar
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Ali
-        language:
-        - en
       completename:
+        language: en
         content: Zafar Ali
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carlos
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carlos
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Pignataro
-        language:
-        - en
       completename:
+        language: en
         content: Carlos Pignataro
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems, Inc.
 version:
 - draft: '00'
-revdate: '2018-06-28'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>RFC8287 defines the extensions to MPLS LSP Ping and Traceroute for
-    Segment Routing IGP-Prefix and IGP-Adjacency Segment Identifier (SIDs) with an
-    MPLS data plane. [I-D.ietf-lsr-flex-algo] proposes a mechanism to allow IGPs to
-    compute constraint based path over network and use Segment Routing Prefix-SIDs
-    to steer packets along the constraint-based paths. All Prefix-SIDs associated
-    with the Flexible Algorithm are assigned to the same IPv4/IPv6 Prefix. Any Segment
-    Routing network that uses Flexible Algorithm based path computation needs additional
-    details to be carried in the FEC Stack sub-TLV for FEC validaiton. This document
-    updates [RFC8287] by modifying IPv4 and IPv6 IGP-Prefix Segment ID FEC sub-TLVs
-    to also include algorithm identification.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   RFC8287 defines the extensions to MPLS LSP Ping and Traceroute for\n
+    \  Segment Routing IGP-Prefix and IGP-Adjacency Segment Identifier\n   (SIDs)
+    with an MPLS data plane.  [I-D.ietf-lsr-flex-algo] proposes a\n   mechanism to
+    allow IGPs to compute constraint based path over network\n   and use Segment Routing
+    Prefix-SIDs to steer packets along the\n   constraint-based paths.  All Prefix-SIDs
+    associated with the Flexible\n   Algorithm are assigned to the same IPv4/IPv6
+    Prefix.  Any Segment\n   Routing network that uses Flexible Algorithm based path
+    computation\n   needs additional details to be carried in the FEC Stack sub-TLV
+    for\n   FEC validaiton.\n\n   This document updates [RFC8287] by modifying IPv4
+    and IPv6 IGP-Prefix\n   Segment ID FEC sub-TLVs to also include algorithm identification.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-iqbal-spring-mpls-ping-algo-01
-    docid:
-    - id: draft-iqbal-spring-mpls-ping-algo-01
+    formattedref: draft-iqbal-spring-mpls-ping-algo-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-iqbal-spring-mpls-ping-algo-01
+    docidentifier:
+    - content: draft-iqbal-spring-mpls-ping-algo-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-iqbal-spring-mpls-ping-algo-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-iqbal-spring-mpls-ping-algo-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

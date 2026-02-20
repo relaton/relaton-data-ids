@@ -1,190 +1,165 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rats-uccs-12
-title:
-- content: A CBOR Tag for Unprotected CWT Claims Sets
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-uccs-12
-  type: src
+id: draftietfratsuccs12
 type: standard
-docid:
-- id: draft-ietf-rats-uccs-12
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A CBOR Tag for Unprotected CWT Claims Sets
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-uccs-12
+docidentifier:
+- content: draft-ietf-rats-uccs
+  type: Internet-Draft
+- content: draft-ietf-rats-uccs-12
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rats-uccs
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rats-uccs
 date:
 - type: published
-  value: '2024-11-03'
+  at: '2024-11-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Henk
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Henk
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
       surname:
+        language: en
         content: Birkholz
-        language:
-        - en
       completename:
+        language: en
         content: Henk Birkholz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Fraunhofer SIT
-  role:
+        - language: en
+          content: Fraunhofer SIT
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeremy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeremy
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: O'Donoghue
-        language:
-        - en
       completename:
+        language: en
         content: Jeremy O'Donoghue
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Qualcomm Technologies Inc.
-  role:
+        - language: en
+          content: Qualcomm Technologies Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nancy
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nancy
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Cam-Winget
-        language:
-        - en
       completename:
+        language: en
         content: Nancy Cam-Winget
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
-  - type: author
+        - language: en
+          content: Universität Bremen TZI
 version:
 - draft: '12'
-revdate: '2024-11-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines the Unprotected CWT Claims Set (UCCS), a data
-    format for representing a CBOR Web Token (CWT) Claims Set without protecting it
-    by a signature, message authentication code (MAC), or encryption. UCCS enables
-    the use of CWT claims in environments where protection is provided by other means,
-    such as secure communication channels or trusted execution environments. This
-    specification defines a CBOR tag for UCCS and describes the UCCS format, its encoding,
-    and processing considerations, and discusses security implications of using unprotected
-    claims sets. // (This editors' note will be removed by the RFC editor:) The //
-    present revision (–12) contains remaining document changes based // on feedback
-    from the IESG evaluation and has been submitted as // input to IETF 121.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines the Unprotected CWT Claims Set (UCCS), a data\n
+    \  format for representing a CBOR Web Token (CWT) Claims Set without\n   protecting
+    it by a signature, message authentication code (MAC), or\n   encryption.  UCCS
+    enables the use of CWT claims in environments where\n   protection is provided
+    by other means, such as secure communication\n   channels or trusted execution
+    environments.  This specification\n   defines a CBOR tag for UCCS and describes
+    the UCCS format, its\n   encoding, and processing considerations, and discusses
+    security\n   implications of using unprotected claims sets.\n\n\n   // (This editors'
+    note will be removed by the RFC editor:) The\n   // present revision (–12) contains
+    remaining document changes based\n   // on feedback from the IESG evaluation and
+    has been submitted as\n   // input to IETF 121.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-rats-uccs-11
-    docid:
-    - id: draft-ietf-rats-uccs-11
+    formattedref: draft-ietf-rats-uccs-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-uccs-11
+    docidentifier:
+    - content: draft-ietf-rats-uccs-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-rats-uccs-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rats-uccs-12
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

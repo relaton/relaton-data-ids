@@ -1,214 +1,184 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ace-dtls-authorize-00
-title:
-- content: Datagram Transport Layer Security (DTLS) Profile for Authentication and
-    Authorization for Constrained Environments (ACE)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-00
-  type: src
+id: draftietfacedtlsauthorize00
 type: standard
-docid:
-- id: draft-ietf-ace-dtls-authorize-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Datagram Transport Layer Security (DTLS) Profile for Authentication and
+    Authorization for Constrained Environments (ACE)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-00
+docidentifier:
+- content: draft-ietf-ace-dtls-authorize
+  type: Internet-Draft
+- content: draft-ietf-ace-dtls-authorize-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ace-dtls-authorize
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ace-dtls-authorize
 date:
 - type: published
-  value: '2017-06-08'
+  at: '2017-06-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stefanie
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stefanie
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Gerdes
-        language:
-        - en
       completename:
+        language: en
         content: Stefanie Gerdes
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Olaf
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olaf
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Bergmann
-        language:
-        - en
       completename:
+        language: en
         content: Olaf Bergmann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Carsten
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Carsten
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Bormann
-        language:
-        - en
       completename:
+        language: en
         content: Carsten Bormann
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universität Bremen TZI
-  role:
+        - language: en
+          content: Universität Bremen TZI
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Selander
-        language:
-        - en
       completename:
+        language: en
         content: Göran Selander
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ludwig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ludwig
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Seitz
-        language:
-        - en
       completename:
+        language: en
         content: Ludwig Seitz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RISE SICS
-  role:
-  - type: author
+        - language: en
+          content: RISE SICS
 version:
 - draft: '00'
-revdate: '2017-06-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification defines a profile for delegating client authentication
-    and authorization in a constrained environment by establishing a Datagram Transport
-    Layer Security (DTLS) channel between resource-constrained nodes. The protocol
-    relies on DTLS for communication security between entities in a constrained network.
-    A resource-constrained node can use this protocol to delegate management of authorization
-    information to a trusted host with less severe limitations regarding processing
-    power and memory.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification defines a profile for delegating client\n   authentication
+    and authorization in a constrained environment by\n   establishing a Datagram
+    Transport Layer Security (DTLS) channel\n   between resource-constrained nodes.
+    \ The protocol relies on DTLS for\n   communication security between entities
+    in a constrained network.  A\n   resource-constrained node can use this protocol
+    to delegate\n   management of authorization information to a trusted host with
+    less\n   severe limitations regarding processing power and memory.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ace-dtls-authorize-01
-    docid:
-    - id: draft-ietf-ace-dtls-authorize-01
+    formattedref: draft-ietf-ace-dtls-authorize-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ace-dtls-authorize-01
+    docidentifier:
+    - content: draft-ietf-ace-dtls-authorize-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ace-dtls-authorize-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ace-dtls-authorize-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

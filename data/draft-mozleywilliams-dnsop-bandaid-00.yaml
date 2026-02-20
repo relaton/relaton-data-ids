@@ -1,187 +1,162 @@
 ---
-schema-version: v1.2.9
-id: draft-mozleywilliams-dnsop-bandaid-00
-title:
-- content: Brokered Agent Network for DNS AI Discovery
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mozleywilliams-dnsop-bandaid-00
-  type: src
+id: draftmozleywilliamsdnsopbandaid00
 type: standard
-docid:
-- id: draft-mozleywilliams-dnsop-bandaid-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Brokered Agent Network for DNS AI Discovery
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mozleywilliams-dnsop-bandaid-00
+docidentifier:
+- content: draft-mozleywilliams-dnsop-bandaid
+  type: Internet-Draft
+- content: draft-mozleywilliams-dnsop-bandaid-00
   type: Internet-Draft
   primary: true
-- id: I-D.mozleywilliams-dnsop-bandaid
-  type: IETF
-  scope: anchor
 docnumber: I-D.mozleywilliams-dnsop-bandaid
 date:
 - type: published
-  value: '2025-10-16'
+  at: '2025-10-16'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jim
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jim
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Mozley
-        language:
-        - en
       completename:
+        language: en
         content: Jim Mozley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Infoblox, Inc.
-  role:
+        - language: en
+          content: Infoblox, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nic
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nic
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Williams
-        language:
-        - en
       completename:
+        language: en
         content: Nic Williams
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Infoblox, Inc.
-  role:
+        - language: en
+          content: Infoblox, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Behcet
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Behcet
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Sarikaya
-        language:
-        - en
       completename:
+        language: en
         content: Behcet Sarikaya
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Unaffiliated
-  role:
+        - language: en
+          content: Unaffiliated
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Roland
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Roland
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Schott
-        language:
-        - en
       completename:
+        language: en
         content: Roland Schott
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Deutsche Telecom
-  role:
-  - type: author
+        - language: en
+          content: Deutsche Telecom
 version:
 - draft: '00'
-revdate: '2025-10-16'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The emerging field of agent-to-agent protocol standards introduces
-    new requirements in order to facilitate discovery, trust signaling, session negotiation
-    and communication. This document specifies a method for utilizing the Domain Name
-    System (DNS) to facilitate scalable and interoperable discovery between AI agents.
-    The proposed mechanism, referred to as _Brokered Agent Network for DNS AI Discovery_
-    (BANDAID), defines a structured DNS namespace and record usage model to support
-    metadata exchange and capability advertisement. BANDAID introduces a leaf zone
-    convention (e.g., _agents.example.com) containing Service Binding (SVCB) records
-    (e.g., chat._agents.example.com) that encode application-specific metadata. These
-    records enable agents to retrieve operational parameters prior to initiating a
-    session, supporting both targeted lookups and capability-based discovery. The
-    approach leverages existing DNS infrastructure, including DNS Service Discovery
-    (DNS-SD), DNSSEC, and DANE, to provide integrity, authenticity, and automation
-    without requiring human intervention. Lastly, the draft for Domain Control Validation
-    (DCV) proposes a best current practice to prove an agent is authorized to act
-    on behalf of a domain. _This document proposes no change to the structure of DNS
-    messages, and no new operation codes, response codes, resource record types, or
-    any other new DNS protocol values._</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The emerging field of agent-to-agent protocol standards introduces\n
+    \  new requirements in order to facilitate discovery, trust signaling,\n   session
+    negotiation and communication.  This document specifies a\n   method for utilizing
+    the Domain Name System (DNS) to facilitate\n   scalable and interoperable discovery
+    between AI agents.  The proposed\n   mechanism, referred to as _Brokered Agent
+    Network for DNS AI\n   Discovery_ (BANDAID), defines a structured DNS namespace
+    and record\n   usage model to support metadata exchange and capability\n   advertisement.\n\n
+    \  BANDAID introduces a leaf zone convention (e.g., _agents.example.com)\n   containing
+    Service Binding (SVCB) records (e.g.,\n   chat._agents.example.com) that encode
+    application-specific metadata.\n   These records enable agents to retrieve operational
+    parameters prior\n   to initiating a session, supporting both targeted lookups
+    and\n   capability-based discovery.  The approach leverages existing DNS\n   infrastructure,
+    including DNS Service Discovery (DNS-SD), DNSSEC, and\n   DANE, to provide integrity,
+    authenticity, and automation without\n   requiring human intervention.  Lastly,
+    the draft for Domain Control\n   Validation (DCV) proposes a best current practice
+    to prove an agent\n   is authorized to act on behalf of a domain.\n\n   _This
+    document proposes no change to the structure of DNS messages,\n   and no new operation
+    codes, response codes, resource record types, or\n   any other new DNS protocol
+    values._\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mozleywilliams-dnsop-bandaid-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

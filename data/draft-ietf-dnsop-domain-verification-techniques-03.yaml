@@ -1,202 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-dnsop-domain-verification-techniques-03
-title:
-- content: Domain Control Validation using DNS
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-domain-verification-techniques-03
-  type: src
+id: draftietfdnsopdomainverificationtechniques03
 type: standard
-docid:
-- id: draft-ietf-dnsop-domain-verification-techniques-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Domain Control Validation using DNS
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-domain-verification-techniques-03
+docidentifier:
+- content: draft-ietf-dnsop-domain-verification-techniques
+  type: Internet-Draft
+- content: draft-ietf-dnsop-domain-verification-techniques-03
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-dnsop-domain-verification-techniques
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-dnsop-domain-verification-techniques
 date:
 - type: published
-  value: '2023-10-17'
+  at: '2023-10-17'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Shivan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: S. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shivan
+      - language: en
+        script: Latn
+        initial: S
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: S. K.
       surname:
+        language: en
         content: Sahib
-        language:
-        - en
       completename:
+        language: en
         content: Shivan Kaul Sahib
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Brave Software
-  role:
+        - language: en
+          content: Brave Software
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Shumon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Shumon
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Huque
-        language:
-        - en
       completename:
+        language: en
         content: Shumon Huque
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Salesforce
-  role:
+        - language: en
+          content: Salesforce
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Wouters
-        language:
-        - en
       completename:
+        language: en
         content: Paul Wouters
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Aiven
-  role:
+        - language: en
+          content: Aiven
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Erik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Erik
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Nygren
-        language:
-        - en
       completename:
+        language: en
         content: Erik Nygren
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Akamai Technologies
-  role:
-  - type: author
+        - language: en
+          content: Akamai Technologies
 version:
 - draft: '03'
-revdate: '2023-10-17'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Many application services on the Internet need to verify ownership or
-    control of a domain in the Domain Name System (DNS). The general term for this
-    process is "Domain Control Validation", and can be done using a variety of methods
-    such as email, HTTP/HTTPS, or the DNS itself. This document focuses only on DNS-based
-    methods, which typically involve the application service provider requesting a
-    DNS record with a specific format and content to be visible in the requester's
-    domain. There is wide variation in the details of these methods today. This document
-    proposes some best practices to avoid known problems.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Many application services on the Internet need to verify ownership
+    or\n   control of a domain in the Domain Name System (DNS).  The general\n   term
+    for this process is \"Domain Control Validation\", and can be done\n   using a
+    variety of methods such as email, HTTP/HTTPS, or the DNS\n   itself.  This document
+    focuses only on DNS-based methods, which\n   typically involve the application
+    service provider requesting a DNS\n   record with a specific format and content
+    to be visible in the\n   requester's domain.  There is wide variation in the details
+    of these\n   methods today.  This document proposes some best practices to avoid\n
+    \  known problems.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-dnsop-domain-verification-techniques-02
-    docid:
-    - id: draft-ietf-dnsop-domain-verification-techniques-02
+    formattedref: draft-ietf-dnsop-domain-verification-techniques-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-domain-verification-techniques-02
+    docidentifier:
+    - content: draft-ietf-dnsop-domain-verification-techniques-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-domain-verification-techniques-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-dnsop-domain-verification-techniques-04
-    docid:
-    - id: draft-ietf-dnsop-domain-verification-techniques-04
+    formattedref: draft-ietf-dnsop-domain-verification-techniques-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-domain-verification-techniques-04
+    docidentifier:
+    - content: draft-ietf-dnsop-domain-verification-techniques-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-dnsop-domain-verification-techniques-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-dnsop-domain-verification-techniques-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

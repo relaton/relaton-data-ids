@@ -1,230 +1,199 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ccamp-optical-impairment-topology-yang-01
-title:
-- content: A Yang Data Model for Optical Impairment-aware Topology
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-01
-  type: src
+id: draftietfccampopticalimpairmenttopologyyang01
 type: standard
-docid:
-- id: draft-ietf-ccamp-optical-impairment-topology-yang-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Yang Data Model for Optical Impairment-aware Topology
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-01
+docidentifier:
+- content: draft-ietf-ccamp-optical-impairment-topology-yang
+  type: Internet-Draft
+- content: draft-ietf-ccamp-optical-impairment-topology-yang-01
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ccamp-optical-impairment-topology-yang
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ccamp-optical-impairment-topology-yang
 date:
 - type: published
-  value: '2019-05-27'
+  at: '2019-05-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Young
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Young
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Lee
-        language:
-        - en
       completename:
+        language: en
         content: Young Lee
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
+        - language: en
+          content: Futurewei
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Victor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Victor
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Victor Lopez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Telefonica
-  role:
+        - language: en
+          content: Telefonica
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gabriele
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gabriele
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Galimberti
-        language:
-        - en
       completename:
+        language: en
         content: Gabriele Galimberti
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: AUGE
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: L. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: AUGE
+      - language: en
+        script: Latn
+        initial: L
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: L. J.
       surname:
+        language: en
         content: Auge
-        language:
-        - en
       completename:
+        language: en
         content: AUGE Jean Luc
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dieter
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dieter
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Beller
-        language:
-        - en
       completename:
+        language: en
         content: Dieter Beller
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
-  - type: author
+        - language: en
+          content: Nokia
 version:
 - draft: '01'
-revdate: '2019-05-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>In order to provision an optical connection through optical networks,
-    a combination of path continuity, resource availability, and impairment constraints
-    must be met to determine viable and optimal paths through the network. The determination
-    of appropriate paths is known as Impairment-Aware Routing and Wavelength Assignment
-    (IA-RWA) for WSON, while it is known as Impairment-Aware Routing and Spectrum
-    Assigment (IA-RSA) for SSON. This document provides a YANG data model for the
-    impairment-aware TE topology in optical networks.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   In order to provision an optical connection through optical\n   networks,
+    a combination of path continuity, resource availability,\n   and impairment constraints
+    must be met to determine viable and\n   optimal paths through the network. The
+    determination of appropriate\n   paths is known as Impairment-Aware Routing and
+    Wavelength Assignment\n   (IA-RWA) for WSON, while it is known as Impairment-Aware
+    Routing and\n   Spectrum Assigment (IA-RSA) for SSON.\n\n   This document provides
+    a YANG data model for the impairment-aware TE\n   topology in optical networks.\n\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-ccamp-optical-impairment-topology-yang-00
-    docid:
-    - id: draft-ietf-ccamp-optical-impairment-topology-yang-00
+    formattedref: draft-ietf-ccamp-optical-impairment-topology-yang-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-00
+    docidentifier:
+    - content: draft-ietf-ccamp-optical-impairment-topology-yang-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ccamp-optical-impairment-topology-yang-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-ccamp-optical-impairment-topology-yang-02
-    docid:
-    - id: draft-ietf-ccamp-optical-impairment-topology-yang-02
+    formattedref: draft-ietf-ccamp-optical-impairment-topology-yang-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-02
+    docidentifier:
+    - content: draft-ietf-ccamp-optical-impairment-topology-yang-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-ccamp-optical-impairment-topology-yang-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ccamp-optical-impairment-topology-yang-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

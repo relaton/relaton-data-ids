@@ -1,142 +1,121 @@
 ---
-schema-version: v1.2.9
-id: draft-rosen-l3vpn-mvpn-segments-03
-title:
-- content: A Simple Method for Segmenting Multicast Tunnels for Multicast VPNs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-rosen-l3vpn-mvpn-segments-03
-  type: src
+id: draftrosenl3vpnmvpnsegments03
 type: standard
-docid:
-- id: draft-rosen-l3vpn-mvpn-segments-03
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Simple Method for Segmenting Multicast Tunnels for Multicast VPNs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-rosen-l3vpn-mvpn-segments-03
+docidentifier:
+- content: draft-rosen-l3vpn-mvpn-segments
+  type: Internet-Draft
+- content: draft-rosen-l3vpn-mvpn-segments-03
   type: Internet-Draft
   primary: true
-- id: I-D.rosen-l3vpn-mvpn-segments
-  type: IETF
-  scope: anchor
 docnumber: I-D.rosen-l3vpn-mvpn-segments
 date:
 - type: published
-  value: '2012-04-20'
+  at: '2012-04-20'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Maria
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Maria
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Napierala
-        language:
-        - en
       completename:
+        language: en
         content: Maria Napierala
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Eric
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: E. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Eric
+      - language: en
+        script: Latn
+        initial: E
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: E. C.
       surname:
+        language: en
         content: Rosen
-        language:
-        - en
       completename:
+        language: en
         content: Eric C. Rosen
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '03'
-revdate: '2012-04-20'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>To provide Multicast VPN (MVPN) Service, Service Providers (SPs) need
-    to instantiate multicast tunnels (known as "P-tunnels") that enable the Provider
-    Edge (PE) routers of a given VPN to transmit multicast packets to each other.
-    Some SPs organize their networks in a hierarchical manner, with the PE routers
-    in "edge areas", and the edge areas connected to each other via a "core area".
-    A P-tunnel that connects PE routers in different edge areas can be thought of
-    as having three segments: a segment through one edge area, a segment through the
-    core area, and a segment through the second edge area. It is desirable to preserve
-    the independence of the core area by allowing it to use a different tunneling
-    technology than that used in the edge areas. However, it is not desirable for
-    the core area Border Routers (BRs) to participate in the MVPN-specific signaling,
-    or even to have any knowledge of which MVPNs are in the edge areas that attach
-    to it. This document specifies a simple method for segmenting MVPN P-tunnels at
-    the BRs, subject to these constraints.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   To provide Multicast VPN (MVPN) Service, Service Providers (SPs) need\n
+    \  to instantiate multicast tunnels (known as \"P-tunnels\") that enable\n   the
+    Provider Edge (PE) routers of a given VPN to transmit multicast\n   packets to
+    each other.  Some SPs organize their networks in a\n   hierarchical manner, with
+    the PE routers in \"edge areas\", and the\n   edge areas connected to each other
+    via a \"core area\". A P-tunnel that\n   connects PE routers in different edge
+    areas can be thought of as\n   having three segments: a segment through one edge
+    area, a segment\n   through the core area, and a segment through the second edge
+    area.\n   It is desirable to preserve the independence of the core area by\n   allowing
+    it to use a different tunneling technology than that used in\n   the edge areas.
+    \ However, it is not desirable for the core area\n   Border Routers (BRs) to participate
+    in the MVPN-specific signaling,\n   or even to have any knowledge of which MVPNs
+    are in the edge areas\n   that attach to it.  This document specifies a simple
+    method for\n   segmenting MVPN P-tunnels at the BRs, subject to these constraints.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-rosen-l3vpn-mvpn-segments-02
-    docid:
-    - id: draft-rosen-l3vpn-mvpn-segments-02
+    formattedref: draft-rosen-l3vpn-mvpn-segments-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rosen-l3vpn-mvpn-segments-02
+    docidentifier:
+    - content: draft-rosen-l3vpn-mvpn-segments-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rosen-l3vpn-mvpn-segments-02
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-rosen-l3vpn-mvpn-segments-04
-    docid:
-    - id: draft-rosen-l3vpn-mvpn-segments-04
+    formattedref: draft-rosen-l3vpn-mvpn-segments-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rosen-l3vpn-mvpn-segments-04
+    docidentifier:
+    - content: draft-rosen-l3vpn-mvpn-segments-04
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-rosen-l3vpn-mvpn-segments-04
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-rosen-l3vpn-mvpn-segments-03
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

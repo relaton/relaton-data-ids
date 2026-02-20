@@ -1,160 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-li-sidrops-rpki-repository-problem-statement-00
-title:
-- content: RPKI Repository Problem Statement and Analysis
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-00
-  type: src
+id: draftlisidropsrpkirepositoryproblemstatement00
 type: standard
-docid:
-- id: draft-li-sidrops-rpki-repository-problem-statement-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: RPKI Repository Problem Statement and Analysis
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-00
+docidentifier:
+- content: draft-li-sidrops-rpki-repository-problem-statement
+  type: Internet-Draft
+- content: draft-li-sidrops-rpki-repository-problem-statement-00
   type: Internet-Draft
   primary: true
-- id: I-D.li-sidrops-rpki-repository-problem-statement
-  type: IETF
-  scope: anchor
 docnumber: I-D.li-sidrops-rpki-repository-problem-statement
 date:
 - type: published
-  value: '2024-09-27'
+  at: '2024-09-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Li Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Yingying
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yingying
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Su
-        language:
-        - en
       completename:
+        language: en
         content: Yingying Su
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
-  - type: author
+        - language: en
+          content: Zhongguancun Laboratory
 version:
 - draft: '00'
-revdate: '2024-09-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>With the widespread deployment of Route Origin Authorization (ROA)
-    and Route Origin Validation (ROV), Resource Public Key Infrastructure (RPKI) is
-    vital for securing inter-domain routing. RPKI uses cryptographic certificates
-    to verify the authenticity and authorization of IP address and AS number allocations
-    and the certificates are stored in the RPKI Repository. This document conducts
-    the data-driven analysis of the RPKI Repository, including a survey of worldwide
-    AS administrators and a measurement and analysis of the existing RPKI Repository.
-    This document finds that the current RPKI Repository architecture is sensitive
-    to failures and lacks of scalability. An attack or downtime of any repository
-    Publication Point (PP) will prevent RPs from obtaining complete RPKI object views.
-    Furthermore, since the current RPKI Repository is not tamper-resistant, RPKI authorities
-    can easily manipulate RPKI objects without consent from subordinate INR holders.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   With the widespread deployment of Route Origin Authorization (ROA)\n
+    \  and Route Origin Validation (ROV), Resource Public Key Infrastructure\n   (RPKI)
+    is vital for securing inter-domain routing.  RPKI uses\n   cryptographic certificates
+    to verify the authenticity and\n   authorization of IP address and AS number allocations
+    and the\n   certificates are stored in the RPKI Repository.  This document\n   conducts
+    the data-driven analysis of the RPKI Repository, including a\n   survey of worldwide
+    AS administrators and a measurement and analysis\n   of the existing RPKI Repository.
+    \ This document finds that the\n   current RPKI Repository architecture is sensitive
+    to failures and\n   lacks of scalability.  An attack or downtime of any repository\n
+    \  Publication Point (PP) will prevent RPs from obtaining complete RPKI\n   object
+    views.  Furthermore, since the current RPKI Repository is not\n   tamper-resistant,
+    RPKI authorities can easily manipulate RPKI objects\n   without consent from subordinate
+    INR holders.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-li-sidrops-rpki-repository-problem-statement-01
-    docid:
-    - id: draft-li-sidrops-rpki-repository-problem-statement-01
+    formattedref: draft-li-sidrops-rpki-repository-problem-statement-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-rpki-repository-problem-statement-01
+    docidentifier:
+    - content: draft-li-sidrops-rpki-repository-problem-statement-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-li-sidrops-rpki-repository-problem-statement-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-li-sidrops-rpki-repository-problem-statement-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

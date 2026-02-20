@@ -1,182 +1,155 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-ospf-rfc2370bis-05
-title:
-- content: The OSPF Opaque LSA Option
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-ospf-rfc2370bis-05
-  type: src
+id: draftietfospfrfc2370bis05
 type: standard
-docid:
-- id: draft-ietf-ospf-rfc2370bis-05
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: The OSPF Opaque LSA Option
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-ospf-rfc2370bis-05
+docidentifier:
+- content: draft-ietf-ospf-rfc2370bis
+  type: Internet-Draft
+- content: draft-ietf-ospf-rfc2370bis-05
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-ospf-rfc2370bis
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-ospf-rfc2370bis
 date:
 - type: published
-  value: '2008-05-08'
+  at: '2008-05-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Rob
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Rob
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Coltun
-        language:
-        - en
       completename:
+        language: en
         content: Rob Coltun
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Acoustra Productions
-  role:
+        - language: en
+          content: Acoustra Productions
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Alex
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: A. D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Alex
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: A. D.
       surname:
+        language: en
         content: Zinin
-        language:
-        - en
       completename:
+        language: en
         content: Alex D. Zinin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Alcatel-Lucent
-  role:
+        - language: en
+          content: Alcatel-Lucent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Igor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Igor
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Bryskin
-        language:
-        - en
       completename:
+        language: en
         content: Igor Bryskin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Adva
-  role:
+        - language: en
+          content: Adva
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lou
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lou
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Berger
-        language:
-        - en
       completename:
+        language: en
         content: Lou Berger
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: LabN
-  role:
-  - type: author
+        - language: en
+          content: LabN
 version:
 - draft: '05'
-revdate: '2008-05-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document defines enhancements to the OSPF protocol to support
-    a new class of link state advertisements (LSAs) called Opaque LSAs. Opaque LSAs
-    provide a generalized mechanism to allow for the future extensibility of OSPF.
-    Opaque LSAs consist of a standard LSA header followed by application-specific
-    information. The information field may be used directly by OSPF or by other applications.
-    Standard OSPF link-state database flooding mechanisms are used to distribute Opaque
-    LSAs to all or some limited portion of the OSPF topology. This document replaces
+- language: en
+  script: Latn
+  content: "This document defines enhancements to the OSPF protocol to support a new
+    class of link state advertisements (LSAs) called Opaque LSAs. Opaque LSAs provide
+    a generalized mechanism to allow for the future extensibility of OSPF. Opaque
+    LSAs consist of a standard LSA header followed by application-specific information.
+    The information field may be used directly by OSPF or by other applications. Standard
+    OSPF link-state database flooding mechanisms are used to distribute Opaque LSAs
+    to all or some limited portion of the OSPF topology.\n\n This document replaces
     RFC 2370 and adds to it a mechanism to enable an OSPF router to validate Autonomous
-    System (AS)-scope Opaque LSAs originated outside of the router's OSPF area. [STANDARDS-TRACK]</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    System (AS)-scope Opaque LSAs originated outside of the router's OSPF area. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-ospf-rfc2370bis-05
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

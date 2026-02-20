@@ -1,97 +1,84 @@
 ---
-schema-version: v1.2.9
-id: draft-sheffer-wimse-s2s-reduced-00
-title:
-- content: WIMSE Workload-to-Workload Authentication - Proposed Revision
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sheffer-wimse-s2s-reduced-00
-  type: src
+id: draftshefferwimses2sreduced00
 type: standard
-docid:
-- id: draft-sheffer-wimse-s2s-reduced-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: WIMSE Workload-to-Workload Authentication - Proposed Revision
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sheffer-wimse-s2s-reduced-00
+docidentifier:
+- content: draft-sheffer-wimse-s2s-reduced
+  type: Internet-Draft
+- content: draft-sheffer-wimse-s2s-reduced-00
   type: Internet-Draft
   primary: true
-- id: I-D.sheffer-wimse-s2s-reduced
-  type: IETF
-  scope: anchor
 docnumber: I-D.sheffer-wimse-s2s-reduced
 date:
 - type: published
-  value: '2025-09-21'
+  at: '2025-09-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yaron
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yaron
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Sheffer
-        language:
-        - en
       completename:
+        language: en
         content: Yaron Sheffer
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Intuit
-  role:
-  - type: author
+        - language: en
+          content: Intuit
 version:
 - draft: '00'
-revdate: '2025-09-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document is a proposed revision that simplifies the working group's
-    workload-to-workload protocol document. If accepted by the working group, these
-    changes will be back-ported to that document. Otherwise, it was a good try. The
-    WIMSE architecture defines authentication and authorization for software workloads
-    in a variety of runtime environments, from the most basic ones up to complex multi-service,
-    multi-cloud, multi- tenant deployments. This document defines the simplest, atomic
-    unit of this architecture: the protocol between two workloads that need to verify
-    each other's identity in order to communicate securely. The scope of this protocol
-    is a single HTTP request-and-response pair. To address the needs of different
-    setups, we propose two protocols, one at the application level and one that makes
-    use of trusted TLS transport. These two protocols are compatible, in the sense
-    that a single call chain can have some calls use one protocol and some use the
-    other. Workload A can call Workload B with mutual TLS authentication, while the
-    next call from Workload B to Workload C would be authenticated at the application
-    level.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document is a proposed revision that simplifies the working\n
+    \  group's workload-to-workload protocol document.  If accepted by the\n   working
+    group, these changes will be back-ported to that document.\n   Otherwise, it was
+    a good try.\n\n   The WIMSE architecture defines authentication and authorization
+    for\n   software workloads in a variety of runtime environments, from the\n   most
+    basic ones up to complex multi-service, multi-cloud, multi-\n   tenant deployments.
+    \ This document defines the simplest, atomic unit\n   of this architecture: the
+    protocol between two workloads that need to\n   verify each other's identity in
+    order to communicate securely.  The\n   scope of this protocol is a single HTTP
+    request-and-response pair.\n   To address the needs of different setups, we propose
+    two protocols,\n   one at the application level and one that makes use of trusted
+    TLS\n   transport.  These two protocols are compatible, in the sense that a\n
+    \  single call chain can have some calls use one protocol and some use\n   the
+    other.  Workload A can call Workload B with mutual TLS\n   authentication, while
+    the next call from Workload B to Workload C\n   would be authenticated at the
+    application level.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sheffer-wimse-s2s-reduced-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

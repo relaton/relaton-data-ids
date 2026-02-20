@@ -1,146 +1,126 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-manet-nhdp-optimization-02
-title:
-- content: An Optimization for the MANET Neighborhood Discovery Protocol (NHDP)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-optimization-02
-  type: src
+id: draftietfmanetnhdpoptimization02
 type: standard
-docid:
-- id: draft-ietf-manet-nhdp-optimization-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: An Optimization for the MANET Neighborhood Discovery Protocol (NHDP)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-optimization-02
+docidentifier:
+- content: draft-ietf-manet-nhdp-optimization
+  type: Internet-Draft
+- content: draft-ietf-manet-nhdp-optimization-02
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-manet-nhdp-optimization
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-manet-nhdp-optimization
 date:
 - type: published
-  value: '2014-08-07'
+  at: '2014-08-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Dearlove
-        language:
-        - en
       completename:
+        language: en
         content: Christopher Dearlove
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: T. H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: T. H.
       surname:
+        language: en
         content: Clausen
-        language:
-        - en
       completename:
+        language: en
         content: Thomas H. Clausen
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '02'
-revdate: '2014-08-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The link quality mechanism of the MANET Neighborhood Discovery Protocol
-    (NHDP) enables "ignoring" some 1-hop neighbors if the measured link quality from
-    that 1-hop neighbor is below an acceptable threshold, while still retaining the
-    corresponding link information as acquired from HELLO message exchange. This allows
-    immediate reinstatement of the 1-hop neighbor if the link quality later improves
-    sufficiently. NHDP also collects information about symmetric 2-hop neighbors.
-    However it specifies that if a link from a symmetric 1-hop neighbor ceases being
-    symmetric, including while "ignored" as described above, then corresponding symmetric
-    2-hop neighbors are removed. This may lead to symmetric 2-hop neighborhood information
-    being permanently removed (until further HELLO messages are received) if the link
-    quality of a symmetric 1-hop neighbor drops below the acceptable threshold, even
-    if only for a moment. This specification updates RFC6130 "Mobile Ad Hoc Network
-    (MANET) Neighborhood Discovery Protocol (NHDP)", and RFC7181 "The Optimized Link
-    State Routing Protocol version 2 (OLSRv2)" to permit retaining, but ignoring,
-    symmetric 2-hop information when the link quality from the corresponding 1-hop
-    neighbor drops below the acceptable threshold. This allows immediate reinstatement
-    of the symmetric 2-hop neighbor if the link quality later improves sufficiently,
-    thus making the symmetric 2-hop neighborhood more "robust".</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The link quality mechanism of the MANET Neighborhood Discovery\n   Protocol
+    (NHDP) enables \"ignoring\" some 1-hop neighbors if the\n   measured link quality
+    from that 1-hop neighbor is below an acceptable\n   threshold, while still retaining
+    the corresponding link information\n   as acquired from HELLO message exchange.
+    \ This allows immediate\n   reinstatement of the 1-hop neighbor if the link quality
+    later\n   improves sufficiently.\n\n   NHDP also collects information about symmetric
+    2-hop neighbors.\n   However it specifies that if a link from a symmetric 1-hop
+    neighbor\n   ceases being symmetric, including while \"ignored\" as described
+    above,\n   then corresponding symmetric 2-hop neighbors are removed.  This may\n
+    \  lead to symmetric 2-hop neighborhood information being permanently\n   removed
+    (until further HELLO messages are received) if the link\n   quality of a symmetric
+    1-hop neighbor drops below the acceptable\n   threshold, even if only for a moment.\n\n
+    \  This specification updates RFC6130 \"Mobile Ad Hoc Network (MANET)\n   Neighborhood
+    Discovery Protocol (NHDP)\", and RFC7181 \"The Optimized\n   Link State Routing
+    Protocol version 2 (OLSRv2)\" to permit retaining,\n   but ignoring, symmetric
+    2-hop information when the link quality from\n   the corresponding 1-hop neighbor
+    drops below the acceptable\n   threshold.  This allows immediate reinstatement
+    of the symmetric\n   2-hop neighbor if the link quality later improves sufficiently,
+    thus\n   making the symmetric 2-hop neighborhood more \"robust\".\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-manet-nhdp-optimization-01
-    docid:
-    - id: draft-ietf-manet-nhdp-optimization-01
+    formattedref: draft-ietf-manet-nhdp-optimization-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-optimization-01
+    docidentifier:
+    - content: draft-ietf-manet-nhdp-optimization-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-manet-nhdp-optimization-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-manet-nhdp-optimization-03
-    docid:
-    - id: draft-ietf-manet-nhdp-optimization-03
+    formattedref: draft-ietf-manet-nhdp-optimization-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-optimization-03
+    docidentifier:
+    - content: draft-ietf-manet-nhdp-optimization-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-manet-nhdp-optimization-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-manet-nhdp-optimization-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

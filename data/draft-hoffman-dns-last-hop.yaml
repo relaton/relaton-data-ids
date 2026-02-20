@@ -1,44 +1,39 @@
 ---
-schema-version: v1.2.9
-id: draft-hoffman-dns-last-hop
+id: drafthoffmandnslasthop
+schema_version: v1.4.1
+formattedref: draft-hoffman-dns-last-hop
 title:
-- content: Wrapping Last-Hop DNS for Traffic Protection
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-docid:
-- id: draft-hoffman-dns-last-hop
+- language: en
+  script: Latn
+  content: Wrapping Last-Hop DNS for Traffic Protection
+docidentifier:
+- content: draft-hoffman-dns-last-hop
   type: Internet-Draft
   primary: true
 abstract:
-- content: <p>DNS queries from one resolver to an upstream resolver are often run
-    over connections with no protection of any kind. The stub resolvers that initiate
-    queries for an application are ofte called "last-hop", and their queries go to
-    trusted recursive resolvers. The connection between last-hop resolvers and their
-    upstream resolver is currently susceptible to both malicious and unintentional
-    alteration that prevents the querying resolver from being sure that the results
-    it receives are valid. Some middleboxes can prevent a stub resolver, even one
-    that does DNSSEC validation, from getting enough information to validate a response.
-    Further, a non-validating stub resolver is susceptible to active attacks in which
-    the results are purposely altered. The protocol described in this document provides
-    a method to avoid these problems and thus make resolution significantly more secure.
-    This protocol can be used between any two DNS resolvers, but the focus of this
-    document is on last-hop resolvers.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "DNS queries from one resolver to an upstream resolver are often run\nover
+    connections with no protection of any kind.  The stub resolvers\nthat initiate
+    queries for an application are ofte called \"last-hop\",\nand their queries go
+    to trusted recursive resolvers.  The connection\nbetween last-hop resolvers and
+    their upstream resolver is currently\nsusceptible to both malicious and unintentional
+    alteration that\nprevents the querying resolver from being sure that the results
+    it\nreceives are valid.  Some middleboxes can prevent a stub resolver,\neven one
+    that does DNSSEC validation, from getting enough information\nto validate a response.
+    \ Further, a non-validating stub resolver is\nsusceptible to active attacks in
+    which the results are purposely\naltered.\n\nThe protocol described in this document
+    provides a method to avoid\nthese problems and thus make resolution significantly
+    more secure.\nThis protocol can be used between any two DNS resolvers, but the\nfocus
+    of this document is on last-hop resolvers.\n\t "
 relation:
 - type: includes
   bibitem:
-    id: draft-hoffman-dns-last-hop-01
-    docid:
-    - id: draft-hoffman-dns-last-hop-01
+    formattedref: draft-hoffman-dns-last-hop-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hoffman-dns-last-hop-01
+    docidentifier:
+    - content: draft-hoffman-dns-last-hop-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-hoffman-dns-last-hop-01
-      format: text/plain

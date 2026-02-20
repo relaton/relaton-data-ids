@@ -1,208 +1,184 @@
 ---
-schema-version: v1.2.9
-id: draft-ounsworth-pq-composite-sigs-10
-title:
-- content: Composite Signatures For Use In Internet PKI
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-sigs-10
-  type: src
+id: draftounsworthpqcompositesigs10
 type: standard
-docid:
-- id: draft-ounsworth-pq-composite-sigs-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Composite Signatures For Use In Internet PKI
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-sigs-10
+docidentifier:
+- content: draft-ounsworth-pq-composite-sigs
+  type: Internet-Draft
+- content: draft-ounsworth-pq-composite-sigs-10
   type: Internet-Draft
   primary: true
-- id: I-D.ounsworth-pq-composite-sigs
-  type: IETF
-  scope: anchor
 docnumber: I-D.ounsworth-pq-composite-sigs
 date:
 - type: published
-  value: '2023-10-23'
+  at: '2023-10-23'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Ounsworth
-        language:
-        - en
       completename:
+        language: en
         content: Mike Ounsworth
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
+        - language: en
+          content: Entrust Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Gray
-        language:
-        - en
       completename:
+        language: en
         content: John Gray
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Entrust Limited
-  role:
+        - language: en
+          content: Entrust Limited
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Massimiliano
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Massimiliano
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Pala
-        language:
-        - en
       completename:
+        language: en
         content: Massimiliano Pala
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CableLabs
-  role:
+        - language: en
+          content: CableLabs
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Klaußner
-        language:
-        - en
       completename:
+        language: en
         content: Jan Klaußner
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: D-Trust GmbH
-  role:
-  - type: author
+        - language: en
+          content: D-Trust GmbH
 version:
 - draft: '10'
-revdate: '2023-10-23'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>The migration to post-quantum cryptography is unique in the history
-    of modern digital cryptography in that neither the old outgoing nor the new incoming
-    algorithms are fully trusted to protect data for the required data lifetimes.
-    The outgoing algorithms, such as RSA and elliptic curve, may fall to quantum cryptanalysis,
-    while the incoming post-quantum algorithms face uncertainty about both the underlying
-    mathematics as well as hardware and software implementations that have not had
-    sufficient maturing time to rule out classical cryptanalytic attacks and implementation
-    bugs. Cautious implementers may wish to layer cryptographic algorithms such that
-    an attacker would need to break all of them in order to compromise the data being
-    protected using either a Post-Quantum / Traditional Hybrid, Post-Quantum / Post-Quantum
-    Hybrid, or combinations thereof. This document, and its companions, defines a
-    specific instantiation of hybrid paradigm called "composite" where multiple cryptographic
-    algorithms are combined to form a single key or signature such that they can be
-    treated as a single atomic object at the protocol level. This document defines
-    the structures CompositeSignaturePublicKey, CompositeSignaturePrivateKey and CompositeSignatureValue,
-    which are sequences of the respective structure for each component algorithm.
-    Composite signature algorithm identifiers are specified in this document which
-    represent the explicit combinations of the underlying component algorithms.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The migration to post-quantum cryptography is unique in the history\n
+    \  of modern digital cryptography in that neither the old outgoing nor\n   the
+    new incoming algorithms are fully trusted to protect data for the\n   required
+    data lifetimes.  The outgoing algorithms, such as RSA and\n   elliptic curve,
+    may fall to quantum cryptanalysis, while the incoming\n   post-quantum algorithms
+    face uncertainty about both the underlying\n   mathematics as well as hardware
+    and software implementations that\n   have not had sufficient maturing time to
+    rule out classical\n   cryptanalytic attacks and implementation bugs.\n\n   Cautious
+    implementers may wish to layer cryptographic algorithms such\n   that an attacker
+    would need to break all of them in order to\n   compromise the data being protected
+    using either a Post-Quantum /\n   Traditional Hybrid, Post-Quantum / Post-Quantum
+    Hybrid, or\n   combinations thereof.  This document, and its companions, defines
+    a\n   specific instantiation of hybrid paradigm called \"composite\" where\n   multiple
+    cryptographic algorithms are combined to form a single key\n   or signature such
+    that they can be treated as a single atomic object\n   at the protocol level.\n\n
+    \  This document defines the structures CompositeSignaturePublicKey,\n   CompositeSignaturePrivateKey
+    and CompositeSignatureValue, which are\n   sequences of the respective structure
+    for each component algorithm.\n   Composite signature algorithm identifiers are
+    specified in this\n   document which represent the explicit combinations of the
+    underlying\n   component algorithms.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ounsworth-pq-composite-sigs-09
-    docid:
-    - id: draft-ounsworth-pq-composite-sigs-09
+    formattedref: draft-ounsworth-pq-composite-sigs-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-sigs-09
+    docidentifier:
+    - content: draft-ounsworth-pq-composite-sigs-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ounsworth-pq-composite-sigs-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ounsworth-pq-composite-sigs-11
-    docid:
-    - id: draft-ounsworth-pq-composite-sigs-11
+    formattedref: draft-ounsworth-pq-composite-sigs-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ounsworth-pq-composite-sigs-11
+    docidentifier:
+    - content: draft-ounsworth-pq-composite-sigs-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ounsworth-pq-composite-sigs-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ounsworth-pq-composite-sigs-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

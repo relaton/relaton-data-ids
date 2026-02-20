@@ -1,178 +1,150 @@
 ---
-schema-version: v1.2.9
-id: draft-popovic-iprp-00
-title:
-- content: 'iPRP: Parallel Redundancy Protocol for IP Networks'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-popovic-iprp-00
-  type: src
+id: draftpopoviciprp00
 type: standard
-docid:
-- id: draft-popovic-iprp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'iPRP: Parallel Redundancy Protocol for IP Networks'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-popovic-iprp-00
+docidentifier:
+- content: draft-popovic-iprp
+  type: Internet-Draft
+- content: draft-popovic-iprp-00
   type: Internet-Draft
   primary: true
-- id: I-D.popovic-iprp
-  type: IETF
-  scope: anchor
 docnumber: I-D.popovic-iprp
 date:
 - type: published
-  value: '2015-08-10'
+  at: '2015-08-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Miroslav
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Miroslav
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Popovic
-        language:
-        - en
       completename:
+        language: en
         content: Miroslav Popovic
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Maaz
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Maaz
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Mohiuddin
-        language:
-        - en
       completename:
+        language: en
         content: Maaz Mohiuddin
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Le Boudec
-        language:
-        - en
       completename:
+        language: en
         content: Jean-Yves Le Boudec
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Tomozei
-        language:
-        - en
       completename:
+        language: en
         content: Dan-Cristian Tomozei
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2015-08-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Reliable packet delivery within stringent delay-constraints is of paramount
-    importance to industrial processes with hard real-time constraints, such as electrical
-    grid monitoring. Because retransmission and coding techniques counteract the delay
-    requirements, reliability is achieved through replication over multiple fail-independent
-    paths. Existing solutions such as the parallel redundancy protocol (PRP) replicate
-    all packets at the MAC layer over parallel paths. PRP works best in local area
-    networks, e.g., sub-station networks. However, it is not viable for IP-layer wide-area
-    networks which are key elements of emerging smart grids. Such a limitation on
-    scalability, coupled with lack of security, and diagnostic inability, renders
-    it unsuitable for reliable data- delivery in smart grids. To address this issue,
-    a transport-layer design: IP parallel redundancy protocol (iPRP) is presented.
-    Designing iPRP poses non-trivial challenges in the form of selective packet-replication,
-    soft-state and multicast support. In addition to unicast, iPRP supports multicast,
-    widely used in smart-grid networks. It replicates only time-critical UDP traffic.
-    iPRP only requires a simple software installation on the end-devices. There are
-    no other modifications needed to the existing monitoring application, end- device
-    operating system or to the intermediate network devices. iPRP has a set of diagnostic
-    tools for network debugging. With an implementation of iPRP in Linux, it is shown
-    that iPRP supports multiple flows with minimal processing-and-delay overhead.
-    It is publicly available and is currently being installed in the EPFL campus smart-grid.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Reliable packet delivery within stringent delay-constraints is of\n
+    \  paramount importance to industrial processes with hard real-time\n   constraints,
+    such as electrical grid monitoring. Because\n   retransmission and coding techniques
+    counteract the delay\n   requirements, reliability is achieved through replication
+    over\n   multiple fail-independent paths. Existing solutions such as the\n   parallel
+    redundancy protocol (PRP) replicate all packets at the MAC\n   layer over parallel
+    paths. PRP works best in local area networks,\n   e.g., sub-station networks.
+    However, it is not viable for IP-layer\n   wide-area networks which are key elements
+    of emerging smart grids.\n   Such a limitation on scalability, coupled with lack
+    of security, and\n   diagnostic inability, renders it unsuitable for reliable
+    data-\n   delivery in smart grids. To address this issue, a transport-layer\n
+    \  design: IP parallel redundancy protocol (iPRP) is presented.\n   Designing
+    iPRP poses non-trivial challenges in the form of selective\n   packet-replication,
+    soft-state and multicast support. In addition to\n   unicast, iPRP supports multicast,
+    widely used in smart-grid networks.\n   It replicates only time-critical UDP traffic.
+    iPRP only requires a\n   simple software installation on the end-devices. There
+    are no other\n   modifications needed to the existing monitoring application,
+    end-\n   device operating system or to the intermediate network devices. iPRP\n
+    \  has a set of diagnostic tools for network debugging. With an\n   implementation
+    of iPRP in Linux, it is shown that iPRP supports\n   multiple flows with minimal
+    processing-and-delay overhead. It is\n   publicly available and is currently being
+    installed in the EPFL\n   campus smart-grid.\n\n\n\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-popovic-iprp-01
-    docid:
-    - id: draft-popovic-iprp-01
+    formattedref: draft-popovic-iprp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-popovic-iprp-01
+    docidentifier:
+    - content: draft-popovic-iprp-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-popovic-iprp-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-popovic-iprp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

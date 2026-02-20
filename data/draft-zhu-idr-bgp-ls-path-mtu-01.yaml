@@ -1,206 +1,181 @@
 ---
-schema-version: v1.2.9
-id: draft-zhu-idr-bgp-ls-path-mtu-01
-title:
-- content: BGP-LS Extensions for Advertising Path MTU
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgp-ls-path-mtu-01
-  type: src
+id: draftzhuidrbgplspathmtu01
 type: standard
-docid:
-- id: draft-zhu-idr-bgp-ls-path-mtu-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP-LS Extensions for Advertising Path MTU
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgp-ls-path-mtu-01
+docidentifier:
+- content: draft-zhu-idr-bgp-ls-path-mtu
+  type: Internet-Draft
+- content: draft-zhu-idr-bgp-ls-path-mtu-01
   type: Internet-Draft
   primary: true
-- id: I-D.zhu-idr-bgp-ls-path-mtu
-  type: IETF
-  scope: anchor
 docnumber: I-D.zhu-idr-bgp-ls-path-mtu
 date:
 - type: published
-  value: '2019-07-03'
+  at: '2019-07-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Yongqing
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Yongqing
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Zhu
-        language:
-        - en
       completename:
+        language: en
         content: Yongqing Zhu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: China Telecom
-  role:
+        - language: en
+          content: China Telecom
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Zhibo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Z
-        formatted_initials:
-          content: Z.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Zhibo
+      - language: en
+        script: Latn
+        initial: Z
+      formatted_initials:
+        language: en
+        content: Z.
       surname:
+        language: en
         content: Hu
-        language:
-        - en
       completename:
+        language: en
         content: Zhibo Hu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gang
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gang
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Yan
-        language:
-        - en
       completename:
+        language: en
         content: Gang Yan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
+        - language: en
+          content: Huawei Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Junda
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Junda
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Yao
-        language:
-        - en
       completename:
+        language: en
         content: Junda Yao
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Huawei Technologies
-  role:
-  - type: author
+        - language: en
+          content: Huawei Technologies
 version:
 - draft: '01'
-revdate: '2019-07-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BGP Link State (BGP-LS) describes a mechanism by which link-state and
-    TE information can be collected from networks and shared with external components
-    using the BGP routing protocol. The centralized controller (PCE/SDN) completes
-    the service path calculation based on the information transmitted by the BGP-LS
-    and delivers the result to the Path Computation Client (PCC) through the PCEP
-    or BGP protocol. Segment Routing (SR) leverages the source routing paradigm, which
-    can be directly applied to the MPLS architecture with no change on the forwarding
-    plane and applied to the IPv6 architecture, with a new type of routing header,
-    called SRH. The SR uses the IGP protocol as the control protocol. Compared to
-    the MPLS tunneling technology, the SR does not require additional signaling. Therefore,
-    the SR does not support the negotiation of the Path MTU. Since Multiple labels
-    or SRv6 SIDs are pushed in the packets, it is more likely that the packet size
-    exceeds the path mtu of SR tunnel. This document specify the extension to BGP
-    Link State (BGP-LS) to carry maximum transmission unit (MTU) messages of link.
-    The PCE/SDN calculates the Path MTU while completing the service path calculation
-    based on the information transmitted by the BGP-LS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   BGP Link State (BGP-LS) describes a mechanism by which link-state and\n
+    \  TE information can be collected from networks and shared with\n   external
+    components using the BGP routing protocol.  The centralized\n   controller (PCE/SDN)
+    completes the service path calculation based on\n   the information transmitted
+    by the BGP-LS and delivers the result to\n   the Path Computation Client (PCC)
+    through the PCEP or BGP protocol.\n\n   Segment Routing (SR) leverages the source
+    routing paradigm, which can\n   be directly applied to the MPLS architecture with
+    no change on the\n   forwarding plane and applied to the IPv6 architecture, with
+    a new\n   type of routing header, called SRH.  The SR uses the IGP protocol as\n
+    \  the control protocol.  Compared to the MPLS tunneling technology, the\n   SR
+    does not require additional signaling.  Therefore, the SR does not\n   support
+    the negotiation of the Path MTU.  Since Multiple labels or\n   SRv6 SIDs are pushed
+    in the packets, it is more likely that the\n   packet size exceeds the path mtu
+    of SR tunnel.\n\n   This document specify the extension to BGP Link State (BGP-LS)
+    to\n   carry maximum transmission unit (MTU) messages of link.  The PCE/SDN\n
+    \  calculates the Path MTU while completing the service path calculation\n   based
+    on the information transmitted by the BGP-LS.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-zhu-idr-bgp-ls-path-mtu-00
-    docid:
-    - id: draft-zhu-idr-bgp-ls-path-mtu-00
+    formattedref: draft-zhu-idr-bgp-ls-path-mtu-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgp-ls-path-mtu-00
+    docidentifier:
+    - content: draft-zhu-idr-bgp-ls-path-mtu-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zhu-idr-bgp-ls-path-mtu-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-zhu-idr-bgp-ls-path-mtu-02
-    docid:
-    - id: draft-zhu-idr-bgp-ls-path-mtu-02
+    formattedref: draft-zhu-idr-bgp-ls-path-mtu-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zhu-idr-bgp-ls-path-mtu-02
+    docidentifier:
+    - content: draft-zhu-idr-bgp-ls-path-mtu-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-zhu-idr-bgp-ls-path-mtu-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-zhu-idr-bgp-ls-path-mtu-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

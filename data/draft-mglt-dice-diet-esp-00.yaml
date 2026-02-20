@@ -1,146 +1,123 @@
 ---
-schema-version: v1.2.9
-id: draft-mglt-dice-diet-esp-00
-title:
-- content: 'Diet-ESP: a flexible and compressed format for IPsec/ESP'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-mglt-dice-diet-esp-00
-  type: src
+id: draftmgltdicedietesp00
 type: standard
-docid:
-- id: draft-mglt-dice-diet-esp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Diet-ESP: a flexible and compressed format for IPsec/ESP'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-mglt-dice-diet-esp-00
+docidentifier:
+- content: draft-mglt-dice-diet-esp
+  type: Internet-Draft
+- content: draft-mglt-dice-diet-esp-00
   type: Internet-Draft
   primary: true
-- id: I-D.mglt-dice-diet-esp
-  type: IETF
-  scope: anchor
 docnumber: I-D.mglt-dice-diet-esp
 date:
 - type: published
-  value: '2014-01-31'
+  at: '2014-01-31'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Migault
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Migault
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Orange
-  role:
+        - language: en
+          content: Orange
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Tobias
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Tobias
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Guggemos
-        language:
-        - en
       completename:
+        language: en
         content: Tobias Guggemos
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Palomares
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Palomares
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2014-01-31'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>IPsec/ESP has been designed to secure IP packets exchanged between
-    two nodes. IPsec implements security at the IP layer which makes security transparent
-    to the applications, as opposed to TLS or DTLS that requires application to implement
-    TLS/DTLS. As a result, IPsec enable to define the security rules in a similar
-    way one establishes firewall rules. One of the IPsec's drawbacks is that implementing
-    security on a per packet basis adds overhead to each IP packet. Considering IoT
-    devices, the data transmitted over an IP packet is expected to be rather small,
-    and the cost of sending extra bytes is so high that IPsec/ESP can hardly be used
-    for IoT as it is currently defined in RFC 4303. This document defines Diet-ESP,
-    a protocol that compress and reduce the ESP overhead of IPsec/ESP so that it can
-    fit security and energy efficient IoT requirements. Diet-ESP use already existing
-    mechanism like IKEv2 to negotiate the compression format. Furthermore a lot of
-    information, already existing for an IPsec Security Association, are reused to
-    offer light negotiation in addition to maximum compression.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   IPsec/ESP has been designed to secure IP packets exchanged between\n
+    \  two nodes.  IPsec implements security at the IP layer which makes\n   security
+    transparent to the applications, as opposed to TLS or DTLS\n   that requires application
+    to implement TLS/DTLS.  As a result, IPsec\n   enable to define the security rules
+    in a similar way one establishes\n   firewall rules.\n\n   One of the IPsec's
+    drawbacks is that implementing security on a per\n   packet basis adds overhead
+    to each IP packet.  Considering IoT\n   devices, the data transmitted over an
+    IP packet is expected to be\n   rather small, and the cost of sending extra bytes
+    is so high that\n   IPsec/ESP can hardly be used for IoT as it is currently defined
+    in\n   RFC 4303.\n\n   This document defines Diet-ESP, a protocol that compress
+    and reduce\n   the ESP overhead of IPsec/ESP so that it can fit security and energy\n
+    \  efficient IoT requirements.  Diet-ESP use already existing mechanism\n   like
+    IKEv2 to negotiate the compression format.  Furthermore a lot of\n   information,
+    already existing for an IPsec Security Association, are\n   reused to offer light
+    negotiation in addition to maximum compression.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-mglt-dice-diet-esp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

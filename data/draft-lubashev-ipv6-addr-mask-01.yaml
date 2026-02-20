@@ -1,135 +1,118 @@
 ---
-schema-version: v1.2.9
-id: draft-lubashev-ipv6-addr-mask-01
-title:
-- content: A Recommendation for IPv6 Address/Mask Notation
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lubashev-ipv6-addr-mask-01
-  type: src
+id: draftlubashevipv6addrmask01
 type: standard
-docid:
-- id: draft-lubashev-ipv6-addr-mask-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Recommendation for IPv6 Address/Mask Notation
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lubashev-ipv6-addr-mask-01
+docidentifier:
+- content: draft-lubashev-ipv6-addr-mask
+  type: Internet-Draft
+- content: draft-lubashev-ipv6-addr-mask-01
   type: Internet-Draft
   primary: true
-- id: I-D.lubashev-ipv6-addr-mask
-  type: IETF
-  scope: anchor
 docnumber: I-D.lubashev-ipv6-addr-mask
 date:
 - type: published
-  value: '2017-10-27'
+  at: '2017-10-27'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Igor
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Igor
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Lubashev
-        language:
-        - en
       completename:
+        language: en
         content: Igor Lubashev
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Akamai Technologies
-  role:
+        - language: en
+          content: Akamai Technologies
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Erik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Erik
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Nygren
-        language:
-        - en
       completename:
+        language: en
         content: Erik Nygren
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Akamai Technologies
-  role:
-  - type: author
+        - language: en
+          content: Akamai Technologies
 version:
 - draft: '01'
-revdate: '2017-10-27'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: '<p>Since network operators are commonly assigned at least /48 IPv6 address
-    prefixes, the operators and standards occasionally find opportunities to devise
-    addressing schemes that further assign operational semantics to less significant
-    bit ranges. There is currently no standard or interoperable textual representation
-    of addresses sharing bit patterns that are not prefixes. This RFC introduces IPv6
-    Address/Mask notation that allows one to represent address groupings beyond "all
-    addresses that share a single prefix". The representation is similar to the IPv4
-    address/mask notation in its expressiveness, but it is derived from the familiar
-    address/ prefix-length notation for clarity and compatibility with existing parsers.
-    For example, using this representation, both 2001:db8::/32 and 2001:db8:://ffff:ffff::
-    have the same meaning. However, a group of addresses having the first 32 bits
-    "2001:0db8::" and the last 16 bits "::1234" requires the new representation: 2001:db8::1234//ffff:ffff::ffff
-    or, equivalently, 2001:db8::1234//32+::ffff.</p>'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Since network operators are commonly assigned at least /48 IPv6\n   address
+    prefixes, the operators and standards occasionally find\n   opportunities to devise
+    addressing schemes that further assign\n   operational semantics to less significant
+    bit ranges.  There is\n   currently no standard or interoperable textual representation
+    of\n   addresses sharing bit patterns that are not prefixes.  This RFC\n   introduces
+    IPv6 Address/Mask notation that allows one to represent\n   address groupings
+    beyond \"all addresses that share a single prefix\".\n   The representation is
+    similar to the IPv4 address/mask notation in\n   its expressiveness, but it is
+    derived from the familiar address/\n   prefix-length notation for clarity and
+    compatibility with existing\n   parsers.\n\n   For example, using this representation,
+    both 2001:db8::/32 and\n   2001:db8:://ffff:ffff:: have the same meaning.  However,
+    a group of\n   addresses having the first 32 bits \"2001:0db8::\" and the last
+    16 bits\n   \"::1234\" requires the new representation:\n   2001:db8::1234//ffff:ffff::ffff
+    or, equivalently,\n   2001:db8::1234//32+::ffff.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lubashev-ipv6-addr-mask-00
-    docid:
-    - id: draft-lubashev-ipv6-addr-mask-00
+    formattedref: draft-lubashev-ipv6-addr-mask-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lubashev-ipv6-addr-mask-00
+    docidentifier:
+    - content: draft-lubashev-ipv6-addr-mask-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lubashev-ipv6-addr-mask-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lubashev-ipv6-addr-mask-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

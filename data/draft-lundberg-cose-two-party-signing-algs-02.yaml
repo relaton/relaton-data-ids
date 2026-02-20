@@ -1,146 +1,127 @@
 ---
-schema-version: v1.2.9
-id: draft-lundberg-cose-two-party-signing-algs-02
-title:
-- content: Split signing algorithms for COSE
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-lundberg-cose-two-party-signing-algs-02
-  type: src
+id: draftlundbergcosetwopartysigningalgs02
 type: standard
-docid:
-- id: draft-lundberg-cose-two-party-signing-algs-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Split signing algorithms for COSE
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-lundberg-cose-two-party-signing-algs-02
+docidentifier:
+- content: draft-lundberg-cose-two-party-signing-algs
+  type: Internet-Draft
+- content: draft-lundberg-cose-two-party-signing-algs-02
   type: Internet-Draft
   primary: true
-- id: I-D.lundberg-cose-two-party-signing-algs
-  type: IETF
-  scope: anchor
 docnumber: I-D.lundberg-cose-two-party-signing-algs
 date:
 - type: published
-  value: '2025-07-07'
+  at: '2025-07-07'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Emil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Emil
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Lundberg
-        language:
-        - en
       completename:
+        language: en
         content: Emil Lundberg
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Yubico
-  role:
+        - language: en
+          content: Yubico
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: M. B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: M. B.
       surname:
+        language: en
         content: Jones
-        language:
-        - en
       completename:
+        language: en
         content: Michael B. Jones
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Self-Issued Consulting
-  role:
-  - type: author
+        - language: en
+          content: Self-Issued Consulting
 version:
 - draft: '02'
-revdate: '2025-07-07'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This specification defines COSE algorithm identifiers used when one
-    signing operation is split between two cooperating parties. When performing split
-    signing, the first party typically hashes the data to be signed and the second
-    party signs the hashed data computed by the first party. This can be useful when
-    communication with the party holding the signing private key occurs over a limited-bandwidth
-    channel, such as NFC or Bluetooth Low Energy (BLE), in which it is infeasible
-    to send the complete set of data to be signed. The resulting signatures are identical
-    in structure to those computed by a single party, and can be verified using the
-    same verification algorithm without additional steps to preprocess the signed
-    data.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This specification defines COSE algorithm identifiers used when one\n
+    \  signing operation is split between two cooperating parties.  When\n   performing
+    split signing, the first party typically hashes the data\n   to be signed and
+    the second party signs the hashed data computed by\n   the first party.  This
+    can be useful when communication with the\n   party holding the signing private
+    key occurs over a limited-bandwidth\n   channel, such as NFC or Bluetooth Low
+    Energy (BLE), in which it is\n   infeasible to send the complete set of data to
+    be signed.  The\n   resulting signatures are identical in structure to those computed
+    by\n   a single party, and can be verified using the same verification\n   algorithm
+    without additional steps to preprocess the signed data.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-lundberg-cose-two-party-signing-algs-01
-    docid:
-    - id: draft-lundberg-cose-two-party-signing-algs-01
+    formattedref: draft-lundberg-cose-two-party-signing-algs-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lundberg-cose-two-party-signing-algs-01
+    docidentifier:
+    - content: draft-lundberg-cose-two-party-signing-algs-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lundberg-cose-two-party-signing-algs-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-lundberg-cose-two-party-signing-algs-03
-    docid:
-    - id: draft-lundberg-cose-two-party-signing-algs-03
+    formattedref: draft-lundberg-cose-two-party-signing-algs-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lundberg-cose-two-party-signing-algs-03
+    docidentifier:
+    - content: draft-lundberg-cose-two-party-signing-algs-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-lundberg-cose-two-party-signing-algs-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-lundberg-cose-two-party-signing-algs-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

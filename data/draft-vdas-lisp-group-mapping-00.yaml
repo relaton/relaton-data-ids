@@ -1,190 +1,164 @@
 ---
-schema-version: v1.2.9
-id: draft-vdas-lisp-group-mapping-00
-title:
-- content: LISP Multicast Overlay Group to Underlay RLOC Mappings
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-vdas-lisp-group-mapping-00
-  type: src
+id: draftvdaslispgroupmapping00
 type: standard
-docid:
-- id: draft-vdas-lisp-group-mapping-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: LISP Multicast Overlay Group to Underlay RLOC Mappings
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-vdas-lisp-group-mapping-00
+docidentifier:
+- content: draft-vdas-lisp-group-mapping
+  type: Internet-Draft
+- content: draft-vdas-lisp-group-mapping-00
   type: Internet-Draft
   primary: true
-- id: I-D.vdas-lisp-group-mapping
-  type: IETF
-  scope: anchor
 docnumber: I-D.vdas-lisp-group-mapping
 date:
 - type: published
-  value: '2023-04-24'
+  at: '2023-04-24'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Vengada
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: V. P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vengada
+      - language: en
+        script: Latn
+        initial: V
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: V. P.
       surname:
+        language: en
         content: Govindan
-        language:
-        - en
       completename:
+        language: en
         content: Vengada Prasad Govindan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: lispers.net
-  role:
+        - language: en
+          content: lispers.net
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Aswin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Aswin
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Kuppusami
-        language:
-        - en
       completename:
+        language: en
         content: Aswin Kuppusami
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Stig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stig
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Venaas
-        language:
-        - en
       completename:
+        language: en
         content: Stig Venaas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
-  - type: author
+        - language: en
+          content: Cisco
 version:
 - draft: '00'
-revdate: '2023-04-24'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This draft augments LISP [RFC9300] multicast functionality described
-    in [RFC6831] and [RFC8378] to support the mapping of overlay group addresses to
-    underlay RLOC addresses. This draft defines a many-to- 1, 1-to-many, and many-to-many
-    relationship between multicast EIDs and the Replication List Entries (RLEs) RLOC
-    records they map to. The mechanisms in this draft allow a multicast LISP overlay
-    to run over a mixed underlay of unicast and/or multicast packet forwarding functionality.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This draft augments LISP [RFC9300] multicast functionality described\n
+    \  in [RFC6831] and [RFC8378] to support the mapping of overlay group\n   addresses
+    to underlay RLOC addresses.  This draft defines a many-to-\n   1, 1-to-many, and
+    many-to-many relationship between multicast EIDs\n   and the Replication List
+    Entries (RLEs) RLOC records they map to.\n   The mechanisms in this draft allow
+    a multicast LISP overlay to run\n   over a mixed underlay of unicast and/or multicast
+    packet forwarding\n   functionality.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-vdas-lisp-group-mapping-01
-    docid:
-    - id: draft-vdas-lisp-group-mapping-01
+    formattedref: draft-vdas-lisp-group-mapping-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-vdas-lisp-group-mapping-01
+    docidentifier:
+    - content: draft-vdas-lisp-group-mapping-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-vdas-lisp-group-mapping-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-vdas-lisp-group-mapping-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

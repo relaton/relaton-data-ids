@@ -1,167 +1,146 @@
 ---
-schema-version: v1.2.9
-id: draft-swett-nwcrg-coding-for-quic-02
-title:
-- content: Coding for QUIC
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-swett-nwcrg-coding-for-quic-02
-  type: src
+id: draftswettnwcrgcodingforquic02
 type: standard
-docid:
-- id: draft-swett-nwcrg-coding-for-quic-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Coding for QUIC
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-swett-nwcrg-coding-for-quic-02
+docidentifier:
+- content: draft-swett-nwcrg-coding-for-quic
+  type: Internet-Draft
+- content: draft-swett-nwcrg-coding-for-quic-02
   type: Internet-Draft
   primary: true
-- id: I-D.swett-nwcrg-coding-for-quic
-  type: IETF
-  scope: anchor
 docnumber: I-D.swett-nwcrg-coding-for-quic
 date:
 - type: published
-  value: '2019-02-04'
+  at: '2019-02-04'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ian
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Swett
-        language:
-        - en
       completename:
+        language: en
         content: Ian Swett
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google
-  role:
+        - language: en
+          content: Google
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Montpetit
-        language:
-        - en
       completename:
+        language: en
         content: Marie-Jose Montpetit
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Triangle Video
-  role:
+        - language: en
+          content: Triangle Video
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Vincent
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: V
-        formatted_initials:
-          content: V.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Vincent
+      - language: en
+        script: Latn
+        initial: V
+      formatted_initials:
+        language: en
+        content: V.
       surname:
+        language: en
         content: Roca
-        language:
-        - en
       completename:
+        language: en
         content: Vincent Roca
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: INRIA
-  role:
-  - type: author
+        - language: en
+          content: INRIA
 version:
 - draft: '02'
-revdate: '2019-02-04'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document focusses on the integration of FEC coding in the QUIC
-    transport protocol, in order to recover from packet losses. This document does
-    not specify any FEC code but defines mechanisms to negotiate and integrate FEC
-    Schemes in QUIC. By using proactive loss recovery, it is expected to improve QUIC
-    performance in sessions impacted by packet losses. More precisely it is expected
-    to improve QUIC performance with real-time sessions (since FEC coding makes packet
-    loss recovery insensitive to the round trip time), with multicast sessions (since
-    the same repair packet can recover several different losses at several receivers),
-    and with multipath sessions (since repair packets add diversity).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document focusses on the integration of FEC coding in the QUIC\n
+    \  transport protocol, in order to recover from packet losses.  This\n   document
+    does not specify any FEC code but defines mechanisms to\n   negotiate and integrate
+    FEC Schemes in QUIC.  By using proactive loss\n   recovery, it is expected to
+    improve QUIC performance in sessions\n   impacted by packet losses.  More precisely
+    it is expected to improve\n   QUIC performance with real-time sessions (since
+    FEC coding makes\n   packet loss recovery insensitive to the round trip time),
+    with\n   multicast sessions (since the same repair packet can recover several\n
+    \  different losses at several receivers), and with multipath sessions\n   (since
+    repair packets add diversity).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-swett-nwcrg-coding-for-quic-01
-    docid:
-    - id: draft-swett-nwcrg-coding-for-quic-01
+    formattedref: draft-swett-nwcrg-coding-for-quic-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-swett-nwcrg-coding-for-quic-01
+    docidentifier:
+    - content: draft-swett-nwcrg-coding-for-quic-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-swett-nwcrg-coding-for-quic-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-swett-nwcrg-coding-for-quic-03
-    docid:
-    - id: draft-swett-nwcrg-coding-for-quic-03
+    formattedref: draft-swett-nwcrg-coding-for-quic-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-swett-nwcrg-coding-for-quic-03
+    docidentifier:
+    - content: draft-swett-nwcrg-coding-for-quic-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-swett-nwcrg-coding-for-quic-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-swett-nwcrg-coding-for-quic-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

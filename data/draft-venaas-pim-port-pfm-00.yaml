@@ -1,180 +1,153 @@
 ---
-schema-version: v1.2.9
-id: draft-venaas-pim-port-pfm-00
-title:
-- content: PIM Flooding Protocol over Reliable Transport
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-venaas-pim-port-pfm-00
-  type: src
+id: draftvenaaspimportpfm00
 type: standard
-docid:
-- id: draft-venaas-pim-port-pfm-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: PIM Flooding Protocol over Reliable Transport
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-venaas-pim-port-pfm-00
+docidentifier:
+- content: draft-venaas-pim-port-pfm
+  type: Internet-Draft
+- content: draft-venaas-pim-port-pfm-00
   type: Internet-Draft
   primary: true
-- id: I-D.venaas-pim-port-pfm
-  type: IETF
-  scope: anchor
 docnumber: I-D.venaas-pim-port-pfm
 date:
 - type: published
-  value: '2019-03-11'
+  at: '2019-03-11'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Stig
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Stig
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Venaas
-        language:
-        - en
       completename:
+        language: en
         content: Stig Venaas
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Balaji
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Balaji
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Ganesh
-        language:
-        - en
       completename:
+        language: en
         content: Balaji Ganesh
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kesavan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kesavan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Thiruvenkatasamy
-        language:
-        - en
       completename:
+        language: en
         content: Kesavan Thiruvenkatasamy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
+        - language: en
+          content: Cisco Systems, Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ramakrishnan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: R. C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ramakrishnan
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: R. C.
       surname:
+        language: en
         content: Sundaram
-        language:
-        - en
       completename:
+        language: en
         content: Ramakrishnan Cokkanathapuram Sundaram
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems, Inc.
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems, Inc.
 version:
 - draft: '00'
-revdate: '2019-03-11'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The PIM Flooding Protocol (PFM) defined in RFC8364 relies on sending
-    periodic updates as it does not provide for any reliability. If a message is lost,
-    the information will be provided in the next periodic update. This document extends
-    the Reliable Transport Mechanism for PIM in RFC6559 to allow for sending PFM messages.
-    This significantly reduces the PFM signaling by not requiring frequent periodic
-    updates, and it provides for retransmission, allowing for quick recovery when
-    an IP packet is dropped.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The PIM Flooding Protocol (PFM) defined in RFC8364 relies on sending\n
+    \  periodic updates as it does not provide for any reliability.  If a\n   message
+    is lost, the information will be provided in the next\n   periodic update.\n\n
+    \  This document extends the Reliable Transport Mechanism for PIM in\n   RFC6559
+    to allow for sending PFM messages.  This significantly\n   reduces the PFM signaling
+    by not requiring frequent periodic updates,\n   and it provides for retransmission,
+    allowing for quick recovery when\n   an IP packet is dropped.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-venaas-pim-port-pfm-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

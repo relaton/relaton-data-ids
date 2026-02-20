@@ -1,162 +1,138 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-manet-tbrpf-11
-title:
-- content: Topology Dissemination Based on Reverse-Path Forwarding (TBRPF)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-tbrpf-11
-  type: src
+id: draftietfmanettbrpf11
 type: standard
-docid:
-- id: draft-ietf-manet-tbrpf-11
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Topology Dissemination Based on Reverse-Path Forwarding (TBRPF)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-tbrpf-11
+docidentifier:
+- content: draft-ietf-manet-tbrpf
+  type: Internet-Draft
+- content: draft-ietf-manet-tbrpf-11
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-manet-tbrpf
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-manet-tbrpf
 date:
 - type: published
-  value: '2003-10-15'
+  at: '2003-10-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Fred
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: F
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: F. L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Fred
+      - language: en
+        script: Latn
+        initial: F
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: F. L.
       surname:
+        language: en
         content: Templin
-        language:
-        - en
       completename:
+        language: en
         content: Fred L. Templin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Richard
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: R.
       surname:
+        language: en
         content: Ogier
-        language:
-        - en
       completename:
+        language: en
         content: Richard Ogier
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SRI International
-  role:
+        - language: en
+          content: SRI International
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mark
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: M. S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mark
+      - language: en
+        script: Latn
+        initial: M
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: M. S.
       surname:
+        language: en
         content: Lewis
-        language:
-        - en
       completename:
+        language: en
         content: Mark S. Lewis
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: SRI International
-  role:
-  - type: author
+        - language: en
+          content: SRI International
 version:
 - draft: '11'
-revdate: '2003-10-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Topology Dissemination Based on Reverse-Path Forwarding (TBRPF) is a
-    proactive, link-state routing protocol designed for mobile ad-hoc networks, which
-    provides hop-by-hop routing along shortest paths to each destination. Each node
-    running TBRPF computes a source tree (providing paths to all reachable nodes)
-    based on partial topology information stored in its topology table, using a modification
-    of Dijkstra's algorithm. To minimize overhead, each node reports only *part* of
-    its source tree to neighbors. TBRPF uses a combination of periodic and differential
+- language: en
+  script: Latn
+  content: "Topology Dissemination Based on Reverse-Path Forwarding (TBRPF) is a proactive,
+    link-state routing protocol designed for mobile ad-hoc networks, which provides
+    hop-by-hop routing along shortest paths to each destination.  Each node running
+    TBRPF computes a source tree (providing paths to all reachable nodes) based on
+    partial topology information stored in its topology table, using a modification
+    of Dijkstra's algorithm.  To minimize overhead, each node reports only *part*
+    of its source tree to neighbors.  TBRPF uses a combination of periodic and differential
     updates to keep all neighbors informed of the reported part of its source tree.
-    Each node also has the option to report additional topology information (up to
-    the full topology), to provide improved robustness in highly mobile networks.
-    TBRPF performs neighbor discovery using "differential" HELLO messages which report
-    only *changes* in the status of neighbors. This results in HELLO messages that
-    are much smaller than those of other link-state routing protocols such as OSPF.
-    This memo defines an Experimental Protocol for the Internet community.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    \ Each node also has the option to report additional topology information (up
+    to the full topology), to provide improved robustness in highly mobile networks.
+    \ TBRPF performs neighbor discovery using \"differential\" HELLO messages which
+    report only *changes* in the status of neighbors.  This results in HELLO messages
+    that are much smaller than those of other link-state routing protocols such as
+    OSPF.  This memo defines an Experimental Protocol for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-manet-tbrpf-11
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

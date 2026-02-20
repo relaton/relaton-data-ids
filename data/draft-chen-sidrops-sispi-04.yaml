@@ -1,186 +1,160 @@
 ---
-schema-version: v1.2.9
-id: draft-chen-sidrops-sispi-04
-title:
-- content: A Profile of Signed SAVNET-Peering Information (SiSPI) Object for Deploying
-    Inter-domain SAVNET
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-chen-sidrops-sispi-04
-  type: src
+id: draftchensidropssispi04
 type: standard
-docid:
-- id: draft-chen-sidrops-sispi-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: A Profile of Signed SAVNET-Peering Information (SiSPI) Object for Deploying
+    Inter-domain SAVNET
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-chen-sidrops-sispi-04
+docidentifier:
+- content: draft-chen-sidrops-sispi
+  type: Internet-Draft
+- content: draft-chen-sidrops-sispi-04
   type: Internet-Draft
   primary: true
-- id: I-D.chen-sidrops-sispi
-  type: IETF
-  scope: anchor
 docnumber: I-D.chen-sidrops-sispi
 date:
 - type: published
-  value: '2025-09-14'
+  at: '2025-09-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Chen
-        language:
-        - en
       completename:
+        language: en
         content: Li Chen
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Libin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Libin
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Liu
-        language:
-        - en
       completename:
+        language: en
         content: Libin Liu
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
+        - language: en
+          content: Zhongguancun Laboratory
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dan
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Li
-        language:
-        - en
       completename:
+        language: en
         content: Dan Li
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Tsinghua University
-  role:
+        - language: en
+          content: Tsinghua University
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Lancheng
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Lancheng
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Qin
-        language:
-        - en
       completename:
+        language: en
         content: Lancheng Qin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Zhongguancun Laboratory
-  role:
-  - type: author
+        - language: en
+          content: Zhongguancun Laboratory
 version:
 - draft: '04'
-revdate: '2025-09-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document defines a "Signed SAVNET-Peering Information" (SiSPI)
-    object, a Cryptographic Message Syntax (CMS) protected content type included in
-    the Resource Public Key Infrastructure (RPKI). A SiSPI object is a digitally signed
-    object which carries the list of Autonomous Systems (ASes) deploying inter-domain
-    SAVNET. When validated, the eContent of a SiSPI object confirms that the holder
-    of the listed ASN produces the object and the AS has deployed inter- domain SAV
-    and is ready to establish neighbor relationship for preventing source address
-    spoofing.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document defines a \"Signed SAVNET-Peering Information\" (SiSPI)\n
+    \  object, a Cryptographic Message Syntax (CMS) protected content type\n   included
+    in the Resource Public Key Infrastructure (RPKI).  A SiSPI\n   object is a digitally
+    signed object which carries the list of\n   Autonomous Systems (ASes) deploying
+    inter-domain SAVNET.  When\n   validated, the eContent of a SiSPI object confirms
+    that the holder of\n   the listed ASN produces the object and the AS has deployed
+    inter-\n   domain SAV and is ready to establish neighbor relationship for\n   preventing
+    source address spoofing.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-chen-sidrops-sispi-03
-    docid:
-    - id: draft-chen-sidrops-sispi-03
+    formattedref: draft-chen-sidrops-sispi-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chen-sidrops-sispi-03
+    docidentifier:
+    - content: draft-chen-sidrops-sispi-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-chen-sidrops-sispi-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-chen-sidrops-sispi-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

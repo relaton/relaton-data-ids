@@ -1,199 +1,172 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-mpls-tp-security-framework-09
-title:
-- content: MPLS Transport Profile (MPLS-TP) Security Framework
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-tp-security-framework-09
-  type: src
+id: draftietfmplstpsecurityframework09
 type: standard
-docid:
-- id: draft-ietf-mpls-tp-security-framework-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: MPLS Transport Profile (MPLS-TP) Security Framework
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-tp-security-framework-09
+docidentifier:
+- content: draft-ietf-mpls-tp-security-framework
+  type: Internet-Draft
+- content: draft-ietf-mpls-tp-security-framework-09
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-mpls-tp-security-framework
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-mpls-tp-security-framework
 date:
 - type: published
-  value: '2013-02-25'
+  at: '2013-02-25'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Luyuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luyuan
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fang
-        language:
-        - en
       completename:
+        language: en
         content: Luyuan Fang
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ben
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ben
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Niven-Jenkins
-        language:
-        - en
       completename:
+        language: en
         content: Ben Niven-Jenkins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Velocix
-  role:
+        - language: en
+          content: Velocix
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Scott
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Scott
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Mansfield
-        language:
-        - en
       completename:
+        language: en
         content: Scott Mansfield
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ericsson
-  role:
+        - language: en
+          content: Ericsson
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Richard
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: R. F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Richard
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: R. F.
       surname:
+        language: en
         content: Graveman
-        language:
-        - en
       completename:
+        language: en
         content: Richard F. Graveman
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: RFG Security
-  role:
-  - type: author
+        - language: en
+          content: RFG Security
 version:
 - draft: '09'
-revdate: '2013-02-25'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This document provides a security framework for the MPLS Transport Profile
+- language: en
+  script: Latn
+  content: "This document provides a security framework for the MPLS Transport Profile
     (MPLS-TP). MPLS-TP extends MPLS technologies and introduces new Operations, Administration,
     and Maintenance (OAM) capabilities, a transport-oriented path protection mechanism,
     and strong emphasis on static provisioning supported by network management systems.
     This document addresses the security aspects relevant in the context of MPLS-TP
     specifically. It describes potential security threats as well as mitigation procedures
     related to MPLS-TP networks and to MPLS-TP interconnection to other MPLS and GMPLS
-    networks. This document is built on RFC 5920 ("Security Framework for MPLS and
-    GMPLS Networks") by providing additional security considerations that are applicable
+    networks. This document is built on RFC 5920 (\"Security Framework for MPLS and
+    GMPLS Networks\") by providing additional security considerations that are applicable
     to the MPLS-TP extensions. All the security considerations from RFC 5920 are assumed
-    to apply. This document is a product of a joint Internet Engineering Task Force
-    (IETF) / International Telecommunication Union Telecommunication Standardization
+    to apply.\n\n This document is a product of a joint Internet Engineering Task
+    Force (IETF) / International Telecommunication Union Telecommunication Standardization
     Sector (ITU-T) effort to include an MPLS Transport Profile within the IETF MPLS
     and Pseudowire Emulation Edge-to-Edge (PWE3) architectures to support the capabilities
-    and functionality of a packet transport network.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    and functionality of a packet transport network.\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-mpls-tp-security-framework-08
-    docid:
-    - id: draft-ietf-mpls-tp-security-framework-08
+    formattedref: draft-ietf-mpls-tp-security-framework-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-tp-security-framework-08
+    docidentifier:
+    - content: draft-ietf-mpls-tp-security-framework-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-mpls-tp-security-framework-08
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-mpls-tp-security-framework-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,171 +1,148 @@
 ---
-schema-version: v1.2.9
-id: draft-johansson-sip-he-connection-01
-title:
-- content: 'Setting up a SIP (Session Initiation Protocol) connection in a dual stack
-    network using connection oriented transports '
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-johansson-sip-he-connection-01
-  type: src
+id: draftjohanssonsipheconnection01
 type: standard
-docid:
-- id: draft-johansson-sip-he-connection-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'Setting up a SIP (Session Initiation Protocol) connection in a dual stack
+    network using connection oriented transports '
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-johansson-sip-he-connection-01
+docidentifier:
+- content: draft-johansson-sip-he-connection
+  type: Internet-Draft
+- content: draft-johansson-sip-he-connection-01
   type: Internet-Draft
   primary: true
-- id: I-D.johansson-sip-he-connection
-  type: IETF
-  scope: anchor
 docnumber: I-D.johansson-sip-he-connection
 date:
 - type: published
-  value: '2016-10-21'
+  at: '2016-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Olle
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: O. E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Olle
+      - language: en
+        script: Latn
+        initial: O
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: O. E.
       surname:
+        language: en
         content: Johansson
-        language:
-        - en
       completename:
+        language: en
         content: Olle E. Johansson
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Edvina AB
-  role:
+        - language: en
+          content: Edvina AB
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gonzalo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gonzalo
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Salgueiro
-        language:
-        - en
       completename:
+        language: en
         content: Gonzalo Salgueiro
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dale
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: D. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dale
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: D. R.
       surname:
+        language: en
         content: Worley
-        language:
-        - en
       completename:
+        language: en
         content: Dale R. Worley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Ariadne
-  role:
-  - type: author
+        - language: en
+          content: Ariadne
 version:
 - draft: '01'
-revdate: '2016-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>The Session Initiation Protocol (SIP) supports multiple transports
-    running both over IPv4 and IPv6 protocols. In more and more cases, a SIP user
-    agent (UA) is connected to multiple network interfaces. In these cases setting
-    up a connection from a dual stack client to a dual stack server may suffer from
-    the issues described in RFC 6555 [RFC6555] - Happy Eyeballs - significant delays
-    in the process of setting up a working flow to a server. This negatively affects
-    user experience. This document builds on RFC 6555 and explains how a RFC3261 [RFC3261]
-    compliant SIP implementation can quickly set up working flows to a given hostname
-    (located by using DNS NAPTR and SRV lookups) in a dual stack network using connection
-    oriented transport protocols. A solution for connectionless transport protocols
-    is discussed in a separate document.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   The Session Initiation Protocol (SIP) supports multiple transports\n
+    \  running both over IPv4 and IPv6 protocols.  In more and more cases, a\n   SIP
+    user agent (UA) is connected to multiple network interfaces.  In\n   these cases
+    setting up a connection from a dual stack client to a\n   dual stack server may
+    suffer from the issues described in RFC 6555\n   [RFC6555] - Happy Eyeballs -
+    significant delays in the process of\n   setting up a working flow to a server.
+    \ This negatively affects user\n   experience.\n\n   This document builds on RFC
+    6555 and explains how a RFC3261 [RFC3261]\n   compliant SIP implementation can
+    quickly set up working flows to a\n   given hostname (located by using DNS NAPTR
+    and SRV lookups) in a dual\n   stack network using connection oriented transport
+    protocols.  A\n   solution for connectionless transport protocols is discussed
+    in a\n   separate document.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-johansson-sip-he-connection-00
-    docid:
-    - id: draft-johansson-sip-he-connection-00
+    formattedref: draft-johansson-sip-he-connection-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-johansson-sip-he-connection-00
+    docidentifier:
+    - content: draft-johansson-sip-he-connection-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-johansson-sip-he-connection-00
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-johansson-sip-he-connection-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

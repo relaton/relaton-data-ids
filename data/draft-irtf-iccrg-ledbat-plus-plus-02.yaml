@@ -1,203 +1,177 @@
 ---
-schema-version: v1.2.9
-id: draft-irtf-iccrg-ledbat-plus-plus-02
-title:
-- content: 'LEDBAT++: Congestion Control for Background Traffic'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-irtf-iccrg-ledbat-plus-plus-02
-  type: src
+id: draftirtficcrgledbatplusplus02
 type: standard
-docid:
-- id: draft-irtf-iccrg-ledbat-plus-plus-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'LEDBAT++: Congestion Control for Background Traffic'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-irtf-iccrg-ledbat-plus-plus-02
+docidentifier:
+- content: draft-irtf-iccrg-ledbat-plus-plus
+  type: Internet-Draft
+- content: draft-irtf-iccrg-ledbat-plus-plus-02
   type: Internet-Draft
   primary: true
-- id: I-D.irtf-iccrg-ledbat-plus-plus
-  type: IETF
-  scope: anchor
 docnumber: I-D.irtf-iccrg-ledbat-plus-plus
 date:
 - type: published
-  value: '2025-02-13'
+  at: '2025-02-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Praveen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        formatted_initials:
-          content: P.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Praveen
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
       surname:
+        language: en
         content: Balasubramanian
-        language:
-        - en
       completename:
+        language: en
         content: Praveen Balasubramanian
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Confluent
-  role:
+        - language: en
+          content: Confluent
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Osman
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Osman
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: Ertugay
-        language:
-        - en
       completename:
+        language: en
         content: Osman Ertugay
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
-  role:
+        - language: en
+          content: Microsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Havey
-        language:
-        - en
       completename:
+        language: en
         content: Daniel Havey
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Microsoft
-  role:
+        - language: en
+          content: Microsoft
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Marcelo
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Marcelo
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Bagnulo
-        language:
-        - en
       completename:
+        language: en
         content: Marcelo Bagnulo
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Universidad Carlos III de Madrid
-  role:
-  - type: author
+        - language: en
+          content: Universidad Carlos III de Madrid
 version:
 - draft: '02'
-revdate: '2025-02-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This memo describes LEDBAT++, a set of enhancements to the LEDBAT (Low
-    Extra Delay Background Transport) congestion control algorithm for background
-    traffic. The LEDBAT congestion control algorithm has several shortcomings that
-    prevent it from working effectively in practice. LEDBAT++ extends LEDBAT by adding
-    a set of improvements, including reduced congestion window gain, modified slow-start,
-    multiplicative decrease and periodic slowdowns. This set of improvement mitigates
-    the known issues with the LEDBAT algorithm, such as latency drift, latecomer advantage
-    and inter-LEDBAT fairness. LEDBAT++ has been implemented as a TCP congestion control
-    algorithm in the Windows operating system. LEDBAT++ has been deployed in production
-    at scale on a variety of networks and been experimentally verified to achieve
-    the original stated goals of LEDBAT. This document is a product of the Internet
-    Congestion Control Research Group (ICCRG) of the Internet Research Task Force
-    (IRTF).</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This memo describes LEDBAT++, a set of enhancements to the LEDBAT\n
+    \  (Low Extra Delay Background Transport) congestion control algorithm\n   for
+    background traffic.  The LEDBAT congestion control algorithm has\n   several shortcomings
+    that prevent it from working effectively in\n   practice.  LEDBAT++ extends LEDBAT
+    by adding a set of improvements,\n   including reduced congestion window gain,
+    modified slow-start,\n   multiplicative decrease and periodic slowdowns.  This
+    set of\n   improvement mitigates the known issues with the LEDBAT algorithm,\n
+    \  such as latency drift, latecomer advantage and inter-LEDBAT fairness.\n   LEDBAT++
+    has been implemented as a TCP congestion control algorithm\n   in the Windows
+    operating system.  LEDBAT++ has been deployed in\n   production at scale on a
+    variety of networks and been experimentally\n   verified to achieve the original
+    stated goals of LEDBAT.  This\n   document is a product of the Internet Congestion
+    Control Research\n   Group (ICCRG) of the Internet Research Task Force (IRTF).\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-irtf-iccrg-ledbat-plus-plus-01
-    docid:
-    - id: draft-irtf-iccrg-ledbat-plus-plus-01
+    formattedref: draft-irtf-iccrg-ledbat-plus-plus-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-iccrg-ledbat-plus-plus-01
+    docidentifier:
+    - content: draft-irtf-iccrg-ledbat-plus-plus-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-iccrg-ledbat-plus-plus-01
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-irtf-iccrg-ledbat-plus-plus-03
-    docid:
-    - id: draft-irtf-iccrg-ledbat-plus-plus-03
+    formattedref: draft-irtf-iccrg-ledbat-plus-plus-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-iccrg-ledbat-plus-plus-03
+    docidentifier:
+    - content: draft-irtf-iccrg-ledbat-plus-plus-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-iccrg-ledbat-plus-plus-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-irtf-iccrg-ledbat-plus-plus-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

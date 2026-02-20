@@ -1,227 +1,198 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-bess-evpn-proxy-arp-nd-14
-title:
-- content: Operational Aspects of Proxy-ARP/ND in Ethernet Virtual Private Networks
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-proxy-arp-nd-14
-  type: src
+id: draftietfbessevpnproxyarpnd14
 type: standard
-docid:
-- id: draft-ietf-bess-evpn-proxy-arp-nd-14
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Operational Aspects of Proxy-ARP/ND in Ethernet Virtual Private Networks
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-proxy-arp-nd-14
+docidentifier:
+- content: draft-ietf-bess-evpn-proxy-arp-nd
+  type: Internet-Draft
+- content: draft-ietf-bess-evpn-proxy-arp-nd-14
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-bess-evpn-proxy-arp-nd
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-bess-evpn-proxy-arp-nd
 date:
 - type: published
-  value: '2021-06-08'
+  at: '2021-06-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jorge
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jorge
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Rabadan
-        language:
-        - en
       completename:
+        language: en
         content: Jorge Rabadan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Senthil
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Senthil
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Sathappan
-        language:
-        - en
       completename:
+        language: en
         content: Senthil Sathappan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kiran
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kiran
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Nagaraj
-        language:
-        - en
       completename:
+        language: en
         content: Kiran Nagaraj
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Greg
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Greg
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Hankins
-        language:
-        - en
       completename:
+        language: en
         content: Greg Hankins
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Nokia
-  role:
+        - language: en
+          content: Nokia
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: King
-        language:
-        - en
       completename:
+        language: en
         content: Thomas King
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: DE-CIX
-  role:
-  - type: author
+        - language: en
+          content: DE-CIX
 version:
 - draft: '14'
-revdate: '2021-06-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the Ethernet Virtual Private Networks (EVPN)
-    Proxy-ARP/ND function, augmented by the capability of the ARP/ND Extended Community.
-    From that perspective this document updates the EVPN specification to provide
-    more comprehensive documentation of the operation of the Proxy-ARP/ND function.
-    The EVPN Proxy-ARP/ND function and the ARP/ND Extended Community help operators
-    of Internet Exchange Points, Data Centers, and other networks deal with IPv4 and
-    IPv6 address resolution issues associated with large Broadcast Domains by reducing
-    and even suppressing the flooding produced by address resolution in the EVPN network.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the Ethernet Virtual Private Networks (EVPN)\n
+    \  Proxy-ARP/ND function, augmented by the capability of the ARP/ND\n   Extended
+    Community.  From that perspective this document updates the\n   EVPN specification
+    to provide more comprehensive documentation of the\n   operation of the Proxy-ARP/ND
+    function.  The EVPN Proxy-ARP/ND\n   function and the ARP/ND Extended Community
+    help operators of Internet\n   Exchange Points, Data Centers, and other networks
+    deal with IPv4 and\n   IPv6 address resolution issues associated with large Broadcast\n
+    \  Domains by reducing and even suppressing the flooding produced by\n   address
+    resolution in the EVPN network.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-bess-evpn-proxy-arp-nd-13
-    docid:
-    - id: draft-ietf-bess-evpn-proxy-arp-nd-13
+    formattedref: draft-ietf-bess-evpn-proxy-arp-nd-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-proxy-arp-nd-13
+    docidentifier:
+    - content: draft-ietf-bess-evpn-proxy-arp-nd-13
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-proxy-arp-nd-13
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-bess-evpn-proxy-arp-nd-15
-    docid:
-    - id: draft-ietf-bess-evpn-proxy-arp-nd-15
+    formattedref: draft-ietf-bess-evpn-proxy-arp-nd-15
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-proxy-arp-nd-15
+    docidentifier:
+    - content: draft-ietf-bess-evpn-proxy-arp-nd-15
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-bess-evpn-proxy-arp-nd-15
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-bess-evpn-proxy-arp-nd-14
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,155 +1,130 @@
 ---
-schema-version: v1.2.9
-id: draft-xu-mptcp-congestion-control-04
-title:
-- content: Delay-based Congestion Control for MPTCP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-xu-mptcp-congestion-control-04
-  type: src
+id: draftxumptcpcongestioncontrol04
 type: standard
-docid:
-- id: draft-xu-mptcp-congestion-control-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Delay-based Congestion Control for MPTCP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-xu-mptcp-congestion-control-04
+docidentifier:
+- content: draft-xu-mptcp-congestion-control
+  type: Internet-Draft
+- content: draft-xu-mptcp-congestion-control-04
   type: Internet-Draft
   primary: true
-- id: I-D.xu-mptcp-congestion-control
-  type: IETF
-  scope: anchor
 docnumber: I-D.xu-mptcp-congestion-control
 date:
 - type: published
-  value: '2016-07-02'
+  at: '2016-07-02'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Mingwei
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mingwei
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Xu
-        language:
-        - en
       completename:
+        language: en
         content: Mingwei Xu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: Y
-        formatted_initials:
-          content: Y.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: "Y"
+      formatted_initials:
+        language: en
+        content: Y.
       surname:
+        language: en
         content: Cao
-        language:
-        - en
       completename:
+        language: en
         content: Yu Cao
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Enhuan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Enhuan
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Dong
-        language:
-        - en
       completename:
+        language: en
         content: Enhuan Dong
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2016-07-02'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes the mechanism of wVegas (weighted Vegas), which
-    is a delay-based congestion control for MPTCP. The current congestion control
-    algorithm of MPTCP, LIA, achieves only course- grained load balancing, since it
-    is based on packet loss event. On the contrary, wVegas adopts packet queuing delay
-    as congestion signals, thus achieving fine-grained load balancing. Compared with
-    loss-based algorithms, wVegas is more sensitive to the changes of network congestion
-    and thus achieves more timely traffic shifting and quicker convergence. WVegas
-    has been implemented in the Linux Kernel and is part of the UCLouvain's MPTCP
-    implementation now.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes the mechanism of wVegas (weighted Vegas),\n
+    \  which is a delay-based congestion control for MPTCP. The current\n   congestion
+    control algorithm of MPTCP, LIA, achieves only course-\n   grained load balancing,
+    since it is based on packet loss event. On\n   the contrary, wVegas adopts packet
+    queuing delay as congestion\n   signals, thus achieving fine-grained load balancing.
+    Compared with\n   loss-based algorithms, wVegas is more sensitive to the changes
+    of\n   network congestion and thus achieves more timely traffic shifting and\n
+    \  quicker convergence. WVegas has been implemented in the Linux Kernel\n   and
+    is part of the UCLouvain's MPTCP implementation now.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-xu-mptcp-congestion-control-03
-    docid:
-    - id: draft-xu-mptcp-congestion-control-03
+    formattedref: draft-xu-mptcp-congestion-control-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-mptcp-congestion-control-03
+    docidentifier:
+    - content: draft-xu-mptcp-congestion-control-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-mptcp-congestion-control-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-xu-mptcp-congestion-control-05
-    docid:
-    - id: draft-xu-mptcp-congestion-control-05
+    formattedref: draft-xu-mptcp-congestion-control-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xu-mptcp-congestion-control-05
+    docidentifier:
+    - content: draft-xu-mptcp-congestion-control-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-xu-mptcp-congestion-control-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-xu-mptcp-congestion-control-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

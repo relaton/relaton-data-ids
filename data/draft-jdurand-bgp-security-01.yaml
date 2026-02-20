@@ -1,160 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-jdurand-bgp-security-01
-title:
-- content: BGP operations and security
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-jdurand-bgp-security-01
-  type: src
+id: draftjdurandbgpsecurity01
 type: standard
-docid:
-- id: draft-jdurand-bgp-security-01
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP operations and security
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jdurand-bgp-security-01
+docidentifier:
+- content: draft-jdurand-bgp-security
+  type: Internet-Draft
+- content: draft-jdurand-bgp-security-01
   type: Internet-Draft
   primary: true
-- id: I-D.jdurand-bgp-security
-  type: IETF
-  scope: anchor
 docnumber: I-D.jdurand-bgp-security
 date:
 - type: published
-  value: '2012-06-19'
+  at: '2012-06-19'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Jerome
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jerome
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Durand
-        language:
-        - en
       completename:
+        language: en
         content: Jerome Durand
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ivan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ivan
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Pepelnjak
-        language:
-        - en
       completename:
+        language: en
         content: Ivan Pepelnjak
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Gert
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: G
-        formatted_initials:
-          content: G.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Gert
+      - language: en
+        script: Latn
+        initial: G
+      formatted_initials:
+        language: en
+        content: G.
       surname:
+        language: en
         content: Döring
-        language:
-        - en
       completename:
+        language: en
         content: Gert Döring
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '01'
-revdate: '2012-06-19'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>BGP (Border Gateway Protocol) is the protocol used in the internet
-    to exchange routing information between network domains. This protocol does not
-    directly include mechanisms that control that routes exchanged conform to the
-    various rules defined by the Internet community. This document intends to summarize
-    most common existing rules and help network administrators applying simply coherent
-    BGP policies. First it recalls mechanisms that administrators can use to protect
-    the BGP sessions, with TTL and MD5. Then the document describes the prefix filters
-    that can be used, how some of them can be automated, and where they apply in the
-    BGP network. Afterwards, applicability of other methods including BGP route flap
-    dampening, limiting maximum prefixes per peering, AS-path filtering and community
-    scrubbing is analyzed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   BGP (Border Gateway Protocol) is the protocol used in the internet
+    to\n   exchange routing information between network domains.  This protocol\n
+    \  does not directly include mechanisms that control that routes\n   exchanged
+    conform to the various rules defined by the Internet\n   community.  This document
+    intends to summarize most common existing\n   rules and help network administrators
+    applying simply coherent BGP\n   policies.  First it recalls mechanisms that administrators
+    can use to\n   protect the BGP sessions, with TTL and MD5.  Then the document\n
+    \  describes the prefix filters that can be used, how some of them can\n   be
+    automated, and where they apply in the BGP network.  Afterwards,\n   applicability
+    of other methods including BGP route flap dampening,\n   limiting maximum prefixes
+    per peering, AS-path filtering and\n   community scrubbing is analyzed.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-jdurand-bgp-security-00
-    docid:
-    - id: draft-jdurand-bgp-security-00
+    formattedref: draft-jdurand-bgp-security-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jdurand-bgp-security-00
+    docidentifier:
+    - content: draft-jdurand-bgp-security-00
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jdurand-bgp-security-00
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-jdurand-bgp-security-02
-    docid:
-    - id: draft-jdurand-bgp-security-02
+    formattedref: draft-jdurand-bgp-security-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jdurand-bgp-security-02
+    docidentifier:
+    - content: draft-jdurand-bgp-security-02
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-jdurand-bgp-security-02
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-jdurand-bgp-security-01
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

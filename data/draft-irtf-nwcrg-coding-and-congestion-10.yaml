@@ -1,198 +1,172 @@
 ---
-schema-version: v1.2.9
-id: draft-irtf-nwcrg-coding-and-congestion-10
-title:
-- content: Coding and congestion control in transport
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-irtf-nwcrg-coding-and-congestion-10
-  type: src
+id: draftirtfnwcrgcodingandcongestion10
 type: standard
-docid:
-- id: draft-irtf-nwcrg-coding-and-congestion-10
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Coding and congestion control in transport
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-irtf-nwcrg-coding-and-congestion-10
+docidentifier:
+- content: draft-irtf-nwcrg-coding-and-congestion
+  type: Internet-Draft
+- content: draft-irtf-nwcrg-coding-and-congestion-10
   type: Internet-Draft
   primary: true
-- id: I-D.irtf-nwcrg-coding-and-congestion
-  type: IETF
-  scope: anchor
 docnumber: I-D.irtf-nwcrg-coding-and-congestion
 date:
 - type: published
-  value: '2022-01-15'
+  at: '2022-01-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nicolas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nicolas
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Kuhn
-        language:
-        - en
       completename:
+        language: en
         content: Nicolas Kuhn
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CNES
-  role:
+        - language: en
+          content: CNES
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Emmanuel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Emmanuel
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Lochin
-        language:
-        - en
       completename:
+        language: en
         content: Emmanuel Lochin
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: ENAC
-  role:
+        - language: en
+          content: ENAC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: F
-        formatted_initials:
-          content: F.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
       surname:
+        language: en
         content: Michel
-        language:
-        - en
       completename:
+        language: en
         content: François Michel
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: UCLouvain
-  role:
+        - language: en
+          content: UCLouvain
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Michael
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Michael
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Welzl
-        language:
-        - en
       completename:
+        language: en
         content: Michael Welzl
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: University of Oslo
-  role:
-  - type: author
+        - language: en
+          content: University of Oslo
 version:
 - draft: '10'
-revdate: '2022-01-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Forward Erasure Correction (FEC) is a reliability mechanism that is
-    distinct and separate from the retransmission logic in reliable transfer protocols
-    such as TCP. FEC coding can help deal with losses at the end of transfers or with
-    networks having non-congestion losses. However, FEC coding mechanisms should not
-    hide congestion signals. This memo offers a discussion of how FEC coding and congestion
-    control can coexist. Another objective is to encourage the research community
-    to also consider congestion control aspects when proposing and comparing FEC coding
-    solutions in communication systems. This document is the product of the Coding
-    for Efficient Network Communications Research Group (NWCRG). The scope of the
-    document is end-to-end communications: FEC coding for tunnels is out-of-the scope
-    of the document.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Forward Erasure Correction (FEC) is a reliability mechanism that is\n
+    \  distinct and separate from the retransmission logic in reliable\n   transfer
+    protocols such as TCP.  FEC coding can help deal with losses\n   at the end of
+    transfers or with networks having non-congestion\n   losses.  However, FEC coding
+    mechanisms should not hide congestion\n   signals.  This memo offers a discussion
+    of how FEC coding and\n   congestion control can coexist.  Another objective is
+    to encourage\n   the research community to also consider congestion control aspects\n
+    \  when proposing and comparing FEC coding solutions in communication\n   systems.\n\n
+    \  This document is the product of the Coding for Efficient Network\n   Communications
+    Research Group (NWCRG).  The scope of the document is\n   end-to-end communications:
+    FEC coding for tunnels is out-of-the scope\n   of the document.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-irtf-nwcrg-coding-and-congestion-09
-    docid:
-    - id: draft-irtf-nwcrg-coding-and-congestion-09
+    formattedref: draft-irtf-nwcrg-coding-and-congestion-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-nwcrg-coding-and-congestion-09
+    docidentifier:
+    - content: draft-irtf-nwcrg-coding-and-congestion-09
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-nwcrg-coding-and-congestion-09
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-irtf-nwcrg-coding-and-congestion-11
-    docid:
-    - id: draft-irtf-nwcrg-coding-and-congestion-11
+    formattedref: draft-irtf-nwcrg-coding-and-congestion-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-irtf-nwcrg-coding-and-congestion-11
+    docidentifier:
+    - content: draft-irtf-nwcrg-coding-and-congestion-11
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-irtf-nwcrg-coding-and-congestion-11
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-irtf-nwcrg-coding-and-congestion-10
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

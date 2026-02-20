@@ -1,163 +1,142 @@
 ---
-schema-version: v1.2.9
-id: draft-berra-dnsop-keystate-00
-title:
-- content: Signalling Key State Via DNS EDNS(0) OPT
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-berra-dnsop-keystate-00
-  type: src
+id: draftberradnsopkeystate00
 type: standard
-docid:
-- id: draft-berra-dnsop-keystate-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Signalling Key State Via DNS EDNS(0) OPT
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-berra-dnsop-keystate-00
+docidentifier:
+- content: draft-berra-dnsop-keystate
+  type: Internet-Draft
+- content: draft-berra-dnsop-keystate-00
   type: Internet-Draft
   primary: true
-- id: I-D.berra-dnsop-keystate
-  type: IETF
-  scope: anchor
 docnumber: I-D.berra-dnsop-keystate
 date:
 - type: published
-  value: '2024-10-21'
+  at: '2024-10-21'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Erik
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: E
-        formatted_initials:
-          content: E.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Erik
+      - language: en
+        script: Latn
+        initial: E
+      formatted_initials:
+        language: en
+        content: E.
       surname:
+        language: en
         content: Bergström
-        language:
-        - en
       completename:
+        language: en
         content: Erik Bergström
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: The Swedish Internet Foundation
-  role:
+        - language: en
+          content: The Swedish Internet Foundation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Leon
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Leon
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Fernandez
-        language:
-        - en
       completename:
+        language: en
         content: Leon Fernandez
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: The Swedish Internet Foundation
-  role:
+        - language: en
+          content: The Swedish Internet Foundation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Johan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Johan
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Stenstam
-        language:
-        - en
       completename:
+        language: en
         content: Johan Stenstam
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: The Swedish Internet Foundation
-  role:
-  - type: author
+        - language: en
+          content: The Swedish Internet Foundation
 version:
 - draft: '00'
-revdate: '2024-10-21'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document introduces the KeyState EDNS(0) option code, to enable
-    the exchange of SIG(0) key state information between DNS entities via the DNS
-    protocol. The KeyState option allows DNS clients and servers to include key state
-    data in both queries and responses, facilitating mutual awareness of SIG(0) key
-    status between child and parent zones. This mechanism addresses the challenges
-    of maintaining synchronization of SIG(0) keys used for securing DNS UPDATE messages,
-    thereby enhancing the efficiency and reliability of DNS operations that require
-    coordinated key management. This document proposes such a mechanism. TO BE REMOVED:
-    This document is being collaborated on in Github at: https://github.com/johanix/draft-berra-dnsop-opt-transaction-state
-    (https://github.com/johanix/draft-berra-dnsop-transaction-state-00). The most
-    recent working version of the document, open issues, etc, should all be available
-    there. The authors (gratefully) accept pull requests.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document introduces the KeyState EDNS(0) option code, to enable\n
+    \  the exchange of SIG(0) key state information between DNS entities via\n   the
+    DNS protocol.  The KeyState option allows DNS clients and servers\n   to include
+    key state data in both queries and responses, facilitating\n   mutual awareness
+    of SIG(0) key status between child and parent zones.\n   This mechanism addresses
+    the challenges of maintaining\n   synchronization of SIG(0) keys used for securing
+    DNS UPDATE messages,\n   thereby enhancing the efficiency and reliability of DNS
+    operations\n   that require coordinated key management.\n\n   This document proposes
+    such a mechanism.\n\n   TO BE REMOVED: This document is being collaborated on
+    in Github at:\n   https://github.com/johanix/draft-berra-dnsop-opt-transaction-state\n
+    \  (https://github.com/johanix/draft-berra-dnsop-transaction-state-00).\n   The
+    most recent working version of the document, open issues, etc,\n   should all
+    be available there.  The authors (gratefully) accept pull\n   requests.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-berra-dnsop-keystate-01
-    docid:
-    - id: draft-berra-dnsop-keystate-01
+    formattedref: draft-berra-dnsop-keystate-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-berra-dnsop-keystate-01
+    docidentifier:
+    - content: draft-berra-dnsop-keystate-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-berra-dnsop-keystate-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-berra-dnsop-keystate-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

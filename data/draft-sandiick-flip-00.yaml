@@ -1,192 +1,157 @@
 ---
-schema-version: v1.2.9
-id: draft-sandiick-flip-00
+id: draftsandiickflip00
+type: standard
+schema_version: v1.4.1
 title:
-- content: 'Fast LIveness Protocol (FLIP)
+- language: en
+  script: Latn
+  content: 'Fast LIveness Protocol (FLIP)
 
     '
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sandiick-flip-00
-  type: src
-type: standard
-docid:
-- id: draft-sandiick-flip-00
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sandiick-flip-00
+docidentifier:
+- content: draft-sandiick-flip
+  type: Internet-Draft
+- content: draft-sandiick-flip-00
   type: Internet-Draft
   primary: true
-- id: I-D.sandiick-flip
-  type: IETF
-  scope: anchor
 docnumber: I-D.sandiick-flip
 date:
 - type: published
-  value: '2000-03-03'
+  at: '2000-03-03'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: I
-        formatted_initials:
-          content: I.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ian
+      - language: en
+        script: Latn
+        initial: I
+      formatted_initials:
+        language: en
+        content: I.
       surname:
+        language: en
         content: Duncan
-        language:
-        - en
       completename:
+        language: en
         content: Ian Duncan
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Hal
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: H
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: H. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Hal
+      - language: en
+        script: Latn
+        initial: H
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: H. J.
       surname:
+        language: en
         content: Sandick
-        language:
-        - en
       completename:
+        language: en
         content: Hal J. Sandick
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Bradley
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Bradley
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Cain
-        language:
-        - en
       completename:
+        language: en
         content: Bradley Cain
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Brian
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: B
-        formatted_initials:
-          content: B.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Brian
+      - language: en
+        script: Latn
+        initial: B
+      formatted_initials:
+        language: en
+        content: B.
       surname:
+        language: en
         content: Haberman
-        language:
-        - en
       completename:
+        language: en
         content: Brian Haberman
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Squire
-        language:
-        - en
       completename:
+        language: en
         content: Dr. Matt Squire
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2000-03-03'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Networks and network applications must be robust and reliable. For
-    many applications and services, such as packetized voice, correcting a failure
-    must be almost instantaneous. The first step in correcting a failure is, of course,
-    detecting that it occurred. IP routing protocols and signaling protocols as well
-    as many application layer protocols incorporate their own keepalive mechanisms
-    to detect failures. Typically, these protocols detect failures on the order of
-    seconds or tens of seconds. While there are some physical and link layer technologies
-    that inherently supply link outage detection, not all link layers do this. In
-    order to provide for fast failure detection over any type of lower layer, an IP
-    layer fast keepalive protocol can be used. This draft describes such a protocol
-    for quickly detecting when a network layer interface of a peer has failed.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Networks and network applications must be robust and reliable.  For\nmany
+    applications and services, such as packetized voice, correcting a\nfailure must
+    be almost instantaneous.  The first step in correcting a\nfailure is, of course,
+    detecting that it occurred.  IP routing\nprotocols and signaling protocols as
+    well as many application layer\nprotocols incorporate their own keepalive mechanisms
+    to detect\nfailures.  Typically, these protocols detect failures on the order
+    of\nseconds or tens of seconds.  While there are some physical and link\nlayer
+    technologies that inherently supply link outage detection, not\nall link layers
+    do this.  In order to provide for fast failure\ndetection over any type of lower
+    layer, an IP layer fast keepalive\nprotocol can be used.  This draft describes
+    such a protocol for quickly\ndetecting when a network layer interface of a peer
+    has failed.\n\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sandiick-flip-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

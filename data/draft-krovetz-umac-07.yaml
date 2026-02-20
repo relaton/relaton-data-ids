@@ -1,93 +1,79 @@
 ---
-schema-version: v1.2.9
-id: draft-krovetz-umac-07
-title:
-- content: 'UMAC: Message Authentication Code using Universal Hashing'
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-krovetz-umac-07
-  type: src
+id: draftkrovetzumac07
 type: standard
-docid:
-- id: draft-krovetz-umac-07
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: 'UMAC: Message Authentication Code using Universal Hashing'
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-krovetz-umac-07
+docidentifier:
+- content: draft-krovetz-umac
+  type: Internet-Draft
+- content: draft-krovetz-umac-07
   type: Internet-Draft
   primary: true
-- id: I-D.krovetz-umac
-  type: IETF
-  scope: anchor
 docnumber: I-D.krovetz-umac
 date:
 - type: published
-  value: '2005-11-08'
+  at: '2005-11-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ted
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        formatted_initials:
-          content: T.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ted
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
       surname:
+        language: en
         content: Krovetz
-        language:
-        - en
       completename:
+        language: en
         content: Ted Krovetz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: CSU Sacramento
-  role:
-  - type: author
+        - language: en
+          content: CSU Sacramento
 version:
 - draft: '07'
-revdate: '2005-11-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>This specification describes how to generate an authentication tag using
+- language: en
+  script: Latn
+  content: "This specification describes how to generate an authentication tag using
     the UMAC message authentication algorithm. UMAC is designed to be very fast to
     compute in software on contemporary uniprocessors. Measured speeds are as low
     as one cycle per byte. UMAC relies on addition of 32-bit and 64-bit numbers and
-    multiplication of 32-bit numbers, operations well-supported by contemporary machines.
-    To generate the authentication tag on a given message, a "universal" hash function
+    multiplication of 32-bit numbers, operations well-supported by contemporary machines.\n\n
+    To generate the authentication tag on a given message, a \"universal\" hash function
     is applied to the message and key to produce a short, fixed-length hash value,
     and this hash value is then xor'ed with a key-derived pseudorandom pad. UMAC enjoys
-    a rigorous security analysis, and its only internal "cryptographic" component
+    a rigorous security analysis, and its only internal \"cryptographic\" component
     is a block cipher used to generate the pseudorandom pads and internal key material.
-    This memo provides information for the Internet community.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    This memo provides information for the Internet community.\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-krovetz-umac-07
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

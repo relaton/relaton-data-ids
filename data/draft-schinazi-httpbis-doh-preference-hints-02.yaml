@@ -1,165 +1,144 @@
 ---
-schema-version: v1.2.9
-id: draft-schinazi-httpbis-doh-preference-hints-02
-title:
-- content: DoH Preference Hints for HTTP
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-schinazi-httpbis-doh-preference-hints-02
-  type: src
+id: draftschinazihttpbisdohpreferencehints02
 type: standard
-docid:
-- id: draft-schinazi-httpbis-doh-preference-hints-02
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: DoH Preference Hints for HTTP
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-schinazi-httpbis-doh-preference-hints-02
+docidentifier:
+- content: draft-schinazi-httpbis-doh-preference-hints
+  type: Internet-Draft
+- content: draft-schinazi-httpbis-doh-preference-hints-02
   type: Internet-Draft
   primary: true
-- id: I-D.schinazi-httpbis-doh-preference-hints
-  type: IETF
-  scope: anchor
 docnumber: I-D.schinazi-httpbis-doh-preference-hints
 date:
 - type: published
-  value: '2020-07-13'
+  at: '2020-07-13'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: David
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: David
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Schinazi
-        language:
-        - en
       completename:
+        language: en
         content: David Schinazi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Google LLC
-  role:
+        - language: en
+          content: Google LLC
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nick
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nick
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Sullivan
-        language:
-        - en
       completename:
+        language: en
         content: Nick Sullivan
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
-  role:
+        - language: en
+          content: Cloudflare
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jesse
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jesse
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Kipp
-        language:
-        - en
       completename:
+        language: en
         content: Jesse Kipp
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cloudflare
-  role:
-  - type: author
+        - language: en
+          content: Cloudflare
 version:
 - draft: '02'
-revdate: '2020-07-13'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>When using a publicly available DNS-over-HTTPS (DoH) server, some clients
-    may suffer poor performance when the authoritative DNS server is located far from
-    the DoH server. For example, a publicly available DoH server provided by a Content
-    Delivery Network (CDN) should be able to resolve names hosted by that CDN with
-    good performance but might take longer to resolve names provided by other CDNs,
-    or might provide suboptimal results if that CDN is using DNS- based load balancing
-    and returns different address records depending or where the DNS query originated
-    from. This document attempts to lessen these issues by allowing the web server
-    to indicate to the client which DoH server can best resolve its addresses. This
-    document defines an HTTP header field that enables web host operators to inform
-    user agents of the preferred DoH servers to use for subsequent DNS lookups for
-    the host's domain. Discussion of this work is encouraged to happen on the ADD
-    IETF mailing list add@ietf.org or on the GitHub repository which contains the
-    draft: https://github.com/DavidSchinazi/draft-httpbis-doh- preference-hints.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   When using a publicly available DNS-over-HTTPS (DoH) server, some\n
+    \  clients may suffer poor performance when the authoritative DNS server\n   is
+    located far from the DoH server.  For example, a publicly\n   available DoH server
+    provided by a Content Delivery Network (CDN)\n   should be able to resolve names
+    hosted by that CDN with good\n   performance but might take longer to resolve
+    names provided by other\n   CDNs, or might provide suboptimal results if that
+    CDN is using DNS-\n   based load balancing and returns different address records
+    depending\n   or where the DNS query originated from.  This document attempts
+    to\n   lessen these issues by allowing the web server to indicate to the\n   client
+    which DoH server can best resolve its addresses.  This\n   document defines an
+    HTTP header field that enables web host operators\n   to inform user agents of
+    the preferred DoH servers to use for\n   subsequent DNS lookups for the host's
+    domain.\n\n   Discussion of this work is encouraged to happen on the ADD IETF\n
+    \  mailing list add@ietf.org or on the GitHub repository which contains\n   the
+    draft: https://github.com/DavidSchinazi/draft-httpbis-doh-\n   preference-hints.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-schinazi-httpbis-doh-preference-hints-01
-    docid:
-    - id: draft-schinazi-httpbis-doh-preference-hints-01
+    formattedref: draft-schinazi-httpbis-doh-preference-hints-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schinazi-httpbis-doh-preference-hints-01
+    docidentifier:
+    - content: draft-schinazi-httpbis-doh-preference-hints-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-schinazi-httpbis-doh-preference-hints-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-schinazi-httpbis-doh-preference-hints-02
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

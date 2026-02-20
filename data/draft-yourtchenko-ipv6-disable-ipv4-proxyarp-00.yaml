@@ -1,116 +1,98 @@
 ---
-schema-version: v1.2.9
-id: draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
-title:
-- content: Disable "Proxy ARP for Everything" on IPv4 link-local in the presence of
-    IPv6 global address
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
-  type: src
+id: draftyourtchenkoipv6disableipv4proxyarp00
 type: standard
-docid:
-- id: draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Disable "Proxy ARP for Everything" on IPv4 link-local in the presence of
+    IPv6 global address
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
+docidentifier:
+- content: draft-yourtchenko-ipv6-disable-ipv4-proxyarp
+  type: Internet-Draft
+- content: draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
   type: Internet-Draft
   primary: true
-- id: I-D.yourtchenko-ipv6-disable-ipv4-proxyarp
-  type: IETF
-  scope: anchor
 docnumber: I-D.yourtchenko-ipv6-disable-ipv4-proxyarp
 date:
 - type: published
-  value: '2013-05-10'
+  at: '2013-05-10'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Andrew
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Andrew
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Yourtchenko
-        language:
-        - en
       completename:
+        language: en
         content: Andrew Yourtchenko
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: cisco
-  role:
+        - language: en
+          content: cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Owen
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: O
-        formatted_initials:
-          content: O.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Owen
+      - language: en
+        script: Latn
+        initial: O
+      formatted_initials:
+        language: en
+        content: O.
       surname:
+        language: en
         content: DeLong
-        language:
-        - en
       completename:
+        language: en
         content: Owen DeLong
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '00'
-revdate: '2013-05-10'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>rfc3927 defines the behavior "Proxy ARP for Everything" in case the
-    only address present on the host is IPv4 link-local. However, it does not specify
-    anything about the presence or absence of IPv6 global addressing. This results
-    in the hosts assuming it has both IPv4 and IPv6 connectivity in the scenario where
-    the host itself is dualstack-enabled, but the network supplies only IPv6 configuration
-    information. Some implementations in this case may decide to use IPv4, which results
-    in long connection delays. This document proposes to avoid the "Proxy ARP for
-    Everything" behavior if the host has been assigned an IPv6 address.</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   rfc3927 defines the behavior \"Proxy ARP for Everything\" in case the\n
+    \  only address present on the host is IPv4 link-local.  However, it\n   does
+    not specify anything about the presence or absence of IPv6\n   global addressing.
+    \ This results in the hosts assuming it has both\n   IPv4 and IPv6 connectivity
+    in the scenario where the host itself is\n   dualstack-enabled, but the network
+    supplies only IPv6 configuration\n   information.  Some implementations in this
+    case may decide to use\n   IPv4, which results in long connection delays.  This
+    document\n   proposes to avoid the \"Proxy ARP for Everything\" behavior if the
+    host\n   has been assigned an IPv6 address.\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-yourtchenko-ipv6-disable-ipv4-proxyarp-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

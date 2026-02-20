@@ -1,214 +1,182 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-rddp-mpa-08
-title:
-- content: Marker PDU Aligned Framing for TCP Specification
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-rddp-mpa-08
-  type: src
+id: draftietfrddpmpa08
 type: standard
-docid:
-- id: draft-ietf-rddp-mpa-08
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Marker PDU Aligned Framing for TCP Specification
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-rddp-mpa-08
+docidentifier:
+- content: draft-ietf-rddp-mpa
+  type: Internet-Draft
+- content: draft-ietf-rddp-mpa-08
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-rddp-mpa
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-rddp-mpa
 date:
 - type: published
-  value: '2006-10-09'
+  at: '2006-10-09'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Paul
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: P
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: P. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Paul
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: P. R.
       surname:
+        language: en
         content: Culley
-        language:
-        - en
       completename:
+        language: en
         content: Paul R. Culley
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Hewlett-Packard Company
-  role:
+        - language: en
+          content: Hewlett-Packard Company
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Sandburst
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Sandburst
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Corporation
-        language:
-        - en
       completename:
+        language: en
         content: Sandburst Corporation
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Sandburst Corporation
-  role:
+        - language: en
+          content: Sandburst Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: John
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Carrier
-        language:
-        - en
       completename:
+        language: en
         content: John Carrier
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cray Inc.
-  role:
+        - language: en
+          content: Cray Inc.
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Uri
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: U
-        formatted_initials:
-          content: U.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Uri
+      - language: en
+        script: Latn
+        initial: U
+      formatted_initials:
+        language: en
+        content: U.
       surname:
+        language: en
         content: Elzur
-        language:
-        - en
       completename:
+        language: en
         content: Uri Elzur
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Broadcom Corporation
-  role:
+        - language: en
+          content: Broadcom Corporation
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Renato
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: R
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: R. J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Renato
+      - language: en
+        script: Latn
+        initial: R
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: R. J.
       surname:
+        language: en
         content: Recio
-        language:
-        - en
       completename:
+        language: en
         content: Renato J. Recio
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: IBM Corporation
-  role:
-  - type: author
+        - language: en
+          content: IBM Corporation
 version:
 - draft: '08'
-revdate: '2006-10-09'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Marker PDU Aligned Framing (MPA) is designed to work as an "adaptation
-    layer" between TCP and the Direct Data Placement protocol (DDP) as described in
-    RFC 5041. It preserves the reliable, in-order delivery of TCP, while adding the
-    preservation of higher-level protocol record boundaries that DDP requires. MPA
-    is fully compliant with applicable TCP RFCs and can be utilized with existing
-    TCP implementations. MPA also supports integrated implementations that combine
+- language: en
+  script: Latn
+  content: "Marker PDU Aligned Framing (MPA) is designed to work as an \"adaptation
+    layer\" between TCP and the Direct Data Placement protocol (DDP) as described
+    in RFC 5041.  It preserves the reliable, in-order delivery of TCP, while adding
+    the preservation of higher-level protocol record boundaries that DDP requires.
+    \ MPA is fully compliant with applicable TCP RFCs and can be utilized with existing
+    TCP implementations.  MPA also supports integrated implementations that combine
     TCP, MPA and DDP to reduce buffering requirements in the implementation and improve
-    performance at the system level. [STANDARDS-TRACK]</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+    performance at the system level. [STANDARDS-TRACK]\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-rddp-mpa-08
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

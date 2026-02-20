@@ -1,211 +1,176 @@
 ---
-schema-version: v1.2.9
-id: draft-wu-pce-dns-pce-discovery-09
-title:
-- content: Path Computation Element (PCE) Discovery using Domain Name System(DNS)
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-wu-pce-dns-pce-discovery-09
-  type: src
+id: draftwupcednspcediscovery09
 type: standard
-docid:
-- id: draft-wu-pce-dns-pce-discovery-09
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Path Computation Element (PCE) Discovery using Domain Name System(DNS)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-wu-pce-dns-pce-discovery-09
+docidentifier:
+- content: draft-wu-pce-dns-pce-discovery
+  type: Internet-Draft
+- content: draft-wu-pce-dns-pce-discovery-09
   type: Internet-Draft
   primary: true
-- id: I-D.wu-pce-dns-pce-discovery
-  type: IETF
-  scope: anchor
 docnumber: I-D.wu-pce-dns-pce-discovery
 date:
 - type: published
-  value: '2015-12-06'
+  at: '2015-12-06'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Qin
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: Q
-        formatted_initials:
-          content: Q.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Qin
+      - language: en
+        script: Latn
+        initial: Q
+      formatted_initials:
+        language: en
+        content: Q.
       surname:
+        language: en
         content: Wu
-        language:
-        - en
       completename:
+        language: en
         content: Qin Wu
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dhruv
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dhruv
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Dhody
-        language:
-        - en
       completename:
+        language: en
         content: Dhruv Dhody
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Daniel
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Daniel
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: King
-        language:
-        - en
       completename:
+        language: en
         content: Daniel King
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Diego
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        - content:
-          language:
-          - en
-          initial: R
-        formatted_initials:
-          content: D. R.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Diego
+      - language: en
+        script: Latn
+        initial: D
+      - language: en
+        script: Latn
+        initial: R
+      formatted_initials:
+        language: en
+        content: D. R.
       surname:
+        language: en
         content: Lopez
-        language:
-        - en
       completename:
+        language: en
         content: Diego R. Lopez
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Jeff
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: J
-        formatted_initials:
-          content: J.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Jeff
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
       surname:
+        language: en
         content: Tantsura
-        language:
-        - en
       completename:
+        language: en
         content: Jeff Tantsura
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '09'
-revdate: '2015-12-06'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Discovery of the Path Computation Element (PCE) within an IGP area
-    or routing domain is possible using OSPF and IS-IS IGP discovery. However, it
-    has been established that in certain deployment scenarios PCEs may not wish, or
-    be able to participate within the IGP process. In those scenarios, it is beneficial
-    for the Path Computation Client (PCC) (or other PCE) to discover PCEs via an alternative
-    mechanism to using an IGP discovery. This document specifies the requirements,
-    use cases, procedures and extensions to support PCE discovery along with certain
-    relevant information type and capability discovery via DNS.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Discovery of the Path Computation Element (PCE) within an IGP area
+    or\n   routing domain is possible using OSPF and IS-IS IGP discovery.\n   However,
+    it has been established that in certain deployment scenarios\n   PCEs may not
+    wish, or be able to participate within the IGP process.\n   In those scenarios,
+    it is beneficial for the Path Computation Client\n   (PCC) (or other PCE) to discover
+    PCEs via an alternative mechanism to\n   using an IGP discovery.\n\n   This document
+    specifies the requirements, use cases, procedures and\n   extensions to support
+    PCE discovery along with certain relevant\n   information type and capability
+    discovery via DNS.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-wu-pce-dns-pce-discovery-08
-    docid:
-    - id: draft-wu-pce-dns-pce-discovery-08
+    formattedref: draft-wu-pce-dns-pce-discovery-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wu-pce-dns-pce-discovery-08
+    docidentifier:
+    - content: draft-wu-pce-dns-pce-discovery-08
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wu-pce-dns-pce-discovery-08
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-wu-pce-dns-pce-discovery-10
-    docid:
-    - id: draft-wu-pce-dns-pce-discovery-10
+    formattedref: draft-wu-pce-dns-pce-discovery-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wu-pce-dns-pce-discovery-10
+    docidentifier:
+    - content: draft-wu-pce-dns-pce-discovery-10
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-wu-pce-dns-pce-discovery-10
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-wu-pce-dns-pce-discovery-09
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

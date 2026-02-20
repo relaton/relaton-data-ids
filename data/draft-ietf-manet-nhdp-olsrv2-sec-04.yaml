@@ -1,161 +1,135 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-manet-nhdp-olsrv2-sec-04
-title:
-- content: Integrity Protection for Control Messages in NHDP and OLSRv2
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-olsrv2-sec-04
-  type: src
+id: draftietfmanetnhdpolsrv2sec04
 type: standard
-docid:
-- id: draft-ietf-manet-nhdp-olsrv2-sec-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Integrity Protection for Control Messages in NHDP and OLSRv2
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-olsrv2-sec-04
+docidentifier:
+- content: draft-ietf-manet-nhdp-olsrv2-sec
+  type: Internet-Draft
+- content: draft-ietf-manet-nhdp-olsrv2-sec-04
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-manet-nhdp-olsrv2-sec
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-manet-nhdp-olsrv2-sec
 date:
 - type: published
-  value: '2013-08-14'
+  at: '2013-08-14'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ulrich
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: U
-        formatted_initials:
-          content: U.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ulrich
+      - language: en
+        script: Latn
+        initial: U
+      formatted_initials:
+        language: en
+        content: U.
       surname:
+        language: en
         content: Herberg
-        language:
-        - en
       completename:
+        language: en
         content: Ulrich Herberg
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Christopher
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: C
-        formatted_initials:
-          content: C.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Christopher
+      - language: en
+        script: Latn
+        initial: C
+      formatted_initials:
+        language: en
+        content: C.
       surname:
+        language: en
         content: Dearlove
-        language:
-        - en
       completename:
+        language: en
         content: Christopher Dearlove
-        language:
-        - en
-  role:
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Thomas
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: T
-        - content:
-          language:
-          - en
-          initial: H
-        formatted_initials:
-          content: T. H.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Thomas
+      - language: en
+        script: Latn
+        initial: T
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: T. H.
       surname:
+        language: en
         content: Clausen
-        language:
-        - en
       completename:
+        language: en
         content: Thomas H. Clausen
-        language:
-        - en
-  role:
-  - type: author
 version:
 - draft: '04'
-revdate: '2013-08-14'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document specifies integrity and replay protection for the MANET
-    Neighborhood Discovery Protocol (NHDP) and the Optimized Link State Routing Protocol
-    version 2 (OLSRv2). This protection is achieved by using an HMAC-SHA-256 Integrity
-    Check Value (ICV) TLV and a timestamp TLV based on POSIX time. The mechanism in
-    this specification can also be used for other protocols that use the generalized
-    packet/message format described in RFC 5444. This document updates RFC 6130 and
-    RFC xxxx by mandating the implementation of this integrity and replay protection
-    in NHDP and OLSRv2.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document specifies integrity and replay protection for the MANET\n
+    \  Neighborhood Discovery Protocol (NHDP) and the Optimized Link State\n   Routing
+    Protocol version 2 (OLSRv2).  This protection is achieved by\n   using an HMAC-SHA-256
+    Integrity Check Value (ICV) TLV and a timestamp\n   TLV based on POSIX time.\n\n
+    \  The mechanism in this specification can also be used for other\n   protocols
+    that use the generalized packet/message format described in\n   RFC 5444.\n\n
+    \  This document updates RFC 6130 and RFC xxxx by mandating the\n   implementation
+    of this integrity and replay protection in NHDP and\n   OLSRv2.\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-ietf-manet-nhdp-olsrv2-sec-03
-    docid:
-    - id: draft-ietf-manet-nhdp-olsrv2-sec-03
+    formattedref: draft-ietf-manet-nhdp-olsrv2-sec-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-olsrv2-sec-03
+    docidentifier:
+    - content: draft-ietf-manet-nhdp-olsrv2-sec-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-manet-nhdp-olsrv2-sec-03
-      format: text/plain
 - type: updatedBy
   bibitem:
-    id: draft-ietf-manet-nhdp-olsrv2-sec-05
-    docid:
-    - id: draft-ietf-manet-nhdp-olsrv2-sec-05
+    formattedref: draft-ietf-manet-nhdp-olsrv2-sec-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-manet-nhdp-olsrv2-sec-05
+    docidentifier:
+    - content: draft-ietf-manet-nhdp-olsrv2-sec-05
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-manet-nhdp-olsrv2-sec-05
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-manet-nhdp-olsrv2-sec-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

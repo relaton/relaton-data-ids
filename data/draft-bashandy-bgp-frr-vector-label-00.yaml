@@ -1,161 +1,138 @@
 ---
-schema-version: v1.2.9
-id: draft-bashandy-bgp-frr-vector-label-00
-title:
-- content: BGP FRR Protection against Edge Node Failure Using Vector Labels
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-bashandy-bgp-frr-vector-label-00
-  type: src
+id: draftbashandybgpfrrvectorlabel00
 type: standard
-docid:
-- id: draft-bashandy-bgp-frr-vector-label-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: BGP FRR Protection against Edge Node Failure Using Vector Labels
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-bashandy-bgp-frr-vector-label-00
+docidentifier:
+- content: draft-bashandy-bgp-frr-vector-label
+  type: Internet-Draft
+- content: draft-bashandy-bgp-frr-vector-label-00
   type: Internet-Draft
   primary: true
-- id: I-D.bashandy-bgp-frr-vector-label
-  type: IETF
-  scope: anchor
 docnumber: I-D.bashandy-bgp-frr-vector-label
 date:
 - type: published
-  value: '2012-07-08'
+  at: '2012-07-08'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ahmed
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ahmed
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Bashandy
-        language:
-        - en
       completename:
+        language: en
         content: Ahmed Bashandy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Nagendra
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: N. K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nagendra
+      - language: en
+        script: Latn
+        initial: "N"
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: N. K.
       surname:
+        language: en
         content: Nainar
-        language:
-        - en
       completename:
+        language: en
         content: Nagendra Kumar Nainar
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
+        - language: en
+          content: Cisco Systems
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Maciek
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Maciek
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: Konstantynowicz
-        language:
-        - en
       completename:
+        language: en
         content: Maciek Konstantynowicz
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco Systems
-  role:
-  - type: author
+        - language: en
+          content: Cisco Systems
 version:
 - draft: '00'
-revdate: '2012-07-08'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: <p>Consider a BGP free core scenario. Suppose the edge BGP speakers PE1,
-    PE2,..., PEn know about a prefix P/m via the external routers CE1, CE2,..., CEm.
-    If the edge router PEi crashes or becomes totally disconnected from the core,
-    it is desirable for a core router "P" carrying traffic to the failed edge router
-    PEi to immediately restore traffic by re-tunneling packets originally tunneled
-    to PEi and destined to the prefix P/m to one of the other edge routers that advertised
-    P/m, say PEj, until BGP re-converges. In doing so, it is highly desirable to keep
-    the core BGP-free while not imposing restrictions on external connectivity or
-    complicating provisioning effort. Thus (1) a core router should not be required
-    to learn any BGP prefix, (2) the size of the forwarding and routing tables in
-    the core routers should be independent of the number of BGP prefixes, (3) re-routing
-    traffic without waiting for re-convergence must not cause loops, (4) provisioning
-    effort should be kept at minimum, and (5) there should be no restrictions on what
-    edge routers advertise what prefixes. For labeled prefixes, (6) the label stack
-    on the packet must allow the repair PEj to correctly forward the packet and (7)
-    there must not be any need to perform more than one label lookup on any edge or
-    core router during steady state</p>
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "Consider a BGP free core scenario. Suppose the edge BGP speakers PE1,\nPE2,...,
+    PEn know about a prefix P/m via the external routers CE1,\nCE2,..., CEm.  If the
+    edge router PEi crashes or becomes totally\ndisconnected from the core, it is
+    desirable for a core router \"P\"\ncarrying traffic to the failed edge router
+    PEi to immediately restore\ntraffic by re-tunneling packets originally tunneled
+    to PEi and\ndestined to the prefix P/m to one of the other edge routers that\nadvertised
+    P/m, say PEj, until BGP re-converges. In doing so, it is\nhighly desirable to
+    keep the core BGP-free while not imposing\nrestrictions on external connectivity
+    or complicating provisioning\neffort. Thus (1) a core router should not be required
+    to learn any\nBGP prefix, (2) the size of the forwarding and routing tables in
+    the\ncore routers should be independent of the number of BGP prefixes, (3)\nre-routing
+    traffic without waiting for re-convergence must not cause\nloops, (4) provisioning
+    effort should be kept at minimum, and (5)\nthere should be no restrictions on
+    what edge routers advertise what\nprefixes. For labeled prefixes, (6) the label
+    stack on the packet\nmust allow the repair PEj to correctly forward the packet
+    and (7)\nthere must not be any need to perform more than one label lookup on\nany
+    edge or core router during steady state\n\n\t "
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-bashandy-bgp-frr-vector-label-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

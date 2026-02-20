@@ -1,223 +1,194 @@
 ---
-schema-version: v1.2.9
-id: draft-sajassi-bess-evpn-mvpn-seamless-interop-04
-title:
-- content: Seamless Multicast Interoperability between EVPN and MVPN PEs
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-mvpn-seamless-interop-04
-  type: src
+id: draftsajassibessevpnmvpnseamlessinterop04
 type: standard
-docid:
-- id: draft-sajassi-bess-evpn-mvpn-seamless-interop-04
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Seamless Multicast Interoperability between EVPN and MVPN PEs
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-mvpn-seamless-interop-04
+docidentifier:
+- content: draft-sajassi-bess-evpn-mvpn-seamless-interop
+  type: Internet-Draft
+- content: draft-sajassi-bess-evpn-mvpn-seamless-interop-04
   type: Internet-Draft
   primary: true
-- id: I-D.sajassi-bess-evpn-mvpn-seamless-interop
-  type: IETF
-  scope: anchor
 docnumber: I-D.sajassi-bess-evpn-mvpn-seamless-interop
 date:
 - type: published
-  value: '2019-07-05'
+  at: '2019-07-05'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Ali
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ali
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Sajassi
-        language:
-        - en
       completename:
+        language: en
         content: Ali Sajassi
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Kesavan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: K
-        formatted_initials:
-          content: K.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Kesavan
+      - language: en
+        script: Latn
+        initial: K
+      formatted_initials:
+        language: en
+        content: K.
       surname:
+        language: en
         content: Thiruvenkatasamy
-        language:
-        - en
       completename:
+        language: en
         content: Kesavan Thiruvenkatasamy
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Samir
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: S
-        formatted_initials:
-          content: S.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Samir
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
       surname:
+        language: en
         content: Thoria
-        language:
-        - en
       completename:
+        language: en
         content: Samir Thoria
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Cisco
-  role:
+        - language: en
+          content: Cisco
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Ashutosh
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: A
-        formatted_initials:
-          content: A.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Ashutosh
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
       surname:
+        language: en
         content: Gupta
-        language:
-        - en
       completename:
+        language: en
         content: Ashutosh Gupta
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Avi Networks
-  role:
+        - language: en
+          content: Avi Networks
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Luay
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: L
-        formatted_initials:
-          content: L.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Luay
+      - language: en
+        script: Latn
+        initial: L
+      formatted_initials:
+        language: en
+        content: L.
       surname:
+        language: en
         content: Jalil
-        language:
-        - en
       completename:
+        language: en
         content: Luay Jalil
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Verizon
-  role:
-  - type: author
+        - language: en
+          content: Verizon
 version:
 - draft: '04'
-revdate: '2019-07-05'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>Ethernet Virtual Private Network (EVPN) solution is becoming pervasive
-    for Network Virtualization Overlay (NVO) services in data center (DC) networks
-    and as the next generation VPN services in service provider (SP) networks. As
-    service providers transform their networks in their COs toward next generation
-    data center with Software Defined Networking (SDN) based fabric and Network Function
-    Virtualization (NFV), they want to be able to maintain their offered services
-    including Multicast VPN (MVPN) service between their existing network and their
-    new Service Provider Data Center (SPDC) network seamlessly without the use of
-    gateway devices. They want to have such seamless interoperability between their
-    new SPDCs and their existing networks for a) reducing cost, b) having optimum
-    forwarding, and c) reducing provisioning. This document describes a unified solution
-    based on RFCs 6513 &amp; 6514 for seamless interoperability of Multicast VPN between
-    EVPN and MVPN PEs. Furthermore, it describes how the proposed solution can be
-    used as a routed multicast solution in data centers with only EVPN PEs.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   Ethernet Virtual Private Network (EVPN) solution is becoming\n   pervasive
+    for Network Virtualization Overlay (NVO) services in data\n   center (DC) networks
+    and as the next generation VPN services in\n   service provider (SP) networks.\n\n
+    \  As service providers transform their networks in their COs toward\n   next
+    generation data center with Software Defined Networking (SDN)\n   based fabric
+    and Network Function Virtualization (NFV), they want to\n   be able to maintain
+    their offered services including Multicast VPN\n   (MVPN) service between their
+    existing network and their new Service\n   Provider Data Center (SPDC) network
+    seamlessly without the use of\n   gateway devices. They want to have such seamless
+    interoperability\n   between their new SPDCs and their existing networks for a)
+    reducing\n   cost, b) having optimum forwarding, and c) reducing provisioning.\n
+    \  This document describes a unified solution based on RFCs 6513 & 6514\n   for
+    seamless interoperability of Multicast VPN between EVPN and MVPN\n   PEs. Furthermore,
+    it describes how the proposed solution can be used\n   as a routed multicast solution
+    in data centers with only EVPN PEs.\n\n\n\t "
 relation:
 - type: updates
   bibitem:
-    id: draft-sajassi-bess-evpn-mvpn-seamless-interop-03
-    docid:
-    - id: draft-sajassi-bess-evpn-mvpn-seamless-interop-03
+    formattedref: draft-sajassi-bess-evpn-mvpn-seamless-interop-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sajassi-bess-evpn-mvpn-seamless-interop-03
+    docidentifier:
+    - content: draft-sajassi-bess-evpn-mvpn-seamless-interop-03
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-sajassi-bess-evpn-mvpn-seamless-interop-03
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-sajassi-bess-evpn-mvpn-seamless-interop-04
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf

@@ -1,160 +1,139 @@
 ---
-schema-version: v1.2.9
-id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
-title:
-- content: Zeroconf Multicast Address Allocation Problem Statement and Requirements
-  language:
-  - en
-  script:
-  - Latn
-  format: text/plain
-link:
-- content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
-  type: src
+id: draftietfpimzeroconfmcastaddrallocps00
 type: standard
-docid:
-- id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
+schema_version: v1.4.1
+title:
+- language: en
+  script: Latn
+  content: Zeroconf Multicast Address Allocation Problem Statement and Requirements
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
+docidentifier:
+- content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps
+  type: Internet-Draft
+- content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
   type: Internet-Draft
   primary: true
-- id: I-D.ietf-pim-zeroconf-mcast-addr-alloc-ps
-  type: IETF
-  scope: anchor
 docnumber: I-D.ietf-pim-zeroconf-mcast-addr-alloc-ps
 date:
 - type: published
-  value: '2023-09-15'
+  at: '2023-09-15'
 contributor:
-- person:
+- role:
+  - type: author
+  person:
     name:
-      given:
-        forename:
-        - content: Nathan
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: N
-        formatted_initials:
-          content: N.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Nathan
+      - language: en
+        script: Latn
+        initial: "N"
+      formatted_initials:
+        language: en
+        content: N.
       surname:
+        language: en
         content: Karstens
-        language:
-        - en
       completename:
+        language: en
         content: Nathan Karstens
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Garmin International
-  role:
+        - language: en
+          content: Garmin International
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Dino
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: D
-        formatted_initials:
-          content: D.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Dino
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
       surname:
+        language: en
         content: Farinacci
-        language:
-        - en
       completename:
+        language: en
         content: Dino Farinacci
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: lispers.net
-  role:
+        - language: en
+          content: lispers.net
+- role:
   - type: author
-- person:
+  person:
     name:
-      given:
-        forename:
-        - content: Mike
-          language:
-          - en
-        - content:
-          language:
-          - en
-          initial: M
-        formatted_initials:
-          content: M.
-          language:
-          - en
+      forename:
+      - language: en
+        script: Latn
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
       surname:
+        language: en
         content: McBride
-        language:
-        - en
       completename:
+        language: en
         content: Mike McBride
-        language:
-        - en
     affiliation:
     - organization:
         name:
-        - content: Futurewei
-  role:
-  - type: author
+        - language: en
+          content: Futurewei
 version:
 - draft: '00'
-revdate: '2023-09-15'
 language:
 - en
 script:
 - Latn
 abstract:
-- content: "<p>This document describes a network that requires unique multicast addresses
-    to distribute data. Various challenges are discussed, such as the use of multicast
-    snooping to ensure efficient use of bandwidth, limitations of switch hardware,
-    problems associated with address collisions, and the need to avoid user configuration.
-    After all limitations were considered it was determined that multicast addresses
-    need to be dynamically-assigned by a decentralized, zero- configuration protocol.
-    Requirements and recommendations for suitable protocols are listed and specific
-    considerations for assigning IPv4 and IPv6 addresses are reviewed. The document
-    closes with several solutions that are precluded from consideration.</p>"
-  language:
-  - en
-  script:
-  - Latn
-  format: text/html
+- language: en
+  script: Latn
+  content: "   This document describes a network that requires unique multicast\n
+    \  addresses to distribute data.  Various challenges are discussed, such\n   as
+    the use of multicast snooping to ensure efficient use of\n   bandwidth, limitations
+    of switch hardware, problems associated with\n   address collisions, and the need
+    to avoid user configuration.  After\n   all limitations were considered it was
+    determined that multicast\n   addresses need to be dynamically-assigned by a decentralized,
+    zero-\n   configuration protocol.\n\n   Requirements and recommendations for suitable
+    protocols are listed\n   and specific considerations for assigning IPv4 and IPv6
+    addresses are\n   reviewed.  The document closes with several solutions that are\n
+    \  precluded from consideration.\n\n\t "
 relation:
 - type: updatedBy
   bibitem:
-    id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
-    docid:
-    - id: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
+    formattedref: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
+    docidentifier:
+    - content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
       type: Internet-Draft
       primary: true
-    formattedref:
-      content: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-01
-      format: text/plain
 series:
 - type: main
   title:
+  - language: en
+    script: Latn
     content: Internet-Draft
-    language:
-    - en
-    script:
-    - Latn
-    format: text/plain
   number: draft-ietf-pim-zeroconf-mcast-addr-alloc-ps-00
 ext:
-  schema-version: v1.0.1
+  schema_version: v1.0.1
   doctype:
-    type: internet-draft
+    content: internet-draft
+  flavor: ietf
