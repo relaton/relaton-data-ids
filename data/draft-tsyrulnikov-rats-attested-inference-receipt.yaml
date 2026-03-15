@@ -14,16 +14,18 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document defines the Attested Inference Receipt (AIR), a COSE_Sign1
-    envelope carrying CWT claims profiled per the Entity Attestation Token (EAT) framework.
-    An AIR receipt binds model identity, input/output hashes, platform attestation
+- content: "<p>This document defines the Attested Inference Receipt (AIR), an application-layer
+    COSE_Sign1 envelope carrying CWT claims profiled per the Entity Attestation Token
+    (EAT) framework. An AIR receipt binds model identity, input/output hashes, attestation-linked
     metadata, and operational telemetry into a single signed artifact suitable for
-    audit, compliance, and third-party verification of a confidential AI inference
-    event. AIR v1 targets single-inference receipts emitted by workloads running inside
-    hardware-isolated Trusted Execution Environments (TEEs). It supports AWS Nitro
-    Enclaves and Intel TDX measurement formats, with extension points for additional
-    platforms. Pipeline chaining and multi-inference receipts are out of scope for
-    this version.</p>"
+    independent third-party verification of a confidential AI inference event. AIR
+    v1 targets single-inference receipts emitted by workloads running inside hardware-isolated
+    Trusted Execution Environments (TEEs). AIR is attestation-linked: it carries measurements
+    and a hash reference to the platform attestation evidence associated with the
+    inference, but it does not replace platform-specific attestation verification.
+    This version defines AWS Nitro Enclaves and Intel TDX measurement profiles only.
+    Pipeline chaining, multi-inference receipts, and extensibility mechanisms for
+    additional claim or platform profiles are out of scope.</p>"
   language:
   - en
   script:
@@ -39,4 +41,14 @@ relation:
       primary: true
     formattedref:
       content: draft-tsyrulnikov-rats-attested-inference-receipt-00
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-tsyrulnikov-rats-attested-inference-receipt-01
+    docid:
+    - id: draft-tsyrulnikov-rats-attested-inference-receipt-01
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-tsyrulnikov-rats-attested-inference-receipt-01
       format: text/plain
