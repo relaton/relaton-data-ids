@@ -13,11 +13,16 @@ docid:
   type: Internet-Draft
   primary: true
 abstract:
-- content: "<p>This document specifies the StealthFlow Protocol (SFP), a pre-transport
-    security layer designed to operate before TLS or QUIC. SFP introduces a zero-handshake
-    mechanism with reduced observability and asymmetric cost properties to mitigate
-    denial-of-service attacks and traffic analysis, while remaining compatible with
-    existing PKI infrastructure.</p>"
+- content: "<p>The StealthFlow Protocol (SFP) is a lightweight, hardware-aware proof-
+    of-work (PoW) based admission control mechanism designed to mitigate DDoS attacks
+    at the network edge. This document specifies version 1.5 of SFP, which introduces
+    de-IP PoW design, 8-bit physical fingerprinting embedded in random padding, XDP-level
+    three-lane (Green/Yellow/Black) traffic steering, and a closed-loop multi-layer
+    firewall integration (Edge → XDP → SSL/L7 → reverse XDP). These enhancements eliminate
+    IP- based reuse attacks, provide coarse-grained real-device verification, achieve
+    &lt;10% false-positive rate, and enable precise per-client isolation even under
+    NAT environments. SFP operates entirely at the XDP/eBPF layer with Fail-Silent
+    behavior and requires no changes to existing TLS/QUIC stacks.</p>"
   language:
   - en
   script:
@@ -43,4 +48,14 @@ relation:
       primary: true
     formattedref:
       content: draft-eli-stealthflow-protocol-01
+      format: text/plain
+- type: includes
+  bibitem:
+    id: draft-eli-stealthflow-protocol-02
+    docid:
+    - id: draft-eli-stealthflow-protocol-02
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-eli-stealthflow-protocol-02
       format: text/plain
