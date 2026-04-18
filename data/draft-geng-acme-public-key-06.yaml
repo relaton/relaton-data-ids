@@ -1,0 +1,192 @@
+---
+schema-version: v1.2.9
+id: draft-geng-acme-public-key-06
+title:
+- content: Automated Certificate Management Environment (ACME) Extension for Public
+    Key Challenges
+  language:
+  - en
+  script:
+  - Latn
+  format: text/plain
+link:
+- content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-06
+  type: src
+type: standard
+docid:
+- id: draft-geng-acme-public-key-06
+  type: Internet-Draft
+  primary: true
+- id: I-D.geng-acme-public-key
+  type: IETF
+  scope: anchor
+docnumber: I-D.geng-acme-public-key
+date:
+- type: published
+  value: '2026-04-17'
+contributor:
+- person:
+    name:
+      given:
+        forename:
+        - content: Feng
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: F
+        formatted_initials:
+          content: F.
+          language:
+          - en
+      surname:
+        content: Geng
+        language:
+        - en
+      completename:
+        content: Feng Geng
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Panyu
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: P
+        formatted_initials:
+          content: P.
+          language:
+          - en
+      surname:
+        content: Wu
+        language:
+        - en
+      completename:
+        content: Panyu Wu
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content: Liang
+          language:
+          - en
+        - content:
+          language:
+          - en
+          initial: L
+        formatted_initials:
+          content: L.
+          language:
+          - en
+      surname:
+        content: Xia
+        language:
+        - en
+      completename:
+        content: Liang Xia
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: Huawei Technologies
+  role:
+  - type: author
+- person:
+    name:
+      given:
+        forename:
+        - content:
+          language:
+          - en
+          initial: C
+        formatted_initials:
+          content: C.
+          language:
+          - en
+      surname:
+        content: 陈鑫
+        language:
+        - en
+      completename:
+        content: 陈鑫
+        language:
+        - en
+    affiliation:
+    - organization:
+        name:
+        - content: TrustAsia
+  role:
+  - type: author
+version:
+- draft: '06'
+revdate: '2026-04-17'
+language:
+- en
+script:
+- Latn
+abstract:
+- content: '<p>The current ACME protocol [RFC8555] requires applicants to submit a
+    PKCS#10 Certificate Signing Request (CSR) during the finalization phase. The construction,
+    ASN.1 encoding, and transmission of the CSR impose additional implementation burdens
+    on both the client (especially resource-constrained devices) and the server. Moreover,
+    the CSR cannot prevent a public key from being replaced by an intermediary at
+    the protocol level. This document introduces the "pk-01" challenge extension based
+    on the ACME protocol. Its core mechanism is as follows: the applicant declares
+    the public key to be authenticated during the "newOrder" phase and completes the
+    Proof of Possession (PoP) by signing with the private key during the challenge
+    phase. Since the public key is declared when the order is created and verified
+    during the challenge phase, there is no need to submit a CSR during the finalization
+    phase; the ACME server can issue the certificate directly based on the verified
+    public key, thereby eliminating the CSR at the protocol level. The "pk-01" challenge
+    supports two verification modes via the pop_mode field:</p>'
+  language:
+  - en
+  script:
+  - Latn
+  format: text/html
+relation:
+- type: updates
+  bibitem:
+    id: draft-geng-acme-public-key-05
+    docid:
+    - id: draft-geng-acme-public-key-05
+      type: Internet-Draft
+      primary: true
+    formattedref:
+      content: draft-geng-acme-public-key-05
+      format: text/plain
+series:
+- type: main
+  title:
+    content: Internet-Draft
+    language:
+    - en
+    script:
+    - Latn
+    format: text/plain
+  number: draft-geng-acme-public-key-06
+ext:
+  schema-version: v1.0.1
+  doctype:
+    type: internet-draft
