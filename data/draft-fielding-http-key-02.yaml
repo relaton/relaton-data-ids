@@ -1,7 +1,7 @@
 ---
 id: draftfieldinghttpkey02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Mark Nottingham
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -72,18 +72,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The 'Key' header field for HTTP responses allows an origin server to\n
-    \  describe the cache key for a negotiated response: a short algorithm\n   that
-    can be used upon later requests to determine if the same\n   response is reusable.\n\n
-    \  Key has the advantage of avoiding an additional round trip for\n   validation
-    whenever a new request differs slightly, but not\n   significantly, from prior
-    requests.\n\n   Key also informs user agents of the request characteristics that\n
-    \  might result in different content, which can be useful if the user\n   agent
-    is not sending Accept* fields in order to reduce the risk of\n   fingerprinting.\n\n\t "
+  content: |-
+    <p>The &#39;Key&#39; header field for HTTP responses allows an origin server to
+       describe the cache key for a negotiated response: a short algorithm
+       that can be used upon later requests to determine if the same
+       response is reusable.
+
+       Key has the advantage of avoiding an additional round trip for
+       validation whenever a new request differs slightly, but not
+       significantly, from prior requests.
+
+       Key also informs user agents of the request characteristics that
+       might result in different content, which can be useful if the user
+       agent is not sending Accept* fields in order to reduce the risk of
+       fingerprinting.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-fielding-http-key-01
+    formattedref:
+      content: draft-fielding-http-key-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fielding-http-key-01
@@ -93,7 +100,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-fielding-http-key-03
+    formattedref:
+      content: draft-fielding-http-key-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fielding-http-key-03
@@ -109,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-fielding-http-key-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

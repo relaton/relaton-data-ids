@@ -1,7 +1,7 @@
 ---
 id: draftietfntpusingntsforntp21
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -148,7 +148,7 @@ contributor:
         - language: en
           content: Netnod
 version:
-- draft: '21'
+- content: '21'
 language:
 - en
 script:
@@ -156,18 +156,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo specifies Network Time Security (NTS), a mechanism for\n
-    \  using Transport Layer Security (TLS) and Authenticated Encryption\n   with
-    Associated Data (AEAD) to provide cryptographic security for the\n   client-server
-    mode of the Network Time Protocol (NTP).\n\n   NTS is structured as a suite of
-    two loosely coupled sub-protocols.\n   The first (NTS-KE) handles initial authentication
-    and key\n   establishment over TLS.  The second handles encryption and\n   authentication
-    during NTP time synchronization via extension fields\n   in the NTP packets, and
-    holds all required state only on the client\n   via opaque cookies.\n\n\t "
+  content: |-
+    <p>This memo specifies Network Time Security (NTS), a mechanism for
+       using Transport Layer Security (TLS) and Authenticated Encryption
+       with Associated Data (AEAD) to provide cryptographic security for the
+       client-server mode of the Network Time Protocol (NTP).
+
+       NTS is structured as a suite of two loosely coupled sub-protocols.
+       The first (NTS-KE) handles initial authentication and key
+       establishment over TLS.  The second handles encryption and
+       authentication during NTP time synchronization via extension fields
+       in the NTP packets, and holds all required state only on the client
+       via opaque cookies.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ntp-using-nts-for-ntp-20
+    formattedref:
+      content: draft-ietf-ntp-using-nts-for-ntp-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-20
@@ -177,7 +182,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ntp-using-nts-for-ntp-22
+    formattedref:
+      content: draft-ietf-ntp-using-nts-for-ntp-22
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-22
@@ -193,7 +199,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ntp-using-nts-for-ntp-21
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

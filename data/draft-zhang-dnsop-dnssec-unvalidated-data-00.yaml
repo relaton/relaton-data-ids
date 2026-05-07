@@ -1,7 +1,7 @@
 ---
 id: draftzhangdnsopdnssecunvalidateddata00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -143,7 +143,7 @@ contributor:
         - language: en
           content: Tsinghua University
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -151,19 +151,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Due to the prevalence of DNSSEC (Domain Name System Security\n   Extensions)
-    misconfigurations, many domain administrators\n   troubleshoot the records of
-    DNSSEC-signed domains via queries with CD\n   (Checking Disabled) bit set.  However,
-    as DNS resolvers are not\n   forced to perform DNSSEC validation for CD=1 queries,
-    the unvalidated\n   data introduced during troubleshooting could be mixed up with
-    the\n   routine ones in the resolver cache.  Recent research has revealed\n   that
-    the reuse of the cached unvalidated data in subsequent\n   resolutions could lead
-    to the risk of Denial-of-Service (DoS).  This\n   document clarifies the definition
-    of unvalidated data in the context\n   of DNSSEC.  Then, it demonstrates the DoS
-    vulnerabilities of current\n   DNS resolver implementations due to the reuse of
-    cached unvalidated\n   data.  Accordingly, it provides several recommendations
-    for DNSSEC-\n   validating resolvers to handle the unvalidated data and mitigate
-    the\n   risk of DoS, so as to improve the availability of DNSSEC-signed\n   domains.\n\n\t "
+  content: |-
+    <p>Due to the prevalence of DNSSEC (Domain Name System Security
+       Extensions) misconfigurations, many domain administrators
+       troubleshoot the records of DNSSEC-signed domains via queries with CD
+       (Checking Disabled) bit set.  However, as DNS resolvers are not
+       forced to perform DNSSEC validation for CD=1 queries, the unvalidated
+       data introduced during troubleshooting could be mixed up with the
+       routine ones in the resolver cache.  Recent research has revealed
+       that the reuse of the cached unvalidated data in subsequent
+       resolutions could lead to the risk of Denial-of-Service (DoS).  This
+       document clarifies the definition of unvalidated data in the context
+       of DNSSEC.  Then, it demonstrates the DoS vulnerabilities of current
+       DNS resolver implementations due to the reuse of cached unvalidated
+       data.  Accordingly, it provides several recommendations for DNSSEC-
+       validating resolvers to handle the unvalidated data and mitigate the
+       risk of DoS, so as to improve the availability of DNSSEC-signed
+       domains.</p>
 series:
 - type: main
   title:
@@ -172,7 +176,7 @@ series:
     content: Internet-Draft
   number: draft-zhang-dnsop-dnssec-unvalidated-data-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

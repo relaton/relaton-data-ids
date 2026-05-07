@@ -1,7 +1,7 @@
 ---
 id: draftrocaipsecmeptbptsattack00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: INRIA
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,20 +79,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document introduces the \"Packet Too Big\"-\"Packet Too Small\"\n
-    \  Internet Control Message Protocol (ICMP) based attack against IPsec\n   gateways.
-    \ We explain how an attacker having eavesdropping and packet\n   injection capabilities,
-    from the unsecure network where he only sees\n   encrypted packets, can force
-    a gateway to reduce the Path Maximum\n   Transmission Unit (PMTU) of an IPsec
-    tunnel to the minimum, which can\n   trigger severe issues for the hosts behind
-    this gateway: with a Linux\n   host, depending on the PMTU discovery algorithm
-    in use (i.e., PMTUd\n   versus PLPMTUd) and protocol (TCP versus UDP), the attack
-    either\n   creates a Denial of Service or major performance penalties.  This\n
-    \  attack highlights two fundamental problems, namely: (1) the\n   impossibility
-    to distinguish legitimate from illegitimate ICMP\n   packets coming from the untrusted
-    network, and (2) the contradictions\n   in the way Path MTU is managed by some
-    end hosts when this Path MTU\n   is below the minimum packet size any link should
-    support because of\n   the IPsec encapsulation.\n\n\t "
+  content: |-
+    <p>This document introduces the &quot;Packet Too Big&quot;-&quot;Packet Too Small&quot;
+       Internet Control Message Protocol (ICMP) based attack against IPsec
+       gateways.  We explain how an attacker having eavesdropping and packet
+       injection capabilities, from the unsecure network where he only sees
+       encrypted packets, can force a gateway to reduce the Path Maximum
+       Transmission Unit (PMTU) of an IPsec tunnel to the minimum, which can
+       trigger severe issues for the hosts behind this gateway: with a Linux
+       host, depending on the PMTU discovery algorithm in use (i.e., PMTUd
+       versus PLPMTUd) and protocol (TCP versus UDP), the attack either
+       creates a Denial of Service or major performance penalties.  This
+       attack highlights two fundamental problems, namely: (1) the
+       impossibility to distinguish legitimate from illegitimate ICMP
+       packets coming from the untrusted network, and (2) the contradictions
+       in the way Path MTU is managed by some end hosts when this Path MTU
+       is below the minimum packet size any link should support because of
+       the IPsec encapsulation.</p>
 series:
 - type: main
   title:
@@ -101,7 +104,7 @@ series:
     content: Internet-Draft
   number: draft-roca-ipsecme-ptb-pts-attack-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

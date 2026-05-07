@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopavoidfragmentation16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: AWS Security
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -82,18 +82,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The widely deployed EDNS0 feature in the DNS enables a DNS receiver\n
-    \  to indicate its received UDP message size capacity which supports the\n   sending
-    of large UDP responses by a DNS server.  Large DNS/UDP\n   responses are fragmented,
-    and IP fragmentation has exposed weaknesses\n   in application protocols.  It
-    is possible to avoid IP fragmentation\n   in DNS by limiting response size where
-    possible, and signaling the\n   need to upgrade from UDP to TCP transport where
-    necessary.  This\n   document specifies techniques to avoid IP fragmentation in
-    DNS.\n\n\t "
+  content: |-
+    <p>The widely deployed EDNS0 feature in the DNS enables a DNS receiver
+       to indicate its received UDP message size capacity which supports the
+       sending of large UDP responses by a DNS server.  Large DNS/UDP
+       responses are fragmented, and IP fragmentation has exposed weaknesses
+       in application protocols.  It is possible to avoid IP fragmentation
+       in DNS by limiting response size where possible, and signaling the
+       need to upgrade from UDP to TCP transport where necessary.  This
+       document specifies techniques to avoid IP fragmentation in DNS.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-avoid-fragmentation-15
+    formattedref:
+      content: draft-ietf-dnsop-avoid-fragmentation-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-15
@@ -103,7 +105,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-avoid-fragmentation-17
+    formattedref:
+      content: draft-ietf-dnsop-avoid-fragmentation-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-avoid-fragmentation-17
@@ -119,7 +122,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-avoid-fragmentation-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

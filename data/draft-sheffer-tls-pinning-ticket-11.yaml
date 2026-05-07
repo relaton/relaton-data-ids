@@ -1,7 +1,7 @@
 ---
 id: draftsheffertlspinningticket11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -79,24 +79,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Misissued public-key certificates can prevent TLS clients from\n   appropriately
-    authenticating the TLS server.  Several alternatives\n   have been proposed to
-    detect this situation and prevent a client from\n   establishing a TLS session
-    with a TLS end point authenticated with an\n   illegitimate public-key certificate.
-    \ These mechanisms are either not\n   widely deployed or limited to public web
-    browsing.\n\n   This document proposes experimental extensions to TLS with opaque\n
-    \  pinning tickets as a way to pin the server's identity.  During an\n   initial
-    TLS session, the server provides an original encrypted\n   pinning ticket.  In
-    subsequent TLS session establishment, upon\n   receipt of the pinning ticket,
-    the server proves its ability to\n   decrypt the pinning ticket and thus the ownership
-    of the pinning\n   protection key.  The client can now safely conclude that the
-    TLS\n   session is established with the same TLS server as the original TLS\n
-    \  session.  One of the important properties of this proposal is that no\n   manual
-    management actions are required.\n\n\t "
+  content: |-
+    <p>Misissued public-key certificates can prevent TLS clients from
+       appropriately authenticating the TLS server.  Several alternatives
+       have been proposed to detect this situation and prevent a client from
+       establishing a TLS session with a TLS end point authenticated with an
+       illegitimate public-key certificate.  These mechanisms are either not
+       widely deployed or limited to public web browsing.
+
+       This document proposes experimental extensions to TLS with opaque
+       pinning tickets as a way to pin the server&#39;s identity.  During an
+       initial TLS session, the server provides an original encrypted
+       pinning ticket.  In subsequent TLS session establishment, upon
+       receipt of the pinning ticket, the server proves its ability to
+       decrypt the pinning ticket and thus the ownership of the pinning
+       protection key.  The client can now safely conclude that the TLS
+       session is established with the same TLS server as the original TLS
+       session.  One of the important properties of this proposal is that no
+       manual management actions are required.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-sheffer-tls-pinning-ticket-10
+    formattedref:
+      content: draft-sheffer-tls-pinning-ticket-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sheffer-tls-pinning-ticket-10
@@ -106,7 +111,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-sheffer-tls-pinning-ticket-12
+    formattedref:
+      content: draft-sheffer-tls-pinning-ticket-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sheffer-tls-pinning-ticket-12
@@ -122,7 +128,7 @@ series:
     content: Internet-Draft
   number: draft-sheffer-tls-pinning-ticket-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfbessnshbgpcontrolplane17
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Verizon
 version:
-- draft: '17'
+- content: '17'
 language:
 - en
 script:
@@ -157,22 +157,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the use of BGP as a control plane for\n   networks
-    that support Service Function Chaining (SFC).  The document\n   introduces a new
-    BGP address family called the SFC Address Family\n   Identifier / Subsequent Address
-    Family Identifier (SFC AFI/SAFI) with\n   two route types.  One route type is
-    originated by a node to advertise\n   that it hosts a particular instance of a
-    specified service function.\n   This route type also provides \"instructions\"
-    on how to send a packet\n   to the hosting node in a way that indicates that the
-    service function\n   has to be applied to the packet.  The other route type is
-    used by a\n   Controller to advertise the paths of \"chains\" of service functions,\n
-    \  and to give a unique designator to each such path so that they can be\n   used
-    in conjunction with the Network Service Header defined in RFC\n   8300.\n\n   This
-    document adopts the SFC architecture described in RFC 7665.\n\n\t "
+  content: |-
+    <p>This document describes the use of BGP as a control plane for
+       networks that support Service Function Chaining (SFC).  The document
+       introduces a new BGP address family called the SFC Address Family
+       Identifier / Subsequent Address Family Identifier (SFC AFI/SAFI) with
+       two route types.  One route type is originated by a node to advertise
+       that it hosts a particular instance of a specified service function.
+       This route type also provides &quot;instructions&quot; on how to send a packet
+       to the hosting node in a way that indicates that the service function
+       has to be applied to the packet.  The other route type is used by a
+       Controller to advertise the paths of &quot;chains&quot; of service functions,
+       and to give a unique designator to each such path so that they can be
+       used in conjunction with the Network Service Header defined in RFC
+       8300.
+
+       This document adopts the SFC architecture described in RFC 7665.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bess-nsh-bgp-control-plane-16
+    formattedref:
+      content: draft-ietf-bess-nsh-bgp-control-plane-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-nsh-bgp-control-plane-16
@@ -182,7 +187,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bess-nsh-bgp-control-plane-18
+    formattedref:
+      content: draft-ietf-bess-nsh-bgp-control-plane-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-nsh-bgp-control-plane-18
@@ -198,7 +204,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bess-nsh-bgp-control-plane-17
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

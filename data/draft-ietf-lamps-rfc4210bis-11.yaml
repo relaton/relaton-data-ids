@@ -1,7 +1,7 @@
 ---
 id: draftietflampsrfc4210bis11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -122,7 +122,7 @@ contributor:
         - language: en
           content: Entrust
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -130,25 +130,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the Internet X.509 Public Key Infrastructure\n
-    \  (PKI) Certificate Management Protocol (CMP).  Protocol messages are\n   defined
-    for X.509v3 certificate creation and management.  CMP\n   provides interactions
-    between client systems and PKI components such\n   as a Registration Authority
-    (RA) and a Certification Authority (CA).\n\n   This document obsoletes RFC 4210
-    by including the updates specified\n   by CMP Updates RFC 9480 Section 2 and Appendix
-    A.2 maintaining\n   backward compatibility with CMP version 2 wherever possible
-    and\n   obsoletes both documents.  Updates to CMP version 2 are: improving\n   crypto
-    agility, extending the polling mechanism, adding new general\n   message types,
-    and adding extended key usages to identify special CMP\n   server authorizations.
-    \ Introducing CMP version 3 to be used only for\n   changes to the ASN.1 syntax,
-    which are: support of EnvelopedData\n   instead of EncryptedValue, hashAlg for
-    indicating a hash\n   AlgorithmIdentifier in certConf messages, and RootCaKeyUpdateContent\n
-    \  in ckuann messages.\n\n   In addition to the changes specified in CMP Updates
-    RFC 9480 this\n   document adds support for management of KEM certificates.\n\n\t "
+  content: |-
+    <p>This document describes the Internet X.509 Public Key Infrastructure
+       (PKI) Certificate Management Protocol (CMP).  Protocol messages are
+       defined for X.509v3 certificate creation and management.  CMP
+       provides interactions between client systems and PKI components such
+       as a Registration Authority (RA) and a Certification Authority (CA).
+
+       This document obsoletes RFC 4210 by including the updates specified
+       by CMP Updates RFC 9480 Section 2 and Appendix A.2 maintaining
+       backward compatibility with CMP version 2 wherever possible and
+       obsoletes both documents.  Updates to CMP version 2 are: improving
+       crypto agility, extending the polling mechanism, adding new general
+       message types, and adding extended key usages to identify special CMP
+       server authorizations.  Introducing CMP version 3 to be used only for
+       changes to the ASN.1 syntax, which are: support of EnvelopedData
+       instead of EncryptedValue, hashAlg for indicating a hash
+       AlgorithmIdentifier in certConf messages, and RootCaKeyUpdateContent
+       in ckuann messages.
+
+       In addition to the changes specified in CMP Updates RFC 9480 this
+       document adds support for management of KEM certificates.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lamps-rfc4210bis-10
+    formattedref:
+      content: draft-ietf-lamps-rfc4210bis-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-rfc4210bis-10
@@ -158,7 +165,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-lamps-rfc4210bis-12
+    formattedref:
+      content: draft-ietf-lamps-rfc4210bis-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-rfc4210bis-12
@@ -174,7 +182,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lamps-rfc4210bis-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftdkgdprivedemuxdnshttp02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -44,7 +44,7 @@ contributor:
         language: en
         content: Daniel Kahn Gillmor
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -52,22 +52,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS over TCP and traditional HTTP are both stream-oriented, client-\n
-    \  speaks-first protocols.  They can both be run over a stream-based\n   security
-    protocol like TLS.  A server accepting a stream-based client\n   can distinguish
-    between a valid stream of DNS queries and valid\n   stream of HTTP requests by
-    simple observation of the first few octets\n   sent by the client.  This can be
-    done without any external\n   demultiplexing mechanism like TCP port number or
-    ALPN.\n\n   Implicit multiplexing of the two protocols over a single listening\n
-    \  port can be useful for obscuring the presence of DNS queries from a\n   network
-    observer, which makes it relevant for DNS privacy.\n\n   Widespread adoption of
-    the described approach could constrain future\n   evolution of the stream-based
-    variants of both DNS ([RFC1035]) and\n   HTTP ([RFC7230] and [RFC7540]) by ossifying
-    existing distinguishing\n   bit patterns in early octets sent by the client.\n\n\t "
+  content: |-
+    <p>DNS over TCP and traditional HTTP are both stream-oriented, client-
+       speaks-first protocols.  They can both be run over a stream-based
+       security protocol like TLS.  A server accepting a stream-based client
+       can distinguish between a valid stream of DNS queries and valid
+       stream of HTTP requests by simple observation of the first few octets
+       sent by the client.  This can be done without any external
+       demultiplexing mechanism like TCP port number or ALPN.
+
+       Implicit multiplexing of the two protocols over a single listening
+       port can be useful for obscuring the presence of DNS queries from a
+       network observer, which makes it relevant for DNS privacy.
+
+       Widespread adoption of the described approach could constrain future
+       evolution of the stream-based variants of both DNS ([RFC1035]) and
+       HTTP ([RFC7230] and [RFC7540]) by ossifying existing distinguishing
+       bit patterns in early octets sent by the client.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-dkg-dprive-demux-dns-http-01
+    formattedref:
+      content: draft-dkg-dprive-demux-dns-http-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dkg-dprive-demux-dns-http-01
@@ -77,7 +83,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-dkg-dprive-demux-dns-http-03
+    formattedref:
+      content: draft-dkg-dprive-demux-dns-http-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dkg-dprive-demux-dns-http-03
@@ -93,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-dkg-dprive-demux-dns-http-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

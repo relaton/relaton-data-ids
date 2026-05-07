@@ -1,7 +1,7 @@
 ---
 id: draftdunbaridrsdwanportsafi04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Hickory Hill Consulting
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -79,24 +79,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The document specifies information encoded in BGP UPDATE for\n   advertising
-    WAN ports properties of a SDWAN edge node to its\n   controller. SDWAN edge node's
-    WAN ports may face untrusted networks,\n   such as the public internet, may get
-    assigned IP addresses from the\n   Internet Service Providers (ISPs), may get
-    assigned dynamic IP\n   addresses via DHCP, or may have private addresses (e.g.
-    inside third\n   party Cloud DCs). Packets forwarded through those SDWAN WAN ports\n
-    \  might need to be encrypted (depending on the user policies) or need\n   to
-    go through NAT. SDWAN edge nodes need to propagate those WAN\n   ports properties
-    to its controller which in turn distribute to the\n   peers who are authorized
-    to communicate across different types of\n   underlay networks including the untrusted
-    networks.\n\n   This document assumes the BGP Route Reflectors (RR) as the\n   controller,
-    i.e. SDWAN edges send the WAN ports properties encoded\n   in BGP UPDATE to the
-    RR which in turns propagate the information to\n   a group of authorized SDWAN
-    edges reachable via overlay networks.\n\n\t "
+  content: |-
+    <p>The document specifies information encoded in BGP UPDATE for
+       advertising WAN ports properties of a SDWAN edge node to its
+       controller. SDWAN edge node&#39;s WAN ports may face untrusted networks,
+       such as the public internet, may get assigned IP addresses from the
+       Internet Service Providers (ISPs), may get assigned dynamic IP
+       addresses via DHCP, or may have private addresses (e.g. inside third
+       party Cloud DCs). Packets forwarded through those SDWAN WAN ports
+       might need to be encrypted (depending on the user policies) or need
+       to go through NAT. SDWAN edge nodes need to propagate those WAN
+       ports properties to its controller which in turn distribute to the
+       peers who are authorized to communicate across different types of
+       underlay networks including the untrusted networks.
+
+       This document assumes the BGP Route Reflectors (RR) as the
+       controller, i.e. SDWAN edges send the WAN ports properties encoded
+       in BGP UPDATE to the RR which in turns propagate the information to
+       a group of authorized SDWAN edges reachable via overlay networks.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-dunbar-idr-sdwan-port-safi-03
+    formattedref:
+      content: draft-dunbar-idr-sdwan-port-safi-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dunbar-idr-sdwan-port-safi-03
@@ -106,7 +111,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-dunbar-idr-sdwan-port-safi-05
+    formattedref:
+      content: draft-dunbar-idr-sdwan-port-safi-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dunbar-idr-sdwan-port-safi-05
@@ -122,7 +128,7 @@ series:
     content: Internet-Draft
   number: draft-dunbar-idr-sdwan-port-safi-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

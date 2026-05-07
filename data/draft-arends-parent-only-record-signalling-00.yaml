@@ -1,7 +1,7 @@
 ---
 id: draftarendsparentonlyrecordsignalling00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: ICANN
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,21 +54,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   New RR types have been proposed that appear only at the parent side\n
-    \  of a delegation, similar to the DS resource record (RR) type.\n\n   Supporting
-    parent side RR types requires modifications to the DNS\n   Security Extensions
-    (DNSSEC).\n\n   Without these modifications, validating resolvers are susceptible
-    to\n   response modification attacks.  An on-path adversary could\n   potentially
-    remove the parent-side resource records without being\n   detected.\n\n   To detect
-    the removal of a parent-side RR type, an authenticated\n   denial record (such
-    as NSEC or NSEC3) is necessary to confirm\n   presence or absence of a parent-side
-    RR type.\n\n   Currently, validating resolver do not expect authenticated denial\n
-    \  records in a secure delegation response.  Therefore, a secure signal\n   is
-    needed to inform the validating resolver to anticipate\n   authenticated denial
-    records for a delegation.\n\n   To support the future deployment of parent-side
-    RR types, this draft\n   designates a range of yet unallocated RR types specifically
-    for\n   parent-side use.  Authoritative servers will include these records in\n
-    \  a delegation response without requiring upgrades.\n\n\t "
+  content: |-
+    <p>New RR types have been proposed that appear only at the parent side
+       of a delegation, similar to the DS resource record (RR) type.
+
+       Supporting parent side RR types requires modifications to the DNS
+       Security Extensions (DNSSEC).
+
+       Without these modifications, validating resolvers are susceptible to
+       response modification attacks.  An on-path adversary could
+       potentially remove the parent-side resource records without being
+       detected.
+
+       To detect the removal of a parent-side RR type, an authenticated
+       denial record (such as NSEC or NSEC3) is necessary to confirm
+       presence or absence of a parent-side RR type.
+
+       Currently, validating resolver do not expect authenticated denial
+       records in a secure delegation response.  Therefore, a secure signal
+       is needed to inform the validating resolver to anticipate
+       authenticated denial records for a delegation.
+
+       To support the future deployment of parent-side RR types, this draft
+       designates a range of yet unallocated RR types specifically for
+       parent-side use.  Authoritative servers will include these records in
+       a delegation response without requiring upgrades.</p>
 series:
 - type: main
   title:
@@ -77,7 +87,7 @@ series:
     content: Internet-Draft
   number: draft-arends-parent-only-record-signalling-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

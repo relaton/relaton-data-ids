@@ -1,7 +1,7 @@
 ---
 id: draftdecraenelsrisisfloodingspeed02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -143,7 +143,7 @@ contributor:
         - language: en
           content: Nokia
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -151,18 +151,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a mechanism that can be used to increase the\n
-    \  speed at which link state information is flooded across a network\n   when
-    multiple LSPDUs need to be flooded, such as in case of a node\n   failure.  It
-    also reduces the likelihood of overloading the\n   downstream flooding neighbors.
-    \ This document defines a new TLV to be\n   advertised in IS-IS Hello messages.
-    \ This TLV carries two parameters\n   indicating the performance capacity to receive
-    LSPDUs: the minimum\n   delay between two consecutive LSPDUs and the number of
-    LSPDUs which\n   can the received back to back.\n\n\t "
+  content: |-
+    <p>This document proposes a mechanism that can be used to increase the
+       speed at which link state information is flooded across a network
+       when multiple LSPDUs need to be flooded, such as in case of a node
+       failure.  It also reduces the likelihood of overloading the
+       downstream flooding neighbors.  This document defines a new TLV to be
+       advertised in IS-IS Hello messages.  This TLV carries two parameters
+       indicating the performance capacity to receive LSPDUs: the minimum
+       delay between two consecutive LSPDUs and the number of LSPDUs which
+       can the received back to back.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-decraene-lsr-isis-flooding-speed-01
+    formattedref:
+      content: draft-decraene-lsr-isis-flooding-speed-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-01
@@ -172,7 +175,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-decraene-lsr-isis-flooding-speed-03
+    formattedref:
+      content: draft-decraene-lsr-isis-flooding-speed-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-decraene-lsr-isis-flooding-speed-03
@@ -188,7 +192,7 @@ series:
     content: Internet-Draft
   number: draft-decraene-lsr-isis-flooding-speed-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: drafttaylormanetdlepdsa01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Airbus Defence & Space
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,22 +54,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When using the Dynamic Link Exchange Protocol (DLEP) [RFC8175] to\n
-    \  bootstrap neighbour discovery for routing protocols there is no\n   indication
-    in the core DLEP protocol of the services of the router\n   announced at a destination.
-    \ This forces an implementation to either\n   rely on a priori configuration or
-    use heuristic probing of well-known\n   ports to discover potential routing peers.\n\n
-    \  This document defines an extension to DLEP to enable a router to\n   advertise
-    its active services to its peer modem, allowing a connected\n   remote modem to
-    announce the services of a router in a DLEP\n   destination message to its peer,
-    removing the need for service\n   discovery between routing peers.  The mechanism
-    is designed to be\n   sufficiently generic to allow the advertisement of network
-    services\n   beyond routing protocols, enabling the fast bootstrapping of other\n
-    \  protocols such as messaging protocols or header compression.\n\n\t "
+  content: |-
+    <p>When using the Dynamic Link Exchange Protocol (DLEP) [RFC8175] to
+       bootstrap neighbour discovery for routing protocols there is no
+       indication in the core DLEP protocol of the services of the router
+       announced at a destination.  This forces an implementation to either
+       rely on a priori configuration or use heuristic probing of well-known
+       ports to discover potential routing peers.
+
+       This document defines an extension to DLEP to enable a router to
+       advertise its active services to its peer modem, allowing a connected
+       remote modem to announce the services of a router in a DLEP
+       destination message to its peer, removing the need for service
+       discovery between routing peers.  The mechanism is designed to be
+       sufficiently generic to allow the advertisement of network services
+       beyond routing protocols, enabling the fast bootstrapping of other
+       protocols such as messaging protocols or header compression.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-taylor-manet-dlep-dsa-00
+    formattedref:
+      content: draft-taylor-manet-dlep-dsa-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-taylor-manet-dlep-dsa-00
@@ -85,7 +90,7 @@ series:
     content: Internet-Draft
   number: draft-taylor-manet-dlep-dsa-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

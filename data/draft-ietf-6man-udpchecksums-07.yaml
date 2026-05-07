@@ -1,7 +1,7 @@
 ---
 id: draftietf6manudpchecksums07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Magnus Westerlund
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -89,21 +89,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides an update of the Internet Protocol version 6\n
-    \  (IPv6) specification (RFC2460) to improve the performance in the use\n   case
-    where a tunnel protocol uses UDP with IPv6 to tunnel packets.\n   The performance
-    improvement is obtained by relaxing the IPv6 UDP\n   checksum requirement for
-    any suitable tunnel protocol where header\n   information is protected on the
-    \"inner\" packet being carried.  This\n   relaxation removes the overhead associated
-    with the computation of\n   UDP checksums on IPv6 packets used to carry tunnel
-    protocols.  The\n   specification describes how the IPv6 UDP checksum requirement
-    can be\n   relaxed for the situation where the encapsulated packet itself\n   contains
-    a checksum.  The limitations and risks of this approach are\n   described, and
-    restrictions specified on the use of the method.\n\n\t "
+  content: |-
+    <p>This document provides an update of the Internet Protocol version 6
+       (IPv6) specification (RFC2460) to improve the performance in the use
+       case where a tunnel protocol uses UDP with IPv6 to tunnel packets.
+       The performance improvement is obtained by relaxing the IPv6 UDP
+       checksum requirement for any suitable tunnel protocol where header
+       information is protected on the &quot;inner&quot; packet being carried.  This
+       relaxation removes the overhead associated with the computation of
+       UDP checksums on IPv6 packets used to carry tunnel protocols.  The
+       specification describes how the IPv6 UDP checksum requirement can be
+       relaxed for the situation where the encapsulated packet itself
+       contains a checksum.  The limitations and risks of this approach are
+       described, and restrictions specified on the use of the method.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6man-udpchecksums-06
+    formattedref:
+      content: draft-ietf-6man-udpchecksums-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-udpchecksums-06
@@ -113,7 +116,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-udpchecksums-08
+    formattedref:
+      content: draft-ietf-6man-udpchecksums-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-udpchecksums-08
@@ -129,7 +133,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-udpchecksums-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

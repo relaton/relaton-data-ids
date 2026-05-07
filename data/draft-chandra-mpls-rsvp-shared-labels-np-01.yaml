@@ -1,7 +1,7 @@
 ---
 id: draftchandramplsrsvpsharedlabelsnp01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -107,26 +107,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Segment Routed RSVP-TE tunnels provide the ability to use a shared\n
-    \  MPLS forwarding plane at every hop of the Label Switched Path (LSP).\n   The
-    shared forwarding plane is realized with the use of 'Traffic\n   Engineering (TE)
-    link labels' that get shared by LSPs traversing\n   these TE links.  This paradigm
-    helps significantly reduce the\n   forwarding plane state required to support
-    a large number of LSPs on\n   a Label Switching Router (LSR).  Segment Routed
-    RSVP-TE tunnels\n   require the ingress Label Edge Router (LER) to impose a stack
-    of\n   labels.  If the ingress LER cannot impose the full label stack, it\n   can
-    use the assistance of one or more delegation hops along the path\n   of the LSP
-    to impose parts of the label stack.\n\n   The procedures for a Point of Local
-    Repair (PLR) to provide local\n   protection against link failures using facility
-    backup for Segment\n   Routed RSVP-TE tunnels are well defined and do not require
-    specific\n   protocol extensions.  This document defines the procedures for a
-    PLR\n   to provide local protection against transit node failures using\n   facility
-    backup for these tunnels.  The procedures defined in this\n   document include
-    protection against delegation hop failures.\n\n\n\t "
+  content: |-
+    <p>Segment Routed RSVP-TE tunnels provide the ability to use a shared
+       MPLS forwarding plane at every hop of the Label Switched Path (LSP).
+       The shared forwarding plane is realized with the use of &#39;Traffic
+       Engineering (TE) link labels&#39; that get shared by LSPs traversing
+       these TE links.  This paradigm helps significantly reduce the
+       forwarding plane state required to support a large number of LSPs on
+       a Label Switching Router (LSR).  Segment Routed RSVP-TE tunnels
+       require the ingress Label Edge Router (LER) to impose a stack of
+       labels.  If the ingress LER cannot impose the full label stack, it
+       can use the assistance of one or more delegation hops along the path
+       of the LSP to impose parts of the label stack.
+
+       The procedures for a Point of Local Repair (PLR) to provide local
+       protection against link failures using facility backup for Segment
+       Routed RSVP-TE tunnels are well defined and do not require specific
+       protocol extensions.  This document defines the procedures for a PLR
+       to provide local protection against transit node failures using
+       facility backup for these tunnels.  The procedures defined in this
+       document include protection against delegation hop failures.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-chandra-mpls-rsvp-shared-labels-np-00
+    formattedref:
+      content: draft-chandra-mpls-rsvp-shared-labels-np-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chandra-mpls-rsvp-shared-labels-np-00
@@ -136,7 +141,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-chandra-mpls-rsvp-shared-labels-np-02
+    formattedref:
+      content: draft-chandra-mpls-rsvp-shared-labels-np-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chandra-mpls-rsvp-shared-labels-np-02
@@ -152,7 +158,7 @@ series:
     content: Internet-Draft
   number: draft-chandra-mpls-rsvp-shared-labels-np-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

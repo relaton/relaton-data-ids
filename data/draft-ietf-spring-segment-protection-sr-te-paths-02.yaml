@@ -1,7 +1,7 @@
 ---
 id: draftietfspringsegmentprotectionsrtepaths02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Tencent
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -154,21 +154,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Segment routing supports the creation of explicit paths using Adj-\n
-    \  Segment-ID (SID), Node-SIDs, and BSIDs.  It is important to provide\n   fast
-    reroute (FRR) mechanisms to respond to failures of links and\n   nodes in the
-    Segment-Routed Traffic-Engineered(SR-TE) path.  A point\n   of local repair (PLR)
-    can provide FRR protection against the failure\n   of a link in an SR-TE path
-    by examining only the first (top) label in\n   the SR label stack.  In order to
-    protect against the failure of a\n   node, a PLR may need to examine the second
-    label in the stack as\n   well, in order to determine SR-TE path beyond the failed
-    node.  This\n   document specifies how a PLR can use the first and second label
-    in\n   the SR-MPLS label stack describing an SR-TE path to provide\n   protection
-    against node failures.\n\n\t "
+  content: |-
+    <p>Segment routing supports the creation of explicit paths using Adj-
+       Segment-ID (SID), Node-SIDs, and BSIDs.  It is important to provide
+       fast reroute (FRR) mechanisms to respond to failures of links and
+       nodes in the Segment-Routed Traffic-Engineered(SR-TE) path.  A point
+       of local repair (PLR) can provide FRR protection against the failure
+       of a link in an SR-TE path by examining only the first (top) label in
+       the SR label stack.  In order to protect against the failure of a
+       node, a PLR may need to examine the second label in the stack as
+       well, in order to determine SR-TE path beyond the failed node.  This
+       document specifies how a PLR can use the first and second label in
+       the SR-MPLS label stack describing an SR-TE path to provide
+       protection against node failures.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-spring-segment-protection-sr-te-paths-01
+    formattedref:
+      content: draft-ietf-spring-segment-protection-sr-te-paths-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-segment-protection-sr-te-paths-01
@@ -178,7 +181,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-spring-segment-protection-sr-te-paths-03
+    formattedref:
+      content: draft-ietf-spring-segment-protection-sr-te-paths-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-segment-protection-sr-te-paths-03
@@ -194,7 +198,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-spring-segment-protection-sr-te-paths-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

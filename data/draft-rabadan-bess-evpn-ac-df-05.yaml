@@ -1,7 +1,7 @@
 ---
 id: draftrabadanbessevpnacdf05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -196,7 +196,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -204,20 +204,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Designated Forwarder (DF) in EVPN networks is the PE responsible\n
-    \  for sending multicast, broadcast and unknown unicast traffic to a\n   multi-homed
-    CE, on a given Ethernet Tag on a particular Ethernet\n   Segment (ES). The DF
-    is selected based on the list of PEs that\n   advertise the Ethernet Segment Identifier
-    (ESI) to the EVPN network.\n   While PE node or link failures trigger the DF re-election
-    for a given\n   <ESI, EVI>, individual Attachment Circuit (AC) or MAC-VRF failures
-    do\n   not trigger such DF re-election and the traffic may therefore be\n   permanently
-    impacted, even though there is an alternative path. This\n   document improves
-    the DF election algorithm so that the AC status can\n   influence the result of
-    the election and this type of \"logical\"\n   failures can be protected too.\n\n\n\t "
+  content: |-
+    <p>The Designated Forwarder (DF) in EVPN networks is the PE responsible
+       for sending multicast, broadcast and unknown unicast traffic to a
+       multi-homed CE, on a given Ethernet Tag on a particular Ethernet
+       Segment (ES). The DF is selected based on the list of PEs that
+       advertise the Ethernet Segment Identifier (ESI) to the EVPN network.
+       While PE node or link failures trigger the DF re-election for a given
+       &lt;ESI, EVI&gt;, individual Attachment Circuit (AC) or MAC-VRF failures do
+       not trigger such DF re-election and the traffic may therefore be
+       permanently impacted, even though there is an alternative path. This
+       document improves the DF election algorithm so that the AC status can
+       influence the result of the election and this type of &quot;logical&quot;
+       failures can be protected too.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rabadan-bess-evpn-ac-df-04
+    formattedref:
+      content: draft-rabadan-bess-evpn-ac-df-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rabadan-bess-evpn-ac-df-04
@@ -233,7 +237,7 @@ series:
     content: Internet-Draft
   number: draft-rabadan-bess-evpn-ac-df-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

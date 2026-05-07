@@ -1,7 +1,7 @@
 ---
 id: draftfujiwaradnsopfragmentattack01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: JPRS
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,18 +54,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Researchers proposed practical DNS cache poisoning attacks using IP\n
-    \  fragmentation.  This document shows feasible and adequate measures at\n   full-service
-    resolvers and authoritative servers against these\n   attacks.  To protect resolvers
-    from these attacks, avoid\n   fragmentation (limit requestor's UDP payload size
-    to 1220/1232), drop\n   fragmented UDP DNS responses and use TCP at resolver side.
-    \ To make a\n   domain name robust against these attacks, limit EDNS0 Responder's\n
-    \  maximum payload size to 1220, set DONTFRAG option to DNS response\n   packets
-    and use good random fragmentation ID at authoritative server\n   side.\n\n\t "
+  content: |-
+    <p>Researchers proposed practical DNS cache poisoning attacks using IP
+       fragmentation.  This document shows feasible and adequate measures at
+       full-service resolvers and authoritative servers against these
+       attacks.  To protect resolvers from these attacks, avoid
+       fragmentation (limit requestor&#39;s UDP payload size to 1220/1232), drop
+       fragmented UDP DNS responses and use TCP at resolver side.  To make a
+       domain name robust against these attacks, limit EDNS0 Responder&#39;s
+       maximum payload size to 1220, set DONTFRAG option to DNS response
+       packets and use good random fragmentation ID at authoritative server
+       side.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-fujiwara-dnsop-fragment-attack-00
+    formattedref:
+      content: draft-fujiwara-dnsop-fragment-attack-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fujiwara-dnsop-fragment-attack-00
@@ -81,7 +85,7 @@ series:
     content: Internet-Draft
   number: draft-fujiwara-dnsop-fragment-attack-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

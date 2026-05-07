@@ -1,7 +1,7 @@
 ---
 id: draftietfidrbgpoptimalroutereflection22
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -141,7 +141,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '22'
+- content: '22'
 language:
 - en
 script:
@@ -149,23 +149,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines an extension to BGP route reflectors.  On route\n
-    \  reflectors, BGP route selection is modified in order to choose the\n   best
-    path from the standpoint of their clients, rather than from the\n   standpoint
-    of the route reflectors.  Multiple types of granularity\n   are proposed, from
-    a per client BGP route selection or to a per peer\n   group, depending on the
-    scaling and precision requirements on route\n   selection.  This solution is particularly
-    applicable in deployments\n   using centralized route reflectors, where choosing
-    the best route\n   based on the route reflector IGP location is suboptimal.  This\n
-    \  facilitates, for example, best exit point policy (hot potato\n   routing).\n\n
-    \  The solution relies upon all route reflectors learning all paths\n   which
-    are eligible for consideration.  Best path selection is\n   performed in each
-    route reflector based on the IGP cost from a\n   selected location in the link
-    state IGP.\n\n\t "
+  content: |-
+    <p>This document defines an extension to BGP route reflectors.  On route
+       reflectors, BGP route selection is modified in order to choose the
+       best path from the standpoint of their clients, rather than from the
+       standpoint of the route reflectors.  Multiple types of granularity
+       are proposed, from a per client BGP route selection or to a per peer
+       group, depending on the scaling and precision requirements on route
+       selection.  This solution is particularly applicable in deployments
+       using centralized route reflectors, where choosing the best route
+       based on the route reflector IGP location is suboptimal.  This
+       facilitates, for example, best exit point policy (hot potato
+       routing).
+
+       The solution relies upon all route reflectors learning all paths
+       which are eligible for consideration.  Best path selection is
+       performed in each route reflector based on the IGP cost from a
+       selected location in the link state IGP.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-bgp-optimal-route-reflection-21
+    formattedref:
+      content: draft-ietf-idr-bgp-optimal-route-reflection-21
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-optimal-route-reflection-21
@@ -175,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-bgp-optimal-route-reflection-23
+    formattedref:
+      content: draft-ietf-idr-bgp-optimal-route-reflection-23
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-optimal-route-reflection-23
@@ -191,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-bgp-optimal-route-reflection-22
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

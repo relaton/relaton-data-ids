@@ -1,7 +1,7 @@
 ---
 id: draftnurpmesodkimhashadaptivity02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Steffen Nurpmeso
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -49,19 +49,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DKIM (RFC 6376, section 3.7) defines how \"data-hash\" is generated
-    as\n   input to a \"sig-alg\" for the purpose of generating a cryptographic\n
-    \  signature.  Different to the RSA algorithm (RFC 8017) solely defined\n   for
-    and by DKIM at the time of its creation, modern signature\n   algorithms, for
-    example EdDSA (RFC 8032), include extensive data\n   hashing as part of the signing
-    process.  For these algorithms it may\n   make sense not to create a \"data-hash\",
-    but to use the entire data as\n   input to \"sig-alg\".  This specification allows
-    DKIM signing\n   algorithms \"data-hash\" adaptivity, taking advantage of algorithm\n
-    \  design, and digital signature API reality.\n\n\t "
+  content: |-
+    <p>DKIM (RFC 6376, section 3.7) defines how &quot;data-hash&quot; is generated as
+       input to a &quot;sig-alg&quot; for the purpose of generating a cryptographic
+       signature.  Different to the RSA algorithm (RFC 8017) solely defined
+       for and by DKIM at the time of its creation, modern signature
+       algorithms, for example EdDSA (RFC 8032), include extensive data
+       hashing as part of the signing process.  For these algorithms it may
+       make sense not to create a &quot;data-hash&quot;, but to use the entire data as
+       input to &quot;sig-alg&quot;.  This specification allows DKIM signing
+       algorithms &quot;data-hash&quot; adaptivity, taking advantage of algorithm
+       design, and digital signature API reality.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-nurpmeso-dkim-hash-adaptivity-01
+    formattedref:
+      content: draft-nurpmeso-dkim-hash-adaptivity-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nurpmeso-dkim-hash-adaptivity-01
@@ -77,7 +80,7 @@ series:
     content: Internet-Draft
   number: draft-nurpmeso-dkim-hash-adaptivity-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

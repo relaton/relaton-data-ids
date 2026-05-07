@@ -1,7 +1,7 @@
 ---
 id: draftietfhttpbisunpromptedauth04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Cloudflare Inc.
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -104,19 +104,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Existing HTTP authentication schemes are probeable in the sense that\n
-    \  it is possible for an unauthenticated client to probe whether an\n   origin
-    serves resources that require authentication.  It is possible\n   for an origin
-    to hide the fact that it requires authentication by not\n   generating Unauthorized
-    status codes, however that only works with\n   non-cryptographic authentication
-    schemes: cryptographic signatures\n   require a fresh nonce to be signed, and
-    there is no existing way for\n   the origin to share such a nonce without exposing
-    the fact that it\n   serves resources that require authentication.  This document
-    proposes\n   a new non-probeable cryptographic authentication scheme.\n\n\t "
+  content: |-
+    <p>Existing HTTP authentication schemes are probeable in the sense that
+       it is possible for an unauthenticated client to probe whether an
+       origin serves resources that require authentication.  It is possible
+       for an origin to hide the fact that it requires authentication by not
+       generating Unauthorized status codes, however that only works with
+       non-cryptographic authentication schemes: cryptographic signatures
+       require a fresh nonce to be signed, and there is no existing way for
+       the origin to share such a nonce without exposing the fact that it
+       serves resources that require authentication.  This document proposes
+       a new non-probeable cryptographic authentication scheme.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-httpbis-unprompted-auth-03
+    formattedref:
+      content: draft-ietf-httpbis-unprompted-auth-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-unprompted-auth-03
@@ -126,7 +129,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-httpbis-unprompted-auth-05
+    formattedref:
+      content: draft-ietf-httpbis-unprompted-auth-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-unprompted-auth-05
@@ -142,7 +146,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-httpbis-unprompted-auth-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

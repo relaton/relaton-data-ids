@@ -1,7 +1,7 @@
 ---
 id: draftietfipsecmerfc8229bis03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Apple Inc.
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -79,20 +79,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a method to transport Internet Key Exchange\n
-    \  Protocol (IKE) and IPsec packets over a TCP connection for traversing\n   network
-    middleboxes that may block IKE negotiation over UDP.  This\n   method, referred
-    to as \"TCP encapsulation\", involves sending both IKE\n   packets for Security
-    Association establishment and Encapsulating\n   Security Payload (ESP) packets
-    over a TCP connection.  This method is\n   intended to be used as a fallback option
-    when IKE cannot be\n   negotiated over UDP.\n\n   TCP encapsulation for IKE and
-    IPsec was defined in RFC 8229.  This\n   document updates the specification for
-    TCP encapsulation by including\n   additional clarifications obtained during implementation
-    and\n   deployment of this method.  This documents obsoletes RFC 8229.\n\n\t "
+  content: |-
+    <p>This document describes a method to transport Internet Key Exchange
+       Protocol (IKE) and IPsec packets over a TCP connection for traversing
+       network middleboxes that may block IKE negotiation over UDP.  This
+       method, referred to as &quot;TCP encapsulation&quot;, involves sending both IKE
+       packets for Security Association establishment and Encapsulating
+       Security Payload (ESP) packets over a TCP connection.  This method is
+       intended to be used as a fallback option when IKE cannot be
+       negotiated over UDP.
+
+       TCP encapsulation for IKE and IPsec was defined in RFC 8229.  This
+       document updates the specification for TCP encapsulation by including
+       additional clarifications obtained during implementation and
+       deployment of this method.  This documents obsoletes RFC 8229.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ipsecme-rfc8229bis-02
+    formattedref:
+      content: draft-ietf-ipsecme-rfc8229bis-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-rfc8229bis-02
@@ -102,7 +107,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ipsecme-rfc8229bis-04
+    formattedref:
+      content: draft-ietf-ipsecme-rfc8229bis-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-rfc8229bis-04
@@ -118,7 +124,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ipsecme-rfc8229bis-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

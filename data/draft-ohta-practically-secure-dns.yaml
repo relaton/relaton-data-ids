@@ -1,7 +1,8 @@
 ---
 id: draftohtapracticallysecuredns
-schema_version: v1.4.1
-formattedref: draft-ohta-practically-secure-dns
+schema_version: v1.5.6
+formattedref:
+  content: draft-ohta-practically-secure-dns
 title:
 - language: en
   script: Latn
@@ -13,19 +14,25 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Plain DNS without PKI is secure, if a chain of query/response\n   communications
-    between a client and an authoritative server relayed\n   by zero or more intermediate
-    resolvers and the authoritative server\n   and all the resolvers are secure.\n\n
-    \  However, because of short (16bit) message ID, the communications\n   composing
-    the chain are not very secure without, or even with (port\n   exhaustion attack
-    is possible), source port randomization.\n\n   Still, plain DNS can be made practically
-    secure, if the client makes\n   two queries with independent message IDs to an
-    address of a server (a\n   resolver or a name server) and confirm that two replies
-    are\n   identical.\n\n\t "
+  content: |-
+    <p>Plain DNS without PKI is secure, if a chain of query/response
+       communications between a client and an authoritative server relayed
+       by zero or more intermediate resolvers and the authoritative server
+       and all the resolvers are secure.
+
+       However, because of short (16bit) message ID, the communications
+       composing the chain are not very secure without, or even with (port
+       exhaustion attack is possible), source port randomization.
+
+       Still, plain DNS can be made practically secure, if the client makes
+       two queries with independent message IDs to an address of a server (a
+       resolver or a name server) and confirm that two replies are
+       identical.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ohta-practically-secure-dns-00
+    formattedref:
+      content: draft-ohta-practically-secure-dns-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ohta-practically-secure-dns-00

@@ -1,7 +1,7 @@
 ---
 id: draftietfntpusingntsforntp28
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -148,7 +148,7 @@ contributor:
         - language: en
           content: Netnod
 version:
-- draft: '28'
+- content: '28'
 language:
 - en
 script:
@@ -156,19 +156,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo specifies Network Time Security (NTS), a mechanism for using
-    Transport Layer Security (TLS) and Authenticated Encryption with Associated Data
-    (AEAD) to provide cryptographic security for the client-server mode of the Network
-    Time Protocol (NTP).\n\n NTS is structured as a suite of two loosely coupled sub-protocols.
-    The first (NTS Key Establishment (NTS-KE)) handles initial authentication and
-    key establishment over TLS. The second (NTS Extension Fields for NTPv4) handles
-    encryption and authentication during NTP time synchronization via extension fields
-    in the NTP packets, and holds all required state only on the client via opaque
-    cookies.\n\t "
+  content: |-
+    <p>This memo specifies Network Time Security (NTS), a mechanism for using Transport Layer Security (TLS) and Authenticated Encryption with Associated Data (AEAD) to provide cryptographic security for the client-server mode of the Network Time Protocol (NTP).
+
+     NTS is structured as a suite of two loosely coupled sub-protocols. The first (NTS Key Establishment (NTS-KE)) handles initial authentication and key establishment over TLS. The second (NTS Extension Fields for NTPv4) handles encryption and authentication during NTP time synchronization via extension fields in the NTP packets, and holds all required state only on the client via opaque cookies.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ntp-using-nts-for-ntp-27
+    formattedref:
+      content: draft-ietf-ntp-using-nts-for-ntp-27
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-using-nts-for-ntp-27
@@ -184,7 +180,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ntp-using-nts-for-ntp-28
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

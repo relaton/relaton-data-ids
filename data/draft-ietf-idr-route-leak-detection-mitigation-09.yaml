@@ -1,7 +1,7 @@
 ---
 id: draftietfidrrouteleakdetectionmitigation09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Qrator Labs
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -79,20 +79,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Problem definition for route leaks and enumeration of types of route\n
-    \  leaks are provided in RFC 7908.  This document specifies BGP\n   enhancements
-    that significantly extend its route-leak detection and\n   mitigation capabilities.
-    \ The solution involves each participating AS\n   setting a route-leak protection
-    (RLP) field in BGP updates.  The RLP\n   fields are carried in a new optional
-    transitive attribute, called BGP\n   RLP Attribute.  The RLP Attribute helps with
-    detection and mitigation\n   of route leaks at ASes downstream from the leaking
-    AS (in the path of\n   BGP update).  This is an inter-AS (multi-hop) solution
-    mechanism.\n   This solution complements the intra-AS (local AS) route-leak\n
-    \  avoidance solution that is described in ietf-idr-bgp-open-policy\n   draft.\n\n\t "
+  content: |-
+    <p>Problem definition for route leaks and enumeration of types of route
+       leaks are provided in RFC 7908.  This document specifies BGP
+       enhancements that significantly extend its route-leak detection and
+       mitigation capabilities.  The solution involves each participating AS
+       setting a route-leak protection (RLP) field in BGP updates.  The RLP
+       fields are carried in a new optional transitive attribute, called BGP
+       RLP Attribute.  The RLP Attribute helps with detection and mitigation
+       of route leaks at ASes downstream from the leaking AS (in the path of
+       BGP update).  This is an inter-AS (multi-hop) solution mechanism.
+       This solution complements the intra-AS (local AS) route-leak
+       avoidance solution that is described in ietf-idr-bgp-open-policy
+       draft.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-route-leak-detection-mitigation-08
+    formattedref:
+      content: draft-ietf-idr-route-leak-detection-mitigation-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-08
@@ -102,7 +106,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-route-leak-detection-mitigation-10
+    formattedref:
+      content: draft-ietf-idr-route-leak-detection-mitigation-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-route-leak-detection-mitigation-10
@@ -118,7 +123,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-route-leak-detection-mitigation-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

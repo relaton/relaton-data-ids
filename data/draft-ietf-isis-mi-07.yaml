@@ -1,7 +1,7 @@
 ---
 id: draftietfisismi07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         language: en
         content: David Ward
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -129,18 +129,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This draft describes a mechanism that allows a single router to share\n
-    \  one or more circuits among multiple Intermediate System To\n   Intermediate
-    System (IS-IS) routing protocol instances.\n\n   Multiple instances allow the
-    isolation of resources associated with\n   each instance.  Routers will form instance
-    specific adjacencies.\n   Each instance can support multiple topologies.  Each
-    topology has a\n   unique Link State Database (LSDB).  Each Protocol Data Unit
-    (PDU)\n   will contain a new Type Length Value (TLV) identifying the instance\n
-    \  and the topology(ies) to which the PDU belongs.\n\n\n\t "
+  content: |-
+    <p>This draft describes a mechanism that allows a single router to share
+       one or more circuits among multiple Intermediate System To
+       Intermediate System (IS-IS) routing protocol instances.
+
+       Multiple instances allow the isolation of resources associated with
+       each instance.  Routers will form instance specific adjacencies.
+       Each instance can support multiple topologies.  Each topology has a
+       unique Link State Database (LSDB).  Each Protocol Data Unit (PDU)
+       will contain a new Type Length Value (TLV) identifying the instance
+       and the topology(ies) to which the PDU belongs.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-isis-mi-06
+    formattedref:
+      content: draft-ietf-isis-mi-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mi-06
@@ -150,7 +154,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-isis-mi-08
+    formattedref:
+      content: draft-ietf-isis-mi-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-isis-mi-08
@@ -166,7 +171,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-isis-mi-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

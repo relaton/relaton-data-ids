@@ -1,7 +1,7 @@
 ---
 id: draftietfsavidhcp20
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -101,7 +101,7 @@ contributor:
         language: en
         content: Fred Baker
 version:
-- draft: '20'
+- content: '20'
 language:
 - en
 script:
@@ -109,16 +109,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the procedure for creating a binding between\n
-    \  a DHCPv4/DHCPv6 assigned IP address and a binding anchor on a SAVI\n   (Source
-    Address Validation Improvements) device.  The bindings set up\n   by this procedure
-    can be used to filter out packets with forged\n   source IP address in DHCP scenario.
-    \ This mechanism is proposed as a\n   complement to ingress filtering to provide
-    finer-grained source IP\n   address validation.\n\n\t "
+  content: |-
+    <p>This document specifies the procedure for creating a binding between
+       a DHCPv4/DHCPv6 assigned IP address and a binding anchor on a SAVI
+       (Source Address Validation Improvements) device.  The bindings set up
+       by this procedure can be used to filter out packets with forged
+       source IP address in DHCP scenario.  This mechanism is proposed as a
+       complement to ingress filtering to provide finer-grained source IP
+       address validation.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-savi-dhcp-19
+    formattedref:
+      content: draft-ietf-savi-dhcp-19
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-savi-dhcp-19
@@ -128,7 +131,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-savi-dhcp-21
+    formattedref:
+      content: draft-ietf-savi-dhcp-21
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-savi-dhcp-21
@@ -144,7 +148,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-savi-dhcp-20
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

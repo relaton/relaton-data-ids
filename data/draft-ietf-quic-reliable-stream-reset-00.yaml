@@ -1,7 +1,7 @@
 ---
 id: draftietfquicreliablestreamreset00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Fastly
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,16 +79,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC ([RFC9000]) defines a RESET_STREAM frame to reset a stream.\n
-    \  When a sender resets a stream, it stops retransmitting STREAM frames\n   for
-    this stream.  On the receiver side, there is no guarantee that\n   any of the
-    data sent on that stream is delivered to the application.\n   This document defines
-    a new QUIC frame, the RELIABLE_RESET_STREAM\n   frame, that resets a stream, while
-    guaranteeing reliable delivery of\n   stream data up to a certain byte offset.\n\n\t "
+  content: |-
+    <p>QUIC ([RFC9000]) defines a RESET_STREAM frame to reset a stream.
+       When a sender resets a stream, it stops retransmitting STREAM frames
+       for this stream.  On the receiver side, there is no guarantee that
+       any of the data sent on that stream is delivered to the application.
+       This document defines a new QUIC frame, the RELIABLE_RESET_STREAM
+       frame, that resets a stream, while guaranteeing reliable delivery of
+       stream data up to a certain byte offset.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-quic-reliable-stream-reset-01
+    formattedref:
+      content: draft-ietf-quic-reliable-stream-reset-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-reliable-stream-reset-01
@@ -104,7 +107,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-quic-reliable-stream-reset-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

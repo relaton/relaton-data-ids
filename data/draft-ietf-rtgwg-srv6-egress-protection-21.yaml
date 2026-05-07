@@ -1,7 +1,7 @@
 ---
 id: draftietfrtgwgsrv6egressprotection21
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: China Unicom
 version:
-- draft: '21'
+- content: '21'
 language:
 - en
 script:
@@ -154,23 +154,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   TI-LFA specifies fast protections for transit nodes and links of an\n
-    \  SR path.  However, it does not present any fast protections for the\n   egress
-    node of the SR path.  This document describes protocol\n   extensions for fast
-    protecting the egress node and link of a Segment\n   Routing for IPv6 (SRv6) path.
-    \ The solution uses IGP extensions and a\n   Mirror SID (End.M) behavior to steer
-    traffic to a protector egress\n   upon failure of the primary egress.\n\n   This
-    document operates within a single link-state IGP area/level and\n   uses IS-IS/OSPFv3
-    to advertise a Mirror SID and the protected\n   locators for egress node/link
-    protection.  While the mechanism can\n   protect traffic whose active segment
-    at the egress is a Service SID\n   (e.g., VPN SID), it is not suitable for large-scale
-    deployments with\n   a high cardinality of VPN/service instances or random multi-homing\n
-    \  patterns, because the amount of egress-protection information to be\n   flooded
-    in the IGP increases and may impact convergence and control-\n   plane load.\n\n\n\t "
+  content: |-
+    <p>TI-LFA specifies fast protections for transit nodes and links of an
+       SR path.  However, it does not present any fast protections for the
+       egress node of the SR path.  This document describes protocol
+       extensions for fast protecting the egress node and link of a Segment
+       Routing for IPv6 (SRv6) path.  The solution uses IGP extensions and a
+       Mirror SID (End.M) behavior to steer traffic to a protector egress
+       upon failure of the primary egress.
+
+       This document operates within a single link-state IGP area/level and
+       uses IS-IS/OSPFv3 to advertise a Mirror SID and the protected
+       locators for egress node/link protection.  While the mechanism can
+       protect traffic whose active segment at the egress is a Service SID
+       (e.g., VPN SID), it is not suitable for large-scale deployments with
+       a high cardinality of VPN/service instances or random multi-homing
+       patterns, because the amount of egress-protection information to be
+       flooded in the IGP increases and may impact convergence and control-
+       plane load.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-rtgwg-srv6-egress-protection-20
+    formattedref:
+      content: draft-ietf-rtgwg-srv6-egress-protection-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-20
@@ -180,7 +186,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-rtgwg-srv6-egress-protection-22
+    formattedref:
+      content: draft-ietf-rtgwg-srv6-egress-protection-22
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-22
@@ -196,7 +203,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-rtgwg-srv6-egress-protection-21
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietftcpmaccurateecn27
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: NetApp
 version:
-- draft: '27'
+- content: '27'
 language:
 - en
 script:
@@ -104,28 +104,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Explicit Congestion Notification (ECN) is a mechanism where network\n
-    \  nodes can mark IP packets instead of dropping them to indicate\n   incipient
-    congestion to the endpoints.  Receivers with an ECN-capable\n   transport protocol
-    feed back this information to the sender.  ECN was\n   originally specified for
-    TCP in such a way that only one feedback\n   signal can be transmitted per Round-Trip
-    Time (RTT).  Recent new TCP\n   mechanisms like Congestion Exposure (ConEx), Data
-    Center TCP (DCTCP)\n   or Low Latency, Low Loss, and Scalable Throughput (L4S)
-    need more\n   accurate ECN feedback information whenever more than one marking
-    is\n   received in one RTT.  This document updates the original ECN\n   specification
-    in RFC 3168 to specify a scheme that provides more than\n   one feedback signal
-    per RTT in the TCP header.  Given TCP header\n   space is scarce, it allocates
-    a reserved header bit previously\n   assigned to the ECN-Nonce.  It also overloads
-    the two existing ECN\n   flags in the TCP header.  The resulting extra space is
-    exploited to\n   feed back the IP-ECN field received during the 3-way handshake
-    as\n   well.  Supplementary feedback information can optionally be provided\n
-    \  in two new TCP option alternatives, which are never used on the TCP\n   SYN.
-    \ The document also specifies the treatment of this updated TCP\n   wire protocol
-    by middleboxes.\n\n\t "
+  content: |-
+    <p>Explicit Congestion Notification (ECN) is a mechanism where network
+       nodes can mark IP packets instead of dropping them to indicate
+       incipient congestion to the endpoints.  Receivers with an ECN-capable
+       transport protocol feed back this information to the sender.  ECN was
+       originally specified for TCP in such a way that only one feedback
+       signal can be transmitted per Round-Trip Time (RTT).  Recent new TCP
+       mechanisms like Congestion Exposure (ConEx), Data Center TCP (DCTCP)
+       or Low Latency, Low Loss, and Scalable Throughput (L4S) need more
+       accurate ECN feedback information whenever more than one marking is
+       received in one RTT.  This document updates the original ECN
+       specification in RFC 3168 to specify a scheme that provides more than
+       one feedback signal per RTT in the TCP header.  Given TCP header
+       space is scarce, it allocates a reserved header bit previously
+       assigned to the ECN-Nonce.  It also overloads the two existing ECN
+       flags in the TCP header.  The resulting extra space is exploited to
+       feed back the IP-ECN field received during the 3-way handshake as
+       well.  Supplementary feedback information can optionally be provided
+       in two new TCP option alternatives, which are never used on the TCP
+       SYN.  The document also specifies the treatment of this updated TCP
+       wire protocol by middleboxes.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpm-accurate-ecn-26
+    formattedref:
+      content: draft-ietf-tcpm-accurate-ecn-26
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-accurate-ecn-26
@@ -135,7 +139,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-accurate-ecn-28
+    formattedref:
+      content: draft-ietf-tcpm-accurate-ecn-28
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-accurate-ecn-28
@@ -151,7 +156,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-accurate-ecn-27
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

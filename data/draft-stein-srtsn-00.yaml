@@ -1,7 +1,7 @@
 ---
 id: draftsteinsrtsn00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: RAD
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -57,24 +57,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Routers perform two distinct user-plane functionalities, namely\n   forwarding
-    (where the packet should be sent) and scheduling (when the\n   packet should be
-    sent).  One forwarding paradigm is segment routing,\n   in which forwarding instructions
-    are encoded in the packet in a stack\n   data structure, rather than programmed
-    into the routers.  Time\n   Sensitive Networking and Deterministic Networking
-    provide several\n   mechanisms for scheduling under the assumption that routers
-    are time\n   synchronized.  The most effective mechanisms for delay minimization\n
-    \  involve per-flow resource allocation.\n\n   SRTSN is a unified approach to
-    forwarding and scheduling that uses a\n   single stack data structure.  Each stack
-    entry consists of a\n   forwarding portion (e.g., IP addresses or suffixes) and
-    a scheduling\n   portion (deadline by which the packet must exit the router).
-    \ SRTSN\n   thus fully implements network programming for time sensitive flows,\n
-    \  by prescribing to each router both to-where and by-when each packet\n   should
-    be sent.\n\n\t "
+  content: |-
+    <p>Routers perform two distinct user-plane functionalities, namely
+       forwarding (where the packet should be sent) and scheduling (when the
+       packet should be sent).  One forwarding paradigm is segment routing,
+       in which forwarding instructions are encoded in the packet in a stack
+       data structure, rather than programmed into the routers.  Time
+       Sensitive Networking and Deterministic Networking provide several
+       mechanisms for scheduling under the assumption that routers are time
+       synchronized.  The most effective mechanisms for delay minimization
+       involve per-flow resource allocation.
+
+       SRTSN is a unified approach to forwarding and scheduling that uses a
+       single stack data structure.  Each stack entry consists of a
+       forwarding portion (e.g., IP addresses or suffixes) and a scheduling
+       portion (deadline by which the packet must exit the router).  SRTSN
+       thus fully implements network programming for time sensitive flows,
+       by prescribing to each router both to-where and by-when each packet
+       should be sent.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-stein-srtsn-01
+    formattedref:
+      content: draft-stein-srtsn-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-stein-srtsn-01
@@ -90,7 +95,7 @@ series:
     content: Internet-Draft
   number: draft-stein-srtsn-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

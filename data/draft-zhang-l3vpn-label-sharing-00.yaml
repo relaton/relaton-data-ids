@@ -1,7 +1,7 @@
 ---
 id: draftzhangl3vpnlabelsharing00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Peng Zhou
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -69,18 +69,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a method to be used by Service Providers to\n
-    \  provide fast protection of VPN connections for a CE. Egress PEs in a\n   redundant
-    group always assign the same label for VPN routes from a\n   VRF. These egress
-    PEs create a BGP virtual Next Hop (vNH) in the\n   domain of the IP/MPLS backbone
-    network as an agent of the CE router.\n   Primary and backup tunnels terminated
-    at the vNH are set up by the\n   BGP/MPLS IP VPN based on IGP FRR. If the primary
-    egress PE fails, the\n   backup egress PEs can recognize the \"shared\" VPN route
-    label and\n   deliver the failure affected packets accordingly.\n\n\t "
+  content: |-
+    <p>This document describes a method to be used by Service Providers to
+       provide fast protection of VPN connections for a CE. Egress PEs in a
+       redundant group always assign the same label for VPN routes from a
+       VRF. These egress PEs create a BGP virtual Next Hop (vNH) in the
+       domain of the IP/MPLS backbone network as an agent of the CE router.
+       Primary and backup tunnels terminated at the vNH are set up by the
+       BGP/MPLS IP VPN based on IGP FRR. If the primary egress PE fails, the
+       backup egress PEs can recognize the &quot;shared&quot; VPN route label and
+       deliver the failure affected packets accordingly.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-zhang-l3vpn-label-sharing-01
+    formattedref:
+      content: draft-zhang-l3vpn-label-sharing-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhang-l3vpn-label-sharing-01
@@ -96,7 +99,7 @@ series:
     content: Internet-Draft
   number: draft-zhang-l3vpn-label-sharing-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

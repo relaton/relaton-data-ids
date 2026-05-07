@@ -1,7 +1,7 @@
 ---
 id: draftietfaltopathvector09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Tongji University
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -154,27 +154,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines an ALTO extension that allows an ALTO\n   information
-    resource to provide not only preferences but also\n   correlations of the paths
-    between different PIDs or endpoints.  The\n   extended information, including
-    aggregations of network components on\n   the paths and their properties, can
-    be used to improve the robustness\n   and performance for applications in some
-    new usage scenarios, such as\n   high-speed data transfers and traffic optimization
-    using in-network\n   storage and computation.\n\n   This document reuses the mechanisms
-    of the ALTO base protocol and the\n   Unified Property extension, such as Information
-    Resource Directory\n   (IRD) capabilities and entity domains, to negotiate and
-    exchange path\n   correlation information.  Meanwhile, it uses an extended compound\n
-    \  message to fully represent the path correlation information, for\n   better
-    server scalability and message modularity.  Specifically, the\n   extension 1)
-    introduces abstract network element (ANE) as an\n   abstraction for an aggregation
-    of network components and encodes a\n   network path as a \"path vector\", i.e.,
-    an array of ANEs traversed\n   from the source to the destination, 2) encodes
-    properties of abstract\n   network elements in a unified property map, and 3)
-    encapsulates the\n   two types of information in a multipart message.\n\n\n\t "
+  content: |-
+    <p>This document defines an ALTO extension that allows an ALTO
+       information resource to provide not only preferences but also
+       correlations of the paths between different PIDs or endpoints.  The
+       extended information, including aggregations of network components on
+       the paths and their properties, can be used to improve the robustness
+       and performance for applications in some new usage scenarios, such as
+       high-speed data transfers and traffic optimization using in-network
+       storage and computation.
+
+       This document reuses the mechanisms of the ALTO base protocol and the
+       Unified Property extension, such as Information Resource Directory
+       (IRD) capabilities and entity domains, to negotiate and exchange path
+       correlation information.  Meanwhile, it uses an extended compound
+       message to fully represent the path correlation information, for
+       better server scalability and message modularity.  Specifically, the
+       extension 1) introduces abstract network element (ANE) as an
+       abstraction for an aggregation of network components and encodes a
+       network path as a &quot;path vector&quot;, i.e., an array of ANEs traversed
+       from the source to the destination, 2) encodes properties of abstract
+       network elements in a unified property map, and 3) encapsulates the
+       two types of information in a multipart message.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-alto-path-vector-08
+    formattedref:
+      content: draft-ietf-alto-path-vector-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-08
@@ -184,7 +190,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-alto-path-vector-10
+    formattedref:
+      content: draft-ietf-alto-path-vector-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-path-vector-10
@@ -200,7 +207,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-alto-path-vector-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

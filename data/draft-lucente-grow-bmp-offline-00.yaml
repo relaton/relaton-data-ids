@@ -1,7 +1,7 @@
 ---
 id: draftlucentegrowbmpoffline00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: NLnet Labs
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -104,20 +104,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   BMP (BGP Monitoring Protocol) [RFC7854] is perfectly suited for real-\n
-    \  time consumption but less ideal for off-wire historical purposes.\n   The main
-    issue is the dependence that parsing BGP Update PDUs has on\n   knowing which
-    capabilities have been agreed when establishing the BGP\n   session with the peers,
-    which could have happened long time ago\n   (days, weeks, months).\n\n   This
-    document defines a new optional BMP message type, called Peer\n   Summary, that
-    carries a summary of the established BGP sessions along\n   with their capabilities
-    and that is intended to be injected in the\n   BMP feed at configurable time intervals
-    and/or ad-hoc whenever it is\n   felt necessary to improve fruition of BMP data
-    offline.\n\n\t "
+  content: |-
+    <p>BMP (BGP Monitoring Protocol) [RFC7854] is perfectly suited for real-
+       time consumption but less ideal for off-wire historical purposes.
+       The main issue is the dependence that parsing BGP Update PDUs has on
+       knowing which capabilities have been agreed when establishing the BGP
+       session with the peers, which could have happened long time ago
+       (days, weeks, months).
+
+       This document defines a new optional BMP message type, called Peer
+       Summary, that carries a summary of the established BGP sessions along
+       with their capabilities and that is intended to be injected in the
+       BMP feed at configurable time intervals and/or ad-hoc whenever it is
+       felt necessary to improve fruition of BMP data offline.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-lucente-grow-bmp-offline-01
+    formattedref:
+      content: draft-lucente-grow-bmp-offline-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-lucente-grow-bmp-offline-01
@@ -133,7 +137,7 @@ series:
     content: Internet-Draft
   number: draft-lucente-grow-bmp-offline-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

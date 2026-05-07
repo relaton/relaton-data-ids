@@ -1,7 +1,7 @@
 ---
 id: draftsidropsbgpsecvalidationsignaling00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: USA NIST
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,18 +79,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a new BGP non-transitive extended community to\n
-    \  carry the BGPsec path validation state inside an autonomous system.\n   Internal
-    BGP (IBGP) speakers that receive this community string can\n   use the embedded
-    BGPsec validation state and configure local policies\n   that allow it being used
-    to influence their decision process.  This\n   is especially helpful because Section
-    5 of RFC 8205 specifically\n   allows putting BGPsec path validation temporarily
-    on hold.  This\n   allows reducing the load of validation particularly from IBGP
-    learned\n   routes.\n\n\t "
+  content: |-
+    <p>This document defines a new BGP non-transitive extended community to
+       carry the BGPsec path validation state inside an autonomous system.
+       Internal BGP (IBGP) speakers that receive this community string can
+       use the embedded BGPsec validation state and configure local policies
+       that allow it being used to influence their decision process.  This
+       is especially helpful because Section 5 of RFC 8205 specifically
+       allows putting BGPsec path validation temporarily on hold.  This
+       allows reducing the load of validation particularly from IBGP learned
+       routes.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-sidrops-bgpsec-validation-signaling-01
+    formattedref:
+      content: draft-sidrops-bgpsec-validation-signaling-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sidrops-bgpsec-validation-signaling-01
@@ -106,7 +109,7 @@ series:
     content: Internet-Draft
   number: draft-sidrops-bgpsec-validation-signaling-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

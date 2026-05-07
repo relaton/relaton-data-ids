@@ -1,7 +1,7 @@
 ---
 id: draftietfpimassertpacking08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: ZTE Corporation
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -132,19 +132,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   LANs often have more than one upstream router.  When PIM Sparse Mode\n
-    \  (PIM-SM), including PIM-SSM, is used, this can lead to duplicate IP\n   multicast
-    packets being forwarded by these PIM routers.  PIM Assert\n   messages are used
-    to elect a single forwarder for each IP multicast\n   traffic flow between these
-    routers.\n\n   This document defines a mechanism to send and receive information
-    for\n   multiple IP multicast flows in a single PackedAssert message.  This\n
-    \  optimization reduces the total number of PIM packets on the LAN and\n   can
-    therefore speed up the election of the single forwarder, reducing\n   the number
-    of duplicate IP multicast packets incurred.\n\n\t "
+  content: |-
+    <p>LANs often have more than one upstream router.  When PIM Sparse Mode
+       (PIM-SM), including PIM-SSM, is used, this can lead to duplicate IP
+       multicast packets being forwarded by these PIM routers.  PIM Assert
+       messages are used to elect a single forwarder for each IP multicast
+       traffic flow between these routers.
+
+       This document defines a mechanism to send and receive information for
+       multiple IP multicast flows in a single PackedAssert message.  This
+       optimization reduces the total number of PIM packets on the LAN and
+       can therefore speed up the election of the single forwarder, reducing
+       the number of duplicate IP multicast packets incurred.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-pim-assert-packing-07
+    formattedref:
+      content: draft-ietf-pim-assert-packing-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-assert-packing-07
@@ -154,7 +158,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-pim-assert-packing-09
+    formattedref:
+      content: draft-ietf-pim-assert-packing-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-assert-packing-09
@@ -170,7 +175,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-pim-assert-packing-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

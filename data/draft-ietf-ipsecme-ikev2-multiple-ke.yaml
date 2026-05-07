@@ -1,7 +1,8 @@
 ---
 id: draftietfipsecmeikev2multipleke
-schema_version: v1.4.1
-formattedref: draft-ietf-ipsecme-ikev2-multiple-ke
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-ipsecme-ikev2-multiple-ke
 title:
 - language: en
   script: Latn
@@ -13,34 +14,45 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes how to extend the Internet Key Exchange\n   Protocol
-    Version 2 (IKEv2) to allow multiple key exchanges to take\n   place while computing
-    a shared secret during a Security Association\n   (SA) setup.\n\n   The primary
-    application of this feature in IKEv2 is the ability to\n   perform one or more
-    post-quantum key exchanges in conjunction with\n   the classical (Elliptic Curve)
-    Diffie-Hellman (EC)DH key exchange, so\n   that the resulting shared key is resistant
-    against quantum computer\n   attacks.  Since there is currently no post-quantum
-    key exchange that\n   is as well-studied as (EC)DH, performing multiple key exchanges
-    with\n   different post-quantum algorithms along with the well-established\n   classical
-    key exchange algorithms addresses this concern, since the\n   overall security
-    is at least as strong as each individual primitive.\n\n   Another possible application
-    for this extension is the ability to\n   combine several key exchanges in situations
-    when no single key\n   exchange algorithm is trusted by both initiator and responder.\n\n
-    \  This document utilizes the IKE_INTERMEDIATE exchange, by means of\n   which
-    multiple key exchanges are performed when an IKE SA is being\n   established.
-    \ It also introduces a new IKEv2 exchange\n   IKE_FOLLOWUP_KE, which is used for
-    the same purpose when the IKE SA\n   is up (during rekeys or creating additional
-    Child SAs).\n\n   This document updates RFC7296 by renaming a transform type 4
-    from\n   \"Diffie-Hellman Group (D-H)\" to \"Key Exchange Method (KE)\" and\n
-    \  renaming a field in the Key Exchange Payload from \"Diffie-Hellman\n   Group
-    Num\" to \"Key Exchange Method\".  It also renames an IANA\n   registry for this
-    transform type from \"Transform Type 4 - Diffie-\n   Hellman Group Transform IDs\"
-    to \"Transform Type 4 - Key Exchange\n   Method Transform IDs\".  These changes
-    generalize key exchange\n   algorithms that can be used in IKEv2.\n\n\t "
+  content: |-
+    <p>This document describes how to extend the Internet Key Exchange
+       Protocol Version 2 (IKEv2) to allow multiple key exchanges to take
+       place while computing a shared secret during a Security Association
+       (SA) setup.
+
+       The primary application of this feature in IKEv2 is the ability to
+       perform one or more post-quantum key exchanges in conjunction with
+       the classical (Elliptic Curve) Diffie-Hellman (EC)DH key exchange, so
+       that the resulting shared key is resistant against quantum computer
+       attacks.  Since there is currently no post-quantum key exchange that
+       is as well-studied as (EC)DH, performing multiple key exchanges with
+       different post-quantum algorithms along with the well-established
+       classical key exchange algorithms addresses this concern, since the
+       overall security is at least as strong as each individual primitive.
+
+       Another possible application for this extension is the ability to
+       combine several key exchanges in situations when no single key
+       exchange algorithm is trusted by both initiator and responder.
+
+       This document utilizes the IKE_INTERMEDIATE exchange, by means of
+       which multiple key exchanges are performed when an IKE SA is being
+       established.  It also introduces a new IKEv2 exchange
+       IKE_FOLLOWUP_KE, which is used for the same purpose when the IKE SA
+       is up (during rekeys or creating additional Child SAs).
+
+       This document updates RFC7296 by renaming a transform type 4 from
+       &quot;Diffie-Hellman Group (D-H)&quot; to &quot;Key Exchange Method (KE)&quot; and
+       renaming a field in the Key Exchange Payload from &quot;Diffie-Hellman
+       Group Num&quot; to &quot;Key Exchange Method&quot;.  It also renames an IANA
+       registry for this transform type from &quot;Transform Type 4 - Diffie-
+       Hellman Group Transform IDs&quot; to &quot;Transform Type 4 - Key Exchange
+       Method Transform IDs&quot;.  These changes generalize key exchange
+       algorithms that can be used in IKEv2.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-00
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-00
@@ -50,7 +62,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-01
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-01
@@ -60,7 +73,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-02
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-02
@@ -70,7 +84,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-03
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-03
@@ -80,7 +95,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-04
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-04
@@ -90,7 +106,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-05
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-05
@@ -100,7 +117,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-06
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-06
@@ -110,7 +128,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-07
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-07
@@ -120,7 +139,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-08
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-08
@@ -130,7 +150,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-09
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-09
@@ -140,7 +161,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-10
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-10
@@ -150,7 +172,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-11
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-11
@@ -160,7 +183,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-12
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-12

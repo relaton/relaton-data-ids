@@ -1,7 +1,7 @@
 ---
 id: draftschinazimasque01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Google LLC
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,24 +54,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes MASQUE (Multiplexed Application Substrate\n
-    \  over QUIC Encryption).  MASQUE is a mechanism that allows co-locating\n   and
-    obfuscating networking applications behind an HTTPS web server.\n   The currently
-    prevalent use-case is to allow running a proxy or VPN\n   server that is indistinguishable
-    from an HTTPS server to any\n   unauthenticated observer.  We do not expect major
-    providers and CDNs\n   to deploy this behind their main TLS certificate, as they
-    are not\n   willing to take the risk of getting blocked, as shown when domain\n
-    \  fronting was blocked.  An expected use would be for individuals to\n   enable
-    this behind their personal websites via easy to configure\n   open-source software.\n\n
-    \  This document is a straw-man proposal.  It does not contain enough\n   details
-    to implement the protocol, and is currently intended to spark\n   discussions
-    on the approach it is taking.  Discussion of this work is\n   encouraged to happen
-    on the MASQUE IETF mailing list masque@ietf.org\n   [1] or on the GitHub repository
-    which contains the draft:\n   https://github.com/DavidSchinazi/masque-drafts [2].\n\n\t "
+  content: |-
+    <p>This document describes MASQUE (Multiplexed Application Substrate
+       over QUIC Encryption).  MASQUE is a mechanism that allows co-locating
+       and obfuscating networking applications behind an HTTPS web server.
+       The currently prevalent use-case is to allow running a proxy or VPN
+       server that is indistinguishable from an HTTPS server to any
+       unauthenticated observer.  We do not expect major providers and CDNs
+       to deploy this behind their main TLS certificate, as they are not
+       willing to take the risk of getting blocked, as shown when domain
+       fronting was blocked.  An expected use would be for individuals to
+       enable this behind their personal websites via easy to configure
+       open-source software.
+
+       This document is a straw-man proposal.  It does not contain enough
+       details to implement the protocol, and is currently intended to spark
+       discussions on the approach it is taking.  Discussion of this work is
+       encouraged to happen on the MASQUE IETF mailing list masque@ietf.org
+       [1] or on the GitHub repository which contains the draft:
+       https://github.com/DavidSchinazi/masque-drafts [2].</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-schinazi-masque-00
+    formattedref:
+      content: draft-schinazi-masque-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-schinazi-masque-00
@@ -81,7 +87,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-schinazi-masque-02
+    formattedref:
+      content: draft-schinazi-masque-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-schinazi-masque-02
@@ -97,7 +104,7 @@ series:
     content: Internet-Draft
   number: draft-schinazi-masque-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

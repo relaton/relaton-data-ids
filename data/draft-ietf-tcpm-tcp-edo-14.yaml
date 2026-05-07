@@ -1,7 +1,7 @@
 ---
 id: draftietftcpmtcpedo14
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: MTI Systems
 version:
-- draft: '14'
+- content: '14'
 language:
 - en
 script:
@@ -79,17 +79,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   TCP segments include a Data Offset field to indicate space for TCP\n
-    \  options but the size of the field can limit the space available for\n   complex
-    options such as SACK and Multipath TCP and can limit the\n   combination of such
-    options supported in a single connection. This\n   document updates RFC 9293 with
-    an optional TCP extension to that\n   space to support the use of multiple large
-    options. It also explains\n   why the initial SYN of a connection cannot be extending
-    a single\n   segment.\n\n\t "
+  content: |-
+    <p>TCP segments include a Data Offset field to indicate space for TCP
+       options but the size of the field can limit the space available for
+       complex options such as SACK and Multipath TCP and can limit the
+       combination of such options supported in a single connection. This
+       document updates RFC 9293 with an optional TCP extension to that
+       space to support the use of multiple large options. It also explains
+       why the initial SYN of a connection cannot be extending a single
+       segment.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpm-tcp-edo-13
+    formattedref:
+      content: draft-ietf-tcpm-tcp-edo-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-edo-13
@@ -99,7 +102,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-tcp-edo-15
+    formattedref:
+      content: draft-ietf-tcpm-tcp-edo-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-edo-15
@@ -115,7 +119,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-tcp-edo-14
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftgllsrmetricnormalize00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: New H3C Technologies
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,14 +79,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When multiple links in a network have the same metric, they can\n   serve
-    as ECMP equivalent links for load balancing during forwarding.\n   However, slight
-    fluctuations in metric values can prevent the\n   formation of ECMP equivalent
-    links, leading to the idle state of\n   suboptimal links and thus wasting bandwidth
-    resources.\n\n   This document proposes a method for normalizing metrics, allowing\n
-    \  the slight fluctuations across multiple links to be adjusted so that\n   the
-    resulting calculated metrics become identical. This enables the\n   formation
-    of ECMP equivalent links, facilitating load distribution\n   during forwarding.\n\n\t "
+  content: |-
+    <p>When multiple links in a network have the same metric, they can
+       serve as ECMP equivalent links for load balancing during forwarding.
+       However, slight fluctuations in metric values can prevent the
+       formation of ECMP equivalent links, leading to the idle state of
+       suboptimal links and thus wasting bandwidth resources.
+
+       This document proposes a method for normalizing metrics, allowing
+       the slight fluctuations across multiple links to be adjusted so that
+       the resulting calculated metrics become identical. This enables the
+       formation of ECMP equivalent links, facilitating load distribution
+       during forwarding.</p>
 series:
 - type: main
   title:
@@ -95,7 +99,7 @@ series:
     content: Internet-Draft
   number: draft-gl-lsr-metric-normalize-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfbierphp03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -57,20 +57,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Bit Index Explicit Replication (BIER) can be used as provider tunnel\n
-    \  for Multicast Virtual Private Network (MVPN) [RFC6514], Global\n   Table Multicast
-    [RFC7716] or Ethernet Virtual Private Network (EVPN)\n   [RFC7432].  It is possible
-    that not all routers in the provider\n   network support BIER and there are various
-    methods to handle BIER\n   incapable transit routers.  However those methods assume
-    the MVPN/\n   EVPN Provider Edges (PEs) are BIER capable.  This document specifies\n
-    \  a method to allow BIER incapable routers to act as MVPN/EVPN PEs with\n   BIER
-    as the transport, by having the upstream BIER Forwarding Router\n   (BFR) that
-    is connected directly or indirectly via a tunnel to a BIER\n   incapable PE remove
-    the BIER header and send the payload to the PE.\n\n\n\t "
+  content: |-
+    <p>Bit Index Explicit Replication (BIER) can be used as provider tunnel
+       for Multicast Virtual Private Network (MVPN) [RFC6514], Global
+       Table Multicast [RFC7716] or Ethernet Virtual Private Network (EVPN)
+       [RFC7432].  It is possible that not all routers in the provider
+       network support BIER and there are various methods to handle BIER
+       incapable transit routers.  However those methods assume the MVPN/
+       EVPN Provider Edges (PEs) are BIER capable.  This document specifies
+       a method to allow BIER incapable routers to act as MVPN/EVPN PEs with
+       BIER as the transport, by having the upstream BIER Forwarding Router
+       (BFR) that is connected directly or indirectly via a tunnel to a BIER
+       incapable PE remove the BIER header and send the payload to the PE.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bier-php-02
+    formattedref:
+      content: draft-ietf-bier-php-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-php-02
@@ -80,7 +83,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bier-php-04
+    formattedref:
+      content: draft-ietf-bier-php-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-php-04
@@ -96,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bier-php-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

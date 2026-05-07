@@ -1,7 +1,8 @@
 ---
 id: draftwangidrflowspecdiporiginasfilter
-schema_version: v1.4.1
-formattedref: draft-wang-idr-flowspec-dip-origin-as-filter
+schema_version: v1.5.6
+formattedref:
+  content: draft-wang-idr-flowspec-dip-origin-as-filter
 title:
 - language: en
   script: Latn
@@ -13,17 +14,18 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   BGP Flowspec mechanism (BGP-FS) [RFC8955] [RFC8956] propagates both\n
-    \  traffic Flow Specifications and Traffic Filtering Actions by making\n   use
-    of the BGP NLRI and the BGP Extended Community encoding formats.\n   This document
-    specifies a new BGP-FS component type to support AS-\n   level filtering.  The
-    match field is the origin AS number of the\n   destination IP address that is
-    encoded in the Flowspec NLRI.  This\n   function is applied in a single administrative
-    domain.\n\n\n\t "
+  content: |-
+    <p>This document defines an extension to the Border Gateway Protocol
+       (BGP) Flow Specification (FlowSpec) to enable filtering based on the
+       Origin Autonomous System (AS) of the destination IP address.  This
+       extension is particularly useful in mitigating Distributed Denial of
+       Service (DDoS) attacks where the target IP addresses are dynamic but
+       belong to a specific destination AS.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-00
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-00
@@ -33,7 +35,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-01
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-01
@@ -43,7 +46,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-02
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-02
@@ -53,7 +57,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-03
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-03
@@ -63,7 +68,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-04
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-04
@@ -73,7 +79,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-05
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-05
@@ -83,7 +90,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-06
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-06
@@ -93,7 +101,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-07
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-07
@@ -103,7 +112,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-08
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-08
@@ -113,7 +123,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-09
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-09
@@ -123,7 +134,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-10
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-10
@@ -133,11 +145,34 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-wang-idr-flowspec-dip-origin-as-filter-11
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-11
     docidentifier:
     - content: draft-wang-idr-flowspec-dip-origin-as-filter-11
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-12
+    docidentifier:
+    - content: draft-wang-idr-flowspec-dip-origin-as-filter-12
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-idr-flowspec-dip-origin-as-filter-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-idr-flowspec-dip-origin-as-filter-13
+    docidentifier:
+    - content: draft-wang-idr-flowspec-dip-origin-as-filter-13
       type: Internet-Draft
       primary: true

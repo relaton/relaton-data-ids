@@ -1,7 +1,7 @@
 ---
 id: draftmayerntpmacextensionfield00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Network Time Foundation
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,14 +79,16 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Network Time Protocol Version 4 (NTPv4) defines in RFC5905 the\n
-    \  optional usage of Message Authentication Code (MAC). The MAC is an\n   optional
-    component of the NTP packet at the end of the packet. There\n   can only be one
-    MAC segment in the packet but there is no way of\n   knowing if the last data
-    segment at the end of an NTP packet is a MAC\n   or an extension field, which
-    is also defined in RFC5905. This draft\n   defines a MAC extension field which
-    will allow the existing MAC\n   segment to be moved into an extension field and
-    have a known length\n   and deprecates the existing MAC.\n\n\t "
+  content: |-
+    <p>The Network Time Protocol Version 4 (NTPv4) defines in RFC5905 the
+       optional usage of Message Authentication Code (MAC). The MAC is an
+       optional component of the NTP packet at the end of the packet. There
+       can only be one MAC segment in the packet but there is no way of
+       knowing if the last data segment at the end of an NTP packet is a MAC
+       or an extension field, which is also defined in RFC5905. This draft
+       defines a MAC extension field which will allow the existing MAC
+       segment to be moved into an extension field and have a known length
+       and deprecates the existing MAC.</p>
 series:
 - type: main
   title:
@@ -95,7 +97,7 @@ series:
     content: Internet-Draft
   number: draft-mayer-ntp-mac-extension-field-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

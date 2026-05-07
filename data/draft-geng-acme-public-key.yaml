@@ -1,7 +1,8 @@
 ---
 id: draftgengacmepublickey
-schema_version: v1.4.1
-formattedref: draft-geng-acme-public-key
+schema_version: v1.5.6
+formattedref:
+  content: draft-geng-acme-public-key
 title:
 - language: en
   script: Latn
@@ -14,17 +15,33 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies an extension to the ACME protocol [RFC8555]\n
-    \  that enables Acme server to use the public key authentication\n   protocol
-    to verify that the real certificate applicant behind the\n   Acme client has control
-    over the identity and to ensure strong\n   consistency between the identity in
-    the challenge phase and the\n   identity of the final certificate issued.  This
-    document also\n   proposes a process extension for removing CSR at the certificate\n
-    \  application phase.\n\n\t "
+  content: |-
+    <p>The current ACME protocol [RFC8555] requires applicants to submit a
+       PKCS#10 Certificate Signing Request (CSR) during the finalization
+       phase.  The construction, ASN.1 encoding, and transmission of the CSR
+       impose additional implementation burdens on both the client
+       (especially resource-constrained devices) and the server.  Moreover,
+       the CSR cannot prevent a public key from being replaced by an
+       intermediary at the protocol level.
+
+       This document introduces the &quot;pk-01&quot; challenge extension based on the
+       ACME protocol.  Its core mechanism is as follows: the applicant
+       declares the public key to be authenticated during the &quot;newOrder&quot;
+       phase and completes the Proof of Possession (PoP) by signing with the
+       private key during the challenge phase.  Since the public key is
+       declared when the order is created and verified during the challenge
+       phase, there is no need to submit a CSR during the finalization
+       phase; the ACME server can issue the certificate directly based on
+       the verified public key, thereby eliminating the CSR at the protocol
+       level.
+
+       The &quot;pk-01&quot; challenge supports two verification modes via the
+       pop_mode field:</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-geng-acme-public-key-00
+    formattedref:
+      content: draft-geng-acme-public-key-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-00
@@ -34,7 +51,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-geng-acme-public-key-01
+    formattedref:
+      content: draft-geng-acme-public-key-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-01
@@ -44,7 +62,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-geng-acme-public-key-02
+    formattedref:
+      content: draft-geng-acme-public-key-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-02
@@ -54,11 +73,45 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-geng-acme-public-key-03
+    formattedref:
+      content: draft-geng-acme-public-key-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-03
     docidentifier:
     - content: draft-geng-acme-public-key-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-geng-acme-public-key-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-04
+    docidentifier:
+    - content: draft-geng-acme-public-key-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-geng-acme-public-key-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-05
+    docidentifier:
+    - content: draft-geng-acme-public-key-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-geng-acme-public-key-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-geng-acme-public-key-06
+    docidentifier:
+    - content: draft-geng-acme-public-key-06
       type: Internet-Draft
       primary: true

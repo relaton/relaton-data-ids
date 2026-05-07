@@ -1,7 +1,7 @@
 ---
 id: draftperlmantrillrbridgemultilevel09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         language: en
         content: Hongjun Zhai
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -132,28 +132,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Extending TRILL to multiple levels has challenges that are not\n   addressed
-    by the already-existing capability of IS-IS to have\n   multiple levels.  One
-    issue is with the handling of multi-destination\n   packet distribution trees.
-    Another issue is with TRILL switch\n   nicknames.  There have been two proposed
-    approaches.  One approach,\n   which we refer to as the \"unique nickname\" approach,
-    gives unique\n   nicknames to all the TRILL switches in the multilevel campus,
-    either\n   by having the level-1/level-2 border TRILL switches advertise which\n
-    \  nicknames are not available for assignment in the area, or by\n   partitioning
-    the 16-bit nickname into an \"area\" field and a \"nickname\n   inside the area\"
-    field.  The other approach, which we refer to as the\n   \"aggregated nickname\"
-    approach, involves hiding the nicknames within\n   areas, allowing nicknames to
-    be reused in different areas, by having\n   the border TRILL switches rewrite
-    the nickname fields when entering\n   or leaving an area. Each of those approaches
-    has advantages and\n   disadvantages. This informational document suggests allowing
-    a choice\n   of approach in each area. This allows the simplicity of the unique\n
-    \  nickname approach in installations in which there is no danger of\n   running
-    out of nicknames and allows the complexity of hiding the\n   nicknames in an area
-    to be phased into larger installations on a per-\n   area basis.\n\n\n\n\t "
+  content: |-
+    <p>Extending TRILL to multiple levels has challenges that are not
+       addressed by the already-existing capability of IS-IS to have
+       multiple levels.  One issue is with the handling of multi-destination
+       packet distribution trees. Another issue is with TRILL switch
+       nicknames.  There have been two proposed approaches.  One approach,
+       which we refer to as the &quot;unique nickname&quot; approach, gives unique
+       nicknames to all the TRILL switches in the multilevel campus, either
+       by having the level-1/level-2 border TRILL switches advertise which
+       nicknames are not available for assignment in the area, or by
+       partitioning the 16-bit nickname into an &quot;area&quot; field and a &quot;nickname
+       inside the area&quot; field.  The other approach, which we refer to as the
+       &quot;aggregated nickname&quot; approach, involves hiding the nicknames within
+       areas, allowing nicknames to be reused in different areas, by having
+       the border TRILL switches rewrite the nickname fields when entering
+       or leaving an area. Each of those approaches has advantages and
+       disadvantages. This informational document suggests allowing a choice
+       of approach in each area. This allows the simplicity of the unique
+       nickname approach in installations in which there is no danger of
+       running out of nicknames and allows the complexity of hiding the
+       nicknames in an area to be phased into larger installations on a per-
+       area basis.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-perlman-trill-rbridge-multilevel-08
+    formattedref:
+      content: draft-perlman-trill-rbridge-multilevel-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perlman-trill-rbridge-multilevel-08
@@ -163,7 +168,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-perlman-trill-rbridge-multilevel-10
+    formattedref:
+      content: draft-perlman-trill-rbridge-multilevel-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perlman-trill-rbridge-multilevel-10
@@ -179,7 +185,7 @@ series:
     content: Internet-Draft
   number: draft-perlman-trill-rbridge-multilevel-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

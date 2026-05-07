@@ -1,7 +1,8 @@
 ---
 id: draftietfpimpfmforwardingenhancements
-schema_version: v1.4.1
-formattedref: draft-ietf-pim-pfm-forwarding-enhancements
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-pim-pfm-forwarding-enhancements
 title:
 - language: en
   script: Latn
@@ -13,18 +14,27 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   PIM Flooding Mechanism is a generic PIM message exchange mechanism\n
-    \  that allows multicast information to be exchanged between PIM routers\n   hop-by-hop.
-    \ One example is PIM Flooding Mechanism and Source\n   Discovery which allows
-    last hop routers to learn about new sources\n   using PFM messages, without the
-    need for initial data registers,\n   Rendezvous Points or shared trees.\n\n   This
-    document defines a new TLV for announcing sources that allows\n   for Sub-TLVs
-    that can be used to provide various types of\n   information.  This document also
-    defines methodologies that enhance\n   forwarding efficiency in PFM deployments.\n\n\t "
+  content: |-
+    <p>The Protocol Independent Multicast (PIM) Flooding Mechanism (PFM)
+       provides a generic hop-by-hop message exchange framework for
+       distributing multicast information among PIM routers.  Existing PFM
+       procedures enable efficient source discovery without reliance on
+       Rendezvous Points, shared trees, or initial data registers.
+
+       This document specifies enhancements to PFM forwarding behavior to
+       improve efficiency and scalability.  In particular, it introduces
+       mechanisms to reduce redundant message transmission over multiple
+       parallel links and extends the encoding of multicast information
+       through additional Type-Length-Value (TLV) structures and sub-TLVs to
+       convey richer flow-related data.  These enhancements optimize
+       control-plane overhead while preserving interoperability with
+       existing PFM procedures, enabling more efficient dissemination of
+       multicast state in PIM networks.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pim-pfm-forwarding-enhancements-00
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-00
@@ -34,7 +44,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pim-pfm-forwarding-enhancements-01
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-01
@@ -44,7 +55,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pim-pfm-forwarding-enhancements-02
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-02
@@ -54,11 +66,34 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pim-pfm-forwarding-enhancements-03
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-03
     docidentifier:
     - content: draft-ietf-pim-pfm-forwarding-enhancements-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-04
+    docidentifier:
+    - content: draft-ietf-pim-pfm-forwarding-enhancements-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pim-pfm-forwarding-enhancements-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pim-pfm-forwarding-enhancements-05
+    docidentifier:
+    - content: draft-ietf-pim-pfm-forwarding-enhancements-05
       type: Internet-Draft
       primary: true

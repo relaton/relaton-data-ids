@@ -1,7 +1,7 @@
 ---
 id: draftkarppinenimapconman00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -73,7 +73,7 @@ contributor:
         - language: en
           content: Chek
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -81,19 +81,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The IMAP4 [RFC-2060] protocol is based on the client-server paradigm\nwhere
-    a single client is concerned only with the mail of a single\nuser.  However, due
-    to advent of several scenarios where n-tier\ninteraction is desired, the need
-    has arisen to work with several\nusers' mail during a single IMAP4 connection.\nIn
-    such scenario, a component of a n-tier system may act as an IMAP4\nclient on behalf
-    of multiple end-users.  Present examples of this\ninclude many WWW-based email
-    services.  Initial profiling suggests\nthat persistent IMAP4 connections can lead
-    to a performance increase\nof an order of magnitude when compared to separate
-    IMAP4 connections\nper mailbox action.\nThis document defines an extension to
-    the IMAP4 protocol that allows\na persistent connection to be established for
-    accessing the mail of\nmultiple users. The extension includes a new USERLOGOUT
-    command, and\na requirement for a CAPABILITIES response from servers implementing\nthe
-    extension.\n\n\t "
+  content: |-
+    <p>The IMAP4 [RFC-2060] protocol is based on the client-server paradigm
+    where a single client is concerned only with the mail of a single
+    user.  However, due to advent of several scenarios where n-tier
+    interaction is desired, the need has arisen to work with several
+    users&#39; mail during a single IMAP4 connection.
+    In such scenario, a component of a n-tier system may act as an IMAP4
+    client on behalf of multiple end-users.  Present examples of this
+    include many WWW-based email services.  Initial profiling suggests
+    that persistent IMAP4 connections can lead to a performance increase
+    of an order of magnitude when compared to separate IMAP4 connections
+    per mailbox action.
+    This document defines an extension to the IMAP4 protocol that allows
+    a persistent connection to be established for accessing the mail of
+    multiple users. The extension includes a new USERLOGOUT command, and
+    a requirement for a CAPABILITIES response from servers implementing
+    the extension.</p>
 series:
 - type: main
   title:
@@ -102,7 +106,7 @@ series:
     content: Internet-Draft
   number: draft-karppinen-imap-conman-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfidrlinklocalcapability01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Hostinger
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,28 +104,37 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   BGP [RFC4271], was originally designed to provide reachability\n   between
-    domains and between the edges of a domain.\n\n   To support IPv6 reachability,
-    BGP relies heavily on its Multiprotocol\n   Extensions as defined in [RFC2545],
-    which is crucial for enabling\n   BGP-4 to advertise IPv6 routes alongside IPv4.
-    \ This extension not\n   only permits the exchange of IPv6 routing information
-    but also\n   establishes the structure for IPv6 next hop handling within BGP\n
-    \  updates.  As such, BGP assumes the next hop towards any reachable\n   destination
-    may not reside on the advertising speaker, but rather may\n   either be through
-    a router connected to the same subnet as the\n   speaker, or through a router
-    only reachable by traversing multiple\n   hops through the network.  [RFC2545]
-    introduced the ability to\n   advertise a global IPv6 address as the BGP next
-    hop.  When the\n   advertising system is directly attached, it may include both
-    a global\n   and an IPv6 link-local address or only a global address, when next\n
-    \  hop length is set to 16 bytes.\n\n   This document updates the specification
-    to clarify the encoding of\n   the BGP next hop when the advertising system is
-    directly attached and\n   only an IPv6 link-local address is available.\n\n   This
-    clarification applies specifically to IPv6 link-local addresses\n   and does not
-    pertain to IPv4 link-local addresses as defined in\n   [RFC3927].\n\n\t "
+  content: |-
+    <p>BGP [RFC4271], was originally designed to provide reachability
+       between domains and between the edges of a domain.
+
+       To support IPv6 reachability, BGP relies heavily on its Multiprotocol
+       Extensions as defined in [RFC2545], which is crucial for enabling
+       BGP-4 to advertise IPv6 routes alongside IPv4.  This extension not
+       only permits the exchange of IPv6 routing information but also
+       establishes the structure for IPv6 next hop handling within BGP
+       updates.  As such, BGP assumes the next hop towards any reachable
+       destination may not reside on the advertising speaker, but rather may
+       either be through a router connected to the same subnet as the
+       speaker, or through a router only reachable by traversing multiple
+       hops through the network.  [RFC2545] introduced the ability to
+       advertise a global IPv6 address as the BGP next hop.  When the
+       advertising system is directly attached, it may include both a global
+       and an IPv6 link-local address or only a global address, when next
+       hop length is set to 16 bytes.
+
+       This document updates the specification to clarify the encoding of
+       the BGP next hop when the advertising system is directly attached and
+       only an IPv6 link-local address is available.
+
+       This clarification applies specifically to IPv6 link-local addresses
+       and does not pertain to IPv4 link-local addresses as defined in
+       [RFC3927].</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-linklocal-capability-00
+    formattedref:
+      content: draft-ietf-idr-linklocal-capability-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-linklocal-capability-00
@@ -135,7 +144,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-linklocal-capability-02
+    formattedref:
+      content: draft-ietf-idr-linklocal-capability-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-linklocal-capability-02
@@ -151,7 +161,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-linklocal-capability-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

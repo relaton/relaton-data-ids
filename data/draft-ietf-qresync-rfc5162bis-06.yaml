@@ -1,7 +1,7 @@
 ---
 id: draftietfqresyncrfc5162bis06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -62,7 +62,7 @@ contributor:
         language: en
         content: Dave Cridland
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -70,25 +70,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Often, multiple IMAP (RFC 3501) clients need to coordinate changes
-    to\n   a common IMAP mailbox.  Examples include different clients working on\n
-    \  behalf of the same user, and multiple users accessing shared\n   mailboxes.
-    \ These clients need a mechanism to synchronize state\n   changes for messages
-    within the mailbox.  The Conditional Store\n   facility allows a client to quickly
-    resynchronize mailbox flag\n   changes.\n\n   The Conditional Store facility also
-    provides a protected update\n   mechanism for message state information that can
-    detect and resolve\n   conflicts between multiple writing mail clients.  For example,
-    the\n   mechanism can be used to guarantee that only one client can change\n   message
-    state at any time.\n\n   This document additionally defines another IMAP extension,
-    which\n   gives an IMAP client the ability to quickly resynchronize any\n   previously
-    opened mailbox as part of the SELECT/EXAMINE command,\n   without the need for
-    server-side state or additional client round-\n   trips.  That extension builds
-    on top of the Conditional Store\n   extension and covers message deletions in
-    addition to flag changes.\n\n\t "
+  content: |-
+    <p>Often, multiple IMAP (RFC 3501) clients need to coordinate changes to
+       a common IMAP mailbox.  Examples include different clients working on
+       behalf of the same user, and multiple users accessing shared
+       mailboxes.  These clients need a mechanism to synchronize state
+       changes for messages within the mailbox.  The Conditional Store
+       facility allows a client to quickly resynchronize mailbox flag
+       changes.
+
+       The Conditional Store facility also provides a protected update
+       mechanism for message state information that can detect and resolve
+       conflicts between multiple writing mail clients.  For example, the
+       mechanism can be used to guarantee that only one client can change
+       message state at any time.
+
+       This document additionally defines another IMAP extension, which
+       gives an IMAP client the ability to quickly resynchronize any
+       previously opened mailbox as part of the SELECT/EXAMINE command,
+       without the need for server-side state or additional client round-
+       trips.  That extension builds on top of the Conditional Store
+       extension and covers message deletions in addition to flag changes.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-qresync-rfc5162bis-05
+    formattedref:
+      content: draft-ietf-qresync-rfc5162bis-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-qresync-rfc5162bis-05
@@ -98,7 +105,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-qresync-rfc5162bis-07
+    formattedref:
+      content: draft-ietf-qresync-rfc5162bis-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-qresync-rfc5162bis-07
@@ -114,7 +122,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-qresync-rfc5162bis-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

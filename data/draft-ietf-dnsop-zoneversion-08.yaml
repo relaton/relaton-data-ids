@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopzoneversion08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: Verisign
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -107,21 +107,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The DNS ZONEVERSION option is a way for DNS clients to request, and\n
-    \  for authoritative DNS servers to provide, information regarding the\n   version
-    of the zone from which a response is generated.  The Serial\n   field from the
-    Start Of Authority (SOA) resource record is a good\n   example of a zone's version,
-    and the only one defined by this\n   specification.  Additional version types
-    may be defined by future\n   specifications.\n\n   Including zone version data
-    in a response simplifies and improves the\n   quality of debugging and diagnostics
-    since the version and the data\n   are provided atomically.  This can be especially
-    useful for zones and\n   DNS providers that leverage IP anycast or multiple backend
-    systems.\n   It functions similarly to the DNS Name Server Identifier (NSID)\n
-    \  option [RFC5001].\n\n\t "
+  content: |-
+    <p>The DNS ZONEVERSION option is a way for DNS clients to request, and
+       for authoritative DNS servers to provide, information regarding the
+       version of the zone from which a response is generated.  The Serial
+       field from the Start Of Authority (SOA) resource record is a good
+       example of a zone&#39;s version, and the only one defined by this
+       specification.  Additional version types may be defined by future
+       specifications.
+
+       Including zone version data in a response simplifies and improves the
+       quality of debugging and diagnostics since the version and the data
+       are provided atomically.  This can be especially useful for zones and
+       DNS providers that leverage IP anycast or multiple backend systems.
+       It functions similarly to the DNS Name Server Identifier (NSID)
+       option [RFC5001].</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-zoneversion-07
+    formattedref:
+      content: draft-ietf-dnsop-zoneversion-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-zoneversion-07
@@ -131,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-zoneversion-09
+    formattedref:
+      content: draft-ietf-dnsop-zoneversion-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-zoneversion-09
@@ -147,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-zoneversion-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

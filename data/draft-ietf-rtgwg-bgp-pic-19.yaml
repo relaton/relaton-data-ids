@@ -1,7 +1,7 @@
 ---
 id: draftietfrtgwgbgppic19
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Sproute Networks
 version:
-- draft: '19'
+- content: '19'
 language:
 - en
 script:
@@ -104,23 +104,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "In a network comprising thousands of BGP peers exchanging millions of\nroutes,
-    many routes are reachable via more than one next-hop. Given\nthe large scaling
-    targets, it is desirable to restore traffic after\nfailure in a time period that
-    does not depend on the number of BGP\nprefixes.\n\nThis document describes an
-    architecture by which traffic can be re-\nrouted to equal cost multi-path (ECMP)
-    or pre-calculated backup paths\nin a timeframe that does not depend on the number
-    of BGP prefixes.\nThe objective is achieved through organizing the forwarding
-    data\nstructures in a hierarchical manner and sharing forwarding elements\namong
-    the maximum possible number of routes. The described technique\nyields prefix
-    independent convergence while ensuring incremental\ndeployment, complete automation,
-    and zero management and provisioning\neffort. It is noteworthy to mention that
-    the benefits of BGP Prefix\nIndependent Convergence (BGP-PIC) are hinged on the
-    existence of more\nthan one path whether as ECMP or primary-backup.\n\n\t "
+  content: |-
+    <p>In a network comprising thousands of BGP peers exchanging millions of
+    routes, many routes are reachable via more than one next-hop. Given
+    the large scaling targets, it is desirable to restore traffic after
+    failure in a time period that does not depend on the number of BGP
+    prefixes.
+
+    This document describes an architecture by which traffic can be re-
+    routed to equal cost multi-path (ECMP) or pre-calculated backup paths
+    in a timeframe that does not depend on the number of BGP prefixes.
+    The objective is achieved through organizing the forwarding data
+    structures in a hierarchical manner and sharing forwarding elements
+    among the maximum possible number of routes. The described technique
+    yields prefix independent convergence while ensuring incremental
+    deployment, complete automation, and zero management and provisioning
+    effort. It is noteworthy to mention that the benefits of BGP Prefix
+    Independent Convergence (BGP-PIC) are hinged on the existence of more
+    than one path whether as ECMP or primary-backup.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-rtgwg-bgp-pic-18
+    formattedref:
+      content: draft-ietf-rtgwg-bgp-pic-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-18
@@ -130,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-rtgwg-bgp-pic-20
+    formattedref:
+      content: draft-ietf-rtgwg-bgp-pic-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-bgp-pic-20
@@ -146,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-rtgwg-bgp-pic-19
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftuttaroidrbgppersistence02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -101,7 +101,7 @@ contributor:
         language: en
         content: John Scudder
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -109,18 +109,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In this document we introduce a new BGP capability termed \"Long-lived\n
-    \  Graceful Restart Capability\" so that stale routes can be retained for\n   a
-    longer time upon session failure.  In addition a new BGP community\n   \"LLGR_STALE\"
-    is introduced for marking stale routes retained for a\n   longer time.  We also
-    specify that such long-lived stale routes be\n   treated as the least-preferred,
-    and their advertisements be limited\n   to BGP speakers that have advertised the
-    new capability.  Use of this\n   extension is not advisable in all cases, and
-    we provide guidelines to\n   help determine if it is.\n\n\t "
+  content: |-
+    <p>In this document we introduce a new BGP capability termed &quot;Long-lived
+       Graceful Restart Capability&quot; so that stale routes can be retained for
+       a longer time upon session failure.  In addition a new BGP community
+       &quot;LLGR_STALE&quot; is introduced for marking stale routes retained for a
+       longer time.  We also specify that such long-lived stale routes be
+       treated as the least-preferred, and their advertisements be limited
+       to BGP speakers that have advertised the new capability.  Use of this
+       extension is not advisable in all cases, and we provide guidelines to
+       help determine if it is.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-uttaro-idr-bgp-persistence-01
+    formattedref:
+      content: draft-uttaro-idr-bgp-persistence-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-uttaro-idr-bgp-persistence-01
@@ -130,7 +133,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-uttaro-idr-bgp-persistence-03
+    formattedref:
+      content: draft-uttaro-idr-bgp-persistence-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-uttaro-idr-bgp-persistence-03
@@ -146,7 +150,7 @@ series:
     content: Internet-Draft
   number: draft-uttaro-idr-bgp-persistence-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietflsrospfbfdstrictmode10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -129,19 +129,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the extensions to OSPF that enable an OSPF\n
-    \  router to signal the requirement for a Bidirectional Forwarding\n   Detection
-    (BFD) session prior to adjacency formation.  Link-Local\n   Signaling (LLS) is
-    used to advertise the requirement for strict-mode\n   BFD session establishment
-    for an OSPF adjacency.  If both OSPF\n   neighbors advertise BFD strict-mode,
-    adjacency formation will be\n   blocked until a BFD session has been successfully
-    established.\n\n   This document updates RFC2328 by augmenting the OSPF neighbor
-    state\n   machine with a check for BFD session up before progression from Init\n
-    \  to Two-Way state when operating in OSPF BFD strict-mode.\n\n\t "
+  content: |-
+    <p>This document specifies the extensions to OSPF that enable an OSPF
+       router to signal the requirement for a Bidirectional Forwarding
+       Detection (BFD) session prior to adjacency formation.  Link-Local
+       Signaling (LLS) is used to advertise the requirement for strict-mode
+       BFD session establishment for an OSPF adjacency.  If both OSPF
+       neighbors advertise BFD strict-mode, adjacency formation will be
+       blocked until a BFD session has been successfully established.
+
+       This document updates RFC2328 by augmenting the OSPF neighbor state
+       machine with a check for BFD session up before progression from Init
+       to Two-Way state when operating in OSPF BFD strict-mode.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lsr-ospf-bfd-strict-mode-09
+    formattedref:
+      content: draft-ietf-lsr-ospf-bfd-strict-mode-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-bfd-strict-mode-09
@@ -157,7 +161,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lsr-ospf-bfd-strict-mode-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

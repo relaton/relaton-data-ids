@@ -1,7 +1,7 @@
 ---
 id: draftietftsvwgsctpfailover10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -127,7 +127,7 @@ contributor:
         language: en
         content: karen Nielsen
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -135,27 +135,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   One of the major advantages of SCTP is the support of multi-homed\n
-    \  communication.  A multi-homed SCTP end-point has the ability to\n   withstand
-    network failures by migrating the traffic from an inactive\n   network to an active
-    one.  However, if the failover operation as\n   specified in RFC4960 is followed,
-    there can be a significant delay in\n   the migration to the active destination
-    addresses, thus severely\n   reducing the effectiveness of the SCTP failover operation.\n\n
-    \  This document complements RFC4960 by the introduction of a new path\n   state,
-    the Potentially Failed (PF) path state, and an associated new\n   failover operation
-    to apply during a network failure.  The algorithm\n   defined is called SCTP Potentially
-    Failed Algorithm, SCTP-PF for\n   short.  In addition, the document complements
-    RFC4960 by introducing\n   alternative switchover operation modes for the data
-    transfer path\n   management after the recovery of a failed primary path.  These
-    modes\n   can allow improvements in the performance of the operation in some\n
-    \  network environments.  The implementation of the additional\n   switchover
-    operation modes is an optional part of SCTP-PF.\n\n   The procedures defined in
-    the document require only minimal\n   modifications to the current specification.
-    \ The procedures are\n   sender-side only and do not impact the SCTP receiver.\n\n\t "
+  content: |-
+    <p>One of the major advantages of SCTP is the support of multi-homed
+       communication.  A multi-homed SCTP end-point has the ability to
+       withstand network failures by migrating the traffic from an inactive
+       network to an active one.  However, if the failover operation as
+       specified in RFC4960 is followed, there can be a significant delay in
+       the migration to the active destination addresses, thus severely
+       reducing the effectiveness of the SCTP failover operation.
+
+       This document complements RFC4960 by the introduction of a new path
+       state, the Potentially Failed (PF) path state, and an associated new
+       failover operation to apply during a network failure.  The algorithm
+       defined is called SCTP Potentially Failed Algorithm, SCTP-PF for
+       short.  In addition, the document complements RFC4960 by introducing
+       alternative switchover operation modes for the data transfer path
+       management after the recovery of a failed primary path.  These modes
+       can allow improvements in the performance of the operation in some
+       network environments.  The implementation of the additional
+       switchover operation modes is an optional part of SCTP-PF.
+
+       The procedures defined in the document require only minimal
+       modifications to the current specification.  The procedures are
+       sender-side only and do not impact the SCTP receiver.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tsvwg-sctp-failover-09
+    formattedref:
+      content: draft-ietf-tsvwg-sctp-failover-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-failover-09
@@ -165,7 +172,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tsvwg-sctp-failover-11
+    formattedref:
+      content: draft-ietf-tsvwg-sctp-failover-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-failover-11
@@ -181,7 +189,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tsvwg-sctp-failover-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

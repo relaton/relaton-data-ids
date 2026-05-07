@@ -1,7 +1,7 @@
 ---
 id: draftietfbessevpnipvpninterworking15
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -196,7 +196,7 @@ contributor:
         - language: en
           content: Nokia
 version:
-- draft: '15'
+- content: '15'
 language:
 - en
 script:
@@ -204,28 +204,44 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Ethernet Virtual Private Network (EVPN) provides a unified BGP\n   control
-    plane for both intra- and inter-subnet forwarding within\n   tenant networks.
-    \ When a tenant network spans multiple domains —\n   including EVPN domains as
-    well as domains that use BGP VPN-IP or IP\n   address families for inter-subnet
-    forwarding — it becomes necessary\n   to define the interworking mechanisms among
-    these BGP domains (EVPN,\n   VPN-IP, and IP) to ensure seamless end-to-end tenant
-    connectivity.\n\n   In addition, this document defines a new BGP Path Attribute,
-    referred\n   to as D-PATH (Domain PATH), which provides loop prevention for\n
-    \  gateway nodes by protecting against control plane loops.  The\n   introduction
-    of D-PATH modifies the BGP best path selection process\n   for Multiprotocol BGP
-    routes of SAFI 128 (IPVPN) and EVPN IP Prefix\n   routes.  As a result, this specification
-    updates the BGP best path\n   selection procedure, but only in the context of
-    IPVPN and EVPN route\n   families.\n\n\t "
+  content: |-
+    <p>Ethernet Virtual Private Network (EVPN) provides a unified BGP
+       control plane for both intra- and inter-subnet forwarding within
+       tenant networks.  When a tenant network spans multiple domains —
+       including EVPN domains as well as domains that use BGP VPN-IP or IP
+       address families for inter-subnet forwarding — it becomes necessary
+       to define the interworking mechanisms among these BGP domains (EVPN,
+       VPN-IP, and IP) to ensure seamless end-to-end tenant connectivity.
+
+       In addition, this document defines a new BGP Path Attribute, referred
+       to as D-PATH (Domain PATH), which provides loop prevention for
+       gateway nodes by protecting against control plane loops.  The
+       introduction of D-PATH modifies the BGP best path selection process
+       for Multiprotocol BGP routes of SAFI 128 (IPVPN) and EVPN IP Prefix
+       routes.  As a result, this specification updates the BGP best path
+       selection procedure, but only in the context of IPVPN and EVPN route
+       families.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-14
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-14
     docidentifier:
     - content: draft-ietf-bess-evpn-ipvpn-interworking-14
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-16
+    docidentifier:
+    - content: draft-ietf-bess-evpn-ipvpn-interworking-16
       type: Internet-Draft
       primary: true
 series:
@@ -236,7 +252,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bess-evpn-ipvpn-interworking-15
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

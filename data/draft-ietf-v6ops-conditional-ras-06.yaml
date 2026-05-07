@@ -1,7 +1,7 @@
 ---
 id: draftietfv6opsconditionalras06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: RIPE NCC
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -79,28 +79,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document discusses the most common scenarios of connecting an\n
-    \  enterprise network to multiple ISPs using an address space assigned\n   by
-    an ISP and how the approach proposed in the \"ietf-rtgwg-\n   enterprise-pa-multihoming\"
-    draft could be applied in those scenarios.\n   The problem of enterprise multihoming
-    without address translation of\n   any form has not been solved yet as it requires
-    both the network to\n   select the correct egress ISP based on the packet source
-    address and\n   hosts to select the correct source address based on the desired\n
-    \  egress ISP for that traffic.  The \"ietf-rtgwg-enterprise-pa-\n   multihoming\"
-    document proposes a solution to this problem by\n   introducing a new routing
-    functionality (Source Address Dependent\n   Routing) to solve the uplink selection
-    issue and using Router\n   Advertisements to influence the host source address
-    selection.  While\n   the above-mentioned document focuses on solving the general
-    problem\n   and on covering various complex use cases, this document adopts the\n
-    \  approach proposed in the \"ietf-rtgwg-enterprise-pa-multihoming\" draft\n   to
-    provide a solution for a limited number of common use cases.  In\n   particular,
-    the focus is on scenarios where an enterprise network has\n   two Internet uplinks
-    used either in primary/backup mode or\n   simultaneously and hosts in that network
-    might not yet properly\n   support multihoming as described in RFC8028.\n\n\t "
+  content: |-
+    <p>This document discusses the most common scenarios of connecting an
+       enterprise network to multiple ISPs using an address space assigned
+       by an ISP and how the approach proposed in the &quot;ietf-rtgwg-
+       enterprise-pa-multihoming&quot; draft could be applied in those scenarios.
+       The problem of enterprise multihoming without address translation of
+       any form has not been solved yet as it requires both the network to
+       select the correct egress ISP based on the packet source address and
+       hosts to select the correct source address based on the desired
+       egress ISP for that traffic.  The &quot;ietf-rtgwg-enterprise-pa-
+       multihoming&quot; document proposes a solution to this problem by
+       introducing a new routing functionality (Source Address Dependent
+       Routing) to solve the uplink selection issue and using Router
+       Advertisements to influence the host source address selection.  While
+       the above-mentioned document focuses on solving the general problem
+       and on covering various complex use cases, this document adopts the
+       approach proposed in the &quot;ietf-rtgwg-enterprise-pa-multihoming&quot; draft
+       to provide a solution for a limited number of common use cases.  In
+       particular, the focus is on scenarios where an enterprise network has
+       two Internet uplinks used either in primary/backup mode or
+       simultaneously and hosts in that network might not yet properly
+       support multihoming as described in RFC8028.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-v6ops-conditional-ras-05
+    formattedref:
+      content: draft-ietf-v6ops-conditional-ras-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-conditional-ras-05
@@ -110,7 +115,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-v6ops-conditional-ras-07
+    formattedref:
+      content: draft-ietf-v6ops-conditional-ras-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-conditional-ras-07
@@ -126,7 +132,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-v6ops-conditional-ras-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

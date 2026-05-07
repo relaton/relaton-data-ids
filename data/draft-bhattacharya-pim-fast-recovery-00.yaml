@@ -1,7 +1,7 @@
 ---
 id: draftbhattacharyapimfastrecovery00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Brocade Communication
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,14 +54,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When a PIM router reboots, either because of uncontrolled\n   failover
-    or because of ISSU, it needs to reconcile the\n   PIM entries. For this, rebooting
-    router sends PIM hello with\n   new GenId. In reponse, neighbors send a new hello
-    and replay\n   PIM J/P message. Regardless an application maintaing full mroute\n
-    \  states, the rebooting route must wait for this replay to complete\n   only
-    after which it can mark the oif reconciliation complete.\n   This process is undeterministic
-    today. This draft proposes a\n   new mechanism to achieve a faster reconcilaition
-    time. For this\n   a new Hello option and a new message type has been introduced.\n\n\n\t "
+  content: |-
+    <p>When a PIM router reboots, either because of uncontrolled
+       failover or because of ISSU, it needs to reconcile the
+       PIM entries. For this, rebooting router sends PIM hello with
+       new GenId. In reponse, neighbors send a new hello and replay
+       PIM J/P message. Regardless an application maintaing full mroute
+       states, the rebooting route must wait for this replay to complete
+       only after which it can mark the oif reconciliation complete.
+       This process is undeterministic today. This draft proposes a
+       new mechanism to achieve a faster reconcilaition time. For this
+       a new Hello option and a new message type has been introduced.</p>
 series:
 - type: main
   title:
@@ -70,7 +73,7 @@ series:
     content: Internet-Draft
   number: draft-bhattacharya-pim-fast-recovery-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

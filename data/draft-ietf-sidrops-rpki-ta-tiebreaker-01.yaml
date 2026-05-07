@@ -1,7 +1,7 @@
 ---
 id: draftietfsidropsrpkitatiebreaker01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -91,7 +91,7 @@ contributor:
         - language: en
           content: RIPE NCC
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -99,21 +99,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A Trust Anchor (TA) in the RPKI is represented by a self-signed X.509\n
-    \  Certification Authority (CA) certificate.  Over time, Relying Parties\n   (RP)
-    may have acquired multiple different issuances of valid TA\n   certificates from
-    the same TA operator.  This document proposes a\n   tiebreaking scheme to be used
-    by RPs to select one TA certificate for\n   certification path validation.  This
-    document updates RFC 8630.\n\n\t "
+  content: |-
+    <p>A Trust Anchor (TA) in the RPKI is represented by a self-signed X.509
+       Certification Authority (CA) certificate.  Over time, Relying Parties
+       (RP) may have acquired multiple different issuances of valid TA
+       certificates from the same TA operator.  This document proposes a
+       tiebreaking scheme to be used by RPs to select one TA certificate for
+       certification path validation.  This document updates RFC 8630.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidrops-rpki-ta-tiebreaker-00
+    formattedref:
+      content: draft-ietf-sidrops-rpki-ta-tiebreaker-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-ta-tiebreaker-00
     docidentifier:
     - content: draft-ietf-sidrops-rpki-ta-tiebreaker-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-sidrops-rpki-ta-tiebreaker-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-ta-tiebreaker-02
+    docidentifier:
+    - content: draft-ietf-sidrops-rpki-ta-tiebreaker-02
       type: Internet-Draft
       primary: true
 series:
@@ -124,7 +137,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidrops-rpki-ta-tiebreaker-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

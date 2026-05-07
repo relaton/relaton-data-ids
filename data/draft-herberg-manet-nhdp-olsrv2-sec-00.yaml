@@ -1,7 +1,7 @@
 ---
 id: draftherbergmanetnhdpolsrv2sec00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -84,7 +84,7 @@ contributor:
         language: en
         content: Ulrich Herberg
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -92,19 +92,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies integrity and replay protection for required\n
-    \  implementation in the MANET Neighborhood Discovery Protocol (NHDP)\n   and
-    the Optimized Link State Routing Protocol version 2 (OLSRv2).\n   This document
-    specifies how an integrity check value (ICV) and a\n   timestamp may be included
-    as TLVs (defined in [RFC6622bis]) in NHDP's\n   and OLSRv2's control messages,
-    countering a number of security\n   threats to NHDP and to OLSRv2.  The ICV TLV
-    uses a SHA-256 based HMAC\n   and a single shared secret key.  The timestamp TLV
-    is based on POSIX\n   time, assuming router synchronization.  The mechanism in
-    this\n   specification can also be used for other MANET protocols using\n   RFC5444.\n\n\t "
+  content: |-
+    <p>This document specifies integrity and replay protection for required
+       implementation in the MANET Neighborhood Discovery Protocol (NHDP)
+       and the Optimized Link State Routing Protocol version 2 (OLSRv2).
+       This document specifies how an integrity check value (ICV) and a
+       timestamp may be included as TLVs (defined in [RFC6622bis]) in NHDP&#39;s
+       and OLSRv2&#39;s control messages, countering a number of security
+       threats to NHDP and to OLSRv2.  The ICV TLV uses a SHA-256 based HMAC
+       and a single shared secret key.  The timestamp TLV is based on POSIX
+       time, assuming router synchronization.  The mechanism in this
+       specification can also be used for other MANET protocols using
+       RFC5444.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-herberg-manet-nhdp-olsrv2-sec-01
+    formattedref:
+      content: draft-herberg-manet-nhdp-olsrv2-sec-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-herberg-manet-nhdp-olsrv2-sec-01
@@ -120,7 +124,7 @@ series:
     content: Internet-Draft
   number: draft-herberg-manet-nhdp-olsrv2-sec-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

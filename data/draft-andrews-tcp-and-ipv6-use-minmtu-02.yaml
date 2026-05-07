@@ -1,7 +1,7 @@
 ---
 id: draftandrewstcpandipv6useminmtu02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -44,7 +44,7 @@ contributor:
         language: en
         content: Mark P. Andrews
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -52,18 +52,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The IPV6_USE_MIN_MTU [RFC3542], Section 11.1, socket option directs\n
-    \  the IP layer to limit the IPv6 packet size to the minimum required\n   supported
-    MTU from the base IPv6 specification [RFC2460], i.e. 1280\n   bytes.  Many implementations
-    of TCP running over IPv6 neglect to\n   check the IPV6_USE_MIN_MTU value when
-    performing MSS negotiation and\n   when constructing a TCP segment.  This leads
-    to oversized IPv6\n   packets being sent resulting in unintended Path Maximum
-    Transport\n   Unit Discovery (PMTUD) [RFC1191] being performed and to fragmented\n
-    \  IPv6 packets being sent.\n\n\t "
+  content: |-
+    <p>The IPV6_USE_MIN_MTU [RFC3542], Section 11.1, socket option directs
+       the IP layer to limit the IPv6 packet size to the minimum required
+       supported MTU from the base IPv6 specification [RFC2460], i.e. 1280
+       bytes.  Many implementations of TCP running over IPv6 neglect to
+       check the IPV6_USE_MIN_MTU value when performing MSS negotiation and
+       when constructing a TCP segment.  This leads to oversized IPv6
+       packets being sent resulting in unintended Path Maximum Transport
+       Unit Discovery (PMTUD) [RFC1191] being performed and to fragmented
+       IPv6 packets being sent.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-andrews-tcp-and-ipv6-use-minmtu-01
+    formattedref:
+      content: draft-andrews-tcp-and-ipv6-use-minmtu-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-andrews-tcp-and-ipv6-use-minmtu-01
@@ -73,7 +76,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-andrews-tcp-and-ipv6-use-minmtu-03
+    formattedref:
+      content: draft-andrews-tcp-and-ipv6-use-minmtu-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-andrews-tcp-and-ipv6-use-minmtu-03
@@ -89,7 +93,7 @@ series:
     content: Internet-Draft
   number: draft-andrews-tcp-and-ipv6-use-minmtu-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

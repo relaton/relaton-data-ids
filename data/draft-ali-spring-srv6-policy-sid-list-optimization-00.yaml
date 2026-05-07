@@ -1,7 +1,7 @@
 ---
 id: draftalispringsrv6policysidlistoptimization00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Huawei Technologies
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -154,21 +154,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Segment Routing (SR) allows a node to steer a packet flow along any\n
-    \  path.  SR Policy is an ordered list of segments (i.e., instructions)\n   that
-    represent a source-routed policy.  The packets steered into an\n   SR Policy carry
-    an ordered list of segments associated with that SR\n   Policy.  An SR Policy
-    can be instantiated SR-MPLS and SRv6 data\n   planes.\n\n   In some use cases,
-    an SRv6 Policy's SID list ends with the policy\n   endpoint's node SID, and the
-    traffic steered (over policy) already\n   ensures that it is taken to the policy
-    endpoint.  In such cases, the\n   SID list can be optimized by excluding the endpoint
-    Node SID when\n   installing the policy.  This draft specifies procedures to indicate\n
-    \  whether the endpoint's node SID needs to be included or excluded when\n   installing
-    the SRv6 Policy.\n\n\n\t "
+  content: |-
+    <p>Segment Routing (SR) allows a node to steer a packet flow along any
+       path.  SR Policy is an ordered list of segments (i.e., instructions)
+       that represent a source-routed policy.  The packets steered into an
+       SR Policy carry an ordered list of segments associated with that SR
+       Policy.  An SR Policy can be instantiated SR-MPLS and SRv6 data
+       planes.
+
+       In some use cases, an SRv6 Policy&#39;s SID list ends with the policy
+       endpoint&#39;s node SID, and the traffic steered (over policy) already
+       ensures that it is taken to the policy endpoint.  In such cases, the
+       SID list can be optimized by excluding the endpoint Node SID when
+       installing the policy.  This draft specifies procedures to indicate
+       whether the endpoint&#39;s node SID needs to be included or excluded when
+       installing the SRv6 Policy.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ali-spring-srv6-policy-sid-list-optimization-01
+    formattedref:
+      content: draft-ali-spring-srv6-policy-sid-list-optimization-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ali-spring-srv6-policy-sid-list-optimization-01
@@ -184,7 +189,7 @@ series:
     content: Internet-Draft
   number: draft-ali-spring-srv6-policy-sid-list-optimization-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

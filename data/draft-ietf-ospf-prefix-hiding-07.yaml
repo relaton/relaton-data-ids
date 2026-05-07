@@ -1,7 +1,7 @@
 ---
 id: draftietfospfprefixhiding07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -93,7 +93,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -101,20 +101,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "A transit-only network is defined as a network connecting routers only.
-    In OSPF, transit-only networks are usually configured with routable IP addresses,
-    which are advertised in Link State Advertisements (LSAs) but are not needed for
-    data traffic. In addition, remote attacks can be launched against routers by sending
-    packets to these transit-only networks. This document presents a mechanism to
-    hide transit-only networks to speed up network convergence and reduce vulnerability
-    to remote attacks.\n\n In the context of this document, 'hiding' implies that
-    the prefixes are not installed in the routing tables on OSPF routers. In some
-    cases, IP addresses may still be visible when using OSPFv2.\n\n This document
-    updates RFCs 2328 and 5340. [STANDARDS-TRACK]\n\t "
+  content: |-
+    <p>A transit-only network is defined as a network connecting routers only. In OSPF, transit-only networks are usually configured with routable IP addresses, which are advertised in Link State Advertisements (LSAs) but are not needed for data traffic. In addition, remote attacks can be launched against routers by sending packets to these transit-only networks. This document presents a mechanism to hide transit-only networks to speed up network convergence and reduce vulnerability to remote attacks.
+
+     In the context of this document, &#39;hiding&#39; implies that the prefixes are not installed in the routing tables on OSPF routers. In some cases, IP addresses may still be visible when using OSPFv2.
+
+     This document updates RFCs 2328 and 5340. [STANDARDS-TRACK]</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ospf-prefix-hiding-06
+    formattedref:
+      content: draft-ietf-ospf-prefix-hiding-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ospf-prefix-hiding-06
@@ -130,7 +127,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ospf-prefix-hiding-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

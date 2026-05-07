@@ -1,7 +1,8 @@
 ---
 id: draftnygrentlsclientpuzzles
-schema_version: v1.4.1
-formattedref: draft-nygren-tls-client-puzzles
+schema_version: v1.5.6
+formattedref:
+  content: draft-nygren-tls-client-puzzles
 title:
 - language: en
   script: Latn
@@ -13,19 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Client puzzles allow a TLS server to defend itself against asymmetric\n
-    \  DDoS attacks.  In particular, it allows a server to request clients\n   perform
-    a selected amount of computation prior to the server\n   performing expensive
-    cryptographic operations.  This allows servers\n   to employ a layered defense
-    that represents an improvement over pure\n   rate-limiting strategies.\n\n   Client
-    puzzles are implemented as an extension to TLS 1.3\n   [I-D.ietf-tls-tls13] wherein
-    a server can issue a HelloRetryRequest\n   containing the puzzle as an extension.
-    \ The client must then resend\n   its ClientHello with the puzzle results in the
-    extension.\n\n\t "
+  content: |-
+    <p>Client puzzles allow a TLS server to defend itself against asymmetric
+       DDoS attacks.  In particular, it allows a server to request clients
+       perform a selected amount of computation prior to the server
+       performing expensive cryptographic operations.  This allows servers
+       to employ a layered defense that represents an improvement over pure
+       rate-limiting strategies.
+
+       Client puzzles are implemented as an extension to TLS 1.3
+       [I-D.ietf-tls-tls13] wherein a server can issue a HelloRetryRequest
+       containing the puzzle as an extension.  The client must then resend
+       its ClientHello with the puzzle results in the extension.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-nygren-tls-client-puzzles-00
+    formattedref:
+      content: draft-nygren-tls-client-puzzles-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nygren-tls-client-puzzles-00
@@ -35,7 +40,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-nygren-tls-client-puzzles-01
+    formattedref:
+      content: draft-nygren-tls-client-puzzles-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nygren-tls-client-puzzles-01
@@ -45,7 +51,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-nygren-tls-client-puzzles-02
+    formattedref:
+      content: draft-nygren-tls-client-puzzles-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nygren-tls-client-puzzles-02

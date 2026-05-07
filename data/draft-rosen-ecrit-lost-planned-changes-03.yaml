@@ -1,7 +1,7 @@
 ---
 id: draftrosenecritlostplannedchanges03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Neustar
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -54,19 +54,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines an extension to LoST (RFC5222) that allows a\n
-    \  planned change to the data in the LoST server to occur.  Records that\n   previously
-    were valid will become invalid at a date in the future,\n   and new locations
-    will become valid after the date.  The extension\n   adds two elements to the
-    <findservice> request: a URI to be used to\n   inform the LIS that previously
-    valid locations will be invalid after\n   the planned change date, and add a date
-    which requests the server to\n   perform validation as of the date specified.
-    \ It also adds an\n   optional TTL element to the response, which informs all
-    queriers the\n   current expected lifetime of the validation.\n\n\t "
+  content: |-
+    <p>This document defines an extension to LoST (RFC5222) that allows a
+       planned change to the data in the LoST server to occur.  Records that
+       previously were valid will become invalid at a date in the future,
+       and new locations will become valid after the date.  The extension
+       adds two elements to the &lt;findservice&gt; request: a URI to be used to
+       inform the LIS that previously valid locations will be invalid after
+       the planned change date, and add a date which requests the server to
+       perform validation as of the date specified.  It also adds an
+       optional TTL element to the response, which informs all queriers the
+       current expected lifetime of the validation.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rosen-ecrit-lost-planned-changes-02
+    formattedref:
+      content: draft-rosen-ecrit-lost-planned-changes-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rosen-ecrit-lost-planned-changes-02
@@ -82,7 +85,7 @@ series:
     content: Internet-Draft
   number: draft-rosen-ecrit-lost-planned-changes-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

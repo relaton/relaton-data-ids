@@ -1,7 +1,7 @@
 ---
 id: draftietf6manicmplimits05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Intel
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -54,18 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Network nodes may discard packets if they are unable to process\n   protocol
-    headers of packets due to processing constraints or limits.\n   When such packets
-    are dropped, the sender receives no indication so\n   it cannot take action to
-    address the cause of discarded packets. This\n   specification defines several
-    new ICMPv6 errors that can be sent by a\n   node that discards packets because
-    it is unable to process the\n   protocol headers. A node that receives such an
-    ICMPv6 error may be\n   able to modify what it sends in future packets to avoid
-    subsequent\n   packet discards.\n\n\t "
+  content: |-
+    <p>Network nodes may discard packets if they are unable to process
+       protocol headers of packets due to processing constraints or limits.
+       When such packets are dropped, the sender receives no indication so
+       it cannot take action to address the cause of discarded packets. This
+       specification defines several new ICMPv6 errors that can be sent by a
+       node that discards packets because it is unable to process the
+       protocol headers. A node that receives such an ICMPv6 error may be
+       able to modify what it sends in future packets to avoid subsequent
+       packet discards.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6man-icmp-limits-04
+    formattedref:
+      content: draft-ietf-6man-icmp-limits-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-icmp-limits-04
@@ -75,7 +78,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-icmp-limits-06
+    formattedref:
+      content: draft-ietf-6man-icmp-limits-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-icmp-limits-06
@@ -91,7 +95,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-icmp-limits-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

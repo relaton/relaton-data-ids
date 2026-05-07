@@ -1,7 +1,8 @@
 ---
 id: draftietfippmasymmetricalpkts
-schema_version: v1.4.1
-formattedref: draft-ietf-ippm-asymmetrical-pkts
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-ippm-asymmetrical-pkts
 title:
 - language: en
   script: Latn
@@ -14,27 +15,24 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies an optional extension to the Simple Two-way\n
-    \  Active Measurement Protocol (STAMP) to control the length and/or\n   number
-    of packets sent by a Session-Reflector in response to a single\n   test packet
-    from the Session-Sender during a STAMP test session.  By\n   default, a STAMP
-    Session-Sender and Session-Reflector exchange\n   packets symmetrically: the number
-    of packets sent by the Session-\n   Reflector and the Session-Sender are the same
-    as is the length of the\n   packets sent by the Session-Reflector and the Session-Sender.\n
-    \  However, there are cases where a Session-Reflector responding with\n   Asymmetrical
-    Packets would ensure a closer approximation between\n   active performance measurements
-    and the conditions experienced by\n   monitored application.  The STAMP extension
-    specified in this\n   document allows operators to establish tests where a Session-\n
-    \  Reflector sends Asymmetrical Packets, packets whose length is not\n   symmetrical
-    to test packet sent by the Session-Sender and/or packets\n   that are not sent
-    in direct response to a packet received from a\n   Session-Sender.  The document
-    also includes an analysis of challenges\n   related to performance monitoring
-    in a multicast network.  It\n   specifies procedures and STAMP extensions to achieve
-    more efficient\n   measurements with a lesser impact on a network.\n\n\t "
+  content: |-
+    <p>This document defines an optional extension to the Simple Two-Way
+       Active Measurement Protocol (STAMP) that enables a Session-Reflector
+       to send asymmetrical packets, that is, response packets whose size or
+       quantity differs from those sent by the Session-Sender.  While
+       standard STAMP exchanges are symmetrical, certain measurement
+       scenarios benefit from reflected packets of different lengths or
+       additional responses to better approximate application traffic
+       conditions.  The extension specifies the Reflected Test Packet
+       Control TLV and associated procedures, analyzes challenges in active
+       performance measurement (including in multicast environments), and
+       describes STAMP behaviors to improve measurement efficiency and
+       reduce network impact.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-00
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-00
@@ -44,7 +42,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-01
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-01
@@ -54,7 +53,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-02
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-02
@@ -64,7 +64,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-03
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-03
@@ -74,7 +75,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-04
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-04
@@ -84,7 +86,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-05
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-05
@@ -94,7 +97,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-06
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-06
@@ -104,7 +108,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-07
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-07
@@ -114,7 +119,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-08
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-08
@@ -124,7 +130,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-09
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-09
@@ -134,11 +141,56 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-10
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-10
     docidentifier:
     - content: draft-ietf-ippm-asymmetrical-pkts-10
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-11
+    docidentifier:
+    - content: draft-ietf-ippm-asymmetrical-pkts-11
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-12
+    docidentifier:
+    - content: draft-ietf-ippm-asymmetrical-pkts-12
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-13
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-13
+    docidentifier:
+    - content: draft-ietf-ippm-asymmetrical-pkts-13
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-14
+    docidentifier:
+    - content: draft-ietf-ippm-asymmetrical-pkts-14
       type: Internet-Draft
       primary: true

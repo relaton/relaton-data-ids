@@ -1,7 +1,7 @@
 ---
 id: drafthutrillpseudonodenickname01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Hongjun Zhai
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,21 +69,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Appointed Forwarder on a link for VLAN-x is the RBridge that\n
-    \  ingresses native frames from the link and egresses native frames to\n   the
-    link in VLAN-x.  If the appointed forwarder for an end station is\n   changed,
-    the remote data traffic to the end station could fail.  This\n   document is proposed
-    to assign a nickname for pseudonode identifying\n   a multi-access link to solve
-    the issue.  When any appointed forwarder\n   encapsulates a packet, it uses the
-    pseudonode nickname as \"ingress\n   nickname\" rather than its own nickname.
-    \ If it does, then if the\n   appointed forwarder changes, or the DRB changes,
-    and the pseudonode\n   still uses the same nickname, then the remote RBridge caches
-    won't\n   need to change, and the data traffic to the end station would reach\n
-    \  the link uninterruptedly.\n\n\t "
+  content: |-
+    <p>The Appointed Forwarder on a link for VLAN-x is the RBridge that
+       ingresses native frames from the link and egresses native frames to
+       the link in VLAN-x.  If the appointed forwarder for an end station is
+       changed, the remote data traffic to the end station could fail.  This
+       document is proposed to assign a nickname for pseudonode identifying
+       a multi-access link to solve the issue.  When any appointed forwarder
+       encapsulates a packet, it uses the pseudonode nickname as &quot;ingress
+       nickname&quot; rather than its own nickname.  If it does, then if the
+       appointed forwarder changes, or the DRB changes, and the pseudonode
+       still uses the same nickname, then the remote RBridge caches won&#39;t
+       need to change, and the data traffic to the end station would reach
+       the link uninterruptedly.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-hu-trill-pseudonode-nickname-02
+    formattedref:
+      content: draft-hu-trill-pseudonode-nickname-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hu-trill-pseudonode-nickname-02
@@ -99,7 +102,7 @@ series:
     content: Internet-Draft
   number: draft-hu-trill-pseudonode-nickname-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

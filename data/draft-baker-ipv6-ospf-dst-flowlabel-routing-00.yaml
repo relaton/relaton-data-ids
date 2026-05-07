@@ -1,7 +1,7 @@
 ---
 id: draftbakeripv6ospfdstflowlabelrouting00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Fred Baker
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,17 +49,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This note describes the changes necessary for OSPFv3 to route classes\n
-    \  of IPv6 traffic that are defined by an IPv6 Flow Label and a\n   destination
-    prefix.  This implies not routing \"to a destination\", but\n   \"traffic matching
-    a classification tuple\".  The obvious application\n   is data center inter-tenant
-    routing using a form of role-based access\n   control.  If the sender doesn't
-    know the value to insert in the flow\n   label (the receiver's tenant ID), he
-    in effect has no route to that\n   destination.\n\n\t "
+  content: |-
+    <p>This note describes the changes necessary for OSPFv3 to route classes
+       of IPv6 traffic that are defined by an IPv6 Flow Label and a
+       destination prefix.  This implies not routing &quot;to a destination&quot;, but
+       &quot;traffic matching a classification tuple&quot;.  The obvious application
+       is data center inter-tenant routing using a form of role-based access
+       control.  If the sender doesn&#39;t know the value to insert in the flow
+       label (the receiver&#39;s tenant ID), he in effect has no route to that
+       destination.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-baker-ipv6-ospf-dst-flowlabel-routing-01
+    formattedref:
+      content: draft-baker-ipv6-ospf-dst-flowlabel-routing-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-baker-ipv6-ospf-dst-flowlabel-routing-01
@@ -75,7 +78,7 @@ series:
     content: Internet-Draft
   number: draft-baker-ipv6-ospf-dst-flowlabel-routing-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

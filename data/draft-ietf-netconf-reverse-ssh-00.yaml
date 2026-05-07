@@ -1,7 +1,7 @@
 ---
 id: draftietfnetconfreversessh00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Kent Watsen
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,16 +49,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo presents a technique for a NETCONF server to initiate a SSH\n
-    \  connection to a NETCONF client.  This is accomplished by the NETCONF\n   client
-    listening on IANA-assigned TCP port XXX and starting the SSH\n   client protocol
-    immediately after accepting a TCP connection on it.\n   This role-reversal is
-    necessary as the NETCONF server must also be\n   the SSH Server, in order for
-    the NETCONF client to open the IANA-\n   assigned SSH subsystem \"netconf\".\n\n\t "
+  content: |-
+    <p>This memo presents a technique for a NETCONF server to initiate a SSH
+       connection to a NETCONF client.  This is accomplished by the NETCONF
+       client listening on IANA-assigned TCP port XXX and starting the SSH
+       client protocol immediately after accepting a TCP connection on it.
+       This role-reversal is necessary as the NETCONF server must also be
+       the SSH Server, in order for the NETCONF client to open the IANA-
+       assigned SSH subsystem &quot;netconf&quot;.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-netconf-reverse-ssh-01
+    formattedref:
+      content: draft-ietf-netconf-reverse-ssh-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-reverse-ssh-01
@@ -74,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-netconf-reverse-ssh-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

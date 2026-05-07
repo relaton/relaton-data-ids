@@ -1,7 +1,7 @@
 ---
 id: draftgolandhttpreliability00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: BEA
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -57,15 +57,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   SOAR-ity is intended to allow for \"reliable\" (this term is almost\n
-    \  always a misnomer) messaging over HTTP.  It achieves this goal by\n   introducing
-    two new request headers, Message-ID which provides a\n   unique ID for a message
-    and MsgCreate which contains the date and\n   time on which the first instance
-    of the message with the associated\n   Message-ID was sent.  The purpose of the
-    Message-ID/MsgCreate pair is\n   to allow any HTTP request (e.g. any HTTP method
-    can be used) to be\n   repeated multiple times with a guarantee that the message
-    will be\n   processed no more than one time.  In essence it makes any HTTP method\n
-    \  call idempotent.\n\t "
+  content: |-
+    <p>SOAR-ity is intended to allow for &quot;reliable&quot; (this term is almost
+       always a misnomer) messaging over HTTP.  It achieves this goal by
+       introducing two new request headers, Message-ID which provides a
+       unique ID for a message and MsgCreate which contains the date and
+       time on which the first instance of the message with the associated
+       Message-ID was sent.  The purpose of the Message-ID/MsgCreate pair is
+       to allow any HTTP request (e.g. any HTTP method can be used) to be
+       repeated multiple times with a guarantee that the message will be
+       processed no more than one time.  In essence it makes any HTTP method
+       call idempotent.</p>
 series:
 - type: main
   title:
@@ -74,7 +76,7 @@ series:
     content: Internet-Draft
   number: draft-goland-http-reliability-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

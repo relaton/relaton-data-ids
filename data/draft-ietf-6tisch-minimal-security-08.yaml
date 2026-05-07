@@ -1,7 +1,7 @@
 ---
 id: draftietf6tischminimalsecurity08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: Sandelman Software Works
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -126,25 +126,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the minimal framework required for a new\n
-    \  device, called \"pledge\", to securely join a 6TiSCH (IPv6 over the\n   TSCH
-    mode of IEEE 802.15.4e) network.  The framework requires that\n   the pledge and
-    the JRC (join registrar/coordinator, a central\n   entity), share a symmetric
-    key.  How this key is provisioned is out\n   of scope of this document.  Through
-    a single CoAP (Constrained\n   Application Protocol) request-response exchange
-    secured by OSCORE\n   (Object Security for Constrained RESTful Environments),
-    the pledge\n   requests admission into the network and the JRC configures it with\n
-    \  link-layer keying material and other parameters.  The JRC may at any\n   time
-    update the parameters through another request-response exchange\n   secured by
-    OSCORE.  This specification defines the Constrained Join\n   Protocol and its
-    CBOR (Concise Binary Object Representation) data\n   structures, and configures
-    the rest of the 6TiSCH communication stack\n   for this join process to occur
-    in a secure manner.  Additional\n   security mechanisms may be added on top of
-    this minimal framework.\n\n\t "
+  content: |-
+    <p>This document describes the minimal framework required for a new
+       device, called &quot;pledge&quot;, to securely join a 6TiSCH (IPv6 over the
+       TSCH mode of IEEE 802.15.4e) network.  The framework requires that
+       the pledge and the JRC (join registrar/coordinator, a central
+       entity), share a symmetric key.  How this key is provisioned is out
+       of scope of this document.  Through a single CoAP (Constrained
+       Application Protocol) request-response exchange secured by OSCORE
+       (Object Security for Constrained RESTful Environments), the pledge
+       requests admission into the network and the JRC configures it with
+       link-layer keying material and other parameters.  The JRC may at any
+       time update the parameters through another request-response exchange
+       secured by OSCORE.  This specification defines the Constrained Join
+       Protocol and its CBOR (Concise Binary Object Representation) data
+       structures, and configures the rest of the 6TiSCH communication stack
+       for this join process to occur in a secure manner.  Additional
+       security mechanisms may be added on top of this minimal framework.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6tisch-minimal-security-07
+    formattedref:
+      content: draft-ietf-6tisch-minimal-security-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6tisch-minimal-security-07
@@ -154,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6tisch-minimal-security-09
+    formattedref:
+      content: draft-ietf-6tisch-minimal-security-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6tisch-minimal-security-09
@@ -170,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6tisch-minimal-security-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietftlssessionhash03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -122,7 +122,7 @@ contributor:
         language: en
         content: Marsh Ray
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -130,20 +130,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Transport Layer Security (TLS) master secret is not\n   cryptographically
-    bound to important session parameters.\n   Consequently, it is possible for an
-    active attacker to set up two\n   sessions, one with a client and another with
-    a server, such that the\n   master secrets on the two sessions are the same.  Thereafter,
-    any\n   mechanism that relies on the master secret for authentication,\n   including
-    session resumption, becomes vulnerable to a man-in-the-\n   middle attack, where
-    the attacker can simply forward messages back\n   and forth between the client
-    and server.  This specification defines\n   a TLS extension that contextually
-    binds the master secret to a log of\n   the full handshake that computes it, thus
-    preventing such attacks.\n\n\t "
+  content: |-
+    <p>The Transport Layer Security (TLS) master secret is not
+       cryptographically bound to important session parameters.
+       Consequently, it is possible for an active attacker to set up two
+       sessions, one with a client and another with a server, such that the
+       master secrets on the two sessions are the same.  Thereafter, any
+       mechanism that relies on the master secret for authentication,
+       including session resumption, becomes vulnerable to a man-in-the-
+       middle attack, where the attacker can simply forward messages back
+       and forth between the client and server.  This specification defines
+       a TLS extension that contextually binds the master secret to a log of
+       the full handshake that computes it, thus preventing such attacks.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tls-session-hash-02
+    formattedref:
+      content: draft-ietf-tls-session-hash-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-session-hash-02
@@ -153,7 +156,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tls-session-hash-04
+    formattedref:
+      content: draft-ietf-tls-session-hash-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-session-hash-04
@@ -169,7 +173,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tls-session-hash-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

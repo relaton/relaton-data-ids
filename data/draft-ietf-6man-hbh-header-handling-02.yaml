@@ -1,7 +1,7 @@
 ---
 id: draftietf6manhbhheaderhandling02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Ron Bonica
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -69,24 +69,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document clarifies requirements for IPv6 routers with respect
-    to\n   the Hop-by-Hop (HBH) Options Extension Header.  These requirements\n   are
-    applicable to all IPv6 routers, regardless of whether they\n   maintain a strict
-    separation between forwarding and control plane\n   hardware.  In this respect,
-    this document updates RFC 2460 and RFC\n   7045.\n\n   This document also describes
-    forwarding plane procedures for\n   processing the HBH Options Extension Header.
-    \ These procedures are\n   applicable to implementations that maintain a strict
-    separation\n   between forwarding and control plane implementations.\n\n   The
-    procedures described herein satisfy the above mentioned\n   requirements by processing
-    HBH Options on the forwarding plane to the\n   greatest degree possible.  If a
-    packet containing HBH Options must be\n   dispatched to the control plane, it
-    is rate limited before\n   dispatching.  In order to comply with the requirements
-    of this\n   specification, implementations may execute the procedures described\n
-    \  herein or any other procedures that result in compliant behavior.\n\n\t "
+  content: |-
+    <p>This document clarifies requirements for IPv6 routers with respect to
+       the Hop-by-Hop (HBH) Options Extension Header.  These requirements
+       are applicable to all IPv6 routers, regardless of whether they
+       maintain a strict separation between forwarding and control plane
+       hardware.  In this respect, this document updates RFC 2460 and RFC
+       7045.
+
+       This document also describes forwarding plane procedures for
+       processing the HBH Options Extension Header.  These procedures are
+       applicable to implementations that maintain a strict separation
+       between forwarding and control plane implementations.
+
+       The procedures described herein satisfy the above mentioned
+       requirements by processing HBH Options on the forwarding plane to the
+       greatest degree possible.  If a packet containing HBH Options must be
+       dispatched to the control plane, it is rate limited before
+       dispatching.  In order to comply with the requirements of this
+       specification, implementations may execute the procedures described
+       herein or any other procedures that result in compliant behavior.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6man-hbh-header-handling-01
+    formattedref:
+      content: draft-ietf-6man-hbh-header-handling-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-hbh-header-handling-01
@@ -96,7 +103,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-hbh-header-handling-03
+    formattedref:
+      content: draft-ietf-6man-hbh-header-handling-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-hbh-header-handling-03
@@ -112,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-hbh-header-handling-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

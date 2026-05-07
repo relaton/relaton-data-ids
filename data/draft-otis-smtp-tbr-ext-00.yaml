@@ -1,7 +1,7 @@
 ---
 id: draftotissmtptbrext00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: JLC.net
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,15 +79,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes an extension to SMTP that allows email to be\n
-    \  exchanged as a storage system immutable XAM (eXtensible Access\n   Method)
-    reference.  When MTAs employ the TBR mode, message\n   origination can not be
-    spoofed, and message acceptance is not\n   asserted until retrieval of the referenced
-    message.  This strategy\n   ensures a minimal SMTP overhead, increasing the responsibility
-    of\n   senders in order to limit the load of unwanted messages upon\n   receivers.\n\n
-    \  In addition, the TBR extension requires an [RFC2821] MAIL FROM\n   address
-    in the same domain as the server from which the XAM will be\n   fetched, so that
-    a dependable status-reporting path is assured.\n\t "
+  content: |-
+    <p>This document describes an extension to SMTP that allows email to be
+       exchanged as a storage system immutable XAM (eXtensible Access
+       Method) reference.  When MTAs employ the TBR mode, message
+       origination can not be spoofed, and message acceptance is not
+       asserted until retrieval of the referenced message.  This strategy
+       ensures a minimal SMTP overhead, increasing the responsibility of
+       senders in order to limit the load of unwanted messages upon
+       receivers.
+
+       In addition, the TBR extension requires an [RFC2821] MAIL FROM
+       address in the same domain as the server from which the XAM will be
+       fetched, so that a dependable status-reporting path is assured.</p>
 series:
 - type: main
   title:
@@ -96,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-otis-smtp-tbr-ext-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,8 @@
 ---
 id: draftwingavtdtlssrtpkeytransport
-schema_version: v1.4.1
-formattedref: draft-wing-avt-dtls-srtp-key-transport
+schema_version: v1.5.6
+formattedref:
+  content: draft-wing-avt-dtls-srtp-key-transport
 title:
 - language: en
   script: Latn
@@ -13,19 +14,25 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "The existing DTLS-SRTP specification allows SRTP keys to be\nestablished
-    between a pair of SRTP endpoints.  However, when there\nare more than two participants
-    in an SRTP session, DTLS-SRTP is\nunable to provide a single key for all of the
-    participants.  This\nexisting limitation of DTLS-SRTP prevents deploying DTLS-SRTP
-    in\ncertain scenarios.\n\nThis document describes an extension to DTLS-SRTP called
-    Key\nTransport (KTR).  This extension transports SRTP keying material from\none
-    DTLS-SRTP peer to another, so the same SRTP keying material can\nbe used by multiple
-    DTLS-SRTP peers.  This extension eliminates the\nneed to key each SRTP session
-    individually, allowing cost-effective\ndeployment of several DTLS-SRTP scenarios.\n\t "
+  content: |-
+    <p>The existing DTLS-SRTP specification allows SRTP keys to be
+    established between a pair of SRTP endpoints.  However, when there
+    are more than two participants in an SRTP session, DTLS-SRTP is
+    unable to provide a single key for all of the participants.  This
+    existing limitation of DTLS-SRTP prevents deploying DTLS-SRTP in
+    certain scenarios.
+
+    This document describes an extension to DTLS-SRTP called Key
+    Transport (KTR).  This extension transports SRTP keying material from
+    one DTLS-SRTP peer to another, so the same SRTP keying material can
+    be used by multiple DTLS-SRTP peers.  This extension eliminates the
+    need to key each SRTP session individually, allowing cost-effective
+    deployment of several DTLS-SRTP scenarios.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-wing-avt-dtls-srtp-key-transport-03
+    formattedref:
+      content: draft-wing-avt-dtls-srtp-key-transport-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wing-avt-dtls-srtp-key-transport-03

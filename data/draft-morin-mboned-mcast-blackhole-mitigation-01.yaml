@@ -1,7 +1,7 @@
 ---
 id: draftmorinmbonedmcastblackholemitigation01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -62,7 +62,7 @@ contributor:
         language: en
         content: Gregory Cauchie
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -70,14 +70,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "In a network running PIM-SM, multicast traffic can fail to be\n   properly
-    routed and forwarded during some period of time after a\n   topology change, when
-    unicast routing converges to a new path using a\n   new next-hop before multicast
-    routing adjacencies are fully setup\n   with this new next-hop.  At this point,
-    a blackhole appears in the\n   multicast topology and persists until the PIM adjacency
-    become fully\n   setup.  This document describes different procedures aiming at\n
-    \  avoiding such blackholes, focusing on the use of non-congruent\n   unicast
-    routing that takes into account the status of PIM\n   adjacencies.\n\t "
+  content: |-
+    <p>In a network running PIM-SM, multicast traffic can fail to be
+       properly routed and forwarded during some period of time after a
+       topology change, when unicast routing converges to a new path using a
+       new next-hop before multicast routing adjacencies are fully setup
+       with this new next-hop.  At this point, a blackhole appears in the
+       multicast topology and persists until the PIM adjacency become fully
+       setup.  This document describes different procedures aiming at
+       avoiding such blackholes, focusing on the use of non-congruent
+       unicast routing that takes into account the status of PIM
+       adjacencies.</p>
 series:
 - type: main
   title:
@@ -86,7 +89,7 @@ series:
     content: Internet-Draft
   number: draft-morin-mboned-mcast-blackhole-mitigation-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

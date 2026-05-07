@@ -1,7 +1,7 @@
 ---
 id: draftzhangbesslabelsharing01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -145,7 +145,7 @@ contributor:
         language: en
         content: Provisions Relating to IETF
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -153,21 +153,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a method to be used by VPN (Virtual Private\n
-    \  Network) Service Providers to provide multi-homed CEs with fast\n   protection
-    of egress PEs. Egress PEs in a redundant group always\n   share the same label
-    in distribution of VPN routes of a VRF. A\n   virtual Next Hop (vNH) in the IGP/MPLS
-    backbone is created as the\n   common end of LSP tunnels which would otherwise
-    terminate at each\n   egress PE. Primary and backup LSP tunnels ended at the vNH
-    are set up\n   by MPLS on the basis of existing Interior Gateway Protocol (IGP)
-    Fast\n   ReRoute (FRR) mechanisms. If the primary egress PE fails, the backup\n
-    \  egress PE can recognize the \"shared\" VPN route label carried by the\n   data
-    packets.  Therefore, the failure affected data packets can be\n   smoothly rerouted
-    to the backup PE for delivery without changing\n   their VPN route label.\n\n\n\t "
+  content: |-
+    <p>This document describes a method to be used by VPN (Virtual Private
+       Network) Service Providers to provide multi-homed CEs with fast
+       protection of egress PEs. Egress PEs in a redundant group always
+       share the same label in distribution of VPN routes of a VRF. A
+       virtual Next Hop (vNH) in the IGP/MPLS backbone is created as the
+       common end of LSP tunnels which would otherwise terminate at each
+       egress PE. Primary and backup LSP tunnels ended at the vNH are set up
+       by MPLS on the basis of existing Interior Gateway Protocol (IGP) Fast
+       ReRoute (FRR) mechanisms. If the primary egress PE fails, the backup
+       egress PE can recognize the &quot;shared&quot; VPN route label carried by the
+       data packets.  Therefore, the failure affected data packets can be
+       smoothly rerouted to the backup PE for delivery without changing
+       their VPN route label.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-zhang-bess-label-sharing-00
+    formattedref:
+      content: draft-zhang-bess-label-sharing-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhang-bess-label-sharing-00
@@ -177,7 +181,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-zhang-bess-label-sharing-02
+    formattedref:
+      content: draft-zhang-bess-label-sharing-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhang-bess-label-sharing-02
@@ -193,7 +198,7 @@ series:
     content: Internet-Draft
   number: draft-zhang-bess-label-sharing-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

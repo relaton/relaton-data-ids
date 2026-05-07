@@ -1,7 +1,7 @@
 ---
 id: draftdraobgpl3vpnvirtualnetworkoverlays01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Rex Fernando
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -89,32 +89,40 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Virtual network overlays are being designed and deployed in various\n
-    \  types of networks, including data centers.  These network overlays\n   address
-    several requirements including flexible network\n   virtualization and multi-tenancy,
-    increased scale, and support for\n   mobility of virtual machines.  Such overlay
-    networks can be used to\n   provide both Layer-2 and Layer-3 network services
-    to hosts at the\n   network edge.  New packet encapsulations are being defined
-    and\n   standardized to support these virtual networks.  These\n   encapsulations,
-    such as VXLAN and NVGRE, are primarily based on IP\n   and are currently defined
-    to support a Layer-2 forwarding service.\n\n   BGP based Layer-3 VPNs, as specified
-    in RFC 4364, provide an industry\n   proven and well-defined solution for supporting
-    Layer-3 virtual\n   network services.  However, RFC 4364 procedures use MPLS labels
-    to\n   provide the network virtualization capability in the data plane.\n   With
-    the increasing support for IP overlay encapsulations in data\n   center devices,
-    there is a strong preference to utilize this support\n   to deploy Layer-3 virtual
-    networks using the familiarpolicy and\n   operational primitives of Layer-3 VPNs.\n\n
-    \  This document describes the use of BGP Layer-3 VPNs alongwith the new\n   IP-based
-    virtual network overlay encapsulations to provide a Layer-3\n   virtualization
-    solution for all IP traffic, and specifies mechanisms\n   to use the new encapsulations
-    while continuing to leverage the BGP\n   Layer-3 VPN control plane techniques
-    and extensions.  This mechanism\n   provides an efficient incremental solution
-    to support forwarding for\n   IP traffic, irrespective of whether it is destined
-    within or across\n   an IP subnet boundary.\n\n\t "
+  content: |-
+    <p>Virtual network overlays are being designed and deployed in various
+       types of networks, including data centers.  These network overlays
+       address several requirements including flexible network
+       virtualization and multi-tenancy, increased scale, and support for
+       mobility of virtual machines.  Such overlay networks can be used to
+       provide both Layer-2 and Layer-3 network services to hosts at the
+       network edge.  New packet encapsulations are being defined and
+       standardized to support these virtual networks.  These
+       encapsulations, such as VXLAN and NVGRE, are primarily based on IP
+       and are currently defined to support a Layer-2 forwarding service.
+
+       BGP based Layer-3 VPNs, as specified in RFC 4364, provide an industry
+       proven and well-defined solution for supporting Layer-3 virtual
+       network services.  However, RFC 4364 procedures use MPLS labels to
+       provide the network virtualization capability in the data plane.
+       With the increasing support for IP overlay encapsulations in data
+       center devices, there is a strong preference to utilize this support
+       to deploy Layer-3 virtual networks using the familiarpolicy and
+       operational primitives of Layer-3 VPNs.
+
+       This document describes the use of BGP Layer-3 VPNs alongwith the new
+       IP-based virtual network overlay encapsulations to provide a Layer-3
+       virtualization solution for all IP traffic, and specifies mechanisms
+       to use the new encapsulations while continuing to leverage the BGP
+       Layer-3 VPN control plane techniques and extensions.  This mechanism
+       provides an efficient incremental solution to support forwarding for
+       IP traffic, irrespective of whether it is destined within or across
+       an IP subnet boundary.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-drao-bgp-l3vpn-virtual-network-overlays-00
+    formattedref:
+      content: draft-drao-bgp-l3vpn-virtual-network-overlays-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-drao-bgp-l3vpn-virtual-network-overlays-00
@@ -124,7 +132,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-drao-bgp-l3vpn-virtual-network-overlays-02
+    formattedref:
+      content: draft-drao-bgp-l3vpn-virtual-network-overlays-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-drao-bgp-l3vpn-virtual-network-overlays-02
@@ -140,7 +149,7 @@ series:
     content: Internet-Draft
   number: draft-drao-bgp-l3vpn-virtual-network-overlays-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

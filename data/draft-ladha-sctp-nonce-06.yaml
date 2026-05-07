@@ -1,7 +1,7 @@
 ---
 id: draftladhasctpnonce06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Qualcomm
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -54,17 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the addition of the ECN-nonce RFC 3540 [4]
-    to\n   the Stream Control Transmission Protocol (SCTP) RFC 2960 [3].  The\n   ECN-nonce
-    reduces the vulnerability of ECN senders to misbehaving\n   receivers that conceal
-    congestion signals like ECN marks and packet\n   losses.  The ECN-nonce approach
-    is different in SCTP because SCTP\n   uses chunks for extensible protocol features
-    and is selective\n   acknowlegement (SACK)-based; this document describes those\n
-    \  differences.  In particular this document describes (1) protocol\n   extensions
-    in the form of a single new parameter for the INIT/\n   INIT-ACK chunks, and a
-    single bit flag in the SACK chunk, and (2)\n   rules governing the sender and
-    receiver side implementation.\n\n   This document outlines a minimum response
-    that an SCTP sender should\n   apply after detecting a misbehaving receiver.\n\n\n\t "
+  content: |-
+    <p>This document describes the addition of the ECN-nonce RFC 3540 [4] to
+       the Stream Control Transmission Protocol (SCTP) RFC 2960 [3].  The
+       ECN-nonce reduces the vulnerability of ECN senders to misbehaving
+       receivers that conceal congestion signals like ECN marks and packet
+       losses.  The ECN-nonce approach is different in SCTP because SCTP
+       uses chunks for extensible protocol features and is selective
+       acknowlegement (SACK)-based; this document describes those
+       differences.  In particular this document describes (1) protocol
+       extensions in the form of a single new parameter for the INIT/
+       INIT-ACK chunks, and a single bit flag in the SACK chunk, and (2)
+       rules governing the sender and receiver side implementation.
+
+       This document outlines a minimum response that an SCTP sender should
+       apply after detecting a misbehaving receiver.</p>
 series:
 - type: main
   title:
@@ -73,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-ladha-sctp-nonce-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

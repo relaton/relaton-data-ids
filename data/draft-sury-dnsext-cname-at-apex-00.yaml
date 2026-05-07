@@ -1,7 +1,7 @@
 ---
 id: draftsurydnsextcnameatapex00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -43,7 +43,7 @@ contributor:
         - language: en
           content: CZ.NIC
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -51,13 +51,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document proposes a modification to CNAME record to coexist with\nSOA
-    and NS records at the zone apex.  This proposal will improve\naliasing in the
-    DNS system.  The users are often forced to manually\nadd duplicate A, AAAA and
-    MX records by copying data from the target\nzone to the aliased zone.  This forces
-    zone owner to keep track of\ntarget domain name since the mismatch in the data
-    could cause\nfailures.  This administrative burden will be eliminated by allowing\nCNAME
-    to coexist with NS and SOA resource records.\n\t "
+  content: |-
+    <p>This document proposes a modification to CNAME record to coexist with
+    SOA and NS records at the zone apex.  This proposal will improve
+    aliasing in the DNS system.  The users are often forced to manually
+    add duplicate A, AAAA and MX records by copying data from the target
+    zone to the aliased zone.  This forces zone owner to keep track of
+    target domain name since the mismatch in the data could cause
+    failures.  This administrative burden will be eliminated by allowing
+    CNAME to coexist with NS and SOA resource records.</p>
 series:
 - type: main
   title:
@@ -66,7 +68,7 @@ series:
     content: Internet-Draft
   number: draft-sury-dnsext-cname-at-apex-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

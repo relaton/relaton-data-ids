@@ -1,7 +1,7 @@
 ---
 id: draftmackiebessnshbgpcontrolplane00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         language: en
         content: Luay Jalil
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -132,20 +132,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the use of BGP as a control plane for\n   networks
-    that support Service Function Chaining (SFC).  The document\n   introduces a new
-    BGP address family called the SFC AFI/SAFI with two\n   route types.  One route
-    type is originated by a node to advertise\n   that it hosts a particular instance
-    of a specified service function.\n   This route type also provides \"instructions\"
-    on how to send a packet\n   to the hosting node in a way that indicates that the
-    service function\n   has to be applied to the packet.  The other route type is
-    used by a\n   Controller to advertise \"chains\" of service functions, and to
-    give a\n   unique designator to each such chain so that they can be used in\n
-    \  conjunction with the Network Service Header.\n\n\n\t "
+  content: |-
+    <p>This document describes the use of BGP as a control plane for
+       networks that support Service Function Chaining (SFC).  The document
+       introduces a new BGP address family called the SFC AFI/SAFI with two
+       route types.  One route type is originated by a node to advertise
+       that it hosts a particular instance of a specified service function.
+       This route type also provides &quot;instructions&quot; on how to send a packet
+       to the hosting node in a way that indicates that the service function
+       has to be applied to the packet.  The other route type is used by a
+       Controller to advertise &quot;chains&quot; of service functions, and to give a
+       unique designator to each such chain so that they can be used in
+       conjunction with the Network Service Header.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-mackie-bess-nsh-bgp-control-plane-01
+    formattedref:
+      content: draft-mackie-bess-nsh-bgp-control-plane-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mackie-bess-nsh-bgp-control-plane-01
@@ -161,7 +164,7 @@ series:
     content: Internet-Draft
   number: draft-mackie-bess-nsh-bgp-control-plane-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

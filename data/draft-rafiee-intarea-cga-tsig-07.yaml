@@ -1,7 +1,7 @@
 ---
 id: draftrafieeintareacgatsig07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -77,7 +77,7 @@ contributor:
         language: en
         content: Christoph Meinel
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -85,23 +85,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a new mechanism that can be used to reduce\n
-    \  the need for human intervention during DNS authentication and secure\n   DNS
-    authentication in various scenarios such as the DNS\n   authentication of resolvers
-    to stub resolvers, authentication during\n   zone transfers, authentication of
-    root DNS servers to recursive DNS\n   servers, and authentication during the FQDN
-    (RFC 4703) update.\n\n   Especially in the last scenario, i.e., FQDN, if the node
-    uses the\n   Neighbor Discovery Protocol (NDP) (RFC 4861, RFC 4862), unlike the\n
-    \  Dynamic Host Configuration Protocol (DHCP) (RFC 3315), the node has\n   no
-    way of updating his FQDN records on the DNS and has no means for a\n   secure
-    authentication with the DNS server. While this is a major\n   problem in NDP-enabled
-    networks, this is a minor problem in DHCPv6.\n   This is because the DHCP server
-    updates the FQDN records on behalf of\n   the nodes on the network. This document
-    also introduces a possible\n   algorithm for DNS data confidentiality.\n\n\n\n\n\n\t "
+  content: |-
+    <p>This document describes a new mechanism that can be used to reduce
+       the need for human intervention during DNS authentication and secure
+       DNS authentication in various scenarios such as the DNS
+       authentication of resolvers to stub resolvers, authentication during
+       zone transfers, authentication of root DNS servers to recursive DNS
+       servers, and authentication during the FQDN (RFC 4703) update.
+
+       Especially in the last scenario, i.e., FQDN, if the node uses the
+       Neighbor Discovery Protocol (NDP) (RFC 4861, RFC 4862), unlike the
+       Dynamic Host Configuration Protocol (DHCP) (RFC 3315), the node has
+       no way of updating his FQDN records on the DNS and has no means for a
+       secure authentication with the DNS server. While this is a major
+       problem in NDP-enabled networks, this is a minor problem in DHCPv6.
+       This is because the DHCP server updates the FQDN records on behalf of
+       the nodes on the network. This document also introduces a possible
+       algorithm for DNS data confidentiality.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rafiee-intarea-cga-tsig-06
+    formattedref:
+      content: draft-rafiee-intarea-cga-tsig-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rafiee-intarea-cga-tsig-06
@@ -111,7 +116,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-rafiee-intarea-cga-tsig-08
+    formattedref:
+      content: draft-rafiee-intarea-cga-tsig-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rafiee-intarea-cga-tsig-08
@@ -127,7 +133,7 @@ series:
     content: Internet-Draft
   number: draft-rafiee-intarea-cga-tsig-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

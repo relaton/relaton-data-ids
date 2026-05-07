@@ -1,7 +1,7 @@
 ---
 id: draftreitzensteinkittenopaque01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -42,7 +42,7 @@ contributor:
         language: en
         content: Nadja von Reitzenstein Čerpnjak
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -50,21 +50,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This specification describes a family of Simple Authentication and\n
-    \  Security Layer (SASL, RFC4422) authentication mechanisms based on the\n   OPAQUE
-    asymmetric password-authenticated key agreement (PAKE)\n   algorithm.\n\n   They
-    offer two distinct advantages over the SCRAM family of\n   mechanisms.  The underlying
-    OPAQUE algorithm provides the ability for\n   clients to register without the
-    servers getting access to the clear\n   text password of an user, preventing password
-    exfiltration at\n   registration.  Secondly a successful authentication produces
-    a long-\n   term secret key only known to the client that can be used to access\n
-    \  encrypted server-side data without needing to share keys between\n   clients
-    via a side-band mechanism.\n\n   When used in combination with TLS or an equivalent
-    security layer\n   these mechanisms allow for secure channel binding.\n\n\t "
+  content: |-
+    <p>This specification describes a family of Simple Authentication and
+       Security Layer (SASL, RFC4422) authentication mechanisms based on the
+       OPAQUE asymmetric password-authenticated key agreement (PAKE)
+       algorithm.
+
+       They offer two distinct advantages over the SCRAM family of
+       mechanisms.  The underlying OPAQUE algorithm provides the ability for
+       clients to register without the servers getting access to the clear
+       text password of an user, preventing password exfiltration at
+       registration.  Secondly a successful authentication produces a long-
+       term secret key only known to the client that can be used to access
+       encrypted server-side data without needing to share keys between
+       clients via a side-band mechanism.
+
+       When used in combination with TLS or an equivalent security layer
+       these mechanisms allow for secure channel binding.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-reitzenstein-kitten-opaque-00
+    formattedref:
+      content: draft-reitzenstein-kitten-opaque-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reitzenstein-kitten-opaque-00
@@ -74,7 +81,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-reitzenstein-kitten-opaque-02
+    formattedref:
+      content: draft-reitzenstein-kitten-opaque-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reitzenstein-kitten-opaque-02
@@ -90,7 +98,7 @@ series:
     content: Internet-Draft
   number: draft-reitzenstein-kitten-opaque-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

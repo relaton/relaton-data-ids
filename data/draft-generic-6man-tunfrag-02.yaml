@@ -1,7 +1,7 @@
 ---
 id: draftgeneric6mantunfrag02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Fred Templin
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -49,20 +49,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IPv6 intentionally deprecates fragmentation by routers in the\n   network.
-    \ Instead, links with restricting MTUs must either drop each\n   too-large packet
-    and return an ICMP Packet Too Big message or perform\n   link-specific fragmentation
-    (also known as \"link adaptation\") at a\n   layer below IPv6.  This latter category
-    of links is often\n   performance-challenged to accommodate steady-state link-specific\n
-    \  fragmentation to the point that it would be highly desirable to push\n   the
-    fragmentation burden back to the IPv6 source.  A common case that\n   exhibits
-    these link characteristics is seen for IPv6-within-IP\n   tunnels.  This document
-    therefore proposes an update to the base IPv6\n   specification to support link
-    adaptation avoidance.\n\n\t "
+  content: |-
+    <p>IPv6 intentionally deprecates fragmentation by routers in the
+       network.  Instead, links with restricting MTUs must either drop each
+       too-large packet and return an ICMP Packet Too Big message or perform
+       link-specific fragmentation (also known as &quot;link adaptation&quot;) at a
+       layer below IPv6.  This latter category of links is often
+       performance-challenged to accommodate steady-state link-specific
+       fragmentation to the point that it would be highly desirable to push
+       the fragmentation burden back to the IPv6 source.  A common case that
+       exhibits these link characteristics is seen for IPv6-within-IP
+       tunnels.  This document therefore proposes an update to the base IPv6
+       specification to support link adaptation avoidance.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-generic-6man-tunfrag-01
+    formattedref:
+      content: draft-generic-6man-tunfrag-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-generic-6man-tunfrag-01
@@ -72,7 +75,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-generic-6man-tunfrag-03
+    formattedref:
+      content: draft-generic-6man-tunfrag-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-generic-6man-tunfrag-03
@@ -88,7 +92,7 @@ series:
     content: Internet-Draft
   number: draft-generic-6man-tunfrag-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftpelovschcprocessstackingrouting00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: IMT Atlantique
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,16 +54,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies architectural guidelines for dynamically\n
-    \  stacking and routing SCHC processes in constrained networks.  It\n   details
-    how independent SCHC modules can be composed into processing\n   chains that adapt
-    to PDU attributes.  For instance, SCHC Compression\n   may trigger SCHC Fragmentation
-    when the compressed PDU exceeds the L2\n   MTU, or alternatively, trigger SCHC
-    Aggregation.  For traffic that is\n   not delay tolerant, a direct routing from
-    SCHC Compression to SCHC\n   Reliability Fragmentation is provided.  Subsequent
-    processing by SCHC\n   FEC Fragmentation modules ensures robust error correction.
-    \ This\n   modular approach promotes scalability and flexibility within the SCHC\n
-    \  framework.\n\n\t "
+  content: |-
+    <p>This document specifies architectural guidelines for dynamically
+       stacking and routing SCHC processes in constrained networks.  It
+       details how independent SCHC modules can be composed into processing
+       chains that adapt to PDU attributes.  For instance, SCHC Compression
+       may trigger SCHC Fragmentation when the compressed PDU exceeds the L2
+       MTU, or alternatively, trigger SCHC Aggregation.  For traffic that is
+       not delay tolerant, a direct routing from SCHC Compression to SCHC
+       Reliability Fragmentation is provided.  Subsequent processing by SCHC
+       FEC Fragmentation modules ensures robust error correction.  This
+       modular approach promotes scalability and flexibility within the SCHC
+       framework.</p>
 series:
 - type: main
   title:
@@ -72,7 +74,7 @@ series:
     content: Internet-Draft
   number: draft-pelov-schc-process-stacking-routing-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

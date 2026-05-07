@@ -1,7 +1,7 @@
 ---
 id: draftietftramstunpmtud16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -97,7 +97,7 @@ contributor:
         - language: en
           content: Cisco Systems, Inc.
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -105,21 +105,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The datagram exchanged between two Internet endpoints have to go\n
-    \  through a series of physical and virtual links that may have\n   different
-    limits on the upper size of the datagram they can transmit\n   without fragmentation.
-    \ Because fragmentation is considered harmful,\n   most transports and protocols
-    are designed with a mechanism that\n   permits dynamic measurement of the maximum
-    size of a datagram.  This\n   mechanism is called Packetization Layer Path MTU
-    Discovery (PLPMTUD).\n   But the UDP transport and some of the protocols that
-    use UDP were\n   designed without that feature.  The Session Traversal Utilities
-    for\n   NAT (STUN) Usage described in this document permits retrofitting an\n
-    \  existing UDP-based protocol with such a feature.  Similarly, a new\n   UDP-based
-    protocol could simply reuse the mechanism described in this\n   document.\n\n\t "
+  content: |-
+    <p>The datagram exchanged between two Internet endpoints have to go
+       through a series of physical and virtual links that may have
+       different limits on the upper size of the datagram they can transmit
+       without fragmentation.  Because fragmentation is considered harmful,
+       most transports and protocols are designed with a mechanism that
+       permits dynamic measurement of the maximum size of a datagram.  This
+       mechanism is called Packetization Layer Path MTU Discovery (PLPMTUD).
+       But the UDP transport and some of the protocols that use UDP were
+       designed without that feature.  The Session Traversal Utilities for
+       NAT (STUN) Usage described in this document permits retrofitting an
+       existing UDP-based protocol with such a feature.  Similarly, a new
+       UDP-based protocol could simply reuse the mechanism described in this
+       document.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tram-stun-pmtud-15
+    formattedref:
+      content: draft-ietf-tram-stun-pmtud-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tram-stun-pmtud-15
@@ -129,7 +133,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tram-stun-pmtud-17
+    formattedref:
+      content: draft-ietf-tram-stun-pmtud-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tram-stun-pmtud-17
@@ -145,7 +150,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tram-stun-pmtud-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

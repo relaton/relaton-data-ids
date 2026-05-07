@@ -1,7 +1,7 @@
 ---
 id: draftftbsratsmsgwrap03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -116,7 +116,7 @@ contributor:
         language: en
         content: Hannes Tschofenig
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -124,17 +124,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines two encapsulation formats for RATS conceptual\n
-    \  messages (i.e., evidence, attestation results, endorsements and\n   reference
-    values.)\n\n   The first format uses a CBOR or JSON array with two mandatory\n
-    \  members, one for the type, another for the value, and a third\n   optional
-    member complementing the type field that says which kind of\n   conceptual message(s)
-    are carried in the value.  The other format\n   wraps the value in a CBOR byte
-    string and prepends a CBOR tag to\n   convey the type information.\n\n\t "
+  content: |-
+    <p>This document defines two encapsulation formats for RATS conceptual
+       messages (i.e., evidence, attestation results, endorsements and
+       reference values.)
+
+       The first format uses a CBOR or JSON array with two mandatory
+       members, one for the type, another for the value, and a third
+       optional member complementing the type field that says which kind of
+       conceptual message(s) are carried in the value.  The other format
+       wraps the value in a CBOR byte string and prepends a CBOR tag to
+       convey the type information.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ftbs-rats-msg-wrap-02
+    formattedref:
+      content: draft-ftbs-rats-msg-wrap-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ftbs-rats-msg-wrap-02
@@ -144,7 +149,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ftbs-rats-msg-wrap-04
+    formattedref:
+      content: draft-ftbs-rats-msg-wrap-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ftbs-rats-msg-wrap-04
@@ -160,7 +166,7 @@ series:
     content: Internet-Draft
   number: draft-ftbs-rats-msg-wrap-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

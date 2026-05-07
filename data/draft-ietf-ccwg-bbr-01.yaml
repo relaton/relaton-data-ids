@@ -1,7 +1,7 @@
 ---
 id: draftietfccwgbbr01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Meta
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,23 +104,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the BBR congestion control algorithm.  BBR\n
-    \  (\"Bottleneck Bandwidth and Round-trip propagation time\") uses recent\n   measurements
-    of a transport connection's delivery rate, round-trip\n   time, and packet loss
-    rate to build an explicit model of the network\n   path.  BBR then uses this model
-    to control both how fast it sends\n   data and the maximum volume of data it allows
-    in flight in the\n   network at any time.  Relative to loss-based congestion control\n
-    \  algorithms such as Reno [RFC5681] or CUBIC [RFC9438], BBR offers\n   substantially
-    higher throughput for bottlenecks with shallow buffers\n   or random losses, and
-    substantially lower queueing delays for\n   bottlenecks with deep buffers (avoiding
-    \"bufferbloat\").  BBR can be\n   implemented in any transport protocol that supports
-    packet-delivery\n   acknowledgment.  Thus far, open source implementations are
-    available\n   for TCP [RFC9293] and QUIC [RFC9000].  This document specifies\n
-    \  version 3 of the BBR algorithm, BBRv3.\n\n\t "
+  content: |-
+    <p>This document specifies the BBR congestion control algorithm.  BBR
+       (&quot;Bottleneck Bandwidth and Round-trip propagation time&quot;) uses recent
+       measurements of a transport connection&#39;s delivery rate, round-trip
+       time, and packet loss rate to build an explicit model of the network
+       path.  BBR then uses this model to control both how fast it sends
+       data and the maximum volume of data it allows in flight in the
+       network at any time.  Relative to loss-based congestion control
+       algorithms such as Reno [RFC5681] or CUBIC [RFC9438], BBR offers
+       substantially higher throughput for bottlenecks with shallow buffers
+       or random losses, and substantially lower queueing delays for
+       bottlenecks with deep buffers (avoiding &quot;bufferbloat&quot;).  BBR can be
+       implemented in any transport protocol that supports packet-delivery
+       acknowledgment.  Thus far, open source implementations are available
+       for TCP [RFC9293] and QUIC [RFC9000].  This document specifies
+       version 3 of the BBR algorithm, BBRv3.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ccwg-bbr-00
+    formattedref:
+      content: draft-ietf-ccwg-bbr-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ccwg-bbr-00
@@ -130,7 +134,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ccwg-bbr-02
+    formattedref:
+      content: draft-ietf-ccwg-bbr-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ccwg-bbr-02
@@ -146,7 +151,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ccwg-bbr-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

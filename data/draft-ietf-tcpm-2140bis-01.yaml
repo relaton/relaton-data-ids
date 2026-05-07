@@ -1,7 +1,7 @@
 ---
 id: draftietftcpm2140bis01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: University of Oslo
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,24 +104,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo provides guidance to TCP implementers that are intended to\n
-    \  help improve convergence to steady-state operation without affecting\n   interoperability.
-    It updates and replaces RFC 2140's description of\n   interdependent TCP control
-    blocks and the ways that part of TCP\n   state can be shared among similar concurrent
-    or consecutive\n   connections. TCP state includes a combination of parameters,
-    such as\n   connection state, current round-trip time estimates, congestion\n
-    \  control information, and process information. Most of this state is\n   maintained
-    on a per-connection basis in the TCP Control Block (TCB),\n   but implementations
-    can (and do) share certain TCB information\n   across connections to the same
-    host. Such sharing is intended to\n   improve overall transient transport performance,
-    while maintaining\n   backward-compatibility with existing implementations. The
-    sharing\n   described herein is limited to only the TCB initialization and so\n
-    \  has no effect on the long-term behavior of TCP after a connection\n   has been
-    established.\n\n\t "
+  content: |-
+    <p>This memo provides guidance to TCP implementers that are intended to
+       help improve convergence to steady-state operation without affecting
+       interoperability. It updates and replaces RFC 2140&#39;s description of
+       interdependent TCP control blocks and the ways that part of TCP
+       state can be shared among similar concurrent or consecutive
+       connections. TCP state includes a combination of parameters, such as
+       connection state, current round-trip time estimates, congestion
+       control information, and process information. Most of this state is
+       maintained on a per-connection basis in the TCP Control Block (TCB),
+       but implementations can (and do) share certain TCB information
+       across connections to the same host. Such sharing is intended to
+       improve overall transient transport performance, while maintaining
+       backward-compatibility with existing implementations. The sharing
+       described herein is limited to only the TCB initialization and so
+       has no effect on the long-term behavior of TCP after a connection
+       has been established.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpm-2140bis-00
+    formattedref:
+      content: draft-ietf-tcpm-2140bis-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-2140bis-00
@@ -131,7 +135,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-2140bis-02
+    formattedref:
+      content: draft-ietf-tcpm-2140bis-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-2140bis-02
@@ -147,7 +152,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-2140bis-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

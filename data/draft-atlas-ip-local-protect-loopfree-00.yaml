@@ -1,7 +1,7 @@
 ---
 id: draftatlasiplocalprotectloopfree00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Ed (Avici Systems)
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,13 +54,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines an architecture and selection process for\n   providing
-    local protection for IP unicast and/or LDP traffic in the\n   event of a single
-    link or node failure until the router has\n   converged.  When computing the primary
-    next-hop for a prefix, a\n   router S also determines an alternate next-hop which
-    can be used if\n   the primary next-hop fails.  The alternate next-hop is said
-    to be a\n   loop-free alternate, which goes to a neighbor whose shortest path
-    to\n   the prefix does not go back through the router S.\n\t "
+  content: |-
+    <p>This document defines an architecture and selection process for
+       providing local protection for IP unicast and/or LDP traffic in the
+       event of a single link or node failure until the router has
+       converged.  When computing the primary next-hop for a prefix, a
+       router S also determines an alternate next-hop which can be used if
+       the primary next-hop fails.  The alternate next-hop is said to be a
+       loop-free alternate, which goes to a neighbor whose shortest path to
+       the prefix does not go back through the router S.</p>
 series:
 - type: main
   title:
@@ -69,7 +71,7 @@ series:
     content: Internet-Draft
   number: draft-atlas-ip-local-protect-loopfree-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

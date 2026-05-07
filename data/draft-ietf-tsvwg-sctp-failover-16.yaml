@@ -1,7 +1,7 @@
 ---
 id: draftietftsvwgsctpfailover16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -153,7 +153,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -161,24 +161,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The Stream Control Transmission Protocol (SCTP) supports multihoming.
-    However, when the failover operation specified in RFC 4960 is followed, there
-    can be significant delay and performance degradation in the data transfer path
-    failover. This document specifies a quick failover algorithm and introduces the
-    SCTP Potentially Failed (SCTP-PF) destination state in SCTP Path Management.\n\n
-    This document also specifies a dormant state operation of SCTP that is required
-    to be followed by an SCTP-PF implementation, but it may equally well be applied
-    by a standard SCTP implementation, as described in RFC 4960.\n\n Additionally,
-    this document introduces an alternative switchback operation mode called \"Primary
-    Path Switchover\" that will be beneficial in certain situations. This mode of
-    operation applies to both a standard SCTP implementation and an SCTP-PF implementation.\n\n
-    The procedures defined in the document require only minimal modifications to the
-    specification in RFC 4960. The procedures are sender-side only and do not impact
-    the SCTP receiver.\n\t "
+  content: |-
+    <p>The Stream Control Transmission Protocol (SCTP) supports multihoming. However, when the failover operation specified in RFC 4960 is followed, there can be significant delay and performance degradation in the data transfer path failover. This document specifies a quick failover algorithm and introduces the SCTP Potentially Failed (SCTP-PF) destination state in SCTP Path Management.
+
+     This document also specifies a dormant state operation of SCTP that is required to be followed by an SCTP-PF implementation, but it may equally well be applied by a standard SCTP implementation, as described in RFC 4960.
+
+     Additionally, this document introduces an alternative switchback operation mode called &quot;Primary Path Switchover&quot; that will be beneficial in certain situations. This mode of operation applies to both a standard SCTP implementation and an SCTP-PF implementation.
+
+     The procedures defined in the document require only minimal modifications to the specification in RFC 4960. The procedures are sender-side only and do not impact the SCTP receiver.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tsvwg-sctp-failover-15
+    formattedref:
+      content: draft-ietf-tsvwg-sctp-failover-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-sctp-failover-15
@@ -194,7 +189,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tsvwg-sctp-failover-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftkhademialternativebackoffecn03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: University of Aberdeen
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -126,19 +126,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo provides an experimental update to RFC3168.  It updates the\n
-    \  TCP sender-side reaction to a congestion notification received via\n   Explicit
-    Congestion Notification (ECN).  The updated method reduces\n   cwnd by a smaller
-    amount than TCP does in reaction to loss.  The\n   intention is to achieve good
-    throughput when the queue at the\n   bottleneck is smaller than the bandwidth-delay-product
-    of the\n   connection.  This is more likely when an Active Queue Management\n
-    \  (AQM) mechanism has used ECN to CE-mark a packet, than when a packet\n   was
-    lost.  Future versions of this document will discuss SCTP as well\n   as other
-    transports using ECN.\n\n\t "
+  content: |-
+    <p>This memo provides an experimental update to RFC3168.  It updates the
+       TCP sender-side reaction to a congestion notification received via
+       Explicit Congestion Notification (ECN).  The updated method reduces
+       cwnd by a smaller amount than TCP does in reaction to loss.  The
+       intention is to achieve good throughput when the queue at the
+       bottleneck is smaller than the bandwidth-delay-product of the
+       connection.  This is more likely when an Active Queue Management
+       (AQM) mechanism has used ECN to CE-mark a packet, than when a packet
+       was lost.  Future versions of this document will discuss SCTP as well
+       as other transports using ECN.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-khademi-alternativebackoff-ecn-02
+    formattedref:
+      content: draft-khademi-alternativebackoff-ecn-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-khademi-alternativebackoff-ecn-02
@@ -154,7 +157,7 @@ series:
     content: Internet-Draft
   number: draft-khademi-alternativebackoff-ecn-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

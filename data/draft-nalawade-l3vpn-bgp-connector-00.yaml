@@ -1,7 +1,7 @@
 ---
 id: draftnalawadel3vpnbgpconnector00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,19 +54,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In the case of BGP AFIs such as IPv6 unicast or VPNv4 unicast, it is\n
-    \  possible for the data traffic intended for the NLRIs of that\n   AFI/SAFI,
-    to be forwarded over an underlying tunnel. The tunnel may\n   be to a PE or to
-    a Tunnel Concentrator or a Tunnel Broker. Both will\n   be referred to as Tunnel
-    endpoints. In this document an egress router\n   refers to the egress point of
-    the Tunnel and an ingress router refers\n   to the ingress point of the tunnel.\n\n
-    \  The discovery of the Tunnel endpoint and the corresponding tunnel\n   encapsulation
-    information may be done out of band, either by static\n   configuration, or through
-    a number of different mechanisms.\n\n   There is a need to be able to indicate
-    with the BGP update for a\n   given NLRI, the Tunnel endpoint to be used for forwarding
-    data\n   traffic to that NLRI destination.\n\n   This document defines a new BGP
-    attribute called the 'Connector\n   Attribute' which would convey the information
-    about the Tunnel\n   endpoint - the Tunnel Identifier, the Tunnel endpoint address.\n\t "
+  content: |-
+    <p>In the case of BGP AFIs such as IPv6 unicast or VPNv4 unicast, it is
+       possible for the data traffic intended for the NLRIs of that
+       AFI/SAFI, to be forwarded over an underlying tunnel. The tunnel may
+       be to a PE or to a Tunnel Concentrator or a Tunnel Broker. Both will
+       be referred to as Tunnel endpoints. In this document an egress router
+       refers to the egress point of the Tunnel and an ingress router refers
+       to the ingress point of the tunnel.
+
+       The discovery of the Tunnel endpoint and the corresponding tunnel
+       encapsulation information may be done out of band, either by static
+       configuration, or through a number of different mechanisms.
+
+       There is a need to be able to indicate with the BGP update for a
+       given NLRI, the Tunnel endpoint to be used for forwarding data
+       traffic to that NLRI destination.
+
+       This document defines a new BGP attribute called the &#39;Connector
+       Attribute&#39; which would convey the information about the Tunnel
+       endpoint - the Tunnel Identifier, the Tunnel endpoint address.</p>
 series:
 - type: main
   title:
@@ -75,7 +82,7 @@ series:
     content: Internet-Draft
   number: draft-nalawade-l3vpn-bgp-connector-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

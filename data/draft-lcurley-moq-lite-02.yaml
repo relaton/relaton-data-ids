@@ -1,7 +1,7 @@
 ---
 id: draftlcurleymoqlite02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Luke Curley
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -49,20 +49,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   moq-lite is designed to fanout live content 1->N across the internet.\n
-    \  It leverages QUIC to prioritize important content, avoiding head-of-\n   line
-    blocking while respecting encoding dependencies.  While\n   primarily designed
-    for media, the transport is payload agnostic and\n   can be proxied by relays/CDNs
-    without knowledge of codecs,\n   containers, or encryption keys.\n\n\t "
+  content: |-
+    <p>moq-lite is designed to fanout live content 1-&gt;N across the internet.
+       It leverages QUIC to prioritize important content, avoiding head-of-
+       line blocking while respecting encoding dependencies.  While
+       primarily designed for media, the transport is payload agnostic and
+       can be proxied by relays/CDNs without knowledge of codecs,
+       containers, or encryption keys.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-lcurley-moq-lite-01
+    formattedref:
+      content: draft-lcurley-moq-lite-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-lcurley-moq-lite-01
     docidentifier:
     - content: draft-lcurley-moq-lite-01
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-lcurley-moq-lite-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lcurley-moq-lite-03
+    docidentifier:
+    - content: draft-lcurley-moq-lite-03
       type: Internet-Draft
       primary: true
 series:
@@ -73,7 +87,7 @@ series:
     content: Internet-Draft
   number: draft-lcurley-moq-lite-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

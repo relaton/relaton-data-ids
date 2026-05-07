@@ -1,7 +1,7 @@
 ---
 id: draftietfhttpbisresumableupload10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Cloudflare
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -104,22 +104,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   HTTP data transfers can encounter interruption due to reasons such
-    as\n   canceled requests or dropped connections.  If the intended recipient\n
-    \  can indicate how much of the data was received prior to interruption,\n   a
-    sender can resume data transfer at that point instead of attempting\n   to transfer
-    all of the data again.  HTTP range requests support this\n   concept of resumable
-    downloads from server to client.  This document\n   describes a mechanism that
-    supports resumable uploads from client to\n   server using HTTP.\n\n\t "
+  content: |-
+    <p>HTTP data transfers can encounter interruption due to reasons such as
+       canceled requests or dropped connections.  If the intended recipient
+       can indicate how much of the data was received prior to interruption,
+       a sender can resume data transfer at that point instead of attempting
+       to transfer all of the data again.  HTTP range requests support this
+       concept of resumable downloads from server to client.  This document
+       describes a mechanism that supports resumable uploads from client to
+       server using HTTP.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-httpbis-resumable-upload-09
+    formattedref:
+      content: draft-ietf-httpbis-resumable-upload-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload-09
     docidentifier:
     - content: draft-ietf-httpbis-resumable-upload-09
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-httpbis-resumable-upload-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-resumable-upload-11
+    docidentifier:
+    - content: draft-ietf-httpbis-resumable-upload-11
       type: Internet-Draft
       primary: true
 series:
@@ -130,7 +144,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-httpbis-resumable-upload-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftstennntpmaclastef02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -73,7 +73,7 @@ contributor:
         - language: en
           content: Network Time Foundation
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -81,22 +81,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   NTPv4 is defined by RFC 5905 [RFC5905], and it and earlier versions\n
-    \  of the NTP Protocol have supported symmetric private key Message\n   Authentication
-    Code (MAC) authentication.  MACs were first described\n   in Appendix C of RFC
-    1305 [RFC1305] and are further described in RFC\n   5905 [RFC5905].  As the number
-    of Extension Fields grows there is an\n   increasing chance of a parsing ambiguity
-    when deciding if the \"next\"\n   set of data is an Extension Field or a legacy
-    MAC.  This proposal\n   defines two new Extension Fields which may be used to
-    avoid this\n   ambiguity.  One, LAST-EF, is used to signify that it is the last\n
-    \  Extension Field in the packet.  If the LAST-EF is present, any\n   subsequent
-    data MUST be considered to be a legacy MAC.  The other,\n   MAC-EF, allows one
-    or more MACs to be encapsulated in an Extension\n   Field.  If all parties in
-    an association support MAC-EF, the use of a\n   legacy MAC may be avoided.\n\n\t "
+  content: |-
+    <p>NTPv4 is defined by RFC 5905 [RFC5905], and it and earlier versions
+       of the NTP Protocol have supported symmetric private key Message
+       Authentication Code (MAC) authentication.  MACs were first described
+       in Appendix C of RFC 1305 [RFC1305] and are further described in RFC
+       5905 [RFC5905].  As the number of Extension Fields grows there is an
+       increasing chance of a parsing ambiguity when deciding if the &quot;next&quot;
+       set of data is an Extension Field or a legacy MAC.  This proposal
+       defines two new Extension Fields which may be used to avoid this
+       ambiguity.  One, LAST-EF, is used to signify that it is the last
+       Extension Field in the packet.  If the LAST-EF is present, any
+       subsequent data MUST be considered to be a legacy MAC.  The other,
+       MAC-EF, allows one or more MACs to be encapsulated in an Extension
+       Field.  If all parties in an association support MAC-EF, the use of a
+       legacy MAC may be avoided.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-stenn-ntp-mac-last-ef-01
+    formattedref:
+      content: draft-stenn-ntp-mac-last-ef-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-stenn-ntp-mac-last-ef-01
@@ -106,7 +110,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-stenn-ntp-mac-last-ef-03
+    formattedref:
+      content: draft-stenn-ntp-mac-last-ef-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-stenn-ntp-mac-last-ef-03
@@ -122,7 +127,7 @@ series:
     content: Internet-Draft
   number: draft-stenn-ntp-mac-last-ef-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

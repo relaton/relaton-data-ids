@@ -1,7 +1,7 @@
 ---
 id: draftkucherawydkimtransform01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -42,7 +42,7 @@ contributor:
         language: en
         content: Murray Kucherawy
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -50,25 +50,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DomainKeys Identified Mail (DKIM) introduced a mechanism whereby a\n
-    \  mail operator can affix a signature to a message that validates at\n   the
-    level of the signer's domain name.  It specified two possible\n   ways of converting
-    the message body to a canonical form, one\n   intolerant of changes and the other
-    tolerant of simple changes to\n   whitespace within the message body.\n\n   The
-    provided canonicalization schemes do not tolerate changes in a\n   message such
-    as conversion between transfer encodings or addition of\n   new message content.
-    \ It is useful to have these capabilities to\n   allow for transport through gateways,
-    and also for transport through\n   handlers (such as mailing list services) that
-    might add content that\n   would invalidate a signature generated using the existing\n
-    \  canonicalization schemes.\n\n   This document presents a mechanism for declaring
-    that a message\n   underwent one of a handful of well-defined transformations
-    prior to\n   being re-signed by a mediator, so that a verifier might rewind such
-    a\n   modification and thereby confirm that the original signature still\n   verifies
-    against the original content.\n\n\t "
+  content: |-
+    <p>DomainKeys Identified Mail (DKIM) introduced a mechanism whereby a
+       mail operator can affix a signature to a message that validates at
+       the level of the signer&#39;s domain name.  It specified two possible
+       ways of converting the message body to a canonical form, one
+       intolerant of changes and the other tolerant of simple changes to
+       whitespace within the message body.
+
+       The provided canonicalization schemes do not tolerate changes in a
+       message such as conversion between transfer encodings or addition of
+       new message content.  It is useful to have these capabilities to
+       allow for transport through gateways, and also for transport through
+       handlers (such as mailing list services) that might add content that
+       would invalidate a signature generated using the existing
+       canonicalization schemes.
+
+       This document presents a mechanism for declaring that a message
+       underwent one of a handful of well-defined transformations prior to
+       being re-signed by a mediator, so that a verifier might rewind such a
+       modification and thereby confirm that the original signature still
+       verifies against the original content.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-kucherawy-dkim-transform-00
+    formattedref:
+      content: draft-kucherawy-dkim-transform-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kucherawy-dkim-transform-00
@@ -78,7 +85,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-kucherawy-dkim-transform-02
+    formattedref:
+      content: draft-kucherawy-dkim-transform-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kucherawy-dkim-transform-02
@@ -94,7 +102,7 @@ series:
     content: Internet-Draft
   number: draft-kucherawy-dkim-transform-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

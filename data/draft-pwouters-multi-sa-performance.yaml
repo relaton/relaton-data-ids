@@ -1,7 +1,8 @@
 ---
 id: draftpwoutersmultisaperformance
-schema_version: v1.4.1
-formattedref: draft-pwouters-multi-sa-performance
+schema_version: v1.5.6
+formattedref:
+  content: draft-pwouters-multi-sa-performance
 title:
 - language: en
   script: Latn
@@ -13,20 +14,25 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines two Notification Payloads for the Internet Key\n
-    \  Exchange Protocol Version 2 (IKEv2): NUM_QUEUES and QUEUE_INFO.\n   These payloads
-    add support for indicating that the negotiating of\n   multiple identical Child
-    SAs are to be used to optimize performance\n   based on the number of queues or
-    CPUs, or to create multiple Child\n   SAs for different Quality of Service (QoS)
-    levels.  It indicates that\n   a newer idetnical Child SA should not be interpreted
-    as a replacement\n   Child SA.\n\n   Using multiple identical Child Sa's has the
-    benefit that each stream\n   has its own Sequence Number, ensuring that CPU's
-    don't have to\n   synchronize their crypto state or disable their packet replay\n
-    \  detection.\n\n\t "
+  content: |-
+    <p>This document defines two Notification Payloads for the Internet Key
+       Exchange Protocol Version 2 (IKEv2): NUM_QUEUES and QUEUE_INFO.
+       These payloads add support for indicating that the negotiating of
+       multiple identical Child SAs are to be used to optimize performance
+       based on the number of queues or CPUs, or to create multiple Child
+       SAs for different Quality of Service (QoS) levels.  It indicates that
+       a newer idetnical Child SA should not be interpreted as a replacement
+       Child SA.
+
+       Using multiple identical Child Sa&#39;s has the benefit that each stream
+       has its own Sequence Number, ensuring that CPU&#39;s don&#39;t have to
+       synchronize their crypto state or disable their packet replay
+       detection.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-pwouters-multi-sa-performance-00
+    formattedref:
+      content: draft-pwouters-multi-sa-performance-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pwouters-multi-sa-performance-00
@@ -36,7 +42,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-pwouters-multi-sa-performance-01
+    formattedref:
+      content: draft-pwouters-multi-sa-performance-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pwouters-multi-sa-performance-01

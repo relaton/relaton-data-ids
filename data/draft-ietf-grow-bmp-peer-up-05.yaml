@@ -1,7 +1,7 @@
 ---
 id: draftietfgrowbmppeerup05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: NTT
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -79,20 +79,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC 7854, BGP Monitoring Protocol, uses different message types for\n
-    \  different purposes.  Most of these are Type, Length, Value (TLV)\n   structured.
-    \ One message type, the Peer Up message, lacks a set of\n   TLVs defined for its
-    use, instead sharing a namespace with the\n   Initiation message.  Subsequent
-    experience has shown that this\n   namespace sharing was a mistake, as it hampers
-    the extension of the\n   protocol.\n\n   This document updates RFC 7854 by creating
-    an independent namespace\n   for the Peer Up message.  It also updates RFC 8671
-    and RFC 9069 by\n   moving the defined codepoints in the newly introduced registry.\n
-    \  Compliant implementations of RFC 7854, RFC 8671 and RFC 9069 also\n   comply
-    with this specification.\n\n\t "
+  content: |-
+    <p>RFC 7854, BGP Monitoring Protocol, uses different message types for
+       different purposes.  Most of these are Type, Length, Value (TLV)
+       structured.  One message type, the Peer Up message, lacks a set of
+       TLVs defined for its use, instead sharing a namespace with the
+       Initiation message.  Subsequent experience has shown that this
+       namespace sharing was a mistake, as it hampers the extension of the
+       protocol.
+
+       This document updates RFC 7854 by creating an independent namespace
+       for the Peer Up message.  It also updates RFC 8671 and RFC 9069 by
+       moving the defined codepoints in the newly introduced registry.
+       Compliant implementations of RFC 7854, RFC 8671 and RFC 9069 also
+       comply with this specification.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-grow-bmp-peer-up-04
+    formattedref:
+      content: draft-ietf-grow-bmp-peer-up-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-bmp-peer-up-04
@@ -108,7 +113,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-grow-bmp-peer-up-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

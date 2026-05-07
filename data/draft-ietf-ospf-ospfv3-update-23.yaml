@@ -1,7 +1,7 @@
 ---
 id: draftietfospfospfv3update23
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Sycamore Networks
 version:
-- draft: '23'
+- content: '23'
 language:
 - en
 script:
@@ -104,26 +104,14 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document describes the modifications to OSPF to support version 6
-    of the Internet Protocol (IPv6). The fundamental mechanisms of OSPF (flooding,
-    Designated Router (DR) election, area support, Short Path First (SPF) calculations,
-    etc.) remain unchanged. However, some changes have been necessary, either due
-    to changes in protocol semantics between IPv4 and IPv6, or simply to handle the
-    increased address size of IPv6. These modifications will necessitate incrementing
-    the protocol version from version 2 to version 3. OSPF for IPv6 is also referred
-    to as OSPF version 3 (OSPFv3).\n\n Changes between OSPF for IPv4, OSPF Version
-    2, and OSPF for IPv6 as described herein include the following. Addressing semantics
-    have been removed from OSPF packets and the basic Link State Advertisements (LSAs).
-    New LSAs have been created to carry IPv6 addresses and prefixes. OSPF now runs
-    on a per-link basis rather than on a per-IP-subnet basis. Flooding scope for LSAs
-    has been generalized. Authentication has been removed from the OSPF protocol and
-    instead relies on IPv6's Authentication Header and Encapsulating Security Payload
-    (ESP).\n\n Even with larger IPv6 addresses, most packets in OSPF for IPv6 are
-    almost as compact as those in OSPF for IPv4. Most fields and packet- size limitations
-    present in OSPF for IPv4 have been relaxed. In addition, option handling has been
-    made more flexible.\n\n All of OSPF for IPv4's optional capabilities, including
-    demand circuit support and Not-So-Stubby Areas (NSSAs), are also supported in
-    OSPF for IPv6. [STANDARDS-TRACK]\n\t "
+  content: |-
+    <p>This document describes the modifications to OSPF to support version 6 of the Internet Protocol (IPv6). The fundamental mechanisms of OSPF (flooding, Designated Router (DR) election, area support, Short Path First (SPF) calculations, etc.) remain unchanged. However, some changes have been necessary, either due to changes in protocol semantics between IPv4 and IPv6, or simply to handle the increased address size of IPv6. These modifications will necessitate incrementing the protocol version from version 2 to version 3. OSPF for IPv6 is also referred to as OSPF version 3 (OSPFv3).
+
+     Changes between OSPF for IPv4, OSPF Version 2, and OSPF for IPv6 as described herein include the following. Addressing semantics have been removed from OSPF packets and the basic Link State Advertisements (LSAs). New LSAs have been created to carry IPv6 addresses and prefixes. OSPF now runs on a per-link basis rather than on a per-IP-subnet basis. Flooding scope for LSAs has been generalized. Authentication has been removed from the OSPF protocol and instead relies on IPv6&#39;s Authentication Header and Encapsulating Security Payload (ESP).
+
+     Even with larger IPv6 addresses, most packets in OSPF for IPv6 are almost as compact as those in OSPF for IPv4. Most fields and packet- size limitations present in OSPF for IPv4 have been relaxed. In addition, option handling has been made more flexible.
+
+     All of OSPF for IPv4&#39;s optional capabilities, including demand circuit support and Not-So-Stubby Areas (NSSAs), are also supported in OSPF for IPv6. [STANDARDS-TRACK]</p>
 series:
 - type: main
   title:
@@ -132,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ospf-ospfv3-update-23
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

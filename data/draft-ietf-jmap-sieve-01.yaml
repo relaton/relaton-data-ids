@@ -1,7 +1,7 @@
 ---
 id: draftietfjmapsieve01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Fastmail US LLC
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,22 +54,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a data model for managing Sieve scripts on
-    a\n   server using JMAP.\n\nOpen Issues\n\n   o  Do we need/want both \"content\"
-    and \"blobId\" in the SieveScript\n      object?  It may be simpler to have just
-    one way of specifying\n      content and \"blobId\" is more versatile and doesn't
-    require JSON-\n      encoding of the content.  Furthermore, use of the forthcoming(?)\n
-    \     Blob/set method would avoid the extra roundtrip of having to\n      upload
-    the blob first.\n\n   o  The strawman for SieveScript/test only uses blobIds.
-    \ Will this\n      have to change once the issue regarding content/blobId in\n
-    \     SieveScript is resolved?\n\n   o  Should \":fcc\" and associated arguments
-    (e.g., \":flags\",\n      \":create\":, etc) reported in the /test response be
-    in their own\n      \"fcc\" sub-object rather than listed inline with the rest
-    of the\n      arguments for the action?\n\n\t "
+  content: |-
+    <p>This document specifies a data model for managing Sieve scripts on a
+       server using JMAP.
+
+    Open Issues
+
+       o  Do we need/want both &quot;content&quot; and &quot;blobId&quot; in the SieveScript
+          object?  It may be simpler to have just one way of specifying
+          content and &quot;blobId&quot; is more versatile and doesn&#39;t require JSON-
+          encoding of the content.  Furthermore, use of the forthcoming(?)
+          Blob/set method would avoid the extra roundtrip of having to
+          upload the blob first.
+
+       o  The strawman for SieveScript/test only uses blobIds.  Will this
+          have to change once the issue regarding content/blobId in
+          SieveScript is resolved?
+
+       o  Should &quot;:fcc&quot; and associated arguments (e.g., &quot;:flags&quot;,
+          &quot;:create&quot;:, etc) reported in the /test response be in their own
+          &quot;fcc&quot; sub-object rather than listed inline with the rest of the
+          arguments for the action?</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-jmap-sieve-00
+    formattedref:
+      content: draft-ietf-jmap-sieve-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jmap-sieve-00
@@ -79,7 +89,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-jmap-sieve-02
+    formattedref:
+      content: draft-ietf-jmap-sieve-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jmap-sieve-02
@@ -95,7 +106,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-jmap-sieve-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

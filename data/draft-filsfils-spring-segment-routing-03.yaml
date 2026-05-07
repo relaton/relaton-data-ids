@@ -1,7 +1,7 @@
 ---
 id: draftfilsfilsspringsegmentrouting03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -261,7 +261,7 @@ contributor:
         language: en
         content: Edward Crabbe
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -269,26 +269,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Segment Routing (SR) leverages the source routing paradigm.  A node\n
-    \  steers a packet through an ordered list of instructions, called\n   segments.
-    \ A segment can represent any instruction, topological or\n   service-based.  A
-    segment can have a local semantic to an SR node or\n   global within an SR domain.
-    \ SR allows to enforce a flow through any\n   topological path and service chain
-    while maintaining per-flow state\n   only at the ingress node to the SR domain.\n\n
-    \  Segment Routing can be directly applied to the MPLS architecture with\n   no
-    change on the forwarding plane.  A segment is encoded as an MPLS\n   label.  An
-    ordered list of segments is encoded as a stack of labels.\n   The segment to process
-    is on the top of the stack.  Upon completion\n   of a segment, the related label
-    is popped from the stack.\n\n   Segment Routing can be applied to the IPv6 architecture,
-    with a new\n   type of routing extension header.  A segment is encoded as an IPv6\n
-    \  address.  An ordered list of segments is encoded as an ordered list\n   of
-    IPv6 addresses in the routing extension header.  The segment to\n   process is
-    indicated by a pointer in the routing extension header.\n   Upon completion of
-    a segment, the pointer is incremented.\n\n\n\t "
+  content: |-
+    <p>Segment Routing (SR) leverages the source routing paradigm.  A node
+       steers a packet through an ordered list of instructions, called
+       segments.  A segment can represent any instruction, topological or
+       service-based.  A segment can have a local semantic to an SR node or
+       global within an SR domain.  SR allows to enforce a flow through any
+       topological path and service chain while maintaining per-flow state
+       only at the ingress node to the SR domain.
+
+       Segment Routing can be directly applied to the MPLS architecture with
+       no change on the forwarding plane.  A segment is encoded as an MPLS
+       label.  An ordered list of segments is encoded as a stack of labels.
+       The segment to process is on the top of the stack.  Upon completion
+       of a segment, the related label is popped from the stack.
+
+       Segment Routing can be applied to the IPv6 architecture, with a new
+       type of routing extension header.  A segment is encoded as an IPv6
+       address.  An ordered list of segments is encoded as an ordered list
+       of IPv6 addresses in the routing extension header.  The segment to
+       process is indicated by a pointer in the routing extension header.
+       Upon completion of a segment, the pointer is incremented.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-filsfils-spring-segment-routing-02
+    formattedref:
+      content: draft-filsfils-spring-segment-routing-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-filsfils-spring-segment-routing-02
@@ -298,7 +304,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-filsfils-spring-segment-routing-04
+    formattedref:
+      content: draft-filsfils-spring-segment-routing-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-filsfils-spring-segment-routing-04
@@ -314,7 +321,7 @@ series:
     content: Internet-Draft
   number: draft-filsfils-spring-segment-routing-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

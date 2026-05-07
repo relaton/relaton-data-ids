@@ -1,7 +1,7 @@
 ---
 id: draftwkumaridnsoplocalrootbcp03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: APNIC
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -129,25 +129,41 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS recursive resolver operators need to provide the best service\n
-    \  possible for their users, which includes providing an operationally\n   robust
-    and privacy protecting service.  Challenges to these\n   deployment goals include
-    difficulty of getting responses from the\n   root servers (such as during a network
-    attack), longer-than-desired\n   round-trip times to the closest DNS root server,
-    and privacy issues\n   relating to queries sent to the DNS root servers.  Resolvers
-    can\n   solve all of these issues by simply serving an already cached a copy\n
-    \  of the full root zone.\n\n   This document shows how resolvers can fetch, cache
-    and maintain a\n   copy of the root zone, how to detect if the contents becomes
-    stale,\n   and procedures for handling error conditions.\n\n\t "
+  content: |-
+    <p>DNS recursive resolver operators need to provide the best service
+       possible for their users, which includes providing an operationally
+       robust and privacy protecting service.  Challenges to these
+       deployment goals include difficulty of getting responses from the
+       root servers (such as during a network attack), longer-than-desired
+       round-trip times to the closest DNS root server, and privacy issues
+       relating to queries sent to the DNS root servers.  Resolvers can
+       solve all of these issues by simply serving an already cached a copy
+       of the full root zone.
+
+       This document shows how resolvers can fetch, cache and maintain a
+       copy of the root zone, how to detect if the contents becomes stale,
+       and procedures for handling error conditions.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-wkumari-dnsop-localroot-bcp-02
+    formattedref:
+      content: draft-wkumari-dnsop-localroot-bcp-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-localroot-bcp-02
     docidentifier:
     - content: draft-wkumari-dnsop-localroot-bcp-02
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-wkumari-dnsop-localroot-bcp-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-localroot-bcp-04
+    docidentifier:
+    - content: draft-wkumari-dnsop-localroot-bcp-04
       type: Internet-Draft
       primary: true
 series:
@@ -158,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-wkumari-dnsop-localroot-bcp-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

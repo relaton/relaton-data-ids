@@ -1,7 +1,7 @@
 ---
 id: draftwillissippath08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -72,7 +72,7 @@ contributor:
         - language: en
           content: Switch
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -80,16 +80,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The REGISTER function is used in a SIP system primarily to associate\na
-    temporary contact address with an address-of-record.  This contact\nis generally
-    in the form of a URI, such as Contact:\n<sip:alice@pc33.atlanta.com> and is generally
-    dynamic and associated\nwith the IP address or hostname of the SIP UA.  The problem
-    is that\nnetwork topology may have one or more SIP proxies between the UA and\nthe
-    registrar, such that any request travelling from the user's home\nnetwork to the
-    registered UA must traverse these proxies.  The\nREGISTER method does not give
-    us a mechanism to discover and record\nthis sequence of proxies in the registrar
-    for future use.  This\ndocument defines an extension header field, 'Path' which
-    provides\nsuch a mechanism\n\t "
+  content: |-
+    <p>The REGISTER function is used in a SIP system primarily to associate
+    a temporary contact address with an address-of-record.  This contact
+    is generally in the form of a URI, such as Contact:
+    &lt;sip:alice@pc33.atlanta.com&gt; and is generally dynamic and associated
+    with the IP address or hostname of the SIP UA.  The problem is that
+    network topology may have one or more SIP proxies between the UA and
+    the registrar, such that any request travelling from the user&#39;s home
+    network to the registered UA must traverse these proxies.  The
+    REGISTER method does not give us a mechanism to discover and record
+    this sequence of proxies in the registrar for future use.  This
+    document defines an extension header field, &#39;Path&#39; which provides
+    such a mechanism</p>
 series:
 - type: main
   title:
@@ -98,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-willis-sip-path-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

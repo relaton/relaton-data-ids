@@ -1,7 +1,7 @@
 ---
 id: draftpioxfolks6manpioexclusivebit01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Mikael Abrahamsson
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,21 +69,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a new control bit in the IPv6 RA PIO flags\n
-    \  octet that indicates that the node receiving this RA is the exclusive\n   receiver
-    of all traffic destined to any address within that prefix.\n\n   Termed the eXclusive
-    bit (or \"X bit\"), nodes that recognize this can\n   perform some optimizations
-    to save time and traffic (e.g. disable ND\n   and DAD for addresses within this
-    prefix) and more immediately pursue\n   the benefits of being provided multiple
-    addresses (vis.  [RFC7934]\n   section 3).  Additionally, network infrastructure
-    nodes (routers,\n   switches) can benefit by minimizing the number of {link layer,
-    IP}\n   address pairs required to offer network connectivity (vis.  [RFC7934]\n
-    \  section 9.3).\n\n   Use of the X bit is backward compatible with existing IPv6
-    standards\n   compliant implementations.\n\n\t "
+  content: |-
+    <p>This document defines a new control bit in the IPv6 RA PIO flags
+       octet that indicates that the node receiving this RA is the exclusive
+       receiver of all traffic destined to any address within that prefix.
+
+       Termed the eXclusive bit (or &quot;X bit&quot;), nodes that recognize this can
+       perform some optimizations to save time and traffic (e.g. disable ND
+       and DAD for addresses within this prefix) and more immediately pursue
+       the benefits of being provided multiple addresses (vis.  [RFC7934]
+       section 3).  Additionally, network infrastructure nodes (routers,
+       switches) can benefit by minimizing the number of {link layer, IP}
+       address pairs required to offer network connectivity (vis.  [RFC7934]
+       section 9.3).
+
+       Use of the X bit is backward compatible with existing IPv6 standards
+       compliant implementations.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-pioxfolks-6man-pio-exclusive-bit-00
+    formattedref:
+      content: draft-pioxfolks-6man-pio-exclusive-bit-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pioxfolks-6man-pio-exclusive-bit-00
@@ -93,7 +99,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-pioxfolks-6man-pio-exclusive-bit-02
+    formattedref:
+      content: draft-pioxfolks-6man-pio-exclusive-bit-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pioxfolks-6man-pio-exclusive-bit-02
@@ -109,7 +116,7 @@ series:
     content: Internet-Draft
   number: draft-pioxfolks-6man-pio-exclusive-bit-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

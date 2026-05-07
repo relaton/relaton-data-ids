@@ -1,7 +1,7 @@
 ---
 id: draftietfntpchecksumtrailer00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Tal Mizrahi
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,20 +49,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Network Time Protocol (NTP) allows clients to synchronize to a\n
-    \  time server using timestamped protocol messages. To faciliate\n   accurate
-    timestamping, some implementations use hardware-based\n   timestamping engines
-    that integrate the accurate transmission time\n   into every outgoing NTP packet
-    during transmission. Since these\n   packets are transported over UDP, the UDP
-    checksum field is then\n   updated to reflect this modification. This document
-    proposes an\n   extension field that includes a 2-octet Checksum Trailer, allowing\n
-    \  timestamping engines to reflect the checksum modification in the last\n   2
-    octets of the packet rather than in the UDP checksum field. The\n   behavior defined
-    in this document is interoperable with existing NTP\n   implementations.\n\n\t "
+  content: |-
+    <p>The Network Time Protocol (NTP) allows clients to synchronize to a
+       time server using timestamped protocol messages. To faciliate
+       accurate timestamping, some implementations use hardware-based
+       timestamping engines that integrate the accurate transmission time
+       into every outgoing NTP packet during transmission. Since these
+       packets are transported over UDP, the UDP checksum field is then
+       updated to reflect this modification. This document proposes an
+       extension field that includes a 2-octet Checksum Trailer, allowing
+       timestamping engines to reflect the checksum modification in the last
+       2 octets of the packet rather than in the UDP checksum field. The
+       behavior defined in this document is interoperable with existing NTP
+       implementations.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ntp-checksum-trailer-01
+    formattedref:
+      content: draft-ietf-ntp-checksum-trailer-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-checksum-trailer-01
@@ -78,7 +82,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ntp-checksum-trailer-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

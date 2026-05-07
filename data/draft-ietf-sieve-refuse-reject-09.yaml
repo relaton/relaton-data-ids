@@ -1,7 +1,7 @@
 ---
 id: draftietfsieverefusereject09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Serendipity
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -54,18 +54,14 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo updates the definition of the Sieve mail filtering language
-    \"reject\" extension, originally defined in RFC 3028.\n\n A \"Joe-job\" is a spam
-    run forged to appear as though it came from an innocent party, who is then generally
-    flooded by automated bounces, Message Disposition Notifications (MDNs), and personal
-    messages with complaints. The original Sieve \"reject\" action defined in RFC
-    3028 required use of MDNs for rejecting messages, thus contributing to the flood
-    of Joe-job spam to victims of Joe-jobs.\n\n This memo updates the definition of
-    the \"reject\" action to allow messages to be refused during the SMTP transaction,
-    and defines the \"ereject\" action to require messages to be refused during the
-    SMTP transaction, if possible.\n\n The \"ereject\" action is intended to replace
-    the \"reject\" action wherever possible. The \"ereject\" action is similar to
-    \"reject\", but will always favor protocol-level message rejection. [STANDARDS-TRACK]\n\t "
+  content: |-
+    <p>This memo updates the definition of the Sieve mail filtering language &quot;reject&quot; extension, originally defined in RFC 3028.
+
+     A &quot;Joe-job&quot; is a spam run forged to appear as though it came from an innocent party, who is then generally flooded by automated bounces, Message Disposition Notifications (MDNs), and personal messages with complaints. The original Sieve &quot;reject&quot; action defined in RFC 3028 required use of MDNs for rejecting messages, thus contributing to the flood of Joe-job spam to victims of Joe-jobs.
+
+     This memo updates the definition of the &quot;reject&quot; action to allow messages to be refused during the SMTP transaction, and defines the &quot;ereject&quot; action to require messages to be refused during the SMTP transaction, if possible.
+
+     The &quot;ereject&quot; action is intended to replace the &quot;reject&quot; action wherever possible. The &quot;ereject&quot; action is similar to &quot;reject&quot;, but will always favor protocol-level message rejection. [STANDARDS-TRACK]</p>
 series:
 - type: main
   title:
@@ -74,7 +70,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sieve-refuse-reject-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

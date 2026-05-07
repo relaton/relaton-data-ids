@@ -1,7 +1,7 @@
 ---
 id: draftmanetmodimmutableflag07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: HPE
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -126,19 +126,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a way to formally document existing behavior,\n
-    \  implemented by servers in production, on the immutability of some\n   configuration
-    nodes, using a YANG \"extension\" and a YANG metadata\n   annotation, both called
-    \"immutable\", which are collectively used to\n   flag which data nodes are immutable.\n\n
-    \  Clients may use \"immutable\" statements in the YANG, and annotations\n   provided
-    by the server, to know beforehand when certain otherwise\n   valid configuration
-    requests will cause the server to return an\n   error.\n\n   The immutable flag
-    is descriptive, documenting existing behavior, not\n   proscriptive, dictating
-    server behavior.\n\n\t "
+  content: |-
+    <p>This document defines a way to formally document existing behavior,
+       implemented by servers in production, on the immutability of some
+       configuration nodes, using a YANG &quot;extension&quot; and a YANG metadata
+       annotation, both called &quot;immutable&quot;, which are collectively used to
+       flag which data nodes are immutable.
+
+       Clients may use &quot;immutable&quot; statements in the YANG, and annotations
+       provided by the server, to know beforehand when certain otherwise
+       valid configuration requests will cause the server to return an
+       error.
+
+       The immutable flag is descriptive, documenting existing behavior, not
+       proscriptive, dictating server behavior.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ma-netmod-immutable-flag-06
+    formattedref:
+      content: draft-ma-netmod-immutable-flag-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netmod-immutable-flag-06
@@ -148,7 +154,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ma-netmod-immutable-flag-08
+    formattedref:
+      content: draft-ma-netmod-immutable-flag-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netmod-immutable-flag-08
@@ -164,7 +171,7 @@ series:
     content: Internet-Draft
   number: draft-ma-netmod-immutable-flag-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftbannisterdbismapping06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -44,7 +44,7 @@ contributor:
         language: en
         content: Mark R. Bannister
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -52,33 +52,54 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This is one of several documents that describe the components within\n
-    \  Directory-Based Information Services (DBIS).  DBIS provides a\n   framework
-    for the representation of data relating to TCP/IP and the\n   UNIX system within
-    [X.500] entries that have previously been stored\n   in the Network Information
-    Service [NIS]; so that they may be\n   resolved with the Lightweight Directory
-    Access Protocol [RFC4510].\n\n   The intention of DBIS is to extend, and thereby
-    replace both NIS and\n   the experimental protocol for using LDAP as a Network
-    Information\n   Service (RFC2307), which have both achieved widespread adoption.\n\n
-    \  DBIS consists of an LDAP schema, naming conventions and protocols to\n   describe
-    its use by DUAs requiring network service information.\n   Client/server communication
-    and server-side operations are entirely\n   contained within the domain of LDAP.\n\n
-    \  Key aspects of DBIS and improvements over RFC2307 are:\n\n   - Schema is backwards
-    compatible with NIS, including case sensitivity\n     of key names.\n\n   - Standardisation
-    of mapping information to increase portability of\n     DUA implementations and
-    to reduce duplication of client\n     configuration data.\n\n   - Features added
-    to increase flexibility in large complex\n     environments:\n\n      o Maps may
-    be joined from data located in different areas of the\n        Directory Information
-    Tree (DIT).\n\n      o Groups of DUAs may have variances in their data depending
-    upon\n        their host netgroup membership.\n\n   - Modular design to allow
-    separate parts of the system to be\n     replaced, improved or augmented separately
-    in the future.\n\n   - Support added for automounter maps [draft-bannister-dbis-\n
-    \    automounter-00].\n\n   This document describes mapping objects used by DBIS
-    to locate and\n   transform service information stored within the DIT.\n\t "
+  content: |-
+    <p>This is one of several documents that describe the components within
+       Directory-Based Information Services (DBIS).  DBIS provides a
+       framework for the representation of data relating to TCP/IP and the
+       UNIX system within [X.500] entries that have previously been stored
+       in the Network Information Service [NIS]; so that they may be
+       resolved with the Lightweight Directory Access Protocol [RFC4510].
+
+       The intention of DBIS is to extend, and thereby replace both NIS and
+       the experimental protocol for using LDAP as a Network Information
+       Service (RFC2307), which have both achieved widespread adoption.
+
+       DBIS consists of an LDAP schema, naming conventions and protocols to
+       describe its use by DUAs requiring network service information.
+       Client/server communication and server-side operations are entirely
+       contained within the domain of LDAP.
+
+       Key aspects of DBIS and improvements over RFC2307 are:
+
+       - Schema is backwards compatible with NIS, including case sensitivity
+         of key names.
+
+       - Standardisation of mapping information to increase portability of
+         DUA implementations and to reduce duplication of client
+         configuration data.
+
+       - Features added to increase flexibility in large complex
+         environments:
+
+          o Maps may be joined from data located in different areas of the
+            Directory Information Tree (DIT).
+
+          o Groups of DUAs may have variances in their data depending upon
+            their host netgroup membership.
+
+       - Modular design to allow separate parts of the system to be
+         replaced, improved or augmented separately in the future.
+
+       - Support added for automounter maps [draft-bannister-dbis-
+         automounter-00].
+
+       This document describes mapping objects used by DBIS to locate and
+       transform service information stored within the DIT.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-bannister-dbis-mapping-05
+    formattedref:
+      content: draft-bannister-dbis-mapping-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bannister-dbis-mapping-05
@@ -88,7 +109,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-bannister-dbis-mapping-07
+    formattedref:
+      content: draft-bannister-dbis-mapping-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bannister-dbis-mapping-07
@@ -104,7 +126,7 @@ series:
     content: Internet-Draft
   number: draft-bannister-dbis-mapping-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftbannisterdbispolicy01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -44,7 +44,7 @@ contributor:
         language: en
         content: Mark R. Bannister
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -52,21 +52,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document extends Directory-Based Information Services (DBIS)\n
-    \  described in [draft-bannister-dbis-mapping-00] to support the shadow\n   databases.\n\n
-    \  The shadow database schema SHALL be backwards compatible with the\n   Network
-    Information Service [NIS] but stored within [X.500] entries\n   so that it may
-    be resolved with the Lightweight Directory Access\n   Protocol [RFC4510].\n\n
-    \  A shadow database extends user login accounts with credential policy\n   data.\n\n
-    \  This document represents shadow database entries as an extended set\n   of
-    attributes that may be applied to both passwd and group database\n   entries for
-    the management of consistent password policies.\n\n   This document describes
-    configuration maps [draft-bannister-dbis-\n   mapping-00] for shadow databases,
-    and database entries referenced by\n   those maps.\n\t "
+  content: |-
+    <p>This document extends Directory-Based Information Services (DBIS)
+       described in [draft-bannister-dbis-mapping-00] to support the shadow
+       databases.
+
+       The shadow database schema SHALL be backwards compatible with the
+       Network Information Service [NIS] but stored within [X.500] entries
+       so that it may be resolved with the Lightweight Directory Access
+       Protocol [RFC4510].
+
+       A shadow database extends user login accounts with credential policy
+       data.
+
+       This document represents shadow database entries as an extended set
+       of attributes that may be applied to both passwd and group database
+       entries for the management of consistent password policies.
+
+       This document describes configuration maps [draft-bannister-dbis-
+       mapping-00] for shadow databases, and database entries referenced by
+       those maps.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-bannister-dbis-policy-00
+    formattedref:
+      content: draft-bannister-dbis-policy-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bannister-dbis-policy-00
@@ -76,7 +86,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-bannister-dbis-policy-02
+    formattedref:
+      content: draft-bannister-dbis-policy-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bannister-dbis-policy-02
@@ -92,7 +103,7 @@ series:
     content: Internet-Draft
   number: draft-bannister-dbis-policy-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

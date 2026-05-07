@@ -1,7 +1,7 @@
 ---
 id: draftjohanssonsipcoredanesip00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -50,7 +50,7 @@ contributor:
         - language: en
           content: Edvina AB
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -58,17 +58,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Use of TLS in the SIP protocol is defined in multiple documents,\n
-    \  starting with RFC 3261.  The actual verification that happens when\n   setting
-    up a SIP TLS connection to a SIP server based on a SIP URI is\n   described in
-    detail in RFC 5922 - SIP Domain Certificates.\n\n   In this document, an alternative
-    method is defined, using DNS-Based\n   Authentication of Named Entities (DANE).
-    \ By looking up TLSA DNS\n   records and using DNSsec protection of the required
-    queries,\n   including lookups for NAPTR and SRV records, a SIP Client can verify\n
-    \  the identity of the TLS SIP server in a different way, matching on\n   the
-    SRV host name in the X.509 PKIX certificate instead of the SIP\n   domain.  This
-    provides more scalability in hosting solutions and make\n   it easier to use standard
-    CA certificates (if needed at all).\n\n\t "
+  content: |-
+    <p>Use of TLS in the SIP protocol is defined in multiple documents,
+       starting with RFC 3261.  The actual verification that happens when
+       setting up a SIP TLS connection to a SIP server based on a SIP URI is
+       described in detail in RFC 5922 - SIP Domain Certificates.
+
+       In this document, an alternative method is defined, using DNS-Based
+       Authentication of Named Entities (DANE).  By looking up TLSA DNS
+       records and using DNSsec protection of the required queries,
+       including lookups for NAPTR and SRV records, a SIP Client can verify
+       the identity of the TLS SIP server in a different way, matching on
+       the SRV host name in the X.509 PKIX certificate instead of the SIP
+       domain.  This provides more scalability in hosting solutions and make
+       it easier to use standard CA certificates (if needed at all).</p>
 series:
 - type: main
   title:
@@ -77,7 +80,7 @@ series:
     content: Internet-Draft
   number: draft-johansson-sipcore-dane-sip-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfsipcorerejected07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Massachusetts Institute of Technology
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -79,23 +79,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines the 608 (Rejected) SIP response code.  This\n
-    \  response code enables calling parties to learn that an intermediary\n   rejected
-    their call attempt.  No one will deliver, and thus no one\n   will answer, the
-    call.  As a 6xx code, the caller will be aware that\n   future attempts to contact
-    the same User Agent Server will likely\n   fail.  The initial use case driving
-    the need for the 608 response\n   code is when the intermediary is an analytics
-    engine.  In this case,\n   the rejection is by a machine or other process.  This
-    contrasts with\n   the 607 (Unwanted) SIP response code, which a human at the
-    target\n   User Agent Server indicated the user did not want the call.  In some\n
-    \  jurisdictions this distinction is important.  This document also\n   defines
-    the use of the Call-Info header field in 608 responses to\n   enable rejected
-    callers to contact entities that blocked their calls\n   in error.  This provides
-    a remediation mechanism for legal callers\n   that find their calls blocked.\n\n\t "
+  content: |-
+    <p>This document defines the 608 (Rejected) SIP response code.  This
+       response code enables calling parties to learn that an intermediary
+       rejected their call attempt.  No one will deliver, and thus no one
+       will answer, the call.  As a 6xx code, the caller will be aware that
+       future attempts to contact the same User Agent Server will likely
+       fail.  The initial use case driving the need for the 608 response
+       code is when the intermediary is an analytics engine.  In this case,
+       the rejection is by a machine or other process.  This contrasts with
+       the 607 (Unwanted) SIP response code, which a human at the target
+       User Agent Server indicated the user did not want the call.  In some
+       jurisdictions this distinction is important.  This document also
+       defines the use of the Call-Info header field in 608 responses to
+       enable rejected callers to contact entities that blocked their calls
+       in error.  This provides a remediation mechanism for legal callers
+       that find their calls blocked.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sipcore-rejected-06
+    formattedref:
+      content: draft-ietf-sipcore-rejected-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sipcore-rejected-06
@@ -105,7 +109,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sipcore-rejected-08
+    formattedref:
+      content: draft-ietf-sipcore-rejected-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sipcore-rejected-08
@@ -121,7 +126,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sipcore-rejected-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

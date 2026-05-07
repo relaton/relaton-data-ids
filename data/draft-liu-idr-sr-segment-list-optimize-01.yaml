@@ -1,7 +1,7 @@
 ---
 id: draftliuidrsrsegmentlistoptimize01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: ZTE
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,23 +104,38 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In some use cases, an SRv6 policy's segment list ends with the\n   policy
-    endpoint's node SID, and the traffic steered (over policy)\n   already ensures
-    that it is taken to the policy endpoint.  In such\n   cases, the SID list can
-    be optimized by excluding the endpoint Node\n   SID when installing the policy.\n\n
-    \  This document specifies a BGP extension to indicate whether the\n   endpoint's
-    node SID needs to be included or excluded when installing\n   the SRv6 Policy.
-    This optimization can improve the forwarding\n   efficiency of data packets when
-    End SID and Service SID are present.\n\n\t "
+  content: |-
+    <p>In some use cases, an SRv6 policy&#39;s segment list ends with the
+       policy endpoint&#39;s node SID, and the traffic steered (over policy)
+       already ensures that it is taken to the policy endpoint.  In such
+       cases, the SID list can be optimized by excluding the endpoint Node
+       SID when installing the policy.
+
+       This document specifies a BGP extension to indicate whether the
+       endpoint&#39;s node SID needs to be included or excluded when installing
+       the SRv6 Policy. This optimization can improve the forwarding
+       efficiency of data packets when End SID and Service SID are present.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-liu-idr-sr-segment-list-optimize-00
+    formattedref:
+      content: draft-liu-idr-sr-segment-list-optimize-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-liu-idr-sr-segment-list-optimize-00
     docidentifier:
     - content: draft-liu-idr-sr-segment-list-optimize-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-liu-idr-sr-segment-list-optimize-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-idr-sr-segment-list-optimize-02
+    docidentifier:
+    - content: draft-liu-idr-sr-segment-list-optimize-02
       type: Internet-Draft
       primary: true
 series:
@@ -131,7 +146,7 @@ series:
     content: Internet-Draft
   number: draft-liu-idr-sr-segment-list-optimize-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

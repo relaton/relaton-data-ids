@@ -1,7 +1,7 @@
 ---
 id: draftcuiidrcontentfilterflowspec03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Hickory Hill Consulting
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -104,20 +104,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The BGP Flow Specification enables the distribution of traffic filter\n
-    \  policies (traffic filters and actions) via BGP, facilitating DDoS\n   traffic
-    filtering.  However, the traffic filter in FSv1 and FSv2\n   predominantly focuses
-    on IP header fields, which may not adequately\n   address volumetric DDoS attack
-    traffic characterized by fixed\n   patterns within the packet content.  This document
-    introduces a new\n   flow specification filter type designed for packet content
-    filtering.\n   The match field includes ptype, otype, offset, content-length,\n
-    \  content, and mask encoded in the Flowspec NLRI.  This new filter aims\n   to
-    leverage network devices such as routers and switches to defend\n   against simple
-    volumetric DDoS attacks, reducing the overall defence\n   cost of carrier network.\n\n\t "
+  content: |-
+    <p>The BGP Flow Specification enables the distribution of traffic filter
+       policies (traffic filters and actions) via BGP, facilitating DDoS
+       traffic filtering.  However, the traffic filter in FSv1 and FSv2
+       predominantly focuses on IP header fields, which may not adequately
+       address volumetric DDoS attack traffic characterized by fixed
+       patterns within the packet content.  This document introduces a new
+       flow specification filter type designed for packet content filtering.
+       The match field includes ptype, otype, offset, content-length,
+       content, and mask encoded in the Flowspec NLRI.  This new filter aims
+       to leverage network devices such as routers and switches to defend
+       against simple volumetric DDoS attacks, reducing the overall defence
+       cost of carrier network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-cui-idr-content-filter-flowspec-02
+    formattedref:
+      content: draft-cui-idr-content-filter-flowspec-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-cui-idr-content-filter-flowspec-02
@@ -133,7 +137,7 @@ series:
     content: Internet-Draft
   number: draft-cui-idr-content-filter-flowspec-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

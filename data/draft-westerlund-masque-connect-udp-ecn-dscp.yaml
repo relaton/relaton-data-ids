@@ -1,7 +1,8 @@
 ---
 id: draftwesterlundmasqueconnectudpecndscp
-schema_version: v1.4.1
-formattedref: draft-westerlund-masque-connect-udp-ecn-dscp
+schema_version: v1.5.6
+formattedref:
+  content: draft-westerlund-masque-connect-udp-ecn-dscp
 title:
 - language: en
   script: Latn
@@ -13,17 +14,20 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   HTTP's Extended Connect's Connect-UDP protocol enables a client to\n
-    \  proxy a UDP flow from the HTTP server towards a specified target IP\n   address
-    and UDP port.  QUIC and Real-time transport protocol (RTP)\n   are examples of
-    transport protocols that use UDP and support Explicit\n   Congestion Notification
-    (ECN) and provide the necessary feedback.\n   This document specifies how ECN
-    and DSCP can be supported through an\n   extension to the Connect-UDP protocol
-    for HTTP.\n\n\t "
+  content: |-
+    <p>HTTP&#39;s Extended Connect&#39;s Connect-UDP protocol enables a client to
+       proxy a UDP flow from the HTTP server towards a specified target IP
+       address and UDP port.  QUIC and Real-time transport protocol (RTP)
+       are examples of transport protocols that use UDP and support Explicit
+       Congestion Notification (ECN) and provide the necessary feedback.
+       This document specifies how ECN and DSCP can be supported through an
+       extension to the Connect-UDP protocol for HTTP without per-packet
+       byte overhead, soley using Context IDs.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-westerlund-masque-connect-udp-ecn-dscp-00
+    formattedref:
+      content: draft-westerlund-masque-connect-udp-ecn-dscp-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-westerlund-masque-connect-udp-ecn-dscp-00
@@ -33,11 +37,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-westerlund-masque-connect-udp-ecn-dscp-01
+    formattedref:
+      content: draft-westerlund-masque-connect-udp-ecn-dscp-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-westerlund-masque-connect-udp-ecn-dscp-01
     docidentifier:
     - content: draft-westerlund-masque-connect-udp-ecn-dscp-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-westerlund-masque-connect-udp-ecn-dscp-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-westerlund-masque-connect-udp-ecn-dscp-02
+    docidentifier:
+    - content: draft-westerlund-masque-connect-udp-ecn-dscp-02
       type: Internet-Draft
       primary: true

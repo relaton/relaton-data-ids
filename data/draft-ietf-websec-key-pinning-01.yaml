@@ -1,7 +1,7 @@
 ---
 id: draftietfwebseckeypinning01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Chris Palmer
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,20 +69,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo describes an extension to the HTTP protocol allowing web\n
-    \  host operators to instruct user agents (UAs) to remember (\"pin\") the\n   hosts'
-    cryptographic identities for a given period of time.  During\n   that time, UAs
-    will require that the host present a certificate chain\n   including at least
-    one Subject Public Key Info structure whose\n   fingerprint matches one or more
-    of the pinned fingerprints for that\n   host.  By effectively reducing the scope
-    of authorities who can\n   authenticate the domain during the lifetime of the
-    pin, pinning may\n   reduce the incidence of man-in-the-middle attacks due to
-    compromised\n   Certification Authorities and other authentication errors and\n
-    \  attacks.\n\n\t "
+  content: |-
+    <p>This memo describes an extension to the HTTP protocol allowing web
+       host operators to instruct user agents (UAs) to remember (&quot;pin&quot;) the
+       hosts&#39; cryptographic identities for a given period of time.  During
+       that time, UAs will require that the host present a certificate chain
+       including at least one Subject Public Key Info structure whose
+       fingerprint matches one or more of the pinned fingerprints for that
+       host.  By effectively reducing the scope of authorities who can
+       authenticate the domain during the lifetime of the pin, pinning may
+       reduce the incidence of man-in-the-middle attacks due to compromised
+       Certification Authorities and other authentication errors and
+       attacks.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-websec-key-pinning-02
+    formattedref:
+      content: draft-ietf-websec-key-pinning-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-websec-key-pinning-02
@@ -98,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-websec-key-pinning-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

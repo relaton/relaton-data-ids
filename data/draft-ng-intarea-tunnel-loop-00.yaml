@@ -1,7 +1,7 @@
 ---
 id: draftngintareatunnelloop00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -93,7 +93,7 @@ contributor:
         - language: en
           content: Panasonic
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -101,15 +101,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "Many protocols in the Internet Protocol suite use packet\nencapsulations.
-    \ This runs into the danger of forming a tunnel loop.\nSince each tunnel entry
-    point encapsulates the inner packet with a\ntunnel packet header that contains
-    a new hop count, a packet entering\na tunnel loop may be routed infinitely, consuming
-    network resources.\nAlthough there exist methods to cause a packet in a tunnel
-    loop to be\ndiscarded eventually, it would be more desirable to detect the\npresence
-    of a tunnel loop and act accordingly.  This draft explores\nthe possibility for
-    tunnel entry points to detect the presence of a\ntunnel loop by using an extra
-    identifier tagged to the outer packet\nheader.\n\t "
+  content: |-
+    <p>Many protocols in the Internet Protocol suite use packet
+    encapsulations.  This runs into the danger of forming a tunnel loop.
+    Since each tunnel entry point encapsulates the inner packet with a
+    tunnel packet header that contains a new hop count, a packet entering
+    a tunnel loop may be routed infinitely, consuming network resources.
+    Although there exist methods to cause a packet in a tunnel loop to be
+    discarded eventually, it would be more desirable to detect the
+    presence of a tunnel loop and act accordingly.  This draft explores
+    the possibility for tunnel entry points to detect the presence of a
+    tunnel loop by using an extra identifier tagged to the outer packet
+    header.</p>
 series:
 - type: main
   title:
@@ -118,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-ng-intarea-tunnel-loop-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

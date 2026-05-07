@@ -1,7 +1,7 @@
 ---
 id: draftirtfcfrgfrost11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Cloudflare
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -132,19 +132,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In this draft, we present the two-round signing variant of FROST, a\n
-    \  Flexible Round-Optimized Schnorr Threshold signature scheme.  FROST\n   signatures
-    can be issued after a threshold number of entities\n   cooperate to issue a signature,
-    allowing for improved distribution of\n   trust and redundancy with respect to
-    a secret key.  Further, this\n   draft specifies signatures that are compatible
-    with [RFC8032].\n   However, unlike [RFC8032], the protocol for producing signatures
-    in\n   this draft is not deterministic, so as to ensure protection against a\n
-    \  key-recovery attack that is possible when even only one signer\n   participant
-    is malicious.\n\n\t "
+  content: |-
+    <p>In this draft, we present the two-round signing variant of FROST, a
+       Flexible Round-Optimized Schnorr Threshold signature scheme.  FROST
+       signatures can be issued after a threshold number of entities
+       cooperate to issue a signature, allowing for improved distribution of
+       trust and redundancy with respect to a secret key.  Further, this
+       draft specifies signatures that are compatible with [RFC8032].
+       However, unlike [RFC8032], the protocol for producing signatures in
+       this draft is not deterministic, so as to ensure protection against a
+       key-recovery attack that is possible when even only one signer
+       participant is malicious.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-irtf-cfrg-frost-10
+    formattedref:
+      content: draft-irtf-cfrg-frost-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-frost-10
@@ -154,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-irtf-cfrg-frost-12
+    formattedref:
+      content: draft-irtf-cfrg-frost-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-frost-12
@@ -170,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-irtf-cfrg-frost-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

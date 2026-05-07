@@ -1,7 +1,7 @@
 ---
 id: draftietfdprivexfrovertls02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Salesforce
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -157,16 +157,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS zone transfers are transmitted in clear text, which gives\n   attackers
-    the opportunity to collect the content of a zone by\n   eavesdropping on network
-    connections.  The DNS Transaction Signature\n   (TSIG) mechanism is specified
-    to restrict direct zone transfer to\n   authorized clients only, but it does not
-    add confidentiality.  This\n   document specifies use of TLS, rather then clear
-    text, to prevent\n   zone contents collection via passive monitoring of zone transfers.\n\n\t "
+  content: |-
+    <p>DNS zone transfers are transmitted in clear text, which gives
+       attackers the opportunity to collect the content of a zone by
+       eavesdropping on network connections.  The DNS Transaction Signature
+       (TSIG) mechanism is specified to restrict direct zone transfer to
+       authorized clients only, but it does not add confidentiality.  This
+       document specifies use of TLS, rather then clear text, to prevent
+       zone contents collection via passive monitoring of zone transfers.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dprive-xfr-over-tls-01
+    formattedref:
+      content: draft-ietf-dprive-xfr-over-tls-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-01
@@ -176,7 +179,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dprive-xfr-over-tls-03
+    formattedref:
+      content: draft-ietf-dprive-xfr-over-tls-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-03
@@ -192,7 +196,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dprive-xfr-over-tls-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

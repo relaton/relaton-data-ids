@@ -1,7 +1,8 @@
 ---
 id: draftsullivantlssignedechupdates
-schema_version: v1.4.1
-formattedref: draft-sullivan-tls-signed-ech-updates
+schema_version: v1.5.6
+formattedref:
+  content: draft-sullivan-tls-signed-ech-updates
 title:
 - language: en
   script: Latn
@@ -13,23 +14,38 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Encrypted ClientHello (ECH) requires clients to have the server's ECH\n
-    \  configuration before connecting.  Currently, when ECH fails, servers\n   can
-    send updated configurations but clients cannot authenticate them\n   without a
-    certificate for the public name, limiting deployment\n   flexibility.\n\n   This
-    document specifies an authenticated ECH configuration update\n   mechanism.  Servers
-    can deliver signed ECH configurations during the\n   TLS handshake, allowing clients
-    to authenticate and immediately use\n   them for retry.  The mechanism decouples
-    ECH key distribution from\n   transport, enabling the same signed configuration
-    to work via DNS or\n   TLS delivery.\n\n\t "
+  content: |-
+    <p>Encrypted ClientHello (ECH) requires clients to have the server&#39;s ECH
+       configuration before connecting.  Currently, when ECH fails, servers
+       can send updated configurations but clients cannot authenticate them
+       unless the server has a valid certificate for the public name,
+       limiting deployment flexibility.
+
+       This document specifies a new mechanism for authenticating ECH
+       configurations.  Servers include additional information in their
+       initial ECH configurations, which enables clients to authenticate
+       updated configurations without relying on a valid certificate for the
+       public name.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-sullivan-tls-signed-ech-updates-00
+    formattedref:
+      content: draft-sullivan-tls-signed-ech-updates-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sullivan-tls-signed-ech-updates-00
     docidentifier:
     - content: draft-sullivan-tls-signed-ech-updates-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-sullivan-tls-signed-ech-updates-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sullivan-tls-signed-ech-updates-01
+    docidentifier:
+    - content: draft-sullivan-tls-signed-ech-updates-01
       type: Internet-Draft
       primary: true

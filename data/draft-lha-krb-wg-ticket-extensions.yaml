@@ -1,7 +1,8 @@
 ---
 id: draftlhakrbwgticketextensions
-schema_version: v1.4.1
-formattedref: draft-lha-krb-wg-ticket-extensions
+schema_version: v1.5.6
+formattedref:
+  content: draft-lha-krb-wg-ticket-extensions
 title:
 - language: en
   script: Latn
@@ -13,21 +14,27 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "The Kerberos protocol does not allow ticket extensions.  This make it\nharder
-    to deploy features like referrals and PKCROSS.\n\nSince the Kerberos protocol
-    did not specified extensibility for the\nTicket structure and the current implementations
-    are aware of the\ncontents of tickets, the extension protocol cannot simply extend
-    the\nTicket ASN.1 structure.  Instead, the extension data needs to be\nhidden
-    inside the ticket.\n\nThis protocol defines two methods to add extend the tickets.
-    \ The\nfirst method requires updated clients and is more in line with the\nfuture
-    development of Kerberos.  The second way does not require\nupdate client.  To
-    take advantage of this protocol the server (KDC or\napplication server) need to
-    update a well.  The two methods are\nequivalent and there is a 1-1 mapping between
-    them.\n\t "
+  content: |-
+    <p>The Kerberos protocol does not allow ticket extensions.  This make it
+    harder to deploy features like referrals and PKCROSS.
+
+    Since the Kerberos protocol did not specified extensibility for the
+    Ticket structure and the current implementations are aware of the
+    contents of tickets, the extension protocol cannot simply extend the
+    Ticket ASN.1 structure.  Instead, the extension data needs to be
+    hidden inside the ticket.
+
+    This protocol defines two methods to add extend the tickets.  The
+    first method requires updated clients and is more in line with the
+    future development of Kerberos.  The second way does not require
+    update client.  To take advantage of this protocol the server (KDC or
+    application server) need to update a well.  The two methods are
+    equivalent and there is a 1-1 mapping between them.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-lha-krb-wg-ticket-extensions-02
+    formattedref:
+      content: draft-lha-krb-wg-ticket-extensions-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-lha-krb-wg-ticket-extensions-02

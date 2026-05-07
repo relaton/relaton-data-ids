@@ -1,7 +1,7 @@
 ---
 id: draftietfimapapndrfc2088bis04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Isode Ltd
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -54,19 +54,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The Internet Message Access Protocol (RFC 3501) contains the \"literal\"
-    syntactic construct for communicating strings. When sending a literal from client
-    to server, IMAP requires the client to wait for the server to send a command continuation
-    request between sending the octet count and the string data. This document specifies
-    an alternate form of literal that does not require this network round trip.\n\n
-    This document specifies 2 IMAP extensions: LITERAL+ and LITERAL-. LITERAL+ allows
-    the alternate form of literals in all IMAP commands. LITERAL- is the same as LITERAL+,
-    but it disallows the alternate form of literals unless they are 4096 bytes or
-    less.\n\n This document obsoletes RFC 2088.\n\t "
+  content: |-
+    <p>The Internet Message Access Protocol (RFC 3501) contains the &quot;literal&quot; syntactic construct for communicating strings. When sending a literal from client to server, IMAP requires the client to wait for the server to send a command continuation request between sending the octet count and the string data. This document specifies an alternate form of literal that does not require this network round trip.
+
+     This document specifies 2 IMAP extensions: LITERAL+ and LITERAL-. LITERAL+ allows the alternate form of literals in all IMAP commands. LITERAL- is the same as LITERAL+, but it disallows the alternate form of literals unless they are 4096 bytes or less.
+
+     This document obsoletes RFC 2088.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-imapapnd-rfc2088bis-03
+    formattedref:
+      content: draft-ietf-imapapnd-rfc2088bis-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-imapapnd-rfc2088bis-03
@@ -82,7 +80,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-imapapnd-rfc2088bis-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

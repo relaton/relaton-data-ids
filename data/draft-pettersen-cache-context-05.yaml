@@ -1,7 +1,7 @@
 ---
 id: draftpettersencachecontext05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Yngve Pettersen
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -49,22 +49,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "A common problem for sensitive web services is informing the client,\nin
-    a reliable fashion, when a password protected resource is no\nlonger valid because
-    the user is logged out of the service.  This is,\nin particular, considered a
-    potential security problem by some\nsensitive services, such as online banking,
-    when the user navigates\nthe client's history list, which is supposed to display
-    the resource\nas it was when it was loaded, not as it is at some later point in\ntime.\n\nThis
-    document presents a method for collecting such sensitive\nresources into a group,
-    called a \"Cache Context\", which permits the\nserver to invalidate all the resources
-    belonging in the group either\nby direct action, or according to some expiration
-    policy.  The\ncontext can be configured to invalidate not just the resources,
-    but\nalso specific cookies, HTTP authentication credentials and HTTP over\nTLS
-    session information.\n\t "
+  content: |-
+    <p>A common problem for sensitive web services is informing the client,
+    in a reliable fashion, when a password protected resource is no
+    longer valid because the user is logged out of the service.  This is,
+    in particular, considered a potential security problem by some
+    sensitive services, such as online banking, when the user navigates
+    the client&#39;s history list, which is supposed to display the resource
+    as it was when it was loaded, not as it is at some later point in
+    time.
+
+    This document presents a method for collecting such sensitive
+    resources into a group, called a &quot;Cache Context&quot;, which permits the
+    server to invalidate all the resources belonging in the group either
+    by direct action, or according to some expiration policy.  The
+    context can be configured to invalidate not just the resources, but
+    also specific cookies, HTTP authentication credentials and HTTP over
+    TLS session information.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-pettersen-cache-context-06
+    formattedref:
+      content: draft-pettersen-cache-context-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pettersen-cache-context-06
@@ -80,7 +86,7 @@ series:
     content: Internet-Draft
   number: draft-pettersen-cache-context-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

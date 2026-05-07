@@ -1,7 +1,7 @@
 ---
 id: draftbhatiakarpospfiplayerprotection03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -91,7 +91,7 @@ contributor:
         language: en
         content: Dacheng Zhang
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -99,17 +99,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The current OSPFv2 cryptographic authentication mechanism as defined\nin
-    the OSPF standards is vulnerable to both inter-session and intra-\nsession replay
-    attacks when its uses manual keying.  Additionally,\nthe existing cryptographic
-    authentication schemes do not cover the IP\nheader.  This omission can be exploited
-    to carry out various types of\nattacks.\n\nThis draft proposes an authentication
-    scheme based on a challenge-\nresponse mechanism that will protect OSPFv2 from
-    both inter and intra\nreplay attacks when its using manual keys for securing its
-    protocol\npackets.  For comparison, an approach based on making sequence\nnumbers
-    unique is presented.  Later we also describe some changes in\nthe cryptographic
-    hash computation so that we eliminate most attacks\nthat result because of OSPFv2
-    not protecting the IP header.\n\t "
+  content: |-
+    <p>The current OSPFv2 cryptographic authentication mechanism as defined
+    in the OSPF standards is vulnerable to both inter-session and intra-
+    session replay attacks when its uses manual keying.  Additionally,
+    the existing cryptographic authentication schemes do not cover the IP
+    header.  This omission can be exploited to carry out various types of
+    attacks.
+
+    This draft proposes an authentication scheme based on a challenge-
+    response mechanism that will protect OSPFv2 from both inter and intra
+    replay attacks when its using manual keys for securing its protocol
+    packets.  For comparison, an approach based on making sequence
+    numbers unique is presented.  Later we also describe some changes in
+    the cryptographic hash computation so that we eliminate most attacks
+    that result because of OSPFv2 not protecting the IP header.</p>
 series:
 - type: main
   title:
@@ -118,7 +122,7 @@ series:
     content: Internet-Draft
   number: draft-bhatia-karp-ospf-ip-layer-protection-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

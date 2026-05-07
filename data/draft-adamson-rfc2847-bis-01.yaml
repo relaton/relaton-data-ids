@@ -1,7 +1,7 @@
 ---
 id: draftadamsonrfc2847bis01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Editors
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,18 +54,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memorandum describes a method whereby one can use GSS-API\n   [RFC2078]
-    to supply a public-key based secure channel between a\n   client and a server
-    without the need for an external Public Key\n   Infrastructure for certificate
-    verification.  The method leverages\n   the existing Simple Public Key Mechanism
-    (SPKM), and is specified as\n   two separate GSS-API mechanisms, SPKM-3 and LIPKEY,
-    with LIPKEY\n   layered above SPKM-3.\n\n   SPKM-3 describes a method for creation
-    of the secure channel using\n   mutual authentication where both a user and server
-    authenticate with\n   public-key certificates [RFC3280].  SPKM-3 also describes
-    a method\n   for creation of the secure channel where only the server\n   authenticates
-    with a public-key certificate, and the user is\n   anonymous.  LIPKEY then uses
-    the SPKM-3 anonymous secure channel to\n   authenticate a user with a password,
-    completing the mutual\n   authentication.\n\n\t "
+  content: |-
+    <p>This memorandum describes a method whereby one can use GSS-API
+       [RFC2078] to supply a public-key based secure channel between a
+       client and a server without the need for an external Public Key
+       Infrastructure for certificate verification.  The method leverages
+       the existing Simple Public Key Mechanism (SPKM), and is specified as
+       two separate GSS-API mechanisms, SPKM-3 and LIPKEY, with LIPKEY
+       layered above SPKM-3.
+
+       SPKM-3 describes a method for creation of the secure channel using
+       mutual authentication where both a user and server authenticate with
+       public-key certificates [RFC3280].  SPKM-3 also describes a method
+       for creation of the secure channel where only the server
+       authenticates with a public-key certificate, and the user is
+       anonymous.  LIPKEY then uses the SPKM-3 anonymous secure channel to
+       authenticate a user with a password, completing the mutual
+       authentication.</p>
 series:
 - type: main
   title:
@@ -74,7 +79,7 @@ series:
     content: Internet-Draft
   number: draft-adamson-rfc2847-bis-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

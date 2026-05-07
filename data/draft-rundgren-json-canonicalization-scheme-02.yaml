@@ -1,7 +1,7 @@
 ---
 id: draftrundgrenjsoncanonicalizationscheme02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Independent
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -54,20 +54,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Cryptographic operations like hashing and signing depend on that the\n
-    \  target data does not change during serialization, transport, or\n   parsing.
-    \ By applying the rules defined by JCS (JSON Canonicalization\n   Scheme), data
-    provided in the JSON [RFC8259] format can be exchanged\n   \"as is\", while still
-    being subject to secure cryptographic\n   operations.  JCS achieves this by building
-    on the serialization\n   formats for JSON primitives as defined by ECMAScript
-    [ES6],\n   constraining JSON data to the I-JSON [RFC7493] subset, and through
-    a\n   platform independent property sorting scheme.\n\n   The intended audiences
-    of this document are JSON tool vendors, as\n   well as designers of JSON based
-    cryptographic solutions.\n\n\t "
+  content: |-
+    <p>Cryptographic operations like hashing and signing depend on that the
+       target data does not change during serialization, transport, or
+       parsing.  By applying the rules defined by JCS (JSON Canonicalization
+       Scheme), data provided in the JSON [RFC8259] format can be exchanged
+       &quot;as is&quot;, while still being subject to secure cryptographic
+       operations.  JCS achieves this by building on the serialization
+       formats for JSON primitives as defined by ECMAScript [ES6],
+       constraining JSON data to the I-JSON [RFC7493] subset, and through a
+       platform independent property sorting scheme.
+
+       The intended audiences of this document are JSON tool vendors, as
+       well as designers of JSON based cryptographic solutions.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rundgren-json-canonicalization-scheme-01
+    formattedref:
+      content: draft-rundgren-json-canonicalization-scheme-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rundgren-json-canonicalization-scheme-01
@@ -77,7 +81,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-rundgren-json-canonicalization-scheme-03
+    formattedref:
+      content: draft-rundgren-json-canonicalization-scheme-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rundgren-json-canonicalization-scheme-03
@@ -93,7 +98,7 @@ series:
     content: Internet-Draft
   number: draft-rundgren-json-canonicalization-scheme-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

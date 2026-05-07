@@ -1,7 +1,7 @@
 ---
 id: draftvanbrouwershavenacmeautodiscovery01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Entrust Limited
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -79,25 +79,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A significant impediment to the widespread adoption of the Automated\n
-    \  Certificate Management Environment (ACME) [RFC8555] is that ACME\n   clients
-    need to be pre-configured with the URL of the ACME server to\n   be used.  This
-    often leaves domain owners at the mercy of their\n   hosting provider as to which
-    Certification Authorities (CAs) can be\n   used.  This specification provides
-    a mechanism to bootstrap ACME\n   client configuration from a domain's DNS CAA
-    Resource Record\n   [RFC8659], thus giving control of which CA(s) to use back
-    to the\n   domain owner.\n\n   Specifically, this document specifies two new extensions
-    to the DNS\n   CAA Resource Record: the \"discovery\" and \"priority\" parameters.\n
-    \  Additionally, it registers the URI \"/.well-known/acme\" at which all\n   compliant
-    ACME servers will host their ACME directory object.  By\n   retrieving instructions
-    for the ACME client from the authorized\n   CA(s), this mechanism allows for the
-    domain owner to configure\n   multiple CAs in either load-balanced or fallback
-    prioritizations\n   which improves user preferences and increases diversity in\n
-    \  certificate issuers.\n\n\t "
+  content: |-
+    <p>A significant impediment to the widespread adoption of the Automated
+       Certificate Management Environment (ACME) [RFC8555] is that ACME
+       clients need to be pre-configured with the URL of the ACME server to
+       be used.  This often leaves domain owners at the mercy of their
+       hosting provider as to which Certification Authorities (CAs) can be
+       used.  This specification provides a mechanism to bootstrap ACME
+       client configuration from a domain&#39;s DNS CAA Resource Record
+       [RFC8659], thus giving control of which CA(s) to use back to the
+       domain owner.
+
+       Specifically, this document specifies two new extensions to the DNS
+       CAA Resource Record: the &quot;discovery&quot; and &quot;priority&quot; parameters.
+       Additionally, it registers the URI &quot;/.well-known/acme&quot; at which all
+       compliant ACME servers will host their ACME directory object.  By
+       retrieving instructions for the ACME client from the authorized
+       CA(s), this mechanism allows for the domain owner to configure
+       multiple CAs in either load-balanced or fallback prioritizations
+       which improves user preferences and increases diversity in
+       certificate issuers.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-vanbrouwershaven-acme-auto-discovery-00
+    formattedref:
+      content: draft-vanbrouwershaven-acme-auto-discovery-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vanbrouwershaven-acme-auto-discovery-00
@@ -107,7 +113,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-vanbrouwershaven-acme-auto-discovery-02
+    formattedref:
+      content: draft-vanbrouwershaven-acme-auto-discovery-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vanbrouwershaven-acme-auto-discovery-02
@@ -123,7 +130,7 @@ series:
     content: Internet-Draft
   number: draft-vanbrouwershaven-acme-auto-discovery-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

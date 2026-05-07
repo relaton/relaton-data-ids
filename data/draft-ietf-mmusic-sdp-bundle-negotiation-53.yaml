@@ -1,7 +1,7 @@
 ---
 id: draftietfmmusicsdpbundlenegotiation53
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -102,7 +102,7 @@ contributor:
         - language: en
           content: Cisco
 version:
-- draft: '53'
+- content: '53'
 language:
 - en
 script:
@@ -110,25 +110,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This specification defines a new Session Description Protocol (SDP)\n
-    \  Grouping Framework extension, 'BUNDLE'.  The extension can be used\n   with
-    the SDP Offer/Answer mechanism to negotiate the usage of a\n   single transport
-    (5-tuple) for sending and receiving media described\n   by multiple SDP media
-    descriptions (\"m=\" sections).  Such transport\n   is referred to as a BUNDLE
-    transport, and the media is referred to as\n   bundled media.  The \"m=\" sections
-    that use the BUNDLE transport form\n   a BUNDLE group.\n\n   This specification
-    updates RFC 3264, to also allow assigning a zero\n   port value to a \"m=\" section
-    in cases where the media described by\n   the \"m=\" section is not disabled or
-    rejected.\n\n   This specification defines a new RTP Control Protocol (RTCP) source\n
-    \  description (SDES) item and a new RTP header extension that can be\n   used
-    to correlate bundled RTP/RTCP packets with their appropriate\n   \"m=\" section.\n\n
-    \  This specification updates RFC 7941, by adding an exception, for the\n   MID
-    RTP header extension, to the requirement regarding protection of\n   an SDES RTP
-    header extension carrying an SDES item for the MID RTP\n   header extension.\n\n\t "
+  content: |-
+    <p>This specification defines a new Session Description Protocol (SDP)
+       Grouping Framework extension, &#39;BUNDLE&#39;.  The extension can be used
+       with the SDP Offer/Answer mechanism to negotiate the usage of a
+       single transport (5-tuple) for sending and receiving media described
+       by multiple SDP media descriptions (&quot;m=&quot; sections).  Such transport
+       is referred to as a BUNDLE transport, and the media is referred to as
+       bundled media.  The &quot;m=&quot; sections that use the BUNDLE transport form
+       a BUNDLE group.
+
+       This specification updates RFC 3264, to also allow assigning a zero
+       port value to a &quot;m=&quot; section in cases where the media described by
+       the &quot;m=&quot; section is not disabled or rejected.
+
+       This specification defines a new RTP Control Protocol (RTCP) source
+       description (SDES) item and a new RTP header extension that can be
+       used to correlate bundled RTP/RTCP packets with their appropriate
+       &quot;m=&quot; section.
+
+       This specification updates RFC 7941, by adding an exception, for the
+       MID RTP header extension, to the requirement regarding protection of
+       an SDES RTP header extension carrying an SDES item for the MID RTP
+       header extension.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-mmusic-sdp-bundle-negotiation-52
+    formattedref:
+      content: draft-ietf-mmusic-sdp-bundle-negotiation-52
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mmusic-sdp-bundle-negotiation-52
@@ -138,7 +147,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-mmusic-sdp-bundle-negotiation-54
+    formattedref:
+      content: draft-ietf-mmusic-sdp-bundle-negotiation-54
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mmusic-sdp-bundle-negotiation-54
@@ -154,7 +164,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-mmusic-sdp-bundle-negotiation-53
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

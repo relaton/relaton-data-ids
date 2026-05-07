@@ -1,7 +1,7 @@
 ---
 id: draftdukeras2reliability12
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Dale Moberg
 version:
-- draft: '12'
+- content: '12'
 language:
 - en
 script:
@@ -69,35 +69,54 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The goal of this document is to define approaches to achieve a \"once\nand
-    only once\" delivery of messages. The EDIINT AS2 protocol [AS2] is\nimplemented
-    by a number of software tools on a variety of platforms\nwith varying capabilities
-    and with varying network service quality.\nAlthough the AS2 protocol defines a
-    unique \"Message-ID\", current\nimplementations of AS2 do not provide a standard
-    method to prevent\nthe same message (re-transmitted by the initial sender) from
-    reaching\nback-end business applications at the initial receiver. TCP\nunderpinnings
-    of HTTP over which AS2 operates generally provide a\ngood quality of network connectivity,
-    but experience indicates a need\nto be able to compensate for both transient server
-    and socket\nexceptions, including \"Connection refused\" as well as \"Server busy.\"\nIn
-    addition, difficulties with server availability, stability, and\nloads can result
-    in reduced operational reliability. This document\ndescribes some ways to compensate
-    for exceptions and enhance the\nreliability of AS2 protocol operation. Implementation
-    of these\nreliability features is indicated by presence of the \"AS2-\nReliability\"
-    value in the EDIINT-Features header.\n\nIntended Status\n\nThe intent of this
-    document is to be placed on the RFC track as an\nInformational RFC.\n\nFeedback
-    Instructions:\nNOTE TO RFC EDITOR:  This section should be removed by the RFC
-    editor\nprior to publication.\n\nIf you want to provide feedback on this draft,
-    follow these\nguidelines:\n\n-Send feedback via e-mail to the ietf-ediint list
-    for discussion,\nwith \"AS2 Reliability\" in the Subject field. To enter or follow
-    the\ndiscussion, you need to subscribe to ietf-ediint@imc.org.\n\n-Be specific
-    as to what section you are referring to, preferably\nquoting the portion that
-    needs modification, after which you state\nyour comments.\n\n-If you are recommending
-    some text to be replaced with your suggested\ntext, again, quote the section to
-    be replaced, and be clear on the\nsection in question.\n\n\t "
+  content: |-
+    <p>The goal of this document is to define approaches to achieve a &quot;once
+    and only once&quot; delivery of messages. The EDIINT AS2 protocol [AS2] is
+    implemented by a number of software tools on a variety of platforms
+    with varying capabilities and with varying network service quality.
+    Although the AS2 protocol defines a unique &quot;Message-ID&quot;, current
+    implementations of AS2 do not provide a standard method to prevent
+    the same message (re-transmitted by the initial sender) from reaching
+    back-end business applications at the initial receiver. TCP
+    underpinnings of HTTP over which AS2 operates generally provide a
+    good quality of network connectivity, but experience indicates a need
+    to be able to compensate for both transient server and socket
+    exceptions, including &quot;Connection refused&quot; as well as &quot;Server busy.&quot;
+    In addition, difficulties with server availability, stability, and
+    loads can result in reduced operational reliability. This document
+    describes some ways to compensate for exceptions and enhance the
+    reliability of AS2 protocol operation. Implementation of these
+    reliability features is indicated by presence of the &quot;AS2-
+    Reliability&quot; value in the EDIINT-Features header.
+
+    Intended Status
+
+    The intent of this document is to be placed on the RFC track as an
+    Informational RFC.
+
+    Feedback Instructions:
+    NOTE TO RFC EDITOR:  This section should be removed by the RFC editor
+    prior to publication.
+
+    If you want to provide feedback on this draft, follow these
+    guidelines:
+
+    -Send feedback via e-mail to the ietf-ediint list for discussion,
+    with &quot;AS2 Reliability&quot; in the Subject field. To enter or follow the
+    discussion, you need to subscribe to ietf-ediint@imc.org.
+
+    -Be specific as to what section you are referring to, preferably
+    quoting the portion that needs modification, after which you state
+    your comments.
+
+    -If you are recommending some text to be replaced with your suggested
+    text, again, quote the section to be replaced, and be clear on the
+    section in question.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-duker-as2-reliability-11
+    formattedref:
+      content: draft-duker-as2-reliability-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-duker-as2-reliability-11
@@ -107,7 +126,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-duker-as2-reliability-13
+    formattedref:
+      content: draft-duker-as2-reliability-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-duker-as2-reliability-13
@@ -123,7 +143,7 @@ series:
     content: Internet-Draft
   number: draft-duker-as2-reliability-12
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

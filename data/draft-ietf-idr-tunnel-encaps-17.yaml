@@ -1,7 +1,7 @@
 ---
 id: draftietfidrtunnelencaps17
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '17'
+- content: '17'
 language:
 - en
 script:
@@ -132,25 +132,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC 5512 defines a BGP Path Attribute known as the \"Tunnel\n   Encapsulation
-    Attribute\".  This attribute allows one to specify a set\n   of tunnels.  For
-    each such tunnel, the attribute can provide the\n   information needed to create
-    the tunnel and the corresponding\n   encapsulation header.  The attribute can
-    also provide information\n   that aids in choosing whether a particular packet
-    is to be sent\n   through a particular tunnel.  RFC 5512 states that the attribute
-    is\n   only carried in BGP UPDATEs that use the \"Encapsulation Subsequent\n   Address
-    Family (Encapsulation SAFI)\".  This document deprecates the\n   Encapsulation
-    SAFI (which has never been used in production), and\n   specifies semantics for
-    the attribute when it is carried in UPDATEs\n   of certain other SAFIs.  This
-    document adds support for additional\n   Tunnel Types, and allows a remote tunnel
-    endpoint address to be\n   specified for each tunnel.  This document also provides
-    support for\n   specifying fields of any inner or outer encapsulations that may
-    be\n   used by a particular tunnel.\n\n   This document obsoletes RFC 5512.  Since
-    RFCs 5566 and 5640 rely on\n   RFC 5512, they are likewise obsoleted.\n\n\t "
+  content: |-
+    <p>RFC 5512 defines a BGP Path Attribute known as the &quot;Tunnel
+       Encapsulation Attribute&quot;.  This attribute allows one to specify a set
+       of tunnels.  For each such tunnel, the attribute can provide the
+       information needed to create the tunnel and the corresponding
+       encapsulation header.  The attribute can also provide information
+       that aids in choosing whether a particular packet is to be sent
+       through a particular tunnel.  RFC 5512 states that the attribute is
+       only carried in BGP UPDATEs that use the &quot;Encapsulation Subsequent
+       Address Family (Encapsulation SAFI)&quot;.  This document deprecates the
+       Encapsulation SAFI (which has never been used in production), and
+       specifies semantics for the attribute when it is carried in UPDATEs
+       of certain other SAFIs.  This document adds support for additional
+       Tunnel Types, and allows a remote tunnel endpoint address to be
+       specified for each tunnel.  This document also provides support for
+       specifying fields of any inner or outer encapsulations that may be
+       used by a particular tunnel.
+
+       This document obsoletes RFC 5512.  Since RFCs 5566 and 5640 rely on
+       RFC 5512, they are likewise obsoleted.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-tunnel-encaps-16
+    formattedref:
+      content: draft-ietf-idr-tunnel-encaps-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-tunnel-encaps-16
@@ -160,7 +166,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-tunnel-encaps-18
+    formattedref:
+      content: draft-ietf-idr-tunnel-encaps-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-tunnel-encaps-18
@@ -176,7 +183,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-tunnel-encaps-17
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

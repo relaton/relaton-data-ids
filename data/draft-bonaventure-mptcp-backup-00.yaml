@@ -1,7 +1,7 @@
 ---
 id: draftbonaventuremptcpbackup00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -138,7 +138,7 @@ contributor:
         - language: en
           content: UCLouvain
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -146,12 +146,14 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document documents some issues with the current definition of\n
-    \  the backup subflows in [RFC6824].  The solution proposed in [RFC6824]\n   works
-    well when a subflow completely fails.  However, if a subflow\n   suffers from
-    huge packet losses, but still remains up, then the delay\n   to switch to the
-    backup subflow may be very long.  We propose to\n   measure the evolution of the
-    retransmission timer (RTO) to detect the\n   bad performance of subflows.\n\n\t "
+  content: |-
+    <p>This document documents some issues with the current definition of
+       the backup subflows in [RFC6824].  The solution proposed in [RFC6824]
+       works well when a subflow completely fails.  However, if a subflow
+       suffers from huge packet losses, but still remains up, then the delay
+       to switch to the backup subflow may be very long.  We propose to
+       measure the evolution of the retransmission timer (RTO) to detect the
+       bad performance of subflows.</p>
 series:
 - type: main
   title:
@@ -160,7 +162,7 @@ series:
     content: Internet-Draft
   number: draft-bonaventure-mptcp-backup-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

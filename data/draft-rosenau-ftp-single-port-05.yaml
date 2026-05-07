@@ -1,7 +1,7 @@
 ---
 id: draftrosenauftpsingleport05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Martin Rosenau
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -49,14 +49,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The FTP protocol [1] needs two connections. A control and a data\nconnection.
-    Using networks with \"port forwarding\" (eg. SSH, DSL\nrouters, VPN etc.) there
-    is often only the possibility for the\nserver to listen on only one TCP port.
-    In such networks the\ntraditional FTP protocol cannot be used.\n\nThis memo describes
-    an extension to the FTP protocol that allows the\nuse of FTP using only one TCP
-    port number for both control\nconnections and passive-mode data connections.\n\nThe
-    extension can also be used to use the FTP protocol over network\nprotocols that
-    do not have a \"port\" concept (such as the NetBIOS\nprotocol).\n\t "
+  content: |-
+    <p>The FTP protocol [1] needs two connections. A control and a data
+    connection. Using networks with &quot;port forwarding&quot; (eg. SSH, DSL
+    routers, VPN etc.) there is often only the possibility for the
+    server to listen on only one TCP port. In such networks the
+    traditional FTP protocol cannot be used.
+
+    This memo describes an extension to the FTP protocol that allows the
+    use of FTP using only one TCP port number for both control
+    connections and passive-mode data connections.
+
+    The extension can also be used to use the FTP protocol over network
+    protocols that do not have a &quot;port&quot; concept (such as the NetBIOS
+    protocol).</p>
 series:
 - type: main
   title:
@@ -65,7 +71,7 @@ series:
     content: Internet-Draft
   number: draft-rosenau-ftp-single-port-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

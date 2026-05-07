@@ -1,7 +1,7 @@
 ---
 id: draftbarbosaafs3vldblocktimestamp00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: Sine Nomine Associates
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -57,13 +57,16 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes the repurposing of the currently unused\n   spares2
-    field within the nvldbentry and uvldbentry structures.  The\n   primary objective
-    is to utilize this field for storing the timestamp\n   representing the date and
-    time when a given volume location entry was\n   locked.  To make this possible,
-    this memo requests the allocation of\n   a new capability bit, VLDB_CAPABILITY_LOCKTIMESTAMP,
-    to be advertised\n   by the Volume Location Server.  When advertised, this bit
-    indicates\n   that the server has the capacity to provide the timestamp in\n   question.\n\n\t "
+  content: |-
+    <p>This document proposes the repurposing of the currently unused
+       spares2 field within the nvldbentry and uvldbentry structures.  The
+       primary objective is to utilize this field for storing the timestamp
+       representing the date and time when a given volume location entry was
+       locked.  To make this possible, this memo requests the allocation of
+       a new capability bit, VLDB_CAPABILITY_LOCKTIMESTAMP, to be advertised
+       by the Volume Location Server.  When advertised, this bit indicates
+       that the server has the capacity to provide the timestamp in
+       question.</p>
 series:
 - type: main
   title:
@@ -72,7 +75,7 @@ series:
     content: Internet-Draft
   number: draft-barbosa-afs3-vldb-locktimestamp-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

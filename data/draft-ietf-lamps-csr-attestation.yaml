@@ -1,7 +1,8 @@
 ---
 id: draftietflampscsrattestation
-schema_version: v1.4.1
-formattedref: draft-ietf-lamps-csr-attestation
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-lamps-csr-attestation
 title:
 - language: en
   script: Latn
@@ -13,23 +14,29 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   A PKI end entity requesting a certificate from a Certification\n   Authority
-    (CA) may wish to offer trustworthy claims about the\n   platform generating the
-    certification request and the environment\n   associated with the corresponding
-    private key, such as whether the\n   private key resides on a hardware security
-    module.\n\n   This specification defines an attribute and an extension that allow\n
-    \  for conveyance of RATS conceptual messages (see Section 8 of\n   [RFC9334],
-    such as Evidence, Endorsements and Attestation Results, in\n   Certificate Signing
-    Requests (CSRs), such as PKCS#10 or Certificate\n   Request Message Format (CRMF)
-    payloads.  This provides an elegant and\n   automatable mechanism for transporting
-    attestation data to a\n   Certification Authority.\n\n   Including Evidence, Endorsements
-    and Attestation Results along with a\n   CSR can help to improve the assessment
-    of the security posture for\n   the private key, and can help the Certification
-    Authority to assess\n   whether it satisfies the requested certificate profile.\n\n\t "
+  content: |-
+    <p>Certification Authorities (CAs) issuing certificates to Public Key
+       Infrastructure (PKI) end entities may require a certificate signing
+       request (CSR) to include additional verifiable information to confirm
+       policy compliance.  For example, a CA may require an end entity to
+       demonstrate that the private key corresponding to a CSR&#39;s public key
+       is secured by a hardware security module (HSM), is not exportable,
+       etc.  The process of generating, transmitting, and verifying
+       additional information required by the CA is called remote
+       attestation.  While work is currently underway to standardize various
+       aspects of remote attestation, a variety of proprietary mechanisms
+       have been in use for years, particularly regarding protection of
+       private keys.
+
+       This specification defines ASN.1 structures which may carry
+       attestation data for PKCS#10 and Certificate Request Message Format
+       (CRMF) messages.  Both standardized and proprietary attestation
+       formats are supported by this specification.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-00
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-00
@@ -39,7 +46,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-01
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-01
@@ -49,7 +57,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-02
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-02
@@ -59,7 +68,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-03
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-03
@@ -69,7 +79,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-04
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-04
@@ -79,7 +90,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-05
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-05
@@ -89,7 +101,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-06
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-06
@@ -99,7 +112,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-07
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-07
@@ -109,7 +123,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-08
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-08
@@ -119,7 +134,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-09
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-09
@@ -129,7 +145,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-10
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-10
@@ -139,7 +156,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-11
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-11
@@ -149,7 +167,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-12
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-12
@@ -159,7 +178,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-13
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-13
@@ -169,7 +189,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-14
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-14
@@ -179,7 +200,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-15
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-15
@@ -189,7 +211,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-16
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-16
@@ -199,7 +222,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-17
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-17
@@ -209,7 +233,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-18
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-18
@@ -219,7 +244,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-19
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-19
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-19
@@ -229,7 +255,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-20
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-20
@@ -239,11 +266,56 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-lamps-csr-attestation-21
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-21
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-21
     docidentifier:
     - content: draft-ietf-lamps-csr-attestation-21
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-22
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-22
+    docidentifier:
+    - content: draft-ietf-lamps-csr-attestation-22
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-23
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-23
+    docidentifier:
+    - content: draft-ietf-lamps-csr-attestation-23
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-24
+    docidentifier:
+    - content: draft-ietf-lamps-csr-attestation-24
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lamps-csr-attestation-25
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-csr-attestation-25
+    docidentifier:
+    - content: draft-ietf-lamps-csr-attestation-25
       type: Internet-Draft
       primary: true

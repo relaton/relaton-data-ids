@@ -1,7 +1,7 @@
 ---
 id: draftwkumaridnsophammer03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -119,7 +119,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -127,18 +127,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document describes a simple DNS cache optimization which keeps\n
-    \  the most popular Resource Records set (RRset) in the DNS cache:\n   Highly
-    Automated Method for Maintaining Expiring Records (HAMMER).\n\n   The principle
-    is that popular RRset in the cache are fetched, that is\n   to say resolved before
-    their TTL expires and flushed.  By fetching\n   RRset before they are being queried
-    by an end user, that is to say\n   prefetched, HAMMER is expected to improve the
-    quality of experience\n   of the end users as well as to optimize the resources
-    involved in\n   large DNSSEC resolving platforms.\n\t "
+  content: |-
+    <p>This document describes a simple DNS cache optimization which keeps
+       the most popular Resource Records set (RRset) in the DNS cache:
+       Highly Automated Method for Maintaining Expiring Records (HAMMER).
+
+       The principle is that popular RRset in the cache are fetched, that is
+       to say resolved before their TTL expires and flushed.  By fetching
+       RRset before they are being queried by an end user, that is to say
+       prefetched, HAMMER is expected to improve the quality of experience
+       of the end users as well as to optimize the resources involved in
+       large DNSSEC resolving platforms.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-wkumari-dnsop-hammer-02
+    formattedref:
+      content: draft-wkumari-dnsop-hammer-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wkumari-dnsop-hammer-02
@@ -154,7 +158,7 @@ series:
     content: Internet-Draft
   number: draft-wkumari-dnsop-hammer-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

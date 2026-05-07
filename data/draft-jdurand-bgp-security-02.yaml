@@ -1,7 +1,7 @@
 ---
 id: draftjdurandbgpsecurity02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: SpaceNet
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -104,19 +104,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   BGP (Border Gateway Protocol) is the protocol almost exclusively used\n
-    \  in the Internet to exchange routing information between network\n   domains.
-    \ Due to this central nature, it's important to understand\n   the security measures
-    that can and should be deployed to prevent\n   accidental or intentional routing
-    disturbances.\n\n   This document describes measures to protect the BGP sessions
-    itself\n   (like TTL, MD5, control plane filtering) and to better control the\n
-    \  flow of routing information, using prefix filtering and\n   automatization
-    of prefix filters, max-prefix filtering, AS path\n   filtering, route flap dampening
-    and BGP community scrubbing.\n\n\t "
+  content: |-
+    <p>BGP (Border Gateway Protocol) is the protocol almost exclusively used
+       in the Internet to exchange routing information between network
+       domains.  Due to this central nature, it&#39;s important to understand
+       the security measures that can and should be deployed to prevent
+       accidental or intentional routing disturbances.
+
+       This document describes measures to protect the BGP sessions itself
+       (like TTL, MD5, control plane filtering) and to better control the
+       flow of routing information, using prefix filtering and
+       automatization of prefix filters, max-prefix filtering, AS path
+       filtering, route flap dampening and BGP community scrubbing.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-jdurand-bgp-security-01
+    formattedref:
+      content: draft-jdurand-bgp-security-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-jdurand-bgp-security-01
@@ -132,7 +136,7 @@ series:
     content: Internet-Draft
   number: draft-jdurand-bgp-security-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfappsawgmalformedmail03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Gregory N. Shapiro
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -72,29 +72,35 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The email ecosystem has long had a very permissive set of common\n
-    \  processing rules in place, despite increasingly rigid standards\n   governing
-    its components, ostensibly to improve the user experience.\n   The handling of
-    these come at some cost, and various components are\n   faced with decisions about
-    whether or not to permit non-conforming\n   messages to continue toward their
-    destinations unaltered, adjust them\n   to conform (possibly at the cost of losing
-    some of the original\n   message), or outright rejecting them.\n\n   This document
-    includes a collection of the best advice available\n   regarding a variety of
-    common malformed mail situations, to be used\n   as implementation guidance.  It
-    must be emphasized, however, that the\n   intent of this document is not to standardize
-    malformations or\n   otherwise encourage their proliferation.  The messages are
-    manifestly\n   malformed, and the code and culture that generates them needs to
-    be\n   fixed.  Therefore, these messages should be rejected outright if at\n   all
-    possible.  Nevertheless, many malformed messages from otherwise\n   legitimate
-    senders are in circulation and will be for some time, and,\n   unfortunately,
-    commercial reality shows that we cannot always simply\n   reject or discard them.
-    \ Accordingly, this document presents\n   alternatives for dealing with them in
-    ways that seem to do the least\n   additional harm until the infrastructure is
-    tightened up to match the\n   standards.\n\n\t "
+  content: |-
+    <p>The email ecosystem has long had a very permissive set of common
+       processing rules in place, despite increasingly rigid standards
+       governing its components, ostensibly to improve the user experience.
+       The handling of these come at some cost, and various components are
+       faced with decisions about whether or not to permit non-conforming
+       messages to continue toward their destinations unaltered, adjust them
+       to conform (possibly at the cost of losing some of the original
+       message), or outright rejecting them.
+
+       This document includes a collection of the best advice available
+       regarding a variety of common malformed mail situations, to be used
+       as implementation guidance.  It must be emphasized, however, that the
+       intent of this document is not to standardize malformations or
+       otherwise encourage their proliferation.  The messages are manifestly
+       malformed, and the code and culture that generates them needs to be
+       fixed.  Therefore, these messages should be rejected outright if at
+       all possible.  Nevertheless, many malformed messages from otherwise
+       legitimate senders are in circulation and will be for some time, and,
+       unfortunately, commercial reality shows that we cannot always simply
+       reject or discard them.  Accordingly, this document presents
+       alternatives for dealing with them in ways that seem to do the least
+       additional harm until the infrastructure is tightened up to match the
+       standards.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-appsawg-malformed-mail-02
+    formattedref:
+      content: draft-ietf-appsawg-malformed-mail-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-appsawg-malformed-mail-02
@@ -104,7 +110,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-appsawg-malformed-mail-04
+    formattedref:
+      content: draft-ietf-appsawg-malformed-mail-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-appsawg-malformed-mail-04
@@ -120,7 +127,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-appsawg-malformed-mail-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

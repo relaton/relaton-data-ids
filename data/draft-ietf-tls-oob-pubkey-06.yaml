@@ -1,7 +1,7 @@
 ---
 id: draftietftlsoobpubkey06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         language: en
         content: Tero Kivinen
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -132,22 +132,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a new certificate type for exchanging raw\n
-    \  public keys in Transport Layer Security (TLS) and Datagram Transport\n   Layer
-    Security (DTLS) for use with out-of-band public key validation.\n   Currently,
-    TLS authentication can only occur via X.509-based Public\n   Key Infrastructure
-    (PKI) or OpenPGP certificates.  By specifying a\n   minimum resource for raw public
-    key exchange, implementations can use\n   alternative public key validation methods.\n\n
-    \  One such alternative public key valiation method is offered by the\n   DNS-Based
-    Authentication of Named Entities (DANE) together with DNS\n   Security.  Another
-    alternative is to utilize pre-configured keys, as\n   is the case with sensors
-    and other embedded devices.  The usage of\n   raw public keys, instead of X.509-based
-    certificates, leads to a\n   smaller code footprint.\n\n   This document introduces
-    the support for raw public keys in TLS.\n\n\t "
+  content: |-
+    <p>This document specifies a new certificate type for exchanging raw
+       public keys in Transport Layer Security (TLS) and Datagram Transport
+       Layer Security (DTLS) for use with out-of-band public key validation.
+       Currently, TLS authentication can only occur via X.509-based Public
+       Key Infrastructure (PKI) or OpenPGP certificates.  By specifying a
+       minimum resource for raw public key exchange, implementations can use
+       alternative public key validation methods.
+
+       One such alternative public key valiation method is offered by the
+       DNS-Based Authentication of Named Entities (DANE) together with DNS
+       Security.  Another alternative is to utilize pre-configured keys, as
+       is the case with sensors and other embedded devices.  The usage of
+       raw public keys, instead of X.509-based certificates, leads to a
+       smaller code footprint.
+
+       This document introduces the support for raw public keys in TLS.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tls-oob-pubkey-05
+    formattedref:
+      content: draft-ietf-tls-oob-pubkey-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-oob-pubkey-05
@@ -157,7 +163,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tls-oob-pubkey-07
+    formattedref:
+      content: draft-ietf-tls-oob-pubkey-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-oob-pubkey-07
@@ -173,7 +180,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tls-oob-pubkey-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

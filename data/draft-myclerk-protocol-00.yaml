@@ -1,7 +1,7 @@
 ---
 id: draftmyclerkprotocol00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -50,7 +50,7 @@ contributor:
         - language: en
           content: Arcan Consulting
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -58,19 +58,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the MyClerk Protocol, a tiered-security\n   communication
-    protocol designed for distributed family orchestration\n   systems.  The protocol
-    provides six security tiers ranging from\n   1-byte minimal overhead for tunneled
-    messages to 144-byte full\n   security for critical operations.  It supports multiple
-    transport\n   mechanisms including NATS, Matrix, WebSocket, and direct TCP, while\n
-    \  maintaining end-to-end encryption using ChaCha20-Poly1305 and X25519\n   key
-    exchange.\n\n   The protocol is transport-agnostic, federation-capable, and optimized\n
-    \  for environments ranging from resource-constrained IoT devices to\n   full-featured
-    desktop clients.\n\n\t "
+  content: |-
+    <p>This document specifies the MyClerk Protocol, a tiered-security
+       communication protocol designed for distributed family orchestration
+       systems.  The protocol provides six security tiers ranging from
+       1-byte minimal overhead for tunneled messages to 144-byte full
+       security for critical operations.  It supports multiple transport
+       mechanisms including NATS, Matrix, WebSocket, and direct TCP, while
+       maintaining end-to-end encryption using ChaCha20-Poly1305 and X25519
+       key exchange.
+
+       The protocol is transport-agnostic, federation-capable, and optimized
+       for environments ranging from resource-constrained IoT devices to
+       full-featured desktop clients.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-myclerk-protocol-01
+    formattedref:
+      content: draft-myclerk-protocol-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-myclerk-protocol-01
@@ -86,7 +91,7 @@ series:
     content: Internet-Draft
   number: draft-myclerk-protocol-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

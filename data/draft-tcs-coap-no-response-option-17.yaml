@@ -1,7 +1,7 @@
 ---
 id: drafttcscoapnoresponseoption17
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Tata Consultancy Services Ltd.
 version:
-- draft: '17'
+- content: '17'
 language:
 - en
 script:
@@ -129,27 +129,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "There can be machine-to-machine (M2M) scenarios where server responses
-    to client requests are redundant. This kind of open-loop exchange (with no response
-    path from the server to the client) may be desired to minimize resource consumption
-    in constrained systems while updating many resources simultaneously or performing
-    high-frequency updates. CoAP already provides Non-confirmable (NON) messages that
-    are not acknowledged by the recipient. However, the request/response semantics
-    still require the server to respond with a status code indicating \"the result
-    of the attempt to understand and satisfy the request\", per RFC 7252.\n\n This
-    specification introduces a CoAP option called 'No-Response'. Using this option,
-    the client can explicitly express to the server its disinterest in all responses
-    against the particular request. This option also provides granular control to
-    enable expression of disinterest to a particular response class or a combination
-    of response classes. The server MAY decide to suppress the response by not transmitting
-    it back to the client according to the value of the No-Response option in the
-    request. This option may be effective for both unicast and multicast requests.
-    This document also discusses a few examples of applications that benefit from
-    this option.\n\t "
+  content: |-
+    <p>There can be machine-to-machine (M2M) scenarios where server responses to client requests are redundant. This kind of open-loop exchange (with no response path from the server to the client) may be desired to minimize resource consumption in constrained systems while updating many resources simultaneously or performing high-frequency updates. CoAP already provides Non-confirmable (NON) messages that are not acknowledged by the recipient. However, the request/response semantics still require the server to respond with a status code indicating &quot;the result of the attempt to understand and satisfy the request&quot;, per RFC 7252.
+
+     This specification introduces a CoAP option called &#39;No-Response&#39;. Using this option, the client can explicitly express to the server its disinterest in all responses against the particular request. This option also provides granular control to enable expression of disinterest to a particular response class or a combination of response classes. The server MAY decide to suppress the response by not transmitting it back to the client according to the value of the No-Response option in the request. This option may be effective for both unicast and multicast requests. This document also discusses a few examples of applications that benefit from this option.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-tcs-coap-no-response-option-16
+    formattedref:
+      content: draft-tcs-coap-no-response-option-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-16
@@ -165,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-tcs-coap-no-response-option-17
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

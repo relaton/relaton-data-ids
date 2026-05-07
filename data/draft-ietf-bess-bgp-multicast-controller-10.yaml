@@ -1,7 +1,7 @@
 ---
 id: draftietfbessbgpmulticastcontroller10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Edward Jones Wealth Management
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -132,18 +132,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a way that one or more centralized\n   controllers
-    can use BGP to set up multicast distribution trees\n   (identified by either IP
-    source/destination address pair, or mLDP\n   FEC) in a network.  Since the controllers
-    calculate the trees, they\n   can use sophisticated algorithms and constraints
-    to achieve traffic\n   engineering.  The controllers directly signal dynamic replication\n
-    \  state to tree nodes, leading to very simple multicast control plane\n   on
-    the tree nodes, as if they were using static routes.  This can be\n   used for
-    both underlay and overlay multicast trees, including\n   replacing BGP-MVPN signaling.\n\n\n\t "
+  content: |-
+    <p>This document specifies a way that one or more centralized
+       controllers can use BGP to set up multicast distribution trees
+       (identified by either IP source/destination address pair, or mLDP
+       FEC) in a network.  Since the controllers calculate the trees, they
+       can use sophisticated algorithms and constraints to achieve traffic
+       engineering.  The controllers directly signal dynamic replication
+       state to tree nodes, leading to very simple multicast control plane
+       on the tree nodes, as if they were using static routes.  This can be
+       used for both underlay and overlay multicast trees, including
+       replacing BGP-MVPN signaling.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bess-bgp-multicast-controller-09
+    formattedref:
+      content: draft-ietf-bess-bgp-multicast-controller-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-bgp-multicast-controller-09
@@ -153,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bess-bgp-multicast-controller-11
+    formattedref:
+      content: draft-ietf-bess-bgp-multicast-controller-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-bgp-multicast-controller-11
@@ -169,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bess-bgp-multicast-controller-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

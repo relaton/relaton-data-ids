@@ -1,7 +1,7 @@
 ---
 id: draftcrockeremaildeliveredto08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Brandenburg InternetWorking
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -54,28 +54,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The address to which email is delivered might be different than any\n
-    \  of the addresses shown in any of the content header fields, created\n   by
-    the email's author.  For example, the address used by the email\n   transport
-    service is provided separately, such as through SMTP's\n   \"RCPT TO\" command.
-    \ Before final delivery, handling can entail a\n   sequence of submission/delivery
-    events, using different destination\n   addresses that lead to the recipient.
-    \ Also, a receiving system's\n   delivery process can produce local address transformations.\n\n
-    \  It can be helpful for a message to have a common way to record each\n   delivery
-    in such a sequence, and to include each address used for\n   that recipient, such
-    as for analyzing the path a message has taken,\n   for loop detection, or for
-    formulating the author's address in a\n   reply message.  This document defines
-    a header field for this\n   information.\n\n   Email handling information discloses
-    details about the email\n   infrastructure, as well as about a particular recipient;
-    this can\n   raise possible privacy concerns.  A header field such as this is
-    not\n   automatically assured of widespread use.  Therefore this is being\n   published
-    as an Experiment, looking for constituency and for\n   operational utility.  The
-    document is produced through the\n   Independent RFC stream and was not subject
-    to the IETF's approval\n   process.\n\n\t "
+  content: |-
+    <p>The address to which email is delivered might be different than any
+       of the addresses shown in any of the content header fields, created
+       by the email&#39;s author.  For example, the address used by the email
+       transport service is provided separately, such as through SMTP&#39;s
+       &quot;RCPT TO&quot; command.  Before final delivery, handling can entail a
+       sequence of submission/delivery events, using different destination
+       addresses that lead to the recipient.  Also, a receiving system&#39;s
+       delivery process can produce local address transformations.
+
+       It can be helpful for a message to have a common way to record each
+       delivery in such a sequence, and to include each address used for
+       that recipient, such as for analyzing the path a message has taken,
+       for loop detection, or for formulating the author&#39;s address in a
+       reply message.  This document defines a header field for this
+       information.
+
+       Email handling information discloses details about the email
+       infrastructure, as well as about a particular recipient; this can
+       raise possible privacy concerns.  A header field such as this is not
+       automatically assured of widespread use.  Therefore this is being
+       published as an Experiment, looking for constituency and for
+       operational utility.  The document is produced through the
+       Independent RFC stream and was not subject to the IETF&#39;s approval
+       process.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-crocker-email-deliveredto-07
+    formattedref:
+      content: draft-crocker-email-deliveredto-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-crocker-email-deliveredto-07
@@ -85,7 +93,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-crocker-email-deliveredto-09
+    formattedref:
+      content: draft-crocker-email-deliveredto-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-crocker-email-deliveredto-09
@@ -101,7 +110,7 @@ series:
     content: Internet-Draft
   number: draft-crocker-email-deliveredto-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

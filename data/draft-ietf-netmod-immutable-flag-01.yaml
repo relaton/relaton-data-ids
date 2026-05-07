@@ -1,7 +1,7 @@
 ---
 id: draftietfnetmodimmutableflag01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: HPE
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -126,18 +126,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a way to formally document existing behavior,\n
-    \  implemented by servers in production, on the immutability of some\n   system-provided
-    nodes, using a YANG metadata annotation called\n   \"immutable\" to flag which
-    nodes are immutable.\n\n   Clients may use \"immutable\" annotations provided
-    by the server, to\n   know beforehand why certain otherwise valid configuration
-    requests\n   will cause the server to return an error.\n\n   The immutable flag
-    is descriptive, documenting existing behavior, not\n   proscriptive, dictating
-    server behavior.\n\n\t "
+  content: |-
+    <p>This document defines a way to formally document existing behavior,
+       implemented by servers in production, on the immutability of some
+       system-provided nodes, using a YANG metadata annotation called
+       &quot;immutable&quot; to flag which nodes are immutable.
+
+       Clients may use &quot;immutable&quot; annotations provided by the server, to
+       know beforehand why certain otherwise valid configuration requests
+       will cause the server to return an error.
+
+       The immutable flag is descriptive, documenting existing behavior, not
+       proscriptive, dictating server behavior.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-netmod-immutable-flag-00
+    formattedref:
+      content: draft-ietf-netmod-immutable-flag-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netmod-immutable-flag-00
@@ -147,7 +152,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-netmod-immutable-flag-02
+    formattedref:
+      content: draft-ietf-netmod-immutable-flag-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netmod-immutable-flag-02
@@ -163,7 +169,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-netmod-immutable-flag-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopzoneversion02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: DigitalOcean
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -82,18 +82,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The \"ZONEVERSION\" EDNS option allows a DNS querier to request a DNS\n
-    \  authoritative server to add an EDNS option in the answer of such\n   query
-    with a token field representing the version of the zone which\n   contains the
-    answered Resource Record, such as the SOA serial field\n   in zones when this
-    number corresponds to the zone version.\n\n   This \"ZONEVERSION\" data allows
-    to debug and diagnose problems by\n   helping to recognize the data source of
-    an answer in an atomic single\n   query, by associating the response with a respective
-    zone version.\n\n\t "
+  content: |-
+    <p>The &quot;ZONEVERSION&quot; EDNS option allows a DNS querier to request a DNS
+       authoritative server to add an EDNS option in the answer of such
+       query with a token field representing the version of the zone which
+       contains the answered Resource Record, such as the SOA serial field
+       in zones when this number corresponds to the zone version.
+
+       This &quot;ZONEVERSION&quot; data allows to debug and diagnose problems by
+       helping to recognize the data source of an answer in an atomic single
+       query, by associating the response with a respective zone version.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-zoneversion-01
+    formattedref:
+      content: draft-ietf-dnsop-zoneversion-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-zoneversion-01
@@ -103,7 +106,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-zoneversion-03
+    formattedref:
+      content: draft-ietf-dnsop-zoneversion-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-zoneversion-03
@@ -119,7 +123,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-zoneversion-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfavtcore6222bis06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: RTFM, Inc.
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -132,22 +132,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The RTP Control Protocol (RTCP) Canonical Name (CNAME) is a persistent
-    transport-level identifier for an RTP endpoint. While the Synchronization Source
-    (SSRC) identifier of an RTP endpoint may change if a collision is detected or
-    when the RTP application is restarted, its RTCP CNAME is meant to stay unchanged,
-    so that RTP endpoints can be uniquely identified and associated with their RTP
-    media streams.\n\n For proper functionality, RTCP CNAMEs should be unique within
-    the participants of an RTP session. However, the existing guidelines for choosing
-    the RTCP CNAME provided in the RTP standard (RFC 3550) are insufficient to achieve
-    this uniqueness. RFC 6222 was published to update those guidelines to allow endpoints
-    to choose unique RTCP CNAMEs. Unfortunately, later investigations showed that
-    some parts of the new algorithms were unnecessarily complicated and/or ineffective.
-    This document addresses these concerns and replaces RFC 6222.\n\t "
+  content: |-
+    <p>The RTP Control Protocol (RTCP) Canonical Name (CNAME) is a persistent transport-level identifier for an RTP endpoint. While the Synchronization Source (SSRC) identifier of an RTP endpoint may change if a collision is detected or when the RTP application is restarted, its RTCP CNAME is meant to stay unchanged, so that RTP endpoints can be uniquely identified and associated with their RTP media streams.
+
+     For proper functionality, RTCP CNAMEs should be unique within the participants of an RTP session. However, the existing guidelines for choosing the RTCP CNAME provided in the RTP standard (RFC 3550) are insufficient to achieve this uniqueness. RFC 6222 was published to update those guidelines to allow endpoints to choose unique RTCP CNAMEs. Unfortunately, later investigations showed that some parts of the new algorithms were unnecessarily complicated and/or ineffective. This document addresses these concerns and replaces RFC 6222.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-avtcore-6222bis-05
+    formattedref:
+      content: draft-ietf-avtcore-6222bis-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-avtcore-6222bis-05
@@ -163,7 +156,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-avtcore-6222bis-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

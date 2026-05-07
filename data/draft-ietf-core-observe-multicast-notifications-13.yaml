@@ -1,7 +1,7 @@
 ---
 id: draftietfcoreobservemulticastnotifications13
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -116,7 +116,7 @@ contributor:
         - language: en
           content: Ericsson AB
 version:
-- draft: '13'
+- content: '13'
 language:
 - en
 script:
@@ -124,26 +124,41 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Constrained Application Protocol (CoAP) allows clients to\n   \"observe\"
-    resources at a server and to receive notifications as\n   unicast responses upon
-    changes of the resource state.  In some use\n   cases, such as based on publish-subscribe,
-    it would be convenient for\n   the server to send a single notification addressed
-    to all the clients\n   observing the same target resource.  This document updates
-    RFC7252\n   and RFC7641, and defines how a server sends observe notifications
-    as\n   response messages over multicast, synchronizing all the observers of\n
-    \  the same resource on the same shared Token value.  Besides, this\n   document
-    defines how the security protocol Group Object Security for\n   Constrained RESTful
-    Environments (Group OSCORE) can be used to\n   protect multicast notifications
-    end-to-end between the server and the\n   observer clients.\n\n\t "
+  content: |-
+    <p>The Constrained Application Protocol (CoAP) allows clients to
+       &quot;observe&quot; resources at a server and to receive notifications as
+       unicast responses upon changes of the resource state.  In some use
+       cases, such as based on publish-subscribe, it would be convenient for
+       the server to send a single notification addressed to all the clients
+       observing the same target resource.  This document updates RFC7252
+       and RFC7641, and defines how a server sends observe notifications as
+       response messages over multicast, synchronizing all the observers of
+       the same resource on the same shared Token value.  Besides, this
+       document defines how the security protocol Group Object Security for
+       Constrained RESTful Environments (Group OSCORE) can be used to
+       protect multicast notifications end-to-end between the server and the
+       observer clients.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-core-observe-multicast-notifications-12
+    formattedref:
+      content: draft-ietf-core-observe-multicast-notifications-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-core-observe-multicast-notifications-12
     docidentifier:
     - content: draft-ietf-core-observe-multicast-notifications-12
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-core-observe-multicast-notifications-14
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-observe-multicast-notifications-14
+    docidentifier:
+    - content: draft-ietf-core-observe-multicast-notifications-14
       type: Internet-Draft
       primary: true
 series:
@@ -154,7 +169,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-core-observe-multicast-notifications-13
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

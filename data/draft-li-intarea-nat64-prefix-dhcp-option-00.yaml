@@ -1,7 +1,7 @@
 ---
 id: draftliintareanat64prefixdhcpoption00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -144,7 +144,7 @@ contributor:
         language: en
         content: Jordi Palet Martinez
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -152,20 +152,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Several IPv6 transition mechanisms require the usage of stateless or\n
-    \  stateful translators (commonly named as NAT64) able to allow IP/ICMP\n   communication
-    between IPv4 and IPv6 networks.\n\n   Those translators are using either a default
-    well-known prefix, and/\n   or one or several additional network specific prefixes,
-    which need to\n   be configured into the nodes willing to use the translator.\n
-    \  Different translators will likely have different IPv6 prefixes, to\n   attract
-    traffic to the correct translator.  Thus, an automatic\n   translator prefix discovery
-    method is necessary.\n\n   This document defines a DHCPv6-based method to inform
-    DHCPv6 clients\n   the set of IPv6 and IPv4 prefixes it serves.  This DHCPv6 option
-    can\n   be used by several transition mechanisms such as SIIT, 464XLAT, EAM.\n\n\t "
+  content: |-
+    <p>Several IPv6 transition mechanisms require the usage of stateless or
+       stateful translators (commonly named as NAT64) able to allow IP/ICMP
+       communication between IPv4 and IPv6 networks.
+
+       Those translators are using either a default well-known prefix, and/
+       or one or several additional network specific prefixes, which need to
+       be configured into the nodes willing to use the translator.
+       Different translators will likely have different IPv6 prefixes, to
+       attract traffic to the correct translator.  Thus, an automatic
+       translator prefix discovery method is necessary.
+
+       This document defines a DHCPv6-based method to inform DHCPv6 clients
+       the set of IPv6 and IPv4 prefixes it serves.  This DHCPv6 option can
+       be used by several transition mechanisms such as SIIT, 464XLAT, EAM.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-li-intarea-nat64-prefix-dhcp-option-01
+    formattedref:
+      content: draft-li-intarea-nat64-prefix-dhcp-option-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-intarea-nat64-prefix-dhcp-option-01
@@ -181,7 +187,7 @@ series:
     content: Internet-Draft
   number: draft-li-intarea-nat64-prefix-dhcp-option-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

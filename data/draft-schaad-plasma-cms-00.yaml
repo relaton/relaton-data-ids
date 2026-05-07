@@ -1,7 +1,7 @@
 ---
 id: draftschaadplasmacms00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Jim Schaad
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,24 +49,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Secure Mime (S/MIME) defined a method of placing security labels on
-    a\n   Cryptographic Message Syntax (CMS) object.  These labels are placed\n   as
-    part of the data signed and validated by the parties.  This means\n   that the
-    message content is visible to the recipient prior to the\n   label enforcement.
-    \ In [EPS-WS-TRUST] a new model has been presented\n   where a third party is
-    used as the enforcement point of the label.\n   This document provides the details
-    needed to implement the new Plasma\n   model in the CMS infrastructure.\n\n   Additional
-    benefits of using the Plasma module include moving\n   responsibility of building
-    lock boxes to the server and determining,\n   based on policy, who should be a
-    message recipient.\n\n   The document describes and details how the encryption
-    process is\n   performed, defines a new lock box attribute to hold the information\n
-    \  needed to valid the label and to obtain the keys needed to decrypt\n   the
-    message.  The document does not cover the protocol between the\n   client and
-    the Plasma policy enforcement server.\n\n\t "
+  content: |-
+    <p>Secure Mime (S/MIME) defined a method of placing security labels on a
+       Cryptographic Message Syntax (CMS) object.  These labels are placed
+       as part of the data signed and validated by the parties.  This means
+       that the message content is visible to the recipient prior to the
+       label enforcement.  In [EPS-WS-TRUST] a new model has been presented
+       where a third party is used as the enforcement point of the label.
+       This document provides the details needed to implement the new Plasma
+       model in the CMS infrastructure.
+
+       Additional benefits of using the Plasma module include moving
+       responsibility of building lock boxes to the server and determining,
+       based on policy, who should be a message recipient.
+
+       The document describes and details how the encryption process is
+       performed, defines a new lock box attribute to hold the information
+       needed to valid the label and to obtain the keys needed to decrypt
+       the message.  The document does not cover the protocol between the
+       client and the Plasma policy enforcement server.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-schaad-plasma-cms-01
+    formattedref:
+      content: draft-schaad-plasma-cms-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-schaad-plasma-cms-01
@@ -82,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-schaad-plasma-cms-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

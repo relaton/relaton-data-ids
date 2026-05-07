@@ -1,7 +1,7 @@
 ---
 id: draftperlmantrillrbridgemultilevel07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -104,7 +104,7 @@ contributor:
         language: en
         content: Hongjun Zhai
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -112,27 +112,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Extending TRILL to multiple levels has one challenge that is not\n
-    \  addressed by the already-existing capability of IS-IS to have\n   multiple
-    levels. The issue is with RBridge nicknames. There have been\n   two proposed
-    approaches.  One approach, which we refer to as the\n   \"unique nickname\" approach,
-    gives unique nicknames to all the\n   RBridges in the multilevel campus, either
-    by having the\n   level-1/level-2 border RBridges advertise which nicknames are
-    not\n   available for assignment in the area, or by partitioning the 16-bit\n
-    \  nickname into an \"area\" field and a \"nickname inside the area\" field.\n
-    \  The other approach, which we refer to as the \"aggregated nickname\"\n   approach,
-    involves assigning nicknames to the areas, and allowing\n   nicknames to be reused
-    in different areas, by having the border\n   RBridges rewrite the nickname fields
-    when entering or leaving an\n   area. Each of those approaches has advantages
-    and disadvantages. The\n   design in this document allows a choice of approach
-    in each area,\n   allowing the simplicity of the unique nickname approach in\n
-    \  installations in which there is no danger of running out of\n   nicknames,
-    and allowing nickname rewriting to be phased into larger\n   installations on
-    a per-area basis.\n\n\n\n\t "
+  content: |-
+    <p>Extending TRILL to multiple levels has one challenge that is not
+       addressed by the already-existing capability of IS-IS to have
+       multiple levels. The issue is with RBridge nicknames. There have been
+       two proposed approaches.  One approach, which we refer to as the
+       &quot;unique nickname&quot; approach, gives unique nicknames to all the
+       RBridges in the multilevel campus, either by having the
+       level-1/level-2 border RBridges advertise which nicknames are not
+       available for assignment in the area, or by partitioning the 16-bit
+       nickname into an &quot;area&quot; field and a &quot;nickname inside the area&quot; field.
+       The other approach, which we refer to as the &quot;aggregated nickname&quot;
+       approach, involves assigning nicknames to the areas, and allowing
+       nicknames to be reused in different areas, by having the border
+       RBridges rewrite the nickname fields when entering or leaving an
+       area. Each of those approaches has advantages and disadvantages. The
+       design in this document allows a choice of approach in each area,
+       allowing the simplicity of the unique nickname approach in
+       installations in which there is no danger of running out of
+       nicknames, and allowing nickname rewriting to be phased into larger
+       installations on a per-area basis.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-perlman-trill-rbridge-multilevel-06
+    formattedref:
+      content: draft-perlman-trill-rbridge-multilevel-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perlman-trill-rbridge-multilevel-06
@@ -142,7 +146,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-perlman-trill-rbridge-multilevel-08
+    formattedref:
+      content: draft-perlman-trill-rbridge-multilevel-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perlman-trill-rbridge-multilevel-08
@@ -158,7 +163,7 @@ series:
     content: Internet-Draft
   number: draft-perlman-trill-rbridge-multilevel-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftshuanglidnsopupdateofdnscache00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -140,7 +140,7 @@ contributor:
         - language: en
           content: Computer Network Information Center, Chinese Academy of Sciences
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -148,18 +148,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Under the caching mechanism in [RFC1035], the local DNS server cannot\n
-    \  obtain the update status of the authoritative server in time, making\n   the
-    data inconsistent.  Shortening TTL increases server load.  In the\n   passive
-    query of the authoritative server, an active notification\n   method is added
-    to update the DNS mapping cache of the local DNS\n   server in order to improve
-    the efficiency of DNS resolution.\n   Authoritative servers actively send DNS
-    update packets after updating\n   resource records.  This document designs the
-    API for receiving DNS\n   update packets on the local DNS server.\n\n\t "
+  content: |-
+    <p>Under the caching mechanism in [RFC1035], the local DNS server cannot
+       obtain the update status of the authoritative server in time, making
+       the data inconsistent.  Shortening TTL increases server load.  In the
+       passive query of the authoritative server, an active notification
+       method is added to update the DNS mapping cache of the local DNS
+       server in order to improve the efficiency of DNS resolution.
+       Authoritative servers actively send DNS update packets after updating
+       resource records.  This document designs the API for receiving DNS
+       update packets on the local DNS server.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-shuangli-dnsop-update-of-dns-cache-01
+    formattedref:
+      content: draft-shuangli-dnsop-update-of-dns-cache-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-shuangli-dnsop-update-of-dns-cache-01
@@ -175,7 +178,7 @@ series:
     content: Internet-Draft
   number: draft-shuangli-dnsop-update-of-dns-cache-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

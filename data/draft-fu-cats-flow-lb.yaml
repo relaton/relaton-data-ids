@@ -1,7 +1,8 @@
 ---
 id: draftfucatsflowlb
-schema_version: v1.4.1
-formattedref: draft-fu-cats-flow-lb
+schema_version: v1.5.6
+formattedref:
+  content: draft-fu-cats-flow-lb
 title:
 - language: en
   script: Latn
@@ -13,17 +14,16 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a flow-level load balancing solution for CATS,\n
-    \  and is designed to effectively manage CS-ID traffic by addressing\n   issues
-    like frequent control plane operations and uneven use of\n   computing resources.
-    \ The approach entails concurrently identifying\n   multiple next-hop choices,
-    factoring in both network pathways and\n   service instances.  Traffic is then
-    distributed among these service\n   instances using flow-based load balancing,
-    which relies on the five-\n   tuple characteristics of packets.\n\n\t "
+  content: |-
+    <p>This document specifies a flow-level load balancing mechanism for
+       Computing-Aware Traffic Steering (CATS) that reduces control plane
+       overhead and improves resource utilization through data plane
+       autonomous flow distribution.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-fu-cats-flow-lb-00
+    formattedref:
+      content: draft-fu-cats-flow-lb-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-00
@@ -33,7 +33,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-fu-cats-flow-lb-01
+    formattedref:
+      content: draft-fu-cats-flow-lb-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-01
@@ -43,11 +44,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-fu-cats-flow-lb-02
+    formattedref:
+      content: draft-fu-cats-flow-lb-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-02
     docidentifier:
     - content: draft-fu-cats-flow-lb-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-fu-cats-flow-lb-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-fu-cats-flow-lb-03
+    docidentifier:
+    - content: draft-fu-cats-flow-lb-03
       type: Internet-Draft
       primary: true

@@ -1,7 +1,7 @@
 ---
 id: draftotisdkimharmful03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: David Rand
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -69,25 +69,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Currently, email lacks conventions ensuring SMTP clients can be\n   identified
-    by an authenticated domain.  Unfortunately many hope to\n   use DKIM as an alternative,
-    but it is independent of intended\n   recipients and domains accountable for having
-    sent the message.  This\n   means DKIM is poorly suited at establishing abuse
-    assessments of\n   unsolicited commercial email otherwise known as SPAM, nor was
-    this\n   initially DKIM's intent.  DKIM lacks message context essential to\n   ensure
-    fair assessment and to ensure this assessment is not poisoned\n   (Who initiated
-    the transaction and to whom).\n\n   DKIM was instead intended to establish increased
-    levels of trust\n   based upon valid DKIM signatures controlling acceptance and
-    what a\n   user sees within the FROM header field.  But DKIM failed to guard\n
-    \  against pre-pended header fields where any acceptance based on valid\n   DKIM
-    signatures is sure to exclude header field spoofing, especially\n   that of the
-    FROM.  This weakness allows malefactors to exploit DKIM\n   signature acceptance
-    established by high-volume DKIM domains to spoof\n   ANY other domain, even when
-    prohibited within the Signer's network.\n\n\n\t "
+  content: |-
+    <p>Currently, email lacks conventions ensuring SMTP clients can be
+       identified by an authenticated domain.  Unfortunately many hope to
+       use DKIM as an alternative, but it is independent of intended
+       recipients and domains accountable for having sent the message.  This
+       means DKIM is poorly suited at establishing abuse assessments of
+       unsolicited commercial email otherwise known as SPAM, nor was this
+       initially DKIM&#39;s intent.  DKIM lacks message context essential to
+       ensure fair assessment and to ensure this assessment is not poisoned
+       (Who initiated the transaction and to whom).
+
+       DKIM was instead intended to establish increased levels of trust
+       based upon valid DKIM signatures controlling acceptance and what a
+       user sees within the FROM header field.  But DKIM failed to guard
+       against pre-pended header fields where any acceptance based on valid
+       DKIM signatures is sure to exclude header field spoofing, especially
+       that of the FROM.  This weakness allows malefactors to exploit DKIM
+       signature acceptance established by high-volume DKIM domains to spoof
+       ANY other domain, even when prohibited within the Signer&#39;s network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-otis-dkim-harmful-02
+    formattedref:
+      content: draft-otis-dkim-harmful-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-otis-dkim-harmful-02
@@ -97,7 +102,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-otis-dkim-harmful-04
+    formattedref:
+      content: draft-otis-dkim-harmful-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-otis-dkim-harmful-04
@@ -113,7 +119,7 @@ series:
     content: Internet-Draft
   number: draft-otis-dkim-harmful-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

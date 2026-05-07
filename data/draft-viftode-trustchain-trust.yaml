@@ -1,0 +1,42 @@
+---
+id: draftviftodetrustchaintrust
+schema_version: v1.5.6
+formattedref:
+  content: draft-viftode-trustchain-trust
+title:
+- language: en
+  script: Latn
+  content: Trust Computation for the TrustChain Bilateral Ledger Protocol
+docidentifier:
+- content: draft-viftode-trustchain-trust
+  type: Internet-Draft
+  primary: true
+abstract:
+- language: en
+  script: Latn
+  content: |-
+    <p>This document specifies trust computation, delegation, and key
+       succession mechanisms for the TrustChain bilateral ledger protocol
+       (draft-pouwelse-trustchain-01).  The base protocol specifies a
+       bilateral block structure for recording pairwise interactions but
+       explicitly leaves trust computation out of scope.  This document
+       fills that gap by defining: (1) a canonical hash computation for
+       cross-implementation compatibility, (2) an interaction graph
+       constructed from half-block pairs, (3) a maximum network flow
+       algorithm (Edmonds-Karp) over the interaction graph for Sybil-
+       resistant trust scoring, (4) a composite trust score combining chain
+       integrity with network flow, (5) a delegation protocol for transitive
+       authority with budget splitting and revocation, and (6) a bilateral
+       succession protocol for key rotation.</p>
+relation:
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-viftode-trustchain-trust-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-viftode-trustchain-trust-00
+    docidentifier:
+    - content: draft-viftode-trustchain-trust-00
+      type: Internet-Draft
+      primary: true

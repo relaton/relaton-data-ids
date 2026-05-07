@@ -1,7 +1,7 @@
 ---
 id: draftleibaimapsearchmultiple01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: IBM T.J. Watson Research Center
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,13 +54,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The IMAP4 specification allows the searching only of the selected\nmailbox.
-    \ A user often wants to search multiple mailboxes, and a\nclient that wishes to
-    support this must issue a series of SELECT and\nSEARCH commands, waiting for each
-    to complete before moving on to the\nnext.  This extension allows a client to
-    search multiple mailboxes\nwith one command, limiting the round-trips and waiting
-    for various\nsearches to complete.  This also introduces named searches, allowing\na
-    client to pipeline the searches if it chooses.\n\t "
+  content: |-
+    <p>The IMAP4 specification allows the searching only of the selected
+    mailbox.  A user often wants to search multiple mailboxes, and a
+    client that wishes to support this must issue a series of SELECT and
+    SEARCH commands, waiting for each to complete before moving on to the
+    next.  This extension allows a client to search multiple mailboxes
+    with one command, limiting the round-trips and waiting for various
+    searches to complete.  This also introduces named searches, allowing
+    a client to pipeline the searches if it chooses.</p>
 series:
 - type: main
   title:
@@ -69,7 +71,7 @@ series:
     content: Internet-Draft
   number: draft-leiba-imap-search-multiple-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

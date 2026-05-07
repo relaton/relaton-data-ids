@@ -1,7 +1,7 @@
 ---
 id: draftjanapathintareatraceflow00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: Facebook
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -107,20 +107,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a new OAM protocol - TraceFlow that captures\n
-    \  information pertaining to a traffic flow along the path that the flow\n   takes
-    through the network. TraceFlow is ECMP and link-aggregation\n   aware and captures
-    the information about constituent members through\n   which the traffic flow passes.
-    TraceFlow gathers information that is\n   relevant to the flow such as outgoing
-    interface Layer 3 address,\n   Next-hop to which the packet of the flow is forwarded,
-    effect of\n   network policies such as access control lists on the flow. This
-    draft\n   requires the Traceflow protocol to be processed by Layer 3 devices\n
-    \  only. Devices such as Layer 2 devices, MPLS LERs/LSRs along the way\n   are
-    passed through without any processing as if in a pass-through\n   mode. IP tunnels
-    such as IP-in-IP, IP-in-GRE mechanisms are expected\n   to pass the Traceflow
-    packets through them using the pass through\n   mode.  For achieving its purpose
-    Traceflow advocates the use of a\n   specific UDP destination port to be assigned
-    from IANA.\n\n\n\t "
+  content: |-
+    <p>This document describes a new OAM protocol - TraceFlow that captures
+       information pertaining to a traffic flow along the path that the flow
+       takes through the network. TraceFlow is ECMP and link-aggregation
+       aware and captures the information about constituent members through
+       which the traffic flow passes. TraceFlow gathers information that is
+       relevant to the flow such as outgoing interface Layer 3 address,
+       Next-hop to which the packet of the flow is forwarded, effect of
+       network policies such as access control lists on the flow. This draft
+       requires the Traceflow protocol to be processed by Layer 3 devices
+       only. Devices such as Layer 2 devices, MPLS LERs/LSRs along the way
+       are passed through without any processing as if in a pass-through
+       mode. IP tunnels such as IP-in-IP, IP-in-GRE mechanisms are expected
+       to pass the Traceflow packets through them using the pass through
+       mode.  For achieving its purpose Traceflow advocates the use of a
+       specific UDP destination port to be assigned from IANA.</p>
 series:
 - type: main
   title:
@@ -129,7 +131,7 @@ series:
     content: Internet-Draft
   number: draft-janapath-intarea-traceflow-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfdprivexfrovertls12
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Salesforce
 version:
-- draft: '12'
+- content: '12'
 language:
 - en
 script:
@@ -157,7 +157,7 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "DNS zone transfers are transmitted in cleartext, which gives attackers
+  content: "<p>DNS zone transfers are transmitted in cleartext, which gives attackers
     the opportunity to collect the content of a zone by eavesdropping on network connections.
     \ The DNS Transaction Signature (TSIG) mechanism is specified to restrict direct
     zone transfer to authorized clients only, but it does not add confidentiality.
@@ -165,11 +165,12 @@ abstract:
     content collection via passive monitoring of zone transfers: XFR over TLS (XoT).
     \ Additionally, this specification updates RFC 1995 and RFC 5936 with respect
     to efficient use of TCP connections and RFC 7766 with respect to the recommended
-    number of connections between a client and server for each transport.\n\t "
+    number of connections between a client and server for each transport.</p>"
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dprive-xfr-over-tls-11
+    formattedref:
+      content: draft-ietf-dprive-xfr-over-tls-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dprive-xfr-over-tls-11
@@ -185,7 +186,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dprive-xfr-over-tls-12
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

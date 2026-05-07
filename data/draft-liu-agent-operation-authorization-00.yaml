@@ -1,7 +1,7 @@
 ---
 id: draftliuagentoperationauthorization00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Alibaba
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,17 +79,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the Agent Operation Authorization framework
-    —\n   a structured mechanism that enables verifiable delegation of actions\n   from
-    human principals to autonomous AI agents with fine-grained agent\n   operation
-    authorization.\n\n   The framework introduces two distinct phases:\n\n   *  *Agent
-    Operation Authorization Request:* A human-readable proposal\n      of operations
-    derived from natural language input and converted to\n      a JSON Web Token (JWT).\n\n
-    \  *  *Agent Operation Authorization Token:* A JSON Web Token\n      representing
-    confirmed authorization for a specific agent\n      operation, enforceable at
-    runtime by agents and verifiers.  It\n      cryptographically verifies user intent,
-    prevents unauthorized or\n      hallucinated actions, and ensures auditable traceability
-    of each\n      authorized operation.\n\n\t "
+  content: |-
+    <p>This document specifies the Agent Operation Authorization framework —
+       a structured mechanism that enables verifiable delegation of actions
+       from human principals to autonomous AI agents with fine-grained agent
+       operation authorization.
+
+       The framework introduces two distinct phases:
+
+       *  *Agent Operation Authorization Request:* A human-readable proposal
+          of operations derived from natural language input and converted to
+          a JSON Web Token (JWT).
+
+       *  *Agent Operation Authorization Token:* A JSON Web Token
+          representing confirmed authorization for a specific agent
+          operation, enforceable at runtime by agents and verifiers.  It
+          cryptographically verifies user intent, prevents unauthorized or
+          hallucinated actions, and ensures auditable traceability of each
+          authorized operation.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-liu-agent-operation-authorization-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-agent-operation-authorization-01
+    docidentifier:
+    - content: draft-liu-agent-operation-authorization-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -98,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-liu-agent-operation-authorization-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

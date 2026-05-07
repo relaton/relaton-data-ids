@@ -1,7 +1,7 @@
 ---
 id: draftwilliamshttprestauth00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -38,7 +38,7 @@ contributor:
         language: en
         content: Nicolás Williams
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -46,26 +46,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a \"RESTful\" pattern of authentication for\n
-    \  HTTP/1.0, 1.1, and 2.0.  The existing 401 status code and WWW-\n   Authenticate
-    header are used to indicate that authentication is\n   required and for negotiation
-    purposes.  The client POSTs an initial\n   authentication message to an indicated
-    login URI, and reply messages\n   are returned as new representations of a session
-    resource named by a\n   session URI.\n\n   This approach has a number of benefits:
-    it can be implemented with or\n   without help from the HTTP stack, it can be
-    universally implemented\n   on the server side using the Common Information Gateway
-    (CGI) and\n   FastCGI, it results in a session Uniform Resource Identifier (URI)\n
-    \  that can be DELETEd to logout, it is completely orthogonal to any\n   HTTP
-    \"routers\" and proxies, and it naturally (i.e., without changing\n   HTTP) handles
-    multi-legged authentication mechanisms.\n\n   Among other features supported are:
-    channel binding, an optional\n   round trip optimization for challenge/response
-    mechanisms,\n   somecryptographic protection options for clients that don't use\n
-    \  Transport Layer Security (TLS), stronger authentication of servers/\n   services
-    to users (where authentication mechanisms provide that) and\n   more.\n\n\t "
+  content: |-
+    <p>This document proposes a &quot;RESTful&quot; pattern of authentication for
+       HTTP/1.0, 1.1, and 2.0.  The existing 401 status code and WWW-
+       Authenticate header are used to indicate that authentication is
+       required and for negotiation purposes.  The client POSTs an initial
+       authentication message to an indicated login URI, and reply messages
+       are returned as new representations of a session resource named by a
+       session URI.
+
+       This approach has a number of benefits: it can be implemented with or
+       without help from the HTTP stack, it can be universally implemented
+       on the server side using the Common Information Gateway (CGI) and
+       FastCGI, it results in a session Uniform Resource Identifier (URI)
+       that can be DELETEd to logout, it is completely orthogonal to any
+       HTTP &quot;routers&quot; and proxies, and it naturally (i.e., without changing
+       HTTP) handles multi-legged authentication mechanisms.
+
+       Among other features supported are: channel binding, an optional
+       round trip optimization for challenge/response mechanisms,
+       somecryptographic protection options for clients that don&#39;t use
+       Transport Layer Security (TLS), stronger authentication of servers/
+       services to users (where authentication mechanisms provide that) and
+       more.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-williams-http-rest-auth-01
+    formattedref:
+      content: draft-williams-http-rest-auth-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-williams-http-rest-auth-01
@@ -81,7 +89,7 @@ series:
     content: Internet-Draft
   number: draft-williams-http-rest-auth-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftvanrein6bed400
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Rick van Rein
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,24 +49,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The purpose of 6bed4 is to support IPv6-only applications, even on\n
-    \  IPv4-only networks.  A specific area of concern is that of peer-to-\n   peer
-    protocols such as SIP or document exchange during a chat\n   session.  Such protocols
-    are designed to run in any environment,\n   which means that they cannot rely
-    on IPv6 for themselves, or for\n   their peers.  The 6bed4 tunnel mechanism ensures
-    that IPv6 can be\n   assumed on all peers.\n\n   The 6bed4 mechanism is meant
-    as a fallback mechanism for IPv6\n   connectivity on networks that do not support
-    it natively, by running\n   a tunnel over UDP and IPv4.  The IPv4 address is used
-    to support\n   traceability of the traffic originator, which means that no user\n
-    \  account or other configuration is needed.\n\n   The tunnel mechanism encapsulates
-    IPv6 in UDP/IPv4 and builds on\n   existing IPv6 mechanisms; it employs Stateless
-    Address\n   Autoconfiguration [RFC4862] to setup an IPv6 address on a 6bed4 Peer,\n
-    \  and Neighbor Discovery [RFC4861] to find the most direct route to a\n   remote
-    6bed4 Peer.\n\n\t "
+  content: |-
+    <p>The purpose of 6bed4 is to support IPv6-only applications, even on
+       IPv4-only networks.  A specific area of concern is that of peer-to-
+       peer protocols such as SIP or document exchange during a chat
+       session.  Such protocols are designed to run in any environment,
+       which means that they cannot rely on IPv6 for themselves, or for
+       their peers.  The 6bed4 tunnel mechanism ensures that IPv6 can be
+       assumed on all peers.
+
+       The 6bed4 mechanism is meant as a fallback mechanism for IPv6
+       connectivity on networks that do not support it natively, by running
+       a tunnel over UDP and IPv4.  The IPv4 address is used to support
+       traceability of the traffic originator, which means that no user
+       account or other configuration is needed.
+
+       The tunnel mechanism encapsulates IPv6 in UDP/IPv4 and builds on
+       existing IPv6 mechanisms; it employs Stateless Address
+       Autoconfiguration [RFC4862] to setup an IPv6 address on a 6bed4 Peer,
+       and Neighbor Discovery [RFC4861] to find the most direct route to a
+       remote 6bed4 Peer.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-vanrein-6bed4-01
+    formattedref:
+      content: draft-vanrein-6bed4-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vanrein-6bed4-01
@@ -82,7 +89,7 @@ series:
     content: Internet-Draft
   number: draft-vanrein-6bed4-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

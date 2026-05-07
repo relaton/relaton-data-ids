@@ -1,7 +1,7 @@
 ---
 id: draftshensocavalancherestartoverload07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -97,7 +97,7 @@ contributor:
         - language: en
           content: NTT
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -105,22 +105,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When a large number of clients register with a SIP registrar server\n
-    \  at approximately the same time, the server may become overloaded.\n   Near-simultaneous
-    floods of SIP SUBSCRIBE and PUBLISH requests may\n   have similar effects.  Such
-    request avalanches can occur, for\n   example, after a power failure and recovery
-    in a metropolitan area.\n   This document describes how to avoid such overload
-    situations.  Under\n   this mechanism, a server estimates an avalanche restart
-    backoff\n   interval during its normal operation and conveys this interval to
-    its\n   clients through a new Restart-Timer header in normal response\n   messages.
-    \ Once an avalanche restart actually occurs, the clients\n   perform backoff based
-    on the previously received Restart-Timer header\n   value before sending out the
-    first request attempt.  Thus, the\n   mechanism spreads all the initial client
-    requests and prevents them\n   from overloading the server.\n\n\t "
+  content: |-
+    <p>When a large number of clients register with a SIP registrar server
+       at approximately the same time, the server may become overloaded.
+       Near-simultaneous floods of SIP SUBSCRIBE and PUBLISH requests may
+       have similar effects.  Such request avalanches can occur, for
+       example, after a power failure and recovery in a metropolitan area.
+       This document describes how to avoid such overload situations.  Under
+       this mechanism, a server estimates an avalanche restart backoff
+       interval during its normal operation and conveys this interval to its
+       clients through a new Restart-Timer header in normal response
+       messages.  Once an avalanche restart actually occurs, the clients
+       perform backoff based on the previously received Restart-Timer header
+       value before sending out the first request attempt.  Thus, the
+       mechanism spreads all the initial client requests and prevents them
+       from overloading the server.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-shen-soc-avalanche-restart-overload-06
+    formattedref:
+      content: draft-shen-soc-avalanche-restart-overload-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-shen-soc-avalanche-restart-overload-06
@@ -136,7 +140,7 @@ series:
     content: Internet-Draft
   number: draft-shen-soc-avalanche-restart-overload-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

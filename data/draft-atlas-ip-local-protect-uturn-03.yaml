@@ -1,7 +1,7 @@
 ---
 id: draftatlasiplocalprotectuturn03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Alia Atlas
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -49,15 +49,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document defines and describes the use of U-turn alternates to\nprovide
-    local protection for IP unicast and/or LDP traffic in the\nevent of a single failure,
-    whether link, node or shared risk link\ngroup (SRLG).  When a topology change
-    occurs, a router S pre-computes\nfor each prefix an alternate next-hop that can
-    be used if the primary\nnext-hop fails.  An acceptable alternate can be either
-    a loop-free\nalternate or a U-turn alternate.  A U-turn alternate uses a neighbor,\nwhose
-    primary next-hop to the prefix is router S itself and which has\nitself a loop-free
-    node-protecting alternate, which thus does not go\nthrough router S to reach the
-    destination prefix.\n\n\t "
+  content: |-
+    <p>This document defines and describes the use of U-turn alternates to
+    provide local protection for IP unicast and/or LDP traffic in the
+    event of a single failure, whether link, node or shared risk link
+    group (SRLG).  When a topology change occurs, a router S pre-computes
+    for each prefix an alternate next-hop that can be used if the primary
+    next-hop fails.  An acceptable alternate can be either a loop-free
+    alternate or a U-turn alternate.  A U-turn alternate uses a neighbor,
+    whose primary next-hop to the prefix is router S itself and which has
+    itself a loop-free node-protecting alternate, which thus does not go
+    through router S to reach the destination prefix.</p>
 series:
 - type: main
   title:
@@ -66,7 +68,7 @@ series:
     content: Internet-Draft
   number: draft-atlas-ip-local-protect-uturn-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftdavaritictoc1588overmpls01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Alcatel-Lucent
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -154,16 +154,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document defines the method for transporting PTP messages (PDUs)\nover
-    an MPLS network to enable a proper handling of these packets\n(e.g. implementation
-    of Transparent Clocks (TC)) in LSRs.\n\nThe basic idea is to transport PTP messages
-    inside dedicated MPLS\nLSPs.  These LSPs only carry PTP messages and possibly
-    Control and\nManagement packets, but they do not carry customer traffic.\n\nTwo
-    methods for transporting 1588 over MPLS are defined.  The first\nmethod is to
-    transport PTP messages directly over the dedicated MPLS\nLSP via UDP/IP encapsulation,
-    which is suitable for IP/MPLS networks.\nThe second method is to transport PTP
-    messages inside a PW via\nEthernet encapsulation, which is more suitable for MPLS-TP
-    networks.\n\t "
+  content: |-
+    <p>This document defines the method for transporting PTP messages (PDUs)
+    over an MPLS network to enable a proper handling of these packets
+    (e.g. implementation of Transparent Clocks (TC)) in LSRs.
+
+    The basic idea is to transport PTP messages inside dedicated MPLS
+    LSPs.  These LSPs only carry PTP messages and possibly Control and
+    Management packets, but they do not carry customer traffic.
+
+    Two methods for transporting 1588 over MPLS are defined.  The first
+    method is to transport PTP messages directly over the dedicated MPLS
+    LSP via UDP/IP encapsulation, which is suitable for IP/MPLS networks.
+    The second method is to transport PTP messages inside a PW via
+    Ethernet encapsulation, which is more suitable for MPLS-TP networks.</p>
 series:
 - type: main
   title:
@@ -172,7 +176,7 @@ series:
     content: Internet-Draft
   number: draft-davari-tictoc-1588overmpls-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

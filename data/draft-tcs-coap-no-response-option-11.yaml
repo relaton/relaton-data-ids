@@ -1,7 +1,7 @@
 ---
 id: drafttcscoapnoresponseoption11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Arpan Pal
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -89,25 +89,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   There can be M2M scenarios where responses from server against\n   requests
-    from client might be considered redundant. This kind of\n   open-loop exchange
-    (with no response path from the server to the\n   client) may be desired to minimize
-    resource consumption in\n   constrained systems while simultaneously updating
-    a bulk of\n   resources or updating a resource with a very high frequency. CoAP\n
-    \  already provides a non-confirmable (NON) mode of message exchange\n   where
-    the server end-point does not respond with ACK. However,\n   obeying the request/response
-    semantics, the server end-point\n   responds back with a status code indicating
-    \"the result of the\n   attempt to understand and satisfy the request\".\n\n   This
-    draft introduces a header option for CoAP called 'No-Response'.\n   Using this
-    option the client explicitly tells the server to suppress\n   responses against
-    the particular request. This option also provides\n   granular control to enable
-    suppression of a particular class or a\n   combination of response-classes. This
-    option may be effective for\n   both unicast and multicast requests. Present draft
-    also discusses\n   few exemplary applications which benefit from this option.\n\n\t "
+  content: |-
+    <p>There can be M2M scenarios where responses from server against
+       requests from client might be considered redundant. This kind of
+       open-loop exchange (with no response path from the server to the
+       client) may be desired to minimize resource consumption in
+       constrained systems while simultaneously updating a bulk of
+       resources or updating a resource with a very high frequency. CoAP
+       already provides a non-confirmable (NON) mode of message exchange
+       where the server end-point does not respond with ACK. However,
+       obeying the request/response semantics, the server end-point
+       responds back with a status code indicating &quot;the result of the
+       attempt to understand and satisfy the request&quot;.
+
+       This draft introduces a header option for CoAP called &#39;No-Response&#39;.
+       Using this option the client explicitly tells the server to suppress
+       responses against the particular request. This option also provides
+       granular control to enable suppression of a particular class or a
+       combination of response-classes. This option may be effective for
+       both unicast and multicast requests. Present draft also discusses
+       few exemplary applications which benefit from this option.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-tcs-coap-no-response-option-10
+    formattedref:
+      content: draft-tcs-coap-no-response-option-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-10
@@ -117,7 +123,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-tcs-coap-no-response-option-12
+    formattedref:
+      content: draft-tcs-coap-no-response-option-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-12
@@ -133,7 +140,7 @@ series:
     content: Internet-Draft
   number: draft-tcs-coap-no-response-option-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

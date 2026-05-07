@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopglueisnotoptional02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Verisign
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -132,16 +132,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The DNS uses glue records to allow iterative clients to find the\n
-    \  addresses of nameservers that are contained within a delegated zone.\n   Authoritative
-    Servers are expected to return all available glue\n   records in referrals.  If
-    message size constraints prevent the\n   inclusion of all glue records in a UDP
-    response, the server MUST set\n   the TC flag to inform the client that the response
-    is incomplete, and\n   that the client SHOULD use TCP to retrieve the full response.\n\n\t "
+  content: |-
+    <p>The DNS uses glue records to allow iterative clients to find the
+       addresses of nameservers that are contained within a delegated zone.
+       Authoritative Servers are expected to return all available glue
+       records in referrals.  If message size constraints prevent the
+       inclusion of all glue records in a UDP response, the server MUST set
+       the TC flag to inform the client that the response is incomplete, and
+       that the client SHOULD use TCP to retrieve the full response.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-glue-is-not-optional-01
+    formattedref:
+      content: draft-ietf-dnsop-glue-is-not-optional-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-glue-is-not-optional-01
@@ -151,7 +154,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-glue-is-not-optional-03
+    formattedref:
+      content: draft-ietf-dnsop-glue-is-not-optional-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-glue-is-not-optional-03
@@ -167,7 +171,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-glue-is-not-optional-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

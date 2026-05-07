@@ -1,7 +1,7 @@
 ---
 id: draftietfgrowsimpleva11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         language: en
         content: Xiaohu Xu
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -129,22 +129,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   All BGP routers in the Default Free Zone (DFZ) are required to carry\n
-    \  all the routes in the Default Free Routing Table (DFRT).  A technique\n   is
-    described that allows some BGP routers not to install all of those\n   routes
-    into the Forwarding Information Base (FIB).\n\n   Some routers in an Autonomous
-    System (AS) announce an aggregate (the\n   VA prefix) in addition to the routes
-    they already announce.  This\n   enables other routers not to install the routes
-    covered by the VA\n   prefix into the FIB as long as those routes have the same
-    next-hop as\n   the VA prefix.\n\n   The VA prefixes that are announced within
-    an AS are not announced to\n   any other AS.  In contrast to VA, S-VA reduces
-    operational complexity\n   by proposing local to given BGP speaker solution without
-    any\n   dependency on network wide configuration or requires presence of any\n
-    \  form of intra-domain tunneling.\n\n\t "
+  content: |-
+    <p>All BGP routers in the Default Free Zone (DFZ) are required to carry
+       all the routes in the Default Free Routing Table (DFRT).  A technique
+       is described that allows some BGP routers not to install all of those
+       routes into the Forwarding Information Base (FIB).
+
+       Some routers in an Autonomous System (AS) announce an aggregate (the
+       VA prefix) in addition to the routes they already announce.  This
+       enables other routers not to install the routes covered by the VA
+       prefix into the FIB as long as those routes have the same next-hop as
+       the VA prefix.
+
+       The VA prefixes that are announced within an AS are not announced to
+       any other AS.  In contrast to VA, S-VA reduces operational complexity
+       by proposing local to given BGP speaker solution without any
+       dependency on network wide configuration or requires presence of any
+       form of intra-domain tunneling.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-grow-simple-va-10
+    formattedref:
+      content: draft-ietf-grow-simple-va-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-simple-va-10
@@ -154,7 +160,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-grow-simple-va-12
+    formattedref:
+      content: draft-ietf-grow-simple-va-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-grow-simple-va-12
@@ -170,7 +177,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-grow-simple-va-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

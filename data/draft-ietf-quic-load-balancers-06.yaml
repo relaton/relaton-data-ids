@@ -1,7 +1,7 @@
 ---
 id: draftietfquicloadbalancers06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Microsoft
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -79,19 +79,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The QUIC protocol design is resistant to transparent packet\n   inspection,
-    injection, and modification by intermediaries.  However,\n   the server can explicitly
-    cooperate with network services by agreeing\n   to certain conventions and/or
-    sharing state with those services.\n   This specification provides a standardized
-    means of solving three\n   problems: (1) maintaining routability to servers via
-    a low-state load\n   balancer even when the connection IDs in use change; (2)
-    explicit\n   encoding of the connection ID length in all packets to assist\n   hardware
-    accelerators; and (3) injection of QUIC Retry packets by an\n   anti-Denial-of-Service
-    agent on behalf of the server.\n\n\t "
+  content: |-
+    <p>The QUIC protocol design is resistant to transparent packet
+       inspection, injection, and modification by intermediaries.  However,
+       the server can explicitly cooperate with network services by agreeing
+       to certain conventions and/or sharing state with those services.
+       This specification provides a standardized means of solving three
+       problems: (1) maintaining routability to servers via a low-state load
+       balancer even when the connection IDs in use change; (2) explicit
+       encoding of the connection ID length in all packets to assist
+       hardware accelerators; and (3) injection of QUIC Retry packets by an
+       anti-Denial-of-Service agent on behalf of the server.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-quic-load-balancers-05
+    formattedref:
+      content: draft-ietf-quic-load-balancers-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-load-balancers-05
@@ -101,7 +104,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-quic-load-balancers-07
+    formattedref:
+      content: draft-ietf-quic-load-balancers-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-load-balancers-07
@@ -117,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-quic-load-balancers-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

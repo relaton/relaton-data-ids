@@ -1,7 +1,7 @@
 ---
 id: draftkuehlewindmasqueproxydiscovery00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -104,21 +104,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Often an intermediate instance (such as a proxy server) is used to\n
-    \  connect to a web server or a communicating peer if a direct end-to-\n   end
-    IP connectivity is not possible or the proxy can provide a\n   support service
-    like, e.g., address anonymisation.  To use a non-\n   transparent proxy a client
-    explicitly connects to it and requests\n   forwarding to the final target server.
-    \ The MASQUE Connect-UDP Proxy\n   service is an example of such a proxy service.
-    \ The client either\n   knows the proxy address as preconfigured in the application
-    or can\n   dynamically learn about available proxy services.  This document\n
-    \  describes different discovery mechanisms for non-transparent proxies\n   that
-    are either located in the local network, e.g. home or enterprise\n   network,
-    in the access network, or somewhere else on the Internet\n   usually close to
-    the target server or even in the same network as the\n   target server.\n\n   This
-    document assumes that the non-transparent proxy server is\n   connected via QUIC
-    and discusses potential discovery mechanisms for\n   such a QUIC-based, non-transparent
-    proxy.\n\n\t "
+  content: |-
+    <p>Often an intermediate instance (such as a proxy server) is used to
+       connect to a web server or a communicating peer if a direct end-to-
+       end IP connectivity is not possible or the proxy can provide a
+       support service like, e.g., address anonymisation.  To use a non-
+       transparent proxy a client explicitly connects to it and requests
+       forwarding to the final target server.  The MASQUE Connect-UDP Proxy
+       service is an example of such a proxy service.  The client either
+       knows the proxy address as preconfigured in the application or can
+       dynamically learn about available proxy services.  This document
+       describes different discovery mechanisms for non-transparent proxies
+       that are either located in the local network, e.g. home or enterprise
+       network, in the access network, or somewhere else on the Internet
+       usually close to the target server or even in the same network as the
+       target server.
+
+       This document assumes that the non-transparent proxy server is
+       connected via QUIC and discusses potential discovery mechanisms for
+       such a QUIC-based, non-transparent proxy.</p>
 series:
 - type: main
   title:
@@ -127,7 +131,7 @@ series:
     content: Internet-Draft
   number: draft-kuehlewind-masque-proxy-discovery-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftarunipv6mld00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Motorola India Private Ltd
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,15 +54,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes an optimization for MLDv1 (RFC 2710) and\n
-    \  MLDv2 (RFC 3810).\n   As per this optimization, a new router on coming up will
-    not send\n   periodic \"General Query\" messages to get the list of multicast\n
-    \  listeners. Instead, it will try to get the same from the Querier on\n   the
-    link. Only if no Querier are present on the link, will the new\n   router move
-    to Querier state and send \"General Query\" messages.\n   This approach provides
-    an advantage in eliminating possibly large\n   number of \"Multicast Listener
-    Report\" messages every time a new\n   router comes up on a link. More the number
-    of listeners on a link,\n   more the advantage.\n\n\t "
+  content: |-
+    <p>This document describes an optimization for MLDv1 (RFC 2710) and
+       MLDv2 (RFC 3810).
+       As per this optimization, a new router on coming up will not send
+       periodic &quot;General Query&quot; messages to get the list of multicast
+       listeners. Instead, it will try to get the same from the Querier on
+       the link. Only if no Querier are present on the link, will the new
+       router move to Querier state and send &quot;General Query&quot; messages.
+       This approach provides an advantage in eliminating possibly large
+       number of &quot;Multicast Listener Report&quot; messages every time a new
+       router comes up on a link. More the number of listeners on a link,
+       more the advantage.</p>
 series:
 - type: main
   title:
@@ -71,7 +74,7 @@ series:
     content: Internet-Draft
   number: draft-arun-ipv6-mld-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

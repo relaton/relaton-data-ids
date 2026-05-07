@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopnsrevalidation11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: NLnet Labs
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -107,27 +107,42 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes an optional algorithm for the processing of\n
-    \  Name Server (NS) resource record (RR) sets (RRsets) during iterative\n   resolution,
-    and describes the benefits and considerations of using\n   this approach.  When
-    following a referral response from an\n   authoritative server to a child zone,
-    DNS resolvers should explicitly\n   query the authoritative NS RRset at the apex
-    of the child zone and\n   cache this in preference to the NS RRset on the parent
-    side of the\n   zone cut.  The (A and AAAA) address RRsets in the additional section\n
-    \  from referral responses and authoritative NS answers for the names of\n   the
-    NS RRset, should similarly be re-queried and used to replace the\n   entries with
-    the lower trustworthiness ranking in cache.  Resolvers\n   should also periodically
-    revalidate the delegation by re-querying the\n   parent zone at the expiration
-    of the TTL of either the parent or\n   child NS RRset, whichever comes first.\n\n\t "
+  content: |-
+    <p>This document describes an optional algorithm for the processing of
+       Name Server (NS) resource record (RR) sets (RRsets) during iterative
+       resolution, and describes the benefits and considerations of using
+       this approach.  When following a referral response from an
+       authoritative server to a child zone, DNS resolvers should explicitly
+       query the authoritative NS RRset at the apex of the child zone and
+       cache this in preference to the NS RRset on the parent side of the
+       zone cut.  The (A and AAAA) address RRsets in the additional section
+       from referral responses and authoritative NS answers for the names of
+       the NS RRset, should similarly be re-queried and used to replace the
+       entries with the lower trustworthiness ranking in cache.  Resolvers
+       should also periodically revalidate the delegation by re-querying the
+       parent zone at the expiration of the TTL of either the parent or
+       child NS RRset, whichever comes first.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-ns-revalidation-10
+    formattedref:
+      content: draft-ietf-dnsop-ns-revalidation-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-ns-revalidation-10
     docidentifier:
     - content: draft-ietf-dnsop-ns-revalidation-10
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-dnsop-ns-revalidation-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-ns-revalidation-12
+    docidentifier:
+    - content: draft-ietf-dnsop-ns-revalidation-12
       type: Internet-Draft
       primary: true
 series:
@@ -138,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-ns-revalidation-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,8 @@
 ---
 id: draftreillybankingintegrity
-schema_version: v1.4.1
-formattedref: draft-reilly-banking-integrity
+schema_version: v1.5.6
+formattedref:
+  content: draft-reilly-banking-integrity
 title:
 - language: en
   script: Latn
@@ -13,24 +14,53 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines the Reilly Banking Integrity Protocol (RBIP),\n
-    \  a compliance-grade architecture for generating immutable, auditor-\n   and
-    regulator-verifiable evidence trails in banking operations. RBIP\n   combines
-    cryptographic anchoring (e.g. blockchain timestamping) with\n   archival DOI issuance
-    to produce permanent, tamper-evident records.\n   RBIP addresses three core domains:
-    Proof-of-Reserves & Liquidity\n   (PRL), Loan Origination & Collateral Chain (LOC),
-    and KYC/AML\n   Evidence Ledger (KAL).\n\n   RBIP is intended to help financial
-    institutions satisfy requirements\n   from Basel III/IV, SOX, BSA/AML, ISO/IEC
-    42001:2023, and other\n   relevant regulations while preserving privacy, accountability,
-    and\n   auditability.\n\n\t "
+  content: |-
+    <p>This document defines version 01 of the Reilly Banking Integrity
+       Protocol (RBIP), a compliance-grade architecture for generating
+       immutable, auditor- and regulator-verifiable evidence trails in
+       banking operations.  RBIP combines cryptographic anchoring (via
+       blockchain timestamping) with archival DOI issuance to produce
+       permanent, tamper-evident records across three core domains:
+       Proof-of-Reserves &amp; Liquidity (PRL), Loan Origination &amp; Collateral
+       Chain (LOC), and KYC/AML Evidence Ledger (KAL).
+
+       RBIP is designed to help financial institutions satisfy requirements
+       from Basel III/IV, SOX, BSA/AML, DORA, MiCA, ISO/IEC 42001:2023,
+       and other applicable regulations while preserving privacy,
+       accountability, and auditability.
+
+       This document and its foundational specification are protected under
+       triple-layer digital permanence: (1) DOI archival via a persistent
+       archival provider (DOI: 10.5281/zenodo.17114424, published
+       September 13, 2025, initially archived at Zenodo); (2) blockchain
+       timestamping via a public proof-of-work blockchain timestamping
+       service (initially anchored via OpenTimestamps to the Bitcoin
+       blockchain); and (3) IETF Internet-Draft submission
+       (draft-reilly-banking-integrity-00, submitted September 27, 2025).
+       This triple-layer permanence establishes cryptographically
+       verifiable prior art with an immutable public timestamp predating
+       any subsequent implementation, derivative work, or regulatory
+       mandate.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-reilly-banking-integrity-00
+    formattedref:
+      content: draft-reilly-banking-integrity-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reilly-banking-integrity-00
     docidentifier:
     - content: draft-reilly-banking-integrity-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-reilly-banking-integrity-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-reilly-banking-integrity-01
+    docidentifier:
+    - content: draft-reilly-banking-integrity-01
       type: Internet-Draft
       primary: true

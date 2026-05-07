@@ -1,7 +1,7 @@
 ---
 id: drafthoffmandanesmime03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Jakob Schlyter
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -72,23 +72,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   S/MIME uses certificates for authenticating and encrypting messages.\n
-    \  Users want their mail user agents to securely associate a certificate\n   with
-    the sender of an encrypted and/or signed message.  DNSSEC\n   provides a mechanism
-    for a zone operator to sign DNS information\n   directly.  This way, bindings
-    of certificates to users within a\n   domain are asserted not by external entities,
-    but by the entities\n   that operate the DNS.  This document describes how to
-    use secure DNS\n   to associate an S/MIME user's certificate with the intended
-    domain\n   name.\n\n   IMPORTANT NOTE: This draft is intentionally sketchy.  It
-    is meant as\n   a possible starting point for the DANE WG if it wants to consider\n
-    \  making a protocol similar to TLSA, as described in\n   draft-ietf-dane-protocol,
-    but that applies to S/MIME.  The WG may or\n   may not want to adopt such work,
-    or if it does, may want to use a\n   very different scheme from the one described
-    here.\n\n\t "
+  content: |-
+    <p>S/MIME uses certificates for authenticating and encrypting messages.
+       Users want their mail user agents to securely associate a certificate
+       with the sender of an encrypted and/or signed message.  DNSSEC
+       provides a mechanism for a zone operator to sign DNS information
+       directly.  This way, bindings of certificates to users within a
+       domain are asserted not by external entities, but by the entities
+       that operate the DNS.  This document describes how to use secure DNS
+       to associate an S/MIME user&#39;s certificate with the intended domain
+       name.
+
+       IMPORTANT NOTE: This draft is intentionally sketchy.  It is meant as
+       a possible starting point for the DANE WG if it wants to consider
+       making a protocol similar to TLSA, as described in
+       draft-ietf-dane-protocol, but that applies to S/MIME.  The WG may or
+       may not want to adopt such work, or if it does, may want to use a
+       very different scheme from the one described here.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-hoffman-dane-smime-02
+    formattedref:
+      content: draft-hoffman-dane-smime-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hoffman-dane-smime-02
@@ -98,7 +103,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-hoffman-dane-smime-04
+    formattedref:
+      content: draft-hoffman-dane-smime-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hoffman-dane-smime-04
@@ -114,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-hoffman-dane-smime-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

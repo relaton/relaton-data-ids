@@ -1,7 +1,7 @@
 ---
 id: draftbfdfsmhealthstatus00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Pluribus Networks
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,16 +54,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "Bidirectional Forwarding Detection operates in different modes.\nWhen
-    BFD runs in asynchronous mode requires hello packet needs\nto be transmitted and
-    received on regular intervals. In software\nbased BFD application, hello packets
-    processing path may be\nheavy weight which may involve many processing levels
-    to reach\nBFD application. On a scaled system, processing delay may not\nbe constant
-    at all the time and this processing delay does appear\nat any point between software
-    path entry point and BFD application.\nThis delay needs to be identified and suppressed
-    otherwise system\nmay end up on false link failure detection. This internet draft\ndeals
-    on this particular case.\n\nSince introducing new Diagnostic bit, it requires
-    to update RFC5880.\n\n\t "
+  content: |-
+    <p>Bidirectional Forwarding Detection operates in different modes.
+    When BFD runs in asynchronous mode requires hello packet needs
+    to be transmitted and received on regular intervals. In software
+    based BFD application, hello packets processing path may be
+    heavy weight which may involve many processing levels to reach
+    BFD application. On a scaled system, processing delay may not
+    be constant at all the time and this processing delay does appear
+    at any point between software path entry point and BFD application.
+    This delay needs to be identified and suppressed otherwise system
+    may end up on false link failure detection. This internet draft
+    deals on this particular case.
+
+    Since introducing new Diagnostic bit, it requires to update RFC5880.</p>
 series:
 - type: main
   title:
@@ -72,7 +76,7 @@ series:
     content: Internet-Draft
   number: draft-bfd-fsm-health-status-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

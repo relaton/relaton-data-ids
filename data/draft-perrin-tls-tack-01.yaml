@@ -1,7 +1,7 @@
 ---
 id: draftperrintlstack01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Moxie Marlinspike
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -49,16 +49,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines TACK, a TLS Extension that enables a TLS server\n
-    \  to assert the authenticity of its public key.  A \"tack\" contains a\n   \"TACK
-    key\" which is used to sign the public key from the TLS server's\n   certificate.
-    \ Hostnames can be \"pinned\" to a TACK key.  TLS\n   connections to a pinned
-    hostname require the server to present a tack\n   containing the pinned key and
-    a corresponding signature over the TLS\n   server's public key.\n\n\t "
+  content: |-
+    <p>This document defines TACK, a TLS Extension that enables a TLS server
+       to assert the authenticity of its public key.  A &quot;tack&quot; contains a
+       &quot;TACK key&quot; which is used to sign the public key from the TLS server&#39;s
+       certificate.  Hostnames can be &quot;pinned&quot; to a TACK key.  TLS
+       connections to a pinned hostname require the server to present a tack
+       containing the pinned key and a corresponding signature over the TLS
+       server&#39;s public key.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-perrin-tls-tack-00
+    formattedref:
+      content: draft-perrin-tls-tack-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perrin-tls-tack-00
@@ -68,7 +71,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-perrin-tls-tack-02
+    formattedref:
+      content: draft-perrin-tls-tack-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-perrin-tls-tack-02
@@ -84,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-perrin-tls-tack-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftmcnallycbornanbstr01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Blockchain Commons
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,21 +54,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IEEE-754 NaN formations are not numbers and have no equivalence\n   class.
-    \ They are not comparable to anything, including reflexively,\n   and therefore
-    each attribute - sign bit, signaling/quiet bit, payload\n   bits, and representation
-    width (binary16, binary32, binary64,\n   binary128) - can carry meaning for an
-    implementation.  CBOR permits\n   encoding NaNs as floating-point values, but
-    generic processing,\n   preferred serialization, and deterministic profiles may
-    canonicalize\n   or otherwise alter NaN encodings, losing information.  This document\n
-    \  defines a CBOR tag, colloquially \"nan-bstr\", whose content is a byte\n   string
-    carrying the exact IEEE-754 NaN bit pattern so that all\n   attributes are preserved
-    across encode/decode, enabling use cases\n   like NaN boxing, platform-specific
-    error signaling, diagnostics, and\n   forensics.\n\n\t "
+  content: |-
+    <p>IEEE-754 NaN formations are not numbers and have no equivalence
+       class.  They are not comparable to anything, including reflexively,
+       and therefore each attribute - sign bit, signaling/quiet bit, payload
+       bits, and representation width (binary16, binary32, binary64,
+       binary128) - can carry meaning for an implementation.  CBOR permits
+       encoding NaNs as floating-point values, but generic processing,
+       preferred serialization, and deterministic profiles may canonicalize
+       or otherwise alter NaN encodings, losing information.  This document
+       defines a CBOR tag, colloquially &quot;nan-bstr&quot;, whose content is a byte
+       string carrying the exact IEEE-754 NaN bit pattern so that all
+       attributes are preserved across encode/decode, enabling use cases
+       like NaN boxing, platform-specific error signaling, diagnostics, and
+       forensics.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-mcnally-cbor-nan-bstr-00
+    formattedref:
+      content: draft-mcnally-cbor-nan-bstr-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mcnally-cbor-nan-bstr-00
@@ -84,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-mcnally-cbor-nan-bstr-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

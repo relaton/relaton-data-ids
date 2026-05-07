@@ -1,7 +1,7 @@
 ---
 id: draftietfsidropsmanifestnumbers07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -91,7 +91,7 @@ contributor:
         language: en
         content: Job Snijders
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -99,21 +99,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Resource Public Key Infrastructure (RPKI) makes use of signed\n
-    \  objects called manifests.  A manifest lists each file that an issuer\n   intends
-    to include within an RPKI repository, and can be used to\n   detect certain forms
-    of attack against a repository.  Manifests\n   include a \"manifest number\" (manifestNumber),
-    which an issuer must\n   increment whenever it issues a new manifest, and Relying
-    Parties\n   (RPs) are required to verify that a newly-retrieved manifest for a\n
-    \  given Certification Authority (CA) has a higher manifestNumber than\n   the
-    previously-validated manifest.  However, the manifestNumber field\n   is 20 octets
-    in length (i.e.  bounded), and no behaviour is specified\n   for when a manifestNumber
-    reaches the largest possible value.  This\n   document updates RFC9286 by specifying
-    issuer and RP behaviour for\n   this scenario.\n\n\t "
+  content: |-
+    <p>The Resource Public Key Infrastructure (RPKI) makes use of signed
+       objects called manifests.  A manifest lists each file that an issuer
+       intends to include within an RPKI repository, and can be used to
+       detect certain forms of attack against a repository.  Manifests
+       include a &quot;manifest number&quot; (manifestNumber), which an issuer must
+       increment whenever it issues a new manifest, and Relying Parties
+       (RPs) are required to verify that a newly-retrieved manifest for a
+       given Certification Authority (CA) has a higher manifestNumber than
+       the previously-validated manifest.  However, the manifestNumber field
+       is 20 octets in length (i.e.  bounded), and no behaviour is specified
+       for when a manifestNumber reaches the largest possible value.  This
+       document updates RFC9286 by specifying issuer and RP behaviour for
+       this scenario.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidrops-manifest-numbers-06
+    formattedref:
+      content: draft-ietf-sidrops-manifest-numbers-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-manifest-numbers-06
@@ -123,7 +127,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sidrops-manifest-numbers-08
+    formattedref:
+      content: draft-ietf-sidrops-manifest-numbers-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-manifest-numbers-08
@@ -139,7 +144,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidrops-manifest-numbers-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

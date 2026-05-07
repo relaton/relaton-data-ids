@@ -1,7 +1,7 @@
 ---
 id: draftgredlerisislabeladvertisement03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Verizon
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -129,20 +129,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Historically MPLS label distribution was driven by protocols like\n
-    \  LDP, RSVP and LBGP.  All of those protocols are session oriented.  In\n   order
-    to obtain a label binding for a given destination FEC from a\n   given router
-    one needs first to establish an LDP/RSVP/LBGP session\n   with that router.\n\n
-    \  Advertising MPLS labels in IGPs\n   [I-D.gredler-rtgwg-igp-label-advertisement]
-    describes several use\n   cases where utilizing the flooding machinery of link-state
-    protocols\n   for MPLS label distribution allows to obtain the binding without\n
-    \  requiring to establish an LDP/RSVP/LBGP session with that router.\n\n   This
-    document describes the protocol extension to distribute MPLS\n   label bindings
-    using the IS-IS protocol.\n\n\n\t "
+  content: |-
+    <p>Historically MPLS label distribution was driven by protocols like
+       LDP, RSVP and LBGP.  All of those protocols are session oriented.  In
+       order to obtain a label binding for a given destination FEC from a
+       given router one needs first to establish an LDP/RSVP/LBGP session
+       with that router.
+
+       Advertising MPLS labels in IGPs
+       [I-D.gredler-rtgwg-igp-label-advertisement] describes several use
+       cases where utilizing the flooding machinery of link-state protocols
+       for MPLS label distribution allows to obtain the binding without
+       requiring to establish an LDP/RSVP/LBGP session with that router.
+
+       This document describes the protocol extension to distribute MPLS
+       label bindings using the IS-IS protocol.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-gredler-isis-label-advertisement-02
+    formattedref:
+      content: draft-gredler-isis-label-advertisement-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gredler-isis-label-advertisement-02
@@ -158,7 +164,7 @@ series:
     content: Internet-Draft
   number: draft-gredler-isis-label-advertisement-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

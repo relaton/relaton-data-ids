@@ -1,7 +1,7 @@
 ---
 id: draftcrockeremailauthor01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Brandenburg InternetWorking
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,25 +54,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Internet mail defines the From: field to indicate the author of the\n
-    \  message's content and the Sender: field to indicate who initially\n   handled
-    the message, on the author's behalf.  The Sender: field is\n   optional, if it
-    has the same information as the From: field.  That\n   is, when the Sender: field
-    is absent, the From: field has conflated\n   semantics, as both a handling identifier
-    and a content creator\n   identifier.  This was not a problem, until development
-    of stringent\n   protections on use of the From: field.  It has prompted Mediators,\n
-    \  such as mailing lists, to modify the From: field, to circumvent mail\n   rejection
-    caused by those protections.\n\n   This affects end-to-end behavior of email,
-    between the author and the\n   final recipients, because mail from the same author
-    is not treated\n   the same, depending on what path it followed.  In effect, the
-    From:\n   field has become dominated by its role as a handling identifier.  The\n
-    \  current specification augments the altered use of the From: field, by\n   specifying
-    the Author: field, which identifies the original author of\n   the message and
-    is not subject to modification by Mediators.\n\n\t "
+  content: |-
+    <p>Internet mail defines the From: field to indicate the author of the
+       message&#39;s content and the Sender: field to indicate who initially
+       handled the message, on the author&#39;s behalf.  The Sender: field is
+       optional, if it has the same information as the From: field.  That
+       is, when the Sender: field is absent, the From: field has conflated
+       semantics, as both a handling identifier and a content creator
+       identifier.  This was not a problem, until development of stringent
+       protections on use of the From: field.  It has prompted Mediators,
+       such as mailing lists, to modify the From: field, to circumvent mail
+       rejection caused by those protections.
+
+       This affects end-to-end behavior of email, between the author and the
+       final recipients, because mail from the same author is not treated
+       the same, depending on what path it followed.  In effect, the From:
+       field has become dominated by its role as a handling identifier.  The
+       current specification augments the altered use of the From: field, by
+       specifying the Author: field, which identifies the original author of
+       the message and is not subject to modification by Mediators.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-crocker-email-author-00
+    formattedref:
+      content: draft-crocker-email-author-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-crocker-email-author-00
@@ -82,7 +87,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-crocker-email-author-02
+    formattedref:
+      content: draft-crocker-email-author-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-crocker-email-author-02
@@ -98,7 +104,7 @@ series:
     content: Internet-Draft
   number: draft-crocker-email-author-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietftcpinctcpcrypt05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -190,7 +190,7 @@ contributor:
         language: en
         content: Eric W. Smith
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -198,21 +198,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies tcpcrypt, a TCP encryption protocol designed\n
-    \  for use in conjunction with the TCP Encryption Negotiation Option\n   (TCP-ENO)
-    [I-D.ietf-tcpinc-tcpeno].  Tcpcrypt coexists with\n   middleboxes by tolerating
-    resegmentation, NATs, and other\n   manipulations of the TCP header.  The protocol
-    is self-contained and\n   specifically tailored to TCP implementations, which
-    often reside in\n   kernels or other environments in which large external software\n
-    \  dependencies can be undesirable.  Because the size of TCP options is\n   limited,
-    the protocol requires one additional one-way message latency\n   to perform key
-    exchange before application data may be transmitted.\n   However, this cost can
-    be avoided between two hosts that have\n   recently established a previous tcpcrypt
-    connection.\n\n\t "
+  content: |-
+    <p>This document specifies tcpcrypt, a TCP encryption protocol designed
+       for use in conjunction with the TCP Encryption Negotiation Option
+       (TCP-ENO) [I-D.ietf-tcpinc-tcpeno].  Tcpcrypt coexists with
+       middleboxes by tolerating resegmentation, NATs, and other
+       manipulations of the TCP header.  The protocol is self-contained and
+       specifically tailored to TCP implementations, which often reside in
+       kernels or other environments in which large external software
+       dependencies can be undesirable.  Because the size of TCP options is
+       limited, the protocol requires one additional one-way message latency
+       to perform key exchange before application data may be transmitted.
+       However, this cost can be avoided between two hosts that have
+       recently established a previous tcpcrypt connection.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpinc-tcpcrypt-04
+    formattedref:
+      content: draft-ietf-tcpinc-tcpcrypt-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpinc-tcpcrypt-04
@@ -222,7 +225,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpinc-tcpcrypt-06
+    formattedref:
+      content: draft-ietf-tcpinc-tcpcrypt-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpinc-tcpcrypt-06
@@ -238,7 +242,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpinc-tcpcrypt-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

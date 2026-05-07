@@ -1,7 +1,7 @@
 ---
 id: draftietflsrospfprefixextendedflags04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: China mobile
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -154,17 +154,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Each OSPF prefix is advertised with an 8-bit options field, using the\n
-    \  Prefix Options (OSPFv3) and the flag field in the OSPFv2 Extended\n   Prefix
-    TLV (OSPFv2).  However for OSPFv3, all the Prefix Options bits\n   have already
-    been assigned, and for OSPFv2, there are not many bits\n   left unassigned in
-    the OSPFv2 Extended Prefix TLV.\n\n   This document solves the problem of insufficient
-    options bit by\n   defining variable-length Prefix Attribute Flags Sub-TLVs for
-    OSPFv2\n   and OSPFv3.\n\n\t "
+  content: |-
+    <p>Each OSPF prefix is advertised with an 8-bit options field, using the
+       Prefix Options (OSPFv3) and the flag field in the OSPFv2 Extended
+       Prefix TLV (OSPFv2).  However for OSPFv3, all the Prefix Options bits
+       have already been assigned, and for OSPFv2, there are not many bits
+       left unassigned in the OSPFv2 Extended Prefix TLV.
+
+       This document solves the problem of insufficient options bit by
+       defining variable-length Prefix Attribute Flags Sub-TLVs for OSPFv2
+       and OSPFv3.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lsr-ospf-prefix-extended-flags-03
+    formattedref:
+      content: draft-ietf-lsr-ospf-prefix-extended-flags-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-03
@@ -174,7 +178,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-lsr-ospf-prefix-extended-flags-05
+    formattedref:
+      content: draft-ietf-lsr-ospf-prefix-extended-flags-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-prefix-extended-flags-05
@@ -190,7 +195,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lsr-ospf-prefix-extended-flags-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

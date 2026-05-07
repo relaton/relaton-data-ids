@@ -1,7 +1,7 @@
 ---
 id: draftbeckbgpsecuritytracking00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Charter
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,16 +79,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the BGP Path Security Tracking attribute, an\n
-    \  extension to BGP-4. This attribute provides a transitive means for\n   networks
-    to indicate BGP security checks in place to upstream\n   networks. Upstream networks
-    can optionally use that information to\n   modify the path selection algorithm
-    giving preference to paths\n   reporting better security where the prefix length
-    is the same and\n   as-path length is similar. Effectively reporting no security
-    would\n   be treated the same as prepending the announcement once and reporting\n
-    \  strong security would be treated the same as not prepending. The net\n   result
-    of using the information to influence path selection is that\n   more secured
-    paths would be preferred over less secured paths.\n\n\n\n\t "
+  content: |-
+    <p>This document describes the BGP Path Security Tracking attribute, an
+       extension to BGP-4. This attribute provides a transitive means for
+       networks to indicate BGP security checks in place to upstream
+       networks. Upstream networks can optionally use that information to
+       modify the path selection algorithm giving preference to paths
+       reporting better security where the prefix length is the same and
+       as-path length is similar. Effectively reporting no security would
+       be treated the same as prepending the announcement once and reporting
+       strong security would be treated the same as not prepending. The net
+       result of using the information to influence path selection is that
+       more secured paths would be preferred over less secured paths.</p>
 series:
 - type: main
   title:
@@ -97,7 +99,7 @@ series:
     content: Internet-Draft
   number: draft-beck-bgp-security-tracking-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

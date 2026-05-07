@@ -1,7 +1,8 @@
 ---
 id: draftharrisonsidropsmanifestnumbers
-schema_version: v1.4.1
-formattedref: draft-harrison-sidrops-manifest-numbers
+schema_version: v1.5.6
+formattedref:
+  content: draft-harrison-sidrops-manifest-numbers
 title:
 - language: en
   script: Latn
@@ -13,21 +14,25 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The Resource Public Key Infrastructure (RPKI) makes use of signed\n
-    \  objects called manifests.  A manifest lists each file that a\n   publisher
-    intends to include within an RPKI repository, and can be\n   used to detect certain
-    forms of attack against a repository.\n   Manifests include a \"manifest number\"
-    (manifestNumber), which the\n   publisher must increment whenever it issues a
-    new manifest, and\n   Relying Parties (RPs) are required to verify that a newly-retrieved\n
-    \  manifest for a given Certification Authority (CA) has a higher\n   manifestNumber
-    than the previously-validated manifest.  However, the\n   manifestNumber field
-    is 20 octets in length (i.e. not unbounded), and\n   no behaviour is specified
-    for when a manifestNumber reaches the\n   largest possible value.  This document
-    specifies publisher and RP\n   behaviour for this scenario.\n\n\t "
+  content: |-
+    <p>The Resource Public Key Infrastructure (RPKI) makes use of signed
+       objects called manifests.  A manifest lists each file that a
+       publisher intends to include within an RPKI repository, and can be
+       used to detect certain forms of attack against a repository.
+       Manifests include a &quot;manifest number&quot; (manifestNumber), which the
+       publisher must increment whenever it issues a new manifest, and
+       Relying Parties (RPs) are required to verify that a newly-retrieved
+       manifest for a given Certification Authority (CA) has a higher
+       manifestNumber than the previously-validated manifest.  However, the
+       manifestNumber field is 20 octets in length (i.e. not unbounded), and
+       no behaviour is specified for when a manifestNumber reaches the
+       largest possible value.  This document specifies publisher and RP
+       behaviour for this scenario.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-harrison-sidrops-manifest-numbers-00
+    formattedref:
+      content: draft-harrison-sidrops-manifest-numbers-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-harrison-sidrops-manifest-numbers-00
@@ -37,7 +42,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-harrison-sidrops-manifest-numbers-01
+    formattedref:
+      content: draft-harrison-sidrops-manifest-numbers-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-harrison-sidrops-manifest-numbers-01

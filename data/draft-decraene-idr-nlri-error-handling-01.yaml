@@ -1,7 +1,7 @@
 ---
 id: draftdecraeneidrnlrierrorhandling01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: HPE
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -79,30 +79,47 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC 7606 partially revises the error handling for BGP UPDATE\n   messages.
-    \ It reduces the cases of BGP session reset by defining and\n   using less impactful
-    error handling approaches, such as attribute\n   discard and treat-as-withdraw
-    when applicable.  The treat-as-withdraw\n   approach requires that the entire
-    NLRI field of the MP_REACH_NLRI\n   attribute be successfully parsed.  This typically
-    means parsing\n   errors in MP_REACH_NLRI cannot be handled by any means short
-    of\n   session reset.  This is exacerbated by the use of non-key data within\n
-    \  NLRI, which introduces parsing complexity and additional error cases.\n\n   This
-    specification defines a non-transitive BGP attribute, the\n   \"NLRI_KEY_LIST
-    attribute\", to encode NLRIs as per the format of\n   MP_UNREACH_NLRI.  This attribute
-    is used to allow the treat-as-\n   withdraw error-handling approach to be used
-    in case an error in the\n   MP_REACH_NLRI attribute prevents the parsing of its
-    NLRIs.\n\n   This document updates RFC 7606 by mandating that the NLRI_KEY_LIST\n
-    \  attribute appear before the MP_REACH_NLRI (or any other) attribute in\n   an
-    UPDATE message.\n\n\t "
+  content: |-
+    <p>RFC 7606 partially revises the error handling for BGP UPDATE
+       messages.  It reduces the cases of BGP session reset by defining and
+       using less impactful error handling approaches, such as attribute
+       discard and treat-as-withdraw when applicable.  The treat-as-withdraw
+       approach requires that the entire NLRI field of the MP_REACH_NLRI
+       attribute be successfully parsed.  This typically means parsing
+       errors in MP_REACH_NLRI cannot be handled by any means short of
+       session reset.  This is exacerbated by the use of non-key data within
+       NLRI, which introduces parsing complexity and additional error cases.
+
+       This specification defines a non-transitive BGP attribute, the
+       &quot;NLRI_KEY_LIST attribute&quot;, to encode NLRIs as per the format of
+       MP_UNREACH_NLRI.  This attribute is used to allow the treat-as-
+       withdraw error-handling approach to be used in case an error in the
+       MP_REACH_NLRI attribute prevents the parsing of its NLRIs.
+
+       This document updates RFC 7606 by mandating that the NLRI_KEY_LIST
+       attribute appear before the MP_REACH_NLRI (or any other) attribute in
+       an UPDATE message.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-decraene-idr-nlri-error-handling-00
+    formattedref:
+      content: draft-decraene-idr-nlri-error-handling-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-decraene-idr-nlri-error-handling-00
     docidentifier:
     - content: draft-decraene-idr-nlri-error-handling-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-decraene-idr-nlri-error-handling-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-decraene-idr-nlri-error-handling-02
+    docidentifier:
+    - content: draft-decraene-idr-nlri-error-handling-02
       type: Internet-Draft
       primary: true
 series:
@@ -113,7 +130,7 @@ series:
     content: Internet-Draft
   number: draft-decraene-idr-nlri-error-handling-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

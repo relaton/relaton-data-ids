@@ -1,7 +1,7 @@
 ---
 id: draftietfbessnshbgpcontrolplane18
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Verizon
 version:
-- draft: '18'
+- content: '18'
 language:
 - en
 script:
@@ -157,22 +157,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document describes the use of BGP as a control plane for networks
-    that support service function chaining. The document introduces a new BGP address
-    family called the \"Service Function Chain (SFC) Address Family Identifier / Subsequent
-    Address Family Identifier\" (SFC AFI/SAFI) with two Route Types. One Route Type
-    is originated by a node to advertise that it hosts a particular instance of a
-    specified service function. This Route Type also provides \"instructions\" on
-    how to send a packet to the hosting node in a way that indicates that the service
-    function has to be applied to the packet. The other Route Type is used by a controller
-    to advertise the paths of \"chains\" of service functions and give a unique designator
-    to each such path so that they can be used in conjunction with the Network Service
-    Header (NSH) defined in RFC 8300.\n\n This document adopts the service function
-    chaining architecture described in RFC 7665.\n\t "
+  content: |-
+    <p>This document describes the use of BGP as a control plane for networks that support service function chaining. The document introduces a new BGP address family called the &quot;Service Function Chain (SFC) Address Family Identifier / Subsequent Address Family Identifier&quot; (SFC AFI/SAFI) with two Route Types. One Route Type is originated by a node to advertise that it hosts a particular instance of a specified service function. This Route Type also provides &quot;instructions&quot; on how to send a packet to the hosting node in a way that indicates that the service function has to be applied to the packet. The other Route Type is used by a controller to advertise the paths of &quot;chains&quot; of service functions and give a unique designator to each such path so that they can be used in conjunction with the Network Service Header (NSH) defined in RFC 8300.
+
+     This document adopts the service function chaining architecture described in RFC 7665.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bess-nsh-bgp-control-plane-17
+    formattedref:
+      content: draft-ietf-bess-nsh-bgp-control-plane-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-nsh-bgp-control-plane-17
@@ -188,7 +181,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bess-nsh-bgp-control-plane-18
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

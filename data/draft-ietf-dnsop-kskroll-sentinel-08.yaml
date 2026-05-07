@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopkskrollsentinel08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -105,7 +105,7 @@ contributor:
         - language: en
           content: Google
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -113,27 +113,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The DNS Security Extensions (DNSSEC) were developed to provide origin\n
-    \  authentication and integrity protection for DNS data by using digital\n   signatures.
-    \ These digital signatures can be verified by building a\n   chain of trust starting
-    from a trust anchor and proceeding down to a\n   particular node in the DNS.  This
-    document specifies a mechanism that\n   will allow an end user and third parties
-    to determine the trusted key\n   state for the root key of the resolvers that
-    handle that user's DNS\n   queries.  Note that this method is only applicable
-    for determing\n   which keys are in the trust store for the root key.\n\n   There
-    is an example / toy implementation of this at http://www.ksk-\n   test.net .\n\n
-    \  [ This document is being collaborated on in Github at:\n   https://github.com/APNIC-Labs/draft-kskroll-sentinel.
-    \ The most\n   recent version of the document, open issues, etc should all be\n
-    \  available here.  The authors (gratefully) accept pull requests.  Text\n   in
-    square brackets will be removed before publication. ]\n\n   [ NOTE: This version
-    uses the labels \"kskroll-sentinel-is-ta-<key-\n   tag>\", \"kskroll-sentinel-not-ta-<key-tag>\";
-    older versions of this\n   document used \"_is-ta-<key-tag>\", \"_not-ta-<key-tag>\".
-    \ Also note\n   that the format of the tag-index is now zero-filled decimal.\n
-    \  Apolgies to those who have began implmenting.]\n\n\t "
+  content: |-
+    <p>The DNS Security Extensions (DNSSEC) were developed to provide origin
+       authentication and integrity protection for DNS data by using digital
+       signatures.  These digital signatures can be verified by building a
+       chain of trust starting from a trust anchor and proceeding down to a
+       particular node in the DNS.  This document specifies a mechanism that
+       will allow an end user and third parties to determine the trusted key
+       state for the root key of the resolvers that handle that user&#39;s DNS
+       queries.  Note that this method is only applicable for determing
+       which keys are in the trust store for the root key.
+
+       There is an example / toy implementation of this at http://www.ksk-
+       test.net .
+
+       [ This document is being collaborated on in Github at:
+       https://github.com/APNIC-Labs/draft-kskroll-sentinel.  The most
+       recent version of the document, open issues, etc should all be
+       available here.  The authors (gratefully) accept pull requests.  Text
+       in square brackets will be removed before publication. ]
+
+       [ NOTE: This version uses the labels &quot;kskroll-sentinel-is-ta-&lt;key-
+       tag&gt;&quot;, &quot;kskroll-sentinel-not-ta-&lt;key-tag&gt;&quot;; older versions of this
+       document used &quot;_is-ta-&lt;key-tag&gt;&quot;, &quot;_not-ta-&lt;key-tag&gt;&quot;.  Also note
+       that the format of the tag-index is now zero-filled decimal.
+       Apolgies to those who have began implmenting.]</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-kskroll-sentinel-07
+    formattedref:
+      content: draft-ietf-dnsop-kskroll-sentinel-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-07
@@ -143,7 +152,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-kskroll-sentinel-09
+    formattedref:
+      content: draft-ietf-dnsop-kskroll-sentinel-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-kskroll-sentinel-09
@@ -159,7 +169,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-kskroll-sentinel-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

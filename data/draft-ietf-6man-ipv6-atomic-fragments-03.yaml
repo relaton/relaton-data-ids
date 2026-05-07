@@ -1,7 +1,7 @@
 ---
 id: draftietf6manipv6atomicfragments03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Fernando Gont
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -49,22 +49,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The IPv6 specification allows packets to contain a Fragment Header\n
-    \  without the packet being actually fragmented into multiple pieces (we\n   refer
-    to these packets as \"atomic fragments\").  Such packets\n   typically result
-    from hosts that have received an ICMPv6 \"Packet Too\n   Big\" error message that
-    advertises a \"Next-Hop MTU\" smaller than 1280\n   bytes, and are currently processed
-    by some implementations as\n   \"fragmented traffic\".  Thus, by forging ICMPv6
-    \"Packet Too Big\" error\n   messages an attacker can cause hosts to employ \"atomic
-    fragments\",\n   and then launch any fragmentation-based attacks against such
-    traffic.\n   This document discusses the generation of the aforementioned \"atomic\n
-    \  fragments\", the corresponding security implications, and formally\n   updates
-    RFC 2460 and RFC 5722 such that fragmentation-based attack\n   vectors against
-    traffic employing \"atomic fragments\" are completely\n   eliminated.\n\n\t "
+  content: |-
+    <p>The IPv6 specification allows packets to contain a Fragment Header
+       without the packet being actually fragmented into multiple pieces (we
+       refer to these packets as &quot;atomic fragments&quot;).  Such packets
+       typically result from hosts that have received an ICMPv6 &quot;Packet Too
+       Big&quot; error message that advertises a &quot;Next-Hop MTU&quot; smaller than 1280
+       bytes, and are currently processed by some implementations as
+       &quot;fragmented traffic&quot;.  Thus, by forging ICMPv6 &quot;Packet Too Big&quot; error
+       messages an attacker can cause hosts to employ &quot;atomic fragments&quot;,
+       and then launch any fragmentation-based attacks against such traffic.
+       This document discusses the generation of the aforementioned &quot;atomic
+       fragments&quot;, the corresponding security implications, and formally
+       updates RFC 2460 and RFC 5722 such that fragmentation-based attack
+       vectors against traffic employing &quot;atomic fragments&quot; are completely
+       eliminated.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6man-ipv6-atomic-fragments-02
+    formattedref:
+      content: draft-ietf-6man-ipv6-atomic-fragments-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-ipv6-atomic-fragments-02
@@ -74,7 +78,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-ipv6-atomic-fragments-04
+    formattedref:
+      content: draft-ietf-6man-ipv6-atomic-fragments-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-ipv6-atomic-fragments-04
@@ -90,7 +95,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-ipv6-atomic-fragments-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

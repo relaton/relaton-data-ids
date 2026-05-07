@@ -1,7 +1,7 @@
 ---
 id: draftietfconexabstractmech03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Bob Briscoe
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -69,19 +69,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes an abstract mechanism by which senders inform\n
-    \  the network about the congestion encountered by packets earlier in\n   the
-    same flow.  Today, the network may signal congestion to the\n   receiver by ECN
-    markings or by dropping packets, and the receiver\n   passes this information
-    back to the sender in transport-layer\n   feedback.  The mechanism to be developed
-    by the ConEx WG will enable\n   the sender to also relay this congestion information
-    back into the\n   network in-band at the IP layer, such that the total level of\n
-    \  congestion is visible to all IP devices along the path, where it\n   could,
-    for example, be used to provide input to traffic management.\n\n\t "
+  content: |-
+    <p>This document describes an abstract mechanism by which senders inform
+       the network about the congestion encountered by packets earlier in
+       the same flow.  Today, the network may signal congestion to the
+       receiver by ECN markings or by dropping packets, and the receiver
+       passes this information back to the sender in transport-layer
+       feedback.  The mechanism to be developed by the ConEx WG will enable
+       the sender to also relay this congestion information back into the
+       network in-band at the IP layer, such that the total level of
+       congestion is visible to all IP devices along the path, where it
+       could, for example, be used to provide input to traffic management.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-conex-abstract-mech-04
+    formattedref:
+      content: draft-ietf-conex-abstract-mech-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-conex-abstract-mech-04
@@ -97,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-conex-abstract-mech-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

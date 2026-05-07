@@ -1,7 +1,7 @@
 ---
 id: draftietfdimerealmbasedredirect12
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Tom Taylor
 version:
-- draft: '12'
+- content: '12'
 language:
 - en
 script:
@@ -89,27 +89,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Message redirection is a basic capability provided by the Diameter\n
-    \  base protocol.  In its conventional form, message redirection is\n   performed
-    by an application-independent \"redirect agent\", which\n   returns one or more
-    individual hosts to the message sender as\n   possible destinations of the redirected
-    message.\n\n   However, in some circumstances an operator may wish to redirect\n
-    \  messages to an alternate domain without specifying individual hosts.\n   This
-    document specifies an application-specific mechanism by which\n   that can be
-    achieved when S-NAPTR is not used for dynamic peer\n   discovery.  New applications
-    may incorporate this capability by\n   reference to the present document.\n\n
-    \  Because the redirection mechanism is application-specific, it must be\n   performed
-    by a Diameter server or proxy rather than a basic redirect\n   agent as defined
-    in the Diameter base protocol.  A new term, \"Realm-\n   based Redirect Server\",
-    is introduced in this document to\n   differentiate the application-specific nature
-    of realm-based\n   redirection from the conventional Diameter redirection performed
-    by a\n   basic redirect agent.\n\n   This memo updates Sections 6.13 and 6.14
-    of RFC6733 with respect to\n   the usage of the Redirect-Host-Usage and Redirect-Max-Cache-Time\n
-    \  AVPs.\n\n\t "
+  content: |-
+    <p>Message redirection is a basic capability provided by the Diameter
+       base protocol.  In its conventional form, message redirection is
+       performed by an application-independent &quot;redirect agent&quot;, which
+       returns one or more individual hosts to the message sender as
+       possible destinations of the redirected message.
+
+       However, in some circumstances an operator may wish to redirect
+       messages to an alternate domain without specifying individual hosts.
+       This document specifies an application-specific mechanism by which
+       that can be achieved when S-NAPTR is not used for dynamic peer
+       discovery.  New applications may incorporate this capability by
+       reference to the present document.
+
+       Because the redirection mechanism is application-specific, it must be
+       performed by a Diameter server or proxy rather than a basic redirect
+       agent as defined in the Diameter base protocol.  A new term, &quot;Realm-
+       based Redirect Server&quot;, is introduced in this document to
+       differentiate the application-specific nature of realm-based
+       redirection from the conventional Diameter redirection performed by a
+       basic redirect agent.
+
+       This memo updates Sections 6.13 and 6.14 of RFC6733 with respect to
+       the usage of the Redirect-Host-Usage and Redirect-Max-Cache-Time
+       AVPs.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dime-realm-based-redirect-11
+    formattedref:
+      content: draft-ietf-dime-realm-based-redirect-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dime-realm-based-redirect-11
@@ -119,7 +128,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dime-realm-based-redirect-13
+    formattedref:
+      content: draft-ietf-dime-realm-based-redirect-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dime-realm-based-redirect-13
@@ -135,7 +145,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dime-realm-based-redirect-12
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

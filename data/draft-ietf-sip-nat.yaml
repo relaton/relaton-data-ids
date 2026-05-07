@@ -1,7 +1,8 @@
 ---
 id: draftietfsipnat
-schema_version: v1.4.1
-formattedref: draft-ietf-sip-nat
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-sip-nat
 title:
 - language: en
   script: Latn
@@ -14,17 +15,20 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "The Session Initiation Protocol (SIP) operates over UDP and TCP. When\nused
-    with UDP, responses to requests are returned to the source\naddress the request
-    came from, but from the port written into the\ntopmost Via header of the request.
-    This behavior is not desirable in\nmany cases, most notably, when the client is
-    behind a NAT. This\nextension defines a new parameter for the Via header, called
-    rport,\nthat allows a client to request that the server send the response\nback
-    to the source IP address and port where the request came from.\n\n\t "
+  content: |-
+    <p>The Session Initiation Protocol (SIP) operates over UDP and TCP. When
+    used with UDP, responses to requests are returned to the source
+    address the request came from, but from the port written into the
+    topmost Via header of the request. This behavior is not desirable in
+    many cases, most notably, when the client is behind a NAT. This
+    extension defines a new parameter for the Via header, called rport,
+    that allows a client to request that the server send the response
+    back to the source IP address and port where the request came from.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-sip-nat-02
+    formattedref:
+      content: draft-ietf-sip-nat-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sip-nat-02

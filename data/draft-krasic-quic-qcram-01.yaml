@@ -1,7 +1,7 @@
 ---
 id: draftkrasicquicqcram01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: Google
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -57,21 +57,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The design of the core QUIC transport and the mapping of HTTP\n   semantics
-    over it subsume many HTTP/2 features, prominent among them\n   stream multiplexing
-    and HTTP header compression.  A key advantage of\n   the QUIC transport is that
-    provides stream multiplexing free of HoL\n   blocking between streams, while in
-    HTTP/2 multiplexed streams can\n   suffer HoL blocking primarily due to HTTP/2's
-    layering above TCP.\n   However, assuming HPACK is used for header compression,
-    HTTP over\n   QUIC is still vulnerable to HoL blocking, because of how HPACK\n
-    \  exploits header redundancies between multiplexed HTTP transactions.\n   This
-    draft defines QCRAM, a variation of HPACK and mechanisms in the\n   QUIC HTTP
-    mapping that allow QUIC implementations the flexibility to\n   avoid header-compression
-    induced HoL blocking.\n\n\t "
+  content: |-
+    <p>The design of the core QUIC transport and the mapping of HTTP
+       semantics over it subsume many HTTP/2 features, prominent among them
+       stream multiplexing and HTTP header compression.  A key advantage of
+       the QUIC transport is that provides stream multiplexing free of HoL
+       blocking between streams, while in HTTP/2 multiplexed streams can
+       suffer HoL blocking primarily due to HTTP/2&#39;s layering above TCP.
+       However, assuming HPACK is used for header compression, HTTP over
+       QUIC is still vulnerable to HoL blocking, because of how HPACK
+       exploits header redundancies between multiplexed HTTP transactions.
+       This draft defines QCRAM, a variation of HPACK and mechanisms in the
+       QUIC HTTP mapping that allow QUIC implementations the flexibility to
+       avoid header-compression induced HoL blocking.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-krasic-quic-qcram-00
+    formattedref:
+      content: draft-krasic-quic-qcram-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-krasic-quic-qcram-00
@@ -81,7 +84,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-krasic-quic-qcram-02
+    formattedref:
+      content: draft-krasic-quic-qcram-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-krasic-quic-qcram-02
@@ -97,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-krasic-quic-qcram-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

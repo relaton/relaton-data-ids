@@ -1,7 +1,7 @@
 ---
 id: draftherbertremotecsumoffload01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Tom Herbert
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -49,19 +49,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This specification describes remote checksum offload, which is a\n
-    \  mechanism that provides checksum offload of transport checksums in\n   encapsulated
-    packets using rudimentary offload capabilities found in\n   most Network Interface
-    Card (NIC) devices. The outer header checksum\n   (e.g. that in UDP or GRE) is
-    enabled in packets and, with some\n   additional meta information, a receiver
-    is able to deduce the\n   checksum to be set in an encapsulated packet. Effectively
-    this\n   offloads the computation of the inner checksum. Enabling the outer\n
-    \  checksum in encapsulation has the additional advantage that it covers\n   more
-    of the packet than the inner checksum including the\n   encapsulation headers.\n\n\t "
+  content: |-
+    <p>This specification describes remote checksum offload, which is a
+       mechanism that provides checksum offload of transport checksums in
+       encapsulated packets using rudimentary offload capabilities found in
+       most Network Interface Card (NIC) devices. The outer header checksum
+       (e.g. that in UDP or GRE) is enabled in packets and, with some
+       additional meta information, a receiver is able to deduce the
+       checksum to be set in an encapsulated packet. Effectively this
+       offloads the computation of the inner checksum. Enabling the outer
+       checksum in encapsulation has the additional advantage that it covers
+       more of the packet than the inner checksum including the
+       encapsulation headers.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-herbert-remotecsumoffload-00
+    formattedref:
+      content: draft-herbert-remotecsumoffload-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-herbert-remotecsumoffload-00
@@ -71,7 +75,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-herbert-remotecsumoffload-02
+    formattedref:
+      content: draft-herbert-remotecsumoffload-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-herbert-remotecsumoffload-02
@@ -87,7 +92,7 @@ series:
     content: Internet-Draft
   number: draft-herbert-remotecsumoffload-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftwijnandsbierarchitecture03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         language: en
         content: Sam Aldrin
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -132,23 +132,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a new architecture for the forwarding of\n
-    \  multicast data packets.  It provides optimal forwarding of multicast\n   packets
-    through a \"multicast domain\".  However, it does not require\n   any explicit
-    tree-building protocol, nor does it require intermediate\n   nodes to maintain
-    any per-flow state.  This architecture is known as\n   \"Bit Index Explicit Replication\"
-    (BIER).  When a multicast data\n   packet enters the domain, the ingress router
-    determines the set of\n   egress routers to which the packet needs to be sent.
-    \ The ingress\n   router then encapsulates the packet in a BIER header.  The BIER\n
-    \  header contains a bitstring in which each bit represents exactly one\n   egress
-    router in the domain; to forward the packet to a given set of\n   egress routers,
-    the bits corresponding to those routers are set in\n   the BIER header.  Elimination
-    of the per-flow state and the explicit\n   tree-building protocols results in
-    a considerable simplification.\n\n\t "
+  content: |-
+    <p>This document specifies a new architecture for the forwarding of
+       multicast data packets.  It provides optimal forwarding of multicast
+       packets through a &quot;multicast domain&quot;.  However, it does not require
+       any explicit tree-building protocol, nor does it require intermediate
+       nodes to maintain any per-flow state.  This architecture is known as
+       &quot;Bit Index Explicit Replication&quot; (BIER).  When a multicast data
+       packet enters the domain, the ingress router determines the set of
+       egress routers to which the packet needs to be sent.  The ingress
+       router then encapsulates the packet in a BIER header.  The BIER
+       header contains a bitstring in which each bit represents exactly one
+       egress router in the domain; to forward the packet to a given set of
+       egress routers, the bits corresponding to those routers are set in
+       the BIER header.  Elimination of the per-flow state and the explicit
+       tree-building protocols results in a considerable simplification.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-wijnands-bier-architecture-02
+    formattedref:
+      content: draft-wijnands-bier-architecture-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wijnands-bier-architecture-02
@@ -158,7 +161,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-wijnands-bier-architecture-04
+    formattedref:
+      content: draft-wijnands-bier-architecture-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wijnands-bier-architecture-04
@@ -174,7 +178,7 @@ series:
     content: Internet-Draft
   number: draft-wijnands-bier-architecture-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

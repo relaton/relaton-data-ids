@@ -1,7 +1,7 @@
 ---
 id: draftseemannquicstreamgroups00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Protocol Labs
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,14 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC ([RFC9000]) defines a few different mechanism flow control\n   mechanisms:
-    Stream flow control, connection-level flow control and\n   flow control for the
-    number of (unidirectional / bidirectional)\n   streams\n\n   This allows a single
-    application running on of a QUIC connection to\n   apply backpressure.\n\n   However,
-    when multiple independent applications share a single\n   underlying QUIC connection,
-    these mechanisms are not sufficient to\n   prevent one resource-hungry application
-    from consuming all the\n   resources (streams and / or connection-level flow control
-    credit)\n   available on the connection, effectively starving the other\n   application.\n\n\t "
+  content: |-
+    <p>QUIC ([RFC9000]) defines a few different mechanism flow control
+       mechanisms: Stream flow control, connection-level flow control and
+       flow control for the number of (unidirectional / bidirectional)
+       streams
+
+       This allows a single application running on of a QUIC connection to
+       apply backpressure.
+
+       However, when multiple independent applications share a single
+       underlying QUIC connection, these mechanisms are not sufficient to
+       prevent one resource-hungry application from consuming all the
+       resources (streams and / or connection-level flow control credit)
+       available on the connection, effectively starving the other
+       application.</p>
 series:
 - type: main
   title:
@@ -70,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-seemann-quic-stream-groups-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

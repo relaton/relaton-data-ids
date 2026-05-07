@@ -1,7 +1,7 @@
 ---
 id: draftmarenamatgrowrouteservernhtranslation00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: DE-CIX
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,16 +79,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   With the advent of RFC8950, Internet Exchang Points (IXPs) are\n   enabled
-    to rely solely on IPv6 addresses for adressing in their\n   peering LANs.  However,
-    routers not supporting RFC8950 are a\n   technical roadblock.\n\n   It is easier
-    to extend the capabilities of the IXP Route Server (RS)\n   instead of those of
-    every unsupporting router.  Thus, this document\n   introduces the concept of
-    Specific Local Address Tables (SLATs).\n   SLATs translate BGP next hops between
-    all IXP members, regardless of\n   their RFC8950 support, paving the way for IPv6-only
-    IXPs.\n\n   This document updates RFC 6890 by registering a special-purpose\n
-    \  address, and RFC 7947 by specifying an allowed route modification at\n   the
-    route server.\n\n\t "
+  content: |-
+    <p>With the advent of RFC8950, Internet Exchang Points (IXPs) are
+       enabled to rely solely on IPv6 addresses for adressing in their
+       peering LANs.  However, routers not supporting RFC8950 are a
+       technical roadblock.
+
+       It is easier to extend the capabilities of the IXP Route Server (RS)
+       instead of those of every unsupporting router.  Thus, this document
+       introduces the concept of Specific Local Address Tables (SLATs).
+       SLATs translate BGP next hops between all IXP members, regardless of
+       their RFC8950 support, paving the way for IPv6-only IXPs.
+
+       This document updates RFC 6890 by registering a special-purpose
+       address, and RFC 7947 by specifying an allowed route modification at
+       the route server.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-marenamat-grow-route-server-nh-translation-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-marenamat-grow-route-server-nh-translation-01
+    docidentifier:
+    - content: draft-marenamat-grow-route-server-nh-translation-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -97,7 +114,7 @@ series:
     content: Internet-Draft
   number: draft-marenamat-grow-route-server-nh-translation-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

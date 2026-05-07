@@ -1,7 +1,7 @@
 ---
 id: draftbriscoetsvwgbytepktmark02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: BT & UCL
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -54,18 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo concerns dropping or marking packets using active queue\nmanagement
-    (AQM) such as random early detection (RED) or pre-\ncongestion notification (PCN).
-    \ The primary conclusion is that packet\nsize should be taken into account when
-    transports decode congestion\nindications, not when network equipment writes them.
-    \ Reducing drop\nof small packets has some tempting advantages: i) it drops less\ncontrol
-    packets, which tend to be small and ii) it makes TCP's bit-\nrate less dependent
-    on packet size.  However, there are ways of\naddressing these issues at the transport
-    layer, rather than reverse\nengineering network forwarding to fix specific transport
-    problems.\nNetwork layer algorithms like the byte-mode packet drop variant of\nRED
-    should not be used to drop fewer small packets, because that\ncreates a perverse
-    incentive for transports to use tiny segments,\nconsequently also opening up a
-    DoS vulnerability.\n\t "
+  content: |-
+    <p>This memo concerns dropping or marking packets using active queue
+    management (AQM) such as random early detection (RED) or pre-
+    congestion notification (PCN).  The primary conclusion is that packet
+    size should be taken into account when transports decode congestion
+    indications, not when network equipment writes them.  Reducing drop
+    of small packets has some tempting advantages: i) it drops less
+    control packets, which tend to be small and ii) it makes TCP&#39;s bit-
+    rate less dependent on packet size.  However, there are ways of
+    addressing these issues at the transport layer, rather than reverse
+    engineering network forwarding to fix specific transport problems.
+    Network layer algorithms like the byte-mode packet drop variant of
+    RED should not be used to drop fewer small packets, because that
+    creates a perverse incentive for transports to use tiny segments,
+    consequently also opening up a DoS vulnerability.</p>
 series:
 - type: main
   title:
@@ -74,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-briscoe-tsvwg-byte-pkt-mark-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

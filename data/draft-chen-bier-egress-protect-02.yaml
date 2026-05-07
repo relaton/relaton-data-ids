@@ -1,7 +1,7 @@
 ---
 id: draftchenbieregressprotect02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -249,7 +249,7 @@ contributor:
         - language: en
           content: Volta Networks
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -257,16 +257,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a mechanism for fast protection against the\n
-    \  failure of an egress node of a \"Bit Index Explicit Replication\"\n   (BIER)
-    domain.  It does not have any per-flow state in the core of\n   the domain.  For
-    a multicast packet to an egress node of the domain,\n   when the egress node fails,
-    its upstream hop as a PLR sends the\n   packet to the egress' backup node once
-    the PLR detects the failure.\n\n\n\t "
+  content: |-
+    <p>This document describes a mechanism for fast protection against the
+       failure of an egress node of a &quot;Bit Index Explicit Replication&quot;
+       (BIER) domain.  It does not have any per-flow state in the core of
+       the domain.  For a multicast packet to an egress node of the domain,
+       when the egress node fails, its upstream hop as a PLR sends the
+       packet to the egress&#39; backup node once the PLR detects the failure.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-chen-bier-egress-protect-01
+    formattedref:
+      content: draft-chen-bier-egress-protect-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-bier-egress-protect-01
@@ -276,7 +278,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-chen-bier-egress-protect-03
+    formattedref:
+      content: draft-chen-bier-egress-protect-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-bier-egress-protect-03
@@ -292,7 +295,7 @@ series:
     content: Internet-Draft
   number: draft-chen-bier-egress-protect-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: drafthaynesnfsv4recalldevice00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Hammerspace
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,13 +54,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Parallel Network File System (pNFS) allows for the metadata\n   server
-    to use CB_LAYOUTRECALL to recall a layout from a client by\n   file id or file
-    system id or all.  It also allows the server to use\n   CB_NOTIFY_DEVICEID to
-    delete a devicid.  It does not provide a\n   mechanism for the metadata server
-    to recall all layouts that have a\n   data file on a specific deviceid.  This
-    document presents an\n   extension to RFC8881 to allow the server recall layouts
-    from clients\n   based on deviceid.\n\n\t "
+  content: |-
+    <p>The Parallel Network File System (pNFS) allows for the metadata
+       server to use CB_LAYOUTRECALL to recall a layout from a client by
+       file id or file system id or all.  It also allows the server to use
+       CB_NOTIFY_DEVICEID to delete a devicid.  It does not provide a
+       mechanism for the metadata server to recall all layouts that have a
+       data file on a specific deviceid.  This document presents an
+       extension to RFC8881 to allow the server recall layouts from clients
+       based on deviceid.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-haynes-nfsv4-recalldevice-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-haynes-nfsv4-recalldevice-01
+    docidentifier:
+    - content: draft-haynes-nfsv4-recalldevice-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -69,7 +83,7 @@ series:
     content: Internet-Draft
   number: draft-haynes-nfsv4-recalldevice-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

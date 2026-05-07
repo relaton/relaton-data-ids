@@ -1,7 +1,7 @@
 ---
 id: draftietfmasqueh3datagram09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Cloudflare
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -79,17 +79,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes HTTP Datagrams, a convention for conveying\n
-    \  multiplexed, potentially unreliable datagrams inside an HTTP\n   connection.\n\n
-    \  In HTTP/3, HTTP Datagrams can be conveyed natively using the QUIC\n   DATAGRAM
-    extension.  When the QUIC DATAGRAM frame is unavailable or\n   undesirable, they
-    can be sent using the Capsule Protocol, a more\n   general convention for conveying
-    data in HTTP connections.\n\n   HTTP Datagrams and the Capsule Protocol are intended
-    for use by HTTP\n   extensions, not applications.\n\n\t "
+  content: |-
+    <p>This document describes HTTP Datagrams, a convention for conveying
+       multiplexed, potentially unreliable datagrams inside an HTTP
+       connection.
+
+       In HTTP/3, HTTP Datagrams can be conveyed natively using the QUIC
+       DATAGRAM extension.  When the QUIC DATAGRAM frame is unavailable or
+       undesirable, they can be sent using the Capsule Protocol, a more
+       general convention for conveying data in HTTP connections.
+
+       HTTP Datagrams and the Capsule Protocol are intended for use by HTTP
+       extensions, not applications.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-masque-h3-datagram-08
+    formattedref:
+      content: draft-ietf-masque-h3-datagram-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-h3-datagram-08
@@ -99,7 +105,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-masque-h3-datagram-10
+    formattedref:
+      content: draft-ietf-masque-h3-datagram-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-masque-h3-datagram-10
@@ -115,7 +122,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-masque-h3-datagram-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

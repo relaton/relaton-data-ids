@@ -1,7 +1,7 @@
 ---
 id: draftmattssoncosecborcertcompress07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Nexus Group
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -154,21 +154,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a CBOR encoding of X.509 certificates.  The\n
-    \  resulting certificates are called C509 Certificates.  The CBOR\n   encoding
-    supports a large subset of RFC 5280 and significantly\n   reduces the size of
-    certificates compatible with e.g.  RFC 7925, IEEE\n   802.1AR (DevID), CNSA, and
-    CA/Browser Forum Baseline Requirements.\n   When used to re-encode DER encoded
-    X.509 certificates, the CBOR\n   encoding can in many cases reduce the size of
-    RFC 7925 profiled\n   certificates with over 50%.  The CBOR encoded structure
-    can\n   alternatively be signed directly (\"natively signed\"), which does not\n
-    \  require re-encoding for the signature to be verified.  The document\n   also
-    specifies COSE headers as well as a TLS certificate type for\n   C509 certificates.\n\n
-    \  NOTE: \"C509\" is a placeholder, name to be decided by the COSE WG.\n\n\t "
+  content: |-
+    <p>This document specifies a CBOR encoding of X.509 certificates.  The
+       resulting certificates are called C509 Certificates.  The CBOR
+       encoding supports a large subset of RFC 5280 and significantly
+       reduces the size of certificates compatible with e.g.  RFC 7925, IEEE
+       802.1AR (DevID), CNSA, and CA/Browser Forum Baseline Requirements.
+       When used to re-encode DER encoded X.509 certificates, the CBOR
+       encoding can in many cases reduce the size of RFC 7925 profiled
+       certificates with over 50%.  The CBOR encoded structure can
+       alternatively be signed directly (&quot;natively signed&quot;), which does not
+       require re-encoding for the signature to be verified.  The document
+       also specifies COSE headers as well as a TLS certificate type for
+       C509 certificates.
+
+       NOTE: &quot;C509&quot; is a placeholder, name to be decided by the COSE WG.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-mattsson-cose-cbor-cert-compress-06
+    formattedref:
+      content: draft-mattsson-cose-cbor-cert-compress-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mattsson-cose-cbor-cert-compress-06
@@ -178,7 +183,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-mattsson-cose-cbor-cert-compress-08
+    formattedref:
+      content: draft-mattsson-cose-cbor-cert-compress-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mattsson-cose-cbor-cert-compress-08
@@ -194,7 +200,7 @@ series:
     content: Internet-Draft
   number: draft-mattsson-cose-cbor-cert-compress-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

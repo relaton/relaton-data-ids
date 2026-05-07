@@ -1,7 +1,7 @@
 ---
 id: draftiabpathsignals02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Ted Hardie
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -49,21 +49,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document discusses the nature of signals seen by on-path\n   elements
-    examining transport protocols, contrasting implicit and\n   explicit signals.
-    \ For example, TCP's state mechanics uses a series\n   of well-known messages
-    that are exchanged in the clear.  Because\n   these are visible to network elements
-    on the path between the two\n   nodes setting up the transport connection, they
-    are often used as\n   signals by those network elements.  In transports that do
-    not\n   exchange these messages in the clear, on-path network elements lack\n
-    \  those signals.  Often, the removal of those signals is intended by\n   those
-    moving the messages to confidential channels.  Where the\n   endpoints desire
-    that network elements along the path receive these\n   signals, this document
-    recommends explicit signals be used.\n\n\t "
+  content: |-
+    <p>This document discusses the nature of signals seen by on-path
+       elements examining transport protocols, contrasting implicit and
+       explicit signals.  For example, TCP&#39;s state mechanics uses a series
+       of well-known messages that are exchanged in the clear.  Because
+       these are visible to network elements on the path between the two
+       nodes setting up the transport connection, they are often used as
+       signals by those network elements.  In transports that do not
+       exchange these messages in the clear, on-path network elements lack
+       those signals.  Often, the removal of those signals is intended by
+       those moving the messages to confidential channels.  Where the
+       endpoints desire that network elements along the path receive these
+       signals, this document recommends explicit signals be used.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-iab-path-signals-01
+    formattedref:
+      content: draft-iab-path-signals-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-iab-path-signals-01
@@ -73,7 +76,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-iab-path-signals-03
+    formattedref:
+      content: draft-iab-path-signals-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-iab-path-signals-03
@@ -89,7 +93,7 @@ series:
     content: Internet-Draft
   number: draft-iab-path-signals-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

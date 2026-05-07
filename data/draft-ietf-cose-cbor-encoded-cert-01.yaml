@@ -1,7 +1,7 @@
 ---
 id: draftietfcosecborencodedcert01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Nexus Group
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -154,20 +154,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a CBOR encoding of X.509 certificates.  The\n
-    \  resulting certificates are called C509 Certificates.  The CBOR\n   encoding
-    supports a large subset of RFC 5280 and all certificates\n   compatible with the
-    RFC 7925, IEEE 802.1AR (DevID), CNSA, and CA/\n   Browser Forum Baseline Requirements
-    profiles.  When used to re-encode\n   DER encoded X.509 certificates, the CBOR
-    encoding can in many cases\n   reduce the size of RFC 7925 profiled certificates
-    with over 50%.  The\n   CBOR encoded structure can alternatively be signed directly\n
-    \  (\"natively signed\"), which does not require re-encoding for the\n   signature
-    to be verified.  The document also specifies COSE headers\n   as well as a TLS
-    certificate type for C509 certificates.\n\n\t "
+  content: |-
+    <p>This document specifies a CBOR encoding of X.509 certificates.  The
+       resulting certificates are called C509 Certificates.  The CBOR
+       encoding supports a large subset of RFC 5280 and all certificates
+       compatible with the RFC 7925, IEEE 802.1AR (DevID), CNSA, and CA/
+       Browser Forum Baseline Requirements profiles.  When used to re-encode
+       DER encoded X.509 certificates, the CBOR encoding can in many cases
+       reduce the size of RFC 7925 profiled certificates with over 50%.  The
+       CBOR encoded structure can alternatively be signed directly
+       (&quot;natively signed&quot;), which does not require re-encoding for the
+       signature to be verified.  The document also specifies COSE headers
+       as well as a TLS certificate type for C509 certificates.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-cose-cbor-encoded-cert-00
+    formattedref:
+      content: draft-ietf-cose-cbor-encoded-cert-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-cbor-encoded-cert-00
@@ -177,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-cose-cbor-encoded-cert-02
+    formattedref:
+      content: draft-ietf-cose-cbor-encoded-cert-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-cbor-encoded-cert-02
@@ -193,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-cose-cbor-encoded-cert-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietftrillcentralizedreplication04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -141,7 +141,7 @@ contributor:
         language: en
         content: Tao Han
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -149,22 +149,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In TRILL active-active access scenario, RPF check failure issue may\n
-    \  occur when pseudo-nickname mechanism in [RFC7781] is used. This\n   draft describes
-    a solution to resolve the RPF check failure issue\n   through centralized replication.
-    All ingress RBridges send BUM\n   (Broadcast, Unknown unicast and Mutlicast) traffic
-    to a centralized\n   node with unicast TRILL encapsulation. When the centralized
-    node\n   receives the BUM traffic, it decapsulates the packets and forwards\n
-    \  them to all destination RBridges using a distribution tree\n   established
-    as per TRILL base protocol[RFC6325]. To avoid RPF check\n   failure on a RBridge
-    sitting between the ingress RBridge and the\n   centralized replication node,
-    some change of RPF calculation\n   algorithm is required. RPF calculation on each
-    RBridge should use\n   the centralized node as ingress RB instead of the real
-    ingress\n   RBridge which is denoted as RBv in [RFC7781] to perform the\n   calculation.\n\n\t "
+  content: |-
+    <p>In TRILL active-active access scenario, RPF check failure issue may
+       occur when pseudo-nickname mechanism in [RFC7781] is used. This
+       draft describes a solution to resolve the RPF check failure issue
+       through centralized replication. All ingress RBridges send BUM
+       (Broadcast, Unknown unicast and Mutlicast) traffic to a centralized
+       node with unicast TRILL encapsulation. When the centralized node
+       receives the BUM traffic, it decapsulates the packets and forwards
+       them to all destination RBridges using a distribution tree
+       established as per TRILL base protocol[RFC6325]. To avoid RPF check
+       failure on a RBridge sitting between the ingress RBridge and the
+       centralized replication node, some change of RPF calculation
+       algorithm is required. RPF calculation on each RBridge should use
+       the centralized node as ingress RB instead of the real ingress
+       RBridge which is denoted as RBv in [RFC7781] to perform the
+       calculation.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-trill-centralized-replication-03
+    formattedref:
+      content: draft-ietf-trill-centralized-replication-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-centralized-replication-03
@@ -174,7 +179,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-trill-centralized-replication-05
+    formattedref:
+      content: draft-ietf-trill-centralized-replication-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-trill-centralized-replication-05
@@ -190,7 +196,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-trill-centralized-replication-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

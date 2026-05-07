@@ -1,7 +1,7 @@
 ---
 id: draftyorgosdnsopdryrundnssec01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: ICANN
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,19 +104,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a method called \"dry-run DNSSEC\" that allows\n
-    \  for testing DNSSEC deployments without affecting the DNS service in\n   case
-    of DNSSEC errors.  It accomplishes that by introducing a new DS\n   Type Digest
-    Algorithm that signals validating resolvers that dry-run\n   DNSSEC is used for
-    the zone.  DNSSEC errors are then reported with\n   DNS Error Reporting, but any
-    bogus responses to clients are withheld.\n   Instead, validating resolvers fallback
-    from dry-run DNSSEC and\n   provide the response that would have been answered
-    without the\n   presence of a dry-run DS.  A further option is presented for clients\n
-    \  to opt-in for dry-run DNSSEC errors and allow for end-to-end DNSSEC\n   testing.\n\n\t "
+  content: |-
+    <p>This document describes a method called &quot;dry-run DNSSEC&quot; that allows
+       for testing DNSSEC deployments without affecting the DNS service in
+       case of DNSSEC errors.  It accomplishes that by introducing a new DS
+       Type Digest Algorithm that signals validating resolvers that dry-run
+       DNSSEC is used for the zone.  DNSSEC errors are then reported with
+       DNS Error Reporting, but any bogus responses to clients are withheld.
+       Instead, validating resolvers fallback from dry-run DNSSEC and
+       provide the response that would have been answered without the
+       presence of a dry-run DS.  A further option is presented for clients
+       to opt-in for dry-run DNSSEC errors and allow for end-to-end DNSSEC
+       testing.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-yorgos-dnsop-dry-run-dnssec-00
+    formattedref:
+      content: draft-yorgos-dnsop-dry-run-dnssec-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yorgos-dnsop-dry-run-dnssec-00
@@ -126,7 +130,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-yorgos-dnsop-dry-run-dnssec-02
+    formattedref:
+      content: draft-yorgos-dnsop-dry-run-dnssec-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yorgos-dnsop-dry-run-dnssec-02
@@ -142,7 +147,7 @@ series:
     content: Internet-Draft
   number: draft-yorgos-dnsop-dry-run-dnssec-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

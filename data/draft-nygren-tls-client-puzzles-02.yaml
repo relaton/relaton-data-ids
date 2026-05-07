@@ -1,7 +1,7 @@
 ---
 id: draftnygrentlsclientpuzzles02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Cornell University
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -154,19 +154,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Client puzzles allow a TLS server to defend itself against asymmetric\n
-    \  DDoS attacks.  In particular, it allows a server to request clients\n   perform
-    a selected amount of computation prior to the server\n   performing expensive
-    cryptographic operations.  This allows servers\n   to employ a layered defense
-    that represents an improvement over pure\n   rate-limiting strategies.\n\n   Client
-    puzzles are implemented as an extension to TLS 1.3\n   [I-D.ietf-tls-tls13] wherein
-    a server can issue a HelloRetryRequest\n   containing the puzzle as an extension.
-    \ The client must then resend\n   its ClientHello with the puzzle results in the
-    extension.\n\n\t "
+  content: |-
+    <p>Client puzzles allow a TLS server to defend itself against asymmetric
+       DDoS attacks.  In particular, it allows a server to request clients
+       perform a selected amount of computation prior to the server
+       performing expensive cryptographic operations.  This allows servers
+       to employ a layered defense that represents an improvement over pure
+       rate-limiting strategies.
+
+       Client puzzles are implemented as an extension to TLS 1.3
+       [I-D.ietf-tls-tls13] wherein a server can issue a HelloRetryRequest
+       containing the puzzle as an extension.  The client must then resend
+       its ClientHello with the puzzle results in the extension.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-nygren-tls-client-puzzles-01
+    formattedref:
+      content: draft-nygren-tls-client-puzzles-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nygren-tls-client-puzzles-01
@@ -182,7 +186,7 @@ series:
     content: Internet-Draft
   number: draft-nygren-tls-client-puzzles-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

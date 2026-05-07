@@ -1,7 +1,7 @@
 ---
 id: draftsongspringsiam05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: BUPT
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -107,23 +107,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This draft describes an active measurement method for SRv6 which can\n
-    \  support segment-by-segment and end-to-end measurement on any SRv6\n   path
-    using existing protocols such as IOAM.  A packet containing an\n   SRH uses a
-    flag bit to indicate the packet is an active probing\n   packet and requires segment-by-segment
-    processing.  The measurement\n   information, such as the IOAM header and data,
-    is encapsulated in UDP\n   payload, indicated by a dedicated port number.  The
-    probing packet\n   originates from a segment source node, traverses an arbitrary
-    segment\n   path, and terminates at a segment endpoint node, as configured by
-    the\n   segment list in SRH.  Each segment node on the path, when detecting\n
-    \  the flag, shall parse the UDP header and the payload.  In the case of\n   IOAM,
-    the node shall process the IOAM option conforming to the\n   standard procedures
-    defined in the IOAM documents.  The method is\n   compatible with some other SRv6
-    active measurement proposals and\n   support multiple applications.\n\n\n\t "
+  content: |-
+    <p>This draft describes an active measurement method for SRv6 which can
+       support segment-by-segment and end-to-end measurement on any SRv6
+       path using existing protocols such as IOAM.  A packet containing an
+       SRH uses a flag bit to indicate the packet is an active probing
+       packet and requires segment-by-segment processing.  The measurement
+       information, such as the IOAM header and data, is encapsulated in UDP
+       payload, indicated by a dedicated port number.  The probing packet
+       originates from a segment source node, traverses an arbitrary segment
+       path, and terminates at a segment endpoint node, as configured by the
+       segment list in SRH.  Each segment node on the path, when detecting
+       the flag, shall parse the UDP header and the payload.  In the case of
+       IOAM, the node shall process the IOAM option conforming to the
+       standard procedures defined in the IOAM documents.  The method is
+       compatible with some other SRv6 active measurement proposals and
+       support multiple applications.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-song-spring-siam-04
+    formattedref:
+      content: draft-song-spring-siam-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-song-spring-siam-04
@@ -133,7 +137,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-song-spring-siam-06
+    formattedref:
+      content: draft-song-spring-siam-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-song-spring-siam-06
@@ -149,7 +154,7 @@ series:
     content: Internet-Draft
   number: draft-song-spring-siam-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

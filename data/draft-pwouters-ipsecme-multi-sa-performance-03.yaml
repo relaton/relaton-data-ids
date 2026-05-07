@@ -1,7 +1,7 @@
 ---
 id: draftpwoutersipsecmemultisaperformance03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Aiven
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -129,20 +129,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines three Notify Message Type Payloads for the\n
-    \  Internet Key Exchange Protocol Version 2 (IKEv2) indicating support\n   for
-    the negotiation of multiple identical Child SAs to optimize\n   performance.\n\n
-    \  The CPU_QUEUES notification indicates support for multiple queues or\n   CPUs.
-    \ The CPU_QUEUE_INFO notification is used to confirm and\n   optionally convey
-    information about the specific queue.  The\n   TS_MAX_QUEUE notify conveys that
-    the peer is unwilling to create more\n   additional Child SAs for this particular
-    Traffic Selector set.\n\n   Using multiple identical Child SAs has the benefit
-    that each stream\n   has its own Sequence Number Counter, ensuring that CPUs don't
-    have to\n   synchronize their crypto state or disable their packet replay\n   protection.\n\n\t "
+  content: |-
+    <p>This document defines three Notify Message Type Payloads for the
+       Internet Key Exchange Protocol Version 2 (IKEv2) indicating support
+       for the negotiation of multiple identical Child SAs to optimize
+       performance.
+
+       The CPU_QUEUES notification indicates support for multiple queues or
+       CPUs.  The CPU_QUEUE_INFO notification is used to confirm and
+       optionally convey information about the specific queue.  The
+       TS_MAX_QUEUE notify conveys that the peer is unwilling to create more
+       additional Child SAs for this particular Traffic Selector set.
+
+       Using multiple identical Child SAs has the benefit that each stream
+       has its own Sequence Number Counter, ensuring that CPUs don&#39;t have to
+       synchronize their crypto state or disable their packet replay
+       protection.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-pwouters-ipsecme-multi-sa-performance-02
+    formattedref:
+      content: draft-pwouters-ipsecme-multi-sa-performance-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pwouters-ipsecme-multi-sa-performance-02
@@ -152,7 +159,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-pwouters-ipsecme-multi-sa-performance-04
+    formattedref:
+      content: draft-pwouters-ipsecme-multi-sa-performance-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pwouters-ipsecme-multi-sa-performance-04
@@ -168,7 +176,7 @@ series:
     content: Internet-Draft
   number: draft-pwouters-ipsecme-multi-sa-performance-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

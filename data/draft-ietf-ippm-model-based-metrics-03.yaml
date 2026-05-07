@@ -1,7 +1,7 @@
 ---
 id: draftietfippmmodelbasedmetrics03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Al Morton
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -69,27 +69,35 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   We introduce a new class of model based metrics designed to determine\n
-    \  if an end-to-end Internet path can meet predefined transport\n   performance
-    targets by applying a suite of IP diagnostic tests to\n   successive subpaths.
-    \ The subpath-at-a-time tests can be robustly\n   applied to key infrastructure,
-    such as interconnects, to accurately\n   detect if it will prevent the full end-to-end
-    paths that traverse it\n   from meeting the specified target performance.\n\n
-    \  Each IP diagnostic test consists of a precomputed traffic pattern and\n   a
-    statistical criteria for evaluating packet delivery.  The traffic\n   patterns
-    are precomputed to mimic TCP or other transport protocol\n   over a long path
-    but are independent of the actual details of the\n   subpath under test.  Likewise
-    the success criteria depends on the\n   target performance for the long path and
-    not the details of the\n   subpath.  This makes the measurements open loop, which
-    introduces\n   several important new properties and eliminates most of the\n   difficulties
-    encountered by traditional bulk transport metrics.\n\n   This document does not
-    define diagnostic tests, but provides a\n   framework for designing suites of
-    diagnostics tests that are tailored\n   the confirming the target performance.\n\n
-    \  Interim DRAFT Formatted: Thu Jul 3 20:19:04 PDT 2014\n\n\t "
+  content: |-
+    <p>We introduce a new class of model based metrics designed to determine
+       if an end-to-end Internet path can meet predefined transport
+       performance targets by applying a suite of IP diagnostic tests to
+       successive subpaths.  The subpath-at-a-time tests can be robustly
+       applied to key infrastructure, such as interconnects, to accurately
+       detect if it will prevent the full end-to-end paths that traverse it
+       from meeting the specified target performance.
+
+       Each IP diagnostic test consists of a precomputed traffic pattern and
+       a statistical criteria for evaluating packet delivery.  The traffic
+       patterns are precomputed to mimic TCP or other transport protocol
+       over a long path but are independent of the actual details of the
+       subpath under test.  Likewise the success criteria depends on the
+       target performance for the long path and not the details of the
+       subpath.  This makes the measurements open loop, which introduces
+       several important new properties and eliminates most of the
+       difficulties encountered by traditional bulk transport metrics.
+
+       This document does not define diagnostic tests, but provides a
+       framework for designing suites of diagnostics tests that are tailored
+       the confirming the target performance.
+
+       Interim DRAFT Formatted: Thu Jul 3 20:19:04 PDT 2014</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ippm-model-based-metrics-02
+    formattedref:
+      content: draft-ietf-ippm-model-based-metrics-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-model-based-metrics-02
@@ -99,7 +107,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ippm-model-based-metrics-04
+    formattedref:
+      content: draft-ietf-ippm-model-based-metrics-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-model-based-metrics-04
@@ -115,7 +124,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ippm-model-based-metrics-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

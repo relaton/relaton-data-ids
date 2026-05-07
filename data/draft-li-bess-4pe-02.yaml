@@ -1,7 +1,7 @@
 ---
 id: draftlibess4pe02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -47,7 +47,7 @@ contributor:
         - language: en
           content: China Mobile
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -55,22 +55,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document explains how to interconnect IPv4 islands over a\n   Multiprotocol
-    Label Switching (MPLS)-enabled IPv6-only core.  This\n   approach relies on IPv4
-    Provider Edge routers (4PE), which are Dual\n   Stacks in order to connect to
-    IPv4 islands and to the MPLS core.  The\n   4PE routers exchange the IPv4 reachability
-    information transparently\n   over the core using the Multiprotocol Border Gateway
-    Protocol (MP-\n   BGP).  MP-BGP is extended to do this.  A new Subsequence Address\n
-    \  Family Identifier (SAFI) with corresponding new format Network Layer\n   Reachability
-    Information (NLRI), is introduced.  The BGP Next Hop\n   field is used to convey
-    the IPv4 address of the 4PE router, a field\n   is added in Network Layer Reachability
-    Information (NLRI) to convey\n   the IPv6 address of the 4PE router, so that dynamically
-    established\n   IPv6-signaled MPLS Label Switched Paths (LSPs) can be used without\n
-    \  explicit tunnel configuration.\n\n\n\t "
+  content: |-
+    <p>This document explains how to interconnect IPv4 islands over a
+       Multiprotocol Label Switching (MPLS)-enabled IPv6-only core.  This
+       approach relies on IPv4 Provider Edge routers (4PE), which are Dual
+       Stacks in order to connect to IPv4 islands and to the MPLS core.  The
+       4PE routers exchange the IPv4 reachability information transparently
+       over the core using the Multiprotocol Border Gateway Protocol (MP-
+       BGP).  MP-BGP is extended to do this.  A new Subsequence Address
+       Family Identifier (SAFI) with corresponding new format Network Layer
+       Reachability Information (NLRI), is introduced.  The BGP Next Hop
+       field is used to convey the IPv4 address of the 4PE router, a field
+       is added in Network Layer Reachability Information (NLRI) to convey
+       the IPv6 address of the 4PE router, so that dynamically established
+       IPv6-signaled MPLS Label Switched Paths (LSPs) can be used without
+       explicit tunnel configuration.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-li-bess-4pe-01
+    formattedref:
+      content: draft-li-bess-4pe-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-bess-4pe-01
@@ -86,7 +90,7 @@ series:
     content: Internet-Draft
   number: draft-li-bess-4pe-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

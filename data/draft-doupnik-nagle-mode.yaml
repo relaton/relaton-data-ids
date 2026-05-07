@@ -1,7 +1,8 @@
 ---
 id: draftdoupniknaglemode
-schema_version: v1.4.1
-formattedref: draft-doupnik-nagle-mode
+schema_version: v1.5.6
+formattedref:
+  content: draft-doupnik-nagle-mode
 title:
 - language: en
   script: Latn
@@ -13,17 +14,20 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "Both Nagle mode and delayed ACKs attempt to conserve network and host\nmachine
-    resources by delaying transmissions in the expectation that\nthe current material
-    can be piggybacked onto a future transmission.\nUnfortunately when both mechanisms
-    are active at the same time on\neither end of a connection a deadlock can exist,
-    which is broken by\narrival of new data for transmission or firing of the delayed
-    ACK\ntimer. This produces classical timer based ACKing, which for the\ncommon
-    200ms ACK delay yields five exchanges per second.\n\t "
+  content: |-
+    <p>Both Nagle mode and delayed ACKs attempt to conserve network and host
+    machine resources by delaying transmissions in the expectation that
+    the current material can be piggybacked onto a future transmission.
+    Unfortunately when both mechanisms are active at the same time on
+    either end of a connection a deadlock can exist, which is broken by
+    arrival of new data for transmission or firing of the delayed ACK
+    timer. This produces classical timer based ACKing, which for the
+    common 200ms ACK delay yields five exchanges per second.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-doupnik-nagle-mode-00
+    formattedref:
+      content: draft-doupnik-nagle-mode-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-doupnik-nagle-mode-00

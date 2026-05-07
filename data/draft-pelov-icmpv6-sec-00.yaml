@@ -1,7 +1,7 @@
 ---
 id: draftpelovicmpv6sec00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: IMT Atlantique
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,15 +54,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a new ICMPv6 message type, ICMPv6-SEC,\n   designed
-    to convey cryptographically verifiable information using\n   COSE objects and
-    CBOR-encoded certificates.  The purpose is to signal\n   segment-specific network
-    characteristics, including high RTT,\n   congestion, policy constraints, and traffic
-    treatment expectations.\n   These messages can describe either the segment beyond
-    the current hop\n   (forward segment) or the local segment on which the source
-    resides.\n   Certificates may be embedded or referenced via DNS using\n   cryptographic
-    hashes.  The mechanism is optimized for high-speed\n   environments by allowing
-    the use of static, signed descriptors for\n   destination prefixes.\n\n\t "
+  content: |-
+    <p>This document proposes a new ICMPv6 message type, ICMPv6-SEC,
+       designed to convey cryptographically verifiable information using
+       COSE objects and CBOR-encoded certificates.  The purpose is to signal
+       segment-specific network characteristics, including high RTT,
+       congestion, policy constraints, and traffic treatment expectations.
+       These messages can describe either the segment beyond the current hop
+       (forward segment) or the local segment on which the source resides.
+       Certificates may be embedded or referenced via DNS using
+       cryptographic hashes.  The mechanism is optimized for high-speed
+       environments by allowing the use of static, signed descriptors for
+       destination prefixes.</p>
 series:
 - type: main
   title:
@@ -71,7 +74,7 @@ series:
     content: Internet-Draft
   number: draft-pelov-icmpv6-sec-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

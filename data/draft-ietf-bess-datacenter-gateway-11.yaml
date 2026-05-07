@@ -1,7 +1,7 @@
 ---
 id: draftietfbessdatacentergateway11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -150,7 +150,7 @@ contributor:
         - language: en
           content: Verizon
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -158,26 +158,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Data centers are critical components of the infrastructure used by\n
-    \  network operators to provide services to their customers.  Data\n   centers
-    are attached to the Internet or a backbone network by gateway\n   routers.  One
-    data center typically has more than one gateway for\n   commercial, load balancing,
-    and resiliency reasons.\n\n   Segment Routing is a protocol mechanism that can
-    be used within a\n   data center, and also for steering traffic that flows between
-    two\n   data center sites.  In order that one data center site may load\n   balance
-    the traffic it sends to another data center site, it needs to\n   know the complete
-    set of gateway routers at the remote data center,\n   the points of connection
-    from those gateways to the backbone network,\n   and the connectivity across the
-    backbone network.\n\n   Other sites, such as access networks, also need to be
-    connected\n   across backbone networks through gateways.\n\n   This document defines
-    a mechanism using the BGP Tunnel Encapsulation\n   attribute to allow each gateway
-    router to advertise the routes to the\n   prefixes reachable in the site to which
-    it provides access, including\n   advertising them on behalf of each other gateway
-    to the same site.\n\n\t "
+  content: |-
+    <p>Data centers are critical components of the infrastructure used by
+       network operators to provide services to their customers.  Data
+       centers are attached to the Internet or a backbone network by gateway
+       routers.  One data center typically has more than one gateway for
+       commercial, load balancing, and resiliency reasons.
+
+       Segment Routing is a protocol mechanism that can be used within a
+       data center, and also for steering traffic that flows between two
+       data center sites.  In order that one data center site may load
+       balance the traffic it sends to another data center site, it needs to
+       know the complete set of gateway routers at the remote data center,
+       the points of connection from those gateways to the backbone network,
+       and the connectivity across the backbone network.
+
+       Other sites, such as access networks, also need to be connected
+       across backbone networks through gateways.
+
+       This document defines a mechanism using the BGP Tunnel Encapsulation
+       attribute to allow each gateway router to advertise the routes to the
+       prefixes reachable in the site to which it provides access, including
+       advertising them on behalf of each other gateway to the same site.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bess-datacenter-gateway-10
+    formattedref:
+      content: draft-ietf-bess-datacenter-gateway-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-10
@@ -187,7 +194,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bess-datacenter-gateway-12
+    formattedref:
+      content: draft-ietf-bess-datacenter-gateway-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-datacenter-gateway-12
@@ -203,7 +211,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bess-datacenter-gateway-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsoprfc5011securityconsiderations08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: Google
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -82,22 +82,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document extends the RFC5011 rollover strategy with timing\n   advice
-    that must be followed in order to maintain security.\n   Specifically, this document
-    describes the math behind the minimum\n   time-length that a DNS zone publisher
-    must wait before signing\n   exclusively with recently added DNSKEYs.  It contains
-    much math and\n   complicated equations, but the summary is that the key rollover
-    /\n   revocation time is much longer than intuition would suggest.  If you\n   are
-    not both publishing a DNSSEC DNSKEY, and using RFC5011 to\n   advertise this DNSKEY
-    as a new Secure Entry Point key for use as a\n   trust anchor, you probably don't
-    need to read this document.\n\n   This document also describes the minimum time-length
-    that a DNS zone\n   publisher must wait after publishing a revoked DNSKEY before
-    assuming\n   that all active RFC5011 resolvers should have seen the revocation-\n
-    \  marked key and removed it from their list of trust anchors.\n\n\t "
+  content: |-
+    <p>This document extends the RFC5011 rollover strategy with timing
+       advice that must be followed in order to maintain security.
+       Specifically, this document describes the math behind the minimum
+       time-length that a DNS zone publisher must wait before signing
+       exclusively with recently added DNSKEYs.  It contains much math and
+       complicated equations, but the summary is that the key rollover /
+       revocation time is much longer than intuition would suggest.  If you
+       are not both publishing a DNSSEC DNSKEY, and using RFC5011 to
+       advertise this DNSKEY as a new Secure Entry Point key for use as a
+       trust anchor, you probably don&#39;t need to read this document.
+
+       This document also describes the minimum time-length that a DNS zone
+       publisher must wait after publishing a revoked DNSKEY before assuming
+       that all active RFC5011 resolvers should have seen the revocation-
+       marked key and removed it from their list of trust anchors.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-rfc5011-security-considerations-07
+    formattedref:
+      content: draft-ietf-dnsop-rfc5011-security-considerations-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-rfc5011-security-considerations-07
@@ -107,7 +112,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-rfc5011-security-considerations-09
+    formattedref:
+      content: draft-ietf-dnsop-rfc5011-security-considerations-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-rfc5011-security-considerations-09
@@ -123,7 +129,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-rfc5011-security-considerations-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

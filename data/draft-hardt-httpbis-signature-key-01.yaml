@@ -1,7 +1,7 @@
 ---
 id: drafthardthttpbissignaturekey01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Cloudflare
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -79,22 +79,37 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines the Signature-Key HTTP header field for\n   distributing
-    public keys used to verify HTTP Message Signatures as\n   defined in RFC 9421.
-    \ Four initial key distribution schemes are\n   defined: pseudonymous inline keys
-    (hwk), identified signers with JWKS\n   URI discovery (jwks_uri), X.509 certificate
-    chains (x509), and JWT-\n   based delegation (jwt).  These schemes enable flexible
-    trust models\n   ranging from privacy-preserving pseudonymous verification to
-    PKI-\n   based identity chains and horizontally-scalable delegated\n   authentication.\n\n\t "
+  content: |-
+    <p>This document defines the Signature-Key HTTP header field for
+       distributing public keys used to verify HTTP Message Signatures as
+       defined in RFC 9421.  Four initial key distribution schemes are
+       defined: pseudonymous inline keys (hwk), identified signers with JWKS
+       URI discovery (jwks_uri), X.509 certificate chains (x509), and JWT-
+       based delegation (jwt).  These schemes enable flexible trust models
+       ranging from privacy-preserving pseudonymous verification to PKI-
+       based identity chains and horizontally-scalable delegated
+       authentication.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-hardt-httpbis-signature-key-00
+    formattedref:
+      content: draft-hardt-httpbis-signature-key-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hardt-httpbis-signature-key-00
     docidentifier:
     - content: draft-hardt-httpbis-signature-key-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-hardt-httpbis-signature-key-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hardt-httpbis-signature-key-02
+    docidentifier:
+    - content: draft-hardt-httpbis-signature-key-02
       type: Internet-Draft
       primary: true
 series:
@@ -105,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-hardt-httpbis-signature-key-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

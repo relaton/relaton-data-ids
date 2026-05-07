@@ -1,7 +1,7 @@
 ---
 id: draftietftcpmrack14
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Google, Inc
 version:
-- draft: '14'
+- content: '14'
 language:
 - en
 script:
@@ -129,20 +129,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document presents the RACK-TLP loss detection algorithm for TCP.\n
-    \  RACK-TLP uses per-segment transmit timestamps and selective\n   acknowledgements
-    (SACK) and has two parts: RACK (\"Recent\n   ACKnowledgment\") starts fast recovery
-    quickly using time-based\n   inferences derived from ACK feedback.  TLP (\"Tail
-    Loss Probe\")\n   leverages RACK and sends a probe packet to trigger ACK feedback
-    to\n   avoid retransmission timeout (RTO) events.  Compared to the widely\n   used
-    DUPACK threshold approach, RACK-TLP detects losses more\n   efficiently when there
-    are application-limited flights of data, lost\n   retransmissions, or data packet
-    reordering events.  It is intended to\n   be an alternative to the DUPACK threshold
-    approach.\n\n\t "
+  content: |-
+    <p>This document presents the RACK-TLP loss detection algorithm for TCP.
+       RACK-TLP uses per-segment transmit timestamps and selective
+       acknowledgements (SACK) and has two parts: RACK (&quot;Recent
+       ACKnowledgment&quot;) starts fast recovery quickly using time-based
+       inferences derived from ACK feedback.  TLP (&quot;Tail Loss Probe&quot;)
+       leverages RACK and sends a probe packet to trigger ACK feedback to
+       avoid retransmission timeout (RTO) events.  Compared to the widely
+       used DUPACK threshold approach, RACK-TLP detects losses more
+       efficiently when there are application-limited flights of data, lost
+       retransmissions, or data packet reordering events.  It is intended to
+       be an alternative to the DUPACK threshold approach.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpm-rack-13
+    formattedref:
+      content: draft-ietf-tcpm-rack-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rack-13
@@ -152,7 +155,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-rack-15
+    formattedref:
+      content: draft-ietf-tcpm-rack-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-rack-15
@@ -168,7 +172,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-rack-14
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

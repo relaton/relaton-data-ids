@@ -1,7 +1,7 @@
 ---
 id: draftdenisipcrypt07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Fastly Inc.
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -54,23 +54,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IP addresses are personally identifiable information that require\n
-    \  protection, yet many anonymization approaches have critical flaws.\n   Simple
-    techniques like truncation destroy data irreversibly while\n   providing inconsistent
-    privacy guarantees, and ad-hoc encryption\n   schemes often lack interoperability
-    and security analysis.\n\n   This document specifies secure, efficient methods
-    for encrypting IP\n   addresses for privacy-preserving storage, logging, and analytics.\n
-    \  The methods enable data analysis while protecting user privacy from\n   third
-    parties without key access, addressing data minimization\n   concerns raised in
-    [RFC6973].\n\n   Three concrete instantiations are defined: ipcrypt-deterministic\n
-    \  provides deterministic, format-preserving encryption, while ipcrypt-\n   nd
-    and ipcrypt-ndx introduce randomness to prevent correlation.  All\n   methods
-    are reversible with the encryption key and designed for high-\n   performance
-    processing at network speeds.\n\n\t "
+  content: |-
+    <p>IP addresses are personally identifiable information that require
+       protection, yet many anonymization approaches have critical flaws.
+       Simple techniques like truncation destroy data irreversibly while
+       providing inconsistent privacy guarantees, and ad-hoc encryption
+       schemes often lack interoperability and security analysis.
+
+       This document specifies secure, efficient methods for encrypting IP
+       addresses for privacy-preserving storage, logging, and analytics.
+       The methods enable data analysis while protecting user privacy from
+       third parties without key access, addressing data minimization
+       concerns raised in [RFC6973].
+
+       Three concrete instantiations are defined: ipcrypt-deterministic
+       provides deterministic, format-preserving encryption, while ipcrypt-
+       nd and ipcrypt-ndx introduce randomness to prevent correlation.  All
+       methods are reversible with the encryption key and designed for high-
+       performance processing at network speeds.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-denis-ipcrypt-06
+    formattedref:
+      content: draft-denis-ipcrypt-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-denis-ipcrypt-06
@@ -80,7 +86,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-denis-ipcrypt-08
+    formattedref:
+      content: draft-denis-ipcrypt-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-denis-ipcrypt-08
@@ -96,7 +103,7 @@ series:
     content: Internet-Draft
   number: draft-denis-ipcrypt-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfidrbgpopenpolicy10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: USA National Institute of Standards and Technology
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -154,22 +154,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Route leaks are the propagation of BGP prefixes which violate\n   assumptions
-    of BGP topology relationships; e.g. passing a route\n   learned from one peer
-    to another peer or to a transit provider,\n   passing a route learned from one
-    transit provider to another transit\n   provider or to a peer.  Today, approaches
-    to leak prevention rely on\n   marking routes by operator configuration, with
-    no check that the\n   configuration corresponds to that of the BGP neighbor, or
-    enforcement\n   that the two BGP speakers agree on the relationship.  This document\n
-    \  enhances BGP OPEN to establish agreement of the (peer, customer,\n   provider,
-    Route Server, Route Server client) relationship of two\n   neighboring BGP speakers
-    to enforce appropriate configuration on both\n   sides.  Propagated routes are
-    then marked with an OTC attribute\n   according to the agreed relationship, allowing
-    both prevention and\n   detection of route leaks.\n\n\n\t "
+  content: |-
+    <p>Route leaks are the propagation of BGP prefixes which violate
+       assumptions of BGP topology relationships; e.g. passing a route
+       learned from one peer to another peer or to a transit provider,
+       passing a route learned from one transit provider to another transit
+       provider or to a peer.  Today, approaches to leak prevention rely on
+       marking routes by operator configuration, with no check that the
+       configuration corresponds to that of the BGP neighbor, or enforcement
+       that the two BGP speakers agree on the relationship.  This document
+       enhances BGP OPEN to establish agreement of the (peer, customer,
+       provider, Route Server, Route Server client) relationship of two
+       neighboring BGP speakers to enforce appropriate configuration on both
+       sides.  Propagated routes are then marked with an OTC attribute
+       according to the agreed relationship, allowing both prevention and
+       detection of route leaks.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-bgp-open-policy-09
+    formattedref:
+      content: draft-ietf-idr-bgp-open-policy-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-open-policy-09
@@ -179,7 +183,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-bgp-open-policy-11
+    formattedref:
+      content: draft-ietf-idr-bgp-open-policy-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-open-policy-11
@@ -195,7 +200,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-bgp-open-policy-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

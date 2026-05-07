@@ -1,7 +1,7 @@
 ---
 id: draftiurman6manehoccurrences00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -47,7 +47,7 @@ contributor:
         - language: en
           content: University of Liege
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -55,15 +55,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates RFC 8200 by specifying normative requirements\n
-    \  on the number of occurrences of IPv6 Extension Headers.  Operational\n   experience
-    has demonstrated that permitting multiple occurrences of\n   the same Extension
-    Header can create parsing ambiguity, increase\n   attack surface, and complicate
-    packet processing in general.  This is\n   especially true for both the Hop-by-Hop
-    Options Header and the\n   Destination Options Header, which can contain a number
-    of options.\n   This document restricts IPv6 packets to carry at most one instance
-    of\n   each Extension Header, with the exception of the Destination Options\n
-    \  Header, which is permitted to appear twice as specified in RFC 8200.\n\n\t "
+  content: |-
+    <p>This document updates RFC 8200 by specifying normative requirements
+       on the number of occurrences of IPv6 Extension Headers.  Operational
+       experience has demonstrated that permitting multiple occurrences of
+       the same Extension Header can create parsing ambiguity, increase
+       attack surface, and complicate packet processing in general.  This is
+       especially true for both the Hop-by-Hop Options Header and the
+       Destination Options Header, which can contain a number of options.
+       This document restricts IPv6 packets to carry at most one instance of
+       each Extension Header, with the exception of the Destination Options
+       Header, which is permitted to appear twice as specified in RFC 8200.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-iurman-6man-eh-occurrences-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-iurman-6man-eh-occurrences-01
+    docidentifier:
+    - content: draft-iurman-6man-eh-occurrences-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -72,7 +86,7 @@ series:
     content: Internet-Draft
   number: draft-iurman-6man-eh-occurrences-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

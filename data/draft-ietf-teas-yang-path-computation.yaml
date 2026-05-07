@@ -1,7 +1,8 @@
 ---
 id: draftietfteasyangpathcomputation
-schema_version: v1.4.1
-formattedref: draft-ietf-teas-yang-path-computation
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-teas-yang-path-computation
 title:
 - language: en
   script: Latn
@@ -13,22 +14,35 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   There are scenarios, typically in a hierarchical Software-Defined\n
-    \  Networking (SDN) context, where the topology information provided by\n   a
-    Traffic Engineering (TE) network provider may be insufficient for\n   its client
-    to perform multi-domain path computation.  In these cases\n   the client would
-    need to request the TE network provider to compute\n   some intra-domain paths
-    to be used by the client to choose the\n   optimal multi-domain paths.\n\n   This
-    document provides a mechanism to request path computation by\n   augmenting the
-    Remote Procedure Calls (RPCs) defined in RFC YYYY.\n\n   [RFC EDITOR NOTE: Please
-    replace RFC YYYY with the RFC number of\n   draft-ietf-teas-yang-te once it has
-    been published.\n\n   Moreover, this document describes some use cases where the
-    path\n   computation request, via YANG-based protocols (e.g., NETCONF or\n   RESTCONF),
-    can be needed.\n\n\t "
+  content: |-
+    <p>In certain scenarios — particularly within hierarchical Software-
+       Defined Networking (SDN) environments—the topology information
+       provided by a Traffic Engineering (TE) network provider may be
+       insufficient for a client to perform end-to-end multi-domain path
+       computation.  In such cases, the client may need to delegate the
+       computation of specific intra-domain paths to the TE provider,
+       leveraging the resulting path segments to construct optimal multi-
+       domain end-to-end paths.
+
+       This document defines a mechanism to enable path computation requests
+       by augmenting the Remote Procedure Calls (RPCs) specified in RFC
+       YYYY.  The augmented RPCs support path computation on demand,
+       allowing clients to request intra-domain TE path computations from
+       the provider while maintaining control over inter-domain path
+       selection.
+
+       Additionally, this document outlines several use cases in which such
+       path computation requests are beneficial, particularly in
+       environments where YANG-based management protocols—such as NETCONF or
+       RESTCONF—are used for network automation and control.
+
+       [RFC EDITOR NOTE: Please replace RFC YYYY with the RFC number
+       assigned to draft-ietf-teas-yang-te upon publication.]</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-00
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-00
@@ -38,7 +52,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-01
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-01
@@ -48,7 +63,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-02
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-02
@@ -58,7 +74,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-03
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-03
@@ -68,7 +85,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-04
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-04
@@ -78,7 +96,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-05
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-05
@@ -88,7 +107,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-06
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-06
@@ -98,7 +118,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-07
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-07
@@ -108,7 +129,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-08
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-08
@@ -118,7 +140,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-09
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-09
@@ -128,7 +151,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-10
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-10
@@ -138,7 +162,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-11
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-11
@@ -148,7 +173,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-12
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-12
@@ -158,7 +184,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-13
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-13
@@ -168,7 +195,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-14
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-14
@@ -178,7 +206,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-15
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-15
@@ -188,7 +217,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-16
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-16
@@ -198,7 +228,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-17
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-17
@@ -208,7 +239,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-18
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-18
@@ -218,7 +250,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-19
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-19
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-19
@@ -228,7 +261,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-20
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-20
@@ -238,7 +272,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-21
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-21
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-21
@@ -248,7 +283,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-22
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-22
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-22
@@ -258,7 +294,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-23
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-23
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-23
@@ -268,7 +305,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-24
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-24
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-24
@@ -278,7 +316,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-25
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-25
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-25
@@ -288,11 +327,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-teas-yang-path-computation-26
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-26
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-26
     docidentifier:
     - content: draft-ietf-teas-yang-path-computation-26
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-teas-yang-path-computation-27
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-yang-path-computation-27
+    docidentifier:
+    - content: draft-ietf-teas-yang-path-computation-27
       type: Internet-Draft
       primary: true

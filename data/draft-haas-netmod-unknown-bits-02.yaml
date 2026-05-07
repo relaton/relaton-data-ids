@@ -1,7 +1,7 @@
 ---
 id: drafthaasnetmodunknownbits02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -54,21 +54,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Protocols frequently have fields where the contents are a series of\n
-    \  bits that have specific meaning.  When modeling operational state for\n   such
-    protocols in YANG, the 'bits' YANG built-in type is a natural\n   method for modeling
-    such fields.  The YANG 'bits' built-in type is\n   best suited when the meaning
-    of a bit assignment is clear.\n\n   When bits that are currently RESERVED or otherwise
-    unassigned by the\n   protocol are received, being able to model them is necessary
-    in YANG\n   operational models.  This cannot be done using the YANG 'bits' built-\n
-    \  in type without assigning them a name.  However, YANG versioning\n   rules
-    do not permit renaming of named bits.\n\n   This draft proposes a methodology
-    to represent unknown bits in YANG\n   operational models and creates a YANG typedef
-    to assist in uniformly\n   naming such unknown bits.\n\n\t "
+  content: |-
+    <p>Protocols frequently have fields where the contents are a series of
+       bits that have specific meaning.  When modeling operational state for
+       such protocols in YANG, the &#39;bits&#39; YANG built-in type is a natural
+       method for modeling such fields.  The YANG &#39;bits&#39; built-in type is
+       best suited when the meaning of a bit assignment is clear.
+
+       When bits that are currently RESERVED or otherwise unassigned by the
+       protocol are received, being able to model them is necessary in YANG
+       operational models.  This cannot be done using the YANG &#39;bits&#39; built-
+       in type without assigning them a name.  However, YANG versioning
+       rules do not permit renaming of named bits.
+
+       This draft proposes a methodology to represent unknown bits in YANG
+       operational models and creates a YANG typedef to assist in uniformly
+       naming such unknown bits.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-haas-netmod-unknown-bits-01
+    formattedref:
+      content: draft-haas-netmod-unknown-bits-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-haas-netmod-unknown-bits-01
@@ -84,7 +90,7 @@ series:
     content: Internet-Draft
   number: draft-haas-netmod-unknown-bits-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

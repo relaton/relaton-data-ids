@@ -1,7 +1,7 @@
 ---
 id: draftgaoaltoroutingstateabstraction04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -138,7 +138,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -146,23 +146,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The path vector extension [I-D.ietf-alto-path-vector] has extended\n
-    \  the original ALTO protocol [RFC7285] with the ability to represent\n   not
-    only end-to-end metrics but also information about shared link\n   risk groups
-    (SLRG).\n\n   However, straw man algorithms to compute ALTO path vector can contain\n
-    \  redundant information and result in unnecessary communication\n   overhead.
-    \ The situation gets even worse when certain ALTO extensions\n   are enabled,
-    for example, the incremental extension\n   [I-D.ietf-alto-incr-update-sse] which
-    continuously pushes data\n   changes to ALTO clients.\n\n   In this document,
-    an algorithm is described which can effectively\n   reduce the communication overhead
-    while still containing the same\n   information as in the original path vector.
-    \ The algorithm is fully\n   compatible with the path vector extension and has
-    several by-products\n   which can be leveraged by other extensions to achieve
-    better\n   performance.\n\n\n\t "
+  content: |-
+    <p>The path vector extension [I-D.ietf-alto-path-vector] has extended
+       the original ALTO protocol [RFC7285] with the ability to represent
+       not only end-to-end metrics but also information about shared link
+       risk groups (SLRG).
+
+       However, straw man algorithms to compute ALTO path vector can contain
+       redundant information and result in unnecessary communication
+       overhead.  The situation gets even worse when certain ALTO extensions
+       are enabled, for example, the incremental extension
+       [I-D.ietf-alto-incr-update-sse] which continuously pushes data
+       changes to ALTO clients.
+
+       In this document, an algorithm is described which can effectively
+       reduce the communication overhead while still containing the same
+       information as in the original path vector.  The algorithm is fully
+       compatible with the path vector extension and has several by-products
+       which can be leveraged by other extensions to achieve better
+       performance.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-gao-alto-routing-state-abstraction-03
+    formattedref:
+      content: draft-gao-alto-routing-state-abstraction-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gao-alto-routing-state-abstraction-03
@@ -172,7 +179,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-gao-alto-routing-state-abstraction-05
+    formattedref:
+      content: draft-gao-alto-routing-state-abstraction-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gao-alto-routing-state-abstraction-05
@@ -188,7 +196,7 @@ series:
     content: Internet-Draft
   number: draft-gao-alto-routing-state-abstraction-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

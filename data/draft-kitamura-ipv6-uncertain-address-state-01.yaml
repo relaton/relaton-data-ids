@@ -1,7 +1,7 @@
 ---
 id: draftkitamuraipv6uncertainaddressstate01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -91,7 +91,7 @@ contributor:
         - language: en
           content: Osaka City University
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -99,20 +99,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document describes a new IPv6 address state called \"Uncertain\"\n
-    \  address state as an extension of IPv6 address state specification.\n   \"Uncertain\"
-    address state is designed to introduce two\n   functionalities. One is to achieve
-    \"Temporary Address Reservation\"\n   function. The other is to avoid a DAD (Duplicate
-    Address Detection)\n   time consuming problem for dynamically created addresses.\n\n
-    \  New \"Uncertain\" Address State is inserted between \"Tentative\"\n   address
-    state and \"Valid\" address state. After \"Tentative\" address\n   state (DAD
-    operation has finished) for a newly created address, its\n   state will enter
-    to \"Uncertain\" address state. While an address\n   stay at \"Uncertain\" address
-    state, the address is behaved as if it\n   is temporary reserved by the node exclusively.
-    (The other nodes can\n   not obtain such a reserved address.) When it becomes
-    really\n   necessary for the node to utilize the temporary reserved address,\n
-    \  its address state is changed into \"Valid\" address state without\n   accompanying
-    time consuming DAD operation. By these procedures, we\n   can avoid the DAD problem.\n\n\t "
+  content: |-
+    <p>This document describes a new IPv6 address state called &quot;Uncertain&quot;
+       address state as an extension of IPv6 address state specification.
+       &quot;Uncertain&quot; address state is designed to introduce two
+       functionalities. One is to achieve &quot;Temporary Address Reservation&quot;
+       function. The other is to avoid a DAD (Duplicate Address Detection)
+       time consuming problem for dynamically created addresses.
+
+       New &quot;Uncertain&quot; Address State is inserted between &quot;Tentative&quot;
+       address state and &quot;Valid&quot; address state. After &quot;Tentative&quot; address
+       state (DAD operation has finished) for a newly created address, its
+       state will enter to &quot;Uncertain&quot; address state. While an address
+       stay at &quot;Uncertain&quot; address state, the address is behaved as if it
+       is temporary reserved by the node exclusively. (The other nodes can
+       not obtain such a reserved address.) When it becomes really
+       necessary for the node to utilize the temporary reserved address,
+       its address state is changed into &quot;Valid&quot; address state without
+       accompanying time consuming DAD operation. By these procedures, we
+       can avoid the DAD problem.</p>
 series:
 - type: main
   title:
@@ -121,7 +126,7 @@ series:
     content: Internet-Draft
   number: draft-kitamura-ipv6-uncertain-address-state-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

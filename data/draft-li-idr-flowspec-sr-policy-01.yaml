@@ -1,7 +1,7 @@
 ---
 id: draftliidrflowspecsrpolicy01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -63,7 +63,7 @@ contributor:
         - language: en
           content: China Mobile
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -71,22 +71,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Flowspec, an extension to BGP, enables the dissemination of traffic\n
-    \  flow specification rules and can be used to steer traffic into SR\n   Policy.
-    \ However, existing approaches using Flowspec to direct\n   traffic into a SR
-    Policy have certain drawbacks (for details, refer\n   to section 1).\n\n   This
-    document difines two new standard actions for the BGP Flowspec\n   V2 protocol
-    (FSv2) [I-D.ietf-idr-flowspec-v2]: Redirect to SR Policy\n   Action and SRv6 SID
-    Action.  The former allows traffic to be directed\n   to a designated SR Policy,
-    while the latter allows for the\n   encapsulation of an additional SRv6 SID as
-    required during\n   redirection.\n\n   The Redirect to SR Policy Action can be
-    used independently or in\n   conjunction with the SRv6 SID Action, depending on
-    the application\n   scenario.  Additionally, the SRv6 SID Action can be used together\n
-    \  with other actions defined in FSv2, such as Redirect to IPv6.\n\n\t "
+  content: |-
+    <p>Flowspec, an extension to BGP, enables the dissemination of traffic
+       flow specification rules and can be used to steer traffic into SR
+       Policy.  However, existing approaches using Flowspec to direct
+       traffic into a SR Policy have certain drawbacks (for details, refer
+       to section 1).
+
+       This document difines two new standard actions for the BGP Flowspec
+       V2 protocol (FSv2) [I-D.ietf-idr-flowspec-v2]: Redirect to SR Policy
+       Action and SRv6 SID Action.  The former allows traffic to be directed
+       to a designated SR Policy, while the latter allows for the
+       encapsulation of an additional SRv6 SID as required during
+       redirection.
+
+       The Redirect to SR Policy Action can be used independently or in
+       conjunction with the SRv6 SID Action, depending on the application
+       scenario.  Additionally, the SRv6 SID Action can be used together
+       with other actions defined in FSv2, such as Redirect to IPv6.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-li-idr-flowspec-sr-policy-00
+    formattedref:
+      content: draft-li-idr-flowspec-sr-policy-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-idr-flowspec-sr-policy-00
@@ -96,7 +103,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-li-idr-flowspec-sr-policy-02
+    formattedref:
+      content: draft-li-idr-flowspec-sr-policy-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-idr-flowspec-sr-policy-02
@@ -112,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-li-idr-flowspec-sr-policy-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

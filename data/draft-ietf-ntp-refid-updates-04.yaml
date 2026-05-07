@@ -1,7 +1,7 @@
 ---
 id: draftietfntprefidupdates04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Boston University
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -79,18 +79,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC 5905 [RFC5905], section 7.3, \"Packet Header Variables\", defines\n
-    \  the value of the REFID, the system peer for the responding host.  In\n   the
-    past, for IPv4 associations the IPv4 address is used, and for\n   IPv6 associations
-    the first four octets of the MD5 hash of the IPv6\n   are used.  There are two
-    recognized shortcomings to this approach,\n   and this proposal addresses them.
-    \ One is that knowledge of the\n   system peer is \"abusable\" information and
-    should not be generally\n   available.  The second is that the four octet hash
-    of the IPv6\n   address looks very much like an IPv4 address, and this is confusing.\n\n\t "
+  content: |-
+    <p>RFC 5905 [RFC5905], section 7.3, &quot;Packet Header Variables&quot;, defines
+       the value of the REFID, the system peer for the responding host.  In
+       the past, for IPv4 associations the IPv4 address is used, and for
+       IPv6 associations the first four octets of the MD5 hash of the IPv6
+       are used.  There are two recognized shortcomings to this approach,
+       and this proposal addresses them.  One is that knowledge of the
+       system peer is &quot;abusable&quot; information and should not be generally
+       available.  The second is that the four octet hash of the IPv6
+       address looks very much like an IPv4 address, and this is confusing.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ntp-refid-updates-03
+    formattedref:
+      content: draft-ietf-ntp-refid-updates-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-refid-updates-03
@@ -100,7 +103,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ntp-refid-updates-05
+    formattedref:
+      content: draft-ietf-ntp-refid-updates-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-refid-updates-05
@@ -116,7 +120,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ntp-refid-updates-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

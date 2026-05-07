@@ -1,7 +1,7 @@
 ---
 id: draftietfpcestatefulpcevendor03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -147,7 +147,7 @@ contributor:
         - language: en
           content: Cisco Systems, Inc.
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -155,18 +155,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A Stateful Path Computation Element (PCE) maintains information on\n
-    \  the current network state, including computed Label Switched Path\n   (LSPs),
-    reserved resources within the network, and the pending path\n   computation requests.
-    \ This information may then be considered when\n   computing new traffic engineered
-    LSPs, and for any associated and\n   dependent LSPs, received from a Path Computation
-    Client (PCC).\n\n   RFC 7470 defines a facility to carry vendor-specific information
-    in\n   stateless Path Computation Element Communication Protocol (PCEP).\n\n   This
-    document extends this capability for the Stateful PCEP messages.\n\n\t "
+  content: |-
+    <p>A Stateful Path Computation Element (PCE) maintains information on
+       the current network state, including computed Label Switched Path
+       (LSPs), reserved resources within the network, and the pending path
+       computation requests.  This information may then be considered when
+       computing new traffic engineered LSPs, and for any associated and
+       dependent LSPs, received from a Path Computation Client (PCC).
+
+       RFC 7470 defines a facility to carry vendor-specific information in
+       stateless Path Computation Element Communication Protocol (PCEP).
+
+       This document extends this capability for the Stateful PCEP messages.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-pce-stateful-pce-vendor-02
+    formattedref:
+      content: draft-ietf-pce-stateful-pce-vendor-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-02
@@ -176,7 +181,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-pce-stateful-pce-vendor-04
+    formattedref:
+      content: draft-ietf-pce-stateful-pce-vendor-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-stateful-pce-vendor-04
@@ -192,7 +198,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-pce-stateful-pce-vendor-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftbonicamplsselfping04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -161,7 +161,7 @@ contributor:
         language: en
         content: Mark Wygant
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -169,21 +169,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   LSP Self-ping is a new, light-weight protocol that ingress LSRs can\n
-    \  use to verify an LSPs readiness to carry traffic.  LSP Self-ping does\n   not
-    consume control plane resources on the egress LSR.\n\n   When an ingress LSR executes
-    LSP Self-ping procedures, it constructs\n   a probe message.  The probe message
-    is an IP datagram whose\n   destination address represents an interface on the
-    ingress LSR.\n\n   The ingress LSR forwards the probe through the LSP under test.
-    \ If\n   the LSP is ready to forward traffic, the egress LSR receives the\n   probe.
-    \ Because the probe is addressed to the ingress LSR, the egress\n   LSR forwards
-    the probe back to the ingress.  When the ingress LSR\n   receives the probe, it
-    has verified LSP readiness without consuming\n   control plane resources at the
-    egress LSR.\n\n\t "
+  content: |-
+    <p>LSP Self-ping is a new, light-weight protocol that ingress LSRs can
+       use to verify an LSPs readiness to carry traffic.  LSP Self-ping does
+       not consume control plane resources on the egress LSR.
+
+       When an ingress LSR executes LSP Self-ping procedures, it constructs
+       a probe message.  The probe message is an IP datagram whose
+       destination address represents an interface on the ingress LSR.
+
+       The ingress LSR forwards the probe through the LSP under test.  If
+       the LSP is ready to forward traffic, the egress LSR receives the
+       probe.  Because the probe is addressed to the ingress LSR, the egress
+       LSR forwards the probe back to the ingress.  When the ingress LSR
+       receives the probe, it has verified LSP readiness without consuming
+       control plane resources at the egress LSR.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-bonica-mpls-self-ping-03
+    formattedref:
+      content: draft-bonica-mpls-self-ping-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bonica-mpls-self-ping-03
@@ -193,7 +198,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-bonica-mpls-self-ping-05
+    formattedref:
+      content: draft-bonica-mpls-self-ping-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bonica-mpls-self-ping-05
@@ -209,7 +215,7 @@ series:
     content: Internet-Draft
   number: draft-bonica-mpls-self-ping-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

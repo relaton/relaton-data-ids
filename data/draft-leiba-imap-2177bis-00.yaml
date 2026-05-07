@@ -1,7 +1,7 @@
 ---
 id: draftleibaimap2177bis00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: IBM T.J. Watson Research Center
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,16 +54,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Internet Message Access Protocol requires a client to poll the\n
-    \  server for changes to the selected mailbox (new mail, deletions).\n   It's
-    often more desirable to have the server transmit updates to the\n   client in
-    real time.  This allows a user to see new mail immediately.\n   It also helps
-    some real-time applications based on IMAP, which might\n   otherwise need to poll
-    extremely often (such as every few seconds).\n   (While the spec actually does
-    allow a server to push EXISTS responses\n   asynchronously, a client can't expect
-    this behaviour and must poll.)\n   This document specifies the syntax of an IDLE
-    command, which will\n   allow a client to tell the server that it's ready to accept
-    such\n   real-time updates.\n\t "
+  content: |-
+    <p>The Internet Message Access Protocol requires a client to poll the
+       server for changes to the selected mailbox (new mail, deletions).
+       It&#39;s often more desirable to have the server transmit updates to the
+       client in real time.  This allows a user to see new mail immediately.
+       It also helps some real-time applications based on IMAP, which might
+       otherwise need to poll extremely often (such as every few seconds).
+       (While the spec actually does allow a server to push EXISTS responses
+       asynchronously, a client can&#39;t expect this behaviour and must poll.)
+       This document specifies the syntax of an IDLE command, which will
+       allow a client to tell the server that it&#39;s ready to accept such
+       real-time updates.</p>
 series:
 - type: main
   title:
@@ -72,7 +74,7 @@ series:
     content: Internet-Draft
   number: draft-leiba-imap-2177bis-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

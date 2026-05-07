@@ -1,7 +1,7 @@
 ---
 id: draftietfdnssdprivacy02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: University of Konstanz
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -79,23 +79,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS-SD (DNS Service Discovery) normally discloses information about\n
-    \  both the devices offering services and the devices requesting\n   services.
-    \ This information includes host names, network parameters,\n   and possibly a
-    further description of the corresponding service\n   instance.  Especially when
-    mobile devices engage in DNS Service\n   Discovery over Multicast DNS at a public
-    hotspot, a serious privacy\n   problem arises.\n\n   We propose to solve this
-    problem by a two-stage approach.  In the\n   first stage, hosts discover Private
-    Discovery Service Instances via\n   DNS-SD using special formats to protect their
-    privacy.  These service\n   instances correspond to Private Discovery Servers
-    running on peers.\n   In the second stage, hosts directly query these Private
-    Discovery\n   Servers via DNS-SD over TLS.  A pairwise shared secret necessary
-    to\n   establish these connections is only known to hosts authorized by a\n   pairing
-    system.\n\n\t "
+  content: |-
+    <p>DNS-SD (DNS Service Discovery) normally discloses information about
+       both the devices offering services and the devices requesting
+       services.  This information includes host names, network parameters,
+       and possibly a further description of the corresponding service
+       instance.  Especially when mobile devices engage in DNS Service
+       Discovery over Multicast DNS at a public hotspot, a serious privacy
+       problem arises.
+
+       We propose to solve this problem by a two-stage approach.  In the
+       first stage, hosts discover Private Discovery Service Instances via
+       DNS-SD using special formats to protect their privacy.  These service
+       instances correspond to Private Discovery Servers running on peers.
+       In the second stage, hosts directly query these Private Discovery
+       Servers via DNS-SD over TLS.  A pairwise shared secret necessary to
+       establish these connections is only known to hosts authorized by a
+       pairing system.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnssd-privacy-01
+    formattedref:
+      content: draft-ietf-dnssd-privacy-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnssd-privacy-01
@@ -105,7 +110,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnssd-privacy-03
+    formattedref:
+      content: draft-ietf-dnssd-privacy-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnssd-privacy-03
@@ -121,7 +127,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnssd-privacy-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

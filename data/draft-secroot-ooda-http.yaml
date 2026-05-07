@@ -1,11 +1,12 @@
 ---
 id: draftsecrootoodahttp
-schema_version: v1.4.1
-formattedref: draft-secroot-ooda-http
+schema_version: v1.5.6
+formattedref:
+  content: draft-secroot-ooda-http
 title:
 - language: en
   script: Latn
-  content: 'OODA-HTTP: Adaptive Security Framework for HTTP Communications'
+  content: Enforcement-Action HTTP Header Field
 docidentifier:
 - content: draft-secroot-ooda-http
   type: Internet-Draft
@@ -13,22 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "This document defines OODA-HTTP, a protocol extension and adaptive\nsecurity
-    framework that applies the Observe-Orient-Decide-Act (OODA)\nloop to HTTP/HTTPS
-    communications. Each HTTP request is transformed into\nan observation signal,
-    a decision vector, and an opportunity for active\ndefense.\n\nOODA-HTTP extends
-    the traditional 4-phase loop into 7 phases: Observe,\nOrient, Decide, Act, Memorize,
-    Adjust, and Cooperate - allowing systems\nto evolve and adapt during communication.
-    The protocol introduces a\nstructured header, 'OODA-Action', that carries context-driven
-    actions\nbetween endpoints.\n\nOODA-HTTP offers compatibility with existing infrastructure
-    (e.g., TLS,\nHTTP/2/3), while enabling resilience against classical, behavioral,
-    and\nquantum threats. It supports inter-protocol cooperation with DOTS,\nSTAMP,
-    SIEMs, and behavioral inference engines such as SVDD and PSLPSO.\n\nThis document
-    defines protocol behavior, header format, core logic, and\ninteroperability strategy.\n\n\t "
+  content: |-
+    <p>This document defines the Enforcement-Action HTTP response header
+       field. The field provides a minimal, interoperable mechanism for
+       signaling advisory enforcement coordination between cooperating
+       components operating within a defined administrative or policy trust
+       boundary. The header conveys a single action token and optional
+       parameters without modifying HTTP status code semantics or
+       representation meaning. The field is designed to be safely ignored by
+       recipients that do not recognize it and to operate over existing HTTP
+       deployments without changes to transport protocols. This
+       specification defines the syntax, semantics, processing rules, and
+       IANA registration for the header field.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-secroot-ooda-http-00
+    formattedref:
+      content: draft-secroot-ooda-http-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-00
@@ -38,7 +40,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-secroot-ooda-http-01
+    formattedref:
+      content: draft-secroot-ooda-http-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-01
@@ -48,11 +51,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-secroot-ooda-http-02
+    formattedref:
+      content: draft-secroot-ooda-http-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-02
     docidentifier:
     - content: draft-secroot-ooda-http-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-secroot-ooda-http-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-03
+    docidentifier:
+    - content: draft-secroot-ooda-http-03
       type: Internet-Draft
       primary: true

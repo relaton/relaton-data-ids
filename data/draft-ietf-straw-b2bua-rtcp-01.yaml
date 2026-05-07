@@ -1,7 +1,7 @@
 ---
 id: draftietfstrawb2buartcp01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -84,7 +84,7 @@ contributor:
         language: en
         content: Victor Pascual
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -92,20 +92,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   SIP Back-to-Back User Agents (B2BUAs) are often envisaged to also be\n
-    \  on the media path, rather than just intercepting signalling.  This\n   means
-    that B2BUAs often implement an RTP/RTCP stack as well, whether\n   to act as media
-    transcoders or to just passthrough the media\n   themselves, thus leading to separate
-    media legs that the B2BUA\n   correlates and bridges together.  If not disciplined,
-    though, this\n   behaviour can severely impact the communication experience,\n
-    \  especially when statistics and feedback information contained in RTCP\n   packets
-    get lost because of mismatches in the reported data.\n\n   This document defines
-    the proper behaviour B2BUAs should follow when\n   also acting on the signalling/media
-    plane in order to preserve the\n   end-to-end functionality of RTCP.\n\n\t "
+  content: |-
+    <p>SIP Back-to-Back User Agents (B2BUAs) are often envisaged to also be
+       on the media path, rather than just intercepting signalling.  This
+       means that B2BUAs often implement an RTP/RTCP stack as well, whether
+       to act as media transcoders or to just passthrough the media
+       themselves, thus leading to separate media legs that the B2BUA
+       correlates and bridges together.  If not disciplined, though, this
+       behaviour can severely impact the communication experience,
+       especially when statistics and feedback information contained in RTCP
+       packets get lost because of mismatches in the reported data.
+
+       This document defines the proper behaviour B2BUAs should follow when
+       also acting on the signalling/media plane in order to preserve the
+       end-to-end functionality of RTCP.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-straw-b2bua-rtcp-00
+    formattedref:
+      content: draft-ietf-straw-b2bua-rtcp-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-straw-b2bua-rtcp-00
@@ -115,7 +120,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-straw-b2bua-rtcp-02
+    formattedref:
+      content: draft-ietf-straw-b2bua-rtcp-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-straw-b2bua-rtcp-02
@@ -131,7 +137,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-straw-b2bua-rtcp-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

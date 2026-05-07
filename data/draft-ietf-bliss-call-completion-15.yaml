@@ -1,7 +1,7 @@
 ---
 id: draftietfblisscallcompletion15
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -104,7 +104,7 @@ contributor:
         language: en
         content: Denis Alexeitsev
 version:
-- draft: '15'
+- content: '15'
 language:
 - en
 script:
@@ -112,23 +112,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The call completion feature defined in this specification allows the\n
-    \  caller of a failed call to be notified when the callee becomes\n   available
-    to receive a call.\n\n   For the realization of a basic solution without queuing,
-    this\n   document references the usage of the dialog event package (RFC 4235)\n
-    \  that is described as 'automatic redial' in the SIP Service Examples\n   (RFC
-    5359).\n\n   For the realization of a more comprehensive solution with queuing
-    ,\n   this document introduces an architecture for implementing these\n   features
-    in the Session Initiation Protocol where \"Call completion\"\n   implementations
-    associated with the caller's and callee's endpoints\n   cooperate to place the
-    caller's request for call completion into a\n   queue at the callee's endpoint,
-    and when a caller's request is ready\n   to be serviced, re-attempt of the original,
-    failed call is made.\n\n   The architecture is designed to interoperate well with
-    existing call-\n   completion solutions in other networks.\n\n\t "
+  content: |-
+    <p>The call completion feature defined in this specification allows the
+       caller of a failed call to be notified when the callee becomes
+       available to receive a call.
+
+       For the realization of a basic solution without queuing, this
+       document references the usage of the dialog event package (RFC 4235)
+       that is described as &#39;automatic redial&#39; in the SIP Service Examples
+       (RFC 5359).
+
+       For the realization of a more comprehensive solution with queuing ,
+       this document introduces an architecture for implementing these
+       features in the Session Initiation Protocol where &quot;Call completion&quot;
+       implementations associated with the caller&#39;s and callee&#39;s endpoints
+       cooperate to place the caller&#39;s request for call completion into a
+       queue at the callee&#39;s endpoint, and when a caller&#39;s request is ready
+       to be serviced, re-attempt of the original, failed call is made.
+
+       The architecture is designed to interoperate well with existing call-
+       completion solutions in other networks.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bliss-call-completion-14
+    formattedref:
+      content: draft-ietf-bliss-call-completion-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bliss-call-completion-14
@@ -138,7 +146,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bliss-call-completion-16
+    formattedref:
+      content: draft-ietf-bliss-call-completion-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bliss-call-completion-16
@@ -154,7 +163,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bliss-call-completion-15
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

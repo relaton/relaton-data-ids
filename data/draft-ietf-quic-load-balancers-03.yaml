@@ -1,7 +1,7 @@
 ---
 id: draftietfquicloadbalancers03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Microsoft
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -79,19 +79,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC connection IDs allow continuation of connections across address/\n
-    \  port 4-tuple changes, and can store routing information for stateless\n   or
-    low-state load balancers.  They also can prevent linkability of\n   connections
-    across deliberate address migration through the use of\n   protected communications
-    between client and server.  This creates\n   issues for load-balancing intermediaries.
-    \ This specification\n   standardizes methods for encoding routing information
-    given a small\n   set of configuration parameters.  This framework also enables
-    offload\n   of other QUIC functions to trusted intermediaries, given the explicit\n
-    \  cooperation of the QUIC server.\n\n\t "
+  content: |-
+    <p>QUIC connection IDs allow continuation of connections across address/
+       port 4-tuple changes, and can store routing information for stateless
+       or low-state load balancers.  They also can prevent linkability of
+       connections across deliberate address migration through the use of
+       protected communications between client and server.  This creates
+       issues for load-balancing intermediaries.  This specification
+       standardizes methods for encoding routing information given a small
+       set of configuration parameters.  This framework also enables offload
+       of other QUIC functions to trusted intermediaries, given the explicit
+       cooperation of the QUIC server.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-quic-load-balancers-02
+    formattedref:
+      content: draft-ietf-quic-load-balancers-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-load-balancers-02
@@ -101,7 +104,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-quic-load-balancers-04
+    formattedref:
+      content: draft-ietf-quic-load-balancers-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-load-balancers-04
@@ -117,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-quic-load-balancers-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

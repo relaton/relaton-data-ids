@@ -1,7 +1,8 @@
 ---
 id: draftreillysentinelprotocol
-schema_version: v1.4.1
-formattedref: draft-reilly-sentinel-protocol
+schema_version: v1.5.6
+formattedref:
+  content: draft-reilly-sentinel-protocol
 title:
 - language: en
   script: Latn
@@ -14,27 +15,53 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The Reilly Sentinel Protocol (RSP) specifies an interoperable,\n   dual-layer
-    method for establishing integrity, provenance, and\n   auditability across the
-    artificial intelligence (AI) lifecycle.\n   RSP defines a Sentinel Evidence Package
-    (SEP) that binds payload\n   digests, provenance metadata, signatures, blockchain
-    timestamp\n   proofs, and resolvable identifiers (DOIs).  This enables\n   tamper-evident,
-    independently verifiable receipts for datasets,\n   data transformations, training
-    jobs, checkpoints, fine-tuning\n   runs, evaluations, and inference outputs.\n\n
-    \  RSP is transport-agnostic and serializable in JSON and CBOR.  It\n   leverages
-    existing IETF and industry building blocks, including\n   COSE/CMS signatures,
-    CBOR (RFC 8949), CDDL (RFC 8610), JSON\n   (RFC 8259), and NTS-secured time (RFC
-    8915).  Anchoring is done\n   via append-only blockchain receipts (e.g., OpenTimestamps-style\n
-    \  proofs) and identity/lineage is stabilized with a DOI registry.\n   The result
-    is an evidence-grade audit trail for regulated and\n   safety-critical AI deployments.\n\n\n\t "
+  content: |-
+    <p>The Reilly Sentinel Protocol (RSP) specifies an interoperable,
+       multi-layer method for establishing integrity, provenance, and
+       auditability across the artificial intelligence (AI) lifecycle.
+       RSP defines a Sentinel Evidence Package (SEP) that binds payload
+       digests, provenance metadata, signatures, blockchain timestamp
+       proofs, and resolvable identifiers (DOIs).  This enables
+       tamper-evident, independently verifiable receipts for datasets,
+       data transformations, training jobs, checkpoints, fine-tuning
+       runs, evaluations, inference outputs, and agentic AI action logs.
+
+       This revision (-01) expands the protocol with a quantum-resistant
+       triple-hash cross-chain architecture (SHA-256, SHA3-512, BLAKE3),
+       formal cross-chain binding proofs, agentic AI provenance extensions,
+       streaming inference provenance, federated learning provenance,
+       expanded threat model covering post-quantum adversaries, integration
+       with the Reilly EternaMark (REM) Protocol triple-layer permanence
+       system, implementation status updates, and a conformance framework.
+
+       RSP is transport-agnostic and serializable in JSON and CBOR.  It
+       leverages existing IETF and industry building blocks, including
+       COSE/CMS signatures, CBOR (RFC 8949), CDDL (RFC 8610), JSON
+       (RFC 8259), and NTS-secured time (RFC 8915).  Anchoring is done
+       via append-only blockchain receipts and identity/lineage is
+       stabilized with a DOI registry.  The result is an evidence-grade,
+       quantum-resilient audit trail for regulated and safety-critical
+       AI deployments worldwide.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-reilly-sentinel-protocol-00
+    formattedref:
+      content: draft-reilly-sentinel-protocol-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reilly-sentinel-protocol-00
     docidentifier:
     - content: draft-reilly-sentinel-protocol-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-reilly-sentinel-protocol-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-reilly-sentinel-protocol-01
+    docidentifier:
+    - content: draft-reilly-sentinel-protocol-01
       type: Internet-Draft
       primary: true

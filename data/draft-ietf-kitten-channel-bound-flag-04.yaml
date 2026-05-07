@@ -1,7 +1,7 @@
 ---
 id: draftietfkittenchannelboundflag04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -69,7 +69,7 @@ contributor:
         - language: en
           content: Cryptonector, LLC
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -77,24 +77,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Channel binding is a technique that allows applications to use a\n
-    \  secure channel at a lower layer without having to use authentication\n   at
-    that lower layer.  The concept of channel binding comes from the\n   Generic Security
-    Services Application Programming Interface (GSS-\n   API).  It turns out that
-    the semantics commonly implemented are\n   different than those specified in the
-    base GSS-API RFC (RFC2743), and\n   that that specification has a serious bug.
-    \ This document addresses\n   both the inconsistency as-implemented and the specification
-    bug.\n\n   This Internet-Draft proposes the addition of a \"channel bound\" return\n
-    \  flag for the GSS_Init_sec_context() and GSS_Accept_sec_context()\n   functions.
-    \ Two behaviors are specified: a default, safe behavior\n   reflecting existing
-    implementation deployments, and a behavior that\n   is only safe when the application
-    specifically tells the GSS-API that\n   it (the application) supports the new
-    behavior.  Additional API\n   elements related to this are also added, including
-    a new security\n   context establishment API.\n\n\t "
+  content: |-
+    <p>Channel binding is a technique that allows applications to use a
+       secure channel at a lower layer without having to use authentication
+       at that lower layer.  The concept of channel binding comes from the
+       Generic Security Services Application Programming Interface (GSS-
+       API).  It turns out that the semantics commonly implemented are
+       different than those specified in the base GSS-API RFC (RFC2743), and
+       that that specification has a serious bug.  This document addresses
+       both the inconsistency as-implemented and the specification bug.
+
+       This Internet-Draft proposes the addition of a &quot;channel bound&quot; return
+       flag for the GSS_Init_sec_context() and GSS_Accept_sec_context()
+       functions.  Two behaviors are specified: a default, safe behavior
+       reflecting existing implementation deployments, and a behavior that
+       is only safe when the application specifically tells the GSS-API that
+       it (the application) supports the new behavior.  Additional API
+       elements related to this are also added, including a new security
+       context establishment API.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-kitten-channel-bound-flag-03
+    formattedref:
+      content: draft-ietf-kitten-channel-bound-flag-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-kitten-channel-bound-flag-03
@@ -110,7 +115,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-kitten-channel-bound-flag-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

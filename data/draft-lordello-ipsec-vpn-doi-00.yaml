@@ -1,7 +1,7 @@
 ---
 id: draftlordelloipsecvpndoi00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Siemens
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,26 +79,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The IPSec DOI for ISAKMP defines identities for phase 2 exchanges\nthat
-    are suitable for a flat, unique address space. On the other\nhand, different VPN's
-    cannot guarantee a non-overlapping address\nspace among them. Therefore when security
-    gateways on an ISP network\nnegotiate IPSec SA's in the context of multiple VPN's,
-    identifying\ntraffic flows for this multiplicity of VPN's become an issue. Of\ncourse,
-    an alternative would be to have multiple contexts of\nsecurity gateways, one for
-    each VPN. Unfortunately that would impose\nsevere administrative challenges to
-    an ISP, some of which are\ndescribed later. Another alternative and a more appealing
-    one would\nbe to have a single security gateway with a single tunnel endpoint\naddress,
-    a single X.509 certificate, etc., that exists in a common\ncontext and is able
-    to negotiate IPSec tunnels for any VPN with a\npresence in the security gateway.
-    For the later to be possible\nhowever, it is required for this common security
-    gateway to be able\nto negotiate phase 2 SA's on behalf of each one of these VPN's
-    with\noverlapping address spaces. A second motivation for the later\napproach
-    would be to simply negotiate IPSec tunnels for each VPN as\na whole without implying
-    any specific traffic flow. This\nspecification describes an extended DOI for ISAKMP
-    which, while\ninheriting the existing IPSec DOI in its entirety, defines extra\ntypes
-    of phase 2 identities which include a VPN-ID field as an extra\npiece of tunnel
-    identity, i.e., a qualifier for the IP addresses\nselectors. The VPN-ID is defined
-    in RFC 2685.\n\n\t "
+  content: |-
+    <p>The IPSec DOI for ISAKMP defines identities for phase 2 exchanges
+    that are suitable for a flat, unique address space. On the other
+    hand, different VPN&#39;s cannot guarantee a non-overlapping address
+    space among them. Therefore when security gateways on an ISP network
+    negotiate IPSec SA&#39;s in the context of multiple VPN&#39;s, identifying
+    traffic flows for this multiplicity of VPN&#39;s become an issue. Of
+    course, an alternative would be to have multiple contexts of
+    security gateways, one for each VPN. Unfortunately that would impose
+    severe administrative challenges to an ISP, some of which are
+    described later. Another alternative and a more appealing one would
+    be to have a single security gateway with a single tunnel endpoint
+    address, a single X.509 certificate, etc., that exists in a common
+    context and is able to negotiate IPSec tunnels for any VPN with a
+    presence in the security gateway. For the later to be possible
+    however, it is required for this common security gateway to be able
+    to negotiate phase 2 SA&#39;s on behalf of each one of these VPN&#39;s with
+    overlapping address spaces. A second motivation for the later
+    approach would be to simply negotiate IPSec tunnels for each VPN as
+    a whole without implying any specific traffic flow. This
+    specification describes an extended DOI for ISAKMP which, while
+    inheriting the existing IPSec DOI in its entirety, defines extra
+    types of phase 2 identities which include a VPN-ID field as an extra
+    piece of tunnel identity, i.e., a qualifier for the IP addresses
+    selectors. The VPN-ID is defined in RFC 2685.</p>
 series:
 - type: main
   title:
@@ -107,7 +112,7 @@ series:
     content: Internet-Draft
   number: draft-lordello-ipsec-vpn-doi-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfaltoperformancemetrics10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Telefonica
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -157,32 +157,40 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Cost metric is a basic concept in Application-Layer Traffic\n   Optimization
-    (ALTO), and is used in basic ALTO services including\n   both the cost map service
-    and the endpoint cost service.\n\n   Different applications may use different
-    cost metrics, but the ALTO\n   base protocol [RFC7285] documents only one single
-    cost metric, i.e.,\n   the generic \"routingcost\" metric; see Sec. 14.2 of [RFC7285].
-    \ Hence,\n   if the ALTO client of an application wants to issue a cost map or
-    an\n   endpoint cost request to determine the resource provider offering\n   better
-    delay performance (i.e., low-delay) to the resource consumer,\n   the base protocol
-    does not define the cost metric to be used.\n\n   ALTO cost metrics can be generic
-    metrics and this document focuses on\n   network performance metrics, including
-    network delay, jitter, packet\n   loss rate, hop count, and bandwidth.\n\n   When
-    using an ALTO performance metric, an application may need\n   additional contextual
-    information beyond the metric value.  For\n   example, whether the metric is an
-    estimation based on measurements or\n   a service-level agreement (SLA) can define
-    the meaning of the\n   performance metric.  Hence, this document introduces an
-    additional\n   \"cost-context\" field to the ALTO \"cost-type\" field to convey
-    such\n   information.  To report an estimated value of a performance metric,\n
-    \  the ALTO server may derive and aggregate from routing protocols with\n   different
-    granularity and scope, such as BGP-LS, OSPF-TE and ISIS-TE,\n   or from end-to-end
-    traffic management tools.  These metrics may then\n   be exposed by an ALTO server
-    to allow applications to determine\n   \"where\" to connect based on network performance
-    criteria.\n\n   \n\t "
+  content: |-
+    <p>Cost metric is a basic concept in Application-Layer Traffic
+       Optimization (ALTO), and is used in basic ALTO services including
+       both the cost map service and the endpoint cost service.
+
+       Different applications may use different cost metrics, but the ALTO
+       base protocol [RFC7285] documents only one single cost metric, i.e.,
+       the generic &quot;routingcost&quot; metric; see Sec. 14.2 of [RFC7285].  Hence,
+       if the ALTO client of an application wants to issue a cost map or an
+       endpoint cost request to determine the resource provider offering
+       better delay performance (i.e., low-delay) to the resource consumer,
+       the base protocol does not define the cost metric to be used.
+
+       ALTO cost metrics can be generic metrics and this document focuses on
+       network performance metrics, including network delay, jitter, packet
+       loss rate, hop count, and bandwidth.
+
+       When using an ALTO performance metric, an application may need
+       additional contextual information beyond the metric value.  For
+       example, whether the metric is an estimation based on measurements or
+       a service-level agreement (SLA) can define the meaning of the
+       performance metric.  Hence, this document introduces an additional
+       &quot;cost-context&quot; field to the ALTO &quot;cost-type&quot; field to convey such
+       information.  To report an estimated value of a performance metric,
+       the ALTO server may derive and aggregate from routing protocols with
+       different granularity and scope, such as BGP-LS, OSPF-TE and ISIS-TE,
+       or from end-to-end traffic management tools.  These metrics may then
+       be exposed by an ALTO server to allow applications to determine
+       &quot;where&quot; to connect based on network performance criteria.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-alto-performance-metrics-09
+    formattedref:
+      content: draft-ietf-alto-performance-metrics-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-performance-metrics-09
@@ -192,7 +200,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-alto-performance-metrics-11
+    formattedref:
+      content: draft-ietf-alto-performance-metrics-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-performance-metrics-11
@@ -208,7 +217,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-alto-performance-metrics-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

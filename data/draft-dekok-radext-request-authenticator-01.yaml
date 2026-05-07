@@ -1,7 +1,7 @@
 ---
 id: draftdekokradextrequestauthenticator01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -42,7 +42,7 @@ contributor:
         language: en
         content: Alan DeKok
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -50,17 +50,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RADIUS contains a one-octet Identifier field which is used to\n   correlate
-    requests and replies.  This field limits the number of\n   outstanding requests
-    to 256.  Experience shows that this limitation\n   is problematic for high load
-    systems.  This document proposes to use\n   the Request Authenticator field as
-    an additional unique identifier.\n   The replies can then be correlated to requests
-    by copying the Request\n   Authenticator from the request to a new attribute in
-    the response,\n   called the Original-Request-Authenticator.\n\n\t "
+  content: |-
+    <p>RADIUS contains a one-octet Identifier field which is used to
+       correlate requests and replies.  This field limits the number of
+       outstanding requests to 256.  Experience shows that this limitation
+       is problematic for high load systems.  This document proposes to use
+       the Request Authenticator field as an additional unique identifier.
+       The replies can then be correlated to requests by copying the Request
+       Authenticator from the request to a new attribute in the response,
+       called the Original-Request-Authenticator.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-dekok-radext-request-authenticator-00
+    formattedref:
+      content: draft-dekok-radext-request-authenticator-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dekok-radext-request-authenticator-00
@@ -70,7 +73,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-dekok-radext-request-authenticator-02
+    formattedref:
+      content: draft-dekok-radext-request-authenticator-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dekok-radext-request-authenticator-02
@@ -86,7 +90,7 @@ series:
     content: Internet-Draft
   number: draft-dekok-radext-request-authenticator-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

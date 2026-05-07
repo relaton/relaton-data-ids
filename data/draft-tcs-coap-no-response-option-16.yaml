@@ -1,7 +1,7 @@
 ---
 id: drafttcscoapnoresponseoption16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -101,7 +101,7 @@ contributor:
         language: en
         content: Tulika Bose
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -109,27 +109,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   There can be M2M scenarios where responses from a server against\n
-    \  requests from client are redundant. This kind of open-loop exchange\n   (with
-    no response path from the server to the client) may be desired\n   to minimize
-    resource consumption in constrained systems while\n   updating a bulk of resources
-    simultaneously, or updating a resource\n   with a very high frequency. CoAP already
-    provides Non-confirmable\n   (NON) messages that are not acknowledged by the recipient.
-    However,\n   the request/response semantics still require the server to respond\n
-    \  with a status code indicating \"the result of the attempt to\n   understand
-    and satisfy the request\".\n\n   This specification introduces a CoAP option called
-    'No-Response'.\n   Using this option the client can explicitly express to the
-    server\n   its disinterest in all responses against the particular request.\n
-    \  This option also provides granular control to enable expression of\n   disinterest
-    to a particular class of response or a combination of\n   response-classes. The
-    server MAY decide to suppress the response by\n   not transmitting it back to
-    the client according to the value of No-\n   Response option in the request. This
-    option may be effective for\n   both unicast and multicast requests. This document
-    also discusses a\n   few exemplary applications which benefit from this option.\n\n\t "
+  content: |-
+    <p>There can be M2M scenarios where responses from a server against
+       requests from client are redundant. This kind of open-loop exchange
+       (with no response path from the server to the client) may be desired
+       to minimize resource consumption in constrained systems while
+       updating a bulk of resources simultaneously, or updating a resource
+       with a very high frequency. CoAP already provides Non-confirmable
+       (NON) messages that are not acknowledged by the recipient. However,
+       the request/response semantics still require the server to respond
+       with a status code indicating &quot;the result of the attempt to
+       understand and satisfy the request&quot;.
+
+       This specification introduces a CoAP option called &#39;No-Response&#39;.
+       Using this option the client can explicitly express to the server
+       its disinterest in all responses against the particular request.
+       This option also provides granular control to enable expression of
+       disinterest to a particular class of response or a combination of
+       response-classes. The server MAY decide to suppress the response by
+       not transmitting it back to the client according to the value of No-
+       Response option in the request. This option may be effective for
+       both unicast and multicast requests. This document also discusses a
+       few exemplary applications which benefit from this option.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-tcs-coap-no-response-option-15
+    formattedref:
+      content: draft-tcs-coap-no-response-option-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-15
@@ -139,7 +145,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-tcs-coap-no-response-option-17
+    formattedref:
+      content: draft-tcs-coap-no-response-option-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tcs-coap-no-response-option-17
@@ -155,7 +162,7 @@ series:
     content: Internet-Draft
   number: draft-tcs-coap-no-response-option-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

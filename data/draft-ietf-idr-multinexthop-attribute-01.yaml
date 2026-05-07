@@ -1,7 +1,7 @@
 ---
 id: draftietfidrmultinexthopattribute01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -127,7 +127,7 @@ contributor:
         - language: en
           content: AT&T
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -135,19 +135,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Today, a BGP speaker can advertise one nexthop for a set of NLRIs in\n
-    \  an Update message.  This nexthop can be encoded in either the top-\n   level
-    BGP-Nexthop attribute (code 3), or inside the MP_REACH_NLRI\n   attribute (code
-    14).  Forwarding information related to the nexthop\n   is scattered across various
-    attributes, extended communities or the\n   NLRI field.\n\n   This document defines
-    a new optional non-transitive BGP attribute\n   called \"MultiNexthop (MNH)\"
-    with IANA BGP attribute type code TBD,\n   that can be used to carry an ordered
-    set of one or more Nexthops in\n   the same Update message, with all forwarding
-    information being\n   carried in one attribute, scoped on a per nexthop basis.\n\n\n\t "
+  content: |-
+    <p>Today, a BGP speaker can advertise one nexthop for a set of NLRIs in
+       an Update message.  This nexthop can be encoded in either the top-
+       level BGP-Nexthop attribute (code 3), or inside the MP_REACH_NLRI
+       attribute (code 14).  Forwarding information related to the nexthop
+       is scattered across various attributes, extended communities or the
+       NLRI field.
+
+       This document defines a new optional non-transitive BGP attribute
+       called &quot;MultiNexthop (MNH)&quot; with IANA BGP attribute type code TBD,
+       that can be used to carry an ordered set of one or more Nexthops in
+       the same Update message, with all forwarding information being
+       carried in one attribute, scoped on a per nexthop basis.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-multinexthop-attribute-00
+    formattedref:
+      content: draft-ietf-idr-multinexthop-attribute-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-multinexthop-attribute-00
@@ -157,7 +162,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-multinexthop-attribute-02
+    formattedref:
+      content: draft-ietf-idr-multinexthop-attribute-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-multinexthop-attribute-02
@@ -173,7 +179,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-multinexthop-attribute-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

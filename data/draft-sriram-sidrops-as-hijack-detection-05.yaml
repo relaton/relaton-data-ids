@@ -1,7 +1,7 @@
 ---
 id: draftsriramsidropsashijackdetection05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: USA National Institute of Standards and Technology
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -79,19 +79,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a method for detection and mitigation of AS\n
-    \  hijacking.  In this mechanism, an AS operator registers a new object\n   in
-    the RPKI called 'ROAs Exist for All Prefixes (REAP)'.  REAP is\n   digitally signed
-    using the AS holder's certificate.  By registering a\n   REAP object, the AS operator
-    is declaring that they have Route Origin\n   Authorization (ROA) coverage for
-    all prefixes originated by their AS.\n   A receiving AS will mark a route as Invalid
-    if the prefix is not\n   covered by any Validated ROA Payload (VRP) and the route
-    origin AS\n   has signed a REAP.  Here Invalid means that the route is determined\n
-    \  to be an AS hijack.\n\n\t "
+  content: |-
+    <p>This document proposes a method for detection and mitigation of AS
+       hijacking.  In this mechanism, an AS operator registers a new object
+       in the RPKI called &#39;ROAs Exist for All Prefixes (REAP)&#39;.  REAP is
+       digitally signed using the AS holder&#39;s certificate.  By registering a
+       REAP object, the AS operator is declaring that they have Route Origin
+       Authorization (ROA) coverage for all prefixes originated by their AS.
+       A receiving AS will mark a route as Invalid if the prefix is not
+       covered by any Validated ROA Payload (VRP) and the route origin AS
+       has signed a REAP.  Here Invalid means that the route is determined
+       to be an AS hijack.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-sriram-sidrops-as-hijack-detection-04
+    formattedref:
+      content: draft-sriram-sidrops-as-hijack-detection-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-as-hijack-detection-04
@@ -101,7 +104,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-sriram-sidrops-as-hijack-detection-06
+    formattedref:
+      content: draft-sriram-sidrops-as-hijack-detection-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sriram-sidrops-as-hijack-detection-06
@@ -117,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-sriram-sidrops-as-hijack-detection-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

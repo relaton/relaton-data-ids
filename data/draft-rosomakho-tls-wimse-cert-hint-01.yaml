@@ -1,7 +1,7 @@
 ---
 id: draftrosomakhotlswimsecerthint01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Cloudflare
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -79,25 +79,39 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a TLS extension that allows clients to indicate\n
-    \  one or more workload identifier scopes in the ClientHello message.\n   Each
-    scope consists of a URI scheme and trust domain component,\n   representing the
-    administrative domain and identifier namespace in\n   which the client operates.
-    \ These identifier scopes serve as hints to\n   enable the server to determine
-    whether client authentication is\n   required and which policies or trust anchors
-    should apply.  This\n   mechanism improves efficiency in mutual TLS deployments
-    while\n   minimising the exposure of sensitive identifier information.  To\n   protect
-    confidentiality, this extension can be used in conjunction\n   with Encrypted
-    Client Hello (ECH).\n\n\t "
+  content: |-
+    <p>This document defines a TLS extension that allows clients to indicate
+       one or more workload identifier scopes in the ClientHello message.
+       Each scope consists of a URI scheme and trust domain component,
+       representing the administrative domain and identifier namespace in
+       which the client operates.  These identifier scopes serve as hints to
+       enable the server to determine whether client authentication is
+       required and which policies or trust anchors should apply.  This
+       mechanism improves efficiency in mutual TLS deployments while
+       minimising the exposure of sensitive identifier information.  To
+       protect confidentiality, this extension can be used in conjunction
+       with Encrypted Client Hello (ECH).</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rosomakho-tls-wimse-cert-hint-00
+    formattedref:
+      content: draft-rosomakho-tls-wimse-cert-hint-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rosomakho-tls-wimse-cert-hint-00
     docidentifier:
     - content: draft-rosomakho-tls-wimse-cert-hint-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-rosomakho-tls-wimse-cert-hint-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rosomakho-tls-wimse-cert-hint-02
+    docidentifier:
+    - content: draft-rosomakho-tls-wimse-cert-hint-02
       type: Internet-Draft
       primary: true
 series:
@@ -108,7 +122,7 @@ series:
     content: Internet-Draft
   number: draft-rosomakho-tls-wimse-cert-hint-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

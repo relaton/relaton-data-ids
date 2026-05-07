@@ -1,7 +1,7 @@
 ---
 id: draftietfpppextpppoemtu150000
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: John Fitzgibbon
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -49,14 +49,16 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Point-to-Point Protocol Over Ethernet, (PPPoE), as described in RFC\n
-    \  2516, mandates a maximum negotiated MRU of 1492. This memo proposes\n   relaxing
-    that restriction to allow a maximum negotiated MRU of 1500.\n   This can be achieved
-    by treating the PPPoE Header and Protocol ID as\n   part of the Ethernet Header,
-    taking advantage of the fact that most\n   network devices have buffers for the
-    Ethernet Header and Payload that\n   are at least 1522 octets in size. To aid
-    backward compatability, the\n   proposal recommends testing the link with MRU-sized
-    Echo-Request\n   packets if an MRU greater than 1492 has been assumed or negotiated.\n\t "
+  content: |-
+    <p>Point-to-Point Protocol Over Ethernet, (PPPoE), as described in RFC
+       2516, mandates a maximum negotiated MRU of 1492. This memo proposes
+       relaxing that restriction to allow a maximum negotiated MRU of 1500.
+       This can be achieved by treating the PPPoE Header and Protocol ID as
+       part of the Ethernet Header, taking advantage of the fact that most
+       network devices have buffers for the Ethernet Header and Payload that
+       are at least 1522 octets in size. To aid backward compatability, the
+       proposal recommends testing the link with MRU-sized Echo-Request
+       packets if an MRU greater than 1492 has been assumed or negotiated.</p>
 series:
 - type: main
   title:
@@ -65,7 +67,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-pppext-pppoe-mtu-1500-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfidrsrpolicypathsegment14
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '14'
+- content: '14'
 language:
 - en
 script:
@@ -154,22 +154,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A Segment Routing(SR) policy identifies a set of candidate SR paths\n
-    \  Each SR path is passed in BGP as the SR Policy SAFI NLRI accompanied\n   with
-    the Tunnel Encapsulation attribute (Tunnel-encaps).  Each SR\n   Path (tunnel)
-    uses a set of TLVs in the Tunnel-encaps attribute to\n   describe the characteristics
-    of the SR Policy tunnel.  One of the\n   TLVs that describes the tunnel is the
-    Segment list TLV which provides\n   a list of segments contained in the tunnel.\n\n
-    \  This document specifies a new Path Segment Sub-TLV to associate a\n   Path
-    Segment ID to the SR Segment List.  The Path Segment ID can be\n   used for performance
-    measurement, path correlation, and end-2-end\n   path protection.  This Path Segment
-    identifier can be also be used to\n   correlate two unidirectional SR paths into
-    a bidirectional SR path.\n   Bidirection SR path may be required in some scenarios
-    such as mobile\n   backhaul transport network.\n\n\n\t "
+  content: |-
+    <p>A Segment Routing(SR) policy identifies a set of candidate SR paths
+       Each SR path is passed in BGP as the SR Policy SAFI NLRI accompanied
+       with the Tunnel Encapsulation attribute (Tunnel-encaps).  Each SR
+       Path (tunnel) uses a set of TLVs in the Tunnel-encaps attribute to
+       describe the characteristics of the SR Policy tunnel.  One of the
+       TLVs that describes the tunnel is the Segment list TLV which provides
+       a list of segments contained in the tunnel.
+
+       This document specifies a new Path Segment Sub-TLV to associate a
+       Path Segment ID to the SR Segment List.  The Path Segment ID can be
+       used for performance measurement, path correlation, and end-2-end
+       path protection.  This Path Segment identifier can be also be used to
+       correlate two unidirectional SR paths into a bidirectional SR path.
+       Bidirection SR path may be required in some scenarios such as mobile
+       backhaul transport network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-sr-policy-path-segment-13
+    formattedref:
+      content: draft-ietf-idr-sr-policy-path-segment-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-path-segment-13
@@ -185,7 +190,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-sr-policy-path-segment-14
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

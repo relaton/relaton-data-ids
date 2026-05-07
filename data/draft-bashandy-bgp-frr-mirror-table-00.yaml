@@ -1,7 +1,7 @@
 ---
 id: draftbashandybgpfrrmirrortable00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -100,7 +100,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -108,16 +108,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "Consider a BGP free core scenario. Suppose the edge BGP speakers PE1,\nPE2,...,
-    PEn know about a prefix P/m via the external routers CE1,\nCE2,..., CEm.  If the
-    edge router PEi crashes or becomes totally\ndisconnected from the core, it is
-    desirable for a core router \"P\"\ncarrying traffic to the failed edge router
-    PEi to immediately restore\ntraffic by re-tunneling packets originally tunneled
-    to PEi and\ndestined to the prefix P/m to one of the other edge routers that\nadvertised
-    P/m, say PEj, until BGP re-converges. This draft proposes\na BGP FRR scheme that
-    relies on having the repairing edge router\nmirror the protected edge router forwarding
-    table. The repairing edge\nrouter uses a locally allocated context label to identify
-    the correct\nmirrored table.\n\n\t "
+  content: |-
+    <p>Consider a BGP free core scenario. Suppose the edge BGP speakers PE1,
+    PE2,..., PEn know about a prefix P/m via the external routers CE1,
+    CE2,..., CEm.  If the edge router PEi crashes or becomes totally
+    disconnected from the core, it is desirable for a core router &quot;P&quot;
+    carrying traffic to the failed edge router PEi to immediately restore
+    traffic by re-tunneling packets originally tunneled to PEi and
+    destined to the prefix P/m to one of the other edge routers that
+    advertised P/m, say PEj, until BGP re-converges. This draft proposes
+    a BGP FRR scheme that relies on having the repairing edge router
+    mirror the protected edge router forwarding table. The repairing edge
+    router uses a locally allocated context label to identify the correct
+    mirrored table.</p>
 series:
 - type: main
   title:
@@ -126,7 +129,7 @@ series:
     content: Internet-Draft
   number: draft-bashandy-bgp-frr-mirror-table-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

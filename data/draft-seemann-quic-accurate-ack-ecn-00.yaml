@@ -1,7 +1,7 @@
 ---
 id: draftseemannquicaccurateackecn00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Protocol Labs
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,16 +54,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC defines a variant of the ACK frame that carries cumulative count\n
-    \  for each of the three ECN codepoints (ECT(1), ECT(0) and CE).  From\n   this
-    information, the recipient of the ACK frame cannot deduce which\n   ECN marking
-    the individual packets were received with.\n\n   This document defines an alternative
-    ACK frame that encodes enough\n   information to indicate which ECN mark each
-    individual packet was\n   received with.\n\n\t "
+  content: |-
+    <p>QUIC defines a variant of the ACK frame that carries cumulative count
+       for each of the three ECN codepoints (ECT(1), ECT(0) and CE).  From
+       this information, the recipient of the ACK frame cannot deduce which
+       ECN marking the individual packets were received with.
+
+       This document defines an alternative ACK frame that encodes enough
+       information to indicate which ECN mark each individual packet was
+       received with.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-seemann-quic-accurate-ack-ecn-01
+    formattedref:
+      content: draft-seemann-quic-accurate-ack-ecn-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-accurate-ack-ecn-01
@@ -79,7 +83,7 @@ series:
     content: Internet-Draft
   number: draft-seemann-quic-accurate-ack-ecn-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

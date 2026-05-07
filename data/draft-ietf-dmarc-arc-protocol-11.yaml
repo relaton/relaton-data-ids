@@ -1,7 +1,7 @@
 ---
 id: draftietfdmarcarcprotocol11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: TDP
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -157,17 +157,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Authenticated Received Chain (ARC) protocol creates a mechanism\n
-    \  whereby a series of handlers of an email message can conduct\n   authentication
-    of the email message as it passes among them on the\n   way to its destination,
-    and record the status of that authentication\n   at each step along the handling
-    path, for use by the final recipient\n   in making choices about the disposition
-    of the message.  Changes in\n   the message that might break DKIM or DMARC can
-    be identified through\n   the ARC set of header fields.\n\n\t "
+  content: |-
+    <p>The Authenticated Received Chain (ARC) protocol creates a mechanism
+       whereby a series of handlers of an email message can conduct
+       authentication of the email message as it passes among them on the
+       way to its destination, and record the status of that authentication
+       at each step along the handling path, for use by the final recipient
+       in making choices about the disposition of the message.  Changes in
+       the message that might break DKIM or DMARC can be identified through
+       the ARC set of header fields.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dmarc-arc-protocol-10
+    formattedref:
+      content: draft-ietf-dmarc-arc-protocol-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dmarc-arc-protocol-10
@@ -177,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dmarc-arc-protocol-12
+    formattedref:
+      content: draft-ietf-dmarc-arc-protocol-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dmarc-arc-protocol-12
@@ -193,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dmarc-arc-protocol-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

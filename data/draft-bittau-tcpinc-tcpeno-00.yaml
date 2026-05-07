@@ -1,7 +1,7 @@
 ---
 id: draftbittautcpinctcpeno00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -150,7 +150,7 @@ contributor:
         language: en
         content: Eric W. Smith
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -158,20 +158,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Despite growing adoption of TLS [RFC5246], a significant fraction of\n
-    \  TCP traffic on the Internet remains unencrypted.  The persistence of\n   unencrypted
-    traffic can be attributed to at least two factors.\n   First, some legacy protocols
-    lack a signaling mechanism (such as a\n   \"STARTTLS\" command) by which to convey
-    support for encryption, making\n   incremental deployment impossible.  Second,
-    legacy applications\n   themselves cannot always be upgraded, requiring a way
-    to implement\n   encryption transparently entirely within the transport layer.
-    \ The\n   TCP Encryption Negotiation Option (TCP-ENO) addresses both of these\n
-    \  problems through a new TCP option kind providing out-of-band, fully\n   backward-compatible
-    negotiation of encryption.\n\n\t "
+  content: |-
+    <p>Despite growing adoption of TLS [RFC5246], a significant fraction of
+       TCP traffic on the Internet remains unencrypted.  The persistence of
+       unencrypted traffic can be attributed to at least two factors.
+       First, some legacy protocols lack a signaling mechanism (such as a
+       &quot;STARTTLS&quot; command) by which to convey support for encryption, making
+       incremental deployment impossible.  Second, legacy applications
+       themselves cannot always be upgraded, requiring a way to implement
+       encryption transparently entirely within the transport layer.  The
+       TCP Encryption Negotiation Option (TCP-ENO) addresses both of these
+       problems through a new TCP option kind providing out-of-band, fully
+       backward-compatible negotiation of encryption.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-bittau-tcpinc-tcpeno-01
+    formattedref:
+      content: draft-bittau-tcpinc-tcpeno-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bittau-tcpinc-tcpeno-01
@@ -187,7 +190,7 @@ series:
     content: Internet-Draft
   number: draft-bittau-tcpinc-tcpeno-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

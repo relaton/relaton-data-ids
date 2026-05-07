@@ -1,7 +1,7 @@
 ---
 id: draftmzhangnfsv4sequenceidcalibration01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -119,7 +119,7 @@ contributor:
         - language: en
           content: Huawei Technologies Co.
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -127,22 +127,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates RFC8881, Network File System (NFS) version 4\n
-    \  minor version 1, by adding two operations to prevent the client from\n   destroying
-    session when getting the reply of a mis-ordered request\n   with NFS4ERR_SEQ_MISORDERED.\n\n
-    \  In NFSv4 minor version 1, sequence ID is used to ensure that the size\n   of
-    the needed reply cache is tightly bounded.  If the server gets a\n   mis-ordered
-    request, the client will often break the session and\n   establish a new session
-    with the server.  This approach results in a\n   significant burden on the client
-    and the server.  During the process\n   of session rebuilding, IO performance
-    will be affected.  This is\n   especially troublesome when network latency is
-    substantial, as, for\n   example when client and server are in different locations.
-    \ This\n   document will propose extensions to NFSv4 that would allow client\n
-    \  reconnection to be dispensed with.\n\n\n\t "
+  content: |-
+    <p>This document updates RFC8881, Network File System (NFS) version 4
+       minor version 1, by adding two operations to prevent the client from
+       destroying session when getting the reply of a mis-ordered request
+       with NFS4ERR_SEQ_MISORDERED.
+
+       In NFSv4 minor version 1, sequence ID is used to ensure that the size
+       of the needed reply cache is tightly bounded.  If the server gets a
+       mis-ordered request, the client will often break the session and
+       establish a new session with the server.  This approach results in a
+       significant burden on the client and the server.  During the process
+       of session rebuilding, IO performance will be affected.  This is
+       especially troublesome when network latency is substantial, as, for
+       example when client and server are in different locations.  This
+       document will propose extensions to NFSv4 that would allow client
+       reconnection to be dispensed with.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-mzhang-nfsv4-sequence-id-calibration-00
+    formattedref:
+      content: draft-mzhang-nfsv4-sequence-id-calibration-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mzhang-nfsv4-sequence-id-calibration-00
@@ -152,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-mzhang-nfsv4-sequence-id-calibration-02
+    formattedref:
+      content: draft-mzhang-nfsv4-sequence-id-calibration-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-mzhang-nfsv4-sequence-id-calibration-02
@@ -168,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-mzhang-nfsv4-sequence-id-calibration-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

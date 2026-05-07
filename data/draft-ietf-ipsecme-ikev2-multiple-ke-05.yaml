@@ -1,7 +1,7 @@
 ---
 id: draftietfipsecmeikev2multipleke05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -187,7 +187,7 @@ contributor:
         - language: en
           content: ELVIS-PLUS
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -195,26 +195,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes how to extend the Internet Key Exchange\n   Protocol
-    Version 2 (IKEv2) to allow multiple key exchanges to take\n   place while computing
-    a shared secret during a Security Association\n   (SA) setup.  The primary application
-    of this feature in IKEv2 is the\n   ability to perform one or more post-quantum
-    key exchanges in\n   conjunction with the classical (Elliptic Curve) Diffie-Hellman
-    key\n   exchange, so that the resulting shared key is resistant against\n   quantum
-    computer attacks.  Another possible application is the\n   ability to combine
-    several key exchanges in situations when no single\n   key exchange algorithm
-    is trusted by both initiator and responder.\n\n   This document updates RFC7296
-    by renaming a transform type 4 from\n   \"Diffie-Hellman Group (D-H)\" to \"Key
-    Exchange Method (KE)\" and\n   renaming a field in the Key Exchange Payload from
-    \"Diffie-Hellman\n   Group Num\" to \"Key Exchange Method\".  It also renames
-    an IANA\n   registry for this transform type from \"Transform Type 4 - Diffie-\n
-    \  Hellman Group Transform IDs\" to \"Transform Type 4 - Key Exchange\n   Method
-    Transform IDs\".  These changes generalize key exchange\n   algorithms that can
-    be used in IKEv2.\n\n\t "
+  content: |-
+    <p>This document describes how to extend the Internet Key Exchange
+       Protocol Version 2 (IKEv2) to allow multiple key exchanges to take
+       place while computing a shared secret during a Security Association
+       (SA) setup.  The primary application of this feature in IKEv2 is the
+       ability to perform one or more post-quantum key exchanges in
+       conjunction with the classical (Elliptic Curve) Diffie-Hellman key
+       exchange, so that the resulting shared key is resistant against
+       quantum computer attacks.  Another possible application is the
+       ability to combine several key exchanges in situations when no single
+       key exchange algorithm is trusted by both initiator and responder.
+
+       This document updates RFC7296 by renaming a transform type 4 from
+       &quot;Diffie-Hellman Group (D-H)&quot; to &quot;Key Exchange Method (KE)&quot; and
+       renaming a field in the Key Exchange Payload from &quot;Diffie-Hellman
+       Group Num&quot; to &quot;Key Exchange Method&quot;.  It also renames an IANA
+       registry for this transform type from &quot;Transform Type 4 - Diffie-
+       Hellman Group Transform IDs&quot; to &quot;Transform Type 4 - Key Exchange
+       Method Transform IDs&quot;.  These changes generalize key exchange
+       algorithms that can be used in IKEv2.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-04
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-04
@@ -224,7 +229,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ipsecme-ikev2-multiple-ke-06
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-multiple-ke-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-multiple-ke-06
@@ -240,7 +246,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ipsecme-ikev2-multiple-ke-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

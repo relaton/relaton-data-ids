@@ -1,7 +1,7 @@
 ---
 id: draftyaotsvwgccorequirementandanalysis02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -195,7 +195,7 @@ contributor:
             THE HONG KONG UNIVERSITY OF SCIENCE AND TECHNOLOGY
                   (GUANGZHOU)
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -203,22 +203,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Gernerative AI applications depend on large scale parallel computing\n
-    \  clusters for model training and inference.  Existing implementations\n   of
-    collective communication in parallel computing is built on top of\n   RDMA, the
-    most adoptable AI transport protocol.  However, One-to-\n   Many, Many-to-One,
-    and Many-to-Many collective operations all depend\n   on point-to-point transport
-    semantics of RDMA, which inevitably\n   introduces more bandwidth occupancy and
-    transmission overhead.\n   Emerging approaches for collective communication optimization
-    focus\n   on network-assisted collective acceleration and can work compatibly\n
-    \  with RDMA.  This document analyzes different technical schemes for\n   network-assisted
-    collective acceleration based on RDMA, and presents\n   the gap between these
-    work and current IETF standards, notably iWARP.\n   Requirements for designing
-    new standards are proposed accordingly.\n\n\n\t "
+  content: |-
+    <p>Gernerative AI applications depend on large scale parallel computing
+       clusters for model training and inference.  Existing implementations
+       of collective communication in parallel computing is built on top of
+       RDMA, the most adoptable AI transport protocol.  However, One-to-
+       Many, Many-to-One, and Many-to-Many collective operations all depend
+       on point-to-point transport semantics of RDMA, which inevitably
+       introduces more bandwidth occupancy and transmission overhead.
+       Emerging approaches for collective communication optimization focus
+       on network-assisted collective acceleration and can work compatibly
+       with RDMA.  This document analyzes different technical schemes for
+       network-assisted collective acceleration based on RDMA, and presents
+       the gap between these work and current IETF standards, notably iWARP.
+       Requirements for designing new standards are proposed accordingly.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-yao-tsvwg-cco-requirement-and-analysis-01
+    formattedref:
+      content: draft-yao-tsvwg-cco-requirement-and-analysis-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yao-tsvwg-cco-requirement-and-analysis-01
@@ -234,7 +237,7 @@ series:
     content: Internet-Draft
   number: draft-yao-tsvwg-cco-requirement-and-analysis-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

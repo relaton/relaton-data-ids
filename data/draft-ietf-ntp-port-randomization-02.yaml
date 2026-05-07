@@ -1,7 +1,7 @@
 ---
 id: draftietfntpportrandomization02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Red Hat
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -104,18 +104,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Network Time Protocol can operate in several modes.  Some of\n
-    \  these modes are based on the receipt of unsolicited packets, and\n   therefore
-    require the use of a service/well-known port as the local\n   port number.  However,
-    in the case of NTP modes where the use of a\n   service/well-known port is not
-    required, employing such well-known/\n   service port unnecessarily increases
-    the ability of attackers to\n   perform blind/off-path attacks.  This document
-    formally updates\n   RFC5905, recommending the use of port randomization for those
-    modes\n   where use of the NTP service port is not required.\n\n\t "
+  content: |-
+    <p>The Network Time Protocol can operate in several modes.  Some of
+       these modes are based on the receipt of unsolicited packets, and
+       therefore require the use of a service/well-known port as the local
+       port number.  However, in the case of NTP modes where the use of a
+       service/well-known port is not required, employing such well-known/
+       service port unnecessarily increases the ability of attackers to
+       perform blind/off-path attacks.  This document formally updates
+       RFC5905, recommending the use of port randomization for those modes
+       where use of the NTP service port is not required.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ntp-port-randomization-01
+    formattedref:
+      content: draft-ietf-ntp-port-randomization-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-port-randomization-01
@@ -125,7 +128,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ntp-port-randomization-03
+    formattedref:
+      content: draft-ietf-ntp-port-randomization-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ntp-port-randomization-03
@@ -141,7 +145,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ntp-port-randomization-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

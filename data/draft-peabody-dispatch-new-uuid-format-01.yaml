@@ -1,7 +1,7 @@
 ---
 id: draftpeabodydispatchnewuuidformat01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Kyzer R. Davis
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -72,20 +72,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document presents new time-based UUID formats which are suited\n
-    \  for use as a database key.\n\n   A common case for modern applications is to
-    create a unique\n   identifier for use as a primary key in a database table.  This\n
-    \  identifier usually implements an embedded timestamp that is sortable\n   using
-    the monotonic creation time in the most significant bits.  In\n   addition the
-    identifier is highly collision resistant, difficult to\n   guess, and provides
-    minimal security attack surfaces.  None of the\n   existing UUID versions, including
-    UUIDv1, fulfill each of these\n   requirements in the most efficient possible
-    way.  This document is a\n   proposal to update [RFC4122] with three new UUID
-    versions that\n   address these concerns, each with different trade-offs.\n\n\t "
+  content: |-
+    <p>This document presents new time-based UUID formats which are suited
+       for use as a database key.
+
+       A common case for modern applications is to create a unique
+       identifier for use as a primary key in a database table.  This
+       identifier usually implements an embedded timestamp that is sortable
+       using the monotonic creation time in the most significant bits.  In
+       addition the identifier is highly collision resistant, difficult to
+       guess, and provides minimal security attack surfaces.  None of the
+       existing UUID versions, including UUIDv1, fulfill each of these
+       requirements in the most efficient possible way.  This document is a
+       proposal to update [RFC4122] with three new UUID versions that
+       address these concerns, each with different trade-offs.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-peabody-dispatch-new-uuid-format-00
+    formattedref:
+      content: draft-peabody-dispatch-new-uuid-format-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format-00
@@ -95,7 +100,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-peabody-dispatch-new-uuid-format-02
+    formattedref:
+      content: draft-peabody-dispatch-new-uuid-format-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format-02
@@ -111,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-peabody-dispatch-new-uuid-format-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

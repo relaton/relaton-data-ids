@@ -1,7 +1,7 @@
 ---
 id: draftlauriepkisunlight04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Emilia Kasper
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -89,29 +89,39 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The aim of Certificate Transparency is to have every public end-\n
-    \  entity (for example, web servers) and intermediate TLS certificate\n   issued
-    by a known Certificate Authority recorded in one or more\n   certificate logs.
-    \ In order to detect misissuance of certificates,\n   all logs are publicly auditable.
-    \ In particular, domain owners or\n   their agents will be able to monitor logs
-    for certificates issued on\n   their own domain.\n\n   To protect clients from
-    unlogged misissued certificates, each log\n   signs all certificates it records,
-    and clients can choose not to\n   trust certificates that are not accompanied
-    by an appropriate log\n   signature.  For privacy and performance reasons log
-    signatures are\n   embedded in the TLS handshake via the TLS authorization extension,
-    in\n   a stapled OCSP extension, or in the certificate itself via an X.509v3\n
-    \  certificate extension.\n\n   To ensure a globally consistent view of any particular
-    log, each log\n   also provides a global signature over the entire log.  Any\n
-    \  inconsistency of logs can be detected through cross-checks on the\n   global
-    signature.  Consistency between any pair of global signatures,\n   corresponding
-    to snapshots of a particular log at different times,\n   can be efficiently shown.\n\n
-    \  Logs are only expected to certify that they have seen a certificate,\n   and
-    thus we do not specify any revocation mechanism for log\n   signatures in this
-    document.  Logs are append-only, and log\n   signatures do not expire.\n\n\n\t "
+  content: |-
+    <p>The aim of Certificate Transparency is to have every public end-
+       entity (for example, web servers) and intermediate TLS certificate
+       issued by a known Certificate Authority recorded in one or more
+       certificate logs.  In order to detect misissuance of certificates,
+       all logs are publicly auditable.  In particular, domain owners or
+       their agents will be able to monitor logs for certificates issued on
+       their own domain.
+
+       To protect clients from unlogged misissued certificates, each log
+       signs all certificates it records, and clients can choose not to
+       trust certificates that are not accompanied by an appropriate log
+       signature.  For privacy and performance reasons log signatures are
+       embedded in the TLS handshake via the TLS authorization extension, in
+       a stapled OCSP extension, or in the certificate itself via an X.509v3
+       certificate extension.
+
+       To ensure a globally consistent view of any particular log, each log
+       also provides a global signature over the entire log.  Any
+       inconsistency of logs can be detected through cross-checks on the
+       global signature.  Consistency between any pair of global signatures,
+       corresponding to snapshots of a particular log at different times,
+       can be efficiently shown.
+
+       Logs are only expected to certify that they have seen a certificate,
+       and thus we do not specify any revocation mechanism for log
+       signatures in this document.  Logs are append-only, and log
+       signatures do not expire.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-laurie-pki-sunlight-03
+    formattedref:
+      content: draft-laurie-pki-sunlight-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-laurie-pki-sunlight-03
@@ -121,7 +131,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-laurie-pki-sunlight-05
+    formattedref:
+      content: draft-laurie-pki-sunlight-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-laurie-pki-sunlight-05
@@ -137,7 +148,7 @@ series:
     content: Internet-Draft
   number: draft-laurie-pki-sunlight-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

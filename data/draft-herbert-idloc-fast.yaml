@@ -1,7 +1,8 @@
 ---
 id: draftherbertidlocfast
-schema_version: v1.4.1
-formattedref: draft-herbert-idloc-fast
+schema_version: v1.5.6
+formattedref:
+  content: draft-herbert-idloc-fast
 title:
 - language: en
   script: Latn
@@ -13,20 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This proposal provides a method to implement identifier to locator\n
-    \  mapping in the datapath without the need to access an in-network\n   mapping
-    database or cache. Mappings are encoded in Firewall and\n   Service Tickets (FAST)
-    tickets as locator information. When a packet\n   is sent by a mobile node, a
-    ticket is attached that providers the\n   locator to use in the return path. Peer
-    nodes receive packets with\n   these tickets, cache the tickets in a flow context,
-    and then attach\n   them to packets they send as reflected tickets. When a packet
-    with a\n   reflected ticket enters an identifier-locator domain, the ticket is\n
-    \  parsed to extract the locator. That locator is then used to send the\n   packet
-    to the appropriate destination over a network overlay.\n\n\t "
+  content: |-
+    <p>This proposal provides a method to implement identifier to locator
+       mapping in the datapath without the need to access an in-network
+       mapping database or cache. Mappings are encoded in Firewall and
+       Service Tickets (FAST) tickets as locator information. When a packet
+       is sent by a mobile node, a ticket is attached that providers the
+       locator to use in the return path. Peer nodes receive packets with
+       these tickets, cache the tickets in a flow context, and then attach
+       them to packets they send as reflected tickets. When a packet with a
+       reflected ticket enters an identifier-locator domain, the ticket is
+       parsed to extract the locator. That locator is then used to send the
+       packet to the appropriate destination over a network overlay.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-herbert-idloc-fast-00
+    formattedref:
+      content: draft-herbert-idloc-fast-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-herbert-idloc-fast-00

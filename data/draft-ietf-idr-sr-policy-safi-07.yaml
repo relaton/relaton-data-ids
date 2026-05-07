@@ -1,7 +1,7 @@
 ---
 id: draftietfidrsrpolicysafi07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Google
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -154,21 +154,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A Segment Routing (SR) Policy is an ordered list of segments (i.e.,\n
-    \  instructions) that represent a source-routed policy.  An SR Policy\n   consists
-    of one or more candidate paths, each consisting of one or\n   more segment lists.
-    \ A headend may be provisioned with candidate\n   paths for an SR Policy via several
-    different mechanisms, e.g., CLI,\n   NETCONF, PCEP, or BGP.\n\n   This document
-    specifies how BGP may be used to distribute SR Policy\n   candidate paths.  It
-    introduces a BGP SAFI to advertise a candidate\n   path of a Segment Routing (SR)
-    Policy and defines sub-TLVs for the\n   Tunnel Encapsulation Attribute for signaling
-    information about these\n   candidate paths.\n\n   This documents updates RFC9012
-    with extensions to the Color Extended\n   Community to support additional steering
-    modes over SR Policy.\n\n\t "
+  content: |-
+    <p>A Segment Routing (SR) Policy is an ordered list of segments (i.e.,
+       instructions) that represent a source-routed policy.  An SR Policy
+       consists of one or more candidate paths, each consisting of one or
+       more segment lists.  A headend may be provisioned with candidate
+       paths for an SR Policy via several different mechanisms, e.g., CLI,
+       NETCONF, PCEP, or BGP.
+
+       This document specifies how BGP may be used to distribute SR Policy
+       candidate paths.  It introduces a BGP SAFI to advertise a candidate
+       path of a Segment Routing (SR) Policy and defines sub-TLVs for the
+       Tunnel Encapsulation Attribute for signaling information about these
+       candidate paths.
+
+       This documents updates RFC9012 with extensions to the Color Extended
+       Community to support additional steering modes over SR Policy.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-sr-policy-safi-06
+    formattedref:
+      content: draft-ietf-idr-sr-policy-safi-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-safi-06
@@ -178,7 +184,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-sr-policy-safi-08
+    formattedref:
+      content: draft-ietf-idr-sr-policy-safi-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-safi-08
@@ -194,7 +201,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-sr-policy-safi-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: drafturiencorebmac10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Telecom Paris
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -54,23 +54,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In this draft context, things are powered by micro controllers units\n
-    \  (MCU) comprising a set of memories such as static RAM (SRAM), FLASH\n   and
-    EEPROM. The total memory size, ranges from 10KB to a few\n   megabytes. In this
-    context code and data integrity are major\n   security issues, for the deployment
-    of Internet of Things\n   infrastructure. The goal of the bijective MAC (bMAC)
-    is to compute\n   an integrity value, which cannot be guessed by malicious software.\n
-    \  In classical keyed MACs, MAC is computing according to a fixed\n   order.\n
-    \  In the bijective MAC, the content of N addresses is hashed according\n   to
-    a permutation P (i.e. bijective application).\n   The bijective MAC key is the
-    permutation P.\n   The number of permutations for N addresses is N!. So the computation\n
-    \  of the bMAC requires the knowledge of the whole space memory; this\n   is trivial
-    for genuine software, but could very difficult for\n   corrupted software, especially
-    for time stamped bMAC.\n\n\n\t "
+  content: |-
+    <p>In this draft context, things are powered by micro controllers units
+       (MCU) comprising a set of memories such as static RAM (SRAM), FLASH
+       and EEPROM. The total memory size, ranges from 10KB to a few
+       megabytes. In this context code and data integrity are major
+       security issues, for the deployment of Internet of Things
+       infrastructure. The goal of the bijective MAC (bMAC) is to compute
+       an integrity value, which cannot be guessed by malicious software.
+       In classical keyed MACs, MAC is computing according to a fixed
+       order.
+       In the bijective MAC, the content of N addresses is hashed according
+       to a permutation P (i.e. bijective application).
+       The bijective MAC key is the permutation P.
+       The number of permutations for N addresses is N!. So the computation
+       of the bMAC requires the knowledge of the whole space memory; this
+       is trivial for genuine software, but could very difficult for
+       corrupted software, especially for time stamped bMAC.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-urien-core-bmac-09
+    formattedref:
+      content: draft-urien-core-bmac-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-urien-core-bmac-09
@@ -80,7 +85,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-urien-core-bmac-11
+    formattedref:
+      content: draft-urien-core-bmac-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-urien-core-bmac-11
@@ -96,7 +102,7 @@ series:
     content: Internet-Draft
   number: draft-urien-core-bmac-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

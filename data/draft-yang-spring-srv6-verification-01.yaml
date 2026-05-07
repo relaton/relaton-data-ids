@@ -1,7 +1,7 @@
 ---
 id: draftyangspringsrv6verification01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Tsinghua University
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -129,21 +129,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a path verification mechanism for SRv6, which\n
-    \  adopts a hop-by-hop cryptographic computation on the destination\n   segment
-    identifier at each node, combined with an end-to-end\n   verification at the last
-    hop.  Although the HMAC mechanism specified\n   in RFC 8754 can verify the integrity
-    of the entire SID List, if we\n   want to force the SRv6 endpoints the packet
-    must pass through during\n   forwarding, it is necessary to retain some information
-    each time the\n   packet passes through an SRv6 endpoint.  This draft proposes
-    an\n   enhancement to HMAC specificed by RFC 8754 that provides the\n   capability
-    to enforce the packet's forwarding path to go through all\n   or certain SRv6
-    endpoints in the SID List.  And this approach also\n   significantly reduces the
-    processing overhead associated with hop-by-\n   hop path verification.\n\n\t "
+  content: |-
+    <p>This document proposes a path verification mechanism for SRv6, which
+       adopts a hop-by-hop cryptographic computation on the destination
+       segment identifier at each node, combined with an end-to-end
+       verification at the last hop.  Although the HMAC mechanism specified
+       in RFC 8754 can verify the integrity of the entire SID List, if we
+       want to force the SRv6 endpoints the packet must pass through during
+       forwarding, it is necessary to retain some information each time the
+       packet passes through an SRv6 endpoint.  This draft proposes an
+       enhancement to HMAC specificed by RFC 8754 that provides the
+       capability to enforce the packet&#39;s forwarding path to go through all
+       or certain SRv6 endpoints in the SID List.  And this approach also
+       significantly reduces the processing overhead associated with hop-by-
+       hop path verification.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-yang-spring-srv6-verification-00
+    formattedref:
+      content: draft-yang-spring-srv6-verification-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yang-spring-srv6-verification-00
@@ -153,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-yang-spring-srv6-verification-02
+    formattedref:
+      content: draft-yang-spring-srv6-verification-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yang-spring-srv6-verification-02
@@ -169,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-yang-spring-srv6-verification-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

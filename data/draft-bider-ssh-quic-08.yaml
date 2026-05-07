@@ -1,7 +1,7 @@
 ---
 id: draftbidersshquic08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Bitvise Limited
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -54,20 +54,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Secure Shell protocol (SSH) [RFC4251] is widely used for purposes\n
-    \  including secure remote administration, file transfer using SFTP and\n   SCP,
-    and encrypted tunneling of TCP connections.  Because it is based\n   on TCP, SSH
-    suffers similar problems as motivate the HTTP protocol to\n   transition to UDP-based
-    QUIC [QUIC].  These include: unauthenticated\n   network intermediaries can trivially
-    disconnect SSH sessions; SSH\n   connections are lost when mobile clients change
-    IP addresses;\n   performance limitations in OS-based TCP stacks; many round-trips
-    to\n   establish a connection; duplicate flow control on the level of the\n   connection
-    as well as channels.  This memo specifies SSH key exchange\n   over UDP and leverages
-    QUIC to provide a UDP-based transport.\n\n\t "
+  content: |-
+    <p>The Secure Shell protocol (SSH) [RFC4251] is widely used for purposes
+       including secure remote administration, file transfer using SFTP and
+       SCP, and encrypted tunneling of TCP connections.  Because it is based
+       on TCP, SSH suffers similar problems as motivate the HTTP protocol to
+       transition to UDP-based QUIC [QUIC].  These include: unauthenticated
+       network intermediaries can trivially disconnect SSH sessions; SSH
+       connections are lost when mobile clients change IP addresses;
+       performance limitations in OS-based TCP stacks; many round-trips to
+       establish a connection; duplicate flow control on the level of the
+       connection as well as channels.  This memo specifies SSH key exchange
+       over UDP and leverages QUIC to provide a UDP-based transport.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-bider-ssh-quic-07
+    formattedref:
+      content: draft-bider-ssh-quic-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-07
@@ -77,7 +80,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-bider-ssh-quic-09
+    formattedref:
+      content: draft-bider-ssh-quic-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bider-ssh-quic-09
@@ -93,7 +97,7 @@ series:
     content: Internet-Draft
   number: draft-bider-ssh-quic-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

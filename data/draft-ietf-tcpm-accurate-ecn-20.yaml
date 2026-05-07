@@ -1,7 +1,7 @@
 ---
 id: draftietftcpmaccurateecn20
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: NetApp
 version:
-- draft: '20'
+- content: '20'
 language:
 - en
 script:
@@ -104,27 +104,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Explicit Congestion Notification (ECN) is a mechanism where network\n
-    \  nodes can mark IP packets instead of dropping them to indicate\n   incipient
-    congestion to the end-points.  Receivers with an ECN-\n   capable transport protocol
-    feed back this information to the sender.\n   ECN was originally specified for
-    TCP in such a way that only one\n   feedback signal can be transmitted per Round-Trip
-    Time (RTT).  Recent\n   new TCP mechanisms like Congestion Exposure (ConEx), Data
-    Center TCP\n   (DCTCP) or Low Latency Low Loss Scalable Throughput (L4S) need
-    more\n   accurate ECN feedback information whenever more than one marking is\n
-    \  received in one RTT.  This document updates the original ECN\n   specification
-    to specify a scheme to provide more than one feedback\n   signal per RTT in the
-    TCP header.  Given TCP header space is scarce,\n   it allocates a reserved header
-    bit previously assigned to the ECN-\n   Nonce.  It also overloads the two existing
-    ECN flags in the TCP\n   header.  The resulting extra space is exploited to feed
-    back the IP-\n   ECN field received during the 3-way handshake as well.  Supplementary\n
-    \  feedback information can optionally be provided in a new TCP option,\n   which
-    is never used on the TCP SYN.  The document also specifies the\n   treatment of
-    this updated TCP wire protocol by middleboxes.\n\n\t "
+  content: |-
+    <p>Explicit Congestion Notification (ECN) is a mechanism where network
+       nodes can mark IP packets instead of dropping them to indicate
+       incipient congestion to the end-points.  Receivers with an ECN-
+       capable transport protocol feed back this information to the sender.
+       ECN was originally specified for TCP in such a way that only one
+       feedback signal can be transmitted per Round-Trip Time (RTT).  Recent
+       new TCP mechanisms like Congestion Exposure (ConEx), Data Center TCP
+       (DCTCP) or Low Latency Low Loss Scalable Throughput (L4S) need more
+       accurate ECN feedback information whenever more than one marking is
+       received in one RTT.  This document updates the original ECN
+       specification to specify a scheme to provide more than one feedback
+       signal per RTT in the TCP header.  Given TCP header space is scarce,
+       it allocates a reserved header bit previously assigned to the ECN-
+       Nonce.  It also overloads the two existing ECN flags in the TCP
+       header.  The resulting extra space is exploited to feed back the IP-
+       ECN field received during the 3-way handshake as well.  Supplementary
+       feedback information can optionally be provided in a new TCP option,
+       which is never used on the TCP SYN.  The document also specifies the
+       treatment of this updated TCP wire protocol by middleboxes.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tcpm-accurate-ecn-19
+    formattedref:
+      content: draft-ietf-tcpm-accurate-ecn-19
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-accurate-ecn-19
@@ -134,7 +138,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-accurate-ecn-21
+    formattedref:
+      content: draft-ietf-tcpm-accurate-ecn-21
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-accurate-ecn-21
@@ -150,7 +155,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-accurate-ecn-20
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

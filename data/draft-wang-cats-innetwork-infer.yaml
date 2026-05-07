@@ -1,11 +1,13 @@
 ---
 id: draftwangcatsinnetworkinfer
-schema_version: v1.4.1
-formattedref: draft-wang-cats-innetwork-infer
+schema_version: v1.5.6
+formattedref:
+  content: draft-wang-cats-innetwork-infer
 title:
 - language: en
   script: Latn
-  content: In-Network Intelligence for Distributed Collaborative Inference Acceleration
+  content: An Open, Decentralized, and Scalable Framework for Large Language Model
+    Inference
 docidentifier:
 - content: draft-wang-cats-innetwork-infer
   type: Internet-Draft
@@ -13,26 +15,54 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The rapid proliferation of deep learning models has led to growing\n
-    \  demands for low-latency and high-throughput inference across\n   heterogeneous
-    environments.  While edge devices often host data\n   sources, their limited compute
-    and network resources restrict\n   efficient model inference.  Cloud servers provide
-    abundant capacity\n   but suffer from transmission delays and bottlenecks.  Emerging\n
-    \  programmable in-network devices (e.g., switches, FPGAs, SmartNICs)\n   offer
-    a unique opportunity to accelerate inference by processing\n   tasks directly
-    along data paths.\n\n   This document introduces an architecture for _Distributed\n
-    \  Collaborative Inference Acceleration_. It proposes mechanisms to\n   split,
-    offload, and coordinate inference workloads across edge\n   devices, in-network
-    resources, and cloud servers, enabling reduced\n   response time and improved
-    utilization.\n\n\t "
+  content: |-
+    <p>Large Language Model (LLM) inference is increasingly deployed as a
+       networked service, yet existing deployments rely primarily on
+       centralized infrastructure and trusted operators.  Such designs limit
+       openness, concentrate resource ownership, and constrain scalability
+       to the capacity of individual providers.  At the same time, LLM
+       inference introduces execution characteristics (e.g., strict
+       sequential dependencies, large intermediate activations, and tight
+       latency requirements) that are not well supported by existing
+       network, transport, or coordination mechanisms in open environments.
+
+       This document specifies an open, decentralized, and scalable
+       framework for executing LLM inference across independently operated
+       and mutually untrusted participants.  The framework treats inference
+       as a distributed, layer-wise execution process subject to explicit
+       deadlines, rather than as a monolithic computation or best-effort
+       service.  It combines layer-aware activation transport and routing,
+       decentralized coordination among heterogeneous compute resources, and
+       security mechanisms that provide accountability and correctness
+       without assuming trusted execution.
+
+       This document focuses on the architectural framework, design
+       rationale, problem definition, challenges, and solution space of the
+       Open, Decentralized, and Scalable Inference framework (ODSI).  It
+       does not specify concrete wire protocols, message formats, or
+       protocol state machines.  Such protocol-level specifications are to
+       be defined in separate documents that build upon the framework
+       described herein.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-wang-cats-innetwork-infer-00
+    formattedref:
+      content: draft-wang-cats-innetwork-infer-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-cats-innetwork-infer-00
     docidentifier:
     - content: draft-wang-cats-innetwork-infer-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-cats-innetwork-infer-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-cats-innetwork-infer-01
+    docidentifier:
+    - content: draft-wang-cats-innetwork-infer-01
       type: Internet-Draft
       primary: true

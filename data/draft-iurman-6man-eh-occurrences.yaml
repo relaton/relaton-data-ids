@@ -1,12 +1,13 @@
 ---
 id: draftiurman6manehoccurrences
-schema_version: v1.4.1
-formattedref: draft-iurman-6man-eh-occurrences
+schema_version: v1.5.6
+formattedref:
+  content: draft-iurman-6man-eh-occurrences
 title:
 - language: en
   script: Latn
-  content: Mitigating DoS attacks in IPv6 by clarifying the number of occurrences
-    of Extension Headers
+  content: Enforcement of IPv6 Extension Headers Ordering and Occurrence at Destination
+    Nodes
 docidentifier:
 - content: draft-iurman-6man-eh-occurrences
   type: Internet-Draft
@@ -14,23 +15,49 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates RFC 8200 by specifying normative requirements\n
-    \  on the number of occurrences of IPv6 Extension Headers.  Operational\n   experience
-    has demonstrated that permitting multiple occurrences of\n   the same Extension
-    Header can create parsing ambiguity, increase\n   attack surface, and complicate
-    packet processing in general.  This is\n   especially true for both the Hop-by-Hop
-    Options Header and the\n   Destination Options Header, which can contain a number
-    of options.\n   This document restricts IPv6 packets to carry at most one instance
-    of\n   each Extension Header, with the exception of the Destination Options\n
-    \  Header, which is permitted to appear twice as specified in RFC 8200.\n\n\t "
+  content: |-
+    <p>Operational experience has demonstrated that permitting multiple
+       occurrences of the same IPv6 Extension Header can create parsing
+       ambiguity, complicate packet processing, and increase potential
+       security risks.  Although RFC 8200 recommends that senders follow a
+       specific order of appearance and limit the occurrences of Extension
+       Headers, receivers cannot assume that these recommendations have been
+       followed.  This document updates RFC 8200 by allowing an IPv6
+       destination node, namely a host (i.e., the final destination of an
+       IPv6 packet) or an intermediate destination node addressed by an
+       entry in a Routing header list other than the final one, to enforce
+       strict ordering and limits on the occurrence of Extension Headers.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-iurman-6man-eh-occurrences-00
+    formattedref:
+      content: draft-iurman-6man-eh-occurrences-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-iurman-6man-eh-occurrences-00
     docidentifier:
     - content: draft-iurman-6man-eh-occurrences-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-iurman-6man-eh-occurrences-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-iurman-6man-eh-occurrences-01
+    docidentifier:
+    - content: draft-iurman-6man-eh-occurrences-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-iurman-6man-eh-occurrences-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-iurman-6man-eh-occurrences-02
+    docidentifier:
+    - content: draft-iurman-6man-eh-occurrences-02
       type: Internet-Draft
       primary: true

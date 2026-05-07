@@ -1,7 +1,7 @@
 ---
 id: draftreschkebasicauthenc06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Julian Reschke
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -49,18 +49,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The \"Basic\" authentication scheme defined in RFC 2617 does not\n
-    \  properly define how to treat non-ASCII characters.  This has lead to\n   a
-    situation where user agent implementations disagree, and servers\n   make different
-    assumptions based on the locales they are running in.\n   There is little interoperability
-    for the non-ASCII characters in the\n   ISO-8859-1 character set, and even less
-    interoperability for any\n   characters beyond that.\n\n   This document defines
-    a backwards-compatible extension to \"Basic\",\n   specifying the server's character
-    encoding expectation, using a new\n   authentication scheme parameter.\n\n\t "
+  content: |-
+    <p>The &quot;Basic&quot; authentication scheme defined in RFC 2617 does not
+       properly define how to treat non-ASCII characters.  This has lead to
+       a situation where user agent implementations disagree, and servers
+       make different assumptions based on the locales they are running in.
+       There is little interoperability for the non-ASCII characters in the
+       ISO-8859-1 character set, and even less interoperability for any
+       characters beyond that.
+
+       This document defines a backwards-compatible extension to &quot;Basic&quot;,
+       specifying the server&#39;s character encoding expectation, using a new
+       authentication scheme parameter.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-reschke-basicauth-enc-05
+    formattedref:
+      content: draft-reschke-basicauth-enc-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reschke-basicauth-enc-05
@@ -70,7 +75,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-reschke-basicauth-enc-07
+    formattedref:
+      content: draft-reschke-basicauth-enc-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-reschke-basicauth-enc-07
@@ -86,7 +92,7 @@ series:
     content: Internet-Draft
   number: draft-reschke-basicauth-enc-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,8 @@
 ---
 id: draftietfpcemultipath
-schema_version: v1.4.1
-formattedref: draft-ietf-pce-multipath
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-pce-multipath
 title:
 - language: en
   script: Latn
@@ -14,21 +15,22 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Certain traffic engineering path computation problems require\n   solutions
-    that consist of multiple traffic paths that together form a\n   solution.  However,
-    current PCEP extensions can only return a single\n   traffic path, which cannot
-    meet the requirements.  This document\n   defines mechanisms to encode multiple
-    paths for a single set of\n   objectives and constraints.  This allows encoding
-    of multiple Segment\n   Lists per Candidate Path within a Segment Routing Policy.
-    \ The new\n   Path Computation Element Communication Protocol (PCEP) mechanisms
-    are\n   designed to be generic, which allows for future re-use outside of SR\n
-    \  Policy.  The new PCEP mechanisms are applicable to both stateless and\n   stateful
-    PCEP.  Additionally, this document updates RFC 8231 and RFC\n   8281 to allow
-    encoding of multiple Segment Lists in PCEP.\n\n\t "
+  content: |-
+    <p>A Segment Routing (SR) Policy Candidate Path can contain multiple
+       Segment Lists, allowing for load-balancing and redundancy across
+       diverse paths.  However, current PCEP extensions for SR Policy only
+       allow signaling of a single Segment List per Candidate Path.  This
+       document defines PCEP extensions to encode multiple Segment Lists
+       within an SR Policy Candidate Path, enabling multipath capabilities
+       such as weighted or equal-cost load-balancing across Segment Lists.
+       These extensions are designed to be generic and reusable for future
+       path types beyond SR Policy, and are applicable to both stateless and
+       stateful PCEP.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-00
+    formattedref:
+      content: draft-ietf-pce-multipath-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-00
@@ -38,7 +40,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-01
+    formattedref:
+      content: draft-ietf-pce-multipath-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-01
@@ -48,7 +51,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-02
+    formattedref:
+      content: draft-ietf-pce-multipath-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-02
@@ -58,7 +62,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-03
+    formattedref:
+      content: draft-ietf-pce-multipath-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-03
@@ -68,7 +73,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-04
+    formattedref:
+      content: draft-ietf-pce-multipath-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-04
@@ -78,7 +84,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-05
+    formattedref:
+      content: draft-ietf-pce-multipath-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-05
@@ -88,7 +95,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-06
+    formattedref:
+      content: draft-ietf-pce-multipath-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-06
@@ -98,7 +106,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-07
+    formattedref:
+      content: draft-ietf-pce-multipath-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-07
@@ -108,7 +117,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-08
+    formattedref:
+      content: draft-ietf-pce-multipath-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-08
@@ -118,7 +128,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-09
+    formattedref:
+      content: draft-ietf-pce-multipath-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-09
@@ -128,7 +139,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-10
+    formattedref:
+      content: draft-ietf-pce-multipath-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-10
@@ -138,7 +150,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-11
+    formattedref:
+      content: draft-ietf-pce-multipath-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-11
@@ -148,7 +161,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-12
+    formattedref:
+      content: draft-ietf-pce-multipath-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-12
@@ -158,7 +172,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-13
+    formattedref:
+      content: draft-ietf-pce-multipath-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-13
@@ -168,7 +183,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-14
+    formattedref:
+      content: draft-ietf-pce-multipath-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-14
@@ -178,7 +194,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-15
+    formattedref:
+      content: draft-ietf-pce-multipath-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-15
@@ -188,7 +205,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-16
+    formattedref:
+      content: draft-ietf-pce-multipath-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-16
@@ -198,7 +216,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-17
+    formattedref:
+      content: draft-ietf-pce-multipath-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-17
@@ -208,7 +227,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-18
+    formattedref:
+      content: draft-ietf-pce-multipath-18
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-18
@@ -218,11 +238,67 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-pce-multipath-19
+    formattedref:
+      content: draft-ietf-pce-multipath-19
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-19
     docidentifier:
     - content: draft-ietf-pce-multipath-19
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pce-multipath-20
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-20
+    docidentifier:
+    - content: draft-ietf-pce-multipath-20
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pce-multipath-21
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-21
+    docidentifier:
+    - content: draft-ietf-pce-multipath-21
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pce-multipath-22
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-22
+    docidentifier:
+    - content: draft-ietf-pce-multipath-22
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pce-multipath-23
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-23
+    docidentifier:
+    - content: draft-ietf-pce-multipath-23
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-pce-multipath-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-pce-multipath-24
+    docidentifier:
+    - content: draft-ietf-pce-multipath-24
       type: Internet-Draft
       primary: true

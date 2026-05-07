@@ -1,7 +1,7 @@
 ---
 id: draftkfallhttpbisserverranges00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Qualcomm Technologies Inc.
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,14 +54,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document clarifies the semantics associated with the Content-Range\nHTTP
-    header and associated Partial Content (206) response code.\n\nIt specifically
-    allows a server to produce a Content-Range response\nwhose range is a subrange
-    of the corresponding range requested using a\nprevious Range request. The HTTP
-    protocol syntax is not modified.\nInstead, this document clarifies that a server
-    responding to a client\nrequesting a range (x-y) may respond with a range ((x+e)-(y-f))
-    for\nnonzero integers e,f such that (x+e) < (y-f). In addition, it clarifies\nthe
-    semantics of Request ranges which contain only a starting value.\n\n\t "
+  content: |-
+    <p>This document clarifies the semantics associated with the Content-Range
+    HTTP header and associated Partial Content (206) response code.
+
+    It specifically allows a server to produce a Content-Range response
+    whose range is a subrange of the corresponding range requested using a
+    previous Range request. The HTTP protocol syntax is not modified.
+    Instead, this document clarifies that a server responding to a client
+    requesting a range (x-y) may respond with a range ((x+e)-(y-f)) for
+    nonzero integers e,f such that (x+e) &lt; (y-f). In addition, it clarifies
+    the semantics of Request ranges which contain only a starting value.</p>
 series:
 - type: main
   title:
@@ -70,7 +73,7 @@ series:
     content: Internet-Draft
   number: draft-kfall-httpbis-server-ranges-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

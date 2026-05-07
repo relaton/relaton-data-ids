@@ -1,7 +1,7 @@
 ---
 id: draftsecurecookiesessionprotocol04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Thomas Fossati
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -89,33 +89,44 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides an overview of SCS, a small cryptographic\n
-    \  protocol layered on top of the HTTP cookie facility, that allows its\n   users
-    to produce and consume authenticated and encrypted cookies, as\n   opposed to
-    usual cookies, which are un-authenticated and sent in\n   clear text.\n\n   An
-    interesting property, rising naturally from the given\n   confidentiality and
-    authentication properties, is that by using SCS\n   cookies, it is possible to
-    avoid storing the session state material\n   on the server side altogether.  In
-    fact, an SCS cookie presented by\n   the user agent to the origin server can always
-    be validated (i.e.\n   possibly recognized as self-produced, untampered material)
-    and, as\n   such, be used to safely restore application state.\n\n   Hence, typical
-    use cases may include devices with little or no\n   storage offering some functionality
-    via an HTTP interface, as well as\n   web applications with high availability
-    or load balancing\n   requirements which would prefer to handle application state
-    without\n   the need to synchronize the pool through shared storage or peering.\n\n
-    \  Another noteworthy application scenario is represented by the\n   distribution
-    of authorized web content (e.g. by CDNs), where an SCS\n   token can be used,
-    either in a cookie or embedded in the URI, to\n   provide evidence of the entitlement
-    to access the associated resource\n   by the requesting user agent.\n\n   Nevertheless,
-    its security properties allow SCS to be used whenever\n   the privacy and integrity
-    of cookies is a concern, by paying an\n   affordable price in terms of increased
-    cookie size, additional CPU\n   clock cycles needed by the symmetric key encryption
-    and HMAC\n   algorithms, and related key management, which can be made a nearly\n
-    \  transparent task.\n\n\t "
+  content: |-
+    <p>This document provides an overview of SCS, a small cryptographic
+       protocol layered on top of the HTTP cookie facility, that allows its
+       users to produce and consume authenticated and encrypted cookies, as
+       opposed to usual cookies, which are un-authenticated and sent in
+       clear text.
+
+       An interesting property, rising naturally from the given
+       confidentiality and authentication properties, is that by using SCS
+       cookies, it is possible to avoid storing the session state material
+       on the server side altogether.  In fact, an SCS cookie presented by
+       the user agent to the origin server can always be validated (i.e.
+       possibly recognized as self-produced, untampered material) and, as
+       such, be used to safely restore application state.
+
+       Hence, typical use cases may include devices with little or no
+       storage offering some functionality via an HTTP interface, as well as
+       web applications with high availability or load balancing
+       requirements which would prefer to handle application state without
+       the need to synchronize the pool through shared storage or peering.
+
+       Another noteworthy application scenario is represented by the
+       distribution of authorized web content (e.g. by CDNs), where an SCS
+       token can be used, either in a cookie or embedded in the URI, to
+       provide evidence of the entitlement to access the associated resource
+       by the requesting user agent.
+
+       Nevertheless, its security properties allow SCS to be used whenever
+       the privacy and integrity of cookies is a concern, by paying an
+       affordable price in terms of increased cookie size, additional CPU
+       clock cycles needed by the symmetric key encryption and HMAC
+       algorithms, and related key management, which can be made a nearly
+       transparent task.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-secure-cookie-session-protocol-03
+    formattedref:
+      content: draft-secure-cookie-session-protocol-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-secure-cookie-session-protocol-03
@@ -125,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-secure-cookie-session-protocol-05
+    formattedref:
+      content: draft-secure-cookie-session-protocol-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-secure-cookie-session-protocol-05
@@ -141,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-secure-cookie-session-protocol-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

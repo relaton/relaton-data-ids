@@ -1,7 +1,7 @@
 ---
 id: draftmaurettehmtftp02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -38,7 +38,7 @@ contributor:
         - language: en
           content: IUT R&T Béthune
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -46,16 +46,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   HMTFTP is a lightweight UDP file transfer protocol that preserves the\n
-    \  simplicity of TFTP (block-and-ACK) while adding a structured TLV\n   extension
-    mechanism and an optional authenticated-encryption mode.\n   When negotiated,
-    DATA payloads are protected with AEAD AES-256-GCM\n   and keys are derived with
-    HKDF-SHA-256 from a pre-shared key (PSK).\n   The default UDP port is TBD (requested:
-    6369) and implementations\n   MUST allow it to be configured.\n\n\t "
+  content: |-
+    <p>HMTFTP is a lightweight UDP file transfer protocol that preserves the
+       simplicity of TFTP (block-and-ACK) while adding a structured TLV
+       extension mechanism and an optional authenticated-encryption mode.
+       When negotiated, DATA payloads are protected with AEAD AES-256-GCM
+       and keys are derived with HKDF-SHA-256 from a pre-shared key (PSK).
+       The default UDP port is TBD (requested: 6369) and implementations
+       MUST allow it to be configured.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-maurette-hmtftp-01
+    formattedref:
+      content: draft-maurette-hmtftp-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-maurette-hmtftp-01
@@ -65,7 +68,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-maurette-hmtftp-03
+    formattedref:
+      content: draft-maurette-hmtftp-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-maurette-hmtftp-03
@@ -81,7 +85,7 @@ series:
     content: Internet-Draft
   number: draft-maurette-hmtftp-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

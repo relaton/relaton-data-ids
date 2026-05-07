@@ -1,7 +1,7 @@
 ---
 id: draftietfwimsewpt00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Defakto Security
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,16 +79,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The WIMSE architecture defines authentication and authorization for\n
-    \  software workloads in a variety of runtime environments, from basic\n   deployments
-    to complex multi-service, multi-cloud, multi-tenant\n   systems.  This document
-    specifies the Workload Proof Token (WPT), a\n   mechanism for workloads to prove
-    possession of the private key\n   associated with a Workload Identity Token (WIT).
-    \ The WPT is a signed\n   JWT that binds the workload's authentication to a specific
-    HTTP\n   request, providing application-level proof of possession for\n   workload-to-workload
-    communication.  This specification is designed\n   to work alongside the WIT credential
-    format defined in draft-ietf-\n   wimse-workload-creds and can be combined with
-    other WIMSE protocols\n   in multi-hop call chains.\n\n\t "
+  content: |-
+    <p>The WIMSE architecture defines authentication and authorization for
+       software workloads in a variety of runtime environments, from basic
+       deployments to complex multi-service, multi-cloud, multi-tenant
+       systems.  This document specifies the Workload Proof Token (WPT), a
+       mechanism for workloads to prove possession of the private key
+       associated with a Workload Identity Token (WIT).  The WPT is a signed
+       JWT that binds the workload&#39;s authentication to a specific HTTP
+       request, providing application-level proof of possession for
+       workload-to-workload communication.  This specification is designed
+       to work alongside the WIT credential format defined in draft-ietf-
+       wimse-workload-creds and can be combined with other WIMSE protocols
+       in multi-hop call chains.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-wimse-wpt-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-wimse-wpt-01
+    docidentifier:
+    - content: draft-ietf-wimse-wpt-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -97,7 +112,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-wimse-wpt-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

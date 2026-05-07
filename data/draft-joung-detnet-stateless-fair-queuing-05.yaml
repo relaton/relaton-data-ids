@@ -1,7 +1,7 @@
 ---
 id: draftjoungdetnetstatelessfairqueuing05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -143,7 +143,7 @@ contributor:
         - language: en
           content: China Mobile
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -151,24 +151,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies the framework and the operational procedure\n
-    \  for deterministic networking with a set of rate based work conserving\n   packet
-    schedulers.  The framework guarantees end-to-end (E2E) latency\n   bounds to flows.
-    \ The schedulers in core nodes do not need to\n   maintain flow states.  Instead,
-    the entrance node of a flow marks an\n   ideal service completion time according
-    to a fluid model, called\n   Finish Time (FT), of a packet in the packet header.
-    \ The subsequent\n   core nodes update FT by adding delay factors, which are functions
-    of\n   the flow and the nodes.  The packets in the queue of the scheduler\n   are
-    served in the ascending order of FT.  This mechanism is called\n   the stateless
-    fair queuing.  The result is that flows are isolated\n   from each other almost
-    perfectly.  The latency bound of a flow\n   depends only on the flow's intrinsic
-    parameters such as the maximum\n   burst size and the service rate, except the
-    link capacities and the\n   maximum packet length among other flows sharing each
-    output link with\n   the flow.\n\n\t "
+  content: |-
+    <p>This document specifies the framework and the operational procedure
+       for deterministic networking with a set of rate based work conserving
+       packet schedulers.  The framework guarantees end-to-end (E2E) latency
+       bounds to flows.  The schedulers in core nodes do not need to
+       maintain flow states.  Instead, the entrance node of a flow marks an
+       ideal service completion time according to a fluid model, called
+       Finish Time (FT), of a packet in the packet header.  The subsequent
+       core nodes update FT by adding delay factors, which are functions of
+       the flow and the nodes.  The packets in the queue of the scheduler
+       are served in the ascending order of FT.  This mechanism is called
+       the stateless fair queuing.  The result is that flows are isolated
+       from each other almost perfectly.  The latency bound of a flow
+       depends only on the flow&#39;s intrinsic parameters such as the maximum
+       burst size and the service rate, except the link capacities and the
+       maximum packet length among other flows sharing each output link with
+       the flow.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-joung-detnet-stateless-fair-queuing-04
+    formattedref:
+      content: draft-joung-detnet-stateless-fair-queuing-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-04
@@ -178,7 +182,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-joung-detnet-stateless-fair-queuing-06
+    formattedref:
+      content: draft-joung-detnet-stateless-fair-queuing-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-joung-detnet-stateless-fair-queuing-06
@@ -194,7 +199,7 @@ series:
     content: Internet-Draft
   number: draft-joung-detnet-stateless-fair-queuing-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

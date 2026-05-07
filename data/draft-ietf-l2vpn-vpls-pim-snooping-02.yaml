@@ -1,7 +1,7 @@
 ---
 id: draftietfl2vpnvplspimsnooping02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -104,7 +104,7 @@ contributor:
         language: en
         content: Venu Hemige
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -112,27 +112,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In Virtual Private LAN Service (VPLS), as also in IEEE Bridged\n   Networks,
-    the switches simply flood multicast traffic on all ports in\n   the LAN by default.
-    \ IGMP Snooping is commonly deployed to ensure\n   multicast traffic is not forwarded
-    on ports without IGMP receivers.\n   The procedures and recommendations for IGMP
-    Snooping are defined in\n   [IGMP-SNOOP].  But when any protocol other than IGMP
-    is used, the\n   common practice is to simply flood multicast traffic to all ports.\n
-    \  PIM-SM, PIM-SSM, PIM-BIDIR are widely deployed routing protocols.\n   PIM Snooping
-    procedures are important to restrict multicast traffic\n   to only the routers
-    interested in receiving such traffic.\n\n   While most of the PIM Snooping procedures
-    defined here also apply to\n   IEEE Bridged Networks, VPLS demands certain special
-    procedures due to\n   the split-horizon rules that require the Provider Edge (PE)
-    devices\n   to co-operate.  This document describes the procedures and\n   recommendations
-    for PIM-Snooping in VPLS to facilitate replication to\n   only those ports behind
-    which there are interested PIM routers and/or\n   IGMP hosts.  This document also
-    describes procedures for PIM Proxy.\n   PIM Proxy is required on PEs for VPLS
-    Multicast to work correctly\n   when Join suppression is enabled in the VPLS.
-    \ PIM Proxy also helps\n   scale VPLS Multicast much better than just PIM Snooping.\n\n\n\t "
+  content: |-
+    <p>In Virtual Private LAN Service (VPLS), as also in IEEE Bridged
+       Networks, the switches simply flood multicast traffic on all ports in
+       the LAN by default.  IGMP Snooping is commonly deployed to ensure
+       multicast traffic is not forwarded on ports without IGMP receivers.
+       The procedures and recommendations for IGMP Snooping are defined in
+       [IGMP-SNOOP].  But when any protocol other than IGMP is used, the
+       common practice is to simply flood multicast traffic to all ports.
+       PIM-SM, PIM-SSM, PIM-BIDIR are widely deployed routing protocols.
+       PIM Snooping procedures are important to restrict multicast traffic
+       to only the routers interested in receiving such traffic.
+
+       While most of the PIM Snooping procedures defined here also apply to
+       IEEE Bridged Networks, VPLS demands certain special procedures due to
+       the split-horizon rules that require the Provider Edge (PE) devices
+       to co-operate.  This document describes the procedures and
+       recommendations for PIM-Snooping in VPLS to facilitate replication to
+       only those ports behind which there are interested PIM routers and/or
+       IGMP hosts.  This document also describes procedures for PIM Proxy.
+       PIM Proxy is required on PEs for VPLS Multicast to work correctly
+       when Join suppression is enabled in the VPLS.  PIM Proxy also helps
+       scale VPLS Multicast much better than just PIM Snooping.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-l2vpn-vpls-pim-snooping-01
+    formattedref:
+      content: draft-ietf-l2vpn-vpls-pim-snooping-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-l2vpn-vpls-pim-snooping-01
@@ -142,7 +148,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-l2vpn-vpls-pim-snooping-03
+    formattedref:
+      content: draft-ietf-l2vpn-vpls-pim-snooping-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-l2vpn-vpls-pim-snooping-03
@@ -158,7 +165,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-l2vpn-vpls-pim-snooping-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

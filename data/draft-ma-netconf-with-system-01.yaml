@@ -1,7 +1,7 @@
 ---
 id: draftmanetconfwithsystem01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -79,24 +79,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The NETCONF protocol [RFC6241] defines ways to read configuration and\n
-    \  state data from a NETCONF server.  In some cases, a client-configured\n   data
-    item refers to a non-existent system generated data item\n   (e.g.,the auto-create
-    interfaces (\"eth1\") is not yet present).  In\n   many situations, the system
-    configured data item doesn't need to be\n   know to the client and client-configured
-    data item will automatically\n   be removed from the operational state datastore
-    and thus only appear\n   in the intended datastore if client-configured data item
-    doesn't\n   exist.  In other situations system configured data item needs to be\n
-    \  known and overriden by the client.  Not all server implementations\n   treat
-    the system configuration data in the same way.  This document\n   defines a capability-based
-    extension to the NETCONF protocol that\n   allows the NETCONF client to identify
-    how system configuration are\n   processed by the server, and also defines a new
-    mechanism for client\n   control of server processing of system configuration
-    data.\n\n\t "
+  content: |-
+    <p>The NETCONF protocol [RFC6241] defines ways to read configuration and
+       state data from a NETCONF server.  In some cases, a client-configured
+       data item refers to a non-existent system generated data item
+       (e.g.,the auto-create interfaces (&quot;eth1&quot;) is not yet present).  In
+       many situations, the system configured data item doesn&#39;t need to be
+       know to the client and client-configured data item will automatically
+       be removed from the operational state datastore and thus only appear
+       in the intended datastore if client-configured data item doesn&#39;t
+       exist.  In other situations system configured data item needs to be
+       known and overriden by the client.  Not all server implementations
+       treat the system configuration data in the same way.  This document
+       defines a capability-based extension to the NETCONF protocol that
+       allows the NETCONF client to identify how system configuration are
+       processed by the server, and also defines a new mechanism for client
+       control of server processing of system configuration data.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ma-netconf-with-system-00
+    formattedref:
+      content: draft-ma-netconf-with-system-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netconf-with-system-00
@@ -106,7 +109,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ma-netconf-with-system-02
+    formattedref:
+      content: draft-ma-netconf-with-system-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netconf-with-system-02
@@ -122,7 +126,7 @@ series:
     content: Internet-Draft
   number: draft-ma-netconf-with-system-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietftsvwgbytepktcongest08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Jukka Manner
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -69,20 +69,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides recommendations of best current practice for\n
-    \  dropping or marking packets using active queue management (AQM) such\n   as
-    random early detection (RED) or pre-congestion notification (PCN).\n   We give
-    three strong recommendations: (1) packet size should be taken\n   into account
-    when transports read and respond to congestion\n   indications, (2) packet size
-    should not be taken into account when\n   network equipment creates congestion
-    signals (marking, dropping), and\n   therefore (3) the byte-mode packet drop variant
-    of the RED AQM\n   algorithm that drops fewer small packets should not be used.
-    \ This\n   memo updates RFC 2309 to deprecate deliberate preferential treatment\n
-    \  of small packets in AQM algorithms.\n\n\t "
+  content: |-
+    <p>This document provides recommendations of best current practice for
+       dropping or marking packets using active queue management (AQM) such
+       as random early detection (RED) or pre-congestion notification (PCN).
+       We give three strong recommendations: (1) packet size should be taken
+       into account when transports read and respond to congestion
+       indications, (2) packet size should not be taken into account when
+       network equipment creates congestion signals (marking, dropping), and
+       therefore (3) the byte-mode packet drop variant of the RED AQM
+       algorithm that drops fewer small packets should not be used.  This
+       memo updates RFC 2309 to deprecate deliberate preferential treatment
+       of small packets in AQM algorithms.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tsvwg-byte-pkt-congest-07
+    formattedref:
+      content: draft-ietf-tsvwg-byte-pkt-congest-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-byte-pkt-congest-07
@@ -92,7 +95,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tsvwg-byte-pkt-congest-09
+    formattedref:
+      content: draft-ietf-tsvwg-byte-pkt-congest-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-byte-pkt-congest-09
@@ -108,7 +112,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tsvwg-byte-pkt-congest-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

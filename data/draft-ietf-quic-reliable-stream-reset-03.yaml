@@ -1,7 +1,7 @@
 ---
 id: draftietfquicreliablestreamreset03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Fastly
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -79,16 +79,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC defines a RESET_STREAM frame to abort sending on a stream.  When\n
-    \  a sender resets a stream, it also stops retransmitting STREAM frames\n   for
-    this stream in the of packet loss.  On the receiving side, there\n   is no guarantee
-    that any data sent on that stream is delivered.\n\n   This document defines a
-    new QUIC frame, the RESET_STREAM_AT frame,\n   that allows resetting a stream,
-    while guaranteeing reliable delivery\n   of stream data up to a certain byte offset.\n\n\t "
+  content: |-
+    <p>QUIC defines a RESET_STREAM frame to abort sending on a stream.  When
+       a sender resets a stream, it also stops retransmitting STREAM frames
+       for this stream in the of packet loss.  On the receiving side, there
+       is no guarantee that any data sent on that stream is delivered.
+
+       This document defines a new QUIC frame, the RESET_STREAM_AT frame,
+       that allows resetting a stream, while guaranteeing reliable delivery
+       of stream data up to a certain byte offset.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-quic-reliable-stream-reset-02
+    formattedref:
+      content: draft-ietf-quic-reliable-stream-reset-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-reliable-stream-reset-02
@@ -98,7 +102,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-quic-reliable-stream-reset-04
+    formattedref:
+      content: draft-ietf-quic-reliable-stream-reset-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-reliable-stream-reset-04
@@ -114,7 +119,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-quic-reliable-stream-reset-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

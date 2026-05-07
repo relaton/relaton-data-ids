@@ -1,7 +1,7 @@
 ---
 id: draftietftlscertabridge02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Mozilla
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -54,18 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This draft defines a new TLS Certificate Compression scheme which\n
-    \  uses a shared dictionary of root and intermediate WebPKI\n   certificates.
-    \ The scheme smooths the transition to post-quantum\n   certificates by eliminating
-    the root and intermediate certificates\n   from the TLS certificate chain without
-    impacting trust negotiation.\n   It also delivers better compression than alternative
-    proposals whilst\n   ensuring fair treatment for both CAs and website operators.
-    \ It may\n   also be useful in other applications which store certificate chains,\n
-    \  e.g.  Certificate Transparency logs.\n\n\t "
+  content: |-
+    <p>This draft defines a new TLS Certificate Compression scheme which
+       uses a shared dictionary of root and intermediate WebPKI
+       certificates.  The scheme smooths the transition to post-quantum
+       certificates by eliminating the root and intermediate certificates
+       from the TLS certificate chain without impacting trust negotiation.
+       It also delivers better compression than alternative proposals whilst
+       ensuring fair treatment for both CAs and website operators.  It may
+       also be useful in other applications which store certificate chains,
+       e.g.  Certificate Transparency logs.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tls-cert-abridge-01
+    formattedref:
+      content: draft-ietf-tls-cert-abridge-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tls-cert-abridge-01
@@ -81,7 +84,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tls-cert-abridge-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

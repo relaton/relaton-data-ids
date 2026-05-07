@@ -1,7 +1,8 @@
 ---
 id: draftzhaivrrpextensionftfm
-schema_version: v1.4.1
-formattedref: draft-zhai-vrrp-extension-ft-fm
+schema_version: v1.5.6
+formattedref:
+  content: draft-zhai-vrrp-extension-ft-fm
 title:
 - language: en
   script: Latn
@@ -13,18 +14,22 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "This document extends VRRP mechanism to support fast transition of\nnon-master
-    router to master when the original master router (is not\nfunctioning or) becomes
-    unavailable.  Through introducing another\nstate of router, named alternate state,
-    when the failure of master\nrouter is detected by alternate router with fast detection\ntechnology,
-    such as BFD, it will transmit to master immediately.\nThen the new master will
-    inform other routers in its VRRP group to\nelect a new alternate router, and a
-    fast detection session will be\nestablished between alternate and master routers,
-    through which the\navailability of the master can be detected by alternate router.\n\t "
+  content: |-
+    <p>This document extends VRRP mechanism to support fast transition of
+    non-master router to master when the original master router (is not
+    functioning or) becomes unavailable.  Through introducing another
+    state of router, named alternate state, when the failure of master
+    router is detected by alternate router with fast detection
+    technology, such as BFD, it will transmit to master immediately.
+    Then the new master will inform other routers in its VRRP group to
+    elect a new alternate router, and a fast detection session will be
+    established between alternate and master routers, through which the
+    availability of the master can be detected by alternate router.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-zhai-vrrp-extension-ft-fm-00
+    formattedref:
+      content: draft-zhai-vrrp-extension-ft-fm-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhai-vrrp-extension-ft-fm-00

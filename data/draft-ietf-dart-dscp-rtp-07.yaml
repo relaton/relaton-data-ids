@@ -1,7 +1,7 @@
 ---
 id: draftietfdartdscprtp07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Paul Jones
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -72,24 +72,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo describes the interaction between Differentiated Services\n
-    \  (DiffServ) network quality of service (QoS) functionality and real-\n   time
-    network communication, including communication based on the\n   Real-time Transport
-    Protocol (RTP).  DiffServ is based on network\n   nodes applying different forwarding
-    treatments to packets whose IP\n   headers are marked with different DiffServ
-    Code Points (DSCPs).\n   WebRTC applications, as well as some conferencing applications,
-    have\n   begun using the Session Description Protocol (SDP) bundle negotiation\n
-    \  mechanism to send multiple traffic streams with different QoS\n   requirements
-    using the same network 5-tuple.  The results of using\n   multiple DSCPs to obtain
-    different QoS treatments within a single\n   network 5-tuple (e.g., reordering)
-    have transport protocol\n   interactions, particularly with congestion control
-    functionality.  In\n   addition, DSCP markings may be changed or removed between
-    the traffic\n   source and destination.  This memo covers the implications of
-    these\n   DiffServ aspects for real-time network communication, including\n   WebRTC.\n\n\t "
+  content: |-
+    <p>This memo describes the interaction between Differentiated Services
+       (DiffServ) network quality of service (QoS) functionality and real-
+       time network communication, including communication based on the
+       Real-time Transport Protocol (RTP).  DiffServ is based on network
+       nodes applying different forwarding treatments to packets whose IP
+       headers are marked with different DiffServ Code Points (DSCPs).
+       WebRTC applications, as well as some conferencing applications, have
+       begun using the Session Description Protocol (SDP) bundle negotiation
+       mechanism to send multiple traffic streams with different QoS
+       requirements using the same network 5-tuple.  The results of using
+       multiple DSCPs to obtain different QoS treatments within a single
+       network 5-tuple (e.g., reordering) have transport protocol
+       interactions, particularly with congestion control functionality.  In
+       addition, DSCP markings may be changed or removed between the traffic
+       source and destination.  This memo covers the implications of these
+       DiffServ aspects for real-time network communication, including
+       WebRTC.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dart-dscp-rtp-06
+    formattedref:
+      content: draft-ietf-dart-dscp-rtp-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dart-dscp-rtp-06
@@ -99,7 +104,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dart-dscp-rtp-08
+    formattedref:
+      content: draft-ietf-dart-dscp-rtp-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dart-dscp-rtp-08
@@ -115,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dart-dscp-rtp-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

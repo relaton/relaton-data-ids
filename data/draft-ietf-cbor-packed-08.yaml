@@ -1,7 +1,7 @@
 ---
 id: draftietfcborpacked08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Universität Bremen TZI
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -54,25 +54,34 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Concise Binary Object Representation (CBOR, RFC 8949 == STD 94)\n
-    \  is a data format whose design goals include the possibility of\n   extremely
-    small code size, fairly small message size, and\n   extensibility without the
-    need for version negotiation.\n\n   CBOR does not provide any forms of data compression.
-    \ CBOR data\n   items, in particular when generated from legacy data models, often\n
-    \  allow considerable gains in compactness when applying data\n   compression.
-    \ While traditional data compression techniques such as\n   DEFLATE (RFC 1951)
-    can work well for CBOR encoded data items, their\n   disadvantage is that the
-    receiver needs to decompress the compressed\n   form to make use of the data.\n\n
-    \  This specification describes Packed CBOR, a simple transformation of\n   a
-    CBOR data item into another CBOR data item that is almost as easy\n   to consume
-    as the original CBOR data item.  A separate decompression\n   step is therefore
-    often not required at the receiver.\n\n\n   // The present version (-08) is a
-    refresh update to -07, which added\n   // the concept of Tag Equivalence as initially
-    discussed at the CBOR\n   // Interim meeting 12 in 2022 and at IETF 114.\n\n\t "
+  content: |-
+    <p>The Concise Binary Object Representation (CBOR, RFC 8949 == STD 94)
+       is a data format whose design goals include the possibility of
+       extremely small code size, fairly small message size, and
+       extensibility without the need for version negotiation.
+
+       CBOR does not provide any forms of data compression.  CBOR data
+       items, in particular when generated from legacy data models, often
+       allow considerable gains in compactness when applying data
+       compression.  While traditional data compression techniques such as
+       DEFLATE (RFC 1951) can work well for CBOR encoded data items, their
+       disadvantage is that the receiver needs to decompress the compressed
+       form to make use of the data.
+
+       This specification describes Packed CBOR, a simple transformation of
+       a CBOR data item into another CBOR data item that is almost as easy
+       to consume as the original CBOR data item.  A separate decompression
+       step is therefore often not required at the receiver.
+
+
+       // The present version (-08) is a refresh update to -07, which added
+       // the concept of Tag Equivalence as initially discussed at the CBOR
+       // Interim meeting 12 in 2022 and at IETF 114.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-cbor-packed-07
+    formattedref:
+      content: draft-ietf-cbor-packed-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-cbor-packed-07
@@ -82,7 +91,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-cbor-packed-09
+    formattedref:
+      content: draft-ietf-cbor-packed-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-cbor-packed-09
@@ -98,7 +108,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-cbor-packed-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

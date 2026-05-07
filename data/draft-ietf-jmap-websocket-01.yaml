@@ -1,7 +1,7 @@
 ---
 id: draftietfjmapwebsocket01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: FastMail US LLC
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,17 +54,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a binding for the JSON Meta Application\n   Protocol
-    (JMAP) over a WebSocket transport layer.  The WebSocket\n   binding for JMAP provides
-    higher performance than the current HTTP\n   binding for JMAP.\n\nOpen Issues\n\n
-    \  o  Should push over WebSocket make use of the EventSource Last-Event-\n      ID
-    request header field (or a similar facility; e.g., as an extra\n      query parameter)?
-    \ And if so, where would the server state token\n      be returned to the user?
-    \ As a new property in the StateChange\n      object?\n\n\t "
+  content: |-
+    <p>This document defines a binding for the JSON Meta Application
+       Protocol (JMAP) over a WebSocket transport layer.  The WebSocket
+       binding for JMAP provides higher performance than the current HTTP
+       binding for JMAP.
+
+    Open Issues
+
+       o  Should push over WebSocket make use of the EventSource Last-Event-
+          ID request header field (or a similar facility; e.g., as an extra
+          query parameter)?  And if so, where would the server state token
+          be returned to the user?  As a new property in the StateChange
+          object?</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-jmap-websocket-00
+    formattedref:
+      content: draft-ietf-jmap-websocket-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jmap-websocket-00
@@ -74,7 +81,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-jmap-websocket-02
+    formattedref:
+      content: draft-ietf-jmap-websocket-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jmap-websocket-02
@@ -90,7 +98,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-jmap-websocket-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfaltonewtransport03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Tongji University
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -129,22 +129,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The ALTO base protocol [RFC7285] defines both the ALTO information\n
-    \  resources and their transport from the server to the client.  Using\n   HTTP/1.x
-    as the transport protocol, the ALTO transport in the base\n   protocol includes
-    the limitations of HTTP/1.x.  ALTO/SSE [RFC8895]\n   defines a new transport design
-    addressing some of the limitations,\n   but is still based on HTTP/1.x.  This
-    document introduces ALTO new\n   transport, which introduces ALTO transport information
-    structures\n   (TIS) at an ALTO server.  The introduction of ALTO TIS allows at\n
-    \  least two types of efficient transport using HTTP: (1) HTTP/2/3\n   independent
-    client (long) pull allowed by non-blocking, newer HTTP,\n   and (2) HTTP/2 specific
-    server push.  This document defines ALTO TIS\n   and the first design.  A companion
-    document\n   [draft-schott-alto-new-transport-push] defines server-push ALTO\n
-    \  transport based on ALTO TIS.\n\n\n\t "
+  content: |-
+    <p>The ALTO base protocol [RFC7285] defines both the ALTO information
+       resources and their transport from the server to the client.  Using
+       HTTP/1.x as the transport protocol, the ALTO transport in the base
+       protocol includes the limitations of HTTP/1.x.  ALTO/SSE [RFC8895]
+       defines a new transport design addressing some of the limitations,
+       but is still based on HTTP/1.x.  This document introduces ALTO new
+       transport, which introduces ALTO transport information structures
+       (TIS) at an ALTO server.  The introduction of ALTO TIS allows at
+       least two types of efficient transport using HTTP: (1) HTTP/2/3
+       independent client (long) pull allowed by non-blocking, newer HTTP,
+       and (2) HTTP/2 specific server push.  This document defines ALTO TIS
+       and the first design.  A companion document
+       [draft-schott-alto-new-transport-push] defines server-push ALTO
+       transport based on ALTO TIS.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-alto-new-transport-02
+    formattedref:
+      content: draft-ietf-alto-new-transport-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-02
@@ -154,7 +158,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-alto-new-transport-04
+    formattedref:
+      content: draft-ietf-alto-new-transport-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-alto-new-transport-04
@@ -170,7 +175,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-alto-new-transport-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

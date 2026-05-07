@@ -1,7 +1,7 @@
 ---
 id: draftgiebenauthdenialofexistencedns00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Matthijs Mekking
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -72,25 +72,35 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Authenticated denial of existence allows a resolver to validate that\n
-    \  a certain domain name does not exist.  It is also used to signal that\n   a
-    domain name exists, but does not have the specific RR type you were\n   asking
-    for.  This document attempts to answer two simple questions.\n\n   When returning
-    a negative DNSSEC response, a name server sometimes\n   includes up to two NSEC
-    records.  With NSEC3 the maximum amount is\n   three.\n\n   o  Why do you need
-    up to two NSEC records?\n\n   o  And why does NSEC3 sometimes require an extra
-    record?\n\n   The answer to the questions hinges on the concept of wildcards and\n
-    \  the \"closest encloser\".  With NSEC, the name that is the \"closest\n   encloser\"
-    is implicitly given in the record that also denies the\n   existence of the domain
-    name.  With NSEC3, due to its hashing, this\n   information has to be given explicitly
-    to a resolver.  It needs one\n   record to tell the resolver the closest encloser
-    and then another to\n   deny the existence of the domain name.  Both NSEC and
-    NSEC3 may need\n   yet another record to deny or assert a wildcard presence.  This\n
-    \  results in a maximum of two NSEC and three NSEC3 records,\n   respectively.\n\n\t "
+  content: |-
+    <p>Authenticated denial of existence allows a resolver to validate that
+       a certain domain name does not exist.  It is also used to signal that
+       a domain name exists, but does not have the specific RR type you were
+       asking for.  This document attempts to answer two simple questions.
+
+       When returning a negative DNSSEC response, a name server sometimes
+       includes up to two NSEC records.  With NSEC3 the maximum amount is
+       three.
+
+       o  Why do you need up to two NSEC records?
+
+       o  And why does NSEC3 sometimes require an extra record?
+
+       The answer to the questions hinges on the concept of wildcards and
+       the &quot;closest encloser&quot;.  With NSEC, the name that is the &quot;closest
+       encloser&quot; is implicitly given in the record that also denies the
+       existence of the domain name.  With NSEC3, due to its hashing, this
+       information has to be given explicitly to a resolver.  It needs one
+       record to tell the resolver the closest encloser and then another to
+       deny the existence of the domain name.  Both NSEC and NSEC3 may need
+       yet another record to deny or assert a wildcard presence.  This
+       results in a maximum of two NSEC and three NSEC3 records,
+       respectively.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-gieben-auth-denial-of-existence-dns-01
+    formattedref:
+      content: draft-gieben-auth-denial-of-existence-dns-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gieben-auth-denial-of-existence-dns-01
@@ -106,7 +116,7 @@ series:
     content: Internet-Draft
   number: draft-gieben-auth-denial-of-existence-dns-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

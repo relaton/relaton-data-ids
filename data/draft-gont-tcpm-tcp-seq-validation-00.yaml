@@ -1,7 +1,7 @@
 ---
 id: draftgonttcpmtcpseqvalidation00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: David Borman
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -69,22 +69,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When TCP receives packets that lie outside of the receive window, the\n
-    \  corresponding packets are dropped and either an ACK, RST or no\n   response
-    is generated due to the out-of-window packet, with no\n   further processing of
-    the packet.  Most of the time, this works just\n   fine and TCP remains stable,
-    especially when a TCP connection has\n   unidirectional data flow.  However, there
-    are three scenarios in\n   which packets that are outside of the receive window
-    should still\n   have their ACK field processed, or else a packet war will take
-    place.\n   The aforementioned issues have affected a number of popular TCP\n   implementations,
-    typically leading to connection failures, system\n   crashes, or other undesirable
-    behaviors.  This document describes the\n   three scenarios in which the aforementioned
-    issues might arise, and\n   formally updates RFC 793 such that these potential
-    problems are\n   mitigated.\n\n\t "
+  content: |-
+    <p>When TCP receives packets that lie outside of the receive window, the
+       corresponding packets are dropped and either an ACK, RST or no
+       response is generated due to the out-of-window packet, with no
+       further processing of the packet.  Most of the time, this works just
+       fine and TCP remains stable, especially when a TCP connection has
+       unidirectional data flow.  However, there are three scenarios in
+       which packets that are outside of the receive window should still
+       have their ACK field processed, or else a packet war will take place.
+       The aforementioned issues have affected a number of popular TCP
+       implementations, typically leading to connection failures, system
+       crashes, or other undesirable behaviors.  This document describes the
+       three scenarios in which the aforementioned issues might arise, and
+       formally updates RFC 793 such that these potential problems are
+       mitigated.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-gont-tcpm-tcp-seq-validation-01
+    formattedref:
+      content: draft-gont-tcpm-tcp-seq-validation-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gont-tcpm-tcp-seq-validation-01
@@ -100,7 +104,7 @@ series:
     content: Internet-Draft
   number: draft-gont-tcpm-tcp-seq-validation-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

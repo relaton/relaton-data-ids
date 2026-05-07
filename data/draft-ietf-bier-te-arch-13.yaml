@@ -1,7 +1,7 @@
 ---
 id: draftietfbiertearch13
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: KOEVOO
 version:
-- draft: '13'
+- content: '13'
 language:
 - en
 script:
@@ -107,24 +107,15 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo describes per-packet stateless strict and loose path steered
-    replication and forwarding for \"Bit Index Explicit Replication\" (BIER) packets
-    (RFC 8279); it is called \"Tree Engineering for Bit Index Explicit Replication\"
-    (BIER-TE) and is intended to be used as the path steering mechanism for Traffic
-    Engineering with BIER.\n\n BIER-TE introduces a new semantic for \"bit positions\"
-    (BPs). These BPs indicate adjacencies of the network topology, as opposed to (non-TE)
-    BIER in which BPs indicate \"Bit-Forwarding Egress Routers\" (BFERs). A BIER-TE
-    \"packets BitString\" therefore indicates the edges of the (loop-free) tree across
-    which the packets are forwarded by BIER-TE. BIER-TE can leverage BIER forwarding
-    engines with little changes. Co-existence of BIER and BIER-TE forwarding in the
-    same domain is possible -- for example, by using separate BIER \"subdomains\"
-    (SDs). Except for the optional routed adjacencies, BIER-TE does not require a
-    BIER routing underlay and can therefore operate without depending on a routing
-    protocol such as the \"Interior Gateway Protocol\" (IGP).\n\t "
+  content: |-
+    <p>This memo describes per-packet stateless strict and loose path steered replication and forwarding for &quot;Bit Index Explicit Replication&quot; (BIER) packets (RFC 8279); it is called &quot;Tree Engineering for Bit Index Explicit Replication&quot; (BIER-TE) and is intended to be used as the path steering mechanism for Traffic Engineering with BIER.
+
+     BIER-TE introduces a new semantic for &quot;bit positions&quot; (BPs). These BPs indicate adjacencies of the network topology, as opposed to (non-TE) BIER in which BPs indicate &quot;Bit-Forwarding Egress Routers&quot; (BFERs). A BIER-TE &quot;packets BitString&quot; therefore indicates the edges of the (loop-free) tree across which the packets are forwarded by BIER-TE. BIER-TE can leverage BIER forwarding engines with little changes. Co-existence of BIER and BIER-TE forwarding in the same domain is possible -- for example, by using separate BIER &quot;subdomains&quot; (SDs). Except for the optional routed adjacencies, BIER-TE does not require a BIER routing underlay and can therefore operate without depending on a routing protocol such as the &quot;Interior Gateway Protocol&quot; (IGP).</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bier-te-arch-12
+    formattedref:
+      content: draft-ietf-bier-te-arch-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bier-te-arch-12
@@ -140,7 +131,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bier-te-arch-13
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

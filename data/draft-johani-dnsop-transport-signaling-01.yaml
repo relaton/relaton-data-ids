@@ -1,7 +1,7 @@
 ---
 id: draftjohanidnsoptransportsignaling01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: The Swedish Internet Foundation
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,26 +104,36 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a mechanism for authoritative DNS servers to\n
-    \  opportunistically signal their support for alternative transport\n   protocols
-    (e.g., DNS over TLS (DoT), DNS over HTTPS (DoH) and DNS\n   over QUIC (DoQ)) directly
-    within the Additional section of\n   authoritative DNS responses.  This \"hint-based\"
-    approach aims to\n   enable resolvers to discover and upgrade transport connections
-    more\n   efficiently, thereby improving privacy, security, and performance for\n
-    \  subsequent interactions.\n\n   The mechanism is designed to not require any
-    protocol change.  It is\n   safe, backward-compatible, and effective even when
-    DNSSEC validation\n   of the hint is not possible or desired.\n\n   This document
-    proposes an improvement on the opportunistic (but\n   blind) testing of alternative
-    transports suggested in RFC9539 by\n   providing a mechanism by which a responding
-    authoritative server may\n   signal what alternative transports it supports.\n\n
-    \  TO BE REMOVED: This document is being collaborated on in Github at:\n   https://github.com/johanix/draft-johani-dnsop-transport-signaling\n
-    \  (https://github.com/johanix/draft-johani-dnsop-transport-signaling).\n   The
-    most recent working version of the document, open issues, etc,\n   should all
-    be available there.  The authors (gratefully) accept pull\n   requests.\n\n\t "
+  content: |-
+    <p>This document proposes a mechanism for authoritative DNS servers to
+       opportunistically signal their support for alternative transport
+       protocols (e.g., DNS over TLS (DoT), DNS over HTTPS (DoH) and DNS
+       over QUIC (DoQ)) directly within the Additional section of
+       authoritative DNS responses.  This &quot;hint-based&quot; approach aims to
+       enable resolvers to discover and upgrade transport connections more
+       efficiently, thereby improving privacy, security, and performance for
+       subsequent interactions.
+
+       The mechanism is designed to not require any protocol change.  It is
+       safe, backward-compatible, and effective even when DNSSEC validation
+       of the hint is not possible or desired.
+
+       This document proposes an improvement on the opportunistic (but
+       blind) testing of alternative transports suggested in RFC9539 by
+       providing a mechanism by which a responding authoritative server may
+       signal what alternative transports it supports.
+
+       TO BE REMOVED: This document is being collaborated on in Github at:
+       https://github.com/johanix/draft-johani-dnsop-transport-signaling
+       (https://github.com/johanix/draft-johani-dnsop-transport-signaling).
+       The most recent working version of the document, open issues, etc,
+       should all be available there.  The authors (gratefully) accept pull
+       requests.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-johani-dnsop-transport-signaling-00
+    formattedref:
+      content: draft-johani-dnsop-transport-signaling-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-johani-dnsop-transport-signaling-00
@@ -133,7 +143,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-johani-dnsop-transport-signaling-02
+    formattedref:
+      content: draft-johani-dnsop-transport-signaling-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-johani-dnsop-transport-signaling-02
@@ -149,7 +160,7 @@ series:
     content: Internet-Draft
   number: draft-johani-dnsop-transport-signaling-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

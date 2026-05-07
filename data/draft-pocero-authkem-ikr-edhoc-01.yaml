@@ -1,7 +1,7 @@
 ---
 id: draftpoceroauthkemikredhoc01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -127,7 +127,7 @@ contributor:
         - language: en
           content: ISI, R.C. ATHENA
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -135,25 +135,39 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a more efficient variant of a Key\n   Encapsulation
-    Mechanism (KEM)-based authentication method for the\n   Ephemeral Diffie-Hellman
-    Over COSE (EDHOC) lightweight protocol,\n   designed for the specific scenario
-    in which the Initiator has prior\n   knowledge of the Responder’s credentials,
-    a case commonly found in\n   constrained environments.  Improving upon the approach
-    described in\n   KEM-based Authentication for EDHOC, this method uses only a mandatory\n
-    \  three-message handshake to enable signature-free post-quantum\n   authentication
-    when PQC KEMs, such as the NIST-standardized ML-KEM,\n   are employed, while still
-    providing mutual authentication, forward\n   secrecy, and a degree of identity
-    protection.\n\n\t "
+  content: |-
+    <p>This document specifies a more efficient variant of a Key
+       Encapsulation Mechanism (KEM)-based authentication method for the
+       Ephemeral Diffie-Hellman Over COSE (EDHOC) lightweight protocol,
+       designed for the specific scenario in which the Initiator has prior
+       knowledge of the Responder’s credentials, a case commonly found in
+       constrained environments.  Improving upon the approach described in
+       KEM-based Authentication for EDHOC, this method uses only a mandatory
+       three-message handshake to enable signature-free post-quantum
+       authentication when PQC KEMs, such as the NIST-standardized ML-KEM,
+       are employed, while still providing mutual authentication, forward
+       secrecy, and a degree of identity protection.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-pocero-authkem-ikr-edhoc-00
+    formattedref:
+      content: draft-pocero-authkem-ikr-edhoc-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pocero-authkem-ikr-edhoc-00
     docidentifier:
     - content: draft-pocero-authkem-ikr-edhoc-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-pocero-authkem-ikr-edhoc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pocero-authkem-ikr-edhoc-02
+    docidentifier:
+    - content: draft-pocero-authkem-ikr-edhoc-02
       type: Internet-Draft
       primary: true
 series:
@@ -164,7 +178,7 @@ series:
     content: Internet-Draft
   number: draft-pocero-authkem-ikr-edhoc-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

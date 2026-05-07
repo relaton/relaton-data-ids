@@ -1,7 +1,7 @@
 ---
 id: draftfujiwaradnsopnsecaggressiveuse00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Akira Kato
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -69,17 +69,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS highly depends on cache, however, cache usage of non-existence\n
-    \  information was limited to exact matching.  This draft proposes the\n   aggressive
-    use of NSEC/NSEC3 resource record, which is able to\n   express non-existence
-    of range of names authoritatively.  With this\n   proposal, shorter latency to
-    many of negative response is expected as\n   well as some level of mitigation
-    of random sub-domain attacks\n   (referred to as \"Water Torture\" attacks).  And
-    more, non-existent TLD\n   queries to Root DNS servers will decrease.\n\n\t "
+  content: |-
+    <p>DNS highly depends on cache, however, cache usage of non-existence
+       information was limited to exact matching.  This draft proposes the
+       aggressive use of NSEC/NSEC3 resource record, which is able to
+       express non-existence of range of names authoritatively.  With this
+       proposal, shorter latency to many of negative response is expected as
+       well as some level of mitigation of random sub-domain attacks
+       (referred to as &quot;Water Torture&quot; attacks).  And more, non-existent TLD
+       queries to Root DNS servers will decrease.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-fujiwara-dnsop-nsec-aggressiveuse-01
+    formattedref:
+      content: draft-fujiwara-dnsop-nsec-aggressiveuse-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fujiwara-dnsop-nsec-aggressiveuse-01
@@ -95,7 +98,7 @@ series:
     content: Internet-Draft
   number: draft-fujiwara-dnsop-nsec-aggressiveuse-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

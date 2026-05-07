@@ -1,11 +1,14 @@
 ---
 id: draftietfcorecacheableoscore
-schema_version: v1.4.1
-formattedref: draft-ietf-core-cacheable-oscore
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-core-cacheable-oscore
 title:
 - language: en
   script: Latn
-  content: Cacheable OSCORE
+  content: End-to-End Protected and Cacheable Responses for the Constrained Application
+    Protocol (CoAP) using Group Object Security for Constrained RESTful Environments
+    (Group OSCORE)
 docidentifier:
 - content: draft-ietf-core-cacheable-oscore
   type: Internet-Draft
@@ -13,21 +16,38 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Group communication with the Constrained Application Protocol (CoAP)\n
-    \  can be secured end-to-end using Group Object Security for Constrained\n   RESTful
-    Environments (Group OSCORE), also across untrusted\n   intermediary proxies.  However,
-    this sidesteps the proxies' abilities\n   to cache responses from the origin server(s).
-    \ This specification\n   restores cacheability of protected responses at proxies,
-    by\n   introducing consensus requests which any client in a group can send\n   to
-    one server or multiple servers in the same group.\n\n\t "
+  content: |-
+    <p>When using the Constrained Application Protocol (CoAP), exchanged
+       messages can be protected end-to-end also across untrusted
+       intermediary proxies.  This can be achieved with Object Security for
+       Constrained RESTful Environments (OSCORE) or, in the case of group
+       communication, with Group Object Security for Constrained RESTful
+       Environments (Group OSCORE).  However, this sidesteps the proxies&#39;
+       abilities to cache responses from the origin server(s).  This
+       document restores cacheability of end-end protected responses at
+       proxies, by using Group OSCORE and introducing consensus requests,
+       which any client in an OSCORE group can send to one server or
+       multiple servers in the same group.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-core-cacheable-oscore-00
+    formattedref:
+      content: draft-ietf-core-cacheable-oscore-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-core-cacheable-oscore-00
     docidentifier:
     - content: draft-ietf-core-cacheable-oscore-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-core-cacheable-oscore-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-core-cacheable-oscore-01
+    docidentifier:
+    - content: draft-ietf-core-cacheable-oscore-01
       type: Internet-Draft
       primary: true

@@ -1,7 +1,7 @@
 ---
 id: draftmalbraintlsstrongauthentication01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Petz Enterprises LLC
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,19 +54,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The security provided by authenticated TLS connection between\n   clients
-    and servers should protect both parties from \"Man-in-\n   the-Middle\" (MITM)
-    attacks.  Clients should be authenticating\n   that their server connection is
-    to the server they requested.\n\n   Servers that act as client agents need to
-    authenticate that\n   the connection is directly to their client secure against\n
-    \  eavesdropping or account/password hacking.\n\n   An extension to the Domain
-    Name System (DNS), The DNS-Based\n   Authentication of Named Entities (DANE) (RFC
-    6698), allows TLS\n   servers to publish their public certificates for use by
-    TLS\n   clients to authenticate the server connection.\n\n\t "
+  content: |-
+    <p>The security provided by authenticated TLS connection between
+       clients and servers should protect both parties from &quot;Man-in-
+       the-Middle&quot; (MITM) attacks.  Clients should be authenticating
+       that their server connection is to the server they requested.
+
+       Servers that act as client agents need to authenticate that
+       the connection is directly to their client secure against
+       eavesdropping or account/password hacking.
+
+       An extension to the Domain Name System (DNS), The DNS-Based
+       Authentication of Named Entities (DANE) (RFC 6698), allows TLS
+       servers to publish their public certificates for use by TLS
+       clients to authenticate the server connection.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-malbrain-tls-strong-authentication-00
+    formattedref:
+      content: draft-malbrain-tls-strong-authentication-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-malbrain-tls-strong-authentication-00
@@ -82,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-malbrain-tls-strong-authentication-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

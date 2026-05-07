@@ -1,7 +1,7 @@
 ---
 id: draftkalirajbessbgpsigprivatemplslabels06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: AT&T Services, Inc.
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -107,22 +107,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The MPLS forwarding layer in a core network is a shared resource.\n
-    \  The MPLS FIB at nodes in this layer contains labels that are\n   dynamically
-    allocated and locally significant at that node.  These\n   labels are scoped in
-    context of the global loopback address.  Let us\n   call this the global MPLS
-    namespace.\n\n   For some usecases like upstream label allocation, it is useful
-    to\n   create private MPLS namespaces (virtual MPLS FIB) over this shared\n   MPLS
-    forwarding layer.  This allows installing deterministic label\n   values in the
-    private FIBs created at nodes participating in the\n   private MPLS namespace,
-    while preserving the \"locally significant\"\n   nature of the underlying shared
-    global MPLS FIB.\n\n   This document defines new address families (AFI: 16399,
-    SAFI: 128, or\n   1) and associated signaling mechanisms to create and use MPLS\n
-    \  forwarding contexts in a network.  Some example use cases are also\n   described.\n\n\n\t "
+  content: |-
+    <p>The MPLS forwarding layer in a core network is a shared resource.
+       The MPLS FIB at nodes in this layer contains labels that are
+       dynamically allocated and locally significant at that node.  These
+       labels are scoped in context of the global loopback address.  Let us
+       call this the global MPLS namespace.
+
+       For some usecases like upstream label allocation, it is useful to
+       create private MPLS namespaces (virtual MPLS FIB) over this shared
+       MPLS forwarding layer.  This allows installing deterministic label
+       values in the private FIBs created at nodes participating in the
+       private MPLS namespace, while preserving the &quot;locally significant&quot;
+       nature of the underlying shared global MPLS FIB.
+
+       This document defines new address families (AFI: 16399, SAFI: 128, or
+       1) and associated signaling mechanisms to create and use MPLS
+       forwarding contexts in a network.  Some example use cases are also
+       described.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
+    formattedref:
+      content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-05
@@ -132,7 +139,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
+    formattedref:
+      content: draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kaliraj-bess-bgp-sig-private-mpls-labels-07
@@ -148,7 +156,7 @@ series:
     content: Internet-Draft
   number: draft-kaliraj-bess-bgp-sig-private-mpls-labels-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

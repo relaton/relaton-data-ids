@@ -1,7 +1,7 @@
 ---
 id: draftthomassendnsopcdsconsistency03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Secure Systems Engineering, deSEC
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -54,21 +54,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Maintenance of DNS delegations requires occasional changes of the DS\n
-    \  and NS record sets on the parent side of the delegation.  [RFC7344]\n   automates
-    this for DS records by having the child publish CDS and/or\n   CDNSKEY records
-    which hold the prospective DS parameters.  Similarly,\n   CSYNC records indicate
-    a desired update of the delegation's NS\n   records [RFC7477].  Parent-side entities
-    (e.g.  Registries,\n   Registrars) typically discover these records by periodically
-    querying\n   them from the child (\"polling\"), before using them to update the\n
-    \  delegation's parameters.\n\n   This document specifies that if polling is used,
-    parent-side entities\n   MUST ensure that updates triggered via CDS/CDNSKEY and
-    CSYNC records\n   are consistent across the child's authoritative nameservers,
-    before\n   taking any action based on these records.\n\n\t "
+  content: |-
+    <p>Maintenance of DNS delegations requires occasional changes of the DS
+       and NS record sets on the parent side of the delegation.  [RFC7344]
+       automates this for DS records by having the child publish CDS and/or
+       CDNSKEY records which hold the prospective DS parameters.  Similarly,
+       CSYNC records indicate a desired update of the delegation&#39;s NS
+       records [RFC7477].  Parent-side entities (e.g.  Registries,
+       Registrars) typically discover these records by periodically querying
+       them from the child (&quot;polling&quot;), before using them to update the
+       delegation&#39;s parameters.
+
+       This document specifies that if polling is used, parent-side entities
+       MUST ensure that updates triggered via CDS/CDNSKEY and CSYNC records
+       are consistent across the child&#39;s authoritative nameservers, before
+       taking any action based on these records.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-thomassen-dnsop-cds-consistency-02
+    formattedref:
+      content: draft-thomassen-dnsop-cds-consistency-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-thomassen-dnsop-cds-consistency-02
@@ -84,7 +89,7 @@ series:
     content: Internet-Draft
   number: draft-thomassen-dnsop-cds-consistency-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

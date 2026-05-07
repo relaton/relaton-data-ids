@@ -1,7 +1,7 @@
 ---
 id: draftberradnsopkeystate01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: The Swedish Internet Foundation
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,28 +104,46 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document introduces the KeyState EDNS(0) option code, to enable\n
-    \  the exchange of SIG(0) key state information between DNS entities via\n   the
-    DNS protocol.  The KeyState option allows DNS clients and servers\n   to include
-    key state data in both queries and responses, facilitating\n   mutual awareness
-    of SIG(0) key status between child and parent zones.\n   This mechanism addresses
-    the challenges of maintaining\n   synchronization of SIG(0) keys used for securing
-    DNS UPDATE messages,\n   thereby enhancing the efficiency and reliability of DNS
-    operations\n   that require coordinated key management.\n\n   This document proposes
-    such a mechanism.\n\n   TO BE REMOVED: This document is being collaborated on
-    in Github at:\n   https://github.com/johanix/draft-berra-dnsop-opt-transaction-state\n
-    \  (https://github.com/johanix/draft-berra-dnsop-transaction-state-00).\n   The
-    most recent working version of the document, open issues, etc,\n   should all
-    be available there.  The authors (gratefully) accept pull\n   requests.\n\n\t "
+  content: |-
+    <p>This document introduces the KeyState EDNS(0) option code, to enable
+       the exchange of SIG(0) key state information between DNS entities via
+       the DNS protocol.  The KeyState option allows DNS clients and servers
+       to include key state data in both queries and responses, facilitating
+       mutual awareness of SIG(0) key status between child and parent zones.
+       This mechanism addresses the challenges of maintaining
+       synchronization of SIG(0) keys used for securing DNS UPDATE messages,
+       thereby enhancing the efficiency and reliability of DNS operations
+       that require coordinated key management.
+
+       This document proposes such a mechanism.
+
+       TO BE REMOVED: This document is being collaborated on in Github at:
+       https://github.com/johanix/draft-berra-dnsop-opt-transaction-state
+       (https://github.com/johanix/draft-berra-dnsop-transaction-state-00).
+       The most recent working version of the document, open issues, etc,
+       should all be available there.  The authors (gratefully) accept pull
+       requests.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-berra-dnsop-keystate-00
+    formattedref:
+      content: draft-berra-dnsop-keystate-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-berra-dnsop-keystate-00
     docidentifier:
     - content: draft-berra-dnsop-keystate-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-berra-dnsop-keystate-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-berra-dnsop-keystate-02
+    docidentifier:
+    - content: draft-berra-dnsop-keystate-02
       type: Internet-Draft
       primary: true
 series:
@@ -136,7 +154,7 @@ series:
     content: Internet-Draft
   number: draft-berra-dnsop-keystate-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftbarikmptcplisa00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Michael Welzl
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -89,16 +89,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the LISA (Linked Slow-Start Algorithm) for\n
-    \  Multipath TCP (MPTCP).  Currently during slow-start, subflows behave\n   like
-    independent TCP flows making MPTCP behave unfairly to cross-\n   traffic and causing
-    more congestion in the bottleneck, which yields\n   more losses among the MPTCP
-    subflows.  LISA couples the initial\n   windows (IW) of MPTCP subflows during
-    the initial slow-start phase to\n   remove this adverse behavior.\n\n\t "
+  content: |-
+    <p>This document describes the LISA (Linked Slow-Start Algorithm) for
+       Multipath TCP (MPTCP).  Currently during slow-start, subflows behave
+       like independent TCP flows making MPTCP behave unfairly to cross-
+       traffic and causing more congestion in the bottleneck, which yields
+       more losses among the MPTCP subflows.  LISA couples the initial
+       windows (IW) of MPTCP subflows during the initial slow-start phase to
+       remove this adverse behavior.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-barik-mptcp-lisa-01
+    formattedref:
+      content: draft-barik-mptcp-lisa-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-barik-mptcp-lisa-01
@@ -114,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-barik-mptcp-lisa-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

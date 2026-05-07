@@ -1,7 +1,7 @@
 ---
 id: draftkhareidrbgpflowspecpayloadmatch02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Verizon
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -129,25 +129,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The rise in frequency, volume, and pernicious effects of DDoS attacks\n
-    \  has elevated them from fare for the specialist to generalist press.\n   Numerous
-    reports detail the taxonomy of DDoS types, the varying\n   motivations of their
-    attackers, as well as the resulting business and\n   reputation loss of their
-    targets.\n\n   BGP FlowSpec (RFC 5575, \"Dissemination of Flow Specification Rules\")\n
-    \  can be used to rapidly disseminate filters that thwart attacks, being\n   particularly
-    effective against the volumetric type.  Operators can\n   use existing FlowSpec
-    components to match on pre-defined packet\n   header fields.  However recent enhancements
-    to forwarding plane\n   filter implementations allow matches at arbitary locations
-    within the\n   packet header and, to some extent, the payload.  This capability
-    can\n   be used to detect highly amplified attacks, whose attack signature\n   remains
-    relatively constant.\n\n   We define a new FlowSpec component, \"Flexible Match
-    Conditions\", with\n   similar matching semantics to those of existing components.
-    \ This\n   component will allow the operator to define bounded match conditions\n
-    \  using offsets and bitmasks.\n\n\t "
+  content: |-
+    <p>The rise in frequency, volume, and pernicious effects of DDoS attacks
+       has elevated them from fare for the specialist to generalist press.
+       Numerous reports detail the taxonomy of DDoS types, the varying
+       motivations of their attackers, as well as the resulting business and
+       reputation loss of their targets.
+
+       BGP FlowSpec (RFC 5575, &quot;Dissemination of Flow Specification Rules&quot;)
+       can be used to rapidly disseminate filters that thwart attacks, being
+       particularly effective against the volumetric type.  Operators can
+       use existing FlowSpec components to match on pre-defined packet
+       header fields.  However recent enhancements to forwarding plane
+       filter implementations allow matches at arbitary locations within the
+       packet header and, to some extent, the payload.  This capability can
+       be used to detect highly amplified attacks, whose attack signature
+       remains relatively constant.
+
+       We define a new FlowSpec component, &quot;Flexible Match Conditions&quot;, with
+       similar matching semantics to those of existing components.  This
+       component will allow the operator to define bounded match conditions
+       using offsets and bitmasks.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-khare-idr-bgp-flowspec-payload-match-01
+    formattedref:
+      content: draft-khare-idr-bgp-flowspec-payload-match-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-01
@@ -157,7 +164,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-khare-idr-bgp-flowspec-payload-match-03
+    formattedref:
+      content: draft-khare-idr-bgp-flowspec-payload-match-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-khare-idr-bgp-flowspec-payload-match-03
@@ -173,7 +181,7 @@ series:
     content: Internet-Draft
   number: draft-khare-idr-bgp-flowspec-payload-match-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

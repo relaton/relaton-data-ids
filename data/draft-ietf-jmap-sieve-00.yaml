@@ -1,7 +1,7 @@
 ---
 id: draftietfjmapsieve00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Fastmail US LLC
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,21 +54,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a data model for managing Sieve scripts on
-    a\n   server using JMAP.\n\nOpen Issues\n\n   o  Do we need/want both \"content\"
-    and \"blobId\" in the SieveScript\n      object?  It may be simpler to have just
-    one way of specifying\n      content and \"blobId\" is more versatile and doesn't
-    require JSON-\n      encoding of the content.  Furthermore, use of the forthcoming(?)\n
-    \     Blob/set method would avoid the extra roundtrip of having to\n      upload
-    the blob first.\n\n   o  Should changes made by onSuccessActivateScript be reported
-    in the\n      response to the client-initiated request, or via a second implicit\n
-    \     SIeveScript/set response?\n\n   o  The strawman for SieveScript/test only
-    uses blobIds.  Will this\n      have to change once the issue regarding content/blobId
-    in\n      SieveScript is resolved?\n\n\t "
+  content: |-
+    <p>This document specifies a data model for managing Sieve scripts on a
+       server using JMAP.
+
+    Open Issues
+
+       o  Do we need/want both &quot;content&quot; and &quot;blobId&quot; in the SieveScript
+          object?  It may be simpler to have just one way of specifying
+          content and &quot;blobId&quot; is more versatile and doesn&#39;t require JSON-
+          encoding of the content.  Furthermore, use of the forthcoming(?)
+          Blob/set method would avoid the extra roundtrip of having to
+          upload the blob first.
+
+       o  Should changes made by onSuccessActivateScript be reported in the
+          response to the client-initiated request, or via a second implicit
+          SIeveScript/set response?
+
+       o  The strawman for SieveScript/test only uses blobIds.  Will this
+          have to change once the issue regarding content/blobId in
+          SieveScript is resolved?</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-jmap-sieve-01
+    formattedref:
+      content: draft-ietf-jmap-sieve-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jmap-sieve-01
@@ -84,7 +94,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-jmap-sieve-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

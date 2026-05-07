@@ -1,7 +1,7 @@
 ---
 id: draftniemisipsubnotetags03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -47,7 +47,7 @@ contributor:
         - language: en
           content: Nokia
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -55,18 +55,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The Session Initiation Protocol (SIP) events framework enables\n   receiving
-    asynchronous notification of various events from other SIP\n   user agents.  This
-    framework defines the procedures for creating,\n   refreshing and terminating
-    subscriptions, as well as fetching and\n   periodic polling of resource state.
-    \ These procedures have a serious\n   deficiency in that they do not allow state
-    to persist over a\n   subscription refresh, or between two consecutive polls.
-    \ This\n   inability to suppress notifications of state already known to the\n
-    \  subscriber results in superfluous traffic in the network.  This memo\n   defines
-    an extension to SIP events that allows the subscriber to\n   condition the subscription
-    request to whether the state has changed\n   since the previous notification was
-    received.  When such a condition\n   is true, either the body of an event notification
-    or the entire\n   notification message is suppressed.\n\t "
+  content: |-
+    <p>The Session Initiation Protocol (SIP) events framework enables
+       receiving asynchronous notification of various events from other SIP
+       user agents.  This framework defines the procedures for creating,
+       refreshing and terminating subscriptions, as well as fetching and
+       periodic polling of resource state.  These procedures have a serious
+       deficiency in that they do not allow state to persist over a
+       subscription refresh, or between two consecutive polls.  This
+       inability to suppress notifications of state already known to the
+       subscriber results in superfluous traffic in the network.  This memo
+       defines an extension to SIP events that allows the subscriber to
+       condition the subscription request to whether the state has changed
+       since the previous notification was received.  When such a condition
+       is true, either the body of an event notification or the entire
+       notification message is suppressed.</p>
 series:
 - type: main
   title:
@@ -75,7 +78,7 @@ series:
     content: Internet-Draft
   number: draft-niemi-sip-subnot-etags-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

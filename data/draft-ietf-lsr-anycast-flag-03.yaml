@@ -1,7 +1,7 @@
 ---
 id: draftietflsranycastflag03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: H3C
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -154,18 +154,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   An IPv4 prefix may be configured as anycast and as such the same\n
-    \  value can be advertised by multiple routers.  It is useful for other\n   routers
-    to know that the advertisement is for an anycast identifier.\n\n   Each OSPF prefix
-    is advertised along with an 8-bit field of\n   capabilities, by using the flag
-    flield in the OSPFv2 Extended Prefix\n   TLV, but the definition of anycast flag
-    to identify the IPv4 prefix\n   as anycast has not yet been defined.\n\n   This
-    document defines a new flag in the OSPFv2 Extended Prefix TLV\n   Flags to advertise
-    the anycast property.\n\n\t "
+  content: |-
+    <p>An IPv4 prefix may be configured as anycast and as such the same
+       value can be advertised by multiple routers.  It is useful for other
+       routers to know that the advertisement is for an anycast identifier.
+
+       Each OSPF prefix is advertised along with an 8-bit field of
+       capabilities, by using the flag flield in the OSPFv2 Extended Prefix
+       TLV, but the definition of anycast flag to identify the IPv4 prefix
+       as anycast has not yet been defined.
+
+       This document defines a new flag in the OSPFv2 Extended Prefix TLV
+       Flags to advertise the anycast property.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lsr-anycast-flag-02
+    formattedref:
+      content: draft-ietf-lsr-anycast-flag-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-anycast-flag-02
@@ -175,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-lsr-anycast-flag-04
+    formattedref:
+      content: draft-ietf-lsr-anycast-flag-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-anycast-flag-04
@@ -191,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lsr-anycast-flag-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

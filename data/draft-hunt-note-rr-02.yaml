@@ -1,7 +1,7 @@
 ---
 id: drafthuntnoterr02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: ISC
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -79,17 +79,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   While the DNS zone master file format has always allowed comments,\n
-    \  there is no existing mechanism to preserve comments once the zone has\n   been
-    loaded into memory or converted to a binary representation.\n   This note proposes
-    a new RR type \"NOTE\", to be allocated from the\n   Covert-RR type range proposed
-    in [I-D.krecicki-dns-covert], so that\n   confidential comments can be stored
-    alongside zone data, and included\n   in zone transfers when Covert semantics
-    are supported by the\n   secondary.\n\n\t "
+  content: |-
+    <p>While the DNS zone master file format has always allowed comments,
+       there is no existing mechanism to preserve comments once the zone has
+       been loaded into memory or converted to a binary representation.
+       This note proposes a new RR type &quot;NOTE&quot;, to be allocated from the
+       Covert-RR type range proposed in [I-D.krecicki-dns-covert], so that
+       confidential comments can be stored alongside zone data, and included
+       in zone transfers when Covert semantics are supported by the
+       secondary.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-hunt-note-rr-01
+    formattedref:
+      content: draft-hunt-note-rr-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hunt-note-rr-01
@@ -105,7 +108,7 @@ series:
     content: Internet-Draft
   number: draft-hunt-note-rr-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfradextreversecoa07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Cisco
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -79,21 +79,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a \"reverse Change-of-Authorization (CoA)\" path\n
-    \  for RADIUS packets.  A TLS connection is normally used to forward\n   request
-    packets from a client to a server and to send responses from\n   the server to
-    the client.  This specification allows a server to send\n   CoA request packets
-    to the client in \"reverse\" down that connection,\n   and for the client to send
-    responses to the server.  Without this\n   capability, it is in general impossible
-    for a server to send CoA\n   packets to a Network Access Server (NAS) that is
-    located behind a\n   firewall or NAT.  This reverse CoA functionality extends
-    the\n   available transport methods for CoA packets, but it does not change\n
-    \  anything else about how CoA packets are handled.\n\n   This document updates
-    RFC8559.\n\n\t "
+  content: |-
+    <p>This document defines a &quot;reverse Change-of-Authorization (CoA)&quot; path
+       for RADIUS packets.  A TLS connection is normally used to forward
+       request packets from a client to a server and to send responses from
+       the server to the client.  This specification allows a server to send
+       CoA request packets to the client in &quot;reverse&quot; down that connection,
+       and for the client to send responses to the server.  Without this
+       capability, it is in general impossible for a server to send CoA
+       packets to a Network Access Server (NAS) that is located behind a
+       firewall or NAT.  This reverse CoA functionality extends the
+       available transport methods for CoA packets, but it does not change
+       anything else about how CoA packets are handled.
+
+       This document updates RFC8559.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-radext-reverse-coa-06
+    formattedref:
+      content: draft-ietf-radext-reverse-coa-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-radext-reverse-coa-06
@@ -103,7 +107,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-radext-reverse-coa-08
+    formattedref:
+      content: draft-ietf-radext-reverse-coa-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-radext-reverse-coa-08
@@ -119,7 +124,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-radext-reverse-coa-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

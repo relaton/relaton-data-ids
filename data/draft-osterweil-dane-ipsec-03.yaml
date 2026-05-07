@@ -1,7 +1,7 @@
 ---
 id: draftosterweildaneipsec03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: VeriSign, Inc.
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -154,26 +154,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a new Domain Name System (DNS) resource record\n
-    \  type called the IPSECA RR that is used to associate an X.509\n   certificate
-    or a public key to an Internet Protocol Security (IPsec)\n   gateway in a similar
-    manner TLSA RR is used in the DNS-based\n   Authentication of Named Entities (DANE)
-    protocol does that for\n   Transport Layer Security (TLS) in order to make the
-    credential\n   discovery easier through DNS and to allow credential discovery
-    to be\n   performed in a secure manner leveraging DNS Security Extensions\n   (DNSSEC).
-    \ Among the issues addressed in this draft is the danger of\n   IP address spoofing
-    that can be a liability to IPsec endpoints.  It\n   is important to note that
-    the \"right destination\" in this document is\n   strictly defined by the response
-    of the DNS and does not attest to\n   the identity of the organization or the
-    ownership of the IP address\n   space.  The identity of the organization shall
-    be attested in an\n   X.509 certificate issued by a certification authority if
-    desired and\n   the ownership of the IP address space shall be attested by other\n
-    \  mechanisms such as Towards A Secure Routing System (TASRS)\n   architecture
-    or Resource Public Key Infrastructure (RPKI).\n\n\t "
+  content: |-
+    <p>This document defines a new Domain Name System (DNS) resource record
+       type called the IPSECA RR that is used to associate an X.509
+       certificate or a public key to an Internet Protocol Security (IPsec)
+       gateway in a similar manner TLSA RR is used in the DNS-based
+       Authentication of Named Entities (DANE) protocol does that for
+       Transport Layer Security (TLS) in order to make the credential
+       discovery easier through DNS and to allow credential discovery to be
+       performed in a secure manner leveraging DNS Security Extensions
+       (DNSSEC).  Among the issues addressed in this draft is the danger of
+       IP address spoofing that can be a liability to IPsec endpoints.  It
+       is important to note that the &quot;right destination&quot; in this document is
+       strictly defined by the response of the DNS and does not attest to
+       the identity of the organization or the ownership of the IP address
+       space.  The identity of the organization shall be attested in an
+       X.509 certificate issued by a certification authority if desired and
+       the ownership of the IP address space shall be attested by other
+       mechanisms such as Towards A Secure Routing System (TASRS)
+       architecture or Resource Public Key Infrastructure (RPKI).</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-osterweil-dane-ipsec-02
+    formattedref:
+      content: draft-osterweil-dane-ipsec-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-osterweil-dane-ipsec-02
@@ -189,7 +193,7 @@ series:
     content: Internet-Draft
   number: draft-osterweil-dane-ipsec-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

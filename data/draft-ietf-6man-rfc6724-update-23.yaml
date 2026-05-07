@@ -1,7 +1,7 @@
 ---
 id: draftietf6manrfc6724update23
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Tachyon Dynamics
 version:
-- draft: '23'
+- content: '23'
 language:
 - en
 script:
@@ -104,25 +104,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates the default address selection algorithm for\n
-    \  Internet Protocol Version 6 (IPv6), originally specified in RFC 6724,\n   based
-    on accumulated operational experience.  It introduces the\n   concept of \"known-local\"
-    Unique Local Address (ULA) prefixes within\n   the fd00::/8 block and specifies
-    that ULA-to-ULA communications using\n   such prefixes should be preferred over
-    both IPv4-to-IPv4 and GUA-to-\n   GUA (Global Unicast Address) communications
-    in local use scenarios.\n   The document defines mechanisms for nodes to identify
-    and incorporate\n   known-local prefixes into their address selection policy tables.
-    \ It\n   further clarifies the unconditional requirement for implementing Rule\n
-    \  5.5 of RFC 6724 and reduces the default precedence for 6to4\n   addresses.
-    \ These updates enhance the supportability of typical\n   deployment environments,
-    including automatic and unmanaged\n   configurations, and promote consistent IPv6-over-IPv4
-    precedence\n   behavior for both ULA and GUA within local networks.  The document\n
-    \  acknowledges that certain atypical deployment models may require\n   explicit
-    configuration to achieve intended operational outcomes.\n\n\t "
+  content: |-
+    <p>This document updates the default address selection algorithm for
+       Internet Protocol Version 6 (IPv6), originally specified in RFC 6724,
+       based on accumulated operational experience.  It introduces the
+       concept of &quot;known-local&quot; Unique Local Address (ULA) prefixes within
+       the fd00::/8 block and specifies that ULA-to-ULA communications using
+       such prefixes should be preferred over both IPv4-to-IPv4 and GUA-to-
+       GUA (Global Unicast Address) communications in local use scenarios.
+       The document defines mechanisms for nodes to identify and incorporate
+       known-local prefixes into their address selection policy tables.  It
+       further clarifies the unconditional requirement for implementing Rule
+       5.5 of RFC 6724 and reduces the default precedence for 6to4
+       addresses.  These updates enhance the supportability of typical
+       deployment environments, including automatic and unmanaged
+       configurations, and promote consistent IPv6-over-IPv4 precedence
+       behavior for both ULA and GUA within local networks.  The document
+       acknowledges that certain atypical deployment models may require
+       explicit configuration to achieve intended operational outcomes.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6man-rfc6724-update-22
+    formattedref:
+      content: draft-ietf-6man-rfc6724-update-22
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-22
@@ -132,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-rfc6724-update-24
+    formattedref:
+      content: draft-ietf-6man-rfc6724-update-24
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-rfc6724-update-24
@@ -148,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-rfc6724-update-23
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

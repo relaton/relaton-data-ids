@@ -1,7 +1,7 @@
 ---
 id: draftietfopenpgppqc17
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Proton AG
 version:
-- draft: '17'
+- content: '17'
 language:
 - en
 script:
@@ -129,18 +129,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a post-quantum public key algorithm extension\n
-    \  for the OpenPGP protocol, extending RFC9580.  Given the generally\n   assumed
-    threat of a cryptographically relevant quantum computer, this\n   extension provides
-    a basis for long-term secure OpenPGP signatures\n   and ciphertexts.  Specifically,
-    it defines composite public key\n   encryption based on ML-KEM (formerly CRYSTALS-Kyber),
-    composite\n   public key signatures based on ML-DSA (formerly CRYSTALS-Dilithium),\n
-    \  both in combination with elliptic curve cryptography, and SLH-DSA\n   (formerly
-    SPHINCS+) as a standalone public key signature scheme.\n\n\t "
+  content: |-
+    <p>This document defines a post-quantum public key algorithm extension
+       for the OpenPGP protocol, extending RFC9580.  Given the generally
+       assumed threat of a cryptographically relevant quantum computer, this
+       extension provides a basis for long-term secure OpenPGP signatures
+       and ciphertexts.  Specifically, it defines composite public key
+       encryption based on ML-KEM (formerly CRYSTALS-Kyber), composite
+       public key signatures based on ML-DSA (formerly CRYSTALS-Dilithium),
+       both in combination with elliptic curve cryptography, and SLH-DSA
+       (formerly SPHINCS+) as a standalone public key signature scheme.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-openpgp-pqc-16
+    formattedref:
+      content: draft-ietf-openpgp-pqc-16
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-openpgp-pqc-16
@@ -156,7 +159,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-openpgp-pqc-17
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

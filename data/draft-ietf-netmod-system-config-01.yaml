@@ -1,7 +1,7 @@
 ---
 id: draftietfnetmodsystemconfig01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,21 +104,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates Network Management Datastore Architecture\n   (NMDA)
-    to define a read-only conventional configuration datastore\n   called \"system\"
-    to hold system-defined configurations.  To avoid\n   clients' explicit copy/paste
-    of referenced system-defined\n   configuration into the target configuration datastore
-    (e.g.,\n   <running>), a \"resolve-system\" parameter is defined to allow the\n
-    \  server acting as a \"system client\" to copy referenced system-defined\n   nodes
-    automatically.  This solution enables clients manipulating the\n   target configuration
-    datastore (e.g., <running>) to reference nodes\n   defined in <system>, override
-    values of configurations defined in\n   <system>, and configure descendant nodes
-    of system-defined nodes.\n\n   This document updates RFC 8342, RFC 6241, RFC 8526
-    and RFC 8040.\n\n\t "
+  content: |-
+    <p>This document updates Network Management Datastore Architecture
+       (NMDA) to define a read-only conventional configuration datastore
+       called &quot;system&quot; to hold system-defined configurations.  To avoid
+       clients&#39; explicit copy/paste of referenced system-defined
+       configuration into the target configuration datastore (e.g.,
+       &lt;running&gt;), a &quot;resolve-system&quot; parameter is defined to allow the
+       server acting as a &quot;system client&quot; to copy referenced system-defined
+       nodes automatically.  This solution enables clients manipulating the
+       target configuration datastore (e.g., &lt;running&gt;) to reference nodes
+       defined in &lt;system&gt;, override values of configurations defined in
+       &lt;system&gt;, and configure descendant nodes of system-defined nodes.
+
+       This document updates RFC 8342, RFC 6241, RFC 8526 and RFC 8040.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-netmod-system-config-00
+    formattedref:
+      content: draft-ietf-netmod-system-config-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netmod-system-config-00
@@ -128,7 +132,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-netmod-system-config-02
+    formattedref:
+      content: draft-ietf-netmod-system-config-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netmod-system-config-02
@@ -144,7 +149,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-netmod-system-config-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

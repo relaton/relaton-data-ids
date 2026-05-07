@@ -1,7 +1,7 @@
 ---
 id: draftwanglsrprefixunreachableannoucement11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Huawei Technologies
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -132,20 +132,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a mechanism that can trigger the switchover\n
-    \  of the services which rely on the reachability of the peer endpoints,\n   for
-    example the BGP or the tunnel services.  It is mainly used in the\n   scenarios
-    that the summary prefixes are advertised at the border\n   routers whereas the
-    services endpoints are located in different IGP\n   areas or levels, whose reachabilities
-    are covered by the summary\n   prefixes.\n\n   It introduces a new signaling mechanism
-    using a negative prefix\n   announcement called Prefix Unreachable Announcement
-    Mechanism(PUAM),\n   utilized to detect a link or node down event and signal the
-    overlay\n   services that the communication endpoint is unreachabe to force the\n
-    \  overlay service headend switchover immediately.\n\n\t "
+  content: |-
+    <p>This document describes a mechanism that can trigger the switchover
+       of the services which rely on the reachability of the peer endpoints,
+       for example the BGP or the tunnel services.  It is mainly used in the
+       scenarios that the summary prefixes are advertised at the border
+       routers whereas the services endpoints are located in different IGP
+       areas or levels, whose reachabilities are covered by the summary
+       prefixes.
+
+       It introduces a new signaling mechanism using a negative prefix
+       announcement called Prefix Unreachable Announcement Mechanism(PUAM),
+       utilized to detect a link or node down event and signal the overlay
+       services that the communication endpoint is unreachabe to force the
+       overlay service headend switchover immediately.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-wang-lsr-prefix-unreachable-annoucement-10
+    formattedref:
+      content: draft-wang-lsr-prefix-unreachable-annoucement-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-lsr-prefix-unreachable-annoucement-10
@@ -155,7 +160,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-wang-lsr-prefix-unreachable-annoucement-12
+    formattedref:
+      content: draft-wang-lsr-prefix-unreachable-annoucement-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-lsr-prefix-unreachable-annoucement-12
@@ -171,7 +177,7 @@ series:
     content: Internet-Draft
   number: draft-wang-lsr-prefix-unreachable-annoucement-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

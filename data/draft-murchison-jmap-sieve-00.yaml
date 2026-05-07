@@ -1,7 +1,7 @@
 ---
 id: draftmurchisonjmapsieve00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Fastmail US LLC
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,16 +54,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a data model for managing Sieve scripts on
-    a\n   server using JMAP.\n\nOpen Issues\n\n   o  Should setting isActive==true
-    on a script automatically deactivate\n      any other existing active script,
-    or should the client have to do\n      so itself (as is currently documented)?\n\n
-    \  o  Do we want/need a SieveScript/copy method?\n\n   o  Do we want to leverage
-    draft-ietf-jmap-quotas to query Sieve\n      script storage quotas?\n\n\t "
+  content: |-
+    <p>This document specifies a data model for managing Sieve scripts on a
+       server using JMAP.
+
+    Open Issues
+
+       o  Should setting isActive==true on a script automatically deactivate
+          any other existing active script, or should the client have to do
+          so itself (as is currently documented)?
+
+       o  Do we want/need a SieveScript/copy method?
+
+       o  Do we want to leverage draft-ietf-jmap-quotas to query Sieve
+          script storage quotas?</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-murchison-jmap-sieve-01
+    formattedref:
+      content: draft-murchison-jmap-sieve-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-murchison-jmap-sieve-01
@@ -79,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-murchison-jmap-sieve-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftdicksondnsopglueless00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: GoDaddy
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,18 +54,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This Internet Draft proposes a Best Current Practice for protecting\n
-    \  authority servers against MITM and poisoning attacks, using a domain\n   naming
-    strategy to not require glue A/AAAA records and use of DNSSEC.\n\n   This BCP
-    assumes the use of validating resolvers, which should\n   already be a BCP itself.\n\n
-    \  MITM and poisoning attacks should only be effective/possible against\n   unsigned
-    domains.\n\n   However, until all domains are signed, this guidance is relevant,
-    in\n   that it can limit the attack surface of unsigned domains.\n\n   This guidance
-    should be combined with [I-D.dickson-dnsop-ds-hack]\n\n\t "
+  content: |-
+    <p>This Internet Draft proposes a Best Current Practice for protecting
+       authority servers against MITM and poisoning attacks, using a domain
+       naming strategy to not require glue A/AAAA records and use of DNSSEC.
+
+       This BCP assumes the use of validating resolvers, which should
+       already be a BCP itself.
+
+       MITM and poisoning attacks should only be effective/possible against
+       unsigned domains.
+
+       However, until all domains are signed, this guidance is relevant, in
+       that it can limit the attack surface of unsigned domains.
+
+       This guidance should be combined with [I-D.dickson-dnsop-ds-hack]</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-dickson-dnsop-glueless-01
+    formattedref:
+      content: draft-dickson-dnsop-glueless-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dickson-dnsop-glueless-01
@@ -81,7 +89,7 @@ series:
     content: Internet-Draft
   number: draft-dickson-dnsop-glueless-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfidrbgpfwdrr04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Juniper Networks, Inc.
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -79,26 +79,42 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The procedures in BGP Route Reflection (RR) spec RFC4456 primarily\n
-    \  deal with scenarios where the RR is reflecting BGP routes with next\n   hop
-    unchanged.  In some deployments like Inter-AS Option C\n   (Section 10, RFC4364),
-    the ABRs may perform RR functionality with\n   nexthop set to self.  If adequate
-    precautions are not taken, the\n   RFC4456 procedures can result in traffic forwarding
-    loop in such\n   deployments.\n\n   This document illustrates one such looping
-    scenario, and specifies\n   approaches to minimize possiblity of traffic forwarding
-    loop in such\n   deployments.  An example with Inter-AS Option C (Section 10,
-    RFC4364)\n   deployment is used, where RR with next hop self is used at redundant\n
-    \  ABRs when they re-advertise BGP transport family routes between\n   multiple
-    IGP domains.\n\n\n\t "
+  content: |-
+    <p>The procedures in BGP Route Reflection (RR) spec RFC4456 primarily
+       deal with scenarios where the RR is reflecting BGP routes with next
+       hop unchanged.  In some deployments like Inter-AS Option C
+       (Section 10, RFC4364), the ABRs may perform RR functionality with
+       nexthop set to self.  If adequate precautions are not taken, the
+       RFC4456 procedures can result in traffic forwarding loop in such
+       deployments.
+
+       This document illustrates one such looping scenario, and specifies
+       approaches to minimize possiblity of traffic forwarding loop in such
+       deployments.  An example with Inter-AS Option C (Section 10, RFC4364)
+       deployment is used, where RR with next hop self is used at redundant
+       ABRs when they re-advertise BGP transport family routes between
+       multiple IGP domains.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-idr-bgp-fwd-rr-03
+    formattedref:
+      content: draft-ietf-idr-bgp-fwd-rr-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-03
     docidentifier:
     - content: draft-ietf-idr-bgp-fwd-rr-03
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-idr-bgp-fwd-rr-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-05
+    docidentifier:
+    - content: draft-ietf-idr-bgp-fwd-rr-05
       type: Internet-Draft
       primary: true
 series:
@@ -109,7 +125,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-bgp-fwd-rr-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

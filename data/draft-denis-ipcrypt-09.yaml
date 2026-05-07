@@ -1,7 +1,7 @@
 ---
 id: draftdenisipcrypt09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Fastly Inc.
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -54,24 +54,32 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IP addresses are personally identifiable information that requires\n
-    \  protection, yet common techniques such as truncation destroy data\n   irreversibly
-    while providing inconsistent privacy guarantees, and ad-\n   hoc encryption schemes
-    often lack interoperability and security\n   analysis.\n\n   This document specifies
-    secure, efficient methods for encrypting IP\n   addresses for privacy-preserving
-    storage, logging, and analytics.\n   The methods enable data analysis while protecting
-    user privacy from\n   third parties without key access, addressing data minimization\n
-    \  concerns raised in [RFC6973].\n\n   Four concrete instantiations are defined:
-    ipcrypt-deterministic\n   provides deterministic, format-preserving encryption
-    with 16-byte\n   outputs; ipcrypt-pfx provides deterministic, prefix-preserving\n
-    \  encryption that maintains network relationships with native address\n   sizes
-    (4 bytes for IPv4, 16 bytes for IPv6); while ipcrypt-nd and\n   ipcrypt-ndx introduce
-    randomness to prevent correlation.  All methods\n   are reversible with the encryption
-    key and designed for high-\n   performance processing at network speeds.\n\n\t "
+  content: |-
+    <p>IP addresses are personally identifiable information that requires
+       protection, yet common techniques such as truncation destroy data
+       irreversibly while providing inconsistent privacy guarantees, and ad-
+       hoc encryption schemes often lack interoperability and security
+       analysis.
+
+       This document specifies secure, efficient methods for encrypting IP
+       addresses for privacy-preserving storage, logging, and analytics.
+       The methods enable data analysis while protecting user privacy from
+       third parties without key access, addressing data minimization
+       concerns raised in [RFC6973].
+
+       Four concrete instantiations are defined: ipcrypt-deterministic
+       provides deterministic, format-preserving encryption with 16-byte
+       outputs; ipcrypt-pfx provides deterministic, prefix-preserving
+       encryption that maintains network relationships with native address
+       sizes (4 bytes for IPv4, 16 bytes for IPv6); while ipcrypt-nd and
+       ipcrypt-ndx introduce randomness to prevent correlation.  All methods
+       are reversible with the encryption key and designed for high-
+       performance processing at network speeds.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-denis-ipcrypt-08
+    formattedref:
+      content: draft-denis-ipcrypt-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-denis-ipcrypt-08
@@ -81,7 +89,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-denis-ipcrypt-10
+    formattedref:
+      content: draft-denis-ipcrypt-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-denis-ipcrypt-10
@@ -97,7 +106,7 @@ series:
     content: Internet-Draft
   number: draft-denis-ipcrypt-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

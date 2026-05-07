@@ -1,7 +1,8 @@
 ---
 id: draftwangtlshybridecdhscloud
-schema_version: v1.4.1
-formattedref: draft-wang-tls-hybrid-ecdh-scloud
+schema_version: v1.5.6
+formattedref:
+  content: draft-wang-tls-hybrid-ecdh-scloud
 title:
 - language: en
   script: Latn
@@ -13,20 +14,38 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This draft specifies how to run hybrid key exchange with ECDHE and\n
-    \  Scloud+ in Transport Layer Security (TLS) protocol version 1.3 (TLS\n   1.3)
-    to mitigate quantum threats.  Scloud+ is an unstructured lattice\n   based KEM
-    with post-quantum security.  This draft follows the post-\n   quantum hybrid key
-    exchange framework specified by [TLS.Hybrid], by\n   concatenating the public
-    keys and ciphertexts of ECDHE and Scloud+.\n\n   [EDNOTE: ... ]\n\n\t "
+  content: |-
+    <p>This draft specifies how to enable hybrid key exchange with ECDHE and
+       SCloud+ in Transport Layer Security protocol version 1.3 (TLS 1.3) to
+       mitigate quantum threats.  SCloud+ is an unstructured lattice based
+       KEM (key encapsulation mechanism) with post-quantum security.  This
+       draft follows the post-quantum hybrid key exchange framework
+       specified by [TLS.Hybrid], by concatenating the public keys and
+       ciphertexts of ECDHE and SCloud+. Three concrete hybrid key exchange
+       schemes are specified in this draft, which are X25519SCloud+128,
+       SecP256r1SCloud+192 and SecP384r1SCloud+256.
+
+       [EDNOTE: ... ]</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-wang-tls-hybrid-ecdh-scloud-00
+    formattedref:
+      content: draft-wang-tls-hybrid-ecdh-scloud-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-wang-tls-hybrid-ecdh-scloud-00
     docidentifier:
     - content: draft-wang-tls-hybrid-ecdh-scloud-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-tls-hybrid-ecdh-scloud-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-tls-hybrid-ecdh-scloud-01
+    docidentifier:
+    - content: draft-wang-tls-hybrid-ecdh-scloud-01
       type: Internet-Draft
       primary: true

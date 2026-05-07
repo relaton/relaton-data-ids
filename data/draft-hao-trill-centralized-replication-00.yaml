@@ -1,7 +1,7 @@
 ---
 id: drafthaotrillcentralizedreplication00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Tao Han
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -89,22 +89,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In TRILL active-active access scenario, RPF check failure issue may\n
-    \  occur when pseduonode nickname mechanism in [TRILLPN] is used. This\n   draft
-    is to solve RPF check failure issue through centralized\n   replication for BUM
-    traffic solution. The basic idea is that all\n   ingress RBs send BUM traffic
-    to a centralized node through unicast\n   TRILL encapsulation, the centralized
-    node decapsulates the unicast\n   TRILL packet. Then the centralized node searches
-    its multicast\n   forwarding table to replicates a copy of the BUM traffic to\n
-    \  destination RBs through TRILL unicast encapsulation. Through\n   centralized
-    replication solution, only unicast forwarding behavior is\n   required between
-    edge RB and centralized RB, so no RPF check function\n   is required on any device
-    in TRILL campus through centralized\n   replication solution and no RPF check
-    failure issue occurs.\n\n\t "
+  content: |-
+    <p>In TRILL active-active access scenario, RPF check failure issue may
+       occur when pseduonode nickname mechanism in [TRILLPN] is used. This
+       draft is to solve RPF check failure issue through centralized
+       replication for BUM traffic solution. The basic idea is that all
+       ingress RBs send BUM traffic to a centralized node through unicast
+       TRILL encapsulation, the centralized node decapsulates the unicast
+       TRILL packet. Then the centralized node searches its multicast
+       forwarding table to replicates a copy of the BUM traffic to
+       destination RBs through TRILL unicast encapsulation. Through
+       centralized replication solution, only unicast forwarding behavior is
+       required between edge RB and centralized RB, so no RPF check function
+       is required on any device in TRILL campus through centralized
+       replication solution and no RPF check failure issue occurs.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-hao-trill-centralized-replication-01
+    formattedref:
+      content: draft-hao-trill-centralized-replication-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-hao-trill-centralized-replication-01
@@ -120,7 +123,7 @@ series:
     content: Internet-Draft
   number: draft-hao-trill-centralized-replication-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

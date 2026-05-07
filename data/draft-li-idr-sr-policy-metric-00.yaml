@@ -1,7 +1,7 @@
 ---
 id: draftliidrsrpolicymetric00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: China Mobile
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,19 +79,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   To enable the headend node to do performance-aware path selection,\n
-    \  this document proposes an extension to the BGP SR Policy protocol by\n   defining
-    a new optional Metric Sub-TLV within the BGP Tunnel\n   Encapsulation Attribute
-    [RFC9012].  The introduced Metric Sub-TLV\n   encodes performance parameters (such
-    as latency, bandwidth,\n   reliability, etc.) for SR Policy paths.  This specification
-    also\n   updates the BGP route selection procedures in [RFC4271], modifying\n
-    \  the Breaking Ties (Phase 2) logic to prioritize the metrics for SR\n   Policy
-    paths.\n\n   Key contributions include:\n\n   *  Introduce Metric Sub-TLV in BGP
-    SR Policy\n\n   *  Update the tie-breaking procedure for BGP route selection\n\n\t "
+  content: |-
+    <p>To enable the headend node to do performance-aware path selection,
+       this document proposes an extension to the BGP SR Policy protocol by
+       defining a new optional Metric Sub-TLV within the BGP Tunnel
+       Encapsulation Attribute [RFC9012].  The introduced Metric Sub-TLV
+       encodes performance parameters (such as latency, bandwidth,
+       reliability, etc.) for SR Policy paths.  This specification also
+       updates the BGP route selection procedures in [RFC4271], modifying
+       the Breaking Ties (Phase 2) logic to prioritize the metrics for SR
+       Policy paths.
+
+       Key contributions include:
+
+       *  Introduce Metric Sub-TLV in BGP SR Policy
+
+       *  Update the tie-breaking procedure for BGP route selection</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-li-idr-sr-policy-metric-01
+    formattedref:
+      content: draft-li-idr-sr-policy-metric-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-idr-sr-policy-metric-01
@@ -107,7 +115,7 @@ series:
     content: Internet-Draft
   number: draft-li-idr-sr-policy-metric-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

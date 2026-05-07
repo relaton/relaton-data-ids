@@ -1,7 +1,7 @@
 ---
 id: draftgaoaltoroutingstateabstraction06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -163,7 +163,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -171,23 +171,31 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The path vector extension [I-D.ietf-alto-path-vector] has extended\n
-    \  the original ALTO protocol [RFC7285] with the ability to represent a\n   more
-    detailed view of the network, containing not only end-to-end\n   metrics but also
-    information about shared bottlenecks.\n\n   However, the view computed by straw
-    man algorithms can contain\n   redundant information and result in unnecessary
-    communication\n   overhead.  The situation gets even worse when certain ALTO extensions\n
-    \  are enabled, for example, the incremental update extension\n   [I-D.ietf-alto-incr-update-sse]
-    which continuously pushes data\n   changes to ALTO clients.  Redundant information
-    can trigger\n   unnecessary updates.\n\n   In this document, an algorithm is described
-    which can effectively\n   reduce the redundancy in the network view while still
-    providing the\n   same information as in the original path vectors.  The algorithm
-    is\n   fully compatible with the path vector extension and has several by-\n   products
-    which can be leveraged by other extensions to achieve better\n   performances.\n\n\n\t "
+  content: |-
+    <p>The path vector extension [I-D.ietf-alto-path-vector] has extended
+       the original ALTO protocol [RFC7285] with the ability to represent a
+       more detailed view of the network, containing not only end-to-end
+       metrics but also information about shared bottlenecks.
+
+       However, the view computed by straw man algorithms can contain
+       redundant information and result in unnecessary communication
+       overhead.  The situation gets even worse when certain ALTO extensions
+       are enabled, for example, the incremental update extension
+       [I-D.ietf-alto-incr-update-sse] which continuously pushes data
+       changes to ALTO clients.  Redundant information can trigger
+       unnecessary updates.
+
+       In this document, an algorithm is described which can effectively
+       reduce the redundancy in the network view while still providing the
+       same information as in the original path vectors.  The algorithm is
+       fully compatible with the path vector extension and has several by-
+       products which can be leveraged by other extensions to achieve better
+       performances.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-gao-alto-routing-state-abstraction-05
+    formattedref:
+      content: draft-gao-alto-routing-state-abstraction-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gao-alto-routing-state-abstraction-05
@@ -197,7 +205,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-gao-alto-routing-state-abstraction-07
+    formattedref:
+      content: draft-gao-alto-routing-state-abstraction-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gao-alto-routing-state-abstraction-07
@@ -213,7 +222,7 @@ series:
     content: Internet-Draft
   number: draft-gao-alto-routing-state-abstraction-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

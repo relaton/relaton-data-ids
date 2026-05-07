@@ -1,7 +1,7 @@
 ---
 id: draftnordmark6manrsrefresh01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -104,25 +104,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IPv6 Neighbor Discovery relies on periodic multicast Router\n   Advertisement
-    messages to update timer values and to distribute new\n   information (such as
-    new prefixes) to hosts.  On some links the use\n   of periodic multicast messages
-    to all host becomes expensive, and in\n   some cases it results in hosts waking
-    up frequently.  Many\n   implementations of RFC 4861 also use multicast for solicited
-    Router\n   Advertisement messages, even though that behavior is optional.\n\n
-    \  This specification provides an optional mechanism for hosts and\n   routers
-    where instead of periodic multicast Router Advertisements the\n   hosts are instructed
-    (by the routers) to use unicast Router\n   Solicitations to request refreshed
-    Router Advertisements.  This\n   mechanism is enabled by configuring the router
-    to include a new\n   option in the Router Advertisement in order to allow the
-    network\n   administrator to choose host behavior based on whether periodic\n
-    \  multicast are more efficient on their link or not.  The routers can\n   also
-    tell whether the hosts are capable of the new behavior through a\n   new flag
-    in the Router Solicitations.\n\n\t "
+  content: |-
+    <p>IPv6 Neighbor Discovery relies on periodic multicast Router
+       Advertisement messages to update timer values and to distribute new
+       information (such as new prefixes) to hosts.  On some links the use
+       of periodic multicast messages to all host becomes expensive, and in
+       some cases it results in hosts waking up frequently.  Many
+       implementations of RFC 4861 also use multicast for solicited Router
+       Advertisement messages, even though that behavior is optional.
+
+       This specification provides an optional mechanism for hosts and
+       routers where instead of periodic multicast Router Advertisements the
+       hosts are instructed (by the routers) to use unicast Router
+       Solicitations to request refreshed Router Advertisements.  This
+       mechanism is enabled by configuring the router to include a new
+       option in the Router Advertisement in order to allow the network
+       administrator to choose host behavior based on whether periodic
+       multicast are more efficient on their link or not.  The routers can
+       also tell whether the hosts are capable of the new behavior through a
+       new flag in the Router Solicitations.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-nordmark-6man-rs-refresh-00
+    formattedref:
+      content: draft-nordmark-6man-rs-refresh-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-nordmark-6man-rs-refresh-00
@@ -138,7 +143,7 @@ series:
     content: Internet-Draft
   number: draft-nordmark-6man-rs-refresh-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

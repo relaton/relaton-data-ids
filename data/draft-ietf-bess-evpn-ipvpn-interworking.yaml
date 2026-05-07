@@ -1,11 +1,12 @@
 ---
 id: draftietfbessevpnipvpninterworking
-schema_version: v1.4.1
-formattedref: draft-ietf-bess-evpn-ipvpn-interworking
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-bess-evpn-ipvpn-interworking
 title:
 - language: en
   script: Latn
-  content: EVPN Interworking with IPVPN
+  content: Interconnecting EVPN and IPVPN Domains
 docidentifier:
 - content: draft-ietf-bess-evpn-ipvpn-interworking
   type: Internet-Draft
@@ -13,23 +14,26 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Ethernet Virtual Private Network (EVPN) provides a unified BGP\n   control
-    plane for both intra- and inter-subnet forwarding within\n   tenant networks.
-    \ When a tenant network spans multiple domains —\n   including EVPN domains as
-    well as domains that use BGP VPN-IP or IP\n   address families for inter-subnet
-    forwarding — it becomes necessary\n   to define the interworking mechanisms among
-    these BGP domains (EVPN,\n   VPN-IP, and IP) to ensure seamless end-to-end tenant
-    connectivity.\n\n   In addition, this document defines a new BGP Path Attribute,
-    referred\n   to as D-PATH (Domain PATH), which provides loop prevention for\n
-    \  gateway nodes by protecting against control plane loops.  The\n   introduction
-    of D-PATH modifies the BGP best path selection process\n   for Multiprotocol BGP
-    routes of SAFI 128 (IPVPN) and EVPN IP Prefix\n   routes.  As a result, this specification
-    updates the BGP best path\n   selection procedure, but only in the context of
-    IPVPN and EVPN route\n   families.\n\n\t "
+  content: |-
+    <p>Ethernet Virtual Private Network (EVPN) provides a unified BGP
+       control plane for both intra- and inter-subnet forwarding within
+       tenant networks.  When a tenant network spans multiple domains,
+       including any combination of EVPN and IPVPN domains, it becomes
+       necessary to define the interworking mechanisms among these BGP
+       domains (EVPN and IPVPN) to ensure seamless end-to-end tenant
+       connectivity.  This document defines these interworking procedures.
+
+       In addition, this document defines a new BGP Path Attribute, referred
+       to as D-PATH (Domain PATH), which provides loop prevention for
+       gateway nodes by protecting against control plane loops.  The
+       introduction of D-PATH modifies the BGP best path selection process
+       for Multiprotocol BGP inter-subnet forwarding routes of SAFI 128
+       (IPVPN) and SAFI 70 (EVPN).</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-00
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-00
@@ -39,7 +43,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-01
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-01
@@ -49,7 +54,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-02
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-02
@@ -59,7 +65,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-03
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-03
@@ -69,7 +76,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-04
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-04
@@ -79,7 +87,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-05
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-05
@@ -89,7 +98,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-06
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-06
@@ -99,7 +109,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-07
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-07
@@ -109,7 +120,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-08
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-08
@@ -119,7 +131,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-09
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-09
@@ -129,7 +142,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-10
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-10
@@ -139,7 +153,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-11
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-11
@@ -149,7 +164,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-12
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-12
@@ -159,7 +175,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-13
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-13
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-13
@@ -169,7 +186,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-14
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-14
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-14
@@ -179,11 +197,45 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-bess-evpn-ipvpn-interworking-15
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-15
     docidentifier:
     - content: draft-ietf-bess-evpn-ipvpn-interworking-15
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-16
+    docidentifier:
+    - content: draft-ietf-bess-evpn-ipvpn-interworking-16
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-17
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-17
+    docidentifier:
+    - content: draft-ietf-bess-evpn-ipvpn-interworking-17
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-bess-evpn-ipvpn-interworking-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-bess-evpn-ipvpn-interworking-18
+    docidentifier:
+    - content: draft-ietf-bess-evpn-ipvpn-interworking-18
       type: Internet-Draft
       primary: true

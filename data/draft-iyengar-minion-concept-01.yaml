@@ -1,7 +1,7 @@
 ---
 id: draftiyengarminionconcept01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Josh Graessley
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -89,25 +89,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Minion uses TCP-format packets on-the-wire, to provide full\n   compatibility
-    with existing NATs, Firewalls, and similar middleboxes,\n   but provides a richer
-    set of facilities to the application.  Minion's\n   richer facilities include
-    a message-oriented API rather than TCP's\n   unstructured byte-stream service
-    model, multiplexing of multiple\n   messages (or message streams) on a single
-    connection, interleaving of\n   multiplexed messages (to eliminate head-of-line
-    blocking), message\n   cancellation, request/reply support, ordered and unordered
-    messages,\n   chained messages, multiple priority levels with byte-granularity\n
-    \  preemption, and DTLS Security.  Minion can be implemented entirely as\n   a
-    user-level library, without waiting for any special support from OS\n   vendors,
-    and provides immediate benefits to application developers.\n   Additionally, Minion
-    is able to take advantage of some simple kernel\n   extensions to provide enhanced
-    services that go beyond what is\n   possible with traditional TCP.  These kernel
-    extensions are optional,\n   and even without them, Minion offers worthwhile benefits
-    to\n   application developers.\n\n\t "
+  content: |-
+    <p>Minion uses TCP-format packets on-the-wire, to provide full
+       compatibility with existing NATs, Firewalls, and similar middleboxes,
+       but provides a richer set of facilities to the application.  Minion&#39;s
+       richer facilities include a message-oriented API rather than TCP&#39;s
+       unstructured byte-stream service model, multiplexing of multiple
+       messages (or message streams) on a single connection, interleaving of
+       multiplexed messages (to eliminate head-of-line blocking), message
+       cancellation, request/reply support, ordered and unordered messages,
+       chained messages, multiple priority levels with byte-granularity
+       preemption, and DTLS Security.  Minion can be implemented entirely as
+       a user-level library, without waiting for any special support from OS
+       vendors, and provides immediate benefits to application developers.
+       Additionally, Minion is able to take advantage of some simple kernel
+       extensions to provide enhanced services that go beyond what is
+       possible with traditional TCP.  These kernel extensions are optional,
+       and even without them, Minion offers worthwhile benefits to
+       application developers.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-iyengar-minion-concept-00
+    formattedref:
+      content: draft-iyengar-minion-concept-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-iyengar-minion-concept-00
@@ -117,7 +121,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-iyengar-minion-concept-02
+    formattedref:
+      content: draft-iyengar-minion-concept-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-iyengar-minion-concept-02
@@ -133,7 +138,7 @@ series:
     content: Internet-Draft
   number: draft-iyengar-minion-concept-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

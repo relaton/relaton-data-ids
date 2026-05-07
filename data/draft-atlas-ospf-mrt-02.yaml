@@ -1,7 +1,7 @@
 ---
 id: draftatlasospfmrt02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         language: en
         content: Zhenbin Li
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -129,20 +129,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies extensions to OSPF to support the distributed\n
-    \  computation of Maximally Redundant Trees (MRT).  Some example uses of\n   the
-    MRTs include IP/LDP Fast-Reroute and global protection or live-\n   live for multicast
-    traffic.  The extensions indicate what MRT\n   profile(s) each router supports.
-    \ Different MRT profiles can be\n   defined to support different uses and to allow
-    transitioning of\n   capabilities.  An extension is introduced to flood MRT-Ineligible\n
-    \  links, due to administrative policy.\n\n   The need for a mechanism to allow
-    routers to advertise a worst-case\n   FIB compute/install time is well understood
-    for controlling\n   convergence.  This specification introduces the Controlled\n
-    \  Convergence TLV to be carried in the Router Information LSA.\n\n\t "
+  content: |-
+    <p>This document specifies extensions to OSPF to support the distributed
+       computation of Maximally Redundant Trees (MRT).  Some example uses of
+       the MRTs include IP/LDP Fast-Reroute and global protection or live-
+       live for multicast traffic.  The extensions indicate what MRT
+       profile(s) each router supports.  Different MRT profiles can be
+       defined to support different uses and to allow transitioning of
+       capabilities.  An extension is introduced to flood MRT-Ineligible
+       links, due to administrative policy.
+
+       The need for a mechanism to allow routers to advertise a worst-case
+       FIB compute/install time is well understood for controlling
+       convergence.  This specification introduces the Controlled
+       Convergence TLV to be carried in the Router Information LSA.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-atlas-ospf-mrt-01
+    formattedref:
+      content: draft-atlas-ospf-mrt-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-atlas-ospf-mrt-01
@@ -152,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-atlas-ospf-mrt-03
+    formattedref:
+      content: draft-atlas-ospf-mrt-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-atlas-ospf-mrt-03
@@ -168,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-atlas-ospf-mrt-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

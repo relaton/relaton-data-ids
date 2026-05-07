@@ -1,7 +1,7 @@
 ---
 id: draftrescorlatlsrenegotiation01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -116,7 +116,7 @@ contributor:
         language: en
         content: One Way
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -124,13 +124,16 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "SSL and TLS renegotiation are vulnerable to an attack in which the\nattacker
-    forms a TLS connection with the target server, injects\ncontent of his choice,
-    and then splices in a new TLS connection from\na client.  The server treats the
-    client's initial TLS handshake as a\nrenegotiation and thus believes that the
-    initial data transmitted by\nthe attacker is from the same entity as the subsequent
-    client data.\nThis draft defines a TLS extension to cryptographically tie\nrenegotiations
-    to the TLS connections they are being performed over,\nthus preventing this attack.\n\t "
+  content: |-
+    <p>SSL and TLS renegotiation are vulnerable to an attack in which the
+    attacker forms a TLS connection with the target server, injects
+    content of his choice, and then splices in a new TLS connection from
+    a client.  The server treats the client&#39;s initial TLS handshake as a
+    renegotiation and thus believes that the initial data transmitted by
+    the attacker is from the same entity as the subsequent client data.
+    This draft defines a TLS extension to cryptographically tie
+    renegotiations to the TLS connections they are being performed over,
+    thus preventing this attack.</p>
 series:
 - type: main
   title:
@@ -139,7 +142,7 @@ series:
     content: Internet-Draft
   number: draft-rescorla-tls-renegotiation-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

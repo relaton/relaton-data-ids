@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopdelegationonly02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: USC/ISI
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -79,20 +79,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document introduces a new DNSKEY flag called DELEGATION_ONLY\n
-    \  that indicates that this zone will only produce delegation responses\n   for
-    data outside of its own apex (or _underscore labels).  That is,\n   the Answer
-    Section for queries that do not involve the apex (or\n   _underscore labels) of
-    the zone is empty, and only glue records in\n   the Authority Section and Additional
-    Section will be acceptable data\n   in the response message.  Additionally, it
-    indicates that it is not\n   expected that the parent of this delegation-only
-    zone bypasses or\n   removes the delegation to this zone.  DNSSEC Validating Resolvers
-    can\n   use this flag to mark any data that violates the DELEGATION_ONLY\n   policy
-    as Bogus.\n\n\t "
+  content: |-
+    <p>This document introduces a new DNSKEY flag called DELEGATION_ONLY
+       that indicates that this zone will only produce delegation responses
+       for data outside of its own apex (or _underscore labels).  That is,
+       the Answer Section for queries that do not involve the apex (or
+       _underscore labels) of the zone is empty, and only glue records in
+       the Authority Section and Additional Section will be acceptable data
+       in the response message.  Additionally, it indicates that it is not
+       expected that the parent of this delegation-only zone bypasses or
+       removes the delegation to this zone.  DNSSEC Validating Resolvers can
+       use this flag to mark any data that violates the DELEGATION_ONLY
+       policy as Bogus.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-delegation-only-01
+    formattedref:
+      content: draft-ietf-dnsop-delegation-only-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-delegation-only-01
@@ -108,7 +111,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-delegation-only-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

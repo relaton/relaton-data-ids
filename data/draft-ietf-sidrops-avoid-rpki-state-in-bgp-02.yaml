@@ -1,7 +1,7 @@
 ---
 id: draftietfsidropsavoidrpkistateinbgp02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -92,7 +92,7 @@ contributor:
         - language: en
           content: Glevia GmbH
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -100,19 +100,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides guidance to avoid carrying Resource Public Key\n
-    \  Infrastructure (RPKI) derived Validation States in Transitive Border\n   Gateway
-    Protocol (BGP) Path Attributes.  Annotating routes with\n   transitive attributes
-    signaling Validation State may cause needless\n   flooding of BGP UPDATE messages
-    through the global Internet routing\n   system, for example when Route Origin
-    Authorizations (ROAs) are\n   issued, or are revoked, or when RPKI-To-Router sessions
-    are\n   terminated.\n\n   Operators SHOULD ensure Validation States are not signaled
-    in\n   transitive BGP Path Attributes.  Specifically, Operators SHOULD NOT\n   group
-    BGP routes by their Prefix Origin Validation state into BGP\n   Communities.\n\n\t "
+  content: |-
+    <p>This document provides guidance to avoid carrying Resource Public Key
+       Infrastructure (RPKI) derived Validation States in Transitive Border
+       Gateway Protocol (BGP) Path Attributes.  Annotating routes with
+       transitive attributes signaling Validation State may cause needless
+       flooding of BGP UPDATE messages through the global Internet routing
+       system, for example when Route Origin Authorizations (ROAs) are
+       issued, or are revoked, or when RPKI-To-Router sessions are
+       terminated.
+
+       Operators SHOULD ensure Validation States are not signaled in
+       transitive BGP Path Attributes.  Specifically, Operators SHOULD NOT
+       group BGP routes by their Prefix Origin Validation state into BGP
+       Communities.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidrops-avoid-rpki-state-in-bgp-01
+    formattedref:
+      content: draft-ietf-sidrops-avoid-rpki-state-in-bgp-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-avoid-rpki-state-in-bgp-01
@@ -122,7 +128,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sidrops-avoid-rpki-state-in-bgp-03
+    formattedref:
+      content: draft-ietf-sidrops-avoid-rpki-state-in-bgp-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-avoid-rpki-state-in-bgp-03
@@ -138,7 +145,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidrops-avoid-rpki-state-in-bgp-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

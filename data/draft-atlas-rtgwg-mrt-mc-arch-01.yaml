@@ -1,7 +1,7 @@
 ---
 id: draftatlasrtgwgmrtmcarch01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         language: en
         content: Gabor Sandor Envedi
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -132,22 +132,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Failure protection is desirable for multicast traffic, whether\n   signaled
-    via PIM or mLDP.  Different mechanisms are suitable for\n   different use-cases
-    and deployment scenarios.  This document\n   describes the architecture for global
-    protection (aka multicast live-\n   live) and for local protection (aka fast-reroute).\n\n
-    \  The general methods for global protection and local protection using\n   alternate-trees
-    are dependent upon the use of Maximally Redundant\n   Trees.  Local protection
-    can also tunnel traffic in unicast tunnels\n   to take advantage of the routing
-    and fast-reroute mechanisms\n   available for IP/LDP unicast destinations.\n\n
-    \  The failures protected against are single link or node failures.\n   While
-    the basic architecture might support protection against shared\n   risk group
-    failures, algorithms to dynamically compute MRTs\n   supporting this are for future
-    study.\n\n\t "
+  content: |-
+    <p>Failure protection is desirable for multicast traffic, whether
+       signaled via PIM or mLDP.  Different mechanisms are suitable for
+       different use-cases and deployment scenarios.  This document
+       describes the architecture for global protection (aka multicast live-
+       live) and for local protection (aka fast-reroute).
+
+       The general methods for global protection and local protection using
+       alternate-trees are dependent upon the use of Maximally Redundant
+       Trees.  Local protection can also tunnel traffic in unicast tunnels
+       to take advantage of the routing and fast-reroute mechanisms
+       available for IP/LDP unicast destinations.
+
+       The failures protected against are single link or node failures.
+       While the basic architecture might support protection against shared
+       risk group failures, algorithms to dynamically compute MRTs
+       supporting this are for future study.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-atlas-rtgwg-mrt-mc-arch-00
+    formattedref:
+      content: draft-atlas-rtgwg-mrt-mc-arch-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-atlas-rtgwg-mrt-mc-arch-00
@@ -157,7 +163,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-atlas-rtgwg-mrt-mc-arch-02
+    formattedref:
+      content: draft-atlas-rtgwg-mrt-mc-arch-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-atlas-rtgwg-mrt-mc-arch-02
@@ -173,7 +180,7 @@ series:
     content: Internet-Draft
   number: draft-atlas-rtgwg-mrt-mc-arch-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

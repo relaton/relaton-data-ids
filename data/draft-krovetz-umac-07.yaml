@@ -1,7 +1,7 @@
 ---
 id: draftkrovetzumac07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: CSU Sacramento
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -54,17 +54,10 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This specification describes how to generate an authentication tag using
-    the UMAC message authentication algorithm. UMAC is designed to be very fast to
-    compute in software on contemporary uniprocessors. Measured speeds are as low
-    as one cycle per byte. UMAC relies on addition of 32-bit and 64-bit numbers and
-    multiplication of 32-bit numbers, operations well-supported by contemporary machines.\n\n
-    To generate the authentication tag on a given message, a \"universal\" hash function
-    is applied to the message and key to produce a short, fixed-length hash value,
-    and this hash value is then xor'ed with a key-derived pseudorandom pad. UMAC enjoys
-    a rigorous security analysis, and its only internal \"cryptographic\" component
-    is a block cipher used to generate the pseudorandom pads and internal key material.
-    This memo provides information for the Internet community.\n\t "
+  content: |-
+    <p>This specification describes how to generate an authentication tag using the UMAC message authentication algorithm. UMAC is designed to be very fast to compute in software on contemporary uniprocessors. Measured speeds are as low as one cycle per byte. UMAC relies on addition of 32-bit and 64-bit numbers and multiplication of 32-bit numbers, operations well-supported by contemporary machines.
+
+     To generate the authentication tag on a given message, a &quot;universal&quot; hash function is applied to the message and key to produce a short, fixed-length hash value, and this hash value is then xor&#39;ed with a key-derived pseudorandom pad. UMAC enjoys a rigorous security analysis, and its only internal &quot;cryptographic&quot; component is a block cipher used to generate the pseudorandom pads and internal key material. This memo provides information for the Internet community.</p>
 series:
 - type: main
   title:
@@ -73,7 +66,7 @@ series:
     content: Internet-Draft
   number: draft-krovetz-umac-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

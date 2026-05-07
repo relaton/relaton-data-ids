@@ -1,7 +1,7 @@
 ---
 id: draftdukequicloadbalancers04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: F5 Networks, Inc.
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -54,18 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC connection IDs allow continuation of connections across address/\n
-    \  port 4-tuple changes, and can store routing information for stateless\n   or
-    low-state load balancers.  They also can prevent linkability of\n   connections
-    across deliberate address migration through the use of\n   protected communications
-    between client and server.  This creates\n   issues for load-balancing intermediaries.
-    \ This specification\n   standardizes methods for encoding routing information
-    and proposes an\n   optional protocol called QUIC-LB to exchange the parameters
-    of that\n   encoding.\n\n\t "
+  content: |-
+    <p>QUIC connection IDs allow continuation of connections across address/
+       port 4-tuple changes, and can store routing information for stateless
+       or low-state load balancers.  They also can prevent linkability of
+       connections across deliberate address migration through the use of
+       protected communications between client and server.  This creates
+       issues for load-balancing intermediaries.  This specification
+       standardizes methods for encoding routing information and proposes an
+       optional protocol called QUIC-LB to exchange the parameters of that
+       encoding.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-duke-quic-load-balancers-03
+    formattedref:
+      content: draft-duke-quic-load-balancers-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-duke-quic-load-balancers-03
@@ -75,7 +78,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-duke-quic-load-balancers-05
+    formattedref:
+      content: draft-duke-quic-load-balancers-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-duke-quic-load-balancers-05
@@ -91,7 +95,7 @@ series:
     content: Internet-Draft
   number: draft-duke-quic-load-balancers-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

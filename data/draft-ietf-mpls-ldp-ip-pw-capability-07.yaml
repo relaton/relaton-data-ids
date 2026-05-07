@@ -1,7 +1,7 @@
 ---
 id: draftietfmplsldpippwcapability07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Sami Boutros
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -69,21 +69,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   There is no capability negotiation done for Label Distribution\n   Protocol
-    (LDP) applications that setup Label Switched Paths (LSPs)\n   for IP prefixes
-    or that signal Point-to-point (P2P) Pseudowires\n   (PWs) for Layer 2 Virtual
-    Private Networks (L2VPNs). When an LDP\n   session comes up, an LDP speaker may
-    unnecessarily advertise its\n   local state for such LDP applications even when
-    the peer session is\n   established for some other applications like Multipoint
-    LDP (mLDP)\n   or Inter-Chassis Communication Protocol (ICCP). This document\n
-    \  defines a solution by which an LDP speaker announces to its peer its\n   disinterest
-    in such non-negotiated applications, thus disabling the\n   unnecessary advertisement
-    of corresponding application state, which\n   would have otherwise be advertised
-    over the established LDP session.\n\n\t "
+  content: |-
+    <p>There is no capability negotiation done for Label Distribution
+       Protocol (LDP) applications that setup Label Switched Paths (LSPs)
+       for IP prefixes or that signal Point-to-point (P2P) Pseudowires
+       (PWs) for Layer 2 Virtual Private Networks (L2VPNs). When an LDP
+       session comes up, an LDP speaker may unnecessarily advertise its
+       local state for such LDP applications even when the peer session is
+       established for some other applications like Multipoint LDP (mLDP)
+       or Inter-Chassis Communication Protocol (ICCP). This document
+       defines a solution by which an LDP speaker announces to its peer its
+       disinterest in such non-negotiated applications, thus disabling the
+       unnecessary advertisement of corresponding application state, which
+       would have otherwise be advertised over the established LDP session.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-mpls-ldp-ip-pw-capability-06
+    formattedref:
+      content: draft-ietf-mpls-ldp-ip-pw-capability-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-ldp-ip-pw-capability-06
@@ -93,7 +96,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-mpls-ldp-ip-pw-capability-08
+    formattedref:
+      content: draft-ietf-mpls-ldp-ip-pw-capability-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-ldp-ip-pw-capability-08
@@ -109,7 +113,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-mpls-ldp-ip-pw-capability-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfmplsldpippwcapability02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Sami Boutros
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -69,18 +69,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Currently, no LDP capability is exchanged for LDP applications like\n
-    \  IP label switching and L2VPN P2P PW signaling. When an LDP session\n   comes
-    up, an LDP speaker may unnecessarily advertise its local state\n   for such LDP
-    applications even when the peer session may be\n   established for some other
-    applications like ICCP. This document\n   proposes a solution by which an LDP
-    speaker announces its disinterest\n   in such non-negotiated application. This,
-    in turn, disables the\n   advertisement of corresponding application state, which
-    would have\n   otherwise be advertised by default, over the established LDP session.\n\n\t "
+  content: |-
+    <p>Currently, no LDP capability is exchanged for LDP applications like
+       IP label switching and L2VPN P2P PW signaling. When an LDP session
+       comes up, an LDP speaker may unnecessarily advertise its local state
+       for such LDP applications even when the peer session may be
+       established for some other applications like ICCP. This document
+       proposes a solution by which an LDP speaker announces its disinterest
+       in such non-negotiated application. This, in turn, disables the
+       advertisement of corresponding application state, which would have
+       otherwise be advertised by default, over the established LDP session.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-mpls-ldp-ip-pw-capability-01
+    formattedref:
+      content: draft-ietf-mpls-ldp-ip-pw-capability-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-ldp-ip-pw-capability-01
@@ -90,7 +93,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-mpls-ldp-ip-pw-capability-03
+    formattedref:
+      content: draft-ietf-mpls-ldp-ip-pw-capability-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-ldp-ip-pw-capability-03
@@ -106,7 +110,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-mpls-ldp-ip-pw-capability-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

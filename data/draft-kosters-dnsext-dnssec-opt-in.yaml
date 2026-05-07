@@ -1,7 +1,8 @@
 ---
 id: draftkostersdnsextdnssecoptin
-schema_version: v1.4.1
-formattedref: draft-kosters-dnsext-dnssec-opt-in
+schema_version: v1.5.6
+formattedref:
+  content: draft-kosters-dnsext-dnssec-opt-in
 title:
 - language: en
   script: Latn
@@ -13,18 +14,22 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "In order for DNSSEC to be deployed operationally with large zones\nand
-    little operational impact, there needs to be included a\nmechanism that allows
-    for the separation of secure versus unsecure\nviews of zones. This needs to be
-    done in a transparent fashion that\nallows DNSSEC to be deployed in an incremental
-    manner.  This\ndocument proposes the use of an extended RCODE to signify that
-    a\nDNSSEC-aware requestor may have to re-query for the information, if\nand only
-    if, the delegation is not yet secure. Thus, one can\nmaintain two views of the
-    zone and expand the DNSSEC zone as demand\nwarrants.\n\t "
+  content: |-
+    <p>In order for DNSSEC to be deployed operationally with large zones
+    and little operational impact, there needs to be included a
+    mechanism that allows for the separation of secure versus unsecure
+    views of zones. This needs to be done in a transparent fashion that
+    allows DNSSEC to be deployed in an incremental manner.  This
+    document proposes the use of an extended RCODE to signify that a
+    DNSSEC-aware requestor may have to re-query for the information, if
+    and only if, the delegation is not yet secure. Thus, one can
+    maintain two views of the zone and expand the DNSSEC zone as demand
+    warrants.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-kosters-dnsext-dnssec-opt-in-01
+    formattedref:
+      content: draft-kosters-dnsext-dnssec-opt-in-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kosters-dnsext-dnssec-opt-in-01

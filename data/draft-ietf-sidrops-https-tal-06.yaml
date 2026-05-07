@@ -1,7 +1,7 @@
 ---
 id: draftietfsidropshttpstal06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: NLnet Labs
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -157,20 +157,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a Trust Anchor Locator (TAL) for the Resource\n
-    \  Public Key Infrastructure (RPKI).  TALs allow Relying Parties in the\n   RPKI
-    to download the current Trust Anchor (TA) CA certificate from\n   one or more
-    locations, and verify that the key of this self-signed\n   certificate matches
-    the key on the TAL.  Thus, Relying Parties can be\n   configured with TA keys,
-    but allow these TAs to change the content of\n   their CA certificate.  In particular
-    it allows TAs to change the set\n   of Internet Number Resources included in the
-    RFC3779 extension of\n   their certificate.\n\n   This document obsoletes the
-    previous definition of Trust Anchor\n   Locators in RFC 7730 by adding support
-    for HTTPS URIs.\n\n\t "
+  content: |-
+    <p>This document defines a Trust Anchor Locator (TAL) for the Resource
+       Public Key Infrastructure (RPKI).  TALs allow Relying Parties in the
+       RPKI to download the current Trust Anchor (TA) CA certificate from
+       one or more locations, and verify that the key of this self-signed
+       certificate matches the key on the TAL.  Thus, Relying Parties can be
+       configured with TA keys, but allow these TAs to change the content of
+       their CA certificate.  In particular it allows TAs to change the set
+       of Internet Number Resources included in the RFC3779 extension of
+       their certificate.
+
+       This document obsoletes the previous definition of Trust Anchor
+       Locators in RFC 7730 by adding support for HTTPS URIs.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidrops-https-tal-05
+    formattedref:
+      content: draft-ietf-sidrops-https-tal-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-https-tal-05
@@ -180,7 +184,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sidrops-https-tal-07
+    formattedref:
+      content: draft-ietf-sidrops-https-tal-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-https-tal-07
@@ -196,7 +201,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidrops-https-tal-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

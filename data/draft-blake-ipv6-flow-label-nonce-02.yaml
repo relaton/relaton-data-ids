@@ -1,7 +1,7 @@
 ---
 id: draftblakeipv6flowlabelnonce02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -47,7 +47,7 @@ contributor:
         - language: en
           content: Extreme Networks
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -55,17 +55,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "TCP and other transport-layer protocols are vulnerable to spoofing\nattacks
-    from off-path hosts.  These attacks can be prevented through\nthe use of cryptographic
-    authentication.  However, it is difficult to\nuse cryptographic authentication
-    in all circumstances.  A variety of\nobfuscation techniques -- such as initial
-    sequence number\nrandomization and source port randomization -- increase the effort\nrequired
-    of an attacker to successfully guess the packet header\nfields which uniquely
-    identify a transport connection.  This memo\nproposes the use of the IPv6 Flow
-    Label field as a random, per-\nconnection nonce value, to add entropy to the set
-    of packet header\nfields used to identify a transport connection.  This mechanism
-    is\neasily implementable, allows for incremental deployment, and is fully\ncompliant
-    with the rules for Flow Label use defined in RFC 3697.\n\t "
+  content: |-
+    <p>TCP and other transport-layer protocols are vulnerable to spoofing
+    attacks from off-path hosts.  These attacks can be prevented through
+    the use of cryptographic authentication.  However, it is difficult to
+    use cryptographic authentication in all circumstances.  A variety of
+    obfuscation techniques -- such as initial sequence number
+    randomization and source port randomization -- increase the effort
+    required of an attacker to successfully guess the packet header
+    fields which uniquely identify a transport connection.  This memo
+    proposes the use of the IPv6 Flow Label field as a random, per-
+    connection nonce value, to add entropy to the set of packet header
+    fields used to identify a transport connection.  This mechanism is
+    easily implementable, allows for incremental deployment, and is fully
+    compliant with the rules for Flow Label use defined in RFC 3697.</p>
 series:
 - type: main
   title:
@@ -74,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-blake-ipv6-flow-label-nonce-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

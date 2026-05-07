@@ -1,7 +1,7 @@
 ---
 id: draftbakeripv6ospfdstflowlabelrouting01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Fred Baker
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -49,21 +49,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This note describes the changes necessary for OSPFv3 to route classes\n
-    \  of IPv6 traffic that are defined by an IPv6 Flow Label and a\n   destination
-    prefix.  This implies not simply routing \"to a\n   destination\", but \"traffic
-    going to that destination AND using a\n   specified flow label\".  It may be combined
-    with other qualifying\n   attributes, such as \"traffic going to that destination
-    AND using a\n   specified flow label AND from a specified source prefix\".  The\n
-    \  obvious application is data center inter-tenant routing using a form\n   of
-    role-based access control.  If the sender doesn't know the value\n   to insert
-    in the flow label (the receiver's tenant ID), it in effect\n   has no route to
-    that destination, thus providing an access list that\n   is as changeable and
-    scalable as routing.\n\n\t "
+  content: |-
+    <p>This note describes the changes necessary for OSPFv3 to route classes
+       of IPv6 traffic that are defined by an IPv6 Flow Label and a
+       destination prefix.  This implies not simply routing &quot;to a
+       destination&quot;, but &quot;traffic going to that destination AND using a
+       specified flow label&quot;.  It may be combined with other qualifying
+       attributes, such as &quot;traffic going to that destination AND using a
+       specified flow label AND from a specified source prefix&quot;.  The
+       obvious application is data center inter-tenant routing using a form
+       of role-based access control.  If the sender doesn&#39;t know the value
+       to insert in the flow label (the receiver&#39;s tenant ID), it in effect
+       has no route to that destination, thus providing an access list that
+       is as changeable and scalable as routing.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-baker-ipv6-ospf-dst-flowlabel-routing-00
+    formattedref:
+      content: draft-baker-ipv6-ospf-dst-flowlabel-routing-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-baker-ipv6-ospf-dst-flowlabel-routing-00
@@ -73,7 +76,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-baker-ipv6-ospf-dst-flowlabel-routing-02
+    formattedref:
+      content: draft-baker-ipv6-ospf-dst-flowlabel-routing-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-baker-ipv6-ospf-dst-flowlabel-routing-02
@@ -89,7 +93,7 @@ series:
     content: Internet-Draft
   number: draft-baker-ipv6-ospf-dst-flowlabel-routing-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

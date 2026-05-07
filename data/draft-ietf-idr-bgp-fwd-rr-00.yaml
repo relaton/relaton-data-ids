@@ -1,7 +1,7 @@
 ---
 id: draftietfidrbgpfwdrr00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Juniper Networks, Inc.
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,18 +79,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The procedures in BGP Route Reflection (RR) spec [RFC4456] primarily\n
-    \  deal with scenarios where the RR is not in forwarding path, and is\n   reflecting
-    BGP routes with next hop unchanged.\n\n   These procedures can sometimes result
-    in traffic forwarding loops in\n   deployments where the RR is in forwarding path,
-    and is reflecting BGP\n   routes with next hop set to self.\n\n   This document
-    specifies approaches to minimize possiblity of such\n   traffic forwarding loops.
-    \ One of those approaches updates path\n   selection procedures specified in Section
-    9 of BGP RR.  [RFC4456]\n\n\n\t "
+  content: |-
+    <p>The procedures in BGP Route Reflection (RR) spec [RFC4456] primarily
+       deal with scenarios where the RR is not in forwarding path, and is
+       reflecting BGP routes with next hop unchanged.
+
+       These procedures can sometimes result in traffic forwarding loops in
+       deployments where the RR is in forwarding path, and is reflecting BGP
+       routes with next hop set to self.
+
+       This document specifies approaches to minimize possiblity of such
+       traffic forwarding loops.  One of those approaches updates path
+       selection procedures specified in Section 9 of BGP RR.  [RFC4456]</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-idr-bgp-fwd-rr-01
+    formattedref:
+      content: draft-ietf-idr-bgp-fwd-rr-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-bgp-fwd-rr-01
@@ -106,7 +111,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-idr-bgp-fwd-rr-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

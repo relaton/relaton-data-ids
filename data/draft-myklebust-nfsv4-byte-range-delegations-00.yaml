@@ -1,7 +1,7 @@
 ---
 id: draftmyklebustnfsv4byterangedelegations00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Network Appliance
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,13 +54,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a set of extensions to the NFS version 4\n
-    \  protocol that enable the client to cache file data when caching\n   conflicts
-    prevent the server from handing out a file delegation.\n\n   The proposed extensions
-    enable the caching of only those specific\n   byte ranges of data which the user
-    application is reading or writing.\n\n   As in the case of full delegations, a
-    callback mechanism enables the\n   server to request that the client flush cached
-    data when a caching\n   conflict occurs.\n\t "
+  content: |-
+    <p>This document describes a set of extensions to the NFS version 4
+       protocol that enable the client to cache file data when caching
+       conflicts prevent the server from handing out a file delegation.
+
+       The proposed extensions enable the caching of only those specific
+       byte ranges of data which the user application is reading or writing.
+
+       As in the case of full delegations, a callback mechanism enables the
+       server to request that the client flush cached data when a caching
+       conflict occurs.</p>
 series:
 - type: main
   title:
@@ -69,7 +73,7 @@ series:
     content: Internet-Draft
   number: draft-myklebust-nfsv4-byte-range-delegations-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

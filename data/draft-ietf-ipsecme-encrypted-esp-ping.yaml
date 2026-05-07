@@ -1,7 +1,8 @@
 ---
 id: draftietfipsecmeencryptedespping
-schema_version: v1.4.1
-formattedref: draft-ietf-ipsecme-encrypted-esp-ping
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-ipsecme-encrypted-esp-ping
 title:
 - language: en
   script: Latn
@@ -13,20 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines the Encrypted ESP Echo Function, a mechanism\n
-    \  designed to assess the reachability of IP Security (IPsec) network\n   paths
-    using Encapsulating Security Payload (ESP) packets.  The\n   primary objective
-    is to reliably and efficiently detect the status of\n   end-to-end paths by exchanging
-    only encrypted ESP packets between\n   IPsec peers.  The Encrypted Echo message
-    can either use existing\n   congestion control payloads from RFC9347 or a new
-    message format\n   defined here, with an option to specify a preferred return
-    path when\n   there is more than one pair of IPsec SAs between the same set of\n
-    \  IPsec peers.\n\n   A peer MAY announce the support using a new IKEv2 Status
-    Notifcation\n   ENCRYPTED_PING_SUPPORTED.\n\n\t "
+  content: |-
+    <p>This document defines the Encrypted ESP Echo Function, a mechanism to
+       assess the reachability of IP Security (IPsec) network paths using
+       Encapsulating Security Payload (ESP) packets.  It detects end-to-end
+       path status by exchanging only encrypted ESP packets between IPsec
+       peers.  The Encrypted Echo message can either use existing congestion
+       control payloads from RFC9347 or a new message format defined here,
+       with an option to specify a preferred return path when there is more
+       than one pair of IPsec SAs between the same set of IPsec peers.
+
+       A peer can announce support using a new IKEv2 Status Notification
+       ENCRYPTED_PING_SUPPORTED.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-encrypted-esp-ping-00
+    formattedref:
+      content: draft-ietf-ipsecme-encrypted-esp-ping-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-encrypted-esp-ping-00
@@ -36,11 +40,34 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-ietf-ipsecme-encrypted-esp-ping-01
+    formattedref:
+      content: draft-ietf-ipsecme-encrypted-esp-ping-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-encrypted-esp-ping-01
     docidentifier:
     - content: draft-ietf-ipsecme-encrypted-esp-ping-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ipsecme-encrypted-esp-ping-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-encrypted-esp-ping-02
+    docidentifier:
+    - content: draft-ietf-ipsecme-encrypted-esp-ping-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ipsecme-encrypted-esp-ping-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-encrypted-esp-ping-03
+    docidentifier:
+    - content: draft-ietf-ipsecme-encrypted-esp-ping-03
       type: Internet-Draft
       primary: true

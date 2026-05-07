@@ -1,7 +1,7 @@
 ---
 id: draftxlsintareaevn604
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -141,7 +141,7 @@ contributor:
         language: en
         content: Mark Smith
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -149,23 +149,37 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the mechanism of mapping of Ethernet Virtual\n
-    \  Network to IPv6 Underlay for transmission.  Unlike the existing\n   methods,
-    this approach places the Ethernet frames to be transmitted\n   directly in the
-    payload of IPv6 packets, i.e., L2 over IPv6, and uses\n   stateless mapping to
-    generate IPv6 source and destination addresses\n   from the host's MAC addresses,
-    Ethernet Virtual Network identifier\n   and site prefixes.  The IPv6 packets generated
-    in this way carry\n   Ethernet frames and are routed to the destination site across
-    public\n   IPv6 network.\n\n\t "
+  content: |-
+    <p>This document describes the mechanism of mapping of Ethernet Virtual
+       Network to IPv6 Underlay for transmission.  Unlike the existing
+       methods, this approach places the Ethernet frames to be transmitted
+       directly in the payload of IPv6 packets, i.e., L2 over IPv6, and uses
+       stateless mapping to generate IPv6 source and destination addresses
+       from the host&#39;s MAC addresses, Ethernet Virtual Network identifier
+       and site prefixes.  The IPv6 packets generated in this way carry
+       Ethernet frames and are routed to the destination site across public
+       IPv6 network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-xls-intarea-evn6-03
+    formattedref:
+      content: draft-xls-intarea-evn6-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-xls-intarea-evn6-03
     docidentifier:
     - content: draft-xls-intarea-evn6-03
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-xls-intarea-evn6-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xls-intarea-evn6-05
+    docidentifier:
+    - content: draft-xls-intarea-evn6-05
       type: Internet-Draft
       primary: true
 series:
@@ -176,7 +190,7 @@ series:
     content: Internet-Draft
   number: draft-xls-intarea-evn6-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

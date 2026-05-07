@@ -1,7 +1,7 @@
 ---
 id: draftdongospfmaxageflushproblemstatement00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -81,7 +81,7 @@ contributor:
         language: en
         content: Zhenqiang Li
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -89,19 +89,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In OSPF protocol, Link State Advertisements (LSAs) are exchanged in\n
-    \  Link State Update (LSU) packets to achieve link state database (LSDB)\n   synchronization
-    and consistent route calculation.  The \"LS age\" field\n   is part of the LSA
-    header, which is excluded from the checksum\n   calculation of the LSA.  Due to
-    some hardware or software problems,\n   the LS age may be corrupted and reach
-    the MaxAge prematurely.\n   Flushing of the corrupted MaxAge LSA may cause flooding
-    storm of OSPF\n   packets and severely impact the services in the network.\n\n
-    \  This document describes the problem of OSPF corrupted MaxAge LSA\n   flushing,
-    and specifies the requirements on potential solutions.\n\n\n\t "
+  content: |-
+    <p>In OSPF protocol, Link State Advertisements (LSAs) are exchanged in
+       Link State Update (LSU) packets to achieve link state database (LSDB)
+       synchronization and consistent route calculation.  The &quot;LS age&quot; field
+       is part of the LSA header, which is excluded from the checksum
+       calculation of the LSA.  Due to some hardware or software problems,
+       the LS age may be corrupted and reach the MaxAge prematurely.
+       Flushing of the corrupted MaxAge LSA may cause flooding storm of OSPF
+       packets and severely impact the services in the network.
+
+       This document describes the problem of OSPF corrupted MaxAge LSA
+       flushing, and specifies the requirements on potential solutions.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-dong-ospf-maxage-flush-problem-statement-01
+    formattedref:
+      content: draft-dong-ospf-maxage-flush-problem-statement-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dong-ospf-maxage-flush-problem-statement-01
@@ -117,7 +121,7 @@ series:
     content: Internet-Draft
   number: draft-dong-ospf-maxage-flush-problem-statement-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

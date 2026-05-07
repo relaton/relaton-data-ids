@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopnsrevalidation03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: NLnet Labs
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -107,18 +107,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document recommends improved DNS [RFC1034] [RFC1035] resolver\n
-    \  behavior with respect to the processing of Name Server (NS) resource\n   record
-    sets (RRset) during iterative resolution.  When following a\n   referral response
-    from an authoritative server to a child zone, DNS\n   resolvers should explicitly
-    query the authoritative NS RRset at the\n   apex of the child zone and cache this
-    in preference to the NS RRset\n   on the parent side of the zone cut.  Resolvers
-    should also\n   periodically revalidate the child delegation by re-quering the
-    parent\n   zone at the expiration of the TTL of the parent side NS RRset.\n\n\t "
+  content: |-
+    <p>This document recommends improved DNS [RFC1034] [RFC1035] resolver
+       behavior with respect to the processing of Name Server (NS) resource
+       record sets (RRset) during iterative resolution.  When following a
+       referral response from an authoritative server to a child zone, DNS
+       resolvers should explicitly query the authoritative NS RRset at the
+       apex of the child zone and cache this in preference to the NS RRset
+       on the parent side of the zone cut.  Resolvers should also
+       periodically revalidate the child delegation by re-quering the parent
+       zone at the expiration of the TTL of the parent side NS RRset.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-ns-revalidation-02
+    formattedref:
+      content: draft-ietf-dnsop-ns-revalidation-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-ns-revalidation-02
@@ -128,7 +131,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-ns-revalidation-04
+    formattedref:
+      content: draft-ietf-dnsop-ns-revalidation-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-ns-revalidation-04
@@ -144,7 +148,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-ns-revalidation-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

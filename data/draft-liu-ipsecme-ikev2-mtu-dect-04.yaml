@@ -1,7 +1,7 @@
 ---
 id: draftliuipsecmeikev2mtudect04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -129,20 +129,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document considers a ingress and an egress security gateway\n
-    \  connected over a IPv4 network.  The Tunnel Link Packet have their\n   Don't
-    Fragment (DF) set to 0.\n\n   This document defines the IKEv2 IPv4 Link Maximum
-    Atomic Packet\n   Notification Extension which enables the egress security gateway
-    to\n   notify the ingress security gateway that Mid-tunnel Fragmentation is\n
-    \  observed with the value of the Link Maximum Atomic Packet.  The\n   ingress
-    security gateway is expected to take action as to avoid the\n   egress security
-    gateway to perform costly reassemble operation.  The\n   ingress security gateway
-    is expected to either perform (when\n   possible) Inner Fragmentation of to update
-    Tunnel MTU.\n\n\t "
+  content: |-
+    <p>This document considers a ingress and an egress security gateway
+       connected over a IPv4 network.  The Tunnel Link Packet have their
+       Don&#39;t Fragment (DF) set to 0.
+
+       This document defines the IKEv2 IPv4 Link Maximum Atomic Packet
+       Notification Extension which enables the egress security gateway to
+       notify the ingress security gateway that Mid-tunnel Fragmentation is
+       observed with the value of the Link Maximum Atomic Packet.  The
+       ingress security gateway is expected to take action as to avoid the
+       egress security gateway to perform costly reassemble operation.  The
+       ingress security gateway is expected to either perform (when
+       possible) Inner Fragmentation of to update Tunnel MTU.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-liu-ipsecme-ikev2-mtu-dect-03
+    formattedref:
+      content: draft-liu-ipsecme-ikev2-mtu-dect-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-liu-ipsecme-ikev2-mtu-dect-03
@@ -152,7 +156,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-liu-ipsecme-ikev2-mtu-dect-05
+    formattedref:
+      content: draft-liu-ipsecme-ikev2-mtu-dect-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-liu-ipsecme-ikev2-mtu-dect-05
@@ -168,7 +173,7 @@ series:
     content: Internet-Draft
   number: draft-liu-ipsecme-ikev2-mtu-dect-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,8 @@
 ---
 id: draftzuodpriveencryptionoverudp
-schema_version: v1.4.1
-formattedref: draft-zuo-dprive-encryption-over-udp
+schema_version: v1.5.6
+formattedref:
+  content: draft-zuo-dprive-encryption-over-udp
 title:
 - language: en
   script: Latn
@@ -13,21 +14,24 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document offers an approach to encrypt DNS queries and responses\n
-    \  between the stub resolver and the recursive server over UDP to\n   protect
-    user privacy.  The public key of the recursive server is\n   distributed to the
-    stub resolver through the Certificate Authority\n   infrastructure, and the public
-    key of the stub resolver is sent to\n   the recursive server together with the
-    DNS query where the public key\n   is inserted to the additional section of the
-    DNS query.  Then the\n   recursive server encrypts the DNS responses sent to the
-    stub resolver\n   with the public key of that stub resolver, and similarly the
-    DNS\n   query sent to the recursive server is encrypted by the stub resolver\n
-    \  with the public key of that recursive server and thus the user\n   privacy
-    is protected.\n\n\t "
+  content: |-
+    <p>This document offers an approach to encrypt DNS queries and responses
+       between the stub resolver and the recursive server over UDP to
+       protect user privacy.  The public key of the recursive server is
+       distributed to the stub resolver through the Certificate Authority
+       infrastructure, and the public key of the stub resolver is sent to
+       the recursive server together with the DNS query where the public key
+       is inserted to the additional section of the DNS query.  Then the
+       recursive server encrypts the DNS responses sent to the stub resolver
+       with the public key of that stub resolver, and similarly the DNS
+       query sent to the recursive server is encrypted by the stub resolver
+       with the public key of that recursive server and thus the user
+       privacy is protected.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-zuo-dprive-encryption-over-udp-00
+    formattedref:
+      content: draft-zuo-dprive-encryption-over-udp-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zuo-dprive-encryption-over-udp-00

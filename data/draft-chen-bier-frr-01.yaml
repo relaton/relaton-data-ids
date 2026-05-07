@@ -1,7 +1,7 @@
 ---
 id: draftchenbierfrr01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -224,7 +224,7 @@ contributor:
         - language: en
           content: Volta Networks
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -232,16 +232,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes a mechanism for fast re-route (FRR)\n   protection
-    against the failure of a node or link in the core of a\n   \"Bit Index Explicit
-    Replication\" (BIER) domain.  It does not have any\n   per-flow state in the core.
-    \ For a multicast packet to traverse a\n   node in the domain, when the node fails,
-    its upstream hop as a PLR\n   reroutes the packet around the failed node once
-    it detects the\n   failure.\n\n\n\t "
+  content: |-
+    <p>This document describes a mechanism for fast re-route (FRR)
+       protection against the failure of a node or link in the core of a
+       &quot;Bit Index Explicit Replication&quot; (BIER) domain.  It does not have any
+       per-flow state in the core.  For a multicast packet to traverse a
+       node in the domain, when the node fails, its upstream hop as a PLR
+       reroutes the packet around the failed node once it detects the
+       failure.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-chen-bier-frr-00
+    formattedref:
+      content: draft-chen-bier-frr-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-bier-frr-00
@@ -251,7 +254,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-chen-bier-frr-02
+    formattedref:
+      content: draft-chen-bier-frr-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-bier-frr-02
@@ -267,7 +271,7 @@ series:
     content: Internet-Draft
   number: draft-chen-bier-frr-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

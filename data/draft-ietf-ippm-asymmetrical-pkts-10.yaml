@@ -1,7 +1,7 @@
 ---
 id: draftietfippmasymmetricalpkts10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -150,7 +150,7 @@ contributor:
         - language: en
           content: University of Cincinnati
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -158,32 +158,48 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies an optional extension to the Simple Two-way\n
-    \  Active Measurement Protocol (STAMP) to control the length and/or\n   number
-    of packets sent by a Session-Reflector in response to a single\n   test packet
-    from the Session-Sender during a STAMP test session.  By\n   default, a STAMP
-    Session-Sender and Session-Reflector exchange\n   packets symmetrically: the number
-    of packets sent by the Session-\n   Reflector and the Session-Sender are the same
-    as is the length of the\n   packets sent by the Session-Reflector and the Session-Sender.\n
-    \  However, there are cases where a Session-Reflector responding with\n   Asymmetrical
-    Packets would ensure a closer approximation between\n   active performance measurements
-    and the conditions experienced by\n   monitored application.  The STAMP extension
-    specified in this\n   document allows operators to establish tests where a Session-\n
-    \  Reflector sends Asymmetrical Packets, packets whose length is not\n   symmetrical
-    to test packet sent by the Session-Sender and/or packets\n   that are not sent
-    in direct response to a packet received from a\n   Session-Sender.  The document
-    also includes an analysis of challenges\n   related to performance monitoring
-    in a multicast network.  It\n   specifies procedures and STAMP extensions to achieve
-    more efficient\n   measurements with a lesser impact on a network.\n\n\t "
+  content: |-
+    <p>This document specifies an optional extension to the Simple Two-way
+       Active Measurement Protocol (STAMP) to control the length and/or
+       number of packets sent by a Session-Reflector in response to a single
+       test packet from the Session-Sender during a STAMP test session.  By
+       default, a STAMP Session-Sender and Session-Reflector exchange
+       packets symmetrically: the number of packets sent by the Session-
+       Reflector and the Session-Sender are the same as is the length of the
+       packets sent by the Session-Reflector and the Session-Sender.
+       However, there are cases where a Session-Reflector responding with
+       Asymmetrical Packets would ensure a closer approximation between
+       active performance measurements and the conditions experienced by
+       monitored application.  The STAMP extension specified in this
+       document allows operators to establish tests where a Session-
+       Reflector sends Asymmetrical Packets, packets whose length is not
+       symmetrical to test packet sent by the Session-Sender and/or packets
+       that are not sent in direct response to a packet received from a
+       Session-Sender.  The document also includes an analysis of challenges
+       related to performance monitoring in a multicast network.  It
+       specifies procedures and STAMP extensions to achieve more efficient
+       measurements with a lesser impact on a network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ippm-asymmetrical-pkts-09
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-09
     docidentifier:
     - content: draft-ietf-ippm-asymmetrical-pkts-09
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-ietf-ippm-asymmetrical-pkts-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ippm-asymmetrical-pkts-11
+    docidentifier:
+    - content: draft-ietf-ippm-asymmetrical-pkts-11
       type: Internet-Draft
       primary: true
 series:
@@ -194,7 +210,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ippm-asymmetrical-pkts-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

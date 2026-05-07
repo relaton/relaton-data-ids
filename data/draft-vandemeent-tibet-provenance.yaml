@@ -1,11 +1,12 @@
 ---
 id: draftvandemeenttibetprovenance
-schema_version: v1.4.1
-formattedref: draft-vandemeent-tibet-provenance
+schema_version: v1.5.6
+formattedref:
+  content: draft-vandemeent-tibet-provenance
 title:
 - language: en
   script: Latn
-  content: 'TIBET: Evidence Trail Protocol'
+  content: 'TIBET: Transaction/Interaction-Based Evidence Trail'
 docidentifier:
 - content: draft-vandemeent-tibet-provenance
   type: Internet-Draft
@@ -13,20 +14,39 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies TIBET (Transaction/Interaction-Based Evidence\n
-    \  Trail), a protocol for establishing complete provenance chains in AI-\n   to-AI
-    and AI-to-human interactions.  TIBET provides a standardized\n   token structure
-    capturing WHAT happened (ERIN), WHAT was attached\n   (ERAAN), the CONTEXT around
-    it (EROMHEEN), and WHY it happened\n   (ERACHTER).  This enables audit trails
-    that meet emerging regulatory\n   requirements for AI transparency.\n\n\t "
+  content: |-
+    <p>This document defines TIBET (Transaction/Interaction-Based Evidence
+       Trail), a data model and protocol for constructing cryptographically
+       linked provenance chains over interactions between autonomous agents,
+       human actors, and automated processes.  A TIBET token captures four
+       dimensions of provenance: content (ERIN), references (ERAAN), context
+       (EROMHEEN), and intent (ERACHTER).  Tokens are cryptographically
+       signed, hash-chained, and designed for append-only storage.  TIBET is
+       transport-agnostic and encoding-flexible, with JSON over HTTPS as the
+       baseline serialization.  This document specifies the token data
+       model, chain semantics, canonicalization rules, verification
+       procedures, and integration points with companion protocols JIS
+       [JIS], UPIP [UPIP], RVP [RVP], and AINS [AINS].</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-vandemeent-tibet-provenance-00
+    formattedref:
+      content: draft-vandemeent-tibet-provenance-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vandemeent-tibet-provenance-00
     docidentifier:
     - content: draft-vandemeent-tibet-provenance-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-vandemeent-tibet-provenance-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-vandemeent-tibet-provenance-01
+    docidentifier:
+    - content: draft-vandemeent-tibet-provenance-01
       type: Internet-Draft
       primary: true

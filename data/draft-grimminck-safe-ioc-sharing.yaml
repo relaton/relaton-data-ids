@@ -1,11 +1,12 @@
 ---
 id: draftgrimmincksafeiocsharing
-schema_version: v1.4.1
-formattedref: draft-grimminck-safe-ioc-sharing
+schema_version: v1.5.6
+formattedref:
+  content: draft-grimminck-safe-ioc-sharing
 title:
 - language: en
   script: Latn
-  content: A Standard for Safe and Reversible Sharing of Malicious URLs and Indicators
+  content: Safe and Reversible Sharing of Malicious URLs and Indicators
 docidentifier:
 - content: draft-grimminck-safe-ioc-sharing
   type: Internet-Draft
@@ -13,17 +14,28 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a consistent and reversible method for sharing\n
-    \  potentially malicious indicators of compromise (IOCs), such as URLs,\n   IP
-    addresses, email addresses, and domain names.  It introduces a\n   safe obfuscation
-    format to prevent accidental execution or activation\n   when IOCs are displayed
-    or transmitted.  These techniques aim to\n   standardize the safe dissemination
-    of threat intelligence data.  This\n   specification uses the URI syntax defined
-    in RFC 3986 and follows the\n   key word conventions from RFC 2119.\n\n\t "
+  content: |-
+    <p>This document codifies a consistent and reversible convention used in
+       the threat intelligence and security communities for sharing
+       potentially malicious indicators of compromise (IOCs), such as URLs,
+       IP addresses, email addresses, and domain names.  It describes a safe
+       obfuscation format that reduces the risk of accidental execution or
+       activation when IOCs are displayed or transmitted.  The recommended
+       form brackets the URI scheme name so that the string is not
+       syntactically a valid URI per generic URI parsers, and extends the
+       same bracket treatment to colons inside IPv6 literals; recognizable
+       nested indicators within the Path, Query, or Fragment of a URI are
+       obfuscated in place, and legacy scheme-substitution tokens are
+       defined for de-obfuscation interoperability.  Safe-IOC strings are a
+       textual rendering convention, not URIs, and are not intended to be
+       processed by generic URI parsers.  These conventions aim to improve
+       interoperability among tools and feeds that exchange threat
+       intelligence data.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-grimminck-safe-ioc-sharing-00
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-00
@@ -33,7 +45,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-grimminck-safe-ioc-sharing-01
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-01
@@ -43,7 +56,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-grimminck-safe-ioc-sharing-02
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-02
@@ -53,11 +67,89 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-grimminck-safe-ioc-sharing-03
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-03
     docidentifier:
     - content: draft-grimminck-safe-ioc-sharing-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-04
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-05
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-06
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-06
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-07
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-07
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-08
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-08
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-09
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-09
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-grimminck-safe-ioc-sharing-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-grimminck-safe-ioc-sharing-10
+    docidentifier:
+    - content: draft-grimminck-safe-ioc-sharing-10
       type: Internet-Draft
       primary: true

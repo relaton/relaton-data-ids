@@ -1,7 +1,8 @@
 ---
 id: draftmelnikovimapcondstore
-schema_version: v1.4.1
-formattedref: draft-melnikov-imap-condstore
+schema_version: v1.5.6
+formattedref:
+  content: draft-melnikov-imap-condstore
 title:
 - language: en
   script: Latn
@@ -13,19 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "Often, multiple IMAP clients need to coordinate changes to a common\nIMAP
-    mailbox.  Examples include different clients for the same user,\nand multiple
-    users accessing shared mailboxes. These clients\nneed a mechanism to synchronize
-    state changes for messages within the\nmailbox. They must be able to guarantee
-    that only one client can change\nmessage state (e.g., message flags or annotations)
-    at any time.  An\nexample of such an application is use of an IMAP mailbox as
-    a message\nqueue with multiple dequeueing clients.\nThe Conditional Store facility
-    provides a protected update mechanism for\nmessage state information that can
-    detect and resolve conflicts between\nmultiple writers.\n\t "
+  content: |-
+    <p>Often, multiple IMAP clients need to coordinate changes to a common
+    IMAP mailbox.  Examples include different clients for the same user,
+    and multiple users accessing shared mailboxes. These clients
+    need a mechanism to synchronize state changes for messages within the
+    mailbox. They must be able to guarantee that only one client can change
+    message state (e.g., message flags or annotations) at any time.  An
+    example of such an application is use of an IMAP mailbox as a message
+    queue with multiple dequeueing clients.
+    The Conditional Store facility provides a protected update mechanism for
+    message state information that can detect and resolve conflicts between
+    multiple writers.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-melnikov-imap-condstore-09
+    formattedref:
+      content: draft-melnikov-imap-condstore-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-melnikov-imap-condstore-09

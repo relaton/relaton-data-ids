@@ -1,7 +1,7 @@
 ---
 id: draftbisaviproblem02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Bingyang Liu
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -69,25 +69,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IETF Source Address Validation Improvements (SAVI) working group is\n
-    \  chartered for source address validation within the first hop from the\n   end
-    hosts, i.e. preventing a node from spoofing the IP source address\n   of another
-    node in the same IP link.  For source address validation\n   beyond the first
-    hop (SAVI-BF), Ingress Filtering [BCP38]/[BCP84] is\n   the best current practice.
-    \ However Ingress Filtering may drop\n   legitimate packets (false positive) or
-    fail to recognize spoofing\n   packets (false negative) in case of asymmetric
-    routing, which is not\n   rare under SAVI-BF scenario.\n\n   This document states
-    the possible scenarios in which Ingress\n   Filtering may have problems (false
-    positive or false negative).  We\n   claim that the reason of the problems is
-    that the routers are lack of\n   sufficient routing information to predict the
-    incoming direction of a\n   packet, since source address validation beyond the
-    first hop should\n   act consistently with the behavior of the routing system.
-    \ We also\n   discuss the availability of the needed routing information under\n
-    \  different routing environments.\n\n\t "
+  content: |-
+    <p>IETF Source Address Validation Improvements (SAVI) working group is
+       chartered for source address validation within the first hop from the
+       end hosts, i.e. preventing a node from spoofing the IP source address
+       of another node in the same IP link.  For source address validation
+       beyond the first hop (SAVI-BF), Ingress Filtering [BCP38]/[BCP84] is
+       the best current practice.  However Ingress Filtering may drop
+       legitimate packets (false positive) or fail to recognize spoofing
+       packets (false negative) in case of asymmetric routing, which is not
+       rare under SAVI-BF scenario.
+
+       This document states the possible scenarios in which Ingress
+       Filtering may have problems (false positive or false negative).  We
+       claim that the reason of the problems is that the routers are lack of
+       sufficient routing information to predict the incoming direction of a
+       packet, since source address validation beyond the first hop should
+       act consistently with the behavior of the routing system.  We also
+       discuss the availability of the needed routing information under
+       different routing environments.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-bi-savi-problem-03
+    formattedref:
+      content: draft-bi-savi-problem-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bi-savi-problem-03
@@ -103,7 +108,7 @@ series:
     content: Internet-Draft
   number: draft-bi-savi-problem-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

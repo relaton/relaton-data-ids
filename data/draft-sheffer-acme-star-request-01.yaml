@@ -1,7 +1,7 @@
 ---
 id: draftshefferacmestarrequest01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -150,7 +150,7 @@ contributor:
         - language: en
           content: Nokia
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -158,19 +158,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This memo proposes a protocol that allows a domain name owner to\n
-    \  delegate to a third party (such as a CDN) control over a certificate\n   that
-    bears one or more names in that domain.  Specifically the third\n   party creates
-    a Certificate Signing Request for the domain, which can\n   then be used by the
-    domain owner to request a short term and\n   automatically renewed (STAR) certificate.\n\n
-    \  This is a component in a solution where a third-party such as a CDN\n   can
-    terminate TLS sessions on behalf of a domain name owner (e.g., a\n   content provider),
-    and the domain owner can cancel this delegation at\n   any time without having
-    to rely on certificate revocation mechanisms.\n\n\t "
+  content: |-
+    <p>This memo proposes a protocol that allows a domain name owner to
+       delegate to a third party (such as a CDN) control over a certificate
+       that bears one or more names in that domain.  Specifically the third
+       party creates a Certificate Signing Request for the domain, which can
+       then be used by the domain owner to request a short term and
+       automatically renewed (STAR) certificate.
+
+       This is a component in a solution where a third-party such as a CDN
+       can terminate TLS sessions on behalf of a domain name owner (e.g., a
+       content provider), and the domain owner can cancel this delegation at
+       any time without having to rely on certificate revocation mechanisms.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-sheffer-acme-star-request-00
+    formattedref:
+      content: draft-sheffer-acme-star-request-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sheffer-acme-star-request-00
@@ -180,7 +184,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-sheffer-acme-star-request-02
+    formattedref:
+      content: draft-sheffer-acme-star-request-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-sheffer-acme-star-request-02
@@ -196,7 +201,7 @@ series:
     content: Internet-Draft
   number: draft-sheffer-acme-star-request-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

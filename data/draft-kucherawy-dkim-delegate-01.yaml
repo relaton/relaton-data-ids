@@ -1,7 +1,7 @@
 ---
 id: draftkucherawydkimdelegate01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Dave Crocker
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,22 +69,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DomainKeys Identified Mail (DKIM) permits a handling agent to affix
-    a\n   digital signature to an email message, associating a domain name with\n
-    \  that message using cryptographic signing techniques.  The digital\n   signature
-    typically covers most of a message's original portions,\n   although the specific
-    choices for content hashing are at the\n   discretion of the signer.  DKIM signatures
-    survive simply email\n   relaying but typically are invalidated by processing
-    through\n   Mediators, such as mailing lists.  For such cases, the signer needs
-    a\n   way to indicate that a valid signature from some third party was\n   anticipated,
-    and constitutes an acceptable handling of the message.\n   This enables a receiver
-    to conclude that the content is legitimately\n   from that original signer, even
-    though its original signature no\n   longer validates.\n\n   This document defines
-    a mechanism for improving the ability to assess\n   DKIM validity for such messages.\n\n\t "
+  content: |-
+    <p>DomainKeys Identified Mail (DKIM) permits a handling agent to affix a
+       digital signature to an email message, associating a domain name with
+       that message using cryptographic signing techniques.  The digital
+       signature typically covers most of a message&#39;s original portions,
+       although the specific choices for content hashing are at the
+       discretion of the signer.  DKIM signatures survive simply email
+       relaying but typically are invalidated by processing through
+       Mediators, such as mailing lists.  For such cases, the signer needs a
+       way to indicate that a valid signature from some third party was
+       anticipated, and constitutes an acceptable handling of the message.
+       This enables a receiver to conclude that the content is legitimately
+       from that original signer, even though its original signature no
+       longer validates.
+
+       This document defines a mechanism for improving the ability to assess
+       DKIM validity for such messages.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-kucherawy-dkim-delegate-00
+    formattedref:
+      content: draft-kucherawy-dkim-delegate-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kucherawy-dkim-delegate-00
@@ -94,7 +100,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-kucherawy-dkim-delegate-02
+    formattedref:
+      content: draft-kucherawy-dkim-delegate-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kucherawy-dkim-delegate-02
@@ -110,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-kucherawy-dkim-delegate-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

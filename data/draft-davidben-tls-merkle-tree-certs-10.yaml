@@ -1,7 +1,7 @@
 ---
 id: draftdavidbentlsmerkletreecerts10
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -141,7 +141,7 @@ contributor:
         - language: en
           content: Geomys
 version:
-- draft: '10'
+- content: '10'
 language:
 - en
 script:
@@ -149,19 +149,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes Merkle Tree certificates, a new form of X.509\n
-    \  certificates which integrate public logging of the certificate, in\n   the
-    style of Certificate Transparency.  The integrated design reduces\n   logging
-    overhead in the face of both shorter-lived certificates and\n   large post-quantum
-    signature algorithms, while still achieving\n   comparable security properties
-    to traditional X.509 and Certificate\n   Transparency.  Merkle Tree certificates
-    additionally admit an\n   optional signatureless optimization, which decreases
-    the message size\n   by avoiding signatures altogether, at the cost of only applying
-    to\n   up-to-date relying parties and older certificates.\n\n\t "
+  content: |-
+    <p>This document describes Merkle Tree certificates, a new form of X.509
+       certificates which integrate public logging of the certificate, in
+       the style of Certificate Transparency.  The integrated design reduces
+       logging overhead in the face of both shorter-lived certificates and
+       large post-quantum signature algorithms, while still achieving
+       comparable security properties to traditional X.509 and Certificate
+       Transparency.  Merkle Tree certificates additionally admit an
+       optional signatureless optimization, which decreases the message size
+       by avoiding signatures altogether, at the cost of only applying to
+       up-to-date relying parties and older certificates.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-davidben-tls-merkle-tree-certs-09
+    formattedref:
+      content: draft-davidben-tls-merkle-tree-certs-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-davidben-tls-merkle-tree-certs-09
@@ -177,7 +180,7 @@ series:
     content: Internet-Draft
   number: draft-davidben-tls-merkle-tree-certs-10
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

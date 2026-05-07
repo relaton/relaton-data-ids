@@ -1,7 +1,7 @@
 ---
 id: draftietfbfdonlags02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -122,7 +122,7 @@ contributor:
         language: en
         content: Jeffrey Haas
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -130,19 +130,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a mechanism to run BFD on Link Aggregation\n
-    \  Group (LAG) interfaces.  It does so by running an independent\n   Asynchronous
-    mode BFD session on every LAG member link.\n\n   This mechanism allows the verification
-    of member link continuity,\n   either in combination with, or in absence of, LACP.
-    \ It provides a\n   shorter detection time than what LACP offers.  The continuity
-    check\n   can also cover elements of layer 3 bidirectional forwarding.\n\n   This
-    mechanism utilizes a well-known UDP port distinct from that of\n   single-hop
-    BFD over IP.  This new UDP port removes the ambiguity of\n   BFD over LAG packets
-    from BFD over single-hop IP.\n\n\n\t "
+  content: |-
+    <p>This document proposes a mechanism to run BFD on Link Aggregation
+       Group (LAG) interfaces.  It does so by running an independent
+       Asynchronous mode BFD session on every LAG member link.
+
+       This mechanism allows the verification of member link continuity,
+       either in combination with, or in absence of, LACP.  It provides a
+       shorter detection time than what LACP offers.  The continuity check
+       can also cover elements of layer 3 bidirectional forwarding.
+
+       This mechanism utilizes a well-known UDP port distinct from that of
+       single-hop BFD over IP.  This new UDP port removes the ambiguity of
+       BFD over LAG packets from BFD over single-hop IP.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-bfd-on-lags-01
+    formattedref:
+      content: draft-ietf-bfd-on-lags-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-on-lags-01
@@ -152,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-bfd-on-lags-03
+    formattedref:
+      content: draft-ietf-bfd-on-lags-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-bfd-on-lags-03
@@ -168,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-bfd-on-lags-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

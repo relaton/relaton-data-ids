@@ -1,7 +1,7 @@
 ---
 id: draftconroyenumedns002
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: DNS-MODA
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -82,14 +82,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "Support for EDNS0 (Extension Mechanisms for DNS) is mandated in this\n
-    \  document for DNS entities querying for or serving NAPTR records.  In\n   general
-    those entities will be supporting ENUM resolution.  This\n   requirement is needed
-    because DNS responses to ENUM-related queries\n   generally return large RRSets.
-    \ Without EDNS0 support these lookups\n   would result in truncated responses
-    and repeated queries over TCP\n   transport.  That has a severe impact on DNS
-    server load and on the\n   latency of those queries.\n\n   This document updates
-    RFC3761 only in adding this requirement.\n\t "
+  content: |-
+    <p>Support for EDNS0 (Extension Mechanisms for DNS) is mandated in this
+       document for DNS entities querying for or serving NAPTR records.  In
+       general those entities will be supporting ENUM resolution.  This
+       requirement is needed because DNS responses to ENUM-related queries
+       generally return large RRSets.  Without EDNS0 support these lookups
+       would result in truncated responses and repeated queries over TCP
+       transport.  That has a severe impact on DNS server load and on the
+       latency of those queries.
+
+       This document updates RFC3761 only in adding this requirement.</p>
 series:
 - type: main
   title:
@@ -98,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-conroy-enum-edns0-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

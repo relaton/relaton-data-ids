@@ -1,7 +1,8 @@
 ---
 id: draftlaiccwglsncc
-schema_version: v1.4.1
-formattedref: draft-lai-ccwg-lsncc
+schema_version: v1.5.6
+formattedref:
+  content: draft-lai-ccwg-lsncc
 title:
 - language: en
   script: Latn
@@ -14,24 +15,46 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides a performance analysis on various congestion\n
-    \  control algorithms(CCAs) in an operational low-earth orbit (LEO)\n   satellite
-    network (LSN).  Internet CCAs are expected to perform well\n   in any Internet
-    path, including those paths with LEO satellite links.\n   Our analysis results
-    reveal that existing CCAs struggle to deal with\n   the drastic network variations
-    caused by the mobility of LEO\n   satellites, resulting in poor link utilization
-    or high latency.\n   Further, this document discusses the key challenges of achieving
-    high\n   throughput and low latency for end-to-end connections over an LSN,\n
-    \  and provides useful information when the LSN-specific congestion\n   control
-    principles for the Internet is standardized in the future.\n\n\t "
+  content: |-
+    <p>Low-earth-orbit (LEO) satellite networks (LSNs) are increasingly used
+       to carry Internet traffic.  However, the fast time-varying conditions
+       induced by LEO mobility can significantly impair the performance of
+       end-to-end Internet congestion control algorithms (CCAs).  This
+       document summarizes and analyzes how mobility-driven (often non-
+       congestive) variations in capacity, delay, and loss can mislead
+       representative classes of CCAs, using Starlink as an operational case
+       study.  In addition, this document highlights recently-validated
+       measurement and design considerations that treat connection
+       reconfiguration as a phase boundary observable at endpoints, which
+       can improve the interpretation of network signals without requiring
+       changes to the network infrastructure.  This document also proposes a
+       transport-agnostic &quot;Path Phase Boundary&quot; (PPB) abstraction and
+       corresponding endpoint behavior considerations for safely using such
+       hints across diverse CCAs.  Finally, it outlines a reference endpoint
+       probing profile that can be used to infer PPBs in a deployable, best-
+       effort manner.  The goal of this document is informational: to
+       clarify the problem space and to inform future standardization and
+       engineering efforts for congestion control over LSN paths.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-lai-ccwg-lsncc-00
+    formattedref:
+      content: draft-lai-ccwg-lsncc-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-lai-ccwg-lsncc-00
     docidentifier:
     - content: draft-lai-ccwg-lsncc-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-lai-ccwg-lsncc-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lai-ccwg-lsncc-01
+    docidentifier:
+    - content: draft-lai-ccwg-lsncc-01
       type: Internet-Draft
       primary: true

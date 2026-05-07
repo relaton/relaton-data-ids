@@ -1,7 +1,8 @@
 ---
 id: draftxieonsenproblemstatement
-schema_version: v1.4.1
-formattedref: draft-xie-onsen-problem-statement
+schema_version: v1.5.6
+formattedref:
+  content: draft-xie-onsen-problem-statement
 title:
 - language: en
   script: Latn
@@ -13,25 +14,40 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   Exposure of network and service abstractions to external systems via\n
-    \  YANG-based APIs has become an important means for operators to\n   enhance
-    their competitiveness.  Despite the availability of numerous\n   YANG data models,
-    operators continue to face significant challenges\n   in operationalizing these
-    APIs in a consistent, scalable, and\n   interoperable manner.  Based on a typical
-    use case, this document\n   describes the problem space associated with operationalizing
-    YANG-\n   based service APIs, drawing on operator experience, IAB workshop\n   findings
-    to motivate requirements for improving API predictability\n   and operational
-    effectiveness through the upcoming ONSEN WG.  In\n   addition, it intends to gather
-    operational needs and motivations for\n   network and service abstractions to
-    inform YANG data model refresh\n   work.\n\n\t "
+  content: |-
+    <p>This document illustrates major operational challenges in deploying
+       IETF YANG-based service and network abstractions, despite widespread
+       model availability.  It introduces the Data Transmission Service for
+       Data-Intensive workloads (DTS-I)- an typical use case requiring
+       ultra-high bandwidth, deterministic scheduling, and multi-domain
+       coordination to illustrate gaps in existing L2SM/L3SM/LxNM models.
+       Key issues include fragmented lifecycle management, inconsistent
+       service semantics across APIs, poor abstraction-layer alignment, and
+       limited observability.  Based on on the findings of IAB NEMOPS
+       workshop, this document outlines the problem space for the proposed
+       ONSEN Working Group, which aims to improve operationalization,
+       semantic coherence, and interoperability of YANG-based service APIs
+       without proposing new models or protocols.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-xie-onsen-problem-statement-00
+    formattedref:
+      content: draft-xie-onsen-problem-statement-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-xie-onsen-problem-statement-00
     docidentifier:
     - content: draft-xie-onsen-problem-statement-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-xie-onsen-problem-statement-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xie-onsen-problem-statement-01
+    docidentifier:
+    - content: draft-xie-onsen-problem-statement-01
       type: Internet-Draft
       primary: true

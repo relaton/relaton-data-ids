@@ -1,7 +1,8 @@
 ---
 id: drafttilocacoreoscorepivenc
-schema_version: v1.4.1
-formattedref: draft-tiloca-core-oscore-piv-enc
+schema_version: v1.5.6
+formattedref:
+  content: draft-tiloca-core-oscore-piv-enc
 title:
 - language: en
   script: Latn
@@ -14,23 +15,27 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The security protocol Object Security for Constrained RESTful\n   Environments
-    (OSCORE) provides end-to-end protection of messages\n   exchanged with the Constrained
-    Application Protocol (CoAP).  Messages\n   protected with OSCORE include a CoAP
-    OSCORE option, where the\n   \"Partial IV\" field specifies the sequence number
-    value used by the\n   message sender and the \"kid\" field specifies the identifier
-    of the\n   message sender.  In order to reduce the information exposed on the\n
-    \  wire that can be used for fingerprinting traffic and for tracking\n   endpoints,
-    this document defines a lightweight add-on method that\n   obfuscates certain
-    fields of the OSCORE option, by encrypting the\n   \"Partial IV\" field and overwriting
-    the \"kid\" field with a stand-in\n   identifier.  Therefore, it updates RFC 8613.
-    \ With minor adaptations,\n   the defined method is applicable also to the security
-    protocol Group\n   Object Security for Constrained RESTful Environments (Group
-    OSCORE)\n   that protects group communication for CoAP.\n\n\t "
+  content: |-
+    <p>The security protocol Object Security for Constrained RESTful
+       Environments (OSCORE) provides end-to-end protection of messages
+       exchanged with the Constrained Application Protocol (CoAP).  Messages
+       protected with OSCORE include a CoAP OSCORE Option, where the
+       &quot;Partial IV&quot; field specifies the sequence number value used by the
+       message sender and the &quot;kid&quot; field specifies the identifier of the
+       message sender.  In order to reduce the information exposed on the
+       wire that can be used for fingerprinting traffic and for tracking
+       endpoints, this document defines a lightweight add-on method that
+       obfuscates certain fields of the OSCORE Option, by encrypting the
+       &quot;Partial IV&quot; field and overwriting the &quot;kid&quot; field with a stand-in
+       identifier.  Therefore, it updates RFC 8613.  With minor adaptations,
+       the defined method is applicable also to the security protocol Group
+       Object Security for Constrained RESTful Environments (Group OSCORE)
+       that protects group communication for CoAP.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-tiloca-core-oscore-piv-enc-00
+    formattedref:
+      content: draft-tiloca-core-oscore-piv-enc-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-00
@@ -40,11 +45,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-tiloca-core-oscore-piv-enc-01
+    formattedref:
+      content: draft-tiloca-core-oscore-piv-enc-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-01
     docidentifier:
     - content: draft-tiloca-core-oscore-piv-enc-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-tiloca-core-oscore-piv-enc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tiloca-core-oscore-piv-enc-02
+    docidentifier:
+    - content: draft-tiloca-core-oscore-piv-enc-02
       type: Internet-Draft
       primary: true

@@ -1,7 +1,7 @@
 ---
 id: draftchenlsranycastflag02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Arrcus, Inc
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -129,18 +129,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Both SR-MPLS prefixes-SID and IPv4 prefix may be configured as\n   anycast
-    and as such the same value can be advertised by multiple\n   routers.  It is useful
-    for other routers to know that the\n   advertisement is for an anycast identifier.\n\n
-    \  Each prefix is advertised along with an 8-bit field of\n   capabilities,by
-    using the flag flield in the OSPFv2 Extended Prefix\n   TLV [RFC7684], but the
-    definition of anycast flag to identify the\n   prefix as anycast has not yet been
-    defined.\n\n   This document updates [RFC7684], by defining a new flag in the
-    OSPFv2\n   Extended Prefix TLV [RFC7684] to advertise the anycast property.\n\n\t "
+  content: |-
+    <p>Both SR-MPLS prefixes-SID and IPv4 prefix may be configured as
+       anycast and as such the same value can be advertised by multiple
+       routers.  It is useful for other routers to know that the
+       advertisement is for an anycast identifier.
+
+       Each prefix is advertised along with an 8-bit field of
+       capabilities,by using the flag flield in the OSPFv2 Extended Prefix
+       TLV [RFC7684], but the definition of anycast flag to identify the
+       prefix as anycast has not yet been defined.
+
+       This document updates [RFC7684], by defining a new flag in the OSPFv2
+       Extended Prefix TLV [RFC7684] to advertise the anycast property.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-chen-lsr-anycast-flag-01
+    formattedref:
+      content: draft-chen-lsr-anycast-flag-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-lsr-anycast-flag-01
@@ -150,7 +156,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-chen-lsr-anycast-flag-03
+    formattedref:
+      content: draft-chen-lsr-anycast-flag-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-chen-lsr-anycast-flag-03
@@ -166,7 +173,7 @@ series:
     content: Internet-Draft
   number: draft-chen-lsr-anycast-flag-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

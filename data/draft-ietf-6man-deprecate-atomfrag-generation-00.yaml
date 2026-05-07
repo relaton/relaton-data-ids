@@ -1,7 +1,7 @@
 ---
 id: draftietf6mandeprecateatomfraggeneration00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -84,7 +84,7 @@ contributor:
         language: en
         content: Tore Anderson
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -92,22 +92,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The core IPv6 specification requires that when a host receives an\n
-    \  ICMPv6 \"Packet Too Big\" message reporting a \"Next-Hop MTU\" smaller\n   than
-    1280, the host includes a Fragment Header in all subsequent\n   packets sent to
-    that destination, without reducing the assumed Path-\n   MTU.  The simplicity
-    with which ICMPv6 \"Packet Too Big\" messages can\n   be forged, coupled with
-    the widespread filtering of IPv6 fragments,\n   results in an attack vector that
-    can be leveraged for Denial of\n   Service purposes.  This document briefly discusses
-    the aforementioned\n   attack vector, and formally updates RFC2460 such that generation
-    of\n   IPv6 atomic fragments is deprecated, thus eliminating the\n   aforementioned
-    attack vector.  Additionally, it formally updates\n   RFC6145 such that the Stateless
-    IP/ICMP Translation Algorithm (SIIT)\n   does not rely on the generation of IPv6
-    atomic fragments, thus\n   improving the robustness of the protocol.\n\n\t "
+  content: |-
+    <p>The core IPv6 specification requires that when a host receives an
+       ICMPv6 &quot;Packet Too Big&quot; message reporting a &quot;Next-Hop MTU&quot; smaller
+       than 1280, the host includes a Fragment Header in all subsequent
+       packets sent to that destination, without reducing the assumed Path-
+       MTU.  The simplicity with which ICMPv6 &quot;Packet Too Big&quot; messages can
+       be forged, coupled with the widespread filtering of IPv6 fragments,
+       results in an attack vector that can be leveraged for Denial of
+       Service purposes.  This document briefly discusses the aforementioned
+       attack vector, and formally updates RFC2460 such that generation of
+       IPv6 atomic fragments is deprecated, thus eliminating the
+       aforementioned attack vector.  Additionally, it formally updates
+       RFC6145 such that the Stateless IP/ICMP Translation Algorithm (SIIT)
+       does not rely on the generation of IPv6 atomic fragments, thus
+       improving the robustness of the protocol.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6man-deprecate-atomfrag-generation-01
+    formattedref:
+      content: draft-ietf-6man-deprecate-atomfrag-generation-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-deprecate-atomfrag-generation-01
@@ -123,7 +127,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6man-deprecate-atomfrag-generation-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

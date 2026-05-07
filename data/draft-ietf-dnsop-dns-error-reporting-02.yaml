@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopdnserrorreporting02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: ICANN
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -79,23 +79,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   DNS Error Reporting is a lightweight error reporting mechanism that\n
-    \  provides the operator of an authoritative server with reports on DNS\n   resource
-    records that fail to resolve or validate, that a Domain\n   Owner or DNS Hosting
-    organization can use to improve domain hosting.\n   The reports are based on Extended
-    DNS Errors [RFC8914].\n\n   When a domain name fails to resolve or validate due
-    to a\n   misconfiguration or an attack, the operator of the authoritative\n   server
-    may be unaware of this.  To mitigate this lack of feedback,\n   this document
-    describes a method for a validating recursive resolver\n   to automatically signal
-    an error to an agent specified by the\n   authoritative server.  DNS Error Reporting
-    uses the DNS to report\n   errors.\n\n   Another lack of feedback occurs when
-    validation was successful, or\n   when there is no error to report.  This positive
-    feedback may be\n   helpful to show that a deployment was successful.  This document\n
-    \  introcudes an extended DNS error \"NO ERROR\".\n\n\t "
+  content: |-
+    <p>DNS Error Reporting is a lightweight error reporting mechanism that
+       provides the operator of an authoritative server with reports on DNS
+       resource records that fail to resolve or validate, that a Domain
+       Owner or DNS Hosting organization can use to improve domain hosting.
+       The reports are based on Extended DNS Errors [RFC8914].
+
+       When a domain name fails to resolve or validate due to a
+       misconfiguration or an attack, the operator of the authoritative
+       server may be unaware of this.  To mitigate this lack of feedback,
+       this document describes a method for a validating recursive resolver
+       to automatically signal an error to an agent specified by the
+       authoritative server.  DNS Error Reporting uses the DNS to report
+       errors.
+
+       Another lack of feedback occurs when validation was successful, or
+       when there is no error to report.  This positive feedback may be
+       helpful to show that a deployment was successful.  This document
+       introcudes an extended DNS error &quot;NO ERROR&quot;.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-dns-error-reporting-01
+    formattedref:
+      content: draft-ietf-dnsop-dns-error-reporting-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-dns-error-reporting-01
@@ -105,7 +112,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-dns-error-reporting-03
+    formattedref:
+      content: draft-ietf-dnsop-dns-error-reporting-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-dns-error-reporting-03
@@ -121,7 +129,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-dns-error-reporting-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

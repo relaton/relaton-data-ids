@@ -1,7 +1,8 @@
 ---
 id: draftbhargavantlssessionhash
-schema_version: v1.4.1
-formattedref: draft-bhargavan-tls-session-hash
+schema_version: v1.5.6
+formattedref:
+  content: draft-bhargavan-tls-session-hash
 title:
 - language: en
   script: Latn
@@ -14,20 +15,24 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The Transport Layer Security (TLS) master secret is not\n   cryptographically
-    bound to important session parameters such as the\n   client and server identities.
-    \ Consequently, it is possible for an\n   active attacker to set up two sessions,
-    one with a client and another\n   with a server such that the master secrets on
-    the two sessions are\n   the same.  Thereafter, any mechanism that relies on the
-    master secret\n   for authentication, including renegotiation after session resumption,\n
-    \  becomes vulnerable to a man-in-the-middle attack, where the attacker\n   can
-    simply forward messages back and forth between the client and\n   server.  This
-    specification defines a TLS extension that contextually\n   binds the master secret
-    to a log of the full handshake that computes\n   it, thus preventing such attacks.\n\n\t "
+  content: |-
+    <p>The Transport Layer Security (TLS) master secret is not
+       cryptographically bound to important session parameters such as the
+       client and server identities.  Consequently, it is possible for an
+       active attacker to set up two sessions, one with a client and another
+       with a server such that the master secrets on the two sessions are
+       the same.  Thereafter, any mechanism that relies on the master secret
+       for authentication, including renegotiation after session resumption,
+       becomes vulnerable to a man-in-the-middle attack, where the attacker
+       can simply forward messages back and forth between the client and
+       server.  This specification defines a TLS extension that contextually
+       binds the master secret to a log of the full handshake that computes
+       it, thus preventing such attacks.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-bhargavan-tls-session-hash-00
+    formattedref:
+      content: draft-bhargavan-tls-session-hash-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bhargavan-tls-session-hash-00
@@ -37,7 +42,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-bhargavan-tls-session-hash-01
+    formattedref:
+      content: draft-bhargavan-tls-session-hash-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bhargavan-tls-session-hash-01

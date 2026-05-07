@@ -1,7 +1,7 @@
 ---
 id: draftyusefdispatchccmpindication02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Mary Barnes
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -69,23 +69,28 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Centralized Conferencing Manipulation Protocol document defines
-    a\n   way for a client to discover a conference control server that\n   supports
-    CCMP. However, it does not define a way for a client\n   involved in a conference
-    to determine if the conference focus\n   supports CCMP. This information would
-    allow a CCMP-enabled client\n   that joins a conference using SIP to also register
-    for the XCON\n   conference event package RFC4575 [RFC 4575] and take advantage
-    of\n   CCMP operations on the conference.\n\n   This document describes a few
-    options to address the above limitation\n   with the pros and cons for each approach,
-    and recommends two to be\n   used depending on the need of the UA. The first approach
-    uses the\n   Call-Info header and as a result this document updates RFC3261. The\n
-    \  second approach defines a new value for the 'purpose' parameter in\n   the
-    'service-uris' element in the SIP conferencing event package, and\n   as a result
-    this document update RFC4575 [RFC 4575].\n\n\n\t "
+  content: |-
+    <p>The Centralized Conferencing Manipulation Protocol document defines a
+       way for a client to discover a conference control server that
+       supports CCMP. However, it does not define a way for a client
+       involved in a conference to determine if the conference focus
+       supports CCMP. This information would allow a CCMP-enabled client
+       that joins a conference using SIP to also register for the XCON
+       conference event package RFC4575 [RFC 4575] and take advantage of
+       CCMP operations on the conference.
+
+       This document describes a few options to address the above limitation
+       with the pros and cons for each approach, and recommends two to be
+       used depending on the need of the UA. The first approach uses the
+       Call-Info header and as a result this document updates RFC3261. The
+       second approach defines a new value for the &#39;purpose&#39; parameter in
+       the &#39;service-uris&#39; element in the SIP conferencing event package, and
+       as a result this document update RFC4575 [RFC 4575].</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-yusef-dispatch-ccmp-indication-01
+    formattedref:
+      content: draft-yusef-dispatch-ccmp-indication-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yusef-dispatch-ccmp-indication-01
@@ -95,7 +100,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-yusef-dispatch-ccmp-indication-03
+    formattedref:
+      content: draft-yusef-dispatch-ccmp-indication-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-yusef-dispatch-ccmp-indication-03
@@ -111,7 +117,7 @@ series:
     content: Internet-Draft
   number: draft-yusef-dispatch-ccmp-indication-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

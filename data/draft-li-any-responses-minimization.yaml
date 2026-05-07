@@ -1,7 +1,8 @@
 ---
 id: draftlianyresponsesminimization
-schema_version: v1.4.1
-formattedref: draft-li-any-responses-minimization
+schema_version: v1.5.6
+formattedref:
+  content: draft-li-any-responses-minimization
 title:
 - language: en
   script: Latn
@@ -13,21 +14,37 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The \" ANY \" query type in DNS requests the server to return all\n
-    \  available resource records for a given domain name.  While RFC 8482\n   defines
-    a mechanism for authoritative servers to minimize ANY\n   responses, a recursive
-    resolver may still generate an ANY query\n   response directly from its cache,
-    thereby bypassing the authoritative\n   side's ANY query minimization strategy.
-    \ This document provides\n   supplementary guidance for recursive resolvers on
-    processing ANY\n   queries to mitigate potential operational and security issues.\n\n\t "
+  content: |-
+    <p>The &quot;ANY&quot; query in DNS is a meta-query intended to match multiple
+       resource record types associated with a given domain name, and can
+       elicit responses that are significantly larger than those generated
+       by single-type queries.  While RFC 8482 defines a mechanism for
+       authoritative servers to minimize ANY responses, a recursive resolver
+       may still generate an ANY query response directly from its cache,
+       thereby bypassing the authoritative side&#39;s ANY query minimization
+       strategy.  This document provides supplementary guidance for
+       recursive resolvers on processing ANY queries to mitigate potential
+       operational and security issues.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-li-any-responses-minimization-00
+    formattedref:
+      content: draft-li-any-responses-minimization-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-any-responses-minimization-00
     docidentifier:
     - content: draft-li-any-responses-minimization-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-li-any-responses-minimization-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-li-any-responses-minimization-01
+    docidentifier:
+    - content: draft-li-any-responses-minimization-01
       type: Internet-Draft
       primary: true

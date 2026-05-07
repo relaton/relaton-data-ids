@@ -1,7 +1,7 @@
 ---
 id: draftdongidronetimeextcommunityorf01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         language: en
         content: Keyur Patel
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -129,20 +129,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a new Outbound Router Filter (ORF) type for\n
-    \  BGP, termed \"One-time Extended Community Outbound Route Filter\",\n   which
-    would allow a BGP speaker to send to its BGP peer a route\n   refresh request
-    with a set of extended-community-based filters to\n   make the peer re-advertise
-    only the specific routes matching the\n   filters to the speaker.  This ORF-type
-    enables a BGP speaker to\n   refresh some specific routes without requiring its
-    peer to re-\n   advertise the whole Adj-RIB-Out, which makes the route refresh\n
-    \  operation more efficient and reduces the impact on network stability.\n   This
-    filter does not change the outbound route filters on BGP peers\n   and should
-    only be used for one-time filtering.\n\n\n\t "
+  content: |-
+    <p>This document defines a new Outbound Router Filter (ORF) type for
+       BGP, termed &quot;One-time Extended Community Outbound Route Filter&quot;,
+       which would allow a BGP speaker to send to its BGP peer a route
+       refresh request with a set of extended-community-based filters to
+       make the peer re-advertise only the specific routes matching the
+       filters to the speaker.  This ORF-type enables a BGP speaker to
+       refresh some specific routes without requiring its peer to re-
+       advertise the whole Adj-RIB-Out, which makes the route refresh
+       operation more efficient and reduces the impact on network stability.
+       This filter does not change the outbound route filters on BGP peers
+       and should only be used for one-time filtering.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-dong-idr-one-time-ext-community-orf-02
+    formattedref:
+      content: draft-dong-idr-one-time-ext-community-orf-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-dong-idr-one-time-ext-community-orf-02
@@ -158,7 +161,7 @@ series:
     content: Internet-Draft
   number: draft-dong-idr-one-time-ext-community-orf-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

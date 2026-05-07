@@ -1,7 +1,7 @@
 ---
 id: draftlisidropsbiconesav03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: Zhongguancun Laboratory
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -126,22 +126,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The primary design goal of source address validation (SAV) is\n   avoiding
-    improper block (i.e., blocking legitimate traffic) while\n   maintaining directionality,
-    especially in partial deployment\n   scenarios (see [I-D.ietf-savnet-inter-domain-problem-statement]
-    and\n   [RFC8704]).  Existing advanced SAV solutions ([RFC8704] and\n   [I-D.ietf-sidrops-bar-sav])
-    typically generate ingress SAV allowlist\n   filters on interfaces facing a customer
-    or lateral peer AS.  This\n   document analyzes potential improper block problems
-    when using the\n   allowlist.  To enhance the SAV robustness and avoid improper
-    block,\n   this document provides an additional option for network operators,\n
-    \  i.e., generating a blocklist filter by using BGP updates, ROAs, and\n   ASPAs
-    related to the provider cone.  Network operators can flexibly\n   use the allowlist
-    or blocklist on different interfaces according to\n   their requirements and actual
-    conditions.\n\n\t "
+  content: |-
+    <p>The primary design goal of source address validation (SAV) is
+       avoiding improper block (i.e., blocking legitimate traffic) while
+       maintaining directionality, especially in partial deployment
+       scenarios (see [I-D.ietf-savnet-inter-domain-problem-statement] and
+       [RFC8704]).  Existing advanced SAV solutions ([RFC8704] and
+       [I-D.ietf-sidrops-bar-sav]) typically generate ingress SAV allowlist
+       filters on interfaces facing a customer or lateral peer AS.  This
+       document analyzes potential improper block problems when using the
+       allowlist.  To enhance the SAV robustness and avoid improper block,
+       this document provides an additional option for network operators,
+       i.e., generating a blocklist filter by using BGP updates, ROAs, and
+       ASPAs related to the provider cone.  Network operators can flexibly
+       use the allowlist or blocklist on different interfaces according to
+       their requirements and actual conditions.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-li-sidrops-bicone-sav-02
+    formattedref:
+      content: draft-li-sidrops-bicone-sav-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-bicone-sav-02
@@ -151,7 +155,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-li-sidrops-bicone-sav-04
+    formattedref:
+      content: draft-li-sidrops-bicone-sav-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-li-sidrops-bicone-sav-04
@@ -167,7 +172,7 @@ series:
     content: Internet-Draft
   number: draft-li-sidrops-bicone-sav-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

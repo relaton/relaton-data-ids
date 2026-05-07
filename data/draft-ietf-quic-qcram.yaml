@@ -1,7 +1,8 @@
 ---
 id: draftietfquicqcram
-schema_version: v1.4.1
-formattedref: draft-ietf-quic-qcram
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-quic-qcram
 title:
 - language: en
   script: Latn
@@ -13,19 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   The design of the core QUIC transport subsumes many HTTP/2 features,\n
-    \  prominent among them stream multiplexing.  A key advantage of the\n   QUIC
-    transport is stream multiplexing free of head-of-line (HoL)\n   blocking between
-    streams.  In HTTP/2, multiplexed streams can suffer\n   HoL blocking due to TCP.\n\n
-    \  If HTTP/2's HPACK is used for header compression, HTTP/QUIC is still\n   vulnerable
-    to HoL blocking, because of HPACK's assumption of in-order\n   delivery.  This
-    draft defines QCRAM, a variation of HPACK and\n   mechanisms in the HTTP/QUIC
-    mapping that allow the flexibility to\n   avoid header-compression-induced HoL
-    blocking.\n\n\t "
+  content: |-
+    <p>The design of the core QUIC transport subsumes many HTTP/2 features,
+       prominent among them stream multiplexing.  A key advantage of the
+       QUIC transport is stream multiplexing free of head-of-line (HoL)
+       blocking between streams.  In HTTP/2, multiplexed streams can suffer
+       HoL blocking due to TCP.
+
+       If HTTP/2&#39;s HPACK is used for header compression, HTTP/QUIC is still
+       vulnerable to HoL blocking, because of HPACK&#39;s assumption of in-order
+       delivery.  This draft defines QCRAM, a variation of HPACK and
+       mechanisms in the HTTP/QUIC mapping that allow the flexibility to
+       avoid header-compression-induced HoL blocking.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-quic-qcram-00
+    formattedref:
+      content: draft-ietf-quic-qcram-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-quic-qcram-00

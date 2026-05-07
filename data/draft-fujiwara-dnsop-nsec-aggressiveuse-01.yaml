@@ -1,7 +1,7 @@
 ---
 id: draftfujiwaradnsopnsecaggressiveuse01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Akira Kato
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,17 +69,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   While DNS highly depends on cache, its cache usage of non-existence\n
-    \  information was limited to exact matching.  This draft proposes the\n   aggressive
-    use of a NSEC/NSEC3 resource record, which is able to\n   express non-existence
-    of range of names authoritatively.  With this\n   proposal, shorter latency to
-    many of negative responses is expected\n   as well as some level of mitigation
-    of random sub-domain attacks\n   (referred to as \"Water Torture\" attacks).  It
-    is also expected that\n   non-existent TLD queries to Root DNS servers will decrease.\n\n\t "
+  content: |-
+    <p>While DNS highly depends on cache, its cache usage of non-existence
+       information was limited to exact matching.  This draft proposes the
+       aggressive use of a NSEC/NSEC3 resource record, which is able to
+       express non-existence of range of names authoritatively.  With this
+       proposal, shorter latency to many of negative responses is expected
+       as well as some level of mitigation of random sub-domain attacks
+       (referred to as &quot;Water Torture&quot; attacks).  It is also expected that
+       non-existent TLD queries to Root DNS servers will decrease.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-fujiwara-dnsop-nsec-aggressiveuse-00
+    formattedref:
+      content: draft-fujiwara-dnsop-nsec-aggressiveuse-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fujiwara-dnsop-nsec-aggressiveuse-00
@@ -89,7 +92,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-fujiwara-dnsop-nsec-aggressiveuse-02
+    formattedref:
+      content: draft-fujiwara-dnsop-nsec-aggressiveuse-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-fujiwara-dnsop-nsec-aggressiveuse-02
@@ -105,7 +109,7 @@ series:
     content: Internet-Draft
   number: draft-fujiwara-dnsop-nsec-aggressiveuse-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

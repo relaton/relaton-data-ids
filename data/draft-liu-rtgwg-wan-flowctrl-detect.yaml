@@ -1,7 +1,8 @@
 ---
 id: draftliurtgwgwanflowctrldetect
-schema_version: v1.4.1
-formattedref: draft-liu-rtgwg-wan-flowctrl-detect
+schema_version: v1.5.6
+formattedref:
+  content: draft-liu-rtgwg-wan-flowctrl-detect
 title:
 - language: en
   script: Latn
@@ -13,17 +14,39 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a proactive detection mechanism for flow\n   control
-    in WAN, letting the congested node to know precisely which\n   upstream point
-    should the flow control message be sent to.\n\n\t "
+  content: |-
+    <p>[I-D.ietf-rtgwg-net-notif-ps] establishes usecases and requirements
+       for fast notification delivery for network events (e.g., failure,
+       congestion or state change) in modern network applications.
+
+       This document proposes a proactive detection mechanism that enables
+       the flow control notification message generating downstream node to
+       be aware of the nearest upstream node capable of processing the
+       message . The mechanism operates in the data plane, uses probe
+       packets that follow the same path as data traffic, and maintains
+       state only where needed.  While proposed for flow control, the same
+       mechanism may support other fast notification use cases that require
+       distributed recipient node discovery.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-liu-rtgwg-wan-flowctrl-detect-00
+    formattedref:
+      content: draft-liu-rtgwg-wan-flowctrl-detect-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-liu-rtgwg-wan-flowctrl-detect-00
     docidentifier:
     - content: draft-liu-rtgwg-wan-flowctrl-detect-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-liu-rtgwg-wan-flowctrl-detect-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-rtgwg-wan-flowctrl-detect-01
+    docidentifier:
+    - content: draft-liu-rtgwg-wan-flowctrl-detect-01
       type: Internet-Draft
       primary: true

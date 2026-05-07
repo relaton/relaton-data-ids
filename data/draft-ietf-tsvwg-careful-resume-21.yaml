@@ -1,7 +1,7 @@
 ---
 id: draftietftsvwgcarefulresume21
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Private Octopus Inc.
 version:
-- draft: '21'
+- content: '21'
 language:
 - en
 script:
@@ -154,22 +154,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a cautious method for IETF transports that\n
-    \  enables fast startup of congestion control for a wide range of\n   connections,
-    known as \"Careful Resume\".  It reuses a set of computed\n   congestion control
-    parameters that are based on previously observed\n   path characteristics between
-    the same pair of transport endpoints.\n   These parameters are saved, allowing
-    them to be later used to modify\n   the congestion control behaviour of a subsequent
-    connection.\n\n   It describes assumptions and defines requirements for how a
-    sender\n   utilises these parameters to provide opportunities for a connection\n
-    \  to more rapidly get up to speed and rapidly utilise available\n   capacity.
-    \ It discusses how use of this method impacts the capacity\n   at a shared network
-    bottleneck and the safe response that is needed\n   after any indication that
-    the new rate is inappropriate.\n\n\t "
+  content: |-
+    <p>This document specifies a cautious method for IETF transports that
+       enables fast startup of congestion control for a wide range of
+       connections, known as &quot;Careful Resume&quot;.  It reuses a set of computed
+       congestion control parameters that are based on previously observed
+       path characteristics between the same pair of transport endpoints.
+       These parameters are saved, allowing them to be later used to modify
+       the congestion control behaviour of a subsequent connection.
+
+       It describes assumptions and defines requirements for how a sender
+       utilises these parameters to provide opportunities for a connection
+       to more rapidly get up to speed and rapidly utilise available
+       capacity.  It discusses how use of this method impacts the capacity
+       at a shared network bottleneck and the safe response that is needed
+       after any indication that the new rate is inappropriate.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tsvwg-careful-resume-20
+    formattedref:
+      content: draft-ietf-tsvwg-careful-resume-20
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-careful-resume-20
@@ -179,7 +183,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tsvwg-careful-resume-22
+    formattedref:
+      content: draft-ietf-tsvwg-careful-resume-22
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-careful-resume-22
@@ -195,7 +200,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tsvwg-careful-resume-21
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

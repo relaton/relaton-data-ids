@@ -1,7 +1,7 @@
 ---
 id: draftietfsidrdeltaprotocol06
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -101,7 +101,7 @@ contributor:
         language: en
         content: Rob Austein
 version:
-- draft: '06'
+- content: '06'
 language:
 - en
 script:
@@ -109,20 +109,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In the Resource Public Key Infrastructure (RPKI), certificate\n   authorities
-    publish certificates, including end entity certificates,\n   Certificate Revocation
-    Lists (CRL), and RPKI signed objects to\n   repositories.  Relying Parties (RP)
-    retrieve the published\n   information from those repositories.  This document
-    specifies a\n   protocol which provides relying parties with a mechanism to query
-    a\n   repository for incremental updates using the HTTP Over TLS (HTTPS)\n   [RFC2818]
-    protocol, thus enabling the RP to keep its state in sync\n   with the repository
-    using a secure transport channel.  This document\n   updates [RFC6480], [RFC6481],
-    and [RFC7730], to remove the dependency\n   on [rsync] as the only mandatory RPKI
-    repository distribution\n   mechanism.\n\n\t "
+  content: |-
+    <p>In the Resource Public Key Infrastructure (RPKI), certificate
+       authorities publish certificates, including end entity certificates,
+       Certificate Revocation Lists (CRL), and RPKI signed objects to
+       repositories.  Relying Parties (RP) retrieve the published
+       information from those repositories.  This document specifies a
+       protocol which provides relying parties with a mechanism to query a
+       repository for incremental updates using the HTTP Over TLS (HTTPS)
+       [RFC2818] protocol, thus enabling the RP to keep its state in sync
+       with the repository using a secure transport channel.  This document
+       updates [RFC6480], [RFC6481], and [RFC7730], to remove the dependency
+       on [rsync] as the only mandatory RPKI repository distribution
+       mechanism.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidr-delta-protocol-05
+    formattedref:
+      content: draft-ietf-sidr-delta-protocol-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidr-delta-protocol-05
@@ -132,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sidr-delta-protocol-07
+    formattedref:
+      content: draft-ietf-sidr-delta-protocol-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidr-delta-protocol-07
@@ -148,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidr-delta-protocol-06
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

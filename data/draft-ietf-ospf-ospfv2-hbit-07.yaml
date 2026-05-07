@@ -1,7 +1,7 @@
 ---
 id: draftietfospfospfv2hbit07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -121,7 +121,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -129,22 +129,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The OSPFv2 specifies an SPF algorithm that identifies transit\n   vertices
-    based on their adjacencies.  Therefore, OSPFv2 does not have\n   a mechanism to
-    prevent traffic transiting a participating node if it\n   is a transit vertex
-    in the only existing or shortest path to the\n   destination.  The use of metrics
-    to make the node undesirable can\n   only help to repel traffic if an alternative
-    better route exists.\n   This document defines the Host-bit functionality to prevent
-    other\n   OSPFv2 routers from using the router for transit traffic in OSPFv2\n
-    \  routing domains.  This document updates the [RFC2328] by assigning a\n   new
-    bit (Host-bit) in the OSPF Router-LSA bit registry.  If the Host-\n   bit is set,
-    the calculation of the shortest-path tree for an area, as\n   described in [RFC2328],
-    is modified by including a new check to\n   verify that transit vertices have
-    the Host-bit clear.\n\n\t "
+  content: |-
+    <p>The OSPFv2 specifies an SPF algorithm that identifies transit
+       vertices based on their adjacencies.  Therefore, OSPFv2 does not have
+       a mechanism to prevent traffic transiting a participating node if it
+       is a transit vertex in the only existing or shortest path to the
+       destination.  The use of metrics to make the node undesirable can
+       only help to repel traffic if an alternative better route exists.
+       This document defines the Host-bit functionality to prevent other
+       OSPFv2 routers from using the router for transit traffic in OSPFv2
+       routing domains.  This document updates the [RFC2328] by assigning a
+       new bit (Host-bit) in the OSPF Router-LSA bit registry.  If the Host-
+       bit is set, the calculation of the shortest-path tree for an area, as
+       described in [RFC2328], is modified by including a new check to
+       verify that transit vertices have the Host-bit clear.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-ospf-ospfv2-hbit-06
+    formattedref:
+      content: draft-ietf-ospf-ospfv2-hbit-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ospf-ospfv2-hbit-06
@@ -154,7 +157,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-ospf-ospfv2-hbit-08
+    formattedref:
+      content: draft-ietf-ospf-ospfv2-hbit-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ospf-ospfv2-hbit-08
@@ -170,7 +174,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-ospf-ospfv2-hbit-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

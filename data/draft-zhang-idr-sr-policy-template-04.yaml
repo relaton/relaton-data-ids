@@ -1,7 +1,7 @@
 ---
 id: draftzhangidrsrpolicytemplate04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -113,7 +113,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -121,21 +121,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Segment Routing(SR) Policies can be advertised using BGP.  An SR\n
-    \  Policy may has lots of attributes, and as the application and\n   features
-    evolve, the SR Policy may need have more and more attribute\n   attributes.  To
-    avoid modifying BGP when attributes are added to an\n   SR Policy, we can define
-    a template.  The identifier and content of\n   the template are defined by the
-    receiver of the SR Policy.  The\n   advertiser of an SR policy only needs to know
-    the ID of the template.\n   When advertising SR policy, the advertiser carries
-    the template ID in\n   the tunnel encapsulation information of the SR policy.
-    \ After\n   receiving the SR Policy information, the receiver obtains the\n   corresponding
-    template and content according to the template ID,\n   thereby obtaining abundant
-    constraint configuration information.\n\n\n\t "
+  content: |-
+    <p>Segment Routing(SR) Policies can be advertised using BGP.  An SR
+       Policy may has lots of attributes, and as the application and
+       features evolve, the SR Policy may need have more and more attribute
+       attributes.  To avoid modifying BGP when attributes are added to an
+       SR Policy, we can define a template.  The identifier and content of
+       the template are defined by the receiver of the SR Policy.  The
+       advertiser of an SR policy only needs to know the ID of the template.
+       When advertising SR policy, the advertiser carries the template ID in
+       the tunnel encapsulation information of the SR policy.  After
+       receiving the SR Policy information, the receiver obtains the
+       corresponding template and content according to the template ID,
+       thereby obtaining abundant constraint configuration information.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-zhang-idr-sr-policy-template-03
+    formattedref:
+      content: draft-zhang-idr-sr-policy-template-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhang-idr-sr-policy-template-03
@@ -145,7 +148,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-zhang-idr-sr-policy-template-05
+    formattedref:
+      content: draft-zhang-idr-sr-policy-template-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-zhang-idr-sr-policy-template-05
@@ -161,7 +165,7 @@ series:
     content: Internet-Draft
   number: draft-zhang-idr-sr-policy-template-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfv6ops464xlatoptimization02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: Telecentro
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -82,20 +82,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   IP/ICMP Translation Algorithm (SIIT) can be used to provide access\n
-    \  for IPv4-only devices or applications to IPv4-only or dual-stack\n   destinations
-    over IPv6-only infrastructure.  In that case, the\n   traffic flows are translated
-    twice: first from IPv4 to IPv6\n   (stateless NAT46 at the ingress point to the
-    IPv6-only\n   infrastructure) and then from IPv6 back to IPv4 (stateful NAT64,
-    at\n   the egress point).  When the destination is IPv6-enabled, the second\n
-    \  translation might be avoided.  This document describes a possible\n   optimization
-    to 464XLAT and MAP-T to avoid translating IPv6 flows\n   back to IPv4 if the destination
-    is reachable over IPv6.  The proposed\n   solution would significantly reduce
-    the NAT64 utilization in the\n   operator's network.\n\n\t "
+  content: |-
+    <p>IP/ICMP Translation Algorithm (SIIT) can be used to provide access
+       for IPv4-only devices or applications to IPv4-only or dual-stack
+       destinations over IPv6-only infrastructure.  In that case, the
+       traffic flows are translated twice: first from IPv4 to IPv6
+       (stateless NAT46 at the ingress point to the IPv6-only
+       infrastructure) and then from IPv6 back to IPv4 (stateful NAT64, at
+       the egress point).  When the destination is IPv6-enabled, the second
+       translation might be avoided.  This document describes a possible
+       optimization to 464XLAT and MAP-T to avoid translating IPv6 flows
+       back to IPv4 if the destination is reachable over IPv6.  The proposed
+       solution would significantly reduce the NAT64 utilization in the
+       operator&#39;s network.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-v6ops-464xlat-optimization-01
+    formattedref:
+      content: draft-ietf-v6ops-464xlat-optimization-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-01
@@ -105,7 +109,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-v6ops-464xlat-optimization-03
+    formattedref:
+      content: draft-ietf-v6ops-464xlat-optimization-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-464xlat-optimization-03
@@ -121,7 +126,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-v6ops-464xlat-optimization-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

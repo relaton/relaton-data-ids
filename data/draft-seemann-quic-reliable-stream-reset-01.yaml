@@ -1,7 +1,7 @@
 ---
 id: draftseemannquicreliablestreamreset01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Protocol Labs
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -54,16 +54,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   QUIC ([RFC9000]) defines a RESET_STREAM frame to reset a stream.\n
-    \  When a sender resets a stream, it stops retransmitting STREAM frames\n   for
-    this stream.  On the receiver side, there is no guarantee that\n   any of the
-    data sent on that stream is delivered to the application.\n   This document defines
-    a new QUIC frame, the RELIABLE_RESET_STREAM\n   frame, that resets a stream, while
-    guaranteeing reliable delivery of\n   stream data up to a certain byte offset.\n\n\t "
+  content: |-
+    <p>QUIC ([RFC9000]) defines a RESET_STREAM frame to reset a stream.
+       When a sender resets a stream, it stops retransmitting STREAM frames
+       for this stream.  On the receiver side, there is no guarantee that
+       any of the data sent on that stream is delivered to the application.
+       This document defines a new QUIC frame, the RELIABLE_RESET_STREAM
+       frame, that resets a stream, while guaranteeing reliable delivery of
+       stream data up to a certain byte offset.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-seemann-quic-reliable-stream-reset-00
+    formattedref:
+      content: draft-seemann-quic-reliable-stream-reset-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-reliable-stream-reset-00
@@ -73,7 +76,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-seemann-quic-reliable-stream-reset-02
+    formattedref:
+      content: draft-seemann-quic-reliable-stream-reset-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-seemann-quic-reliable-stream-reset-02
@@ -89,7 +93,7 @@ series:
     content: Internet-Draft
   number: draft-seemann-quic-reliable-stream-reset-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftcaballerocborcbor4201
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -63,7 +63,7 @@ contributor:
         - language: en
           content: IPFS Foundation
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -71,24 +71,39 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a very narrow profile of CBOR intended for use\n
-    \  with the special tag 42.  Like the earlier internet-draft submitted\n   under
-    the name \"CBOR Core,\" much of its design dates to the first\n   CBOR RFC and
-    predates much of the layered approach to determinism and\n   profiling in later
-    years.\n\n   Also like \"CBOR/c\", CBOR-42 can be used as an internet-scale\n
-    \  serialization for JSON, and is optimized for objects that compose\n   into
-    a directed acyclical graph.  Since CBOR-42 objects link to one\n   another by
-    hash-based identifiers tagged \"42\", deterministic encoding\n   is mandated to
-    verify dereferenced links and encode new ones.\n\n\t "
+  content: |-
+    <p>This document defines a very narrow profile of CBOR intended for use
+       with the special tag 42.  Like the earlier internet-draft submitted
+       under the name &quot;CBOR Core,&quot; much of its design dates to the first
+       CBOR RFC and predates much of the layered approach to determinism and
+       profiling in later years.
+
+       Also like &quot;CBOR/c&quot;, CBOR-42 can be used as an internet-scale
+       serialization for JSON, and is optimized for objects that compose
+       into a directed acyclical graph.  Since CBOR-42 objects link to one
+       another by hash-based identifiers tagged &quot;42&quot;, deterministic encoding
+       is mandated to verify dereferenced links and encode new ones.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-caballero-cbor-cbor42-00
+    formattedref:
+      content: draft-caballero-cbor-cbor42-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-caballero-cbor-cbor42-00
     docidentifier:
     - content: draft-caballero-cbor-cbor42-00
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-caballero-cbor-cbor42-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-caballero-cbor-cbor42-02
+    docidentifier:
+    - content: draft-caballero-cbor-cbor42-02
       type: Internet-Draft
       primary: true
 series:
@@ -99,7 +114,7 @@ series:
     content: Internet-Draft
   number: draft-caballero-cbor-cbor42-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

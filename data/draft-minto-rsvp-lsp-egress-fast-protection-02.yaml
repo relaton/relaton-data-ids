@@ -1,7 +1,7 @@
 ---
 id: draftmintorsvplspegressfastprotection02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -84,7 +84,7 @@ contributor:
         language: en
         content: Yimin Shen
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -92,21 +92,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC4090 defines a fast reroute mechanism for locally repairing an\n
-    \  RSVP-TE LSP in the order of 10s of milliseconds, in the event of a\n   downstream
-    link or node failure.  However, this mechanism does not\n   provide node protection
-    for LSP egress nodes, even when an alternate\n   egress node (a backup egress)
-    is available that could carry the\n   traffic to its ultimate destination.  This
-    document addresses this\n   scenario and describes how to provide egress protection
-    by\n   establishing a bypass LSP from the penultimate-hop node of a LSP to\n   the
-    backup egress node.  The methods described in this document\n   enable local repair
-    in the order of 10s of milliseconds, in the event\n   of the egress node failure.
-    \ These methods are only applicable if\n   traffic carried by the LSP can be rerouted
-    to its ultimate\n   destination by the backup egress node.\n\n\t "
+  content: |-
+    <p>RFC4090 defines a fast reroute mechanism for locally repairing an
+       RSVP-TE LSP in the order of 10s of milliseconds, in the event of a
+       downstream link or node failure.  However, this mechanism does not
+       provide node protection for LSP egress nodes, even when an alternate
+       egress node (a backup egress) is available that could carry the
+       traffic to its ultimate destination.  This document addresses this
+       scenario and describes how to provide egress protection by
+       establishing a bypass LSP from the penultimate-hop node of a LSP to
+       the backup egress node.  The methods described in this document
+       enable local repair in the order of 10s of milliseconds, in the event
+       of the egress node failure.  These methods are only applicable if
+       traffic carried by the LSP can be rerouted to its ultimate
+       destination by the backup egress node.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-minto-rsvp-lsp-egress-fast-protection-01
+    formattedref:
+      content: draft-minto-rsvp-lsp-egress-fast-protection-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-minto-rsvp-lsp-egress-fast-protection-01
@@ -116,7 +120,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-minto-rsvp-lsp-egress-fast-protection-03
+    formattedref:
+      content: draft-minto-rsvp-lsp-egress-fast-protection-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-minto-rsvp-lsp-egress-fast-protection-03
@@ -132,7 +137,7 @@ series:
     content: Internet-Draft
   number: draft-minto-rsvp-lsp-egress-fast-protection-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

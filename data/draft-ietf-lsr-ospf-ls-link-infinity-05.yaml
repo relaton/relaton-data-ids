@@ -1,7 +1,7 @@
 ---
 id: draftietflsrospflslinkinfinity05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: ZTE Corporation
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -154,18 +154,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In certain scenarios, it is necessary to advertise unreachable links\n
-    \  in OSPF, which should be explicitly excluded from the related SPF\n   calculation.
-    \ This document specifies using LSLinkInfinity(0xffff) to\n   advertise an OSPF
-    link as unreachable.\n\n   Stub Router Advertisement (RFC 6987) defines MaxLinkMetric
-    (0xffff)\n   to indicate a router-LSA link should not be used for transit traffic.\n
-    \  This document updates RFC 6987 and RFC 8770.  When an OSPFv2 router\n   supports
-    the Unreachable Link support capability defined in this\n   document, the OSPFv2
-    stub router MaxLinkMetric(0xffff) MUST be\n   updated to MaxReachableLinkMetric(0xfffe).\n\n\t "
+  content: |-
+    <p>In certain scenarios, it is necessary to advertise unreachable links
+       in OSPF, which should be explicitly excluded from the related SPF
+       calculation.  This document specifies using LSLinkInfinity(0xffff) to
+       advertise an OSPF link as unreachable.
+
+       Stub Router Advertisement (RFC 6987) defines MaxLinkMetric (0xffff)
+       to indicate a router-LSA link should not be used for transit traffic.
+       This document updates RFC 6987 and RFC 8770.  When an OSPFv2 router
+       supports the Unreachable Link support capability defined in this
+       document, the OSPFv2 stub router MaxLinkMetric(0xffff) MUST be
+       updated to MaxReachableLinkMetric(0xfffe).</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lsr-ospf-ls-link-infinity-04
+    formattedref:
+      content: draft-ietf-lsr-ospf-ls-link-infinity-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-ls-link-infinity-04
@@ -175,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-lsr-ospf-ls-link-infinity-06
+    formattedref:
+      content: draft-ietf-lsr-ospf-ls-link-infinity-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-ospf-ls-link-infinity-06
@@ -191,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lsr-ospf-ls-link-infinity-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfratsmsgwrap16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Google LLC
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -154,25 +154,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The Remote Attestation Procedures architecture (RFC 9334) defines\n
-    \  several types of conceptual messages, such as Evidence, Attestation\n   Results,
-    Endorsements, and Reference Values.  These messages can\n   appear in different
-    formats and be transported via various protocols.\n\n   This document introduces
-    the Conceptual Message Wrapper (CMW) that\n   provides a common structure to encapsulate
-    these messages.  It\n   defines a dedicated CBOR tag, corresponding JSON Web Token
-    (JWT) and\n   CBOR Web Token (CWT) claims, and an X.509 extension.\n\n   This
-    allows CMWs to be used in CBOR-based protocols, web APIs using\n   JWTs and CWTs,
-    and PKIX artifacts like X.509 certificates.\n   Additionally, the draft defines
-    a media type and a CoAP content\n   format to transport CMWs over protocols like
-    HTTP, MIME, and CoAP.\n\n   The goal is to improve the interoperability and flexibility
-    of remote\n   attestation protocols.  By introducing a shared message format like\n
-    \  the CMW, we can consistently support different attestation message\n   types,
-    evolve message serialization formats without breaking\n   compatibility, and avoid
-    having to redefine how messages are handled\n   in each protocol.\n\n\t "
+  content: |-
+    <p>The Remote Attestation Procedures architecture (RFC 9334) defines
+       several types of conceptual messages, such as Evidence, Attestation
+       Results, Endorsements, and Reference Values.  These messages can
+       appear in different formats and be transported via various protocols.
+
+       This document introduces the Conceptual Message Wrapper (CMW) that
+       provides a common structure to encapsulate these messages.  It
+       defines a dedicated CBOR tag, corresponding JSON Web Token (JWT) and
+       CBOR Web Token (CWT) claims, and an X.509 extension.
+
+       This allows CMWs to be used in CBOR-based protocols, web APIs using
+       JWTs and CWTs, and PKIX artifacts like X.509 certificates.
+       Additionally, the draft defines a media type and a CoAP content
+       format to transport CMWs over protocols like HTTP, MIME, and CoAP.
+
+       The goal is to improve the interoperability and flexibility of remote
+       attestation protocols.  By introducing a shared message format like
+       the CMW, we can consistently support different attestation message
+       types, evolve message serialization formats without breaking
+       compatibility, and avoid having to redefine how messages are handled
+       in each protocol.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-rats-msg-wrap-15
+    formattedref:
+      content: draft-ietf-rats-msg-wrap-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-15
@@ -182,7 +190,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-rats-msg-wrap-17
+    formattedref:
+      content: draft-ietf-rats-msg-wrap-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rats-msg-wrap-17
@@ -198,7 +207,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-rats-msg-wrap-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

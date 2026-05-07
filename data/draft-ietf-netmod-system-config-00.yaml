@@ -1,7 +1,7 @@
 ---
 id: draftietfnetmodsystemconfig00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Huawei
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -104,19 +104,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates NMDA to define a read-only conventional\n   configuration
-    datastore called \"system\" to hold system-defined\n   configurations.  To avoid
-    clients' explicit copy/paste of referenced\n   system-defined configuration into
-    the target configuration datastore\n   (e.g., <running>), a \"resolve-system\"
-    parameter has been defined to\n   allow the server acting as a \"system client\"
-    to copy referenced\n   system-defined nodes automatically.  The solution enables
-    clients\n   manipulating the target configuration datastore (e.g., <running>)
-    to\n   overlay and reference nodes defined in <system>, override values of\n   configurations
-    defined in <system>, and configure descendant nodes of\n   system-defined nodes.\n\n\t "
+  content: |-
+    <p>This document updates NMDA to define a read-only conventional
+       configuration datastore called &quot;system&quot; to hold system-defined
+       configurations.  To avoid clients&#39; explicit copy/paste of referenced
+       system-defined configuration into the target configuration datastore
+       (e.g., &lt;running&gt;), a &quot;resolve-system&quot; parameter has been defined to
+       allow the server acting as a &quot;system client&quot; to copy referenced
+       system-defined nodes automatically.  The solution enables clients
+       manipulating the target configuration datastore (e.g., &lt;running&gt;) to
+       overlay and reference nodes defined in &lt;system&gt;, override values of
+       configurations defined in &lt;system&gt;, and configure descendant nodes of
+       system-defined nodes.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-netmod-system-config-01
+    formattedref:
+      content: draft-ietf-netmod-system-config-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netmod-system-config-01
@@ -132,7 +136,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-netmod-system-config-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

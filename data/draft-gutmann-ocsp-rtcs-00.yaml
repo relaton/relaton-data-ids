@@ -1,7 +1,7 @@
 ---
 id: draftgutmannocsprtcs00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -48,7 +48,7 @@ contributor:
         - language: en
           content: University of Auckland
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -56,17 +56,10 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "When the OCSP protocol was defined, the design was based on full compatibility
-    with CRL-based mechanisms.  This requires the use of a complex means of certificate
-    identification that has resulted in interoperability problems among implementations,
-    a design unsuited for high-throughput, real-time operation, the inability to provide
-    an unambiguous certificate status response (the only thing that a CRL can say
-    with certainty is 'revoked'), and an online responder tied to an offline mechanism
-    (some CAs issue CRLs only once or twice a day, even though they have an online,
-    real- time certificate store\navailable).  A more practical problem is that it
-    makes it impossible to\nimplement an OCSP responder not based on CRLs, for example
-    one that consults a certificate database or in-memory hash table to determine
-    the presence or absence of a valid certificate.\n\t "
+  content: |-
+    <p>When the OCSP protocol was defined, the design was based on full compatibility with CRL-based mechanisms.  This requires the use of a complex means of certificate identification that has resulted in interoperability problems among implementations, a design unsuited for high-throughput, real-time operation, the inability to provide an unambiguous certificate status response (the only thing that a CRL can say with certainty is &#39;revoked&#39;), and an online responder tied to an offline mechanism (some CAs issue CRLs only once or twice a day, even though they have an online, real- time certificate store
+    available).  A more practical problem is that it makes it impossible to
+    implement an OCSP responder not based on CRLs, for example one that consults a certificate database or in-memory hash table to determine the presence or absence of a valid certificate.</p>
 series:
 - type: main
   title:
@@ -75,7 +68,7 @@ series:
     content: Internet-Draft
   number: draft-gutmann-ocsp-rtcs-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfnetconfservermodel09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -68,7 +68,7 @@ contributor:
         - language: en
           content: Jacobs University Bremen
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -76,43 +76,80 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This draft defines a NETCONF server configuration data model and a\n
-    \  RESTCONF server configuration data model.  These data models enable\n   configuration
-    of the NETCONF and RESTCONF services themselves,\n   including which transports
-    are supported, what ports the servers\n   listen on, call-home parameters, client
-    authentication, and related\n   parameters.\n\nEditorial Note (To be removed by
-    RFC Editor)\n\n   This draft contains many placeholder values that need to be
-    replaced\n   with finalized values at the time of publication.  This note\n   summarizes
-    all of the substitutions that are needed.  Please note\n   that no other RFC Editor
-    instructions are specified anywhere else in\n   this document.\n\n   This document
-    contains references to other drafts in progress, both\n   in the Normative References
-    section, as well as in body text\n   throughout.  Please update the following
-    references to reflect their\n   final RFC assignments:\n\n   o  draft-ietf-netconf-restconf\n\n
-    \  o  draft-ietf-netconf-call-home\n\n   o  draft-ietf-rtgwg-yang-key-chain\n\n
-    \  Artwork in this document contains shorthand references to drafts in\n   progress.
-    \ Please apply the following replacements:\n\n   o  \"VVVV\" --> the assigned
-    RFC value for this draft\n\n   o  \"XXXX\" --> the assigned RFC value for draft-ietf-netconf-restconf\n\n
-    \  o  \"YYYY\" --> the assigned RFC value for draft-ietf-netconf-call-home\n   Artwork
-    in this document contains placeholder values for ports\n   pending IANA assignment
-    from \"draft-ietf-netconf-call-home\".  Please\n   apply the following replacements:\n\n
-    \  o  \"7777\" --> the assigned port value for \"netconf-ch-ssh\"\n\n   o  \"8888\"
-    --> the assigned port value for \"netconf-ch-tls\"\n\n   o  \"9999\" --> the assigned
-    port value for \"restconf-ch-tls\"\n\n   Artwork in this document contains placeholder
-    values for the date of\n   publication of this draft.  Please apply the following
-    replacement:\n\n   o  \"2016-03-16\" --> the publication date of this draft\n\n
-    \  The following two Appendix sections are to be removed prior to\n   publication:\n\n
-    \  o  Appendix A.  Change Log\n\n   o  Appendix B.  Open Issues\n\n   Artwork
-    in the document contains a temporary YANG containers that\n   need to be removed.\n\n
-    \  o  The \"listening-ssh-server\" container listed at the end of the\n      artwork
-    in Section 4.2.3 needs to be removed.  Please remove the\n      ten lines starting
-    with \"container listening-ssh-server {\" and\n      ending with \"}\".\n\n   o
-    \ The \"listening-tls-server\" container listed at the end of the\n      artwork
-    in Section 4.3.3 needs to be removed.  Please remove the\n      ten lines starting
-    with \"container listening-tls-server {\" and\n      ending with \"}\".\n\n\t "
+  content: |-
+    <p>This draft defines a NETCONF server configuration data model and a
+       RESTCONF server configuration data model.  These data models enable
+       configuration of the NETCONF and RESTCONF services themselves,
+       including which transports are supported, what ports the servers
+       listen on, call-home parameters, client authentication, and related
+       parameters.
+
+    Editorial Note (To be removed by RFC Editor)
+
+       This draft contains many placeholder values that need to be replaced
+       with finalized values at the time of publication.  This note
+       summarizes all of the substitutions that are needed.  Please note
+       that no other RFC Editor instructions are specified anywhere else in
+       this document.
+
+       This document contains references to other drafts in progress, both
+       in the Normative References section, as well as in body text
+       throughout.  Please update the following references to reflect their
+       final RFC assignments:
+
+       o  draft-ietf-netconf-restconf
+
+       o  draft-ietf-netconf-call-home
+
+       o  draft-ietf-rtgwg-yang-key-chain
+
+       Artwork in this document contains shorthand references to drafts in
+       progress.  Please apply the following replacements:
+
+       o  &quot;VVVV&quot; --&gt; the assigned RFC value for this draft
+
+       o  &quot;XXXX&quot; --&gt; the assigned RFC value for draft-ietf-netconf-restconf
+
+       o  &quot;YYYY&quot; --&gt; the assigned RFC value for draft-ietf-netconf-call-home
+       Artwork in this document contains placeholder values for ports
+       pending IANA assignment from &quot;draft-ietf-netconf-call-home&quot;.  Please
+       apply the following replacements:
+
+       o  &quot;7777&quot; --&gt; the assigned port value for &quot;netconf-ch-ssh&quot;
+
+       o  &quot;8888&quot; --&gt; the assigned port value for &quot;netconf-ch-tls&quot;
+
+       o  &quot;9999&quot; --&gt; the assigned port value for &quot;restconf-ch-tls&quot;
+
+       Artwork in this document contains placeholder values for the date of
+       publication of this draft.  Please apply the following replacement:
+
+       o  &quot;2016-03-16&quot; --&gt; the publication date of this draft
+
+       The following two Appendix sections are to be removed prior to
+       publication:
+
+       o  Appendix A.  Change Log
+
+       o  Appendix B.  Open Issues
+
+       Artwork in the document contains a temporary YANG containers that
+       need to be removed.
+
+       o  The &quot;listening-ssh-server&quot; container listed at the end of the
+          artwork in Section 4.2.3 needs to be removed.  Please remove the
+          ten lines starting with &quot;container listening-ssh-server {&quot; and
+          ending with &quot;}&quot;.
+
+       o  The &quot;listening-tls-server&quot; container listed at the end of the
+          artwork in Section 4.3.3 needs to be removed.  Please remove the
+          ten lines starting with &quot;container listening-tls-server {&quot; and
+          ending with &quot;}&quot;.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-netconf-server-model-08
+    formattedref:
+      content: draft-ietf-netconf-server-model-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-server-model-08
@@ -128,7 +165,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-netconf-server-model-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

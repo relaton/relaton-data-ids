@@ -1,7 +1,7 @@
 ---
 id: draftmanytiptopiparchitecture02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Juniper Networks
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -104,24 +104,38 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Deep space communications involve long delays (e.g., Earth to Mars
-    is\n   4-24 minutes) and intermittent communications, because of orbital\n   dynamics.
-    \ The IP protocol stack used on Earth's Internet is based on\n   assumptions of
-    shorter delays and mostly uninterrupted\n   communications.  This document describes
-    the architecture of the IP\n   protocol stack tailored for its use in deep space.
-    \ It involves\n   buffering IP packets in IP forwarders facing intermittent links
-    and\n   adjusting transport protocol configuration and application protocol\n
-    \  timers.  This architecture applies to the Moon, Mars, or general\n   interplanetary
-    networking.\n\n\t "
+  content: |-
+    <p>Deep space communications involve long delays (e.g., Earth to Mars is
+       4-24 minutes) and intermittent communications, because of orbital
+       dynamics.  The IP protocol stack used on Earth&#39;s Internet is based on
+       assumptions of shorter delays and mostly uninterrupted
+       communications.  This document describes the architecture of the IP
+       protocol stack tailored for its use in deep space.  It involves
+       buffering IP packets in IP forwarders facing intermittent links and
+       adjusting transport protocol configuration and application protocol
+       timers.  This architecture applies to the Moon, Mars, or general
+       interplanetary networking.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-many-tiptop-ip-architecture-01
+    formattedref:
+      content: draft-many-tiptop-ip-architecture-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-many-tiptop-ip-architecture-01
     docidentifier:
     - content: draft-many-tiptop-ip-architecture-01
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-many-tiptop-ip-architecture-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-many-tiptop-ip-architecture-03
+    docidentifier:
+    - content: draft-many-tiptop-ip-architecture-03
       type: Internet-Draft
       primary: true
 series:
@@ -132,7 +146,7 @@ series:
     content: Internet-Draft
   number: draft-many-tiptop-ip-architecture-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

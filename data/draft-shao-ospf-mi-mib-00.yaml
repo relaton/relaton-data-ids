@@ -1,7 +1,7 @@
 ---
 id: draftshaoospfmimib00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: ZTE Corporation
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -79,15 +79,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "The OSPF MIB defined by the IETF (RFC 1850) was designed to work with\nonly
-    one OSPF process/instance on a given router.\n\nIt currently doesn't offer a mechanism
-    to access ospf mib obejects of\ndifferent instances.  For example, there is only
-    a single\nospfRouterId object, not a table of them.\n\nIn order to handle multiple
-    instances, RFC 4750 suggests that you use\nSNMPv3 contexts to provide per-instance
-    views.  This document\nintroduces a way for OSPF MIB to support multiple instance,
-    no mater\nin SNMPv2 or SNMPv3 contexts, by adding the object ospfProcId into\nevery
-    OSPF MIB group.  According to the specified ospfProcId, other\nobejects in this
-    OSPF instance can be accessed.\n\t "
+  content: |-
+    <p>The OSPF MIB defined by the IETF (RFC 1850) was designed to work with
+    only one OSPF process/instance on a given router.
+
+    It currently doesn&#39;t offer a mechanism to access ospf mib obejects of
+    different instances.  For example, there is only a single
+    ospfRouterId object, not a table of them.
+
+    In order to handle multiple instances, RFC 4750 suggests that you use
+    SNMPv3 contexts to provide per-instance views.  This document
+    introduces a way for OSPF MIB to support multiple instance, no mater
+    in SNMPv2 or SNMPv3 contexts, by adding the object ospfProcId into
+    every OSPF MIB group.  According to the specified ospfProcId, other
+    obejects in this OSPF instance can be accessed.</p>
 series:
 - type: main
   title:
@@ -96,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-shao-ospf-mi-mib-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

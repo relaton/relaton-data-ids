@@ -1,7 +1,7 @@
 ---
 id: draftsaldanatsvwgsimplemux01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Jose Saldana
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -49,22 +49,29 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   There are some situations in which multiplexing a number of small\n
-    \  packets into a bigger one is desirable.  For example, a number of\n   small
-    packets can be sent together between a pair of machines if they\n   share a common
-    network path.  Thus, the traffic profile can be\n   shifted from small to larger
-    packets, reducing the network overhead\n   and the number of packets per second
-    to be managed by intermediate\n   routers.\n\n   This document describes Simplemux,
-    a protocol able to encapsulate a\n   number of packets belonging to different
-    protocols into a single\n   packet.  It includes the \"Protocol\" field on each
-    multiplexing\n   header, thus allowing the inclusion of a number of packets belonging\n
-    \  to different protocols on a packet of another protocol.\n\n   The size of the
-    multiplexing headers is kept very low (it may be a\n   single byte when multiplexing
-    small packets) in order to reduce the\n   overhead.\n\n\t "
+  content: |-
+    <p>There are some situations in which multiplexing a number of small
+       packets into a bigger one is desirable.  For example, a number of
+       small packets can be sent together between a pair of machines if they
+       share a common network path.  Thus, the traffic profile can be
+       shifted from small to larger packets, reducing the network overhead
+       and the number of packets per second to be managed by intermediate
+       routers.
+
+       This document describes Simplemux, a protocol able to encapsulate a
+       number of packets belonging to different protocols into a single
+       packet.  It includes the &quot;Protocol&quot; field on each multiplexing
+       header, thus allowing the inclusion of a number of packets belonging
+       to different protocols on a packet of another protocol.
+
+       The size of the multiplexing headers is kept very low (it may be a
+       single byte when multiplexing small packets) in order to reduce the
+       overhead.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-saldana-tsvwg-simplemux-00
+    formattedref:
+      content: draft-saldana-tsvwg-simplemux-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-saldana-tsvwg-simplemux-00
@@ -74,7 +81,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-saldana-tsvwg-simplemux-02
+    formattedref:
+      content: draft-saldana-tsvwg-simplemux-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-saldana-tsvwg-simplemux-02
@@ -90,7 +98,7 @@ series:
     content: Internet-Draft
   number: draft-saldana-tsvwg-simplemux-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

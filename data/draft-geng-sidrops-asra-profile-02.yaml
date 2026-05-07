@@ -1,7 +1,7 @@
 ---
 id: draftgengsidropsasraprofile02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -93,7 +93,7 @@ contributor:
         - language: en
           content: Zhongguancun Laboratory
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -101,24 +101,38 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a Cryptographic Message Syntax (CMS) protected\n
-    \  content type for Autonomous System Relationship Authorization (ASRA)\n   objects
-    for use with the Resource Public Key Infrastructure (RPKI).\n   An ASRA is a digitally
-    signed object through which the issuer (the\n   holder of an Autonomous System
-    identifier), can authorize one or more\n   other Autonomous Systems (ASes) as
-    its customers and lateral peers.\n   When validated, an ASRA's eContent can be
-    used for detection and\n   mitigation of BGP AS path manipulation attacks together
-    with\n   Autonomous System Provider Authorization (ASPA).  ASRA is\n   complementary
-    to ASPA.\n\n\n\t "
+  content: |-
+    <p>This document defines a Cryptographic Message Syntax (CMS) protected
+       content type for Autonomous System Relationship Authorization (ASRA)
+       objects for use with the Resource Public Key Infrastructure (RPKI).
+       An ASRA is a digitally signed object through which the issuer (the
+       holder of an Autonomous System identifier), can authorize one or more
+       other Autonomous Systems (ASes) as its customers and lateral peers.
+       When validated, an ASRA&#39;s eContent can be used for detection and
+       mitigation of BGP AS path manipulation attacks together with
+       Autonomous System Provider Authorization (ASPA).  ASRA is
+       complementary to ASPA.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-geng-sidrops-asra-profile-01
+    formattedref:
+      content: draft-geng-sidrops-asra-profile-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-geng-sidrops-asra-profile-01
     docidentifier:
     - content: draft-geng-sidrops-asra-profile-01
+      type: Internet-Draft
+      primary: true
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-geng-sidrops-asra-profile-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-geng-sidrops-asra-profile-03
+    docidentifier:
+    - content: draft-geng-sidrops-asra-profile-03
       type: Internet-Draft
       primary: true
 series:
@@ -129,7 +143,7 @@ series:
     content: Internet-Draft
   number: draft-geng-sidrops-asra-profile-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftveselydmarcmlmtransform07
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Alessandro Vesely
 version:
-- draft: '07'
+- content: '07'
 language:
 - en
 script:
@@ -49,18 +49,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The widespread adoption of Domain-based Message Authentication,\n   Reporting,
-    and Conformance (DMARC) led Mailing List Managers (MLM) to\n   rewrite the From:
-    header field as a workaround.\n\n   This document proposes three methods to get
-    rid of munged From:\n   lines.  The methods vary requirements, complexity and
-    success rates.\n   Method one considers how MLMs can avoid From: munging for specific\n
-    \  users.  Methods two uses the Author: header field while method three\n   tries
-    to revert MLM transformations, in order to restore the original\n   From: line
-    after reception.\n\n\t "
+  content: |-
+    <p>The widespread adoption of Domain-based Message Authentication,
+       Reporting, and Conformance (DMARC) led Mailing List Managers (MLM) to
+       rewrite the From: header field as a workaround.
+
+       This document proposes three methods to get rid of munged From:
+       lines.  The methods vary requirements, complexity and success rates.
+       Method one considers how MLMs can avoid From: munging for specific
+       users.  Methods two uses the Author: header field while method three
+       tries to revert MLM transformations, in order to restore the original
+       From: line after reception.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-vesely-dmarc-mlm-transform-06
+    formattedref:
+      content: draft-vesely-dmarc-mlm-transform-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vesely-dmarc-mlm-transform-06
@@ -70,7 +74,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-vesely-dmarc-mlm-transform-08
+    formattedref:
+      content: draft-vesely-dmarc-mlm-transform-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-vesely-dmarc-mlm-transform-08
@@ -86,7 +91,7 @@ series:
     content: Internet-Draft
   number: draft-vesely-dmarc-mlm-transform-07
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

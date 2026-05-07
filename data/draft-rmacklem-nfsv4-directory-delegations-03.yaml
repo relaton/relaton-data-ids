@@ -1,7 +1,7 @@
 ---
 id: draftrmacklemnfsv4directorydelegations03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -75,7 +75,7 @@ contributor:
         - language: en
           content: Linux NFS Project
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -83,20 +83,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document describes the addition of bit flags to be used in the\n
-    \  request by a client for the GET_DIR_DELEGATION operation to allow the\n   client
-    to specify detailed behavior of CB_NOTIFYs the server will\n   perform on the
-    client.  Early implementation experience with\n   directory delegations has demonstrated
-    that clients may not need the\n   full information specified in [RFC8881] for
-    CB_NOTIFYs and may not\n   require the recall of the directory delegation to be
-    done\n   synchronously.  Limiting the CB_NOTIFY's requirements can simplify\n
-    \  server implementation of directory delegations.  These additional bit\n   flags
-    allow the client to request desired behavior.  The server's\n   reply will then
-    specify what behavior the client can expect.\n\n\t "
+  content: |-
+    <p>This document describes the addition of bit flags to be used in the
+       request by a client for the GET_DIR_DELEGATION operation to allow the
+       client to specify detailed behavior of CB_NOTIFYs the server will
+       perform on the client.  Early implementation experience with
+       directory delegations has demonstrated that clients may not need the
+       full information specified in [RFC8881] for CB_NOTIFYs and may not
+       require the recall of the directory delegation to be done
+       synchronously.  Limiting the CB_NOTIFY&#39;s requirements can simplify
+       server implementation of directory delegations.  These additional bit
+       flags allow the client to request desired behavior.  The server&#39;s
+       reply will then specify what behavior the client can expect.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-rmacklem-nfsv4-directory-delegations-02
+    formattedref:
+      content: draft-rmacklem-nfsv4-directory-delegations-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rmacklem-nfsv4-directory-delegations-02
@@ -112,7 +115,7 @@ series:
     content: Internet-Draft
   number: draft-rmacklem-nfsv4-directory-delegations-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopcdsconsistency08
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: SSE - Secure Systems Engineering GmbH
 version:
-- draft: '08'
+- content: '08'
 language:
 - en
 script:
@@ -54,22 +54,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Maintenance of DNS delegations requires occasional changes of the DS\n
-    \  and NS record sets on the parent side of the delegation.  For the\n   case
-    of DS records, RFC 7344 provides automation by allowing the\n   child to publish
-    CDS and/or CDNSKEY records holding the prospective\n   DS parameters which the
-    parent can ingest.  Similarly, RFC 7477\n   specifies CSYNC records to indicate
-    a desired update of the\n   delegation's NS (and glue) records.  Parent-side entities
-    (e.g.\n   Registries, Registrars) can query these records from the child and,\n
-    \  after validation, use them to update the parent-side RRsets of the\n   delegation.\n\n
-    \  This document specifies that when performing such queries, parent-\n   side
-    entities MUST ensure that updates triggered via CDS/CDNSKEY and\n   CSYNC records
-    are consistent across the child's authoritative\n   nameservers, before taking
-    any action based on these records.\n\n\t "
+  content: |-
+    <p>Maintenance of DNS delegations requires occasional changes of the DS
+       and NS record sets on the parent side of the delegation.  For the
+       case of DS records, RFC 7344 provides automation by allowing the
+       child to publish CDS and/or CDNSKEY records holding the prospective
+       DS parameters which the parent can ingest.  Similarly, RFC 7477
+       specifies CSYNC records to indicate a desired update of the
+       delegation&#39;s NS (and glue) records.  Parent-side entities (e.g.
+       Registries, Registrars) can query these records from the child and,
+       after validation, use them to update the parent-side RRsets of the
+       delegation.
+
+       This document specifies that when performing such queries, parent-
+       side entities MUST ensure that updates triggered via CDS/CDNSKEY and
+       CSYNC records are consistent across the child&#39;s authoritative
+       nameservers, before taking any action based on these records.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-cds-consistency-07
+    formattedref:
+      content: draft-ietf-dnsop-cds-consistency-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-cds-consistency-07
@@ -79,7 +84,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-dnsop-cds-consistency-09
+    formattedref:
+      content: draft-ietf-dnsop-cds-consistency-09
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-cds-consistency-09
@@ -95,7 +101,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-cds-consistency-08
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

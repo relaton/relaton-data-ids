@@ -1,7 +1,8 @@
 ---
 id: draftcuidnsnativeagentnamingresolution
-schema_version: v1.4.1
-formattedref: draft-cui-dns-native-agent-naming-resolution
+schema_version: v1.5.6
+formattedref:
+  content: draft-cui-dns-native-agent-naming-resolution
 title:
 - language: en
   script: Latn
@@ -13,25 +14,36 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a DNS-native naming and resolution mechanism\n
-    \  for AI agents.  Building upon the DNS specification (RFC 1035) and\n   leveraging
-    Service Binding (SVCB) records (RFC 9460, RFC 9461), it\n   defines how AI agents
-    are identified using Fully Qualified Domain\n   Names (FQDNs), how their identity
-    and cryptographic keys are\n   published via DNS TXT records, and how multi-version,
-    multi-protocol\n   service resolution is achieved using DNS SVCB records.  The
-    design\n   philosophy emphasizes DNS as the authoritative source, protocol\n   autonomy,
-    and graceful degradation for legacy clients.  When version\n   is not explicitly
-    specified, the highest priority (default) version\n   is provided.  This approach
-    maximizes reuse of existing Internet\n   infrastructure while enabling the rapid
-    evolution of AI agent\n   ecosystems.\n\n\t "
+  content: |-
+    <p>This document specifies DNS-Native Agent Naming and Resolution (DN-
+       ANR) for AI agents.  DN-ANR has three goals: (1) use domain names
+       (FQDNs) as stable Agent Identifiers, (2) resolve Agent Identifiers to
+       verifiable endpoints and supported protocol/version information with
+       a cryptographic integrity chain (DNSSEC preferred), and (3) provide
+       only minimal and stable pointer/index capabilities that can be
+       referenced by upper-layer discovery systems.  DN-ANR intentionally
+       does not carry heavy semantic metadata in DNS, and does not define
+       semantic discovery, ranking, or routing decisions.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-cui-dns-native-agent-naming-resolution-00
+    formattedref:
+      content: draft-cui-dns-native-agent-naming-resolution-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-cui-dns-native-agent-naming-resolution-00
     docidentifier:
     - content: draft-cui-dns-native-agent-naming-resolution-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-cui-dns-native-agent-naming-resolution-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-cui-dns-native-agent-naming-resolution-01
+    docidentifier:
+    - content: draft-cui-dns-native-agent-naming-resolution-01
       type: Internet-Draft
       primary: true

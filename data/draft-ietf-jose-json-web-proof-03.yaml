@@ -1,7 +1,7 @@
 ---
 id: draftietfjosejsonwebproof03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: Self-Issued Consulting
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -107,21 +107,26 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The JOSE set of standards established JSON-based container formats\n
-    \  for Keys, Signatures, and Encryption.  They also established IANA\n   registries
-    to enable the algorithms and representations used for them\n   to be extended.
-    \ Since those were created, newer cryptographic\n   algorithms that support selective
-    disclosure and unlinkability have\n   matured and started seeing early market
-    adoption.\n\n   This document defines a new container format similar in purpose
-    and\n   design to JSON Web Signature (JWS) called a _JSON Web Proof (JWP)_.\n
-    \  Unlike JWS, which integrity-protects only a single payload, JWP can\n   integrity-protect
-    multiple payloads in one message.  It also\n   specifies a new presentation form
-    that supports selective disclosure\n   of individual payloads, enables additional
-    proof computation, and\n   adds a protected header to prevent replay.\n\n\t "
+  content: |-
+    <p>The JOSE set of standards established JSON-based container formats
+       for Keys, Signatures, and Encryption.  They also established IANA
+       registries to enable the algorithms and representations used for them
+       to be extended.  Since those were created, newer cryptographic
+       algorithms that support selective disclosure and unlinkability have
+       matured and started seeing early market adoption.
+
+       This document defines a new container format similar in purpose and
+       design to JSON Web Signature (JWS) called a _JSON Web Proof (JWP)_.
+       Unlike JWS, which integrity-protects only a single payload, JWP can
+       integrity-protect multiple payloads in one message.  It also
+       specifies a new presentation form that supports selective disclosure
+       of individual payloads, enables additional proof computation, and
+       adds a protected header to prevent replay.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-jose-json-web-proof-02
+    formattedref:
+      content: draft-ietf-jose-json-web-proof-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-02
@@ -131,7 +136,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-jose-json-web-proof-04
+    formattedref:
+      content: draft-ietf-jose-json-web-proof-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-json-web-proof-04
@@ -147,7 +153,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-jose-json-web-proof-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietf6loapnd05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -91,7 +91,7 @@ contributor:
         - language: en
           content: Ericsson
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -99,21 +99,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines an extension to 6LoWPAN Neighbor Discovery (ND)\n
-    \  [RFC6775][I-D.ietf-6lo-rfc6775-update] called Address Protected ND\n   (AP-ND);
-    AP-ND protects the owner of an address against address theft\n   and impersonation
-    inside a low-power and lossy network (LLN).  Nodes\n   supporting this extension
-    compute a cryptographic Owner Unique\n   Interface ID and associate it with one
-    or more of their Registered\n   Addresses.  The Cryptographic ID uniquely identifies
-    the owner of the\n   Registered Address and can be used for proof-of-ownership.
-    \ It is\n   used in 6LoWPAN ND in place of the EUI-64-based unique ID that is\n
-    \  associated with the registration.  Once an address is registered with\n   a
-    Cryptographic ID, only the owner of that ID can modify the anchor\n   state information
-    of the Registered Address, and Source Address\n   Validation can be enforced.\n\n\t "
+  content: |-
+    <p>This document defines an extension to 6LoWPAN Neighbor Discovery (ND)
+       [RFC6775][I-D.ietf-6lo-rfc6775-update] called Address Protected ND
+       (AP-ND); AP-ND protects the owner of an address against address theft
+       and impersonation inside a low-power and lossy network (LLN).  Nodes
+       supporting this extension compute a cryptographic Owner Unique
+       Interface ID and associate it with one or more of their Registered
+       Addresses.  The Cryptographic ID uniquely identifies the owner of the
+       Registered Address and can be used for proof-of-ownership.  It is
+       used in 6LoWPAN ND in place of the EUI-64-based unique ID that is
+       associated with the registration.  Once an address is registered with
+       a Cryptographic ID, only the owner of that ID can modify the anchor
+       state information of the Registered Address, and Source Address
+       Validation can be enforced.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-6lo-ap-nd-04
+    formattedref:
+      content: draft-ietf-6lo-ap-nd-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-04
@@ -123,7 +127,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-6lo-ap-nd-06
+    formattedref:
+      content: draft-ietf-6lo-ap-nd-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6lo-ap-nd-06
@@ -139,7 +144,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-6lo-ap-nd-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

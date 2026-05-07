@@ -1,7 +1,7 @@
 ---
 id: draftgiebenauthdenialofexistencedns01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Matthijs Mekking
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -72,16 +72,19 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Authenticated denial of existence allows a resolver to validate that\n
-    \  a certain domain name does not exist.  It is also used to signal that\n   a
-    domain name exists, but does not have the specific RR type you were\n   asking
-    for.  When returning a negative DNSSEC response, a name server\n   usually includes
-    up to two NSEC records.  With NSEC3 this amount is\n   three.  This document provides
-    extra documentation and context on the\n   mechanisms behind NSEC and NSEC3\n\n\t "
+  content: |-
+    <p>Authenticated denial of existence allows a resolver to validate that
+       a certain domain name does not exist.  It is also used to signal that
+       a domain name exists, but does not have the specific RR type you were
+       asking for.  When returning a negative DNSSEC response, a name server
+       usually includes up to two NSEC records.  With NSEC3 this amount is
+       three.  This document provides extra documentation and context on the
+       mechanisms behind NSEC and NSEC3</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-gieben-auth-denial-of-existence-dns-00
+    formattedref:
+      content: draft-gieben-auth-denial-of-existence-dns-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gieben-auth-denial-of-existence-dns-00
@@ -91,7 +94,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-gieben-auth-denial-of-existence-dns-02
+    formattedref:
+      content: draft-gieben-auth-denial-of-existence-dns-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-gieben-auth-denial-of-existence-dns-02
@@ -107,7 +111,7 @@ series:
     content: Internet-Draft
   number: draft-gieben-auth-denial-of-existence-dns-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

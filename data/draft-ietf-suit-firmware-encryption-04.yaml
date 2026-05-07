@@ -1,7 +1,7 @@
 ---
 id: draftietfsuitfirmwareencryption04
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -96,7 +96,7 @@ contributor:
         - language: en
           content: Arm Limited
 version:
-- draft: '04'
+- content: '04'
 language:
 - en
 script:
@@ -104,17 +104,20 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies a firmware update mechanism where the\n   firmware
-    image is encrypted.  Firmware encryption uses the IETF SUIT\n   manifest with
-    key establishment provided by the hybrid public-key\n   encryption (HPKE) scheme
-    and the AES Key Wrap (AES-KW) with a pre-\n   shared key-encryption key.  Encryption
-    of the firmware image is\n   accomplished using the established content encryption
-    key and a\n   mutually agreed symmetric encryption algorithm, such as AES-GCM
-    or\n   AES-CCM.\n\n\t "
+  content: |-
+    <p>This document specifies a firmware update mechanism where the
+       firmware image is encrypted.  Firmware encryption uses the IETF SUIT
+       manifest with key establishment provided by the hybrid public-key
+       encryption (HPKE) scheme and the AES Key Wrap (AES-KW) with a pre-
+       shared key-encryption key.  Encryption of the firmware image is
+       accomplished using the established content encryption key and a
+       mutually agreed symmetric encryption algorithm, such as AES-GCM or
+       AES-CCM.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-suit-firmware-encryption-03
+    formattedref:
+      content: draft-ietf-suit-firmware-encryption-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-03
@@ -124,7 +127,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-suit-firmware-encryption-05
+    formattedref:
+      content: draft-ietf-suit-firmware-encryption-05
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-suit-firmware-encryption-05
@@ -140,7 +144,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-suit-firmware-encryption-04
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

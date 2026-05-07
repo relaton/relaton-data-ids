@@ -1,7 +1,7 @@
 ---
 id: draftmyklebustnfsv42unstablefilecreation00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -47,7 +47,7 @@ contributor:
         - language: en
           content: NetApp
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -55,17 +55,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document describes an extension to the NFSv4 protocol to allow\nclients
-    to create and write files with greater efficiency.\n\nThe first proposal allows
-    the server to defer creating the file on\nstable storage when replying to an OPEN
-    call.  The aim is to improve\nserver efficiency and scalability by reducing the
-    number of required\ndisk accesses when writing a file from scratch.\n\nThe second
-    proposal allows the server to share information about the\nimplementation of its
-    change attribute with the client.  The aim is\nto improve the client's ability
-    to determine the order in which\nparallel updates to the same file were processed.Keywords\n\nThe
-    key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\",\n\"SHOULD\",
-    \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this\ndocument are
-    to be interpreted as described in [RFC2119].\n\t "
+  content: |-
+    <p>This document describes an extension to the NFSv4 protocol to allow
+    clients to create and write files with greater efficiency.
+
+    The first proposal allows the server to defer creating the file on
+    stable storage when replying to an OPEN call.  The aim is to improve
+    server efficiency and scalability by reducing the number of required
+    disk accesses when writing a file from scratch.
+
+    The second proposal allows the server to share information about the
+    implementation of its change attribute with the client.  The aim is
+    to improve the client&#39;s ability to determine the order in which
+    parallel updates to the same file were processed.Keywords
+
+    The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+    &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;, &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this
+    document are to be interpreted as described in [RFC2119].</p>
 series:
 - type: main
   title:
@@ -74,7 +80,7 @@ series:
     content: Internet-Draft
   number: draft-myklebust-nfsv42-unstable-file-creation-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

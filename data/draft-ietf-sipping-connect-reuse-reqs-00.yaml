@@ -1,7 +1,7 @@
 ---
 id: draftietfsippingconnectreusereqs00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,15 +54,18 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "When SIP entities use a connection oriented protocol to send a\nrequest,
-    they typically originate their connections from an ephemeral\nport.  The SIP protocol
-    includes mechanisms which insure that\nresponses to a request, and new requests
-    sent in the original\ndirection reuse an existing connection.  However, new requests
-    sent\nin the opposite direction are unlikely to reuse the existing\nconnection.
-    \ This frequently causes a pair of SIP entities to use one\nconnection for requests
-    sent in each direction, and can result in\npotential scaling and performance problems.
-    \ This document presents\nrequirements for addressing this shortcoming, and separately
-    proposes\nan example mechanism which addresses this deficiency.\n\t "
+  content: |-
+    <p>When SIP entities use a connection oriented protocol to send a
+    request, they typically originate their connections from an ephemeral
+    port.  The SIP protocol includes mechanisms which insure that
+    responses to a request, and new requests sent in the original
+    direction reuse an existing connection.  However, new requests sent
+    in the opposite direction are unlikely to reuse the existing
+    connection.  This frequently causes a pair of SIP entities to use one
+    connection for requests sent in each direction, and can result in
+    potential scaling and performance problems.  This document presents
+    requirements for addressing this shortcoming, and separately proposes
+    an example mechanism which addresses this deficiency.</p>
 series:
 - type: main
   title:
@@ -71,7 +74,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sipping-connect-reuse-reqs-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

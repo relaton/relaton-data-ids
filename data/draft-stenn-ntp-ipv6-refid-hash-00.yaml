@@ -1,7 +1,7 @@
 ---
 id: draftstennntpipv6refidhash00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Network Time Foundation
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -54,17 +54,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   RFC 5905 [RFC5905], section 7.3, \"Packet Header Variables\", defines\n
-    \  the value to be used as the REFID for network associations.  For IPv4\n   associations
-    the IPv4 address is used, and for IPv6 associations four\n   octets of the MD5
-    hash of the IPv6 are used.  Often, the REFID is\n   simplistically and incorrectly
-    used to identify upstream servers.\n   While this works in an IPv4 network, it
-    doesn't work for IPv6\n   associations and may have other problems in an environment
-    with mixed\n   use of IPv4 and IPv6.  Specifically, the NTP Project has received
-    a\n   report where the generated IPv6 hash decoded to the IPv4 address of a\n
-    \  different machine on the system peer's network.\n\n   This proposal offers
-    a way for a system to generate a REFID for a\n   system peer that communicates
-    over IPv6 that does not conflict with a\n   valid IPv4-based REFID.\n\n\t "
+  content: |-
+    <p>RFC 5905 [RFC5905], section 7.3, &quot;Packet Header Variables&quot;, defines
+       the value to be used as the REFID for network associations.  For IPv4
+       associations the IPv4 address is used, and for IPv6 associations four
+       octets of the MD5 hash of the IPv6 are used.  Often, the REFID is
+       simplistically and incorrectly used to identify upstream servers.
+       While this works in an IPv4 network, it doesn&#39;t work for IPv6
+       associations and may have other problems in an environment with mixed
+       use of IPv4 and IPv6.  Specifically, the NTP Project has received a
+       report where the generated IPv6 hash decoded to the IPv4 address of a
+       different machine on the system peer&#39;s network.
+
+       This proposal offers a way for a system to generate a REFID for a
+       system peer that communicates over IPv6 that does not conflict with a
+       valid IPv4-based REFID.</p>
 series:
 - type: main
   title:
@@ -73,7 +77,7 @@ series:
     content: Internet-Draft
   number: draft-stenn-ntp-ipv6-refid-hash-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

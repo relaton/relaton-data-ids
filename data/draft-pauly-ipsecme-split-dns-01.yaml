@@ -1,7 +1,7 @@
 ---
 id: draftpaulyipsecmesplitdns01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Paul Wouters
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -69,19 +69,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines two Configuration Payload Attribute Types for\n
-    \  the IKEv2 protocol that define sets of private DNS domains which\n   should
-    be resolved by DNS servers reachable through an IPsec\n   connection, while leaving
-    all other DNS resolution unchanged.  The\n   options define the set of DNS domains,
-    DNS nameserver IP addresses\n   and DNSSEC trust anchors to use for these DNS
-    domains.  This approach\n   of resolving a subset of domains using an IPSec connection
-    is\n   referred to as \"split-DNS\".  The information obtained via these\n   attribute
-    types can be used to reconfigure the local DNS resolution\n   to use DNS forwarding
-    for specific private domains.\n\n\t "
+  content: |-
+    <p>This document defines two Configuration Payload Attribute Types for
+       the IKEv2 protocol that define sets of private DNS domains which
+       should be resolved by DNS servers reachable through an IPsec
+       connection, while leaving all other DNS resolution unchanged.  The
+       options define the set of DNS domains, DNS nameserver IP addresses
+       and DNSSEC trust anchors to use for these DNS domains.  This approach
+       of resolving a subset of domains using an IPSec connection is
+       referred to as &quot;split-DNS&quot;.  The information obtained via these
+       attribute types can be used to reconfigure the local DNS resolution
+       to use DNS forwarding for specific private domains.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-pauly-ipsecme-split-dns-00
+    formattedref:
+      content: draft-pauly-ipsecme-split-dns-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pauly-ipsecme-split-dns-00
@@ -91,7 +94,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-pauly-ipsecme-split-dns-02
+    formattedref:
+      content: draft-pauly-ipsecme-split-dns-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-pauly-ipsecme-split-dns-02
@@ -107,7 +111,7 @@ series:
     content: Internet-Draft
   number: draft-pauly-ipsecme-split-dns-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

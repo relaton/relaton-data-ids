@@ -1,7 +1,7 @@
 ---
 id: draftprabelcfrgsufhybridsigs00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Ericsson AB
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -157,17 +157,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document proposes a generic hybrid signature construction that\n
-    \  achieves strong unforgeability under chosen-message attacks (SUF-\n   CMA),
-    provided that the second component (typically the post-quantum\n   one) is SUF-CMA
-    secure.  The proposed hybrid construction differs\n   from the current composite
-    hybrid approach by binding the second\n   (post-quantum) signature to the concatenation
-    of the message and the\n   first (traditional) signature.  This approach ensures
-    that hybrid\n   signatures maintain SUF-CMA security even when the first component\n
-    \  only provides EUF-CMA security.\n\n   In addition to this general hybrid construction,
-    this document also\n   proposes a non-black-box variant specifically tailored
-    for schemes\n   built from the Fiat-Shamir paradigm.  This variant is SUF-CMA
-    secure\n   as long as only one component is SUF-CMA secure.\n\n\t "
+  content: |-
+    <p>This document proposes a generic hybrid signature construction that
+       achieves strong unforgeability under chosen-message attacks (SUF-
+       CMA), provided that the second component (typically the post-quantum
+       one) is SUF-CMA secure.  The proposed hybrid construction differs
+       from the current composite hybrid approach by binding the second
+       (post-quantum) signature to the concatenation of the message and the
+       first (traditional) signature.  This approach ensures that hybrid
+       signatures maintain SUF-CMA security even when the first component
+       only provides EUF-CMA security.
+
+       In addition to this general hybrid construction, this document also
+       proposes a non-black-box variant specifically tailored for schemes
+       built from the Fiat-Shamir paradigm.  This variant is SUF-CMA secure
+       as long as only one component is SUF-CMA secure.</p>
+relation:
+- type: updatedBy
+  bibitem:
+    formattedref:
+      content: draft-prabel-cfrg-suf-hybrid-sigs-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-prabel-cfrg-suf-hybrid-sigs-01
+    docidentifier:
+    - content: draft-prabel-cfrg-suf-hybrid-sigs-01
+      type: Internet-Draft
+      primary: true
 series:
 - type: main
   title:
@@ -176,7 +192,7 @@ series:
     content: Internet-Draft
   number: draft-prabel-cfrg-suf-hybrid-sigs-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

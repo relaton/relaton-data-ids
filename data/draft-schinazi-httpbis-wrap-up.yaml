@@ -1,7 +1,8 @@
 ---
 id: draftschinazihttpbiswrapup
-schema_version: v1.4.1
-formattedref: draft-schinazi-httpbis-wrap-up
+schema_version: v1.5.6
+formattedref:
+  content: draft-schinazi-httpbis-wrap-up
 title:
 - language: en
   script: Latn
@@ -13,21 +14,24 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   HTTP intermediaries sometimes need to terminate long-lived request\n
-    \  streams in order to facilitate load balancing or impose data limits.\n   However,
-    Web browsers commonly cannot retry failed proxied requests\n   when they cannot
-    ascertain whether an in-progress request was acted\n   on.  To avoid user-visible
-    failures, it is best for the intermediary\n   to inform the client of upcoming
-    request stream terminations in\n   advance of the actual termination so that the
-    client can wrap up\n   existing operations related to that stream and start sending
-    new work\n   to a different stream or connection.  This document specifies a new\n
-    \  \"WRAP_UP\" capsule that allows a proxy to instruct a client that it\n   should
-    not start new requests on a tunneled connection, while still\n   allowing it to
-    finish existing requests.\n\n\t "
+  content: |-
+    <p>HTTP intermediaries sometimes need to terminate long-lived request
+       streams in order to facilitate load balancing or impose data limits.
+       However, Web browsers commonly cannot retry failed proxied requests
+       when they cannot ascertain whether an in-progress request was acted
+       on.  To avoid user-visible failures, it is best for the intermediary
+       to inform the client of upcoming request stream terminations in
+       advance of the actual termination so that the client can wrap up
+       existing operations related to that stream and start sending new work
+       to a different stream or connection.  This document specifies a new
+       &quot;WRAP_UP&quot; capsule that allows a proxy to instruct a client that it
+       should not start new requests on a tunneled connection, while still
+       allowing it to finish existing requests.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-schinazi-httpbis-wrap-up-00
+    formattedref:
+      content: draft-schinazi-httpbis-wrap-up-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-schinazi-httpbis-wrap-up-00
@@ -37,7 +41,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-schinazi-httpbis-wrap-up-01
+    formattedref:
+      content: draft-schinazi-httpbis-wrap-up-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-schinazi-httpbis-wrap-up-01

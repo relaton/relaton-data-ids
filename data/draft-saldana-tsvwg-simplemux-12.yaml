@@ -1,7 +1,7 @@
 ---
 id: draftsaldanatsvwgsimplemux12
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: CIRCE Technology Center
 version:
-- draft: '12'
+- content: '12'
 language:
 - en
 script:
@@ -54,30 +54,37 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The high amount of small packets present in nowaday's networks\n   results
-    in a low efficiency, as the size of both the headers and the\n   payload in these
-    packets can be comparably large, often falling\n   within the same order of magnitude.
-    \ In some situations, multiplexing\n   (i.e. aggregating) a number of small packets
-    into a bigger one is\n   desirable to improve the efficiency.  For example, a
-    number of small\n   packets can be sent together between a pair of machines if
-    they share\n   a common network path.  This may happen between machines in different\n
-    \  locations or even inside a datacenter with a number of servers\n   hosting
-    virtual machines.  The traffic profile can be shifted from\n   small to larger
-    packets, thus reducing the network overhead and the\n   number of packets per
-    second to be managed by intermediate devices.\n\n   This document describes Simplemux,
-    a protocol able to encapsulate a\n   number of packets belonging to different
-    protocols into a single\n   packet.  Small headers (separators) are added at the
-    beginning of\n   each multiplexed packet, including some flags, the packet length
-    and\n   a \"Protocol\" field.  The presence of this \"Protocol\" field allows
-    it\n   to aggregate packets belonging to any protocol (the \"multiplexed\n   packets\"),
-    in a single packet belonging to other (or the same)\n   protocol (the \"tunneling
-    protocol\").\n\n   To reduce the overhead, the size of the multiplexing headers
-    is kept\n   very low (it may be a single byte when multiplexing packets of small\n
-    \  size).\n\n\t "
+  content: |-
+    <p>The high amount of small packets present in nowaday&#39;s networks
+       results in a low efficiency, as the size of both the headers and the
+       payload in these packets can be comparably large, often falling
+       within the same order of magnitude.  In some situations, multiplexing
+       (i.e. aggregating) a number of small packets into a bigger one is
+       desirable to improve the efficiency.  For example, a number of small
+       packets can be sent together between a pair of machines if they share
+       a common network path.  This may happen between machines in different
+       locations or even inside a datacenter with a number of servers
+       hosting virtual machines.  The traffic profile can be shifted from
+       small to larger packets, thus reducing the network overhead and the
+       number of packets per second to be managed by intermediate devices.
+
+       This document describes Simplemux, a protocol able to encapsulate a
+       number of packets belonging to different protocols into a single
+       packet.  Small headers (separators) are added at the beginning of
+       each multiplexed packet, including some flags, the packet length and
+       a &quot;Protocol&quot; field.  The presence of this &quot;Protocol&quot; field allows it
+       to aggregate packets belonging to any protocol (the &quot;multiplexed
+       packets&quot;), in a single packet belonging to other (or the same)
+       protocol (the &quot;tunneling protocol&quot;).
+
+       To reduce the overhead, the size of the multiplexing headers is kept
+       very low (it may be a single byte when multiplexing packets of small
+       size).</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-saldana-tsvwg-simplemux-11
+    formattedref:
+      content: draft-saldana-tsvwg-simplemux-11
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-saldana-tsvwg-simplemux-11
@@ -93,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-saldana-tsvwg-simplemux-12
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

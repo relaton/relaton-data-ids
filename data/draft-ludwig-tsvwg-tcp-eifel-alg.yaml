@@ -1,7 +1,8 @@
 ---
 id: draftludwigtsvwgtcpeifelalg
-schema_version: v1.4.1
-formattedref: draft-ludwig-tsvwg-tcp-eifel-alg
+schema_version: v1.5.6
+formattedref:
+  content: draft-ludwig-tsvwg-tcp-eifel-alg
 title:
 - language: en
   script: Latn
@@ -13,19 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "TCP's intertwined error and congestion control is not robust against\nspurious
-    timeouts nor is it robust against packet re-orderings. A\npacket that is delayed
-    in the network beyond the expiration of TCP's\nretransmission timer, is mistaken
-    for a packet loss by a TCP sender.\nAlso, a packet that is re-ordered in the network
-    beyond TCP's\nduplicate acknowledgment threshold, is eventually mistaken for a\npacket
-    loss by a TCP sender. Both situations lead to a spurious\nretransmit of the oldest
-    outstanding segment, and an unnecessary\nreduction of the congestion window at
-    the sender. Moreover, a\nspurious timeout forces the sender into a go-back-N retransmission\nmode
-    leading to spurious retransmits of all outstanding segments.\n\t "
+  content: |-
+    <p>TCP&#39;s intertwined error and congestion control is not robust against
+    spurious timeouts nor is it robust against packet re-orderings. A
+    packet that is delayed in the network beyond the expiration of TCP&#39;s
+    retransmission timer, is mistaken for a packet loss by a TCP sender.
+    Also, a packet that is re-ordered in the network beyond TCP&#39;s
+    duplicate acknowledgment threshold, is eventually mistaken for a
+    packet loss by a TCP sender. Both situations lead to a spurious
+    retransmit of the oldest outstanding segment, and an unnecessary
+    reduction of the congestion window at the sender. Moreover, a
+    spurious timeout forces the sender into a go-back-N retransmission
+    mode leading to spurious retransmits of all outstanding segments.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ludwig-tsvwg-tcp-eifel-alg-00
+    formattedref:
+      content: draft-ludwig-tsvwg-tcp-eifel-alg-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ludwig-tsvwg-tcp-eifel-alg-00

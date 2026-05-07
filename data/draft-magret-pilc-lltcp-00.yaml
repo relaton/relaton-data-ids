@@ -1,7 +1,7 @@
 ---
 id: draftmagretpilclltcp00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -63,7 +63,7 @@ contributor:
         language: en
         content: Muh-rong Yang
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -71,19 +71,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document specifies a protocol enhancement allowing TCP connec-\ntions
-    to switch from an active state to an idle state during a wire-\nless link's outage.
-    Within such state all timers are cancelled and\npackets' transmission is suspended.
-    The protocol defines a mechanism\nby which the mobile station may detect a link
-    failure and changes TCP\nconnections' state to idle. This same mechanism allows
-    the mobile\nhost to detect connectivity regain. All TCP connections are then\nresumed.\nThe
-    protocol defines how the supervisor host, which can monitor the\nwireless link
-    quality, can alert the fixed host of a failure of the\nwireless link.  The fixed
-    host can suspend the outgoing activity with\nthe unreachable mobile node. When
-    the fixed hosts start receiving\npackets from the mobile node, the activity can
-    be resumed.\nThis protocol increases the capacity of both parties involved in
-    a\ncommunication that is carried via a wireless link to handled connec-\ntivity
-    disruption without impacting the overall performance of the\nTCP connections.\n\t "
+  content: |-
+    <p>This document specifies a protocol enhancement allowing TCP connec-
+    tions to switch from an active state to an idle state during a wire-
+    less link&#39;s outage. Within such state all timers are cancelled and
+    packets&#39; transmission is suspended. The protocol defines a mechanism
+    by which the mobile station may detect a link failure and changes TCP
+    connections&#39; state to idle. This same mechanism allows the mobile
+    host to detect connectivity regain. All TCP connections are then
+    resumed.
+    The protocol defines how the supervisor host, which can monitor the
+    wireless link quality, can alert the fixed host of a failure of the
+    wireless link.  The fixed host can suspend the outgoing activity with
+    the unreachable mobile node. When the fixed hosts start receiving
+    packets from the mobile node, the activity can be resumed.
+    This protocol increases the capacity of both parties involved in a
+    communication that is carried via a wireless link to handled connec-
+    tivity disruption without impacting the overall performance of the
+    TCP connections.</p>
 series:
 - type: main
   title:
@@ -92,7 +97,7 @@ series:
     content: Internet-Draft
   number: draft-magret-pilc-lltcp-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftietfspringmplspathsegment11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Broadcom
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -154,19 +154,25 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   A Segment Routing (SR) path is identified by an SR segment list.  A\n
-    \  sub-set of segments from the segment list cannot distinguish one SR\n   path
-    from another as they may be partially congruent.  SR path\n   identification is
-    a pre-requisite for various use-cases such as\n   Performance Measurement (PM),
-    and end-to-end 1+1 path protection.\n\n   In SR for MPLS data plane (SR-MPLS),
-    an Egress node can not determine\n   on which SR path a packet traversed the network
-    from the label stack\n   because the segment identifiers are stripped from the
-    label stack as\n   the packet transits the network.\n\n   This document defines
-    Path Segment to identify an SR path on the\n   egress node of the path.\n\n\t "
+  content: |-
+    <p>A Segment Routing (SR) path is identified by an SR segment list.  A
+       sub-set of segments from the segment list cannot distinguish one SR
+       path from another as they may be partially congruent.  SR path
+       identification is a pre-requisite for various use-cases such as
+       Performance Measurement (PM), and end-to-end 1+1 path protection.
+
+       In SR for MPLS data plane (SR-MPLS), an Egress node can not determine
+       on which SR path a packet traversed the network from the label stack
+       because the segment identifiers are stripped from the label stack as
+       the packet transits the network.
+
+       This document defines Path Segment to identify an SR path on the
+       egress node of the path.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-spring-mpls-path-segment-10
+    formattedref:
+      content: draft-ietf-spring-mpls-path-segment-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-mpls-path-segment-10
@@ -176,7 +182,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-spring-mpls-path-segment-12
+    formattedref:
+      content: draft-ietf-spring-mpls-path-segment-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-spring-mpls-path-segment-12
@@ -192,7 +199,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-spring-mpls-path-segment-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

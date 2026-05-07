@@ -1,7 +1,7 @@
 ---
 id: draftkuehlewindtapscryptosep00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -99,7 +99,7 @@ contributor:
         - language: en
           content: Apple Inc.
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -107,19 +107,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   Due to the latency involved in connection setup and security\n   handshakes,
-    there is an increasing deployment of cryptographic\n   session resumption mechanisms.
-    \ While cryptographic context and\n   endpoint capabilities need to be be known
-    before encrypted\n   application data can be sent, there is otherwise no technical\n
-    \  constraint that the crypto handshake must be performed on the same\n   transport
-    connection.  This document recommends a logical separation\n   between the mechanism(s)
-    used to negotiate capabilities and set up\n   encryption context (handshake protocol),
-    the application of\n   encryption and authentication state to data (record protocol),
-    and\n   the associated transport connection(s).\n\n\t "
+  content: |-
+    <p>Due to the latency involved in connection setup and security
+       handshakes, there is an increasing deployment of cryptographic
+       session resumption mechanisms.  While cryptographic context and
+       endpoint capabilities need to be be known before encrypted
+       application data can be sent, there is otherwise no technical
+       constraint that the crypto handshake must be performed on the same
+       transport connection.  This document recommends a logical separation
+       between the mechanism(s) used to negotiate capabilities and set up
+       encryption context (handshake protocol), the application of
+       encryption and authentication state to data (record protocol), and
+       the associated transport connection(s).</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-kuehlewind-taps-crypto-sep-01
+    formattedref:
+      content: draft-kuehlewind-taps-crypto-sep-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-kuehlewind-taps-crypto-sep-01
@@ -135,7 +139,7 @@ series:
     content: Internet-Draft
   number: draft-kuehlewind-taps-crypto-sep-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

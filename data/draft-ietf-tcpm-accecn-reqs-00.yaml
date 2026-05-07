@@ -1,7 +1,7 @@
 ---
 id: draftietftcpmaccecnreqs00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Richard Scheffenegger
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -69,19 +69,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "Explicit Congestion Notification (ECN) is an IP/TCP mechanism where\nnetwork
-    nodes can mark IP packets instead of dropping them to\nindicate congestion to
-    the end-points.  An ECN-capable receiver will\nfeedback this information to the
-    sender.  ECN is specified for TCP in\nsuch a way that only one feedback signal
-    can be transmitted per\nRound-Trip Time (RTT).  Recently, new TCP mechanisms like
-    ConEx or\nDCTCP need more accurate ECN feedback information in the case where\nmore
-    than one marking is received in one RTT.  This documents\nspecifies requirement
-    for different ECN feedback scheme in the TCP\nheader to provide more than one
-    feedback signal per RTT.\n\n\t "
+  content: |-
+    <p>Explicit Congestion Notification (ECN) is an IP/TCP mechanism where
+    network nodes can mark IP packets instead of dropping them to
+    indicate congestion to the end-points.  An ECN-capable receiver will
+    feedback this information to the sender.  ECN is specified for TCP in
+    such a way that only one feedback signal can be transmitted per
+    Round-Trip Time (RTT).  Recently, new TCP mechanisms like ConEx or
+    DCTCP need more accurate ECN feedback information in the case where
+    more than one marking is received in one RTT.  This documents
+    specifies requirement for different ECN feedback scheme in the TCP
+    header to provide more than one feedback signal per RTT.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tcpm-accecn-reqs-01
+    formattedref:
+      content: draft-ietf-tcpm-accecn-reqs-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-accecn-reqs-01
@@ -97,7 +100,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tcpm-accecn-reqs-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

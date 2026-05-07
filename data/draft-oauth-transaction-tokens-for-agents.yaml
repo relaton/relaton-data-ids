@@ -1,7 +1,8 @@
 ---
 id: draftoauthtransactiontokensforagents
-schema_version: v1.4.1
-formattedref: draft-oauth-transaction-tokens-for-agents
+schema_version: v1.5.6
+formattedref:
+  content: draft-oauth-transaction-tokens-for-agents
 title:
 - language: en
   script: Latn
@@ -13,20 +14,26 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document specifies an extension to the OAuth Transaction Tokens\n
-    \  framework (https://drafts.oauth.net/oauth-transaction-tokens/draft-\n   ietf-oauth-transaction-tokens.html)
-    to support agent context\n   propagation within Transaction Tokens for agent-based
-    workloads.  The\n   extension defines two new context fields: 'actor' and 'principal'.\n
-    \  The 'actor' field identifies the agent performing the action, while\n   the
-    'principal' field identifies the human or system entity that\n   initiated the
-    agent's action.  For autonomous agents operating\n   independently, the 'principal'
-    field MAY be omitted.  These\n   additional context fields enable services within
-    the call graph to\n   make more granular access control decisions, thereby enhancing\n
-    \  security.\n\n\t "
+  content: |-
+    <p>This document specifies an extension to the OAUTH-TXN-TOKENS
+       (https://drafts.oauth.net/oauth-transaction-tokens/draft-ietf-oauth-
+       transaction-tokens.html) to support agent context propagation within
+       Transaction Tokens for agent-based workloads.  The extension defines
+       the use of the act field to identify the agent performing the action,
+       and leverages the existing sub field (as defined in the base
+       Transaction Tokens specification) to represent the principal.  The
+       sub field is populated according to the rules specified in OAUTH-TXN-
+       TOKENS (https://drafts.oauth.net/oauth-transaction-tokens/draft-ietf-
+       oauth-transaction-tokens.html), based on the &#39;subject_token&#39; provided
+       in the token request.  For autonomous agents operating independently,
+       the sub field represents the agent itself.  These mechanisms enable
+       services within the call graph to make more granular access control
+       decisions, thereby enhancing security.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-oauth-transaction-tokens-for-agents-00
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-00
@@ -36,7 +43,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-oauth-transaction-tokens-for-agents-01
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-01
@@ -46,7 +54,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-oauth-transaction-tokens-for-agents-02
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-02
@@ -56,7 +65,8 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-oauth-transaction-tokens-for-agents-03
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-03
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-03
@@ -66,11 +76,34 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-oauth-transaction-tokens-for-agents-04
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-04
     docidentifier:
     - content: draft-oauth-transaction-tokens-for-agents-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-05
+    docidentifier:
+    - content: draft-oauth-transaction-tokens-for-agents-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-oauth-transaction-tokens-for-agents-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-oauth-transaction-tokens-for-agents-06
+    docidentifier:
+    - content: draft-oauth-transaction-tokens-for-agents-06
       type: Internet-Draft
       primary: true

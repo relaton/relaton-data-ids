@@ -1,7 +1,7 @@
 ---
 id: draftbrevigciaccampmplsupstreamnodecap01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -147,7 +147,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -155,18 +155,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This document proposes an extension to [TE-NODE-CAP] in order to\nsupport
-    additional TE node capabilities in the context of Point-to-\nMultiPoint (P2MP)
-    LSP routing and fast reroute protection.  As for\npoint-to-point LSP, nesting
-    P2MP LSPs, i.e., MPLS P2MP hierarchy, is\na desirable traffic-engineering feature.
-    \ However, nesting P2MP LSPs\nrequires a mechanism to coordinate the label allocation
-    of the inner\nP2MP LSP between the egress nodes of the P2MP Tunnel as described
-    in\n[MPLS-UPSTREAM].  To solve this issue, a new label allocation scheme\ncalled
-    Upstream Label Assignment (ULA) is defined.  Network elements\nresponsible for
-    the route computation of P2MP LSP should be aware of\nthe nodes that support this
-    functionality.  For that purpose, we\ndefine a new bit flag to the TE Node Capability
-    Descriptor as defined\nin [TE-NODE-CAP].  The bit flag (U) enables a node to advertise
-    its\ncapability to accept Upstream Label Assignment.\n\t "
+  content: |-
+    <p>This document proposes an extension to [TE-NODE-CAP] in order to
+    support additional TE node capabilities in the context of Point-to-
+    MultiPoint (P2MP) LSP routing and fast reroute protection.  As for
+    point-to-point LSP, nesting P2MP LSPs, i.e., MPLS P2MP hierarchy, is
+    a desirable traffic-engineering feature.  However, nesting P2MP LSPs
+    requires a mechanism to coordinate the label allocation of the inner
+    P2MP LSP between the egress nodes of the P2MP Tunnel as described in
+    [MPLS-UPSTREAM].  To solve this issue, a new label allocation scheme
+    called Upstream Label Assignment (ULA) is defined.  Network elements
+    responsible for the route computation of P2MP LSP should be aware of
+    the nodes that support this functionality.  For that purpose, we
+    define a new bit flag to the TE Node Capability Descriptor as defined
+    in [TE-NODE-CAP].  The bit flag (U) enables a node to advertise its
+    capability to accept Upstream Label Assignment.</p>
 series:
 - type: main
   title:
@@ -175,7 +178,7 @@ series:
     content: Internet-Draft
   number: draft-brevigcia-ccamp-mpls-upstream-node-cap-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

@@ -1,7 +1,7 @@
 ---
 id: draftbannisterdbisautomounter00
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -44,7 +44,7 @@ contributor:
         language: en
         content: Mark R. Bannister
 version:
-- draft: '00'
+- content: '00'
 language:
 - en
 script:
@@ -52,19 +52,27 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document extends Directory-Based Information Services (DBIS)\n
-    \  described in [draft-bannister-dbis-mapping-00] to support the\n   automount
-    database.\n\n   The automount database schema SHALL be backwards compatible with
-    the\n   Network Information Service [NIS] but stored within [X.500] entries\n
-    \  so that they may be resolved with the Lightweight Directory Access\n   Protocol
-    [RFC4510].\n\n   An automount database contains information about file system
-    mount-\n   points that are to be mapped by the automounter.\n\n   This document
-    describes configuration maps [draft-bannister-dbis-\n   mapping-00] for the automount
-    database, and database entries\n   referenced by those maps.\n\t "
+  content: |-
+    <p>This document extends Directory-Based Information Services (DBIS)
+       described in [draft-bannister-dbis-mapping-00] to support the
+       automount database.
+
+       The automount database schema SHALL be backwards compatible with the
+       Network Information Service [NIS] but stored within [X.500] entries
+       so that they may be resolved with the Lightweight Directory Access
+       Protocol [RFC4510].
+
+       An automount database contains information about file system mount-
+       points that are to be mapped by the automounter.
+
+       This document describes configuration maps [draft-bannister-dbis-
+       mapping-00] for the automount database, and database entries
+       referenced by those maps.</p>
 relation:
 - type: updatedBy
   bibitem:
-    formattedref: draft-bannister-dbis-automounter-01
+    formattedref:
+      content: draft-bannister-dbis-automounter-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-bannister-dbis-automounter-01
@@ -80,7 +88,7 @@ series:
     content: Internet-Draft
   number: draft-bannister-dbis-automounter-00
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

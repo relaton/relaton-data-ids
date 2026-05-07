@@ -1,7 +1,7 @@
 ---
 id: draftnissesecshsrp01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -41,7 +41,7 @@ contributor:
         language: en
         content: Niels Moller
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -49,14 +49,17 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo describes an experimental method for authentication and\nkeyexchange
-    in the Secure Shell protocol.\nThe main virtue of the SRP protocol [SRP] is that
-    it provides\nauthentication based on a small secret (typically a password). It
-    is\nuseful in situations where no authentic host key is known. For Secure\nShell,
-    it can be used as a bootstrapping procedure to get the host\nkey of a server in
-    a safe way. SRP also provides authentication of\nthe user, which means that it
-    might make sense to either skip the\nsecsh 'ssh-userauth'-service [SSH-USERAUTH]
-    when using SRP, or allow\nlogin with the 'none' or 'external-keyx' method.\n\t "
+  content: |-
+    <p>This memo describes an experimental method for authentication and
+    keyexchange in the Secure Shell protocol.
+    The main virtue of the SRP protocol [SRP] is that it provides
+    authentication based on a small secret (typically a password). It is
+    useful in situations where no authentic host key is known. For Secure
+    Shell, it can be used as a bootstrapping procedure to get the host
+    key of a server in a safe way. SRP also provides authentication of
+    the user, which means that it might make sense to either skip the
+    secsh &#39;ssh-userauth&#39;-service [SSH-USERAUTH] when using SRP, or allow
+    login with the &#39;none&#39; or &#39;external-keyx&#39; method.</p>
 series:
 - type: main
   title:
@@ -65,7 +68,7 @@ series:
     content: Internet-Draft
   number: draft-nisse-secsh-srp-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

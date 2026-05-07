@@ -1,7 +1,7 @@
 ---
 id: draftietflampscmpupdates11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -71,7 +71,7 @@ contributor:
         - language: en
           content: Siemens AG
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -79,22 +79,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document contains a set of updates to the syntax and transport\n
-    \  of Certificate Management Protocol (CMP) version 2.  This document\n   updates
-    RFC 4210 and RFC 6712.\n\n   The aspects of CMP updated in this document are using
-    EnvelopedData\n   instead of EncryptedValue, clarifying the handling of p10cr
-    messages,\n   improving the crypto agility, as well as adding new general message\n
-    \  types, extended key usages to identify certificates for use with CMP,\n   and
-    '.well-known' HTTP path segments.\n\n   To properly differentiate the support
-    of EnvelopedData instead of\n   EncryptedValue, the CMP version 3 is introduced
-    in case a transaction\n   is supposed to use EnvelopedData.\n\n   CMP version
-    3 is introduced to enable signaling support of\n   EnvelopedData instead of EncryptedValue
-    and signaling the use of an\n   explicit hash AlgorithmIdentifier in certConf
-    messages, as far as\n   needed.\n\n\t "
+  content: |-
+    <p>This document contains a set of updates to the syntax and transport
+       of Certificate Management Protocol (CMP) version 2.  This document
+       updates RFC 4210 and RFC 6712.
+
+       The aspects of CMP updated in this document are using EnvelopedData
+       instead of EncryptedValue, clarifying the handling of p10cr messages,
+       improving the crypto agility, as well as adding new general message
+       types, extended key usages to identify certificates for use with CMP,
+       and &#39;.well-known&#39; HTTP path segments.
+
+       To properly differentiate the support of EnvelopedData instead of
+       EncryptedValue, the CMP version 3 is introduced in case a transaction
+       is supposed to use EnvelopedData.
+
+       CMP version 3 is introduced to enable signaling support of
+       EnvelopedData instead of EncryptedValue and signaling the use of an
+       explicit hash AlgorithmIdentifier in certConf messages, as far as
+       needed.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-lamps-cmp-updates-10
+    formattedref:
+      content: draft-ietf-lamps-cmp-updates-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-cmp-updates-10
@@ -104,7 +112,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-lamps-cmp-updates-12
+    formattedref:
+      content: draft-ietf-lamps-cmp-updates-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-cmp-updates-12
@@ -120,7 +129,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-lamps-cmp-updates-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

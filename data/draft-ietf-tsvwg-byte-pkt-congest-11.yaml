@@ -1,7 +1,7 @@
 ---
 id: draftietftsvwgbytepktcongest11
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -61,7 +61,7 @@ contributor:
         language: en
         content: Jukka Manner
 version:
-- draft: '11'
+- content: '11'
 language:
 - en
 script:
@@ -69,21 +69,24 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document provides recommendations of best current practice for\n
-    \  dropping or marking packets using any active queue management (AQM)\n   algorithm,
-    including random early detection (RED), BLUE, pre-\n   congestion notification
-    (PCN) and newer schemes such as CoDel and\n   PIE.  We give three strong recommendations:
-    (1) packet size should be\n   taken into account when transports detect and respond
-    to congestion\n   indications, (2) packet size should not be taken into account
-    when\n   network equipment creates congestion signals (marking, dropping), and\n
-    \  therefore (3) in the specific case of RED, the byte-mode packet drop\n   variant
-    that drops fewer small packets should not be used.  This memo\n   updates RFC
-    2309 to deprecate deliberate preferential treatment of\n   small packets in AQM
-    algorithms.\n\n\t "
+  content: |-
+    <p>This document provides recommendations of best current practice for
+       dropping or marking packets using any active queue management (AQM)
+       algorithm, including random early detection (RED), BLUE, pre-
+       congestion notification (PCN) and newer schemes such as CoDel and
+       PIE.  We give three strong recommendations: (1) packet size should be
+       taken into account when transports detect and respond to congestion
+       indications, (2) packet size should not be taken into account when
+       network equipment creates congestion signals (marking, dropping), and
+       therefore (3) in the specific case of RED, the byte-mode packet drop
+       variant that drops fewer small packets should not be used.  This memo
+       updates RFC 2309 to deprecate deliberate preferential treatment of
+       small packets in AQM algorithms.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-tsvwg-byte-pkt-congest-10
+    formattedref:
+      content: draft-ietf-tsvwg-byte-pkt-congest-10
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-byte-pkt-congest-10
@@ -93,7 +96,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-tsvwg-byte-pkt-congest-12
+    formattedref:
+      content: draft-ietf-tsvwg-byte-pkt-congest-12
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tsvwg-byte-pkt-congest-12
@@ -109,7 +113,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-tsvwg-byte-pkt-congest-11
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

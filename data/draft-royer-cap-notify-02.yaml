@@ -1,7 +1,7 @@
 ---
 id: draftroyercapnotify02
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: INET-Consulting
 version:
-- draft: '02'
+- content: '02'
 language:
 - en
 script:
@@ -54,23 +54,30 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "This memo describes a method used to ask for and receive\nnotifications.
-    \ These notifications will be the direct result of a\nstored components and the
-    notifications or changes to components or\nthe store and are represented in iCalendar
-    format. This is an\nextensions to iCalendar objects.\nThis memo has been updated
-    to include non-CAP notificaitons.\nThis memo includes a new CAP command types
-    of 'REQUEST-NOTIFY',\n'NOTIFICATION', and 'CANCEL-NOTIFY', a new property of 'OBSERVER',
-    a\nnew iCalendar component 'NOTIFICATION', CAP capabilities of\n'CAN-NOTIFY',
-    'NOTIFY-UPDATES', and 'ALLOW-NOTIFY-BOT'. A\n'REQUEST-NOTIFY' command is a request
-    to add an observer to an\ncomponent in the 'TARGET' calendar. In addition the
-    'REQUEST-NOTIFY'\ncommand can alert the CUA of changes to specific components
-    or in the\ncalendar or calendar store. Everything is subject to VCAR\nrestrictions.\nThese
-    are asynchronous notifications must be advertised by the CS and\nrequested by
-    the CUA. This memo discusses how to transport these\niCalendar objects and using
-    them with CAP.\nIn addition if the CS and CUA support the 'NOTIFY-UPDATES'\ncapability,
-    then the CS will send 'NOTIFICATION' components to the\nCUA describing the UIDs
-    or TARGETS that have changed since the\ncurrently authenticated CU was last connected
-    allowing for easier\nsynchronization.\n\n\t "
+  content: |-
+    <p>This memo describes a method used to ask for and receive
+    notifications.  These notifications will be the direct result of a
+    stored components and the notifications or changes to components or
+    the store and are represented in iCalendar format. This is an
+    extensions to iCalendar objects.
+    This memo has been updated to include non-CAP notificaitons.
+    This memo includes a new CAP command types of &#39;REQUEST-NOTIFY&#39;,
+    &#39;NOTIFICATION&#39;, and &#39;CANCEL-NOTIFY&#39;, a new property of &#39;OBSERVER&#39;, a
+    new iCalendar component &#39;NOTIFICATION&#39;, CAP capabilities of
+    &#39;CAN-NOTIFY&#39;, &#39;NOTIFY-UPDATES&#39;, and &#39;ALLOW-NOTIFY-BOT&#39;. A
+    &#39;REQUEST-NOTIFY&#39; command is a request to add an observer to an
+    component in the &#39;TARGET&#39; calendar. In addition the &#39;REQUEST-NOTIFY&#39;
+    command can alert the CUA of changes to specific components or in the
+    calendar or calendar store. Everything is subject to VCAR
+    restrictions.
+    These are asynchronous notifications must be advertised by the CS and
+    requested by the CUA. This memo discusses how to transport these
+    iCalendar objects and using them with CAP.
+    In addition if the CS and CUA support the &#39;NOTIFY-UPDATES&#39;
+    capability, then the CS will send &#39;NOTIFICATION&#39; components to the
+    CUA describing the UIDs or TARGETS that have changed since the
+    currently authenticated CU was last connected allowing for easier
+    synchronization.</p>
 series:
 - type: main
   title:
@@ -79,7 +86,7 @@ series:
     content: Internet-Draft
   number: draft-royer-cap-notify-02
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

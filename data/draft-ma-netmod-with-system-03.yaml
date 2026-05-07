@@ -1,7 +1,7 @@
 ---
 id: draftmanetmodwithsystem03
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: Cisco Systems
 version:
-- draft: '03'
+- content: '03'
 language:
 - en
 script:
@@ -154,19 +154,23 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This document updates NMDA [RFC8342] to define a read-only\n   conventional
-    configuration datastore called \"system\" to hold system-\n   defined configurations.
-    \ To avoid clients' explicit copy/paste of\n   referenced system-defined configuration
-    into the target configuration\n   datastore (e.g., <running>), a \"resolve-system\"
-    parameter has been\n   defined to allow the server acting as a \"system client\"
-    to copy\n   referenced system-defined nodes automatically.  The solution enables\n
-    \  clients manipulating the target configuration datastore (e.g.,\n   <running>)
-    to overlay and reference nodes defined in <system>,\n   override values of configurations
-    defined in <system>, and configure\n   descendant nodes of system-defined nodes.\n\n\t "
+  content: |-
+    <p>This document updates NMDA [RFC8342] to define a read-only
+       conventional configuration datastore called &quot;system&quot; to hold system-
+       defined configurations.  To avoid clients&#39; explicit copy/paste of
+       referenced system-defined configuration into the target configuration
+       datastore (e.g., &lt;running&gt;), a &quot;resolve-system&quot; parameter has been
+       defined to allow the server acting as a &quot;system client&quot; to copy
+       referenced system-defined nodes automatically.  The solution enables
+       clients manipulating the target configuration datastore (e.g.,
+       &lt;running&gt;) to overlay and reference nodes defined in &lt;system&gt;,
+       override values of configurations defined in &lt;system&gt;, and configure
+       descendant nodes of system-defined nodes.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ma-netmod-with-system-02
+    formattedref:
+      content: draft-ma-netmod-with-system-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netmod-with-system-02
@@ -176,7 +180,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ma-netmod-with-system-04
+    formattedref:
+      content: draft-ma-netmod-with-system-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ma-netmod-with-system-04
@@ -192,7 +197,7 @@ series:
     content: Internet-Draft
   number: draft-ma-netmod-with-system-03
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

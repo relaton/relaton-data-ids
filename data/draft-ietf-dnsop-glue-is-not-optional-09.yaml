@@ -1,7 +1,7 @@
 ---
 id: draftietfdnsopglueisnotoptional09
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -124,7 +124,7 @@ contributor:
         - language: en
           content: Verisign
 version:
-- draft: '09'
+- content: '09'
 language:
 - en
 script:
@@ -132,18 +132,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   The DNS uses glue records to allow iterative clients to find the\n
-    \  addresses of name servers that are contained within a delegated zone.\n   Authoritative
-    Servers are expected to return all available glue\n   records for in-domain name
-    servers in a referral response.  If\n   message size constraints prevent the inclusion
-    of all glue records\n   for in-domain name servers, the server must set the TC
-    flag to inform\n   the client that the response is incomplete, and that the client\n
-    \  should use another transport to retrieve the full response.  This\n   document
-    updates RFC 1034 to clarify correct server behavior.\n\n\t "
+  content: |-
+    <p>The DNS uses glue records to allow iterative clients to find the
+       addresses of name servers that are contained within a delegated zone.
+       Authoritative Servers are expected to return all available glue
+       records for in-domain name servers in a referral response.  If
+       message size constraints prevent the inclusion of all glue records
+       for in-domain name servers, the server must set the TC flag to inform
+       the client that the response is incomplete, and that the client
+       should use another transport to retrieve the full response.  This
+       document updates RFC 1034 to clarify correct server behavior.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-dnsop-glue-is-not-optional-08
+    formattedref:
+      content: draft-ietf-dnsop-glue-is-not-optional-08
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-glue-is-not-optional-08
@@ -159,7 +162,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-dnsop-glue-is-not-optional-09
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

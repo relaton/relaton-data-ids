@@ -1,7 +1,7 @@
 ---
 id: draftietfsidropsroaconsiderations05
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -146,7 +146,7 @@ contributor:
         - language: en
           content: CNNIC
 version:
-- draft: '05'
+- content: '05'
 language:
 - en
 script:
@@ -154,19 +154,22 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   In RPKI, the address space holder needs to issue an ROA object when\n
-    \  authorizing one or more ASes to originate routes to IP prefix(es).\n   During
-    ROA issurance process, the address space holder may need to\n   specify an origin
-    AS for a list of IP prefixes.  Additionally, the\n   address space holder is free
-    to choose to put multiple prefixes into\n   a single ROA or issue separate ROAs
-    for each prefix according to the\n   current specification.  This memo analyzes
-    some operational problems\n   which may arise from ROAs containing multiple IP
-    prefixes and\n   recommends avoiding placing multiple IP prefixes in one ROA as\n
-    \  possible.\n\n\t "
+  content: |-
+    <p>In RPKI, the address space holder needs to issue an ROA object when
+       authorizing one or more ASes to originate routes to IP prefix(es).
+       During ROA issurance process, the address space holder may need to
+       specify an origin AS for a list of IP prefixes.  Additionally, the
+       address space holder is free to choose to put multiple prefixes into
+       a single ROA or issue separate ROAs for each prefix according to the
+       current specification.  This memo analyzes some operational problems
+       which may arise from ROAs containing multiple IP prefixes and
+       recommends avoiding placing multiple IP prefixes in one ROA as
+       possible.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-sidrops-roa-considerations-04
+    formattedref:
+      content: draft-ietf-sidrops-roa-considerations-04
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-roa-considerations-04
@@ -176,7 +179,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-sidrops-roa-considerations-06
+    formattedref:
+      content: draft-ietf-sidrops-roa-considerations-06
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-roa-considerations-06
@@ -192,7 +196,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-sidrops-roa-considerations-05
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

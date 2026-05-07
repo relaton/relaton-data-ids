@@ -1,11 +1,12 @@
 ---
 id: draftrosomakhotlswimsecerthint
-schema_version: v1.4.1
-formattedref: draft-rosomakho-tls-wimse-cert-hint
+schema_version: v1.5.6
+formattedref:
+  content: draft-rosomakho-tls-wimse-cert-hint
 title:
 - language: en
   script: Latn
-  content: Workload Identifier Scope Hint for TLS ClientHello
+  content: Workload Identifier Origin Hint for TLS ClientHello
 docidentifier:
 - content: draft-rosomakho-tls-wimse-cert-hint
   type: Internet-Draft
@@ -13,20 +14,23 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   This document defines a TLS extension that allows clients to indicate\n
-    \  one or more workload identifier scopes in the ClientHello message.\n   Each
-    scope consists of a URI scheme and trust domain component,\n   representing the
-    administrative domain and identifier namespace in\n   which the client operates.
-    \ These identifier scopes serve as hints to\n   enable the server to determine
-    whether client authentication is\n   required and which policies or trust anchors
-    should apply.  This\n   mechanism improves efficiency in mutual TLS deployments
-    while\n   minimising the exposure of sensitive identifier information.  To\n   protect
-    confidentiality, this extension can be used in conjunction\n   with Encrypted
-    Client Hello (ECH).\n\n\t "
+  content: |-
+    <p>This document defines a TLS extension that allows clients to indicate
+       one or more workload identifier origins in the ClientHello message.
+       Each origin consists of a URI scheme and trust domain component,
+       representing the administrative domain and identifier namespace in
+       which the client operates.  These identifier origins serve as hints
+       to enable the server to determine whether client authentication is
+       required and which policies or trust anchors should apply.  This
+       mechanism improves efficiency in mutual TLS deployments while
+       minimising the exposure of sensitive identifier information.  To
+       protect confidentiality, this extension can be used in conjunction
+       with Encrypted Client Hello (ECH).</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-rosomakho-tls-wimse-cert-hint-00
+    formattedref:
+      content: draft-rosomakho-tls-wimse-cert-hint-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rosomakho-tls-wimse-cert-hint-00
@@ -36,11 +40,23 @@ relation:
       primary: true
 - type: includes
   bibitem:
-    formattedref: draft-rosomakho-tls-wimse-cert-hint-01
+    formattedref:
+      content: draft-rosomakho-tls-wimse-cert-hint-01
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-rosomakho-tls-wimse-cert-hint-01
     docidentifier:
     - content: draft-rosomakho-tls-wimse-cert-hint-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-rosomakho-tls-wimse-cert-hint-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-rosomakho-tls-wimse-cert-hint-02
+    docidentifier:
+    - content: draft-rosomakho-tls-wimse-cert-hint-02
       type: Internet-Draft
       primary: true

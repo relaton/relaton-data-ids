@@ -1,7 +1,8 @@
 ---
 id: draftietftcpmtcpdcr
-schema_version: v1.4.1
-formattedref: draft-ietf-tcpm-tcp-dcr
+schema_version: v1.5.6
+formattedref:
+  content: draft-ietf-tcpm-tcp-dcr
 title:
 - language: en
   script: Latn
@@ -13,21 +14,22 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "This document specifies Non-Congestion Robustness (NCR) for TCP.  In the
-    absence of explicit congestion notification from the network, TCP uses loss as
-    an indication of congestion.  One of the ways TCP detects loss is using the arrival
-    of three duplicate acknowledgments.  However, this heuristic is not always correct,
-    notably in the case when network paths reorder segments (for whatever reason),
-    resulting in degraded performance.  TCP-NCR is designed to mitigate this degraded
-    performance by increasing the number of duplicate acknowledgments required to
-    trigger loss recovery, based on the current state of the connection, in an effort
-    to better disambiguate true segment loss from segment reordering.  This document
-    specifies the changes to TCP, as well as the costs and benefits of these modifications.
-    \ This memo defines an Experimental Protocol for the Internet community.\n\t "
+  content: "<p>This document specifies Non-Congestion Robustness (NCR) for TCP.  In
+    the absence of explicit congestion notification from the network, TCP uses loss
+    as an indication of congestion.  One of the ways TCP detects loss is using the
+    arrival of three duplicate acknowledgments.  However, this heuristic is not always
+    correct, notably in the case when network paths reorder segments (for whatever
+    reason), resulting in degraded performance.  TCP-NCR is designed to mitigate this
+    degraded performance by increasing the number of duplicate acknowledgments required
+    to trigger loss recovery, based on the current state of the connection, in an
+    effort to better disambiguate true segment loss from segment reordering.  This
+    document specifies the changes to TCP, as well as the costs and benefits of these
+    modifications.  This memo defines an Experimental Protocol for the Internet community.</p>"
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-ietf-tcpm-tcp-dcr-07
+    formattedref:
+      content: draft-ietf-tcpm-tcp-dcr-07
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-dcr-07

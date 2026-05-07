@@ -1,7 +1,7 @@
 ---
 id: draftietfmmusicsdpbundlenegotiation16
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -87,7 +87,7 @@ contributor:
         language: en
         content: Cullen Fluffy Jennings
 version:
-- draft: '16'
+- content: '16'
 language:
 - en
 script:
@@ -95,25 +95,33 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   This specification defines a new Session Description Protocol (SDP)\n
-    \  Grouping Framework extension, 'BUNDLE'.  The extension can be used\n   with
-    the SDP Offer/Answer mechanism to negotiate the usage of a\n   single address:port
-    combination (BUNDLE address) for receiving media,\n   referred to as bundled media,
-    associated with multiple SDP media\n   descriptions (\"m=\" lines).\n\n   To assist
-    endpoints in negotiating the use of bundle this\n   specification defines a new
-    SDP attribute, 'bundle-only', which can\n   be used to request that specific media
-    is only used if bundled.  This\n   specification also updates sections 5.1, 8.1
-    and 8.2 of RFC 3264 to\n   allow an answerer to assign a non-zero port value to
-    an \"m=\" line in\n   an SDP answer, even if the \"m=\" line in the associated
-    SDP offer\n   contained a zero port value.\n\n   There are multiple ways to correlate
-    the bundled RTP packets with the\n   appropriate media descriptions.  This specification
-    defines a new\n   RTCP source description (SDES) item and a new RTP header extension\n
-    \  that provides an additional way to do this correlation by using them\n   to
-    carry a value that associates the RTP/RTCP packets with a specific\n   media description.\n\n\t "
+  content: |-
+    <p>This specification defines a new Session Description Protocol (SDP)
+       Grouping Framework extension, &#39;BUNDLE&#39;.  The extension can be used
+       with the SDP Offer/Answer mechanism to negotiate the usage of a
+       single address:port combination (BUNDLE address) for receiving media,
+       referred to as bundled media, associated with multiple SDP media
+       descriptions (&quot;m=&quot; lines).
+
+       To assist endpoints in negotiating the use of bundle this
+       specification defines a new SDP attribute, &#39;bundle-only&#39;, which can
+       be used to request that specific media is only used if bundled.  This
+       specification also updates sections 5.1, 8.1 and 8.2 of RFC 3264 to
+       allow an answerer to assign a non-zero port value to an &quot;m=&quot; line in
+       an SDP answer, even if the &quot;m=&quot; line in the associated SDP offer
+       contained a zero port value.
+
+       There are multiple ways to correlate the bundled RTP packets with the
+       appropriate media descriptions.  This specification defines a new
+       RTCP source description (SDES) item and a new RTP header extension
+       that provides an additional way to do this correlation by using them
+       to carry a value that associates the RTP/RTCP packets with a specific
+       media description.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-ietf-mmusic-sdp-bundle-negotiation-15
+    formattedref:
+      content: draft-ietf-mmusic-sdp-bundle-negotiation-15
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mmusic-sdp-bundle-negotiation-15
@@ -123,7 +131,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-ietf-mmusic-sdp-bundle-negotiation-17
+    formattedref:
+      content: draft-ietf-mmusic-sdp-bundle-negotiation-17
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mmusic-sdp-bundle-negotiation-17
@@ -139,7 +148,7 @@ series:
     content: Internet-Draft
   number: draft-ietf-mmusic-sdp-bundle-negotiation-16
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf

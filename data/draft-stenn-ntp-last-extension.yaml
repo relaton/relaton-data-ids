@@ -1,7 +1,8 @@
 ---
 id: draftstennntplastextension
-schema_version: v1.4.1
-formattedref: draft-stenn-ntp-last-extension
+schema_version: v1.5.6
+formattedref:
+  content: draft-stenn-ntp-last-extension
 title:
 - language: en
   script: Latn
@@ -13,18 +14,21 @@ docidentifier:
 abstract:
 - language: en
   script: Latn
-  content: "   NTPv4 is defined by RFC 5905 [RFC5905], and it and earlier versions\n
-    \  of the NTP Protocol have supported symmetric private key MAC\n   authentication.
-    \ MACs pre-date the Extension Fields introduced in RFC\n   5905 [RFC5905], and
-    as the number of Extension Fields grows there is\n   an increasing chance of ambiguity
-    when deciding if the \"next\" set of\n   data is an Extension Field or a MAC.
-    \ This proposal defines a new\n   Extension Field which is used to signifiy that
-    it is the last\n   Extension Field in the packet.  If present, any subsequent
-    data\n   SHOULD be considered to be a legacy MAC.\n\n\t "
+  content: |-
+    <p>NTPv4 is defined by RFC 5905 [RFC5905], and it and earlier versions
+       of the NTP Protocol have supported symmetric private key MAC
+       authentication.  MACs pre-date the Extension Fields introduced in RFC
+       5905 [RFC5905], and as the number of Extension Fields grows there is
+       an increasing chance of ambiguity when deciding if the &quot;next&quot; set of
+       data is an Extension Field or a MAC.  This proposal defines a new
+       Extension Field which is used to signifiy that it is the last
+       Extension Field in the packet.  If present, any subsequent data
+       SHOULD be considered to be a legacy MAC.</p>
 relation:
 - type: includes
   bibitem:
-    formattedref: draft-stenn-ntp-last-extension-00
+    formattedref:
+      content: draft-stenn-ntp-last-extension-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-stenn-ntp-last-extension-00

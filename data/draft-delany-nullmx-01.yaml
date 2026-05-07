@@ -1,7 +1,7 @@
 ---
 id: draftdelanynullmx01
+schema_version: v1.5.6
 type: standard
-schema_version: v1.4.1
 title:
 - language: en
   script: Latn
@@ -64,7 +64,7 @@ contributor:
         language: en
         content: Mark Delany
 version:
-- draft: '01'
+- content: '01'
 language:
 - en
 script:
@@ -72,17 +72,21 @@ script:
 abstract:
 - language: en
   script: Latn
-  content: "   When the 5321.MailFrom domain in an e-mail message has a DNS MX\n   Resource
-    Record (RR), it is making an explicit statement that it is\n   willing to accept
-    email.  However, when the domain has just a DNS A\n   or AAAA RR, there mail clients
-    cannot easily tell whether the domain\n   accepts mail, as many hosts on the Internet
-    advertise an A or AAAA RR\n   regardless of whether they want to accept email.\n\n
-    \  The NULL MX RR formalizes the existing mechanism by which a domain\n   announces
-    that it accepts no mail.\n\n\t "
+  content: |-
+    <p>When the 5321.MailFrom domain in an e-mail message has a DNS MX
+       Resource Record (RR), it is making an explicit statement that it is
+       willing to accept email.  However, when the domain has just a DNS A
+       or AAAA RR, there mail clients cannot easily tell whether the domain
+       accepts mail, as many hosts on the Internet advertise an A or AAAA RR
+       regardless of whether they want to accept email.
+
+       The NULL MX RR formalizes the existing mechanism by which a domain
+       announces that it accepts no mail.</p>
 relation:
 - type: updates
   bibitem:
-    formattedref: draft-delany-nullmx-00
+    formattedref:
+      content: draft-delany-nullmx-00
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-delany-nullmx-00
@@ -92,7 +96,8 @@ relation:
       primary: true
 - type: updatedBy
   bibitem:
-    formattedref: draft-delany-nullmx-02
+    formattedref:
+      content: draft-delany-nullmx-02
     source:
     - type: src
       content: https://datatracker.ietf.org/doc/html/draft-delany-nullmx-02
@@ -108,7 +113,7 @@ series:
     content: Internet-Draft
   number: draft-delany-nullmx-01
 ext:
-  schema_version: v1.0.1
+  schema_version: v1.1.2
   doctype:
     content: internet-draft
   flavor: ietf
