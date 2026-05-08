@@ -1,5 +1,5 @@
 ---
-id: draftietfcatsmetricdefinition06
+id: draftietfcatsmetricdefinition07
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: CATS Metrics Definition
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-metric-definition-06
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-metric-definition-07
 docidentifier:
 - content: draft-ietf-cats-metric-definition
   type: Internet-Draft
-- content: draft-ietf-cats-metric-definition-06
+- content: draft-ietf-cats-metric-definition-07
   type: Internet-Draft
   primary: true
 docnumber: I-D.ietf-cats-metric-definition
 date:
 - type: published
-  at: '2026-03-01'
+  at: '2026-05-08'
 contributor:
 - role:
   - type: author
@@ -149,7 +149,7 @@ contributor:
         - language: en
           content: Huawei Technologies
 version:
-- content: '06'
+- content: '07'
 language:
 - en
 script:
@@ -159,34 +159,26 @@ abstract:
   script: Latn
   content: |-
     <p>Computing-Aware Traffic Steering (CATS) is a traffic engineering
-       approach that optimizes the steering of traffic to a given service
-       instance by considering the dynamic nature of computing and network
-       resources.  In order to consider the computing and network resources,
-       a system needs to share information (metrics) that describes the
-       state of the resources.  Metrics from network domain have been in use
-       in network systems for a long time.  This document defines a set of
-       metrics from the computing domain used for CATS.</p>
+       approach that optimizes the steering of traffic to a service instance
+       by considering the dynamic state of computing and network resources.
+       To enable such decisions, CATS components exchange metrics that
+       describe resource conditions affecting service instance selection.
+       This document focuses on compute and communication metrics for CATS
+       and defines a hierarchical abstraction of these metrics to improve
+       interoperability, scalability, and operational simplicity.  It does
+       not aim to standardize raw infrastructure (Level 0) metrics; instead,
+       it specifies higher-level representations that can be derived from
+       raw measurements using aggregation and normalization functions.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-cats-metric-definition-05
+      content: draft-ietf-cats-metric-definition-06
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-metric-definition-05
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-metric-definition-06
     docidentifier:
-    - content: draft-ietf-cats-metric-definition-05
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-cats-metric-definition-07
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-cats-metric-definition-07
-    docidentifier:
-    - content: draft-ietf-cats-metric-definition-07
+    - content: draft-ietf-cats-metric-definition-06
       type: Internet-Draft
       primary: true
 series:
@@ -195,7 +187,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-cats-metric-definition-06
+  number: draft-ietf-cats-metric-definition-07
 ext:
   schema_version: v1.1.2
   doctype:
