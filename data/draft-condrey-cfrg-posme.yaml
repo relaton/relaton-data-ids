@@ -26,9 +26,10 @@ abstract:
        construction provides three properties: (1) unconditional sequential
        time enforcement anchored in physics-bounded latency floors, (2)
        forgery prevention via causal hashes (reduces to collision resistance
-       of H), and (3) TMTO resistance scaling geometrically with write
-       density rho.  Verification requires O(Q * d^R * log N) hash
-       evaluations with no arena allocation.  No trusted setup is required.</p>
+       of H), and (3) TMTO resistance scaling as $1/\alpha$ with spatial
+       entanglement, where $\alpha$ is the adversary&#39;s storage fraction.
+       Verification requires O(Q * d^R * log N) hash evaluations with no
+       arena allocation.  No trusted setup is required.</p>
 relation:
 - type: includes
   bibitem:
@@ -50,5 +51,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-condrey-cfrg-posme-01
     docidentifier:
     - content: draft-condrey-cfrg-posme-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-condrey-cfrg-posme-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-condrey-cfrg-posme-02
+    docidentifier:
+    - content: draft-condrey-cfrg-posme-02
       type: Internet-Draft
       primary: true

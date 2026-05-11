@@ -1,24 +1,24 @@
 ---
-id: draftietfcosec509testvectors00
+id: draftietfhttpapiprivacy06
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: Test Vectors for CBOR Encoded X.509 (C509) Certificates
+  content: Protecting Credentials with HTTP APIs
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-c509-test-vectors-00
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-privacy-06
 docidentifier:
-- content: draft-ietf-cose-c509-test-vectors
+- content: draft-ietf-httpapi-privacy
   type: Internet-Draft
-- content: draft-ietf-cose-c509-test-vectors-00
+- content: draft-ietf-httpapi-privacy-06
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-cose-c509-test-vectors
+docnumber: I-D.ietf-httpapi-privacy
 date:
 - type: published
-  at: '2026-01-13'
+  at: '2026-05-11'
 contributor:
 - role:
   - type: author
@@ -27,24 +27,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Lijun
+        content: Rich
       - language: en
         script: Latn
-        initial: L
+        initial: R
       formatted_initials:
         language: en
-        content: L.
+        content: R.
       surname:
         language: en
-        content: Liao
+        content: Salz
       completename:
         language: en
-        content: Lijun Liao
+        content: Rich Salz
     affiliation:
     - organization:
         name:
         - language: en
-          content: NIO
+          content: Akamai Technologies
 - role:
   - type: author
   person:
@@ -52,21 +52,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        initial: G
+        content: Mike
+      - language: en
+        script: Latn
+        initial: M
       formatted_initials:
         language: en
-        content: G.
+        content: M.
       surname:
         language: en
-        content: Selander
+        content: Bishop
       completename:
         language: en
-        content: Göran Selander
+        content: Mike Bishop
     affiliation:
     - organization:
         name:
         - language: en
-          content: Ericsson
+          content: Akamai Technologies
 - role:
   - type: author
   person:
@@ -74,29 +77,26 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: John
+        content: Marius
       - language: en
         script: Latn
-        initial: J
-      - language: en
-        script: Latn
-        initial: P
+        initial: M
       formatted_initials:
         language: en
-        content: J. P.
+        content: M.
       surname:
         language: en
-        content: Mattsson
+        content: Kleidl
       completename:
         language: en
-        content: John Preuß Mattsson
+        content: Marius Kleidl
     affiliation:
     - organization:
         name:
         - language: en
-          content: Ericsson
+          content: Transloadit
 version:
-- content: '00'
+- content: '06'
 language:
 - en
 script:
@@ -105,19 +105,22 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document contains examples of CBOR encoded X.509 (C509)
-       certificates, certificate (signing) requests, and certificate request
-       templates.</p>
+    <p>Redirecting HTTP requests to HTTPS is a common pattern for human-
+       facing web resources.  When done for authenticated HTTP API traffic,
+       client credentials are exposed to the network.  This document
+       discusses the pitfalls of the redirect approach and makes deployment
+       recommendations for authenticated HTTP APIs.  It does not specify a
+       protocol.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-cose-c509-test-vectors-01
+      content: draft-ietf-httpapi-privacy-05
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-c509-test-vectors-01
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-privacy-05
     docidentifier:
-    - content: draft-ietf-cose-c509-test-vectors-01
+    - content: draft-ietf-httpapi-privacy-05
       type: Internet-Draft
       primary: true
 series:
@@ -126,7 +129,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-cose-c509-test-vectors-00
+  number: draft-ietf-httpapi-privacy-06
 ext:
   schema_version: v1.1.2
   doctype:

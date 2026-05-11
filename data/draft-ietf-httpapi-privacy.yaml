@@ -15,9 +15,10 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Redirecting HTTP requests to HTTPS, a common pattern for human-facing
-       web resources, can be an anti-pattern for authenticated HTTP API
-       traffic.  This document discusses the pitfalls and makes deployment
+    <p>Redirecting HTTP requests to HTTPS is a common pattern for human-
+       facing web resources.  When done for authenticated HTTP API traffic,
+       client credentials are exposed to the network.  This document
+       discusses the pitfalls of the redirect approach and makes deployment
        recommendations for authenticated HTTP APIs.  It does not specify a
        protocol.</p>
 relation:
@@ -85,5 +86,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-privacy-05
     docidentifier:
     - content: draft-ietf-httpapi-privacy-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-httpapi-privacy-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-privacy-06
+    docidentifier:
+    - content: draft-ietf-httpapi-privacy-06
       type: Internet-Draft
       primary: true
