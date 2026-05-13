@@ -15,13 +15,13 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines the core behavior for Media over QUIC Transport
-       (MOQT), a media transport protocol designed to operate over QUIC and
-       WebTransport, which have similar functionality.  MOQT allows a
-       producer of media to publish data and have it consumed via
-       subscription by a multiplicity of endpoints.  It supports
-       intermediate content distribution networks and is designed for high
-       scale and low latency distribution.</p>
+    <p>This document defines Media over QUIC Transport (MOQT), a publish/
+       subscribe protocol that runs over QUIC and WebTransport.  MOQT
+       leverages the features of these transports, such as streams,
+       datagrams, priorities, and partial reliability.  MOQT operates both
+       point-to-point and through intermediate relays, enabling scalable
+       low-latency delivery.  Despite its name, MOQT is media agnostic and
+       can be used for a wide range of use cases.</p>
 relation:
 - type: includes
   bibitem:
@@ -219,5 +219,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-moq-transport-17
     docidentifier:
     - content: draft-ietf-moq-transport-17
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-moq-transport-18
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-moq-transport-18
+    docidentifier:
+    - content: draft-ietf-moq-transport-18
       type: Internet-Draft
       primary: true

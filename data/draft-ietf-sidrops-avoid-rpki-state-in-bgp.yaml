@@ -17,18 +17,18 @@ abstract:
   script: Latn
   content: |-
     <p>This document provides guidance to avoid carrying Resource Public Key
-       Infrastructure (RPKI) derived Validation States in transitive Border
+       Infrastructure (RPKI) derived validation states in transitive Border
        Gateway Protocol (BGP) Path Attributes.  Annotating routes with
-       transitive attributes signaling Validation State may cause needless
+       transitive attributes signaling validation states may cause needless
        flooding of BGP UPDATE messages through the global Internet routing
        system, for example when Route Origin Authorizations (ROAs) are
        issued, or are revoked, or when RPKI-To-Router sessions are
        terminated.
 
-       Operators SHOULD ensure Validation States are not signaled in
-       transitive BGP Path Attributes.  Specifically, Operators SHOULD NOT
-       associate Prefix Origin Validation state with BGP routes using
-       transitive BGP Communities.</p>
+       Operators should ensure RPKI-derived validation states are not
+       signaled in transitive BGP Path Attributes.  Specifically, Operators
+       should not associate Prefix Origin Validation state with BGP routes
+       using transitive BGP Communities.</p>
 relation:
 - type: includes
   bibitem:
@@ -94,5 +94,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-avoid-rpki-state-in-bgp-05
     docidentifier:
     - content: draft-ietf-sidrops-avoid-rpki-state-in-bgp-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-sidrops-avoid-rpki-state-in-bgp-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-avoid-rpki-state-in-bgp-06
+    docidentifier:
+    - content: draft-ietf-sidrops-avoid-rpki-state-in-bgp-06
       type: Internet-Draft
       primary: true
