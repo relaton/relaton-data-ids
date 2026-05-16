@@ -1,25 +1,24 @@
 ---
-id: draftietfacmednsaccountlabel02
+id: drafttantsurabessevpnunreachability01
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: Automated Certificate Management Environment (ACME) DNS Labeled With ACME
-    Account ID Challenge
+  content: EVPN Unreachability Signaling
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-label-02
+  content: https://datatracker.ietf.org/doc/html/draft-tantsura-bess-evpn-unreachability-01
 docidentifier:
-- content: draft-ietf-acme-dns-account-label
+- content: draft-tantsura-bess-evpn-unreachability
   type: Internet-Draft
-- content: draft-ietf-acme-dns-account-label-02
+- content: draft-tantsura-bess-evpn-unreachability-01
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-acme-dns-account-label
+docnumber: I-D.tantsura-bess-evpn-unreachability
 date:
 - type: published
-  at: '2025-11-16'
+  at: '2026-05-15'
 contributor:
 - role:
   - type: author
@@ -28,57 +27,7 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Antonis
-      - language: en
-        script: Latn
-        initial: A
-      formatted_initials:
-        language: en
-        content: A.
-      surname:
-        language: en
-        content: Chariton
-      completename:
-        language: en
-        content: Antonis Chariton
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Independent Contributor
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Amir
-      - language: en
-        script: Latn
-        initial: A
-      formatted_initials:
-        language: en
-        content: A.
-      surname:
-        language: en
-        content: Omidi
-      completename:
-        language: en
-        content: Amir Omidi
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Independent Contributor
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: James
+        content: Jeff
       - language: en
         script: Latn
         initial: J
@@ -87,15 +36,15 @@ contributor:
         content: J.
       surname:
         language: en
-        content: Kasten
+        content: Tantsura
       completename:
         language: en
-        content: James Kasten
+        content: Jeff Tantsura
     affiliation:
     - organization:
         name:
         - language: en
-          content: Snowflake
+          content: Nvidia
 - role:
   - type: author
   person:
@@ -103,24 +52,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Fotis
+        content: Vivek
       - language: en
         script: Latn
-        initial: F
+        initial: V
       formatted_initials:
         language: en
-        content: F.
+        content: V.
       surname:
         language: en
-        content: Loukos
+        content: Venkatraman
       completename:
         language: en
-        content: Fotis Loukos
+        content: Vivek Venkatraman
     affiliation:
     - organization:
         name:
         - language: en
-          content: Google
+          content: Nvidia
 - role:
   - type: author
   person:
@@ -128,29 +77,82 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Stanislaw
+        content: Karthikeya
       - language: en
         script: Latn
-        initial: S
+        initial: K
       - language: en
         script: Latn
-        initial: A
+        initial: V
       formatted_initials:
         language: en
-        content: S. A.
+        content: K. V.
       surname:
         language: en
-        content: Janikowski
+        content: Muppalla
       completename:
         language: en
-        content: Stanislaw A. Janikowski
+        content: Karthikeya Venkat Muppalla
     affiliation:
     - organization:
         name:
         - language: en
-          content: Google
+          content: Nvidia
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Pooja
+      - language: en
+        script: Latn
+        initial: P
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: P. J.
+      surname:
+        language: en
+        content: Doijode
+      completename:
+        language: en
+        content: Pooja Jagadeesh Doijode
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Nvidia
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Maciej
+      - language: en
+        script: Latn
+        initial: M
+      formatted_initials:
+        language: en
+        content: M.
+      surname:
+        language: en
+        content: Rzehak
+      completename:
+        language: en
+        content: Maciej Rzehak
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: CoreWeave
 version:
-- content: '02'
+- content: '01'
 language:
 - en
 script:
@@ -159,35 +161,34 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document outlines a new DNS-based challenge type for the ACME
-       protocol that enables multiple independent systems to authorize a
-       single domain name concurrently.  By adding a unique label to the DNS
-       validation record name, the dns-account-01 challenge avoids CNAME
-       delegation conflicts inherent to the dns-01 challenge type.  This is
-       particularly valuable for multi-region or multi-cloud deployments
-       that wish to rely upon DNS-based domain control validation and need
-       to independently obtain certificates for the same domain.</p>
+    <p>This document defines a new EVPN Route Type for signaling prefix
+       unreachability information without affecting the forwarding plane.
+       The route type reuses the Route Type 5 (IP Prefix Advertisement)
+       field order defined for EVPN IP prefix routes, adds an Address Family
+       octet for unambiguous IPv4/IPv6 parsing, and appends Reporter TLVs
+       that allow aggregation of unreachability reports from multiple
+       network vantage points.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-acme-dns-account-label-01
+      content: draft-tantsura-bess-evpn-unreachability-00
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-label-01
+      content: https://datatracker.ietf.org/doc/html/draft-tantsura-bess-evpn-unreachability-00
     docidentifier:
-    - content: draft-ietf-acme-dns-account-label-01
+    - content: draft-tantsura-bess-evpn-unreachability-00
       type: Internet-Draft
       primary: true
 - type: updatedBy
   bibitem:
     formattedref:
-      content: draft-ietf-acme-dns-account-label-03
+      content: draft-tantsura-bess-evpn-unreachability-02
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-acme-dns-account-label-03
+      content: https://datatracker.ietf.org/doc/html/draft-tantsura-bess-evpn-unreachability-02
     docidentifier:
-    - content: draft-ietf-acme-dns-account-label-03
+    - content: draft-tantsura-bess-evpn-unreachability-02
       type: Internet-Draft
       primary: true
 series:
@@ -196,7 +197,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-acme-dns-account-label-02
+  number: draft-tantsura-bess-evpn-unreachability-01
 ext:
   schema_version: v1.1.2
   doctype:

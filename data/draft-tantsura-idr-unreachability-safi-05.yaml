@@ -1,24 +1,24 @@
 ---
-id: drafttantsurabessevpnunreachability00
+id: drafttantsuraidrunreachabilitysafi05
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: EVPN Unreachability Signaling
+  content: BGP Unreachability Information SAFI
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-tantsura-bess-evpn-unreachability-00
+  content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-unreachability-safi-05
 docidentifier:
-- content: draft-tantsura-bess-evpn-unreachability
+- content: draft-tantsura-idr-unreachability-safi
   type: Internet-Draft
-- content: draft-tantsura-bess-evpn-unreachability-00
+- content: draft-tantsura-idr-unreachability-safi-05
   type: Internet-Draft
   primary: true
-docnumber: I-D.tantsura-bess-evpn-unreachability
+docnumber: I-D.tantsura-idr-unreachability-safi
 date:
 - type: published
-  at: '2026-04-22'
+  at: '2026-05-15'
 contributor:
 - role:
   - type: author
@@ -40,6 +40,31 @@ contributor:
       completename:
         language: en
         content: Jeff Tantsura
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Nvidia
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Donald
+      - language: en
+        script: Latn
+        initial: D
+      formatted_initials:
+        language: en
+        content: D.
+      surname:
+        language: en
+        content: Sharp
+      completename:
+        language: en
+        content: Donald Sharp
     affiliation:
     - organization:
         name:
@@ -105,34 +130,6 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Pooja
-      - language: en
-        script: Latn
-        initial: P
-      - language: en
-        script: Latn
-        initial: J
-      formatted_initials:
-        language: en
-        content: P. J.
-      surname:
-        language: en
-        content: Doijode
-      completename:
-        language: en
-        content: Pooja Jagadeesh Doijode
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Nvidia
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
         content: Maciej
       - language: en
         script: Latn
@@ -151,8 +148,58 @@ contributor:
         name:
         - language: en
           content: CoreWeave
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Abderrahman
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
+      surname:
+        language: en
+        content: Jouhari
+      completename:
+        language: en
+        content: Abderrahman Jouhari
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Oracle
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Smit
+      - language: en
+        script: Latn
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
+      surname:
+        language: en
+        content: Parikh
+      completename:
+        language: en
+        content: Smit Parikh
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Oracle
 version:
-- content: '00'
+- content: '05'
 language:
 - en
 script:
@@ -161,23 +208,25 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines a new EVPN Route Type for signaling prefix
-       unreachability information without affecting the forwarding plane.
-       The route type reuses the Route Type 5 (IP Prefix Advertisement)
-       field order defined for EVPN IP prefix routes, adds an Address Family
-       octet for unambiguous IPv4/IPv6 parsing, and appends Reporter TLVs
-       that allow aggregation of unreachability reports from multiple
-       network vantage points.</p>
+    <p>This document defines a new BGP Subsequent Address Family Identifier
+       (SAFI) called &quot;Unreachability Information&quot; that allows the
+       propagation of prefix unreachability information through BGP without
+       affecting the installation or removal of routes in the Routing
+       Information Base (RIB) or Forwarding Information Base (FIB).  This
+       mechanism enables network operators to share information about
+       unreachable prefixes for monitoring, debugging, and coordination
+       purposes while maintaining complete separation from the active
+       routing plane.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-tantsura-bess-evpn-unreachability-01
+      content: draft-tantsura-idr-unreachability-safi-04
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-tantsura-bess-evpn-unreachability-01
+      content: https://datatracker.ietf.org/doc/html/draft-tantsura-idr-unreachability-safi-04
     docidentifier:
-    - content: draft-tantsura-bess-evpn-unreachability-01
+    - content: draft-tantsura-idr-unreachability-safi-04
       type: Internet-Draft
       primary: true
 series:
@@ -186,7 +235,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-tantsura-bess-evpn-unreachability-00
+  number: draft-tantsura-idr-unreachability-safi-05
 ext:
   schema_version: v1.1.2
   doctype:
