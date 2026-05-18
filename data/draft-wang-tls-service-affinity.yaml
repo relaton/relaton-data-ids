@@ -20,7 +20,15 @@ abstract:
        Transport Layer Security (TLS) 1.3 to enable session migration.  This
        mechanism is designed for network architectures, particularly for
        multi-homed servers that possess multiple network interfaces and IP
-       addresses.</p>
+       addresses.
+
+       This document also introduces a Reliable Framing Layer that operates
+       above the TLS record layer to provide message framing, sequence
+       numbering, acknowledgment tracking, and automatic retransmission.
+       The Framing Layer ensures zero application data loss during TLS
+       session migration by buffering unacknowledged data frames and
+       retransmitting them to the new server endpoint after migration
+       completes.</p>
 relation:
 - type: includes
   bibitem:
@@ -42,5 +50,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-01
     docidentifier:
     - content: draft-wang-tls-service-affinity-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-tls-service-affinity-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-02
+    docidentifier:
+    - content: draft-wang-tls-service-affinity-02
       type: Internet-Draft
       primary: true
