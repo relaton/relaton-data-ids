@@ -28,11 +28,19 @@ abstract:
        (23 NYCRR Part 500), the HIPAA Security Rule (45 CFR Part 164,
        Subpart C), SEC Rule 17a-4 (17 CFR 240.17a-4), and the Cyber Incident
        Reporting for Critical Infrastructure Act of 2022 (CIRCIA).  It does
-       not redefine the wire format, the canonicalization rule, or the
-       signing algorithms of the underlying receipt format.  It tightens a
-       subset of the OPTIONAL fields to REQUIRED, imposes a retention floor,
-       requires at least one timestamping anchor (RFC 3161 or
-       OpenTimestamps; both RECOMMENDED), and adds two extension fields.</p>
+       not redefine the wire format, the canonicalization transformation, or
+       the signing algorithms of the underlying receipt format; it narrows
+       the set of values to which the canonicalization rule is applied
+       (IEEE-754 floating-point numbers MUST NOT appear in digest-covered
+       fields) and tightens a small number of pre-existing wire surfaces
+       under this revision (see
+       Appendix &quot;draft-marques-asqav-compliance-receipts-04&quot;).  It tightens
+       a subset of the OPTIONAL fields to REQUIRED, imposes a retention
+       floor, requires at least one timestamping anchor (RFC 3161 or
+       OpenTimestamps; both RECOMMENDED), and adds three extension fields.
+       The third, counterparty_binding, is added in this revision to provide
+       cryptographic cross-agent byte-equality evidence under a compromised
+       intermediary.</p>
 relation:
 - type: includes
   bibitem:
@@ -76,5 +84,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-marques-asqav-compliance-receipts-03
     docidentifier:
     - content: draft-marques-asqav-compliance-receipts-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-marques-asqav-compliance-receipts-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-marques-asqav-compliance-receipts-04
+    docidentifier:
+    - content: draft-marques-asqav-compliance-receipts-04
       type: Internet-Draft
       primary: true
