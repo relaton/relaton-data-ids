@@ -145,18 +145,18 @@ abstract:
        receive the challenge and respond by echoing the same digits, e.g.,
        through DTMF (Dual-Tone Multi-Frequency).  The proposed extension
        involves two changes to the INVITE header.  First, it adds a new
-       option tag, &quot;civ&quot;, in the Supported header field of the INVITE
+       option tag, "civ", in the Supported header field of the INVITE
        request.  This tag allows the calling party to indicate support for
-       CIV in the initial call.  Second, it adds a special value &quot;civ-veri-
-       call&quot; for the Purpose parameter of the Call-Info header field.  This
+       CIV in the initial call.  Second, it adds a special value "civ-veri-
+       call" for the Purpose parameter of the Call-Info header field.  This
        value allows the called party to make a verification call, indicating
        the purpose of the call is to transmit a challenge rather than
        establish a phone conversation.  CIV uses the standard Session-ID
        header in the INVITE request to allow the calling party to explicitly
        match the verification call with the initial call.  Whilst this
        document focuses on IP networks, the same CIV protocol also works
-       with non-IP networks (e.g., SS7) by including the &quot;civ&quot; tag, the
-       &quot;civ-veri-call&quot; value and the session ID in the User-to-User
+       with non-IP networks (e.g., SS7) by including the "civ" tag, the
+       "civ-veri-call" value and the session ID in the User-to-User
        Information (UUI) parameter.</p>
 relation:
 - type: updates

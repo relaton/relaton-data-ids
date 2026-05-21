@@ -137,16 +137,16 @@ abstract:
        allows data flows over the public Internet to predictably achieve
        ultra-low queuing latency, generally zero congestion loss and scaling
        of per-flow throughput without the problems of traditional TCP.  To
-       achieve this, L4S data flows use a &#39;scalable&#39; congestion control
+       achieve this, L4S data flows use a 'scalable' congestion control
        similar to Data Centre TCP (DCTCP) and a form of Explicit Congestion
        Notification (ECN) with modified behaviour.  However, until now,
        scalable congestion controls did not co-exist with existing TCP Reno/
-       Cubic traffic---scalable controls are so aggressive that &#39;Classic&#39;
+       Cubic traffic---scalable controls are so aggressive that 'Classic'
        TCP algorithms drive themselves to starvation.  Therefore, until now,
        L4S controls could only be deployed where a clean-slate environment
        could be arranged, such as in private data centres (hence the name
        DCTCP).  This specification defines `DualQ Coupled Active Queue
-       Management (AQM)&#39;, which enables these scalable congestion controls
+       Management (AQM)', which enables these scalable congestion controls
        to safely co-exist with Classic Internet traffic.
 
        The Coupled AQM ensures that a flow runs at about the same rate
@@ -154,7 +154,7 @@ abstract:
        indirectly, without having to inspect transport layer flow
        identifiers, When tested in a residential broadband setting, DCTCP
        also achieves sub-millisecond average queuing delay and zero
-       congestion loss under a wide range of mixes of DCTCP and `Classic&#39;
+       congestion loss under a wide range of mixes of DCTCP and `Classic'
        broadband Internet traffic, without compromising the performance of
        the Classic traffic.  The solution also reduces network complexity
        and eliminates network configuration.</p>

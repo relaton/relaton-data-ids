@@ -32,7 +32,7 @@ abstract:
     OVERVIEW AND BACKGROUND
 
     The origin of RadX is the attempt by Digital Equipment Corporation in
-    the 1970&#39;s to pack more text into the limited memory space available to
+    the 1970's to pack more text into the limited memory space available to
     computers in that era, particularly as DEC was supporting different
     classes of machines with different word sizes - some, like the PDP/8
     series, were byte machines, but some used 32 or even 36 bits.
@@ -40,10 +40,10 @@ abstract:
     DEC engineers basically used radix40 as the basis for a compressed
     character set which included the alphabet, the numerals, the space, and
     three other special characters (which varied by machine). They called it
-    &quot;RAD50&quot;, because in that era DEC were into octal arithmetic and every-
+    "RAD50", because in that era DEC were into octal arithmetic and every-
     thing was in three-bit groups.  It worked - they packed three letters
     into every 16 bits (40 x 40 x 40 = 64000), but the glaring problem was
-    that it didn&#39;t work for anything but filenames - the character set was
+    that it didn't work for anything but filenames - the character set was
     too small. There were also performance issues. Using non-binary bases
     for character sets is not kind to ALUs; lots of division, modulus and
     multiplication are involved.
@@ -95,12 +95,12 @@ abstract:
     compression is attempted.  A special subset of 32 characters is defined
     as:
 
-          &quot; .0123456789ABCDEFGHILMNOPRSTUWY&quot;
+          " .0123456789ABCDEFGHILMNOPRSTUWY"
 
     These are space, period, the numerals, and the alphabet with the excep-
     tion of J, K, Q, V, X, and Z.  The table indexing automatically upper-
     cases alphas and substitutes some punctuation.  If doubled codes are
-    found, Radix-64 encoding is used with a &quot;double&quot; flag; if three Radix-
+    found, Radix-64 encoding is used with a "double" flag; if three Radix-
     32 encoding are found, that set is used; else a single Radix-64 byte is
     created.  The bit allocation table below shows the final encodings.
 
@@ -200,12 +200,12 @@ abstract:
     ====  =====  =====       ====  =====  =====       ====  =====  =====
     &lt;space&gt;  0     32         @             55         `             39
      !      10     33         A       1      1         a      1       1
-     &quot;             34         B       2      2         b      2       2
+     "             34         B       2      2         b      2       2
      #             35         C       3      3         c      3       3
      $             36         D       4      4         d      4       4
      %             37         E       5      5         e      5       5
      &amp;             38         F       6      6         f      6       6
-     &#39;             39         G       7      7         g      7       7
+     '             39         G       7      7         g      7       7
      (             27         H       8      8         h      8       8
      )             29         I       9      9         i      9       9
      *             40         J             10         j             10
@@ -256,7 +256,7 @@ abstract:
     encoding is identical to the last.
 
     Special processing is done for word beginnings which are lower case -
-    the preceding Radix-64 space character&#39;s &quot;double&quot; bit is set to
+    the preceding Radix-64 space character's "double" bit is set to
     indicate that the next letter should NOT be uppercased (0x20 vs. 0x60).
     (Double spaces are impossible, since they are eliminated before
     anything else.)

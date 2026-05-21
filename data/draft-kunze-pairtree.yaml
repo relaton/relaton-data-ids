@@ -19,9 +19,9 @@ abstract:
     objects that are located within that hierarchy by mapping identifier
     strings to object directory (or folder) paths two characters at a
     time.  If an object directory (folder) holds all the files, and
-    nothing but the files, that comprise the object, a &quot;pairtree&quot; can be
+    nothing but the files, that comprise the object, a "pairtree" can be
     imported by a system that knows nothing about the nature or structure
-    of the objects but can still deliver any object&#39;s files by requested
+    of the objects but can still deliver any object's files by requested
     identifier.  The mapping is reversible, so the importing system can
     also walk the pairtree and reliably enumerate all the contained
     object identifiers.  To the extent that object dependencies are
@@ -37,10 +37,10 @@ abstract:
     successive pairs of characters, and also defines the reverse mapping
     (from pathname to identifier).
 
-    In this document the word &quot;directory&quot; is used interchangeably with
-    the word &quot;folder&quot; and all examples conform to Unix-based filesystem
+    In this document the word "directory" is used interchangeably with
+    the word "folder" and all examples conform to Unix-based filesystem
     conventions which should tranlate easily to Windows conventions after
-    substituting the path separator (&#39;\&#39; instead of &#39;/&#39;).  Pairtree
+    substituting the path separator ('\' instead of '/').  Pairtree
     places no limitations on file and path lengths, so implementors
     thinking about maximal interoperation may wish to consider the issues
     listed in the Interoperability section of this document.
@@ -61,7 +61,7 @@ abstract:
     -&gt; ab/cd/ef/g/
     12-986xy4 -&gt; 12/-9/86/xy/4/
 
-    Armed with specific knowledge of a given namespace&#39;s identifier
+    Armed with specific knowledge of a given namespace's identifier
     distribution, one might achieve more balanced or efficient trees by
     mapping to paths from character groupings other than successive
     pairs.  Pairtree assumes that this sort of optimization, however,
@@ -74,11 +74,11 @@ abstract:
     A ppath (pairpath) terminates when it reaches an object.  A little
     jargon helps explain this.  A _shorty_ is a 1- or 2-character
     directory name, or any file or directory name that begins with
-    &quot;pairtree&quot; (these are reserved for future use).  A ppath consists of
-    a sequence of &quot;shorties&quot; ending in a non-shorty, such as a
-    3-character directory name or the 2-character file name &quot;xy&quot;.  The
-    pairtree below contains two objects with identifiers &quot;abcd&quot; and
-    &quot;abcde&quot;.
+    "pairtree" (these are reserved for future use).  A ppath consists of
+    a sequence of "shorties" ending in a non-shorty, such as a
+    3-character directory name or the 2-character file name "xy".  The
+    pairtree below contains two objects with identifiers "abcd" and
+    "abcde".
 
     ab/
     |
@@ -153,19 +153,19 @@ abstract:
     An object is reached when a non-shorty is detected.  An object is
     _properly encapsulated_ if it is entirely contained in a non-shorty
     directory that is the immediate child of a shorty directory, in other
-    words, if the 1- or 2-char directory name ending the object&#39;s ppath
-    contains exactly one non-shorty directory that holds all the object&#39;s
-    descendants.  The two objects &quot;abcd&quot; and &quot;abcde&quot; above are properly
+    words, if the 1- or 2-char directory name ending the object's ppath
+    contains exactly one non-shorty directory that holds all the object's
+    descendants.  The two objects "abcd" and "abcde" above are properly
     encapsulated.  Any shorty directory found at the same level as the
-    non-shorty extends the pairtree.  So while the &quot;foo/&quot; directory above
-    does not subsume &quot;e/&quot; at the same level, by encapsulation, it does
-    subsume the &quot;gh/&quot; underneath it (i.e., &quot;gh/&quot; is invisible to the
+    non-shorty extends the pairtree.  So while the "foo/" directory above
+    does not subsume "e/" at the same level, by encapsulation, it does
+    subsume the "gh/" underneath it (i.e., "gh/" is invisible to the
     pairtree algorithm, at least on a first pass).
 
     Practice will vary according to local custom as to how to name the
     encapsulating object directory beneath that last shorty.  Its name is
     completely independent of the object identifier.  For example, every
-    object directory in a pairtree could have the uniform name &quot;thingy&quot;.
+    object directory in a pairtree could have the uniform name "thingy".
     It is common for the directory name to be a terminal substring of the
     object identifier, as in:
 
@@ -177,15 +177,15 @@ abstract:
     detected that is _improperly encapsulated_, that is, when a ppath
     ends with a shorty directory that contains more than one non-shorty,
     the detecting system should take corrective action.  In this
-    situation, also known as a &quot;split end&quot;, all those non-shorties
+    situation, also known as a "split end", all those non-shorties
     (directories and files) are considered to belong to one object (not
     properly encapsulated) identified by the containing ppath.  Excluding
     shorties from the object permits one identifier to be a substring of
-    another (e.g., &quot;abcd&quot; and &quot;abcde&quot; can co-exist in a pairtree), and
-    defining ppath termination in this way prevents &quot;hidden riders&quot;, or
+    another (e.g., "abcd" and "abcde" can co-exist in a pairtree), and
+    defining ppath termination in this way prevents "hidden riders", or
     data residing in a pairtree that is not contained or accounted for in
     any object.  Here is an example of an improperly encapsulated object
-    named &quot;bent&quot;.
+    named "bent".
 
 
     be/
@@ -212,8 +212,8 @@ abstract:
      |
     ...
 
-    If a &quot;split end&quot; is encountered, an importing system is encouraged to
-    normalize it by creating a single object directory called &quot;obj&quot; and
+    If a "split end" is encountered, an importing system is encouraged to
+    normalize it by creating a single object directory called "obj" and
     pushing the non-shorties in question underneath it, as in:
 
     be/
@@ -224,7 +224,7 @@ abstract:
 
       |--- obj/
 
-      [ split end repaired with &quot;obj&quot; directory ]
+      [ split end repaired with "obj" directory ]
 
       |
      |

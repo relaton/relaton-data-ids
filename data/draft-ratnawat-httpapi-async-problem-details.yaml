@@ -16,13 +16,13 @@ abstract:
   script: Latn
   content: |-
     <p>HTTP APIs that process work asynchronously need a standard way to
-       report job failures.  &quot;Problem Details for HTTP APIs&quot; (RFC 9457)
+       report job failures.  "Problem Details for HTTP APIs" (RFC 9457)
        provides the envelope; this document defines extension members that
        fill it with asynchronous-job-specific context.
 
-       Eight extension members are specified: &quot;jobId&quot;, &quot;jobStatus&quot;,
-       &quot;submittedAt&quot;, &quot;completedAt&quot;, &quot;retryable&quot;, &quot;retryAfter&quot;,
-       &quot;processingStage&quot;, and &quot;correlationId&quot;.  A ninth member, &quot;results&quot;,
+       Eight extension members are specified: "jobId", "jobStatus",
+       "submittedAt", "completedAt", "retryable", "retryAfter",
+       "processingStage", and "correlationId".  A ninth member, "results",
        supports batch operations.  Together they let a server describe which
        job failed, when, at what pipeline stage, and whether a retry is
        advisable -- in a single, machine-readable JSON (RFC 8259) object
@@ -35,8 +35,8 @@ abstract:
        timing information).
 
        This document does NOT redefine how to submit, poll, or cancel
-       asynchronous jobs; those mechanics are already covered by &quot;HTTP
-       Semantics&quot; (RFC 9110) (202 Accepted), &quot;Prefer Header for HTTP&quot; (RFC
+       asynchronous jobs; those mechanics are already covered by "HTTP
+       Semantics" (RFC 9110) (202 Accepted), "Prefer Header for HTTP" (RFC
        7240) (respond-async), and emerging IETF work on long-running
        operations.  Instead, it focuses exclusively on the structured
        reporting gap that remains after a job reaches a terminal state.</p>

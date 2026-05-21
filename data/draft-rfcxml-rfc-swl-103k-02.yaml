@@ -135,12 +135,12 @@ abstract:
        exploit the predictable nature of compressed data.  Implementing
        padding or randomized inputs to the compression process could help
        mitigate these risks.  Data Integrity and Tampering: Since the
-       protocol involves compressing and decompressing data, there&#39;s a risk
+       protocol involves compressing and decompressing data, there's a risk
        that data might be tampered with during transmission.  SW103k
        addresses this by incorporating checksum or CRC32 mechanisms to
        verify the integrity of each transmission block.  Encryption
        Considerations: If sensitive data is being transmitted using SW103k,
-       the protocol needs to ensure that the compression process doesn&#39;t
+       the protocol needs to ensure that the compression process doesn't
        leak information about the original data.  It’s recommended that data
        be encrypted before compression or using TLS in conjunction with
        SW103k for secure transmissions.  Denial-of-Service (DoS)

@@ -28,14 +28,14 @@ abstract:
        [RFC1997]) signaling, which requires careful documentation and
        consistent configuration.  Furthermore, automating such policy
        configuration changes for the purpose of centralized management
-       requires additional efforts and is dependent on a particular vendor&#39;s
+       requires additional efforts and is dependent on a particular vendor's
        configuration management (CLI extensions, NetConf [RFC6241] etc).
 
        This document proposes a method for inter-AS traffic engineering for
        use with the kind of deployment scenarios outlined above.  No
        protocol changes or additional features are required to implement
        this method.  The key to the proposed methodology is a new software
-       entity called &quot;BGP Controller&quot; - a special purpose application that
+       entity called "BGP Controller" - a special purpose application that
        peers with all eBGP speakers in the managed network.  This controller
        constructs live state of the underlying BGP ASN graph and presents
        multi-topology view of this graph via a simple API to third-party

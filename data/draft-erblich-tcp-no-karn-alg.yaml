@@ -15,17 +15,17 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Karn&#39;s algorithm specifies acknowledgements that are the
+    <p>Karn's algorithm specifies acknowledgements that are the
     result of segment retransmits should be ignored, not timed,
     and should not contribute to the smoothed round-trip-time
-    (SRTT) because they are considered &quot;ambiguous&quot;.  It is also
-    stated in Karn&#39;s paper that &quot;If an acknowledgement arrives
+    (SRTT) because they are considered "ambiguous".  It is also
+    stated in Karn's paper that "If an acknowledgement arrives
     after the RTO has expired, it is highly likely to come very
-    shortly after wards.&quot; In time, we have added the &quot;fast retransmit&quot;
+    shortly after wards." In time, we have added the "fast retransmit"
     functionality, so we are not solely dependent on RTO for
     retransmits.  Common sense dictates that if we receive an
-    acknowledgement &quot;very shortly after wards&quot;, that those
-    acknowledgments should not be considered &quot;ambiguous&quot;. These
+    acknowledgement "very shortly after wards", that those
+    acknowledgments should not be considered "ambiguous". These
     non-ambiguous acknowledgments should be added to the SRTT and
     trigger us to return to our previous non-congestion behavior.</p>
 relation:

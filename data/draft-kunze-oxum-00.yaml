@@ -58,14 +58,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies &quot;oxum&quot;, a two-part number, OCTETS.STREAMS,
+    <p>This document specifies "oxum", a two-part number, OCTETS.STREAMS,
     that is a kind of simple size summary for complex digital objects.
     In the mainstream case of a complex object that is a set of files,
     the STREAMS part is the total number of files and the OCTETS part is
     the total number of 8-bit bytes across all those files; for example,
     an oxum of 876543.21 could mean a total of 876,543 bytes across 21
     files.  Which set of streams comprises a complex object for an oxum
-    computation depends in general on the object&#39;s type.  One important
+    computation depends in general on the object's type.  One important
     type is the stream set defined by the set of files contained in a
     file hierarchy.  An oxum is not a checksum in that, while a changed
     oxum means a changed object, an unchanged oxum does not mean an
@@ -83,7 +83,7 @@ abstract:
 
     A complex digital object that has a well-defined set of octet
     streams, such as a document represented by a group of 14 text and
-    image files, has a well-defined &quot;oxum&quot; (octet stream sum).  The oxum
+    image files, has a well-defined "oxum" (octet stream sum).  The oxum
     is a two part number such as
 
       567898.14
@@ -97,8 +97,8 @@ abstract:
     is the total number of octets across all those streams.  In general,
     these two numbers will be positive integers, although there may be
     situations (not described here) in which it makes sense for either
-    one of them to be left unspecified with a hyphen (&#39;-&#39;).  The period
-    (&#39;.&#39;) separator is required.  Other examples:
+    one of them to be left unspecified with a hyphen ('-').  The period
+    ('.') separator is required.  Other examples:
 
     1998.10
 
@@ -134,7 +134,7 @@ abstract:
     use oxum in place of a cryptographic digest algorithm (cf. SHA1
     [RFC3174]).3.  Oxum complex object types
 
-    An _oxum object type_ is used to describe how to derive an object&#39;s
+    An _oxum object type_ is used to describe how to derive an object's
     stream set.  For oxum to be meaningful for an object type, the type
     must have a well-defined, canonical stream set.  Once the stream set
     is known, the oxum computation is straightforward and the streams can
@@ -142,18 +142,18 @@ abstract:
     stream set is to define a way to reduce an object type to a file
     group.
 
-    Files are primal streams.  In this document, a &quot;regular&quot; file is a
+    Files are primal streams.  In this document, a "regular" file is a
     contiguous sequence of octets with a well-defined start and end,
-    whether the sequence is named in static storage (e.g., &quot;memo.pdf&quot;) or
+    whether the sequence is named in static storage (e.g., "memo.pdf") or
     is unnamed and recently retrieved (e.g., a web page) from a network
     socket.  There are many filesystem entities that are not regular
     files, including directory nodes, block special files, and symbolic
-    links.  In this document, the word &quot;file&quot; usually refers to a regular
+    links.  In this document, the word "file" usually refers to a regular
     file.
 
     A (regular) file is an oxum-ready stream.  As a base case, a complex
     object consisting of exactly one file has an oxum of the form
-    &quot;OCTETS.1&quot;, as in
+    "OCTETS.1", as in
 
       12345.1
 
@@ -167,7 +167,7 @@ abstract:
 
     Any recognized group of regular files can form on oxum stream set,
     including a simple manifest or list of filenames.  For example, a
-    transfer protocol might use oxum to help set the receiver&#39;s
+    transfer protocol might use oxum to help set the receiver's
     expectations in terms of total bytes and files contained in a
     transferred package [GRABIT].</p>
 series:

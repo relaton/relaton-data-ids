@@ -84,10 +84,10 @@ abstract:
     <p>This specification defines the protocol to be used for a new network
        service called low latency, low loss and scalable throughput (L4S).
        L4S uses an Explicit Congestion Notification (ECN) scheme at the IP
-       layer that is similar to the original (or &#39;Classic&#39;) ECN approach,
-       except as specified within.  &#39;Classic&#39; ECN marking is required to be
+       layer that is similar to the original (or 'Classic') ECN approach,
+       except as specified within.  'Classic' ECN marking is required to be
        equivalent to a drop, both when applied in the network and when
-       responded to by a transport.  Unlike &#39;Classic&#39; ECN marking, for
+       responded to by a transport.  Unlike 'Classic' ECN marking, for
        packets carrying the L4S identifier, the network applies marking more
        immediately and more aggressively than drop, and the transport
        response to each mark is reduced and smoothed relative to that for
@@ -102,13 +102,13 @@ abstract:
        low delay at the same time, even during periods of high traffic load.
 
        The L4S identifier defined in this document distinguishes L4S from
-       &#39;Classic&#39; (e.g. TCP-Reno-friendly) traffic.  It gives an incremental
+       'Classic' (e.g. TCP-Reno-friendly) traffic.  It gives an incremental
        migration path so that suitably modified network bottlenecks can
        distinguish and isolate existing traffic that still follows the
        Classic behaviour, to prevent it degrading the low queuing delay and
        low loss of L4S traffic.  This specification defines the rules that
        L4S transports and network elements need to follow to ensure they
-       neither harm each other&#39;s performance nor that of Classic traffic.
+       neither harm each other's performance nor that of Classic traffic.
        Examples of new active queue management (AQM) marking algorithms and
        examples of new transports (whether TCP-like or real-time) are
        specified separately.</p>
