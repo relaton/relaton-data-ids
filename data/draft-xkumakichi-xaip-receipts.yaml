@@ -1,0 +1,47 @@
+---
+id: draftxkumakichixaipreceipts
+schema_version: v1.5.6
+formattedref:
+  content: draft-xkumakichi-xaip-receipts
+title:
+- language: en
+  script: Latn
+  content: Signed Execution Receipts for AI Agent Tool Calls (XAIP Receipts)
+docidentifier:
+- content: draft-xkumakichi-xaip-receipts
+  type: Internet-Draft
+  primary: true
+abstract:
+- language: en
+  script: Latn
+  content: |-
+    <p>This document defines a wire format for signed execution receipts
+       produced by AI agents when they invoke tools, services, or other
+       agents.  A receipt records the minimum facts needed to make a trust
+       decision about a future call: who acted, who delegated, what tool was
+       used, whether the call succeeded, how long it took, and how the
+       call's inputs and outputs are identified (without disclosing their
+       contents).
+
+       The format is intentionally tool-system-agnostic.  The same receipt
+       structure can be emitted by MCP (Model Context Protocol) servers,
+       LangChain.js callback handlers, OpenAI tool-calling loops, HTTP
+       clients, or proprietary agent runtimes.  Receipts use Ed25519
+       signatures over a JSON-canonicalized payload, and identities are W3C
+       Decentralized Identifiers (DIDs).
+
+       Scoring policy, aggregation architecture, and reactive behavior in
+       response to receipts are explicitly out of scope and left to
+       deployments.</p>
+relation:
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-xkumakichi-xaip-receipts-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xkumakichi-xaip-receipts-00
+    docidentifier:
+    - content: draft-xkumakichi-xaip-receipts-00
+      type: Internet-Draft
+      primary: true
