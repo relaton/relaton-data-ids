@@ -17,10 +17,13 @@ abstract:
   content: |-
     <p>This document defines a well-known URI, /.well-known/api-
        advisory.json, at which API providers MAY publish a machine-readable
-       JSON file listing change advisories that affect their API.  The file
-       enables automated scanners and API consumers to discover pricing
-       changes, deprecations, security advisories, and other relevant events
-       without relying on manual monitoring of blogs or mailing lists.</p>
+       JSON discovery file.  That file identifies the API and provides the
+       URL of an Atom Syndication Format feed carrying structured change
+       advisories.  The Atom feed enables automated scanners and API
+       consumers to discover pricing changes, deprecations, security
+       advisories, and other relevant events without relying on manual
+       monitoring of blogs or mailing lists.  Advisory metadata is conveyed
+       through a dedicated XML namespace defined in this document.</p>
 relation:
 - type: includes
   bibitem:
@@ -31,5 +34,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-callec-api-advisory-00
     docidentifier:
     - content: draft-callec-api-advisory-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-callec-api-advisory-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-callec-api-advisory-01
+    docidentifier:
+    - content: draft-callec-api-advisory-01
       type: Internet-Draft
       primary: true
