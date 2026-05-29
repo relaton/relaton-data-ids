@@ -20,13 +20,14 @@ abstract:
        operating on resource-constrained Edge and IoT devices (including
        Class 1 and Class 2 devices per [RFC7228]).  Existing agent
        communication protocols assume unbounded computational and energy
-       resources; µACP provides bounded resource consumption guarantees with
-       deterministic memory bounds (8-byte header, up to 1024-byte TLV
-       region, up to 65535-byte payload) and bounded processing time per
-       message, while maintaining expressiveness sufficient for finite-state
-       coordination patterns.  The protocol defines four core message types,
-       a fixed 64-bit header, TLV-based extensibility, and mandatory OSCORE
-       security binding for operation in adversarial environments.</p>
+       resources, µACP provides mechanisms for bounded resource consumption
+       with deterministic memory bounds (8-byte header, explicitly delimited
+       TLV region, and profile-dependent payload limits) and bounded
+       processing time per message, while maintaining expressiveness
+       sufficient for finite-state coordination patterns.  The protocol
+       defines four core message types, a fixed 64-bit header, TLV-based
+       extensibility, and mandatory OSCORE security binding for operation in
+       adversarial environments.</p>
 relation:
 - type: includes
   bibitem:
@@ -59,5 +60,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-mallick-muacp-02
     docidentifier:
     - content: draft-mallick-muacp-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-mallick-muacp-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mallick-muacp-03
+    docidentifier:
+    - content: draft-mallick-muacp-03
       type: Internet-Draft
       primary: true
