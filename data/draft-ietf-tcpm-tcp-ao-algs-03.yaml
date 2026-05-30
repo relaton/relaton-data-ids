@@ -1,5 +1,5 @@
 ---
-id: draftietftcpmtcpaoalgs02
+id: draftietftcpmtcpaoalgs03
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: Additional Cryptographic Algorithms For Use With TCP-AO
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-ao-algs-02
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-ao-algs-03
 docidentifier:
 - content: draft-ietf-tcpm-tcp-ao-algs
   type: Internet-Draft
-- content: draft-ietf-tcpm-tcp-ao-algs-02
+- content: draft-ietf-tcpm-tcp-ao-algs-03
   type: Internet-Draft
   primary: true
 docnumber: I-D.ietf-tcpm-tcp-ao-algs
 date:
 - type: published
-  at: '2026-05-28'
+  at: '2026-05-29'
 contributor:
 - role:
   - type: author
@@ -74,7 +74,7 @@ contributor:
         - language: en
           content: HPE
 version:
-- content: '02'
+- content: '03'
 language:
 - en
 script:
@@ -84,12 +84,12 @@ abstract:
   script: Latn
   content: |-
     <p>RFC5926 creates a list of cryptographic algorithms that can be used
-       with TCP-AO.  This document expands that list, adding two Key
-       Derivation Functions (KDFs) and two Message Authentication Code (MAC)
-       Algorithms.  They are called HKDF-SHA256, KMAC256-KDF, HMAC-
-       SHA256-128, and KMAC256-128.
+       with TCP-AO.  This document expands that list, adding two Message
+       Authentication Code (MAC) algorithms, HMAC-SHA256-128 and
+       KMAC256-128.  For each MAC algorithm, a corresponding Key Derivation
+       Function (KDF) is also added.
 
-       The algorithms described by this document produce 128-bit (i.e.,
+       The MAC algorithms described by this document produce 128-bit (i.e.,
        16-byte) MACs.  When 16-byte MACs are encoded in TCP-AO, the TCP-AO
        consumes 20 bytes.  This does not challenge TCP's 40-byte option size
        limitation.</p>
@@ -97,23 +97,12 @@ relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-tcpm-tcp-ao-algs-01
+      content: draft-ietf-tcpm-tcp-ao-algs-02
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-ao-algs-01
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-ao-algs-02
     docidentifier:
-    - content: draft-ietf-tcpm-tcp-ao-algs-01
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-tcpm-tcp-ao-algs-03
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-tcpm-tcp-ao-algs-03
-    docidentifier:
-    - content: draft-ietf-tcpm-tcp-ao-algs-03
+    - content: draft-ietf-tcpm-tcp-ao-algs-02
       type: Internet-Draft
       primary: true
 series:
@@ -122,7 +111,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-tcpm-tcp-ao-algs-02
+  number: draft-ietf-tcpm-tcp-ao-algs-03
 ext:
   schema_version: v1.1.2
   doctype:
