@@ -16,13 +16,13 @@ abstract:
   script: Latn
   content: |-
     <p>The Agent Transfer Protocol (AGTP) base specification defines agent
-       identity headers (Agent-ID, Principal-ID, Authority-Scope) that are
-       self-asserted: present on every request and mandatory for logging,
-       but not cryptographically verified at the transport layer.  This
-       document specifies the AGTP Agent Certificate Extension: an optional
-       mechanism that binds Agent-ID, Principal-ID, and Authority-Scope to
-       an X.509 v3 certificate presented during TLS mutual authentication.
-       The extension enables infrastructure components including Scope-
+       identity headers (Agent-ID, Owner-ID, Authority-Scope) that are self-
+       asserted: present on every request and mandatory for logging, but not
+       cryptographically verified at the transport layer.  This document
+       specifies the AGTP Agent Certificate Extension: an optional mechanism
+       that binds Agent-ID, Owner-ID, and Authority-Scope to an X.509 v3
+       certificate presented during TLS mutual authentication.  The
+       extension enables infrastructure components including Scope-
        Enforcement Points (SEPs), load balancers, and governance gateways to
        verify agent identity and enforce authority scope without
        application-layer access, at O(1) cost per request header check.  The
@@ -55,5 +55,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hood-agtp-agent-cert-01
     docidentifier:
     - content: draft-hood-agtp-agent-cert-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hood-agtp-agent-cert-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hood-agtp-agent-cert-02
+    docidentifier:
+    - content: draft-hood-agtp-agent-cert-02
       type: Internet-Draft
       primary: true

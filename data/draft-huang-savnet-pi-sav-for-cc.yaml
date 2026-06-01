@@ -15,22 +15,29 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Current source address validation (SAV) on AS's provider interfaces
-       primarily relies on loose uRPF, which can protect against IP spoofing
-       based on unannounced internet prefixes but lacks the ability to
-       defend against spoofing based on valid internet prefixes.
-       Furthermore, if a default route is present, this protection is
-       effectively nullified.
+    <p>Current source address validation (SAV) on an AS's provider
+       interfaces mainly relies on loose uRPF, which cannot defend against
+       IP spoofing using routable prefixes and is ineffective when a default
+       route is present.  This document describes a *framework* for provider
+       interface source address validation against spoofing of customer cone
+       source prefixes (PI-SAV for CC).  Two architectural approaches are
+       presented:
 
-       Based on the traffic flow characteristics between the ASes in a
-       customer cone, this document describes a general solution
-       architecture -- provider interface SAV for customer cone source
-       spoofing (PI-SAV for CC).  This mechanism can be applied on the
-       provider interfaces of an AS to prevent spoofing traffic with the
-       customer cone source addresses from flowing into the local AS and its
-       customer cone.  Specially, this mechanism offers protection against
-       reflective amplification DDoS attacks that leverage local servers to
-       target victims within the customer cone.</p>
+       *  *PI-SAV for Standalone CC*: a static solution that builds a
+          blocklist based on topology information from BGP RIBs, RPKI ASPA,
+          and local configuration (SLURM) etc.  It requires no inter-AS
+          communication.
+
+       *  *PI-SAV for Standalone+ CC*: an enhanced solution that uses
+          lightweight query-response coordination between the top AS and
+          member ASes to identify sub-cones that do not actually cause
+          traffic detours, thereby enlarging the effective blocklist.
+
+       This document is *informational* and provides only the framework,
+       conceptual procedures, and requirements for future protocol
+       specifications.  Detailed wire protocols (e.g., for partial transit
+       information provisioning or for query-response messaging) are out of
+       scope and will be defined in separate documents.</p>
 relation:
 - type: includes
   bibitem:
@@ -52,5 +59,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-huang-savnet-pi-sav-for-cc-01
     docidentifier:
     - content: draft-huang-savnet-pi-sav-for-cc-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-huang-savnet-pi-sav-for-cc-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-huang-savnet-pi-sav-for-cc-02
+    docidentifier:
+    - content: draft-huang-savnet-pi-sav-for-cc-02
       type: Internet-Draft
       primary: true
