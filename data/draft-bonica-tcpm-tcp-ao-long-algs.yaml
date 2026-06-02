@@ -16,15 +16,16 @@ abstract:
   script: Latn
   content: |-
     <p>RFC5926 creates a list of cryptographic algorithms that can be used
-       with TCP-AO.  This document expands that list, adding two Key
-       Derivation Functions (KDFs) and two Message Authentication Code (MAC)
-       Algorithms.  They are called HKDF-SHA384, KMAC384-KDF, HMAC-SHA384,
-       and KMAC384.
+       with TCP-AO.  This document expands that list, adding two Message
+       Authentication Code (MAC) algorithms, HMAC-SHA384 and KMAC384.  For
+       each MAC algorithm, a corresponding Key Derivation Function (KDF) is
+       also added.
 
-       The algorithms described by this document produce 384-bit (i.e.,
+       The MAC algorithms described by this document produce 384-bit (i.e.,
        48-byte) MACs.  When 48-byte MACs are encoded in TCP-AO, the TCP-AO
-       consumes 52 bytes.  This exceeds TCP's current 40-byte option size
-       limitation.</p>
+       consumes 52 bytes.  This exceeds TCP's 40-byte option size
+       limitation.  Therefore, it depends on a solution that extends TCP
+       Option space.</p>
 relation:
 - type: includes
   bibitem:
@@ -46,5 +47,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-bonica-tcpm-tcp-ao-long-algs-01
     docidentifier:
     - content: draft-bonica-tcpm-tcp-ao-long-algs-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-bonica-tcpm-tcp-ao-long-algs-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bonica-tcpm-tcp-ao-long-algs-02
+    docidentifier:
+    - content: draft-bonica-tcpm-tcp-ao-long-algs-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-bonica-tcpm-tcp-ao-long-algs-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bonica-tcpm-tcp-ao-long-algs-03
+    docidentifier:
+    - content: draft-bonica-tcpm-tcp-ao-long-algs-03
       type: Internet-Draft
       primary: true

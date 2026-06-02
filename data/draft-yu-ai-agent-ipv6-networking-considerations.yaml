@@ -17,27 +17,26 @@ abstract:
   content: |-
     <p>AI agents are increasingly expected to communicate across platforms,
        organizations, clouds, edge environments, and administrative domains.
-       Ongoing work on agent protocols has started to address agent
-       description, discovery, authentication, authorization, invocation,
-       delegation, and collaboration.  These functions are essential, but
-       they generally treat the IP network as a transparent connectivity
+       Current agent-related mechanisms mainly focus on description,
+       discovery, identity, authentication, authorization, tool invocation,
+       and application-layer collaboration.  These mechanisms are important,
+       but they often treat the IP network as a transparent connectivity
        substrate.
 
-       This document discusses IPv6 networking considerations for AI agent
-       communication.  It focuses on networking support after an agent has
-       been discovered by an application-layer or control-plane mechanism.
-       It discusses how stable Agent identifiers can be associated with IPv6
-       locators or Agent Gateways, how agent communication requirements can
-       be mapped to IPv6 or SRv6 forwarding policies, how limited agent-
-       related network context can be carried within controlled deployment
-       environments, and how network-layer telemetry can complement
-       application-layer audit records.
+       This document describes networking problems that arise when AI agents
+       perform cross-domain communication and continuous tool, API, data,
+       and agent-to-agent calls.  It focuses on problem description rather
+       than a protocol solution.  In particular, it discusses gaps related
+       to agent identity visibility at the network layer, path control,
+       audit continuity, the separation of discovery from addressing and
+       authorization, and privacy and privilege risks introduced by highly
+       autonomous agents.
 
-       This document does not define a new agent discovery protocol, a new
-       application-layer agent collaboration protocol, or a new
-       authentication or authorization mechanism.  It is intended to be
-       complementary to existing and emerging agent discovery, identity,
-       authorization, auditing, and collaboration mechanisms.</p>
+       The document positions Agent6 as a problem space for network support
+       of cross-domain AI agent collaboration.  It does not define a new
+       agent discovery protocol, a new application-layer collaboration
+       protocol, a new authentication or authorization mechanism, or a new
+       IPv6 extension header.</p>
 relation:
 - type: includes
   bibitem:
@@ -48,5 +47,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-yu-ai-agent-ipv6-networking-considerations-00
     docidentifier:
     - content: draft-yu-ai-agent-ipv6-networking-considerations-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-yu-ai-agent-ipv6-networking-considerations-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yu-ai-agent-ipv6-networking-considerations-01
+    docidentifier:
+    - content: draft-yu-ai-agent-ipv6-networking-considerations-01
       type: Internet-Draft
       primary: true
