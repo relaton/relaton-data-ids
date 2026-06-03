@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: BGP SR Policy Extensions for metric
+  content: BGP SR Policy Extensions for Metric
 docidentifier:
 - content: draft-ietf-idr-sr-policy-metric
   type: Internet-Draft
@@ -15,18 +15,21 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>SR Policy candidate paths can be represented in BGP UPDATE messages.
-       BGP can then be used to propagate the SR Policy candidate paths to
-       the headend nodes in the network.  After SR Policy is installed on
-       the ingress node, the packets can be steered into SR Policy through
-       route selection.  Therefore, route selection may be performed on the
-       ingress node of the SR Policy.  If there are multiple routes to the
-       same destination, the route selection node can select routes based on
-       the local policy.  The local policy may use the IGP metric of the
-       selected path, which is the IGP Metric of the SR Policy.  Thus the
-       BGP UPDATE message needs to carry the metric of each segment list of
-       the SR Policy Candidate Path, which can be used in path selection of
-       routing.</p>
+    <p>An SR Policy consists of one or more Candidate Paths (CPs), each
+       comprising one or more segment lists.  BGP can be used to propogate
+       SR Policy CPs to the SR Policy headend nodes in the network.  After
+       an SR Policy CP is installed on the headend node, packets can be
+       steered into the SR Policy.
+
+       For a particular BGP destination, if there are multiple BGP routes
+       with different next-hops, BGP best path selection is performed and
+       the IGP metric to the next-hop node may be used for tie-breaking to
+       select the best path.  When the path to the next-hop is resolved over
+       an SR Policy, the IGP metric of the SR policy is needed for BGP path
+       selection.
+
+       This document defines the BGP extensions to carry the IGP metric of
+       segment lists when BGP is used to propagate SR Policy CPs.</p>
 relation:
 - type: includes
   bibitem:
@@ -81,5 +84,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-metric-04
     docidentifier:
     - content: draft-ietf-idr-sr-policy-metric-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-idr-sr-policy-metric-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-metric-05
+    docidentifier:
+    - content: draft-ietf-idr-sr-policy-metric-05
       type: Internet-Draft
       primary: true
