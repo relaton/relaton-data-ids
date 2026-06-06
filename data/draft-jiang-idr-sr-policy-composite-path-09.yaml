@@ -1,24 +1,24 @@
 ---
-id: draftylcatsdatamodel05
+id: draftjiangidrsrpolicycompositepath09
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: Data Model for Computing-Aware Traffic Steering (CATS)
+  content: BGP Extensions of SR Policy for Composite Candidate Path
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-yl-cats-data-model-05
+  content: https://datatracker.ietf.org/doc/html/draft-jiang-idr-sr-policy-composite-path-09
 docidentifier:
-- content: draft-yl-cats-data-model
+- content: draft-jiang-idr-sr-policy-composite-path
   type: Internet-Draft
-- content: draft-yl-cats-data-model-05
+- content: draft-jiang-idr-sr-policy-composite-path-09
   type: Internet-Draft
   primary: true
-docnumber: I-D.yl-cats-data-model
+docnumber: I-D.jiang-idr-sr-policy-composite-path
 date:
 - type: published
-  at: '2025-12-01'
+  at: '2026-06-06'
 contributor:
 - role:
   - type: author
@@ -27,19 +27,19 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Huijuan
+        content: Jiang
       - language: en
         script: Latn
-        initial: H
+        initial: J
       formatted_initials:
         language: en
-        content: H.
+        content: J.
       surname:
         language: en
-        content: Yao
+        content: Wenying
       completename:
         language: en
-        content: Huijuan Yao
+        content: Jiang Wenying
     affiliation:
     - organization:
         name:
@@ -77,44 +77,19 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Zhenqiang
+        content: Ran
       - language: en
         script: Latn
-        initial: Z
+        initial: R
       formatted_initials:
         language: en
-        content: Z.
+        content: R.
       surname:
         language: en
-        content: Li
+        content: Chen
       completename:
         language: en
-        content: Zhenqiang Li
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: China Mobile
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Quan
-      - language: en
-        script: Latn
-        initial: Q
-      formatted_initials:
-        language: en
-        content: Q.
-      surname:
-        language: en
-        content: Xiong
-      completename:
-        language: en
-        content: Quan Xiong
+        content: Ran Chen
     affiliation:
     - organization:
         name:
@@ -127,29 +102,51 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Luis
+        content: Selvamani
       - language: en
         script: Latn
-        initial: L
+        initial: S
+      formatted_initials:
+        language: en
+        content: S.
+      surname:
+        language: en
+        content: Ramasamy
+      completename:
+        language: en
+        content: Selvamani Ramasamy
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Nexthop AI
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Manoharan
       - language: en
         script: Latn
         initial: M
       formatted_initials:
         language: en
-        content: L. M.
+        content: M.
       surname:
         language: en
-        content: Contreras
+        content: Sundaramoorthy
       completename:
         language: en
-        content: Luis M. Contreras
+        content: Manoharan Sundaramoorthy
     affiliation:
     - organization:
         name:
         - language: en
-          content: Telefonica
+          content: Nexthop AI
 version:
-- content: '05'
+- content: '09'
 language:
 - en
 script:
@@ -158,32 +155,24 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines a YANG data model for the configuration and
-       management of Computing-Aware Traffic Steering (CATS) systems.
-
-       The YANG module defined in this document conforms to the Network
-       Management Datastore Architecture (NMDA).</p>
+    <p>SR Policy Architecture [RFC9256] defines the concept of a Composite
+       Candidate Path. A regular SR Policy Candidate Path outputs traffic
+       to a set of Segment Lists, while an SR Policy Composite Candidate
+       Path outputs traffic recursively to a set of SR Policies on the same
+       headend. This document defines extensions to BGP to distribute SR
+       policies carrying composite candidate path information.  So that
+       composite candidate paths can be installed when the SR policy is
+       applied.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-yl-cats-data-model-04
+      content: draft-jiang-idr-sr-policy-composite-path-08
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-yl-cats-data-model-04
+      content: https://datatracker.ietf.org/doc/html/draft-jiang-idr-sr-policy-composite-path-08
     docidentifier:
-    - content: draft-yl-cats-data-model-04
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-yl-cats-data-model-06
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-yl-cats-data-model-06
-    docidentifier:
-    - content: draft-yl-cats-data-model-06
+    - content: draft-jiang-idr-sr-policy-composite-path-08
       type: Internet-Draft
       primary: true
 series:
@@ -192,7 +181,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-yl-cats-data-model-05
+  number: draft-jiang-idr-sr-policy-composite-path-09
 ext:
   schema_version: v1.1.2
   doctype:

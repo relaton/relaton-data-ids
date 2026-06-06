@@ -1,5 +1,5 @@
 ---
-id: draftmututiquip00
+id: draftmututiquip01
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: QUIC Identity Protocol
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-mututi-quip-00
+  content: https://datatracker.ietf.org/doc/html/draft-mututi-quip-01
 docidentifier:
 - content: draft-mututi-quip
   type: Internet-Draft
-- content: draft-mututi-quip-00
+- content: draft-mututi-quip-01
   type: Internet-Draft
   primary: true
 docnumber: I-D.mututi-quip
 date:
 - type: published
-  at: '2026-05-12'
+  at: '2026-06-05'
 contributor:
 - role:
   - type: author
@@ -49,7 +49,7 @@ contributor:
         - language: en
           content: Individual
 version:
-- content: '00'
+- content: '01'
 language:
 - en
 script:
@@ -58,27 +58,22 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies QUIP (QUIC Identity Protocol), a federated
-       application protocol providing portable cryptographic identity,
-       verifiable server trust, deterministic state synchronization, and
-       built-in accountability.  QUIP runs over QUIC (RFC 9000) and uses a
-       strict deterministic CBOR profile (QUIP-CBOR).  Three conformance
-       profiles are defined: Basic (messaging), Documents (content
-       addressing), and Media (real-time transport).  The protocol enables
-       users to own a portable NodeId independent of service providers,
-       servers to authenticate via DANE+DNSSEC with deployable fallback
-       modes, and peers to detect and throttle misbehavior through signed
-       violation receipts propagated via gossip.</p>
+    <p>QUIP is a brokerless federation protocol over QUIC.  It provides
+       portable Ed25519 identities, causal consistency via Dotted Version
+       Vectors, and queueless transport via four explicit tiers with
+       backpressure.  QUIP replaces DNSSEC-based trust with Key Transparency
+       + Trust-On-First-Use, enabling 99% deployability while improving
+       security against registrar compromise.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-mututi-quip-01
+      content: draft-mututi-quip-00
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-mututi-quip-01
+      content: https://datatracker.ietf.org/doc/html/draft-mututi-quip-00
     docidentifier:
-    - content: draft-mututi-quip-01
+    - content: draft-mututi-quip-00
       type: Internet-Draft
       primary: true
 series:
@@ -87,7 +82,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-mututi-quip-00
+  number: draft-mututi-quip-01
 ext:
   schema_version: v1.1.2
   doctype:
