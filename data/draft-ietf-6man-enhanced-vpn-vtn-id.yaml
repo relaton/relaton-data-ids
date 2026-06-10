@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Carrying Network Resource (NR) related Information in IPv6 Extension Header
+  content: Carrying Network Resource (NR) related Information in IPv6 Extension Headers
 docidentifier:
 - content: draft-ietf-6man-enhanced-vpn-vtn-id
   type: Internet-Draft
@@ -19,8 +19,8 @@ abstract:
        logically separated connectivity over a common network
        infrastructure.  With the introduction of 5G and also in some
        existing network scenarios, some customers may require network
-       connectivity services with advanced features comparing to
-       conventional VPN services.  Such kind of network service is called
+       connectivity services with features that are more advanced compared
+       to conventional VPN services.  Such kind of network service is called
        enhanced VPNs.  Enhanced VPNs can be used, for example, to deliver
        network slice services.
 
@@ -29,15 +29,17 @@ abstract:
        in the underlay network.  An NRP may be used as the underlay to
        support one or a group of enhanced VPN services.  For packet
        forwarding within a specific NRP, some fields in the data packet
-       (which is called NRP Selector) need to be used to identify the NRP to
-       which the packet belongs.  In doing so, NRP-specific processing can
-       be performed on each node along the forwarding path in the NRP.
+       (these fields are called the NRP Selector) are used to identify the
+       NRP to which the packet belongs.  By identifying a packet with an
+       NRP, NRP-specific processing can be performed on each node along the
+       forwarding path in the NRP.
 
        This document specifies a new IPv6 Hop-by-Hop option to carry Network
-       Resource related information (e.g., identifier) in data packets.  The
-       NR Option can be used to carry NRP Selector ID and related
-       information, while it is designed to make the NR option generalized
-       for other network resource semantics and functions.</p>
+       Resource related information in data packets.  The new option is
+       called the Network Resource (NR) Option.  It can be used to carry an
+       identifier of the NRP Selector, but it is designed to also be able to
+       carry general information about network resource semantics and
+       functions.</p>
 relation:
 - type: includes
   bibitem:
@@ -213,5 +215,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-enhanced-vpn-vtn-id-15
     docidentifier:
     - content: draft-ietf-6man-enhanced-vpn-vtn-id-15
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-6man-enhanced-vpn-vtn-id-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-6man-enhanced-vpn-vtn-id-16
+    docidentifier:
+    - content: draft-ietf-6man-enhanced-vpn-vtn-id-16
       type: Internet-Draft
       primary: true
