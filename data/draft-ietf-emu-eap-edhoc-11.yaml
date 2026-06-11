@@ -1,24 +1,25 @@
 ---
-id: draftietfrtgwgvrrprfc8347bis16
+id: draftietfemueapedhoc11
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: A YANG Data Model for the Virtual Router Redundancy Protocol (VRRP)
+  content: Using the Extensible Authentication Protocol (EAP) with Ephemeral Diffie-Hellman
+    over COSE (EDHOC)
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-16
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-eap-edhoc-11
 docidentifier:
-- content: draft-ietf-rtgwg-vrrp-rfc8347bis
+- content: draft-ietf-emu-eap-edhoc
   type: Internet-Draft
-- content: draft-ietf-rtgwg-vrrp-rfc8347bis-16
+- content: draft-ietf-emu-eap-edhoc-11
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-rtgwg-vrrp-rfc8347bis
+docnumber: I-D.ietf-emu-eap-edhoc
 date:
 - type: published
-  at: '2026-05-22'
+  at: '2026-06-11'
 contributor:
 - role:
   - type: author
@@ -27,24 +28,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Acee
+        content: Dan
       - language: en
         script: Latn
-        initial: A
+        initial: D
       formatted_initials:
         language: en
-        content: A.
+        content: D.
       surname:
         language: en
-        content: Lindem
+        content: Garcia-Carrillo
       completename:
         language: en
-        content: Acee Lindem
+        content: Dan Garcia-Carrillo
     affiliation:
     - organization:
         name:
         - language: en
-          content: Arrcus, Inc.
+          content: University of Oviedo
 - role:
   - type: author
   person:
@@ -52,57 +53,7 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Xufeng
-      - language: en
-        script: Latn
-        initial: X
-      formatted_initials:
-        language: en
-        content: X.
-      surname:
-        language: en
-        content: Liu
-      completename:
-        language: en
-        content: Xufeng Liu
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Individual
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Athanasios
-      - language: en
-        script: Latn
-        initial: A
-      formatted_initials:
-        language: en
-        content: A.
-      surname:
-        language: en
-        content: Kyparlis
-      completename:
-        language: en
-        content: Athanasios Kyparlis
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Jabil
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Ravi
+        content: Rafael
       - language: en
         script: Latn
         initial: R
@@ -111,15 +62,15 @@ contributor:
         content: R.
       surname:
         language: en
-        content: Parikh
+        content: Marin-Lopez
       completename:
         language: en
-        content: Ravi Parikh
+        content: Rafael Marin-Lopez
     affiliation:
     - organization:
         name:
         - language: en
-          content: Zoox
+          content: University of Murcia
 - role:
   - type: author
   person:
@@ -127,26 +78,76 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Mingui
-      - language: en
-        script: Latn
-        initial: M
+        initial: G
       formatted_initials:
         language: en
-        content: M.
+        content: G.
       surname:
         language: en
-        content: Zhang
+        content: Selander
       completename:
         language: en
-        content: Mingui Zhang
+        content: Göran Selander
     affiliation:
     - organization:
         name:
         - language: en
-          content: China Tower
+          content: Ericsson
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: John
+      - language: en
+        script: Latn
+        initial: J
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: J. P.
+      surname:
+        language: en
+        content: Mattsson
+      completename:
+        language: en
+        content: John Preuß Mattsson
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Ericsson
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Francisco
+      - language: en
+        script: Latn
+        initial: F
+      formatted_initials:
+        language: en
+        content: F.
+      surname:
+        language: en
+        content: Lopez-Gomez
+      completename:
+        language: en
+        content: Francisco Lopez-Gomez
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: University of Murcia
 version:
-- content: '16'
+- content: '11'
 language:
 - en
 script:
@@ -155,35 +156,24 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes a YANG data model for the Virtual Router
-       Redundancy Protocol (VRRP).  Both versions 2 and 3 of VRRP are
-       covered.
-
-       The VRRP terminology has been updated to conform to inclusive
-       language guidelines for IETF technologies.
-
-       This document obsoletes RFC 8347.</p>
+    <p>The Extensible Authentication Protocol (EAP), defined in RFC 3748,
+       provides a standard mechanism for support of multiple authentication
+       methods.  This document specifies the EAP authentication method EAP-
+       EDHOC, based on Ephemeral Diffie-Hellman Over COSE (EDHOC).  EDHOC is
+       a lightweight security handshake protocol, enabling authentication
+       and establishment of shared secret keys suitable in constrained
+       settings.  This document also provides guidance on authentication and
+       authorization for EAP-EDHOC.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-rtgwg-vrrp-rfc8347bis-15
+      content: draft-ietf-emu-eap-edhoc-10
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-15
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-emu-eap-edhoc-10
     docidentifier:
-    - content: draft-ietf-rtgwg-vrrp-rfc8347bis-15
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-rtgwg-vrrp-rfc8347bis-17
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-17
-    docidentifier:
-    - content: draft-ietf-rtgwg-vrrp-rfc8347bis-17
+    - content: draft-ietf-emu-eap-edhoc-10
       type: Internet-Draft
       primary: true
 series:
@@ -192,7 +182,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-rtgwg-vrrp-rfc8347bis-16
+  number: draft-ietf-emu-eap-edhoc-11
 ext:
   schema_version: v1.1.2
   doctype:

@@ -1,24 +1,24 @@
 ---
-id: draftietfrtgwgvrrprfc8347bis16
+id: draftietfjosehpkeencrypt19
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: A YANG Data Model for the Virtual Router Redundancy Protocol (VRRP)
+  content: Use of Hybrid Public Key Encryption (HPKE) with JSON Web Encryption (JWE)
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-16
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-hpke-encrypt-19
 docidentifier:
-- content: draft-ietf-rtgwg-vrrp-rfc8347bis
+- content: draft-ietf-jose-hpke-encrypt
   type: Internet-Draft
-- content: draft-ietf-rtgwg-vrrp-rfc8347bis-16
+- content: draft-ietf-jose-hpke-encrypt-19
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-rtgwg-vrrp-rfc8347bis
+docnumber: I-D.ietf-jose-hpke-encrypt
 date:
 - type: published
-  at: '2026-05-22'
+  at: '2026-06-11'
 contributor:
 - role:
   - type: author
@@ -27,7 +27,57 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Acee
+        content: Tirumaleswar
+      - language: en
+        script: Latn
+        initial: T
+      formatted_initials:
+        language: en
+        content: T.
+      surname:
+        language: en
+        content: Reddy.K
+      completename:
+        language: en
+        content: Tirumaleswar Reddy.K
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Nokia
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Hannes
+      - language: en
+        script: Latn
+        initial: H
+      formatted_initials:
+        language: en
+        content: H.
+      surname:
+        language: en
+        content: Tschofenig
+      completename:
+        language: en
+        content: Hannes Tschofenig
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: University of Applied Sciences Bonn-Rhein-Sieg
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Aritra
       - language: en
         script: Latn
         initial: A
@@ -36,15 +86,15 @@ contributor:
         content: A.
       surname:
         language: en
-        content: Lindem
+        content: Banerjee
       completename:
         language: en
-        content: Acee Lindem
+        content: Aritra Banerjee
     affiliation:
     - organization:
         name:
         - language: en
-          content: Arrcus, Inc.
+          content: Nokia
 - role:
   - type: author
   person:
@@ -52,24 +102,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Xufeng
+        content: Orie
       - language: en
         script: Latn
-        initial: X
+        initial: O
       formatted_initials:
         language: en
-        content: X.
+        content: O.
       surname:
         language: en
-        content: Liu
+        content: Steele
       completename:
         language: en
-        content: Xufeng Liu
+        content: Orie Steele
     affiliation:
     - organization:
         name:
         - language: en
-          content: Individual
+          content: Tradeverifyd
 - role:
   - type: author
   person:
@@ -77,76 +127,29 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Athanasios
-      - language: en
-        script: Latn
-        initial: A
-      formatted_initials:
-        language: en
-        content: A.
-      surname:
-        language: en
-        content: Kyparlis
-      completename:
-        language: en
-        content: Athanasios Kyparlis
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Jabil
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Ravi
-      - language: en
-        script: Latn
-        initial: R
-      formatted_initials:
-        language: en
-        content: R.
-      surname:
-        language: en
-        content: Parikh
-      completename:
-        language: en
-        content: Ravi Parikh
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Zoox
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Mingui
+        content: Michael
       - language: en
         script: Latn
         initial: M
+      - language: en
+        script: Latn
+        initial: B
       formatted_initials:
         language: en
-        content: M.
+        content: M. B.
       surname:
         language: en
-        content: Zhang
+        content: Jones
       completename:
         language: en
-        content: Mingui Zhang
+        content: Michael B. Jones
     affiliation:
     - organization:
         name:
         - language: en
-          content: China Tower
+          content: Self-Issued Consulting
 version:
-- content: '16'
+- content: '19'
 language:
 - en
 script:
@@ -155,35 +158,25 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes a YANG data model for the Virtual Router
-       Redundancy Protocol (VRRP).  Both versions 2 and 3 of VRRP are
-       covered.
+    <p>This specification defines how to use Hybrid Public Key Encryption
+       (HPKE) with JSON Web Encryption (JWE).  HPKE enables public key
+       encryption of arbitrary-sized plaintexts to a recipient's public key,
+       and provides security against adaptive chosen ciphertext attacks.
+       This specification chooses a specific subset of the HPKE features to
+       use with JWE.
 
-       The VRRP terminology has been updated to conform to inclusive
-       language guidelines for IETF technologies.
-
-       This document obsoletes RFC 8347.</p>
+       This specification updates RFC 7516 (JWE) to enable use of Integrated
+       Encryption as a Key Management Mode.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-rtgwg-vrrp-rfc8347bis-15
+      content: draft-ietf-jose-hpke-encrypt-18
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-15
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-jose-hpke-encrypt-18
     docidentifier:
-    - content: draft-ietf-rtgwg-vrrp-rfc8347bis-15
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-rtgwg-vrrp-rfc8347bis-17
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-vrrp-rfc8347bis-17
-    docidentifier:
-    - content: draft-ietf-rtgwg-vrrp-rfc8347bis-17
+    - content: draft-ietf-jose-hpke-encrypt-18
       type: Internet-Draft
       primary: true
 series:
@@ -192,7 +185,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-rtgwg-vrrp-rfc8347bis-16
+  number: draft-ietf-jose-hpke-encrypt-19
 ext:
   schema_version: v1.1.2
   doctype:
