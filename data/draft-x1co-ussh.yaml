@@ -18,10 +18,10 @@ abstract:
     <p>This document describes UDP Speedy Secure Shell (USSH), an
        experimental remote shell protocol built on top of USTPS.  USSH
        provides an interactive shell session over a secure UDP-based
-       transport while preserving USTPS transport semantics.  USSH
-       reconstructs application-level terminal streams where necessary,
-       while relying on USTPS for secure unreliable-underneath, selective-
-       recovery transport behavior.</p>
+       transport while preserving USTPS transport semantics, including
+       challenge-validated session setup, per-session key establishment,
+       selective retransmission, and support for session recovery when the
+       client changes networks.</p>
 relation:
 - type: includes
   bibitem:
@@ -32,5 +32,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-x1co-ussh-00
     docidentifier:
     - content: draft-x1co-ussh-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-x1co-ussh-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-x1co-ussh-01
+    docidentifier:
+    - content: draft-x1co-ussh-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-x1co-ussh-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-x1co-ussh-02
+    docidentifier:
+    - content: draft-x1co-ussh-02
       type: Internet-Draft
       primary: true

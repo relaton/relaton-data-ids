@@ -16,11 +16,10 @@ abstract:
   script: Latn
   content: |-
     <p>Link-state routing protocols suffer from excessive flooding in dense
-       network topologies.  Dynamic flooding [I-D.ietf-lsr-dynamic-flooding]
-       alleviates the problem by decoupling the flooding topology from the
-       physical topology.  Link-state protocol updates are flooded only on
-       the sparse flooding topology while data traffic is still forwarded on
-       the physical topology.
+       network topologies.  Dynamic flooding alleviates the problem by
+       decoupling the flooding topology from the base topology.  Link-state
+       protocol updates are flooded only on the sparse flooding topology
+       while data traffic is still forwarded on the base topology.
 
        This document describes an algorithm to obtain a sparse subgraph from
        a dense graph.  The resulting subgraph has certain desirable
@@ -36,7 +35,12 @@ abstract:
        We are not proposing that this algorithm be standardized, nor that
        the working group use this as a basis for further standardization
        work, however we have no objections if the working group chooses to
-       do so.</p>
+       do so.  This document is published as an Experimental RFC to gain
+       operational and implementation experience with the specified dynamic
+       flooding algorithm.  The intent is to assess the suitability of this
+       algorithm for advancement to the Standards Track as a Proposed
+       Standard, pending sufficient deployment experience and feedback from
+       the community.</p>
 relation:
 - type: includes
   bibitem:
@@ -69,5 +73,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-dynamic-flooding-algorithm-02
     docidentifier:
     - content: draft-ietf-lsr-dynamic-flooding-algorithm-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lsr-dynamic-flooding-algorithm-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lsr-dynamic-flooding-algorithm-03
+    docidentifier:
+    - content: draft-ietf-lsr-dynamic-flooding-algorithm-03
       type: Internet-Draft
       primary: true

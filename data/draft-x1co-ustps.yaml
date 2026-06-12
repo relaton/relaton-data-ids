@@ -18,10 +18,12 @@ abstract:
     <p>This document describes UDP Speedy Transmission Protocol Secure
        (USTPS), an experimental secure transport built on UDP for low-
        latency streaming-oriented applications.  USTPS provides packet-level
-       authenticated encryption, selective retransmission, out-of-order
-       acceptance, and application-visible stream position metadata.  USTPS
-       is intentionally unordered at the transport layer and is designed to
-       avoid transport-level Head-of-Line blocking.</p>
+       authenticated encryption for DATA packets, human-readable plaintext
+       transport control, binary UPACK DATA framing, selective
+       retransmission, out-of-order acceptance, adaptive retransmission
+       timeout based on RTT sampling, and application-visible stream
+       position metadata.  USTPS is intentionally unordered at the transport
+       layer and is designed to avoid transport-level Head-of-Line blocking.</p>
 relation:
 - type: includes
   bibitem:
@@ -43,5 +45,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-x1co-ustps-01
     docidentifier:
     - content: draft-x1co-ustps-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-x1co-ustps-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-x1co-ustps-02
+    docidentifier:
+    - content: draft-x1co-ustps-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-x1co-ustps-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-x1co-ustps-03
+    docidentifier:
+    - content: draft-x1co-ustps-03
       type: Internet-Draft
       primary: true
