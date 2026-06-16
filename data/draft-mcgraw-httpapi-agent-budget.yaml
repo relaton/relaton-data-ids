@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: The Budget HTTP Authentication Scheme and 427 Budget Required Status Code
+  content: The Delegation HTTP Authentication Scheme for Request-Bound Authority
 docidentifier:
 - content: draft-mcgraw-httpapi-agent-budget
   type: Internet-Draft
@@ -15,26 +15,31 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Delegated software requesters are increasingly authorized to consume
-       paid or metered services, allocate account credits, or commit bounded
-       resources on behalf of human or organizational principals.  Existing
-       HTTP authentication mechanisms indicate whether a requester holds a
-       credential, while RateLimit fields communicate server-advertised
-       quota and current service-limit information.  Neither mechanism
-       directly conveys that the requester has been authorized by its
-       principal to consume or commit resources within a bounded limit
-       before a request is processed.
+    <p>Delegated software requesters increasingly make HTTP requests that
+       spend, consume, disclose, mutate, invoke, or actuate on behalf of
+       human or organizational principals.  Existing HTTP authentication
+       mechanisms indicate whether a requester holds a credential.
+       RateLimit fields communicate server-advertised quota and current
+       service-limit information.  HTTP Message Signatures can protect
+       selected components of an HTTP message.  None of these mechanisms
+       directly defines a common origin-server challenge for a requester to
+       present verifiable, bounded authority from its principal before the
+       server performs protected processing.
 
-       This document defines the 427 (Budget Required) HTTP status code, the
-       "Budget" HTTP authentication scheme, the Budget-Attestation HTTP
-       field, and a CBOR/COSE Budget-Attestation envelope.  The mechanism is
-       algorithm-agile; the initial cose-ml-dsa profile uses existing JOSE
-       and COSE serializations for ML-DSA, with ML-DSA-65 as the baseline
-       algorithm and ML-DSA-87 available as a high-assurance deployment
-       policy option.  An optional rail-keyed SLH-DSA signature can be used
-       by deployments that bind a budget attestation to a settlement rail.
-       This document does not define payment semantics and does not depend
-       on the HTTP 402 (Payment Required) status code.</p>
+       This document defines the "Delegation" HTTP authentication scheme,
+       response semantics for delegated-authority challenges using existing
+       HTTP status codes and Problem Details, the Delegation-Proof HTTP
+       field, and a COSE/CBOR proof carriage model for request-bound
+       delegated authority.  The initial authority profile is the Budget
+       profile, which uses a CBOR/COSE Budget-Attestation envelope to prove
+       bounded authority to spend, consume metered service units, or commit
+       bounded resources.  The mechanism is algorithm-agile; the initial
+       cose-ml-dsa proof profile uses existing JOSE and COSE serializations
+       for ML-DSA, with ML-DSA-65 as the baseline algorithm and ML-DSA-87
+       available as a high-assurance deployment policy option.  A dedicated
+       4NN Delegated Authority Required status code remains an open design
+       question for HTTP Working Group review; this revision does not depend
+       on that status code and does not define payment semantics.</p>
 relation:
 - type: includes
   bibitem:
@@ -56,5 +61,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-mcgraw-httpapi-agent-budget-01
     docidentifier:
     - content: draft-mcgraw-httpapi-agent-budget-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-mcgraw-httpapi-agent-budget-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mcgraw-httpapi-agent-budget-02
+    docidentifier:
+    - content: draft-mcgraw-httpapi-agent-budget-02
       type: Internet-Draft
       primary: true
