@@ -6,7 +6,8 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Agent Discovery Protocol (ADP)
+  content: Agent Discovery Protocol (ADP) v1.1 -- Well-Known Metadata and Interaction
+    Layer
 docidentifier:
 - content: draft-pro-adp-agent-discovery
   type: Internet-Draft
@@ -15,15 +16,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies the Agent Discovery Protocol (ADP), a three-
-       layer discovery mechanism for AI Agents that leverages existing
-       Internet infrastructure: DNS TXT and SRV records for lightweight
-       service discovery (Layer 1), Well-Known URIs for machine-readable
-       metadata (Layer 2), and HTML landing pages with WebSocket channels
-       for human interaction and inter-agent communication (Layer 3).  ADP
-       enables any domain owner to make their AI Agent discoverable without
-       relying on centralized registries, using the Domain Name System as
-       the decentralized trust anchor.</p>
+    <p>This document defines the Agent Discovery Protocol (ADP) v1.1, a
+       layered protocol for discovering, verifying, and interacting with AI
+       Agents on the Internet.  ADP delegates DNS discovery to DNS-AID (SVCB
+       records) and defines a Well-Known JSON metadata format, an
+       Ed25519-based identity model, and the Agent Gateway Protocol (AGP)
+       for real-time WebSocket messaging.  The protocol is designed to be
+       decentralized, standards-based, and incremental — clients escalate
+       from DNS to HTTP to WebSocket only as needed.</p>
 relation:
 - type: includes
   bibitem:
@@ -34,5 +34,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-pro-adp-agent-discovery-00
     docidentifier:
     - content: draft-pro-adp-agent-discovery-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-pro-adp-agent-discovery-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-pro-adp-agent-discovery-01
+    docidentifier:
+    - content: draft-pro-adp-agent-discovery-01
       type: Internet-Draft
       primary: true
