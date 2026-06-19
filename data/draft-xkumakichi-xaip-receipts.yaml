@@ -23,6 +23,16 @@ abstract:
        call's inputs and outputs are identified (without disclosing their
        contents).
 
+       A distinguishing property of the format is optional caller co-
+       signature over the same canonical per-call record.  When both
+       signatures validate, the receipt cryptographically binds the
+       identified Caller and Agent to the same canonical payload.  This does
+       not establish that either party independently observed every field,
+       that the recorded execution was correct, or that the parties did not
+       collude.  A receipt may carry the Agent signature alone, and
+       consumers may distinguish the two cases according to deployment
+       policy.
+
        The format is intentionally tool-system-agnostic.  The same receipt
        structure can be emitted by MCP (Model Context Protocol) servers,
        LangChain.js callback handlers, OpenAI tool-calling loops, HTTP
@@ -43,5 +53,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-xkumakichi-xaip-receipts-00
     docidentifier:
     - content: draft-xkumakichi-xaip-receipts-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-xkumakichi-xaip-receipts-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xkumakichi-xaip-receipts-01
+    docidentifier:
+    - content: draft-xkumakichi-xaip-receipts-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-xkumakichi-xaip-receipts-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-xkumakichi-xaip-receipts-02
+    docidentifier:
+    - content: draft-xkumakichi-xaip-receipts-02
       type: Internet-Draft
       primary: true
