@@ -15,7 +15,7 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies three cryptographic constructions for
+    <p>This document specifies five cryptographic constructions for
        self-verifiable agentic payment records.  The first, the Retention
        Chain Reference (retention_chain_ref), enables tamper-evident audit
        chains linking payment receipts without requiring external
@@ -27,8 +27,18 @@ abstract:
        Binding (binding_ref), binds a settled payment to the verified agent
        action it paid for and to the retention chain entry recording it, so
        that a settlement attestation proves not only that a payment occurred
-       but which verified action it corresponds to.  All constructions use
-       only SHA-256 and the JSON Canonicalization Scheme (JCS, RFC 8785),
+       but which verified action it corresponds to.  The fourth, the Policy
+       Binding (policy_bound_ref), binds a content-addressed snapshot of the
+       governing policy to an existing binding or chain reference, so that a
+       decision is verifiable against the exact policy version that admitted
+       it and a policy rotation is detectable by recomputation.  The fifth,
+       the Compliance Gate Binding (gate_ref), binds a categorical
+       ALLOW/REFER/DENY compliance verdict and a no-PII payer reference to a
+       policy or binding reference, so that a screening decision is provably
+       tied to the policy in force when it was made and carries no personal
+       data in the bound record.  All
+       constructions use only SHA-256 and the JSON Canonicalization Scheme
+       (JCS, RFC 8785),
        and are verifiable by any party holding the relevant receipts without
        contacting the issuer.  The constructions satisfy the transaction
        recording and audit trail obligations of MiCA Article 80, DORA
@@ -76,5 +86,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-03
     docidentifier:
     - content: draft-hopley-x402-retention-chain-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hopley-x402-retention-chain-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-04
+    docidentifier:
+    - content: draft-hopley-x402-retention-chain-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hopley-x402-retention-chain-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-05
+    docidentifier:
+    - content: draft-hopley-x402-retention-chain-05
       type: Internet-Draft
       primary: true
