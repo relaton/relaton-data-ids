@@ -15,16 +15,23 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document introduces Power Groups.  A Power Group is a
-       hierarchical abstraction of power consumed by hardware components.
-       In IS-IS, interfaces can reference the Power Group to which they
-       belong.  Therefore, Power Groups provide a method of organizing
-       interfaces into groups by power characteristics.
+    <p>Many networks have a daily utilization pattern.  For example, a
+       network might be busy during the day and less busy at night.
 
-       The TE path placement algorithm can use Power Group membership
-       information to implement TE policy.  Power Group information is
-       particularly useful when implementing TE policies that support power-
-       savings and sustainability.</p>
+       If the network is robust, it has enough capacity to satisfy demand
+       during peak hours and excess capacity during non-peak hours.  That
+       excess capacity increases energy costs and environmental impact.
+
+       [I-D.many-teas-power-steering] introduces a Power Conserving Path
+       Placement Strategy (PCPPS).  When possible, PCPPS concentrates
+       traffic onto a small set of network resources.  When traffic is
+       concentrated onto a small set of network resources, other network
+       resources become idle and can be powered down until they are needed
+       again.  This solves the problem of excess capacity during non-peak
+       hours.
+
+       PCPPS uses information that is distributed by an IGP.  This document
+       specifies the IS-IS encoding for that information.</p>
 relation:
 - type: includes
   bibitem:
@@ -57,5 +64,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-many-lsr-power-group-02
     docidentifier:
     - content: draft-many-lsr-power-group-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-many-lsr-power-group-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-many-lsr-power-group-03
+    docidentifier:
+    - content: draft-many-lsr-power-group-03
       type: Internet-Draft
       primary: true

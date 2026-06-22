@@ -15,23 +15,21 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>In order to provision an optical connection through optical networks,
-       a combination of path continuity, resource availability, and
-       impairment constraints must be met to determine viable and optimal
-       paths through the network.  The determination of appropriate paths is
+    <p>Provisioning an optical connection requires that path continuity,
+       resource availability, and impairment constraints be satisfied in
+       order to determine viable paths through the network.  This process is
        known as Impairment-Aware Routing and Wavelength Assignment (IA-RWA)
-       for a Wavelength Switched Optical Network (WSON), while it is known
-       as Impairment-Aware Routing and Spectrum Assignment (IA-RSA) for a
-       Spectrum Switched Optical Network (SSON).
+       in Wavelength Switched Optical Networks (WSONs) and as Impairment-
+       Aware Routing and Spectrum Assignment (IA-RSA) in Spectrum Switched
+       Optical Networks (SSONs).
 
-       This document provides a YANG data model for the impairment-aware
-       Traffic Engineering topology (TE topology) in optical networks.  It
-       augments the technology agnostic YANG Data Model for TE topologies.
-       The topology YANG model provides read-only topology data including
-       optical impairments that can be used for example by a Path
-       Computation Engine (PCE) for calculating an optically feasible path
-       for a new connection before it is established through an optical
-       network.</p>
+       This document defines a YANG data model for impairment-aware Traffic
+       Engineering (TE) topologies in optical networks.  The model augments
+       the technology-agnostic YANG data model for TE topologies and
+       provides read-only topology information, including optical
+       impairments.  Such information can be used, for example, by a Path
+       Computation Engine (PCE) to compute optically feasible paths prior to
+       connection establishment.</p>
 relation:
 - type: includes
   bibitem:
@@ -295,5 +293,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-23
     docidentifier:
     - content: draft-ietf-ccamp-optical-impairment-topology-yang-23
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ccamp-optical-impairment-topology-yang-24
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ccamp-optical-impairment-topology-yang-24
+    docidentifier:
+    - content: draft-ietf-ccamp-optical-impairment-topology-yang-24
       type: Internet-Draft
       primary: true
