@@ -15,7 +15,7 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies five cryptographic constructions for
+    <p>This document specifies seven cryptographic constructions for
        self-verifiable agentic payment records.  The first, the Retention
        Chain Reference (retention_chain_ref), enables tamper-evident audit
        chains linking payment receipts without requiring external
@@ -36,7 +36,14 @@ abstract:
        ALLOW/REFER/DENY compliance verdict and a no-PII payer reference to a
        policy or binding reference, so that a screening decision is provably
        tied to the policy in force when it was made and carries no personal
-       data in the bound record.  All
+       data in the bound record.  The sixth, the Pre-Payment Decision
+       Chain (guardrail_ref), composes an agent identity reference, a spend
+       authority reference, and the policy in force into one recomputable
+       pre-payment ALLOW/DENY decision.  The seventh, Post-Decision
+       Execution Evidence (execution_ref), binds an executed action to the
+       exact decision that authorized it, so the recorded execution is
+       provably consistent with the decision and not merely correlated with
+       an agent identity.  All
        constructions use only SHA-256 and the JSON Canonicalization Scheme
        (JCS, RFC 8785),
        and are verifiable by any party holding the relevant receipts without
@@ -108,5 +115,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-05
     docidentifier:
     - content: draft-hopley-x402-retention-chain-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hopley-x402-retention-chain-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-06
+    docidentifier:
+    - content: draft-hopley-x402-retention-chain-06
       type: Internet-Draft
       primary: true

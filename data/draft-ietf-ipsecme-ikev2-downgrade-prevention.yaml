@@ -16,9 +16,10 @@ abstract:
   script: Latn
   content: |-
     <p>This document describes an extension to the Internet Key Exchange
-       protocol version 2 (IKEv2) that prevents particular downgrade attacks
-       on this protocol by having the peers confirm they have participated
-       in the same conversation.
+       protocol version 2 (IKEv2) in which the peers authenticate the full
+       IKE_SA_INIT transcript.  When both peers implement the extension and
+       at least one relevant authentication credential is not compromised,
+       this prevents certain downgrade attacks on IKEv2.
 
        This document updates RFC 7296.</p>
 relation:
@@ -97,5 +98,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-downgrade-prevention-06
     docidentifier:
     - content: draft-ietf-ipsecme-ikev2-downgrade-prevention-06
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-ipsecme-ikev2-downgrade-prevention-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-ipsecme-ikev2-downgrade-prevention-07
+    docidentifier:
+    - content: draft-ietf-ipsecme-ikev2-downgrade-prevention-07
       type: Internet-Draft
       primary: true
