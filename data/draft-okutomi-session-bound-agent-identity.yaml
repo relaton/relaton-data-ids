@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: A Profile for Session-Bound Agent Identity
+  content: A Core Acceptance Profile for Session-Bound Agent Identity
 docidentifier:
 - content: draft-okutomi-session-bound-agent-identity
   type: Internet-Draft
@@ -15,19 +15,18 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes a profile for binding agent identity and
-       authorization material to an accepted TLS session and to verifier-
-       accepted attestation or channel-binding facts.  The profile separates
-       authority statements, holder-of-key session binding, and verifier-
-       local policy so that a relying party accepts an agent only when the
-       grant, session binding, freshness state, and local policy describe
+    <p>This document defines a core verifier-side acceptance profile for
+       session-bound Agent identity.  A verifier accepts an Agent only when
+       a verified authority grant, holder-of-key proof, accepted TLS or
+       exported-authenticator session, freshness and replay state, any
+       required attestation result, and verifier-local policy all describe
        the same intended interaction.
 
-       The profile does not define a new TLS extension, attestation evidence
-       format, identity provider, wallet format, or application protocol.
-       It profiles the use of existing mechanisms, including TLS exporters,
-       exported authenticators, JWT/CWT-style signed claims, proof-of-
-       possession keys, and remote attestation results.</p>
+       This document does not define a TLS extension, attestation evidence
+       format, identity provider, holder-side presentation format, registry,
+       control plane, gateway, or application protocol.  Instead, it defines
+       the fail-closed acceptance rule for composing existing Internet
+       mechanisms at the verifier boundary.</p>
 relation:
 - type: includes
   bibitem:
@@ -38,5 +37,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-00
     docidentifier:
     - content: draft-okutomi-session-bound-agent-identity-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-okutomi-session-bound-agent-identity-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-01
+    docidentifier:
+    - content: draft-okutomi-session-bound-agent-identity-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-okutomi-session-bound-agent-identity-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-02
+    docidentifier:
+    - content: draft-okutomi-session-bound-agent-identity-02
       type: Internet-Draft
       primary: true
