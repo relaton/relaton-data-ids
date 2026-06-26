@@ -15,13 +15,15 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>The TCP header can accommodates 40 octets of TCP options.  However,
-       modern applications may require more than 40 octets of TCP Options.
-       Therefore, this document describes an experiment that extends the TCP
-       Options field.  If this experiment is successful, it will demonstrate
-       that the extension procedures described herein are implementable and
-       deployable.  It will also demonstrate that they maintain backwards
-       compatibility.</p>
+    <p>A TCP header accommodates only 40 octets of TCP options.  In the
+       future, applications may require more than 40 octets of TCP options.
+       For example, an application may require a TCP Authentication Option
+       (TCP-AO) with a 384-bit MAC.  This option requires 52 octets of
+       option space.
+
+       This document defines a TCP extension that accommodates up to 1,016
+       octets of TCP options while maintaining backward compatibility with
+       legacy implementations.</p>
 relation:
 - type: includes
   bibitem:
@@ -65,5 +67,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-bonica-tcpm-extended-options-03
     docidentifier:
     - content: draft-bonica-tcpm-extended-options-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-bonica-tcpm-extended-options-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-bonica-tcpm-extended-options-04
+    docidentifier:
+    - content: draft-bonica-tcpm-extended-options-04
       type: Internet-Draft
       primary: true

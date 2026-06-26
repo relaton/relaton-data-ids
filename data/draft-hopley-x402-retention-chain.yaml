@@ -15,7 +15,7 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies seven cryptographic constructions for
+    <p>This document specifies eight cryptographic constructions for
        self-verifiable agentic payment records.  The first, the Retention
        Chain Reference (retention_chain_ref), enables tamper-evident audit
        chains linking payment receipts without requiring external
@@ -43,7 +43,10 @@ abstract:
        Execution Evidence (execution_ref), binds an executed action to the
        exact decision that authorized it, so the recorded execution is
        provably consistent with the decision and not merely correlated with
-       an agent identity.  All
+       an agent identity.  The eighth, Cross-Party Authority Delegation
+       (delegation_ref), binds a delegation of authority from one party to
+       another and chains hand-offs, so a verifier can confirm that authority
+       did not widen across an organizational boundary.  All
        constructions use only SHA-256 and the JSON Canonicalization Scheme
        (JCS, RFC 8785),
        and are verifiable by any party holding the relevant receipts without
@@ -126,5 +129,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-06
     docidentifier:
     - content: draft-hopley-x402-retention-chain-06
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hopley-x402-retention-chain-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hopley-x402-retention-chain-07
+    docidentifier:
+    - content: draft-hopley-x402-retention-chain-07
       type: Internet-Draft
       primary: true

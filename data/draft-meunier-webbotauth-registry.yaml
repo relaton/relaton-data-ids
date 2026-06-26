@@ -15,15 +15,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes a JSON based format for clients using
-       [DIRECTORY] to advertise information about themselves.
-
-       This document describes a JSON-based "Signature Agent Card" format
-       for signature agent using [DIRECTORY] to advertise metadata about
-       themselve.  This includes identity, purpose, rate expectations, and
-       cryptographic keys.  It also establishes an IANA registry for
-       Signature Agent Card parameters, enabling extensible and
-       interoperable discovery of agent information.</p>
+    <p>This document defines the "Signature Agent Card", a JSON metadata
+       document that a signature agent using [DIRECTORY] publishes to
+       describe itself: its identity, purpose, rate expectations, and
+       cryptographic keys.  Its parameters are drawn from the OAuth Dynamic
+       Client Registration Metadata registry [DCR], the same namespace used
+       by [CIMD], extended with a single web_bot_auth object.  This document
+       registers that object with IANA and establishes a registry for its
+       members.</p>
 relation:
 - type: includes
   bibitem:
@@ -56,5 +55,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-registry-02
     docidentifier:
     - content: draft-meunier-webbotauth-registry-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-meunier-webbotauth-registry-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-registry-03
+    docidentifier:
+    - content: draft-meunier-webbotauth-registry-03
       type: Internet-Draft
       primary: true

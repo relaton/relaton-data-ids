@@ -21,9 +21,9 @@ abstract:
        document specifies a Link Multiplexer (VOICI) that addresses those
        SCHC-driven requirements while remaining general enough to
        accommodate other compression mechanisms and uncompressed payloads.
-       The encapsulation is designed for minimal overhead, reducing to 2
-       bytes in the common case, while supporting optional integrity
-       protection and original EtherType/port recovery.</p>
+       The encapsulation is designed for minimal overhead, reducing to 1
+       byte in the common case (7 inline Session IDs), while supporting
+       optional integrity protection and original EtherType/port recovery.</p>
 relation:
 - type: includes
   bibitem:
@@ -45,5 +45,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-lampin-voici-01
     docidentifier:
     - content: draft-lampin-voici-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-lampin-voici-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-lampin-voici-02
+    docidentifier:
+    - content: draft-lampin-voici-02
       type: Internet-Draft
       primary: true
