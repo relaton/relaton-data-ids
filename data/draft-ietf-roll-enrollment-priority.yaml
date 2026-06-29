@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Controlling Secure Network Enrollment in RPL networks
+  content: Controlling Network Enrollment in RPL networks
 docidentifier:
 - content: draft-ietf-roll-enrollment-priority
   type: Internet-Draft
@@ -15,13 +15,17 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>[RFC9032] defines a method by which a potential [RFC9031] enrollment
-       proxy can announce itself as available for new RPL nodes to enroll on
-       a network.  The announcement includes a priority for enrollment.
-       This document provides a mechanism by which a Routing Protocol for
-       Low-Power and Lossy Networks (RPL) Root can globally disable
-       enrollment announcements or adjust the base priority for enrollment
-       operations.</p>
+    <p>The Routing Protocol for Low-Power and Lossy Networks (RPL) manages
+       the routing topology but lacks a mechanism to globally regulate how
+       many new nodes, known as Pledges, can join a node in a 6TiSCH network
+       at any given time.  Currently, Join Proxies (6LowPAN Routers) make
+       local decisions about whether to facilitate a Pledge's enrollment
+       based only on their immediate resources.
+
+       This document introduces RPL extensions to ensure that enrollment
+       remains orderly, prevents localized congestion at specific Join
+       Proxies, and allows the network to stay within its operational
+       capacity limits.</p>
 relation:
 - type: includes
   bibitem:
@@ -197,5 +201,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-roll-enrollment-priority-15
     docidentifier:
     - content: draft-ietf-roll-enrollment-priority-15
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-roll-enrollment-priority-16
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-roll-enrollment-priority-16
+    docidentifier:
+    - content: draft-ietf-roll-enrollment-priority-16
       type: Internet-Draft
       primary: true
