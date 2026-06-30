@@ -15,13 +15,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines a profile for certificates that are issued for
-       validation of the digital signature produced by a single signing
-       operation.  Each certificate is created at the time of signing and
-       bound to the signed content.  The associated signing key is
-       generated, used to produce a single digital signature, and then
-       immediately destroyed.  The certificate never expires and is never
-       revoked, which simplifies long-term validation.</p>
+    <p>This document defines the signedDocumentBinding certificate
+       extension, which binds a certificate to the signed content of a
+       digital signature produced by a single signing operation.  Each
+       certificate is created at the time of signing and the associated
+       signing key is generated, used to produce a single digital signature,
+       and then immediately destroyed.  Certificates carrying this extension
+       are intended to be issued without a revocation mechanism and with no
+       expiration, which simplifies long-term validation.</p>
 relation:
 - type: includes
   bibitem:
@@ -32,5 +33,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-one-signature-certs-00
     docidentifier:
     - content: draft-ietf-lamps-one-signature-certs-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-lamps-one-signature-certs-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-lamps-one-signature-certs-01
+    docidentifier:
+    - content: draft-ietf-lamps-one-signature-certs-01
       type: Internet-Draft
       primary: true

@@ -49,7 +49,19 @@ abstract:
 
        The REASON step is intentionally GEC-unspecified: the LLM reasoning
        engine is opaque to the protocol.  The AEP is the transmission
-       between the LLM engine and the GEC enforcement substrate.</p>
+       between the LLM engine and the GEC enforcement substrate.
+
+       Version -02 adds: XPID binding at session open (GEC MUST bind XPID
+       from KIA-verified Party Registry; MUST NOT accept client-supplied
+       XPID); STALLED and PLAN_B_ACTIVE session states with full normative
+       definitions, trigger conditions, and resume conditions; Expected
+       Outcome Declaration (EOD) as a pre-session commitment structure with
+       primary outcome, acceptance envelope, and pre-declared Plan B;
+       RETRY_CONTINUATION normative strengthening with what-changed-since-
+       last-attempt requirement and prior_denial_count Cedar attribute;
+       AEP-to-OTel mapping section (Section 8) with mandatory span
+       attributes at each AEP phase; four new Security Considerations;
+       and updated IANA registrations for new state codes and EOD media type.</p>
 relation:
 - type: includes
   bibitem:
@@ -71,5 +83,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-sato-soos-aep-01
     docidentifier:
     - content: draft-sato-soos-aep-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-sato-soos-aep-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-sato-soos-aep-02
+    docidentifier:
+    - content: draft-sato-soos-aep-02
       type: Internet-Draft
       primary: true
