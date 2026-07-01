@@ -15,14 +15,11 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This draft proposes an authorization method for task-oriented multi-
-       AI agent collaboration scenarios, where a leading agent coordinates
-       sub-agents to complete complex tasks.  The methods extends the OAuth
-       2.0 protocol by adding fields in token and message flows, enabling
-       sub-agents execute the task as a group.  This approach greatly
-       simplifies the authorization process for a task group, avoids
-       efficiency loss from repeated interactions between multiple sub-AI
-       agents and the authorization server, meanwhile maintaining full
+    <p>This method extends OAuth 2.0 by adding fields to token and message
+       flows, enabling sub-agents to act as a task group.  It simplifies
+       authorization for task groups, avoids repeated interactions between
+       sub-agents and the authorization server, and bounds the authority
+       delegated to the group and to each member while maintaining
        compatibility with existing OAuth 2.0 workflows.</p>
 relation:
 - type: includes
@@ -45,5 +42,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-song-oauth-ai-agent-collaborate-authz-01
     docidentifier:
     - content: draft-song-oauth-ai-agent-collaborate-authz-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-song-oauth-ai-agent-collaborate-authz-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-song-oauth-ai-agent-collaborate-authz-02
+    docidentifier:
+    - content: draft-song-oauth-ai-agent-collaborate-authz-02
       type: Internet-Draft
       primary: true
