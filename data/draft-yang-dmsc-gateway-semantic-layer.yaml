@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Semantic Layer for AI Agent Gateways in Gateway-mediated Collaboration
+  content: Gateway Mediation Layer for AI Agent Collaboration
 docidentifier:
 - content: draft-yang-dmsc-gateway-semantic-layer
   type: Internet-Draft
@@ -16,25 +16,28 @@ abstract:
   script: Latn
   content: |-
     <p>Cross-domain and policy-controlled agent collaboration can require
-       semantic decisions that are not always suitable for an agent client
+       mediation decisions that are not always suitable for an agent client
        or an agent server alone.  A collaboration request may need to
-       combine business intent, capability meaning, tenant or domain policy,
+       combine a stated goal, capability profiles, tenant or domain policy,
        trust evidence, disclosure limits, operational constraints, and
        handoff context before a concrete interaction mechanism is used.
 
-       This document identifies such gateway-side semantic decision-making
-       as a distinct interoperability gap in many AI Agent Gateway
-       deployments.  It does not claim that every agent collaboration
-       requires a gateway.  Rather, it explains why many deployments need a
-       mediation point where intent, capability meaning, policy, trust, and
-       handoff constraints can be evaluated before interaction proceeds.
+       This document identifies gateway-side interaction mediation as a
+       distinct interoperability gap in many AI Agent Gateway deployments.
+       It does not claim that every agent collaboration requires a gateway.
+       Rather, it explains why many deployments need a mediation point where
+       request goals, capability profiles, policy, trust, and handoff
+       constraints can be evaluated before interaction proceeds.
 
-       The document describes a Gateway Semantic Layer as a decision layer
-       between application-level intent and concrete agent interaction
-       mechanisms.  It focuses on the role, inputs, outputs, and narrow set
-       of interoperable artifacts that may require further work, such as
-       Resolution Results, Handoff Descriptors, Failure Explanations, and
-       related references.</p>
+       The document describes a Gateway Mediation Layer as a decision-
+       support and interface layer between application-level goals and
+       concrete agent interaction mechanisms.  It focuses on the role,
+       inputs, outputs, and narrow set of interoperable artifacts that may
+       require further work, such as Mediation Requests, Mediation
+       Responses, Handoff Contexts, Failure Records, and Evidence
+       References.  It does not propose standardizing internal matching
+       algorithms, domain ontologies, prompt engineering, or model-specific
+       decision logic.</p>
 relation:
 - type: includes
   bibitem:
@@ -56,5 +59,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-yang-dmsc-gateway-semantic-layer-01
     docidentifier:
     - content: draft-yang-dmsc-gateway-semantic-layer-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-yang-dmsc-gateway-semantic-layer-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yang-dmsc-gateway-semantic-layer-02
+    docidentifier:
+    - content: draft-yang-dmsc-gateway-semantic-layer-02
       type: Internet-Draft
       primary: true
