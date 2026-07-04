@@ -16,16 +16,15 @@ abstract:
   script: Latn
   content: |-
     <p>This document defines the Enforcement-Action HTTP response header
-       field. The field provides a minimal, interoperable mechanism for
-       signaling advisory enforcement coordination between cooperating
-       components operating within a defined administrative or policy trust
-       boundary. The header conveys a single action token and optional
-       parameters without modifying HTTP status code semantics or
-       representation meaning. The field is designed to be safely ignored by
-       recipients that do not recognize it and to operate over existing HTTP
-       deployments without changes to transport protocols. This
-       specification defines the syntax, semantics, processing rules, and
-       IANA registration for the header field.</p>
+       field.  The field carries an advisory selected-action token from
+       an application to cooperating intermediaries within a trusted
+       boundary.  It is advisory and safe to ignore.  Recipients apply
+       their local policy in response to the signal.  This specification
+       standardizes the field name, syntax, response-path processing
+       model, and safe-to-ignore behavior.  It does not standardize the
+       operational meaning, target, duration, or enforcement effect of
+       individual action tokens or parameters, and it does not modify
+       HTTP semantics, TLS, QUIC, or the caching rules of [RFC9111].</p>
 relation:
 - type: includes
   bibitem:
@@ -69,5 +68,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-03
     docidentifier:
     - content: draft-secroot-ooda-http-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-secroot-ooda-http-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-secroot-ooda-http-04
+    docidentifier:
+    - content: draft-secroot-ooda-http-04
       type: Internet-Draft
       primary: true
