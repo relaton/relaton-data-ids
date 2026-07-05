@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: OAuth 2.0 RAR Metadata and Error Signaling
+  content: OAuth 2.0 RAR Metadata and Error Remediation
 docidentifier:
 - content: draft-zehavi-oauth-rar-metadata
   type: Internet-Draft
@@ -19,12 +19,15 @@ abstract:
        the exchange and processing of authorization details but does not
        define metadata for describing authorization details types.
 
-       This document addresses a practical interoperability challenge
-       regarding authorization details type metadata, allowing clients to
-       dynamically discover metadata instead of relying on out-of-band
-       agreements.  It also standardizes error signaling for cases where
-       insufficient authorization details are provided, and offers
-       structured remediation mechanisms.</p>
+       In addition, no interoperable guidance is offered to clients, to
+       remediate failures by resource servers due to insufficient
+       authorization details.
+
+       This document addresses this interoperability challenge, allowing
+       clients to dynamically discover metadata instead of relying on out-
+       of-band agreements, as well as standardizes failure signaling
+       including interoperable remediation when insufficient authorization
+       details are the cause of failure.</p>
 relation:
 - type: includes
   bibitem:
@@ -79,5 +82,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-zehavi-oauth-rar-metadata-04
     docidentifier:
     - content: draft-zehavi-oauth-rar-metadata-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-zehavi-oauth-rar-metadata-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-zehavi-oauth-rar-metadata-05
+    docidentifier:
+    - content: draft-zehavi-oauth-rar-metadata-05
       type: Internet-Draft
       primary: true
