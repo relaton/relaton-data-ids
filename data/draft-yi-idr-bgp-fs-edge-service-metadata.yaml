@@ -17,8 +17,8 @@ abstract:
   content: |-
     <p>In edge computing and distributed cloud environments, a service may
        be deployed on multiple instances across one or more sites, referred
-       to as edge service.  The edge service is typically associated with an
-       ANYCAST IP address.  With the emergence of Computing-Aware Traffic
+       to as an edge service.  The edge service is typically associated with
+       an ANYCAST IP address.  With the emergence of Computing-Aware Traffic
        Steering (CATS) requirements, there is a growing need to consider
        both network and computing metrics when making traffic steering
        decisions.  Traditional routing protocols lack the capability to
@@ -33,7 +33,10 @@ abstract:
        enables ingress routers to make path selections based not only on
        routing cost but also on the running environment and resource
        availability of edge services, thereby optimizing Quality of
-       Experience (QoE).</p>
+       Experience (QoE).  The mechanism is aligned with the CATS
+       architecture and metric framework by allowing the advertised metadata
+       to represent either selected original service metrics or an
+       aggregated Level 2 (L2) metric.</p>
 relation:
 - type: includes
   bibitem:
@@ -99,5 +102,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-yi-idr-bgp-fs-edge-service-metadata-05
     docidentifier:
     - content: draft-yi-idr-bgp-fs-edge-service-metadata-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-yi-idr-bgp-fs-edge-service-metadata-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-yi-idr-bgp-fs-edge-service-metadata-06
+    docidentifier:
+    - content: draft-yi-idr-bgp-fs-edge-service-metadata-06
       type: Internet-Draft
       primary: true

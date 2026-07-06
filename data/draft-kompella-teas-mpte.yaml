@@ -37,11 +37,12 @@ abstract:
 
        This memo proposes multipath traffic-engineering (MPTE), combining
        the best of ECMP and TE.  The multipathing proposed here need not be
-       strictly equal-cost, nor the load balancing equally weighted to each
-       next hop.  Moreover, the desired destination may be reachable via
-       multiple egresses.  The proposal includes a protocol for signaling
-       MPTE paths using various types of tunnels, some of which are better
-       suited to multipathing.</p>
+       strictly equal-cost, allowing for some "slack" to admit more paths.
+       The load balancing at each hop is optimally weighted to each next hop
+       rather than always being equally weighted.  Moreover, traffic can
+       enter and leave an MPTE construct via multiple ingresses and
+       egresses.  The proposal includes several choices of control and data
+       planes.</p>
 relation:
 - type: includes
   bibitem:
@@ -74,5 +75,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-kompella-teas-mpte-02
     docidentifier:
     - content: draft-kompella-teas-mpte-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-kompella-teas-mpte-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-kompella-teas-mpte-03
+    docidentifier:
+    - content: draft-kompella-teas-mpte-03
       type: Internet-Draft
       primary: true

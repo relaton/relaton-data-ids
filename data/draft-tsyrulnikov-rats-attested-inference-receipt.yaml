@@ -22,7 +22,9 @@ abstract:
        binds model identity, input/output hashes, attestation-linked
        metadata, and operational telemetry into a single signed artifact
        suitable for independent third-party verification of a confidential
-       AI inference event.
+       AI inference.  An AIR receipt is Attester-signed Evidence, not an
+       appraisal verdict: a RATS Verifier must appraise the referenced
+       platform attestation before the receipt establishes TEE provenance.
 
        AIR v1 targets single-inference receipts emitted by workloads running
        inside hardware-isolated Trusted Execution Environments (TEEs).  AIR
@@ -30,9 +32,12 @@ abstract:
        to the platform attestation evidence associated with the inference,
        but it does not replace platform-specific attestation verification.
        This version defines AWS Nitro Enclaves and Intel TDX measurement
-       profiles only.  Pipeline chaining, multi-inference receipts, and
-       extensibility mechanisms for additional claim or platform profiles
-       are out of scope.</p>
+       profiles only, and assumes a single platform attestation document per
+       receipt.  Pipeline chaining, multi-inference receipts, composite
+       attesters, multi-verifier orchestration, accelerator / GPU
+       confidential-compute attestation integration, and extensibility
+       mechanisms for additional claim or platform profiles are out of
+       scope.</p>
 relation:
 - type: includes
   bibitem:
@@ -54,5 +59,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-tsyrulnikov-rats-attested-inference-receipt-01
     docidentifier:
     - content: draft-tsyrulnikov-rats-attested-inference-receipt-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-tsyrulnikov-rats-attested-inference-receipt-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-tsyrulnikov-rats-attested-inference-receipt-02
+    docidentifier:
+    - content: draft-tsyrulnikov-rats-attested-inference-receipt-02
       type: Internet-Draft
       primary: true
