@@ -36,7 +36,13 @@ abstract:
        fail-closed requirement expression.  EP-AEC introduces no new receipt
        type and replaces none; it is the verifier-side glue that lets
        independently specified receipts compose into one accountability
-       decision.</p>
+       decision.  This revision additionally profiles two optional component
+       record types for that composition: the effect attestation, a post-
+       execution record in which the executor signs the receipt identifier
+       together with a digest of the observed effect, and ceremony evidence,
+       a signed record of signing-ceremony telemetry (the challenge issued,
+       viewed, and approved instants and the approver identity) that enables
+       review-latency policies.</p>
 relation:
 - type: includes
   bibitem:
@@ -58,5 +64,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authorization-evidence-chain-01
     docidentifier:
     - content: draft-schrock-ep-authorization-evidence-chain-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ep-authorization-evidence-chain-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authorization-evidence-chain-02
+    docidentifier:
+    - content: draft-schrock-ep-authorization-evidence-chain-02
       type: Internet-Draft
       primary: true

@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: SMTPUTF8 address syntax
+  content: SMTPUTF8 Email Addresses
 docidentifier:
 - content: draft-ietf-mailmaint-smtputf8-syntax
   type: Internet-Draft
@@ -15,15 +15,16 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies rules for email addresses that are flexible
-       enough to express the addresses typically used with SMTPUTF8, while
-       avoiding confusing or risky elements.
+    <p>RFC 6532 extends the internet email format to allow UTF8 in many
+       contexts.  This document restricts the set of allowed addresses in
+       header fields slightly, and thereby simplifies use of these
+       addresses.
 
-       This is one of a pair of documents: This is simple to implement,
-       contains only globally viable rules and is intended to be usable for
-       software such an MTA.  Its companion defines has more complex rules,
-       takes regional usage into account and aims to allow only addresses
-       that are readable and cut-and-pastable in some community.</p>
+       This is one of a pair of documents.  This one is simple to implement
+       and contains only globally viable rules.  Its companion has more
+       complex rules, takes regional usage into account, and describes
+       addresses that can be read by some community and cut-and-pasted in
+       some locale.</p>
 relation:
 - type: includes
   bibitem:
@@ -67,5 +68,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mailmaint-smtputf8-syntax-03
     docidentifier:
     - content: draft-ietf-mailmaint-smtputf8-syntax-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-mailmaint-smtputf8-syntax-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mailmaint-smtputf8-syntax-04
+    docidentifier:
+    - content: draft-ietf-mailmaint-smtputf8-syntax-04
       type: Internet-Draft
       primary: true

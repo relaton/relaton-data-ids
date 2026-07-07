@@ -16,8 +16,10 @@ abstract:
   script: Latn
   content: |-
     <p>This document describes a protocol where on-path network elements can
-       give endpoints their perspective on what the maximum achievable
-       throughput might be for QUIC flows.</p>
+       communicate their perspective on the maximum sustainable throughput
+       for QUIC flows to endpoints.  This throughput advice suggests an
+       upper bound on long-term average throughput, independent of and
+       complementary to real-time congestion control signals.</p>
 relation:
 - type: includes
   bibitem:
@@ -72,5 +74,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-scone-protocol-04
     docidentifier:
     - content: draft-ietf-scone-protocol-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-scone-protocol-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-scone-protocol-05
+    docidentifier:
+    - content: draft-ietf-scone-protocol-05
       type: Internet-Draft
       primary: true

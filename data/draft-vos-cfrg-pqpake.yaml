@@ -18,10 +18,14 @@ abstract:
     <p>This document describes the CPaceOQUAKE+ protocol, a hybrid
        asymmetric password-authenticated key exchange (aPAKE) that supports
        mutual authentication in a client-server setting secure against
-       quantum-capable attackers.  CPaceOQUAKE+ is the result of a KEM-based
-       transformation from the hybrid symmetric PAKE protocol called
-       CPaceOQUAKE that is also described in this document.  This document
-       recommends configurations for CPaceOQUAKE+.</p>
+       quantum-capable attackers.  CPaceOQUAKE+ is composed of two stages —
+       CPace and OQUAKE+ — that run sequentially, with the output of CPace
+       feeding as the secret_context into OQUAKE+. OQUAKE+ is an augmented
+       variant of OQUAKE that adds password confirmation.  This document
+       also describes standalone OQUAKE+, a post-quantum aPAKE, and
+       CPaceOQUAKE, the hybrid symmetric PAKE composed of the CPace and
+       OQUAKE stages.  This document recommends configurations for
+       CPaceOQUAKE+.</p>
 relation:
 - type: includes
   bibitem:
@@ -43,5 +47,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-vos-cfrg-pqpake-01
     docidentifier:
     - content: draft-vos-cfrg-pqpake-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-vos-cfrg-pqpake-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-vos-cfrg-pqpake-02
+    docidentifier:
+    - content: draft-vos-cfrg-pqpake-02
       type: Internet-Draft
       primary: true

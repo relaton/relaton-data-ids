@@ -23,9 +23,10 @@ abstract:
        cluster) and request, in band, that the client do so.  The relocation
        authorization is carried inside the server's own session ticket, so
        it inherits the security properties of TLS 1.3 ticket-based
-       resumption; the relocation target is an opaque identifier resolved by
-       the application or control plane rather than an address carried in
-       TLS.
+       resumption.  The relocation target is an opaque value that either
+       directly carries the switchover address (for example, an IP address
+       and port) or is an identifier resolved by the application or control
+       plane.
 
        This document also introduces a Reliable Framing Layer that operates
        above the TLS record layer to provide message framing, sequence
@@ -88,5 +89,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-04
     docidentifier:
     - content: draft-wang-tls-service-affinity-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-tls-service-affinity-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-tls-service-affinity-05
+    docidentifier:
+    - content: draft-wang-tls-service-affinity-05
       type: Internet-Draft
       primary: true
