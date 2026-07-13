@@ -1,5 +1,5 @@
 ---
-id: draftagentgw01
+id: draftagentgw02
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: Agent Communication Gateway for Semantic Routing and Working Memory
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-agent-gw-01
+  content: https://datatracker.ietf.org/doc/html/draft-agent-gw-02
 docidentifier:
 - content: draft-agent-gw
   type: Internet-Draft
-- content: draft-agent-gw-01
+- content: draft-agent-gw-02
   type: Internet-Draft
   primary: true
 docnumber: I-D.agent-gw
 date:
 - type: published
-  at: '2026-03-04'
+  at: '2026-07-12'
 contributor:
 - role:
   - type: author
@@ -118,7 +118,7 @@ contributor:
         - language: en
           content: Tsinghua University
 version:
-- content: '01'
+- content: '02'
 language:
 - en
 script:
@@ -141,28 +141,24 @@ abstract:
        workflows), automated protocol adaptation (normalizing heterogeneous
        interfaces into a unified agent-facing protocol), oracle-free agent
        evaluation, and collaborative inference acceleration via a Knowledge
-       Delivery Network (KDN).</p>
+       Delivery Network (KDN).
+
+       Beyond a single-gateway deployment, this document defines a
+       hierarchical architecture for wide-area, multi-domain agent networks:
+       three gateway tiers (access, domain, and inter-domain).  It describes
+       which traffic classes traverse which tiers on both the data plane and
+       the control plane, and specifies cross-domain semantic routing, name
+       resolution, resilience, and operational considerations.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-agent-gw-00
+      content: draft-agent-gw-01
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-agent-gw-00
+      content: https://datatracker.ietf.org/doc/html/draft-agent-gw-01
     docidentifier:
-    - content: draft-agent-gw-00
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-agent-gw-02
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-agent-gw-02
-    docidentifier:
-    - content: draft-agent-gw-02
+    - content: draft-agent-gw-01
       type: Internet-Draft
       primary: true
 series:
@@ -171,7 +167,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-agent-gw-01
+  number: draft-agent-gw-02
 ext:
   schema_version: v1.1.2
   doctype:

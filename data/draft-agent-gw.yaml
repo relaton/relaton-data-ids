@@ -29,7 +29,14 @@ abstract:
        workflows), automated protocol adaptation (normalizing heterogeneous
        interfaces into a unified agent-facing protocol), oracle-free agent
        evaluation, and collaborative inference acceleration via a Knowledge
-       Delivery Network (KDN).</p>
+       Delivery Network (KDN).
+
+       Beyond a single-gateway deployment, this document defines a
+       hierarchical architecture for wide-area, multi-domain agent networks:
+       three gateway tiers (access, domain, and inter-domain).  It describes
+       which traffic classes traverse which tiers on both the data plane and
+       the control plane, and specifies cross-domain semantic routing, name
+       resolution, resilience, and operational considerations.</p>
 relation:
 - type: includes
   bibitem:
@@ -51,5 +58,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-agent-gw-01
     docidentifier:
     - content: draft-agent-gw-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-agent-gw-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-agent-gw-02
+    docidentifier:
+    - content: draft-agent-gw-02
       type: Internet-Draft
       primary: true
