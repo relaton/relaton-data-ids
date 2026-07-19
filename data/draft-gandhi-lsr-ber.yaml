@@ -6,8 +6,8 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: IS-IS, OSPF and BGP-LS Traffic Engineering and Flexible Algorithm Extensions
-    for Utilizing Bit Error Rate Metrics
+  content: IS-IS, OSPF, and BGP-LS Extensions for Advertising Bit Error Rate Metric
+    for Traffic Engineering
 docidentifier:
 - content: draft-gandhi-lsr-ber
   type: Internet-Draft
@@ -16,16 +16,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes extensions to IS-IS, OSPF, and BGP-LS Traffic
-       Engineering to distribute the Bit Error Rate (BER) and Packet Error
-       Rate (PER) metrics for the links that can be used for flexible
-       algorithm and path selection purpose.
+    <p>Networks may experience transmission bit errors due to various
+       factors, such as poor fiber quality.  This document describes
+       extensions to IS-IS, OSPF, and BGP-LS to advertise the Bit Error Rate
+       (BER) and Packet Error Rate (PER) metrics for the links that can be
+       used for Traffic Engineering.
 
-
-       Note that this document only covers the mechanisms with which
-       network-performance information is distributed.  The mechanisms for
-       measuring network performance or acting on that information, once
-       distributed, are outside the scope of this document.</p>
+       Note that mechanisms for measuring bit errors or acting on that
+       information, once advertised, are outside the scope of this document.</p>
 relation:
 - type: includes
   bibitem:
@@ -47,5 +45,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-gandhi-lsr-ber-01
     docidentifier:
     - content: draft-gandhi-lsr-ber-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-gandhi-lsr-ber-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-gandhi-lsr-ber-02
+    docidentifier:
+    - content: draft-gandhi-lsr-ber-02
       type: Internet-Draft
       primary: true

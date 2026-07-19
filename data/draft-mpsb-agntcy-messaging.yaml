@@ -18,10 +18,10 @@ abstract:
     <p>Agentic AI systems require messaging infrastructure that supports
        real-time collaboration, high-volume streaming, and dynamic group
        coordination across distributed networks.  Traditional protocols like
-       AMQP, MQTT, and NATS address some requirements but fall short on
-       security, particularly regarding [AMQP] [MQTT] [NATS] post-compromise
-       protection and quantum-safe encryption essential for autonomous
-       agents handling sensitive data.
+       AMQP [AMQP], MQTT [MQTT], and NATS [NATS] address some requirements
+       but fall short on security, particularly regarding post-compromise
+       protection and forward secrecy essential for autonomous agents
+       handling sensitive data.
 
        This document analyzes six messaging protocols—AMQP, MQTT, NATS, AMQP
        over WebSockets, Kafka, and AGNTCY SLIM—across dimensions critical
@@ -32,13 +32,13 @@ abstract:
        organizational collaborations.
 
        AGNTCY SLIM emerges as a purpose-built solution, integrating Message
-       Layer Security (MLS) [RFC9420] with gRPC [gRPC] over HTTP/2 [RFC7540]
-       to provide quantum-safe end-to-end encryption, efficient streaming,
-       and OAuth-based authentication [RFC6749].  Unlike transport-layer
-       security approaches, SLIM's MLS implementation ensures secure
-       communication even through untrusted intermediaries while supporting
-       dynamic group membership changes essential for collaborative AI
-       agents.</p>
+       Layer Security (MLS) [RFC9420] with gRPC [gRPC] over HTTP/2 [RFC9113]
+       to provide end-to-end encryption with forward secrecy, efficient
+       streaming, and OAuth-based authentication [RFC6749].  Unlike
+       transport-layer security approaches, SLIM's MLS implementation
+       ensures secure communication even through untrusted intermediaries
+       while supporting dynamic group membership changes essential for
+       collaborative AI agents.</p>
 relation:
 - type: includes
   bibitem:
@@ -60,5 +60,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-mpsb-agntcy-messaging-01
     docidentifier:
     - content: draft-mpsb-agntcy-messaging-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-mpsb-agntcy-messaging-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-mpsb-agntcy-messaging-02
+    docidentifier:
+    - content: draft-mpsb-agntcy-messaging-02
       type: Internet-Draft
       primary: true
