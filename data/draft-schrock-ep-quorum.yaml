@@ -21,10 +21,10 @@ abstract:
        accountable human to one exact high-risk action, EP-QUORUM binds a
        set of distinct accountable humans -- the "two-person rule,"
        generalized to M-of-N and to ordered approval trails -- to one exact
-       action, such that no action is authorized until the full quorum
-       holds.  The profile is purely additive: each quorum member is an
-       unmodified EP signoff over the same action hash, and a single-
-       approver policy is the degenerate one-member case.  EP-QUORUM
+       action, such that the quorum predicate is not satisfied until the
+       full quorum holds.  The profile is purely additive: each quorum
+       member is an unmodified EP signoff over the same action hash, and a
+       single-approver policy is the degenerate one-member case.  EP-QUORUM
        specifies a fail-closed quorum predicate (all member signatures
        valid, every member bound to the exact action, approvers pairwise
        distinct, every approver admitted by role, the threshold met, the
@@ -41,7 +41,8 @@ abstract:
        describes, informatively, the multi-handshake composition process:
        how individual signing ceremonies -- fresh one-time challenge, exact-
        action binding, user-verified device signature -- compose into one
-       ordered, offline-verifiable, once-consumable multi-party decision.</p>
+       ordered, offline-verifiable, at-most-once-consumable multi-party
+       decision.</p>
 relation:
 - type: includes
   bibitem:
@@ -74,5 +75,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-quorum-02
     docidentifier:
     - content: draft-schrock-ep-quorum-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ep-quorum-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-quorum-03
+    docidentifier:
+    - content: draft-schrock-ep-quorum-03
       type: Internet-Draft
       primary: true
