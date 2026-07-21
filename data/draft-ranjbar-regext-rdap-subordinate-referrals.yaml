@@ -24,10 +24,15 @@ abstract:
        conformant RDAP service for that data, there is currently no
        discoverable referral from the registry's response to the holder's
        service.  This document describes an optional, holder-designated
-       referral for subordinate resources, building on the explicit redirect
-       mechanism defined for RDAP.  It is written as input to draft-ietf-
-       regext-rdap-referrals and its content may be merged into that
-       document.</p>
+       referral for subordinate resources, carried by a pair of directional
+       RDAP link relations, "rdap-base-down" and "rdap-base-up", whose
+       targets are the base URL of a downstream RDAP service and the base
+       URL of the covering registry service, respectively.  The holder-
+       designated subordinate referral is the primary application, but the
+       same relations serve related base-URL discovery needs, including
+       delegated and hybrid RPKI referrals.  It is written as input to
+       draft-ietf-regext-rdap-referrals and its content may be merged into
+       that document.</p>
 relation:
 - type: includes
   bibitem:
@@ -38,5 +43,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ranjbar-regext-rdap-subordinate-referrals-00
     docidentifier:
     - content: draft-ranjbar-regext-rdap-subordinate-referrals-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ranjbar-regext-rdap-subordinate-referrals-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ranjbar-regext-rdap-subordinate-referrals-01
+    docidentifier:
+    - content: draft-ranjbar-regext-rdap-subordinate-referrals-01
       type: Internet-Draft
       primary: true
