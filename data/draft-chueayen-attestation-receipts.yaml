@@ -1,0 +1,40 @@
+---
+id: draftchueayenattestationreceipts
+schema_version: v1.5.6
+formattedref:
+  content: draft-chueayen-attestation-receipts
+title:
+- language: en
+  script: Latn
+  content: Enforcement Attestation Receipts for AI Inference Decisions
+docidentifier:
+- content: draft-chueayen-attestation-receipts
+  type: Internet-Draft
+  primary: true
+abstract:
+- language: en
+  script: Latn
+  content: |-
+    <p>This document specifies the on-the-wire format of an attestation
+       receipt produced by an AI enforcement gateway at the moment it
+       decides whether a large-language-model (LLM) call is permitted.  A
+       receipt binds that decision to a specific request under a published
+       Ed25519 public key, so that a party who does not trust the gateway
+       can still verify offline what was decided.  The format is
+       deliberately minimal, a fixed set of fields and a version-selected
+       signature suite, chosen for the smallest possible independent
+       verifier.  It is intended for settings in which an operator-
+       controlled log is not, on its own, sufficient evidence of the
+       enforcement decision.</p>
+relation:
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-chueayen-attestation-receipts-00
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-chueayen-attestation-receipts-00
+    docidentifier:
+    - content: draft-chueayen-attestation-receipts-00
+      type: Internet-Draft
+      primary: true

@@ -17,12 +17,15 @@ abstract:
   content: |-
     <p>This document describes the mechanism and operational guidelines for
        fast protecting the egress node and link of a Segment Routing for
-       IPv6 (SRv6) path.  TI-LFA specifies fast protections for transit
-       nodes and links of an SR path, but does not present protections for
-       the egress node.  The solution uses a Mirror SID (End.M) behavior to
-       steer traffic to a protector egress upon failure of the primary
-       egress.  The IGP extensions (IS-IS/OSPFv3) can be used to advertise
-       Mirror SID and protected locators.</p>
+       IPv6 (SRv6) path.  Topology Independent Loop-Free Alternate (TI-LFA)
+       specifies fast protections for transit nodes and links of an SR path,
+       but does not present protections for the egress node.  The solution
+       uses a Mirror SID (End.M) behavior to steer traffic to a protector
+       egress upon failure of the primary egress.  The Interior Gateway
+       Protocol (IGP) (IS-IS/OSPFv3) extensions used to advertise the Mirror
+       SID and protected locators are specified in
+       [I-D.he-lsr-srv6-mirror-sid-igp-encoding]; they build on the IS-IS
+       and OSPFv3 SRv6 extensions defined in [RFC9352] and [RFC9513].</p>
 relation:
 - type: includes
   bibitem:
@@ -297,5 +300,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-24
     docidentifier:
     - content: draft-ietf-rtgwg-srv6-egress-protection-24
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-rtgwg-srv6-egress-protection-25
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-rtgwg-srv6-egress-protection-25
+    docidentifier:
+    - content: draft-ietf-rtgwg-srv6-egress-protection-25
       type: Internet-Draft
       primary: true

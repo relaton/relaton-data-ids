@@ -26,7 +26,14 @@ abstract:
        with COSE_Encrypt0 under keys derived from and controlled by the
        user.  A storage or synchronisation server handling ApertoMemory
        objects has zero access to their content, authorship, or semantic
-       timestamps.</p>
+       timestamps.
+
+       This revision specifies format_version 2, which cryptographically
+       binds every signature to the author it claims and to the cleartext
+       envelope around it, and derives trust from which key verified an
+       object rather than from a declared field. format_version 1, described
+       by earlier revisions of this document, carries a known forgeable-
+       provenance defect and MUST NOT be implemented for new deployments.</p>
 relation:
 - type: includes
   bibitem:
@@ -48,5 +55,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ferro-apertomemory-01
     docidentifier:
     - content: draft-ferro-apertomemory-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ferro-apertomemory-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ferro-apertomemory-02
+    docidentifier:
+    - content: draft-ferro-apertomemory-02
       type: Internet-Draft
       primary: true

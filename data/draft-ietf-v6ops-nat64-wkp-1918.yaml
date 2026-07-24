@@ -16,14 +16,14 @@ abstract:
   script: Latn
   content: |-
     <p>This document modifies the requirement introduced in Section 3.1 of
-       [RFC6052] that the NAT64 Well-Known Prefix 64:ff9B::/96 MUST NOT be
+       RFC6052 that the NAT64 Well-Known Prefix 64:ff9b::/96 MUST NOT be
        used to represent non-globally reachable IPv4 addresses, such as
-       those defined in [RFC1918] or listed in Section 2.2.2 of [RFC6890].
-       The proposed change enables IPv6-only nodes to reach IPv4-only
-       services with specific non-globally reachable addresses by leveraging
-       the Well-Known Prefix.
+       those defined in RFC1918 or listed in Section 2.2.2 of RFC6890.  The
+       proposed change enables IPv6-only nodes to reach IPv4-only services
+       with specific non-globally reachable addresses by leveraging the
+       Well-Known Prefix.
 
-       This document updates Section 3.1 of [RFC6052] ("Restrictions on the
+       This document updates Section 3.1 of RFC6052 ("Restrictions on the
        Use of the Well-Known Prefix") to allow packets in which an address
        is composed of the Well-Known Prefix and specific non-globally
        reachable IPv4 addresses to be translated.</p>
@@ -70,5 +70,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-nat64-wkp-1918-03
     docidentifier:
     - content: draft-ietf-v6ops-nat64-wkp-1918-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-v6ops-nat64-wkp-1918-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-v6ops-nat64-wkp-1918-04
+    docidentifier:
+    - content: draft-ietf-v6ops-nat64-wkp-1918-04
       type: Internet-Draft
       primary: true
