@@ -6,7 +6,8 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: HTTP Profile for Synchronized Resource State (Agentic State Transfer)
+  content: HTTP Profile for Conditional Updates to Shared Resource State (Agentic
+    State Transfer)
 docidentifier:
 - content: draft-jurkovikj-httpapi-agentic-state
   type: Internet-Draft
@@ -15,25 +16,22 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>HTTP resources are frequently exposed in multiple representations
-       (e.g., text/html for rendering and application/json for
-       processing) via Content Negotiation. Standard HTTP validators such
-       as ETags identify selected representations, while many
-       applications need concurrency control over a shared logical
-       resource state. This creates a synchronization gap where a client
-       modifying one representation cannot guarantee consistency with the
-       underlying state of another representation, leading to race
-       conditions and "lost updates" in multi-client environments.
+    <p>HTTP applications frequently expose one logical object through
+       several representations or resources.  Ordinary HTTP entity tags
+       identify selected representations; they do not, by themselves,
+       provide a conditional-update mechanism spanning different request
+       targets.
 
-       This document specifies Agentic State Transfer (AST), an HTTP
-       profile for managing Canonical Resource State (CRS) across
-       multiple synchronized representations of the same resource. It
-       defines a State-Bearing Representation (SBR) whose strong ETag
-       acts as the AST semantic validator for the CRS. It further
-       mandates the use of Optimistic Concurrency Control via If-Match
-       headers for state-changing operations, ensuring that mutations
-       applied by agents (whether automated clients, scripts, or human-
-       driven applications) are atomic and consistent across all views.</p>
+       This document specifies Agentic State Transfer (AST), an HTTP profile
+       for preventing lost updates to shared application state.  AST Core
+       requires a client to mutate the State-Bearing Resource using the
+       strong ETag of its State-Bearing Representation and the standard If-
+       Match field.  AST Semantic uses Semantic-ETag and If-Semantic-Match
+       when a protected mutation targets a different resource or
+       representation in the same concurrency domain.  The profile also
+       defines state discovery, atomic compare-and-commit behavior, conflict
+       handling, deferred processing, caching constraints, and security
+       requirements.</p>
 relation:
 - type: includes
   bibitem:
@@ -55,5 +53,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-jurkovikj-httpapi-agentic-state-01
     docidentifier:
     - content: draft-jurkovikj-httpapi-agentic-state-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-jurkovikj-httpapi-agentic-state-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jurkovikj-httpapi-agentic-state-02
+    docidentifier:
+    - content: draft-jurkovikj-httpapi-agentic-state-02
       type: Internet-Draft
       primary: true
