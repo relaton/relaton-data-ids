@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: 'SDLP RFC 3: Transformation and Lineage Rules'
+  content: 'SDLP RFC 3: Object Format Specification'
 docidentifier:
 - content: draft-norton-sdlp-obj-format
   type: Internet-Draft
@@ -15,15 +15,15 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines the transformation rules and lineage guarantees
-       for the Secured Digital Lifecycle Protocol (SDLP). Transformations
-       represent any modification, duplication, conversion, or derivative
-       operation performed on an SDLP object. All transformations MUST
-       produce descendant identities, extend lineage, preserve ancestry, and
-       maintain tamper-evident integrity. This document defines the
-       transformation model, lineage structure, invariants, and security
-       requirements that govern all SDLP transformations, including updated
-       lifecycle semantics introduced in this revision.</p>
+    <p>This document defines the canonical object format for the Secured
+       Digital Lifecycle Protocol (SDLP). The object format specifies the
+       normative byte-level representation used for hashing, signing,
+       validation, and interoperability across SDLP implementations. All
+       SDLP-governed objects MUST follow the canonical encoding, field
+       ordering, and serialization grammar defined in this specification.
+       This document updates and replaces draft-norton-sdlp-obj-format-00
+       and resolves inconsistencies identified during interoperability
+       analysis with Identity-02 and Lifecycle-02.</p>
 relation:
 - type: includes
   bibitem:
@@ -34,5 +34,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-norton-sdlp-obj-format-00
     docidentifier:
     - content: draft-norton-sdlp-obj-format-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-norton-sdlp-obj-format-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-norton-sdlp-obj-format-01
+    docidentifier:
+    - content: draft-norton-sdlp-obj-format-01
       type: Internet-Draft
       primary: true
