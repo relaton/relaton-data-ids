@@ -15,11 +15,15 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies JSON Object Signing and Encryption (JOSE) and
-       CBOR Object Signing and Encryption (COSE) serializations for
-       Stateless Hash-Based Digital Signature Standard (SLH-DSA), a Post-
-       Quantum Cryptography (PQC) digital signature scheme defined in US
-       NIST FIPS 205.</p>
+    <p>Digital signatures are used within JSON Object Signing and Encryption
+       (JOSE) and CBOR Object Signing and Encryption (COSE) to protect the
+       integrity and authenticity of messages, such as JSON Web Signatures
+       and signed COSE structures.  This document specifies JOSE and COSE
+       serializations for the Stateless Hash-Based Digital Signature
+       Standard (SLH-DSA), a Post-Quantum Cryptography (PQC) digital
+       signature scheme defined in US NIST FIPS 205.  The conventions for
+       the associated algorithm identifiers, signatures, public keys, and
+       private keys are also specified.</p>
 relation:
 - type: includes
   bibitem:
@@ -129,5 +133,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-sphincs-plus-09
     docidentifier:
     - content: draft-ietf-cose-sphincs-plus-09
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-cose-sphincs-plus-10
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-cose-sphincs-plus-10
+    docidentifier:
+    - content: draft-ietf-cose-sphincs-plus-10
       type: Internet-Draft
       primary: true

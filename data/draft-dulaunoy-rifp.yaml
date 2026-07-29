@@ -19,10 +19,10 @@ abstract:
        compact, unidirectional object-transfer protocol intended for
        transmitting images over low-rate radio links.  RIFP defines
        independently synchronized frames, a versioned and extensible binary
-       header, fragmentation and reassembly rules, a JSON manifest, per-
-       frame CRC-32 protection, whole-object SHA-256 verification, and
-       registries for future frame types, flags, header extensions, media
-       encodings, and radio profiles.
+       header, fragmentation and reassembly rules, a fixed binary object
+       descriptor, optional JSON metadata, per-frame CRC-32 protection,
+       whole-object SHA-256 verification, and registries for future frame
+       types, flags, header extensions, media encodings, and radio profiles.
 
        RIFP is independent of a particular frequency allocation or
        modulation.  This document also defines an initial continuous-phase
@@ -40,5 +40,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-dulaunoy-rifp-00
     docidentifier:
     - content: draft-dulaunoy-rifp-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-dulaunoy-rifp-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dulaunoy-rifp-01
+    docidentifier:
+    - content: draft-dulaunoy-rifp-01
       type: Internet-Draft
       primary: true
