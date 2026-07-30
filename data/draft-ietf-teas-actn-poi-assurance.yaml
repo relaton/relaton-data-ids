@@ -19,12 +19,17 @@ abstract:
     <p>This document extends the analysis of the applicability of
        Abstraction and Control of TE Networks (ACTN) architecture to Packet
        Optical Integration (POI) to cover multi-layer service assurance
-       scenarios.  Specifically, the ACTN architecture enables the detection
-       and handling of different failures that may happen either at the
-       optical or the packet layer.  It is assumed that the underlying
-       transport optical network carries end-to-end IP services such as
-       L2VPN or L3VPN connectivity services, with specific Service Level
-       Agreement (SLA) requirements.
+       scenarios.  Specifically, the ACTN architecture supports service
+       assurance through the detection and correlation of failures across
+       the optical and packet layers, with failure handling performed
+       through the relevant PNC.  The MDSC can also request health checks
+       for IP services across multi-domain paths for SLA conformance
+       assessment.  The PNCs may also be configured with thresholds so that
+       alerts are reported when relevant service or network conditions
+       exceed defined limits.  It is assumed that the underlying transport
+       optical network carries end-to-end IP services such as L2VPN or L3VPN
+       connectivity services, with specific Service Level Agreement (SLA)
+       requirements.
 
        Existing IETF protocols and data models are identified for each
        multi-layer (packet over optical) service assurance scenario with a
@@ -84,5 +89,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-actn-poi-assurance-04
     docidentifier:
     - content: draft-ietf-teas-actn-poi-assurance-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-teas-actn-poi-assurance-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-actn-poi-assurance-05
+    docidentifier:
+    - content: draft-ietf-teas-actn-poi-assurance-05
       type: Internet-Draft
       primary: true
