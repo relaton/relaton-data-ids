@@ -6,7 +6,8 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Intra-handshake.fail (CVE-2026-33697 of CVSS 7.5)
+  content: Intra-handshake Attestation Considered Harmful (CVE-2026-33697 of CVSS
+    7.5)
 docidentifier:
 - content: draft-intra-handshake-fail
   type: Internet-Draft
@@ -16,8 +17,13 @@ abstract:
   script: Latn
   content: |-
     <p>The draft aims to provide technical details of CVE-2026-33697, which
-       is substantial technical evidence of how intra-handshake attestation
-       fails in practice.</p>
+       is substantial technical evidence of how *intra*-handshake
+       attestation fails in practice.  Moreover, since continuous
+       attestation is required, *intra*-handshake attestation adds
+       *unnecessary complexity*. The results are backed by the research
+       [Intra-handshake.fail] and the ProVerif artifacts
+       [Intra-handshake.fail-repo] under Apache-2.0 license for
+       reproducibility.</p>
 relation:
 - type: includes
   bibitem:
@@ -28,5 +34,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-intra-handshake-fail-00
     docidentifier:
     - content: draft-intra-handshake-fail-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-intra-handshake-fail-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-intra-handshake-fail-01
+    docidentifier:
+    - content: draft-intra-handshake-fail-01
       type: Internet-Draft
       primary: true

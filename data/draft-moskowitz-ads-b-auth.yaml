@@ -26,10 +26,11 @@ abstract:
        has flown and where to.  In addition, the main transmission medium
        utilized for ADS-B, i.e. the 1090 MHz frequency used by Extended
        Squitter (1090ES), is approaching saturation in some parts of the
-       world, resulting in packet loss in certain areas [RF_Usage].
+       world with ADS-B and other protocol messages, resulting in packet
+       loss in certain areas [RF_Usage].
 
-       This paper presents how to use the IETF TESLA protocol along with
-       X.509 certificates issued by ICAO member states for each aircraft to
+       This paper presents the IETF TESLA protocol along with X.509
+       certificates issued by ICAO member states for each aircraft to
        authenticate all ADS-B messaging.  It leverages the 8PSK phase
        overlay (PO) scheme proposed in the Minimum Operational Performance
        Standards (MOPS) for ADS-B (RTCA [DO-260C]), which enables 1090ES
@@ -37,7 +38,7 @@ abstract:
        support the transmission of the extra security information required
        by the authentication scheme.  By doing so, the impact of
        authentication on channel usage is negligible.  Beyond message
-       authentication, this scheme proposed has two important additional
+       authentication, this scheme protocol has two important additional
        benefits: 1) the possibility to implement a Flight Authorization
        scheme, allowing ATC and intercepting aircraft to not only
        authenticate an aircraft but to verify that it is authorizes to
@@ -55,5 +56,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-moskowitz-ads-b-auth-00
     docidentifier:
     - content: draft-moskowitz-ads-b-auth-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-moskowitz-ads-b-auth-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-moskowitz-ads-b-auth-01
+    docidentifier:
+    - content: draft-moskowitz-ads-b-auth-01
       type: Internet-Draft
       primary: true
