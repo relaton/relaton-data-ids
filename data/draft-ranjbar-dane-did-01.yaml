@@ -1,5 +1,5 @@
 ---
-id: draftranjbardanedid00
+id: draftranjbardanedid01
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: 'Rooting Decentralized Identifiers in DNSSEC: A DANE-EE Key-Binding Profile'
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ranjbar-dane-did-00
+  content: https://datatracker.ietf.org/doc/html/draft-ranjbar-dane-did-01
 docidentifier:
 - content: draft-ranjbar-dane-did
   type: Internet-Draft
-- content: draft-ranjbar-dane-did-00
+- content: draft-ranjbar-dane-did-01
   type: Internet-Draft
   primary: true
 docnumber: I-D.ranjbar-dane-did
 date:
 - type: published
-  at: '2026-07-22'
+  at: '2026-08-01'
 contributor:
 - role:
   - type: author
@@ -45,8 +45,36 @@ contributor:
         name:
         - language: en
           content: Whisper Security (viaGraph B.V.)
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Anivar
+      - language: en
+        script: Latn
+        initial: A
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A. A.
+      surname:
+        language: en
+        content: Aravind
+      completename:
+        language: en
+        content: Anivar A Aravind
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Independent Researcher
 version:
-- content: '00'
+- content: '01'
 language:
 - en
 script:
@@ -66,22 +94,22 @@ abstract:
        DID method can point at rather than reinventing: a verification
        method's public key is published as a TLSA record with certificate
        usage DANE-EE(3), selector SubjectPublicKeyInfo(1), and matching type
-       SHA-256(1) under a DNSSEC-signed name, so that a relying party can
+       SHA2-256(1) under a DNSSEC-signed name, so that a relying party can
        confirm the key from the DNS root of trust with no certificate
        authority and no fetch from the subject.  The profile binds a name to
        a key and the key to the specific DID document it signs, and no
        further; it states precisely what it does not cover, including
        continuity of holding, and points to where those answers live.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-ranjbar-dane-did-01
+      content: draft-ranjbar-dane-did-00
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ranjbar-dane-did-01
+      content: https://datatracker.ietf.org/doc/html/draft-ranjbar-dane-did-00
     docidentifier:
-    - content: draft-ranjbar-dane-did-01
+    - content: draft-ranjbar-dane-did-00
       type: Internet-Draft
       primary: true
 series:
@@ -90,7 +118,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ranjbar-dane-did-00
+  number: draft-ranjbar-dane-did-01
 ext:
   schema_version: v1.1.2
   doctype:

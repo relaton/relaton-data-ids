@@ -1,24 +1,24 @@
 ---
-id: draftietfteasnscontrollermodels07
+id: draftietfmplsmnapshdr13
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: IETF Network Slice Controller and its Associated Data Models
+  content: Post-Stack MPLS Network Action (MNA) Header Specification
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ns-controller-models-07
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-ps-hdr-13
 docidentifier:
-- content: draft-ietf-teas-ns-controller-models
+- content: draft-ietf-mpls-mna-ps-hdr
   type: Internet-Draft
-- content: draft-ietf-teas-ns-controller-models-07
+- content: draft-ietf-mpls-mna-ps-hdr-13
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-teas-ns-controller-models
+docnumber: I-D.ietf-mpls-mna-ps-hdr
 date:
 - type: published
-  at: '2026-06-10'
+  at: '2026-07-31'
 contributor:
 - role:
   - type: author
@@ -27,60 +27,7 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Luis
-      - language: en
-        script: Latn
-        initial: L
-      - language: en
-        script: Latn
-        initial: M
-      formatted_initials:
-        language: en
-        content: L. M.
-      surname:
-        language: en
-        content: Contreras
-      completename:
-        language: en
-        content: Luis M. Contreras
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Telefonica
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Reza
-      - language: en
-        script: Latn
-        initial: R
-      formatted_initials:
-        language: en
-        content: R.
-      surname:
-        language: en
-        content: Rokui
-      completename:
-        language: en
-        content: Reza Rokui
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: Ciena
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Jeff
+        content: Jaganbabu
       - language: en
         script: Latn
         initial: J
@@ -89,15 +36,15 @@ contributor:
         content: J.
       surname:
         language: en
-        content: Tantsura
+        content: Rajamanickam
       completename:
         language: en
-        content: Jeff Tantsura
+        content: Jaganbabu Rajamanickam
     affiliation:
     - organization:
         name:
         - language: en
-          content: Nvidia
+          content: Cisco Systems, Inc.
 - role:
   - type: author
   person:
@@ -105,21 +52,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        initial: B
+        content: Rakesh
+      - language: en
+        script: Latn
+        initial: R
       formatted_initials:
         language: en
-        content: B.
+        content: R.
       surname:
         language: en
-        content: Wu
+        content: Gandhi
       completename:
         language: en
-        content: Bo Wu
+        content: Rakesh Gandhi
     affiliation:
     - organization:
         name:
         - language: en
-          content: Huawei
+          content: Cisco Systems, Inc.
 - role:
   - type: author
   person:
@@ -127,21 +77,76 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Xufeng
+        content: Royi
       - language: en
         script: Latn
-        initial: X
+        initial: R
       formatted_initials:
         language: en
-        content: X.
+        content: R.
       surname:
         language: en
-        content: Liu
+        content: Zigler
       completename:
         language: en
-        content: Xufeng Liu
+        content: Royi Zigler
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Broadcom
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Jie
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
+      surname:
+        language: en
+        content: Dong
+      completename:
+        language: en
+        content: Jie Dong
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Huawei Technologies
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Jisu
+      - language: en
+        script: Latn
+        initial: J
+      formatted_initials:
+        language: en
+        content: J.
+      surname:
+        language: en
+        content: Bhattacharya
+      completename:
+        language: en
+        content: Jisu Bhattacharya
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: Cisco Systems, Inc.
 version:
-- content: '07'
+- content: '13'
 language:
 - en
 script:
@@ -150,32 +155,29 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes an approach for structuring the IETF Network
-       Slice Controller as well as how to use different data models being
-       defined for IETF Network Slice Service provision (and how they are
-       related).  It is not the purpose of this document to standardize or
-       constrain the implementation the IETF Network Slice Controller.</p>
+    <p>This document specifies the Post-Stack MPLS Network Action (MNA)
+       Header encoding and procedures for carrying Network Action encodings
+       and Ancillary Data after the MPLS label stack, based on the MNA Sub-
+       Stack including In-Stack Network Actions and Data specified in RFC
+       9994.  MPLS Network Actions can be used to influence packet
+       forwarding decisions, carry additional Operations, Administration,
+       and Maintenance information in the MPLS packet, or perform user-
+       defined operations.  This document follows the framework specified in
+       RFC 9789.
+
+       This document updates RFC 9994: the "Network Action Opcodes" registry
+       fields, the Post-Stack MNA applicability of the opcodes, MNA scope,
+       and Unknown action handling.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-teas-ns-controller-models-06
+      content: draft-ietf-mpls-mna-ps-hdr-12
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ns-controller-models-06
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-ps-hdr-12
     docidentifier:
-    - content: draft-ietf-teas-ns-controller-models-06
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-teas-ns-controller-models-08
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-teas-ns-controller-models-08
-    docidentifier:
-    - content: draft-ietf-teas-ns-controller-models-08
+    - content: draft-ietf-mpls-mna-ps-hdr-12
       type: Internet-Draft
       primary: true
 series:
@@ -184,7 +186,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-teas-ns-controller-models-07
+  number: draft-ietf-mpls-mna-ps-hdr-13
 ext:
   schema_version: v1.1.2
   doctype:
