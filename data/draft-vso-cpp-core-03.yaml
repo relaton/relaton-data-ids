@@ -1,5 +1,5 @@
 ---
-id: draftvsocppcore02
+id: draftvsocppcore03
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: Content Provenance Profile (CPP) Core
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-02
+  content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-03
 docidentifier:
 - content: draft-vso-cpp-core
   type: Internet-Draft
-- content: draft-vso-cpp-core-02
+- content: draft-vso-cpp-core-03
   type: Internet-Draft
   primary: true
 docnumber: I-D.vso-cpp-core
 date:
 - type: published
-  at: '2026-02-07'
+  at: '2026-08-02'
 contributor:
 - role:
   - type: author
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: VeritasChain Co., Ltd.
 version:
-- content: '02'
+- content: '03'
 language:
 - en
 script:
@@ -67,34 +67,30 @@ abstract:
        independent timestamp verification through RFC 3161 TSA services,
        providing externally verifiable proof of when media was captured.
 
-       This revision (-01) incorporates implementation experience from
-       multi-platform deployments, adding self-attested signer identity,
-       hardware-backed key requirements, chain context for partial
-       submission detection, depth analysis extensions for screen detection,
-       and a Pre-Publish Verification Extension for social media sharing
-       workflows.  It also defines interoperability mappings with the C2PA
-       specification.</p>
+       CPP defines self-attested signer identity, hardware-backed key
+       requirements, chain context for partial submission detection, a
+       Completeness Invariant for omission detection, an OPTIONAL depth
+       analysis extension for screen detection, and an OPTIONAL Pre-Publish
+       Verification Extension.  It also defines interoperability mappings
+       with the C2PA specification.
+
+       This revision (-03) corrects a normative length constraint on the
+       LeafHashMethod value, corrects the description of the relationship
+       between the CPP Merkle construction and Certificate Transparency,
+       adds a verifier obligation to cross-check TreeSize against the sealed
+       event count, documents the limits of leaf-duplication padding, and
+       positions CPP within the Verifiable AI Provenance Framework (VAP)
+       profile family and relative to the SCITT architecture (RFC 9943).</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-vso-cpp-core-01
+      content: draft-vso-cpp-core-02
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-01
+      content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-02
     docidentifier:
-    - content: draft-vso-cpp-core-01
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-vso-cpp-core-03
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-03
-    docidentifier:
-    - content: draft-vso-cpp-core-03
+    - content: draft-vso-cpp-core-02
       type: Internet-Draft
       primary: true
 series:
@@ -103,7 +99,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-vso-cpp-core-02
+  number: draft-vso-cpp-core-03
 ext:
   schema_version: v1.1.2
   doctype:

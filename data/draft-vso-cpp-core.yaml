@@ -27,13 +27,20 @@ abstract:
        independent timestamp verification through RFC 3161 TSA services,
        providing externally verifiable proof of when media was captured.
 
-       This revision (-01) incorporates implementation experience from
-       multi-platform deployments, adding self-attested signer identity,
-       hardware-backed key requirements, chain context for partial
-       submission detection, depth analysis extensions for screen detection,
-       and a Pre-Publish Verification Extension for social media sharing
-       workflows.  It also defines interoperability mappings with the C2PA
-       specification.</p>
+       CPP defines self-attested signer identity, hardware-backed key
+       requirements, chain context for partial submission detection, a
+       Completeness Invariant for omission detection, an OPTIONAL depth
+       analysis extension for screen detection, and an OPTIONAL Pre-Publish
+       Verification Extension.  It also defines interoperability mappings
+       with the C2PA specification.
+
+       This revision (-03) corrects a normative length constraint on the
+       LeafHashMethod value, corrects the description of the relationship
+       between the CPP Merkle construction and Certificate Transparency,
+       adds a verifier obligation to cross-check TreeSize against the sealed
+       event count, documents the limits of leaf-duplication padding, and
+       positions CPP within the Verifiable AI Provenance Framework (VAP)
+       profile family and relative to the SCITT architecture (RFC 9943).</p>
 relation:
 - type: includes
   bibitem:
@@ -66,5 +73,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-02
     docidentifier:
     - content: draft-vso-cpp-core-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-vso-cpp-core-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-vso-cpp-core-03
+    docidentifier:
+    - content: draft-vso-cpp-core-03
       type: Internet-Draft
       primary: true
