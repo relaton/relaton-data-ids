@@ -1,5 +1,5 @@
 ---
-id: draftschrockepboundedcapabilityreceipts00
+id: draftschrockepboundedcapabilityreceipts01
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: Bounded Capability Receipts and Durable Spend Control for Agent Actions
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-00
+  content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-01
 docidentifier:
 - content: draft-schrock-ep-bounded-capability-receipts
   type: Internet-Draft
-- content: draft-schrock-ep-bounded-capability-receipts-00
+- content: draft-schrock-ep-bounded-capability-receipts-01
   type: Internet-Draft
   primary: true
 docnumber: I-D.schrock-ep-bounded-capability-receipts
 date:
 - type: published
-  at: '2026-07-19'
+  at: '2026-08-02'
 contributor:
 - role:
   - type: author
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: EMILIA Protocol, Inc.
 version:
-- content: '00'
+- content: '01'
 language:
 - en
 script:
@@ -68,21 +68,25 @@ abstract:
        holder proof, an expiry, and any parent capability.  The state
        protocol atomically refuses overspend and replay, fences concurrent
        owners, and charges an indeterminate operation when an external
-       effect may have occurred.  It also defines narrowing-only delegation
-       and evidence interfaces.  It does not make a bearer token into human
-       approval, does not provide offline global double-spend prevention,
-       and does not claim that an authorized action was safe, lawful, or
-       successfully executed.</p>
+       effect may have occurred.  Delegation transfers rather than copies
+       authority: all direct child allocations are funded by committed
+       parent operations before child registration, and their aggregate
+       cannot exceed the parent balance within one authoritative atomic
+       state domain.  It also defines narrowing-only delegation and evidence
+       interfaces.  It does not make a bearer token into human approval,
+       does not provide cross-domain or offline global double-spend
+       prevention, and does not claim that an authorized action was safe,
+       lawful, or successfully executed.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-schrock-ep-bounded-capability-receipts-01
+      content: draft-schrock-ep-bounded-capability-receipts-00
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-01
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-00
     docidentifier:
-    - content: draft-schrock-ep-bounded-capability-receipts-01
+    - content: draft-schrock-ep-bounded-capability-receipts-00
       type: Internet-Draft
       primary: true
 series:
@@ -91,7 +95,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-schrock-ep-bounded-capability-receipts-00
+  number: draft-schrock-ep-bounded-capability-receipts-01
 ext:
   schema_version: v1.1.2
   doctype:
