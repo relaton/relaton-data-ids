@@ -32,7 +32,21 @@ abstract:
        revocation status, global non-replay, comprehension, legality,
        safety, or execution.  Replay prevention requires an online atomic
        consumption store at the executor.  The state-machine invariants are
-       machine-checked under the assumptions stated in this document.</p>
+       machine-checked under the assumptions stated in this document.
+
+       A receipt is evidence, not authorization.  This document does not
+       treat a local user interaction as an authorization decision.
+       Section 10.7 of [I-D.klrc-aiagent-auth] states that an agent MUST NOT
+       treat local UI confirmation alone as sufficient authorization, and
+       notes that additional specification or design work may be needed for
+       user confirmation occurring mid-execution, since CIBA accounts only
+       for client initiation.  This document defines one evidence artifact
+       that an authorization architecture can use in such a flow: the signed
+       Authorization Context is action-bound confirmation evidence an
+       authorization server MAY validate and bind to the grant it issues.
+       The resulting Trust Receipt records terminal consumption and remains
+       evidence; neither object makes the authorization decision.  That
+       decision remains with the authorization server.</p>
 relation:
 - type: includes
   bibitem:
@@ -131,5 +145,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authorization-receipts-08
     docidentifier:
     - content: draft-schrock-ep-authorization-receipts-08
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ep-authorization-receipts-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authorization-receipts-09
+    docidentifier:
+    - content: draft-schrock-ep-authorization-receipts-09
       type: Internet-Draft
       primary: true
