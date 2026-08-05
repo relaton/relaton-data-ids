@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Gravit Epistemic Verification Protocol (GEVP) v0.1
+  content: Gravit Epistemic Verification Protocol (GEVP)
 docidentifier:
 - content: draft-gravit-gevp
   type: Internet-Draft
@@ -15,36 +15,11 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Gravit Epistemic Verification Protocol (GEVP) defines minimal data
-       types and APIs for autonomous agents and human-machine systems to
-       achieve epistemic convergence without centralized truth arbiters.
-       GEVP is transport-agnostic, blockchain-agnostic, and model-agnostic.
-       This document defines a parameterized cost model where C_validation
-       is the cost to verify a Claim's provenance and signatures, and
-       C_manipulation is the estimated cost to forge a quorum of
-       attestations under GQRVP.  The protocol enforces the engineering
-       invariant C_manipulation &gt; C_validation for all accepted Claims.
-
-       This document was previously published as draft-gravit-vcp-00 and -01
-       under the acronym VCP (Verifiable Convergence Protocol).  To avoid
-       collision with VeritasChain Protocol (VCP) defined in draft-kamimura-
-       scitt-vcp [KAMIMURA-VCP], which is a SCITT profile for financial
-       trading audit trails first published December 2025, the acronym is
-       changed to GEVP from -02 onward.  The two protocols are unrelated and
-       address different domains.  The former VCP acronym is deprecated and
-       MUST NOT be used for this protocol.
-
-       This revision (-04) archives reproducible trace to Zenodo DOI for
-       long-term permanence (addresses GitHub rebase risk), adds Section 3.2
-       Authentication Profile (SHOULD did:web, MAY did:key, PoW/stake
-       deferred), adds Section 1.2 explicit comparison table with [KAMIMURA-
-       VCP], adds Liaison Statement with SCITT WG, adds Implementation
-       Status with two independent implementations, retains Informational
-       status per RFC track strategy, and retains all normative content from
-       -03 Posted 23 Jul 2026.  This revision (-03) removed workgroup tag,
-       normalized Godel ASCII.  This revision (-02) pinned commits, added
-       confusion matrix, clarified heuristics, defined SCITT mappings, added
-       Appendix B.</p>
+    <p>GEVP defines minimal protocol for epistemic convergence.  Renamed
+       from VCP to avoid collision with draft-kamimura-scitt-vcp.  Invariant
+       C_manip &gt; C_val*2.0 as engineering heuristic.  Theta 0.73 RECOMMENDED
+       pinned 7755f53.  Architecture stable per
+       https://github.com/GravitOpenNetwork/gravit-canon.</p>
 relation:
 - type: includes
   bibitem:
@@ -99,5 +74,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-gravit-gevp-04
     docidentifier:
     - content: draft-gravit-gevp-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-gravit-gevp-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-gravit-gevp-05
+    docidentifier:
+    - content: draft-gravit-gevp-05
       type: Internet-Draft
       primary: true

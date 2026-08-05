@@ -27,7 +27,10 @@ abstract:
        its own pinned trust inputs and policy.  The design does not make a
        self-presented key authoritative, does not turn log inclusion or
        domain control into automatic trust, and does not equate a valid
-       signature with permission to act.</p>
+       signature with permission to act.  It also defines a source-
+       resolution boundary: signing a statement does not give its underlying
+       source data finer freshness or precision than that source actually
+       provides.</p>
 relation:
 - type: includes
   bibitem:
@@ -60,5 +63,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authority-introduction-02
     docidentifier:
     - content: draft-schrock-ep-authority-introduction-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ep-authority-introduction-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-authority-introduction-03
+    docidentifier:
+    - content: draft-schrock-ep-authority-introduction-03
       type: Internet-Draft
       primary: true
