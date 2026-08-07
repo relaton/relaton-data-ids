@@ -15,10 +15,14 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document describes an architecture for identifying automated
-       traffic using [HTTP-MESSAGE-SIGNATURES].  The goal is to allow
-       automated HTTP clients to cryptographically sign outbound requests,
-       allowing HTTP servers to verify their identity with confidence.</p>
+    <p>This document describes a protocol for identifying automated traffic
+       using [HTTP-MESSAGE-SIGNATURES].  The goal is to allow automated HTTP
+       clients to cryptographically sign outbound requests, allowing HTTP
+       servers to verify their identity with confidence.
+
+       It defines the Signature-Agent header field for in-band key
+       discovery, a key directory format based on JWKS, and a well-known URI
+       at which that directory is served.</p>
 relation:
 - type: includes
   bibitem:
@@ -29,5 +33,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-00
     docidentifier:
     - content: draft-meunier-webbotauth-httpsig-protocol-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-meunier-webbotauth-httpsig-protocol-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-meunier-webbotauth-httpsig-protocol-01
+    docidentifier:
+    - content: draft-meunier-webbotauth-httpsig-protocol-01
       type: Internet-Draft
       primary: true
