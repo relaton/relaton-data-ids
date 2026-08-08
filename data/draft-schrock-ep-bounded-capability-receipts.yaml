@@ -32,7 +32,8 @@ abstract:
        authority: all direct child allocations are funded by committed
        parent operations before child registration, and their aggregate
        cannot exceed the parent balance within one authoritative atomic
-       state domain.  It also defines narrowing-only delegation and evidence
+       state domain.  It also defines narrowing-only delegation, explicit
+       revocation inheritance for delegated authority, and evidence
        interfaces.  It does not make a bearer token into human approval,
        does not provide cross-domain or offline global double-spend
        prevention, and does not claim that an authorized action was safe,
@@ -69,5 +70,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-02
     docidentifier:
     - content: draft-schrock-ep-bounded-capability-receipts-02
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ep-bounded-capability-receipts-03
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ep-bounded-capability-receipts-03
+    docidentifier:
+    - content: draft-schrock-ep-bounded-capability-receipts-03
       type: Internet-Draft
       primary: true
