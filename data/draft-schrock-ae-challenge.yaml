@@ -29,7 +29,18 @@ abstract:
        9457 Problem Details, and describes an informative gateway-handoff
        profile for DMSC-style federation.  The gateway profile communicates
        evidence requirements; it does not solve conserved admission or
-       double-admission across independently operated gateways.</p>
+       double-admission across independently operated gateways.
+
+       A challenge can synchronize corrected retries and amplify load.  The
+       core therefore defines optional retry timing with per-challenge
+       jitter, and the HTTP binding maps its lower bound to Retry-After.
+       Retry timing controls presentation attempts only; it does not
+       authorize the action or make an uncertain action safe to repeat.
+
+       Single-use processing also places state on the refusal path.  The
+       core therefore requires bounded outstanding and replay state, fail-
+       closed behavior when state cannot be claimed, and retention of live
+       replay records until they are no longer security-relevant.</p>
 relation:
 - type: includes
   bibitem:
@@ -73,5 +84,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-schrock-ae-challenge-03
     docidentifier:
     - content: draft-schrock-ae-challenge-03
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ae-challenge-04
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ae-challenge-04
+    docidentifier:
+    - content: draft-schrock-ae-challenge-04
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-schrock-ae-challenge-05
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-schrock-ae-challenge-05
+    docidentifier:
+    - content: draft-schrock-ae-challenge-05
       type: Internet-Draft
       primary: true
