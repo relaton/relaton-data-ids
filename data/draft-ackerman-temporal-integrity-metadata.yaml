@@ -18,14 +18,14 @@ abstract:
     <p>Distributed computing systems generate timestamped events from
        components whose clocks operate under fundamentally different
        synchronization conditions.  Existing logging and observability
-       standards -- including RFC 3164, RFC 5424, SNMP, NETCONF, and
-       OpenTelemetry -- define message formats and telemetry schemas but
-       provide no standard mechanism for an event source to declare the
-       provenance, confidence, or synchronization state of its timestamps.
-       Every platform that must correlate events across components
-       independently invents a proprietary temporal reconciliation layer.
-       These systems fail silently, cannot be validated against a published
-       standard, and are not interoperable.
+       standards -- including legacy BSD syslog (RFC 3164), RFC 5424,
+       SNMP, NETCONF, and OpenTelemetry -- define message formats and
+       telemetry schemas but provide no standard mechanism for an event
+       source to declare the provenance, confidence, or synchronization
+       state of its timestamps.  Every platform that must correlate events
+       across components independently invents a proprietary temporal
+       reconciliation layer.  These systems fail silently, cannot be
+       validated against a published standard, and are not interoperable.
 
        This document defines Temporal Integrity Metadata (TIM): a transport-
        agnostic structure that any event-emitting system may attach to its
@@ -46,5 +46,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ackerman-temporal-integrity-metadata-00
     docidentifier:
     - content: draft-ackerman-temporal-integrity-metadata-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ackerman-temporal-integrity-metadata-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ackerman-temporal-integrity-metadata-01
+    docidentifier:
+    - content: draft-ackerman-temporal-integrity-metadata-01
       type: Internet-Draft
       primary: true

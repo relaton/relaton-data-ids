@@ -15,10 +15,17 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Mercure is a protocol enabling the pushing of data updates to web
-       browsers and other HTTP clients in a fast, reliable and battery-
-       efficient way.  It is especially useful for publishing real-time
-       updates of resources served through web APIs to web and mobile apps.</p>
+    <p>Mercure provides a common publish-subscribe mechanism for public and
+       private web resources.  It pushes any web content to web browsers and
+       other clients over a single long-lived HTTP connection, avoiding
+       polling and its associated latency and power cost.  Mercure is
+       especially useful for delivering real-time updates of resources
+       served through sites and web APIs to web and mobile applications, and
+       can also be used as a general-purpose publish-subscribe system.
+
+       Subscription requests are relayed through hubs, which validate them.
+       When new or updated content becomes available, hubs check whether
+       subscribers are authorized to receive it and then distribute it.</p>
 relation:
 - type: includes
   bibitem:
@@ -106,5 +113,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-dunglas-mercure-07
     docidentifier:
     - content: draft-dunglas-mercure-07
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-dunglas-mercure-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dunglas-mercure-08
+    docidentifier:
+    - content: draft-dunglas-mercure-08
       type: Internet-Draft
       primary: true
