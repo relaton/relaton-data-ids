@@ -20,14 +20,12 @@ abstract:
        in RFC 9197, collects operational and telemetry information in the
        packet using IOAM-Data-Fields while the packet traverses a path
        between two points in the network.  Several IOAM Option-Types are
-       available, for example, Pre-allocated Trace, Proof-of-Transit (POT),
+       available, for example, Pre-allocated Trace, Proof of Transit (POT),
        Edge-to-Edge (E2E), and Incremental Trace, that can be used to
-       collect information for calculating various performance metrics.
-
-       RFC 9326 defines the IOAM Direct Export (IOAM-DEX) Option-Type in
-       which the operational state and telemetry information are collected
-       according to the specified profile and exported in a manner and
-       format defined by a local policy on each node along the path.
+       collect information for calculating various performance metrics.  RFC
+       9326 defines the IOAM Direct Export (IOAM-DEX) Option-Type, which is
+       used as a trigger for IOAM data to be directly exported or locally
+       aggregated without being pushed into in-flight data packets.
 
        MPLS Network Actions (MNA) techniques indicate actions to be
        performed on any combination of Label Switched Paths, MPLS packets,
@@ -155,5 +153,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-ioam-10
     docidentifier:
     - content: draft-ietf-mpls-mna-ioam-10
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-mpls-mna-ioam-11
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-mpls-mna-ioam-11
+    docidentifier:
+    - content: draft-ietf-mpls-mna-ioam-11
       type: Internet-Draft
       primary: true

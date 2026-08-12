@@ -27,7 +27,7 @@ abstract:
        of these is forbidden on the wire and rejected at the grammar level.
        Readers present a capability token scoped by (category,
        provenance_class) that gates release BEFORE payload emission, not
-       after.  The payload is envelope-signed with COSE_Sign1 [RFC8152] over
+       after.  The payload is envelope-signed with COSE_Sign1 [RFC9052] over
        a JCS-canonicalised [RFC8785] representation, bound to the issuer's
        Sovereign-tier handle per [IDCOMMITS].  Briefs carry a mandatory
        not_after (default 24h) and reference a revocation endpoint
@@ -43,5 +43,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-morrison-morning-brief-00
     docidentifier:
     - content: draft-morrison-morning-brief-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-morrison-morning-brief-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-morrison-morning-brief-01
+    docidentifier:
+    - content: draft-morrison-morning-brief-01
       type: Internet-Draft
       primary: true
