@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Verifiable Telemetry Ledgers for Resource-Constrained Environments
+  content: Verifiable Telemetry Ledgers
 docidentifier:
 - content: draft-elkhatabi-verifiable-telemetry-ledgers
   type: Internet-Draft
@@ -15,22 +15,24 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document profiles a verifiable-telemetry ledger for resource-
-       constrained deployments.  Its interoperability boundary begins with
-       exact canonical-record byte strings that an upstream system has
-       already produced.  The profile fixes admission and assignment of
-       those byte strings to serial-numbered segments, deterministic
-       commitment-tree calculation, a Concise Binary Object Representation
-       (CBOR) segment artifact, a verification manifest, three disclosure
-       classes, and binding of the segment-artifact digest to external
+    <p>This document profiles a verifiable-telemetry ledger.  Its
+       interoperability boundary begins with exact canonical-record byte
+       strings that an upstream system has already produced.  The profile
+       fixes admission and assignment of those byte strings to serial-
+       numbered segments, deterministic commitment-tree calculation, an
+       authoritative segment artifact encoded in Concise Binary Object
+       Representation (CBOR), a producer manifest, three disclosure classes,
+       and binding of the authoritative segment artifact digest to external
        timestamp channels.  Transport framing, decryption, anti-replay
        processing, payload interpretation, and source-telemetry-to-record
        mapping are outside this profile.  Segment closure uses a deployment-
-       configured elapsed-time interval and does not depend on source or
-       gateway calendar dates.  RFC 3161 timestamp responses are the
-       mandatory-to-implement interoperable timestamp channel.
-       OpenTimestamps (OTS) and peer signatures are optional parallel
-       channels.
+       configured elapsed-time interval and does not depend on calendar
+       dates from either the source or the ledger producer.  Every baseline
+       producer selects the RFC 3161 timestamp channel, as updated by RFC
+       5816 and profiled by this document, for every emitted segment.
+       OpenTimestamps (OTS) can be selected only as an additive, deployment-
+       specific timestamp profile; peer signatures are optional
+       attestations.
 
        The profile enables independent recomputation and audit of disclosed
        evidence from the admitted canonical-record bytes onward.  It does
@@ -135,5 +137,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-elkhatabi-verifiable-telemetry-ledgers-08
     docidentifier:
     - content: draft-elkhatabi-verifiable-telemetry-ledgers-08
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-elkhatabi-verifiable-telemetry-ledgers-09
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-elkhatabi-verifiable-telemetry-ledgers-09
+    docidentifier:
+    - content: draft-elkhatabi-verifiable-telemetry-ledgers-09
       type: Internet-Draft
       primary: true
