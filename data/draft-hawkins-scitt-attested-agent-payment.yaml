@@ -28,9 +28,13 @@ abstract:
        Transparency Service.  The binding reuses the EAT confirmation and
        key-attributes claims without modification; the contribution is the
        authorization scope, the verification procedure a payment executor
-       performs before settlement, and the transparency record that makes
-       the authorization auditable independently of the agent and of the
-       executor.</p>
+       performs before settlement, the transparency record that makes the
+       authorization artifact and its registration auditable independently
+       of the agent and of the executor, and an execution-record mechanism
+       that makes the executor's aggregate accounting auditable on
+       challenge.  What is registered evidences the authorization; it does
+       not evidence that the verification procedure was performed for any
+       given settlement.</p>
 relation:
 - type: includes
   bibitem:
@@ -41,5 +45,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hawkins-scitt-attested-agent-payment-00
     docidentifier:
     - content: draft-hawkins-scitt-attested-agent-payment-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hawkins-scitt-attested-agent-payment-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hawkins-scitt-attested-agent-payment-01
+    docidentifier:
+    - content: draft-hawkins-scitt-attested-agent-payment-01
       type: Internet-Draft
       primary: true
