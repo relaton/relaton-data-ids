@@ -1,5 +1,5 @@
 ---
-id: draftietfsidropsrpkierikprotocol06
+id: draftietfsidropsrpkierikprotocol07
 schema_version: v1.5.6
 type: standard
 title:
@@ -9,17 +9,17 @@ title:
     Infrastructure (RPKI)
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-erik-protocol-06
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-erik-protocol-07
 docidentifier:
 - content: draft-ietf-sidrops-rpki-erik-protocol
   type: Internet-Draft
-- content: draft-ietf-sidrops-rpki-erik-protocol-06
+- content: draft-ietf-sidrops-rpki-erik-protocol-07
   type: Internet-Draft
   primary: true
 docnumber: I-D.ietf-sidrops-rpki-erik-protocol
 date:
 - type: published
-  at: '2026-07-21'
+  at: '2026-08-16'
 contributor:
 - role:
   - type: author
@@ -122,7 +122,7 @@ contributor:
         - language: en
           content: JPNIC
 version:
-- content: '06'
+- content: '07'
 language:
 - en
 script:
@@ -136,7 +136,10 @@ abstract:
        Synchronization can be characterized as a data replication system
        using Merkle trees, a content-addressable naming scheme, concurrency
        control using monotonically increasing sequence numbers, and HTTP
-       transport.  Relying Parties can combine information retrieved via
+       transport.  The protocol is used to interact with Erik Relays, a new
+       intermediary layer in the RPKI supply chain that exists between the
+       Repository Publication Point and Relying Parties, enabling better
+       scalability.  Relying Parties can combine information retrieved via
        Erik Synchronization with other RPKI transport protocols.  The
        protocol's design is intended to be efficient, fast, easy to
        implement, and robust in the face of partitions or faults in the
@@ -145,23 +148,12 @@ relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-sidrops-rpki-erik-protocol-05
+      content: draft-ietf-sidrops-rpki-erik-protocol-06
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-erik-protocol-05
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-erik-protocol-06
     docidentifier:
-    - content: draft-ietf-sidrops-rpki-erik-protocol-05
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-sidrops-rpki-erik-protocol-07
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-sidrops-rpki-erik-protocol-07
-    docidentifier:
-    - content: draft-ietf-sidrops-rpki-erik-protocol-07
+    - content: draft-ietf-sidrops-rpki-erik-protocol-06
       type: Internet-Draft
       primary: true
 series:
@@ -170,7 +162,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-sidrops-rpki-erik-protocol-06
+  number: draft-ietf-sidrops-rpki-erik-protocol-07
 ext:
   schema_version: v1.1.2
   doctype:
