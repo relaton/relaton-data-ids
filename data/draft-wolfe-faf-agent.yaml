@@ -16,22 +16,25 @@ abstract:
   script: Latn
   content: |-
     <p>This document specifies the FAF Agent Format (.fafa): a declarative,
-       YAML-based format for an agent's description, the capabilities it
+       YAML-based format for an agent's identity, the capabilities it
        exposes, and the endpoints through which it is reached.  A .fafa
        document describes an agent; it never instructs one.
 
        .fafa (application/vnd.fafa+yaml, IANA-registered June 2026 in the
        vendor tree) is the agent member of the FAF family, alongside .faf
-       (project context) and .fafm (agent memory) [FAF-FORMAT].  It extends
-       .faf additively: a .faf-only consumer reads a .fafa document without
-       breaking.
+       (project context) and .fafm (agent memory).  It functions as a
+       portable passport that answers four questions: who the agent is, what
+       it may do, where it is reached, and what it must never do.  Protocol-
+       native cards (for example A2A Agent Cards and MCP Server Cards)
+       remain useful wire formats; repository instruction files such as
+       AGENTS.md remain the ops briefing; .fafa complements them as a house-
+       neutral source of truth that can be projected into those formats; it
+       does not replace them.
 
-       .fafa is a format, not a protocol.  It composes with agent-
-       interaction protocols at the document layer — a protocol carries,
-       references, or resolves a .fafa document; the document declares the
-       agent the protocol acts upon.  This document documents the existing
-       IANA vendor-tree registration (application/vnd.fafa+yaml).  No
-       standards-tree registration is requested.</p>
+       This document documents the existing IANA vendor-tree registration.
+       No standards-tree registration is requested.  A companion white
+       paper, "Why Agents Need a Passport," provides the production
+       rationale and lifecycle framing.</p>
 relation:
 - type: includes
   bibitem:
@@ -42,5 +45,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-wolfe-faf-agent-00
     docidentifier:
     - content: draft-wolfe-faf-agent-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wolfe-faf-agent-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wolfe-faf-agent-01
+    docidentifier:
+    - content: draft-wolfe-faf-agent-01
       type: Internet-Draft
       primary: true

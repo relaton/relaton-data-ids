@@ -21,7 +21,8 @@ abstract:
        cannot distinguish between different RDMA sessions that share the
        same 5-tuple.  This causes "elephant flows" to be hashed to the same
        path, leading to network congestion.  This method resolves this issue
-       by parsing the QP (Queue Pair) information from the IB BTH (Base
+       by having the ingress network device (e.g., a top-of-rack switch or
+       router) parse the QP (Queue Pair) information from the IB BTH (Base
        Transport Header) and IB DETH (Datagram Extended Transport Header)
        headers of the RoCEv2 packet.  By combining this with portions of the
        IPv6 source and destination addresses as an entropy source, a CRC32
@@ -51,5 +52,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-hu-6man-ipv6-flowlabel-load-balancing-rdma-01
     docidentifier:
     - content: draft-hu-6man-ipv6-flowlabel-load-balancing-rdma-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-hu-6man-ipv6-flowlabel-load-balancing-rdma-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-hu-6man-ipv6-flowlabel-load-balancing-rdma-02
+    docidentifier:
+    - content: draft-hu-6man-ipv6-flowlabel-load-balancing-rdma-02
       type: Internet-Draft
       primary: true
