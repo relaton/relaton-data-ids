@@ -6,7 +6,7 @@ formattedref:
 title:
 - language: en
   script: Latn
-  content: Distributed Registration and Information Synchronization of Agent Capabilities
+  content: Distributed Onboarding and Information Synchronization of Agent Capabilities
 docidentifier:
 - content: draft-wang-dmsc-drisac
   type: Internet-Draft
@@ -15,24 +15,32 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>The large-scale deployment of autonomous AI Agents introduces
-       challenges to capability description, registration, and discovery.
-       Existing agent communication protocols mainly focus on application-
-       layer interactions and typically rely on centralized registration and
-       discovery mechanisms, which limit scalability, robustness, and
-       semantic extensibility.  This document proposes a distributed and
-       hierarchical capability registration and information synchronization
-       mechanism for AI Agents.  The mechanism introduces a multi-level
-       capability taxonomy, capability vectors, and globally unique Service
-       Identifiers (Service IDs), and defines two functional entities: Agent
-       Capability Registration Server (ACRS) and Agent Capability Access
-       Server (ACAS).  A capability table is constructed and synchronized
-       among ACRSs to enable semantic-based forwarding of capability-related
-       requests.  Furthermore, capability registration and discovery
-       procedure are specified, enabling precise selection of agents based
-       on task requirements.  The proposed mechanism provides a scalable
-       foundation for capability-aware routing and semantic collaboration in
-       the Internet of Agents (IoA).</p>
+    <p>AI Agents may dynamically join, leave, and update their capabilities
+       while participating in interactions across administrative domains.
+       Efficient capability discovery in such environments requires
+       mechanisms to onboard agent capabilities and maintain consistent
+       capability information across distributed management entities.
+       Existing service registration and discovery mechanisms do not
+       necessarily provide a capability-oriented mechanism for distributed
+       synchronization and hierarchical forwarding of agent capability
+       information.
+
+       This document proposes a distributed and hierarchical mechanism for
+       AI Agent capability onboarding, information synchronization, and
+       capability-based discovery.  The mechanism introduces a hierarchical
+       capability classification model and defines two functional entities:
+       the Agent Capability Management Server (ACMS), which maintains and
+       synchronizes capability information, and the Agent Capability Access
+       Server (ACAS), which manages locally attached agents.  Capability
+       information is aggregated and propagated among ACMSs, while access
+       information for locally attached agents is maintained by ACASs.  A
+       capability table is used to determine forwarding toward relevant
+       ACMSs, and an access mapping table is used for local agent matching.
+       The document also describes onboarding and intent-driven capability
+       discovery procedures.  The mechanism is intended to provide a
+       distributed control-plane foundation for capability-aware agent
+       discovery and does not define agent-to-agent interaction or task
+       execution protocols.</p>
 relation:
 - type: includes
   bibitem:
@@ -43,5 +51,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-wang-dmsc-drisac-00
     docidentifier:
     - content: draft-wang-dmsc-drisac-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-wang-dmsc-drisac-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-wang-dmsc-drisac-01
+    docidentifier:
+    - content: draft-wang-dmsc-drisac-01
       type: Internet-Draft
       primary: true
