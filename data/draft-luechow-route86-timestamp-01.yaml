@@ -1,5 +1,5 @@
 ---
-id: draftluechowroute86timestamp00
+id: draftluechowroute86timestamp01
 schema_version: v1.5.6
 type: standard
 title:
@@ -8,17 +8,17 @@ title:
   content: 'Route86: A Compact Context-Dependent Timestamp Format'
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-luechow-route86-timestamp-00
+  content: https://datatracker.ietf.org/doc/html/draft-luechow-route86-timestamp-01
 docidentifier:
 - content: draft-luechow-route86-timestamp
   type: Internet-Draft
-- content: draft-luechow-route86-timestamp-00
+- content: draft-luechow-route86-timestamp-01
   type: Internet-Draft
   primary: true
 docnumber: I-D.luechow-route86-timestamp
 date:
 - type: published
-  at: '2026-08-17'
+  at: '2026-08-24'
 contributor:
 - role:
   - type: author
@@ -46,7 +46,7 @@ contributor:
         - language: en
           content: Dorfzwockel
 version:
-- content: '00'
+- content: '01'
 language:
 - en
 script:
@@ -55,24 +55,27 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document specifies Route86, a compact textual timestamp
-       representation intended for constrained message transports.  A
-       Route86 timestamp combines a Base36-encoded calendar-day component
-       with a three-digit decimal Internet Time component.
+    <p>This document specifies Route86, a compact textual timestamp format
+       for constrained message transports.  A Route86 value consists of a
+       three-character Base36 calendar-day component and a three-digit
+       decimal time-of-day component.  The canonical representation occupies
+       exactly six ASCII characters.
 
-       The representation occupies six ASCII characters in its canonical
-       form.  Interpretation of the calendar component requires knowledge of
-       a shared reference date, which may be application-specific or salted.</p>
+       The calendar component is interpreted relative to an external
+       reference date.  The reference date itself encodes as AAA.  The time-
+       of-day component divides a fixed BMT day, defined here as UTC+01:00
+       without daylight-saving adjustment, into 1000 intervals of 86.4
+       seconds.</p>
 relation:
-- type: updatedBy
+- type: updates
   bibitem:
     formattedref:
-      content: draft-luechow-route86-timestamp-01
+      content: draft-luechow-route86-timestamp-00
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-luechow-route86-timestamp-01
+      content: https://datatracker.ietf.org/doc/html/draft-luechow-route86-timestamp-00
     docidentifier:
-    - content: draft-luechow-route86-timestamp-01
+    - content: draft-luechow-route86-timestamp-00
       type: Internet-Draft
       primary: true
 series:
@@ -81,7 +84,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-luechow-route86-timestamp-00
+  number: draft-luechow-route86-timestamp-01
 ext:
   schema_version: v1.1.2
   doctype:

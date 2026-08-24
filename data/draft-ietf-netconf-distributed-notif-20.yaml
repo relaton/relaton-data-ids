@@ -1,24 +1,24 @@
 ---
-id: draftietfidrsrpolicyseglistid13
+id: draftietfnetconfdistributednotif20
 schema_version: v1.5.6
 type: standard
 title:
 - language: en
   script: Latn
-  content: BGP SR Policy Extensions for Segment List Identifier
+  content: Subscription to Notifications in a Distributed Architecture
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-seglist-id-13
+  content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-distributed-notif-20
 docidentifier:
-- content: draft-ietf-idr-sr-policy-seglist-id
+- content: draft-ietf-netconf-distributed-notif
   type: Internet-Draft
-- content: draft-ietf-idr-sr-policy-seglist-id-13
+- content: draft-ietf-netconf-distributed-notif-20
   type: Internet-Draft
   primary: true
-docnumber: I-D.ietf-idr-sr-policy-seglist-id
+docnumber: I-D.ietf-netconf-distributed-notif
 date:
 - type: published
-  at: '2026-08-20'
+  at: '2026-08-23'
 contributor:
 - role:
   - type: author
@@ -27,24 +27,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Changwang
+        content: Tianran
       - language: en
         script: Latn
-        initial: C
+        initial: T
       formatted_initials:
         language: en
-        content: C.
+        content: T.
       surname:
         language: en
-        content: Lin
+        content: Zhou
       completename:
         language: en
-        content: Changwang Lin
+        content: Tianran Zhou
     affiliation:
     - organization:
         name:
         - language: en
-          content: New H3C Technologies
+          content: Huawei
 - role:
   - type: author
   person:
@@ -52,24 +52,24 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Weiqiang
+        content: Guangying
       - language: en
         script: Latn
-        initial: W
+        initial: G
       formatted_initials:
         language: en
-        content: W.
+        content: G.
       surname:
         language: en
-        content: Cheng
+        content: Zheng
       completename:
         language: en
-        content: Weiqiang Cheng
+        content: Guangying Zheng
     affiliation:
     - organization:
         name:
         - language: en
-          content: China Mobile
+          content: Huawei
 - role:
   - type: author
   person:
@@ -77,44 +77,19 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Yao
+        content: Eric
       - language: en
         script: Latn
-        initial: "Y"
+        initial: E
       formatted_initials:
         language: en
-        content: Y.
+        content: E.
       surname:
         language: en
-        content: Liu
+        content: Voit
       completename:
         language: en
-        content: Yao Liu
-    affiliation:
-    - organization:
-        name:
-        - language: en
-          content: ZTE
-- role:
-  - type: author
-  person:
-    name:
-      forename:
-      - language: en
-        script: Latn
-        content: Ketan
-      - language: en
-        script: Latn
-        initial: K
-      formatted_initials:
-        language: en
-        content: K.
-      surname:
-        language: en
-        content: Talaulikar
-      completename:
-        language: en
-        content: Ketan Talaulikar
+        content: Eric Voit
     affiliation:
     - organization:
         name:
@@ -127,26 +102,51 @@ contributor:
       forename:
       - language: en
         script: Latn
-        content: Mengxiao
+        content: Thomas
       - language: en
         script: Latn
-        initial: M
+        initial: T
       formatted_initials:
         language: en
-        content: M.
+        content: T.
       surname:
         language: en
-        content: Chen
+        content: Graf
       completename:
         language: en
-        content: Mengxiao Chen
+        content: Thomas Graf
     affiliation:
     - organization:
         name:
         - language: en
-          content: New H3C Technologies
+          content: Swisscom
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Pierre
+      - language: en
+        script: Latn
+        initial: P
+      formatted_initials:
+        language: en
+        content: P.
+      surname:
+        language: en
+        content: Francois
+      completename:
+        language: en
+        content: Pierre Francois
+    affiliation:
+    - organization:
+        name:
+        - language: en
+          content: INSA-Lyon
 version:
-- content: '13'
+- content: '20'
 language:
 - en
 script:
@@ -155,32 +155,21 @@ abstract:
 - language: en
   script: Latn
   content: |-
-    <p>Segment Routing (SR) is a source routing paradigm that explicitly
-       indicates the forwarding path for packets at the ingress node.  An SR
-       Policy is a set of candidate paths, each consisting of one or more
-       segment lists.  This document defines extensions to BGP SR Policy to
-       specify the identifier of a segment list.</p>
+    <p>This document describes extensions to the YANG notifications
+       subscription to allow metrics being published directly from
+       processors on line cards to target receivers, while subscription is
+       still maintained at the route processor in a distributed forwarding
+       system of a network node.</p>
 relation:
 - type: updates
   bibitem:
     formattedref:
-      content: draft-ietf-idr-sr-policy-seglist-id-12
+      content: draft-ietf-netconf-distributed-notif-19
     source:
     - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-seglist-id-12
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-netconf-distributed-notif-19
     docidentifier:
-    - content: draft-ietf-idr-sr-policy-seglist-id-12
-      type: Internet-Draft
-      primary: true
-- type: updatedBy
-  bibitem:
-    formattedref:
-      content: draft-ietf-idr-sr-policy-seglist-id-14
-    source:
-    - type: src
-      content: https://datatracker.ietf.org/doc/html/draft-ietf-idr-sr-policy-seglist-id-14
-    docidentifier:
-    - content: draft-ietf-idr-sr-policy-seglist-id-14
+    - content: draft-ietf-netconf-distributed-notif-19
       type: Internet-Draft
       primary: true
 series:
@@ -189,7 +178,7 @@ series:
   - language: en
     script: Latn
     content: Internet-Draft
-  number: draft-ietf-idr-sr-policy-seglist-id-13
+  number: draft-ietf-netconf-distributed-notif-20
 ext:
   schema_version: v1.1.2
   doctype:
