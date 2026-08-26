@@ -21,8 +21,15 @@ abstract:
        specifies seven verification dimensions (Structure, Schema, Latency,
        Cost, Identity, Integrity, Security) that tool calls and results must
        conform to at runtime.  The framework defines a receipt format with
-       Ed25519 signatures, three verification outcomes (pass, fail,
-       unknown), and normative requirements for implementations.</p>
+       Ed25519 signatures, three verdict values (allow, deny, escalate) and
+       four executor lifecycle states (confirmed, dispatched, indeterminate,
+       unknown), and normative requirements for implementations.
+
+       This revision promotes AEB and CAID to Normative References,
+       specifies the detached Ed25519 signature construction over RFC 8785
+       canonical JSON, clarifies receipt lifecycle and signing-algorithm
+       conformance, and documents two independent interoperable
+       implementations (Section 21).</p>
 relation:
 - type: includes
   bibitem:
@@ -88,5 +95,27 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-correctover-ccs-05
     docidentifier:
     - content: draft-correctover-ccs-05
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-correctover-ccs-06
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-correctover-ccs-06
+    docidentifier:
+    - content: draft-correctover-ccs-06
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-correctover-ccs-07
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-correctover-ccs-07
+    docidentifier:
+    - content: draft-correctover-ccs-07
       type: Internet-Draft
       primary: true
