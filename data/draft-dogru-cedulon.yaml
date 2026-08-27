@@ -27,10 +27,17 @@ abstract:
        extract lacks a receipt and no settled receipt is absent from the
        extract.  That result is unconditional only when the verifier pins
        the rail key out of band and states the period under audit; otherwise
-       the document requires it to be reported as conditional.  It also
-       defines a Dispute Evidence Bundle (evidence, not an award) and
-       optional SCITT anchoring.  Cedulon is not a competitor to x402 or
-       AP2; it sits above them.</p>
+       the document requires it to be reported as conditional.  Checkpoints
+       carry the suppression guarantee, so this revision profiles the
+       checkpoint as a Signed Statement, gives the verification algorithm a
+       step that consumes the transparency receipts returned for
+       checkpoints, names what a witness holding a checkpoint the presented
+       chain omits reports, brings equivocation within reach by comparing
+       recorded copies against the presented chain, and states how
+       checkpoint totals may be withheld without withholding the fact that
+       they were.  It also defines a Dispute Evidence Bundle (evidence, not
+       an award) and optional SCITT anchoring.  Cedulon is not a competitor
+       to x402 or AP2; it sits above them.</p>
 relation:
 - type: includes
   bibitem:
@@ -52,5 +59,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-01
     docidentifier:
     - content: draft-dogru-cedulon-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-dogru-cedulon-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-02
+    docidentifier:
+    - content: draft-dogru-cedulon-02
       type: Internet-Draft
       primary: true
