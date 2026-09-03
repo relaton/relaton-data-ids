@@ -16,10 +16,11 @@ abstract:
   script: Latn
   content: |-
     <p>This document describes how devices joining an autonomic control
-       plane as defined in RFC 8994 may use the bootstrapping mechanism
-       defined in RFC 8995 even if they cannot use a manufacturer-installed
-       X.509 certificate.  Instead, such devices may generate a self-signed
-       certificate embedding a unique token selected from a one-time pad.</p>
+       plane as defined in RFC 8994 may use the BRSKI onboarding mechanism
+       defined in RFC 8995, even if they cannot provide a manufacturer-
+       installed X.509 IDevID certificate.  Instead, such devices may
+       generate a self-signed certificate embedding a unique token selected
+       from a one-time pad.</p>
 relation:
 - type: includes
   bibitem:
@@ -30,5 +31,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-carpenter-anima-otp-casa-00
     docidentifier:
     - content: draft-carpenter-anima-otp-casa-00
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-carpenter-anima-otp-casa-01
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-carpenter-anima-otp-casa-01
+    docidentifier:
+    - content: draft-carpenter-anima-otp-casa-01
       type: Internet-Draft
       primary: true
