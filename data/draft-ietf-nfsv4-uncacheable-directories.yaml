@@ -24,9 +24,9 @@ abstract:
        incorrect size and timestamp values often enough to be a problem.
        This document introduces an uncacheable dirent metadata attribute for
        NFSv4.2 that allows a server to identify a directory for which an
-       honoring client goes to the server for each enumeration, and does not
-       report an entry's attributes from a value it held before that
-       READDIR.</p>
+       honoring client enumerates by READDIR and reports each entry's
+       attributes as that READDIR returned them, rather than from a value it
+       held earlier.</p>
 relation:
 - type: includes
   bibitem:
@@ -158,5 +158,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-uncacheable-directories-11
     docidentifier:
     - content: draft-ietf-nfsv4-uncacheable-directories-11
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-ietf-nfsv4-uncacheable-directories-12
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-ietf-nfsv4-uncacheable-directories-12
+    docidentifier:
+    - content: draft-ietf-nfsv4-uncacheable-directories-12
       type: Internet-Draft
       primary: true
