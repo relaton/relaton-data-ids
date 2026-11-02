@@ -15,7 +15,11 @@ abstract:
   script: Latn
   content: |-
     <p>This document compiles existing Cryptographic Asset Discovery and
-       Inventory (CADI) methods and analyze potential gaps.</p>
+       Inventory (CADI) methods and analyzes potential gaps.  It also
+       defines a YANG data model that augments the base network inventory
+       model with the cryptographic assets of each network element.  The
+       data model is aligned with the Cryptography Bill of Materials (CBOM)
+       defined in CycloneDX.</p>
 relation:
 - type: includes
   bibitem:
@@ -37,5 +41,16 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-liu-cadi-01
     docidentifier:
     - content: draft-liu-cadi-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-liu-cadi-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-liu-cadi-02
+    docidentifier:
+    - content: draft-liu-cadi-02
       type: Internet-Draft
       primary: true
