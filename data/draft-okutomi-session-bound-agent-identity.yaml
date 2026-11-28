@@ -10,29 +10,23 @@ title:
     Authorization
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-07
+  content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-08
 docidentifier:
 - content: draft-okutomi-session-bound-agent-identity
   type: Internet-Draft
   primary: true
 date:
 - type: published
-  at: '2026-11-01'
+  at: '2026-11-28'
 abstract:
 - language: en
   script: Latn
   content: |-
-    <p>This document defines a verifier-side acceptance profile for channel-
-       bound Agent identity and authorization.  It addresses context
-       diversion, where cryptographically valid material is accepted for a
-       different service, tenant, actor, task, target, delegation, or
-       authority boundary than the verifier intended.
-
-       A verifier accepts an actor only when a verified authority grant,
-       holder-of-key proof, accepted channel instance, freshness and replay
-       state, any required attestation result, and verifier-local policy all
-       describe the same intended interaction.  Protocol-specific wire
-       formats and deployment choices are left to binding profiles.</p>
+    <p>This profile lets a verifier decide whether an Agent may perform the
+       requested operation on the current connection.  The verifier binds
+       the grant to that connection and checks the request against the grant
+       and local policy.  On success, the application receives an assertion
+       scoped to the interaction.</p>
 relation:
 - type: includes
   bibitem:
@@ -120,6 +114,17 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-07
     docidentifier:
     - content: draft-okutomi-session-bound-agent-identity-07
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-okutomi-session-bound-agent-identity-08
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-okutomi-session-bound-agent-identity-08
+    docidentifier:
+    - content: draft-okutomi-session-bound-agent-identity-08
       type: Internet-Draft
       primary: true
 ext:

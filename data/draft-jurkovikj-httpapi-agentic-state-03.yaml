@@ -1,0 +1,94 @@
+---
+id: draftjurkovikjhttpapiagenticstate03
+schema_version: v1.5.6
+type: standard
+title:
+- language: en
+  script: Latn
+  content: HTTP Profile for Conditional Updates to Shared Resource State (Agentic
+    State Transfer)
+source:
+- type: src
+  content: https://datatracker.ietf.org/doc/html/draft-jurkovikj-httpapi-agentic-state-03
+docidentifier:
+- content: draft-jurkovikj-httpapi-agentic-state
+  type: Internet-Draft
+- content: draft-jurkovikj-httpapi-agentic-state-03
+  type: Internet-Draft
+  primary: true
+docnumber: I-D.jurkovikj-httpapi-agentic-state
+date:
+- type: published
+  at: '2026-11-28'
+contributor:
+- role:
+  - type: author
+  person:
+    name:
+      forename:
+      - language: en
+        script: Latn
+        content: Antun
+      - language: en
+        script: Latn
+        initial: A
+      formatted_initials:
+        language: en
+        content: A.
+      surname:
+        language: en
+        content: Jurkovikj
+      completename:
+        language: en
+        content: Antun Jurkovikj
+version:
+- content: '03'
+language:
+- en
+script:
+- Latn
+abstract:
+- language: en
+  script: Latn
+  content: |-
+    <p>HTTP applications frequently expose one logical object through
+       several representations or resources.  Ordinary HTTP entity tags
+       identify selected representations; they do not, by themselves,
+       provide a conditional-update mechanism spanning different request
+       targets.
+
+       This Experimental document specifies Agentic State Transfer (AST), an
+       HTTP profile for preventing lost updates to shared application state.
+       It designates one State-Bearing Resource for each concurrency domain
+       and requires every Core protected mutation to target that resource
+       using the strong ETag of its State-Bearing Representation in the
+       standard If-Match field.
+
+       The profile also defines all-writer atomicity, strict nonmutating
+       failure, deferred-commit protection, reconciliation after conflict,
+       state discovery, cache and representation constraints, and security
+       requirements.  It uses only existing HTTP conditional request fields.</p>
+relation:
+- type: updates
+  bibitem:
+    formattedref:
+      content: draft-jurkovikj-httpapi-agentic-state-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-jurkovikj-httpapi-agentic-state-02
+    docidentifier:
+    - content: draft-jurkovikj-httpapi-agentic-state-02
+      type: Internet-Draft
+      primary: true
+series:
+- type: main
+  title:
+  - language: en
+    script: Latn
+    content: Internet-Draft
+  number: draft-jurkovikj-httpapi-agentic-state-03
+ext:
+  schema_version: v1.1.2
+  doctype:
+    content: internet-draft
+  flavor: ietf

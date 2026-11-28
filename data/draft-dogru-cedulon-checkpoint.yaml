@@ -9,26 +9,28 @@ title:
   content: 'Cedulon Checkpoints: Epoch Witnesses and Transparency'
 source:
 - type: src
-  content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-checkpoint-01
+  content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-checkpoint-02
 docidentifier:
 - content: draft-dogru-cedulon-checkpoint
   type: Internet-Draft
   primary: true
 date:
 - type: published
-  at: '2026-11-25'
+  at: '2026-11-28'
 abstract:
 - language: en
   script: Latn
   content: |-
     <p>This document specifies epoch checkpoints, the transparency witness
-       and the anchoring of checkpoints as SCITT Signed Statements for the
-       Cedulon audit layer.  The spend receipt, rail-extract reconciliation
-       and trust-root rules live in the companion Cedulon Core document.  A
-       verifier that pins a witness key and holds a usable issuer root can
-       detect a withheld or rolled-back checkpoint from a body that answers
-       to that root (MUST-T11-16); without those pins the suppression
-       guarantee is conditional.</p>
+       and the anchoring of checkpoints for the Cedulon audit layer.  The
+       object an audit hashes is the bare checkpoint COSE_Sign1.
+       Registering a SCITT Signed Statement remains allowed (MUST-T11-14)
+       and that outer statement is not the object the audit matches.  The
+       spend receipt, rail-extract reconciliation and trust-root rules live
+       in the companion Cedulon Core document.  A verifier that pins a
+       witness key and holds a usable issuer root can detect a withheld or
+       rolled-back checkpoint from a body that answers to that root (MUST-
+       T11-16); without those pins the suppression guarantee is conditional.</p>
 relation:
 - type: includes
   bibitem:
@@ -50,6 +52,17 @@ relation:
       content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-checkpoint-01
     docidentifier:
     - content: draft-dogru-cedulon-checkpoint-01
+      type: Internet-Draft
+      primary: true
+- type: includes
+  bibitem:
+    formattedref:
+      content: draft-dogru-cedulon-checkpoint-02
+    source:
+    - type: src
+      content: https://datatracker.ietf.org/doc/html/draft-dogru-cedulon-checkpoint-02
+    docidentifier:
+    - content: draft-dogru-cedulon-checkpoint-02
       type: Internet-Draft
       primary: true
 ext:
